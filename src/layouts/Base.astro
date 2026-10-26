@@ -16,6 +16,9 @@ const {
 
 const base = import.meta.env.BASE_URL;
 
+// 反馈直达新建 issue，省去用户自己找仓库入口
+const issueNewUrl = 'https://github.com/leoyim/github-opensource-radar/issues/new';
+
 // 只有配置了真实站点地址才输出 canonical / og:url，避免本地构建产出占位域名
 const hasRealSite = Boolean(Astro.site) && !/example\.github\.io/.test(Astro.site!.href);
 const canonicalUrl = hasRealSite ? new URL(Astro.url.pathname, Astro.site).href : null;
@@ -69,6 +72,7 @@ const year = 2026;
         </p>
         <p class="mono">
           静态生成 · 无追踪 · 无外部脚本 · 正文字体 <a href={`${base}fonts/OFL.txt`}>霞鹜文楷等宽</a> (OFL-1.1)
+          · <a href={issueNewUrl} target="_blank" rel="noopener noreferrer">建议反馈</a>
           · <span class="faint">© {year} OpenSource Radar</span>
         </p>
       </div>
