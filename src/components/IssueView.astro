@@ -54,26 +54,60 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
   </header>
 
   <div class="controls">
-    <div class="wrap controls-inner">
-      <span class="ctrl-label">视角</span>
-      <button class="chip" data-role-btn="all" aria-pressed="true">全部</button>
-      {
-        roles.map((r) => (
-          <button class="chip" data-role-btn={r.id} aria-pressed="false">
-            {r.label}
-          </button>
-        ))
-      }
-      <span class="divider-v" aria-hidden="true"></span>
-      <span class="ctrl-label">方向</span>
-      <button class="chip" data-cat-btn="all" aria-pressed="true">全部</button>
-      {
-        issue.categories.map((c) => (
-          <button class="chip" data-cat-btn={c.id} aria-pressed="false">
-            {c.label}
-          </button>
-        ))
-      }
+    <div class="wrap">
+      <div class="controls-inner" id="controls-scroller">
+        <span class="ctrl-label">视角</span>
+        <button class="chip" data-role-btn="all" aria-pressed="true">全部</button>
+        {
+          roles.map((r) => (
+            <button class="chip" data-role-btn={r.id} aria-pressed="false">
+              {r.label}
+            </button>
+          ))
+        }
+        <span class="divider-v" aria-hidden="true"></span>
+        <span class="ctrl-label">方向</span>
+        <button class="chip" data-cat-btn="all" aria-pressed="true">全部</button>
+        {
+          issue.categories.map((c) => (
+            <button class="chip" data-cat-btn={c.id} aria-pressed="false">
+              {c.label}
+            </button>
+          ))
+        }
+      </div>
+      <button
+        class="ctrl-nav is-prev"
+        type="button"
+        data-ctrl-nav="prev"
+        aria-label="往前看更多筛选项"
+        aria-controls="controls-scroller"
+      >
+        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <path
+            d="M10 3.5 5.5 8l4.5 4.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="square"></path>
+        </svg>
+      </button>
+      <button
+        class="ctrl-nav is-next"
+        type="button"
+        data-ctrl-nav="next"
+        aria-label="往后看更多筛选项"
+        aria-controls="controls-scroller"
+      >
+        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <path
+            d="M6 3.5 10.5 8 6 12.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="square"></path>
+        </svg>
+      </button>
     </div>
   </div>
 
@@ -286,6 +320,77 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
         target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
       });
     });
+  }
+
+  /* 筛选条的横向滚动提示：内容被截断时在两端渐隐，不出滚动轴。
+     状态写在 .controls 上，交给 CSS 决定哪一侧亮起。 */
+  const controls = document.querySelector('.controls');
+  const controlsInner = controls?.querySelector('.controls-inner');
+
+  function syncControlsHint() {
+    if (!controls || !controlsInner) return;
+    const max = controlsInner.scrollWidth - controlsInner.clientWidth;
+    let next = '';
+    // 容得下就整条提示都撤掉
+    if (max > 1) {
+      const atStart = controlsInner.scrollLeft <= 1;
+      const atEnd = controlsInner.scrollLeft >= max - 1;
+      next = atStart ? 'right' : atEnd ? 'left' : 'both';
+    }
+    // 只在真的变了才写，避免滚动时每帧都触发样式重算
+    if ((controls.dataset.scroll || '') !== next) {
+      if (next) controls.dataset.scroll = next;
+      else controls.removeAttribute('data-scroll');
+    }
+  }
+
+  if (controlsInner) {
+    controlsInner.addEventListener('scroll', syncControlsHint, { passive: true });
+    // 断点切换、字体加载、滚动条出现都会改变可滚动宽度，需要重算
+    window.addEventListener('resize', syncControlsHint, { passive: true });
+    window.addEventListener('load', syncControlsHint);
+    if (document.fonts) document.fonts.ready.then(syncControlsHint);
+    syncControlsHint();
+
+    /* 滚轮直接横滚：不用再按 Shift。
+       已经滑到端点就把事件放行，让滚轮继续滚页面，不把用户困在条里。 */
+    controlsInner.addEventListener(
+      'wheel',
+      (e) => {
+        // 触控板本来就是横向手势，不插手
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+        const max = controlsInner.scrollWidth - controlsInner.clientWidth;
+        if (max <= 1) return;
+        const step =
+          e.deltaMode === 1
+            ? e.deltaY * 16
+            : e.deltaMode === 2
+              ? e.deltaY * controlsInner.clientWidth
+              : e.deltaY;
+        if (!step) return;
+        const atStart = controlsInner.scrollLeft <= 1;
+        const atEnd = controlsInner.scrollLeft >= max - 1;
+        if ((step > 0 && atEnd) || (step < 0 && atStart)) return;
+        e.preventDefault();
+        controlsInner.scrollLeft += step;
+      },
+      { passive: false }
+    );
+
+    /* 两端箭头：一次滚过去七成可视宽度，最少 160px */
+    const navStep = Math.max(160, Math.round(controlsInner.clientWidth * 0.7));
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    controls
+      ?.querySelectorAll<HTMLButtonElement>('[data-ctrl-nav]')
+      .forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const dir = btn.dataset.ctrlNav === 'next' ? 1 : -1;
+          controlsInner.scrollBy({
+            left: dir * navStep,
+            behavior: reduceMotion.matches ? 'auto' : 'smooth',
+          });
+        });
+      });
   }
 
   readUrl();
