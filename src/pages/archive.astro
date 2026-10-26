@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { loadAllIssues, displayDate, displayDateCn, weekdayOf } from '../lib/load';
+import { loadAllIssues, displayDate, weekdayOf } from '../lib/load';
+import { jieQiOf } from '../lib/almanac';
 
 const base = import.meta.env.BASE_URL;
 const issues = loadAllIssues();
@@ -9,7 +10,7 @@ const years = [...new Set(issues.map((i) => i.date.slice(0, 4)))].sort().reverse
 const byYear = years.map((year) => ({
   year,
   items: issues
-    .map((issue, i) => ({ issue, no: issues.length - i }))
+    .map((issue, i) => ({ issue, no: issues.length - i, jieQi: jieQiOf(issue.date) }))
     .filter(({ issue }) => issue.date.startsWith(year)),
 }));
 
@@ -42,11 +43,12 @@ const latest = issues[0].date;
           <h2>{year}</h2>
           <span>{items.length} 期</span>
         </div>
-        {items.map(({ issue, no }) => (
+        {items.map(({ issue, no, jieQi }) => (
           <a class="toc-row" href={`${base}posts/${issue.date}/`}>
             <span class="toc-no">第 {String(no).padStart(2, '0')} 期</span>
-            <span class="toc-title">{displayDateCn(issue.date)}</span>
+            <span class="toc-title">{displayDate(issue.date)}</span>
             <span class="toc-date">{weekdayOf(issue.date)}</span>
+            {jieQi && <span class="toc-jieqi">{jieQi}</span>}
             <span class="toc-lead" aria-hidden="true" />
             <span class="toc-figs">{issue.stats.selected} 个项目</span>
           </a>

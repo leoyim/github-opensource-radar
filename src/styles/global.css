@@ -50,7 +50,7 @@
   --ink-3: #868c85;
   --rule: #272c29;
   --rule-strong: #3f4441;
-  --ink-rule: #cfd2ca;
+  --ink-rule: #5b615b;
   --accent: #7fc4a4;
   --accent-soft: #1a2b24;
   --grain: 0.06;
@@ -84,6 +84,8 @@ body {
   line-height: 1.85;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  /* 摘要里偶尔夹着整条 URL，允许在词内断开，避免把窄屏撑出横向滚动 */
+  overflow-wrap: break-word;
 }
 
 /* 纸纹：只挂在 fixed 的伪元素上，不参与滚动重绘 */
@@ -221,6 +223,23 @@ summary {
   display: block;
   color: var(--accent);
   flex: none;
+}
+/* 书眉右侧：滚动到第几章就显示章名，与读物展开时书眉上印的章名同理 */
+.nav-run {
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+  padding-left: 26px;
+  border-left: 1px solid var(--rule);
+  white-space: nowrap;
+}
+.nav-run:empty {
+  display: none;
+}
+@media (max-width: 900px) {
+  .nav-run {
+    display: none;
+  }
 }
 .ring-track {
   opacity: 0.24;
@@ -702,7 +721,7 @@ summary {
 .score {
   font-family: var(--mono);
   font-variant-numeric: tabular-nums;
-  font-size: 1.42rem;
+  font-size: 1.26rem;
   line-height: 1;
   letter-spacing: -0.03em;
 }
@@ -716,12 +735,12 @@ summary {
 .meter {
   display: flex;
   gap: 3px;
-  height: 9px;
+  height: 10px;
 }
 .meter i {
   display: block;
-  width: 3px;
-  height: 9px;
+  width: 4px;
+  height: 10px;
   background: var(--rule);
 }
 .meter i.on {
@@ -879,6 +898,13 @@ body[data-role]:not([data-role="all"]) .repo .rel {
 .toc-date {
   font-size: 0.8rem;
   color: var(--ink-3);
+  white-space: nowrap;
+}
+/* 只在那一天正好是节气时出现：目录里的小红字位置，用专色点一下 */
+.toc-jieqi {
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
   white-space: nowrap;
 }
 /* 引导线：目录里把标题和页码连起来的那排点 */

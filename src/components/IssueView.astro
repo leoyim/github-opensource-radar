@@ -1,6 +1,7 @@
 ---
 import RepoRow from './RepoRow.astro';
-import { seriesFor, displayDateCn, weekdayOf, neighborsOf } from '../lib/load';
+import { seriesFor, displayDate, weekdayOf, neighborsOf } from '../lib/load';
+import { almanacOf, jieQiLine } from '../lib/almanac';
 import { ROLE_LABELS, roleLabel } from '../lib/format';
 import type { Issue } from '../lib/schema';
 
@@ -26,6 +27,8 @@ const roles = [...new Set(issue.categories.flatMap((c) => c.items.flatMap((i) =>
 
 const total = issue.stats.selected;
 const perCat = Math.max(...issue.categories.map((c) => c.items.length));
+/* 阳历用阿拉伯数字，农历用汉字，节气单独一行。全部在构建期算好 */
+const almanac = almanacOf(issue.date);
 const baselineNote =
   issue.baseline.heatBasis === 'snapshot' ? '热度取与上一份快照对比的真实日增' : '首期无基线，热度按星标速度估算';
 const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : '无';
@@ -35,7 +38,7 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
   <header class="cover">
     <div class="cover-main">
       <p class="cover-kicker">GitHub 热点日报</p>
-      <h1><time datetime={issue.date}>{displayDateCn(issue.date)}</time></h1>
+      <h1><time datetime={issue.date}>{displayDate(issue.date)}</time></h1>
       <p class="cover-lede">
         从 {issue.stats.candidates} 个候选仓库中按四项指标加权，每个方向取前 {perCat}
         个，共 {total} 个项目，附中文精读摘要。
@@ -46,6 +49,8 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       <dl>
         <div><dt>期次</dt><dd>第 {String(issueNo).padStart(2, '0')} 期</dd></div>
         <div><dt>星期</dt><dd>{weekdayOf(issue.date)}</dd></div>
+        <div><dt>农历</dt><dd>{almanac.ganzhiYear}年 {almanac.lunarDate}</dd></div>
+        <div><dt>节气</dt><dd class={almanac.jieQi ? 'tag' : undefined}>{jieQiLine(almanac)}</dd></div>
         <div><dt>对比基线</dt><dd>{baselineDate}</dd></div>
         {latest && <div><dt>状态</dt><dd class="tag">最新一期</dd></div>}
       </dl>
@@ -166,7 +171,7 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       prev ? (
         <a href={`${base}posts/${prev}/`}>
           <span>上一期</span>
-          {displayDateCn(prev)}
+          {displayDate(prev)}
         </a>
       ) : (
         <span />
@@ -176,7 +181,7 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       next ? (
         <a class="next" href={`${base}posts/${next}/`}>
           <span>下一期</span>
-          {displayDateCn(next)}
+          {displayDate(next)}
         </a>
       ) : (
         <span />
@@ -325,6 +330,15 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       const id = b.dataset.catBtn || 'all';
       b.classList.toggle('is-current', id === active);
     });
+
+    // 书眉：当前位置的章名跟着走，只在真的换了章才写 DOM
+    const head = document.querySelector('[data-running-head]');
+    if (head) {
+      const label = active
+        ? (document.querySelector(`[data-cat-btn="${active}"]`)?.textContent || '').trim()
+        : '';
+      if (head.textContent !== label) head.textContent = label;
+    }
   }
 
   window.addEventListener(

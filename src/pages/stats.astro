@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { loadAllIssues, displayDateCn, weekdayOf } from '../lib/load';
+import { loadAllIssues, displayDate, weekdayOf } from '../lib/load';
+import { almanacOf, jieQiOf } from '../lib/almanac';
 import { num } from '../lib/format';
 
 const base = import.meta.env.BASE_URL;
@@ -47,6 +48,7 @@ const regulars = [...appear.values()]
 
 const firstDate = issues[issues.length - 1].date;
 const lastDate = issues[0].date;
+const lastAlmanac = almanacOf(lastDate);
 ---
 
 <Base title="长期观察 · 开源雷达" description="跨期聚合：评分分布、语言分布、单日涨星与常驻榜项目。">
@@ -63,6 +65,7 @@ const lastDate = issues[0].date;
         <div><dt>期数</dt><dd>{issues.length}</dd></div>
         <div><dt>条目</dt><dd>{items.length}</dd></div>
         <div><dt>区间</dt><dd>{firstDate.slice(5)} - {lastDate.slice(5)}</dd></div>
+        <div><dt>最近农历</dt><dd>{lastAlmanac.ganzhiYear}年 {lastAlmanac.lunarDate}</dd></div>
       </dl>
     </aside>
   </header>
@@ -78,8 +81,9 @@ const lastDate = issues[0].date;
         issues.map((issue) => (
           <a class="toc-row" href={`${base}posts/${issue.date}/`}>
             <span class="toc-no">{issue.date.slice(5)}</span>
-            <span class="toc-title">{displayDateCn(issue.date)}</span>
+            <span class="toc-title">{displayDate(issue.date)}</span>
             <span class="toc-date">{weekdayOf(issue.date)}</span>
+            {jieQiOf(issue.date) && <span class="toc-jieqi">{jieQiOf(issue.date)}</span>}
             <span class="toc-lead" aria-hidden="true" />
             <span class="toc-figs">
               候选 {issue.stats.candidates}　入选 {issue.stats.selected}　拦截{' '}
