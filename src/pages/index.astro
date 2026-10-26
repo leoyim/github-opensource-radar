@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import IssueView from '../components/IssueView.astro';
+import { listDates, loadIssue, displayDate } from '../lib/load';
+
+const dates = listDates();
+const latest = dates[0];
+const issue = loadIssue(latest);
+---
+
+<Base
+  title={`开源雷达 · ${displayDate(latest)} GitHub 热点日报`}
+  description={`${issue.date} 的 GitHub 热点日报：${issue.stats.candidates} 个候选，${issue.stats.selected} 个入选，按六个方向归档并附中文摘要。`}
+>
+  <IssueView issue={issue} issueNo={dates.length} latest />
+</Base>

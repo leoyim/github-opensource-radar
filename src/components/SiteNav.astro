@@ -1,0 +1,54 @@
+---
+const base = import.meta.env.BASE_URL;
+const path = Astro.url.pathname;
+
+const links = [
+  { href: base, label: '最新一期', match: (p: string) => p === base || p === `${base}index.html` },
+  { href: `${base}archive/`, label: '归档', match: (p: string) => p.startsWith(`${base}archive`) },
+  { href: `${base}stats/`, label: '长期观察', match: (p: string) => p.startsWith(`${base}stats`) },
+];
+---
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href={base}>
+      <!-- 外圈承担两件事：载入时扫掠一次（品牌动作），滚动时显示进度（功能） -->
+      <svg class="brand-mark" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <circle class="ring-track" cx="10" cy="10" r="8.2" stroke="currentColor" stroke-width="1.2" />
+        <circle
+          class="ring-progress"
+          cx="10"
+          cy="10"
+          r="8.2"
+          pathLength="100"
+          stroke="currentColor"
+          stroke-width="1.2"
+          stroke-linecap="round"></circle>
+        <circle
+          class="ring-sweep"
+          cx="10"
+          cy="10"
+          r="8.2"
+          pathLength="100"
+          stroke="currentColor"
+          stroke-width="1.2"
+          stroke-linecap="round"></circle>
+        <circle cx="10" cy="10" r="4.6" stroke="currentColor" stroke-width="1.2" opacity=".5" />
+        <circle cx="10" cy="10" r="1.4" fill="currentColor" />
+        <path d="M10 10 L16.4 4.4" stroke="currentColor" stroke-width="1.2" />
+      </svg>
+      <span>开源雷达</span>
+      <span class="brand-sub">OpenSource Radar</span>
+    </a>
+    <nav class="nav-links">
+      {
+        links.map((l) => (
+          <a href={l.href} aria-current={l.match(path) ? 'page' : undefined}>
+            {l.label}
+          </a>
+        ))
+      }
+      <button class="theme-toggle mono" data-theme-toggle aria-label="切换到深色">深</button>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,137 @@
+---
+import SiteNav from '../components/SiteNav.astro';
+// 霞鹜文楷等宽（LXGW WenKai Mono），OFL-1.1，按 unicode-range 分 97 片，浏览器只取用到的分片
+import 'lxgw-wenkai-webfont/lxgwwenkaimono-regular.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = '每日 GitHub 热点项目精选：按类别归档、0.5 分制评分、中文精读摘要。',
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+
+// 只有配置了真实站点地址才输出 canonical / og:url，避免本地构建产出占位域名
+const hasRealSite = Boolean(Astro.site) && !/example\.github\.io/.test(Astro.site!.href);
+const canonicalUrl = hasRealSite ? new URL(Astro.url.pathname, Astro.site).href : null;
+
+const year = 2026;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fbfbfa" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    <meta name="twitter:card" content="summary" />
+    <script is:inline>
+      (function () {
+        var t;
+        try {
+          t = localStorage.getItem('theme');
+          if (!t) {
+            t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.dataset.theme = t;
+          // 让浏览器 UI（地址栏 / 状态栏）跟随实际主题，而不是系统偏好
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute('content', t === 'dark' ? '#0b0c0d' : '#fbfbfa');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <SiteNav />
+    <main class="wrap" id="main-content" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <p>
+          数据来源：GitHub Trending 页面与 Search API；摘要由模型基于仓库 README 撰写，评分规则见每条的「评分依据」。
+          热度优先取与上一份快照对比的真实日增，无基线时按星标速度估算。
+        </p>
+        <p class="mono">
+          静态生成 · 无追踪 · 无外部脚本 · 正文字体 <a href={`${base}fonts/OFL.txt`}>霞鹜文楷等宽</a> (OFL-1.1)
+          · <span class="faint">© {year} OpenSource Radar</span>
+        </p>
+      </div>
+    </footer>
+    <button class="to-top" type="button" data-to-top aria-label="回到顶部">↑</button>
+    <script is:inline>
+      // 按钮显示"将要切换到的模式"，而不是当前模式，避免语义歧义
+      function syncThemeButton(mode) {
+        var btn = document.querySelector('[data-theme-toggle]');
+        if (btn) {
+          btn.textContent = mode === 'dark' ? '浅' : '深';
+          btn.setAttribute('aria-label', mode === 'dark' ? '切换到浅色' : '切换到深色');
+        }
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', mode === 'dark' ? '#0b0c0d' : '#fbfbfa');
+      }
+      document.addEventListener('click', function (e) {
+        var btn = e.target.closest('[data-theme-toggle]');
+        if (!btn) return;
+        var root = document.documentElement;
+        var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try {
+          localStorage.setItem('theme', next);
+        } catch (err) {}
+        syncThemeButton(next);
+      });
+      syncThemeButton(document.documentElement.dataset.theme || 'light');
+
+      // 回到顶部：滚动超过一屏才出现
+      (function () {
+        var top = document.querySelector('[data-to-top]');
+        if (!top) return;
+        var toggle = function () {
+          top.classList.toggle('show', window.scrollY > 700);
+        };
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+        top.addEventListener('click', function () {
+          var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+        });
+      })();
+
+      // 雷达外圈 = 页面滚动进度（状态而非动画，减弱动效时仍然保留）
+      (function () {
+        var ring = document.querySelector('.ring-progress');
+        if (!ring) return;
+        var frame = 0;
+        var update = function () {
+          frame = 0;
+          var d = document.documentElement;
+          var max = d.scrollHeight - d.clientHeight;
+          var p = max > 0 ? Math.min(1, Math.max(0, d.scrollTop / max)) : 0;
+          ring.setAttribute('stroke-dashoffset', String(100 - p * 100));
+        };
+        var schedule = function () {
+          if (!frame) frame = requestAnimationFrame(update);
+        };
+        window.addEventListener('scroll', schedule, { passive: true });
+        window.addEventListener('resize', schedule);
+        update();
+      })();
+    </script>
+  </body>
+</html>

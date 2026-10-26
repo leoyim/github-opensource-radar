@@ -1,0 +1,122 @@
+{
+  "NVIDIA/OpenShell": {
+    "summary_zh": "NVIDIA 开源的自主 AI Agent 安全运行时：Agent 需要读文件、装包、调 API、用凭证才能真正干活，OpenShell 不给它们无限权限，而是通过策略声明控制每个 Agent 能碰什么。实现上直接对内核做插桩，在运行时对每次文件访问、系统调用、网络连接强制执行策略，并用形式化验证检查策略变更的影响，Rust 编写。",
+    "highlight_zh": "要给内部 Agent 无人值守权限又担心数据与密钥外泄的团队，这是内核级强制的沙箱方案。"
+  },
+  "pbakaus/impeccable": {
+    "summary_zh": "给 AI 编码 Agent 的「设计语言」：1 个 skill、24 条命令、62 条确定性检测规则，外加浏览器实时迭代，专治 AI 生成前端的同质化审美——满屏 Inter 字体、紫蓝渐变、卡片套卡片、灰字压彩底。源自 Anthropic 前端设计 skill 的演化版。",
+    "highlight_zh": "用 Claude/Cursor 生成 UI 总是「一眼 AI 味」的前端工程师，装上即可约束产出风格。"
+  },
+  "colbymchenry/codegraph": {
+    "summary_zh": "预索引的代码知识图谱，代码一变自动同步，为 Claude Code、Codex、Cursor、Copilot 等 agent 提供「外科手术级」精准上下文，100% 本地运行。官方还预告了平台版：对每个 PR 自动判定该测什么、哪里可能被改坏、哪些调用链受影响。",
+    "highlight_zh": "在大仓库里苦于 agent 抓错上下文、改 A 坏 B 的开发团队。"
+  },
+  "openai/codex": {
+    "summary_zh": "OpenAI 官方的轻量终端编码 agent：一行命令安装 CLI，另有桌面应用（codex app）与 VS Code/Cursor/Windsurf 插件形态，云端版 Codex Web 也在 chatgpt.com/codex。持续迭代中，今日仍 +173 星。",
+    "highlight_zh": "想在终端与 IDE 间保持同一 agent 工作流、而非绑死单一厂商插件的开发者。"
+  },
+  "DeusData/codebase-memory-mcp": {
+    "summary_zh": "本地持久化的 MCP 服务器：把源码、文档、配置、基础设施连成一张知识图谱，可用来找陌生功能的实现、跨服务追调用、从部署反查源码、评估一次改动的影响面。既可通过 MCP 给编码 agent 提供结构化上下文，也能直接用 CLI 查询；配套可视化工具 CBM Lens 开放内测。",
+    "highlight_zh": "接手老项目或微服务集群、需要让 agent 理解「系统而不只是代码」的工程师。"
+  },
+  "yihui-dev/awesome-opus5-5-videos": {
+    "summary_zh": "用 Claude Opus 5.5 做出的爆款视频合集（已收录 418 支），每支都附作者公开的 prompt——这些视频全部由模型以代码（HTML/Canvas/SVG/Three.js）生成动画实现。可逐条复制 prompt 用自己的 agent 复现，站点支持并排对比原片与实时重制版，今日 +603 星。",
+    "highlight_zh": "想学「代码即动画」玩法、直接抄 prompt 起步的内容创作者与前端玩家。"
+  },
+  "oxc-project/tsrs": {
+    "summary_zh": "TypeScript 7 编译器与语言服务器的 Rust 移植：目标是 100% 一致性通过测试，同时大幅降低内存占用、加快类型检查速度。提供浏览器 playground 可直接试用，计划随 TypeScript 7.1 发布稳定版，兼容项与已知差距均有公开清单。",
+    "highlight_zh": "被 tsc 大仓库类型检查拖慢的前端团队，值得跟踪其一致性进度。"
+  },
+  "markrahq/markra": {
+    "summary_zh": "带原生 AI 的所见即所得 Markdown 编辑器：编辑体验对标 Typora，AI 原生集成可续写、改写、总结，完全开源、免费使用，数据全部留在本地。",
+    "highlight_zh": "既要 Markdown 源码控制又要所见即所得体验、且在意数据不出本机的写作者。"
+  },
+  "devswha/ovis": {
+    "summary_zh": "herdr 的开源浏览器与手机客户端（原 herdr Web UI）：在桌面或手机上以聊天形式读写电脑上正在运行的 agent 会话，需要时还能直接接管终端，Claude Code、Codex 及任意 agent 面板均可连。",
+    "highlight_zh": "想让 Claude Code/Codex 会话脱离工位、随时随地手机接管的 agent 重度用户。"
+  },
+  "LadybirdBrowser/ladybird": {
+    "summary_zh": "真正独立的浏览器：不用 Blink/WebKit 内核，基于 Web 标准自研引擎，目标是造一个能应对现代网页的完整可用浏览器。采用多进程架构——UI 主进程 + 多个 WebContent 渲染进程 + 独立的图片解码与请求服务进程，今日 +29 星稳居长青榜。",
+    "highlight_zh": "关注浏览器内核多样性与 Chromium 垄断破局的开发者，适合跟读源码。"
+  },
+  "storytold/wordcraft": {
+    "summary_zh": "ArtCraft 团队的开源 Word 替代品：纯 Rust 干净室重实现的现代文字处理软件，保留熟悉的 ribbon 界面、样式、表格、修订、引用与邮件合并工作流，原生读写 .docx，在 macOS/Windows/Linux/BSD 原生运行，也可经 WebAssembly 进浏览器。",
+    "highlight_zh": "受够了 Office 订阅与 LibreOffice 卡顿、想要原生性能 .docx 用户的候选方案。"
+  },
+  "storytold/filmcraft": {
+    "summary_zh": "同团队的另一力作：纯 Rust 从零编写的开源专业非线性视频编辑器，覆盖剪辑、调色与声音，原生支持 macOS/Windows/Linux 并可经 WebAssembly 在浏览器运行。与 WordCraft 同属「Crafting Apps」系列，后端/云原生类今日综合分最高。",
+    "highlight_zh": "关注 Rust 桌面级多媒体应用可行性的工程师，以及想要开源 DaVinci 替代品的创作者。"
+  },
+  "xevrion/hatchzip": {
+    "summary_zh": "解压超大压缩包的神器：边解压边从压缩包尾部裁掉已完成的部分，让压缩包自己「缩水」，因此只需输出结果的磁盘空间，无需「输出+压缩包」双份。典型场景：180GB 游戏包解出 200GB 内容，WinRAR/7-Zip 需要 380GB 空闲，HatchZip 只要约 200GB。支持 ZIP、7z、tar 及分卷压缩。",
+    "highlight_zh": "磁盘常年吃紧、经常解压巨型包的开发者与游戏玩家。"
+  },
+  "agentgateway/agentgateway": {
+    "summary_zh": "面向 Agentic AI 的下一代代理网关：基于 MCP 与 A2A 两大 AI 原生协议，为 agent 到 LLM、agent 到工具、agent 到 agent 的通信提供开箱即用的安全、可观测与治理能力，不限框架与环境。LLM 网关部分提供统一 OpenAI 兼容 API，支持预算与消费控制、prompt 增强、负载均衡与故障转移。",
+    "highlight_zh": "在企业内网统一管控多 agent 流量与 LLM 预算的平台/DevOps 团队。"
+  },
+  "nginx/nginx": {
+    "summary_zh": "NGINX 官方开源仓库（官方主仓库自 2024 年从 nginx.org 迁入 GitHub）：全球最流行的 Web 服务器、高性能负载均衡、反向代理、API 网关与内容缓存，2-clause BSD 许可，企业版与商业支持由 F5 提供。今日 +17 星，老牌项目热度依旧。",
+    "highlight_zh": "所有后端与运维工程师的基础设施常备项，关注官方仓库迁移后的发版节奏即可。"
+  },
+  "tursodatabase/turso": {
+    "summary_zh": "Rust 编写的进程内 SQL 数据库：兼容 SQLite，现已新增实验性 Postgres 前端（方言+线上协议）。架构上是一台虚拟机——SQL 先编译为字节码再由 VDBE 执行，正是这个设计让一个引擎可以承载多种 SQL 方言，官方称目标是「数据库界的 LLVM」，已在多家组织生产使用。",
+    "highlight_zh": "嵌入式场景想用 SQLite 生态、又需要 Postgres 协议接入的存储选型者。"
+  },
+  "MariaDB/server": {
+    "summary_zh": "最广泛部署的开源关系数据库之一：由原 MySQL 核心成员发起、MariaDB 基金会维护的社区分支，保持高度 MySQL 兼容的同时发展出自有能力——原生向量搜索、多可插拔存储引擎、同步集群与分析特性，负载覆盖从小应用到大规模生产。",
+    "highlight_zh": "MySQL 生态用户评估替代/升级路线时的保守稳妥选项，向量搜索是新看点。"
+  },
+  "apache/doris": {
+    "summary_zh": "Apache 顶级项目：实时分析 + 混合检索数据库，主打高并发低延迟的 OLAP 查询，最新版本明确面向 AI agent 场景提供混合搜索能力，Java 生态、今日 +4 星。",
+    "highlight_zh": "需要在一条 SQL 里同时做实时聚合与向量/全文检索的数据平台团队。"
+  },
+  "firebase/firebase-ios-sdk": {
+    "summary_zh": "Firebase 全系 Apple 平台 SDK 源码仓库（FirebaseAnalytics 除外）：为 iOS/macOS/watchOS/tvOS 应用提供构建、增长与变现所需的分析、崩溃、消息、远程配置等库与服务。",
+    "highlight_zh": "iOS 开发者日常依赖项，关注新版本 API 变更与 Swift 并发兼容时跟读。"
+  },
+  "ShayanAbbas1/dbdelve": {
+    "summary_zh": "Rust + GPUI 编写的原生多引擎数据库客户端：不用 Electron、不用 JVM，启动即开、内存占用小，在别的客户端卡死或设行数上限的大表里也能流畅滚动。今日 +14 星，榜单新面孔。",
+    "highlight_zh": "厌倦 DBeaver/Navicat 卡顿与 JVM 内存占用的后端与 DBA 用户。"
+  },
+  "qiz029/dscode": {
+    "summary_zh": "基于 DeepSeek Harness 构建的终端编码 agent（macOS/Linux）：专用文件工具带版本校验地读写代码，持久 shell 负责搜索、构建与测试，TUI、CLI 与脚本共享同一会话运行时。内置 Ultra 子代理、自动审批、Chrome MCP 与会话遥测，整体以版本锁定、可复现的 harness 形式安装。",
+    "highlight_zh": "想用 DeepSeek 自建一套类 Claude Code 终端工作流的开发者。"
+  },
+  "sno-ai/sno-station": {
+    "summary_zh": "把你已有的 AI agent 编成小队：Codex、Claude Code、Cursor、Hermes Agent、OpenClaw 共用一份加密记忆，互相交接任务、按需互相评审，官方描述里它们「每晚做梦，醒来变得更强」。提供简体中文文档，今日 +59 星。",
+    "highlight_zh": "同时开五六个 agent 各自为战、想要统一记忆与任务分发的多 agent 重度玩家。"
+  },
+  "max-sixty/worktrunk": {
+    "summary_zh": "为并行 AI agent 工作流设计的 git worktree 管理 CLI：三条核心命令让 worktree 像分支一样好用，另有钩子自动化本地流程、写时复制构建缓存等提质项。每个 agent 独占一个工作目录互不干扰，配合 Claude Code/Codex 可同时管 5–10 个无人值守任务。",
+    "highlight_zh": "想并行跑多个 coding agent 又怕互相踩工作区的开发者的基础设施级工具。"
+  },
+  "zephyrproject-rtos/zephyr": {
+    "summary_zh": "Linux 基金会旗下 Zephyr 项目的官方主仓库：可扩展的实时操作系统，小内核针对资源受限设备优化，安全设计贯穿始终，支持 ARM（Cortex-A/R/M）、x86、RISC-V、Xtensa、SPARC、MIPS 等大量架构，覆盖从环境传感器、可穿戴到 IoT 网关的场景。",
+    "highlight_zh": "嵌入式与 IoT 工程师的跨架构 RTOS 首选之一，跟随 LTS 版本即可。"
+  },
+  "init-co-jp/diff-tour": {
+    "summary_zh": "像资深工程师一样带你走读一次 diff：只读 TUI 把一个 git 变更变成导览——这个改动是干什么的、限额逻辑在哪里强制执行、中间还会抛出思考题与答案（如同一订单重复用券会被扣两次）。依赖 git 与任一已登录的 Claude Code/Codex CLI/Gemini CLI/OpenCode/Copilot CLI，今日 +51 星。",
+    "highlight_zh": "review 大型变更或接手他人分支时，用它把「看 diff」升级成「上课」。"
+  },
+  "DuarteSantos8/openGym": {
+    "summary_zh": "完全自托管、数据真正属于你的健身与体重追踪应用：规划每周训练、跟随引导完成动作组、记录每组与体重，手机端多设备同步，passkey 登录。已上架 App Store（iPhone + Apple Watch）并提供 Android APK，同时开放自托管指南，今日综合分 89.9 位居跨端类第一。",
+    "highlight_zh": "在健身 app 里交过订阅费又拿不回数据的用户，独立开发者可研究其 Tauri 式跨端交付。"
+  },
+  "makecindy/cindy": {
+    "summary_zh": "开箱即用的开源 AI Agent：本地运行在你自己的机器上，直接使用真实文件与已登录应用，首批支持 Claude Code 与 Codex 双 harness，更多与原生 harness 开发中。模型与 harness 可自由混搭且任务中途切换，工作区、记忆、技能与工具全程连续，一个任务可规划、并行执行、再评审，中文文案亲民，今日 +318 星。",
+    "highlight_zh": "想要一个本地优先、能缝合多模型多 agent 的「全能管家」型助手尝鲜。"
+  },
+  "2dust/v2rayNG": {
+    "summary_zh": "Android 平台老牌 V2Ray 客户端：支持 Xray 与 v2fly 双内核，geoip/geosite 路由数据可手动导入或第三方替换，下载增强版需自备可用代理。",
+    "highlight_zh": "安卓端代理工具的社区标杆，关注 Xray 内核升级节奏即可。"
+  },
+  "jaywcjlove/awesome-mac": {
+    "summary_zh": "macOS 高质量软件精选清单：按分类系统性整理 60+ 类工具与应用，持续维护多年、11.6 万星，今日 +84 星仍是 awesome 系列顶流。本周赞助位主推本地运行的 AI agent 与原生 Mac 应用合集。",
+    "highlight_zh": "新装 Mac 或想给旧机器换血时，一次配齐工具链的第一站。"
+  },
+  "keepassxreboot/keepassxc": {
+    "summary_zh": "KeePass Password Safe 的现代跨平台社区分支：离线加密保存用户名、密码、URL、附件与笔记，支持自定义标题与图标，密钥文件+口令双重保护，Windows/macOS/Linux 全覆盖，数据文件可放任意私有位置。适合对个人数据安全有极高要求的用户。",
+    "highlight_zh": "不愿把密码托付给云密码管理器的安全敏感用户，本地优先的黄金标准。"
+  }
+}

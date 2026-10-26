@@ -1,0 +1,18 @@
+---
+import { ratingCells } from '../lib/format';
+
+interface Props {
+  rating: number;
+}
+
+const { rating } = Astro.props;
+const cells = ratingCells(rating);
+---
+
+<div class="score">
+  {rating.toFixed(1)}
+  <small>/5</small>
+</div>
+<span class="meter" role="img" aria-label={`评分 ${rating.toFixed(1)} 分，满分 5 分`}>
+  {cells.map((c) => <i class={c === 'full' ? 'on' : c === 'half' ? 'half' : ''} aria-hidden="true"></i>)}
+</span>

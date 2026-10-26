@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadAllIssues, displayDate, weekdayOf } from '../lib/load';
+
+const base = import.meta.env.BASE_URL;
+const issues = loadAllIssues();
+
+const years = [...new Set(issues.map((i) => i.date.slice(0, 4)))].sort().reverse();
+const byYear = years.map((year) => ({
+  year,
+  items: issues
+    .map((issue, i) => ({ issue, no: issues.length - i }))
+    .filter(({ issue }) => issue.date.startsWith(year)),
+}));
+---
+
+<Base title="归档 · 开源雷达" description="全部期次的 GitHub 热点日报，按日期倒序。">
+  <header class="hero">
+    <p class="hero-top mono"><span>Archive</span><span>{issues.length} 期</span></p>
+    <h1>归档</h1>
+    <p class="hero-lede">
+      每一期都保留独立永久链接。日报由同一套评分规则生成，条目与评分为构建时固化，不随后续数据变化。
+    </p>
+  </header>
+
+  {
+    byYear.map(({ year, items }) => (
+      <section>
+        <p class="archive-year">{year}</p>
+        <div class="archive-list">
+          {items.map(({ issue, no }) => (
+            <a class="archive-item" href={`${base}posts/${issue.date}/`}>
+              <time datetime={issue.date}>{issue.date}</time>
+              <span>
+                {displayDate(issue.date)} · {weekdayOf(issue.date)}
+                <span class="faint"> — {issue.stats.selected} 个项目</span>
+              </span>
+              <span class="n">#{String(no).padStart(2, '0')}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</Base>

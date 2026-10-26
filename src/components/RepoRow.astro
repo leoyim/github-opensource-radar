@@ -1,0 +1,77 @@
+---
+import RatingMeter from './RatingMeter.astro';
+import MetricBars from './MetricBars.astro';
+import Sparkline from './Sparkline.astro';
+import { num, heatLabel } from '../lib/format';
+import type { IssueItem, SeriesPoint } from '../lib/schema';
+
+interface Props {
+  item: IssueItem;
+  index: number;
+  series?: SeriesPoint[];
+}
+
+const { item, index, series = [] } = Astro.props;
+const scores = item.roleScores ?? {};
+const hasScores = Object.keys(scores).length > 0;
+const starValues = series.map((p) => p.stars);
+---
+
+<article class="repo" data-rank={index} data-scores={JSON.stringify(scores)} data-name={item.full_name}>
+  <div class="repo-rank mono">
+    {index === 1 && <span class="signal" aria-hidden="true"></span>}
+    #{index}
+  </div>
+
+  <div class="repo-main">
+    <div class="repo-title">
+      <span class="repo-owner">{item.owner} /</span>
+      <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
+      {item.language && <span class="mono small faint">{item.language}</span>}
+    </div>
+
+    {item.description && <p class="repo-desc">{item.description}</p>}
+
+    <div class="repo-meta">
+      <span><strong>{num(item.stars)}</strong> stars</span>
+      <span><strong>{num(item.forks)}</strong> forks</span>
+      {
+        item.starGain != null && item.starGain > 0 ? (
+          <span class="gain">+{num(item.starGain)} / 日</span>
+        ) : (
+          <span>≈ {item.heat} / 天</span>
+        )
+      }
+      <span>{heatLabel(item.heatBasis)}</span>
+      {item.license && <span>{item.license}</span>}
+    </div>
+
+    {item.summary_zh && <p class="repo-summary">{item.summary_zh}</p>}
+    {item.highlight_zh && <p class="repo-highlight">{item.highlight_zh}</p>}
+
+    {
+      item.topics && item.topics.length > 0 && (
+        <ul class="repo-topics">
+          {item.topics.slice(0, 8).map((t) => (
+            <li class="topic">{t}</li>
+          ))}
+        </ul>
+      )
+    }
+
+    <MetricBars breakdown={item.breakdown} />
+  </div>
+
+  <div class="repo-side">
+    <RatingMeter rating={item.rating} />
+    {starValues.length >= 2 && <Sparkline values={starValues} label={`${item.full_name} 星标走势`} />}
+    {
+      hasScores && (
+        <div class="rel" aria-hidden="true">
+          <div class="rel-bar"><i></i></div>
+          <div class="rel-num">0%</div>
+        </div>
+      )
+    }
+  </div>
+</article>

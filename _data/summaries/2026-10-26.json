@@ -1,0 +1,122 @@
+{
+  "debpalash/VoiceStudio": {
+    "summary_zh": "完全本地运行的开源 ElevenLabs 替代品：语音克隆、音色设计、视频配音、听写、转录与有声书制作，覆盖 646 种语言。默认引擎为 k2-fsa/OmniVoice，也可切换其他引擎；本地工作流跑在自己的硬件上，遥测与远程服务均为可选项，隐私可控。今日 +1592 星，热度断层第一。",
+    "highlight_zh": "想自建配音/转写管线、不愿把音频数据交给第三方 TTS 的团队，这是当前最完整的本地化方案。"
+  },
+  "affaan-m/ECC": {
+    "summary_zh": "Agent harness 性能优化系统：为 Claude Code、Codex、Opencode、Cursor 等编码 agent 提供技能（Skills）、直觉（instincts）、记忆、安全与研究优先的工作流。通过引导式安装或原生插件命令装载 ecc 插件，另有面向私有仓库的 ECC Pro + GitHub App 商业版。今日 +853 星。",
+    "highlight_zh": "重度使用编码 agent、想系统化沉淀团队技能与上下文记忆的工程师，值得一试。"
+  },
+  "tashfeenahmed/freellmapi": {
+    "summary_zh": "把 34 家免费 LLM 提供商、635 个免费模型端点（每月约 74 亿 token 免费额度）聚合在一个 OpenAI 兼容的 /v1 端点后面：智能路由为每次请求挑选最优可用模型，被限流时自动 failover 到下一家，密钥加密存储，并按 key 统计用量防止超出免费额度。支持自定义端点与 chat/embedding/image/audio。仅限个人实验用途。",
+    "highlight_zh": "个人开发者白嫖多模型做原型验证的最佳路由层，一个端点通吃所有免费档。"
+  },
+  "google-gemini/gemini-cli": {
+    "summary_zh": "Google 官方开源的终端 AI agent：把 Gemini 直接带进命令行，提供从提示词到模型的最短路径。今日单日 +658 星，说明它在编码 agent 竞赛中仍保持一线热度，适合已在 Google 生态内的开发者作为本地 CLI 入口。",
+    "highlight_zh": "想在终端里用 Gemini 写代码、跑任务的开发者；官方维护，安装即用。"
+  },
+  "firecrawl/firecrawl": {
+    "summary_zh": "面向 AI agent 的「上下文 API」：大规模网页搜索、抓取与交互。官方基准称覆盖 96% 的网页（含重 JS 页面），P95 延迟 3.4 秒；输出直接是 LLM 友好的干净 markdown、结构化 JSON、截图等，省 token。代理轮换、编排、限流等脏活由平台接管，开源可自托管也有托管版。今日 +377 星。",
+    "highlight_zh": "给 agent 接网页数据源的第一选择，RAG/爬取管线的基础设施级组件。"
+  },
+  "remotion-dev/remotion": {
+    "summary_zh": "用 React 以代码方式制作视频：组件即视频帧，代码是唯一事实来源。现在支持三种工作流且可随时切换——让编码 agent 从想法直接生成视频、拖拽式交互剪辑、纯程序化批量渲染；可建组织级动效资产库，在自己的基础设施上批量渲染数百万条视频。今日 +356 星。",
+    "highlight_zh": "前端工程师做数据驱动视频/批量短视频的最佳方案，AI 生成视频管线的事实标准。"
+  },
+  "coollabsio/coolify": {
+    "summary_zh": "可自托管的开源 PaaS，Vercel/Heroku/Netlify 的替代品：在自己的服务器上一键部署静态站、数据库、全栈应用和 360+ 一键服务。开源免费，持续活跃。适合不想被云平台绑定定价的个人与团队，今日 +152 星。",
+    "highlight_zh": "想把 Vercel/Netlify 账单换成自己 VPS 的独立开发者，部署体验最完整的自托管 PaaS。"
+  },
+  "Renhuai123/ziwei-doushu": {
+    "summary_zh": "基于倪海厦《天纪》体系的紫微斗数开源排盘引擎：完整排盘算法、四化系统、格局知识库与古籍原文数据全部开源。附带 v4.0 解读数据集——67.5 万张命盘 × 13 维共 877 万段解读（解压后 56.6 GB）。理念是算法公开、价值在解读与体验。今日 +199 星。",
+    "highlight_zh": "传统命理数据结构化的少见大型开源数据集，对 NLP/知识库研究者也有素材价值。"
+  },
+  "CapSoftware/Cap": {
+    "summary_zh": "开源版 Loom：美观、可分享的屏幕录制工具，Rust + Tauri 构建。支持快速录屏、本地精剪、即时分享链接、评论、转录、数据分析、团队工作区、自定义域名与自定义 S3 存储，可完全自托管掌控数据。今日 +82 星。",
+    "highlight_zh": "团队做产品演示、异步评审又不想付 Loom 订阅费时的自托管替代。"
+  },
+  "imputnet/helium": {
+    "summary_zh": "以隐私、同意与舒适为核心构建的浏览器：快、干净、无广告跟踪。今日 +42 星持续走高，适合作为 Chrome 之外的隐私向日常浏览器选项。",
+    "highlight_zh": "关注隐私但嫌 Firefox 配置繁琐的用户，开箱即得的干净浏览体验。"
+  },
+  "experientiallabs/experiential": {
+    "summary_zh": "零加价的开源 LLM 网关与路由器：一个 OpenAI 兼容 API 统一接入托管、BYOK 与 1000+ 市场模型；细粒度控制哪些用户/agent 能用哪些模型、用在什么场景、花多少钱。特色是「从生产流量中学习」——自动削减成本、推荐更优模型，并训练一个你拥有的专用路由模型。今日 +1117 星，后端类最热。",
+    "highlight_zh": "多团队共用 LLM 预算的公司：网关 + 配额 + 成本优化一体，且不抽成。"
+  },
+  "storytold/lightcraft": {
+    "summary_zh": "ArtCraft 系列新品：纯 Rust 从零编写的开源非破坏性照片编辑器与 RAW 显影工具，原生支持 macOS/Windows/Linux，经 WebAssembly 跑在浏览器里，还能通过 MCP 被 AI agent 端到端驱动。storytold 系列今日已有 lightcraft(+197)、vectorcraft(+155) 双双上榜。",
+    "highlight_zh": "Rust 重写专业软件浪潮的最新样本，摄影师可关注 RAW 显影成熟度。"
+  },
+  "chen08209/FlClash": {
+    "summary_zh": "基于 ClashMeta(mihomo) 内核的多平台代理客户端：Android/Windows/macOS/Linux 全覆盖，支持规则路由、代理组、延迟测试、系统代理与 TUN 模式；订阅链接/文件导入，内置编辑器、覆盖脚本与自定义规则；Material You 设计配合 Apple 风格交互，明暗主题自适应。开源无广告，今日 +189 星。",
+    "highlight_zh": "全平台一致体验的 Clash 客户端，UI 打磨在同类中最佳。"
+  },
+  "storytold/vectorcraft": {
+    "summary_zh": "纯 Rust 从零编写的开源矢量插画工具，对标 Illustrator 类工作流：原生跑在 macOS/Windows/Linux/FreeBSD，浏览器端经 WebAssembly 运行。ArtCraft 团队（同 lightcraft、cadcraft）出品，该系列正在系统性地用 Rust 重写整个创意软件栈。今日 +155 星。",
+    "highlight_zh": "关注「开源创意软件全家桶」趋势的工程师值得跟踪这个系列。"
+  },
+  "ludovic111/horizon": {
+    "summary_zh": "用 Rust 从零重写的 Minecraft: Java Edition 26.3：原生游戏读取与 Java 版相同的世界文件、遵循相同规则、生成相同地形，并用 281 个差分测试 harness 与原版对拍验证。通过 Horizon 启动器加载你自己拥有的 Minecraft 文件运行，免费开源、非官方。今日热度 376。",
+    "highlight_zh": "游戏引擎逆向重写 + 差分验证工程实践的教科书案例。"
+  },
+  "talivia-group/talivia": {
+    "summary_zh": "面向创始人的「收入优先」开源分析平台（datafast 替代品）：自托管版包含网站分析、Session Replay、收入归因，以及 Stripe/LemonSqueezy/Polar/Dodo 等支付渠道的客户收入集成。云版额外提供 Google Search Console、社交提及等更多集成。今日热度 199。",
+    "highlight_zh": "独立开发者把流量分析直接对齐到收入指标，而不只是 PV/UV。"
+  },
+  "salihcantekin/ruvio": {
+    "summary_zh": "Rust 编写的 Redis 兼容内存数据库：说 RESP 协议，redis-cli 与现有客户端直接连，支持多分片、287 条命令，提供 Rust/.NET/Go/Java/Python/Node.js 客户端。定位是「一个进程替代缓存 + 锁服务 + 条件写 + Change Feed + 延迟队列」五件套。今日 +12 星，新锐早期。",
+    "highlight_zh": "想要 Redis 协议兼容但实现可控、还能省掉几个中间件的场景可关注。"
+  },
+  "styczynski/bioseqdb": {
+    "summary_zh": "PostgreSQL 扩展：把生物基因序列的存储、索引与比对搬进数据库，用 SQL 直接查询。提供紧凑序列类型与列式存储，可将基因组匹配结果与关系型数据 JOIN。已有 ARM64/x86-64 Linux 与 macOS 的实验性 alpha 包，Docker 镜像需对应 PG 大版本。今日热度 33。",
+    "highlight_zh": "生信 + 数据库交叉领域的罕见开源实现，序列检索不再需要独立集群。"
+  },
+  "JellyGlance/Server": {
+    "summary_zh": "自托管的 Jellyfin/Emby 现代仪表盘：实时会话、观看历史、统计、媒体请求、下载、日历、Webhook 与备份集中一处。今日热度 11，媒体服务器生态的配套工具。",
+    "highlight_zh": "Jellyfin/Emby 用户补齐官方缺失的运营面板。"
+  },
+  "dbt-labs/dbt-charts": {
+    "summary_zh": "dbt Labs 官方新项目：围绕 SQL 的声明式 YAML 语法做 dbt 原生仪表盘（包 dbt-charts、CLI dct）。SQL 定义「看什么数据」，YAML 声明「怎么展示」，编译成多种格式的交互报表。针对「vibe coding 仪表盘产出难以审计」的问题，让 agent 易写、人类易审。今日 +4 星，早期。",
+    "highlight_zh": "dbt 用户做数据看板可等它成熟后跟进；审计友好是对 BI 工具的差异化。"
+  },
+  "fuxicodex/Fuxi": {
+    "summary_zh": "Go 编写的终端 AI 编码 agent：单个静态二进制、零运行时依赖，在富 TUI 里读代码、改文件、跑命令、驱动工具，跨 LLM 提供商做成本感知路由与自动 failover，支持 MCP 客户端与自更新。约 200 万行代码几乎全部由 FuXi 自己编写。今日热度 283。",
+    "highlight_zh": "想要开箱即用、跨提供商省钱、不折腾依赖的终端编码 agent。"
+  },
+  "pch/rawmakase": {
+    "summary_zh": "Rust 编写的免费快速 RAW 照片编辑器，兼容 Lightroom 工作流：支持 RAW/JPEG/PNG/TIFF/WebP/AVIF/JPEG XL 显影，Lightroom 风格控制，可导出 JPEG/16-bit TIFF/PNG；还能导入 Lightroom Classic 目录（含星级、旗标、标签、关键词与兼容的修改设置），且绝不改动原目录与原片。今日热度 224。",
+    "highlight_zh": "Lightroom 用户迁移试水的最低成本路径：目录可导入、原片零风险。"
+  },
+  "Gaurav-Gosain/tuios": {
+    "summary_zh": "Go + Charm 栈（Bubble Tea v2/Lipgloss v2）构建的终端复用器与窗口管理器：vim 式模态界面、多终端面板、BSP 平铺、工作区、kitty 图形协议、命令面板；守护进程让会话跨重启存活、跨机器可达，并让面板里的编码 agent 上报状态、互相通信——「知道你的 agent 在干什么」的终端。今日 +190 星。",
+    "highlight_zh": "同时跑多个编码 agent 的重度终端用户：会话管理 + agent 状态聚合二合一。"
+  },
+  "JetBrains/thinkrail": {
+    "summary_zh": "JetBrains 出品的 agentic IDE：围绕 pi 编码 agent 构建的轻量真实 IDE，通过「活规范（living specs）」与可复用技能给 agent 沉淀持久的项目知识，工作区隔离，未来将支持按你的实际工作方式自动创建所需工具的扩展系统。今日 +51 星。",
+    "highlight_zh": "大厂入局 agentic IDE 的信号，关注「活规范」机制如何解决 agent 项目记忆问题。"
+  },
+  "ever-co/ever-gauzy": {
+    "summary_zh": "开源企业管理平台（ERP/CRM/HRM/ATS/PM 一体）：React(Next.js)/ReactNative(Expo) 技术栈，对接无头 Gauzy 平台 API。近期发布了 Ever Works——宣称可 7×24 自主研究、交付并维护整个业务的 agentic runtime。今日 +30 星。",
+    "highlight_zh": "找一体化开源 ERP/HRM 底座的团队可选；agentic 业务自动化说法需谨慎看待。"
+  },
+  "pengchujin/aerial-tv": {
+    "summary_zh": "给小米、TCL、创维等国产电视做的 tvOS 风格开源 Android TV 桌面：无广告、无推荐流，开机自动接管且待机不被清理。首页玻璃底板 + 全部 App，支持手机扫码远程整理、HDMI 信号源固定（可换成 Apple TV/Switch 图标）、控制中心、Apple TV 同款 114 段航拍屏保（4K/杜比视界）、必应每日壁纸等。今日热度 1742，移动/桌面类第一。",
+    "highlight_zh": "被国产电视广告桌面折磨的用户的终极解药，体验对齐 Apple TV。"
+  },
+  "ly05010419/MacNativeGames": {
+    "summary_zh": "在 Apple 芯片 Mac、iPhone、iPad 上原生运行你自己的《塞尔达传说：旷野之息》与《王国之泪》——不是模拟器：游戏自己的 ARM64 代码直接运行，NVN 图形层在 Metal 上重建。BotW 1.6.0/1.9.0 已官方支持 Mac（1.6.0 可跑在 iPhone 14），TotK 1.0.0/1.2.1/1.4.3 已支持 Mac/iPhone/iPad。今日 +530 星。",
+    "highlight_zh": "逆向工程的里程碑级项目；仅支持自带游戏文件，关注法律边界。"
+  },
+  "Predidit/Kazumi": {
+    "summary_zh": "Flutter 开发的基于自定义规则的番剧采集与在线观看 App：最多五行 Xpath 选择器即可构建采集规则，支持规则导入/分享、弹幕、Anime4K 实时超分辨率、多源播放、追番列表、跨设备同步、DLNA 投屏与一起看。覆盖 Android/iOS/Windows/macOS/Linux/HarmonyOS/Web。今日 +212 星。",
+    "highlight_zh": "Flutter 跨端 + 规则引擎的优质实现，超分辨率与弹幕体验是亮点。"
+  },
+  "localsend/localsend": {
+    "summary_zh": "开源跨平台 AirDrop 替代品：无需互联网，在局域网内安全地在附近设备间分享文件与消息，Android/iOS/macOS/Windows/Linux 全覆盖，另有 CLI。今日 +127 星，仍是局域网传文件品类的默认开源选择。",
+    "highlight_zh": "跨生态设备互传文件的标准答案，装一台机就能用。"
+  },
+  "storytold/cadcraft": {
+    "summary_zh": "CADCraft：纯 Rust 从零编写的开源 2D/3D CAD 应用，clean-room 对标 AutoCAD 工作流——命令行、对象捕捉、图层、标注、填充、图块与 DXF 图纸都在。原生跑 macOS/Windows/Linux/FreeBSD，浏览器经 WebAssembly。ArtCraft 系列今日第三款上榜。今日 +210 星。",
+    "highlight_zh": "storytold 系列一周内 photo/vector/cad 三连发，观察其能否真正挑战商业创意软件。"
+  }
+}

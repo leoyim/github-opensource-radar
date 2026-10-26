@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import IssueView from '../../components/IssueView.astro';
+import { listDates, loadIssue, displayDate } from '../../lib/load';
+
+export function getStaticPaths() {
+  const dates = listDates();
+  return dates.map((date, i) => ({
+    params: { date },
+    props: { issue: loadIssue(date), issueNo: dates.length - i },
+  }));
+}
+
+const { issue, issueNo } = Astro.props;
+---
+
+<Base
+  title={`${issue.date} · 开源雷达`}
+  description={`${issue.date} 的 GitHub 热点日报：${issue.stats.selected} 个入选项目，${issue.categories.length} 个方向，附中文精读摘要。`}
+>
+  <IssueView issue={issue} issueNo={issueNo} />
+</Base>

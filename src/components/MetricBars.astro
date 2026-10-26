@@ -1,0 +1,37 @@
+---
+import type { Breakdown } from '../lib/schema';
+
+interface Props {
+  breakdown?: Breakdown;
+}
+
+const { breakdown } = Astro.props;
+const rows = [
+  { key: 'heat', label: '热度增速' },
+  { key: 'community', label: '社区规模' },
+  { key: 'activity', label: '更新活跃' },
+  { key: 'maturity', label: '工程成熟' },
+] as const;
+---
+
+{
+  breakdown && (
+    <details class="breakdown">
+      <summary>评分依据</summary>
+      <div class="bars">
+        {rows.map((r) => {
+          const v = Math.round(Number(breakdown[r.key] ?? 0));
+          return (
+            <div class="bar">
+              <span>{r.label}</span>
+              <span class="bar-track">
+                <i style={`width:${Math.max(2, Math.min(100, v))}%`} />
+              </span>
+              <span>{v}</span>
+            </div>
+          );
+        })}
+      </div>
+    </details>
+  )
+}

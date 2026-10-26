@@ -1,0 +1,122 @@
+{
+  "deepseek-ai/DeepInfer": {
+    "summary_zh": "DeepSeek 官方开源的高性能推理框架，即支撑其大规模线上服务的同款引擎。本次发布提供离线推理能力：优化 kernel 与采样运行时、Attention DP/CP 与 MoE EP+EPLB 并行、置信度调度验证、异步零开销调度等生产级特性齐备。",
+    "highlight_zh": "需要自建 GPU 推理服务的团队，可直接对标 vLLM 做选型评估。"
+  },
+  "Ebony-Vinyl/dsh-our-free-model": {
+    "summary_zh": "DSH 插件：安装后无需登录、注册或 API Key，即可使用 DeepSeek V4.1 Flash、Kimi K3 等前沿模型且不限量。免费车道来源公开透明（OpenCode Zen 网关、Kilo 公共网关直连），模型清单随上游动态刷新，不可用模型自动从选择器移除。登 Trendshift JavaScript 周榜第 1。",
+    "highlight_zh": "想零成本调用前沿模型的个人开发者；留意上游网关稳定性与数据去向条款。"
+  },
+  "Niko1221/Strata": {
+    "summary_zh": "把 1250 亿参数的 Qwen3.8-Flash-Next 跑在普通消费级 PC 上（内存+显存合计 32GB 即可启动），一键安装支持 Windows/Linux。本地提供 OpenAI/Anthropic 兼容 API 并默认开启图像输入，Claude Code、Codex CLI 等 agent 可直接接入，聊天与文件全部留在本机。",
+    "highlight_zh": "想在游戏 PC 上私有化跑大模型并接入 coding agent 的最短路径。"
+  },
+  "yetone/magpie": {
+    "summary_zh": "菜单栏级本地模型网关：为 Claude Code、Codex、Gemini CLI、OpenCode 等任意 agent 指定任意模型（Kimi、DeepSeek、GLM 或你已订阅的官方套餐），某账号配额耗尽时自动静默切换到下一个。每个 agent 的配置由 magpie 代理修改，一处管理所有模型入口。",
+    "highlight_zh": "同时使用多个 coding agent、被各家配额上限反复打断的重度用户。"
+  },
+  "DietrichGebert/ponytail": {
+    "summary_zh": "让 AI agent 像「最懒的资深工程师」一样思考的 skill——最好的代码是你永远不用写的代码。在 Claude Code 上的基准测试（39 个任务 × 5 轮，含真实 FastAPI+React 仓库）显示：代码量 -53%、耗时 -41%、成本 -26%、token -45%，同时危险逻辑带测试覆盖率从 68% 提升到 98%。",
+    "highlight_zh": "重度使用 Claude Code/Codex 的团队，一行配置即可显著降低 agent 用量成本。"
+  },
+  "tangency-labs/solidcraft": {
+    "summary_zh": "纯 Rust 从零构建的开源参数化 3D CAD：草图、约束、参数化特征树，修改一个尺寸即可全模型重建。桌面端、浏览器端均可运行，并内置 MCP Server，AI agent 可通过它直接操作建模。支持 winget/AppImage/Snap 等全平台分发。",
+    "highlight_zh": "关注工业软件与 AI 驱动建模的开发者；MCP 建模接口是同类开源 CAD 中少见的亮点。"
+  },
+  "shader-effects-inc/shaders": {
+    "summary_zh": "WebGPU 特效组件库：200+ 渐变、噪点、玻璃、金属、光影、扭曲、过渡、模糊效果以声明式组件形式用于 React、Vue、Svelte、Solid 与原生 JS。支持可视化设计后导出代码，并提供 CLI 与 AI 协作工作流。",
+    "highlight_zh": "营销页、数据大屏、产品官网的动效素材库；基于 WebGPU，需注意旧浏览器兼容面。"
+  },
+  "egoist/mygo": {
+    "summary_zh": "egoist 出品的 Go 桌面应用框架：每个窗口可在「系统 WebView 网页界面」与「纯 Go 原生 UI」之间自由混用。前端用任意 Web 技术栈编写，通过生成的 TypeScript 客户端调用 Go 代码；无 cgo，任意机器可交叉编译全平台，IPC 带类型并支持 channel 流式传值。",
+    "highlight_zh": "用 Go 而非 Tauri/Electron 做桌面工具的新选择，前端工程师可无痛接入。"
+  },
+  "Caho1/open-claude-ui": {
+    "summary_zh": "基于 REA 逆向框架对 Claude 官方桌面端的高保真还原：30 个独立 React 组件、8 套交互物理弹簧参数、陶土橙（#d97757）设计规范与 4 层微对比表面体系，附 3000+ 行逆向分析手册。所有物理常数与着色器关键帧均经反编译验证，而非近似复刻。",
+    "highlight_zh": "研究顶级 AI 客户端 UI 工程与动效物理的学习素材；注意版权边界，勿直接商用。"
+  },
+  "rociiu/talorys": {
+    "summary_zh": "完全运行在你自己 Cloudflare 账号内的个人 AI 助手：流式聊天、长期记忆（可查看/编辑/删除）、任务、笔记、语义召回与定时提醒。一条命令 npx create-talorys 即可部署，单用户、零遥测、无服务器与数据库费用。",
+    "highlight_zh": "想要数据完全自主、成本几乎为零的个人 AI 助手，Cloudflare 免费额度即可承载。"
+  },
+  "storytold/photocraft": {
+    "summary_zh": "纯 Rust 从零实现的开源 Photoshop 替代品：图层、蒙版、调整图层、图层样式、文字、矢量、笔刷与真实 PSD 文件读写，全部离线原生运行。PSD 兼容度有硬核背书——psd-tools 309 个测试文件中 307 个实现保真往返，并以 Photoshop 合成结果作为渲染 oracle 逐像素校验。",
+    "highlight_zh": "「Rust 重写生产力软件」趋势的标杆项目；对图像管线或 PSD 格式有兴趣者值得精读源码。"
+  },
+  "storytold/pdfcraft": {
+    "summary_zh": "同一团队（storytold）的 PDF 工作台：阅读、组织、合并、拆分、加密一应俱全，深度缩放矢量渲染保持锐利，支持 macOS/Windows/Linux/FreeBSD/Web 五端。纯 Rust 实现，原生速度。",
+    "highlight_zh": "替换 Acrobat 的轻量开源选项；与 wordcraft、photocraft 构成 Rust clean-room 应用矩阵。"
+  },
+  "opengeos/RustGIS": {
+    "summary_zh": "纯 Rust 编写的快速免费开源 GIS：GPU 绘制、单一原生程序、无运行时依赖，同一份代码可编译到 WebAssembly 跑在浏览器。数据默认留在本机，仅在你显式选择时才发给 AI 模型，且每个操作都是可脚本化的命令。",
+    "highlight_zh": "地理空间数据处理工具链的 Rust 新势力；opengeos 团队出品，学术与工程兼备。"
+  },
+  "golang/go": {
+    "summary_zh": "Go 语言官方仓库今日登上 GitHub Trending（真实日增 88 星），此级别的主仓异动通常伴随大版本发布或重要提案落地，建议留意近期 release note 与提案动态。",
+    "highlight_zh": "Go 使用者关注版本节奏即可；无需额外动作。"
+  },
+  "kubernetes/kubernetes": {
+    "summary_zh": "Kubernetes 主仓库今日登上 GitHub Trending（真实日增 81 星），生产级容器编排系统，源自 Google Borg 十五年生产经验与社区最佳实践。",
+    "highlight_zh": "DevOps/SRE 关注当前发布周期的新特性与废弃项，评估集群升级窗口。"
+  },
+  "t8y2/dbx": {
+    "summary_zh": "仅 25MB 的跨平台数据库客户端，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、达梦等 100+ 数据库。桌面端、Docker、CLI 三种形态，内置 AI 助手与 MCP Server，提供 Schema 浏览、对象管理、可审查的表结构编辑等完整能力。",
+    "highlight_zh": "替代 Navicat/DBeaver 的轻量国产方案；对达梦等国产数据库的支持是差异化卖点。"
+  },
+  "kividbio/kividb": {
+    "summary_zh": "Rust 编写的多线程 Redis/Valkey 替代品：完整兼容 RESP2/RESP3 协议，现有 redis-cli 与客户端零改动迁移。内置 Redis Stack 风格的全文、标签、数值与向量检索（FLAT/HNSW），支持 Lua 脚本、快照与 AOF 持久化；同规格 32 核下实测 2100 万 QPS。",
+    "highlight_zh": "受 Redis 许可证变更困扰、又需要向量/全文检索一体化方案的团队，可做 PoC 验证。"
+  },
+  "pgrundev/pgx": {
+    "summary_zh": "为 AI agent 设计的轻量 Postgres：Rust 实现，一条命令启动单个运行时内数千个相互隔离的 Postgres 数据库，无需 Docker，原生支持 macOS/Linux。内存、连接、cgroups 三级限额防止单库失控，用后自动清理。",
+    "highlight_zh": "agent 沙箱、多租户临时库场景的理想底座；v0.1.0 明确定位为一次性数据库，勿存生产数据。"
+  },
+  "duckdb/duckdb": {
+    "summary_zh": "进程内高性能分析数据库，今日登上 GitHub Trending。无需独立服务器与外部依赖，SQL 方言远超基础查询（任意嵌套相关子查询、窗口函数等），可直接读取远程文件、查询其他数据库并连接其他 DuckDB 实例。",
+    "highlight_zh": "数据工程师的瑞士军刀；关注近期版本扩展生态（如lakehouse格式支持）。"
+  },
+  "ClickHouse/ClickHouse": {
+    "summary_zh": "实时列式分析数据库 ClickHouse 主仓今日登上 GitHub Trending。开源列存架构，支持秒级生成分析报表，官方同时提供由核心团队维护的云服务版本。",
+    "highlight_zh": "实时 BI、用户行为分析场景的标配引擎；关注本周期性能与集成更新。"
+  },
+  "citrolabs/ego-lite": {
+    "summary_zh": "为 AI agent 打造的浏览器自动化专用浏览器：agent 在独立的 Space（同浏览器内隔离工作区）中执行任务，与你本人的浏览互不抢占；可共享你的登录态，零成本零配置。支持中英日韩等多语言界面。",
+    "highlight_zh": "让 Codex/Claude Code 做浏览器操作的干净方案，解决「agent 抢占浏览器」的经典痛点。"
+  },
+  "alchaincyf/huashu-motion": {
+    "summary_zh": "让 coding agent 一键直出商业级产品宣传片：自动读产品、给三个方向挑选、写整支片子并自己谱曲配乐，最后在浏览器打开编辑器等你审片。点选画面任一元素写下修改意见，agent 只改那一处；每版可回滚，标题、数字、颜色、时长均可视化调整。README 中的每段动画均为其自产。",
+    "highlight_zh": "独立开发者低成本产出发布视频的新工作流；仅依赖本机 Chrome 与 FFmpeg。"
+  },
+  "dzhng/jevgrep": {
+    "summary_zh": "「按语义找代码」的 CLI 工具：向仓库提问，jg 一次性返回相关文件、阅读线索与逐字源码摘录，供 coding agent 快速定位上下文。十任务 SWE-bench 对比中与基线完成相同任务数（8/10），但成本更低。",
+    "highlight_zh": "给 agent 装上更省 token 的代码搜索引擎；CLI 输出即插即用。"
+  },
+  "penso/herdr-gpui": {
+    "summary_zh": "基于 Rust 与 GPUI 的原生跨平台客户端（macOS/Linux/Windows）：连接本地 Herdr daemon，直接绘制终端单元格与分屏面板，在侧边栏统一管理工作区、Git worktree 与多个 agent 的活动状态，无需另起终端模拟器。",
+    "highlight_zh": "并行运行多个 AI agent 的工程师，可作为统一编排与监控视图。"
+  },
+  "alibaba/open-code-review": {
+    "summary_zh": "阿里巴巴内部打磨两年、服务数万开发者并发现数百万缺陷的 AI 代码评审 CLI 开源版：确定性流水线 + LLM Agent 混合架构，行级精准评论定位，内置 NPE、线程安全、XSS、SQL 注入等多语言规则集，兼容 OpenAI 与 Anthropic 接口。直接针对 agent 评审「大变更集漏文件、行号漂移」两大痛点设计。",
+    "highlight_zh": "想给团队 CI 加 AI 评审的团队，这是经过大规模生产验证的现成方案。"
+  },
+  "Gathin23/cleanyourtv": {
+    "summary_zh": "通过 Wi-Fi 给任意 Android/Google TV 精简预装软件，并换上 Apple TV 风格的干净桌面：应用重排、每行 4-7 个应用、0-3 行 Dock 下方内容均可调。项目源于一条 740 万播放的推文，4 天内 200+ 贡献者贡献了 170+ 机型适配清单，基于 ADB 免 root。",
+    "highlight_zh": "国产电视/盒子用户去广告精简系统的利器；Android 开发者可参考其 ADB 设备管理实现。"
+  },
+  "anywhere-labs/dsh-desktop": {
+    "summary_zh": "为 DeepSeek Harness (DSH) 插件生态打造的社区桌面端：将本地 Web UI、Host 服务与插件系统集成为原生应用，「万物皆插件，桌面本身也是插件」。提供窗口、托盘、终端、更新与工作配置，支持 Windows x64 与 macOS Universal 安装包。",
+    "highlight_zh": "DSH 插件生态用户的桌面入口之一；与 dataelement 官方版并存，使用前注意甄别版本来源。"
+  },
+  "shihabal3amri/DiPlay": {
+    "summary_zh": "面向兼容 Android 车机（验证机型为比亚迪）的独立 CarPlay 接收器：有线 USB 与无线双模式，本地鉴权，免越狱、免 Dongle、免 Mac、无需账号服务器；核心 CarPlay 功能无需 ADB。附 BYD HUD 导航（箭头/距离/路名）、车内热点与音频缓冲优化。",
+    "highlight_zh": "车机改造玩家的高价值项目；安装前需确认车机允许侧载 APK 且机型在支持列表。"
+  },
+  "KnifeLemon/Filee": {
+    "summary_zh": "免费开源的离线文件格式转换器：按住 Ctrl/Option 拖拽文件，在光标处弹出的格式环上松手即转换，支持 255 种格式（图片、PDF、Word、Excel、PowerPoint、HWP/HWPX、音视频、电子书、压缩包），全程本地处理、无需安装 Office、无上传。",
+    "highlight_zh": "隐私优先的格式转换首选；光标即起式的交互设计本身也值得产品经理研究。"
+  },
+  "dataelement/dsh-desktop": {
+    "summary_zh": "Dataelem 团队基于 DeepSeek Harness 框架构建的桌面 Agent 应用，开源与企业双版本。自动拉起/停止 Harness（无需单独 CLI 或浏览器标签页）、原生系统目录选择器管理项目工作区、支持 DeepSeek 官方模型与主流第三方供应商、配置可导入导出。",
+    "highlight_zh": "DSH 生态的官方桌面版本；中文用户开箱体验最完整的选择。"
+  }
+}
