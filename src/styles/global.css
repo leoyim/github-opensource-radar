@@ -238,6 +238,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .chip:hover { border-color: var(--line-strong); color: var(--ink); }
 .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+/* 滚动时当前方向的弱高亮：跟着右侧刻度走，但不冒充筛选态 */
+.chip.is-current:not([aria-pressed="true"]) {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent-soft) 75%, transparent);
+}
 .divider-v { width: 1px; height: 18px; background: var(--line); flex: none; margin: 0 4px; }
 
 /* ---------- 类别 ---------- */
@@ -524,40 +530,4 @@ summary {
   100% { opacity: 0; transform: scale(2.1); }
 }
 
-/* ---------- 侧边分类刻度（宽屏） ---------- */
 
-.rail { display: none; }
-
-@media (min-width: 1360px) {
-  .rail {
-    position: fixed;
-    right: 28px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 12;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-  }
-  .rail-item { display: flex; align-items: center; gap: 9px; padding: 2px 0; }
-  .rail-label {
-    font-size: 0.74rem;
-    color: var(--ink-3);
-    opacity: 0;
-    transform: translateX(4px);
-    transition: opacity 0.15s ease, transform 0.15s ease;
-    white-space: nowrap;
-  }
-  .rail-tick {
-    width: 13px;
-    height: 2px;
-    background: var(--line-strong);
-    transition: width 0.15s ease, background 0.15s ease;
-  }
-  .rail-item:hover .rail-label,
-  .rail-item.is-active .rail-label { opacity: 1; transform: none; }
-  .rail-item.is-active .rail-label { color: var(--ink); }
-  .rail-item:hover .rail-tick { background: var(--ink-2); }
-  .rail-item.is-active .rail-tick { width: 22px; background: var(--accent); }
-}

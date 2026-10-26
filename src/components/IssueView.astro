@@ -111,17 +111,6 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
     </div>
   </div>
 
-  <nav class="rail" aria-label="分类快捷导航">
-    {
-      issue.categories.map((c) => (
-        <a class="rail-item" href={`#cat-${c.id}`} data-rail={c.id}>
-          <span class="rail-label">{c.label}</span>
-          <span class="rail-tick" aria-hidden="true" />
-        </a>
-      ))
-    }
-  </nav>
-
   <div class="issue-body">
     {
       issue.categories.map((cat, ci) => (
@@ -240,6 +229,7 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
     syncButtons();
     applyRole();
     applyCat();
+    syncCurrentChip();
   }
 
   /** 筛选状态写进 URL：可分享、刷新不丢、前进后退可复现 */
@@ -275,6 +265,13 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       currentCat = btn.dataset.catBtn || 'all';
       render();
       writeUrl(true);
+      // 选中具体方向后把视口带到该类目，避免内容换了人还停在原处
+      if (currentCat !== 'all') {
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        document
+          .querySelector(`.cat[data-cat="${currentCat}"]`)
+          ?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      }
     });
   });
 
@@ -283,44 +280,37 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
     render();
   });
 
-  /* 侧边分类刻度：滚动高亮当前位置，点击直接定位 */
-  const railItems = document.querySelectorAll('[data-rail]');
-  let railFrame = 0;
+  /* 「方向」chip 跟随滚动位置：弱高亮表示「你正在看这个方向」，
+     不改变筛选，aria-pressed 仍只表示真正的筛选状态 */
+  let currentFrame = 0;
 
-  function syncRail() {
-    railFrame = 0;
+  function syncCurrentChip() {
+    currentFrame = 0;
     let active = null;
-    sections.forEach((s) => {
-      if (s.getBoundingClientRect().top - 150 <= 0) active = s.dataset.cat;
-    });
-    railItems.forEach((a) => a.classList.toggle('is-active', a.dataset.rail === active));
-  }
-
-  if (railItems.length) {
-    window.addEventListener(
-      'scroll',
-      () => {
-        if (!railFrame) railFrame = requestAnimationFrame(syncRail);
-      },
-      { passive: true }
-    );
-
-    railItems.forEach((a) => {
-      a.addEventListener('click', (ev) => {
-        ev.preventDefault();
-        const target = document.querySelector('.cat[data-cat="' + a.dataset.rail + '"]');
-        if (!target) return;
-        // 该方向正被筛选隐藏时，先回到「全部」再定位
-        if (target.hidden) {
-          currentCat = 'all';
-          render();
-          writeUrl(true);
-        }
-        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    // 筛选到某个方向时高亮固定为该方向，不再随滚动漂
+    if (currentCat !== 'all') {
+      active = currentCat;
+    } else {
+      sections.forEach((s) => {
+        // 隐藏区块的 rect 恒为 0，不跳过就会把高亮顶到最后一个类目上
+        if (s.hidden) return;
+        if (s.getBoundingClientRect().top - 150 <= 0) active = s.dataset.cat;
       });
+    }
+    catButtons.forEach((b) => {
+      const id = b.dataset.catBtn || 'all';
+      b.classList.toggle('is-current', id === active);
     });
   }
+
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (!currentFrame) currentFrame = requestAnimationFrame(syncCurrentChip);
+    },
+    { passive: true }
+  );
+  window.addEventListener('resize', syncCurrentChip, { passive: true });
 
   /* 筛选条的横向滚动提示：内容被截断时在两端渐隐，不出滚动轴。
      状态写在 .controls 上，交给 CSS 决定哪一侧亮起。 */
@@ -396,5 +386,4 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
   readUrl();
   render();
   writeUrl(false);
-  syncRail();
 </script>
