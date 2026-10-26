@@ -815,20 +815,23 @@ body[data-role]:not([data-role="all"]) .repo .rel {
 }
 .bar {
   display: grid;
-  grid-template-columns: 66px 1fr 26px;
+  grid-template-columns: 66px minmax(0, 1fr) 26px;
   align-items: center;
   gap: 8px;
   font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
   font-size: 0.7rem;
   color: var(--ink-3);
 }
+/* 底槽只留一条 1px 基线：条有刻度可读，又不像网页进度条 */
 .bar-track {
-  height: 2px;
-  background: transparent;
+  display: block;
+  height: 5px;
+  background: linear-gradient(to bottom, transparent calc(100% - 1px), var(--rule) 0);
 }
 .bar-track i {
   display: block;
-  height: 2px;
+  height: 100%;
   background: var(--ink-2);
 }
 .spark {
@@ -851,6 +854,279 @@ body[data-role]:not([data-role="all"]) .repo .rel {
   margin-bottom: 6px;
   font-weight: 400;
   letter-spacing: 0.06em;
+}
+
+/* ---------- 条目尾部动作 ---------- */
+
+.repo-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 16px;
+}
+.repo-actions .breakdown {
+  margin-top: 0;
+  /* 作为弹性项必须撑开：否则 details 收缩到内容宽度，
+     里面 .bars 的 1fr 列拿不到确定宽度，条会塌成 0 */
+  flex: 1 1 auto;
+}
+.read-btn {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 9px;
+  padding: 4px 12px 5px;
+  border: 1px solid var(--rule-strong);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  transition: background-color 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+}
+.read-btn:hover,
+.read-btn:focus-visible {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.read-btn-n {
+  font-size: 0.7rem;
+  letter-spacing: 0;
+  color: var(--ink-3);
+}
+.read-btn:hover .read-btn-n {
+  color: var(--paper);
+  opacity: 0.72;
+}
+
+/* ---------- 详细解读（浮层） ---------- */
+
+/* 开启有两条路：有 JS 时 showModal() 进 top layer；无 JS 时链接 hash 命中 :target。
+   两条路共用同一套排版，正文本来就是纯 HTML。 */
+.reader {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(720px, calc(100vw - 2rem));
+  max-height: 88dvh;
+  display: none;
+  /* :target 那条路不进 top layer，需要显式的层叠顺序才压得住正文 */
+  z-index: 50;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  padding: 0;
+  border: 1px solid var(--ink-rule);
+  background: var(--paper);
+  color: var(--ink);
+}
+.reader[open],
+.reader:target {
+  display: grid;
+}
+.reader::backdrop {
+  background: rgb(0 0 0 / 0.58);
+}
+/* :target 那条路不进 top layer，::backdrop 不生效，用超大描边补一层遮罩 */
+.reader:target:not([open]) {
+  box-shadow: 0 0 0 100vmax rgb(0 0 0 / 0.58);
+}
+.reader-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 20px 12px;
+  border-bottom: 1px solid var(--ink-rule);
+}
+.reader-kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.reader-title {
+  margin-right: auto;
+  font-size: 0.84rem;
+  letter-spacing: 0;
+  color: var(--ink-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.reader-close {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--rule-strong);
+  font-size: 0.95rem;
+  line-height: 1;
+  color: var(--ink-2);
+}
+.reader-close:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.reader-body {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 26px 28px 10px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule-strong) transparent;
+}
+.reader-foot {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 20px 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.reader-foot a {
+  white-space: nowrap;
+  border-bottom: 1px solid var(--rule-strong);
+}
+.reader-foot a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ---------- 长文正文（浮层与本期观察共用） ---------- */
+
+.prose {
+  max-width: 34em;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.95;
+}
+.prose > :first-child {
+  margin-top: 0;
+}
+.prose p {
+  text-indent: 2em;
+  margin: 0 0 0.75em;
+}
+.prose h2 {
+  font-size: 1.04rem;
+  letter-spacing: 0.1em;
+  margin: 1.9em 0 0.6em;
+  padding-bottom: 0.32em;
+  border-bottom: 1px solid var(--rule);
+}
+.prose h3 {
+  font-size: 0.98rem;
+  letter-spacing: 0.06em;
+  margin: 1.4em 0 0.4em;
+}
+.prose blockquote {
+  margin: 0 0 1.4em;
+  padding: 0;
+}
+.prose blockquote p {
+  text-indent: 0;
+  font-size: 1.04rem;
+  color: var(--ink-2);
+}
+.prose ul,
+.prose ol {
+  margin: 0.3em 0 1em;
+  padding-left: 1.3em;
+}
+.prose li {
+  position: relative;
+  margin: 0.32em 0;
+}
+.prose li p {
+  text-indent: 0;
+}
+.prose ul > li::before {
+  content: '';
+  position: absolute;
+  left: -0.95em;
+  top: 0.92em;
+  width: 6px;
+  height: 1px;
+  background: var(--ink-3);
+}
+.prose ol {
+  counter-reset: prose-n;
+}
+.prose ol > li {
+  counter-increment: prose-n;
+}
+.prose ol > li::before {
+  content: counter(prose-n) '.';
+  position: absolute;
+  left: -1.35em;
+  font-family: var(--mono);
+  font-size: 0.82em;
+  color: var(--accent);
+}
+/* 楷体没有真粗体，合成加粗会发糊：着重一律交给专色 */
+.prose strong {
+  font-weight: 400;
+  color: var(--accent);
+}
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  background: var(--paper-2);
+  padding: 1px 4px;
+}
+.prose a {
+  border-bottom: 1px solid var(--rule-strong);
+}
+.prose a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 1.6em 0;
+}
+.prose table {
+  margin: 0.6em 0 1.2em;
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+}
+.prose th,
+.prose td {
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 0.86rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- 本期观察（编者按） ---------- */
+
+.observation {
+  margin-top: 56px;
+  padding: 24px 30px 6px;
+  border: 1px solid var(--ink-rule);
+  background: color-mix(in srgb, var(--paper-2) 60%, var(--paper));
+}
+.observation-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rule-strong);
+}
+.observation-head h2 {
+  font-size: 1.16rem;
+  letter-spacing: 0.16em;
+}
+.observation-head span {
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+}
+.observation .prose {
+  max-width: 40em;
+  margin: 0;
 }
 
 /* ---------- 目录（归档） ---------- */
@@ -1216,6 +1492,32 @@ body[data-role]:not([data-role="all"]) .repo .rel {
   .panel {
     padding-top: 40px;
   }
+  /* 浮层在窄屏上贴边铺满，把宽度还给正文 */
+  .reader {
+    width: 100vw;
+    max-height: 92dvh;
+    border-left: 0;
+    border-right: 0;
+  }
+  .reader-body {
+    padding: 20px 18px 8px;
+  }
+  .observation {
+    padding: 18px 18px 4px;
+  }
+  .observation-head {
+    flex-direction: column;
+    gap: 4px;
+  }
+  /* 窄屏把动作竖排：否则「评分依据」被挤到按钮右侧，条形只剩几十像素 */
+  .repo-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .repo-actions .breakdown {
+    width: 100%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1329,7 +1631,9 @@ h3,
   .nav,
   .controls,
   .pager,
-  .ctrl-nav {
+  .ctrl-nav,
+  .reader,
+  .repo-actions {
     display: none;
   }
   body::after {

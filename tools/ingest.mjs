@@ -36,6 +36,8 @@ if (!flag('--source')) {
 const SRC_REPORTS = path.join(SOURCE, 'data/reports');
 const SRC_SUMMARIES = path.join(SOURCE, 'data/summaries');
 const SRC_SNAPSHOTS = path.join(SOURCE, 'data/snapshots');
+/* 上游逐项详细解读：data/interpretations/<date>/<owner>__<name>.md，另有一份 index.md 是本期观察 */
+const SRC_INTERP = path.join(SOURCE, 'data/interpretations');
 
 const readJson = (p, fallback = null) => {
   try {
@@ -57,9 +59,28 @@ function writeIfChanged(file, value) {
   return true;
 }
 
+function writeIfChangedText(file, text) {
+  try {
+    if (fs.readFileSync(file, 'utf8') === text) return false;
+  } catch {
+    /* 新文件 */
+  }
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, text, 'utf8');
+  return true;
+}
+
 function listJson(dir) {
   try {
     return fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort();
+  } catch {
+    return [];
+  }
+}
+
+function listMd(dir) {
+  try {
+    return fs.readdirSync(dir).filter((f) => f.endsWith('.md')).sort();
   } catch {
     return [];
   }
@@ -120,9 +141,17 @@ function ingestDate(date, snapshots) {
     }
   }
 
+  // 逐项解读：整份 .md 原样搬运，渲染交给站点（见 src/lib/interpretations.ts）
+  let interp = 0;
+  const interpDir = path.join(SRC_INTERP, date);
+  for (const f of listMd(interpDir)) {
+    const md = fs.readFileSync(path.join(interpDir, f), 'utf8');
+    if (writeIfChangedText(path.join(DATA, 'interpretations', date, f), md)) interp++;
+  }
+
   const n = (report.categories || []).reduce((sum, c) => sum + (c.items || []).length, 0);
   console.log(
-    `   ${date}  入选 ${String(n).padStart(2)}  报告${changedReport ? '更新' : '未变'}  摘要${summary ? (changedSummary ? '更新' : '未变') : '缺失'}  序列${seriesTouched}条`
+    `   ${date}  入选 ${String(n).padStart(2)}  报告${changedReport ? '更新' : '未变'}  摘要${summary ? (changedSummary ? '更新' : '未变') : '缺失'}  解读${interp ? `${interp}篇更新` : '未变'}  序列${seriesTouched}条`
   );
   return { date, count: n };
 }

@@ -1,0 +1,29 @@
+---
+import type { IssueItem } from '../lib/schema';
+import type { Interpretation } from '../lib/interpretations';
+
+interface Props {
+  item: IssueItem;
+  doc: Interpretation;
+}
+
+const { item, doc } = Astro.props;
+const slug = item.full_name.replace('/', '__');
+---
+
+<!--
+  浮层统一挂在条目列表之外渲染：dialog 若嵌在 .repo 这类栅格项里，
+  会被那一层的层叠上下文困住，:target 打开时压不住书眉和索引条。
+-->
+<dialog class="reader" id={`read-${slug}`} aria-labelledby={`read-${slug}-title`}>
+  <div class="reader-head">
+    <span class="reader-kicker">详细解读</span>
+    <h2 class="reader-title mono" id={`read-${slug}-title`}>{item.full_name}</h2>
+    <a class="reader-close" href={`#repo-${slug}`} data-read-close aria-label="关闭详细解读">×</a>
+  </div>
+  <div class="reader-body prose" set:html={doc.html} />
+  <div class="reader-foot">
+    <span>依据仓库 README 与 GitHub 元数据生成</span>
+    <a href={item.url} target="_blank" rel="noopener noreferrer">在 GitHub 打开</a>
+  </div>
+</dialog>

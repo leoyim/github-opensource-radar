@@ -12,6 +12,7 @@
   "dependencies": {
     "astro": "^5.0.0",
     "lunar-javascript": "^1.7.7",
-    "lxgw-wenkai-webfont": "^1.7.0"
+    "lxgw-wenkai-webfont": "^1.7.0",
+    "marked": "^18.1.1"
   }
 }

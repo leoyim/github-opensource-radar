@@ -5,10 +5,11 @@
 ## 与其他项目的关系
 
 ```
-上游日报项目（产出方）                本站（消费方）
-  data/reports/<date>.json      ──只读──►  _data/reports/<date>.json
-  data/summaries/<date>.json    ──只读──►  _data/summaries/<date>.json
-  data/snapshots/<date>.json    ──只读──►  _data/series/*.json（星标序列）
+上游日报项目（产出方）                      本站（消费方）
+  data/reports/<date>.json          ──只读──►  _data/reports/<date>.json
+  data/summaries/<date>.json        ──只读──►  _data/summaries/<date>.json
+  data/snapshots/<date>.json        ──只读──►  _data/series/*.json（星标序列）
+  data/interpretations/<date>/*.md  ──只读──►  _data/interpretations/<date>/*.md
 ```
 
 - 本站**从不写入上游目录**，也不 import 上游任何代码。
@@ -67,6 +68,17 @@ npm run build      # 产出 dist/
 - 书眉常驻：滚动进入第几章，导航里就显示该章章名，与实体书展开时书眉印章名同理。
 - 深浅色是同一套体系的两种纸：浅色为纸白墨字，深色为夜间墨纸。主题由 `data-theme` 切换，跟随系统偏好并记住手动选择。
 
+## 详细解读
+
+上游给每个项目单独产出一篇解读（`data/interpretations/<date>/<owner>__<name>.md`），`tools/ingest.mjs` 原样搬进 `_data/interpretations/`，构建期渲染成 HTML。
+
+- **剥壳**：上游文件里与页面重复的部分（frontmatter、H1、「指标」表、结尾的 `<sub>` 署名）在 `src/lib/interpretations.ts` 里剥掉，避免同一页出现两套互相打架的数字。哪一段没匹配上就原样保留，不猜测。
+- **渲染**：用 `marked`（MIT）在构建期转成 HTML，不注册任何客户端组件，产物里是静态 HTML。
+- **交互**：条目尾部一个「详细解读 · 约 N 字」按钮，打开原生 `<dialog>` 浮层。焦点锁在层内，ESC 关闭，关闭后焦点回到按钮，点浮层外面也能关。
+- **无 JS 兜底**：按钮本身是 `href="#read-<slug>"`，`.reader:target` 一条 CSS 就能把浮层打开。脚本没跑起来时 hash 就是开关，正文照样读得到；关闭链接回到该条目锚点。
+- **本期观察**：同一目录下 `index.md` 里的「本期横向观察」一节，取出来放在正文末尾，用方框排成编者按。
+- 没有解读的期次不渲染按钮，整节省略，不留空壳。
+
 ## 农历与节气
 
 封面右侧一栏给出农历与节气：`农历 丙午年 九月十七`、`节气 距立冬 12 日`（当天正好是节气则显示「今日霜降」）。目录里只在那一天恰逢节气时点一个专色标记。
@@ -117,3 +129,5 @@ npm run build      # 产出 dist/
 
 - 星标走势依赖 `_data/series/` 的逐日累积，首期没有更早的历史点，曲线会较短。
 - 站内不出现任何邮箱等联系信息，页面可直接公开。
+- 详细解读从上游开始产出的那一期才有，早期期次没有按钮，也不补写。
+- 一期 30 篇解读的全文都写进同一张页面（约 150KB HTML，gzip 后很小），换来的是无 JS 也能读到全文；页面上不额外请求任何接口。

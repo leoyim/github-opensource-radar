@@ -1,7 +1,9 @@
 ---
 import RepoRow from './RepoRow.astro';
+import ReaderDialog from './ReaderDialog.astro';
 import { seriesFor, displayDate, weekdayOf, neighborsOf } from '../lib/load';
 import { almanacOf, jieQiLine } from '../lib/almanac';
+import { interpretationOf, observationOf } from '../lib/interpretations';
 import { ROLE_LABELS, roleLabel } from '../lib/format';
 import type { Issue } from '../lib/schema';
 
@@ -29,6 +31,15 @@ const total = issue.stats.selected;
 const perCat = Math.max(...issue.categories.map((c) => c.items.length));
 /* 阳历用阿拉伯数字，农历用汉字，节气单独一行。全部在构建期算好 */
 const almanac = almanacOf(issue.date);
+/* 本期观察：上游 index.md 的横向分析，没有就整节省略 */
+const observation = observationOf(issue.date);
+/* 有解读的条目，浮层集中放在条目列表之外渲染 */
+const readers = issue.categories
+  .flatMap((c) => c.items)
+  .flatMap((item) => {
+    const doc = interpretationOf(issue.date, item.full_name);
+    return doc ? [{ item, doc }] : [];
+  });
 const baselineNote =
   issue.baseline.heatBasis === 'snapshot' ? '热度取与上一份快照对比的真实日增' : '首期无基线，热度按星标速度估算';
 const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : '无';
@@ -157,7 +168,12 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
           ) : (
             <div class="repo-list">
               {cat.items.map((item, i) => (
-                <RepoRow item={item} index={i + 1} series={seriesFor(item.full_name)} />
+                <RepoRow
+                  item={item}
+                  index={i + 1}
+                  series={seriesFor(item.full_name)}
+                  interpretation={interpretationOf(issue.date, item.full_name)}
+                />
               ))}
             </div>
           )}
@@ -165,6 +181,20 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       ))
     }
   </div>
+
+  {readers.map(({ item, doc }) => <ReaderDialog item={item} doc={doc} />)}
+
+  {
+    observation && (
+      <section class="observation" id="observation">
+        <header class="observation-head">
+          <h2>本期观察</h2>
+          <span>{total} 个项目横向对齐之后</span>
+        </header>
+        <div class="prose" set:html={observation} />
+      </section>
+    )
+  }
 
   <nav class="pager" aria-label="翻页">
     {
@@ -420,6 +450,38 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
         });
       });
   }
+
+  /* 详细解读：有 JS 时走原生 dialog（焦点锁在层内、ESC 可关、关闭后焦点回到按钮）。
+     无 JS 时 dlg 上的 :target 规则接管，链接的 hash 就是开关，正文照样读得到。 */
+  document.querySelectorAll<HTMLElement>('[data-read]').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const dlg = document.getElementById(`read-${btn.dataset.read}`) as HTMLDialogElement | null;
+      if (!dlg || typeof dlg.showModal !== 'function') return;
+      e.preventDefault();
+      dlg.showModal();
+    });
+  });
+
+  document.querySelectorAll<HTMLElement>('[data-read-close]').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const dlg = btn.closest('dialog') as HTMLDialogElement | null;
+      if (!dlg) return;
+      e.preventDefault();
+      dlg.close();
+    });
+  });
+
+  /* 点浮层外面关闭。只有落在 dialog 盒子之外才算「外面」，
+     免得在正文留白处点击也把窗口关掉。 */
+  document.querySelectorAll<HTMLDialogElement>('dialog.reader').forEach((dlg) => {
+    dlg.addEventListener('click', (e) => {
+      if (e.target !== dlg) return;
+      const r = dlg.getBoundingClientRect();
+      const inside =
+        e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+      if (!inside) dlg.close();
+    });
+  });
 
   readUrl();
   render();

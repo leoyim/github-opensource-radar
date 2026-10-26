@@ -4,20 +4,26 @@ import MetricBars from './MetricBars.astro';
 import Sparkline from './Sparkline.astro';
 import { num, heatLabel } from '../lib/format';
 import type { IssueItem, SeriesPoint } from '../lib/schema';
+import type { Interpretation } from '../lib/interpretations';
 
 interface Props {
   item: IssueItem;
   index: number;
   series?: SeriesPoint[];
+  interpretation?: Interpretation | null;
 }
 
-const { item, index, series = [] } = Astro.props;
+const { item, index, series = [], interpretation = null } = Astro.props;
 const scores = item.roleScores ?? {};
 const hasScores = Object.keys(scores).length > 0;
 const starValues = series.map((p) => p.stars);
+
+const slug = item.full_name.replace('/', '__');
+const words = interpretation ? Math.max(100, Math.round(interpretation.chars / 100) * 100) : 0;
+const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
 ---
 
-<article class="repo" data-rank={index} data-scores={JSON.stringify(scores)} data-name={item.full_name}>
+<article class="repo" id={`repo-${slug}`} data-rank={index} data-scores={JSON.stringify(scores)} data-name={item.full_name}>
   <div class="repo-rank mono">#{index}</div>
 
   <div class="repo-main">
@@ -56,7 +62,19 @@ const starValues = series.map((p) => p.stars);
       )
     }
 
-    <MetricBars breakdown={item.breakdown} />
+    {
+      hasActions && (
+        <div class="repo-actions">
+          {interpretation && (
+            <a class="read-btn" href={`#read-${slug}`} data-read={slug}>
+              详细解读
+              <span class="read-btn-n mono">约 {words} 字</span>
+            </a>
+          )}
+          <MetricBars breakdown={item.breakdown} />
+        </div>
+      )
+    }
   </div>
 
   <div class="repo-side">
@@ -71,4 +89,5 @@ const starValues = series.map((p) => p.stars);
       )
     }
   </div>
+
 </article>
