@@ -12,8 +12,8 @@ const links = [
 <header class="nav">
   <div class="nav-inner">
     <a class="brand" href={base}>
-      <!-- 外圈承担两件事：载入时扫掠一次（品牌动作），滚动时显示进度（功能） -->
-      <svg class="brand-mark" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <!-- 外圈显示整页阅读进度：状态指示，不是动画，减弱动效时依然成立 -->
+      <svg class="brand-mark" width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
         <circle class="ring-track" cx="10" cy="10" r="8.2" stroke="currentColor" stroke-width="1.2" />
         <circle
           class="ring-progress"
@@ -23,19 +23,10 @@ const links = [
           pathLength="100"
           stroke="currentColor"
           stroke-width="1.2"
-          stroke-linecap="round"></circle>
-        <circle
-          class="ring-sweep"
-          cx="10"
-          cy="10"
-          r="8.2"
-          pathLength="100"
-          stroke="currentColor"
-          stroke-width="1.2"
-          stroke-linecap="round"></circle>
-        <circle cx="10" cy="10" r="4.6" stroke="currentColor" stroke-width="1.2" opacity=".5" />
-        <circle cx="10" cy="10" r="1.4" fill="currentColor" />
-        <path d="M10 10 L16.4 4.4" stroke="currentColor" stroke-width="1.2" />
+          stroke-linecap="butt"></circle>
+        <circle cx="10" cy="10" r="4.6" stroke="currentColor" stroke-width="1" opacity=".45" />
+        <circle cx="10" cy="10" r="1.3" fill="currentColor" />
+        <path d="M10 10 L16.4 4.4" stroke="currentColor" stroke-width="1" />
       </svg>
       <span>开源雷达</span>
       <span class="brand-sub">OpenSource Radar</span>

@@ -18,17 +18,14 @@ const starValues = series.map((p) => p.stars);
 ---
 
 <article class="repo" data-rank={index} data-scores={JSON.stringify(scores)} data-name={item.full_name}>
-  <div class="repo-rank mono">
-    {index === 1 && <span class="signal" aria-hidden="true"></span>}
-    #{index}
-  </div>
+  <div class="repo-rank mono">#{index}</div>
 
   <div class="repo-main">
-    <div class="repo-title">
+    <h3 class="repo-title">
       <span class="repo-owner">{item.owner} /</span>
       <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
-      {item.language && <span class="mono small faint">{item.language}</span>}
-    </div>
+      {item.language && <span class="repo-lang mono">{item.language}</span>}
+    </h3>
 
     {item.description && <p class="repo-desc">{item.description}</p>}
 
@@ -37,7 +34,7 @@ const starValues = series.map((p) => p.stars);
       <span><strong>{num(item.forks)}</strong> forks</span>
       {
         item.starGain != null && item.starGain > 0 ? (
-          <span class="gain">+{num(item.starGain)} / 日</span>
+          <span class="gain"><strong>+{num(item.starGain)}</strong> / 日</span>
         ) : (
           <span>≈ {item.heat} / 天</span>
         )

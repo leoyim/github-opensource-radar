@@ -36,7 +36,7 @@ const year = 2026;
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#fbfbfa" />
+    <meta name="theme-color" content="#eeefea" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -53,7 +53,7 @@ const year = 2026;
           document.documentElement.dataset.theme = t;
           // 让浏览器 UI（地址栏 / 状态栏）跟随实际主题，而不是系统偏好
           var m = document.querySelector('meta[name="theme-color"]');
-          if (m) m.setAttribute('content', t === 'dark' ? '#0b0c0d' : '#fbfbfa');
+          if (m) m.setAttribute('content', t === 'dark' ? '#101312' : '#eeefea');
         } catch (e) {}
       })();
     </script>
@@ -65,16 +65,23 @@ const year = 2026;
       <slot />
     </main>
     <footer class="foot">
-      <div class="wrap">
-        <p>
-          数据来源：GitHub Trending 页面与 Search API；摘要由模型基于仓库 README 撰写，评分规则见每条的「评分依据」。
-          热度优先取与上一份快照对比的真实日增，无基线时按星标速度估算。
-        </p>
-        <p class="mono">
-          静态生成 · 无追踪 · 无外部脚本 · 正文字体 <a href={`${base}fonts/OFL.txt`}>霞鹜文楷等宽</a> (OFL-1.1)
-          · <a href={issueNewUrl} target="_blank" rel="noopener noreferrer">建议反馈</a>
-          · <span class="faint">© {year} OpenSource Radar</span>
-        </p>
+      <div class="wrap colophon">
+        <div>
+          <p class="colophon-name">开源雷达<em>OpenSource Radar</em></p>
+          <p>
+            数据来源为 GitHub Trending 页面与 Search API。摘要由模型依据仓库 README 撰写，评分规则见每条末尾的「评分依据」。
+            热度优先取与上一份快照对比的真实日增，无基线时按星标速度估算。
+          </p>
+          <p class="imprint">
+            静态生成，无追踪，无外部脚本<br />
+            正文字体 <a href={`${base}fonts/OFL.txt`}>霞鹜文楷等宽</a>（OFL-1.1）
+            <br />
+            <a href={issueNewUrl} target="_blank" rel="noopener noreferrer">建议与勘误</a>
+            <br />
+            © {year} OpenSource Radar
+          </p>
+        </div>
+        <div class="seal" aria-hidden="true"><span>开源</span><span>雷达</span></div>
       </div>
     </footer>
     <button class="to-top" type="button" data-to-top aria-label="回到顶部">↑</button>
@@ -87,7 +94,7 @@ const year = 2026;
           btn.setAttribute('aria-label', mode === 'dark' ? '切换到浅色' : '切换到深色');
         }
         var meta = document.querySelector('meta[name="theme-color"]');
-        if (meta) meta.setAttribute('content', mode === 'dark' ? '#0b0c0d' : '#fbfbfa');
+        if (meta) meta.setAttribute('content', mode === 'dark' ? '#101312' : '#eeefea');
       }
       document.addEventListener('click', function (e) {
         var btn = e.target.closest('[data-theme-toggle]');

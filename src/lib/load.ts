@@ -86,5 +86,23 @@ export const displayDate = (date: string): string => {
   return `${Number(m)} 月 ${Number(d)} 日`;
 };
 
+/** 汉字数字（1 - 31 足够覆盖月份与日期） */
+const CN_DIGITS = '零一二三四五六七八九';
+
+function cnNumber(n: number): string {
+  if (n < 10) return CN_DIGITS[n];
+  if (n === 10) return '十';
+  if (n < 20) return `十${CN_DIGITS[n % 10]}`;
+  const tens = Math.floor(n / 10);
+  const rest = n % 10;
+  return `${CN_DIGITS[tens]}十${rest ? CN_DIGITS[rest] : ''}`;
+}
+
+/** 版面用的汉字日期：十月二十六日。目录、封面标题用，<title> 仍用阿拉伯数字 */
+export const displayDateCn = (date: string): string => {
+  const [, m, d] = date.split('-');
+  return `${cnNumber(Number(m))}月${cnNumber(Number(d))}日`;
+};
+
 export const weekdayOf = (date: string): string =>
   ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][new Date(`${date}T00:00:00+08:00`).getDay()];

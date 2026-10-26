@@ -1,6 +1,6 @@
 ---
 import RepoRow from './RepoRow.astro';
-import { seriesFor, displayDate, weekdayOf, neighborsOf } from '../lib/load';
+import { seriesFor, displayDateCn, weekdayOf, neighborsOf } from '../lib/load';
 import { ROLE_LABELS, roleLabel } from '../lib/format';
 import type { Issue } from '../lib/schema';
 
@@ -14,6 +14,9 @@ const { issue, issueNo, latest = false } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const { prev, next } = neighborsOf(issue.date);
 
+/** 章次用汉字数字：一 二 三。超过十期时退化为阿拉伯数字，不做花活 */
+const CN_NO = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
+
 /** 站点自持角色展示名，仅用报告里出现过的角色键，避免与上游配置耦合。
  *  上游 roleScores 里带有 all:100（"不筛选"），这里排除，否则会多出一个空按钮。 */
 const roles = [...new Set(issue.categories.flatMap((c) => c.items.flatMap((i) => Object.keys(i.roleScores ?? {}))))]
@@ -22,35 +25,56 @@ const roles = [...new Set(issue.categories.flatMap((c) => c.items.flatMap((i) =>
   .sort((a, b) => Object.keys(ROLE_LABELS).indexOf(a.id) - Object.keys(ROLE_LABELS).indexOf(b.id));
 
 const total = issue.stats.selected;
+const perCat = Math.max(...issue.categories.map((c) => c.items.length));
 const baselineNote =
   issue.baseline.heatBasis === 'snapshot' ? '热度取与上一份快照对比的真实日增' : '首期无基线，热度按星标速度估算';
-const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : null;
+const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : '无';
 ---
 
 <article class="issue">
-  <header class="hero">
-    <p class="hero-top mono">
-      <span>Issue {String(issueNo).padStart(2, '0')}</span>
-      <span>{weekdayOf(issue.date)}</span>
-      {latest && <span>最新一期</span>}
-    </p>
-    <h1>
-      <span class="h1-kicker">GitHub 热点日报</span>
-      <time class="h1-date" datetime={issue.date}>{displayDate(issue.date)}</time>
-    </h1>
-    <p class="hero-lede">
-      从 {issue.stats.candidates} 个候选仓库中按四项指标加权，每个方向取前
-      {Math.max(...issue.categories.map((c) => c.items.length))} 个，共 {total} 个项目，附中文精读摘要。
-    </p>
-    <div class="hero-stats">
-      <div class="hero-stat"><b>{issue.stats.candidates}</b><span>今日候选</span></div>
-      <div class="hero-stat"><b>{total}</b><span>入选项目</span></div>
-      <div class="hero-stat"><b>{issue.categories.length}</b><span>覆盖方向</span></div>
-      <div class="hero-stat"><b>{issue.stats.suppressedByHistory}</b><span>去重拦截</span></div>
-      <div class="hero-stat" title={baselineNote}>
-        <b>{baselineDate ?? '—'}</b><span>对比基线</span>
-      </div>
+  <header class="cover">
+    <div class="cover-main">
+      <p class="cover-kicker">GitHub 热点日报</p>
+      <h1><time datetime={issue.date}>{displayDateCn(issue.date)}</time></h1>
+      <p class="cover-lede">
+        从 {issue.stats.candidates} 个候选仓库中按四项指标加权，每个方向取前 {perCat}
+        个，共 {total} 个项目，附中文精读摘要。
+      </p>
     </div>
+
+    <aside class="cover-meta">
+      <dl>
+        <div><dt>期次</dt><dd>第 {String(issueNo).padStart(2, '0')} 期</dd></div>
+        <div><dt>星期</dt><dd>{weekdayOf(issue.date)}</dd></div>
+        <div><dt>对比基线</dt><dd>{baselineDate}</dd></div>
+        {latest && <div><dt>状态</dt><dd class="tag">最新一期</dd></div>}
+      </dl>
+    </aside>
+
+    <figure class="cover-table">
+      <table>
+        <caption class="vh">本期概览</caption>
+        <thead>
+          <tr>
+            <th scope="col">候选</th>
+            <th scope="col">入选</th>
+            <th scope="col">覆盖方向</th>
+            <th scope="col">去重拦截</th>
+            <th scope="col">每向上限</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{issue.stats.candidates}</td>
+            <td>{total}</td>
+            <td>{issue.categories.length}</td>
+            <td>{issue.stats.suppressedByHistory}</td>
+            <td>{perCat}</td>
+          </tr>
+        </tbody>
+      </table>
+      <figcaption>表 1　本期概览　｜　{baselineNote}</figcaption>
+    </figure>
   </header>
 
   <div class="controls">
@@ -116,9 +140,9 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       issue.categories.map((cat, ci) => (
         <section class="cat" id={`cat-${cat.id}`} data-cat={cat.id}>
           <header class="cat-head">
-            <span class="cat-index" aria-hidden="true">{String(ci + 1).padStart(2, '0')}</span>
+            <span class="cat-no" aria-hidden="true">{CN_NO[ci] ?? String(ci + 1)}</span>
             <h2>{cat.label}</h2>
-            <span class="cat-desc">{cat.desc}</span>
+            <p class="cat-desc">{cat.desc}</p>
           </header>
           {cat.items.length === 0 ? (
             <p class="empty">
@@ -142,7 +166,7 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       prev ? (
         <a href={`${base}posts/${prev}/`}>
           <span>上一期</span>
-          {displayDate(prev)}
+          {displayDateCn(prev)}
         </a>
       ) : (
         <span />
@@ -152,7 +176,7 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       next ? (
         <a class="next" href={`${base}posts/${next}/`}>
           <span>下一期</span>
-          {displayDate(next)}
+          {displayDateCn(next)}
         </a>
       ) : (
         <span />
