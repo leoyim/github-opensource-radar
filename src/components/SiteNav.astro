@@ -5,6 +5,7 @@ const path = Astro.url.pathname;
 const links = [
   { href: base, label: '最新一期', match: (p: string) => p === base || p === `${base}index.html` },
   { href: `${base}archive/`, label: '归档', match: (p: string) => p.startsWith(`${base}archive`) },
+  { href: `${base}projects/`, label: '项目索引', match: (p: string) => p.startsWith(`${base}projects`) },
   { href: `${base}stats/`, label: '长期观察', match: (p: string) => p.startsWith(`${base}stats`) },
 ];
 ---
@@ -31,7 +32,7 @@ const links = [
       <span>开源雷达</span>
       <span class="brand-sub">OpenSource Radar</span>
     </a>
-    <span class="nav-run" data-running-head aria-hidden="true"></span>
+    <span class="nav-run" data-running-head aria-hidden="true"><span data-running-stamp></span><span data-running-chap></span></span>
     <nav class="nav-links">
       {
         links.map((l) => (

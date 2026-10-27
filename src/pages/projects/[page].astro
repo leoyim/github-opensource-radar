@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProjectsView from '../../components/ProjectsView.astro';
+import { allProjects, pageCount, pageSlice } from '../../lib/projects';
+
+/** 第 1 页由 index.astro 承担，这里只生成 2..N，避免同一内容两个 URL */
+export function getStaticPaths() {
+  const all = allProjects();
+  const pages = pageCount(all.length);
+  return Array.from({ length: pages - 1 }, (_, i) => {
+    const page = i + 2;
+    return { params: { page: String(page) }, props: { page } };
+  });
+}
+
+const { page } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const all = allProjects();
+const pages = pageCount(all.length);
+---
+
+<Base
+  title={`项目索引 · 第 ${page} 页 · 开源雷达`}
+  description={`全部 ${all.length} 个入选项目的目录，第 ${page} 页。按最近上榜排序，支持按语言筛选。`}>
+  <ProjectsView
+    items={pageSlice(all, page)}
+    page={page}
+    pages={pages}
+    total={all.length}
+    basePath={`${base}projects/`}
+  />
+</Base>

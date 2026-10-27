@@ -1,0 +1,64 @@
+---
+/**
+ * 项目索引里的一行。比正文卡片紧凑：一屏能看八到十条，符合「索引」的密度。
+ * 点击直达该仓库在最近一期里的锚点（正文里已有 id="repo-<slug>"）。
+ */
+import { avatarOf } from '../lib/load';
+import { num } from '../lib/format';
+import type { Project } from '../lib/projects';
+
+interface Props {
+  project: Project;
+  base: string;
+}
+
+const { project: p, base } = Astro.props;
+const avatar = avatarOf(p.owner);
+const slug = p.full_name.replace('/', '__');
+const href = `${base}posts/${p.date}/#repo-${slug}`;
+const day = p.date.slice(5);
+const gain = typeof p.starGain === 'number' && p.starGain > 0 ? p.starGain : null;
+const blurb = p.summary_zh || p.description || '';
+---
+
+<a class="proj" href={href}>
+  <span class="proj-mark">
+    <span>{p.owner.slice(0, 1)}</span>
+    {
+      avatar && (
+        <img
+          src={avatar}
+          alt=""
+          width="68"
+          height="68"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+          onerror="this.remove()"
+        />
+      )
+    }
+  </span>
+
+  <span class="proj-body">
+    <span class="proj-line">
+      <span class="proj-name">
+        <span class="proj-owner">{p.owner} /</span>
+        {p.name}
+      </span>
+      <span class="proj-meta">
+        {p.language && <span>{p.language}</span>}
+        <span>{p.rating.toFixed(1)} 分</span>
+        <span>{num(p.stars)} ★</span>
+        {gain ? <span class="proj-gain">+{num(gain)} / 日</span> : <span>≈ {num(Math.round(p.heat))} / 天</span>}
+      </span>
+    </span>
+    {blurb && <span class="proj-zh">{blurb}</span>}
+  </span>
+
+  <span class="proj-tail">
+    <span class="proj-no">#{String(p.rank).padStart(2, '0')}</span>
+    <span>{day}</span>
+    {p.times > 1 && <span class="proj-times">×{p.times}</span>}
+  </span>
+</a>

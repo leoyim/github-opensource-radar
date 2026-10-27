@@ -1,0 +1,57 @@
+---
+/**
+ * 页码。第 1 页不生成 /1/，所以总是指回目录本身。
+ * 页数超过 7 时开窗：首末页 + 当前页邻域，中间用省略号收掉。
+ */
+interface Props {
+  page: number;
+  pages: number;
+  basePath: string;
+}
+
+const { page, pages, basePath } = Astro.props;
+const hrefOf = (n: number) => (n === 1 ? basePath : `${basePath}${n}/`);
+
+const marks: (number | 'gap')[] = (() => {
+  if (pages <= 7) return Array.from({ length: pages }, (_, i) => i + 1);
+  const picked = [...new Set([1, pages, page - 1, page, page + 1])]
+    .filter((n) => n >= 1 && n <= pages)
+    .sort((a, b) => a - b);
+  const out: (number | 'gap')[] = [];
+  picked.forEach((n, i) => {
+    if (i > 0 && n - picked[i - 1] > 1) out.push('gap');
+    out.push(n);
+  });
+  return out;
+})();
+---
+
+<nav class="pages" aria-label="翻页">
+  {
+    page > 1 ? (
+      <a class="pages-step" href={hrefOf(page - 1)} rel="prev">‹ 上一页</a>
+    ) : (
+      <span class="pages-step is-off">‹ 上一页</span>
+    )
+  }
+  {
+    marks.map((n) =>
+      n === 'gap' ? (
+        <span class="pages-gap">…</span>
+      ) : n === page ? (
+        <span class="pages-cur" aria-current="page">
+          {n}
+        </span>
+      ) : (
+        <a href={hrefOf(n)}>{n}</a>
+      )
+    )
+  }
+  {
+    page < pages ? (
+      <a class="pages-step" href={hrefOf(page + 1)} rel="next">下一页 ›</a>
+    ) : (
+      <span class="pages-step is-off">下一页 ›</span>
+    )
+  }
+</nav>

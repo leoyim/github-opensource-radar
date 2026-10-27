@@ -45,7 +45,7 @@ const baselineNote =
 const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : '无';
 ---
 
-<article class="issue">
+<article class="issue" data-nav-stamp={`${displayDate(issue.date)} · 第 ${String(issueNo).padStart(2, '0')} 期`}>
   <header class="cover">
     <div class="cover-main">
       <p class="cover-kicker">GitHub 热点日报</p>
@@ -261,6 +261,13 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
         return (parseScores(b)[currentRole] ?? 0) - (parseScores(a)[currentRole] ?? 0);
       });
 
+      // 顺序没变就不碰 DOM。appendChild 会先把节点摘下来再插回去，
+      // 从项目索引带 #repo-xxx 进来时，这次重排会把浏览器刚做好的锚点定位清掉，
+      // 表现就是只跳到期次页顶部、没有落到具体条目。
+      const current = Array.from(list.querySelectorAll(':scope > .repo'));
+      const unchanged = current.length === rows.length && rows.every((row, i) => current[i] === row);
+      if (unchanged) return;
+
       rows.forEach((row, i) => {
         list.appendChild(row);
         const rank = row.querySelector('.repo-rank');
@@ -307,7 +314,10 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
     if (currentRole !== 'all') p.set('role', currentRole);
     if (currentCat !== 'all') p.set('cat', currentCat);
     const q = p.toString();
-    const url = q ? location.pathname + '?' + q : location.pathname;
+    const path = q ? location.pathname + '?' + q : location.pathname;
+    // 初始化那次要留住页内锚点（从项目索引跳进来的 #repo-xxx）；
+    // 用户自己切换筛选时锚点已经失去意义，顺手丢掉。
+    const url = push ? path : path + location.hash;
     history[push ? 'pushState' : 'replaceState'](null, '', url);
   }
 
@@ -361,13 +371,27 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       b.classList.toggle('is-current', id === active);
     });
 
-    // 书眉：当前位置的章名跟着走，只在真的换了章才写 DOM
+    /* 书眉：筛选条贴住书眉之前什么都不显示，贴住之后露出本期日期与期次，
+       后面再跟当前方向。两段分开写，窄屏可以只留期次。 */
     const head = document.querySelector('[data-running-head]');
     if (head) {
-      const label = active
-        ? (document.querySelector(`[data-cat-btn="${active}"]`)?.textContent || '').trim()
-        : '';
-      if (head.textContent !== label) head.textContent = label;
+      const navH = document.querySelector('.nav')?.getBoundingClientRect().height ?? 60;
+      const controls = document.querySelector('.controls');
+      // .controls 是 sticky top: var(--h-nav)，吸顶时它的顶边恒等于书眉高度
+      const stuck = controls ? controls.getBoundingClientRect().top <= navH + 1 : false;
+
+      const stampEl = head.querySelector<HTMLElement>('[data-running-stamp]');
+      const chapEl = head.querySelector<HTMLElement>('[data-running-chap]');
+      const stamp = stuck ? (document.querySelector('.issue') as HTMLElement | null)?.dataset.navStamp || '' : '';
+      const chap =
+        stuck && active ? (document.querySelector(`[data-cat-btn="${active}"]`)?.textContent || '').trim() : '';
+
+      // 只在内容真的变了才写 DOM，避免滚动时每帧触发样式重算
+      if (stampEl && stampEl.textContent !== stamp) stampEl.textContent = stamp;
+      if (chapEl && chapEl.textContent !== chap) chapEl.textContent = chap;
+
+      const on = Boolean(stamp);
+      if (head.classList.contains('is-on') !== on) head.classList.toggle('is-on', on);
     }
   }
 
@@ -483,7 +507,22 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
     });
   });
 
+  /* 带 #repo-xxx 进来时补一次定位：浏览器的锚点跳转发生在脚本之前，
+     只要后面动过 DOM 就可能失效。延后一帧，等首屏重排彻底结束。 */
+  function restoreHash() {
+    const raw = location.hash.slice(1);
+    if (!raw) return;
+    let el: HTMLElement | null = null;
+    try {
+      el = document.getElementById(decodeURIComponent(raw));
+    } catch {
+      el = document.getElementById(raw);
+    }
+    el?.scrollIntoView({ block: 'start' });
+  }
+
   readUrl();
   render();
   writeUrl(false);
+  requestAnimationFrame(restoreHash);
 </script>

@@ -1,7 +1,5 @@
 ---
 import SiteNav from '../components/SiteNav.astro';
-// 霞鹜文楷等宽（LXGW WenKai Mono），OFL-1.1，按 unicode-range 分 97 片，浏览器只取用到的分片
-import 'lxgw-wenkai-webfont/lxgwwenkaimono-regular.css';
 import '../styles/global.css';
 
 interface Props {
@@ -73,8 +71,6 @@ const year = 2026;
             热度优先取与上一份快照对比的真实日增，无基线时按星标速度估算。
           </p>
           <p class="imprint">
-            正文字体 <a href={`${base}fonts/OFL.txt`}>霞鹜文楷等宽</a>（OFL-1.1）
-            <br />
             <a href={issueNewUrl} target="_blank" rel="noopener noreferrer">建议与勘误</a>
             <br />
             © {year} OpenSource Radar

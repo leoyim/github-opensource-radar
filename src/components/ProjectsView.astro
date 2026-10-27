@@ -1,0 +1,88 @@
+---
+/**
+ * 项目索引页主体。全部页与语言页共用：只有标题、筛选态与 basePath 不同。
+ */
+import { catalogTotals, langStats, PAGE_SIZE, type Project } from '../lib/projects';
+import ProjectRow from './ProjectRow.astro';
+import ProjectPager from './ProjectPager.astro';
+
+interface Props {
+  items: Project[];
+  page: number;
+  pages: number;
+  total: number;
+  basePath: string;
+  /** 当前语言 slug；全部页为 null */
+  activeLang?: string | null;
+  /** 当前语言显示名；全部页为 null */
+  langName?: string | null;
+}
+
+const { items, page, pages, total, basePath, activeLang = null, langName = null } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const allHref = `${base}projects/`;
+const langs = langStats();
+const totals = catalogTotals();
+const isLang = Boolean(langName);
+
+const kicker = isLang ? '语言' : '全部项目';
+const heading = isLang ? langName : '项目索引';
+const lede = isLang
+  ? `${langName} 项目共 ${total} 条，按最近上榜排序。同一仓库多次上榜只占一行，数据取最近一次出现的记录。点任意一行回到该仓库所在的那一期。`
+  : `把 ${totals.issues} 期日报里出现过的仓库摊平成一份目录，按最近上榜排序。同一仓库多次上榜只占一行，数据取最近一次出现的记录。可按语言收窄范围，逐页翻阅。`;
+
+const start = total === 0 ? 0 : (page - 1) * PAGE_SIZE + 1;
+const end = Math.min(total, start + items.length - 1);
+---
+
+<header class="cover">
+  <div class="cover-main">
+    <p class="cover-kicker">{kicker}</p>
+    <h1>{heading}</h1>
+    <p class="cover-lede">{lede}</p>
+  </div>
+  <aside class="cover-meta">
+    <dl>
+      <div><dt>条目</dt><dd>{total}</dd></div>
+      <div><dt>语言</dt><dd>{langs.length}</dd></div>
+      <div><dt>期次</dt><dd>{totals.issues}</dd></div>
+      <div><dt>起于</dt><dd>{totals.earliest.slice(5)}</dd></div>
+    </dl>
+  </aside>
+</header>
+
+<div class="filters">
+  <div class="filter-row">
+    <span class="filter-label">语言</span>
+    <div class="filter-chips">
+      <a class="chip" href={allHref} aria-pressed={activeLang === null ? 'true' : 'false'}>
+        全部 <span class="n">{totals.projects}</span>
+      </a>
+      {
+        langs.map((l) => (
+          <a
+            class="chip"
+            href={`${base}projects/lang/${l.slug}/`}
+            aria-pressed={activeLang === l.slug ? 'true' : 'false'}>
+            {l.lang} <span class="n">{l.count}</span>
+          </a>
+        ))
+      }
+    </div>
+    <span class="filter-count">
+      共 <b>{total}</b> 条{total > 0 && <span class="filter-range"> · {start}–{end}</span>}
+    </span>
+  </div>
+</div>
+
+<div class="proj-list">
+  {items.map((p) => <ProjectRow project={p} base={base} />)}
+</div>
+
+<ProjectPager page={page} pages={pages} basePath={basePath} />
+
+<div class="proj-colophon">
+  <span>共 {total} 个项目 · 第 {page} / {pages} 页 · 按最近上榜排序</span>
+  <span class="mono">开源雷达 · 项目索引</span>
+</div>

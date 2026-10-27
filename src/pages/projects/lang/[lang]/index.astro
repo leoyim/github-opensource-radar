@@ -1,0 +1,28 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import ProjectsView from '../../../../components/ProjectsView.astro';
+import { langStats, pageCount, pageSlice, projectsOfLang } from '../../../../lib/projects';
+
+export function getStaticPaths() {
+  return langStats().map((l) => ({ params: { lang: l.slug }, props: { slug: l.slug, name: l.lang } }));
+}
+
+const { slug, name } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const list = projectsOfLang(slug);
+const pages = pageCount(list.length);
+---
+
+<Base
+  title={`${name} 项目 · 开源雷达`}
+  description={`${name} 语言的入选项目共 ${list.length} 个，按最近上榜排序。`}>
+  <ProjectsView
+    items={pageSlice(list, 1)}
+    page={1}
+    pages={pages}
+    total={list.length}
+    basePath={`${base}projects/lang/${slug}/`}
+    activeLang={slug}
+    langName={name}
+  />
+</Base>

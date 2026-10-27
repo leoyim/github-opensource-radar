@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProjectsView from '../../components/ProjectsView.astro';
+import { allProjects, pageCount, pageSlice } from '../../lib/projects';
+
+const base = import.meta.env.BASE_URL;
+const all = allProjects();
+const pages = pageCount(all.length);
+---
+
+<Base
+  title="项目索引 · 开源雷达"
+  description={`全部 ${all.length} 个入选项目的目录，按最近上榜排序，支持按语言筛选与分页。`}>
+  <ProjectsView
+    items={pageSlice(all, 1)}
+    page={1}
+    pages={pages}
+    total={all.length}
+    basePath={`${base}projects/`}
+  />
+</Base>
