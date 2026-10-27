@@ -5,11 +5,14 @@
  * 约束（重要）：
  *   1. 只读上游目录，绝不写入。上游项目对本站点完全无感知。
  *   2. 幂等：同一日期重复执行结果一致；漏跑一天可在次日用 --all 补齐。
- *   3. 不做渲染，不联网。渲染交给 astro build。
+ *   3. 不做渲染，渲染交给 astro build。本站完全不联网：owner 头像缓存由上游
+ *      scripts/resolve-avatars.mjs 在日报流水线里生成，这里只搬运文件，
+ *      可用 --no-avatars 关闭。
  *
  * 用法：
  *   node tools/ingest.mjs --source E:/WorkBuddy/Github-Push-EveryDay --date 2026-10-26
  *   node tools/ingest.mjs --source E:/WorkBuddy/Github-Push-EveryDay --all
+ *   node tools/ingest.mjs --avatars-only          # 只同步头像缓存，不动任何报告
  *   追加 --push 可在搬运后自动 commit 并推送
  */
 import fs from 'node:fs';
@@ -27,8 +30,9 @@ const flag = (name, fallback = null) => {
 };
 const has = (name) => argv.includes(name);
 
-const SOURCE = path.resolve(flag('--source', ''));
-if (!flag('--source')) {
+const avatarsOnly = has('--avatars-only');
+const SOURCE = path.resolve(flag('--source', '.'));
+if (!flag('--source') && !avatarsOnly) {
   console.error('缺少 --source <上游项目目录>');
   process.exit(1);
 }
@@ -38,6 +42,8 @@ const SRC_SUMMARIES = path.join(SOURCE, 'data/summaries');
 const SRC_SNAPSHOTS = path.join(SOURCE, 'data/snapshots');
 /* 上游逐项详细解读：data/interpretations/<date>/<owner>__<name>.md，另有一份 index.md 是本期观察 */
 const SRC_INTERP = path.join(SOURCE, 'data/interpretations');
+/* 头像缓存由上游 resolve-avatars.mjs 生成，本站只拷贝、不联网 */
+const SRC_OWNERS = path.join(SOURCE, 'data/owners.json');
 
 const readJson = (p, fallback = null) => {
   try {
@@ -183,36 +189,66 @@ function pushToRemote(dateLabel) {
   }
 }
 
-function main() {
-  if (!fs.existsSync(SRC_REPORTS)) {
-    console.error(`上游报告目录不存在：${SRC_REPORTS}`);
-    process.exit(1);
+/**
+ * 头像缓存：上游生成、本站搬运。
+ * 与原文件合并而不是覆盖——上游换了机器或缓存被清空时，
+ * 站点不该把历史期次已经用上的头像一起丢掉。
+ */
+function syncOwners() {
+  const upstream = readJson(SRC_OWNERS);
+  if (!upstream || typeof upstream !== 'object') {
+    console.warn('   ! 上游缺少 data/owners.json（跑一次上游 resolve-avatars.mjs 即可生成），跳过');
+    return;
   }
 
-  const snapshots = loadSnapshots();
-  const all = has('--all');
-  const single = flag('--date', null);
+  const local = readJson(path.join(DATA, 'owners.json'), {}) ?? {};
+  const merged = { ...local, ...upstream };
+  const sorted = Object.fromEntries(Object.keys(merged).sort().map((k) => [k, merged[k]]));
+  const changed = writeIfChanged(path.join(DATA, 'owners.json'), sorted);
+  console.log(
+    `   头像：上游 ${Object.keys(upstream).length} 条 → 本地共 ${Object.keys(sorted).length} 条${changed ? '（已更新）' : '（未变）'}`
+  );
+}
 
-  let dates;
-  if (all) {
-    dates = listJson(SRC_REPORTS).map((f) => f.replace(/\.json$/, ''));
-  } else if (single) {
-    dates = [single];
-  } else {
-    dates = listJson(SRC_REPORTS).map((f) => f.replace(/\.json$/, '')).slice(-1);
-  }
-
-  console.log(`上游：${SOURCE}`);
-  console.log(`快照：${snapshots.length} 份 · 待搬运：${dates.length} 期\n`);
-
+async function main() {
   const done = [];
-  for (const date of dates) {
-    const r = ingestDate(date, snapshots);
-    if (!r.skipped) done.push(r);
+  let total = 0;
+
+  if (!avatarsOnly) {
+    if (!fs.existsSync(SRC_REPORTS)) {
+      console.error(`上游报告目录不存在：${SRC_REPORTS}`);
+      process.exit(1);
+    }
+
+    const snapshots = loadSnapshots();
+    const all = has('--all');
+    const single = flag('--date', null);
+
+    let dates;
+    if (all) {
+      dates = listJson(SRC_REPORTS).map((f) => f.replace(/\.json$/, ''));
+    } else if (single) {
+      dates = [single];
+    } else {
+      dates = listJson(SRC_REPORTS).map((f) => f.replace(/\.json$/, '')).slice(-1);
+    }
+
+    console.log(`上游：${SOURCE}`);
+    console.log(`快照：${snapshots.length} 份 · 待搬运：${dates.length} 期\n`);
+
+    for (const date of dates) {
+      const r = ingestDate(date, snapshots);
+      if (!r.skipped) done.push(r);
+    }
+
+    total = done.reduce((s, d) => s + d.count, 0);
+    console.log(`\n完成：${done.length} 期 / ${total} 条记录 → _data/`);
   }
 
-  const total = done.reduce((s, d) => s + d.count, 0);
-  console.log(`\n完成：${done.length} 期 / ${total} 条记录 → _data/`);
+  if (!has('--no-avatars')) {
+    console.log('');
+    syncOwners();
+  }
 
   if (has('--push')) {
     console.log('\n推送到远端：');
@@ -220,4 +256,4 @@ function main() {
   }
 }
 
-main();
+await main();

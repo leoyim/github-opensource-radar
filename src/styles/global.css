@@ -718,6 +718,33 @@ summary {
   gap: 7px;
   padding-top: 2px;
 }
+/* 项目徽记：方形细框加 owner 首字，排成右栏底部的一方印记。
+   与全书的直角、铅线一致；不用外链头像，断网、被墙都不会变成破图。 */
+.avatar {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  margin-top: auto;
+  margin-bottom: 2px;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-2);
+  overflow: hidden;
+  font-size: 1.85rem;
+  line-height: 1;
+  color: var(--ink-2);
+  text-transform: uppercase;
+  user-select: none;
+}
+/* 图盖在首字母上面；图加载失败时被 onerror 移除，底下那层就露出来 */
+.avatar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .score {
   font-family: var(--mono);
   font-variant-numeric: tabular-nums;
@@ -1517,6 +1544,13 @@ body[data-role]:not([data-role="all"]) .repo .rel {
   }
   .repo-actions .breakdown {
     width: 100%;
+  }
+  /* 单栏时右栏变成标题下的一行，徽记缩小并回到行内 */
+  .avatar {
+    width: 42px;
+    height: 42px;
+    margin: 0 0 0 auto;
+    font-size: 1.1rem;
   }
 }
 

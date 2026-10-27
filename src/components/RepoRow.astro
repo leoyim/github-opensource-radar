@@ -3,6 +3,7 @@ import RatingMeter from './RatingMeter.astro';
 import MetricBars from './MetricBars.astro';
 import Sparkline from './Sparkline.astro';
 import { num, heatLabel } from '../lib/format';
+import { avatarOf } from '../lib/load';
 import type { IssueItem, SeriesPoint } from '../lib/schema';
 import type { Interpretation } from '../lib/interpretations';
 
@@ -19,6 +20,7 @@ const hasScores = Object.keys(scores).length > 0;
 const starValues = series.map((p) => p.stars);
 
 const slug = item.full_name.replace('/', '__');
+const avatar = avatarOf(item.owner);
 const words = interpretation ? Math.max(100, Math.round(interpretation.chars / 100) * 100) : 0;
 const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
 ---
@@ -88,6 +90,26 @@ const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
         </div>
       )
     }
+    <!-- 项目标记：优先用 owner 头像（GitHub 上仓库页显示的就是它），
+         地址来自 _data/owners.json 的离线缓存；缓存缺这一项或图挂了，
+         就露出底下那层首字母，不会出现破图。 -->
+    <span class="avatar" aria-hidden="true">
+      <span>{item.owner.slice(0, 1)}</span>
+      {
+        avatar && (
+          <img
+            src={avatar}
+            alt=""
+            width="96"
+            height="96"
+            loading="lazy"
+            decoding="async"
+            referrerpolicy="no-referrer"
+            onerror="this.remove()"
+          />
+        )
+      }
+    </span>
   </div>
 
 </article>

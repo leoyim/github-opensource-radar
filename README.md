@@ -68,6 +68,19 @@ npm run build      # 产出 dist/
 - 书眉常驻：滚动进入第几章，导航里就显示该章章名，与实体书展开时书眉印章名同理。
 - 深浅色是同一套体系的两种纸：浅色为纸白墨字，深色为夜间墨纸。主题由 `data-theme` 切换，跟随系统偏好并记住手动选择。
 
+## 项目标记
+
+条目右栏底部放 owner 的头像，也就是 GitHub 仓库页上仓库名旁边那个圆图。GitHub 没有单独的「仓库图标」：个人账号显示作者照片，组织账号显示的才是机构 logo。
+
+取法上踩过两个坑，最终方案是「解析一次、离线缓存」：
+
+- `https://github.com/<owner>.png` 要过 github.com 这个域，国内经常超时，页面直接破图；
+- `https://avatars.githubusercontent.com/<owner>` 对 microsoft、apache、JetBrains 这类账号只返回默认灰图，看着像没加载出来。
+
+所以由上游日报流水线的 `scripts/resolve-avatars.mjs` 查一次 `api.github.com/users/<owner>`，拿到 `/u/<id>` 形式的地址写进上游 `data/owners.json`；`tools/ingest.mjs` 再把它原样搬进 `_data/owners.json`。构建期只读这份缓存、不联网；缓存里没有的 owner 或图加载失败，回落到首字母徽记，不会出现破图。
+
+缓存放在上游是有意的：配额只在每天那次流水线里消耗一次，站点侧只是文件搬运，既不持有 token 也不联网。可用 `node tools/ingest.mjs --avatars-only` 单独同步缓存，`--no-avatars` 则完全跳过。
+
 ## 详细解读
 
 上游给每个项目单独产出一篇解读（`data/interpretations/<date>/<owner>__<name>.md`），`tools/ingest.mjs` 原样搬进 `_data/interpretations/`，构建期渲染成 HTML。

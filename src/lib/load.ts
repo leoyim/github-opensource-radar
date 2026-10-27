@@ -11,6 +11,7 @@ export const DATA_DIR = path.resolve(fileURLToPath(new URL('../../_data', import
 const REPORTS = path.join(DATA_DIR, 'reports');
 const SUMMARIES = path.join(DATA_DIR, 'summaries');
 const SERIES = path.join(DATA_DIR, 'series');
+const OWNERS = path.join(DATA_DIR, 'owners.json');
 
 const readJson = (p: string): unknown => JSON.parse(fs.readFileSync(p, 'utf8'));
 
@@ -81,10 +82,38 @@ export function seriesFor(fullName: string): SeriesPoint[] {
   return loadSeries(fullName.replace('/', '__'));
 }
 
+/**
+ * owner → 头像地址。缓存由上游日报流水线的 scripts/resolve-avatars.mjs 生成，
+ * tools/ingest.mjs 原样搬运进 _data/owners.json；构建期不访问任何接口，
+ * 缓存里没有的 owner 返回 null，由徽记兜底。
+ */
+let ownerAvatars: Record<string, string> | null = null;
+
+export function avatarOf(owner: string): string | null {
+  if (!ownerAvatars) {
+    try {
+      ownerAvatars = JSON.parse(fs.readFileSync(OWNERS, 'utf8')) as Record<string, string>;
+    } catch {
+      ownerAvatars = {};
+    }
+  }
+  return ownerAvatars[owner] ?? null;
+}
+
 export const displayDate = (date: string): string => {
   const [, m, d] = date.split('-');
   return `${Number(m)} 月 ${Number(d)} 日`;
 };
 
-export const weekdayOf = (date: string): string =>
-  ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][new Date(`${date}T00:00:00+08:00`).getDay()];
+const WEEKDAYS = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+
+/**
+ * 星期必须只由「年月日」本身决定，不能带时区。
+ * 之前的写法 new Date(`${date}T00:00:00+08:00`).getDay() 取的是「构建机本地时区」的星期，
+ * 而 GitHub Actions 跑在 UTC，东八区零点往前推 8 小时就落到了前一天，整站星期集体早一天。
+ * 用 Date.UTC 构造再取 getUTCDay，等于纯粹按日历算，与机器时区无关。
+ */
+export const weekdayOf = (date: string): string => {
+  const [y, m, d] = date.split('-').map(Number);
+  return WEEKDAYS[new Date(Date.UTC(y, m - 1, d)).getUTCDay()];
+};
