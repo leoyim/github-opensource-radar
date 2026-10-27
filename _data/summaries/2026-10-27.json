@@ -1,0 +1,122 @@
+{
+  "AstrBotDevs/AstrBot": {
+    "summary_zh": "开箱即用的 IM 智能体平台：QQ、企业微信、飞书、钉钉、公众号、Telegram、Slack 接同一套 Agent 运行时，支持 MCP、技能、知识库、人格设定与上下文自动压缩，插件市场 1000+。今日 +376 星，本期热度第一。",
+    "highlight_zh": "已在 IM 里做客服或内部助手的团队可直接替换自研胶水层；只做单点聊天机器人则偏重。"
+  },
+  "ggml-org/llama.cpp": {
+    "summary_zh": "C/C++ 实现的 LLM 推理引擎，本地跑 GGUF 模型的事实标准：CPU/GPU 多后端、OpenAI 兼容 API server、Docker 与预编译二进制齐备。132k 星、今日 +125，仍是自托管推理的默认底座。",
+    "highlight_zh": "要在自有硬件上跑推理、需要可控成本与离线部署，这是首选底座；追求开箱即用的团队更适合上层封装。"
+  },
+  "Significant-Gravitas/AutoGPT": {
+    "summary_zh": "从自主 Agent 实验演进为 Agent 平台：由 Otto 协调内容、销售、研究等专家角色，提供可视化工作流与自托管两条路径，并保留 AutoGPT Classic。187k 星、今日 +73，社区规模仍是同类最大。",
+    "highlight_zh": "想评估「多专家编排」的产品形态可看平台版；只想跑一个自动任务，直接调模型 API 更省事。"
+  },
+  "thesysdev/openui": {
+    "summary_zh": "面向生成式 UI 的开放标准与全栈框架：用紧凑的 OpenUI Lang 让模型流式输出组件结构，官方 runtime 覆盖 React/Vue/Svelte/Angular，自述比 JSON 少至多 67% token。今日 +331，本期增速第二。",
+    "highlight_zh": "在做 Agent 输出结构化界面、且受 token 成本约束的团队值得评估；只需固定表单渲染则不必引入。"
+  },
+  "garrytan/gstack": {
+    "summary_zh": "YC 总裁 Garry Tan 公开的 Claude Code 配置：23 个以斜杠命令与 Markdown 实现的角色（CEO、设计师、工程经理、评审、QA、安全、发布），MIT 许可，README 称安装约 30 秒。今日 +167。",
+    "highlight_zh": "想给编码 Agent 加一层流程约束的个人与小团队可借鉴；星标规模与作者影响力强相关，效果须自行验证。"
+  },
+  "designfuchen/word-atlas": {
+    "summary_zh": "雅思背词应用：7,298 词配插画与英美双音，19 个话题组成可旋转缩放的 WebGL2 星图，用 FSRS 间隔重复排程；无需账号、进度存本机，插画与录音以 CC BY 4.0 开放。",
+    "highlight_zh": "想自建或二次开发词汇工具可复用其数据集与 FSRS 实现；商业使用须遵守 CC BY 4.0 署名要求。"
+  },
+  "nightly-labs/openbot": {
+    "summary_zh": "本地优先的桌面 Agent 工作台：为 Codex、Claude Code、Grok、OpenCode、Gemini 等分别分配独立工作区与会话，内置 FIFO 任务队列、文件互传、内嵌浏览器与 Agent 间消息，Electron + SolidJS。今日 +176。",
+    "highlight_zh": "同时驱动多个编码 Agent、需要隔离工作区与队列的开发者适配；单 Agent 用户收益有限。"
+  },
+  "zephium-browser/Zephium": {
+    "summary_zh": "Rust + Tauri + Svelte 重写的浏览器与工作环境，卖点是「Safari 的能效、Brave 的拦截、Arc 的设计」，另有让 Agent 在台前执行任务的 Work 画布。741 星、今日 +98，属早期项目。",
+    "highlight_zh": "适合愿意尝鲜 Agent 原生浏览器的用户；核心浏览稳定性与扩展兼容性尚未经大规模验证。"
+  },
+  "libretro/RetroArch": {
+    "summary_zh": "libretro API 的参考前端：把模拟器与游戏引擎统一为可动态加载的 core，自身负责视频、音频、输入与应用生命周期，因此一套前端覆盖主机、桌面与移动端。14.4k 星、今日 +22。",
+    "highlight_zh": "复古游戏与模拟器整合的事实标准，适合自建统一前端；初次配置曲线陡，非玩家不必涉入。"
+  },
+  "Axolotl-Launcher/Axolotl": {
+    "summary_zh": "基于 Modrinth App 二次开发的 Minecraft Java 版启动器，移除商业化模块，支持 Modrinth 与 CurseForge 模组、整合包、资源包与光影检索安装，含实例管理与多账户认证。Rust + Tauri + Vue，今日 +11。",
+    "highlight_zh": "想要无广告、可自行编译的启动器可选；长期维护取决于个人投入，需跟上游版本演进。"
+  },
+  "storytold/effectcraft": {
+    "summary_zh": "纯 Rust 从零实现的动态图形与合成工具：合成、图层、关键帧、306 种特效、图层样式、表达式、3D 相机与灯光、渲染队列，覆盖 macOS/Windows/Linux 与浏览器。7.9k 星、今日 +43。",
+    "highlight_zh": "想找 AE 的开源替代、并能接受早期项目的不稳定，值得跟踪；生产交付仍需商业工具兜底。"
+  },
+  "storytold/figcraft": {
+    "summary_zh": "纯 Rust 重写的界面设计与原型工具：Frame、自动布局、组件与变体、矢量网络、样式与变量、原型联动，原生应用离线可用；另提供无头渲染导出与 MCP 接口供 Agent 驱动。今日 +49。",
+    "highlight_zh": "关注「设计文件可由 Agent 读写」这一方向的团队值得研究其无头导出与 MCP；协作成熟度尚不及 Figma。"
+  },
+  "evcc-io/evcc": {
+    "summary_zh": "本地化的电动车充电控制器与家庭能源管理：对接数十家充电桩、逆变器、电池与电价源，按光伏余电与电价自动调节充电功率，不依赖云服务。Go 实现，7.4k 星、今日 +5。",
+    "highlight_zh": "有光伏加电动车、想把充电排到余电时段的家庭适用；需要一定 Modbus/MQTT 调试能力。"
+  },
+  "yugabyte/yugabyte-db": {
+    "summary_zh": "PostgreSQL 兼容的云原生分布式 SQL 数据库：YSQL 复用 PG 查询层，底层为分片强一致的分布式存储，面向既要事务正确性、又要求水平扩展或跨地域部署的 OLTP 场景。今日 +4。",
+    "highlight_zh": "单机 PG 遇到扩展或容灾瓶颈时可评估；运维复杂度与资源开销显著高于单机方案。"
+  },
+  "kedacore/keda": {
+    "summary_zh": "CNCF 毕业的 Kubernetes 事件驱动自动伸缩组件：以 Metrics Server 形式把队列、消息、数据库等外部指标接入 HPA，支持缩到零，无外部依赖。10.6k 星、今日 +3。",
+    "highlight_zh": "在 K8s 上跑消费者型负载、需要按队列深度伸缩时几乎默认选择；纯 HTTP 服务用原生 HPA 即可。"
+  },
+  "benbjohnson/litestream": {
+    "summary_zh": "SQLite 的流式复制与灾难恢复工具：作为后台进程增量把变更同步到文件或 S3，只通过 SQLite API 通信、不直接改数据文件，降低损坏风险。14.5k 星、今日 +9。",
+    "highlight_zh": "用 SQLite 做单机服务、需要异地备份与快速恢复的场景很合适；它不是读写分离方案，无法分担查询压力。"
+  },
+  "questdb/questdb": {
+    "summary_zh": "面向时序的开源低延迟数据库：零 GC 的 Java 内核，热点路径用 C++/Rust，列式时间分区加并行 WAL，单一 SQL 引擎覆盖写入、流计算与分层存储，支持 Parquet/Iceberg/Arrow。今日 +3。",
+    "highlight_zh": "高频行情、IoT 指标这类写多读聚合场景收益明显；通用事务型业务不适合。"
+  },
+  "litmers-dev/litpage": {
+    "summary_zh": "单进程 Node.js 加单文件 SQLite 的自托管协作工作区：块编辑器、页面与团队、数据库多视图、细粒度权限、WebSocket 协同编辑，AI 走自带 Key。仅 66 星，属早期项目。",
+    "highlight_zh": "想用一台小机器自建 Notion 类工作区可试；社区极小，数据迁移与长期维护风险需自担。"
+  },
+  "salihcantekin/ruvio": {
+    "summary_zh": "Rust 实现的 Redis 协议兼容内存数据库：多分片架构、287 条命令，官方客户端覆盖 Rust/.NET/Go/Java/Python/Node，另附 Operator UI。179 星、今日 +4。",
+    "highlight_zh": "可作为 RESP 兼容的轻量缓存候选做基准对比；生态与生产验证远不及 Redis/Valkey。"
+  },
+  "cockroachdb/cockroach": {
+    "summary_zh": "云原生分布式 SQL 数据库：构建在强一致事务型 KV 之上，支持水平扩展、跨机房故障自动恢复与标准 SQL，提供 CockroachCloud 与自托管两种形态。32.6k 星、今日 +3。",
+    "highlight_zh": "需要跨区域强一致与自动容灾的关键业务可评估；单区域中小规模场景成本与复杂度不划算。"
+  },
+  "alchaincyf/huashu-design": {
+    "summary_zh": "面向编码 Agent 的 HTML 原生设计技能：一句提示产出网页、App 原型、可编辑 PPTX、动画与信息图，含 84 种带样张风格库、六选三方向机制与外观偏好记录。26.8k 星、今日 +251。",
+    "highlight_zh": "需要快速产出可交付设计稿的产品与独立开发者适用；产出仍需人工把关品牌一致性。"
+  },
+  "home-assistant/core": {
+    "summary_zh": "本地优先的开源家居自动化平台：海量设备与协议集成，Python asyncio 内核，可跑在树莓派或本地服务器，强调数据不出户。91.7k 星、今日 +21。",
+    "highlight_zh": "想把多品牌设备统一到本地控制、拒绝云依赖的家庭首选；自动化编排需要一定学习成本。"
+  },
+  "radareorg/radare2": {
+    "summary_zh": "类 UNIX 的命令行逆向工程框架：反汇编、调试、二进制分析与取证，可用内嵌 JS 或 r2pipe 脚本化，主体 LGPLv3、插件各自许可。25k 星，主线 6.2.5。",
+    "highlight_zh": "做恶意样本分析、固件审计的工程师标配之一；学习曲线陡，需配合官方文档与书籍。"
+  },
+  "pch/rawmakase": {
+    "summary_zh": "Rust 实现的非破坏性 RAW 照片编辑器，覆盖 Linux/macOS/Windows，Lightroom 风格调整面板，可导入 Lr Classic 目录（评分、旗标、关键词与兼容调整）且不改原文件，导出 JPEG/16bit TIFF/PNG。今日 +45。",
+    "highlight_zh": "Linux 上缺 Lightroom 的摄影师是核心受益者；个人项目，功能覆盖仍在推进。"
+  },
+  "unstablebuild/rune": {
+    "summary_zh": "Go 编写的 GPU 加速 IDE 与终端复用器：把编辑器、终端与 Agent 编排放进同一套九宫格工作区，多实例经端到端加密网络互联，原生 OpenGL/Metal 渲染、不用 Electron。今日 +36。",
+    "highlight_zh": "重度终端、多机协作、需要 Agent 编排的开发者可试；插件生态尚不及成熟 IDE。"
+  },
+  "cjpais/Handy": {
+    "summary_zh": "完全离线的开源语音转文字桌面应用：按快捷键说话，文字直接落入任意输入框，音频不出本机；Tauri v2 + Rust，跨平台且可扩展。34.8k 星、今日 +140。",
+    "highlight_zh": "对隐私敏感或网络受限环境下需要听写的人很适合；准确率取决于所选本地模型与硬件。"
+  },
+  "xtool-org/xtool": {
+    "summary_zh": "跨平台 Xcode 替代：在 Linux/WSL、Windows、macOS 上用 SwiftPM 构建并部署 iOS 应用，以开放标准复刻 Xcode 能力，并可编程调用 Apple 开发者服务。13.8k 星、今日 +115。",
+    "highlight_zh": "想在非 macOS 环境完成 iOS 构建与分发的团队值得评估；签名与真机调试链路须实测。"
+  },
+  "OpenWhispr/openwhispr": {
+    "summary_zh": "隐私优先的语音听写应用：本地可选 Whisper、NVIDIA Parakeet 等模型，也可自带 Key 走云端，附带会议转写与 AI 笔记，跨 macOS/Windows/Linux。10k 星、今日 +74。",
+    "highlight_zh": "需要本地转写又想要会议纪要能力可选；与 Handy 定位重叠，按是否要云端加速取舍。"
+  },
+  "yuliskov/SmartTube": {
+    "summary_zh": "Android TV 上的第三方视频客户端，提供去广告、SponsorBlock、自定义播放与订阅规则。本期 README 置顶安全公告：作者开发环境被恶意软件感染、公钥可能泄露，已全盘重装并用 VirusTotal 扫描构建产物。今日 +59。",
+    "highlight_zh": "已安装用户应按公告更新并吊销旧连接码；该事件也提醒评估第三方客户端的分发链路风险。"
+  },
+  "AppFlowy-IO/AppFlowy": {
+    "summary_zh": "开源协作工作区、Notion 的开源替代：文档、数据库、看板与团队协作合一，Flutter 跨端，支持自托管以保住数据控制权。77.8k 星、今日 +45。",
+    "highlight_zh": "在意数据主权、需要自托管 Notion 类工具的团队适用；插件与模板生态仍弱于商业产品。"
+  }
+}
