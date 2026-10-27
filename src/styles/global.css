@@ -734,6 +734,65 @@ summary {
   gap: 7px;
   padding-top: 2px;
 }
+/* 徽记右下角的二维码入口：图标挂在徽记右侧之外，底边与徽记底边平齐；
+   点击后码面回到徽记的位置（以右下角为锚点向左上展开，同为 84px）。 */
+.mark {
+  /* 图标宽度：既是外挂的距离，也是码面的反向抵消量 */
+  --qr-inset: 20px;
+  /* 图标与徽记之间留的空隙 */
+  --qr-gap: 4px;
+  /* 与 .avatar 的边长保持一致，码面按它定尺寸 */
+  --mark-size: 84px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 2px;
+}
+.qr {
+  position: absolute;
+  right: calc(-1 * (var(--qr-inset) + var(--qr-gap)));
+  bottom: 0;
+  z-index: 3;
+}
+.qr-btn {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid var(--rule-strong);
+  /* 压在徽记一角上，需要一层纸色把底下的图隔开 */
+  background: var(--paper);
+  color: var(--ink-3);
+  transition: color 0.15s;
+}
+.qr-btn:hover,
+.qr-btn[aria-expanded="true"] {
+  color: var(--accent);
+}
+.qr-pop {
+  position: absolute;
+  /* 抵消图标的外挂距离与空隙，让码面右边缘回到徽记右边缘 */
+  right: calc(var(--qr-inset) + var(--qr-gap));
+  bottom: 0;
+  z-index: 1;
+  width: var(--mark-size);
+  height: var(--mark-size);
+  padding: 4px;
+  /* 固定白底：深色主题下二维码也必须是白底深码，否则扫不出来 */
+  background: #fff;
+  border: 1px solid var(--rule-strong);
+}
+.qr-pop[hidden] {
+  display: none;
+}
+.qr-pop svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* 项目徽记：方形细框加 owner 首字，排成右栏底部的一方印记。
    与全书的直角、铅线一致；不用外链头像，断网、被墙都不会变成破图。 */
 .avatar {
@@ -742,8 +801,6 @@ summary {
   place-items: center;
   width: 84px;
   height: 84px;
-  margin-top: auto;
-  margin-bottom: 2px;
   border: 1px solid var(--rule-strong);
   background: var(--paper-2);
   overflow: hidden;
@@ -1503,6 +1560,17 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     justify-content: flex-start;
     gap: 14px;
     padding-top: 4px;
+  }
+  /* 横排后右侧没有余量：图标收回徽记角内，码面跟随缩小到徽记尺寸 */
+  .mark {
+    --qr-inset: 0px;
+    --qr-gap: 0px;
+    --mark-size: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .qr-pop {
+    padding: 2px;
   }
   .rel {
     max-width: 60%;

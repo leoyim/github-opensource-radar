@@ -1,0 +1,24 @@
+---
+/**
+ * 项目地址二维码。构建期生成 SVG，客户端零依赖。
+ * 背景保持透明，底色由外层给：深色主题下也必须是「白底深码」，否则扫不出来。
+ */
+import QRCode from 'qrcode';
+
+interface Props {
+  value: string;
+  size?: number;
+}
+
+const { value, size = 82 } = Astro.props;
+
+const svg = await QRCode.toString(value, {
+  type: 'svg',
+  margin: 0,
+  width: size,
+  errorCorrectionLevel: 'M',
+  color: { dark: '#14181a', light: '#00000000' },
+});
+---
+
+<Fragment set:html={svg} />
