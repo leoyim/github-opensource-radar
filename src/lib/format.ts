@@ -31,6 +31,22 @@ export const ROLE_LABELS: Record<string, string> = {
 
 export const roleLabel = (id: string): string => ROLE_LABELS[id] ?? id;
 
+/** 书脊竖排分词：汉字一字一行、数字每两位一行、西文一词一行。
+ *  「/」按分隔符处理（「AI / 大模型」→ AI、大、模、型），构建期与前端共用。 */
+export function spineLines(text: string): string[] {
+  const lines: string[] = [];
+  for (const part of text.split('/')) {
+    for (const token of part.match(/\d+|[A-Za-z][\w'’+.#-]*|\S/gu) ?? []) {
+      if (/^\d+$/.test(token)) {
+        for (let i = 0; i < token.length; i += 2) lines.push(token.slice(i, i + 2));
+      } else {
+        lines.push(token);
+      }
+    }
+  }
+  return lines;
+}
+
 /** 趋势折线：把点列映射成 svg polyline 的 points 串 */
 export function sparkPoints(values: number[], w = 108, h = 24, pad = 2): string {
   if (values.length < 2) return '';

@@ -29,6 +29,9 @@
   --rail: 72px; /* 书口 */
   --side: 140px; /* 右边栏 */
   --gap: 22px;
+  /* 书脊宽度，以及正文为它让出的左侧留白（宽屏时书脊在版心之外，留白为 0） */
+  --spine: 54px;
+  --spine-pad: 0px;
 
   --h-nav: 60px;
   --h-ctrl: 46px;
@@ -142,7 +145,7 @@ summary {
   width: 100%;
   max-width: var(--w);
   margin: 0 auto;
-  padding: 0 var(--gutter);
+  padding: 0 var(--gutter) 0 calc(var(--gutter) + var(--spine-pad));
 }
 
 .mono {
@@ -189,6 +192,7 @@ summary {
   border-bottom: 1px solid var(--ink-rule);
   box-shadow: 0 4px 0 -3px var(--rule);
 }
+/* 书眉顶格，不随书脊缩进 —— 书脊只从书眉下缘开始 */
 .nav-inner {
   display: flex;
   align-items: center;
@@ -219,47 +223,117 @@ summary {
   color: var(--accent);
   flex: none;
 }
-/* 书眉中段：筛选条贴住书眉之后，露出「本期日期 · 期次 · 当前方向」，
-   与读物展开时书眉上印的章名同理。未贴住时整段不占位，不挤导航。 */
-.nav-run {
-  display: none;
-  flex: 0 1 auto;
-  min-width: 0;
-  font-size: 0.74rem;
-  letter-spacing: 0.12em;
-  color: var(--ink-3);
-  padding-left: 26px;
-  border-left: 1px solid var(--rule);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.nav-run.is-on {
-  display: block;
-}
-.nav-run [data-running-stamp]:empty,
-.nav-run [data-running-chap]:empty {
-  display: none;
-}
-/* 间隔点只在方向名出现时才挂上，避免窄屏剩一个孤立的点 */
-.nav-run [data-running-chap]:not(:empty)::before {
-  content: '·';
-  margin: 0 9px;
-  color: var(--rule-strong);
-}
-@media (max-width: 900px) {
-  .nav-run {
-    padding-left: 14px;
-    letter-spacing: 0.06em;
-  }
-  /* 窄屏放不下三段，只留日期与期次 */
-  .nav-run [data-running-chap] {
-    display: none;
-  }
-}
 .ring-track {
   opacity: 0.24;
 }
+/* ---------- 书脊 ---------- */
+/* 「年份 / 日期 / 期次 / 当前方向」原在书眉中段，现在搬到版心左侧的窄条上。
+   每条信息横排一行、自上而下摞起来；弧面用横向渐变交代，上下各压两道竹节。 */
+.spine {
+  position: fixed;
+  top: var(--h-nav);
+  bottom: 0;
+  /* 贴住版心左缘留 8px 空隙；宽度改由 --spine 决定，收窄时不会脱开 */
+  left: calc(50% - var(--w) / 2 - var(--spine) - 8px);
+  z-index: 6;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: var(--spine);
+  padding: 48px 0;
+  font-family: 'FangSong', 'STFangsong', 'FangSong_GB2312', '仿宋', serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--ink-2);
+  /* 上下两道堵头布 + 中间一道弧面：都是背景层，不占 DOM */
+  background-color: var(--paper-2);
+  background-image:
+    linear-gradient(var(--accent), var(--accent)),
+    linear-gradient(var(--accent), var(--accent)),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.07) 0%,
+      rgba(0, 0, 0, 0.018) 16%,
+      rgba(0, 0, 0, 0) 46%,
+      rgba(0, 0, 0, 0.014) 74%,
+      rgba(0, 0, 0, 0.08) 100%
+    );
+  background-size: 100% 3px, 100% 3px, 100% 100%;
+  background-position: 0 0, 0 100%, 0 0;
+  background-repeat: no-repeat;
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  /* 页脚把书脊压短时，避免竖排文字溢出到书脊之外 */
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+}
+@media (min-width: 1200px) {
+  .spine.is-on {
+    display: flex;
+  }
+}
+/* 竹节：上下各两道细线，宽度略窄于书脊，像压出来的两道棱 */
+.spine::before,
+.spine::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  height: 1px;
+  background: var(--rule-strong);
+  opacity: 0.45;
+}
+.spine::before {
+  top: 32px;
+  box-shadow: 0 5px 0 var(--rule-strong);
+}
+.spine::after {
+  bottom: 32px;
+  box-shadow: 0 -5px 0 var(--rule-strong);
+}
+/* 书脊上的字一律竖排：汉字一字一行、数字两位一行、西文一词一行。
+   分词由 spineLines() 在构建期和前端统一完成（见 lib/format.ts），
+   这里只负责把每组的行摞成一列，行宽恒等于最宽的一个词。 */
+.spine-year,
+.spine-date,
+.spine-no,
+.spine-chap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  max-width: 100%;
+}
+.spine-year > span,
+.spine-date > span,
+.spine-no > span,
+.spine-chap > span {
+  /* 每行本身已是最小不可分单位，书脊再窄也只在行内截，不会横向撑开 */
+  white-space: nowrap;
+  line-height: 1.2;
+}
+/* 年份：两位一组，20 一行 26 一行 */
+.spine-year {
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+}
+.spine-no {
+  color: var(--ink-3);
+}
+/* 方向：按「/」分组后，再逐字/逐词成行，免得挤出书脊 */
+.spine-chap {
+  color: var(--accent);
+}
+.spine-chap:empty {
+  display: none;
+}
+
 .ring-progress {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
@@ -438,8 +512,8 @@ summary {
   scrollbar-width: none;
   -ms-overflow-style: none;
   /* 抵消 .wrap 的水平内边距：滚动裁切边和两侧遮罩才对得齐 */
-  margin: 0 calc(var(--gutter) * -1);
-  padding: 8px var(--gutter);
+  margin: 0 calc(var(--gutter) * -1) 0 calc((var(--gutter) + var(--spine-pad)) * -1);
+  padding: 8px var(--gutter) 8px calc(var(--gutter) + var(--spine-pad));
   scroll-padding-inline: var(--gutter);
   overscroll-behavior-x: contain;
 }
@@ -1503,6 +1577,9 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     --side: 116px;
     --gap: 16px;
     --gutter: 22px;
+    /* 窄屏书脊收窄并贴住视口左边，正文让出等宽留白 */
+    --spine: 48px;
+    --spine-pad: 48px;
   }
   .cover {
     grid-template-columns: minmax(0, 1fr);
@@ -1561,13 +1638,29 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     gap: 14px;
     padding-top: 4px;
   }
-  /* 横排后右侧没有余量：图标收回徽记角内，码面跟随缩小到徽记尺寸 */
+  /* 窄屏书脊贴在视口左缘，正文已由 --spine-pad 让出位置 */
+  .spine.is-on {
+    display: flex;
+    left: 0;
+  }
+  .spine::before,
+  .spine::after {
+    left: 5px;
+    right: 5px;
+  }
+
+  /* 横排后徽记变小，图标同步缩一号，仍挂在徽记右下角外侧；
+     码面跟随徽记尺寸。 */
   .mark {
-    --qr-inset: 0px;
-    --qr-gap: 0px;
+    --qr-inset: 16px;
+    --qr-gap: 3px;
     --mark-size: 42px;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .qr-btn {
+    width: 16px;
+    height: 16px;
   }
   .qr-pop {
     padding: 2px;

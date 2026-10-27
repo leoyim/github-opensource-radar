@@ -4,7 +4,7 @@ import ReaderDialog from './ReaderDialog.astro';
 import { seriesFor, displayDate, weekdayOf, neighborsOf } from '../lib/load';
 import { almanacOf, jieQiLine } from '../lib/almanac';
 import { interpretationOf, observationOf } from '../lib/interpretations';
-import { ROLE_LABELS, roleLabel } from '../lib/format';
+import { ROLE_LABELS, roleLabel, spineLines } from '../lib/format';
 import type { Issue } from '../lib/schema';
 
 interface Props {
@@ -43,9 +43,28 @@ const readers = issue.categories
 const baselineNote =
   issue.baseline.heatBasis === 'snapshot' ? '热度取与上一份快照对比的真实日增' : '首期无基线，热度按星标速度估算';
 const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : '无';
+/* 书脊竖排：汉字一字一行、数字两位一行、西文一词一行 */
+const spineYear = spineLines(`${issue.date.slice(0, 4)}年`);
+const spineDate = spineLines(displayDate(issue.date));
+const spineNo = spineLines(`第${String(issueNo).padStart(2, '0')}期`);
 ---
 
-<article class="issue" data-nav-stamp={`${displayDate(issue.date)} · 第 ${String(issueNo).padStart(2, '0')} 期`}>
+<article class="issue">
+  <!-- 书脊：原来挤在书眉中段的「日期 · 期次 · 方向」搬到这里。
+       竖排贴住版心左侧，宽屏才出现，页面滚动时不动。 -->
+  <aside class="spine" aria-hidden="true">
+    <span class="spine-year">
+      {spineYear.map((line) => <span>{line}</span>)}
+    </span>
+    <span class="spine-date">
+      {spineDate.map((line) => <span>{line}</span>)}
+    </span>
+    <span class="spine-no">
+      {spineNo.map((line) => <span>{line}</span>)}
+    </span>
+    <span class="spine-chap" data-spine-chap></span>
+  </aside>
+
   <header class="cover">
     <div class="cover-main">
       <p class="cover-kicker">GitHub 热点日报</p>
@@ -221,6 +240,8 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
 </article>
 
 <script>
+  import { spineLines } from '../lib/format';
+
   const roleButtons = document.querySelectorAll('[data-role-btn]');
   const catButtons = document.querySelectorAll('[data-cat-btn]');
   const sections = document.querySelectorAll('.cat');
@@ -371,27 +392,39 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
       b.classList.toggle('is-current', id === active);
     });
 
-    /* 书眉：筛选条贴住书眉之前什么都不显示，贴住之后露出本期日期与期次，
-       后面再跟当前方向。两段分开写，窄屏可以只留期次。 */
-    const head = document.querySelector('[data-running-head]');
-    if (head) {
+    /* 书脊：与原来的书眉中段同一时机 —— 只有当「视角 / 方向」那一条贴住书眉
+       时才显形，平时不占视线。日期与期次在服务端就印好了，这里只跟当前方向；
+       「全部」时不印方向，免得书脊上挂一个没有信息量的词。
+       页脚一露头就收起，书脊只属于正文。 */
+    const spine = document.querySelector<HTMLElement>('.spine');
+    if (spine) {
       const navH = document.querySelector('.nav')?.getBoundingClientRect().height ?? 60;
-      const controls = document.querySelector('.controls');
+      const bar = document.querySelector('.controls');
+      const foot = document.querySelector('.foot');
       // .controls 是 sticky top: var(--h-nav)，吸顶时它的顶边恒等于书眉高度
-      const stuck = controls ? controls.getBoundingClientRect().top <= navH + 1 : false;
+      const stuck = bar ? bar.getBoundingClientRect().top <= navH + 1 : false;
+      const footOn = foot ? foot.getBoundingClientRect().top < window.innerHeight : false;
+      const on = stuck && !footOn;
+      if (spine.classList.contains('is-on') !== on) spine.classList.toggle('is-on', on);
 
-      const stampEl = head.querySelector<HTMLElement>('[data-running-stamp]');
-      const chapEl = head.querySelector<HTMLElement>('[data-running-chap]');
-      const stamp = stuck ? (document.querySelector('.issue') as HTMLElement | null)?.dataset.navStamp || '' : '';
-      const chap =
-        stuck && active ? (document.querySelector(`[data-cat-btn="${active}"]`)?.textContent || '').trim() : '';
-
-      // 只在内容真的变了才写 DOM，避免滚动时每帧触发样式重算
-      if (stampEl && stampEl.textContent !== stamp) stampEl.textContent = stamp;
-      if (chapEl && chapEl.textContent !== chap) chapEl.textContent = chap;
-
-      const on = Boolean(stamp);
-      if (head.classList.contains('is-on') !== on) head.classList.toggle('is-on', on);
+      const spineChap = spine.querySelector<HTMLElement>('[data-spine-chap]');
+      if (spineChap) {
+        const chap =
+          on && active && active !== 'all'
+            ? (document.querySelector(`[data-cat-btn="${active}"]`)?.textContent || '').trim()
+            : '';
+        // 只在内容真的变了才写 DOM，避免滚动时每帧重建节点
+        if (spineChap.dataset.text !== chap) {
+          spineChap.dataset.text = chap;
+          spineChap.textContent = '';
+          // 与构建期同一套分词：汉字一字一行、数字两位一行、西文一词一行
+          for (const line of spineLines(chap)) {
+            const row = document.createElement('span');
+            row.textContent = line;
+            spineChap.append(row);
+          }
+        }
+      }
     }
   }
 
@@ -403,6 +436,8 @@ const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapsh
     { passive: true }
   );
   window.addEventListener('resize', syncCurrentChip, { passive: true });
+  // 刷新后停在半页时，首帧也要把吸顶状态与书脊高度对齐
+  syncCurrentChip();
 
   /* 筛选条的横向滚动提示：内容被截断时在两端渐隐，不出滚动轴。
      状态写在 .controls 上，交给 CSS 决定哪一侧亮起。 */
