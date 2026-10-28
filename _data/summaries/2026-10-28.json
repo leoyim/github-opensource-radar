@@ -1,0 +1,122 @@
+{
+  "Nutlope/hallmark": {
+    "summary_zh": "给编码 Agent 用的「反 AI 味」设计技能：从 50 套主题里发三套，围绕访客来干什么搭页面，再用真实浏览器把「机器味」特征逐条 lint 掉——每个标题上的小眉标、字距全大写标签、标题里塞一个彩色词、满屏空框或纯图、首屏没占满一屏、页尾必有邮件订阅、点完什么都没发的假感谢表单。最后一关交给一个干净上下文的 reviewer。",
+    "highlight_zh": "已经在用 Claude Code / Cursor 出落地页、但成品一眼假的人值得装；纯后端或纯 CLI 项目用不上。"
+  },
+  "TauricResearch/TradingAgents": {
+    "summary_zh": "多智能体 LLM 金融交易框架，论文在 arXiv 2412.20138。v0.7.x 的重点不是加能力而是收紧口径：决策只按最终收盘价结算、跨长假期也能清算，回测从决策之后的第一个收盘价起算，并修掉了「模型把运行日之后才披露的财报读进来」这类前视偏差，分析师也可按模型档位分派不同 provider。",
+    "highlight_zh": "研究多智能体协作与 point-in-time 回测纪律的人值得读；当作实盘信号源风险自负。"
+  },
+  "HKUDS/DeepTutor": {
+    "summary_zh": "港大 HKUDS 的终身个性化学习系统，v1.6.15（10-19）是本轮节奏。形态是一套学习工作区：知识库（含 LightRAG 角色模型）、Mastery 掌握路径按模式门控工具、教材与题库生成、阅读与听力、语音（含原生 Gemini）、任务板与学习日志，另有 CLI 与论文（arXiv 2604.26962）。",
+    "highlight_zh": "自建学习工作区或做教育产品，可参考它「知识库 + 掌握路径 + 评测」的闭环设计。"
+  },
+  "heygen-com/hyperframes": {
+    "summary_zh": "把 HTML、CSS、媒体和可 seek 的动画渲染成确定性 MP4 的开源框架，底层 ffmpeg + GSAP，三种用法：CLI 本地跑、给编码 Agent 装 skills（npx hyperframes skills update 后直接让 Agent 做视频）、或作为托管创作工具的渲染内核。今日与 Remotion 同日上榜，代表「代码生成视频」的两条路线。",
+    "highlight_zh": "已有 Web 页面或动效想批量出片、且要求同样输入必出同样帧，选它；需要 React 生态则看 Remotion。"
+  },
+  "tt-a1i/archify": {
+    "summary_zh": "一个 Agent skill：把想法、方案或一整个代码库变成可交互的 HTML 可视化，输出可探索、可改、可分享的页面而不是静态截图，配了在线画廊与场景指南，支持简中/日/韩多语言 README。注意仓库首页赞助位很重，判断活跃度应看提交与 issue 而不是首屏。",
+    "highlight_zh": "讲架构、讲流程又不想手画图的人最省事；要的是「能点的系统图」而不是 PPT。"
+  },
+  "hmjz100/LinkSwift": {
+    "summary_zh": "基于「网盘直链下载助手」改的油猴脚本，一次覆盖百度、阿里、移动、天翼、迅雷、光鸭、夸克、UC、123 共九家网盘的直链获取，仓库另带几款「会员青春版」配套扩展脚本，国内走脚本猫分发以避开访问问题。今日 +3,209 星，是本期全榜最高日增。",
+    "highlight_zh": "重度依赖网盘又需要多线程下载的人在用；但这属于绕过平台限速的灰色地带，账号风险自担。"
+  },
+  "remotion-dev/remotion": {
+    "summary_zh": "用 React 写视频：代码是唯一事实来源，可在「Agent 生成 / 拖拽编辑 / 纯代码」三种工作流之间随时切换，支持把动画资产做成组织级设计系统、在自有基础设施上批量渲染百万级视频，也能直接发布成简单工具或完整视频编辑器。",
+    "highlight_zh": "前端团队做程序化视频的首选心智模型；学习成本是 React + 时间轴思维。"
+  },
+  "mrdoob/three.js": {
+    "summary_zh": "Web 3D 的事实标准库，目标是轻量、易用、跨浏览器的通用 3D 能力。当前构建只含 WebGL 与 WebGPU 渲染器，SVG 与 CSS3D 渲染器作为 addon 提供。今日 +82 星，属于长期稳定需求而非爆发。",
+    "highlight_zh": "任何要在浏览器里做 3D 的项目都绕不开；本期上榜说明基础件的需求恒定。"
+  },
+  "AienTech/dossier": {
+    "summary_zh": "自托管求职工具：一份 profile 存全部履历，针对每个岗位读 JD、给出匹配度、只用 profile 里的事实生成定制简历与求职信，在对话里改完导出 PDF，并把每份申请从草稿跟踪到 offer。单人小服务器定位，数据落在自己的 PostgreSQL，模型可选 Ollama / LM Studio 本地跑，也可接 OpenAI 兼容、Anthropic、Mistral。",
+    "highlight_zh": "在意简历数据不外流、又海投的人合适；模型本地跑时质量取决于你的硬件。"
+  },
+  "Renhuai123/ziwei-doushu": {
+    "summary_zh": "紫微斗数开源排盘引擎，按倪海厦《天纪》体系实现完整排盘算法、四化系统、格局知识库与古籍原文数据，TypeScript + Next.js。项目方还放出 v4.0 解读数据集：67.5 万张命盘 × 13 维 = 877 万段解读，正文约 204 亿字、解压 56.6 GB。",
+    "highlight_zh": "看点是「把一套传统术数做成可计算的数据集」这件事本身；命理结论不构成本报告的判断依据。"
+  },
+  "horizon-rust/horizon": {
+    "summary_zh": "用 Rust 从零重写 Minecraft: Java 版 26.3：读同一份存档、遵守同一套规则、生成同样的地形，靠 281 个差分测试与原版逐项对齐；通过自带 launcher 安装，运行所需的游戏文件来自你自己购买的副本，免费、开源、非官方。",
+    "highlight_zh": "本期最值得抄的工程方法不是 Rust，而是「用 281 个差分测试证明重写等价」。"
+  },
+  "indexable-inc/blaze": {
+    "summary_zh": "实验性的 Rust 增量构建器，宣称比 cargo/rustc 快至 92 倍：首轮构建不经 cargo 也不经 rustc，而是自己加载项目并编译每个 crate；改一个函数再构建，毫秒级返回，结束行打上 [blaze] 标记。fmt、clippy、doc、tree 等子命令也由它自己实现，装有 cargo 时 cargo blaze run 等价于 blaze run。",
+    "highlight_zh": "对构建工具链感兴趣的人必看（cranelift JIT 绕开 rustc 冷启动）；但仓库自己标了 EXPERIMENTAL，别进 CI 关键路径。"
+  },
+  "chen08209/FlClash": {
+    "summary_zh": "基于 mihomo（Clash.Meta）内核的多平台代理客户端，一套 Flutter 代码覆盖 Android / Windows / macOS / Linux，桌面端出 x64 与 ARM64。规则分流、代理组、延迟测速、系统代理与 TUN 齐全，订阅支持链接或文件、内置编辑器与覆写脚本，另可看连接/请求/DNS/日志实时视图，WebDAV 或本地文件备份。",
+    "highlight_zh": "要一个不开广告、跨端一致的 Clash 图形前端；GPL-3.0，二次分发需同许可。"
+  },
+  "open-telemetry/opentelemetry-go": {
+    "summary_zh": "OpenTelemetry 的 Go 实现，提供直接测量性能与行为、并把数据送往可观测平台的 API/SDK，覆盖 trace、metrics、logs 三大信号。仓库的进度与稳定性承诺分别记录在项目看板与 versioning 文档里，接入前应先确认所用模块处于哪个稳定性级别。",
+    "highlight_zh": "Go 服务接入标准可观测链路的第一站；注意 SDK 各模块成熟度不一致，别默认全套稳定。"
+  },
+  "storytold/designcraft": {
+    "summary_zh": "纯 Rust 从零写的桌面排版与出版工具，定位是开源的现代 DTP 工作台：原生跑 macOS / Windows / Linux，也能通过 WebAssembly 在浏览器里跑，属 ArtCraft 团队产品线。今日 +43 星，与其同门 cadcraft 同日入选。",
+    "highlight_zh": "看点是「纯 Rust + 原生与 WASM 同源」的实现路径；功能完整度还不足以替代 InDesign。"
+  },
+  "redis/redis": {
+    "summary_zh": "Redis 官方仓库，覆盖缓存、数据结构服务、文档与向量查询引擎三类定位，README 兼作快速上手与从源码构建的完整指南。今日仅 +26 星，属于成熟基础件的常态曝光。注意许可证字段为 NOASSERTION，商用前需回到仓库确认当前实际许可条款。",
+    "highlight_zh": "选型时先把许可搞清楚再用；功能层面无需本报告背书。"
+  },
+  "dbeaver/dbeaver": {
+    "summary_zh": "免费跨平台通用数据库工具与 SQL 客户端，开箱支持 100 多个数据库驱动，任何有 JDBC/ODBC 驱动的库基本都能连。功能覆盖 schema 与 SQL 编辑器、数据编辑器、ER 图、导入导出与迁移、执行计划、管理工具与仪表盘、空间数据查看、代理与 SSH 隧道、自定义驱动编辑器，并已内置 AI 对话辅助。",
+    "highlight_zh": "日常 SQL 与多库排查的默认选择；Java 桌面端，启动与内存开销偏大。"
+  },
+  "hugues31/duckpad": {
+    "summary_zh": "基于 DuckDB 2.0 的开源 SQL 工作区：可视化拼出 sources / joins / 可复用组件，也可在集成编辑器里写 SQL；点结果里任一单元格能回溯它的上游源值并给出明确的血缘覆盖度；支持存进 Git、独立分支、可视化比对 diff 并在应用前 review 合并。自托管、按环境配连接、带团队权限。",
+    "highlight_zh": "差异化在「单元格级血缘 + Git 式版本化」；注意执行 SQL 要求 Linux 且内核开启 Landlock（5.19+）。"
+  },
+  "apache/arrow": {
+    "summary_zh": "Apache Arrow 是跨语言的列式内存格式与工具箱，目标是让数据系统之间高效地存储、处理与搬运数据，生态里 Parquet 等格式与多语言实现都基于同一套内存表示。今日 +6 星。",
+    "highlight_zh": "做数据平台时的交换层标准；本身不是产品，价值取决于上下游是否都吃这套格式。"
+  },
+  "trinodb/trino": {
+    "summary_zh": "面向大数据分析的分布式 SQL 查询引擎（原 PrestoSQL），可跨数据湖与多种数据源做联邦查询，README 指向用户手册与 DEVELOPMENT 文档，另设安全策略说明漏洞上报流程。今日 +5 星。",
+    "highlight_zh": "已有数据湖、要统一 SQL 入口时选它；单机小数据量用 DuckDB 更省事。"
+  },
+  "ayghri/i-have-adhd": {
+    "summary_zh": "一个专门治「答案被埋起来」的编码助手技能：动作先行、步骤编号、禁止「希望这有帮助」这类客套，让 Agent 的输出短而可执行。多语言 README（中/英/西/葡/日/越/韩/波斯/泰/阿/法），按仓库 AGENTS.md 的说明安装为 skill 或插件。",
+    "highlight_zh": "被 Agent 的长篇前言磨到没耐心的人，装上立刻见效；本质是提示词纪律的封装。"
+  },
+  "git/git": {
+    "summary_zh": "Git 官方源码镜像（发布用仓库），提交不以 PR 形式合并，而是经 GitGitGadget 转成邮件列表补丁，需按 Documentation/SubmittingPatches 走流程。今日 +31 星。",
+    "highlight_zh": "想给 Git 本体提补丁，先读 SubmittingPatches，不要直接开 PR 等合并。"
+  },
+  "fuxicodex/Fuxi": {
+    "summary_zh": "Go 写的终端 AI 编码 Agent：读代码、改文件、跑命令、驱动工具，靠一套 TUI 交互，具备跨 provider 的成本感知路由与自动 failover，单静态二进制、无运行时依赖，自带 MCP client 与自更新。项目方称其约 200 万行代码全部由 FuXi 自己写成。",
+    "highlight_zh": "在意「一个二进制拷过去就能跑」和按成本切模型的团队；200 万行自举一说建议自行验证。"
+  },
+  "MeteorNOX/DeepSeek-Balance-Whale-Widget": {
+    "summary_zh": "DeepSeek Harness（DSH）Web 界面右下角的常驻挂件：小鲸鱼气泡 + API 余额 + 今日已用 + 每轮对话消耗，气泡内容可完全自定义（点击序列、模块化排版、并列加权出泡、随机语句与图片），支持拖拽吸附与左吸附翻转，随界面自动启用。标准 DSH bundle 插件，dsh plugin 一键安装，不需要会话令牌。",
+    "highlight_zh": "想知道自己每天烧多少钱的 DSH 用户；注意 Codex 版与 DSH 网页版两条线互不兼容。"
+  },
+  "geo-tp/ESP32-Bit-Pirate": {
+    "summary_zh": "开源固件，把 ESP32 变成致敬 Bus Pirate 的多协议开发与分析工具：I2C、UART、1-Wire、SPI 等数字协议可嗅探、发送、写脚本，也能碰蓝牙、Wi-Fi、Sub-GHz、LoRa 与 RFID，交互走串口终端或浏览器里的 Web CLI。",
+    "highlight_zh": "硬件调试、协议逆向的入门级瑞士军刀；射频部分请注意当地无线电法规。"
+  },
+  "rddmwmddr/android-ad-cleaner": {
+    "summary_zh": "关掉国产安卓系统里的广告、热搜、资讯推荐与营销推送：不 root、改动可还原，仅通过 adb 连接设备（暂不支持用 HDC 的原生鸿蒙），并支持交给 AI 智能体一键执行。近期版本修掉了 Windows 本地页面超时、荣耀截图越界、通知渠道误操作风险、vivo 快应用与备份等问题。",
+    "highlight_zh": "受够系统级推送的国产安卓用户；本质是批量改系统设置，建议先备份并在非主力机试。"
+  },
+  "krahets/hello-algo": {
+    "summary_zh": "《Hello 算法》：动画图解、可一键运行的数据结构与算法教程，简中/繁中/英/日四语，代码实现覆盖 Python、Java、C++、C、C#、JS、Go、Swift、Rust、Ruby、Kotlin、TS、Dart 等 12 门语言。内容以 CC BY-NC-SA 4.0 授权，禁止商用。",
+    "highlight_zh": "零基础入门数据结构的最省力入口；注意教材内容不可商用。"
+  },
+  "Pal-AI-Lab/Coopanion": {
+    "summary_zh": "桌宠 Coo：住在屏幕底边，用气泡跟你说话、能听你讲话、会沿屏幕边缘走动，经你授权后可以操作电脑。基于 Cortico 与 Electron，跑 Windows / macOS / Linux，应用与首启引导支持 11 种语言（含简繁中文），新装默认跟随系统语言。",
+    "highlight_zh": "想要「有存在感的本地 AI 入口」可以试；授予电脑操作权限前请先读它的隐私与成本说明。"
+  },
+  "LNPANDY/NX2Apple": {
+    "summary_zh": "把自购的 Switch 游戏搬到 iPhone/iPad：不是模拟器，而是一个 macOS 应用在图形界面里几步完成整条构建链——解包、把游戏代码改写成 Apple Silicon 可执行、把着色器翻译到 Metal、打包成 slim IPA 加分片 RomFS，连 16 GB 的大作也能装进手机，最后给出装机三步。",
+    "highlight_zh": "技术上最激进的「跨平台搬运」样本；合法性完全取决于你是否持有正版游戏，风险自负。"
+  },
+  "storytold/cadcraft": {
+    "summary_zh": "纯 Rust 写的 AutoCAD 类 2D/3D CAD：保留你熟悉的命令行、对象捕捉、图层、标注、填充、块与 DXF 图纸工作流，原生跑 macOS / Windows / Linux / FreeBSD，也能经 WebAssembly 在浏览器里跑，属 ArtCraft 团队产品线。",
+    "highlight_zh": "想看「clean-room 纯 Rust 重写专业桌面软件」能走到哪一步；工程制图生产环境仍建议观望。"
+  }
+}
