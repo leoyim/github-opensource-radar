@@ -2,11 +2,17 @@
 const base = import.meta.env.BASE_URL;
 const path = Astro.url.pathname;
 
+/* short 是窄屏的一字牌：与主题切换同一副方框，四栏并排仍放得下 */
 const links = [
-  { href: base, label: '最新一期', match: (p: string) => p === base || p === `${base}index.html` },
-  { href: `${base}archive/`, label: '归档', match: (p: string) => p.startsWith(`${base}archive`) },
-  { href: `${base}projects/`, label: '项目索引', match: (p: string) => p.startsWith(`${base}projects`) },
-  { href: `${base}stats/`, label: '长期观察', match: (p: string) => p.startsWith(`${base}stats`) },
+  {
+    href: base,
+    label: '最新一期',
+    short: '新',
+    match: (p: string) => p === base || p === `${base}index.html`,
+  },
+  { href: `${base}archive/`, label: '归档', short: '档', match: (p: string) => p.startsWith(`${base}archive`) },
+  { href: `${base}projects/`, label: '项目索引', short: '索', match: (p: string) => p.startsWith(`${base}projects`) },
+  { href: `${base}stats/`, label: '长期观察', short: '察', match: (p: string) => p.startsWith(`${base}stats`) },
 ];
 ---
 
@@ -35,8 +41,9 @@ const links = [
     <nav class="nav-links">
       {
         links.map((l) => (
-          <a href={l.href} aria-current={l.match(path) ? 'page' : undefined}>
-            {l.label}
+          <a href={l.href} aria-current={l.match(path) ? 'page' : undefined} aria-label={l.label}>
+            <span class="nav-label">{l.label}</span>
+            <span class="nav-short" aria-hidden="true">{l.short}</span>
           </a>
         ))
       }

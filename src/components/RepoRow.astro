@@ -94,57 +94,36 @@ const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
     <!-- 项目标记：优先用 owner 头像（GitHub 上仓库页显示的就是它），
          地址来自 _data/owners.json 的离线缓存；缓存缺这一项或图挂了，
          就露出底下那层首字母，不会出现破图。
-         右下角贴一枚二维码入口，点击后码面直接盖住徽记，位置不跳。 -->
+         徽记自身就是二维码入口：点一下码面盖住徽记，点别处恢复。 -->
     <span class="mark">
-      <span class="avatar" aria-hidden="true">
-        <span>{item.owner.slice(0, 1)}</span>
-        {
-          avatar && (
-            <img
-              src={avatar}
-              alt=""
-              width="96"
-              height="96"
-              loading="lazy"
-              decoding="async"
-              referrerpolicy="no-referrer"
-              onerror="this.remove()"
-            />
-          )
-        }
-      </span>
-
-      <span class="qr">
-        <button
-          class="qr-btn"
-          type="button"
-          aria-label={`显示 ${item.full_name} 的地址二维码`}
-          aria-expanded="false"
-          aria-controls={`qr-${slug}`}
-        >
-          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
-            <g fill="none" stroke="currentColor" stroke-width="1.2">
-              <rect x="1.4" y="1.4" width="5.2" height="5.2"></rect>
-              <rect x="9.4" y="1.4" width="5.2" height="5.2"></rect>
-              <rect x="1.4" y="9.4" width="5.2" height="5.2"></rect>
-            </g>
-            <g fill="currentColor">
-              <rect x="3.2" y="3.2" width="1.6" height="1.6"></rect>
-              <rect x="11.2" y="3.2" width="1.6" height="1.6"></rect>
-              <rect x="3.2" y="11.2" width="1.6" height="1.6"></rect>
-              <rect x="9.4" y="9.4" width="2.2" height="2.2"></rect>
-              <rect x="12.6" y="9.4" width="1.2" height="1.2"></rect>
-              <rect x="9.4" y="12.6" width="1.2" height="1.2"></rect>
-              <rect x="12" y="12" width="1.2" height="1.2"></rect>
-              <rect x="13.9" y="12.6" width="1.1" height="1.1"></rect>
-              <rect x="12.6" y="13.9" width="1.1" height="1.1"></rect>
-            </g>
-          </svg>
-        </button>
-
-        <span class="qr-pop" id={`qr-${slug}`} hidden>
-          <RepoQr value={item.url} size={74} />
+      <button
+        class="mark-btn"
+        type="button"
+        aria-label={`显示 ${item.full_name} 的地址二维码`}
+        aria-expanded="false"
+        aria-controls={`qr-${slug}`}
+      >
+        <span class="avatar" aria-hidden="true">
+          <span>{item.owner.slice(0, 1)}</span>
+          {
+            avatar && (
+              <img
+                src={avatar}
+                alt=""
+                width="96"
+                height="96"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                onerror="this.remove()"
+              />
+            )
+          }
         </span>
+      </button>
+
+      <span class="qr-pop" id={`qr-${slug}`} hidden>
+        <RepoQr value={item.url} size={74} />
       </span>
     </span>
   </div>
@@ -156,7 +135,7 @@ const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
     document.querySelectorAll('.qr-pop').forEach((pop) => {
       if (pop === except || pop.hidden) return;
       pop.hidden = true;
-      const btn = pop.parentElement.querySelector('.qr-btn');
+      const btn = pop.parentElement.querySelector('.mark-btn');
       if (btn) btn.setAttribute('aria-expanded', 'false');
     });
   };
@@ -167,7 +146,8 @@ const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
     // 点在码面上不关闭，方便长按或截图
     if (target.closest('.qr-pop')) return;
 
-    const btn = target.closest('.qr-btn');
+    // 徽记本身就是开关：再点一次也收起
+    const btn = target.closest('.mark-btn');
     if (!btn) {
       closeQr();
       return;
@@ -184,7 +164,7 @@ const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
 
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
-    const openBtn = document.querySelector('.qr-btn[aria-expanded="true"]');
+    const openBtn = document.querySelector('.mark-btn[aria-expanded="true"]');
     closeQr();
     if (openBtn) {
       openBtn.setAttribute('aria-expanded', 'false');

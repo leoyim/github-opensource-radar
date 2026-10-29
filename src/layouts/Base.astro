@@ -76,7 +76,39 @@ const year = 2026;
             © {year} OpenSource Radar
           </p>
         </div>
-        <div class="seal" aria-hidden="true"><span>开源</span><span>雷达</span></div>
+        <!-- 印章：秦篆四字（開源雷達），按传统印式竖排两列、自右向左读：
+             右列「開源」，左列「雷達」；字形按小篆笔意描成线，不依赖篆书字体 -->
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="presentation" focusable="false">
+            <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <!-- 開：右列上 -->
+              <g transform="translate(26 2)">
+                <path d="M3 4H17M3 4v10.6c0 1.2-.8 2-2 2.2M17 4v10.6c0 1.2.8 2 2 2.2" />
+                <path d="M5.8 6.4h2.8M7.2 6.4v10.4M11.4 6.4h2.8M12.8 6.4v10.4" />
+              </g>
+              <!-- 源：右列下 -->
+              <g transform="translate(26 26)">
+                <path d="M4.9 3.6c-1.2 1-1.2 2.2-.2 2.8M4.3 8.2c-1.2 1-1.2 2.2-.2 2.8M4.9 12.8c-1.2 1-1.2 2.2-.2 2.8" />
+                <path d="M17.2 3.6H7.2c-.6 4.8-1.2 9.6-2 13.8" />
+                <path d="M9.6 6.2h5.2v3.6H9.6zM11.1 7.5h2.2" />
+                <path d="M12 10.4v6.4M9.8 11.6c-.5 1.6-.7 3.4-.7 4.6M14.4 11.6c.5 1.6.7 3.4.7 4.6" />
+              </g>
+              <!-- 雷：左列上（雨 下 畾，三田品字，《说文》从雨畾象回转形） -->
+              <g transform="translate(2 2)">
+                <path d="M3 2.6H17M4.5 3v3.4M15.5 3v3.4M10 2.6v4.6M7.2 3.6c-.3 1.2-.3 2.2 0 3.2M12.8 3.6c.3 1.2.3 2.2 0 3.2" />
+                <path d="M7 8h6v3.8H7zM10 8v3.8M7 9.9h6" />
+                <path d="M3.6 12.6h5.6v4.2H3.6zM6.4 12.6v4.2M3.6 14.7h5.6M10.8 12.6h5.6v4.2h-5.6zM13.6 12.6v4.2M10.8 14.7h5.6" />
+              </g>
+              <!-- 達：左列下（辶 托 羍，羊 下 大） -->
+              <g transform="translate(2 26)">
+                <path d="M3.2 4.6c1.2-.7 2-.5 2.6.1M2.8 7.4c1.2-.7 2-.5 2.6.1" />
+                <path d="M4.8 10.6c-1.8 2.2-1.4 5 .9 6.3 2.2 1.2 6.2 1.2 11.9 1.1" />
+                <path d="M8.6 4.9c.7-1.6 2-1.6 2.7 0M14 4.9c-.7-1.6-2-1.6-2.7 0M8.2 6.4h6.2M11.3 4.6v5.8M8.8 8.6h5" />
+                <path d="M6.6 12.4h9.4M11.3 10.6c-.5 2.2-1.1 3.8-1.9 5.2M11.3 10.6c.6 2.2 1.3 3.8 2.3 5.2" />
+              </g>
+            </g>
+          </svg>
+        </div>
       </div>
     </footer>
     <button class="to-top" type="button" data-to-top aria-label="回到顶部">↑</button>

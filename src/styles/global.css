@@ -362,6 +362,10 @@ summary {
   color: var(--ink);
   border-bottom-color: var(--ink-rule);
 }
+/* 一字牌只在窄屏启用，宽屏仍显示完整栏目名 */
+.nav-short {
+  display: none;
+}
 .theme-toggle {
   width: 26px;
   height: 24px;
@@ -807,51 +811,26 @@ summary {
   gap: 7px;
   padding-top: 2px;
 }
-/* 徽记右下角的二维码入口：图标挂在徽记右侧之外，底边与徽记底边平齐；
-   点击后码面回到徽记的位置（以右下角为锚点向左上展开，同为 84px）。 */
+/* 徽记即二维码入口：点击后码面原地盖住徽记，点别处恢复，位置不跳。
+   徽记外不再挂图标，按钮只负责承载可点击的徽记本身。 */
 .mark {
-  /* 图标宽度：既是外挂的距离，也是码面的反向抵消量 */
-  --qr-inset: 20px;
-  /* 图标与徽记之间留的空隙 */
-  --qr-gap: 4px;
-  /* 与 .avatar 的边长保持一致，码面按它定尺寸 */
-  --mark-size: 84px;
   position: relative;
   margin-top: auto;
   margin-bottom: 2px;
 }
-.qr {
-  position: absolute;
-  right: calc(-1 * (var(--qr-inset) + var(--qr-gap)));
-  bottom: 0;
-  z-index: 3;
-}
-.qr-btn {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  place-items: center;
-  width: 20px;
-  height: 20px;
+.mark-btn {
+  display: block;
   padding: 0;
-  border: 1px solid var(--rule-strong);
-  /* 压在徽记一角上，需要一层纸色把底下的图隔开 */
-  background: var(--paper);
-  color: var(--ink-3);
-  transition: color 0.15s;
-}
-.qr-btn:hover,
-.qr-btn[aria-expanded="true"] {
-  color: var(--accent);
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
 }
 .qr-pop {
   position: absolute;
-  /* 抵消图标的外挂距离与空隙，让码面右边缘回到徽记右边缘 */
-  right: calc(var(--qr-inset) + var(--qr-gap));
-  bottom: 0;
-  z-index: 1;
-  width: var(--mark-size);
-  height: var(--mark-size);
+  /* 与徽记同尺寸：模板里就是 84px，窄屏由 .avatar 收到 42px */
+  inset: 0;
+  z-index: 3;
   padding: 4px;
   /* 固定白底：深色主题下二维码也必须是白底深码，否则扫不出来 */
   background: #fff;
@@ -1552,20 +1531,20 @@ body[data-role]:not([data-role="all"]) .repo .rel {
   color: var(--accent);
   border-color: var(--accent);
 }
-/* 印章：版权页上的一个小方块，出版社标记的位置 */
+/* 印章：版权页上的一方小印。四字小篆由 SVG 线描，字号无关；
+   边框加厚、留白收紧，靠近传统印面的密度。 */
 .seal {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  border: 1px solid var(--accent);
+  width: 64px;
+  height: 64px;
+  padding: 2px;
+  border: 2px solid var(--accent);
   color: var(--accent);
-  font-size: 0.72rem;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  padding: 4px;
   opacity: 0.9;
+}
+.seal svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* ---------- 响应式 ---------- */
@@ -1612,8 +1591,31 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     gap: 16px;
   }
   .nav-links {
-    gap: 16px;
+    gap: 8px;
     font-size: 0.86rem;
+  }
+  /* 四栏收成一字方牌，与主题切换同一种显示方式 */
+  .nav-label {
+    display: none;
+  }
+  .nav-short {
+    display: block;
+  }
+  .nav-links a {
+    width: 26px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 1px solid var(--rule-strong);
+    font-size: 0.76rem;
+    line-height: 1;
+    transition: color 0.14s ease, border-color 0.14s ease;
+  }
+  .nav-links a:hover,
+  .nav-links a[aria-current="page"] {
+    color: var(--ink);
+    border-color: var(--ink);
   }
   .brand-sub {
     display: none;
@@ -1634,18 +1636,10 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     gap: 14px;
     padding-top: 4px;
   }
-  /* 横排后徽记变小，图标同步缩一号，仍挂在徽记右下角外侧；
-     码面跟随徽记尺寸。 */
+  /* 横排后徽记收到 42px，码面 inset:0 跟着一起收，内边距再让一点 */
   .mark {
-    --qr-inset: 16px;
-    --qr-gap: 3px;
-    --mark-size: 42px;
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .qr-btn {
-    width: 16px;
-    height: 16px;
   }
   .qr-pop {
     padding: 2px;
@@ -1722,7 +1716,7 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     letter-spacing: 0.12em;
   }
   .nav-links {
-    gap: 13px;
+    gap: 8px;
     font-size: 0.82rem;
   }
   .cover-table th {
