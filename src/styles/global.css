@@ -29,9 +29,8 @@
   --rail: 72px; /* 书口 */
   --side: 140px; /* 右边栏 */
   --gap: 22px;
-  /* 书脊宽度，以及正文为它让出的左侧留白（宽屏时书脊在版心之外，留白为 0） */
+  /* 书脊宽度。只在宽屏（≥1200px）显示，贴在版心之外，不占正文宽度 */
   --spine: 54px;
-  --spine-pad: 0px;
 
   --h-nav: 60px;
   --h-ctrl: 46px;
@@ -145,7 +144,7 @@ summary {
   width: 100%;
   max-width: var(--w);
   margin: 0 auto;
-  padding: 0 var(--gutter) 0 calc(var(--gutter) + var(--spine-pad));
+  padding: 0 var(--gutter);
 }
 
 .mono {
@@ -512,8 +511,8 @@ summary {
   scrollbar-width: none;
   -ms-overflow-style: none;
   /* 抵消 .wrap 的水平内边距：滚动裁切边和两侧遮罩才对得齐 */
-  margin: 0 calc(var(--gutter) * -1) 0 calc((var(--gutter) + var(--spine-pad)) * -1);
-  padding: 8px var(--gutter) 8px calc(var(--gutter) + var(--spine-pad));
+  margin: 0 calc(var(--gutter) * -1);
+  padding: 8px var(--gutter);
   scroll-padding-inline: var(--gutter);
   overscroll-behavior-x: contain;
 }
@@ -1577,9 +1576,6 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     --side: 116px;
     --gap: 16px;
     --gutter: 22px;
-    /* 窄屏书脊收窄并贴住视口左边，正文让出等宽留白 */
-    --spine: 48px;
-    --spine-pad: 48px;
   }
   .cover {
     grid-template-columns: minmax(0, 1fr);
@@ -1638,17 +1634,6 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     gap: 14px;
     padding-top: 4px;
   }
-  /* 窄屏书脊贴在视口左缘，正文已由 --spine-pad 让出位置 */
-  .spine.is-on {
-    display: flex;
-    left: 0;
-  }
-  .spine::before,
-  .spine::after {
-    left: 5px;
-    right: 5px;
-  }
-
   /* 横排后徽记变小，图标同步缩一号，仍挂在徽记右下角外侧；
      码面跟随徽记尺寸。 */
   .mark {
