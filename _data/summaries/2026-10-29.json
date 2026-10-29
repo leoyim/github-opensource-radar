@@ -1,0 +1,122 @@
+{
+  "google/elephant-goldfish-model": {
+    "summary_zh": "Google 内部数千工程师在用的规格写作插件：大象（带完整项目上下文）负责起草规格，金鱼（零上下文子 agent）负责挑刺——它只看草稿和被引用的源码，看不到之前的对话，因此能逼出那些「大家都以为说清楚了」的隐含假设。人负责拍架构权衡、批准规格，然后才动代码。",
+    "highlight_zh": "适合需求文档写了但总在实现阶段返工的团队；单人小脚本用不上这套流程。"
+  },
+  "Zagitta/gpu-unlock": {
+    "summary_zh": "NVIDIA 把 GeForce 的 tensor core 在 FP16/BF16/TF32 + FP32 累加这条路径上锁到半速，而同样的硅片做成 RTX A 系列就全速。这个项目在开机阶段、官方驱动加载之前把限制摘掉：不打补丁驱动、不刷 VBIOS，NVIDIA 出新驱动也不用重做。README 标注最高 2× tensor 吞吐、LLM prefill +25–55%、微调 +25–50%、出图 +30–55%。",
+    "highlight_zh": "手上有 20/30/40 系卡、想在本机跑训练或非量化推理的人；生产环境慎用，属改硬件行为。"
+  },
+  "amosblomqvist/learnharness": {
+    "summary_zh": "把「教你学会」当成一个工程问题：先测出你在每个前置知识点上理解断在哪，再画一张到目标的依赖图，然后按推理步骤一步步教、用练习固化，并用一张持久的知识图谱跨会话记住你的水平。它不直接给解释，而是根据你的回答和思路决定下一步讲什么。",
+    "highlight_zh": "想系统啃硬知识（数学、编译原理、某框架源码）且愿意被追问的人；想「五分钟看懂」的别用。"
+  },
+  "kajisho5/ffmpeg-skill": {
+    "summary_zh": "把 FFmpeg 拆成 42 个带类型参数的结构化工具，配一个 MCP server，让 Claude Code / Cursor / Codex 真正能剪片：切、字幕、改画幅、响度归一、平台导出。关键设计是「先探再动」——每个任务从 probe.py 读出时长、帧率、分辨率、色彩、音频布局再决策；所有操作不经过 shell，没有 filter graph 字符串注入的空间。无云、无 API key、只用 Python 标准库。",
+    "highlight_zh": "需要在本地批量处理视频又不想上传云端的人；对音视频参数不熟但想让 agent 代劳的尤其实用。"
+  },
+  "CopilotKit/OpenBot": {
+    "summary_zh": "给每个 AI 同事配一台自己的电脑：独立浏览器（独立登录态）、独立文件、只授予你给的工具；每个动作在执行前先被决策、执行后被记录，全程可审计。形态对标 ChatGPT/Claude/Grok，但跑在你自己的基础设施上、任何部分都能改，通过 AG-UI 接任意 agent 栈。",
+    "highlight_zh": "要在企业内跑有权限边界的 agent、且合规要求可追溯的组织；个人玩具场景太重。"
+  },
+  "heydeer/pngdeer": {
+    "summary_zh": "有损 PNG 压缩但不给质量滑块：对每张图从 2 到 256 色、开与不开抖动逐一搜索，用感知指标（SSIMULACRA2，上限 90）打分，留下「还看着对」里最小的那个文件。同质量下中位数比 TinyPNG 小 8–12%。命令行和浏览器（WASM）跑的是同一份 Rust 代码，输出字节一致，浏览器侧不上传图片。",
+    "highlight_zh": "前端/设计资源包里 PNG 体积是痛点的项目；要无损或要精确控质的不适用。"
+  },
+  "youpi-pg/YouPI-PG": {
+    "summary_zh": "印度场景的自托管支付网关：UPI 与货到付款，零平台手续费、货款直连银行，任意 JS 前端可接，动态二维码收款，WhatsApp 预结账 OTP 验证。最有意思的是「银行观察者」——用安卓短信和 Gmail 读银行通知来自动核对到账。为避免同一 VPA 并发撞车，只允许一个客户同时付款，其余进数据库支撑的 FIFO 队列并实时推送排队位置。",
+    "highlight_zh": "印度本地小商户或做支付中间层的开发者；其他地区无 UPI 场景基本无关。"
+  },
+  "abdiraimov-otabek/dashboard-design-skill": {
+    "summary_zh": "把「资深产品设计师做数据屏的手感」做成 Claude Code 技能，覆盖 KPI 卡、图表、热力图、子弹图、对比周期、排行榜、日期选择、筛选、空状态、宽屏与手机布局，也从 127 个已上线看板里蒸馏出规则。核心主张是「页面自己会说话」：每个 KPI 下不写解释句、不摆一排 insights 文案，说明都收进 tooltip；每单活结尾强制截屏 QA，看屏幕而不是看代码。",
+    "highlight_zh": "经常让 agent 生成后台/分析页、但产出总像模板的人；纯 API 项目无关。"
+  },
+  "Sallyn0225/eidolon-sc": {
+    "summary_zh": "《偶像大师 闪耀色彩》的 AI 分身：以 283 事务所制作人身份和 28 位偶像加事务员七草はづき对话。她用日语原声回答并附中文字幕、保留口癖，专有名词按读音表念对；基于 WebRTC 的全双工通话可以随时插话打断；通话时叠原作 Spine 立绘，会呼吸眨眼动嘴；能回忆原作剧情，也能记住你说过的事并在偶像之间「传开」。Docker Compose 一键部署，支持 Google/GitHub 登录与自带密钥。",
+    "highlight_zh": "系列粉丝和想做「角色 AI + 实时语音」参考实现的人；纯工程视角可直接抄它的语音链路与记忆设计。"
+  },
+  "Raktim94/nodedr-restaurant-pos": {
+    "summary_zh": "为餐厅而不是零售改造的自托管 POS：堂食、外带、外卖、后厨一条线，含桌台、KDS 厨房屏、预订、二维码点单、库存、员工考勤与薪资、记账、报表、CRM 会员和多门店管控。离线优先，单店可以完全跑在自己的小机器上，无订阅费；全站细粒度 RBAC，20 个业务域按插件组织。",
+    "highlight_zh": "想摆脱 SaaS 月费、又有基本 IT 能力的中小餐饮；连锁大规模场景要评估运维成本。"
+  },
+  "hiddify/hiddify-app": {
+    "summary_zh": "基于 Sing-box 的多平台代理客户端，覆盖 Android、iOS、Windows、macOS、Linux，支持 Sing-box / Clash 系协议栈与 TUIC、Hysteria、Reality、ECH 等，提供自动选节点、TUN 模式、远程订阅。无广告、开源。",
+    "highlight_zh": "需要跨五端统一代理配置的人；这不是给服务端造协议的库。"
+  },
+  "storytold/soundcraft": {
+    "summary_zh": "用纯 Rust 重写的 Pro Tools：完整 DAW，原生跑 macOS/Windows/Linux/FreeBSD 也能跑在浏览器里。多轨编辑、Shuffle/Slip/Spot/Grid 四种模式、完整调音台（推子声像自动化、pre/post send、总线、aux、主推子）、MIDI、录音与 bounce，每个动作都能从命令行或由 AI agent 脚本化。属于 storytold 那组「Rust 重写专业桌面软件」系列的新一员。",
+    "highlight_zh": "音频工具链开发者、想用脚本/agent 驱动 DAW 的人；日常混音仍建议先用成熟宿主。"
+  },
+  "wanghongenpin/proxypin": {
+    "summary_zh": "Flutter 写的跨平台抓包工具，拦截、查看、改写 HTTP(S)，能抓 Flutter 应用流量。手机扫码即连、无需手配 WiFi 代理，支持配置同步与多端互转；域名过滤只拦你要的流量；支持按关键词与响应类型检索，以及写脚本改请求响应。",
+    "highlight_zh": "移动端调试、需要抓 Flutter 包的人；纯后端服务排障用不上。"
+  },
+  "zeabur-oss/zeabur": {
+    "summary_zh": "自托管的 PaaS，装在你自己的 Kubernetes 上：把集群呈现成项目和服务的视图，用人话说清哪里坏了，并让你安全地改。只操作你已有的对象、绝不用超出你权限的身份动作、自身不保留任何状态——没有数据库、没有 CRD。装法三选一：一台 Linux 机器自动装 K3s/RKE2、已有集群走 Helm、或只用 kubeconfig 起本地 UI。",
+    "highlight_zh": "有 K8s 但想让非平台团队自助发服务的人；完全不想碰集群的团队不需要。"
+  },
+  "opengeos/terrio": {
+    "summary_zh": "纯 Rust 的地理空间数据 IO：栅格、矢量、点云，目标是读写、转换、重投影主流 GIS 格式而不依赖任何 C 库，因此 Rust 能编译的地方都能编，包括 WebAssembly。README 明确标注仍处早期：读写与转换可用，处理类操作在做；参照系是 GDAL、PROJ、PDAL。",
+    "highlight_zh": "想把 GIS 能力塞进 WASM 或嵌入式、又受够 GDAL 编译地狱的人；生产慎用，尚早期。"
+  },
+  "valkey-io/valkey": {
+    "summary_zh": "Redis 在切换到新许可证之前分叉出来的开源版本，BSD-3 授权，定位是高性能数据结构服务器，主攻缓存与实时负载，保留原生数据结构和可扩展插件机制来加新结构。",
+    "highlight_zh": "在意许可证风险、想平替 Redis 缓存的团队；已有 Redis 集群迁移需评估兼容面。"
+  },
+  "pgvector/pgvector": {
+    "summary_zh": "把向量存进 Postgres 和其余数据放一起：精确与近似最近邻检索，支持单精度、半精度、二进制和稀疏向量，距离度量覆盖 L2、内积、余弦、L1、Hamming、Jaccard，任何有 PG 客户端的语言都能用；顺带白拿 ACID、PITR、JOIN。",
+    "highlight_zh": "数据量在千万级以内、不想为 RAG 单独引一套向量库的团队；超大规模专用向量库仍有优势。"
+  },
+  "agenticfabriq/mnemiq": {
+    "summary_zh": "可调可测的 text-to-SQL 引擎：从自然语言问题到 SQL 之间的每一段都是你能读、能改、能量化的设置——用哪个模型写 SQL（本地或托管、单候选或多候选）、检索多少 schema 上下文及如何排序、做多少语义增强以及是否要人工认证、拒绝策略有多激进（校验器与阈值）。",
+    "highlight_zh": "要让业务方直接问数据库、且必须能测准确率的团队；读起来像 YC W26 团队的早期产品，需自评成熟度。"
+  },
+  "pgrundev/pgbot": {
+    "summary_zh": "Postgres 自身的可观测性：一个静态二进制以只读身份连库，读 Postgres 自己的统计视图，直接吐「先看结论」的健康报告，并告诉你和上次相比变了什么。整条链路没有 agent、没有外部服务、没有任何写权限。支持 PG 14–18（16–18 完整支持），可选接 pg_stat_statements 与 hypopg 做查询建议，另有 MCP 与 JSON 契约。",
+    "highlight_zh": "要给 agent 或 CI 提供「数据库现在怎么样」的机器可读输入、又不能给写权限的人。"
+  },
+  "dbt-labs/dbt-charts": {
+    "summary_zh": "dbt Labs 出的声明式看板：SQL 仍然定义「看什么数据」，外面包一层 YAML 声明「怎么看」，编译成交互式看板与报告。要解决的问题写在 README 里——vibe coding 出来的看板会在每一层堆出一坨构件、框架和数据转换，最后没人能审计。",
+    "highlight_zh": "dbt 已有存量、又想让 agent 生成看板但要求可审计的数据团队；非 dbt 栈迁移成本高。"
+  },
+  "l0ng-ai/openidea": {
+    "summary_zh": "把 IntelliJ IDEA 的工作方式搬到 Rust 原生应用：同样的键位、工具窗口、search-everywhere 习惯，编辑器、代码洞察、调试器、Git、终端、数据库和 HTTP 客户端一体，覆盖 60+ 语言，macOS/Windows/Linux 都有。README 给了自测：打开约 770 文件的 Python 项目，开窗 0.9s（IDEA 3.1s）、ready 1.1s（13.2s）、内存 169MB（2011MB）、ready 前 CPU 时间 2.4s（47.9s）、退出 0.3s（5.9s）。作者也坦白 IDEA 对 Python 分析更深，「ready」两边不等价。",
+    "highlight_zh": "被 JetBrains 全家桶的内存和启动速度折磨、又舍不得那套键位的人；生态与重构能力必然还不如 IDEA。"
+  },
+  "jaisuriya-11/tsuzuri": {
+    "summary_zh": "终端里的块式 Markdown 笔记本：笔记就是普通 .md 文件，没有数据库、没有锁定，可直接 git 管或换任意编辑器打开。完整工作区形态（起始页、文件树、标签页、状态栏、97 套主题），模态键位编辑且支持鼠标，`/` 唤起块菜单插标题待办表格提示块代码图片，预览按「页面」排版并能直接在预览里拖块排序。单个二进制、零依赖，还能导出 PDF。",
+    "highlight_zh": "长期在终端里、又想要 Obsidian 式块编辑的人；需要多端同步和富媒体的重度笔记用户仍会不够用。"
+  },
+  "kukemc/bili-cli": {
+    "summary_zh": "为 AI Agent 设计的 B 站命令行工具：扫码登录、看视频、评论、私信、发动态、投稿，全部 JSON 输出，可直接交给 Claude Code、Codex、Cursor、Gemini CLI、DeepSeek Harness 等任何能执行命令的 agent。做得比较细的地方在运营侧——一个收件箱聚合回复/@/赞/系统通知/私信且每条附带可直接执行的回复命令，`@` 是真 @（对方会收到提醒），支持带图评论与 B 站表情，`--unreplied` 只列没回过的评论。",
+    "highlight_zh": "想让 agent 代运营 B 站账号、或做 UP 主工作流自动化的人；纯内容消费没必要。"
+  },
+  "a-shygun/Terrascope": {
+    "summary_zh": "终端里的世界地图：用 curses + Unicode 盲文点阵 + 终端颜色渲染国界、地名、实时航班、城市天气、雷达图层、地震以及昼夜分界线。安装时刻意保持轻量，大地图数据首次使用时下到用户缓存，之后复用；国名缩写与机场位置从 Natural Earth 打包进二进制，离线也能用。",
+    "highlight_zh": "喜欢终端美学和随时瞄一眼地球状态的人；实用工具向需求几乎为零。"
+  },
+  "autonomous-ai/openharness": {
+    "summary_zh": "多 agent 指挥中心：Claude Code 在公司、Codex 在家、Hermes 在云上，一个界面统管，接 14 种 agent CLI。README 少见的把性能写清楚了——界面操作中位 11–13ms、p95 15–18ms，本地终端回显中位 1.1ms，桌面端常驻约 0.1% 单核与 304MiB（含终端渲染与回滚缓冲）。主张先做代码，再顺着兴趣延伸到 CAD、电路、机器人、游戏和音乐。",
+    "highlight_zh": "同时在用两三个编码 agent、机器又多的人；只用一个 agent 单机的人收益有限。"
+  },
+  "flutter/flutter": {
+    "summary_zh": "Google 的跨端 UI SDK：一套代码出移动、Web、桌面，可增量接入既有工程。本期日增 +114，属于长周期项目在趋势页的常规回榜，非新项目爆发。",
+    "highlight_zh": "要做多端一致 UI 且接受 Dart 的团队；已有成熟原生栈的团队迁移收益需单独论证。"
+  },
+  "net-merge/net-merge": {
+    "summary_zh": "把手上所有网络同时用起来：Wi-Fi、有线、手机热点、蜂窝数据按连接做负载均衡，让下载、游戏、浏览器拿到几条链路相加的带宽。Windows/macOS/Linux/Android 都有，对 TCP/UDP、IPv4/IPv6 全生效且不需要配代理。README 也划了边界：单个连接永远只走一条链路，所以「一个大文件的单连接下载」不会变快。",
+    "highlight_zh": "多网环境（宿舍、办公室双线、随身多卡）想榨干总带宽的人；单连接大文件场景别期待。"
+  },
+  "InukaAsith/TwinDesk": {
+    "summary_zh": "把「所有电脑加手机拼成一张桌子」：屏幕、应用、文件、剪贴板、摄像头、通话、短信、通知、鼠标键盘在 Mac / Windows / Linux / Android 之间共享。任意组合可用（Mac↔Win、PC↔PC、Linux↔任意、Android↔任意），同 Wi-Fi、USB 线、甚至蓝牙与自建直连 Wi-Fi 都行；不要账号、不走云，设备之间直连。定位是 KDE Connect 的替代与升级。",
+    "highlight_zh": "多机桌面 + 安卓手机、又不想把剪贴板交给云服务的人；安全敏感场景需自评协议实现。"
+  },
+  "Tencent-TDS/KuiklyUI": {
+    "summary_zh": "腾讯 TDS 前端 Oteam 出的 Kotlin 多平台 UI 框架：一套代码覆盖 Android、iOS、HarmonyOS，Web 与小程序 Beta、macOS Alpha 也在列，主打高性能与动态化下发。已用在 QQ、QQ 音乐、QQ 浏览器、腾讯新闻、搜狗输入法等产品上。",
+    "highlight_zh": "国内要做鸿蒙 + 双端统一、且在意动态化的团队；海外纯 iOS/Android 项目收益不明显。"
+  },
+  "ente/ente": {
+    "summary_zh": "全开源、端到端加密的云：一套平台之上做了三个应用——Ente Photos（对标 Apple/Google Photos）、Ente Locker（放重要文档与凭据）、Ente Auth（Authy 停服后的 2FA 替代）。仓库是 monorepo，含 iOS/Android/F-Droid/Web/Linux/macOS/Windows 客户端。",
+    "highlight_zh": "不接受把照片和 2FA 交给大厂、又不想自建加密栈的人；只想要免费大容量相册的不适合。"
+  }
+}
