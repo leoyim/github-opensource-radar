@@ -1531,20 +1531,21 @@ body[data-role]:not([data-role="all"]) .repo .rel {
   color: var(--accent);
   border-color: var(--accent);
 }
-/* 印章：版权页上的一方小印。四字小篆由 SVG 线描，字号无关；
-   边框加厚、留白收紧，靠近传统印面的密度。 */
+/* 印章：版权页上的一方小印，白文（实底挖字，秦汉印常见面貌）。
+   字形是《说文》小篆字体轮廓（public/seal.svg），遮罩上色，实底与字孔同出一图。 */
 .seal {
-  width: 64px;
-  height: 64px;
-  padding: 2px;
-  border: 2px solid var(--accent);
+  width: 84px;
+  height: 84px;
   color: var(--accent);
   opacity: 0.9;
 }
-.seal svg {
+.seal-art {
   display: block;
   width: 100%;
   height: 100%;
+  background-color: currentColor;
+  -webkit-mask: url('/seal.svg') center / 100% 100% no-repeat;
+  mask: url('/seal.svg') center / 100% 100% no-repeat;
 }
 
 /* ---------- 响应式 ---------- */
