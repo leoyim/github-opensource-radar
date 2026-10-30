@@ -1,0 +1,122 @@
+{
+  "vectorize-io/hindsight": {
+    "summary_zh": "把 Agent 记忆从「检索对话历史」改成「像人一样形成认知」：世界事实、亲历经验、证据支撑的观察、归纳出的心智模型四层结构，存在 bank 里，用 retain / recall / reflect 三个操作读写。recall 并行跑语义、时间、实体关系等多路检索。README 称其在 LongMemEval 上达 SOTA，结果由弗吉尼亚理工与华盛顿邮报独立复现。",
+    "highlight_zh": "要看的是它的论文与第三方复现，而不是 README 自述的榜单截图。"
+  },
+  "Leonxlnx/taste-skill": {
+    "summary_zh": "专治「AI 生成的落地页长相」：先读需求列出只有这个客户才有的东西，再用脚本从 20 个调研过的视觉方向里发三张牌由 agent 选一张，配上开放档案里的真实摄影，最后在真实浏览器的三个宽度下自检，不合格就返工，最多三轮。它把「审美」拆成了可执行、可失败的检查项。",
+    "highlight_zh": "对你这种在意像素与间距的前端，这套「截屏判分」流程比提示词模板更有参考价值。"
+  },
+  "obra/superpowers": {
+    "summary_zh": "把一整套开发方法论固化成 agent 必走的技能链：先头脑风暴逼出真实意图并复述确认，再开工单分支 worktree、写 2-5 分钟粒度的任务计划、逐任务派子 agent 实现并审查、强制 TDD 红绿重构、任务间代码评审、最后收尾分支。README 明确写「强制工作流，不是建议」。",
+    "highlight_zh": "30 万星的体量说明它更像社区共识而非个人玩具；代价是流程重，小改动会被拖慢。"
+  },
+  "rohitg00/ai-engineering-from-scratch": {
+    "summary_zh": "一门要求「自己敲代码」的 AI 工程课：从手写 attention、检索管线到 agent 运行时，每节课都要跑命令、留证据（命令、工作目录、退出码、有效输出、产物），能解释输出并独立做一个小改动才允许进入下一节。",
+    "highlight_zh": "适合想把 API 调用者变成理解者的人；想快速出活的人会嫌它慢。"
+  },
+  "github/spec-kit": {
+    "summary_zh": "GitHub 官方的规格驱动开发（SDD）工具箱，本期已重构为 specify-cli：除核心的 SDD 流程外，把修 bug、评估想法做成可装扩展，并引入 extension / preset / workflow / bundle / catalog 五层机制，让团队把内部规范、合规要求、私有组件目录叠进同一条流程。",
+    "highlight_zh": "重点不是命令，而是「流程可被组织覆盖」这层设计，适合要过合规的团队。"
+  },
+  "dart-lang/sdk": {
+    "summary_zh": "Dart 语言的完整实现：VM、JS 与 Wasm 编译器、分析器与核心库。定位三角是可上手（空安全、模式匹配）、可移植（ARM/x64/RISC-V 原生 + Web 的 JS/Wasm 双目标）、可提效（热重载与 DevTools）。Flutter 的底座，也是少见的把 Wasm 编译目标做成主线的一门语言。",
+    "highlight_zh": "本体项目，今日无趋势增量；关注 WasmGC 进展的直接看 commits。"
+  },
+  "microsoft/playwright": {
+    "summary_zh": "跨 Chromium / Firefox / WebKit 的统一自动化与测试框架，本期 README 的定位已明显外扩：除测试运行器外，明确把自己写成「AI agent 的工具」——提供 MCP server 与给编码 agent 用的 CLI，并用带 ref 的可访问性快照（如 textbox \"What needs to be done?\" [ref=e5]）替代脆弱的选择器。",
+    "highlight_zh": "如果你在做 agent 驱动的浏览器任务，这份 aria-snapshot 交互范式比坐标点击可靠得多。"
+  },
+  "react/react": {
+    "summary_zh": "前端 UI 库的本体仓库。三条主张没变：声明式（按状态描述视图，框架负责最小更新）、组件化（状态封装在组件内、组合出复杂界面）、Learn Once Write Anywhere（可服务端渲染、可经 React Native 出移动端），并强调可以从一个小组件开始渐进接入。",
+    "highlight_zh": "本体项目，日增 +52 属常态；真正的变化在 RSC 与编译器，别只看 README。"
+  },
+  "chthollyphile/folia-major": {
+    "summary_zh": "以全屏沉浸式歌词动画为核心的播放器，聚合网易云、酷狗、QQ 音乐、Navidrome 与本地库，桌面端还接了波点、YouTube Music、Spotify 与汽水音乐；用智能歌词匹配与 AI 生成配色主题。工程上比较少见的是它自建了模组市场，并用签名区分「官方认证 / 先行测试 / 未验证」三档。",
+    "highlight_zh": "模组签名的分级设计，比播放器功能本身更值得抄。"
+  },
+  "electron/electron": {
+    "summary_zh": "用 JS/HTML/CSS 写跨平台桌面应用的框架，底层是 Node.js 加 Chromium，VS Code 等大量桌面应用建立其上。提供 Windows x64/arm64、macOS Intel 与 Apple Silicon、Linux x64/arm64 的官方二进制。",
+    "highlight_zh": "本体项目。若在意包体积与内存，同赛道的 Tauri 仍是更轻的选择。"
+  },
+  "KeygraphHQ/shannon": {
+    "summary_zh": "自主 AI 渗透测试 agent，规则只有一条：没有可复现的利用，就不出报告。它先做源码侧架构与信任边界分析、再对运行中的应用跑侦察，两路候选合并去重后进入利用队列，只有真正打通的漏洞才计入报告与 CI 严重度门禁。输出 PDF/Markdown/JSON/SARIF，每次扫描跑在临时 Docker 容器里，且支持自带模型密钥（含 Ollama/vLLM 本地端点）。",
+    "highlight_zh": "「代码分析结论不算数、只认已利用」这条判定线，是它区别于扫描器的关键；但需先过模型厂商的网络安全合规校验。"
+  },
+  "jub0t/Concat": {
+    "summary_zh": "开源剪映替代品，Rust 实现、纯本地运行：无水印无账号，本地 Whisper 自动字幕、本地 TTS 与几秒样本的声音克隆、背景去除、关键帧与曲线编辑器、100 种 GPU 实时特效，并提供 JSON-RPC API 与 MCP，可被脚本和 agent 驱动。65 天涨到 1.2 万星。",
+    "highlight_zh": "「可被脚本驱动」是它和同类剪辑软件的分水岭；重度工程仍需测稳定性。"
+  },
+  "juspay/hyperswitch": {
+    "summary_zh": "用 Rust 写的模块化支付基础设施，自称「支付领域的 Linux」：成本可观测、失败重试与收入挽回、PCI 合规卡库、跨 120+ 收单方的智能路由、对账、以及 PayPal/Apple Pay/BNPL 等替代支付方式的即插组件。可以只取其中一个模块叠在现有支付栈上，不强制整体替换。",
+    "highlight_zh": "适合已有支付栈但要接多收单方路由的团队；国内落地需自行解决合规与本地通道。"
+  },
+  "gitleaks/gitleaks": {
+    "summary_zh": "在 git 仓库、文件或 stdin 里找密码、API key、令牌的密钥扫描器，检测引擎是「正则几乎就够了」路线：正则规则加熵值判断，输出带规则 ID、熵值、文件、行号、提交与指纹。可作为 pre-commit 钩子、GitHub Action 或 CI 步骤。",
+    "highlight_zh": "接入成本极低，建议至少挂成 pre-commit；误报靠自定义规则与 allowlist 收敛。"
+  },
+  "XTLS/Xray-core": {
+    "summary_zh": "Project X 的核心网络工具集，源自 XTLS 协议，REALITY 也在同一体系内：Go 实现的多协议代理平台，支持 VLESS、XTLS、XHTTP、后量子加密等演进，README 之外还有一整片社区面板、一键脚本与 GUI 客户端生态。",
+    "highlight_zh": "协议演进看 discussion 与 PR，别指望 README（基本是赞助与链接页）。"
+  },
+  "opensearch-project/OpenSearch": {
+    "summary_zh": "Apache-2.0 的分布式搜索与可观测性套件，源自 Elasticsearch 7.10 的分叉，现由 Linux Foundation 下的 OpenSearch 基金会治理，附带完整的插件、安全与仪表盘体系，面向大规模非结构化数据。",
+    "highlight_zh": "选型的真正变量是许可与治理，而非功能；今日仅 +9，属存量维护型项目。"
+  },
+  "prisma/orm": {
+    "summary_zh": "Prisma 8 是一次方向性重写：ORM 主体改用 TypeScript 实现，主打可扩展、可组合与「默认对 AI agent 友好」——仓库里直接放 .claude/skills、.cursor/skills、.agents/skills 等技能定义供各家编码 agent 读取，并以扩展包形式提供 pgvector 向量列与 PostGIS 地理查询。要求 Node.js 24+。",
+    "highlight_zh": "这是从 Rust 引擎回撤到 TS 的反向信号，值得观察是否成为 ORM 层新常态。"
+  },
+  "lklbar666/geopulse": {
+    "summary_zh": "自托管的 GEO（生成式引擎优化）分析工具，把五条数据线并到一个站点视图：访客行为、AI 爬虫活动、内容目录覆盖、AI 回答观测、AI 引荐转化。隐私设计相当克制——无 Cookie、无跨站跟踪，原始 IP 只用当日盐值哈希做 UV 去重后丢弃，日志只留解析结果与行哈希。",
+    "highlight_zh": "4 天的新项目、样本极小；但「AI 引荐转化」这个指标定义本身就有参考价值。"
+  },
+  "neo4j/neo4j": {
+    "summary_zh": "图数据库本体：以节点与关系的网络结构建模，Cypher 查询语言，支持 ACID 事务。对多跳关系类查询，官方称相较关系型数据库有数量级优势。",
+    "highlight_zh": "本体项目。若只是做「agent 记忆」，先评估是否真需要图库，而不是被叙事说服。"
+  },
+  "StarRocks/starrocks": {
+    "summary_zh": "面向湖仓的 MPP 查询引擎，主打亚秒级即席分析：原生向量化执行、CBO 优化、主键模型的实时 upsert/delete、自动刷新的物化视图，并可直接查询 Hive / Iceberg / Delta / Hudi 而不搬数据，兼容 MySQL 协议。Linux Foundation 项目。",
+    "highlight_zh": "今日仅 +2，属存量项目；选型时重点测你自家 SQL 的 P95，而非官方倍数。"
+  },
+  "apache/dolphinscheduler": {
+    "summary_zh": "Apache 的数据编排平台，用低代码方式编排带复杂依赖的数据管道，内置大量任务类型；架构为去中心化多 master 多 worker，支持横向扩容，提供 Standalone / Cluster / Docker / K8s 四种部署方式，以及工作流版本控制、补数、多租户与权限控制。",
+    "highlight_zh": "与 Airflow 的差别主要在「可视化 DAG + 原生补数」，重运维场景更省人力。"
+  },
+  "nyakang/nyaterm": {
+    "summary_zh": "用 GPUI（Zed 的渲染框架）写的原生远程终端工作台，把 SSH、本地 shell、Telnet、串口、RDP、VNC、SFTP、隧道与 OTP 收进一个客户端，并带 AI 助手：Ask 模式做单次问答，Agent 模式按「观察-决策-执行」循环操作当前会话，命令以带风险等级的结构化卡片呈现、需批准才执行。",
+    "highlight_zh": "风险分级的命令卡片是这类 AI 终端最该有的设计；早期项目，先当体验版用。"
+  },
+  "jesseduffield/lazygit": {
+    "summary_zh": "给 git 命令套一层终端 UI：逐块/逐行暂存、交互式 rebase、cherry-pick、bisect 等原本要手编 TODO 文件或补丁的操作，变成可键盘导航的界面。它的立项动机写得很直白——git 很强，但好用到让人愿意用的部分太少。",
+    "highlight_zh": "长期高口碑工具；把它当作学习 rebase 的可视化教具也成立。"
+  },
+  "usebruno/bruno": {
+    "summary_zh": "轻量 API 客户端，对标 Postman / Insomnia 的关键差异是「集合就存在你文件系统的一个文件夹里」：请求用纯文本 Bru 标记语言保存，因此可以用 git 正常评审与合并，而不是把集合塞进云端账号。",
+    "highlight_zh": "团队要把 API 集合纳入代码评审时，这是最省事的迁移路径。"
+  },
+  "ansible/ansible": {
+    "summary_zh": "无 agent 的 IT 自动化系统：靠目标机已有的 SSH 守护进程工作，不需要装客户端或开额外端口；覆盖配置管理、应用部署、云资源供给、网络自动化与多机编排，用人类可读的声明式语言描述基础设施，强调可审计与可重写。",
+    "highlight_zh": "老牌本体。规模上去后瓶颈在串行与变量作用域，需配合策略插件调优。"
+  },
+  "milind-soni/OpenMausBot": {
+    "summary_zh": "开源版「Grok Bot」：在聊天应用里拥有一队自己的 AI bot，但走自带 agent 路线——bot 直接跑你本机已装的 claude / codex / grok CLI，由一个跑在 127.0.0.1 的小 harness 统一托管进程、密钥与聊天记录；每个 bot 还能拿到一台云端 Linux 桌面或隔离的本地虚拟机当「手」。79 天涨到 7.5 千星，本期移动类日增第一。",
+    "highlight_zh": "本地优先 + 自带 CLI 的组合绕开了 API 计费；代价是并发与沙箱隔离要自己扛。"
+  },
+  "clash-verge-rev/clash-verge-rev": {
+    "summary_zh": "基于 Tauri 的 mihomo 图形客户端，覆盖 Windows x64/x86、Linux x64/arm64 与 macOS 11+（Intel 与 Apple Silicon），把订阅、规则、代理组与系统代理配置收进一个现代界面。15 万星量级，是这一赛道事实上的主流前端。",
+    "highlight_zh": "项目 README 里混有第三方机场广告，注意区分官方内容与推广。"
+  },
+  "man15h/tellyscope": {
+    "summary_zh": "用手机管理 Android TV 的小工具，不到 3 MB、免 root、不需要电脑：内置 330+ 份实测过的精简清单（改编自 cleanyourtv），关停前先列出将受影响的每个应用；还能装 APK/拆分包、传文件、换桌面、看 CPU/内存/温度与网络、遥控与息屏听歌。7 天新项目。",
+    "highlight_zh": "「关停前先列清单、可随时恢复」这条约束，是这类工具最容易做错的地方。"
+  },
+  "firebase/flutterfire": {
+    "summary_zh": "Flutter 官方的 Firebase 插件集合，让 Flutter 应用接入 Firebase 各项服务（认证、Firestore、消息推送、分析等），配套 codelab 与 pub.dev 发布通道。Firebase UI 与 Cloud Firestore ODM 已拆分为独立仓库。",
+    "highlight_zh": "本体项目。国内可用性受 Google 服务可达性限制，需评估替代方案。"
+  },
+  "Louis-CFM/coucou": {
+    "summary_zh": "住在 Mac 刘海（Windows/Linux 为屏幕顶部）的小挂件，盯住你的 AI 编码会话：批准权限、看 agent 干活、拖文件进去、直接和 Claude 对话，并把这些同步到 iPhone 锁屏、灵动岛与小组件。0.4 版加了系统级按住说话听写（NVIDIA Parakeet 经 FluidAudio 跑在本机神经引擎、25 种语言、离线）与无机器人入会的通话记录。",
+    "highlight_zh": "「离开工位也能批权限」是它真正的刚需场景；功能堆得快，注意体积与权限边界。"
+  }
+}
