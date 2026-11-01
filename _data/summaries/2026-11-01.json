@@ -1,0 +1,122 @@
+{
+  "anhao/ai-pose-gallery-zh": {
+    "summary_zh": "把日本画师ギア发布的三套 AI 绘画参考图库（姿势 2,878 张、服装 2,814 张、人像 2,998 张）合并成单仓镜像，元数据全部重译为中文，动作体系、服装款式与 51 种细分发型都有中文标签。另附一个 React 19 角色合成工作台，可拼人像+服装+姿势配方并直连 Gemini、GPT Image、通义、豆包或本地 ComfyUI，同时本身就是可 git clone 的 ComfyUI 自定义节点包。",
+    "highlight_zh": "对中文生图工作流是纯提效工具，但图不是它的——许可是 NOASSERTION，商用前须自行确认原作者授权。"
+  },
+  "stablyai/orca": {
+    "summary_zh": "把 Codex、Claude Code、OpenCode、Pi 等编码 agent 放进各自独立的 git worktree 并行跑，在一个界面里统一跟踪任务、文件与账号用量。桌面端之外提供手机端监控，agent 完成或需要回答时推送通知，可直接回复继续。支持 Computer Use，让 agent 操作桌面应用。",
+    "highlight_zh": "它解决的不是让 agent 更能干，而是同时开十个 agent 后怎么不失控——账号切换与限速重置都摆在同一个面板。"
+  },
+  "Graphify-Labs/graphify": {
+    "summary_zh": "以 /graphify 技能的形式插进 Claude Code、Cursor、Codex、Gemini CLI，把代码、文档、SQL schema、配置与 PDF 解析成可查询的知识图谱。代码部分走 tree-sitter AST，确定性解析、不调 LLM、不出本机；每条边标注 EXTRACTED（源码明写）或 INFERRED（工具推断），不使用向量库。",
+    "highlight_zh": "关键差异是可追溯：给定结论能沿边走回原文，比向量召回的一团相似片段更适合当审查依据。"
+  },
+  "paperclipai/paperclip": {
+    "summary_zh": "一个 Node 服务加 React 面板，把多个 agent（OpenClaw、Codex、Claude、Cursor）当员工管理：分配目标、跟踪任务、限定权限、统计成本，并把技能与历史集中存放。README 的定位句是「OpenClaw 是员工，Paperclip 是公司」，支持 24/7 运行、手机端管理与插件扩展。",
+    "highlight_zh": "适合已把 agent 当生产力用、却还在用十个终端窗口手工调度的人；先看它的权限与预算模型对不对得上你的流程。"
+  },
+  "calesthio/OpenMontage": {
+    "summary_zh": "把编码 agent 变成视频制作流水线：贴一个参考视频，agent 分析脚本、节奏、分镜与风格，给出 2 至 3 个差异化方案、工具路径与成本估算，再走 12 条生产流水线之一完成生成与剪辑。除图片合成外，还能从免费素材库检索真实动态片段、剪成时间线再渲染。",
+    "highlight_zh": "它把「几张静图动起来叫视频」这件事明确排除了；真正值得看的是 700+ 生产知识文件如何把审片标准变成可执行约束。"
+  },
+  "lightpanda-io/browser": {
+    "summary_zh": "从零写的无头浏览器，既不是 Chromium 分支也不是 WebKit 补丁，Zig 实现。网络用 libcurl、解析用 html5ever、JS 用 V8、对外兼容 CDP，README 称在 933 个真实页面的 AWS m5.large 实测中比 Chromium 轻 16 倍、快 9 倍。MCP 层支持把同一 Mcp-Session-Id 映射到共享浏览上下文。",
+    "highlight_zh": "抓取与自动化的成本优势明确；覆盖面是最大不确定性，上生产前必须用你自己的站点集跑回归。"
+  },
+  "heydamir/unslop": {
+    "summary_zh": "一个 Claude Code / Codex 技能，专治「一看就是 AI 写的」界面：先审计出紫色渐变、光晕、emoji 标签、喊话式文案与间距不齐等问题并定位，再从产品本身提炼方向感，最后按 spacing、color、icons、copy、type、layout、details、visuals、motion 的顺序逐遍修。",
+    "highlight_zh": "把设计感拆成九道可检查的工序，这是本期最可直接复用的方法论，不用它的技能也能照单执行。"
+  },
+  "shinshin86/mesh-avatar-studio": {
+    "summary_zh": "一张插画变成会眨眼、说话、转头、呼吸、发丝摆动的 2D 网格虚拟形象。流程分两段：编码 agent 按 agent guide 生成分层资源与 rig.json 绑定参数，人在本地编辑器里实时预览与微调；产物为 Avatar 文件夹或 .mavatar 包，浏览器 Player 可用摄像头与麦克风驱动。",
+    "highlight_zh": "把可验证的绑定工序交给 agent、把不可验证的审美留给人，这个分工比效果本身更值得借鉴。"
+  },
+  "fastrepl/anarlog": {
+    "summary_zh": "Granola 的开源替代，做会议记录但不派机器人入会：直接采集本机音频，在支持的 Mac 上用端上模型转写，会话与笔记存本地 SQLite，录音是普通文件。可接托管 provider、自有 API key，或 Ollama、LM Studio 这类 OpenAI 兼容的本地服务。",
+    "highlight_zh": "隐私模型最干净（无 bot、无强制上云），代价是只覆盖本机开会场景，纯线上会议要靠系统音频回环。"
+  },
+  "shaongitbd/doory": {
+    "summary_zh": "浏览器里跑的设计编辑器，覆盖海报、社媒图、故事、幻灯片、简历、缩略图与名片，可导出 PNG、JPG、SVG、PDF、MP4、GIF，印刷 PDF 支持出血与裁切标记。无付费档、无需注册即可开始，可用 Docker 或 nginx+systemd 自托管，可选接邮件、Google 登录、OIDC 与 S3 存储。",
+    "highlight_zh": "自托管版 Canva 的实用主义样本；模板只有十套，价值在能自己部署而不在素材量。"
+  },
+  "bregman-arie/devops-exercises": {
+    "summary_zh": "2,624 道覆盖 Linux、Jenkins、AWS、SRE、Prometheus、Docker、K8s、Terraform、Ansible 等主题的题目与练习，按技术主题分文件维护。README 自己声明多数题目并不等同真实面试，适合查漏而非背题。",
+    "highlight_zh": "十年老仓仍在上榜，说明系统性查漏的需求没被新工具替代；当知识地图用比当题库用更划算。"
+  },
+  "anomalyco/hex": {
+    "summary_zh": "macOS 上的本地语音听写：按住快捷键说话，松开后在本机转写并粘贴到当前应用。Rust 原生实现，端上语音模型，需要麦克风与辅助功能权限；Windows 与 Linux 目前为 beta，另提供 TypeScript SDK。",
+    "highlight_zh": "相对系统听写的优势是任意应用内直出与模型可选；接入前先确认你的机型与 macOS 版本在支持范围内。"
+  },
+  "henrygd/beszel": {
+    "summary_zh": "轻量服务器监控平台：Web 界面加各机器 agent，记录 CPU、内存、磁盘与网络历史，采集 Docker 容器用量与 S.M.A.R.T. 磁盘健康，支持告警推送到多种通知服务、多用户、OAuth/OIDC 登录与 S3 兼容备份。",
+    "highlight_zh": "对比 Prometheus 加 Grafana 的整套栈，它把几十台小机器的监控成本压到极低，代价是查询与仪表盘灵活度。"
+  },
+  "KaringX/karing": {
+    "summary_zh": "跨平台代理客户端，兼容 Clash、V2Ray/V2Fly、sing-box、Shadowsocks 与订阅链接，支持完整 Clash 配置与部分 clash.meta 配置，内置 geo-IP、geo-site、ACL 规则集，可按订阅源自动做节点组与分流规则，并支持备份同步。",
+    "highlight_zh": "多协议聚合加规则自动化的思路清晰；此类工具涉及合规风险，使用前请自行确认当地法规。"
+  },
+  "k3s-io/k3s": {
+    "summary_zh": "把 Kubernetes 与周边组件打包进一个不到 100MB 的二进制，默认用 sqlite3 作存储后端（也支持 etcd3、MySQL、Postgres），几乎无操作系统依赖，只需正常内核与 cgroup 挂载。面向边缘、IoT、CI、ARM 与「不想考 K8s 集群学博士」的场景。",
+    "highlight_zh": "十年后定位依然成立：单二进制、低内存、可离线；生产上要注意默认 sqlite 在高写入下的上限。"
+  },
+  "NyxFoundation/nyxis": {
+    "summary_zh": "Lean 写的后端框架，卖点是授权安全可被形式化证明：开发者只写 Cedar schema 与策略（schema 同时充当表结构），handler 可以由 AI 写，但只能调用被批准的动作；lake build 时审计应用代码并校验证明。运行时基于 Supabase Auth 与 PostgreSQL，开发者不需要写 Lean。",
+    "highlight_zh": "用类型论换授权正确性，是这个方向少见的可用尝试；但 314 星、6 天的新项目，只适合愿意读 Lean 报错的人。"
+  },
+  "styczynski/bioseqdb": {
+    "summary_zh": "PostgreSQL 扩展，把基因序列作为一等类型存进表：紧凑序列类型加列式存储与索引，用 SQL 直接做相似序列检索，并与患者、样本等关系数据同库关联。提供 Docker 镜像与 SQL 演练文档，目前是未签名的 alpha 包。",
+    "highlight_zh": "生物信息与关系库合流的一个样本；alpha 阶段，只适合评估不适合上生产。"
+  },
+  "groue/GRDB.swift": {
+    "summary_zh": "Swift 的 SQLite 工具包，面向应用开发而非单纯驱动：SQL 构建、数据库观察（值变化回调）、健壮并发与迁移都封装好，要求 Swift 6.1+ 与 iOS 13 / macOS 10.15 起。当前版本 7.11.1，2015 年起持续维护。",
+    "highlight_zh": "它是上一个十年里把并发与迁移写对的参考实现；即便不用它，读它的迁移与观察设计也有收获。"
+  },
+  "datasifaw/world-bank-talend-studio": {
+    "summary_zh": "作者把 8 个 Talend Studio 8 的 ETL Job 纳入版本控制：从 REST API 抽取、解析 JSON、做转换、加载进 SQL Server。README 只有三行（TALEND Studio 8 / Pipline DATA / BANK ECONOMIC），没有任何使用文档。",
+    "highlight_zh": "严格说这是个人练习仓库，96 星入选主要因为 data 类候选池见底；当 ETL 目录结构样例看，别当工具评估。"
+  },
+  "datasifaw/MiniBank_Cpp": {
+    "summary_zh": "C++17 写的控制台银行模拟：开户与查询、存取与转账、交易流水，金额以「分」为整数存储避免浮点误差，支持导出与恢复全量状态及 .bak 回滚。开发与测试环境为 Windows 11 加 MinGW 系 g++。",
+    "highlight_zh": "教学项目，但「金额用整数分」与「状态可回滚」两个决定做得对；其余部分按作业标准看即可。"
+  },
+  "anthropics/skills": {
+    "summary_zh": "Anthropic 官方的 Agent Skills 仓库：创意设计、开发技术、企业沟通、文档处理四类技能示例，加上 Agent Skills 规范正文与可复制的技能模板。技能的形态是文件夹加指令、脚本与资源，由模型按需动态加载。",
+    "highlight_zh": "这是「技能」这一分发形态的定义性文档；自建 skill 前应先读 spec，而不是照抄示例。"
+  },
+  "patch-gg/pixelfx": {
+    "summary_zh": "244 个像素风特效，每一个都是一小段代码而不是图片：火焰、爆炸、法术、天气、UI、拾取、生物。可在浏览器里实时播放、改色与镜像，导出 sprite sheet 给任意引擎；含角色的特效按「蓄力—出手—命中定格—收招」表演，12 套完整动作把特效串成攻击。另附 Claude Code 技能按起草、渲染、查看、细化的流程生成新特效。",
+    "highlight_zh": "纯程序化加可导出，绕开了素材授权问题；技能里的「渲染后自己看效果」闭环比特效本身更值得学。"
+  },
+  "herdrdev/herdr": {
+    "summary_zh": "给编码 agent 用的终端运行时：关掉客户端或断 SSH 后终端仍在后台服务里跑，重连后恢复布局；多机聚合、每个 pane 标注 working/blocked/idle，agent 可通过 CLI 与 socket API 开窗、互相提问、等对方真正阻塞。单个 Rust 二进制，不打包也不替代 Claude Code、Codex、Cursor。",
+    "highlight_zh": "它只接管终端、不改造 agent，这个边界选得准；阻塞状态可见是并行 agent 的真痛点。"
+  },
+  "termux/termux-app": {
+    "summary_zh": "Android 上的终端模拟器与 Linux 环境本体，负责界面与终端仿真，可安装 apt 体系下的软件包；软件包仓库另在 termux/termux-packages。提供安装、卸载、调试与 fork 指引。",
+    "highlight_zh": "老项目仍在上榜，说明手机当 Linux 主机的需求稳定；首次使用最容易卡在软件源维护导致的 apt 报错。"
+  },
+  "vercel-labs/agent-browser": {
+    "summary_zh": "Vercel Labs 的浏览器自动化 CLI，Rust 原生二进制，专为 agent 设计：核心是 snapshot 取无障碍树并给元素打 @e1 这类引用，后续 click、get 直接按引用操作，不必让模型看图算坐标。支持 CDP 连接已有浏览器、会话隔离、点击前的遮挡与可见性校验，以及实验性的 WebMCP 页面工具发现。",
+    "highlight_zh": "引用式操作加上点击失败即早报错（被遮挡、不可见、禁用），是它比截图加坐标稳定得多的根本原因。"
+  },
+  "ccch1mneyyy/dsh-Go": {
+    "summary_zh": "DeepSeek Harness 的 Android 客户端：可在 App 内安装 Ubuntu、Node.js 与 DSH 运行环境（免 root、不依赖 Termux），也可通过 SSH 或 DSH Remote 连到电脑与服务器上的 DSH。支持切模型、发图、语音输入、工具审批与提问，插件界面提供原生工具卡与面板，并可在授权后让本机引擎读屏点按。",
+    "highlight_zh": "把 agent 运行时塞进手机同时保留远程模式，是移动端的一条现实路径；注意卸载会清空对话与 Linux 环境。"
+  },
+  "vorssaint/vorssaint-utils": {
+    "summary_zh": "macOS 菜单栏工具集，一个图标替代十来个付费小工具：按应用调音量并突破 100% 增益、分应用输出设备、输出切换快捷键、麦克风与输入管理、窗口管理、截图录屏、剪贴板历史、显示器控制等，按需安装单个模块。",
+    "highlight_zh": "模块化按需安装是关键设计；GPL-3.0，商用集成前先看许可边界。"
+  },
+  "farion1231/cc-switch": {
+    "summary_zh": "一个跨平台桌面应用统一管理 12 个 agent 工具的 API 供应商：Claude Code、Claude Desktop、Codex、Gemini CLI、Grok Build、OpenCode、OpenClaw、Hermes、Pi、MiniMax Code、Kimi Code 等。内置 90+ 供应商预设（含 AWS Bedrock、NVIDIA NIM 与社区中转），支持直连、路由、聚合三种模式，并集中管理 MCP、Skills 与 Prompts。",
+    "highlight_zh": "它把「手改 JSON/TOML/YAML 配 provider」做成了正式工具；路由与聚合模式意味着也能顺手做统一计费与限流。"
+  },
+  "Orkas-AI/Orkas": {
+    "summary_zh": "本地优先的多 agent 桌面应用：Commander 把目标拆成待办，调度 16 个内置专家（视频、语音、图像、研究、SEO、内容、PPT、Office、电商等），并联合 Claude Code、Codex、OpenCode、OpenClaw、Hermes 一起做。项目维度保存目标、规则、记忆与文件，待办可在人与 agent 之间分配，支持小时级到月级的定时自动化。",
+    "highlight_zh": "与 orca、paperclip 同题不同解：它自带专家池，定位偏把活干完，而不是管住 agent。"
+  },
+  "wangzan101/Mika": {
+    "summary_zh": "Android 端侧 AI agent：说出需求后它在隐藏的后台屏上操作你的 app 与网页，前台仍可正常使用。开启手机操控需一次性配对无线调试；没有自建服务器，你说的话与屏幕内容只发给你选择的模型供应商。",
+    "highlight_zh": "端侧执行加无中间服务器，隐私模型清楚；实际可用性取决于无线调试配对与各家 app 的防自动化程度。"
+  }
+}
