@@ -206,11 +206,20 @@ const spineNo = spineLines(`第${String(issueNo).padStart(2, '0')}期`);
   {
     observation && (
       <section class="observation" id="observation">
-        <header class="observation-head">
+        <div class="obs-rail">
+          <p class="obs-kicker">
+            编者按<i>Editor's Note</i>
+          </p>
           <h2>本期观察</h2>
-          <span>{total} 个项目横向对齐之后</span>
-        </header>
-        <div class="prose" set:html={observation} />
+          <p class="obs-meta">
+            {issue.date}
+            <br />
+            第 {String(issueNo).padStart(2, '0')} 期 · {total} 个项目
+            <br />
+            横向对齐之后
+          </p>
+        </div>
+        <div class="obs-body prose" set:html={observation} />
       </section>
     )
   }

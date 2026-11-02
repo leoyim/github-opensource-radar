@@ -98,5 +98,7 @@ export function observationOf(date: string): string | null {
   const md = readText(path.join(DIR, date, 'index.md'));
   if (!md) return null;
   const section = sectionOf(md, '本期横向观察');
-  return section ? render(section) : null;
+  if (!section) return null;
+  /* 提纲句在版面上单独成行，原句末的冒号会掉到正文行首，构建期去掉 */
+  return render(section).replace(/(<li><strong>[\s\S]*?<\/strong>)：/g, '$1');
 }
