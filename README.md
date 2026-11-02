@@ -2,6 +2,10 @@
 
 每日 GitHub 热点项目日报的独立站点。数据来自上游日报项目产出的 JSON，本站只读不写，渲染与排版完全独立。
 
+![开源雷达工作流：WorkBuddy 定时采集 → Astro 渲染 → GitHub Actions 构建 → GitHub Pages 发布](docs/architecture.jpg)
+
+*整条流水线：本地定时任务抓取与分析 → 报告进仓库 → Astro 生成站点 → Actions 构建并发布。*
+
 ## 与其他项目的关系
 
 ```
