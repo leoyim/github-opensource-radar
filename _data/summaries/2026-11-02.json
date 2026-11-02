@@ -1,0 +1,122 @@
+{
+  "ifixai-ai/iFixAi": {
+    "summary_zh": "agent 上线后最难验的不是能力而是边界。iFixAi 把你的业务描述成模拟环境——意图、目标、组织内谁可以做什么——再让被测 agent 以黑盒 endpoint 接入，投喂一天的真实请求并混入越权指令，由裁判模型逐条打分。评分分五个维度：编造、操纵、欺骗、不可预测、不透明，折算成 A–F 等级，另设 B01/B08/P01 三条强制底线，任一不通过即封顶 D。报告输出 JSON 与 Markdown，可用 --min-score 卡在 CI 里做回归门禁，官方称单次 120 秒内出结论。",
+    "highlight_zh": "它给的是可复跑的自我审计，不是第三方合规认证——当门禁用很强，当证书用会出事。"
+  },
+  "patchy631/ai-engineering-hub": {
+    "summary_zh": "93 个完整可跑的 AI 工程实战项目，按 Beginner（22 个）/ Intermediate / Advanced 三级分区，覆盖 LLM 应用、RAG、agent 编排与真实业务场景。以 Jupyter Notebook 为载体，代码与讲解同页，子目录彼此不共享运行时，任取一个都能独立克隆后跑起来，配依赖与数据准备说明。仓库定位是「可运行的项目样板库」而非框架，也没有统一抽象层，跨项目复用需自行抽离。",
+    "highlight_zh": "742 天的老仓库仍能单日 +1,191，说明沉淀下来的不是框架 API，而是「一类问题怎么解」的项目级范式。"
+  },
+  "D4Vinci/Scrapling": {
+    "summary_zh": "Python 爬虫的一体化框架，把通常要粘五个库的活收进一处：快速 HTTP、隐身无头浏览器、JS 渲染与直接抓接口四种取数方式；CSS/XPath/正则解析，支持自适应元素追踪（站点改版后按结构相似度重定位而非报错）与 Markdown 输出；Scrapy 风格 Spider API 配并发上限、按域限速、代理轮换、自动重试与 crawldir 断点续爬，导出 JSON/JSONL/CSV。另带 MCP server、Agent Skill 与 CLI，同一内核服务三种调用方式。",
+    "highlight_zh": "能力光谱里有一段是对抗性的（Turnstile 绕过、指纹伪装）：库越强，合规边界越得自己划。"
+  },
+  "haydenschmitty/floorplan": {
+    "summary_zh": "让 Claude 或 Codex 通读仓库，把模块、文件、网络请求逐个起一个说人话的名字，再画成可缩放、可点击下钻的交互架构图，回答「下单时发生了什么」「改这里会崩哪」。纯离线管线：模型归纳产出节点与边的中间产物，前端渲染，无常驻服务。通过 Claude Code / Codex 插件市场安装，另附 blueprints 给尚未开写的应用先出结构草案，以及 live demo 与独立的隐私章节。",
+    "highlight_zh": "6 天 1,808 星、单日 +854，全榜最快冷启动——它卖的不是架构图，是「AI 写的代码谁来看懂」这个新缺口。"
+  },
+  "FlashML-org/FreeToken": {
+    "summary_zh": "面向消费级硬件的 MoE 推理引擎，目标是在个人工作站上跑 290B+ 级前沿开源模型。核心是带宽自适应的 CPU–GPU 协同执行（q* 策略）、全层双缓冲 prefill 流式加载、全局 LRU 专家缓存，以及可在运行时重分配 VRAM 的弹性显存管理。语义锚点检查点让 agent 编辑上下文（工具调用、思考块）后不必整段重算。支持 DeepSeek-V4-Flash、Qwen3.6-35B-A3B、GLM-5.2，量化含 MXFP4/NVFP4/FP8/BF16，对外提供 Anthropic / OpenAI 兼容 API。",
+    "highlight_zh": "真正的意义在兼容 API：本地模型可以直接顶替 Claude Code、Codex 的模型后端，从玩具变成能替换订阅的生产件。"
+  },
+  "JCodesMore/ai-website-cloner-template": {
+    "summary_zh": "给编码 agent 一个 URL，它按 Map（源站 URL 映射到本地路由并保留已有工作）→ Observe（分别抓桌面与移动端页面、提取真实资产与字体、遍历备用交互状态）→ 生成 三步，把参考站复刻成干净的 Next.js 应用。技术栈预置并冻结：Next.js 16 App Router、React 19、TypeScript strict、shadcn/ui、Tailwind v4 配 oklch 设计 token，图标默认 Lucide 并在克隆中被提取的 SVG 替换。官方标注最佳效果为 Claude Code + Opus 5.5，同时支持 Codex、Cursor、OpenCode，需 Node 24+。",
+    "highlight_zh": "它省掉的是建模时间而不是设计判断；另外「复刻他人站点」本身带版权与商标风险，成品必须换素材。"
+  },
+  "motiondivision/motion": {
+    "summary_zh": "React / JavaScript / Vue 三端语义一致的动画库，混合引擎把可交给浏览器的部分（原生动画 API、GPU 合成）交出去，把弹簧、手势、布局测量留在 JS，目标 120fps。内置手势、弹簧物理、布局过渡、滚动联动与时间线编排，TypeScript 编写、可 tree-shake。README 已长出三层商业结构：Motion Studio 可视化调参、面向 AI agent 的接入说明、以及 Motion+ 付费订阅。",
+    "highlight_zh": "选它从来不是「行不行」的问题；只有两三处过渡时 CSS 足够，一旦涉及布局变化与手势联动，它的性价比才成立。"
+  },
+  "microsoft/TypeScript": {
+    "summary_zh": "为 JavaScript 增加可选静态类型并编译输出可读标准 JS，不改变运行时行为、不要求宿主支持，支持泛型、条件类型、模板字面量类型与类型级编程。经典五段式编译器架构（Scanner→Parser→Binder→Checker→Emitter），声明文件承担跨包类型契约。本轮 +19 属常驻条目，真正的信号是 language 字段已标为 Go——原生编译器接管主线后，大型仓库的类型检查耗时会有量级下降。",
+    "highlight_zh": "它出现在榜上不是新闻；值得关注的是编译器换语言之后，类型检查变便宜，工程约束就可以变严。"
+  },
+  "lucasmarkes/hairline": {
+    "summary_zh": "33 个等距线稿人物组成的装饰组件库，跟随指针做出反应。零依赖、仅发 ESM，React 18+ 只是可选 peer（仅 /react 子入口使用）。工程细节做得比同类完整：图形带可替换的描述文本、Riffle 是可聚焦分组、尊重 prefers-reduced-motion、全页共用一个 requestAnimationFrame 循环且离屏或静止时不做工、SSR 渲染为 5:4 空盒避免布局跳动、Shadow DOM 内自注入样式。官网提供全量实时预览与参数检查器（可直接生成代码片段）。",
+    "highlight_zh": "「零依赖 + SSR 安全 + 尊重减动 + 共享帧循环」这四项齐全，在这类装饰库里并不常见。"
+  },
+  "TheNetsky/Microsoft-Rewards-Script": {
+    "summary_zh": "用 TypeScript + Playwright 自动完成 Microsoft Rewards 的日常任务：Daily Set、促销、punchcards、桌面/移动搜索、Bing Explore、签到与 Read to Earn。提供 API 模式（快、依赖接口稳定）与浏览器模式（模拟真实操作、稳）双通道，支持多账号、会话持久化、定时调度、连胜跟踪与积分核对，通知可接 Discord / Telegram / ntfy。另带一个含认证的 Control API 暴露运行控制与仪表盘数据，安装支持本地 / Nix / Docker。",
+    "highlight_zh": "工程结构（调度 + 会话 + 可观测 + 控制 API）值得借鉴，但用途明确违反服务条款，代价是账号。"
+  },
+  "public-apis/public-apis": {
+    "summary_zh": "免费 API 的分类清单，按 Animals、Anime、Blockchain、Books 等几十个领域以 Markdown 表格索引，每条标注鉴权方式（apiKey / OAuth / 无）与 HTTPS、CORS 支持情况，另有在线可浏览站点与 PR 贡献规范。3,878 天、49.4 万星，本轮 +324。README 结构有两处值得注意的变化：顶部换成 APILayer 商业推广，索引新增 MCP Servers 一节——目录正从「给人看的 API 列表」扩到「给 agent 调用的工具列表」。",
+    "highlight_zh": "它只解决「找得到」，不解决「用得成」：免费额度与商用条款这两列它不提供，必须逐条自查。"
+  },
+  "hashicorp/terraform": {
+    "summary_zh": "声明式基础设施即代码工具：HCL 描述资源，构建资源图后对比期望状态与实际状态，先出执行计划供审阅再 apply，对无依赖资源并行执行。Provider 插件化（gRPC 通信），覆盖主流云与自建方案；状态文件记录真实资源映射，支持远程后端与锁。4,616 天、5 万星，本轮 +151。许可证为 BUSL（README 标 NOASSERTION），OpenTofu 分叉已稳定，选型重新变成需要决策的问题。",
+    "highlight_zh": "决定成败的从来不是工具，而是两条纪律：状态文件必须远程加锁，plan 必须进 PR 被人看过。"
+  },
+  "LizardByte/Sunshine": {
+    "summary_zh": "自托管的低延迟游戏串流服务端，配合任意设备上的 Moonlight 客户端使用。硬件编码支持 AMD、Intel、NVIDIA 三家 GPU 编码器，保留软件编码兜底；Web UI 完成配置与客户端配对，可从本地主机或移动设备操作。覆盖 Windows / Linux / macOS，提供 Docker 与 Flathub 包及稳定/测试双份文档。1,782 天、4.3 万星，本轮 +42——NVIDIA 放弃 GameStream 后，它是唯一同时支持三家的开源方案。",
+    "highlight_zh": "它本质是把一台主机的画面与输入交给网络，Web UI 与端口的暴露范围必须自己管住。"
+  },
+  "0xJacky/nginx-ui": {
+    "summary_zh": "给 Nginx 套一个 Web 控制台：配置在线编辑并带语法校验、变更前自动备份与失败回滚；内置 Let's Encrypt 证书申请与自动续期；站点/上游/stream 可视化管理；CPU、内存、负载、磁盘在线监控；cron 定时任务。编辑器带代码补全与 AI 辅助。Go 单二进制部署，自带前端资源，提供 Docker 镜像与多语言界面。2,082 天、1.17 万星，本轮 +32。",
+    "highlight_zh": "它把服务器控制面搬进了浏览器——安全边界（默认口令、内网限制、目录权限）比功能多少重要得多。"
+  },
+  "docker/compose": {
+    "summary_zh": "用单个 YAML 定义多容器应用的服务、网络、卷与依赖，`docker compose up` 一条命令收敛到期望状态。作为 Docker CLI 插件运行，不设独立控制平面，状态由引擎中真实容器与网络标签推导。支持 profiles、env_file、多文件合并、健康检查与 depends_on 条件启动。4,711 天、3.8 万星，本轮 +31——K8s 统治生产之后，它在本地开发与 CI 集成测试里反而更不可替代。",
+    "highlight_zh": "别拿它当轻量 K8s：没有调度、自愈与滚动更新；但「本地可复现」这件事的价值只增不减。"
+  },
+  "alpcanaydin/tusk": {
+    "summary_zh": "Rust + GPUI（Zed 编辑器的 GPU 加速 UI 框架）写的原生数据库客户端，无 Electron、无 webview，虚拟化表格加 GPU 渲染让百万行滚动保持流畅。一个应用接 20 种引擎：PostgreSQL、MySQL、SQLite、SQL Server、Oracle、ClickHouse、Snowflake、BigQuery、Redis、MongoDB、Cassandra、DynamoDB 等。命令面板驱动，凭据存系统钥匙串、无账号无遥测，可从 TablePlus / Docker Compose / 连接 URL 导入，支持 SSH 隧道与任意 SSL 模式。AI 助手只读 schema 并把 SQL 写进新标签页，从不自行执行。",
+    "highlight_zh": "「AI 只写不执行」是个聪明的取舍：把执行权留给人，专业用户才敢用。可惜日增仅 +2，这个赛道已被现有工具锁死。"
+  },
+  "RayElg/kafgres": {
+    "summary_zh": "把 Kafka broker 做成 Postgres 扩展：topic、partition、offset、consumer group 与日志全部落在数据库里，未修改的 Kafka 客户端（librdkafka、Java client、Sarama、kafka-python、kcat、kafka-*.sh）连 9092 端口即可用，感知不到区别。核心价值是事务性耦合——INSERT 与 kafgres_produce() 可写在同一个 BEGIN...COMMIT 里，一起成功或一起回滚，从而在架构层消灭双写不一致。支持 compact topic 压缩、SCRAM-SHA-256 对接 Postgres 角色、mTLS，并有覆盖五种真实客户端的一致性测试套件。",
+    "highlight_zh": "用「耦合」换「一致」：低吞吐强一致的场景这笔账很划算，高吞吐场景消息与 OLTP 共享存储会互相拖累。"
+  },
+  "pgrundev/pgterm": {
+    "summary_zh": "「所有 Postgres 库的 htop」：一个静态二进制同时盯多个实例，界面并列展示，复用 pgbot 的只读诊断规则给出带置信度的发现（零扫描索引、相对基线退化的查询、回滚率偏高等）。五个标签——Overview、PgBot、SQL、Data、Branches。健康检查完全只读、连接串永不落盘（config.toml 只存环境变量名），支持 SSH 跳板机后的数据库，无 agent、无 daemon、无 web 面板，适合 SSH 与 tmux 场景。",
+    "highlight_zh": "它的价值不在功能多，而在「故障现场立刻能用」——这是云监控和 Grafana 永远覆盖不到的那一段。"
+  },
+  "SkyChenSky/DBPilot": {
+    "summary_zh": "自托管的数据库性能诊断平台，覆盖 SQL Server、MySQL、PostgreSQL。持续采样实例后提供性能趋势与 AAS 负载分解、Top SQL、执行计划变更跟踪、缺失索引建议、索引使用与碎片、阻塞与死锁分析、慢查询日志。单进程 C# 部署，无外部依赖栈，提供 Docker 与源码构建，也支持 NuGet 嵌入自有系统；内置 MCP server 让 AI agent 可直接查询诊断结论，另可嵌入自有系统。",
+    "highlight_zh": "93 星说明它极早期，但形态值得注意：单进程 + MCP 出口，比功能清单更能代表 2026 年运维工具的方向。"
+  },
+  "arpanjot-coding/Datly": {
+    "summary_zh": "本地优先的 AI 数据分析 IDE，核心主张是 Ground-Truth 校验：自然语言生成的每个转换都要回到本地真实数据比对，结果在 Explore Grid 即时可见，避免「看起来对的错结论」。用 Data Thread 血缘状态机取代线性 notebook 单元格，可回溯每步操作；另含 Concept Encoding、Visual Shelves、常驻知识库与自定义分析师规则、TipTap 叙事报告与 Pinboard 仪表盘。模型经 LiteLLM 接多家，支持离线模式与 15+ 企业数仓连接器。",
+    "highlight_zh": "它只保证结论与数据一致，不保证口径正确——被校验过的错口径，比没校验更危险。"
+  },
+  "anthropics/claude-code": {
+    "summary_zh": "住在终端里的编码 agent：读整个代码库、执行常规开发任务、解释复杂逻辑、处理 git 工作流，全部由自然语言驱动。可嵌入 IDE，也能在 GitHub 上 @claude 触发。617 天、15.4 万星，本轮 +140。它在榜上的意义不是自身热度，而是宿主地位——本期 AI 类有四个项目是插在它或 Codex 上的插件/skill，第 4 名的 floorplan 直接通过它的插件市场分发。README 已简化到只剩「安装 + 进入目录运行 claude」，文档主体全部外移。",
+    "highlight_zh": "它已经过了「要不要用」的阶段，现在的问题是「怎么用得不后悔」：权限清单与分步提交，比任何提示词技巧都重要。"
+  },
+  "mizorewww/x_gift_bot": {
+    "summary_zh": "以兑换码形式批量赠送 X Premium 的自动化系统：兑换页让用户自助输入兑换码与 X 用户名，管理后台负责生成/停用兑换码、批次管理与统计，服务端用 AES-256-GCM 逐条加密凭据、付款前校验金额与商户、多张银行卡轮换。技术上它需要提交 X 账号的 auth_token 与 ct0 Cookie，以及真实银行卡的卡号、有效期、CVC、持卡人姓名与账单地址。31 天、1,283 星，heat 按创建速度估算。",
+    "highlight_zh": "它不是工具，是一份凭据收集流程：Cookie + 完整卡信息交给一台服务器，风险全由提交者承担。建议当反诈样本看。"
+  },
+  "CelestialStarfish/Ads-Blocker": {
+    "summary_zh": "⚠️ 疑似投毒仓库。创建 2 天、400 星、0 fork、无源码、无语言标注、无许可证，README 唯一内容是「打开 PowerShell → 粘贴命令 → 等待安装」，描述使用「Pre-activated local build for testing and deployment」这类规避审查的措辞，features 为下载关键词堆砌。与同期的 StartAll-Back、Roblox-Game-Copier 共用完全相同的 README 模板，仅替换软件名——不同 owner、同一文案、同一时间窗、零 fork 高星，是协同刷星的标准特征。",
+    "highlight_zh": "不要执行它的任何命令。PowerShell 一行命令即获得完整用户权限，而载荷在仓库之外，不可审计。"
+  },
+  "gryphonautocratmatch/StartAll-Back": {
+    "summary_zh": "⚠️ 与 Ads-Blocker 同模板的第二个投毒仓库：创建 2 天、400 星、0 fork、无源码无许可，README 与另两个仓库逐句相同，只是把目标软件名换成 StartAllBack，同样要求用户在 PowerShell 中执行粘贴来的命令。features 字段堆砌 pre activated / standalone installer / offline setup 等下载关键词。三仓分属广告拦截、开始菜单工具、游戏复制三个互不重叠的需求域，目的是覆盖更多搜索词。",
+    "highlight_zh": "「预激活安装包 + 粘贴 PowerShell 命令」这个组合，看到就该关页面，不需要再判断。"
+  },
+  "azurerockcode/Roblox-Game-Copier": {
+    "summary_zh": "⚠️ 同批第三个投毒仓库：声称提供 Roblox 游戏复制工具，README 与 Ads-Blocker、StartAll-Back 逐句一致，同样是粘贴 PowerShell 命令安装「预激活版本」。创建 2 天、400 星、0 fork、无源码无许可。三个仓库在同一时间窗以不同 owner 发布、共用一套文案模板，属批量投放；这条的受众是年轻玩家，对「免费复制游戏」抵抗力更低，潜在危害最大。",
+    "highlight_zh": "三个不同需求、同一套文案，就是批量投毒的指纹——它进榜说明采集缺少恶意仓库过滤。"
+  },
+  "Predidit/Kazumi": {
+    "summary_zh": "Flutter 写的跨端番剧采集与播放器，核心机制是把「一个番剧站」压缩成最多五行 XPath 规则：目录、详情、播放地址各一段，规则可导入、可分享、可在线更新，客户端不必随站点改版发版。已实现弹幕、时间表、多视频源切换、追番列表、DLNA 投屏、番剧下载与跨设备同步，并基于 Anime4K 做实时超分辨率。覆盖 Android 10+、Windows 10+、macOS 10.15+、iOS 13+（侧载）、HarmonyOS 5.0（分支仓库）以及需要自建服务端的 Web 端。",
+    "highlight_zh": "40,612 星、907 天的老项目仍在移动类第一，说明「规则生态」比「App 功能」更能撑时间；代价是内容合法性完全落在规则指向的第三方站点上。"
+  },
+  "totec448-spec/chat-on-steroids": {
+    "summary_zh": "把 ChatGPT 接进真实工程的本地宿主：以 MCP 暴露读写文件、跑测试、常驻终端与桌面操作，配 Chrome/Edge/Brave 扩展观察并自动化 ChatGPT 网页界面。上层做了三件事——Workers 把独立任务分给保留各自上下文的执行单元、Goal/Loop 让长任务可中途修正、Compact & Resume 把会话与 worker 历史带进新对话以规避上下文压缩。安装走七步图形化 Setup：装扩展、授权目录与权限、建隧道与受限 API key、连接、在 ChatGPT 插件页添加应用。",
+    "highlight_zh": "5,124 星却今日净增 0，是本期唯一「高存量零增量」项目；方向对（模型缺的是可审计执行面），但驱动网页 UI 的路径踩在服务方条款灰区，寿命不确定。"
+  },
+  "storytold/craft-launcher": {
+    "summary_zh": "storytold 的 Craft App Suite 已膨胀到 16 款应用（PhotoCraft、LightCraft、FilmCraft、DesignCraft、VectorCraft、PdfCraft、EffectCraft、WordCraft、DeckCraft、GridCraft、CADCraft、SoundCraft、FigCraft、Craft Anything、TextureCraft 与社区应用 SolidCraft），这个启动器补上了缺失的统一入口：按本机平台与架构安装、更新、启动，支持自定义安装目录、安装自建构建、多语言与 Nix 通道。100% Rust 实现，无 Electron，覆盖 macOS/Windows/Linux/FreeBSD 与 Web，README 标注 early alpha。",
+    "highlight_zh": "23 天、+232，是本期冷启动最快项目；真正的信号不是启动器本身，而是 Craft 矩阵已从「一堆仓库」变成需要产品化入口的规模。"
+  },
+  "SimoHypers/limusic": {
+    "summary_zh": "Rust + Tauri 的原生 YouTube Music 桌面客户端，播放走 libmpv，无 Electron 运行时、无自建服务端。直连 YouTube 内部 API 取流，广告不进音频流；支持搜索浏览、内置 Google 登录或 cookie 粘贴的多账号、媒体库写入（点赞/歌单增删改含封面/订阅/收藏）、按 YTM 日期分桶的历史、libmpv 的无缝播放与响度归一化、变速变调与混响预设、radio/automix 续播队列、逐字同步歌词与可选音乐视频，另含 Last.fm scrobble、Discord Rich Presence 与 Listen Together。起自 Android 端 Metrolist 的播放引擎重写。",
+    "highlight_zh": "用 Tauri + libmpv 把 Electron 那整块开销换掉，是同类里少见的架构性省资源；命脉交给 YouTube 内部 API，好不好用取决于对方心情。"
+  },
+  "laoma528/awesome-zhuiju-free": {
+    "summary_zh": "把「追剧资源清单」当成可自动验证的数据集来做：条目主数据放在 resources/resources.json，GitHub Actions 每日跑可达性检测，用 🟢 可访问 / 🟡 访问受限 / 🔴 无法访问 / ⚪ 未检测 标注并展示最后验证日期，历史记录与投诉处理分别落在 reports/verifications.json 与 reports/notices.json。索引覆盖在线影视、影视 APP、网盘搜索、磁力 BT、字幕、TVBox/影视仓空壳与配置、IPTV 直播源、会员拼团；编辑准则明确「只做指引，不托管、不上传、不复制、不销售第三方影视内容」。",
+    "highlight_zh": "14,414 星靠的不是资源新，而是「清单还活着」——每日自动体检加可 diff 的 JSON，是这类仓库对抗链接腐烂的唯一办法。"
+  }
+}
