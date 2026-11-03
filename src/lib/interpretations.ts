@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { marked } from 'marked';
 import { DATA_DIR } from './load';
 
@@ -93,12 +94,26 @@ function sectionOf(md: string, title: string): string | null {
   return lines.slice(start + 1, end).join('\n').trim() || null;
 }
 
+/**
+ * 本期观察的本地修订版。
+ * 台账回写会改动当期文字（项目撤下、数量变化），这类修订若写进 _data 会被下一次
+ * ingest 整份覆盖，所以另存一份：存在则优先，且只放「本期横向观察」这一节的正文。
+ */
+const OBSERVATIONS = path.resolve(
+  fileURLToPath(new URL('../../overrides/observations', import.meta.url))
+);
+
 /** 本期观察：整期的横向分析，放在正文末尾，作为收束 */
 export function observationOf(date: string): string | null {
+  const override = readText(path.join(OBSERVATIONS, `${date}.md`));
+  /* 提纲句在版面上单独成行，原句末的冒号会掉到正文行首，构建期去掉 */
+  const polish = (body: string) => render(body).replace(/(<li><strong>[\s\S]*?<\/strong>)：/g, '$1');
+
+  if (override) return polish(override.replace(/<!--[\s\S]*?-->/g, '').trim());
+
   const md = readText(path.join(DIR, date, 'index.md'));
   if (!md) return null;
   const section = sectionOf(md, '本期横向观察');
   if (!section) return null;
-  /* 提纲句在版面上单独成行，原句末的冒号会掉到正文行首，构建期去掉 */
-  return render(section).replace(/(<li><strong>[\s\S]*?<\/strong>)：/g, '$1');
+  return polish(section);
 }

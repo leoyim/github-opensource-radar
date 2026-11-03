@@ -79,7 +79,7 @@ export type RemovalEntry = {
   categoryLabel?: string;
   sourceCategory?: string | null;
   status?: string;
-  /** retracted：已在往期推荐过、本次撤回；blocked：未及推荐即被拦下 */
+  /** retracted：已在往期上过榜、本次撤回；blocked：未及上榜即被拦下 */
   state?: 'retracted' | 'blocked';
   campaign?: string;
   /** internal 的条目只入库不公示：公开罗列会把注意力引向非技术话题本身 */

@@ -103,7 +103,7 @@ export function avatarOf(owner: string): string | null {
 /**
  * 移除台账：上游筛查流程维护的累计清单，站点只展示、不判定。
  * 台账里 disclosure 为 internal 的条目只入库不公示——公开罗列只会把注意力
- * 引向非技术话题本身，所以这里统一过滤掉，只在计数里体现。
+ * 引向非技术话题本身，所以统一过滤掉，任何对外页面都不出现，也不体现在计数里。
  */
 export function loadBlacklist(): RemovalLedger {
   try {
@@ -116,7 +116,7 @@ export function loadBlacklist(): RemovalLedger {
 }
 
 /**
- * 台账次序：撤回（已经推荐过、后来又撤销）比拦截（没来得及推荐）更需要说明，排在前面；
+ * 台账次序：撤回（已经上过榜、后来又撤销）比拦截（没来得及上榜）更需要说明，排在前面；
  * 同状态内按移除时间倒序，再按分数倒序。/removed/ 与统计页索引共用这一份规则，
  * 避免两处分头排序后同一条记录在两个页面上排在不同位置。
  */
@@ -128,9 +128,15 @@ const byLedgerPriority = (a: RemovalEntry, b: RemovalEntry): number => {
   return d !== 0 ? d : (b.score ?? 0) - (a.score ?? 0);
 };
 
+/**
+ * 不公示的类别：这类条目仍留在台账里供内部核对，但不出现在任何对外页面，
+ * 也不进统计页的索引。上游若已标 disclosure 为 internal，这里是第二道闸。
+ */
+const INTERNAL_CATEGORIES = new Set(['off-topic']);
+
 export function publicBlacklist(): RemovalEntry[] {
   return loadBlacklist()
-    .entries.filter((e) => e.disclosure !== 'internal')
+    .entries.filter((e) => e.disclosure !== 'internal' && !INTERNAL_CATEGORIES.has(e.category ?? ''))
     .sort(byLedgerPriority);
 }
 

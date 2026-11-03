@@ -21,6 +21,14 @@
   --ink-rule: #1c2220; /* 书眉线、章首线、表顶线 */
   --accent: #14573f; /* 专色：墨绿 */
   --accent-soft: #dfe7e0;
+  /* 风险色阶：同一明度带上的四种印刷色，按严重度由朱红到灰排列。
+     只用于小面积标记（判定标准的色标、条目上的分类标签），不铺底、不做装饰。 */
+  --risk-supply: #a3371f;
+  --risk-supply-soft: #f0e0da;
+  --risk-popularity: #a3591a;
+  --risk-popularity-soft: #f4e7d6;
+  --risk-watch: #626963;
+  --risk-watch-soft: #e5e7e0;
   --grain: 0.05;
 
   /* 版面尺寸 */
@@ -51,6 +59,12 @@
   --ink-rule: #5b615b;
   --accent: #7fc4a4;
   --accent-soft: #1a2b24;
+  --risk-supply: #e39279;
+  --risk-supply-soft: #2b1c17;
+  --risk-popularity: #dfa468;
+  --risk-popularity-soft: #2a2118;
+  --risk-watch: #868c85;
+  --risk-watch-soft: #1b1e1d;
   --grain: 0.06;
 }
 
@@ -811,38 +825,11 @@ summary {
   gap: 7px;
   padding-top: 2px;
 }
-/* 徽记即二维码入口：点击后码面原地盖住徽记，点别处恢复，位置不跳。
-   徽记外不再挂图标，按钮只负责承载可点击的徽记本身。 */
+/* 徽记只作署名：右栏底部的一方印记，不做成按钮、不挂码面 */
 .mark {
   position: relative;
   margin-top: auto;
   margin-bottom: 2px;
-}
-.mark-btn {
-  display: block;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: inherit;
-  cursor: pointer;
-}
-.qr-pop {
-  position: absolute;
-  /* 与徽记同尺寸：模板里就是 84px，窄屏由 .avatar 收到 42px */
-  inset: 0;
-  z-index: 3;
-  padding: 4px;
-  /* 固定白底：深色主题下二维码也必须是白底深码，否则扫不出来 */
-  background: #fff;
-  border: 1px solid var(--rule-strong);
-}
-.qr-pop[hidden] {
-  display: none;
-}
-.qr-pop svg {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 /* 项目徽记：方形细框加 owner 首字，排成右栏底部的一方印记。
@@ -1617,6 +1604,13 @@ body[data-role]:not([data-role="all"]) .repo .rel {
   letter-spacing: 0.04em;
   color: var(--ink-3);
 }
+/* 免责声明：与数据说明同处页脚，用一条铅线隔开，避免和「数据来源」混读 */
+.colophon .disclaimer {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-3);
+}
 .foot a {
   color: var(--ink-2);
   border-bottom: 1px solid var(--rule-strong);
@@ -1731,14 +1725,12 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     gap: 14px;
     padding-top: 4px;
   }
-  /* 横排后徽记收到 42px，码面 inset:0 跟着一起收，内边距再让一点 */
+  /* 横排后徽记收到 42px */
   .mark {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .qr-pop {
-    padding: 2px;
-  }
+
   .rel {
     max-width: 60%;
   }
@@ -2198,5 +2190,84 @@ h3,
   }
   .repo {
     break-inside: avoid;
+  }
+}
+
+/* ---------- 外链跳转提示 ---------- */
+
+/* 全书直角，唯一例外是标志里的圆；这里也不用圆角，靠细墨线与纸色与正文同构 */
+.leave {
+  width: min(440px, calc(100vw - 40px));
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--ink-rule);
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 18px 40px rgba(20, 24, 26, 0.18);
+}
+.leave::backdrop {
+  background: rgba(20, 24, 26, 0.45);
+}
+[data-theme='dark'] .leave::backdrop {
+  background: rgba(0, 0, 0, 0.62);
+}
+.leave-inner {
+  padding: 22px 24px 20px;
+}
+.leave-kicker {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+}
+.leave h2 {
+  margin-top: 6px;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+.leave-body {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  line-height: 1.85;
+  color: var(--ink-2);
+}
+.leave-foot {
+  margin-top: 12px;
+  font-size: 0.74rem;
+  color: var(--ink-3);
+}
+.leave-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+.leave-actions button {
+  padding: 7px 14px;
+  border: 1px solid var(--rule-strong);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+.leave-stay {
+  color: var(--ink-2);
+}
+.leave-stay:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.leave-go {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.leave-go:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+@media print {
+  .leave {
+    display: none !important;
   }
 }

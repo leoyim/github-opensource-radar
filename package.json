@@ -7,15 +7,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "ingest": "node tools/ingest.mjs"
+    "ingest": "node tools/ingest.mjs",
+    "sync:removals": "node tools/sync-removals.mjs",
+    "check:removals": "node tools/sync-removals.mjs --check"
   },
   "dependencies": {
     "astro": "^5.0.0",
     "lunar-javascript": "^1.7.7",
-    "marked": "^18.1.1",
-    "qrcode": "^1.5.4"
-  },
-  "devDependencies": {
-    "@types/qrcode": "^1.5.6"
+    "marked": "^18.1.1"
   }
 }

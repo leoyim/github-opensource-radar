@@ -70,6 +70,11 @@ const year = 2026;
             数据来源为 GitHub Trending 页面与 Search API。摘要由模型依据仓库 README 撰写，评分规则见每条末尾的「评分依据」。
             热度优先取与上一份快照对比的真实日增，无基线时按星标速度估算。
           </p>
+          <p class="disclaimer">
+            本站是第三方开源项目的索引与导读，不托管任何项目代码，与所列项目及 GitHub 均无隶属关系。
+            条目信息取自公开数据与项目 README，可能存在滞后或误差；外部链接的内容与安全性由目标站点负责，
+            是否使用、是否执行其中的命令，请自行判断。
+          </p>
           <p class="imprint">
             <a href={issueNewUrl} target="_blank" rel="noopener noreferrer">建议与勘误</a>
             <br />
@@ -84,6 +89,23 @@ const year = 2026;
       </div>
     </footer>
     <button class="to-top" type="button" data-to-top aria-label="回到顶部">↑</button>
+
+    <!-- 外链跳转前的告知：目标站点不在本站控制范围内，风险提示页的链接另加一句 -->
+    <dialog class="leave" id="leave-dialog" aria-labelledby="leave-title">
+      <div class="leave-inner">
+        <p class="leave-kicker">外部链接</p>
+        <h2 id="leave-title" data-leave-title>即将离开本站</h2>
+        <p class="leave-body">
+          目标页面由第三方维护，其内容、代码与安全性不在本站的核查范围内，也不构成背书或担保。是否访问、是否使用，请自行判断。
+        </p>
+        <p class="leave-foot">继续访问即表示你已知悉上述情况。</p>
+        <div class="leave-actions">
+          <button class="leave-stay" type="button" data-leave-stay autofocus>留在本站</button>
+          <button class="leave-go" type="button" data-leave-go>继续前往</button>
+        </div>
+      </div>
+    </dialog>
+
     <script is:inline>
       // 按钮显示"将要切换到的模式"，而不是当前模式，避免语义歧义
       function syncThemeButton(mode) {
@@ -141,6 +163,90 @@ const year = 2026;
         window.addEventListener('scroll', schedule, { passive: true });
         window.addEventListener('resize', schedule);
         update();
+      })();
+
+      /*
+       * 外链跳转前先告知：一次会话内只问一次，免得每点一条都要确认。
+       * 按住修饰键（新标签）的点击不拦，那是明确的主动行为。
+       */
+      (function () {
+        var dialog = document.getElementById('leave-dialog');
+        if (!dialog || typeof dialog.showModal !== 'function') return;
+
+        var titleEl = dialog.querySelector('[data-leave-title]');
+        var pending = null;
+
+        function remembered() {
+          try {
+            return sessionStorage.getItem('leave-ok') === '1';
+          } catch (e) {
+            return false;
+          }
+        }
+
+        function remember() {
+          try {
+            sessionStorage.setItem('leave-ok', '1');
+          } catch (e) {}
+        }
+
+        function go() {
+          if (!pending) return;
+          var href = pending.href;
+          var newTab = pending.newTab;
+          pending = null;
+          if (newTab) {
+            var w = window.open(href, '_blank', 'noopener');
+            if (w) w.opener = null;
+          } else {
+            location.href = href;
+          }
+        }
+
+        document.addEventListener('click', function (e) {
+          if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          var a = e.target.closest('a[href]');
+          if (!a) return;
+
+          var url;
+          try {
+            url = new URL(a.getAttribute('href'), location.href);
+          } catch (err) {
+            return;
+          }
+          if (url.protocol !== 'http:' && url.protocol !== 'https:') return;
+          if (url.origin === location.origin) return;
+          if (remembered()) return;
+
+          e.preventDefault();
+          pending = { href: url.href, newTab: a.target === '_blank' };
+          var host = url.hostname.replace(/^www\./, '');
+          titleEl.textContent = host === 'github.com' ? '即将前往 GitHub' : '即将离开本站';
+          dialog.showModal();
+        });
+
+        dialog.addEventListener('click', function (e) {
+          if (e.target.closest('[data-leave-go]')) {
+            remember();
+            dialog.close();
+            go();
+            return;
+          }
+          if (e.target.closest('[data-leave-stay]')) {
+            pending = null;
+            dialog.close();
+            return;
+          }
+          // 点遮罩即取消，和按 Esc 一致
+          if (e.target === dialog) {
+            pending = null;
+            dialog.close();
+          }
+        });
+
+        dialog.addEventListener('cancel', function () {
+          pending = null;
+        });
       })();
     </script>
   </body>

@@ -19,6 +19,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { applyRemovals } from './sync-removals.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = path.join(ROOT, '_data');
@@ -269,6 +270,16 @@ async function main() {
   if (!avatarsOnly) {
     console.log('');
     syncBlacklist();
+
+    /*
+     * 台账是唯一准绳：搬运完立刻回写，避免上游漏跑回溯时站点继续展示已下架的项目。
+     * 上游已经回写过则本步为 no-op；回写范围总是全部期次，因为台账条目可能指向历史某期。
+     */
+    const synced = applyRemovals();
+    if (synced.touched.length > 0) {
+      const n = synced.touched.reduce((s, t) => s + t.items.length + t.appendix, 0);
+      console.log(`   台账回写：${synced.touched.length} 期，撤下 ${n} 条`);
+    }
   }
 
   if (!has('--no-avatars')) {

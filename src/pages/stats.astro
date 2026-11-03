@@ -54,9 +54,6 @@ const firstDate = issues[issues.length - 1].date;
 const lastDate = issues[0].date;
 const lastAlmanac = almanacOf(lastDate);
 
-/* 台账口径：publicBlacklist 已滤掉仅入库不公示的条目，这里的差值是「不公示」的条数 */
-const hiddenCount = Math.max(0, ledger.entries.length - removed.length);
-
 /* 撤回与拦截分两段：publicBlacklist 已按「撤回优先」排好，这里只是切分 */
 const retracted = removed.filter((e) => e.state === 'retracted');
 const blocked = removed.filter((e) => e.state !== 'retracted');
@@ -66,8 +63,8 @@ const campaigns = (ledger.meta?.campaigns ?? []).filter((c) => (c.repos ?? 0) > 
 /* 编号跨组连续：序号只表示「台账里的第几条」，不随分组重新起算 */
 let seq = 0;
 const ledgerGroups = [
-  { label: '已推荐后撤回', note: '上过榜，复查后撤销', rows: retracted },
-  { label: '未及推荐即拦截', note: '归类之前就被筛掉，没出现在推荐位', rows: blocked },
+  { label: '已上榜后撤回', note: '上过榜，复查后撤销', rows: retracted },
+  { label: '未及上榜即拦截', note: '归类之前就被筛掉，没出现在榜单上', rows: blocked },
 ]
   .filter((g) => g.rows.length > 0)
   .map((g) => ({ ...g, rows: g.rows.map((entry) => ({ entry, no: ++seq })) }));
@@ -225,13 +222,13 @@ const ledgerGroups = [
       <h2>移除台账</h2>
     </div>
     <p class="panel-note">
-      被拦在推荐位之外的项目单独记账，每条都写明判定依据与可复核的事实。此处是累计去重的口径，
+      被拦在榜单之外的项目单独记账，每条都写明判定依据与可复核的事实。此处是累计去重的口径，
       与表 1 里的「拦截」按日计不是一回事。点项目名直达该条的证据链。
     </p>
     <div class="figs">
       <div class="fig"><span class="k">公开条目</span><span class="v">{removed.length}</span></div>
-      <div class="fig"><span class="k">已推荐后撤回</span><span class="v">{retracted.length}</span></div>
-      <div class="fig"><span class="k">未及推荐即拦截</span><span class="v">{blocked.length}</span></div>
+      <div class="fig"><span class="k">已上榜后撤回</span><span class="v">{retracted.length}</span></div>
+      <div class="fig"><span class="k">未及上榜即拦截</span><span class="v">{blocked.length}</span></div>
       <div class="fig">
         <span class="k">最近更新</span>
         <span class="v is-date">{ledger.meta?.updated ? displayDate(ledger.meta.updated) : '—'}</span>
@@ -285,7 +282,6 @@ const ledgerGroups = [
 
     <p class="lmore">
       <a href={`${base}removed/`}>查看完整证据链与判定标准 →</a>
-      {hiddenCount > 0 && <span>另有 {hiddenCount} 条仅入库留痕，不对外公示。</span>}
     </p>
   </section>
 </Base>
