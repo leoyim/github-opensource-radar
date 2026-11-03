@@ -1,0 +1,122 @@
+{
+  "vercel-labs/agent-desktop": {
+    "summary_zh": "不让 agent 看截图，而是通过操作系统的辅助功能树读出界面上每个可交互元素及其 ref，agent 对 ref 执行动作后再重新快照验证，全程不做像素匹配。CLI 与 C 库双形态，覆盖 macOS / Windows / Linux 原生二进制，npm 一行安装；每次调用独立进程，headless 模式仍禁止前台激活与合成输入。macOS 需授辅助功能权限，Windows 免授权，Linux 需 at-spi2-core。README 明确警告快照、剪贴板、截图可能含私有内容，需先做日志脱敏。",
+    "highlight_zh": "单日 +2,275 全榜第一——它押的是「结构化接口优于猜像素」这条被低估的老路。"
+  },
+  "cheaper-inference/OmniRoute": {
+    "summary_zh": "把 375 家 provider、1,400+ 模型收敛成一个 OpenAI 兼容端点，按配额自动切换回退，另配 RTK + Caveman 两种上下文压缩（宣称省 15–95% token），带 MCP/A2A 与 Desktop/PWA 客户端，可直接接 Claude Code、Codex、Cursor、Cline、Copilot。免费额度侧更值得看：485 条免费条目按 34 个 pool key 去重，只统计 17 个有公开月度预算的池，得出约 1.62B tokens/月的估算，且明说这是估算、每两周复审计、数字会双向变动。",
+    "highlight_zh": "8.4 万星却肯把估算口径写死——在「免费额度套利」这个赛道里，这种自律比功能稀缺。"
+  },
+  "microsoft/onnxruntime": {
+    "summary_zh": "跨平台推理与训练加速中间件：模型导出为 ONNX 图后，运行时按可用硬件分发到 CPU、CUDA、TensorRT、DirectML、OpenVINO、QNN 等执行提供器，并在图级做算子融合与量化优化；训练侧对既有 PyTorch 脚本加一行即可接入多机多卡。提供 Python、C/C++、C#、Java、JS、Rust 等绑定，兼容 PyTorch/TensorFlow 与传统 ML 库导出的模型。本期无日增基线，热度信号弱于其他条目。",
+    "highlight_zh": "今天 AI 类唯一的底层项——应用层越卷，注意力越会周期性回流到「推理跑在哪」。"
+  },
+  "ollama/ollama": {
+    "summary_zh": "本地跑开源模型的事实标准：一条命令拉起模型并暴露本地 HTTP API，内置 Kimi、GLM、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等模型库，自动识别 GPU / Apple Metal / CPU 并按显存卸载层，提供官方 Docker 镜像与 Modelfile 定制。值得注意的定位漂移：首屏现在主推「把 Ollama 接上你已有的 agent 与应用」，明确列出 Claude Code、Codex、Copilot、OpenCode，正在从本地聊天工具转为 agent 的本地模型后端。",
+    "highlight_zh": "18.5 万星的老项目单日仍 +143——增量来自 agent 客户端把本地模型当后端用。"
+  },
+  "p-e-w/heretic": {
+    "summary_zh": "免训练的模型行为改造：用成对对比提示加配套打分器，从隐藏状态中提取出对应「行为方向」，再沿该方向做定向衰减，全程不构建数据集、不做梯度更新，消费级单卡一个下午可跑完。默认动作是移除拒答（abliteration），另附 noslop 压制套话、nohumor 降俏皮、nosyco 减谄媚、emotions 调情绪倾向等配置，可叠加亦可撤销。权重不变，因此改造结果可回滚、可导出为适配层。",
+    "highlight_zh": "把「只有大厂能做的模型改造」降到单卡可完成——但它动的正是安全对齐那根弦。"
+  },
+  "mealie-recipes/mealie": {
+    "summary_zh": "自建的家庭食谱库：贴 URL 自动抓取并结构化配方（食材、步骤、份量），围绕它做周计划、按超市分区归组的购物清单、自定义 Cookbook 分组；35+ 语言含中文，提供完整 REST API 供第三方客户端接入，官方镜像发布在 GitHub Container Registry，Docker 一键部署。抓取依赖目标站点是否有结构化数据（如 JSON-LD Recipe），无结构化的页面仍需人工补录。",
+    "highlight_zh": "2,157 天、单日 +17 的常青项——在 agent 热潮里代表「把日常数据拿回自己手里」的另一极。"
+  },
+  "gr8rstudio/gr8r-studio": {
+    "summary_zh": "零运行时依赖的项目管理工作台：Vite 打包、纯 JavaScript ES 模块加 CSS，不用任何 UI 框架，却把首页仪表盘、收件箱、我的任务、项目（看板 / 列表 / 表格 / 日历 / 时间线 / 文件六视图）、成员、团队、活动流、设置全部做齐，内置 ESLint + Prettier。六视图共用一套数据模型，新增视图主要成本在渲染而非数据层。无后端与持久化方案，更接近前端样板；仓库无 LICENSE 声明。",
+    "highlight_zh": "27 天 1,726 星——它卖的不是功能，是「这个项目到底需不需要框架」的实证样本。"
+  },
+  "webpack/webpack": {
+    "summary_zh": "定义了一代前端构建心智模型的打包器：按依赖图合并模块，loader 把 CSS、图片、JSON、CoffeeScript、LESS 等任意资源纳入图内，plugin 挂到编译生命周期做图级操作，支持代码分割、按需加载、持久化缓存与增量构建，Module Federation 支持跨应用运行时共享。极灵活，代价是配置面积极大，通常需要专人维护——这也正是新一代工具从「开发期不打包」切入的原因。",
+    "highlight_zh": "5,351 天、单日 +3，出现与热度无关——它是本期前端类唯一的基础设施坐标。"
+  },
+  "ProxyShard/ShardBrowser": {
+    "summary_zh": "把指纹伪装下沉到浏览器引擎：基于补丁版 Chromium 156，在引擎内部改写 WebGL、WebGPU、Client Hints、字体、TLS 的返回值，而非在页面注入 JS 打补丁，因此能通过引擎层的一致性检查。内置 220+ 设备档案，提供本地 API、SDK 与 MCP server，可被 agent 直接编排；配合 ProxyShard 代理的 SOCKS5 UDP 中继与出口 p0f TCP 指纹伪装，让代理呈现的操作系统与 SYN/ACK 形态保持一致，另有稳定 QUIC + WebRTC over SOCKS5。",
+    "highlight_zh": "技术比 JS 注入高一档，但主用途就是灰色地带——补丁浏览器的安全更新滞后是实价成本。"
+  },
+  "mkturkcan/valdrada": {
+    "summary_zh": "用公开市政记录编译出的纽约数字孪生：离线侧 Node.js 编译器读取建筑轮廓、税务地块、外立面备案与街道中心线，做 join 与立面归类后输出二进制瓦片；在线侧 WebGL2 客户端按视野流式加载，跑车道级交通与行人仿真，并在同一帧输出像素级精确的感知真值，API 参照 CARLA 设计。每个建模元素都能追溯到某份公开档案，这是它区别于游戏引擎场景的核心。附 Windows x64 仿真服务端与 UE5 Linux 客户端。",
+    "highlight_zh": "254 星的小项目，但路线独到：不追模型变聪明，而是把现实世界编译成可仿真的底座。"
+  },
+  "AprilNEA/OpenLogi": {
+    "summary_zh": "罗技官方驱动的替代品：Rust + GPUI 原生实现，走 HID++ 协议直连设备，做按键重映射、DPI、SmartShift 滚轮阻尼，Linux 为一等平台。配置是单个明文 TOML，可随手同步；GUI 之外还有真正的 CLI 与 JSON 自动化 API（DPI、SmartShift、Fn-lock、回报率）加硬件诊断。支持 Logi Bolt / Unifying / 蓝牙 / 有线，可读电量与充电状态，提供低电量提示、Caps Lock 等屏上指示，以及显示每个通道配对电脑的 Easy-Switch 面板。不登录账号、不上报遥测。",
+    "highlight_zh": "2.5 万星说明一件事：为改两个侧键而装一个带账号体系的臃肿客户端，忍耐已经到线了。"
+  },
+  "rclone/rclone": {
+    "summary_zh": "把七十余家云存储统一成一套 rsync 式语义：copy / sync / check / mount / serve 五个动词，覆盖 S3 及各家兼容实现、Google Drive、Dropbox、OneDrive、B2、Azure、R2、阿里云 OSS、Ceph、HDFS、FTP/SFTP 等；支持分块上传、断点续传、服务端复制、并发与限速，crypt 后端做客户端加密、cache 后端起本地缓存，也可作为 Go 库嵌入。单二进制、跨平台，十年不换接口。",
+    "highlight_zh": "4,614 天、单日 +29——它证明了另一种工程路线：把一件事做到足够通用，就不用重写。"
+  },
+  "namannn04/Veronica": {
+    "summary_zh": "Ubuntu 上的原生控制中心，把散落的单功能小工具收进一个应用：系统工具、媒体控制、剪贴板历史、emoji、GNOME 集成，外加一个越来越重要的新类目——agent 使用量与速率限制。Rust + Tauri 实现，GPL-3.0，无许可证密钥、无账号、无付费档。它是 macOS 控制中心 Edith 的 Linux 移植：保留其能力地图、扩展目录、限流算法与用量 schema，只重写平台层，用量采集器逐行共用。",
+    "highlight_zh": "75 天单日 +123——增量集中在「agent 配额监控」这个正在变硬的跨平台需求上。"
+  },
+  "slaterain/nv-rs": {
+    "summary_zh": "用 Rust 与 Bevy 重写《辐射：新维加斯》引擎，目标是 1:1 复刻而非「感觉接近」——连原版的怪癖都保留。运行时读取玩家自有游戏数据文件，不附带任何版权内容；分阶段推进，当前明确处于基础游戏地基阶段。相较渲染，真正的瓶颈是脚本虚拟机与任务系统的行为一致性，这类工程通常以年计。GPL-3.0，30 天新仓、单人维护，无日增基线。",
+    "highlight_zh": "213 星、30 天的地基阶段——值得尊敬的技术理想主义，但离「能玩」还有很长的路。"
+  },
+  "UnboundTechCo/defyxVPN": {
+    "summary_zh": "Flutter 写的多协议 VPN 客户端，用 DXcore 统一内核把 Warp、Psiphon、Warp-in-Warp、Xray、Outline 及自有协议收在一个接口后，按网络状况自动选路，用户只面对一个连接按钮，无需手工配置，另带网速与质量测试。MIT 开源，覆盖 iOS / macOS / Android / Windows / Linux。这类「多协议 + 自动选路」的结构提升可用性，但也让故障归因变复杂；503 天、895 星，无日增基线。",
+    "highlight_zh": "协议再多，决定隐私的仍是节点运营方的日志策略——这一层不透明，其余都只是包装。"
+  },
+  "debezium/debezium": {
+    "summary_zh": "开源 CDC 的事实标准：监控 MySQL、PostgreSQL、MongoDB、Oracle、SQL Server、Db2、Cassandra、Vitess 等数据库的变更日志（binlog / WAL / oplog / LogMiner），解析成统一的变更事件模型输出，只暴露已提交变更，因此应用无需处理事务与回滚。变更历史写入持久化、可复制的日志，消费端可停机后完整补齐遗漏事件。主形态为 Kafka Connect 连接器，也提供嵌入式引擎。",
+    "highlight_zh": "1.3 万星、单日 +4 却是本期 data 类唯一有生产分量的项目——这类采样已经偏得离谱。"
+  },
+  "stablemates/workhorse": {
+    "summary_zh": "不引入 broker 的任务队列：队列状态、调度、重试、恢复与不可变历史全部由 PostgreSQL 内一组版本化 SQL 函数承担，入队与业务写入走同一事务，回滚时一同撤销。八种语言的 worker（TS、Python、Go、Rust、Ruby、Java、Kotlin、C#）共用一套 SQL 协议，认领任务时持 fence token，丢失租约后恢复的 worker 无法覆盖更新的工作；投递语义为至少一次，另附 dashboard 展示任务活动、系统健康、worker 容量与调度。当前为 public beta。",
+    "highlight_zh": "用数据库换掉一个中间件的取舍很诚实——代价是把负载压回 Postgres，高并发场景从一开始就不该选它。"
+  },
+  "datasifaw/dataiku-projet-bancaire-analytics": {
+    "summary_zh": "一个 Dataiku 银行分析项目的法语文档仓库：README 仅两百余字符，内容是「项目文档」「改进项目文档」这类版本备注，无 Dataiku 工程文件、无数据集、无 Notebook、无配方定义、无许可证、无安装与复现说明。项目描述里写的端到端流程（数据准备、机器学习、客户评分、自动化流水线）全部停留在 Dataiku 平台内部，未以可移植形式导出。48 天、100 星、单日 +1。",
+    "highlight_zh": "它不该出现在日报里——这是 data 类候选池被窄查询锁死、连续第四期注水的证据。"
+  },
+  "JellyGlance/Server": {
+    "summary_zh": "自托管的 Jellyfin / Emby 仪表盘，把分散的状态收进一处：实时会话（谁在播、播的什么、直连还是转码）、观看历史与用户统计、最近入库、媒体库概览、请求与下载状态（可与 Sonarr/Radarr/Bazarr/Lidarr 联动）、日历与 webhook、备份。技术难点不在采集而在多源对齐——同一部剧在 Jellyfin 用 TMDB ID、在 Sonarr 用 tvdbId，需要做映射。108 天、135 星，单日零增量。",
+    "highlight_zh": "自建媒体栈的合格补件，但 135 星零增量意味着它不会跟上游 API 走太远。"
+  },
+  "2giosangmitom/sqmeow.nvim": {
+    "summary_zh": "住进 Neovim 的数据库客户端：SQL、NoSQL 与分析型库（MySQL、MariaDB、MongoDB、ClickHouse、DuckDB 等）统一入口，结果集可就地浏览、过滤、排序甚至编辑单元格，配查询历史与数据库感知补全（blink.cmp / nvim-cmp）。关键实现取舍是把数据库操作放进独立 Rust 进程、结果集过滤排序交给 Polars，Lua 只管 UI 与编排，因此重活不阻塞编辑器；连接与 scratchpad 按项目目录存放，可随仓库走。",
+    "highlight_zh": "编辑器内查库的关键不是「能跑 SQL」，而是结果集能就地加工——它用 Rust + Polars 补上了这块。"
+  },
+  "AssassinCreator/steam-stash-value-report-card": {
+    "summary_zh": "在终端给 Steam 库存估价，再印成可发布的卡片：覆盖 CS2、Dota 2、TF2、Rust、社区道具及自定义 app，同时在 Steam 市场与第三方现金市场竞争定价。最值得记的是口径纪律——每个数字都带 venue 与 window（LOWEST 是当前最低挂单，AVG 是选定时窗真实成交均值），Steam 钱包余额与现金绝不静默混算，缺数据时逐级降级并在行内、汇总、页脚三处标注，未定价项绝不计为零。六种卡片形态，输出 PNG，单个 Windows 便携版、无需账号。",
+    "highlight_zh": "1 天 603 星——在一个充斥着臆造估值的品类里，「每个数字都标口径」本身就是差异化。"
+  },
+  "Bridgeyaprovide/roblox-game-copier": {
+    "summary_zh": "空壳仓库：README 只有三步——按 Win + X 打开 PowerShell、粘贴下面这段命令、回车，没有任何源码、release 产物或功能说明，也无许可证。与 startall-back、ads-blocker 创建时间集中在三分钟内（10:10–10:15）、各自仅一次推送、README 文案逐字相同、topics 同一套、星数凑整，属同批模板化投放。1 天、502 星，无日增基线。",
+    "highlight_zh": "不要执行它的任何命令——这不是质量差的项目，是把「让你自己跑脚本」当唯一交付物的投放。"
+  },
+  "MeshBeatDitch/startall-back": {
+    "summary_zh": "与同批次另两个仓库逐字相同的空壳：README 只提供一段需粘进 Windows PowerShell 执行的安装命令，宣称「预激活本地构建、开箱即用」，实际无源代码、无 release 产物、无功能文档、无许可证。创建于 10:15:16，8 秒后完成唯一一次推送；与 roblox-game-copier、ads-blocker 共享同一 README 模板与 topics，星数同为凑整的 400。1 天、400 星，无日增基线。",
+    "highlight_zh": "三个零内容空壳占据 tools 前四席中的三席——这已经不是质量问题，是安全问题。"
+  },
+  "HandcuffHelper/ads-blocker": {
+    "summary_zh": "第三个同模板空壳，以「广告拦截」为名：README 只有一段请用户打开 PowerShell 粘贴执行的命令，仓库内既无过滤规则也无扩展或拦截组件，无源码、无 release、无许可证。创建于 10:10:12，6 秒后完成唯一推送，与 roblox-game-copier、startall-back 共享逐字相同的文案与 topics。1 天、400 星。广告拦截类话术尤其危险——用户预期它需要高权限，对授权请求的警惕度更低。",
+    "highlight_zh": "话术最具欺骗性的一个：广告拦截天然要高权限，用户更容易照做。结论只有一条——拦截。"
+  },
+  "mvschwarz/openrig": {
+    "summary_zh": "harness 包住模型，rig 包住你的 harness：用一份 YAML 定义 agent 团队的角色与拓扑，一条命令启动，Claude Code 与 Codex 可同处一个 rig 内统一管理。面向 lead agent 下达业务目标，由它协调跨团队专家、汇总结果，并把需要人决策的事项单独呈报；团队工作与上下文保持在固定地址，会话之间可延续。作者是 Michael Schwarz，README 直言它是「个人 AI 文明实验」背后的系统。216 天、8,561 星、单日 +19，Apache-2.0。",
+    "highlight_zh": "抽象层级选得准——不再造一个 agent，而是定义 agent 之间怎么组织，这层当前最缺。"
+  },
+  "boykopovar/AnyPS5": {
+    "summary_zh": "不做模拟器：把 PS5 可执行文件重链接成 Linux/Windows 原生格式，再以自实现的系统 prx 库满足动态链接，无模拟层、无独立运行时进程。着色器重编译器可产出经 Spirv-Tools 校验的 SPIR-V；附带文件不出本机的网页版转换器，支持 SDL 手柄与 anyps5-input.ini 键鼠映射，relinker-only 构建可跑在 macOS（含 Apple silicon）。兼容性按作品在 Game bring-up 讨论帖维护，覆盖率定义为已声明函数的实现比例，未知状态直接抛异常。91 天、5 万星、单日 +337，GPL-2.0。",
+    "highlight_zh": "5 万星里有大量是期待而非验证——路线比模拟器优雅，但逐作品的库覆盖是硬功夫。"
+  },
+  "Genymobile/scrcpy": {
+    "summary_zh": "不装 App、不 root、断开即净的安卓镜像与控制：经 USB 或 TCP/IP 传输视频与音频，键鼠直接操作设备，原生渲染 30–120fps、1920×1080 以上，延迟 35–70ms，启动到首帧约 1 秒。支持录屏、剪贴板同步、文件拖拽与多设备并行，Linux / Windows / macOS 三平台，Apache-2.0。README 开篇即警告：只从官方仓库获取，不要从任何随机网站下载 release。3,268 天、15.3 万星、单日 +102。",
+    "highlight_zh": "十五年的最优解，因为约束定得极狠：零安装、无账号、低延迟——后来的互联工具都建在它之上。"
+  },
+  "Verlintas/NOIR": {
+    "summary_zh": "跑在电脑上的安卓隐私审计工具：经 adb 读取应用清单与权限，在设备端用 unzip + strings 从 dex 提取 URL 只回传几 KB，再按包名与域名识别厂商与类别、结合权限计算风险分。更进一步的是把权限翻译成「能拿到什么数据」并与上报域名配对，识别 android.uid.system 这类共享 UID 的权限并集，解析二进制 AndroidManifest 找出无保护的导出组件、明文流量、备份与 debuggable。处置建议分「可自动 / 需确认 / 不建议动」三档，每条附回滚命令；deep 模式才拉整包用 jadx 反编译检索 Runtime.exec、DexClassLoader、MediaProjection 等调用。",
+    "highlight_zh": "2 天 1,328 星、单日 +1,087——每条建议都配回滚命令，这个设计比只给风险分有价值得多。"
+  },
+  "thtbee/nectarlink": {
+    "summary_zh": "把 Phone Link、KDE Connect、LocalSend 三件事合一的安卓-Windows 互联：通知与消息同步、来电处理、双向剪贴板、文件与照片传输、屏幕镜像，以及在 Windows 内直接运行手机应用，支持 Windows 10 (2004+) 与 11。local-first、端到端加密、无账号、无云端中转，Android 侧 Kotlin + Jetpack Compose、Windows 侧 Rust + Qt。作者自述动机是被三个工具来回切换逼出来的。29 天、1,759 星、单日 +1,022，许可证标为 NOASSERTION。",
+    "highlight_zh": "29 天单日 +1,022——碎片化互联是真痛点，但它把四个成熟工具的活压进了一个新项目里。"
+  },
+  "jackwener/DSH-Android": {
+    "summary_zh": "一个 APK 在安卓机上跑 DeepSeek Harness，免 root、免 Termux，引擎内嵌 App 进程。用读屏 + 点按 + 输入操作任意 App，过程可随时暂停、停止或插话；Android 14+ 配好 Shizuku 或自连 ADB 后可在虚拟屏幕上操作，不占用当前屏幕。悬浮球随时呼起，内置 Linux 环境可跑 Python 与自写脚本，也能通过 SSH 或 DSH Remote 连电脑上的 DSH。可登录 DeepSeek 账号或填 API key，也支持添加其他模型服务商。6 天、755 星，Apache-2.0。",
+    "highlight_zh": "agent 的下一个战场确实是手机 App，但读屏 + 输入注入等于把手机完全敞开给一个 6 天的项目。"
+  }
+}
