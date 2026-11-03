@@ -1,0 +1,416 @@
+---
+import Base from '../layouts/Base.astro';
+import { publicBlacklist, loadBlacklist, displayDate } from '../lib/load';
+import { removalSlug } from '../lib/format';
+import type { RemovalEntry } from '../lib/schema';
+
+const base = import.meta.env.BASE_URL;
+const ledger = loadBlacklist();
+const entries = publicBlacklist();
+
+/** 判定标准是固定的四条，不随当期命中数量变化——先把规则讲清楚，再列名单 */
+const CRITERIA = [
+  {
+    key: 'supply-chain',
+    name: '供应链风险',
+    note: 'README 以「打开终端、粘贴命令、回车」代替源码与构建说明，没有可审阅的安装路径。这类项目不进入推荐位，无论星标多少。',
+  },
+  {
+    key: 'inflated-popularity',
+    name: '热度异常',
+    note: '同一份文本模板在不同账号下重复出现，创建时间集中在同一时间窗，星标与 fork、issue 的分布明显偏离自然增长。',
+  },
+  {
+    key: 'off-topic',
+    name: '收录边界',
+    note: '以政治动员、族群或性别对立、仇恨与歧视为主要卖点。只判「主要卖点」——涉及公共议题但主体是技术内容的项目照常收录。',
+  },
+  {
+    key: 'insufficient',
+    name: '证据不足则不动手',
+    note: '分数停留在观察区间的项目保留在榜内，只在报告里留痕。仅凭单一维度偏离常态，不下结论、不公示。',
+  },
+];
+
+const countOf = (cat: string) => entries.filter((e) => e.category === cat).length;
+
+const campaigns = (ledger.meta?.campaigns ?? []).filter((c) => (c.repos ?? 0) > 0);
+const FAMILY_LABEL: Record<string, string> = {
+  metadata: '仓库元数据',
+  content: 'README 文本',
+  correlation: '跨仓库关联',
+  manual: '人工复核',
+  'public-opinion': '公开讨论',
+  'expert-critique': '技术社区评价',
+  'issue-reports': 'Issue 反馈',
+};
+const rowIssues = (e: RemovalEntry) => (e.issues ?? []).filter(Boolean);
+---
+
+<Base
+  title="移除项目榜 · 开源雷达"
+  description="开源雷达的收录边界与移除记录：以可复核的公开事实为依据，说明哪些项目不进入推荐位、为什么。"
+>
+  <header class="cover">
+    <div class="cover-main">
+      <p class="cover-kicker">收录边界</p>
+      <h1>移除项目榜</h1>
+      <p class="cover-lede">
+        日报每天从数百个候选里取 30 个，筛查放在归类之前。以下项目曾经进入候选、甚至已经在往期推荐过，
+        但因其呈现出的特征不满足「可以放心推荐」这一条，被拦在推荐位之外。每条结论都附上可自行复核的事实。
+      </p>
+    </div>
+    <aside class="cover-meta">
+      <dl>
+        <div><dt>累计移除</dt><dd>{entries.length}</dd></div>
+        <div><dt>已撤回</dt><dd>{entries.filter((e) => e.state === 'retracted').length}</dd></div>
+        <div><dt>涉及期次</dt><dd>{new Set(entries.flatMap(rowIssues)).size}</dd></div>
+        <div><dt>最近更新</dt><dd>{ledger.meta?.updated ? displayDate(ledger.meta.updated) : '—'}</dd></div>
+      </dl>
+    </aside>
+  </header>
+
+  <section class="policy">
+    <h2>判定标准</h2>
+    <p class="policy-lede">
+      判定只使用可复核的公开事实：仓库元数据、README 原文、同批投放的时间与文本相关性。
+      不对作者动机作推断，也不用「恶意」这类定性词——只陈述观察到了什么，以及这些观察为什么不足以支撑推荐。
+    </p>
+    <ol class="criteria">
+      {
+        CRITERIA.map((c) => (
+          <li>
+            <span class="cr-name">
+              {c.name}
+              {countOf(c.key) > 0 && <i>{countOf(c.key)}</i>}
+            </span>
+            <span class="cr-note">{c.note}</span>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  {
+    campaigns.map((c) => (
+      <section class="campaign">
+        <p class="camp-kicker">同一批投放</p>
+        <h2>{c.label}</h2>
+        <p class="camp-meta">
+          {c.window} · 共 {c.repos} 个仓库
+        </p>
+        <p class="camp-note">{c.note}</p>
+      </section>
+    ))
+  }
+
+  {
+    entries.length === 0 ? (
+      <p class="empty">台账为空：至今没有被判定为需要移除的项目。</p>
+    ) : (
+      <ol class="ledger">
+        {entries.map((e, i) => (
+          /* id 由 removalSlug 生成，供统计页的索引直接跳到这一条的证据链 */
+          <li class="row" id={removalSlug(e.full_name)}>
+            <div class="row-head">
+              <span class="row-no">{String(i + 1).padStart(2, '0')}</span>
+              <a class="row-name" href={e.url} target="_blank" rel="noopener noreferrer">
+                {e.full_name}
+              </a>
+              <span class="row-tag">{e.categoryLabel ?? '风险项'}</span>
+              {e.state === 'retracted' && <span class="row-tag is-alert">已推荐 · 撤回</span>}
+              {e.snapshot?.stars != null && (
+                <span class="row-score">{e.snapshot.stars.toLocaleString()} stars</span>
+              )}
+            </div>
+
+            {e.description && <p class="row-desc">{e.description}</p>}
+            <p class="row-verdict">{e.verdict}</p>
+
+            <div class="row-meta">
+              <span>{e.snapshot?.forks != null ? `${e.snapshot.forks.toLocaleString()} forks` : ''}</span>
+              <span>{e.snapshot?.license ? e.snapshot.license : '无许可证'}</span>
+              {e.snapshot?.created_at && (
+                <span>创建于 {e.snapshot.created_at.slice(0, 10)}</span>
+              )}
+              {rowIssues(e).length > 0 && (
+                <span class="row-issues">
+                  收录于 {rowIssues(e).map((d) => displayDate(d)).join('、')}
+                </span>
+              )}
+            </div>
+
+            <details class="row-ev">
+              <summary>证据链 · {(e.evidence ?? []).length} 项可复核事实</summary>
+              <ul>
+                {(e.evidence ?? []).map((ev) => (
+                  <li>
+                    <span class="ev-type">{FAMILY_LABEL[ev.type] ?? ev.type}</span>
+                    <b>{ev.label}</b>
+                    {ev.detail}
+                  </li>
+                ))}
+              </ul>
+            </details>
+
+            {e.advice && <p class="row-advice">建议 · {e.advice}</p>}
+          </li>
+        ))}
+      </ol>
+    )
+  }
+
+  <section class="policy closing">
+    <h2>关于这份名单</h2>
+    <p class="policy-lede">
+      名单只说明「本站为什么没有推荐它」，不构成对任何账号的定性结论。项目可能改名、转移、补齐源码与许可证，
+      也可能只是恰好符合了某几条规则。若你认为某一条判定有误——事实记错、时间线不符、或该项目后来已作出改变——
+      请通过页脚的「建议与勘误」提交，附上可核对的依据，核实后会从榜上撤下并注明。
+    </p>
+    {ledger.meta?.policyZh && <p class="policy-foot">{ledger.meta.policyZh}</p>}
+  </section>
+</Base>
+
+<style>
+  .policy {
+    margin: 34px 0 0;
+  }
+  .policy h2 {
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--ink-rule);
+  }
+  .policy-lede {
+    color: var(--ink-2);
+    font-size: 0.9rem;
+    line-height: 1.9;
+    margin-top: 12px;
+    max-width: 62ch;
+  }
+  .policy-foot {
+    color: var(--ink-3);
+    font-size: 0.8rem;
+    line-height: 1.8;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
+  }
+  .closing {
+    margin-top: 46px;
+  }
+
+  .criteria {
+    list-style: none;
+    margin: 16px 0 0;
+    border-top: 1px solid var(--rule);
+  }
+  .criteria li {
+    display: grid;
+    grid-template-columns: 168px 1fr;
+    gap: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .cr-name {
+    font-size: 0.9rem;
+    color: var(--ink);
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .cr-name i {
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--ink-3);
+  }
+  .cr-note {
+    color: var(--ink-2);
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+
+  /* 批次说明：把 12 条记录收敛成一件事，避免读者误以为是 12 个独立发现 */
+  .campaign {
+    margin: 34px 0 0;
+    padding: 18px 20px;
+    background: var(--paper-2);
+    border-left: 3px solid var(--rule-strong);
+  }
+  .camp-kicker {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-3);
+  }
+  .campaign h2 {
+    font-size: 1rem;
+    margin-top: 4px;
+  }
+  .camp-meta {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--ink-3);
+    margin-top: 4px;
+  }
+  .camp-note {
+    color: var(--ink-2);
+    font-size: 0.85rem;
+    line-height: 1.85;
+    margin-top: 8px;
+    max-width: 66ch;
+  }
+
+  .ledger {
+    list-style: none;
+    margin: 30px 0 0;
+  }
+  .row {
+    padding: 20px 0 22px;
+    border-top: 1px solid var(--rule);
+    /* 从统计页深链跳进来时，别让条目顶到书眉底下 */
+    scroll-margin-top: calc(var(--h-nav) + 20px);
+  }
+  .row:target {
+    background: var(--paper-2);
+    box-shadow: inset 3px 0 0 var(--accent);
+  }
+  .row:first-child {
+    border-top: 2px solid var(--ink-rule);
+  }
+  .row-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .row-no {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--ink-3);
+    min-width: 26px;
+  }
+  .row-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .row-name:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .row-tag {
+    font-size: 0.72rem;
+    color: var(--ink-2);
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 0 7px;
+  }
+  .row-tag.is-alert {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: transparent;
+  }
+  .row-score {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--ink-3);
+  }
+  .row-desc {
+    color: var(--ink-3);
+    font-size: 0.82rem;
+    margin: 6px 0 0 36px;
+  }
+  .row-verdict {
+    color: var(--ink);
+    font-size: 0.92rem;
+    line-height: 1.85;
+    margin: 8px 0 0 36px;
+    max-width: 66ch;
+  }
+  .row-meta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 8px 0 0 36px;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--ink-3);
+  }
+  .row-ev {
+    margin: 10px 0 0 36px;
+  }
+  .row-ev summary {
+    font-size: 0.8rem;
+    color: var(--accent);
+    cursor: pointer;
+  }
+  .row-ev ul {
+    list-style: none;
+    margin: 10px 0 0;
+    padding-left: 0;
+  }
+  .row-ev li {
+    font-size: 0.83rem;
+    color: var(--ink-2);
+    line-height: 1.8;
+    padding: 7px 0 7px 14px;
+    border-left: 2px solid var(--rule);
+    margin-bottom: 7px;
+  }
+  .row-ev li b {
+    color: var(--ink);
+    font-weight: 600;
+    margin: 0 8px 0 0;
+  }
+  .ev-type {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--ink-3);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-right: 8px;
+  }
+  .row-advice {
+    margin: 10px 0 0 36px;
+    font-size: 0.82rem;
+    color: var(--ink-2);
+    background: var(--paper-2);
+    border-left: 3px solid var(--rule-strong);
+    padding: 8px 12px;
+    line-height: 1.75;
+  }
+  .empty {
+    margin: 40px 0;
+    padding: 30px;
+    border: 1px dashed var(--rule);
+    text-align: center;
+    color: var(--ink-3);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 640px) {
+    .criteria li {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+    .row-desc,
+    .row-verdict,
+    .row-meta,
+    .row-ev,
+    .row-advice {
+      margin-left: 0;
+    }
+    .row-score {
+      margin-left: 0;
+    }
+  }
+</style>

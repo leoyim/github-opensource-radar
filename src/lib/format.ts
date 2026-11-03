@@ -31,6 +31,13 @@ export const ROLE_LABELS: Record<string, string> = {
 
 export const roleLabel = (id: string): string => ROLE_LABELS[id] ?? id;
 
+/** 移除记录的锚点：owner/repo → owner-repo，供长期观察的清单深链到证据条目 */
+export const removalSlug = (fullName: string): string =>
+  fullName
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
 /** 书脊竖排分词：汉字一字一行、数字每两位一行、西文一词一行。
  *  「/」按分隔符处理（「AI / 大模型」→ AI、大、模、型），构建期与前端共用。 */
 export function spineLines(text: string): string[] {

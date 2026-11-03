@@ -61,6 +61,60 @@ export type IssueCategory = {
   items: IssueItem[];
 };
 
+export type RemovalEvidence = {
+  /** metadata / content / correlation / manual / public-opinion / expert-critique / issue-reports */
+  type: string;
+  label: string;
+  detail: string;
+};
+
+export type RemovalEntry = {
+  full_name: string;
+  owner?: string;
+  name?: string;
+  url?: string;
+  description?: string;
+  language?: string;
+  category?: string;
+  categoryLabel?: string;
+  sourceCategory?: string | null;
+  status?: string;
+  /** retracted：已在往期推荐过、本次撤回；blocked：未及推荐即被拦下 */
+  state?: 'retracted' | 'blocked';
+  campaign?: string;
+  /** internal 的条目只入库不公示：公开罗列会把注意力引向非技术话题本身 */
+  disclosure?: 'public' | 'internal';
+  firstSeen?: string;
+  removedAt?: string;
+  issues?: string[];
+  score?: number | null;
+  evidence?: RemovalEvidence[];
+  verdict?: string;
+  advice?: string;
+  retroactive?: boolean;
+  snapshot?: {
+    stars?: number;
+    forks?: number;
+    open_issues?: number;
+    license?: string;
+    created_at?: string;
+    pushed_at?: string;
+    topics?: string[];
+  };
+};
+
+export type RemovalLedger = {
+  meta?: {
+    updated?: string;
+    version?: number;
+    policyZh?: string;
+    count?: number;
+    publicCount?: number;
+    campaigns?: Array<{ id: string; label: string; window?: string; repos?: number; note?: string }>;
+  };
+  entries: RemovalEntry[];
+};
+
 export type Issue = {
   date: string;
   generatedAt: string;
@@ -70,9 +124,15 @@ export type Issue = {
     unclassified?: number;
     selected: number;
     suppressedByHistory: number;
+    removed?: number;
+    removedTotal?: number;
+    offTopic?: number;
+    watchlisted?: number;
   };
   categories: IssueCategory[];
   suppressed?: Array<{ full_name: string; category: string; lastPushed?: string }>;
+  removed?: RemovalEntry[];
+  watchlist?: Array<{ full_name: string; category?: string; score?: number }>;
 };
 
 export type SeriesPoint = {

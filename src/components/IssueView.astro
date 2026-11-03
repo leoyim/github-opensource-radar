@@ -33,6 +33,17 @@ const perCat = Math.max(...issue.categories.map((c) => c.items.length));
 const almanac = almanacOf(issue.date);
 /* 本期观察：上游 index.md 的横向分析，没有就整节省略 */
 const observation = observationOf(issue.date);
+/* 本期被筛查拦下的条目：只公示「险些入选」的那几个，完整台账在 /removed/ */
+const removed = issue.removed ?? [];
+const EV_LABEL: Record<string, string> = {
+  metadata: '仓库元数据',
+  content: 'README 文本',
+  correlation: '跨仓库关联',
+  manual: '人工复核',
+  'public-opinion': '公开讨论',
+  'expert-critique': '技术社区评价',
+  'issue-reports': 'Issue 反馈',
+};
 /* 有解读的条目，浮层集中放在条目列表之外渲染 */
 const readers = issue.categories
   .flatMap((c) => c.items)
@@ -41,8 +52,7 @@ const readers = issue.categories
     return doc ? [{ item, doc }] : [];
   });
 const baselineNote =
-  issue.baseline.heatBasis === 'snapshot' ? '热度取与上一份快照对比的真实日增' : '首期无基线，热度按星标速度估算';
-const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : '无';
+  issue.baseline.heatBasis === 'snapshot' ? '热度取与上一份快照对比的真实日增' : '首期无基线，热度按星标速度估算';const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : '无';
 /* 书脊竖排：汉字一字一行、数字两位一行、西文一词一行 */
 const spineYear = spineLines(`${issue.date.slice(0, 4)}年`);
 const spineDate = spineLines(displayDate(issue.date));
@@ -82,6 +92,7 @@ const spineNo = spineLines(`第${String(issueNo).padStart(2, '0')}期`);
         <div><dt>农历</dt><dd>{almanac.ganzhiYear}年 {almanac.lunarDate}</dd></div>
         <div><dt>节气</dt><dd class={almanac.jieQi ? 'tag' : undefined}>{jieQiLine(almanac)}</dd></div>
         <div><dt>对比基线</dt><dd>{baselineDate}</dd></div>
+        {removed.length > 0 && <div><dt>筛查移除</dt><dd class="tag">{removed.length}</dd></div>}
         {latest && <div><dt>状态</dt><dd class="tag">最新一期</dd></div>}
       </dl>
     </aside>
@@ -200,6 +211,52 @@ const spineNo = spineLines(`第${String(issueNo).padStart(2, '0')}期`);
       ))
     }
   </div>
+
+  {
+    removed.length > 0 && (
+      <section class="removed" id="removed">
+        <header class="cat-head rm-head">
+          <span class="cat-no" aria-hidden="true">附</span>
+          <h2>本期移除</h2>
+          <p class="cat-desc">
+            筛查在归类之前执行，命中即不进入推荐位。判定只依据可复核的公开事实，不对作者动机作推断。
+          </p>
+        </header>
+        <ol class="rm-list">
+          {removed.map((e, i) => (
+            <li class="rm-item">
+              <div class="rm-line">
+                <span class="rm-no">{String(i + 1).padStart(2, '0')}</span>
+                <a class="rm-name" href={e.url} target="_blank" rel="noopener noreferrer">
+                  {e.full_name}
+                </a>
+                <span class="rm-tag">{e.categoryLabel ?? '风险项'}</span>
+                {e.retroactive && <span class="rm-tag is-ghost">回溯勘误</span>}
+              </div>
+              {e.description && <p class="rm-desc">{e.description}</p>}
+              <p class="rm-verdict">{e.verdict}</p>
+              <details class="rm-ev">
+                <summary>证据链 · {(e.evidence ?? []).length} 项可复核事实</summary>
+                <ul>
+                  {(e.evidence ?? []).map((ev) => (
+                    <li>
+                      <span class="rm-ev-type">{EV_LABEL[ev.type] ?? ev.type}</span>
+                      <b>{ev.label}</b>
+                      {ev.detail}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+              {e.advice && <p class="rm-advice">建议 · {e.advice}</p>}
+            </li>
+          ))}
+        </ol>
+        <p class="rm-foot">
+          <a href={`${base}removed/`}>移除项目榜 · 完整台账 →</a>
+        </p>
+      </section>
+    )
+  }
 
   {readers.map(({ item, doc }) => <ReaderDialog item={item} doc={doc} />)}
 
@@ -570,3 +627,136 @@ const spineNo = spineLines(`第${String(issueNo).padStart(2, '0')}期`);
   writeUrl(false);
   requestAnimationFrame(restoreHash);
 </script>
+
+<style>
+  /* 本期移除：版式上按「附录」处理——比正文轻，但要能独立读完 */
+  .removed {
+    margin: 46px 0 0;
+    padding-top: 22px;
+    border-top: 2px solid var(--ink-rule);
+  }
+  .rm-head {
+    margin-bottom: 14px;
+  }
+  .rm-list {
+    list-style: none;
+  }
+  .rm-item {
+    padding: 16px 0 18px;
+    border-top: 1px solid var(--rule);
+  }
+  .rm-item:first-child {
+    border-top: none;
+    padding-top: 4px;
+  }
+  .rm-line {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .rm-no {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--ink-3);
+    min-width: 24px;
+  }
+  .rm-name {
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .rm-name:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .rm-tag {
+    font-size: 0.7rem;
+    color: var(--ink-2);
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 0 6px;
+  }
+  .rm-tag.is-ghost {
+    background: transparent;
+    color: var(--ink-3);
+  }
+  .rm-desc {
+    color: var(--ink-3);
+    font-size: 0.8rem;
+    margin: 5px 0 0 34px;
+  }
+  .rm-verdict {
+    color: var(--ink);
+    font-size: 0.9rem;
+    line-height: 1.85;
+    margin: 7px 0 0 34px;
+    max-width: 64ch;
+  }
+  .rm-ev {
+    margin: 9px 0 0 34px;
+  }
+  .rm-ev summary {
+    font-size: 0.78rem;
+    color: var(--accent);
+    cursor: pointer;
+  }
+  .rm-ev ul {
+    list-style: none;
+    margin: 8px 0 0;
+    padding-left: 0;
+  }
+  .rm-ev li {
+    font-size: 0.81rem;
+    color: var(--ink-2);
+    line-height: 1.8;
+    padding: 6px 0 6px 12px;
+    border-left: 2px solid var(--rule);
+    margin-bottom: 6px;
+  }
+  .rm-ev li b {
+    color: var(--ink);
+    font-weight: 600;
+    margin: 0 8px 0 0;
+  }
+  .rm-ev-type {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    color: var(--ink-3);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-right: 7px;
+  }
+  .rm-advice {
+    margin: 9px 0 0 34px;
+    font-size: 0.8rem;
+    color: var(--ink-2);
+    background: var(--paper-2);
+    border-left: 3px solid var(--rule-strong);
+    padding: 7px 12px;
+    line-height: 1.75;
+  }
+  .rm-foot {
+    margin-top: 16px;
+    font-size: 0.82rem;
+  }
+  .rm-foot a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .rm-foot a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 640px) {
+    .rm-desc,
+    .rm-verdict,
+    .rm-ev,
+    .rm-advice {
+      margin-left: 0;
+    }
+  }
+</style>

@@ -44,6 +44,8 @@ const SRC_SNAPSHOTS = path.join(SOURCE, 'data/snapshots');
 const SRC_INTERP = path.join(SOURCE, 'data/interpretations');
 /* 头像缓存由上游 resolve-avatars.mjs 生成，本站只拷贝、不联网 */
 const SRC_OWNERS = path.join(SOURCE, 'data/owners.json');
+/* 黑名单由上游筛查流程维护，含历史期次的回溯勘误；本站只搬运 */
+const SRC_BLACKLIST = path.join(SOURCE, 'data/blacklist.json');
 
 const readJson = (p, fallback = null) => {
   try {
@@ -162,6 +164,25 @@ function ingestDate(date, snapshots) {
   return { date, count: n };
 }
 
+/**
+ * 黑名单：整份搬运。
+ * 上游按日期累加 issues、保留 firstSeen，站点不参与判定，也不在本地重算，
+ * 这样同一仓库在多次回溯中得到的结论只有一份，不会出现两处说法。
+ */
+function syncBlacklist() {
+  const ledger = readJson(SRC_BLACKLIST);
+  if (!ledger || !Array.isArray(ledger.entries)) {
+    console.warn('   ! 上游缺少 data/blacklist.json（跑一次上游筛查即可生成），跳过');
+    return;
+  }
+  const changed = writeIfChanged(path.join(DATA, 'blacklist.json'), ledger);
+  const entries = ledger.entries;
+  const pub = entries.filter((e) => e.disclosure !== 'internal').length;
+  console.log(
+    `   黑名单：上游 ${entries.length} 条（公示 ${pub}）→ 本地${changed ? '已更新' : '未变'}`
+  );
+}
+
 function git(args) {
   return execFileSync('git', args, { cwd: ROOT, stdio: 'pipe', encoding: 'utf8' }).trim();
 }
@@ -243,6 +264,11 @@ async function main() {
 
     total = done.reduce((s, d) => s + d.count, 0);
     console.log(`\n完成：${done.length} 期 / ${total} 条记录 → _data/`);
+  }
+
+  if (!avatarsOnly) {
+    console.log('');
+    syncBlacklist();
   }
 
   if (!has('--no-avatars')) {

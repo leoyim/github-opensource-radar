@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { assertIssue, assertSeries, type Issue, type SeriesPoint } from './schema';
+import { assertIssue, assertSeries, type Issue, type RemovalEntry, type RemovalLedger, type SeriesPoint } from './schema';
 
 /**
  * 数据层：只读 _data/，不做任何网络请求。
@@ -98,6 +98,40 @@ export function avatarOf(owner: string): string | null {
     }
   }
   return ownerAvatars[owner] ?? null;
+}
+
+/**
+ * 移除台账：上游筛查流程维护的累计清单，站点只展示、不判定。
+ * 台账里 disclosure 为 internal 的条目只入库不公示——公开罗列只会把注意力
+ * 引向非技术话题本身，所以这里统一过滤掉，只在计数里体现。
+ */
+export function loadBlacklist(): RemovalLedger {
+  try {
+    const ledger = readJson(path.join(DATA_DIR, 'blacklist.json')) as RemovalLedger;
+    const entries = Array.isArray(ledger?.entries) ? ledger.entries : [];
+    return { meta: ledger?.meta ?? {}, entries };
+  } catch {
+    return { entries: [] };
+  }
+}
+
+/**
+ * 台账次序：撤回（已经推荐过、后来又撤销）比拦截（没来得及推荐）更需要说明，排在前面；
+ * 同状态内按移除时间倒序，再按分数倒序。/removed/ 与统计页索引共用这一份规则，
+ * 避免两处分头排序后同一条记录在两个页面上排在不同位置。
+ */
+const byLedgerPriority = (a: RemovalEntry, b: RemovalEntry): number => {
+  const sa = a.state === 'retracted' ? 0 : 1;
+  const sb = b.state === 'retracted' ? 0 : 1;
+  if (sa !== sb) return sa - sb;
+  const d = (b.removedAt || '').localeCompare(a.removedAt || '');
+  return d !== 0 ? d : (b.score ?? 0) - (a.score ?? 0);
+};
+
+export function publicBlacklist(): RemovalEntry[] {
+  return loadBlacklist()
+    .entries.filter((e) => e.disclosure !== 'internal')
+    .sort(byLedgerPriority);
 }
 
 export const displayDate = (date: string): string => {

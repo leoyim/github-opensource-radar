@@ -1,11 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
-import { loadAllIssues, displayDate, weekdayOf } from '../lib/load';
+import { loadAllIssues, loadBlacklist, publicBlacklist, displayDate, weekdayOf } from '../lib/load';
 import { almanacOf, jieQiOf } from '../lib/almanac';
-import { num } from '../lib/format';
+import { num, removalSlug } from '../lib/format';
+import type { RemovalEntry } from '../lib/schema';
 
 const base = import.meta.env.BASE_URL;
 const issues = loadAllIssues();
+/* 移除台账：与 /removed/ 共用同一份数据，这里只取公开条目做索引 */
+const ledger = loadBlacklist();
+const removed = publicBlacklist();
 const items = issues.flatMap((i) => i.categories.flatMap((c) => c.items));
 
 /* 评分分布 */
@@ -49,6 +53,24 @@ const regulars = [...appear.values()]
 const firstDate = issues[issues.length - 1].date;
 const lastDate = issues[0].date;
 const lastAlmanac = almanacOf(lastDate);
+
+/* 台账口径：publicBlacklist 已滤掉仅入库不公示的条目，这里的差值是「不公示」的条数 */
+const hiddenCount = Math.max(0, ledger.entries.length - removed.length);
+
+/* 撤回与拦截分两段：publicBlacklist 已按「撤回优先」排好，这里只是切分 */
+const retracted = removed.filter((e) => e.state === 'retracted');
+const blocked = removed.filter((e) => e.state !== 'retracted');
+const evidenceCount = (e: RemovalEntry) => (e.evidence ?? []).length;
+const campaigns = (ledger.meta?.campaigns ?? []).filter((c) => (c.repos ?? 0) > 0);
+
+/* 编号跨组连续：序号只表示「台账里的第几条」，不随分组重新起算 */
+let seq = 0;
+const ledgerGroups = [
+  { label: '已推荐后撤回', note: '上过榜，复查后撤销', rows: retracted },
+  { label: '未及推荐即拦截', note: '归类之前就被筛掉，没出现在推荐位', rows: blocked },
+]
+  .filter((g) => g.rows.length > 0)
+  .map((g) => ({ ...g, rows: g.rows.map((entry) => ({ entry, no: ++seq })) }));
 ---
 
 <Base title="长期观察 · 开源雷达" description="跨期聚合：评分分布、语言分布、单日涨星与常驻榜项目。">
@@ -196,4 +218,257 @@ const lastAlmanac = almanacOf(lastDate);
       </div>
     </div>
   </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="no">表 6</span>
+      <h2>移除台账</h2>
+    </div>
+    <p class="panel-note">
+      被拦在推荐位之外的项目单独记账，每条都写明判定依据与可复核的事实。此处是累计去重的口径，
+      与表 1 里的「拦截」按日计不是一回事。点项目名直达该条的证据链。
+    </p>
+    <div class="figs">
+      <div class="fig"><span class="k">公开条目</span><span class="v">{removed.length}</span></div>
+      <div class="fig"><span class="k">已推荐后撤回</span><span class="v">{retracted.length}</span></div>
+      <div class="fig"><span class="k">未及推荐即拦截</span><span class="v">{blocked.length}</span></div>
+      <div class="fig">
+        <span class="k">最近更新</span>
+        <span class="v is-date">{ledger.meta?.updated ? displayDate(ledger.meta.updated) : '—'}</span>
+      </div>
+    </div>
+
+    {
+      campaigns.map((c) => (
+        <div class="camp">
+          <p class="camp-kicker">同一批投放</p>
+          <p class="camp-title">{c.label}</p>
+          <p class="camp-meta">{c.window ? `${c.window} · ` : ''}共 {c.repos} 个仓库</p>
+          {c.note && <p class="camp-note">{c.note}</p>}
+        </div>
+      ))
+    }
+
+    {
+      ledgerGroups.map((g) => (
+        <>
+          <div class="lgroup">
+            <span>{g.label}</span>
+            <span class="lgroup-n">{g.rows.length}</span>
+            <span class="lgroup-rule" aria-hidden="true" />
+            <span class="lgroup-note">{g.note}</span>
+          </div>
+          <ol class="llist">
+            {g.rows.map(({ entry, no }) => (
+              <li>
+                <a class="lrow" href={`${base}removed/#${removalSlug(entry.full_name)}`}>
+                  <span class="lrow-no">{String(no).padStart(2, '0')}</span>
+                  <span class="lrow-name">{entry.full_name}</span>
+                  <span class="lrow-lead" aria-hidden="true" />
+                  <span class="lrow-ev">{evidenceCount(entry)} 项证据</span>
+                  <span class="lrow-date">
+                    {entry.removedAt ? entry.removedAt.slice(5).replace('-', '/') : '—'}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </>
+      ))
+    }
+
+    {removed.length === 0 && (
+      <p class="empty">
+        <b>台账为空</b>至今没有被判定为需要移除的项目。
+      </p>
+    )}
+
+    <p class="lmore">
+      <a href={`${base}removed/`}>查看完整证据链与判定标准 →</a>
+      {hiddenCount > 0 && <span>另有 {hiddenCount} 条仅入库留痕，不对外公示。</span>}
+    </p>
+  </section>
 </Base>
+
+<style>
+  /* 四格统计：靠铅线分栏，不用卡片 */
+  .figs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    margin-top: 22px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .fig {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 14px 14px;
+    background: var(--paper);
+  }
+  .fig .k {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--ink-3);
+  }
+  .fig .v {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+  .fig .v.is-date {
+    font-size: 1rem;
+    color: var(--ink-2);
+  }
+
+  /* 批次条：把十几条记录收敛成一件事，避免读者当成十几次独立发现 */
+  .camp {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 24px;
+    align-items: baseline;
+    margin-top: 22px;
+    padding: 14px 18px 15px;
+    background: var(--paper-2);
+    border-left: 3px solid var(--rule-strong);
+  }
+  .camp-kicker {
+    grid-column: 1;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    color: var(--ink-3);
+  }
+  .camp-title {
+    grid-column: 1;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+  }
+  .camp-meta {
+    grid-column: 1;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--ink-3);
+  }
+  .camp-note {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+    max-width: 62ch;
+    font-size: 0.82rem;
+    line-height: 1.75;
+    color: var(--ink-2);
+  }
+
+  .lgroup {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 30px;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    color: var(--ink-2);
+  }
+  .lgroup-n {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--ink-3);
+  }
+  /* 引导线：把组名与右侧说明连起来，同目录页的点线语言 */
+  .lgroup-rule {
+    flex: 1 1 auto;
+    min-width: 20px;
+    border-bottom: 1px solid var(--rule);
+    transform: translateY(-0.22em);
+  }
+  .lgroup-note {
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    color: var(--ink-3);
+  }
+
+  .llist {
+    margin-top: 2px;
+  }
+  .lrow {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule);
+    transition: color 0.14s ease;
+  }
+  .lrow-no {
+    min-width: 1.9em;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--ink-3);
+  }
+  .lrow-name {
+    font-size: 0.94rem;
+    letter-spacing: 0.01em;
+  }
+  .lrow-lead {
+    flex: 1 1 auto;
+    min-width: 14px;
+    border-bottom: 1px dotted var(--rule);
+    transform: translateY(-0.28em);
+    transition: border-color 0.14s ease;
+  }
+  .lrow-ev,
+  .lrow-date {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+  .lrow-date {
+    min-width: 3.2em;
+    text-align: right;
+  }
+  .lrow:hover {
+    color: var(--accent);
+  }
+  .lrow:hover .lrow-lead {
+    border-bottom-color: var(--accent);
+  }
+  .lrow:hover .lrow-ev,
+  .lrow:hover .lrow-date {
+    color: var(--accent);
+  }
+  .lrow:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .lmore {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 16px;
+    margin-top: 18px;
+    font-size: 0.82rem;
+    color: var(--ink-3);
+  }
+  .lmore a {
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+  }
+  .lmore a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  @media (max-width: 760px) {
+    .figs {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .camp {
+      grid-template-columns: 1fr;
+    }
+    .lrow-ev,
+    .lgroup-note {
+      display: none;
+    }
+  }
+</style>
