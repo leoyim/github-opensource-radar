@@ -5,11 +5,11 @@ category: ai
 categoryLabel: AI / 大模型
 rating: 4.5
 language: TypeScript
-stars: 83990
+stars: 84008
 starGain: 402
 url: https://github.com/cheaper-inference/OmniRoute
 tags: [a2a, ai-agents, ai-gateway, anthropic, claude, claude-code, cline, codex]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # cheaper-inference/OmniRoute · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | AI / 大模型 |
 | 评分 | 🌟🌟🌟🌟🌗 4.5 / 5.0 |
 | 语言 | TypeScript |
-| 星标 | 83,990 |
+| 星标 | 84,008 |
 | 今日新增 | +402 |
 | 仓库 | https://github.com/cheaper-inference/OmniRoute |
 

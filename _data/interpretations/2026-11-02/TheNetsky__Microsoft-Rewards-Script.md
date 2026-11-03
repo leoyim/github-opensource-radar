@@ -9,7 +9,7 @@ stars: 1158
 starGain: 8
 url: https://github.com/TheNetsky/Microsoft-Rewards-Script
 tags: [bot, docker, microsoft-rewards, microsoft-rewards-bot, microsoft-rewards-farmer, microsoft-rewards-script, playwright, script]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # TheNetsky/Microsoft-Rewards-Script · 项目解读

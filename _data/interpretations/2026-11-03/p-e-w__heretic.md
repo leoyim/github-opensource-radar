@@ -5,11 +5,11 @@ category: ai
 categoryLabel: AI / 大模型
 rating: 4
 language: Python
-stars: 38114
+stars: 38152
 starGain: 420
 url: https://github.com/p-e-w/heretic
 tags: [abliteration, anti-censorship, anticensorship, censorship, censorship-resistance, llm, transformer]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # p-e-w/heretic · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | AI / 大模型 |
 | 评分 | 🌟🌟🌟🌟 4.0 / 5.0 |
 | 语言 | Python |
-| 星标 | 38,114 |
+| 星标 | 38,152 |
 | 今日新增 | +420 |
 | 仓库 | https://github.com/p-e-w/heretic |
 

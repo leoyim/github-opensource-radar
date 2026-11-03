@@ -9,7 +9,7 @@ stars: 11727
 starGain: 32
 url: https://github.com/0xJacky/nginx-ui
 tags: [code-completion, copilot, cron, docker, go, letsencrypt, linux, macos]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # 0xJacky/nginx-ui · 项目解读

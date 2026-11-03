@@ -9,7 +9,7 @@ stars: 40290
 starGain: 1191
 url: https://github.com/patchy631/ai-engineering-hub
 tags: [agents, ai, llms, machine-learning, mcp, rag]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # patchy631/ai-engineering-hub · 项目解读

@@ -9,7 +9,7 @@ stars: 50346
 starGain: 151
 url: https://github.com/hashicorp/terraform
 tags: [cloud, cloud-management, graph, infrastructure-as-code, terraform]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # hashicorp/terraform · 项目解读

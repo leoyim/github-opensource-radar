@@ -5,11 +5,11 @@ category: ai
 categoryLabel: AI / 大模型
 rating: 4.5
 language: Rust
-stars: 9812
+stars: 10111
 starGain: 2275
 url: https://github.com/vercel-labs/agent-desktop
 tags: [accessibility, accessibility-api, ai-agents, automation, cli, computer-use, computer-use-agent, computer-use-agents]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # vercel-labs/agent-desktop · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | AI / 大模型 |
 | 评分 | 🌟🌟🌟🌟🌗 4.5 / 5.0 |
 | 语言 | Rust |
-| 星标 | 9,812 |
+| 星标 | 10,111 |
 | 今日新增 | +2,275 |
 | 仓库 | https://github.com/vercel-labs/agent-desktop |
 

@@ -9,7 +9,7 @@ stars: 38568
 starGain: 31
 url: https://github.com/docker/compose
 tags: [docker, docker-compose, go, golang, orchestration]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # docker/compose · 项目解读

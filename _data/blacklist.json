@@ -1,0 +1,986 @@
+{
+  "meta": {
+    "version": 1,
+    "updated": "2026-11-03",
+    "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
+    "count": 12,
+    "publicCount": 12,
+    "campaigns": [
+      {
+        "id": "installer-wave-2026-11",
+        "label": "「预激活安装包」批量投放",
+        "window": "2026-10-31 — 2026-11-02",
+        "repos": 12,
+        "note": "同一组商品名（Ads Blocker / StartAll Back / Roblox Game Copier 等）在不同账号下重复上架，两个波次各自集中在数分钟内创建；README 为同一份「打开终端、粘贴命令、回车」的文本模板，逐字节等长；星标 200–502、零 fork、零 issue、无许可证。"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "full_name": "gryphonautocratmatch/StartAll-Back",
+      "owner": "gryphonautocratmatch",
+      "name": "StartAll-Back",
+      "url": "https://github.com/gryphonautocratmatch/StartAll-Back",
+      "description": "Startall Back 2026: Full working installer with complete configuration utility for professional desktop environments.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "firstSeen": "2026-11-02",
+      "removedAt": "2026-11-02",
+      "issues": [
+        "2026-11-02"
+      ],
+      "score": 13,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-10-31 15:27:02，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1983 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库 MeshBeatDitch/StartAll-Back 已因同类投放被列入黑名单（2026-11-03），本次换个账号重新上架"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 CelestialStarfish/Ads-Blocker、azurerockcode/Roblox-Game-Copier 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-10-31T07:27:02Z",
+        "pushed_at": "2026-10-31T07:27:08Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "start-menu"
+        ]
+      },
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "azurerockcode/Roblox-Game-Copier",
+      "owner": "azurerockcode",
+      "name": "Roblox-Game-Copier",
+      "url": "https://github.com/azurerockcode/Roblox-Game-Copier",
+      "description": "Roblox Game Copier 2026 - Full working installer for easy duplication and management of Roblox games on your desktop.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "firstSeen": "2026-11-02",
+      "removedAt": "2026-11-02",
+      "issues": [
+        "2026-11-02"
+      ],
+      "score": 13,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-10-31 15:26:10，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 2008 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库 Bridgeyaprovide/Roblox-Game-Copier 已因同类投放被列入黑名单（2026-11-03），本次换个账号重新上架"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 CelestialStarfish/Ads-Blocker、gryphonautocratmatch/StartAll-Back 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-10-31T07:26:10Z",
+        "pushed_at": "2026-10-31T07:26:16Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "roblox-copier",
+          "roblox-game-copy",
+          "scripts"
+        ]
+      },
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "CelestialStarfish/Ads-Blocker",
+      "owner": "CelestialStarfish",
+      "name": "Ads-Blocker",
+      "url": "https://github.com/CelestialStarfish/Ads-Blocker",
+      "description": "Ads Blocker 2026: Full working installer with complete ad-blocking capabilities. Ready to run on your desktop.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "firstSeen": "2026-11-02",
+      "removedAt": "2026-11-02",
+      "issues": [
+        "2026-11-02"
+      ],
+      "score": 12.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-10-31 15:20:08，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "401 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1973 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库 HandcuffHelper/Ads-Blocker 已因同类投放被列入黑名单（2026-11-03），本次换个账号重新上架"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 gryphonautocratmatch/StartAll-Back、azurerockcode/Roblox-Game-Copier 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 401,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-10-31T07:20:08Z",
+        "pushed_at": "2026-10-31T07:20:14Z",
+        "topics": [
+          "adblock-lists",
+          "adblocker-ultimate-list",
+          "adblockplus",
+          "adguard-list",
+          "adsblock",
+          "automation",
+          "block-ads",
+          "desktop"
+        ]
+      },
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "MeshBeatDitch/startall-back",
+      "owner": "MeshBeatDitch",
+      "name": "startall-back",
+      "url": "https://github.com/MeshBeatDitch/startall-back",
+      "description": "Startall Back 2026 - Full working installer for professional desktop software utility configuration. Ready to run out-of-the-box solution.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 16,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:15:16，8 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1983 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与另一仓库共用同一 README 模板",
+          "detail": "README 长度（1983 字节）与开头段落，同 2026-11-02 期的 gryphonautocratmatch/StartAll-Back 完全一致，属同一份文本模板"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库另以 gryphonautocratmatch/startall-back 的名义出现过（2026-11-02 期，400 星），两次发布使用不同账号"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、HandcuffHelper/ads-blocker、Tempofaengage/unlocktool 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "以「预激活安装包」形式发布，README 只给出粘贴执行的命令且与另一仓库共用同一文本模板，缺少可审阅的源码与发布产物。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:15:16Z",
+        "pushed_at": "2026-11-02T10:15:24Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "start-menu"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "HandcuffHelper/ads-blocker",
+      "owner": "HandcuffHelper",
+      "name": "ads-blocker",
+      "url": "https://github.com/HandcuffHelper/ads-blocker",
+      "description": "Ads Blocker 2026: Full working installer with enhanced ad detection and blocking capabilities. Ready-to-run desktop software utility.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 16,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:10:12，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1973 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与另一仓库共用同一 README 模板",
+          "detail": "README 长度（1973 字节）与开头段落，同 2026-11-02 期的 CelestialStarfish/Ads-Blocker 完全一致，属同一份文本模板"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库另以 CelestialStarfish/ads-blocker 的名义出现过（2026-11-02 期，401 星），两次发布使用不同账号"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、Tempofaengage/unlocktool 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "以「预激活安装包」形式发布，README 只给出粘贴执行的命令且与另一仓库共用同一文本模板，缺少可审阅的源码与发布产物。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:10:12Z",
+        "pushed_at": "2026-11-02T10:10:18Z",
+        "topics": [
+          "adblock-lists",
+          "adblocker-ultimate-list",
+          "adblockplus",
+          "adguard-list",
+          "adsblock",
+          "automation",
+          "block-ads",
+          "desktop"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "Bridgeyaprovide/roblox-game-copier",
+      "owner": "Bridgeyaprovide",
+      "name": "roblox-game-copier",
+      "url": "https://github.com/Bridgeyaprovide/roblox-game-copier",
+      "description": "Roblox Game Copier 2026: Pre-activated desktop edition with all features enabled for easy installation and use.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 15.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:14:34，5 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "502 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 2008 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与另一仓库共用同一 README 模板",
+          "detail": "README 长度（2008 字节）与开头段落，同 2026-11-02 期的 azurerockcode/Roblox-Game-Copier 完全一致，属同一份文本模板"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库另以 azurerockcode/roblox-game-copier 的名义出现过（2026-11-02 期，400 星），两次发布使用不同账号"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker、Tempofaengage/unlocktool 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "以「预激活安装包」形式发布，README 只给出粘贴执行的命令且与另一仓库共用同一文本模板，缺少可审阅的源码与发布产物。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 502,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:14:34Z",
+        "pushed_at": "2026-11-02T10:14:39Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "roblox-copier",
+          "roblox-game-copy",
+          "scripts"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "superwardenseek/discord-server-raider",
+      "owner": "superwardenseek",
+      "name": "discord-server-raider",
+      "url": "https://github.com/superwardenseek/discord-server-raider",
+      "description": "Discord Server Raider 2026: Full working installer with all features activated for offline desktop use.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 10,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:11:56，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "300 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 300，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1933 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:11:56Z",
+        "pushed_at": "2026-11-02T10:12:02Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "discord-boost-tools",
+          "discord-boosting-tool",
+          "discord-boosts",
+          "discord-raid-protect",
+          "discord-raid-software"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "marbleorbweb94/ninjatrader-bot",
+      "owner": "marbleorbweb94",
+      "name": "ninjatrader-bot",
+      "url": "https://github.com/marbleorbweb94/ninjatrader-bot",
+      "description": "Robust Ninjatrader Bot 2026, a complete standalone setup ready to run with all features pre-activated.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 10,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:14:05，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "300 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 300，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1993 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:14:05Z",
+        "pushed_at": "2026-11-02T10:14:11Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "ninjatrader",
+          "ninjatrader-8",
+          "ninjatrader-addon",
+          "ninjatrader-indicators",
+          "open-source"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "snatchblazepergola/instagram-liker-bot",
+      "owner": "snatchblazepergola",
+      "name": "instagram-liker-bot",
+      "url": "https://github.com/snatchblazepergola/instagram-liker-bot",
+      "description": "Instagram Liker Bot 2026: Full working installer with automated liking functionality, ready to run on your desktop.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 10,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:13:03，7 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "200 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 200，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 2013 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 200,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:13:03Z",
+        "pushed_at": "2026-11-02T10:13:10Z",
+        "topics": [
+          "autolike",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "insta-bot",
+          "instagram-commenter",
+          "instagram-follow",
+          "instagram-followers-free"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "Bronzekrostretch43/fonetrans",
+      "owner": "Bronzekrostretch43",
+      "name": "fonetrans",
+      "url": "https://github.com/Bronzekrostretch43/fonetrans",
+      "description": "PhoneTrans 2024: Full working installer with all features unlocked for seamless desktop operation.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 10,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:12:30，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "200 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 200，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1963 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 200,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:12:30Z",
+        "pushed_at": "2026-11-02T10:12:36Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "fonnte",
+          "iphone-file-transfer",
+          "manage-ios-devices",
+          "open-source",
+          "phone-tool"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "SonicLarvaAcclaim/chimera",
+      "owner": "SonicLarvaAcclaim",
+      "name": "chimera",
+      "url": "https://github.com/SonicLarvaAcclaim/chimera",
+      "description": "Chimera 2026: Full working installer with all utilities and configurations ready to run on your desktop.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 10,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:11:15，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "200 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 200，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1953 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 200,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:11:15Z",
+        "pushed_at": "2026-11-02T10:11:21Z",
+        "topics": [
+          "automation",
+          "chimera",
+          "chimera-framework",
+          "chimera-linux",
+          "chimera-meta-world",
+          "chimera-tool-pro",
+          "chimera-tool-pro-spark",
+          "desktop"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "Tempofaengage/unlocktool",
+      "owner": "Tempofaengage",
+      "name": "unlocktool",
+      "url": "https://github.com/Tempofaengage/unlocktool",
+      "description": "Unlocktool 2023: Full working installer with enhanced security features for professional desktop use.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "disclosure": "public",
+      "firstSeen": "2026-11-03",
+      "removedAt": "2026-11-03",
+      "issues": [
+        "2026-11-03"
+      ],
+      "score": 9.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:15:33，7 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "301 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1888 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 301,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:15:33Z",
+        "pushed_at": "2026-11-02T10:15:40Z",
+        "topics": [
+          "android-repair-tools",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering"
+        ]
+      },
+      "state": "blocked",
+      "campaign": "installer-wave-2026-11"
+    }
+  ]
+}

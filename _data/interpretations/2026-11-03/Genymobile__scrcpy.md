@@ -3,13 +3,13 @@ date: 2026-11-03
 repo: Genymobile/scrcpy
 category: mobile
 categoryLabel: 移动 / 桌面 / 跨端
-rating: 4.5
+rating: 4
 language: C
-stars: 153863
+stars: 153867
 starGain: 102
 url: https://github.com/Genymobile/scrcpy
 tags: [android, c, ffmpeg, genyteam-system, libav, mirroring, recording, screen]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # Genymobile/scrcpy · 项目解读
@@ -19,9 +19,9 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 指标 | 值 |
 | --- | --- |
 | 分类 | 移动 / 桌面 / 跨端 |
-| 评分 | 🌟🌟🌟🌟🌗 4.5 / 5.0 |
+| 评分 | 🌟🌟🌟🌟 4.0 / 5.0 |
 | 语言 | C |
-| 星标 | 153,863 |
+| 星标 | 153,867 |
 | 今日新增 | +102 |
 | 仓库 | https://github.com/Genymobile/scrcpy |
 
@@ -66,8 +66,8 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **85** · 社区规模 **97** · 更新活跃 **79** · 工程成熟 **70**
-（权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.5 星**）
+热度增速 **84** · 社区规模 **97** · 更新活跃 **79** · 工程成熟 **70**
+（权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.0 星**）
 
 **结论**：十五年了仍是这条赛道的最优解，因为它把约束定得极狠：零安装、无账号、低延迟。后续的互联工具都在它之上加功能，但很少有人能做到同样干净。用它的唯一注意事项是来源——这个名字被恶意分发滥用得太厉害。
 

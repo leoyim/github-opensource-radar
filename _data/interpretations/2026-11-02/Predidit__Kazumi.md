@@ -9,7 +9,7 @@ stars: 40612
 starGain: 203
 url: https://github.com/Predidit/Kazumi
 tags: [android, cross-platform, danmaku, flutter, ios, linux-desktop, macos, windows]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # Predidit/Kazumi · 项目解读

@@ -5,11 +5,11 @@ category: frontend
 categoryLabel: 前端 / Web
 rating: 3.5
 language: JavaScript
-stars: 65983
+stars: 65984
 starGain: 3
 url: https://github.com/webpack/webpack
 tags: [amd, build-tool, commonjs, compiler, es2015, es6, esm, javascript]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # webpack/webpack · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 前端 / Web |
 | 评分 | 🌟🌟🌟🌗 3.5 / 5.0 |
 | 语言 | JavaScript |
-| 星标 | 65,983 |
+| 星标 | 65,984 |
 | 今日新增 | +3 |
 | 仓库 | https://github.com/webpack/webpack |
 
@@ -66,7 +66,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **59** · 社区规模 **92** · 更新活跃 **71** · 工程成熟 **100**
+热度增速 **58** · 社区规模 **92** · 更新活跃 **71** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **3.5 星**）
 
 **结论**：它已经完成历史使命并进入稳定维护期：模型仍是行业公共知识，但新项目没有理由再选它。这条入选更适合当作行业坐标，而不是值得追的热点。

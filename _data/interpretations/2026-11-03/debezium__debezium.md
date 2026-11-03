@@ -9,7 +9,7 @@ stars: 13307
 starGain: 4
 url: https://github.com/debezium/debezium
 tags: [apache-kafka, cdc, change-data-capture, data-pipeline, database, debezium, event-streaming, hacktoberfest]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # debezium/debezium · 项目解读
@@ -66,7 +66,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **82** · 社区规模 **81** · 更新活跃 **70** · 工程成熟 **100**
+热度增速 **79** · 社区规模 **81** · 更新活跃 **72** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.0 星**）
 
 **结论**：CDC 领域的默认答案，成熟度无需质疑。它的运维成本几乎全在源库配置与复制槽监控上——上线前把这两件事做扎实，比选版本重要得多。

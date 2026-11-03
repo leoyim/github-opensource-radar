@@ -5,11 +5,11 @@ category: mobile
 categoryLabel: 移动 / 桌面 / 跨端
 rating: 4
 language: Kotlin
-stars: 1328
-starGain: 1087
+stars: 1376
+starGain: 1135
 url: https://github.com/Verlintas/NOIR
 tags: [adb, android, android-privacy, android-security, android-tools, apk-analysis, bloatware, cli]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # Verlintas/NOIR · 项目解读
@@ -21,8 +21,8 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 移动 / 桌面 / 跨端 |
 | 评分 | 🌟🌟🌟🌟 4.0 / 5.0 |
 | 语言 | Kotlin |
-| 星标 | 1,328 |
-| 今日新增 | +1,087 |
+| 星标 | 1,376 |
+| 今日新增 | +1,135 |
 | 仓库 | https://github.com/Verlintas/NOIR |
 
 ## 1. 它解决什么问题
@@ -70,7 +70,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **98** · 社区规模 **57** · 更新活跃 **71** · 工程成熟 **100**
+热度增速 **99** · 社区规模 **58** · 更新活跃 **70** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.0 星**）
 
 **结论**：这是本期最实用的新项目：把「权限 → 数据 → 域名」这条链打通，并且每条建议都配了回滚，这个设计比单纯给风险分有价值得多。但启发式评分必然有误报，加上两天就破千星意味着它还没被充分检验——先当诊断工具用，别当自动处置工具。

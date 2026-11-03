@@ -5,11 +5,11 @@ category: mobile
 categoryLabel: 移动 / 桌面 / 跨端
 rating: 4.5
 language: C++
-stars: 50723
+stars: 50735
 starGain: 337
 url: https://github.com/boykopovar/AnyPS5
 tags: [anyps5, dynamic-library, game-porting, ps5, ps5-tools, spir-v, vulkan]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # boykopovar/AnyPS5 · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 移动 / 桌面 / 跨端 |
 | 评分 | 🌟🌟🌟🌟🌗 4.5 / 5.0 |
 | 语言 | C++ |
-| 星标 | 50,723 |
+| 星标 | 50,735 |
 | 今日新增 | +337 |
 | 仓库 | https://github.com/boykopovar/AnyPS5 |
 
@@ -68,7 +68,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **96** · 社区规模 **89** · 更新活跃 **79** · 工程成熟 **100**
+热度增速 **95** · 社区规模 **89** · 更新活跃 **79** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.5 星**）
 
 **结论**：技术路线比模拟器优雅：少一层翻译就少一层开销与失真。但「优雅」不等于「可用」——逐作品的库覆盖率是硬功夫，5 万星里有大量是期待而非验证。当作技术观察的高价值样本，别当作开箱即用的方案。

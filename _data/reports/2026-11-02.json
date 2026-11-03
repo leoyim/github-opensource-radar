@@ -8,10 +8,15 @@
   "stats": {
     "candidates": 744,
     "unclassified": 77,
-    "selected": 30,
+    "selected": 27,
     "suppressedByHistory": 82,
     "sameDateExempt": 0,
-    "regenerated": true
+    "regenerated": true,
+    "removed": 3,
+    "removedTotal": 3,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "reviewedAt": "2026-11-03T11:02:33.774+08:00"
   },
   "categories": [
     {
@@ -1745,233 +1750,9 @@
             "hasDemo": true,
             "length": 6523
           }
-        },
-        {
-          "rank": 3,
-          "full_name": "CelestialStarfish/Ads-Blocker",
-          "owner": "CelestialStarfish",
-          "name": "Ads-Blocker",
-          "url": "https://github.com/CelestialStarfish/Ads-Blocker",
-          "homepage": "",
-          "description": "Ads Blocker 2026: Full working installer with complete ad-blocking capabilities. Ready to run on your desktop.",
-          "language": "",
-          "topics": [
-            "adblock-lists",
-            "adblocker-ultimate-list",
-            "adblockplus",
-            "adguard-list",
-            "adsblock",
-            "automation",
-            "block-ads",
-            "desktop"
-          ],
-          "stars": 401,
-          "forks": 0,
-          "open_issues": 0,
-          "starGain": null,
-          "heat": 137.5,
-          "heatBasis": "velocity",
-          "heatPercentile": 90,
-          "ageDays": 2,
-          "created_at": "2026-10-31T07:20:08Z",
-          "pushed_at": "2026-10-31T07:20:14Z",
-          "license": "",
-          "rating": 3.5,
-          "composite": 67.2,
-          "breakdown": {
-            "heat": 90,
-            "community": 39,
-            "activity": 62,
-            "maturity": 50
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 55,
-            "backend": 40,
-            "devops": 70,
-            "ai": 40,
-            "data": 30
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "Pre-activated local build for testing and deployment.\n\n1. Launch PowerShell: Press Win + X on your keyboard. Click on Terminal or Windows PowerShell from the list.\n\n2. Execute the Setup Script: Copy the command below, paste it into your PowerShell window, and hit Enter . Wait until all installing successfully:",
-            "features": [
-              "Launch PowerShell:",
-              "Press Win + X on your keyboard.",
-              "Click on Terminal or Windows PowerShell from the list.",
-              "Execute the Setup Script:",
-              "download ads blocker pre activated build setup 2026",
-              "ads blocker pre activated build standalone installer",
-              "offline setup ads blocker pre activated build",
-              "pre-activated ads blocker pre activated build"
-            ],
-            "sections": [
-              "Ads Blocker — Standalone Desktop Installer",
-              "🛠️ Quick Setup Guide (PowerShell)",
-              "📖 Resolving Issues",
-              "⚠️ Script is blocked by Execution Policy",
-              "🛡️ Antivirus / SmartScreen Alerts",
-              "🔍 Organic Discovery & Identification",
-              "📖 Core Build Parameters"
-            ],
-            "hasInstall": false,
-            "hasDemo": false,
-            "length": 1973
-          }
-        },
-        {
-          "rank": 4,
-          "full_name": "gryphonautocratmatch/StartAll-Back",
-          "owner": "gryphonautocratmatch",
-          "name": "StartAll-Back",
-          "url": "https://github.com/gryphonautocratmatch/StartAll-Back",
-          "homepage": "",
-          "description": "Startall Back 2026: Full working installer with complete configuration utility for professional desktop environments.",
-          "language": "",
-          "topics": [
-            "automation",
-            "desktop",
-            "developer-tools",
-            "open-source",
-            "python",
-            "scripts",
-            "software-engineering",
-            "start-menu"
-          ],
-          "stars": 400,
-          "forks": 0,
-          "open_issues": 0,
-          "starGain": null,
-          "heat": 137.2,
-          "heatBasis": "velocity",
-          "heatPercentile": 87,
-          "ageDays": 2,
-          "created_at": "2026-10-31T07:27:02Z",
-          "pushed_at": "2026-10-31T07:27:08Z",
-          "license": "",
-          "rating": 3.5,
-          "composite": 65.9,
-          "breakdown": {
-            "heat": 87,
-            "community": 39,
-            "activity": 62,
-            "maturity": 50
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 55,
-            "backend": 40,
-            "devops": 70,
-            "ai": 40,
-            "data": 30
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "Pre-activated local build for testing and deployment.\n\n1. Launch PowerShell: Press Win + X on your keyboard. Click on Terminal or Windows PowerShell from the list.\n\n2. Execute the Setup Script: Copy the command below, paste it into your PowerShell window, and hit Enter . Wait until all installing successfully:",
-            "features": [
-              "Launch PowerShell:",
-              "Press Win + X on your keyboard.",
-              "Click on Terminal or Windows PowerShell from the list.",
-              "Execute the Setup Script:",
-              "download startall back pre activated build setup 2026",
-              "startall back pre activated build standalone installer",
-              "offline setup startall back pre activated build",
-              "pre-activated startall back pre activated build"
-            ],
-            "sections": [
-              "Startall Back — Standalone Desktop Installer",
-              "🛠️ Quick Setup Guide (PowerShell)",
-              "📖 Resolving Issues",
-              "⚠️ Script is blocked by Execution Policy",
-              "🛡️ Antivirus / SmartScreen Alerts",
-              "🔍 Organic Discovery & Identification",
-              "📖 Core Build Parameters"
-            ],
-            "hasInstall": false,
-            "hasDemo": false,
-            "length": 1983
-          }
-        },
-        {
-          "rank": 5,
-          "full_name": "azurerockcode/Roblox-Game-Copier",
-          "owner": "azurerockcode",
-          "name": "Roblox-Game-Copier",
-          "url": "https://github.com/azurerockcode/Roblox-Game-Copier",
-          "homepage": "",
-          "description": "Roblox Game Copier 2026 - Full working installer for easy duplication and management of Roblox games on your desktop.",
-          "language": "",
-          "topics": [
-            "automation",
-            "desktop",
-            "developer-tools",
-            "open-source",
-            "python",
-            "roblox-copier",
-            "roblox-game-copy",
-            "scripts"
-          ],
-          "stars": 400,
-          "forks": 0,
-          "open_issues": 0,
-          "starGain": null,
-          "heat": 137.2,
-          "heatBasis": "velocity",
-          "heatPercentile": 87,
-          "ageDays": 2,
-          "created_at": "2026-10-31T07:26:10Z",
-          "pushed_at": "2026-10-31T07:26:16Z",
-          "license": "",
-          "rating": 3.5,
-          "composite": 65.9,
-          "breakdown": {
-            "heat": 87,
-            "community": 39,
-            "activity": 62,
-            "maturity": 50
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 55,
-            "backend": 40,
-            "devops": 70,
-            "ai": 40,
-            "data": 30
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "Pre-activated local build for testing and deployment.\n\n1. Launch PowerShell: Press Win + X on your keyboard. Click on Terminal or Windows PowerShell from the list.\n\n2. Execute the Setup Script: Copy the command below, paste it into your PowerShell window, and hit Enter . Wait until all installing successfully:",
-            "features": [
-              "Launch PowerShell:",
-              "Press Win + X on your keyboard.",
-              "Click on Terminal or Windows PowerShell from the list.",
-              "Execute the Setup Script:",
-              "download roblox game copier pre activated build setup 2026",
-              "roblox game copier pre activated build standalone installer",
-              "offline setup roblox game copier pre activated build",
-              "pre-activated roblox game copier pre activated build"
-            ],
-            "sections": [
-              "Roblox Game Copier — Standalone Desktop Installer",
-              "🛠️ Quick Setup Guide (PowerShell)",
-              "📖 Resolving Issues",
-              "⚠️ Script is blocked by Execution Policy",
-              "🛡️ Antivirus / SmartScreen Alerts",
-              "🔍 Organic Discovery & Identification",
-              "📖 Core Build Parameters"
-            ],
-            "hasInstall": false,
-            "hasDemo": false,
-            "length": 2008
-          }
         }
-      ]
+      ],
+      "removedInReview": 3
     },
     {
       "id": "mobile",
@@ -2481,5 +2262,222 @@
       "lastPushed": "2026-10-23",
       "times": 1
     }
-  ]
+  ],
+  "removed": [
+    {
+      "full_name": "CelestialStarfish/Ads-Blocker",
+      "url": "https://github.com/CelestialStarfish/Ads-Blocker",
+      "description": "Ads Blocker 2026: Full working installer with complete ad-blocking capabilities. Ready to run on your desktop.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 12.5,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-10-31 15:20:08，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "401 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1973 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库 HandcuffHelper/Ads-Blocker 已因同类投放被列入黑名单（2026-11-03），本次换个账号重新上架"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 gryphonautocratmatch/StartAll-Back、azurerockcode/Roblox-Game-Copier 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 401,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-10-31T07:20:08Z",
+        "pushed_at": "2026-10-31T07:20:14Z",
+        "topics": [
+          "adblock-lists",
+          "adblocker-ultimate-list",
+          "adblockplus",
+          "adguard-list",
+          "adsblock",
+          "automation",
+          "block-ads",
+          "desktop"
+        ]
+      },
+      "retroactive": true
+    },
+    {
+      "full_name": "gryphonautocratmatch/StartAll-Back",
+      "url": "https://github.com/gryphonautocratmatch/StartAll-Back",
+      "description": "Startall Back 2026: Full working installer with complete configuration utility for professional desktop environments.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 13,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-10-31 15:27:02，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1983 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库 MeshBeatDitch/StartAll-Back 已因同类投放被列入黑名单（2026-11-03），本次换个账号重新上架"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 CelestialStarfish/Ads-Blocker、azurerockcode/Roblox-Game-Copier 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-10-31T07:27:02Z",
+        "pushed_at": "2026-10-31T07:27:08Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "start-menu"
+        ]
+      },
+      "retroactive": true
+    },
+    {
+      "full_name": "azurerockcode/Roblox-Game-Copier",
+      "url": "https://github.com/azurerockcode/Roblox-Game-Copier",
+      "description": "Roblox Game Copier 2026 - Full working installer for easy duplication and management of Roblox games on your desktop.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 13,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-10-31 15:26:10，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 2008 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库 Bridgeyaprovide/Roblox-Game-Copier 已因同类投放被列入黑名单（2026-11-03），本次换个账号重新上架"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 CelestialStarfish/Ads-Blocker、gryphonautocratmatch/StartAll-Back 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-10-31T07:26:10Z",
+        "pushed_at": "2026-10-31T07:26:16Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "roblox-copier",
+          "roblox-game-copy",
+          "scripts"
+        ]
+      },
+      "retroactive": true
+    }
+  ],
+  "watchlist": []
 }

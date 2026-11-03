@@ -9,7 +9,7 @@ stars: 22211
 starGain: null
 url: https://github.com/microsoft/onnxruntime
 tags: [ai-framework, deep-learning, hardware-acceleration, machine-learning, neural-networks, onnx, pytorch, scikit-learn]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # microsoft/onnxruntime · 项目解读
@@ -66,7 +66,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **84** · 社区规模 **85** · 更新活跃 **79** · 工程成熟 **100**
+热度增速 **84** · 社区规模 **85** · 更新活跃 **80** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.5 星**）
 
 **结论**：不值得讨论「要不要用」，它是这个领域的默认选项之一。真正要评估的是选哪个 EP、算子覆盖够不够、量化精度能不能守住——这三件事决定上线成败，而不是框架本身。

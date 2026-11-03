@@ -9,7 +9,7 @@ stars: 42515
 starGain: 1584
 url: https://github.com/ifixai-ai/iFixAi
 tags: [agent-evaluation, ai, ai-alignment, ai-evaluation, ai-governance, ai-safety, cli, diagnostic-tool]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # ifixai-ai/iFixAi · 项目解读

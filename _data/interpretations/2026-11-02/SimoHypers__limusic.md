@@ -9,7 +9,7 @@ stars: 1675
 starGain: 159
 url: https://github.com/SimoHypers/limusic
 tags: [desktop-app, discord-rich-presence, lastfm, music, music-application, music-player, rust, scrobbler]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # SimoHypers/limusic · 项目解读

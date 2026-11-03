@@ -5,11 +5,11 @@ category: backend
 categoryLabel: 后端 / 云原生
 rating: 3.5
 language: Rust
-stars: 321
-starGain: 123
+stars: 322
+starGain: 124
 url: https://github.com/namannn04/Veronica
 tags: [gnome, linux, productivity, rust, tauri, ubuntu]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # namannn04/Veronica · 项目解读
@@ -21,8 +21,8 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 后端 / 云原生 |
 | 评分 | 🌟🌟🌟🌗 3.5 / 5.0 |
 | 语言 | Rust |
-| 星标 | 321 |
-| 今日新增 | +123 |
+| 星标 | 322 |
+| 今日新增 | +124 |
 | 仓库 | https://github.com/namannn04/Veronica |
 
 ## 1. 它解决什么问题
@@ -65,7 +65,7 @@ Ubuntu/GNOME 桌面用户、同时使用多个编码 agent 需要看配额的人
 
 ## 8. 评分依据
 
-热度增速 **93** · 社区规模 **41** · 更新活跃 **46** · 工程成熟 **80**
+热度增速 **92** · 社区规模 **41** · 更新活跃 **46** · 工程成熟 **80**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **3.5 星**）
 
 **结论**：定位有意思的地方不在「又一个控制中心」，而在它顺带把 agent 配额监控做成了桌面原生组件——这个需求正在变硬。但项目太年轻，现在适合围观与试用，不适合当基础设施。

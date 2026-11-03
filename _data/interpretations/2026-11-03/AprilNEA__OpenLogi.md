@@ -5,11 +5,11 @@ category: backend
 categoryLabel: 后端 / 云原生
 rating: 4.5
 language: Rust
-stars: 24980
+stars: 24981
 starGain: 108
 url: https://github.com/AprilNEA/OpenLogi
 tags: [dpi, gpui, hid, hidpp, local-first, logitech, logitech-mouse, logitech-options]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # AprilNEA/OpenLogi · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 后端 / 云原生 |
 | 评分 | 🌟🌟🌟🌟🌗 4.5 / 5.0 |
 | 语言 | Rust |
-| 星标 | 24,980 |
+| 星标 | 24,981 |
 | 今日新增 | +108 |
 | 仓库 | https://github.com/AprilNEA/OpenLogi |
 

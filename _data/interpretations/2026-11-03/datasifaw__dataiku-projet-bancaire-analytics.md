@@ -9,7 +9,7 @@ stars: 100
 starGain: 1
 url: https://github.com/datasifaw/dataiku-projet-bancaire-analytics
 tags: [banking-analytics, data, data-analysis, data-analytics, data-engineering, data-engineering-project, data-science, data-science-competition]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # datasifaw/dataiku-projet-bancaire-analytics · 项目解读
@@ -65,7 +65,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **62** · 社区规模 **30** · 更新活跃 **0** · 工程成熟 **50**
+热度增速 **59** · 社区规模 **30** · 更新活跃 **0** · 工程成熟 **50**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **2.0 星**）
 
 **结论**：这个仓库不该出现在日报里。它的入选暴露的是流水线自身的缺陷：data 类候选池被四条窄查询锁死，导致 100 星、无 README 的占位项目也能进前五。榜单的价值取决于「不收录什么」，这一条应该被记录为待修问题，而不是被当成热点。

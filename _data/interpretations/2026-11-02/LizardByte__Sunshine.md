@@ -9,7 +9,7 @@ stars: 42889
 starGain: 42
 url: https://github.com/LizardByte/Sunshine
 tags: [cpm, cpp, docker, flathub-pkg, game-stream, game-streaming, game-streaming-server, geforce-experience]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # LizardByte/Sunshine · 项目解读

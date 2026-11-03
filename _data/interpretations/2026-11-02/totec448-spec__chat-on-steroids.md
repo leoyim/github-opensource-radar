@@ -9,7 +9,7 @@ stars: 5124
 starGain: null
 url: https://github.com/totec448-spec/chat-on-steroids
 tags: [automation, chatgpt, chrome-extension, electron, linux, local-first, macos, mcp]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # totec448-spec/chat-on-steroids · 项目解读

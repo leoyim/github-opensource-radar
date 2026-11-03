@@ -9,7 +9,7 @@ stars: 135
 starGain: 0
 url: https://github.com/JellyGlance/Server
 tags: [analytics, bazarr, docker, jellyfin, jellyfin-dashboard, lidarr, media-server, media-streaming]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # JellyGlance/Server · 项目解读

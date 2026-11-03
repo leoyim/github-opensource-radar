@@ -9,7 +9,7 @@ stars: 1283
 starGain: null
 url: https://github.com/mizorewww/x_gift_bot
 tags: []
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # mizorewww/x_gift_bot · 项目解读

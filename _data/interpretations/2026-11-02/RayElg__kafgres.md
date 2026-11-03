@@ -9,7 +9,7 @@ stars: 424
 starGain: 1
 url: https://github.com/RayElg/kafgres
 tags: [broker, cdc, event-sourcing, events, kafka, pgrx, postgres, postgresql]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # RayElg/kafgres · 项目解读

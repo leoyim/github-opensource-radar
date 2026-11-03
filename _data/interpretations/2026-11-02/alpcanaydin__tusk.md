@@ -9,7 +9,7 @@ stars: 417
 starGain: 2
 url: https://github.com/alpcanaydin/tusk
 tags: [ai-assistant, clickhouse, database, database-client, database-gui, developer-tools, duckdb, gpui]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # alpcanaydin/tusk · 项目解读

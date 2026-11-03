@@ -5,11 +5,11 @@ category: frontend
 categoryLabel: 前端 / Web
 rating: 4
 language: Python
-stars: 13783
+stars: 13784
 starGain: 17
 url: https://github.com/mealie-recipes/mealie
 tags: [meal-plans, recipe-manager, self-hosted]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # mealie-recipes/mealie · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 前端 / Web |
 | 评分 | 🌟🌟🌟🌟 4.0 / 5.0 |
 | 语言 | Python |
-| 星标 | 13,783 |
+| 星标 | 13,784 |
 | 今日新增 | +17 |
 | 仓库 | https://github.com/mealie-recipes/mealie |
 
@@ -67,7 +67,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **78** · 社区规模 **79** · 更新活跃 **70** · 工程成熟 **100**
+热度增速 **78** · 社区规模 **79** · 更新活跃 **71** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.0 星**）
 
 **结论**：成熟、克制、边界清晰的自建工具，不追热点也不缺功能。别期待它替代商业菜谱 App 的内容生态——它管的是「你自己的那份数据」，这正是它的价值所在。

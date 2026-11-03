@@ -5,11 +5,11 @@ category: ai
 categoryLabel: AI / 大模型
 rating: 4.5
 language: Go
-stars: 185722
+stars: 185727
 starGain: 143
 url: https://github.com/ollama/ollama
 tags: [deepseek, gemma, glm, go, golang, gpt-oss, llama, llm]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # ollama/ollama · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | AI / 大模型 |
 | 评分 | 🌟🌟🌟🌟🌗 4.5 / 5.0 |
 | 语言 | Go |
-| 星标 | 185,722 |
+| 星标 | 185,727 |
 | 今日新增 | +143 |
 | 仓库 | https://github.com/ollama/ollama |
 
@@ -66,7 +66,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **77** · 社区规模 **99** · 更新活跃 **80** · 工程成熟 **100**
+热度增速 **76** · 社区规模 **99** · 更新活跃 **80** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.5 星**）
 
 **结论**：已经是基础设施，无需再论证价值。值得关注的是定位漂移：从「本地聊天」变成「agent 的本地模型层」，这会把它直接推到与云端推理 API 竞争的位置。用它做隐私敏感与离线场景很合适，拿它替代云端大模型做复杂 agent 任务，目前还差一档。

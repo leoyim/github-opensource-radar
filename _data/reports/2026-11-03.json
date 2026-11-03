@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "generatedAt": "2026-11-03T09:35:33.892+08:00",
+  "generatedAt": "2026-11-03T10:53:50.161+08:00",
   "baseline": {
     "prevSnapshotDate": "2026-11-02",
     "heatBasis": "snapshot"
@@ -9,8 +9,12 @@
     "candidates": 728,
     "unclassified": 77,
     "selected": 30,
-    "suppressedByHistory": 89,
-    "sameDateExempt": 0,
+    "suppressedByHistory": 121,
+    "sameDateExempt": 30,
+    "removed": 9,
+    "removedTotal": 9,
+    "offTopic": 0,
+    "watchlisted": 0,
     "regenerated": true
   },
   "categories": [
@@ -41,16 +45,16 @@
             "computer-use-agent",
             "computer-use-agents"
           ],
-          "stars": 9812,
-          "forks": 661,
-          "open_issues": 123,
+          "stars": 10111,
+          "forks": 678,
+          "open_issues": 126,
           "starGain": 2275,
           "heat": 2275,
           "heatBasis": "trending",
           "heatPercentile": 100,
           "ageDays": 256,
           "created_at": "2026-02-19T18:00:49Z",
-          "pushed_at": "2026-11-03T01:35:00Z",
+          "pushed_at": "2026-11-03T02:40:27Z",
           "license": "Apache-2.0",
           "rating": 4.5,
           "composite": 87.3,
@@ -68,8 +72,6 @@
             "ai": 100,
             "data": 47
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "Computer use for AI agents: read and operate desktop apps through the OS accessibility tree.\n\nA CLI and C library for macOS, Windows and Linux. A snapshot returns JSON with a ref for every element an agent can act on. The agent acts on a ref and snapshots again to check, with no pixel matching; the loop stays in your agent.\n\nEvery CLI call runs in its own process. Headless calls still prohibit foreground activation and synthesized input.",
@@ -98,6 +100,10 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 9733
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -119,16 +125,16 @@
             "cline",
             "codex"
           ],
-          "stars": 83990,
-          "forks": 12585,
-          "open_issues": 579,
+          "stars": 84008,
+          "forks": 12590,
+          "open_issues": 580,
           "starGain": 402,
           "heat": 402,
           "heatBasis": "trending",
           "heatPercentile": 88,
           "ageDays": 263,
           "created_at": "2026-02-13T12:38:31Z",
-          "pushed_at": "2026-11-03T01:12:51Z",
+          "pushed_at": "2026-11-03T02:43:58Z",
           "license": "MIT",
           "rating": 4.5,
           "composite": 88.7,
@@ -146,8 +152,6 @@
             "ai": 100,
             "data": 40
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "⭐ Star the repo if OMNIROUTE helped you save money and make your work easier.\n\n👋 Follow the maintainer — get new providers, releases & tips first:\n\nQuestions, provider tips, roadmap & support → Discord · Telegram · WhatsApp 🌍 Global / 🇧🇷 Brasil / Portal",
@@ -180,6 +184,10 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 139260
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -203,21 +211,21 @@
           ],
           "stars": 22211,
           "forks": 4397,
-          "open_issues": 1873,
+          "open_issues": 1867,
           "starGain": null,
           "heat": 276.1,
           "heatBasis": "velocity",
           "heatPercentile": 84,
           "ageDays": 2915,
           "created_at": "2018-11-10T02:22:53Z",
-          "pushed_at": "2026-11-03T00:10:51Z",
+          "pushed_at": "2026-11-03T02:51:39Z",
           "license": "MIT",
           "rating": 4.5,
-          "composite": 85.2,
+          "composite": 85.3,
           "breakdown": {
             "heat": 84,
             "community": 85,
-            "activity": 79,
+            "activity": 80,
             "maturity": 100
           },
           "roleScores": {
@@ -228,8 +236,6 @@
             "ai": 100,
             "data": 40
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "ONNX Runtime is a cross-platform inference and training machine-learning accelerator .\n\nONNX Runtime inference can enable faster customer experiences and lower costs, supporting models from deep learning frameworks such as PyTorch and TensorFlow/Keras as well as classical machine learning libraries such as scikit-learn, LightGBM, XGBoost, etc. ONNX Runtime is compatible with different hardware, drivers, and operating systems, and provides optimal performance by leveraging hardware accelerators where applicable alongside graph optimizations and transforms. Learn more &rarr;\n\nONNX Runtime training can accelerate the model training time on multi-node NVIDIA GPUs for transformer models with a one-line addition for existing PyTorch training scripts. Learn more &rarr;",
@@ -254,6 +260,10 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 3087
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -275,21 +285,21 @@
             "llama",
             "llm"
           ],
-          "stars": 185722,
-          "forks": 18878,
-          "open_issues": 4546,
+          "stars": 185727,
+          "forks": 18879,
+          "open_issues": 4548,
           "starGain": 143,
           "heat": 143,
           "heatBasis": "trending",
-          "heatPercentile": 77,
+          "heatPercentile": 76,
           "ageDays": 1225,
           "created_at": "2023-06-26T19:39:32Z",
-          "pushed_at": "2026-11-03T01:02:20Z",
+          "pushed_at": "2026-11-03T01:42:58Z",
           "license": "MIT",
           "rating": 4.5,
-          "composite": 85.7,
+          "composite": 85.2,
           "breakdown": {
-            "heat": 77,
+            "heat": 76,
             "community": 99,
             "activity": 80,
             "maturity": 100
@@ -302,8 +312,6 @@
             "ai": 100,
             "data": 47
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "Start building with open models. Access the latest releases locally or in the cloud with complete privacy.\n\nThe official Ollama Docker image ollama/ollama is available on Docker Hub.\n\nYou'll be prompted to run a model or connect Ollama to your existing agents or applications such as Claude Code , OpenClaw , OpenCode , Codex , Copilot , and more.",
@@ -336,6 +344,10 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 19345
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -356,8 +368,8 @@
             "llm",
             "transformer"
           ],
-          "stars": 38114,
-          "forks": 4325,
+          "stars": 38152,
+          "forks": 4328,
           "open_issues": 74,
           "starGain": 420,
           "heat": 420,
@@ -368,7 +380,7 @@
           "pushed_at": "2026-11-01T13:03:19Z",
           "license": "AGPL-3.0",
           "rating": 4,
-          "composite": 85,
+          "composite": 84.8,
           "breakdown": {
             "heat": 90,
             "community": 87,
@@ -383,8 +395,6 @@
             "ai": 100,
             "data": 47
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "Remove censorship , suppress slop, reduce sycophancy, and more. All in an afternoon, on your gaming PC.\n\nHeretic is a unique tool that lets you do what only corporations with access to massive computing power usually do: Modify, rather than merely run, language models. It does not perform expensive training; rather, it uses a collection of mathematical techniques to steer behavior based on contrasting example prompts and matching scorers.\n\nSuppress refusals/remove censorship (this is the default action) Reduce slop ( config.noslop.toml ) Reduce humor ( config.nohumor.toml ) Reduce sycophancy ( config.nosyco.toml ) Alter emotional alignment ( config.emotions.toml )",
@@ -417,6 +427,10 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 14921
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         }
       ]
@@ -443,23 +457,23 @@
             "recipe-manager",
             "self-hosted"
           ],
-          "stars": 13783,
-          "forks": 1637,
-          "open_issues": 138,
+          "stars": 13784,
+          "forks": 1638,
+          "open_issues": 145,
           "starGain": 17,
           "heat": 17,
           "heatBasis": "trending",
           "heatPercentile": 78,
           "ageDays": 2157,
           "created_at": "2020-12-07T01:04:17Z",
-          "pushed_at": "2026-11-02T21:50:23Z",
+          "pushed_at": "2026-11-03T02:47:40Z",
           "license": "AGPL-3.0",
           "rating": 4,
-          "composite": 79.5,
+          "composite": 79.8,
           "breakdown": {
             "heat": 78,
             "community": 79,
-            "activity": 70,
+            "activity": 71,
             "maturity": 100
           },
           "roleScores": {
@@ -470,8 +484,6 @@
             "ai": 30,
             "data": 21
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "A Place For All Your Recipes Explore the docs » View Demo · Report Bug · GitHub Container Registry\n\nMealie is a self hosted recipe manager, meal planner and shopping list with a RestAPI backend and a reactive frontend built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the URL and Mealie will automatically import the relevant data, or add a family recipe with the UI editor. Mealie also provides an API for interactions from 3rd party applications.\n\n- Recipe imports: Create recipes, by importing from a URL or entering data manually - Meal Planner: Use the Meal Planner to plan your what you'll cook for the next week - Shopping List: Put the necessary ingredients on your Shopping List , organised into sections of your local supermarket - Cookbooks: Group recipes into Cookbooks based on your own criteria - Docker: Easy Docker deployment - Localisation: Translations for 35+ languages",
@@ -496,6 +508,10 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 6139
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -508,11 +524,11 @@
           "description": "Gr8r Studio: a calm, structured project management workspace. Vite + plain ES modules.",
           "language": "JavaScript",
           "topics": [],
-          "stars": 1726,
-          "forks": 352,
+          "stars": 1734,
+          "forks": 356,
           "open_issues": 9,
-          "starGain": 106,
-          "heat": 106,
+          "starGain": 114,
+          "heat": 114,
           "heatBasis": "snapshot",
           "heatPercentile": 92,
           "ageDays": 27,
@@ -535,8 +551,6 @@
             "ai": 25,
             "data": 15
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "A calm, structured project management workspace: home dashboard, inbox, my tasks, projects with board / list / table / calendar / timeline / files views, members, teams, activity and settings.\n\nBuilt with plain JavaScript ES modules and CSS, bundled by Vite. There is no UI framework and no runtime dependency.\n\nnpm install npm run dev http://localhost:5173 with hot reload npm run build production build in dist/ npm run preview serve the production build locally npm run lint ESLint npm run format Prettier",
@@ -562,6 +576,12 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 3690
+          },
+          "guard": {
+            "score": 1,
+            "signals": [
+              "noLicense"
+            ]
           }
         },
         {
@@ -583,21 +603,21 @@
             "esm",
             "javascript"
           ],
-          "stars": 65983,
+          "stars": 65984,
           "forks": 9621,
-          "open_issues": 118,
+          "open_issues": 121,
           "starGain": 3,
           "heat": 3,
           "heatBasis": "trending",
-          "heatPercentile": 59,
+          "heatPercentile": 58,
           "ageDays": 5351,
           "created_at": "2012-03-10T10:08:14Z",
-          "pushed_at": "2026-11-03T01:15:29Z",
+          "pushed_at": "2026-11-03T02:49:57Z",
           "license": "MIT",
           "rating": 3.5,
-          "composite": 74.2,
+          "composite": 73.8,
           "breakdown": {
-            "heat": 59,
+            "heat": 58,
             "community": 92,
             "activity": 71,
             "maturity": 100
@@ -610,8 +630,6 @@
             "ai": 25,
             "data": 15
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "webpack Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.\n\n- Install - Introduction - Concepts - Contributing - Support - Current project members - TSC (Technical Steering Committee) - Core Collaborators - Sponsoring - Premium Partners - Gold Sponsors - Silver Sponsors - Bronze Sponsors - Backers - Special Thanks\n\nWebpack is a bundler for modules. The main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.",
@@ -644,92 +662,14 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 79625
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
           "rank": 4,
-          "full_name": "ProxyShard/ShardBrowser",
-          "owner": "ProxyShard",
-          "name": "ShardBrowser",
-          "url": "https://github.com/ProxyShard/ShardBrowser",
-          "homepage": "",
-          "description": "Free, open-source anti-detect browser launcher for web scraping and multi-accounting. By the ProxyShard team. Engine-level fingerprint spoofing in Chromium 156 (WebGL / WebGPU / Client Hints / fonts / TLS), 220+ device profiles bundled, stable QUIC + WebRTC over SOCKS5.",
-          "language": "TypeScript",
-          "topics": [
-            "ai-agents",
-            "anti-detect-browser",
-            "antidetect-browser",
-            "browser-fingerprinting",
-            "chromium",
-            "fingerprint",
-            "headless-browser",
-            "headless-chrome"
-          ],
-          "stars": 1388,
-          "forks": 162,
-          "open_issues": 19,
-          "starGain": 10,
-          "heat": 10,
-          "heatBasis": "snapshot",
-          "heatPercentile": 69,
-          "ageDays": 156,
-          "created_at": "2026-05-30T23:05:14Z",
-          "pushed_at": "2026-10-25T07:53:06Z",
-          "license": "MIT",
-          "rating": 3,
-          "composite": 57.1,
-          "breakdown": {
-            "heat": 69,
-            "community": 59,
-            "activity": 10,
-            "maturity": 80
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 100,
-            "backend": 15,
-            "devops": 10,
-            "ai": 30,
-            "data": 15
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "A free, open-source anti-detect browser launcher for web scraping and multi-accounting. Patched Chromium 156 with engine-level fingerprint spoofing, a local API, an MCP server and SDKs.\n\nOverview · Features · Screenshots · Comparison · Install · Usage\n\nShardX is built by the ProxyShard team. ProxyShard provides full SOCKS5 UDP relay support (RFC 1928 §7) and active p0f TCP fingerprint spoofing at the proxy exit. This keeps the operating system presented by the proxy consistent with the SYN/ACK shape seen by websites. ShardX is the anti-detect browser stack built to use those capabilities. The launcher manages profiles, binds proxies and ships a patched Chromium 156 build that applies fingerprint changes inside the browser engine.",
-            "features": [
-              "Desktop UI: workspace for daily work with profiles, proxies,",
-              "Local HTTP API: Bearer JWT authentication on 127.0.0.1:40325 .",
-              "MCP server: connects ShardX to Claude Desktop, Cursor and other",
-              "Standalone SDKs: Python, Node and Rust libraries that ship the",
-              "Device identity: user agent, platform, vendor, CPU cores, RAM,",
-              "Graphics: WebGL renderer / vendor / extensions / limits, WebGPU",
-              "Audio: sample rate, channel count, optional per-profile noise on",
-              "Screen & window: full resolution + available area + DPR + color"
-            ],
-            "sections": [
-              "What it is",
-              "Fingerprint surfaces patched",
-              "Launcher features",
-              "Screenshots",
-              "Network: QUIC + WebRTC over SOCKS5",
-              "Bot / automation detection",
-              "Fingerprint consistency",
-              "Authenticity score",
-              "Comparison with other anti-detect browsers",
-              "Why this matters in practice",
-              "Quick start",
-              "Option A: download a release",
-              "Linux system dependencies",
-              "Option B: build from source"
-            ],
-            "hasInstall": false,
-            "hasDemo": true,
-            "length": 50149
-          }
-        },
-        {
-          "rank": 5,
           "full_name": "mkturkcan/valdrada",
           "owner": "mkturkcan",
           "name": "valdrada",
@@ -745,23 +685,23 @@
             "three-js",
             "threejs"
           ],
-          "stars": 254,
+          "stars": 255,
           "forks": 37,
           "open_issues": 2,
-          "starGain": 5,
-          "heat": 5,
+          "starGain": 6,
+          "heat": 6,
           "heatBasis": "snapshot",
-          "heatPercentile": 64,
+          "heatPercentile": 66,
           "ageDays": 39,
           "created_at": "2026-09-24T19:23:55Z",
           "pushed_at": "2026-10-30T06:12:37Z",
           "license": "MIT",
           "rating": 3,
-          "composite": 57.9,
+          "composite": 58.7,
           "breakdown": {
-            "heat": 64,
+            "heat": 66,
             "community": 44,
-            "activity": 34,
+            "activity": 33,
             "maturity": 100
           },
           "roleScores": {
@@ -772,8 +712,6 @@
             "ai": 25,
             "data": 15
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "Valdrada is a city-scale digital twin of New York City compiled from public municipal records. It combines a real-time WebGL2 renderer, lane-level traffic and pedestrian simulation, pixel-exact perception ground truth and a client–server API modelled on CARLA. It is intended for synthetic data generation, closed-loop scenario simulation and streetscape studies in which every modelled element can be traced to a public record.\n\n- Documentation: - Videos: - Demo in the browser (WebGL2): - Compiled city, models and textures: - Simulation server for Windows x64, compiled city included: - Unreal Engine 5 client for Linux x86-64:\n\nA Node.js compiler reads the city's records and writes binary tiles. Building footprints are joined to tax lots and facade filings and classified into facade typologies. Street centrelines become carriageways, kerbs, crosswalks, lane paint and the lane and sidewalk graphs. The client streams the tiles around the camera, dresses the facades, simulates vehicles and pedestrians, and renders every frame together with its labels.",
@@ -805,6 +743,72 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 14457
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "chenglou/handwired",
+          "owner": "chenglou",
+          "name": "handwired",
+          "url": "https://github.com/chenglou/handwired",
+          "homepage": "https://chenglou.me/handwired/",
+          "description": "Turn your regular JavaScript code into a neural net.",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 2096,
+          "forks": 159,
+          "open_issues": 9,
+          "starGain": 6,
+          "heat": 6,
+          "heatBasis": "snapshot",
+          "heatPercentile": 66,
+          "ageDays": 19,
+          "created_at": "2026-10-15T02:15:09Z",
+          "pushed_at": "2026-10-17T01:12:12Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 57.8,
+          "breakdown": {
+            "heat": 66,
+            "community": 61,
+            "activity": 14,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Turn your regular JavaScript code into a neural net; no training, exact, yet also fully differentiable!\n\nA program's made of if-else, loops, and state. Handwired transforms them into matrix multiplication + reglu over floats. For example:\n\nconst a = 5 // Math.max(0, x) is ReLU. For an integer a, above4 is 1 if a 4, and 0 otherwise const above4 = Math.max(0, a - 4) - Math.max(0, a - 5) // Both branches compute, and above4 picks one const result = above4 10 + (1 - above4) 12",
+            "features": [
+              "the full program stays differentiable",
+              "the weights don't need training since they're written manually",
+              "existing gpu techniques, such as fusion, sparsity, reordering, have a great time optimizing such minimal primitives",
+              "unfreezing the weights and train them (what does that even do? Let's find out!)",
+              "attaching a specific frozen program to a generic neural net and train end-to-end (now a nanoGPT can do both Shakespeare and your particular ",
+              "achieving GPU-level of parallelism with JS code that was written in a traditional single-threaded way (see the JSON search demo that runs in"
+            ],
+            "sections": [
+              "Handwired",
+              "How It Works",
+              "Play With It"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1834
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         }
       ]
@@ -836,7 +840,7 @@
             "logitech-mouse",
             "logitech-options"
           ],
-          "stars": 24980,
+          "stars": 24981,
           "forks": 900,
           "open_issues": 622,
           "starGain": 108,
@@ -863,8 +867,6 @@
             "ai": 35,
             "data": 59
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "- Stay light. Native Rust + GPUI. - Run on Linux. Linux is a first-class platform in OpenLogi. - Gestures on supported buttons. Assign gesture actions to supported controls — or turn gestures off entirely. - Plain-text config. Everything is one TOML file you can sync between machines however you like. - Script it. A real CLI alongside the GUI: a JSON automation API for DPI, SmartShift, Fn-lock, and report rate, plus hardware diagnostics.\n\n- Logi Bolt and Unifying receivers, Bluetooth, and wired connections, with battery level and charge state - Low-battery notices at the bottom of the screen, once per discharge, with no OS notification permission - An on-screen indicator when a keyboard turns Caps Lock on or off, plus Num Lock and Scroll Lock on Windows and Linux\n\nEasy-Switch See which computer is paired on each channel, with its OS and connection Rename a channel on devices that allow it",
@@ -897,6 +899,10 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 15960
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -918,23 +924,23 @@
             "encryption",
             "ftp"
           ],
-          "stars": 60747,
+          "stars": 60749,
           "forks": 5643,
           "open_issues": 1273,
           "starGain": 29,
           "heat": 29,
           "heatBasis": "trending",
-          "heatPercentile": 72,
+          "heatPercentile": 71,
           "ageDays": 4614,
           "created_at": "2014-03-16T16:19:57Z",
           "pushed_at": "2026-11-02T17:40:44Z",
           "license": "MIT",
           "rating": 4,
-          "composite": 80.7,
+          "composite": 80.1,
           "breakdown": {
-            "heat": 72,
+            "heat": 71,
             "community": 90,
-            "activity": 77,
+            "activity": 76,
             "maturity": 100
           },
           "roleScores": {
@@ -945,8 +951,6 @@
             "ai": 30,
             "data": 59
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "Website Documentation Download Contributing Changelog Installation Forum\n\nRclone (\"rsync for cloud storage\") is a command-line program to sync files and directories to and from different cloud storage providers.\n\n- 1Fichier :page facing up: - Akamai Netstorage :page facing up: - Alibaba Cloud (Aliyun) Object Storage System (OSS) :page facing up: - Amazon S3 :page facing up: - ArvanCloud Object Storage (AOS) :page facing up: - Autonomys Auto Drive :page facing up: - Bizfly Cloud Simple Storage :page facing up: - Backblaze B2 :page facing up: - Box :page facing up: - Ceph :page facing up: - China Mobile Ecloud Elastic Object Storage (EOS) :page facing up: - Citrix ShareFile :page facing up: - Clever Cloud Cellar :page facing up: - Cloudflare R2 :page facing up: - Cloudinary :page facing up: - Cubbit DS3 :page facing up: - DigitalOcean Spaces :page facing up: - Digi Storage :page facing up: - dosya.dev :page facing up: - Dreamhost :page facing up: - Drime :page facing up: - Dropbox :page facing up: - Enterprise File Fabric :page facing up: - Exaba :page facing up: - Fastly Object Storage :page facing up: - Fastmail Files :page facing up: - FileLu :page facing up: - Filen :page facing up: - Files.com :page facing up: - FlashBlade :page facing up: - FTP :page facing up: - GoFile :page facing up: - Google Cloud Storage :page facing up: - Google Drive :page facing up: - Google Photos :page facing up: - HDFS (Hadoop Distributed Filesystem) :page facing up: - Hetzner Object Storage :p",
@@ -972,6 +976,10 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 11995
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -991,21 +999,21 @@
             "tauri",
             "ubuntu"
           ],
-          "stars": 321,
+          "stars": 322,
           "forks": 4,
           "open_issues": 0,
-          "starGain": 123,
-          "heat": 123,
+          "starGain": 124,
+          "heat": 124,
           "heatBasis": "snapshot",
-          "heatPercentile": 93,
+          "heatPercentile": 92,
           "ageDays": 75,
           "created_at": "2026-08-20T08:51:05Z",
           "pushed_at": "2026-11-01T16:18:59Z",
           "license": "GPL-3.0",
           "rating": 3.5,
-          "composite": 69.9,
+          "composite": 69.5,
           "breakdown": {
-            "heat": 93,
+            "heat": 92,
             "community": 41,
             "activity": 46,
             "maturity": 80
@@ -1018,8 +1026,6 @@
             "ai": 42,
             "data": 59
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "A native desktop control center for Ubuntu. Veronica replaces a shelf of single-purpose utilities with one application.\n\nFree and open source under the GPL-3.0. Every feature is in the one app. No licence key, no account, no paid tier.\n\nVeronica is a port of Edith, a macOS control center, to Linux. It keeps Edith's models — the capability map, the extension catalogue, the rate-limit maths, the usage schema — and reimplements the platform layer against Linux services. The usage collector is shared verbatim, so the numbers are identical on both platforms.",
@@ -1047,79 +1053,96 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 26948
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
           }
         },
         {
           "rank": 4,
-          "full_name": "slaterain/nv-rs",
-          "owner": "slaterain",
-          "name": "nv-rs",
-          "url": "https://github.com/slaterain/nv-rs",
-          "homepage": "",
-          "description": "Experimental Fallout: New Vegas engine reimplementation in Rust and Bevy. Requires your own game data; base-game foundations first.",
-          "language": "Rust",
+          "full_name": "decionis/agent-safe-pipeline",
+          "owner": "decionis",
+          "name": "agent-safe-pipeline",
+          "url": "https://github.com/decionis/agent-safe-pipeline",
+          "homepage": "https://decionis.com/docs?utm_source=github&utm_medium=org_readme&utm_campaign=dev_discovery",
+          "description": "Open-source gateway that puts authorization in front of every action your AI agents, workflows and pipelines take, before it commits: payments, trades, price changes, deployments and API calls run once on a single-use grant, wait for a person, or are refused, as Decionis decides, with chained evidence. Homebrew, Linux, Docker, Helm.",
+          "language": "TypeScript",
           "topics": [
-            "bevy",
-            "experimental",
-            "fallout-new-vegas",
-            "game-engine",
-            "rust"
+            "agent-security",
+            "ai-agents",
+            "ai-governance",
+            "api-gateway",
+            "audit-trail",
+            "authorization",
+            "aws",
+            "azure"
           ],
-          "stars": 213,
-          "forks": 29,
-          "open_issues": 7,
+          "stars": 671,
+          "forks": 57,
+          "open_issues": 19,
           "starGain": null,
-          "heat": 32.7,
+          "heat": 59.8,
           "heatBasis": "velocity",
-          "heatPercentile": 78,
-          "ageDays": 30,
-          "created_at": "2026-10-03T21:43:03Z",
-          "pushed_at": "2026-11-02T18:23:29Z",
-          "license": "GPL-3.0",
+          "heatPercentile": 84,
+          "ageDays": 81,
+          "created_at": "2026-08-13T21:36:19Z",
+          "pushed_at": "2026-11-03T00:30:26Z",
+          "license": "Apache-2.0",
           "rating": 3.5,
-          "composite": 66.2,
+          "composite": 74.3,
           "breakdown": {
-            "heat": 78,
-            "community": 43,
-            "activity": 60,
-            "maturity": 80
+            "heat": 84,
+            "community": 52,
+            "activity": 64,
+            "maturity": 100
           },
           "roleScores": {
             "all": 100,
-            "frontend": 25,
+            "frontend": 30,
             "backend": 100,
             "devops": 100,
-            "ai": 35,
-            "data": 59
+            "ai": 42,
+            "data": 50
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
-            "excerpt": "Fallout: New Vegas, rebuilt in Rust, aiming to play exactly like the original.\n\nnv-rs is a new engine for Fallout: New Vegas, written in Rust. It runs the game from your own copy's files, and its goal is a faithful 1:1 match, down to the original's quirks. Not a remake that feels close: the same game, on a modern, open-source engine that can be fixed, ported and extended.\n\nGoodsprings, rendered by nv-rs from the game's own files.",
+            "excerpt": "Authorize every autonomous action, before it commits.\n\nAgentSafe is the open-source gateway that puts authorization in front of every action your AI agents, workflows and pipelines take: a payment or a settlement, a trade, a price change, an inspection sign-off, a deployment or any other API call. An agent, an application or a tool sends its HTTP request to AgentSafe instead of the target; AgentSafe captures the action as an intent, asks the Decionis control plane (the Independent Execution Authority, bound to the exact action) for a decision, and forwards exactly the authorized request once on a claimed single-use grant, holds it for a person, or refuses it, leaving a chained record of each. It decides nothing itself.\n\nbrew tap decionis/agent-safe https://github.com/decionis/agent-safe-pipeline && brew trust decionis/agent-safe && brew install agentsafe",
             "features": [
-              "Translated from the original, not guessed. The original game's program",
-              "Your game, your files. nv-rs reads the game's own plugins, meshes,",
-              "Built to last. Open source and memory-safe, so fixes, new platforms and",
-              "Mods keep working. Regular .esp and .esm mods load the way they do",
-              "Download the latest Windows build from",
-              "Extract it and run Play.cmd .",
-              "Point it at your own Fallout New Vegas\\Data folder.",
-              "Read CONTRIBUTING.md (and give AGENTS.md"
+              "Decionis is the Independent Execution Authority, bound to the exact action: the control",
+              "Presence is the adaptive human verification layer. When Decionis answers ESCALATE , a",
+              "AgentSafe , this repository, is the execution boundary between your agent or API and those",
+              "Agent input contains only the proposed action, target, and parameters. Tenant, actor, downstream target, and credentials come from trusted r",
+              "The exact canonical intent is hashed and expires quickly.",
+              "Decionis independently decides. Network errors, malformed responses, missing grants, or binding mismatches fail closed.",
+              "Presence proves a human approved that exact intent; Presence never directly authorizes execution. Decionis verifies the receipt and re-evalu",
+              "The grant is bound to the intent, decision, audience, and expiry and is claimed atomically before the handler runs; the attempt outcome is f"
             ],
             "sections": [
-              "Why it's different",
-              "Where it stands",
-              "Progress",
-              "Try it",
-              "Build from source",
-              "How it's made",
-              "Get involved",
-              "Legal and license"
+              "AgentSafe",
+              "The two systems behind the boundary",
+              "Test your boundary",
+              "Five-minute quickstart",
+              "How it works",
+              "Install",
+              "Golden adversarial demo",
+              "Execution lifecycle",
+              "Production invariants",
+              "Presence",
+              "Decision evidence",
+              "What each record establishes",
+              "Verify Decision Dossiers",
+              "Architecture"
             ],
             "hasInstall": false,
-            "hasDemo": false,
-            "length": 7288
+            "hasDemo": true,
+            "length": 77851
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -1147,17 +1170,17 @@
           "starGain": null,
           "heat": 29.3,
           "heatBasis": "velocity",
-          "heatPercentile": 75,
+          "heatPercentile": 72,
           "ageDays": 503,
           "created_at": "2025-06-18T13:07:54Z",
           "pushed_at": "2026-11-02T22:16:08Z",
           "license": "MIT",
           "rating": 3.5,
-          "composite": 71.5,
+          "composite": 70.1,
           "breakdown": {
-            "heat": 75,
+            "heat": 72,
             "community": 55,
-            "activity": 68,
+            "activity": 67,
             "maturity": 100
           },
           "roleScores": {
@@ -1168,8 +1191,6 @@
             "ai": 30,
             "data": 50
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "A modern, relatively smart, secure, and open-source VPN application built with Flutter, providing free internet access and privacy protection with a fresh user experience.\n\n- Simple, with a beautiful and user-friendly interface - One-tap connect/disconnect functionality - Powered by DXcore, which unifies Warp, Psiphon, Warp-in-Warp, Xray, Outline, and exclusive proprietary protocols - Relatively smart, requiring no manual configuration - Ability to test internet speed and quality\n\n- Flutter SDK ≥ 3.7.0 - Dart SDK ≥ 3.0.0 - Xcode for iOS/macOS development",
@@ -1198,6 +1219,10 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 2363
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         }
       ]
@@ -1231,21 +1256,21 @@
           ],
           "stars": 13307,
           "forks": 3124,
-          "open_issues": 152,
+          "open_issues": 151,
           "starGain": 4,
           "heat": 4,
           "heatBasis": "trending",
-          "heatPercentile": 82,
+          "heatPercentile": 79,
           "ageDays": 3937,
           "created_at": "2016-01-22T20:17:05Z",
-          "pushed_at": "2026-11-02T19:52:26Z",
+          "pushed_at": "2026-11-03T02:47:10Z",
           "license": "Apache-2.0",
           "rating": 4,
-          "composite": 81.7,
+          "composite": 80.6,
           "breakdown": {
-            "heat": 82,
+            "heat": 79,
             "community": 81,
-            "activity": 70,
+            "activity": 72,
             "maturity": 100
           },
           "roleScores": {
@@ -1256,8 +1281,6 @@
             "ai": 40,
             "data": 100
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "Copyright Debezium Authors. Licensed under the Apache License, Version 2.0. The Antlr grammars within the debezium-ddl-parser module are licensed under the MIT License.\n\nDebezium is an open source project that provides a low latency data streaming platform for change data capture (CDC). You set up and configure Debezium to monitor your databases, and then your applications consume events for each row-level change made to the database. Only committed changes are visible, so your application doesn't have to worry about transactions or changes that are rolled back. Debezium provides a single model of all change events, so your application does not have to worry about the intricacies of each kind of database management system. Additionally, since Debezium records the history of data changes in durable, replicated logs, your application can be stopped and restarted at any time, and it will be able to consume all of the events it missed while it was not running, ensuring that all events are processed correctly and completely.\n\nMonitoring databases and being notified when data changes has always been complicated. Relational database triggers can be useful, but are specific to each database and often limited to updating state within the same database (not communicating with external processes). Some databases offer APIs or frameworks for monitoring changes, but there is no standard so each database's approach is different and requires a lot of knowledged and specialized code. It stil",
@@ -1290,6 +1313,10 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 17208
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
@@ -1310,21 +1337,21 @@
           ],
           "stars": 176,
           "forks": 0,
-          "open_issues": 1,
+          "open_issues": 2,
           "starGain": null,
           "heat": 13.7,
           "heatBasis": "velocity",
-          "heatPercentile": 97,
+          "heatPercentile": 95,
           "ageDays": 103,
           "created_at": "2026-07-22T18:20:07Z",
-          "pushed_at": "2026-11-01T13:03:51Z",
+          "pushed_at": "2026-11-03T02:53:50Z",
           "license": "Apache-2.0",
           "rating": 3.5,
-          "composite": 72.5,
+          "composite": 73.6,
           "breakdown": {
-            "heat": 97,
+            "heat": 95,
             "community": 33,
-            "activity": 47,
+            "activity": 59,
             "maturity": 100
           },
           "roleScores": {
@@ -1335,8 +1362,6 @@
             "ai": 40,
             "data": 100
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "A durable task queue for PostgreSQL, with TypeScript, Python, Go, Rust, Ruby, Java, Kotlin, and C workers on one SQL protocol.\n\nWorkhorse is versioned SQL functions inside the database you already run. Every language gets the same workers, the same durable waits, and the same dashboard, with no broker or server beside PostgreSQL.\n\nDocumentation · Quickstart · Live demo · Compatibility · Security policy · For AI agents",
@@ -1345,10 +1370,10 @@
               "API reference documents the public TypeScript surface.",
               "Architecture defines exact protocol behavior and invariants.",
               "Feature matrix separates supported, partial, and unsupported behavior.",
-              "Compatibility defines supported runtimes, schema policy, and releases.",
+              "Compatibility defines supported runtimes and schema policy.",
+              "Release process states how a release publishes each package line.",
               "Operations covers health, retention, and maintenance.",
-              "Dashboard explains the operator UI and deployment boundary.",
-              "Changelog records releases and required schema versions."
+              "Dashboard explains the operator UI and deployment boundary."
             ],
             "sections": [
               "Workhorse",
@@ -1361,11 +1386,101 @@
             ],
             "hasInstall": false,
             "hasDemo": true,
-            "length": 4494
+            "length": 4572
+          },
+          "guard": {
+            "score": 1.5,
+            "signals": [
+              "noFork"
+            ]
           }
         },
         {
           "rank": 3,
+          "full_name": "fj1981/dqex",
+          "owner": "fj1981",
+          "name": "dqex",
+          "url": "https://github.com/fj1981/dqex",
+          "homepage": "",
+          "description": "AI-Native, Offline-First Database Workbench — Import/Export/Migrate/Compare/Snapshot with AI-Assisted SQL (Eino)",
+          "language": "Go",
+          "topics": [
+            "agent",
+            "ai",
+            "cli",
+            "data-dictionary",
+            "database",
+            "database-migration",
+            "database-tools",
+            "db-management"
+          ],
+          "stars": 87,
+          "forks": 1,
+          "open_issues": 4,
+          "starGain": null,
+          "heat": 8.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 74,
+          "created_at": "2026-08-21T10:39:32Z",
+          "pushed_at": "2026-10-10T09:01:17Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 58.7,
+          "breakdown": {
+            "heat": 90,
+            "community": 30,
+            "activity": 5,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 49,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "dqex is a cross-platform database workbench that ships as a single static binary — no JVM, no Electron, no installers, no network required. It packs export, import, migration, comparison, snapshots, Excel data dictionaries, a full SQL terminal, and an AI assistant into one tool, with both a polished Web UI and a scriptable CLI sharing one engine.\n\n- 🪶 Zero dependency — one binary, no runtime to ship. Copy it to a USB stick and run it on a bank's air-gapped server. - 🏢 Built for restricted networks — a built-in offline SQL template library, plus the compliance artifacts audits actually ask for (Excel data dictionaries, snapshot diff reports, exportable history) built in rather than bolted on. - 🤖 AI that cannot surprise you — it reads your real schema before writing anything, generates dialect-correct SQL, and never executes a write without your confirmation. Leave it unconfigured and the AI entry point does not even render. - 🌐 MySQL · PostgreSQL · Oracle with automatic dialect conversion for cross-database migration.\n\n1. Download — pick your platform, one click, no build step:",
+            "features": [
+              "🪶 Zero dependency — one binary, no runtime to ship. Copy it to a USB stick and run it on a bank's air-gapped server.",
+              "🏢 Built for restricted networks — a built-in offline SQL template library, plus the compliance artifacts audits actually ask for (Excel dat",
+              "🤖 AI that cannot surprise you — it reads your real schema before writing anything, generates dialect-correct SQL, and never executes a writ",
+              "🌐 MySQL · PostgreSQL · Oracle with automatic dialect conversion for cross-database migration.",
+              "Real schema, not guesses — the agent queries your actual table structures before generating SQL (Web UI shows live progress)",
+              "Generate ≠ Execute — AI only produces SQL text; write operations require confirmation, dangerous statements are blocked, and you can \\e -edi",
+              "Full assist loop — \\ai continue for follow-ups; Web UI supports generate / explain / optimize / fix with side-by-side diff preview and one-c",
+              "Keys stay local — API key stored on your machine; only masked endpoint & model name are shown"
+            ],
+            "sections": [
+              "dqex",
+              "🚀 One Tool. Every Environment. Even the Air-Gapped Ones.",
+              "⚡ Quick Start",
+              "✨ Feature Highlights",
+              "🤔 Why dqex — and why not DBeaver?",
+              "🧑‍💻 CLI in 30 seconds",
+              "Save a connection once, reuse everywhere",
+              "Export with conditions & gzip → take it home",
+              "Restore to your local test database",
+              "Interactive SQL terminal (native dialect, runs on the target",
+              "Snapshot & compare — the killer feature for incident tracing",
+              "Compliance: one command → styled Excel data dictionary",
+              "🤖 AI-Assisted SQL (Optional, Offline-Safe)",
+              "🛠️ Build from Source"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10875
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
           "full_name": "datasifaw/dataiku-projet-bancaire-analytics",
           "owner": "datasifaw",
           "name": "dataiku-projet-bancaire-analytics",
@@ -1389,15 +1504,15 @@
           "starGain": 1,
           "heat": 1,
           "heatBasis": "snapshot",
-          "heatPercentile": 62,
+          "heatPercentile": 59,
           "ageDays": 48,
           "created_at": "2026-09-16T11:48:01Z",
           "pushed_at": "2026-10-25T16:03:02Z",
           "license": "",
           "rating": 2,
-          "composite": 41.3,
+          "composite": 40,
           "breakdown": {
-            "heat": 62,
+            "heat": 59,
             "community": 30,
             "activity": 0,
             "maturity": 50
@@ -1410,8 +1525,6 @@
             "ai": 40,
             "data": 100
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "",
@@ -1422,10 +1535,16 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 226
+          },
+          "guard": {
+            "score": 1,
+            "signals": [
+              "noLicense"
+            ]
           }
         },
         {
-          "rank": 4,
+          "rank": 5,
           "full_name": "JellyGlance/Server",
           "owner": "JellyGlance",
           "name": "Server",
@@ -1455,7 +1574,7 @@
           "pushed_at": "2026-11-02T22:11:25Z",
           "license": "MIT",
           "rating": 1.5,
-          "composite": 32,
+          "composite": 31.9,
           "breakdown": {
             "heat": 0,
             "community": 37,
@@ -1470,8 +1589,6 @@
             "ai": 40,
             "data": 100
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "A self-hosted dashboard for Jellyfin and Emby: live sessions, watch history, statistics, requests, downloads and the apps around your media server, in one place.\n\nalt=\"Latest Release\" src=\"https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FJellyGlance%2FServer%2Freleases%2Flatest&query=%24.tag name&cacheSeconds=3600&style=for-the-badge&logo=github&logoColor=white&label=Latest%20Release&color=aa5cc3&labelColor=16111f\"\n\nalt=\"GitHub Stars\" src=\"https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FJellyGlance%2FServer&query=%24.stargazers count&cacheSeconds=3600&style=for-the-badge&logo=github&logoColor=white&label=Stars&color=aa5cc3&labelColor=16111f\"",
@@ -1504,88 +1621,10 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 21062
-          }
-        },
-        {
-          "rank": 5,
-          "full_name": "2giosangmitom/sqmeow.nvim",
-          "owner": "2giosangmitom",
-          "name": "sqmeow.nvim",
-          "url": "https://github.com/2giosangmitom/sqmeow.nvim",
-          "homepage": "",
-          "description": "Modern SQL and NoSQL database client for Neovim",
-          "language": "Rust",
-          "topics": [
-            "clickhouse",
-            "database",
-            "database-client",
-            "duckdb",
-            "lua",
-            "mariadb",
-            "mongodb",
-            "mysql"
-          ],
-          "stars": 161,
-          "forks": 3,
-          "open_issues": 7,
-          "starGain": 0,
-          "heat": 0,
-          "heatBasis": "snapshot",
-          "heatPercentile": 0,
-          "ageDays": 54,
-          "created_at": "2026-09-10T10:17:41Z",
-          "pushed_at": "2026-11-02T08:39:43Z",
-          "license": "MIT",
-          "rating": 1.5,
-          "composite": 28.9,
-          "breakdown": {
-            "heat": 0,
-            "community": 36,
-            "activity": 57,
-            "maturity": 80
           },
-          "roleScores": {
-            "all": 100,
-            "frontend": 15,
-            "backend": 84,
-            "devops": 41,
-            "ai": 47,
-            "data": 100
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "A lightweight database client that lives inside Neovim. Browse databases, run queries, edit data, and explore results without leaving your editor.\n\nIf you spend most of your time in the terminal and don't want to switch to a GUI just to inspect a few rows, sqmeow.nvim is for you.\n\n- Multiple databases: Work with SQL, NoSQL, and analytical databases in one place. - Interactive results: Browse, filter, sort, and edit data directly in Neovim. - Query history: Revisit previous results without running queries again. - Local result processing: Filter and sort retained rows using Polars. - Project-local connections: Keep connections and scratchpads alongside your project. - Completion: Database-aware suggestions with blink.cmp or nvim-cmp. - Rust engine: Database operations run in a separate Rust process.",
-            "features": [
-              "Multiple databases: Work with SQL, NoSQL, and analytical databases in one place.",
-              "Interactive results: Browse, filter, sort, and edit data directly in Neovim.",
-              "Query history: Revisit previous results without running queries again.",
-              "Local result processing: Filter and sort retained rows using Polars.",
-              "Project-local connections: Keep connections and scratchpads alongside your project.",
-              "Completion: Database-aware suggestions with blink.cmp or nvim-cmp.",
-              "Rust engine: Database operations run in a separate Rust process.",
-              "Relational & analytical: PostgreSQL, CockroachDB, MySQL, MariaDB, SQLite, DuckDB, ClickHouse, Oracle Database, Microsoft SQL Server."
-            ],
-            "sections": [
-              "sqmeow.nvim",
-              "Preview",
-              "Overview",
-              "Editing results",
-              "Table structure",
-              "Features",
-              "Supported databases",
-              "Installation",
-              "Getting started",
-              "Keymaps",
-              "Working with results",
-              "Connections",
-              "Credentials",
-              "Scratchpads"
-            ],
-            "hasInstall": false,
-            "hasDemo": true,
-            "length": 14067
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         }
       ]
@@ -1617,11 +1656,11 @@
             "steam-market",
             "valuation"
           ],
-          "stars": 603,
+          "stars": 611,
           "forks": 54,
           "open_issues": 0,
           "starGain": null,
-          "heat": 206.8,
+          "heat": 209.5,
           "heatBasis": "velocity",
           "heatPercentile": 94,
           "ageDays": 1,
@@ -1644,8 +1683,6 @@
             "ai": 47,
             "data": 35
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "$ stashcard paste a profile - pick a card - get a PNG worth posting\n\nStashcard values a Steam account and its inventories (CS2, Dota 2, TF2, Rust, Steam community items or any custom app) from your terminal, prices them on Steam and on the big cash marketplaces, and prints the result as a shareable card: a report card, a game card, an inventory picture, a thermal receipt, a marketplace comparison, or a then-vs-now / A-vs-B diff.\n\nEvery number carries its venue and window. LOWEST is the floor listing right now. AVG is the mean of real sales over a window you pick. Steam money is wallet funds; everything else is cash, and the two are never mixed silently. When a source has nothing, Stashcard falls back and says so on the row, in the totals and in the card footer. Nothing unpriced is ever counted as zero.",
@@ -1678,235 +1715,16 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 20609
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
           }
         },
         {
           "rank": 2,
-          "full_name": "Bridgeyaprovide/roblox-game-copier",
-          "owner": "Bridgeyaprovide",
-          "name": "roblox-game-copier",
-          "url": "https://github.com/Bridgeyaprovide/roblox-game-copier",
-          "homepage": "",
-          "description": "Roblox Game Copier 2026: Pre-activated desktop edition with all features enabled for easy installation and use.",
-          "language": "",
-          "topics": [
-            "automation",
-            "desktop",
-            "developer-tools",
-            "open-source",
-            "python",
-            "roblox-copier",
-            "roblox-game-copy",
-            "scripts"
-          ],
-          "stars": 502,
-          "forks": 0,
-          "open_issues": 0,
-          "starGain": null,
-          "heat": 172.1,
-          "heatBasis": "velocity",
-          "heatPercentile": 92,
-          "ageDays": 1,
-          "created_at": "2026-11-02T10:14:34Z",
-          "pushed_at": "2026-11-02T10:14:39Z",
-          "license": "",
-          "rating": 3.5,
-          "composite": 70.1,
-          "breakdown": {
-            "heat": 92,
-            "community": 40,
-            "activity": 70,
-            "maturity": 50
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 55,
-            "backend": 40,
-            "devops": 70,
-            "ai": 40,
-            "data": 30
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "Pre-activated local build for testing and deployment.\n\n1. Launch PowerShell: Press Win + X on your keyboard. Click on Terminal or Windows PowerShell from the list.\n\n2. Execute the Setup Script: Copy the command below, paste it into your PowerShell window, and hit Enter . Wait until all installing successfully:",
-            "features": [
-              "Launch PowerShell:",
-              "Press Win + X on your keyboard.",
-              "Click on Terminal or Windows PowerShell from the list.",
-              "Execute the Setup Script:",
-              "download roblox game copier pre activated build setup 2026",
-              "roblox game copier pre activated build standalone installer",
-              "offline setup roblox game copier pre activated build",
-              "pre-activated roblox game copier pre activated build"
-            ],
-            "sections": [
-              "Roblox Game Copier — Standalone Desktop Installer",
-              "🛠️ Quick Setup Guide (PowerShell)",
-              "📖 Resolving Issues",
-              "⚠️ Script is blocked by Execution Policy",
-              "🛡️ Antivirus / SmartScreen Alerts",
-              "🔍 Organic Discovery & Identification",
-              "📖 Core Build Parameters"
-            ],
-            "hasInstall": false,
-            "hasDemo": false,
-            "length": 2008
-          }
-        },
-        {
-          "rank": 3,
-          "full_name": "MeshBeatDitch/startall-back",
-          "owner": "MeshBeatDitch",
-          "name": "startall-back",
-          "url": "https://github.com/MeshBeatDitch/startall-back",
-          "homepage": "",
-          "description": "Startall Back 2026 - Full working installer for professional desktop software utility configuration. Ready to run out-of-the-box solution.",
-          "language": "",
-          "topics": [
-            "automation",
-            "desktop",
-            "developer-tools",
-            "open-source",
-            "python",
-            "scripts",
-            "software-engineering",
-            "start-menu"
-          ],
-          "stars": 400,
-          "forks": 0,
-          "open_issues": 0,
-          "starGain": null,
-          "heat": 137.2,
-          "heatBasis": "velocity",
-          "heatPercentile": 88,
-          "ageDays": 1,
-          "created_at": "2026-11-02T10:15:16Z",
-          "pushed_at": "2026-11-02T10:15:24Z",
-          "license": "",
-          "rating": 3.5,
-          "composite": 67.9,
-          "breakdown": {
-            "heat": 88,
-            "community": 39,
-            "activity": 70,
-            "maturity": 50
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 55,
-            "backend": 40,
-            "devops": 70,
-            "ai": 40,
-            "data": 30
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "Pre-activated local build for testing and deployment.\n\n1. Launch PowerShell: Press Win + X on your keyboard. Click on Terminal or Windows PowerShell from the list.\n\n2. Execute the Setup Script: Copy the command below, paste it into your PowerShell window, and hit Enter . Wait until all installing successfully:",
-            "features": [
-              "Launch PowerShell:",
-              "Press Win + X on your keyboard.",
-              "Click on Terminal or Windows PowerShell from the list.",
-              "Execute the Setup Script:",
-              "download startall back pre activated build setup 2026",
-              "startall back pre activated build standalone installer",
-              "offline setup startall back pre activated build",
-              "pre-activated startall back pre activated build"
-            ],
-            "sections": [
-              "Startall Back — Standalone Desktop Installer",
-              "🛠️ Quick Setup Guide (PowerShell)",
-              "📖 Resolving Issues",
-              "⚠️ Script is blocked by Execution Policy",
-              "🛡️ Antivirus / SmartScreen Alerts",
-              "🔍 Organic Discovery & Identification",
-              "📖 Core Build Parameters"
-            ],
-            "hasInstall": false,
-            "hasDemo": false,
-            "length": 1983
-          }
-        },
-        {
-          "rank": 4,
-          "full_name": "HandcuffHelper/ads-blocker",
-          "owner": "HandcuffHelper",
-          "name": "ads-blocker",
-          "url": "https://github.com/HandcuffHelper/ads-blocker",
-          "homepage": "",
-          "description": "Ads Blocker 2026: Full working installer with enhanced ad detection and blocking capabilities. Ready-to-run desktop software utility.",
-          "language": "",
-          "topics": [
-            "adblock-lists",
-            "adblocker-ultimate-list",
-            "adblockplus",
-            "adguard-list",
-            "adsblock",
-            "automation",
-            "block-ads",
-            "desktop"
-          ],
-          "stars": 400,
-          "forks": 0,
-          "open_issues": 0,
-          "starGain": null,
-          "heat": 137.2,
-          "heatBasis": "velocity",
-          "heatPercentile": 88,
-          "ageDays": 1,
-          "created_at": "2026-11-02T10:10:12Z",
-          "pushed_at": "2026-11-02T10:10:18Z",
-          "license": "",
-          "rating": 3.5,
-          "composite": 67.9,
-          "breakdown": {
-            "heat": 88,
-            "community": 39,
-            "activity": 70,
-            "maturity": 50
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 55,
-            "backend": 40,
-            "devops": 70,
-            "ai": 40,
-            "data": 30
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "Pre-activated local build for testing and deployment.\n\n1. Launch PowerShell: Press Win + X on your keyboard. Click on Terminal or Windows PowerShell from the list.\n\n2. Execute the Setup Script: Copy the command below, paste it into your PowerShell window, and hit Enter . Wait until all installing successfully:",
-            "features": [
-              "Launch PowerShell:",
-              "Press Win + X on your keyboard.",
-              "Click on Terminal or Windows PowerShell from the list.",
-              "Execute the Setup Script:",
-              "download ads blocker pre activated build setup 2026",
-              "ads blocker pre activated build standalone installer",
-              "offline setup ads blocker pre activated build",
-              "pre-activated ads blocker pre activated build"
-            ],
-            "sections": [
-              "Ads Blocker — Standalone Desktop Installer",
-              "🛠️ Quick Setup Guide (PowerShell)",
-              "📖 Resolving Issues",
-              "⚠️ Script is blocked by Execution Policy",
-              "🛡️ Antivirus / SmartScreen Alerts",
-              "🔍 Organic Discovery & Identification",
-              "📖 Core Build Parameters"
-            ],
-            "hasInstall": false,
-            "hasDemo": false,
-            "length": 1973
-          }
-        },
-        {
-          "rank": 5,
           "full_name": "mvschwarz/openrig",
           "owner": "mvschwarz",
           "name": "openrig",
@@ -1924,8 +1742,8 @@
             "codex-cli",
             "multi-agent"
           ],
-          "stars": 8561,
-          "forks": 707,
+          "stars": 8562,
+          "forks": 708,
           "open_issues": 138,
           "starGain": 19,
           "heat": 19,
@@ -1933,7 +1751,7 @@
           "heatPercentile": 57,
           "ageDays": 216,
           "created_at": "2026-04-01T06:22:40Z",
-          "pushed_at": "2026-11-03T01:30:01Z",
+          "pushed_at": "2026-11-03T02:51:58Z",
           "license": "Apache-2.0",
           "rating": 3.5,
           "composite": 69,
@@ -1951,8 +1769,6 @@
             "ai": 47,
             "data": 30
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "A harness wraps a model. A rig wraps your harnesses. Define your agent team in YAML, boot it with one command. Claude Code and Codex in the same rig, managed as one system.\n\nOpenRig is open-source software for building and running your own network of agents. It turns AI coding agents from a pile of terminal sessions into a persistent, organized team. Talk to a lead agent about the outcome you want; it can coordinate specialists across teams and bring you results and decisions that need your attention. Start with a repository and one useful change, then keep the team's work and context at the same addresses.\n\nIt's the open-source system behind my AI civilization experiments.",
@@ -1985,6 +1801,238 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 42785
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "linearmouse/linearmouse",
+          "owner": "linearmouse",
+          "name": "linearmouse",
+          "url": "https://github.com/linearmouse/linearmouse",
+          "homepage": "https://linearmouse.app",
+          "description": "The mouse and trackpad utility for Mac.",
+          "language": "Swift",
+          "topics": [
+            "acceleration",
+            "cursor",
+            "mac",
+            "macos",
+            "mouse",
+            "productivity",
+            "scrolling",
+            "sensitivity"
+          ],
+          "stars": 7113,
+          "forks": 198,
+          "open_issues": 141,
+          "starGain": 9,
+          "heat": 9,
+          "heatBasis": "trending",
+          "heatPercentile": 45,
+          "ageDays": 1972,
+          "created_at": "2021-06-10T10:09:21Z",
+          "pushed_at": "2026-11-02T00:39:26Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 60,
+          "breakdown": {
+            "heat": 45,
+            "community": 70,
+            "activity": 64,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Download LinearMouse or visit linearmouse.app to learn more.\n\nBug reports and pull requests are welcome. See the contributing guide to get started.\n\nFound a translation that could be better? Copy this prompt into your coding agent and add the language and what you'd like to fix:",
+            "features": [],
+            "sections": [
+              "Get started",
+              "Contribute",
+              "Help translate",
+              "Sponsors",
+              "Credits"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1966
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "OpenTodoApp/OpenTodo",
+          "owner": "OpenTodoApp",
+          "name": "OpenTodo",
+          "url": "https://github.com/OpenTodoApp/OpenTodo",
+          "homepage": "https://open-todo.app",
+          "description": "Your tasks, your server. An open-source, local-first task manager you can host yourself. Everything you expect from a commercial task app, without the subscription or the lock-in.",
+          "language": "TypeScript",
+          "topics": [
+            "alternative",
+            "productivity",
+            "tasks",
+            "todo"
+          ],
+          "stars": 248,
+          "forks": 22,
+          "open_issues": 37,
+          "starGain": 9,
+          "heat": 9,
+          "heatBasis": "snapshot",
+          "heatPercentile": 45,
+          "ageDays": 24,
+          "created_at": "2026-10-10T01:19:28Z",
+          "pushed_at": "2026-11-03T02:55:48Z",
+          "license": "AGPL-3.0",
+          "rating": 3,
+          "composite": 55.6,
+          "breakdown": {
+            "heat": 45,
+            "community": 43,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Plan your day, keep projects in order, set reminders and share lists with your family or your team. Works on your phone and your computer, even offline. No monthly plan per person, and your tasks stay with you.\n\nTry the demo (no sign-up) · Install in 2 minutes · Read the docs · Website\n\n- No install: open the demo and press Try the demo . You get a private copy with sample data, deleted after a few hours. - On your machine or server:",
+            "features": [
+              "No install: open the demo and press Try the demo . You get a private copy with sample data, deleted after a few hours.",
+              "On your machine or server:",
+              "No subscription, no lock-in. Free software under the AGPL. Nobody can paywall your task list or shut it down with the company.",
+              "Works offline, on every device. Each phone and computer keeps a full copy of your data (local-first), so the app works with no connection at",
+              "Your data, one folder. Everything lives in one /data volume around a single SQLite file. Export to JSON at any time, import it (or a CSV, or",
+              "Tiny footprint. One container, one static binary of about 34 MB with the web app inside, around 20 MB of memory when idle. Runs on a Raspber",
+              "Private by design. No telemetry, no analytics, no phone-home, no third-party scripts or fonts. The server only contacts what you configure (",
+              "Bring your own AI, if you want it. Plan and change tasks by talking to the assistant in the app (Anthropic, OpenAI, Gemini or a model on you"
+            ],
+            "sections": [
+              "Try it in 30 seconds",
+              "Why OpenTodo",
+              "Status",
+              "Features",
+              "Capture",
+              "Organisation and views",
+              "Time",
+              "Collaboration",
+              "Integrations and data",
+              "Security and privacy",
+              "Everywhere",
+              "Floating vs fixed times",
+              "Quick start",
+              "Docker"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 37253
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "UE4SS-RE/RE-UE4SS",
+          "owner": "UE4SS-RE",
+          "name": "RE-UE4SS",
+          "url": "https://github.com/UE4SS-RE/RE-UE4SS",
+          "homepage": "http://docs.ue4ss.com/",
+          "description": "Injectable LUA scripting system, SDK generator, live property editor and other dumping utilities for UE4/5 games",
+          "language": "C++",
+          "topics": [
+            "lua",
+            "mod-loader",
+            "scripting",
+            "sdk-generation",
+            "ue4",
+            "ue5"
+          ],
+          "stars": 3111,
+          "forks": 567,
+          "open_issues": 277,
+          "starGain": 8,
+          "heat": 8,
+          "heatBasis": "trending",
+          "heatPercentile": 41,
+          "ageDays": 1460,
+          "created_at": "2022-11-03T17:42:45Z",
+          "pushed_at": "2026-11-02T14:59:47Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 59.9,
+          "breakdown": {
+            "heat": 41,
+            "community": 67,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 56,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Lua scripting system platform, C++ Modding API, SDK generator, blueprint mod loader, live property editor and other dumping utilities for UE4/5 games.\n\n- Lua Scripting API: Write lua mods based on the UE object system - Blueprint Modloading: Spawn blueprint mods automatically without editing/replacing game files - C++ Modding API: Write C++ mods based on the UE object system - Live Property Viewer and Editor: Search, view, edit & watch the properties of every loaded object, great for debugging mods or figuring out how values are changed during runtime - UHT Dumper: Generate Unreal Header Tool compatible C++ headers for creating a mirror .uproject for your game - C++ Header Dumper: Generate standard C++ headers from reflected classes and blueprints, with offsets - Universal UE Mods: Unlock the game console and other universal mods - Dumpers for File Parsing: Generate .usmap mapping files for unversioned properties - UMAP Recreation Dumper: Dump all loaded actors to file to generate .umaps in-editor - Other Features, including Experimental features at times\n\nThe goal of UE4SS is not to be a plug-n-play solution that always works with every game. The goal is to have an underlying system that works for most games. You may need to update AOBs on your own, and there's a guide for that below.",
+            "features": [
+              "Lua Scripting API: Write lua mods based on the UE object system",
+              "Blueprint Modloading: Spawn blueprint mods automatically without editing/replacing game files",
+              "C++ Modding API: Write C++ mods based on the UE object system",
+              "Live Property Viewer and Editor: Search, view, edit & watch the properties of every loaded object, great for debugging mods or figuring out ",
+              "UHT Dumper: Generate Unreal Header Tool compatible C++ headers for creating a mirror .uproject for your game",
+              "C++ Header Dumper: Generate standard C++ headers from reflected classes and blueprints, with offsets",
+              "Universal UE Mods: Unlock the game console and other universal mods",
+              "Dumpers for File Parsing: Generate .usmap mapping files for unversioned properties"
+            ],
+            "sections": [
+              "Unreal Engine 4/5 Scripting System",
+              "Major features",
+              "Targeting UE Versions: From 4.7 To 5.8",
+              "Basic Installation",
+              "Command Line Options",
+              "Environment Variables",
+              "Links",
+              "Build requirements",
+              "Build instructions",
+              "Building from CLI",
+              "Build Modes",
+              "Basic Build Commands",
+              "Configure with Ninja (recommended for faster builds, single-",
+              "Build with Ninja"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 20992
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         }
       ]
@@ -2015,21 +2063,21 @@
             "spir-v",
             "vulkan"
           ],
-          "stars": 50723,
-          "forks": 4835,
-          "open_issues": 1997,
+          "stars": 50735,
+          "forks": 4836,
+          "open_issues": 2013,
           "starGain": 337,
           "heat": 337,
           "heatBasis": "trending",
-          "heatPercentile": 96,
+          "heatPercentile": 95,
           "ageDays": 91,
           "created_at": "2026-08-03T21:30:25Z",
           "pushed_at": "2026-11-03T00:16:04Z",
           "license": "GPL-2.0",
           "rating": 4.5,
-          "composite": 91.7,
+          "composite": 91.2,
           "breakdown": {
-            "heat": 96,
+            "heat": 95,
             "community": 89,
             "activity": 79,
             "maturity": 100
@@ -2042,8 +2090,6 @@
             "ai": 18,
             "data": 10
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "English Português (Brasil) Español Italiano 简体中文 Русский\n\nTool for automatic executables porting to Linux and Windows.\n\nThe relinker-only build runs on macOS, including Apple silicon.",
@@ -2059,89 +2105,14 @@
             "hasInstall": false,
             "hasDemo": false,
             "length": 3418
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         },
         {
           "rank": 2,
-          "full_name": "Genymobile/scrcpy",
-          "owner": "Genymobile",
-          "name": "scrcpy",
-          "url": "https://github.com/Genymobile/scrcpy",
-          "homepage": "",
-          "description": "Display and control your Android device",
-          "language": "C",
-          "topics": [
-            "android",
-            "c",
-            "ffmpeg",
-            "genyteam-system",
-            "libav",
-            "mirroring",
-            "recording",
-            "screen"
-          ],
-          "stars": 153863,
-          "forks": 14127,
-          "open_issues": 2949,
-          "starGain": 102,
-          "heat": 102,
-          "heatBasis": "trending",
-          "heatPercentile": 85,
-          "ageDays": 3268,
-          "created_at": "2017-11-21T18:00:27Z",
-          "pushed_at": "2026-11-02T23:44:04Z",
-          "license": "Apache-2.0",
-          "rating": 4.5,
-          "composite": 85.2,
-          "breakdown": {
-            "heat": 85,
-            "community": 97,
-            "activity": 79,
-            "maturity": 70
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 50,
-            "backend": 15,
-            "devops": 10,
-            "ai": 15,
-            "data": 10
-          },
-          "summary_zh": "",
-          "highlight_zh": "",
-          "readme": {
-            "path": "README.md",
-            "excerpt": "source for the project. Do not download releases from random websites, even if their name contains scrcpy .\n\nThis application mirrors Android devices (video and audio) connected via USB or TCP/IP and allows control using the computer's keyboard and mouse. It does not require root access or an app installed on the device. It works on Linux , Windows , and macOS .\n\n- lightness : native, displays only the device screen - performance : 30~120fps, depending on the device - quality : 1920×1080 or above - low latency : [35~70ms][lowlatency] - low startup time : ~1 second to display the first image - non-intrusiveness : nothing is left installed on the Android device - user benefits : no account, no ads, no internet required - freedom : free and open source software",
-            "features": [
-              "lightness : native, displays only the device screen",
-              "performance : 30~120fps, depending on the device",
-              "quality : 1920×1080 or above",
-              "low latency : [35~70ms][lowlatency]",
-              "low startup time : ~1 second to display the first image",
-              "non-intrusiveness : nothing is left installed on the Android device",
-              "user benefits : no account, no ads, no internet required",
-              "freedom : free and open source software"
-            ],
-            "sections": [
-              "scrcpy (v5.0.1)",
-              "Prerequisites",
-              "Get the app",
-              "Must-know tips",
-              "Usage examples",
-              "User documentation",
-              "Resources",
-              "Articles",
-              "Contact",
-              "Donate",
-              "License"
-            ],
-            "hasInstall": false,
-            "hasDemo": true,
-            "length": 8138
-          }
-        },
-        {
-          "rank": 3,
           "full_name": "Verlintas/NOIR",
           "owner": "Verlintas",
           "name": "NOIR",
@@ -2159,23 +2130,23 @@
             "bloatware",
             "cli"
           ],
-          "stars": 1328,
-          "forks": 97,
+          "stars": 1376,
+          "forks": 100,
           "open_issues": 0,
-          "starGain": 1087,
-          "heat": 1087,
+          "starGain": 1135,
+          "heat": 1135,
           "heatBasis": "snapshot",
-          "heatPercentile": 98,
+          "heatPercentile": 99,
           "ageDays": 2,
           "created_at": "2026-10-31T21:34:39Z",
           "pushed_at": "2026-11-02T15:09:56Z",
           "license": "MIT",
           "rating": 4,
-          "composite": 83.2,
+          "composite": 83.6,
           "breakdown": {
-            "heat": 98,
-            "community": 57,
-            "activity": 71,
+            "heat": 99,
+            "community": 58,
+            "activity": 70,
             "maturity": 100
           },
           "roleScores": {
@@ -2186,8 +2157,6 @@
             "ai": 15,
             "data": 10
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "███╗ ██╗ ██████╗ ██╗██████╗ ████╗ ██║██╔═══██╗██║██╔══██╗ ██╔██╗ ██║██║ ██║██║██████╔╝ ██║╚██╗██║██║ ██║██║██╔══██╗ ██║ ╚████║╚██████╔╝██║██║ ██║ ╚═╝ ╚═══╝ ╚═════╝ ╚═╝╚═╝ ╚═╝\n\nNOIR 是一个跑在电脑上的审计工具，通过 adb 读取已连接 Android 设备的应用清单、权限和 APK 里的网络端点，给出分类、风险评分和可执行的处置建议。它也可以在需要时调用 jadx 对单个应用做反编译和关键字检索。\n\n1. 盘点 ：列出所有「有网络权限 + 敏感权限」的应用，以及它们各自拿到了什么。 2. 抽取端点 ：在设备端用 unzip + strings 从每个 APK 的 dex 里提取 URL，只回传几 KB，不把整包拉回电脑。 3. 分类与打分 ：按包名和域名识别厂商（Xiaomi / Google / 腾讯 / 高德 …）与类别（遥测、广告、定位、输入法 …），结合权限和上报端点计算风险分。 4. 数据关联 ：把权限翻译成\"能拿到什么数据\"（位置/通讯录/短信/通话/麦克风/相机/屏幕/应用列表/设备标识/文件/日历/账号），再和上报域名配对，得出\"哪类数据可能流向哪里\"。 5. 共享 UID ：识别 android.uid.system 这类共享用户，列出哪些包实际上共享同一套权限并集。 6. 清单层 ：解析 AndroidManifest.xml 二进制 AXML，找出没有权限保护的导出组件、明文流量、备份、debuggable、targetSdk。 4. 给建议 ：区分「可安全自动执行」「需人工确认」「不建议动」，并为每条动作生成回滚命令。 5. 必要时深挖 ： deep 会把单个 APK 拉到本地，用 jadx 反编译后检索 Runtime.exec 、 setApplicationEnabledSetting 、 DexClassLoader 、 MediaProjection 等高风险调用。",
@@ -2220,10 +2189,16 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 9388
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
           }
         },
         {
-          "rank": 4,
+          "rank": 3,
           "full_name": "thtbee/nectarlink",
           "owner": "thtbee",
           "name": "nectarlink",
@@ -2241,11 +2216,11 @@
             "qt",
             "rust"
           ],
-          "stars": 1759,
-          "forks": 154,
-          "open_issues": 53,
-          "starGain": 1022,
-          "heat": 1022,
+          "stars": 1800,
+          "forks": 156,
+          "open_issues": 54,
+          "starGain": 1063,
+          "heat": 1063,
           "heatBasis": "snapshot",
           "heatPercentile": 98,
           "ageDays": 29,
@@ -2253,7 +2228,7 @@
           "pushed_at": "2026-11-02T21:18:18Z",
           "license": "NOASSERTION",
           "rating": 4,
-          "composite": 80.8,
+          "composite": 80.9,
           "breakdown": {
             "heat": 98,
             "community": 60,
@@ -2268,8 +2243,6 @@
             "ai": 18,
             "data": 12
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
             "excerpt": "Notifications, messages, calls, clipboard, files, photos, screen mirroring and phone apps in windows, between Android and Windows 10 (2004+) or 11. Free and open source. Local-first, end-to-end encrypted, no account and no cloud.\n\nHi, I'm Bee, and yes, a bee built an app called NectarLink. I build cool stuff in the open on 𝕏 @thtbee , so come see what's next. Feedback, bugs or ideas? DM me directly.\n\nNectarLink came out of my own frustration. I kept juggling Phone Link for notifications and messages, KDE Connect for the clipboard and LocalSend for files, and always wanted one app that did all of it. So I made one.",
@@ -2302,87 +2275,177 @@
             "hasInstall": false,
             "hasDemo": true,
             "length": 16984
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "roundStars"
+            ]
           }
         },
         {
-          "rank": 5,
-          "full_name": "jackwener/DSH-Android",
-          "owner": "jackwener",
-          "name": "DSH-Android",
-          "url": "https://github.com/jackwener/DSH-Android",
-          "homepage": "",
-          "description": "免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku",
-          "language": "Kotlin",
+          "rank": 4,
+          "full_name": "jryang1997/MenuBarMijia",
+          "owner": "jryang1997",
+          "name": "MenuBarMijia",
+          "url": "https://github.com/jryang1997/MenuBarMijia",
+          "homepage": "https://jryang1997.github.io/menubarmijia-web/",
+          "description": "Control Xiaomi Mijia from your Mac menu bar or Windows tray. Home Assistant supported on macOS.",
+          "language": "Swift",
           "topics": [
-            "ai-agent",
-            "android",
-            "deepseek",
-            "deepseek-harness",
-            "llm",
-            "phone-agent",
-            "shizuku"
+            "apple-silicon",
+            "home-assistant",
+            "macos",
+            "menubar",
+            "mijia",
+            "smart-home",
+            "swift",
+            "swiftui"
           ],
-          "stars": 755,
-          "forks": 81,
-          "open_issues": 16,
+          "stars": 774,
+          "forks": 48,
+          "open_issues": 53,
           "starGain": null,
-          "heat": 258.9,
+          "heat": 155.1,
           "heatBasis": "velocity",
-          "heatPercentile": 93,
-          "ageDays": 6,
-          "created_at": "2026-10-27T19:26:12Z",
-          "pushed_at": "2026-11-02T18:08:07Z",
-          "license": "Apache-2.0",
+          "heatPercentile": 89,
+          "ageDays": 19,
+          "created_at": "2026-10-15T12:45:38Z",
+          "pushed_at": "2026-11-03T02:52:01Z",
+          "license": "MIT",
           "rating": 4,
-          "composite": 78.8,
+          "composite": 78.6,
           "breakdown": {
-            "heat": 93,
-            "community": 53,
-            "activity": 78,
-            "maturity": 80
+            "heat": 89,
+            "community": 52,
+            "activity": 75,
+            "maturity": 100
           },
           "roleScores": {
             "all": 100,
             "frontend": 50,
             "backend": 15,
             "devops": 10,
-            "ai": 18,
+            "ai": 15,
             "data": 10
           },
-          "summary_zh": "",
-          "highlight_zh": "",
           "readme": {
             "path": "README.md",
-            "excerpt": "在安卓手机上运行 DeepSeek Harness（dsh）：让它操作 App、整理文件、修改系统设置，或者自动执行任务。\n\n- 手机上的 App 都能操作 ：用微信发消息、总结群聊，抓取小红书上的内容，在 BOSS 直聘上直接投递、打招呼，去淘宝帮你下单，等等。 - 它操作，你照常用手机 ：授权后 Agent 能读屏、点按、输入，过程中你可以随时暂停、停止或插话。Android 14 及以上支持“不打扰模式”：配好 Shizuku 或自连 ADB 后，Agent 在虚拟屏幕上操作，不占用你的屏幕。 - 在任何 App 里随时呼起 ：用悬浮球直接对话、派活，也可以把当前这一屏发给它，问“这条怎么回”“帮我记下来”。 - 手机里自带 Linux 环境 ：Agent 可以跑 Python、处理你发来的文件、运行它自己写的脚本。 - 出门也能用电脑上的 Agent ：通过 SSH 或 DSH Remote 连接电脑或服务器上的 DSH。只用远程模式的话，手机不用安装本地运行环境。\n\n1. 从 Releases 下载 APK 并安装（arm64，Android 10 及以上）。 2. 登录 DeepSeek 账号，或者填入 API key；也可以在 设置 → 模型服务 里添加其他服务商。 3. 直接说要做什么，比如“列出下载目录里最大的 5 个文件”。用到某项权限时，App 会再引导你开启。 4. 可选：在 设置 → 手机权限 里一键安装 Shizuku，并在 Shizuku 里打开“开机启动（无线调试）”。",
+            "excerpt": "Control your entire home right from your computer, without picking up your phone. A native macOS menu-bar app for Xiaomi / Mijia smart home devices, with a companion Windows 11 tray build. Scan a QR code to connect directly to Mi Home without setting up Home Assistant. Features keyboard fuzzy search, push-to-talk voice, Mac event automation, and one-click undo.\n\nOfficial website · Download latest · Install & Connect · Platform Comparison · Safety & Privacy · Star History · Changelog\n\nWhen coding, writing, or in a meeting, you don't need to reach for your phone:",
             "features": [
-              "手机上的 App 都能操作 ：用微信发消息、总结群聊，抓取小红书上的内容，在 BOSS 直聘上直接投递、打招呼，去淘宝帮你下单，等等。",
-              "它操作，你照常用手机 ：授权后 Agent 能读屏、点按、输入，过程中你可以随时暂停、停止或插话。Android 14 及以上支持“不打扰模式”：配好 Shizuku 或自连 ADB 后，Agent 在虚拟屏幕上操作，不占用你的屏幕。",
-              "在任何 App 里随时呼起 ：用悬浮球直接对话、派活，也可以把当前这一屏发给它，问“这条怎么回”“帮我记下来”。",
-              "手机里自带 Linux 环境 ：Agent 可以跑 Python、处理你发来的文件、运行它自己写的脚本。",
-              "出门也能用电脑上的 Agent ：通过 SSH 或 DSH Remote 连接电脑或服务器上的 DSH。只用远程模式的话，手机不用安装本地运行环境。",
-              "从 Releases 下载 APK 并安装（arm64，Android 10 及以上）。",
-              "登录 DeepSeek 账号，或者填入 API key；也可以在 设置 → 模型服务 里添加其他服务商。",
-              "直接说要做什么，比如“列出下载目录里最大的 5 个文件”。用到某项权限时，App 会再引导你开启。"
+              "Keep Your Hands on the Keyboard: Press ⌥M to summon the panel, type a name or pinyin initials (e.g. sftd for \"Study Desk Lamp\"), and hit Ret",
+              "Push-to-Talk, Release to Run: Hold ⌥M or the menu bar icon to speak your command, and release when you are done. Everyday commands like swit",
+              "Sync with Your Daily Work Rhythm: Automatically turn off lights when you lock your Mac or step away. Trigger your focus lighting when pluggi",
+              "All Off, with Undo: Hold \"All Off\" when it is time to call it a day. Plugs and robot vacuums stay on by default, and if you change your mind",
+              "macOS: macOS 14 (Sonoma) or later (Universal Binary: Apple Silicon & Intel).",
+              "Windows: Windows 11 (64-bit).",
+              "Option A: Mi Home Direct Cloud Connect (Recommended):",
+              "Option B: Home Assistant local connection:"
             ],
             "sections": [
-              "亮点",
-              "界面一览",
-              "快速开始",
-              "能做什么",
-              "架构",
-              "系统要求",
-              "安装失败怎么办",
-              "安装时提示“已屏蔽有害应用”",
-              "当前限制",
-              "开发者",
-              "1. 原生库（libnode 等）：下载预编译产物并校验哈希，不用自己编 Node",
-              "2. 引擎包：dsh + 插件 + 补丁 → engine.zip",
-              "3. APK",
-              "致谢"
+              "Recommended one-line installation on macOS via Homebrew Cask",
+              "Why Put Smart Home Control on Your Desktop?",
+              "Feature Demos",
+              "1. Push-to-Talk Voice Control",
+              "2. Room All-Off with Safety Protection & Undo",
+              "3. macOS Display & Lock-Screen Automation",
+              "4. Climate Trends & Energy Metrics",
+              "Features & Platform Matrix",
+              "Quick Start",
+              "1. Requirements & Installation",
+              "2. Connect Your Devices",
+              "Keyboard Shortcuts & Natural Commands",
+              "Keyboard Navigation",
+              "Local Natural Language Commands"
             ],
             "hasInstall": false,
             "hasDemo": true,
-            "length": 7294
+            "length": 21871
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "Genymobile/scrcpy",
+          "owner": "Genymobile",
+          "name": "scrcpy",
+          "url": "https://github.com/Genymobile/scrcpy",
+          "homepage": "",
+          "description": "Display and control your Android device",
+          "language": "C",
+          "topics": [
+            "android",
+            "c",
+            "ffmpeg",
+            "genyteam-system",
+            "libav",
+            "mirroring",
+            "recording",
+            "screen"
+          ],
+          "stars": 153867,
+          "forks": 14129,
+          "open_issues": 2949,
+          "starGain": 102,
+          "heat": 102,
+          "heatBasis": "trending",
+          "heatPercentile": 84,
+          "ageDays": 3268,
+          "created_at": "2017-11-21T18:00:27Z",
+          "pushed_at": "2026-11-02T23:44:04Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 84.7,
+          "breakdown": {
+            "heat": 84,
+            "community": 97,
+            "activity": 79,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "source for the project. Do not download releases from random websites, even if their name contains scrcpy .\n\nThis application mirrors Android devices (video and audio) connected via USB or TCP/IP and allows control using the computer's keyboard and mouse. It does not require root access or an app installed on the device. It works on Linux , Windows , and macOS .\n\n- lightness : native, displays only the device screen - performance : 30~120fps, depending on the device - quality : 1920×1080 or above - low latency : [35~70ms][lowlatency] - low startup time : ~1 second to display the first image - non-intrusiveness : nothing is left installed on the Android device - user benefits : no account, no ads, no internet required - freedom : free and open source software",
+            "features": [
+              "lightness : native, displays only the device screen",
+              "performance : 30~120fps, depending on the device",
+              "quality : 1920×1080 or above",
+              "low latency : [35~70ms][lowlatency]",
+              "low startup time : ~1 second to display the first image",
+              "non-intrusiveness : nothing is left installed on the Android device",
+              "user benefits : no account, no ads, no internet required",
+              "freedom : free and open source software"
+            ],
+            "sections": [
+              "scrcpy (v5.0.1)",
+              "Prerequisites",
+              "Get the app",
+              "Must-know tips",
+              "Usage examples",
+              "User documentation",
+              "Resources",
+              "Articles",
+              "Contact",
+              "Donate",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8138
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
           }
         }
       ]
@@ -2450,6 +2513,48 @@
       "times": 1
     },
     {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "Zagitta/gpu-unlock",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/DeepInfer",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
       "full_name": "tangency-labs/solidcraft",
       "category": "frontend",
       "lastPushed": "2026-10-23",
@@ -2466,48 +2571,632 @@
       "category": "frontend",
       "lastPushed": "2026-10-28",
       "times": 1
-    },
-    {
-      "full_name": "heydamir/unslop",
-      "category": "frontend",
-      "lastPushed": "2026-11-01",
-      "times": 1
-    },
-    {
-      "full_name": "egoist/mygo",
-      "category": "frontend",
-      "lastPushed": "2026-10-23",
-      "times": 1
-    },
-    {
-      "full_name": "shader-effects-inc/shaders",
-      "category": "frontend",
-      "lastPushed": "2026-10-23",
-      "times": 1
-    },
-    {
-      "full_name": "oxc-project/tsrs",
-      "category": "frontend",
-      "lastPushed": "2026-10-24",
-      "times": 1
-    },
-    {
-      "full_name": "Caho1/open-claude-ui",
-      "category": "frontend",
-      "lastPushed": "2026-10-23",
-      "times": 1
-    },
-    {
-      "full_name": "zephium-browser/Zephium",
-      "category": "frontend",
-      "lastPushed": "2026-10-27",
-      "times": 1
-    },
-    {
-      "full_name": "shinshin86/mesh-avatar-studio",
-      "category": "frontend",
-      "lastPushed": "2026-11-01",
-      "times": 1
     }
-  ]
+  ],
+  "removed": [
+    {
+      "full_name": "Bridgeyaprovide/roblox-game-copier",
+      "url": "https://github.com/Bridgeyaprovide/roblox-game-copier",
+      "description": "Roblox Game Copier 2026: Pre-activated desktop edition with all features enabled for easy installation and use.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 15.5,
+      "verdict": "以「预激活安装包」形式发布，README 只给出粘贴执行的命令且与另一仓库共用同一文本模板，缺少可审阅的源码与发布产物。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:14:34，5 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "502 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 2008 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与另一仓库共用同一 README 模板",
+          "detail": "README 长度（2008 字节）与开头段落，同 2026-11-02 期的 azurerockcode/Roblox-Game-Copier 完全一致，属同一份文本模板"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库另以 azurerockcode/roblox-game-copier 的名义出现过（2026-11-02 期，400 星），两次发布使用不同账号"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker、Tempofaengage/unlocktool 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 502,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:14:34Z",
+        "pushed_at": "2026-11-02T10:14:39Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "roblox-copier",
+          "roblox-game-copy",
+          "scripts"
+        ]
+      }
+    },
+    {
+      "full_name": "MeshBeatDitch/startall-back",
+      "url": "https://github.com/MeshBeatDitch/startall-back",
+      "description": "Startall Back 2026 - Full working installer for professional desktop software utility configuration. Ready to run out-of-the-box solution.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 16,
+      "verdict": "以「预激活安装包」形式发布，README 只给出粘贴执行的命令且与另一仓库共用同一文本模板，缺少可审阅的源码与发布产物。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:15:16，8 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1983 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与另一仓库共用同一 README 模板",
+          "detail": "README 长度（1983 字节）与开头段落，同 2026-11-02 期的 gryphonautocratmatch/StartAll-Back 完全一致，属同一份文本模板"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库另以 gryphonautocratmatch/startall-back 的名义出现过（2026-11-02 期，400 星），两次发布使用不同账号"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、HandcuffHelper/ads-blocker、Tempofaengage/unlocktool 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:15:16Z",
+        "pushed_at": "2026-11-02T10:15:24Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "start-menu"
+        ]
+      }
+    },
+    {
+      "full_name": "HandcuffHelper/ads-blocker",
+      "url": "https://github.com/HandcuffHelper/ads-blocker",
+      "description": "Ads Blocker 2026: Full working installer with enhanced ad detection and blocking capabilities. Ready-to-run desktop software utility.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 16,
+      "verdict": "以「预激活安装包」形式发布，README 只给出粘贴执行的命令且与另一仓库共用同一文本模板，缺少可审阅的源码与发布产物。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:10:12，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1973 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与另一仓库共用同一 README 模板",
+          "detail": "README 长度（1973 字节）与开头段落，同 2026-11-02 期的 CelestialStarfish/Ads-Blocker 完全一致，属同一份文本模板"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库另以 CelestialStarfish/ads-blocker 的名义出现过（2026-11-02 期，401 星），两次发布使用不同账号"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、Tempofaengage/unlocktool 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:10:12Z",
+        "pushed_at": "2026-11-02T10:10:18Z",
+        "topics": [
+          "adblock-lists",
+          "adblocker-ultimate-list",
+          "adblockplus",
+          "adguard-list",
+          "adsblock",
+          "automation",
+          "block-ads",
+          "desktop"
+        ]
+      }
+    },
+    {
+      "full_name": "Tempofaengage/unlocktool",
+      "url": "https://github.com/Tempofaengage/unlocktool",
+      "description": "Unlocktool 2023: Full working installer with enhanced security features for professional desktop use.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 9.5,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:15:33，7 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "301 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1888 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 301,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:15:33Z",
+        "pushed_at": "2026-11-02T10:15:40Z",
+        "topics": [
+          "android-repair-tools",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering"
+        ]
+      }
+    },
+    {
+      "full_name": "superwardenseek/discord-server-raider",
+      "url": "https://github.com/superwardenseek/discord-server-raider",
+      "description": "Discord Server Raider 2026: Full working installer with all features activated for offline desktop use.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 10,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:11:56，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "300 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 300，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1933 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:11:56Z",
+        "pushed_at": "2026-11-02T10:12:02Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "discord-boost-tools",
+          "discord-boosting-tool",
+          "discord-boosts",
+          "discord-raid-protect",
+          "discord-raid-software"
+        ]
+      }
+    },
+    {
+      "full_name": "marbleorbweb94/ninjatrader-bot",
+      "url": "https://github.com/marbleorbweb94/ninjatrader-bot",
+      "description": "Robust Ninjatrader Bot 2026, a complete standalone setup ready to run with all features pre-activated.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 10,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:14:05，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "300 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 300，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1993 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:14:05Z",
+        "pushed_at": "2026-11-02T10:14:11Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "ninjatrader",
+          "ninjatrader-8",
+          "ninjatrader-addon",
+          "ninjatrader-indicators",
+          "open-source"
+        ]
+      }
+    },
+    {
+      "full_name": "snatchblazepergola/instagram-liker-bot",
+      "url": "https://github.com/snatchblazepergola/instagram-liker-bot",
+      "description": "Instagram Liker Bot 2026: Full working installer with automated liking functionality, ready to run on your desktop.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 10,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:13:03，7 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "200 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 200，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 2013 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 200,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:13:03Z",
+        "pushed_at": "2026-11-02T10:13:10Z",
+        "topics": [
+          "autolike",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "insta-bot",
+          "instagram-commenter",
+          "instagram-follow",
+          "instagram-followers-free"
+        ]
+      }
+    },
+    {
+      "full_name": "Bronzekrostretch43/fonetrans",
+      "url": "https://github.com/Bronzekrostretch43/fonetrans",
+      "description": "PhoneTrans 2024: Full working installer with all features unlocked for seamless desktop operation.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 10,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:12:30，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "200 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 200，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1963 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 200,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:12:30Z",
+        "pushed_at": "2026-11-02T10:12:36Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "fonnte",
+          "iphone-file-transfer",
+          "manage-ios-devices",
+          "open-source",
+          "phone-tool"
+        ]
+      }
+    },
+    {
+      "full_name": "SonicLarvaAcclaim/chimera",
+      "url": "https://github.com/SonicLarvaAcclaim/chimera",
+      "description": "Chimera 2026: Full working installer with all utilities and configurations ready to run on your desktop.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "score": 10,
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-02 18:11:15，6 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "200 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 200，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 1953 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Bridgeyaprovide/roblox-game-copier、MeshBeatDitch/startall-back、HandcuffHelper/ads-blocker 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "snapshot": {
+        "stars": 200,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-02T10:11:15Z",
+        "pushed_at": "2026-11-02T10:11:21Z",
+        "topics": [
+          "automation",
+          "chimera",
+          "chimera-framework",
+          "chimera-linux",
+          "chimera-meta-world",
+          "chimera-tool-pro",
+          "chimera-tool-pro-spark",
+          "desktop"
+        ]
+      }
+    }
+  ],
+  "watchlist": []
 }

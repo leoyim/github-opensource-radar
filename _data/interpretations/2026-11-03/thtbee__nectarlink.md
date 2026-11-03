@@ -5,11 +5,11 @@ category: mobile
 categoryLabel: 移动 / 桌面 / 跨端
 rating: 4
 language: Rust
-stars: 1759
-starGain: 1022
+stars: 1800
+starGain: 1063
 url: https://github.com/thtbee/nectarlink
 tags: [android, jetpack-compose, kde-connect-features, kotlin, localsend, phone-link, qt, rust]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # thtbee/nectarlink · 项目解读
@@ -21,8 +21,8 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 移动 / 桌面 / 跨端 |
 | 评分 | 🌟🌟🌟🌟 4.0 / 5.0 |
 | 语言 | Rust |
-| 星标 | 1,759 |
-| 今日新增 | +1,022 |
+| 星标 | 1,800 |
+| 今日新增 | +1,063 |
 | 仓库 | https://github.com/thtbee/nectarlink |
 
 ## 1. 它解决什么问题

@@ -5,11 +5,11 @@ category: frontend
 categoryLabel: 前端 / Web
 rating: 3.5
 language: JavaScript
-stars: 1726
-starGain: 106
+stars: 1734
+starGain: 114
 url: https://github.com/gr8rstudio/gr8r-studio
 tags: []
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # gr8rstudio/gr8r-studio · 项目解读
@@ -21,8 +21,8 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 前端 / Web |
 | 评分 | 🌟🌟🌟🌗 3.5 / 5.0 |
 | 语言 | JavaScript |
-| 星标 | 1,726 |
-| 今日新增 | +106 |
+| 星标 | 1,734 |
+| 今日新增 | +114 |
 | 仓库 | https://github.com/gr8rstudio/gr8r-studio |
 
 ## 1. 它解决什么问题

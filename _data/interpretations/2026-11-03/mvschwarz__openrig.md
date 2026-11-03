@@ -5,11 +5,11 @@ category: tools
 categoryLabel: 开发工具 / 效率
 rating: 3.5
 language: TypeScript
-stars: 8561
+stars: 8562
 starGain: 19
 url: https://github.com/mvschwarz/openrig
 tags: [agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code, cli, codex-cli, multi-agent]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # mvschwarz/openrig · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 开发工具 / 效率 |
 | 评分 | 🌟🌟🌟🌗 3.5 / 5.0 |
 | 语言 | TypeScript |
-| 星标 | 8,561 |
+| 星标 | 8,562 |
 | 今日新增 | +19 |
 | 仓库 | https://github.com/mvschwarz/openrig |
 

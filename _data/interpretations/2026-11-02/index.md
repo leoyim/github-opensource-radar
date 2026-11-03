@@ -1,6 +1,6 @@
 # 2026-11-02 · 逐项解读目录
 
-本期共 30 个项目，独立解读 30 篇（未撰写 0 篇为 README 兜底）。
+本期共 27 个项目，独立解读 27 篇（未撰写 0 篇为 README 兜底）。
 
 ## 本期横向观察
 
@@ -47,9 +47,6 @@
 
 - **anthropics/claude-code** · 🌟🌟🌟🌟🌗 4.5 — 住在终端里的编码 agent，本轮 +140——它自己就是这波榜单里一半项目的前提。（[Markdown](anthropics__claude-code.md) / [HTML](anthropics__claude-code.html)）
 - **mizorewww/x_gift_bot** · 🌟🌟🌟🌗 3.5 — 用你的 X 登录 Cookie 和银行卡，自动给他人下单赠送 X Premium 的兑换码系统。（[Markdown](mizorewww__x_gift_bot.md) / [HTML](mizorewww__x_gift_bot.html)）
-- **CelestialStarfish/Ads-Blocker** · 🌟🌟🌟🌗 3.5 — ⚠️ 疑似投毒仓库：2 天新建、400 星、0 fork、无语言无许可，README 要求粘贴 PowerShell 命令安装「预激活版本」。（[Markdown](CelestialStarfish__Ads-Blocker.md) / [HTML](CelestialStarfish__Ads-Blocker.html)）
-- **gryphonautocratmatch/StartAll-Back** · 🌟🌟🌟🌗 3.5 — ⚠️ 与 Ads-Blocker 同模板的第二个投毒仓库：换掉软件名，README 一字未改。（[Markdown](gryphonautocratmatch__StartAll-Back.md) / [HTML](gryphonautocratmatch__StartAll-Back.html)）
-- **azurerockcode/Roblox-Game-Copier** · 🌟🌟🌟🌗 3.5 — ⚠️ 同批第三个投毒仓库：换成 Roblox 游戏复制，模板与文案与另两个完全相同。（[Markdown](azurerockcode__Roblox-Game-Copier.md) / [HTML](azurerockcode__Roblox-Game-Copier.html)）
 
 ## 移动 / 桌面 / 跨端
 

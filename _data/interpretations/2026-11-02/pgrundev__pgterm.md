@@ -9,7 +9,7 @@ stars: 365
 starGain: 1
 url: https://github.com/pgrundev/pgterm
 tags: [postgres, postgresql, postgresql-database, terminal, tui]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # pgrundev/pgterm · 项目解读

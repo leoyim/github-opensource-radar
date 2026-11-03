@@ -25,37 +25,37 @@
 - **mealie-recipes/mealie** · 🌟🌟🌟🌟 4.0 — 自建的家庭食谱库：贴个链接自动抓配方，顺带把一周吃啥和采购清单一起管了。（[Markdown](mealie-recipes__mealie.md) / [HTML](mealie-recipes__mealie.html)）
 - **gr8rstudio/gr8r-studio** · 🌟🌟🌟🌗 3.5 — 不用任何 UI 框架、不引运行时依赖的项目管理前端，用原生 ES 模块把六种视图做齐。（[Markdown](gr8rstudio__gr8r-studio.md) / [HTML](gr8rstudio__gr8r-studio.html)）
 - **webpack/webpack** · 🌟🌟🌟🌗 3.5 — 十五年历史的打包器，今天仍在每天发布，增量 +3 就是它的常态。（[Markdown](webpack__webpack.md) / [HTML](webpack__webpack.html)）
-- **ProxyShard/ShardBrowser** · 🌟🌟🌟 3.0 — 改在浏览器引擎层的指纹伪装：不是注入 JS 打补丁，而是让 Chromium 自己报出假身份。（[Markdown](ProxyShard__ShardBrowser.md) / [HTML](ProxyShard__ShardBrowser.html)）
 - **mkturkcan/valdrada** · 🌟🌟🌟 3.0 — 用公开市政数据编译出一座可运行的纽约，连车道标线和行人都是可仿真的。（[Markdown](mkturkcan__valdrada.md) / [HTML](mkturkcan__valdrada.html)）
+- **chenglou/handwired** · 🌟🌟🌟 3.0 — 让普通 JavaScript 直接变成可微神经网络，权重手写、不必训练。（[Markdown](chenglou__handwired.md) / [HTML](chenglou__handwired.html)）
 
 ## 后端 / 云原生
 
 - **AprilNEA/OpenLogi** · 🌟🌟🌟🌟🌗 4.5 — 罗技官方驱动的替代品：Rust 原生、配置一个 TOML 文件、不登录账号也不上报遥测。（[Markdown](AprilNEA__OpenLogi.md) / [HTML](AprilNEA__OpenLogi.html)）
 - **rclone/rclone** · 🌟🌟🌟🌟 4.0 — 把七十多种云存储统一成一套命令行语义，rsync 的那套心智直接搬过来用。（[Markdown](rclone__rclone.md) / [HTML](rclone__rclone.html)）
 - **namannn04/Veronica** · 🌟🌟🌟🌗 3.5 — 把 Ubuntu 上散落的一堆小工具收进一个原生控制中心，包括 agent 的用量与限流。（[Markdown](namannn04__Veronica.md) / [HTML](namannn04__Veronica.html)）
-- **slaterain/nv-rs** · 🌟🌟🌟🌗 3.5 — 用 Rust 与 Bevy 重写《辐射：新维加斯》的引擎，目标是 1:1 复刻，连原版的怪癖都保留。（[Markdown](slaterain__nv-rs.md) / [HTML](slaterain__nv-rs.html)）
+- **decionis/agent-safe-pipeline** · 🌟🌟🌟🌗 3.5 — 在 agent 与真实世界之间插一道授权闸门，每个动作先拿一次性授权再执行。（[Markdown](decionis__agent-safe-pipeline.md) / [HTML](decionis__agent-safe-pipeline.html)）
 - **UnboundTechCo/defyxVPN** · 🌟🌟🌟🌗 3.5 — 一个 Flutter 客户端里塞了五种翻墙协议，按网络状况自动挑一条能通的。（[Markdown](UnboundTechCo__defyxVPN.md) / [HTML](UnboundTechCo__defyxVPN.html)）
 
 ## 数据 / 数据库
 
 - **debezium/debezium** · 🌟🌟🌟🌟 4.0 — 把数据库的每一次行级变更变成可订阅的事件流，应用不用再猜数据什么时候变了。（[Markdown](debezium__debezium.md) / [HTML](debezium__debezium.html)）
 - **stablemates/workhorse** · 🌟🌟🌟🌗 3.5 — 不要 broker 的任务队列：队列状态、调度、重试、恢复全部由 PostgreSQL 的 SQL 函数承担。（[Markdown](stablemates__workhorse.md) / [HTML](stablemates__workhorse.html)）
+- **fj1981/dqex** · 🌟🌟🌟 3.0 — 单文件二进制的数据库工作台，专为内网与气隙环境设计。（[Markdown](fj1981__dqex.md) / [HTML](fj1981__dqex.html)）
 - **datasifaw/dataiku-projet-bancaire-analytics** · 🌟🌟 2.0 — 一个 Dataiku 银行分析项目的法语文档仓库，没有代码、没有许可证、没有说明。（[Markdown](datasifaw__dataiku-projet-bancaire-analytics.md) / [HTML](datasifaw__dataiku-projet-bancaire-analytics.html)）
 - **JellyGlance/Server** · 🌟🌗 1.5 — 给 Jellyfin 和 Emby 装一块仪表盘：谁在播、播了什么、库有多大、下载到哪了。（[Markdown](JellyGlance__Server.md) / [HTML](JellyGlance__Server.html)）
-- **2giosangmitom/sqmeow.nvim** · 🌟🌗 1.5 — 在 Neovim 里查库改数据，结果集用 Polars 在本地过滤排序，不用切到 GUI。（[Markdown](2giosangmitom__sqmeow.nvim.md) / [HTML](2giosangmitom__sqmeow.nvim.html)）
 
 ## 开发工具 / 效率
 
 - **AssassinCreator/steam-stash-value-report-card** · 🌟🌟🌟🌟 4.0 — 把 Steam 库存估个价，然后印成一张能发出去的卡片——每个数字都标了口径和时窗。（[Markdown](AssassinCreator__steam-stash-value-report-card.md) / [HTML](AssassinCreator__steam-stash-value-report-card.html)）
-- **Bridgeyaprovide/roblox-game-copier** · 🌟🌟🌟🌗 3.5 — 名为 Roblox 游戏复制器，README 的实际内容是让你往 PowerShell 里粘一段命令。（[Markdown](Bridgeyaprovide__roblox-game-copier.md) / [HTML](Bridgeyaprovide__roblox-game-copier.html)）
-- **MeshBeatDitch/startall-back** · 🌟🌟🌟🌗 3.5 — 与同批次另两个仓库逐字相同的 README：不交付软件，只交付一段让你粘进 PowerShell 的命令。（[Markdown](MeshBeatDitch__startall-back.md) / [HTML](MeshBeatDitch__startall-back.html)）
-- **HandcuffHelper/ads-blocker** · 🌟🌟🌟🌗 3.5 — 第三个同模板空壳：名字叫广告拦截器，实际内容是一段请你粘进 PowerShell 的命令。（[Markdown](HandcuffHelper__ads-blocker.md) / [HTML](HandcuffHelper__ads-blocker.html)）
 - **mvschwarz/openrig** · 🌟🌟🌟🌗 3.5 — harness 包住模型，rig 包住你的 harness——用一份 YAML 定义一支常驻的 agent 团队。（[Markdown](mvschwarz__openrig.md) / [HTML](mvschwarz__openrig.html)）
+- **linearmouse/linearmouse** · 🌟🌟🌟 3.0 — 把 macOS 藏起来的那部分鼠标与触控板控制权还回来。（[Markdown](linearmouse__linearmouse.md) / [HTML](linearmouse__linearmouse.html)）
+- **OpenTodoApp/OpenTodo** · 🌟🌟🌟 3.0 — 自托管、本地优先的任务管理器，一个容器一个 SQLite 文件。（[Markdown](OpenTodoApp__OpenTodo.md) / [HTML](OpenTodoApp__OpenTodo.html)）
+- **UE4SS-RE/RE-UE4SS** · 🌟🌟🌟 3.0 — 虚幻引擎 4/5 的注入式脚本与 Mod 框架，一套工具覆盖从脚本到 SDK。（[Markdown](UE4SS-RE__RE-UE4SS.md) / [HTML](UE4SS-RE__RE-UE4SS.html)）
 
 ## 移动 / 桌面 / 跨端
 
 - **boykopovar/AnyPS5** · 🌟🌟🌟🌟🌗 4.5 — 不做模拟器：把 PS5 可执行文件重链接成目标系统原生格式，直接动态链接系统库实现。（[Markdown](boykopovar__AnyPS5.md) / [HTML](boykopovar__AnyPS5.html)）
-- **Genymobile/scrcpy** · 🌟🌟🌟🌟🌗 4.5 — 不装 App、不 root，一根 USB 线把安卓屏幕和操作搬到电脑上。（[Markdown](Genymobile__scrcpy.md) / [HTML](Genymobile__scrcpy.html)）
 - **Verlintas/NOIR** · 🌟🌟🌟🌟 4.0 — 用 adb 把安卓机上每个 App 的权限、上报域名和数据流向摊开，每条处置都带回滚命令。（[Markdown](Verlintas__NOIR.md) / [HTML](Verlintas__NOIR.html)）
 - **thtbee/nectarlink** · 🌟🌟🌟🌟 4.0 — 把 Phone Link、KDE Connect、LocalSend 三件事合成一个：通知、剪贴板、文件、投屏都在本机直连。（[Markdown](thtbee__nectarlink.md) / [HTML](thtbee__nectarlink.html)）
-- **jackwener/DSH-Android** · 🌟🌟🌟🌟 4.0 — 一个 APK 把 DeepSeek Harness 塞进安卓：免 root、免 Termux，用读屏加 Shizuku 替你点 App。（[Markdown](jackwener__DSH-Android.md) / [HTML](jackwener__DSH-Android.html)）
+- **jryang1997/MenuBarMijia** · 🌟🌟🌟🌟 4.0 — 把米家设备搬到 Mac 菜单栏，扫码直连，不必先搭 Home Assistant。（[Markdown](jryang1997__MenuBarMijia.md) / [HTML](jryang1997__MenuBarMijia.html)）
+- **Genymobile/scrcpy** · 🌟🌟🌟🌟 4.0 — 不装 App、不 root，一根 USB 线把安卓屏幕和操作搬到电脑上。（[Markdown](Genymobile__scrcpy.md) / [HTML](Genymobile__scrcpy.html)）

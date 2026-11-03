@@ -9,7 +9,7 @@ stars: 249
 starGain: 0
 url: https://github.com/arpanjot-coding/Datly
 tags: [ai-analytics, analytics, bi, business-intelligence, dag, data-analysis, data-science, data-visualization]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # arpanjot-coding/Datly · 项目解读

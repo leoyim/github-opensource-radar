@@ -5,11 +5,11 @@ category: frontend
 categoryLabel: 前端 / Web
 rating: 3
 language: JavaScript
-stars: 254
-starGain: 5
+stars: 255
+starGain: 6
 url: https://github.com/mkturkcan/valdrada
 tags: [digital-twin, new-york, new-york-city, simulation, three-js, threejs]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # mkturkcan/valdrada · 项目解读
@@ -21,8 +21,8 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 前端 / Web |
 | 评分 | 🌟🌟🌟 3.0 / 5.0 |
 | 语言 | JavaScript |
-| 星标 | 254 |
-| 今日新增 | +5 |
+| 星标 | 255 |
+| 今日新增 | +6 |
 | 仓库 | https://github.com/mkturkcan/valdrada |
 
 ## 1. 它解决什么问题
@@ -67,7 +67,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **64** · 社区规模 **44** · 更新活跃 **34** · 工程成熟 **100**
+热度增速 **66** · 社区规模 **44** · 更新活跃 **33** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **3.0 星**）
 
 **结论**：思路上乘——把「世界」当作可编译的产物，而不是手工搭建的场景。但当前阶段是研究工具而非生产平台：单人维护、单城市、平台受限，适合做实验与论文，不适合承接工业级数据管线。

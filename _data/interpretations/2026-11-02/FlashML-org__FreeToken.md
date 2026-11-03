@@ -9,7 +9,7 @@ stars: 15434
 starGain: 242
 url: https://github.com/FlashML-org/FreeToken
 tags: [deepseek-v4, edge, glm, inference, minimax, moe, qwen, transformer]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # FlashML-org/FreeToken · 项目解读

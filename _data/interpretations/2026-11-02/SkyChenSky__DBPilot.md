@@ -9,7 +9,7 @@ stars: 93
 starGain: 1
 url: https://github.com/SkyChenSky/DBPilot
 tags: [database, dba, mcp-server]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # SkyChenSky/DBPilot · 项目解读

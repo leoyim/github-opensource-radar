@@ -5,11 +5,11 @@ category: tools
 categoryLabel: 开发工具 / 效率
 rating: 4
 language: Python
-stars: 603
+stars: 611
 starGain: null
 url: https://github.com/AssassinCreator/steam-stash-value-report-card
 tags: [cli, inventory, price-check, python, report-card, steam, steam-market, valuation]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # AssassinCreator/steam-stash-value-report-card · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 开发工具 / 效率 |
 | 评分 | 🌟🌟🌟🌟 4.0 / 5.0 |
 | 语言 | Python |
-| 星标 | 603 |
+| 星标 | 611 |
 | 今日新增 | — |
 | 仓库 | https://github.com/AssassinCreator/steam-stash-value-report-card |
 

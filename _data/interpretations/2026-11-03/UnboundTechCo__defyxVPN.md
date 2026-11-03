@@ -9,7 +9,7 @@ stars: 895
 starGain: null
 url: https://github.com/UnboundTechCo/defyxVPN
 tags: [anticensorship, defyx, outline, psiphon, serverless, vpn, warp, wireguard]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # UnboundTechCo/defyxVPN · 项目解读
@@ -66,7 +66,7 @@ Flutter 负责界面与状态管理，真正干活的是 DXcore——它把多�
 
 ## 8. 评分依据
 
-热度增速 **75** · 社区规模 **55** · 更新活跃 **68** · 工程成熟 **100**
+热度增速 **72** · 社区规模 **55** · 更新活跃 **67** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **3.5 星**）
 
 **结论**：工程思路（多协议统一内核 + 自动选路）是这类工具的合理演进方向。但它的核心价值与风险都集中在「信任」上：协议再好，节点运营方的日志策略才是决定隐私的关键。作为架构参考有价值，作为日常依赖需自行评估合规与信任成本。

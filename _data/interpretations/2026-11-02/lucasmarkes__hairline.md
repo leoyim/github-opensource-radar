@@ -9,7 +9,7 @@ stars: 3245
 starGain: 64
 url: https://github.com/lucasmarkes/hairline
 tags: [animation, isometric, react, shadcn, svg, typescript]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # lucasmarkes/hairline · 项目解读

@@ -5,11 +5,11 @@ category: backend
 categoryLabel: 后端 / 云原生
 rating: 4
 language: Go
-stars: 60747
+stars: 60749
 starGain: 29
 url: https://github.com/rclone/rclone
 tags: [azure-blob, azure-blob-storage, azure-files, backblaze-b2, cloud-storage, dropbox, encryption, ftp]
-generatedAt: 2026-11-03T01:45:02.177Z
+generatedAt: 2026-11-03T03:03:33.475Z
 ---
 
 # rclone/rclone · 项目解读
@@ -21,7 +21,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 | 分类 | 后端 / 云原生 |
 | 评分 | 🌟🌟🌟🌟 4.0 / 5.0 |
 | 语言 | Go |
-| 星标 | 60,747 |
+| 星标 | 60,749 |
 | 今日新增 | +29 |
 | 仓库 | https://github.com/rclone/rclone |
 
@@ -67,7 +67,7 @@ generatedAt: 2026-11-03T01:45:02.177Z
 
 ## 8. 评分依据
 
-热度增速 **72** · 社区规模 **90** · 更新活跃 **77** · 工程成熟 **100**
+热度增速 **71** · 社区规模 **90** · 更新活跃 **76** · 工程成熟 **100**
 （权重 45% / 25% / 18% / 12%，合成分映射到 1.0–5.0 星，按 0.5 取整 → **4.0 星**）
 
 **结论**：不需要评估，只需要正确使用。它的价值恰恰在于十年不变的接口语义——这类工具的正确用法是把风险点记牢（尤其 sync 的删除行为），而不是追新特性。

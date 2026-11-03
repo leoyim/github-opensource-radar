@@ -9,7 +9,7 @@ stars: 1808
 starGain: 854
 url: https://github.com/haydenschmitty/floorplan
 tags: [ai-coding, architecture-diagram, claude, claude-code, claude-code-plugin, codebase-visualization, codex, codex-plugin]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # haydenschmitty/floorplan · 项目解读

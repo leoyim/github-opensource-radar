@@ -9,7 +9,7 @@ stars: 38378
 starGain: 112
 url: https://github.com/JCodesMore/ai-website-cloner-template
 tags: [ai, ai-agents, ai-tools, automation, boilerplate, claude, claude-code, clone]
-generatedAt: 2026-11-02T02:17:39.678Z
+generatedAt: 2026-11-03T03:03:51.004Z
 ---
 
 # JCodesMore/ai-website-cloner-template · 项目解读
