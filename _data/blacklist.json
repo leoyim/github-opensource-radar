@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-03",
-    "policyZh": "本站以技术价值为入选标准。不进入榜单的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 12,
+    "updated": "2026-11-04",
+    "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
+    "count": 13,
     "publicCount": 12,
     "campaigns": [
       {
@@ -981,6 +981,64 @@
       },
       "state": "blocked",
       "campaign": "installer-wave-2026-11"
+    },
+    {
+      "full_name": "bannedbook/fanqiang",
+      "owner": "bannedbook",
+      "name": "fanqiang",
+      "url": "https://github.com/bannedbook/fanqiang",
+      "description": "翻墙-科学上网",
+      "language": "Kotlin",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "backend",
+      "status": "excluded",
+      "state": "blocked",
+      "campaign": "editorial-boundary",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-04",
+      "removedAt": "2026-11-04",
+      "issues": [
+        "2026-11-04"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "README 主体为外链索引",
+          "detail": "README 摘录 466 字符全部是指向第三方教程与工具站点的链接，逐条罗列分类导航，未包含项目自身的实现说明、架构描述或使用文档"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，内容的使用与再分发条件未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "仓库语言与内容不匹配",
+          "detail": "仓库标注语言为 Kotlin，但可见内容为 Markdown 链接集合，没有可对应的工程代码结构"
+        }
+      ],
+      "verdict": "项目主体是面向外部资源的分类导航，缺少可供独立判断的第一方技术内容，无法支撑技术解读，故不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 56356,
+        "forks": 8723,
+        "open_issues": 330,
+        "license": "",
+        "created_at": null,
+        "pushed_at": null,
+        "topics": [
+          "brook",
+          "daze",
+          "fanqiang",
+          "goflyway",
+          "lightsocks",
+          "proxy",
+          "psiphon",
+          "shadowsocks"
+        ]
+      }
     }
   ]
 }

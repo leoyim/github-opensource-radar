@@ -1,0 +1,2478 @@
+{
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T09:37:42.266+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-03",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 724,
+    "unclassified": 73,
+    "selected": 29,
+    "suppressedByHistory": 128,
+    "sameDateExempt": 0,
+    "removed": 0,
+    "removedTotal": 0,
+    "offTopic": 1,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "JustVugg/colibri",
+          "owner": "JustVugg",
+          "name": "colibri",
+          "url": "https://github.com/JustVugg/colibri",
+          "homepage": "https://justvugg.github.io/colibri",
+          "description": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
+          "language": "C",
+          "topics": [],
+          "stars": 47261,
+          "forks": 5469,
+          "open_issues": 169,
+          "starGain": 802,
+          "heat": 802,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 126,
+          "created_at": "2026-07-01T12:27:49Z",
+          "pushed_at": "2026-11-04T00:38:28Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 88.5,
+          "breakdown": {
+            "heat": 96,
+            "community": 89,
+            "activity": 72,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Website · Discord · English · 简体中文 · 繁體中文 · Italiano · 日本語 · Bahasa Indonesia · Português (Brasil)\n\nTiny engine, immense model. colibri runs very large open models on the machine you already have. A mixture-of-experts model of hundreds of billions of parameters uses only a small part of itself for each token, so colibri keeps that part in RAM and reads the rest, the experts, from the disk when the model asks for them. Pure C, one file per model family, no GPU required.\n\nThirteen engines run today. Ten are for language models: GLM-5.2/5.3 (which also runs Mistral-Large-4 ), GLM-5.3-Flash , Inkling , Kimi K3 , DeepSeek V4 Flash , DeepSeek V4.1 Flash , MiMo-V2.6 Flash (and Pro), Qwen3.8-Flash-Next , Qwen3.6 (which also runs Qwen3-Coder, the dense Qwen3.8-27B, Flint , Muse Spark Open and LFM3-VL ) and OLMoE . One draws pictures: Qwen-Image-2.1 . Two answer decisions: Laya and GLiNER2.5-Decide , with a third decision model, Clef , on the Qwen3.6 engine. The language models also run from the GGUF files already published, read as they are (GGUF), on the CPU, on any GPU through Vulkan and on NVIDIA cards through CUDA. Which one for my machine",
+            "features": [
+              "On this page click Code , then Download ZIP , and unzip it.",
+              "Double-click START-HERE.bat in the unzipped folder. If Python is",
+              "looks at your machine : RAM, free disk, CPU and GPUs;",
+              "recommends a model that fits : the part of the model that always stays in",
+              "gets the engine : it builds it for your machine when a compiler is there,",
+              "downloads the model with progress and resume: stop it whenever you like,",
+              "starts colibri and opens the dashboard in your browser, and prints the",
+              "RAM is two numbers: below the first the model does not start, from the"
+            ],
+            "sections": [
+              "Get started in one step",
+              "If something goes wrong",
+              "Let your AI assistant set it up",
+              "Or by hand",
+              "What colibri is, and why",
+              "Which model for my machine",
+              "GPUs",
+              "No GPU needed",
+              "Vulkan: any GPU",
+              "CUDA: NVIDIA cards",
+              "Apple Silicon",
+              "System One: a decision with a probability",
+              "The dashboard",
+              "The chat UI"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 53551
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "tashfeenahmed/freellmapi",
+          "owner": "tashfeenahmed",
+          "name": "freellmapi",
+          "url": "https://github.com/tashfeenahmed/freellmapi",
+          "homepage": "https://freellmapi.co",
+          "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 47070,
+          "forks": 6433,
+          "open_issues": 54,
+          "starGain": 688,
+          "heat": 688,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 196,
+          "created_at": "2026-04-21T13:38:59Z",
+          "pushed_at": "2026-11-03T23:39:10Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87.4,
+          "breakdown": {
+            "heat": 95,
+            "community": 89,
+            "activity": 68,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. One OpenAI-compatible endpoint.\n\nAggregate free tiers from dozens of providers, plus custom OpenAI-compatible chat, embedding, image, and audio endpoints, behind a single /v1 API. Keys are stored encrypted. A router picks the best available model for each request, falls over to the next provider when one is rate-limited, and tracks per-key usage so you stay under every free-tier cap.\n\nfreellmapi.co · browse the full catalog: 474 model families, 635 free endpoints",
+            "features": [
+              "Why this exists",
+              "Supported providers",
+              "Compatible CLIs & coding agents",
+              "How it compares",
+              "Features",
+              "Quick start",
+              "Desktop app",
+              "Works with OpenAI-compatible clients"
+            ],
+            "sections": [
+              "FreeLLMAPI",
+              "Contents",
+              "Why this exists",
+              "Supported providers",
+              "Compatible CLIs & coding agents",
+              "How it compares",
+              "Features",
+              "Quick start",
+              "Desktop app",
+              "Works with OpenAI-compatible clients",
+              "Languages",
+              "Premium (live catalog)",
+              "Using the API",
+              "Screenshots"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 62398
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "deepseek-ai/dsh-superagent-prototype",
+          "owner": "deepseek-ai",
+          "name": "dsh-superagent-prototype",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+          "homepage": "",
+          "description": "Towards a More Autonomous Agent System",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 16866,
+          "forks": 1820,
+          "open_issues": 0,
+          "starGain": 3170,
+          "heat": 3170,
+          "heatBasis": "snapshot",
+          "heatPercentile": 100,
+          "ageDays": 4,
+          "created_at": "2026-10-31T09:32:46Z",
+          "pushed_at": "2026-11-03T09:29:14Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84,
+          "breakdown": {
+            "heat": 100,
+            "community": 81,
+            "activity": 68,
+            "maturity": 55
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "dsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for DeepSeek Harness. It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web panel shows what needs a person.\n\nIt is also a way of working with an agent: take as little human attention as possible, and give as much value as possible. An agent that can act for a whole team can also waste a whole team's attention, so it acts only when asked or when a rule the team wrote allows it, and speaks only when someone must act or can use a result. docs/000-philosophy.md explains the principle and what it asks of the operator.\n\nSetup has many steps, so an agent does it with you. Ask your coding agent:",
+            "features": [
+              "000 Philosophy",
+              "001 Domain model",
+              "002 Authorization",
+              "003 Execution",
+              "004 Prompts",
+              "005 Panel",
+              "006 Deployment: manual setup, configuration, upgrades and troubleshooting",
+              "007 Architecture"
+            ],
+            "sections": [
+              "dsh-superagent",
+              "Setup",
+              "Documentation",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2571
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "kornia/kornia",
+          "owner": "kornia",
+          "name": "kornia",
+          "url": "https://github.com/kornia/kornia",
+          "homepage": "https://kornia.readthedocs.io",
+          "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+          "language": "Python",
+          "topics": [
+            "artificial-intelligence",
+            "computer-vision",
+            "deep-learning",
+            "hacktoberfest",
+            "image-processing",
+            "machine-learning",
+            "neural-network",
+            "python"
+          ],
+          "stars": 12312,
+          "forks": 1509,
+          "open_issues": 151,
+          "starGain": 272,
+          "heat": 272,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 2996,
+          "created_at": "2018-08-22T10:31:37Z",
+          "pushed_at": "2026-11-03T22:45:58Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 83.9,
+          "breakdown": {
+            "heat": 88,
+            "community": 78,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Docs • Try it Now • Tutorials • Examples • Blog • Community\n\nKornia is a differentiable computer vision library that provides a rich set of differentiable image processing and geometric vision algorithms. Built on top of PyTorch, Kornia integrates seamlessly into existing AI workflows, allowing you to leverage powerful batch transformations, auto-differentiation and GPU acceleration. Whether you're working on image transformations, augmentations, or AI-driven image processing, Kornia equips you with the tools you need to bring your ideas to life.\n\nKornia pays off where a hand-written version gets long or fragile, or where the alternatives leave the GPU:",
+            "features": [
+              "Breadth. 1,200+ public operators, most with no torchvision equivalent: camera models and",
+              "Per-sample parameters in one batched call. gaussian blur2d(x, (9, 9), sigma) takes a (B, 2) sigma ;",
+              "Batched minimal solvers and robust estimation. find fundamental(x1, x2, method=\"7POINT\") solves (B, 7, 2)",
+              "Differentiable geometry. Depth to 3D and back ( depth to 3d v2 , unproject points , project points ),",
+              "Annotated augmentation. AugmentationSequential applies one sampled transform to images, masks, boxes and",
+              "Local features on the GPU. SIFT and HardNet, DISK, ALIKED, XFeat, DeDoDe, LoFTR and LightGlue, with",
+              "Morphology with arbitrary structuring elements on batched tensors.",
+              "Compiles and exports. Nearly all probed operator configurations run under torch.compile and match eager,"
+            ],
+            "sections": [
+              "When to use Kornia",
+              "Key Components",
+              "CUDA and Half-Precision Support",
+              "Sponsorship",
+              "Installation",
+              "From pip",
+              "Quick Start",
+              "Load and prepare your image",
+              "alternatively, load image with PIL",
+              "img = Image.open(\"img.jpeg\").resize((256, 256))",
+              "img = np.array(img)",
+              "Define an augmentation pipeline",
+              "Leveraging StableDiffusion models",
+              "Chain ONNX models from HuggingFace repo and your own local m"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 27201
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "lexmount/moli",
+          "owner": "lexmount",
+          "name": "moli",
+          "url": "https://github.com/lexmount/moli",
+          "homepage": "https://browser.lexmount.com",
+          "description": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+          "language": "Rust",
+          "topics": [
+            "ai-agents",
+            "ai-tools",
+            "browser",
+            "browser-automation",
+            "cloud-browser",
+            "headless",
+            "headless-browser",
+            "kitesurf"
+          ],
+          "stars": 22449,
+          "forks": 621,
+          "open_issues": 526,
+          "starGain": 229,
+          "heat": 229,
+          "heatBasis": "trending",
+          "heatPercentile": 86,
+          "ageDays": 86,
+          "created_at": "2026-08-10T13:20:30Z",
+          "pushed_at": "2026-11-03T19:14:36Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 83.9,
+          "breakdown": {
+            "heat": 86,
+            "community": 80,
+            "activity": 74,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 43,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "src=\"assets/moli-browser-banner.jpg\" alt=\"Moli Browser — Structure first. Pixels on demand. Open source browser for AI agents.\" width=\"1086\" /\n\nMoli is a production-ready headless browser for AI agents. Its on-demand layout and rendering design combines a complete browser runtime with a lightweight resource footprint.\n\nMoli helps your AI agent fetch and extract web pages, search the web, and automate browser tasks.",
+            "features": [
+              "Full-featured — real JavaScript, DOM, CSS, networking, storage, layout,",
+              "Fast — most automation requests never need visual rendering, so",
+              "Resource-efficient — layout and pixels are generated only when needed,",
+              "Complete web runtime — streaming HTML parsing, native DOM, V8 JavaScript,",
+              "Extraction-optimized outputs — the CLI directly produces HTML, Markdown,",
+              "Unified automation binary — CDP, WebDriver Classic, and WebDriver BiDi",
+              "Real visual capabilities on demand — add --layout to enable complete box",
+              "Controllable operational options — profiles, cookies, HTTP cache, proxies,"
+            ],
+            "sections": [
+              "Quick start",
+              "Direct installation",
+              "Showcase",
+              "CLI usage",
+              "Extract a page",
+              "Start the automation server",
+              "Basic automation server for DOM-first workloads",
+              "Enable real geometry, coordinate input, and screenshot/scree",
+              "Also fetch optional image, font, audio, video, media, and te",
+              "Why Moli",
+              "Current capabilities",
+              "Moli's relationship with Lexmount",
+              "Cost controls",
+              "Architecture"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 17737
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "immich-app/immich",
+          "owner": "immich-app",
+          "name": "immich",
+          "url": "https://github.com/immich-app/immich",
+          "homepage": "https://immich.app",
+          "description": "High performance self-hosted photo and video management solution.",
+          "language": "TypeScript",
+          "topics": [
+            "backup-tool",
+            "flutter",
+            "google-photos",
+            "google-photos-alternative",
+            "javascript",
+            "mobile-app",
+            "nestjs",
+            "nodejs"
+          ],
+          "stars": 118130,
+          "forks": 7467,
+          "open_issues": 720,
+          "starGain": 104,
+          "heat": 104,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 1734,
+          "created_at": "2022-02-03T15:56:27Z",
+          "pushed_at": "2026-11-04T00:38:44Z",
+          "license": "AGPL-3.0",
+          "rating": 4.5,
+          "composite": 90.7,
+          "breakdown": {
+            "heat": 92,
+            "community": 94,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "High performance self-hosted photo and video management solution\n\nCatalà Español Français Italiano 日本語 한국어 Deutsch Nederlands Türkçe 简体中文 正體中文 Українська Русский Български Polski Português Brasileiro Svenska العربية Tiếng Việt ภาษาไทย മലയാളം\n\n- Documentation - About - Installation - Roadmap - Demo - Features - Translations - Contributing",
+            "features": [
+              "Documentation",
+              "About",
+              "Installation",
+              "Roadmap",
+              "Demo",
+              "Features",
+              "Translations",
+              "Contributing"
+            ],
+            "sections": [
+              "Links",
+              "Demo",
+              "Login credentials",
+              "Features",
+              "Translations",
+              "Repository activity",
+              "Contributors"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 5493
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "mattpocock/sandcastle",
+          "owner": "mattpocock",
+          "name": "sandcastle",
+          "url": "https://github.com/mattpocock/sandcastle",
+          "homepage": "",
+          "description": "Orchestrate sandboxed coding agents in TypeScript with sandcastle.run()",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 8816,
+          "forks": 943,
+          "open_issues": 144,
+          "starGain": 31,
+          "heat": 31,
+          "heatBasis": "trending",
+          "heatPercentile": 86,
+          "ageDays": 231,
+          "created_at": "2026-03-17T14:49:05Z",
+          "pushed_at": "2026-11-03T12:09:28Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 77.4,
+          "breakdown": {
+            "heat": 86,
+            "community": 75,
+            "activity": 67,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A TypeScript library for orchestrating AI coding agents in isolated sandboxes:\n\n1. You invoke agents with a single sandcastle.run() . 2. Sandcastle handles sandboxing the agent with a configurable branch strategy. 3. The commits made on the branches get merged back.\n\nSandcastle is provider-agnostic. It ships with native sandboxes that use your OS's own process sandbox (Bubblewrap on Linux and WSL2, Seatbelt on macOS), image-based providers for Docker and Podman, and cloud providers for Daytona, E2B, Fly.io Sprites, Modal and Vercel, and you can create your own. Great for parallelizing multiple AFK agents, creating review pipelines, or even just orchestrating your own agents.",
+            "features": [
+              "You invoke agents with a single sandcastle.run() .",
+              "Sandcastle handles sandboxing the agent with a configurable branch strategy.",
+              "The commits made on the branches get merged back.",
+              "Getting started: prerequisites and a quick start",
+              "Core: Core concepts",
+              "Sandboxes: Sandbox providers",
+              "Branching: Branch strategies",
+              "Agents: Agent providers, Agent sessions"
+            ],
+            "sections": [
+              "What is Sandcastle?",
+              "Documentation",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2480
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Christ9038/Ydisks-Xianyu-Helper",
+          "owner": "Christ9038",
+          "name": "Ydisks-Xianyu-Helper",
+          "url": "https://github.com/Christ9038/Ydisks-Xianyu-Helper",
+          "homepage": "",
+          "description": "闲鱼多账号自动发货、消息回复系统——基于 Go 与 React 构建",
+          "language": "Go",
+          "topics": [
+            "xianyu",
+            "xianyu-assistant",
+            "xianyu-auto-reply",
+            "xianyu-bot",
+            "xianyu-tool"
+          ],
+          "stars": 2201,
+          "forks": 615,
+          "open_issues": 15,
+          "starGain": 15,
+          "heat": 15,
+          "heatBasis": "trending",
+          "heatPercentile": 80,
+          "ageDays": 117,
+          "created_at": "2026-07-10T02:12:00Z",
+          "pushed_at": "2026-11-01T09:21:37Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 69,
+          "breakdown": {
+            "heat": 80,
+            "community": 65,
+            "activity": 46,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 25,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An Xianyu multi-account management, messaging, and automated-delivery system built with Go and React.\n\nEnglish documentation · 中文 README · English Wiki · 中文 Wiki · Contributing · Security policy · Code of Conduct · License\n\nThe English Wiki is the default operational guide. The Chinese Wiki is available for the primary Chinese-speaking Xianyu community.",
+            "features": [
+              "Unified online status and message management for multiple Xianyu accounts",
+              "Automated delivery of digital goods, redemption codes, links, or images",
+              "Paid delivery, staged bargain free shipping, review gifts, overdue review reminders, and unpaid-order price changes",
+              "Product and order synchronization, list-based single- or multi-variant detection and publishing, and CSV/XLSX/TSV",
+              "Controlled AI customer service through OpenAI-compatible endpoints, with an end-to-end connection test",
+              "internal/composition: the single production composition root",
+              "internal/application: use-case orchestration, ownership checks, transactions, and compensation",
+              "internal/xianyu: login protocol, Cookies, MTOP, WebSocket, and message protocol"
+            ],
+            "sections": [
+              "Ydisks Xianyu Helper",
+              "Overview",
+              "Use with Ydisks Referral Assistant",
+              "Use cases",
+              "Community",
+              "Features",
+              "Architecture",
+              "Screenshots",
+              "Quick start",
+              "Docker Compose (recommended)",
+              "Run from source",
+              "Desktop packages",
+              "First use",
+              "Configuration"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 22002
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "super-productivity/plainspace",
+          "owner": "super-productivity",
+          "name": "plainspace",
+          "url": "https://github.com/super-productivity/plainspace",
+          "homepage": "https://plainspace.org",
+          "description": "A small shared workspace for tasks, notes, polls, and planning — self-hostable and touch-first",
+          "language": "TypeScript",
+          "topics": [
+            "collaboration",
+            "hono",
+            "postgresql",
+            "self-hosted",
+            "solidjs",
+            "tasks"
+          ],
+          "stars": 125,
+          "forks": 7,
+          "open_issues": 18,
+          "starGain": null,
+          "heat": 9.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 74,
+          "ageDays": 116,
+          "created_at": "2026-07-11T11:46:21Z",
+          "pushed_at": "2026-10-31T18:01:28Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 62.1,
+          "breakdown": {
+            "heat": 74,
+            "community": 36,
+            "activity": 43,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Shared plans without the project-management overhead. Tasks, notes, polls, and reminders in one simple Space.\n\nTry Plainspace → &nbsp;·&nbsp; Self-host &nbsp;·&nbsp; Contribute\n\n- Share one link — people can participate in any browser, without an app or account. - Keep everything together — tasks, notes, checklists, polls, and availability. - Stay in sync — live updates and optional push reminders keep the plan moving. - Choose how to run it — use the hosted version or self-host with Docker.",
+            "features": [
+              "Share one link — people can participate in any browser, without an app or account.",
+              "Keep everything together — tasks, notes, checklists, polls, and availability.",
+              "Stay in sync — live updates and optional push reminders keep the plan moving.",
+              "Choose how to run it — use the hosted version or self-host with Docker.",
+              "Use the hosted app: create a Space on plainspace.org →",
+              "Run it yourself: read the complete self-hosting guide →",
+              "Install Node.js 22 and Docker.",
+              "Install dependencies with npm ci ."
+            ],
+            "sections": [
+              "Lightweight coordination for real life",
+              "Choose your path",
+              "Self-host quick start",
+              "Development",
+              "Commands",
+              "Structure",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4184
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "Nitjsefnie/Overflow",
+          "owner": "Nitjsefnie",
+          "name": "Overflow",
+          "url": "https://github.com/Nitjsefnie/Overflow",
+          "homepage": "https://overflow.nitjsefni.eu",
+          "description": "Mutual-credit coordination for contributing spare LLM subscription capacity through GitHub issues and pull requests.",
+          "language": "TypeScript",
+          "topics": [
+            "credit-system",
+            "github-api",
+            "github-webhooks",
+            "issue-tracker",
+            "llm",
+            "mutual-credit",
+            "nextauth",
+            "nextjs"
+          ],
+          "stars": 142,
+          "forks": 16,
+          "open_issues": 66,
+          "starGain": 5,
+          "heat": 5,
+          "heatBasis": "snapshot",
+          "heatPercentile": 63,
+          "ageDays": 60,
+          "created_at": "2026-09-04T15:15:12Z",
+          "pushed_at": "2026-11-03T19:59:41Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 62.2,
+          "breakdown": {
+            "heat": 63,
+            "community": 39,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 35,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "You spent Tuesday evening fixing someone else's flaky test. The bug in your own tracker just turned eleven months old. You had time to help then. You need help now. What if that Tuesday could pay for it?\n\nLet your spare weeks pay for the dry ones. Overflow is a shared ledger for open-source work, for people and small teams whose capacity comes and goes. When you have leftover LLM subscription usage that you won't burn on your own projects, work on others' issues and earn credit. Spend it on your own backlog when you're depleted. No money changes hands. There is no token.\n\nGo to and sign in with GitHub. Register a repository you administer on one form: the repository and its two label catalogs. The catalog labels must already exist. Overflow installs the webhook for you.",
+            "features": [
+              "A repository sponsor puts a price on an issue with an opening label.",
+              "An outside contributor does the work and opens a pull request that closes the issue.",
+              "Between the closing PR's final commit and fifteen minutes after its merge, the sponsor puts an actual-catalog label on the issue, then a com",
+              "The PR merges. The contributor's account is credited and the sponsor's is debited.",
+              "API.md — API tokens, programmatic registration and catalog changes with every error message, the ledger read endpoints, and the MCP endpoint",
+              "OPERATING.md — development setup, GitHub OAuth and webhook configuration, the production service, reconciliation, CI, and the environment re",
+              "CONTRIBUTING.md — how to change Overflow, and the conventions of this repository that reject work silently.",
+              "deploy/README.md — the production deployment procedure."
+            ],
+            "sections": [
+              "Overflow",
+              "Who this is for",
+              "Where to register",
+              "How it works",
+              "Why it can't be abused",
+              "The rest"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8028
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "keploy/keploy",
+          "owner": "keploy",
+          "name": "keploy",
+          "url": "https://github.com/keploy/keploy",
+          "homepage": "https://keploy.io",
+          "description": "Open-source platform for creating safe, isolated production sandboxes for API, integration, and E2E testing.",
+          "language": "Go",
+          "topics": [
+            "agentic-ai",
+            "ai-testing-tool",
+            "api-testing",
+            "code-quality",
+            "mock",
+            "mock-data-generator",
+            "mock-framework",
+            "test-automation"
+          ],
+          "stars": 19281,
+          "forks": 2447,
+          "open_issues": 836,
+          "starGain": 221,
+          "heat": 221,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 1750,
+          "created_at": "2022-01-19T10:40:31Z",
+          "pushed_at": "2026-11-04T01:21:28Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 88.8,
+          "breakdown": {
+            "heat": 94,
+            "community": 82,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "⚡️ API tests faster than unit tests, from user traffic ⚡️\n\nKeploy is a developer‑centric API and integration testing tool that auto‑generates tests and data‑mocks faster than unit tests.\n\nIt records API calls, database queries, and streaming events — then replays them as tests. Under the hood, Keploy uses eBPF to capture traffic at the network layer, but for you it’s completely code‑less and language‑agnostic .",
+            "features": [
+              "🌐 CI/CD Integration: Run tests with mocks anywhere you like—locally on the CLI, in your CI pipeline (Jenkins, Github Actions..) , or even a",
+              "🎭 Multi-Purpose Mocks : You can also use Keploy-generated Mocks, as server Tests!",
+              "📊 Reporting: Unified reports for API, integration, unit, and e2e coverage with insights directly in your CI or PRs.",
+              "🖥️ Console: A developer-friendly console to view, manage, and debug recorded tests and mocks.",
+              "⏱️ Time Freezing: Deterministically replay tests by freezing system time during execution. Read more",
+              "📚 Mock Registry: Centralized registry to manage, reuse, and version mocks across teams and environments. Read more",
+              "📘 Documentation — Explore the full docs",
+              "💬 Slack Community — Join the conversation"
+            ],
+            "sections": [
+              "Key Highlights",
+              "🎯 No code changes",
+              "📹 Record and Replay complex Flows",
+              "🐇 Complete Infra‑Virtualization (beyond HTTP mocks)",
+              "🧪 Combined Test Coverage",
+              "🤖 Expand API Coverage using AI",
+              "Other Capabilities",
+              "Quick Start",
+              "1. Install Keploy Agent",
+              "2. Record Test Cases",
+              "3. Run Tests",
+              "Resources",
+              "- 📘 Installation",
+              "- 🏁 QuickStarts"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11075
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "avelino/awesome-go",
+          "owner": "avelino",
+          "name": "awesome-go",
+          "url": "https://github.com/avelino/awesome-go",
+          "homepage": "https://awesome-go.com",
+          "description": "A curated list of awesome Go frameworks, libraries and software",
+          "language": "Go",
+          "topics": [
+            "awesome",
+            "awesome-list",
+            "go",
+            "golang",
+            "golang-library",
+            "hacktoberfest"
+          ],
+          "stars": 191939,
+          "forks": 13696,
+          "open_issues": 109,
+          "starGain": 192,
+          "heat": 192,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 4503,
+          "created_at": "2014-07-06T13:42:15Z",
+          "pushed_at": "2026-11-03T10:03:02Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 89.8,
+          "breakdown": {
+            "heat": 92,
+            "community": 98,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "We use the Golang Bridge community Slack for instant communication, follow the form here to join.\n\nAwesome Go has no monthly fee , but we have employees who work hard to keep it running. With money raised, we can repay the effort of each person involved! You can see how we calculate our billing and distribution as it is open to the entire community. Want to be a supporter of the project click here.\n\nPlease take a quick gander at the contribution guidelines first. Thanks to all contributors; you rock!",
+            "features": [
+              "Awesome Go",
+              "Contents",
+              "Actor Model",
+              "Artificial Intelligence",
+              "Audio and Music",
+              "Authentication and Authorization",
+              "Blockchain",
+              "Bot Building"
+            ],
+            "sections": [
+              "Awesome Go",
+              "Contents",
+              "Actor Model",
+              "Artificial Intelligence",
+              "Audio and Music",
+              "Authentication and Authorization",
+              "Blockchain",
+              "Bot Building",
+              "Build Automation",
+              "Command Line",
+              "Advanced Console UIs",
+              "Standard CLI",
+              "Configuration",
+              "Continuous Integration"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 425383
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Asymptote-Labs/agent-beacon",
+          "owner": "Asymptote-Labs",
+          "name": "agent-beacon",
+          "url": "https://github.com/Asymptote-Labs/agent-beacon",
+          "homepage": "https://beacon.sh",
+          "description": "The cross-harness, self-improving memory layer for AI agents. Join our community: https://discord.com/invite/zdNChS2fBu",
+          "language": "Go",
+          "topics": [
+            "agent-ai-cli",
+            "agent-harnesses",
+            "agent-security",
+            "browser-extension",
+            "ci",
+            "claude-code",
+            "cloud",
+            "codex"
+          ],
+          "stars": 3237,
+          "forks": 288,
+          "open_issues": 13,
+          "starGain": 193,
+          "heat": 193,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 176,
+          "created_at": "2026-05-12T02:49:33Z",
+          "pushed_at": "2026-11-04T00:51:24Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.7,
+          "breakdown": {
+            "heat": 93,
+            "community": 66,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "⭐ Help us reach more developers and grow the Beacon community. Star this repo!\n\nBeacon captures agent session history across Claude Code, Cursor, Codex, OpenCode, and 20+ other harnesses, then turns useful workflows, corrections, and debugging patterns into reusable knowledge for future agents.\n\nA problem solved by one agent shouldn't need to be learned from scratch by another.",
+            "features": [
+              "Cross-harness history - sessions from Claude Code, Cursor, Codex, OpenCode, Cline, and 20+ harnesses in one place",
+              "Knowledge that compounds - workflows, corrections, debugging patterns, and repo conventions that survive beyond a single session",
+              "Shared agent memory - reviewed knowledge future agents can retrieve through MCP or Agent Skills",
+              "Exact session replay - prompts, responses, tools, commands, edits, approvals, MCP activity, and tokens in one trace",
+              "Local-first portability - durable JSONL, explicit destinations, and no harness lock-in",
+              "the right way to run a migration",
+              "a debugging path that finally fixed an obscure issue",
+              "a testing convention agents repeatedly get wrong"
+            ],
+            "sections": [
+              "Beacon Overview",
+              "🎬 Demo",
+              "🚀 Quick Start",
+              "1. Install Beacon",
+              "Download into a directory APT can read. A package in your ho",
+              "installs, but APT ends with a harmless \"Permission denied\" n",
+              "2. Use your agents normally",
+              "3. Explore your history",
+              "🧠 Turn Session History Into Memory",
+              "🔀 Cross-Harness by Design",
+              "🔎 One Trace Format for Every Agent",
+              "🖥️ Local Dashboard",
+              "Supported Agents",
+              "Local Agent Coverage"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 20548
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "aquasecurity/trivy",
+          "owner": "aquasecurity",
+          "name": "trivy",
+          "url": "https://github.com/aquasecurity/trivy",
+          "homepage": "https://trivy.dev",
+          "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+          "language": "Go",
+          "topics": [
+            "containers",
+            "devsecops",
+            "docker",
+            "go",
+            "golang",
+            "hacktoberfest",
+            "iac",
+            "infrastructure-as-code"
+          ],
+          "stars": 38946,
+          "forks": 818,
+          "open_issues": 287,
+          "starGain": 17,
+          "heat": 17,
+          "heatBasis": "trending",
+          "heatPercentile": 74,
+          "ageDays": 2764,
+          "created_at": "2019-04-11T01:01:07Z",
+          "pushed_at": "2026-11-03T14:32:48Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78.8,
+          "breakdown": {
+            "heat": 74,
+            "community": 83,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Trivy ([pronunciation][pronunciation]) is a comprehensive and versatile security scanner. Trivy has scanners that look for security issues, and targets where it can find those issues.\n\n- Container Image - Filesystem - Git Repository (remote) - Virtual Machine Image - Kubernetes\n\n- OS packages and software dependencies in use (SBOM) - Known vulnerabilities (CVEs) - IaC issues and misconfigurations - Sensitive information and secrets - Software licenses",
+            "features": [
+              "Container Image",
+              "Git Repository (remote)",
+              "Virtual Machine Image",
+              "OS packages and software dependencies in use (SBOM)",
+              "Known vulnerabilities (CVEs)",
+              "IaC issues and misconfigurations",
+              "Sensitive information and secrets",
+              "Software licenses"
+            ],
+            "sections": [
+              "Quick Start",
+              "Get Trivy",
+              "Canary builds",
+              "General usage",
+              "FAQ",
+              "How to pronounce the name \"Trivy\"?",
+              "Want more? Check out Aqua",
+              "Community"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5588
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "shy3130/tick-stock-panel",
+          "owner": "shy3130",
+          "name": "tick-stock-panel",
+          "url": "https://github.com/shy3130/tick-stock-panel",
+          "homepage": "https://tsp.shy313.com",
+          "description": "TSP自托管、零运维的 A 股「自建策略 + 监控 + 回测」量化工作台  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源",
+          "language": "Python",
+          "topics": [
+            "a-stock",
+            "ai-agent",
+            "aigc",
+            "aigc-detection",
+            "backtesting",
+            "daily",
+            "duckdb",
+            "fastapi"
+          ],
+          "stars": 6988,
+          "forks": 1682,
+          "open_issues": 50,
+          "starGain": 92,
+          "heat": 92,
+          "heatBasis": "trending",
+          "heatPercentile": 97,
+          "ageDays": 139,
+          "created_at": "2026-06-18T06:18:29Z",
+          "pushed_at": "2026-11-03T16:45:13Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86.1,
+          "breakdown": {
+            "heat": 97,
+            "community": 75,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 60,
+            "devops": 41,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "3.11+ Python 后端 20+ Node 前端 18 React · TypeScript 3000+ 测试全绿 · CI 守护 ms 级 全市场策略扫描 1 容器 零外部数据库\n\n✨ 核心功能 · 📸 界面预览 · 🏛️ 架构 · ⚡ 性能 · 🌐 开放能力 · 🚀 快速开始 · 📚 完整文档 · 💬 交流群\n\n本项目由 RunningHub 提供支持 · 单一接口直连 400+ 主流大模型 · DeepSeek v4.1 Flash 3-6 折 · 免费测试",
+            "features": [
+              "核心域(8 个) 拥有数据与语义 —— 数据底座、能力路由、指标与执行、事件与开放通道。它们是自洽的最小系统,不依赖任何外围。",
+              "扩展域(5 条通道) 只消费核心契约 —— 数据源插件、扩展数据表、自定义策略/信号、页面扩展、后端 custom 模块。 可整体替换或移除而不伤核心 :删除目录即卸载、复制目录即导入。",
+              "你看到的 19 个页面里, 11 个官方页面本身就是扩展 (单文件 frontend/src/custom/ /extension.tsx )—— 监控中心页面可以整个换掉,规则引擎与推送管道属核心照常运行。 连 AI 对话助手都是扩展域的参考实现。",
+              "工具足迹卡 — 每次调用的工具名、参数、耗时、结果摘要均可展开核对; 取数可核对是设计铁律",
+              "动作确认卡 — 生成信号/回测/加自选/数据补全等写操作先弹确认卡(完整待执行参数可见), 你点「确认执行」才真正运行; 拒绝或 120 秒超时自动取消; 可在助手界面开启免确认(默认关, 轮次检查点安全阀不受影响)",
+              "逐字流式 + 非模态面板 — 从页面右缘滑入可拖宽(宽度记忆), 边看行情边问; 新会话带分组快捷建议, 个股问答附走势双图(日K + 分时)",
+              "会话历史跨设备 — 服务端注册表同步(回测/挖掘/优化/滚动任务同步接回), 本地存储降级为缓存",
+              "固定合规提示 — 每条回答完成后附风险提示与数据口径提示; 轮次检查点与连续执行上限可在设置调整"
+            ],
+            "sections": [
+              "TSP · A股智能量化工作台",
+              "💡 为什么做 TSP",
+              "✨ 核心功能",
+              "📸 界面预览",
+              "📸 查看更多界面截图 »",
+              "🏗️ 架构",
+              "总览 · 网关居中的开放单体",
+              "核心域 / 扩展域边界",
+              "关键机制",
+              "技术栈",
+              "⚡ 性能",
+              "核心引擎",
+              "🌐 开放能力(Open API + MCP)",
+              "十行内跑通第一个调用"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 38359
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "2giosangmitom/sqmeow.nvim",
+          "owner": "2giosangmitom",
+          "name": "sqmeow.nvim",
+          "url": "https://github.com/2giosangmitom/sqmeow.nvim",
+          "homepage": "",
+          "description": "Modern SQL and NoSQL database client for Neovim",
+          "language": "Rust",
+          "topics": [
+            "clickhouse",
+            "database",
+            "database-client",
+            "duckdb",
+            "lua",
+            "mariadb",
+            "mongodb",
+            "mysql"
+          ],
+          "stars": 162,
+          "forks": 3,
+          "open_issues": 3,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 54,
+          "ageDays": 55,
+          "created_at": "2026-09-10T10:17:41Z",
+          "pushed_at": "2026-11-03T14:55:13Z",
+          "license": "MIT",
+          "rating": 2.5,
+          "composite": 53.2,
+          "breakdown": {
+            "heat": 54,
+            "community": 36,
+            "activity": 57,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A lightweight database client that lives inside Neovim. Browse databases, run queries, edit data, and explore results without leaving your editor.\n\nIf you spend most of your time in the terminal and don't want to switch to a GUI just to inspect a few rows, sqmeow.nvim is for you.\n\n- Multiple databases: Work with SQL, NoSQL, and analytical databases in one place. - Interactive results: Browse, filter, sort, and edit data directly in Neovim. - Query history: Revisit previous results without running queries again. - Local result processing: Filter and sort retained rows using Polars. - Project-local connections: Keep connections and scratchpads alongside your project. - Completion: Database-aware suggestions with blink.cmp or nvim-cmp. - Rust engine: Database operations run in a separate Rust process.",
+            "features": [
+              "Multiple databases: Work with SQL, NoSQL, and analytical databases in one place.",
+              "Interactive results: Browse, filter, sort, and edit data directly in Neovim.",
+              "Query history: Revisit previous results without running queries again.",
+              "Local result processing: Filter and sort retained rows using Polars.",
+              "Project-local connections: Keep connections and scratchpads alongside your project.",
+              "Completion: Database-aware suggestions with blink.cmp or nvim-cmp.",
+              "Rust engine: Database operations run in a separate Rust process.",
+              "Relational & analytical: PostgreSQL, CockroachDB, MySQL, MariaDB, SQLite, DuckDB, ClickHouse, Oracle Database, Microsoft SQL Server."
+            ],
+            "sections": [
+              "sqmeow.nvim",
+              "Preview",
+              "Overview",
+              "Editing results",
+              "Table structure",
+              "Features",
+              "Supported databases",
+              "Installation",
+              "Getting started",
+              "Keymaps",
+              "Working with results",
+              "Connections",
+              "Credentials",
+              "Scratchpads"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13507
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "masumedb/masume",
+          "owner": "masumedb",
+          "name": "masume",
+          "url": "https://github.com/masumedb/masume",
+          "homepage": "",
+          "description": "Terminal database client with AI chat and an MCP server",
+          "language": "Go",
+          "topics": [
+            "aurora",
+            "cli",
+            "cockroachdb",
+            "database",
+            "database-client",
+            "db",
+            "mariadb",
+            "mcp"
+          ],
+          "stars": 108,
+          "forks": 3,
+          "open_issues": 0,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 54,
+          "ageDays": 65,
+          "created_at": "2026-08-30T18:22:22Z",
+          "pushed_at": "2026-10-25T01:09:16Z",
+          "license": "Apache-2.0",
+          "rating": 2,
+          "composite": 42.3,
+          "breakdown": {
+            "heat": 54,
+            "community": 34,
+            "activity": 0,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 49,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A keyboard-first terminal database client with AI chat and an MCP server\n\nEngines: PostgreSQL, MySQL, MariaDB, SQL Server, ClickHouse, SQLite, Cassandra, ScyllaDB, Redis, MongoDB, and hosted services such as Neon, Supabase, PlanetScale, Turso, Redshift, and Amazon DocumentDB. See the full list.\n\nscoop bucket add masumedb https://github.com/masumedb/scoop-bucket scoop install masumedb/masume",
+            "features": [
+              "masume postgres://ada@127.0.0.1:5432/shop opens a URL.",
+              "masume ./notes.db opens a SQLite file.",
+              "masume --detect lists the databases in running Docker or Podman containers and in the pods of the current kubectl context.",
+              "Tabs: query, table, notebook, and query builder tabs. The next connect restores them with their text, sort, and filters. See tabs and histor",
+              "Split view: two tabs side by side or stacked, from one connection or from two. See split view.",
+              "Query builder: tables, joins, filters, groups, and sorts drawn as a diagram, with the SQL under it. See query builder.",
+              "Command palette: every command by name, with its key. Ctrl+K opens it.",
+              "Keys and mouse: every key can be rebound. The mouse selects, scrolls, and drags the pane borders. See keys and mouse controls."
+            ],
+            "sections": [
+              "Install",
+              "Quick start",
+              "Features",
+              "Browse and query",
+              "Workspace",
+              "Results and editing",
+              "Notebooks",
+              "AI chat and MCP server",
+              "Connections and teams",
+              "Headless mode",
+              "Command line",
+              "Docs",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 12703
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "yimindev/dati",
+          "owner": "yimindev",
+          "name": "dati",
+          "url": "https://github.com/yimindev/dati",
+          "homepage": "",
+          "description": "Turn your database into secure, semantically rich MCP tools for agents.",
+          "language": "Java",
+          "topics": [
+            "access-control",
+            "agentic-ai",
+            "business-intelligence",
+            "chatbi",
+            "clickhouse",
+            "database",
+            "database-gateway",
+            "doris"
+          ],
+          "stars": 74,
+          "forks": 7,
+          "open_issues": 0,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 72,
+          "created_at": "2026-08-23T23:50:05Z",
+          "pushed_at": "2026-11-03T00:20:10Z",
+          "license": "Apache-2.0",
+          "rating": 1.5,
+          "composite": 26.4,
+          "breakdown": {
+            "heat": 0,
+            "community": 33,
+            "activity": 48,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 35,
+            "ai": 49,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "DatI (Data Intelligence) is a lightweight semantic gateway connecting AI Agents with enterprise databases . Simply connect your database, enrich semantic metadata, and configure built-in or parameterized SQL tools to publish an MCP service — ready for your agents or any MCP host.\n\n┌────────────────────┐ ┌────────────────────┐ ┌────────────────────┐ │ User A: OpenCode │ │ User B: WorkBuddy │ │ User N: DataAgent │ └──────────┬─────────┘ └──────────┬─────────┘ └──────────┬─────────┘ └───────────────────────┼───────────────────────┘ ▼ MCP (Streamable HTTP) ┌─────────────────────────────── DatI ───────────────────────────────┐ │ Semantic │ Security │ Tools │ └──────────────────────────────────┬─────────────────────────────────┘ ▼ ┌────────────────────────────────────────────────────────────────────┐ │ MySQL │ PostgreSQL │ ClickHouse │ Doris │ └────────────────────────────────────────────────────────────────────┘\n\nThe demo instance is preloaded with sample data and reset periodically.",
+            "features": [
+              "Multi-Database Support : Supports MySQL, PostgreSQL, ClickHouse, Doris, and other relational and analytical databases",
+              "Semantic Enhancement : Supports business terms, column aliases, and automatic enum dictionary extraction. Combined with semantic search, it ",
+              "Flexible Integration : Based on standard MCP (Streamable HTTP), easily integrates into your existing agents or workflows",
+              "Effortless MCP Publishing : Ready-to-use built-in tools (schema inspection, SQL execution) and parameterized SQL tools to publish MCP servic",
+              "Security & Governance : Centrally managed database credentials with user-level permission and data scope isolation",
+              "Conversational Data Analysis (NL2SQL) : Connect business databases and support NL2SQL analysis workflows with semantic metadata and built-in",
+              "Lightweight App Development : Wrap databases as MCP services so agents can query and update data through conversation to build lightweight a",
+              "Backend : Spring Boot 3.5.x + Java 21 + JPA"
+            ],
+            "sections": [
+              "DatI - Database Semantic Gateway for AI Agents",
+              "Try It Online",
+              "Demo",
+              "Quick Start",
+              "Why DatI?",
+              "Use Cases",
+              "Tech Stack",
+              "Documentation",
+              "Community"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 6256
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "Sheltercosmo/jev4pg",
+          "owner": "Sheltercosmo",
+          "name": "jev4pg",
+          "url": "https://github.com/Sheltercosmo/jev4pg",
+          "homepage": "https://jev4pg.com",
+          "description": "Established strong JEV based natural language to SQL performance and well-covered semantic operators for PostgreSQL with optimized cost and latency. Reusable evidence, with native execution, parallel plans and explainable embeddings in development preview.",
+          "language": "Python",
+          "topics": [
+            "database",
+            "embeddings",
+            "jev",
+            "jev-ai",
+            "llm",
+            "natural-language-query",
+            "nl2sql",
+            "pg"
+          ],
+          "stars": 260,
+          "forks": 30,
+          "open_issues": 0,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 42,
+          "created_at": "2026-09-23T11:31:46Z",
+          "pushed_at": "2026-10-26T01:24:11Z",
+          "license": "Apache-2.0",
+          "rating": 1,
+          "composite": 23,
+          "breakdown": {
+            "heat": 0,
+            "community": 44,
+            "activity": 0,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 73,
+            "devops": 41,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Natural language to SQL and semantic operators for PostgreSQL\n\nWebsite · Quick start · Existing PostgreSQL · Advantages · Performance · NL2SQL benchmark · What you can build · Project guide · Installation · User guide · 简体中文 · Function reference · Documentation\n\njev4pg brings semantic intelligence to PostgreSQL 14–17 with 41 JEV operators for filtering, extraction, ranking, matching and verification. Build semantic search, document workflows and analyst tools on your existing data, with natural-language queries in English and Simplified Chinese.",
+            "features": [],
+            "sections": [
+              "Performance highlights",
+              "Faster operator execution",
+              "Benchmark-leading semantic filtering",
+              "Why choose jev4pg",
+              "Define once, reuse across queries",
+              "Reuse judgments when policies change",
+              "Run independent judgments in parallel",
+              "Search with dimensions you can explain",
+              "Give the LLM a focused job",
+              "Keep uncertain decisions reviewable",
+              "Quick start",
+              "Choose your setup",
+              "Python application",
+              "Use an existing PostgreSQL database"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 20090
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "lexifina/global-law",
+          "owner": "lexifina",
+          "name": "global-law",
+          "url": "https://github.com/lexifina/global-law",
+          "homepage": "https://lexifina.com",
+          "description": "The world's law in git: any provision, any country, any date, and the law that wrote each word.",
+          "language": "HTML",
+          "topics": [
+            "git",
+            "law",
+            "legal-tech",
+            "legislation",
+            "mcp",
+            "open-data"
+          ],
+          "stars": 1750,
+          "forks": 164,
+          "open_issues": 12,
+          "starGain": null,
+          "heat": 600.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 7,
+          "created_at": "2026-10-28T13:34:16Z",
+          "pushed_at": "2026-11-04T01:38:01Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 86.2,
+          "breakdown": {
+            "heat": 100,
+            "community": 60,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 49,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The world's law in one git history. Every word traced to the law that wrote it for any country and any date.\n\nAn expansion of the same for the US Code, 1 on Hacker News (28/10/26). Semantic, searchable law on a global scale.\n\nhttps://github.com/user-attachments/assets/f24f3411-24d9-416a-8c45-9cebc817c64e",
+            "features": [
+              "A corpus moved to a new folder still answers under its old path ( data/moved-paths.tsv ). After a pull that moves",
+              "manifest.json and the jurisdiction.json files are written by tools/describe.py .",
+              "MCP.md: the MCP server · REPRODUCE.md: how it was built · CHANGELOG.md",
+              "performance/: how fast the tools are, measured",
+              "visualisations/: charts and bridges across the world's law",
+              "Tests: python -m unittest discover -s tests"
+            ],
+            "sections": [
+              "Git for Global Law",
+              "Start",
+              "From an AI model (MCP)",
+              "Command line",
+              "How it is made",
+              "More",
+              "Videos",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4432
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "ivankovic/omnidiff",
+          "owner": "ivankovic",
+          "name": "omnidiff",
+          "url": "https://github.com/ivankovic/omnidiff",
+          "homepage": "https://ivankovic.github.io/omnidiff/showcase/",
+          "description": "Fast, robust, accurate diffing ",
+          "language": "Rust",
+          "topics": [
+            "ast-diff",
+            "ast-diff-tool",
+            "ast-differencing",
+            "code-quality",
+            "code-review",
+            "codereview",
+            "codereview-tools",
+            "diff"
+          ],
+          "stars": 984,
+          "forks": 16,
+          "open_issues": 18,
+          "starGain": 190,
+          "heat": 190,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 383,
+          "created_at": "2025-10-17T11:25:02Z",
+          "pushed_at": "2026-11-03T08:38:30Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 75.4,
+          "breakdown": {
+            "heat": 91,
+            "community": 51,
+            "activity": 60,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- Robust: can diff 99.95% of code changes - Content-aware: 98.8% of changes diffed using content-specific algorithms\n\nSpeed measured on a T14s, Intel Core i7-1370P with 32 GB RAM (see Fast). PDFs have fewer than ten judged test cases (see Accurate).\n\nSee it in the browser : twenty real code changes, recorded from the command-line tool and compared side by side in Unix diff and in OmniDiff, and content examples: an OpenDocument file, a compiled translation catalog, and pictures, still and animated.",
+            "features": [
+              "Robust: can diff 99.95% of code changes",
+              "Content-aware: 98.8% of changes diffed using content-specific algorithms",
+              "VS Code - omnidiff-vscode. Search for",
+              "Neovim - omnidiff.nvim.",
+              "A median diff in 100ms or less.",
+              "A 99th-percentile diff in 1000ms or less.",
+              "90% of test cases with zero mismatched bytes.",
+              "99% of test cases with at most 1% of bytes mismatched."
+            ],
+            "sections": [
+              "OmniDiff",
+              "Installation",
+              "From source",
+              "Prebuilt binaries",
+              "Homebrew",
+              "Debian and Ubuntu",
+              "Nix and NixOS",
+              "Arch and Gentoo",
+              "Editor integration",
+              "Using OmniDiff",
+              "The interactive TUI",
+              "In a browser",
+              "Headless / batch mode",
+              "JSON output"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 22266
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "KKKKhazix/agent-autoloop",
+          "owner": "KKKKhazix",
+          "name": "agent-autoloop",
+          "url": "https://github.com/KKKKhazix/agent-autoloop",
+          "homepage": "",
+          "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+          "language": "TypeScript",
+          "topics": [
+            "ai-agents",
+            "automation",
+            "claude-code",
+            "cli",
+            "codex",
+            "event-driven",
+            "mcp",
+            "nodejs"
+          ],
+          "stars": 392,
+          "forks": 79,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 134.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 88,
+          "ageDays": 1,
+          "created_at": "2026-11-03T08:02:11Z",
+          "pushed_at": "2026-11-03T21:58:03Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 75,
+          "breakdown": {
+            "heat": 88,
+            "community": 49,
+            "activity": 75,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 56,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "平时我们用 Claude Code、Codex 这类命令行 Agent，大多是“人守着终端用”：你输一句话，盯着它跑，等它问你下一步；一旦关掉窗口或者人走开，事情就断了。\n\nAgent Autoloop 是一个极轻量的自动化中台。它把任务调度做成一个零外部依赖的 内核 ，把事件来源、Agent、通知通道，甚至代码上线流水线全部拆成可随时插拔的 插件 。\n\n- 一台电脑、一条命令就能跑。 装在你的 Mac 或 Linux 上，不用买云服务器，也不用开放公网端口。 - 一行配置接新 Agent。 不需要 SDK，也不需要改 Agent 源码，能接收提示词并打印最后一条回复的命令行工具都能接。 - 没有后台界面。 需要你拍板时把卡片推到飞书、钉钉、企微、Slack、Discord 或桌面通知；想看全局进展，敲一行命令。",
+            "features": [
+              "一台电脑、一条命令就能跑。 装在你的 Mac 或 Linux 上，不用买云服务器，也不用开放公网端口。",
+              "一行配置接新 Agent。 不需要 SDK，也不需要改 Agent 源码，能接收提示词并打印最后一条回复的命令行工具都能接。",
+              "没有后台界面。 需要你拍板时把卡片推到飞书、钉钉、企微、Slack、Discord 或桌面通知；想看全局进展，敲一行命令。",
+              "新事件进来。 早上 9 点的定时任务、GitHub 上新提的 Issue、业务系统报的错，都变成一条标准事件送进内核。",
+              "按规则派活。 内核照你写的规则，决定交给哪个 Agent、去哪个目录干。同一件事排队时又来的消息，会合并成一轮处理。",
+              "干完一轮就退出。 Agent 把结果写在最后一条回复里，进程直接退出。",
+              "拿不准才问你。 碰到删数据、重启服务、花钱、对外发消息这类事，内核通过飞书或桌面通知发一张卡片给你。等你回复期间，它不占后台进程，也不消耗 Token。",
+              "点一下，接着干。 你选完，它接上原来的对话，把剩下的活干完。"
+            ],
+            "sections": [
+              "Agent Autoloop",
+              "它解决什么问题？",
+              "上手",
+              "一件事怎么转起来",
+              "日常怎么配？",
+              "写一份规则（ rules.json ）",
+              "Agent 怎么跟中台配合？",
+              "拿来即用的场景模板",
+              "插件体系：四个方向都能自由替换",
+              "内核的四个机制",
+              "自己跑一遍",
+              "实测性能",
+              "用量与合规说明",
+              "更多文档"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9251
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Aryanutkarsh/SeeCode",
+          "owner": "Aryanutkarsh",
+          "name": "SeeCode",
+          "url": "https://github.com/Aryanutkarsh/SeeCode",
+          "homepage": "",
+          "description": "Animated, explorable diagrams for Claude and other coding agents, from a short JSON spec.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "architecture-diagram",
+            "claude-code",
+            "claude-skills",
+            "codex",
+            "coding-agents",
+            "data-visualization"
+          ],
+          "stars": 859,
+          "forks": 54,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 127.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 86,
+          "ageDays": 32,
+          "created_at": "2026-10-02T18:41:07Z",
+          "pushed_at": "2026-11-02T16:22:29Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 70.2,
+          "breakdown": {
+            "heat": 86,
+            "community": 53,
+            "activity": 48,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Install &nbsp;·&nbsp; Diagram types &nbsp;·&nbsp; Features &nbsp;·&nbsp; Themes &nbsp;·&nbsp; Import &nbsp;·&nbsp; Export &nbsp;·&nbsp; CLI\n\nClaude Code (recommended: the plugin keeps you on the latest release):\n\n/plugin marketplace add Aryanutkarsh/seecode /plugin install seecode@seecode",
+            "features": [
+              "The model never draws SVG. Your agent writes 30 to 150 lines of JSON: what's there, how it connects, roughly where. SeeCode's renderers hand",
+              "Editorial by default. One accent colour for what matters most, hairline borders, no shadows, and a complexity budget that pushes back on clu",
+              "Mistakes come with fixes. Problems come back as one line each with a fix hint, and repairs are small patches instead of rewrites.",
+              "Light on tokens. About 1.4k agent tokens per diagram, against roughly 15k when a model writes the SVG itself.",
+              "Yours to style. Light, dark and terminal skins, a sketchy hand-drawn style, and brand colours and fonts learned from your site or design tok",
+              "A list of things: use a table or bullets.",
+              "A before/after of attributes: use a table.",
+              "One box with a label: write the sentence."
+            ],
+            "sections": [
+              "Install, then describe what you want to see",
+              "45 diagram types",
+              "Isometric: compose anything",
+              "Not just code",
+              "See it in action",
+              "Themes, and your brand",
+              "Bring what you already have",
+              "Export for wherever it goes",
+              "Why it looks good every time",
+              "When not to use it",
+              "Install",
+              "Updating",
+              "Learn more",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 32595
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "audacity/audacity",
+          "owner": "audacity",
+          "name": "audacity",
+          "url": "https://github.com/audacity/audacity",
+          "homepage": "https://www.audacityteam.org/manual/getting-started/",
+          "description": "Audio Editor                                     ",
+          "language": "C++",
+          "topics": [
+            "audio",
+            "cross-platform",
+            "editor",
+            "gplv2",
+            "qt-application",
+            "qt-qml",
+            "wxwidgets-applications"
+          ],
+          "stars": 18948,
+          "forks": 2714,
+          "open_issues": 1911,
+          "starGain": 21,
+          "heat": 21,
+          "heatBasis": "trending",
+          "heatPercentile": 54,
+          "ageDays": 4241,
+          "created_at": "2015-03-26T10:46:17Z",
+          "pushed_at": "2026-11-03T15:53:58Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 70.8,
+          "breakdown": {
+            "heat": 54,
+            "community": 83,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Audacity is an easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems. More info can be found on https://www.audacityteam.org\n\nWe're currently working on Audacity 4, which means an entirely new UI and also refactorings aplenty. As such, the master branch is currently not particularly friendly to new contributors. It is still possible to submit patches to Audacity 3.x; make sure you branch off audacity3 if you choose to do so. Build instructions for 3.x can be found here; build instructions for Audacity 4 can be found here.\n\nYou can stay updated with our efforts on YouTube, Discord and our blog.",
+            "features": [],
+            "sections": [
+              "Audacity",
+              "This repository is currently undergoing major structural cha",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1541
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "onevcat/Kingfisher",
+          "owner": "onevcat",
+          "name": "Kingfisher",
+          "url": "https://github.com/onevcat/Kingfisher",
+          "homepage": "",
+          "description": "A lightweight, pure-Swift library for downloading and caching images from the web.",
+          "language": "Swift",
+          "topics": [
+            "cache",
+            "filters",
+            "image",
+            "image-processor",
+            "ios",
+            "kingfisher",
+            "macos",
+            "swift"
+          ],
+          "stars": 24404,
+          "forks": 2771,
+          "open_issues": 154,
+          "starGain": null,
+          "heat": 247.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 4229,
+          "created_at": "2015-04-06T14:26:21Z",
+          "pushed_at": "2026-11-03T07:40:05Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 85.4,
+          "breakdown": {
+            "heat": 95,
+            "community": 84,
+            "activity": 67,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Kingfisher is a powerful, pure-Swift library for downloading and caching images from the web. It provides you a chance to use a pure-Swift way to work with remote images in your next app.\n\n- [x] Asynchronous image downloading and caching. - [x] Loading image from either URLSession -based networking or local provided data. - [x] Useful image processors and filters provided. - [x] Multiple-layer hybrid cache for both memory and disk. - [x] Fine control on cache behavior. Customizable expiration date and size limit. - [x] Opt-in async cache probing in KingfisherManager to avoid blocking the caller thread on disk cache checks. - [x] Cancelable downloading and auto-reusing previous downloaded content to improve performance. - [x] Independent components. Use the downloader, caching system, and image processors separately as you need. - [x] Prefetching images and showing them from the cache to boost your app. - [x] Extensions for UIImageView , NSImageView , NSButton , UIButton , NSTextAttachment , WKInterfaceImage , TVMonogramView and CPListItem to directly set an image from a URL. - [x] Built-in transition animation when setting images. - [x] Customizable placeholder and indicator while loading images. - [x] Extensible image processing and image format easily. - [x] Low Data Mode support. - [x] SwiftUI support. - [x] Swift 6 & Swift Concurrency (strict mode) prepared. - [x] Load & cache for Live Photo.\n\nThe simplest use-case is setting an image to an image view with the UIImageView",
+            "features": [
+              "[x] Asynchronous image downloading and caching.",
+              "[x] Loading image from either URLSession -based networking or local provided data.",
+              "[x] Useful image processors and filters provided.",
+              "[x] Multiple-layer hybrid cache for both memory and disk.",
+              "[x] Fine control on cache behavior. Customizable expiration date and size limit.",
+              "[x] Opt-in async cache probing in KingfisherManager to avoid blocking the caller thread on disk cache checks.",
+              "[x] Cancelable downloading and auto-reusing previous downloaded content to improve performance.",
+              "[x] Independent components. Use the downloader, caching system, and image processors separately as you need."
+            ],
+            "sections": [
+              "Features",
+              "Kingfisher 101",
+              "A More Advanced Example",
+              "Method Chaining",
+              "Requirements",
+              "Current development branch",
+              "Kingfisher 8.0",
+              "Kingfisher 7.0",
+              "Installation",
+              "Documentation",
+              "Migrating",
+              "Other",
+              "Future of Kingfisher",
+              "Developments and Tests"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11550
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "herdrdev/herdr-app",
+          "owner": "herdrdev",
+          "name": "herdr-app",
+          "url": "https://github.com/herdrdev/herdr-app",
+          "homepage": "https://herdr.dev",
+          "description": "herdr desktop app",
+          "language": "Rust",
+          "topics": [],
+          "stars": 1851,
+          "forks": 253,
+          "open_issues": 283,
+          "starGain": null,
+          "heat": 375.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 18,
+          "created_at": "2026-10-16T20:36:36Z",
+          "pushed_at": "2026-11-04T01:21:50Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.7,
+          "breakdown": {
+            "heat": 97,
+            "community": 62,
+            "activity": 81,
+            "maturity": 75
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Herdr is a desktop app for terminals and coding agents. Keep work in spaces, see which agents need you, and leave terminals running when you close the window.\n\ncurl -fsSL https://releases.herdr.dev/app/install.sh sh\n\nLinux needs a desktop session and a working Vulkan driver. macOS builds are available for Apple Silicon; Intel Mac users can build from source. Linux builds are x86-64 and ARM64.",
+            "features": [
+              "Working: still busy.",
+              "Blocked: waiting for you.",
+              "Done: finished while you were looking elsewhere.",
+              "Idle: not working, or a finished agent you have looked at."
+            ],
+            "sections": [
+              "Herdr",
+              "Install",
+              "Linux and macOS",
+              "Windows",
+              "Find your work",
+              "Work on another machine",
+              "Make it yours",
+              "Updates and privacy",
+              "For agents",
+              "Build from source"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7535
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "OpenSelena/omniget",
+          "owner": "OpenSelena",
+          "name": "omniget",
+          "url": "https://github.com/OpenSelena/omniget",
+          "homepage": "http://omniget.nav.bd/",
+          "description": "Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte.",
+          "language": "Rust",
+          "topics": [
+            "downloadmanager",
+            "gui",
+            "hacktoberfest",
+            "homebrew",
+            "lightweight",
+            "linux",
+            "linux-distribution",
+            "local-first"
+          ],
+          "stars": 1477,
+          "forks": 168,
+          "open_issues": 26,
+          "starGain": null,
+          "heat": 106.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 119,
+          "created_at": "2026-07-08T06:17:59Z",
+          "pushed_at": "2026-11-03T08:22:04Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 78.4,
+          "breakdown": {
+            "heat": 90,
+            "community": 59,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "<!-- Search keywords (kept here so GitHub search, Google and AI assistants can find the project): OmniGet is a free open source downloader and media toolbox for Windows, macOS and Linux. udemy downloader, hotmart downloader, kiwify downloader, course downloader, youtube downloader, yt-dlp gui, instagram downloader, instagram story downloader, reels downloader, twitter downloader, x video downloader, pinterest downloader, pinterest board backup, tiktok downloader, reddit downloader, twitch vod downloader, bilibili downloader, telegram downloader, torrent client, magnet downloader, subtitle downloader, whisper transcription, text to speech, epub reader, pdf reader, anki flashcards, spaced repetition, music player, spicetify, media downloader, download manager, reddit thread archiver, twitch chat downloader, twitch emotes, linkedin data export, spotify history, facebook album downloader, pdf tools, pdf repair, pdf to markdown, image compressor, video compressor, video to gif, ctf tools, mcp server, claude code plugin, tauri, rust, svelte.\n\nGitHub allows 20 topics. The repository uses exactly these 20: downloader, download-manager, media-downloader, video-downloader, youtube-downloader, yt-dlp, yt-dlp-gui, course-downloader, udemy-downloader, hotmart-downloader, bilibili-downloader, tiktok-downloader, instagram-downloader, twitter-downloader, reddit-downloader, telegram-downloader, twitch-downloader, subtitle-downloader, epub-reader, spaced-repetition --\n\nDownload Udemy and Hotma",
+            "features": [
+              "Why OmniGet",
+              "Download and install",
+              "Your first download in one minute",
+              "What OmniGet downloads",
+              "The browser extension, step by step",
+              "The Tools section: 158 tools in 25 categories",
+              "OmniGet for AI agents: MCP server and Claude Code plugin",
+              "Plugins: Courses, Study, Telegram, Convert"
+            ],
+            "sections": [
+              "Contents",
+              "Why OmniGet",
+              "How it compares",
+              "Download and install",
+              "The first launch warning, and how to clear it",
+              "Linux media plugins",
+              "Portable mode",
+              "Your first download in one minute",
+              "Skip the window entirely",
+              "What OmniGet downloads",
+              "The browser extension, step by step",
+              "Level 1: from inside the app (no downloads, no zip files)",
+              "Level 2: from the release zip",
+              "Level 3: Firefox, other browsers and manual pairing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 61653
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "bggRGjQaUbCoE/PiliPlus",
+          "owner": "bggRGjQaUbCoE",
+          "name": "PiliPlus",
+          "url": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+          "homepage": "",
+          "description": "PiliPlus",
+          "language": "Dart",
+          "topics": [
+            "android",
+            "flutter",
+            "ios",
+            "linux-desktop",
+            "macos",
+            "windows"
+          ],
+          "stars": 20258,
+          "forks": 1580,
+          "open_issues": 430,
+          "starGain": 77,
+          "heat": 77,
+          "heatBasis": "trending",
+          "heatPercentile": 86,
+          "ageDays": 804,
+          "created_at": "2024-08-22T02:24:56Z",
+          "pushed_at": "2026-11-03T07:43:02Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 80.2,
+          "breakdown": {
+            "heat": 86,
+            "community": 82,
+            "activity": 70,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- [x] Android - [x] iOS - [x] Pad - [x] Windows - [x] Linux\n\n- [x] 编辑动态 - [x] DLNA 投屏 - [x] 离线缓存/播放 - [x] 移动端支持点击弹幕悬停，点赞、复制、举报 by @My-Responsitories - [x] 播放音频 - [x] 跳过番剧片头/片尾 - [x] 安卓端 loudnorm 适配 by @My-Responsitories - [x] Win/Mac 支持极验、短信登录 by @My-Responsitories - [x] 视频截取动图 by @My-Responsitories - [x] AI 原声翻译 - [x] SuperChat - [x] 播放课堂视频 - [x] 发起投票 - [x] 发布动态/评论支持 富文本编辑 / 表情显示 / @用户 - [x] 修改消息设置 - [x] 修改聊天设置 - [x] 展示折叠消息 - [x] 查看用户图文 - [x] 动态话题 - [x] 直播分区 - [x] 分享 视频 / 番剧 / 动态 / 专栏 / 直播 至消息 - [x] 创建/修改/删除关注分组 - [x] 移除粉丝 - [x] 直播弹幕发送表情 - [x] 收藏夹排序 - [x] 稍后再看 ~~ 未看 ~~ / 未看完 / ~~ 已看完 ~~ 分类 - [x] WebDAV 备份/恢复设置 - [x] 保存评论/动态 - [x] 高级弹幕 by @My-Responsitories - [x] 取消/置顶评论 - [x] 记笔记 - [x] 多账号支持 by @My-Responsitories - [x] 屏蔽带货动态/评论 - [x] 互动视频 - [x] 发评/动态反诈 - [x] 高能进度条 - [x] 滑动跳转预览视频缩略图 - [x] Live Photo - [x] 复制/移动/排序收藏夹/稍后再看视频 - [x] 超分辨率 - [x] 合并弹幕 - [x] 会员彩色弹幕 - [x] 播放全部/继续播放/倒序播放 - [x] Cookie登录 - [x] 显示视频分段信息 - [x] 调节字幕大小 - [x] 调节全屏弹幕大小 - [x] 收藏夹/稍后再看多选删除 - [x] 搜索用户动态 - [x] 直播弹幕 - [x] 修改头像/用户名/签名/性别/生日 - [x] 创建/编辑/删除收藏夹 - [x] 评论楼中楼查看对话 - [x] 评论楼中楼定位点击查看的评论 - [x] 评论楼中楼按热度/时间排序 - [x] 评论点踩 - [x] 私信发图 - [x] 投币动画 - [x] 取消/追番，更新追番状态 - [x] 取消/订阅合集 - [x] SponsorBlock - [x] 显示视频完整合集 - [x] 三连动画 - [x] 番剧三连 - [x] 带图评论 - [x] 视频TAG - [x] 筛选搜索 - [x] 转发动态 - [x] 合集图片 - [x] 删除/置顶/撤回私信 - [x] 举报用户/评论/视频/动态 - [x] 删除/发布/置顶文本/图片动态 - [x] 其他\n\n- [x] 专栏界面 - [x] 私信界面 - [x] 收藏面板 - [x] PIP - [x] 视频封面 - [x] 回复界面 - [x] 系统通知 - [x] 评论显示 - [x] 亮度调节 - [x] 视频播放 - [x] 视频staff - [x] 防止bottomsheet遮挡全屏视频 - [x] 其他",
+            "features": [
+              "[ ] gRPC [wip]",
+              "[x] 移动端支持点击弹幕悬停，点赞、复制、举报 by @My-Responsitories",
+              "[x] 跳过番剧片头/片尾",
+              "[x] 安卓端 loudnorm 适配 by @My-Responsitories",
+              "[x] Win/Mac 支持极验、短信登录 by @My-Responsitories",
+              "[x] 视频截取动图 by @My-Responsitories",
+              "[x] SuperChat",
+              "[x] 发布动态/评论支持 富文本编辑 / 表情显示 / @用户"
+            ],
+            "sections": [
+              "适配平台",
+              "refactor",
+              "feat",
+              "opt",
+              "fix",
+              "功能",
+              "下载",
+              "声明",
+              "致谢",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 4994
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "skylot/jadx",
+          "owner": "skylot",
+          "name": "jadx",
+          "url": "https://github.com/skylot/jadx",
+          "homepage": "",
+          "description": "Dex to Java decompiler",
+          "language": "Java",
+          "topics": [
+            "android",
+            "decompiler",
+            "dex",
+            "java"
+          ],
+          "stars": 51560,
+          "forks": 5887,
+          "open_issues": 464,
+          "starGain": 58,
+          "heat": 58,
+          "heatBasis": "trending",
+          "heatPercentile": 80,
+          "ageDays": 4978,
+          "created_at": "2013-03-18T17:08:21Z",
+          "pushed_at": "2026-11-02T20:52:37Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78.9,
+          "breakdown": {
+            "heat": 80,
+            "community": 89,
+            "activity": 67,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 15,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Command-line and GUI tools for producing Java source code from Android Dex and APK files\n\nMain features: - decompile Dalvik bytecode to Java code from APK, dex, aab, apks, apkm, xapk and zip files - also decompile Java bytecode (jar, class, aar) and smali files - decode AndroidManifest.xml and other resources from resources.arsc - deobfuscator included\n\njadx-gui features: - view decompiled code with syntax highlighting - jump to declaration - find usage - full-text search - smali debugger, see the wiki page for setup and usage",
+            "features": [
+              "decompile Dalvik bytecode to Java code from APK, dex, aab, apks, apkm, xapk and zip files",
+              "also decompile Java bytecode (jar, class, aar) and smali files",
+              "decode AndroidManifest.xml and other resources from resources.arsc",
+              "deobfuscator included",
+              "view decompiled code with syntax highlighting",
+              "jump to declaration",
+              "full-text search",
+              "smali debugger, see the wiki page for setup and usage"
+            ],
+            "sections": [
+              "JADX",
+              "Download",
+              "Install",
+              "Usage",
+              "Use jadx as a library",
+              "Build from source",
+              "Troubleshooting",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 18599
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "thedotmack/claude-mem",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "calesthio/OpenMontage",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "D4Vinci/Scrapling",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "vercel-labs/agent-desktop",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "FlashML-org/FreeToken",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "JuliusBrussee/caveman",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/DeepInfer",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "Zagitta/gpu-unlock",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "tangency-labs/solidcraft",
+      "category": "frontend",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "designfuchen/word-atlas",
+      "category": "frontend",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "egoist/mygo",
+      "category": "frontend",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

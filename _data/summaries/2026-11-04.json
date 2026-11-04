@@ -1,0 +1,118 @@
+{
+  "JustVugg/colibri": {
+    "summary_zh": "利用 MoE 的稀疏性做三级分层：热专家驻 GPU（CUDA / Vulkan），温专家驻内存，冷专家从 NVMe 按需流式读取，因此几百亿参数的模型不必整块装进显存。纯 C 实现，一个模型族一个文件，不依赖推理框架，可直接读已发布的 GGUF。内置 13 个引擎，覆盖 GLM-5.2/5.3、Kimi K3、DeepSeek V4 Flash/V4.1 Flash、Qwen3.6 等语言模型，另有图像与决策模型；后端可选 CPU、Vulkan 与 CUDA。",
+    "highlight_zh": "把「显存不够」改写成「磁盘够快就行」——MoE 的稀疏性第一次被真正当成内存管理问题来处理。"
+  },
+  "tashfeenahmed/freellmapi": {
+    "summary_zh": "把 34 家 provider 的免费额度聚合成一个 OpenAI 兼容的 /v1 端点，共 635 个免费模型端点，路由层按请求挑可用模型、遇限流自动故障转移，并按 key 记录用量以踩住各家免费上限。密钥加密存储，支持任意自定义 OpenAI 兼容端点。作者把定位写得很克制：仅供个人实验，不是生产方案。附带可浏览的模型目录，共 474 个模型族。",
+    "highlight_zh": "7.4B tokens/月的口径写进第一行——免费额度套利的价值全在「算得清还剩多少」。"
+  },
+  "deepseek-ai/dsh-superagent-prototype": {
+    "summary_zh": "面向单个仓库的主动式编码 agent，以 bundle 形式挂在 DeepSeek Harness 上。它监听 GitHub（可选飞书），被授权者提出请求后自动开工作项，在自己的会话与目录里干活，最后回到原对话交付，例如直接给出 PR；另有网页面板列出需要人介入的节点。方法论写在 docs/000-philosophy.md：只做被要求或被团队规则允许的事，只在必须有人行动时才开口。",
+    "highlight_zh": "4 天 1.6 万星、单日 +3,170 全榜第一——「少占用人的注意力」被当成一条工程约束来设计。"
+  },
+  "kornia/kornia": {
+    "summary_zh": "基于 PyTorch 的可微分计算机视觉库，把图像处理与几何视觉算子做成可批量、可反传、可上 GPU 的张量运算。价值在于替代手写版本：一旦变换链路变长、需要考虑梯度与设备，自己拼的实现就开始脆弱。涵盖图像变换、增强、几何估计等，长期维护，文档与教程体系完整。",
+    "highlight_zh": "八年前的老库还在涨——说明「可微分」这件事在视觉流水线里仍是刚需，而不是新概念。"
+  },
+  "lexmount/moli": {
+    "summary_zh": "面向 AI agent 的 headless 浏览器，Rust 编写，核心是「按需布局与渲染」：默认不排版、不绘制，只给出结构化的语义树，需要坐标、截图或 PDF 时才打开布局。同一端点同时提供 CLI、CDP、WebDriver Classic 与 BiDi 四种接入方式，输出可选 Markdown、semantic_tree_text、截图、整页图或分页 PDF，支持 --eval 执行交互后再导出。",
+    "highlight_zh": "「结构优先、像素按需」——把 agent 抓网页的成本从「渲染整页」压到「只读需要的那部分」。"
+  },
+  "immich-app/immich": {
+    "summary_zh": "自托管的照片与视频管理方案，对标 Google Photos：移动端自动备份、时间线浏览、人脸与物体识别、相册共享，服务端与客户端全部自持，数据不上第三方云。技术栈为 NestJS 后端 + Flutter 多端 App，长期迭代，社区规模在自托管相册这个品类里最大。AGPL-3.0 许可，对二次分发有传染性约束。",
+    "highlight_zh": "十一万八千星还在每天涨——「自己的照片存在自己盘里」这件事，需求比想象中刚性。"
+  },
+  "mattpocock/sandcastle": {
+    "summary_zh": "用 TypeScript 编排沙箱化编码 agent 的库：一次 sandcastle.run() 起一个隔离环境，分支策略可配，跑完把分支上的提交合回主干。provider 无关，内置用操作系统自身沙箱的原生实现（Linux/WSL2 的 Bubblewrap、macOS 的 Seatbelt）、Docker/Podman 镜像方案，以及 Daytona、E2B、Fly.io Sprites、Modal、Vercel 等云沙箱，也可自写 provider。适合并行跑多个无人值守 agent。",
+    "highlight_zh": "把「agent 在哪跑」抽成 provider 接口——沙箱不是安全补丁，是编排的一等公民。"
+  },
+  "Christ9038/Ydisks-Xianyu-Helper": {
+    "summary_zh": "面向闲鱼多账号的自动发货与消息回复系统，Go 写后端、React 做管理界面，支持多账号并行、自动回复与订单自动交付。项目维护中英文双份文档与 Wiki，中文 Wiki 面向主要用户群。功能定位偏电商运营工具，实际使用涉及平台规则边界。",
+    "highlight_zh": "多账号、自动发货、自动回复——把「一个人管十个店」的运营动作做成了本地服务。"
+  },
+  "super-productivity/plainspace": {
+    "summary_zh": "轻量共享工作区：任务、笔记、投票、提醒放在一个 Space 里，一条链接分享出去，对方用浏览器就能参与，不用装 App 也不用注册。定位是「不要项目管理那套开销的协作」——适合家庭计划、小团队临时协作这类场景。SolidJS + Hono + PostgreSQL，可 Docker 自托管，也提供托管版。",
+    "highlight_zh": "125 星也上榜，说明这一类「够用就好的协作」在模板化 SaaS 之外确实有位置。"
+  },
+  "Nitjsefnie/Overflow": {
+    "summary_zh": "用互助记账的方式协调开源贡献：把闲置的 LLM 订阅额度折算成信用，帮别人处理 issue 赚取，自己 backlog 堆积时再花掉。不涉及真实货币，也没有代币，全部通过 GitHub Issue 与 PR 流转——注册仓库、配置两套标签目录，系统自动装 webhook。定位是给「产能有潮汐」的个人与小团队做缓冲。",
+    "highlight_zh": "把「我这周有空、下周没空」变成可记账的信用——开源协作里少见的机制设计。"
+  },
+  "keploy/keploy": {
+    "summary_zh": "用真实流量自动生成 API 测试：在 eBPF 层抓取网络调用、数据库查询与流式事件，录下来重放成测试用例和数据 mock，不需要写代码也不挑语言。定位是「比单元测试更快的集成测试」——测试素材来自用户实际产生的请求，而不是人工构造。适合微服务改造、回归验证与遗留系统兜底，附带 sandbox 隔离避免录制流量污染真实数据。",
+    "highlight_zh": "测试用例不该手写，该从生产流量里长出来——eBPF 让这件事第一次做到了无侵入。"
+  },
+  "avelino/awesome-go": {
+    "summary_zh": "Go 生态的框架、库与软件清单，按领域分门别类，长期维护、条目量在同类清单里最大。价值不在内容本身有多深，而在它是社区公认的索引入口——新人找库、老手确认某类问题有没有成熟轮子，第一站通常是它。条目提交有明确的贡献规范，靠社区评审维持质量。",
+    "highlight_zh": "十九万星的书签——清单类项目的护城河从来不是内容，是「大家都认这一个」。"
+  },
+  "Asymptote-Labs/agent-beacon": {
+    "summary_zh": "跨 harness 的 agent 记忆层：把 Claude Code、Cursor、Codex、OpenCode 等 20 多个工具里的会话历史统一采集，从中提炼可复用的工作流、纠错记录与调试模式，再通过 MCP 或 Agent Skills 供后续 agent 取用。支持完整会话回放（提示词、工具调用、命令、审批、token 全在一条 trace 里），本地优先、JSONL 落盘，可显式选择不使用云端。",
+    "highlight_zh": "「一个 agent 解决过的问题，不该让另一个从头再学一遍」——这句话值 3 千星。"
+  },
+  "aquasecurity/trivy": {
+    "summary_zh": "一体化安全扫描器：容器镜像、文件系统、Git 仓库、虚拟机镜像、Kubernetes 都在扫描范围内，覆盖 OS 包与依赖漏洞（CVE）、SBOM 生成、IaC 配置缺陷、敏感信息与许可证。工程上最大的优势是「一个二进制、零配置起步」，因此在 CI 流水线里被广泛当作默认扫描环节。Apache-2.0，商业使用无授权障碍。",
+    "highlight_zh": "三十九千星、每天还在涨——安全扫描的竞争点早已不是能力，而是「能不能塞进 CI 不拖慢构建」。"
+  },
+  "shy3130/tick-stock-panel": {
+    "summary_zh": "自托管的 A 股量化工作台，Docker 单容器、零外部数据库，数据全部落本地 Parquet（DuckDB 查询）。核心是一套「核心 + 扩展」分层：能力路由矩阵按数据源声明能力独立路由，换源不换口径；策略、回测、监控、复盘共用同一份 enriched 数据。指标流水线现算 68 列信号，回测与实盘走同一个 StrategyEngine，分钟级策略逐日回放以避免未来函数。开放 65 个契约化端点与 12 个 MCP 工具，AI 助手可取数并逐条展示取数过程。",
+    "highlight_zh": "「回测 = 实盘同路径」这一条，比多 20 个功能更能说明作者懂量化。"
+  },
+  "2giosangmitom/sqmeow.nvim": {
+    "summary_zh": "跑在 Neovim 里的数据库客户端，SQL、NoSQL 与分析型数据库统一入口：浏览库表、执行查询、直接编辑数据、筛选排序结果，不用为看几行数据切到 GUI。数据库操作跑在独立的 Rust 进程里，结果集用 Polars 在本地做过滤排序，连接与草稿跟着项目走，配合 blink.cmp / nvim-cmp 做库表感知补全。",
+    "highlight_zh": "把「查一行数据」的动作留在编辑器里——终端党的真实痛点是上下文切换，不是功能缺失。"
+  },
+  "masumedb/masume": {
+    "summary_zh": "键盘优先的终端数据库客户端，带 AI 对话与 MCP 服务器。支持 PostgreSQL、MySQL、MariaDB、SQL Server、ClickHouse、SQLite、Cassandra、ScyllaDB、Redis、MongoDB，以及 Neon、Supabase、PlanetScale、Turso 等托管服务。单二进制、多平台包管理分发（mise / npm / go / brew / scoop / deb / rpm / apk），支持从 $DATABASE_URL 或 Docker、Podman、kubectl 上下文自动发现连接。",
+    "highlight_zh": "安装方式列了九种——终端工具的第一步竞争，是「让人愿意装」。"
+  },
+  "yimindev/dati": {
+    "summary_zh": "把数据库变成 agent 可用 MCP 工具的语义网关：连上库、补一层语义元数据、配置内置或参数化 SQL 工具，即可发布成 MCP 服务供任意 agent 或 MCP 宿主调用。内置语义层、权限层与工具层三段，支持 MySQL、PostgreSQL、ClickHouse、Doris；通过 Streamable HTTP 暴露，带演示实例与样例数据。定位是给 ChatBI 与数据分析场景做受控的数据库访问层。",
+    "highlight_zh": "不让 agent 直接连库，而是给它一组有语义、有权限的工具——这才是企业里能落地的形态。"
+  },
+  "Sheltercosmo/jev4pg": {
+    "summary_zh": "给 PostgreSQL 14–17 加自然语言查询与语义算子的扩展：41 个 JEV 算子覆盖过滤、抽取、排序、匹配与校验，支持中英文自然语言查询，可在现有数据上直接搭语义搜索、文档处理与分析工具。设计上强调可复用的证据链——原生执行、并行计划与可解释的向量表示，另附 NL2SQL 基准与性能数据。",
+    "highlight_zh": "把语义算子做成 SQL 扩展而不是另一个向量库——这条路线省掉了一整套数据搬运。"
+  },
+  "lexifina/global-law": {
+    "summary_zh": "把全世界法律放进 git 历史：每个司法辖区的法律是独立仓库，每一次提交对应一部生效的法律，提交里的 In-force 日期就是时间坐标，因此可以查询「任意国家、任意日期的任意条文」，并逐词追溯到改写它的那部法。主仓库以 submodule 汇总各国语料，附 Python 命令行（show / blame / words / diff / laws）与一个含 18 个只读工具的 MCP 服务器，本地运行、不联网。",
+    "highlight_zh": "用 git 的提交历史表达「法条何时被哪部法改写」——这个映射一旦成立，法律检索的时间维度就免费获得了。"
+  },
+  "ivankovic/omnidiff": {
+    "summary_zh": "内容感知的差异比较工具：不按行切，而是按文件类型选算法——代码走 AST 级比较，文档、表格、图片、编译产物各有专门处理，因此重构式改动（换行、重排、变量重命名）不会被呈现成一整片 diff。官方数据称可对 99.95% 的代码变更给出稳健结果，其中 98.8% 使用了内容专用算法。Rust 实现，提供命令行与浏览器端对照查看。",
+    "highlight_zh": "diff 的失败模式不是「比不出来」，而是「比出来了但没法看」——按内容类型选算法直击这点。"
+  },
+  "KKKKhazix/agent-autoloop": {
+    "summary_zh": "给命令行 Agent 加一层后台调度：定时任务、GitHub Issue、业务报错都变成标准事件送进内核，按 rules.json 派给指定 Agent 在指定目录干活，Agent 干完一轮就退出、不占进程不烧 token。遇到删数据、重启服务、花钱、对外发消息这类需要人拍板的事，推一张卡片到飞书、钉钉、企微、Slack、Discord 或桌面通知，回答后接上原会话继续。零外部依赖内核 + 可插拔的事件源、Agent、通知通道与上线流水线，另有七套场景模板。",
+    "highlight_zh": "「等你回复期间不占进程、不花 token」——这一条把「人不在场」从缺陷变成了设计前提。"
+  },
+  "Aryanutkarsh/SeeCode": {
+    "summary_zh": "把一句话的需求描述变成可交互的动画图表：一段短 JSON 规格生成单个 HTML 文件，可悬停、可点击、可逐步走查，也能导出 SVG、PNG、GIF 或 MP4。支持 45 种图型，每种有自己的动画方式（系统图走流向、时序图逐条播消息、图表按数据生长），也可全部静态化；图表数据可直接读 CSV 或 JSON，不必经过模型。以 Claude Code 插件与 Agent Skills 形式分发。",
+    "highlight_zh": "「让图自己解释自己」——把架构图的产出从静态截图变成可走查的交互件。"
+  },
+  "audacity/audacity": {
+    "summary_zh": "跨平台多轨音频编辑与录音软件，Windows / macOS / Linux 通用，长期是免费音频编辑的事实标准。当前主分支正在做 Audacity 4：全新 UI 与大量重构，因此 master 对新贡献者并不友好，3.x 的补丁需从 audacity3 分支切出。项目由 Muse Group 支持，仓库同时承载问题跟踪与构建说明。",
+    "highlight_zh": "二十一年的老项目还在改 UI——它今天出现在榜上，更多是「正在进行大版本重写」这个状态的副产品。"
+  },
+  "onevcat/Kingfisher": {
+    "summary_zh": "纯 Swift 的图片下载与缓存库：异步下载、内存与磁盘双层缓存、可取消与自动复用，处理器与滤镜体系可扩展，直接给 UIImageView、NSImageView、UIButton、WKInterfaceImage 等控件加扩展以 URL 设图。支持预取、渐进式加载、Live Photo 与 SwiftUI，已适配 Swift 6 严格并发模式。组件可拆开单用——下载器、缓存、处理器彼此独立。",
+    "highlight_zh": "十一年还在榜上：图片加载这件小事，从来没有被平台原生能力真正解决过。"
+  },
+  "herdrdev/herdr-app": {
+    "summary_zh": "给终端与编码 agent 用的桌面应用：空间（space）对应一台机器上的一个仓库，标签页与分屏承载终端或面板；侧栏把各空间里的 agent 汇总成一张列表，按 Working / Blocked / Done / Idle 标状态，点开即看。关键设计是窗口只负责排列，core 负责运行——关掉窗口终端继续跑，重启或崩溃后保留的分屏以最后一次所在目录重开新 shell。支持 SSH 接入远端机器，远端任务在本机休眠时仍继续。",
+    "highlight_zh": "窗口关掉、终端还在跑——把「终端进程的生死」与「界面的生死」解耦，是 agent 时代的必要重构。"
+  },
+  "OpenSelena/omniget": {
+    "summary_zh": "开源下载管理器与媒体工具箱，Tauri 2 + Rust + Svelte 构建，覆盖 Windows / macOS / Linux。宣称支持 1,800+ 站点，含 YouTube、B 站、Twitch、Instagram、TikTok、Reddit 等，也面向 Udemy、Hotmart、Kiwify 等课程平台；附带字幕下载、Whisper 转写、TTS、EPUB / PDF 阅读、Anki 卡片、音视频压缩等周边工具。",
+    "highlight_zh": "把 yt-dlp 的能力包成 GUI，再堆一圈媒体工具——定位清楚，边界也清楚。"
+  },
+  "bggRGjQaUbCoE/PiliPlus": {
+    "summary_zh": "第三方 B 站客户端，Flutter 一套代码覆盖 Android、iOS、Pad、Windows、Linux。功能面铺得很全：动态编辑、DLNA 投屏、离线缓存、跳过片头片尾、弹幕悬停点赞复制举报、AI 原声翻译、SuperChat、WebDAV 备份恢复、多账号、互动视频、超分辨率、SponsorBlock、评论楼中楼与粉丝分组管理等，几乎覆盖官方客户端之外的所有长尾需求。",
+    "highlight_zh": "两万星的第三方客户端：官方没做的长尾功能，全被一个 Flutter 项目补齐了。"
+  },
+  "skylot/jadx": {
+    "summary_zh": "Dex 反编译工具，命令行与 GUI 双形态：把 APK、dex、aab、apks、xapk 里的 Dalvik 字节码还原成 Java 源码，也能处理 jar、class、aar 与 smali；可解码 AndroidManifest.xml 与 resources.arsc 中的资源，内置反混淆。GUI 提供语法高亮、跳转声明、查找引用、全文搜索与 smali 调试器。是 Android 逆向与安全审计的基础工具之一。",
+    "highlight_zh": "十四年、五万星的逆向基石——只要 Android 还在用 dex，这个工具就不会消失。"
+  }
+}
