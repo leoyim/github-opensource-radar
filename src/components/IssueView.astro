@@ -29,6 +29,11 @@ const roles = [...new Set(issue.categories.flatMap((c) => c.items.flatMap((i) =>
 
 const total = issue.stats.selected;
 const perCat = Math.max(...issue.categories.map((c) => c.items.length));
+/* 方向上限与各方向实际条数并不总是一致：候选不足的方向会少于上限。
+   文案必须区分「上限」与「实入选」，否则会出现「每个方向取前 5 个，共 27 个」这类自相矛盾的表述。 */
+const catCounts = issue.categories.map((c) => c.items.length);
+const uneven = catCounts.some((n) => n !== perCat);
+const shortCats = issue.categories.filter((c) => c.items.length < perCat);
 /* 阳历用阿拉伯数字，农历用汉字，节气单独一行。全部在构建期算好 */
 const almanac = almanacOf(issue.date);
 /* 本期观察：上游 index.md 的横向分析，没有就整节省略 */
@@ -80,8 +85,8 @@ const spineNo = spineLines(`第${String(issueNo).padStart(2, '0')}期`);
       <p class="cover-kicker">GitHub 热点日报</p>
       <h1><time datetime={issue.date}>{displayDate(issue.date)}</time></h1>
       <p class="cover-lede">
-        从 {issue.stats.candidates} 个候选仓库中按四项指标加权，每个方向取前 {perCat}
-        个，共 {total} 个项目，附中文精读摘要。
+        从 {issue.stats.candidates} 个候选仓库中按四项指标加权，每个方向上限 {perCat}
+        个{uneven ? `（${shortCats.map((c) => `${c.label} ${c.items.length} 个`).join('、')}候选不足）` : ''}，共 {total} 个项目，附中文精读摘要。
       </p>
     </div>
 
