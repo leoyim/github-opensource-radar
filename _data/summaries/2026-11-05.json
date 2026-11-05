@@ -1,0 +1,110 @@
+{
+  "harry0703/MoneyPrinterTurbo": {
+    "summary_zh": "输入一个主题，依次完成脚本撰写、素材匹配、配音、字幕、配乐与合成，输出高清短视频。提供 AI Agent、WebUI、API、CLI 四种调用方式，支持批量生成、任务历史与设置导入导出；模型侧兼容 Kimi、OpenAI、Claude、Gemini、DeepSeek、通义千问、Azure、火山方舟、Ollama 及多家聚合网关，素材可用本地文件或 Pexels/Pixabay/Coverr 库存。",
+    "highlight_zh": "把一条短视频的生产拆成可替换的六段流水线，每段都能换模型、换素材、换参数。"
+  },
+  "NVIDIA/auto-ontology": {
+    "summary_zh": "从企业元数据生成本体与知识图谱，把「数据在哪、是什么意思、能不能用、从哪来」组织成 agent 可查询的上下文层，再通过 MCP、CLI 与 API 暴露给任意 agent 框架。核心是把自然语言问题翻译成受认证定义与血缘约束的确定性查询，并在每个答案上附带出处，缓解 agent 分析「答得快但答错」的问题。",
+    "highlight_zh": "文本转 SQL 的瓶颈不在生成，而在业务口径不一致——它先对齐定义，再允许提问。"
+  },
+  "The-PR-Agent/pr-agent": {
+    "summary_zh": "开源的 AI 代码评审 agent，围绕 pull request 做描述生成、逐行评审、改进建议与问答。README 明确声明它是 Qodo 的社区维护版旧项目，与 Qodo 商业产品及面向开源项目的免费版并非同一套实现，选型时需区分二者。支持接入多种模型，也能配合本地推理服务使用。",
+    "highlight_zh": "同一个名字下有两套东西：社区维护的开源版和厂商商业版，README 自己把这条界线划了出来。"
+  },
+  "qybaihe/bla": {
+    "summary_zh": "面向 AI 逆向工程 agent 的对抗性防护层：对二进制、Electron 应用、JS bundle、Python 与 WebAssembly 做处理，使自动化分析器在预算内耗尽、跟着诱饵走、产出错误结论，而终端用户的运行时行为不变。含 Electron 熔断加固、调试器与注入检测、按项目随机种子，风险较高的 LLM 诱导模块默认关闭。",
+    "highlight_zh": "防的不是人，是 token 预算——让分析 agent 在有限步数里得出错误结论。"
+  },
+  "Crosstalk-Solutions/project-nomad": {
+    "summary_zh": "离线优先的知识与教育服务器：把维基百科、医学参考、电子书（Kiwix）、可汗学院课程（Kolibri）、区域离线地图（ProtoMaps）、加密与编码工具（CyberChef）、笔记（FlatNotes）以及可选的本地 AI 聊天装进一台自己的机器，全部通过浏览器访问。基于 Debian 系系统安装，本体约占 5GB 磁盘、1GB 以内内存。",
+    "highlight_zh": "断网之后还剩多少可用信息，取决于你有没有提前把知识装进自己的硬盘。"
+  },
+  "vercel/next.js": {
+    "summary_zh": "React 全栈框架，在 React 最新特性之上补齐路由、服务端渲染、数据获取与构建链路，工具链的重要部分已用 Rust 重写以压缩构建时间。本期 +124 星，属于长期在榜的基础设施型项目，README 本身只保留入门课程、示例与文档入口。",
+    "highlight_zh": "它的热度不来自新故事，而来自所有新故事都得先在这里落地。"
+  },
+  "mermaid-js/mermaid": {
+    "summary_zh": "用类 Markdown 的文本描述生成流程图、时序图、类图、甘特图、思维导图等，直接嵌进文档与网页渲染。生态覆盖 npm 包、CDN、在线编辑器与多语言文档，并在文档中专设「安全图表」章节说明渲染外部输入时的边界。",
+    "highlight_zh": "图从代码里长出来，才可能跟着代码一起被 review 和版本化。"
+  },
+  "heydeer/slimdeer": {
+    "summary_zh": "不做质量滑块的图片压缩工具：对每张图搜索「仍能达到该图感知目标的最小文件」，PNG 输出为 2–256 色的调色板 PNG，同质量下中位样本比 TinyPNG 小 8–12%。命令行与浏览器（WebAssembly）跑同一份 Rust 代码，支持 JPEG→mozjpeg、AVIF、动图逐帧处理，图片不上传。",
+    "highlight_zh": "把「压缩质量」从人的主观档位，换成一张图一个目标分的搜索问题。"
+  },
+  "emilk/egui": {
+    "summary_zh": "Rust 的立即模式 GUI 库，同一套代码可跑在 Web（WASM）、原生桌面与游戏引擎里。设计取向是「最容易上手的 Rust GUI」：不依赖保留式控件树，每帧重建界面，只要能画带纹理的三角形就能集成。本期 +33 星，属长期维护的底层库。",
+    "highlight_zh": "界面每帧重算，状态留在你自己的变量里——这是它简单的原因，也是它的性能边界。"
+  },
+  "SuperMonster003/AutoJs6": {
+    "summary_zh": "Android 平台基于无障碍服务的 JavaScript 自动化工具，是 2020 年停止维护的 Auto.js 的二次开发分支，2021 年底起持续更新。用 Rhino 执行 JS 脚本，可做点击、滑动、识屏与流程录制，工程侧用 Android Studio 与 IntelliJ IDEA 构建，文档提供多语言版本。",
+    "highlight_zh": "手机上的自动化脚本宿主：能力来自无障碍权限，风险也来自同一处。"
+  },
+  "hydro-project/infinity": {
+    "summary_zh": "用 Rust 写的 agent 运行时：agent 遇到慢工具不再阻塞等待，而是让出执行、进入休眠，等事件到达再恢复，因此单机可容纳海量并发 agent（作者称树莓派内存可放 7.5 万个）。配套 Reactive Agent Protocol 让工具通过网络提供结果与订阅事件，另附一个在此之上构建的编码 agent。",
+    "highlight_zh": "把 async 那套「等待不占线程」的思路搬到 agent 上，成本模型才站得住。"
+  },
+  "openobserve/openobserve": {
+    "summary_zh": "开源的日志、指标、链路、RUM 与会话回放可观测平台，定位 Datadog / Splunk / Elasticsearch 的低成本替代。存储层用 Parquet 列式格式并原生存到对象存储，官方给出「存储成本最多降 140 倍」的说法；提供单二进制部署与多种采集协议入口。",
+    "highlight_zh": "可观测性的成本大头在存储，换列式格式与对象存储比换查询引擎更有效。"
+  },
+  "argoproj/argo-cd": {
+    "summary_zh": "Kubernetes 的声明式 GitOps 持续交付控制器：应用定义、配置与环境全部进版本库，集群状态持续向 Git 声明收敛，差异可视化、可审计、可回滚。本期 +12 星，属于清单里的稳定基础设施，热度不再来自新特性。",
+    "highlight_zh": "它管的不是发布动作，而是「集群应该长什么样」这件事的唯一解释权。"
+  },
+  "coder/coder": {
+    "summary_zh": "自托管的云开发环境平台：工作区用 Terraform 定义（EC2、K8s Pod、容器皆可），通过 WireGuard 隧道连接，闲置自动关机。新版本把 AI 编码 agent 也放进控制面执行，模型的凭据不下发到工作区，每个动作都绑定用户身份，并集中做模型治理、成本统计与审计。",
+    "highlight_zh": "把 agent 的执行循环收进控制面，凭据不进工作区——这是它能进企业网络的前提。"
+  },
+  "Balanov/equal": {
+    "summary_zh": "把真实 API 流量录成可离线复用的资产：应用指向本地录制器跑一遍正常流程，产出三样东西——返回录制响应的本地服务、可审阅可入库的 JSONL 磁带、以及一份 OpenAPI 3.1 文档。单个 7.4MB 静态二进制，支持 Linux/macOS/Windows 的 amd64 与 arm64，不依赖运行时与账号。",
+    "highlight_zh": "第三方 API 的可用性、限流与计费，从此可以变成一份可提交进 Git 的夹具。"
+  },
+  "dboudreau00/NocTORnal": {
+    "summary_zh": "面向网络犯罪调查的自托管案件系统：把人物、马甲、群组与信任关系建成图，每条边都可追溯到一份带保管链、写一次锁定的证据，并区分可信等级。基于 FastAPI 与 Postgres 16 + pgvector，含行级安全、TLP 分级、双人复核与单一出口代理，可用于竞争性假设（ACH）比对。README 标注为 beta 且未经安全审计。",
+    "highlight_zh": "调查工具的第一性要求不是功能多，而是每条结论都能回到一份不可篡改的证据。"
+  },
+  "NeuroVision-Studio/NeuraVision": {
+    "summary_zh": "一个 AI 内容生成平台的 PHP 后端导出：会员面板逻辑、后端 API、鉴权，以及自建的流量分流与分析模块。无构建步骤，PHP 7.4+ 直跑，SQLite 首次请求时自动建表，配置走环境变量。仓库明确说明这是「仅代码」导出，落地页、营销素材与会员面板前端资源均不在其中。",
+    "highlight_zh": "一份产品后端的不完整切片：能跑通的部分和只有演示意义的部分，作者自己在 ENGINE.md 里分开写了。"
+  },
+  "caru-ini/stack-diagram": {
+    "summary_zh": "给 agent 用的技能包：一句话描述技术栈，产出一张带官方 logo 的架构图。logo 按 svgl → devicon → gilbarbara/logos → 品牌自有仓库的顺序取用，AWS/GCP/Azure 用各家官方图标；连线绕开文字标签，渲染后由 agent 自检再交付。输出可选自包含 HTML、PNG、无依赖 React 组件或 Artifact。",
+    "highlight_zh": "架构图的成本主要在找图标和对齐，这两件事正好适合交给 agent 反复做。"
+  },
+  "govijr/terminal-mac": {
+    "summary_zh": "在终端里运行一台独立的 macOS 虚拟机，供 computer-use agent 操作：Apple Virtualization 启真实 macOS guest，guest 内的助手截屏并注入输入事件，终端用 Kitty/iTerm2 图形协议串流画面。guest 是另一台 Mac，有自己的应用、文件与账号，不继承宿主登录态；要求 Apple 芯片与 macOS 14+。",
+    "highlight_zh": "给 agent 一台可以随便点坏的 Mac，而不是你正在用的这台。"
+  },
+  "sheprd-labs/sheprd": {
+    "summary_zh": "Herdr 的原生桌面客户端，用 Rust 与 GPUI 写成，覆盖 macOS、Linux、Windows：管理仓库、Git worktree、标签与分屏，与 agent 对话、审阅改动、跟踪 PR 与用量，并可跨本地、SSH 与云主机工作。既支持已有的 Herdr 守护进程，也自带固定版本的 herdr-core，关闭客户端后会话仍在运行。",
+    "highlight_zh": "终端复用器正在变成 agent 的工位管理器，而它需要一个原生前端。"
+  },
+  "guohuiyuan/go-music-dl": {
+    "summary_zh": "Go 写的多平台音乐搜索与下载工具，覆盖网易云、QQ、酷狗、Bilibili、汽水音乐等十余个源，支持单曲、歌单、专辑、排行榜与本地音乐。形态包括 CLI、TUI、Web 与桌面端，并暴露一套可供 AI 调用的接口——agent 能直接操控正在打开的网页播放器点歌、切歌、调音量。",
+    "highlight_zh": "把一个灰色地带的工具，做成了 agent 能调用的本地点唱台。"
+  },
+  "davila7/claude-code-templates": {
+    "summary_zh": "Claude Code 的配置与监控 CLI，核心是一个约 1900 个组件的开放目录：skills、agents、slash 命令、MCP 集成、settings、hooks、mods、loops、沙箱与项目模板，支持一条命令安装，安装前可预览每个组件会写入哪些文件，也可把多个组件合并成一次安装。",
+    "highlight_zh": "生态碎片化的解法不是再写一个工具，而是给已有的东西建索引并标好出处。"
+  },
+  "wquguru/cicada": {
+    "summary_zh": "知了 Cicada：面向任意会议与直播的实时字幕、双语转写、同声传译与结构化会议纪要，覆盖 macOS、Windows、Linux 与 Android。直接读取系统声音，不往会议里塞机器人；发言时按住说话键由虚拟麦克风输出译文。macOS 上识别全程本机，无统计、无自建服务器，记录只存在本机会议目录。",
+    "highlight_zh": "不侵入会议、不经过自家服务器——把「实时同传」做成一个本地旁路。"
+  },
+  "crmne/zapfast": {
+    "summary_zh": "Rust + egui 写的 WhatsApp 原生桌面客户端，通过 whatsapp-rust 以「关联设备」方式登录手机账号，不内嵌浏览器引擎。作者在 Linux 上测得启动不到 1 秒、空闲内存约 200MB，对比 WhatsApp Web 的 1.13GB；界面提供简繁中文等十余种语言。",
+    "highlight_zh": "同一份聊天协议，去掉浏览器外壳后内存占用降到五分之一。"
+  },
+  "crmne/spotifast": {
+    "summary_zh": "Rust + egui 的 Spotify 桌面客户端，播放走 Spotify Soloist 或内置 librespot，同样不内嵌浏览器引擎。登录需自行在 Spotify 开发者后台注册应用并填入 Client ID，播放设备在底部设备菜单中切换，本地播放另需一次浏览器授权。",
+    "highlight_zh": "把「网页套壳」换成原生渲染，代价是登录流程要自己走一遍 OAuth 注册。"
+  },
+  "nullmoth/nvidia-macos-driver": {
+    "summary_zh": "让 NVIDIA GeForce 显卡在 macOS 15 Sequoia（Intel Mac 与 OpenCore 黑苹果）上走 Metal 的开源驱动，仓库内含内核扩展、Metal 插件与着色器翻译器，支持 Turing 及更新架构（GTX 16、RTX 20/30/40/50 等）。安装器是另一个独立项目 1401，作者说明多数测试在 RTX 5060 上完成。",
+    "highlight_zh": "官方早已放弃的组合，被社区用内核扩展与着色器翻译补回来了——代价是系统完整性设置。"
+  },
+  "altic-dev/FluidVoice": {
+    "summary_zh": "macOS 的本地语音听写应用：语音识别用 Parakeet 系列模型在设备上完成，识别后的润色由本地小模型处理，不联网、不要 API Key；另含命令模式，可用语音启动应用、跑快捷指令、触发系统操作。可 Homebrew 安装，Windows 与 iOS 已有测试版通道。",
+    "highlight_zh": "听写的延迟下限取决于模型在哪跑，把它放回本机就没有网络这一段。"
+  }
+}

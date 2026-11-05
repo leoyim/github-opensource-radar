@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-04",
+    "updated": "2026-11-05",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 13,
+    "count": 15,
     "publicCount": 12,
     "campaigns": [
       {
@@ -1039,6 +1039,142 @@
           "shadowsocks"
         ]
       }
+    },
+    {
+      "full_name": "4anw/DX11-Forcer",
+      "owner": "4anw",
+      "name": "DX11-Forcer",
+      "url": "https://github.com/4anw/DX11-Forcer",
+      "description": "Roblox DirectX 11 Graphics Boost 2026: Fix Lag and Rendering Issues on Windows",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "data",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-05",
+      "removedAt": "2026-11-05",
+      "issues": [
+        "2026-11-05"
+      ],
+      "score": 2.5,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "README 与主题词无关",
+          "detail": "仓库 topics 含 database、mysql、postgresql、directus、graphql、eslint 等数据库与工程工具词，但 README 通篇为 Roblox 客户端渲染后端（DirectX 11）的切换与稳定化说明，未出现任何数据库内容"
+        },
+        {
+          "type": "correlation",
+          "label": "与另一仓库在同一时间窗内创建",
+          "detail": "与 eldioss21/gamebeast-api-lens 的创建时间相距 56 分钟（2026-09-22 20:49 与 19:53），两者同为 HTML、体积 567KB 与 588KB、无许可证、零 fork、零 issue"
+        },
+        {
+          "type": "metadata",
+          "label": "43 天内无自然增长",
+          "detail": "仓库 70 星标，快照差值为 0，自创建以来收录的两次快照间未见新增星标"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的使用与再分发条件未界定"
+        },
+        {
+          "type": "content",
+          "label": "标题为营销式句式",
+          "detail": "描述为「Roblox DirectX 11 Graphics Boost 2026: Fix Lag and Rendering Issues on Windows」，带年份的标题句式与投放批次的写法一致，README 为落地页式导览，缺少构建步骤与源码结构说明"
+        }
+      ],
+      "verdict": "仓库内容与其标注的数据库类主题词无关，属主题堆砌式的引流页面，缺少可支撑技术解读的第一方内容，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 70,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-09-22T20:49:36Z",
+        "pushed_at": "2026-11-05T03:22:44Z",
+        "topics": [
+          "adonis-loader",
+          "compiler",
+          "composable",
+          "database",
+          "directus",
+          "eslint",
+          "game",
+          "gaming"
+        ]
+      },
+      "campaign": "topic-stuffing-2026-09"
+    },
+    {
+      "full_name": "eldioss21/gamebeast-api-lens",
+      "owner": "eldioss21",
+      "name": "gamebeast-api-lens",
+      "url": "https://github.com/eldioss21/gamebeast-api-lens",
+      "description": "Gamebeast-Style Game Studio Analytics API Guide 2026: A/B Testing and LiveOps",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "data",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-05",
+      "removedAt": "2026-11-05",
+      "issues": [
+        "2026-11-05"
+      ],
+      "score": 2.5,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "README 与主题词无关",
+          "detail": "仓库 topics 含 postgresql、database 等数据库词，实际内容为第三方游戏分析平台 Gamebeast 的接口索引与「SEO & Discoverability Notes」章节，不涉及数据存储、查询或建模"
+        },
+        {
+          "type": "correlation",
+          "label": "与另一仓库在同一时间窗内创建",
+          "detail": "与 4anw/DX11-Forcer 的创建时间相距 56 分钟，两者同为 HTML、体积接近、无许可证、零 fork、零 issue，投放节奏一致"
+        },
+        {
+          "type": "metadata",
+          "label": "43 天内无自然增长",
+          "detail": "仓库 68 星标，快照差值为 0，未见自然增长痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证"
+        },
+        {
+          "type": "content",
+          "label": "页面自述为第三方观察性索引",
+          "detail": "README 自述为「third-party observational companion」，主体是按章节组织的接口说明与推广性文案，非可实现或可复用的工程代码"
+        }
+      ],
+      "verdict": "仓库内容与其标注的数据库类主题词无关，属主题堆砌式的引流页面，缺少可支撑技术解读的第一方内容，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 68,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-09-22T19:53:21Z",
+        "pushed_at": "2026-11-05T03:15:08Z",
+        "topics": [
+          "a-b-testing",
+          "analytics",
+          "apis-json",
+          "attribution",
+          "company",
+          "experiments",
+          "game-development",
+          "gaming"
+        ]
+      },
+      "campaign": "topic-stuffing-2026-09"
     }
   ]
 }

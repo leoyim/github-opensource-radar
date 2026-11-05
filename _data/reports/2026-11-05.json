@@ -1,0 +1,2350 @@
+{
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T13:29:18.845+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-04",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 720,
+    "unclassified": 66,
+    "selected": 27,
+    "suppressedByHistory": 140,
+    "sameDateExempt": 0,
+    "removed": 0,
+    "removedTotal": 0,
+    "offTopic": 2,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "harry0703/MoneyPrinterTurbo",
+          "owner": "harry0703",
+          "name": "MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "homepage": "",
+          "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+          "language": "Python",
+          "topics": [
+            "ai-video-generator",
+            "content-creation",
+            "ffmpeg",
+            "instagram-reels",
+            "llm",
+            "python",
+            "short-video",
+            "subtitles"
+          ],
+          "stars": 139212,
+          "forks": 22207,
+          "open_issues": 70,
+          "starGain": 617,
+          "heat": 617,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 969,
+          "created_at": "2024-03-11T02:57:34Z",
+          "pushed_at": "2026-11-05T03:00:59Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 88.6,
+          "breakdown": {
+            "heat": 94,
+            "community": 97,
+            "activity": 68,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "只需提供视频 主题 或 关键词 ，即可自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。\n\n感谢 Kimi 赞助本项目！Kimi K3.1 Pro 是 Moonshot AI 迄今能力最强的 3T 级开放权重模型，拥有原生视觉能力与 100 万 Token 上下文，在知识工作、推理和长周期任务中展现前沿性能。在 MoneyPrinterTurbo 中，K3.1 Pro 能直接驱动视频创作，不仅撰写视频文案，还会提炼素材搜索关键词、决定成片画面；对内容理解越准确，匹配到的素材就越贴题。\n\nMoneyPrinterTurbo 用户专属优惠：新用户通过专属链接注册，首次成功充值可获充值金额 10% 的 API 额度。活动截至 2026 年 12 月 31 日。前往 Kimi 开放平台（中文站｜Global）体验 API。",
+            "features": [
+              "[x] 提供 AI Agent、WebUI、API 和 CLI 四种使用方式，既能快速上手，也能接入自动化流程",
+              "[x] 从主题自动完成脚本、配音、素材、字幕、配乐和剪辑，也支持在每个环节使用自定义内容",
+              "[x] 支持 批量生成多条成片 、任务历史记录，以及生成设置与 API Key 的导入、导出和恢复",
+              "[x] 支持 AI 自动生成或改写 多语言视频脚本 ，也可以直接使用自定义脚本",
+              "[x] 支持 Kimi / Moonshot AI、OpenAI、Anthropic Claude、Google Gemini、DeepSeek、阿里云通义千问、Microsoft Azure OpenAI、火山引擎方舟、xAI Grok、MiniMax 和 小米 MiMo 等主",
+              "[x] 兼容 胜算云、APIMart、Cloudflare AI Gateway、魔搭 ModelScope、AIHubMix、AIML API、EvoLink、OpenRouter、API Route、Ollama、Claude Code 订阅、OneAPI、LiteLLM、G",
+              "[x] 支持上传自己的 本地图片和视频 ，也可从 Pexels（免费）、Pixabay（免费） 和 Coverr 获取高清库存素材",
+              "[x] 支持 秘塔 MiniMax H3 文生视频，可生成 768P / 2K 、4～15 秒的原始素材，并适配 9:16 、 16:9 和 1:1 三种画幅"
+            ],
+            "sections": [
+              "MoneyPrinterTurbo 💸",
+              "一站式 AI 短视频生成工具",
+              "界面预览 🖥️",
+              "特别感谢 ❤️",
+              "作者的另一个开源项目：MangoDisk ⭐",
+              "功能特性 🎯",
+              "创作入口与工作流",
+              "脚本与模型服务",
+              "视频与图片素材",
+              "配音、字幕与配乐",
+              "成片与发布",
+              "作品展示 🎬",
+              "竖屏 9:16",
+              "横屏 16:9"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 29442
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "NVIDIA/auto-ontology",
+          "owner": "NVIDIA",
+          "name": "auto-ontology",
+          "url": "https://github.com/NVIDIA/auto-ontology",
+          "homepage": "",
+          "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+          "language": "Python",
+          "topics": [],
+          "stars": 5573,
+          "forks": 441,
+          "open_issues": 46,
+          "starGain": 2050,
+          "heat": 2050,
+          "heatBasis": "trending",
+          "heatPercentile": 99,
+          "ageDays": 191,
+          "created_at": "2026-04-27T21:45:56Z",
+          "pushed_at": "2026-11-04T19:31:19Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.6,
+          "breakdown": {
+            "heat": 99,
+            "community": 70,
+            "activity": 65,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Agents can retrieve documents and query databases, but reliability gates agentic analytics: a revenue metric answered faster is worth nothing if the number is wrong. Agents need a context layer that tells them where data lives, what it means, whether to use it, how to use it, where it came from, and what is similar. NVIDIA Auto Ontology is an open library that builds that layer from enterprise metadata, reconciles definitions across systems, and exposes it to any agent harness through MCP, CLI, and API. It complements the semantic models customers already own.\n\n- Discover: generate enterprise ontologies from metadata; connect existing ontologies and semantic models; build AI-ready knowledge graphs. - Ground: give agents trusted business meaning for metrics, entities, and relationships; reconcile inconsistent definitions across systems. - Validate: check generated queries against certified definitions and lineage; return provenance with every answer. - Expose: serve context to any agent harness through MCP, CLI, and API. Learn: fold certified corrections and usage back into the ontology, so shared context improves with every question.\n\nTo run a text-to-SQL benchmark such as BIRD, refer to the ontology SQL evaluation repository.",
+            "features": [
+              "Discover: generate enterprise ontologies from metadata; connect existing ontologies and semantic models; build AI-ready knowledge graphs.",
+              "Ground: give agents trusted business meaning for metrics, entities, and relationships; reconcile inconsistent definitions across systems.",
+              "Validate: check generated queries against certified definitions and lineage; return provenance with every answer.",
+              "Expose: serve context to any agent harness through MCP, CLI, and API.",
+              "Natural-language querying of structured data — questions are translated to",
+              "Semantic catalog / ontology layer over relational sources, stored in",
+              "Authentication & RBAC —using Better Auth.",
+              "Web UI for chat, analysis, data catalog, analytics, and settings."
+            ],
+            "sections": [
+              "Auto Ontology",
+              "Benchmarks",
+              "Key Features",
+              "Software Components",
+              "NVIDIA NIM",
+              "Quickstart",
+              "How it works",
+              "Use it from your agent",
+              "MCP server",
+              "Agent skills",
+              "REST API",
+              "Connectors, models, and predictions",
+              "Sources",
+              "Models"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 23955
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "The-PR-Agent/pr-agent",
+          "owner": "The-PR-Agent",
+          "name": "pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent",
+          "homepage": "https://www.pr-agent.ai",
+          "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+          "language": "Python",
+          "topics": [
+            "ai",
+            "anthropic",
+            "code-review",
+            "coding-assistant",
+            "devtools",
+            "ollama",
+            "openai",
+            "pull-request"
+          ],
+          "stars": 14879,
+          "forks": 2098,
+          "open_issues": 61,
+          "starGain": 280,
+          "heat": 280,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 1218,
+          "created_at": "2023-07-05T21:02:15Z",
+          "pushed_at": "2026-11-05T00:12:31Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.8,
+          "breakdown": {
+            "heat": 88,
+            "community": 80,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "This repository contains the open-source PR Agent Project. It is not the Qodo offering for open-source projects.\n\nPR-Agent is an open-source, AI-powered code review agent and a community-maintained legacy project of Qodo. It is distinct from Qodo's primary AI code review offering, which provides a feature-rich, context-aware experience. Qodo offers a free version for open-source projects and integrates seamlessly with GitHub, GitLab, Bitbucket, and Azure DevOps for high-quality automated reviews.\n\nPR-Agent is a community-maintained open-source project, with its ongoing development supported by our sponsors. If you'd like to support the project, consider becoming a sponsor.",
+            "features": [
+              "Getting Started",
+              "Why Use PR-Agent?",
+              "Features",
+              "See It in Action",
+              "How It Works",
+              "Data Privacy",
+              "Contributing",
+              "name: PR Agent action step"
+            ],
+            "sections": [
+              "Sponsors",
+              "Table of Contents",
+              "Getting Started",
+              "🚀 Quick Start for PR-Agent",
+              ".github/workflows/pr-agent.yml",
+              "News and Updates",
+              "Why Use PR-Agent?",
+              "🎯 Built for Real Development Teams",
+              "Features",
+              "See It in Action",
+              "Usage Examples",
+              "Comment on a PR (GitHub/GitLab/Bitbucket/…):",
+              "Issue-scoped commands run on an issue instead of a PR:",
+              "Or locally via the CLI:"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9243
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "qybaihe/bla",
+          "owner": "qybaihe",
+          "name": "bla",
+          "url": "https://github.com/qybaihe/bla",
+          "homepage": "https://bla.tools",
+          "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
+          "language": "TypeScript",
+          "topics": [
+            "adversarial-ai",
+            "claude-code",
+            "cursor",
+            "electron-security",
+            "llm-security",
+            "mcp",
+            "mcp-server",
+            "obfuscation"
+          ],
+          "stars": 2341,
+          "forks": 310,
+          "open_issues": 19,
+          "starGain": 272,
+          "heat": 272,
+          "heatBasis": "snapshot",
+          "heatPercentile": 88,
+          "ageDays": 11,
+          "created_at": "2026-10-25T05:25:45Z",
+          "pushed_at": "2026-11-05T02:11:38Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.3,
+          "breakdown": {
+            "heat": 88,
+            "community": 64,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Türkçe · Русский · Tiếng Việt · ไทย · Deutsch · Español · Français · Українська · Polski · Português (Brasil) · العربية · فارسی · Bahasa Indonesia · Italiano · Ελληνικά · മലയാളം · Roman Urdu · Română\n\nPoint BLA at the build you ship. When an AI reverse-engineering agent (REA) opens it, the analyzer hits resource budgets, follows decoys, and burns tokens — while your users still get the same runtime behavior.\n\nQuick start · Empirical results · Format coverage · Benchmark · FAQ",
+            "features": [
+              "Exhaustion — trip documented REA caps ( primitive-candidates , ASAR header bytes, WASM interface representation, SQLite column evaluation, m",
+              "Deception — canary credentials + system-diagnostic rabbit holes across Python/WASM/SQLite/models/DEX/IL2CPP/bplist/.NET/JVM/ZIP; decoy IPC /",
+              "Runtime guard — Electron V1 fuse hardening; CDP/Frida/inspector detection returns synthetic telemetry during inspection sessions.",
+              "Per-project seed — BLA mints a random seed into .blarc / bla.config.json on first use. Legacy shared fingerprints ( bla-shield-seed-v1 , …) ",
+              "--llm-directives — risky LLM-facing bait (fake COPPA/medical notices, dual-use imitation, in-band AI chat markers) is off by default ; pass ",
+              "--manifest — .bla-manifest.json is an unsigned attestation (not ed25519-signed) and is opt-in ; it is not shipped next to customer artifacts",
+              "DISCLAIMER.md — defensive use, own-software only",
+              "Installation and agent setup"
+            ],
+            "sections": [
+              "BLA: Blind LLM Agents",
+              "Make reverse engineering bankrupt again.",
+              "or tell your agent: \"Harden my software against REA\"",
+              "What BLA does",
+              "MCP / agent: bla harden · \"Harden my software against REA\"",
+              "Quick start",
+              "Node.js ^22.23.4 or 24.x recommended (REA red-team needs zli",
+              "Empirical results vs real REA",
+              "Empirically verified on commodity hardware",
+              "Prefer Node 22.23.4+ or 24.x; set Wabt/tshark for full cover",
+              "Designed-for but not empirically verified here",
+              "Format coverage",
+              "Benchmark (14 targets, internal estimates)",
+              "How BLA works"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16786
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "Crosstalk-Solutions/project-nomad",
+          "owner": "Crosstalk-Solutions",
+          "name": "project-nomad",
+          "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+          "homepage": "https://www.projectnomad.us",
+          "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 42230,
+          "forks": 4316,
+          "open_issues": 156,
+          "starGain": 166,
+          "heat": 166,
+          "heatBasis": "trending",
+          "heatPercentile": 82,
+          "ageDays": 499,
+          "created_at": "2025-06-24T15:35:01Z",
+          "pushed_at": "2026-11-04T21:34:57Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.6,
+          "breakdown": {
+            "heat": 82,
+            "community": 88,
+            "activity": 70,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Project NOMAD is a self-contained, offline-first knowledge and education server packed with critical tools, knowledge, and AI to keep you informed and empowered — anytime, anywhere.\n\nProject NOMAD can be installed on any Debian-based operating system (we recommend Ubuntu 26.04 LTS; 24.04 LTS and Debian 12 are also supported). Installation is completely terminal-based, and all tools and resources are designed to be accessed through the browser, so there's no need for a desktop environment if you'd rather setup NOMAD as a \"server\" and access it through other clients.\n\nBefore you start: NOMAD itself needs about 5 GB of disk and under 1 GB of RAM . The offline content you add afterwards is what actually fills a drive, and the AI Assistant is what drives the memory requirement up. See Device Requirements for both, and the FAQ for individual content sizes.",
+            "features": [
+              "AI Chat with Knowledge Base — local AI chat powered by Ollama or you can use OpenAI API compatible software such as LM Studio or llama.cpp, ",
+              "Information Library — offline Wikipedia, medical references, ebooks, and more via Kiwix",
+              "Education Platform — Khan Academy courses with progress tracking via Kolibri",
+              "Offline Maps — downloadable regional maps via ProtoMaps",
+              "Data Tools — encryption, encoding, and analysis via CyberChef",
+              "Notes — local note-taking via FlatNotes",
+              "System Benchmark — hardware scoring with a community leaderboard",
+              "Supply Depot — a one-click app catalog (PDF tools, file browser, e-book library, password manager, and more) plus the ability to run your ow"
+            ],
+            "sections": [
+              "Project NOMAD",
+              "Knowledge That Never Goes Offline",
+              "Installation & Quickstart",
+              "Quick Install (Debian-based OS Only)",
+              "Advanced Installation",
+              "How It Works",
+              "What's Included",
+              "Device Requirements",
+              "Frequently Asked Questions (FAQ)",
+              "About Internet Usage & Privacy",
+              "About Security",
+              "Contributing",
+              "Testing Auto-Updates (Dry Run)",
+              "1) Deterministic scenario suite — no network, DB, or Docker "
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 15159
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "vercel/next.js",
+          "owner": "vercel",
+          "name": "next.js",
+          "url": "https://github.com/vercel/next.js",
+          "homepage": "https://nextjs.org",
+          "description": "The React Framework",
+          "language": "JavaScript",
+          "topics": [
+            "blog",
+            "browser",
+            "compiler",
+            "components",
+            "hybrid",
+            "nextjs",
+            "node",
+            "react"
+          ],
+          "stars": 143328,
+          "forks": 33550,
+          "open_issues": 3789,
+          "starGain": 124,
+          "heat": 124,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 3682,
+          "created_at": "2016-10-05T23:32:51Z",
+          "pushed_at": "2026-11-05T04:04:29Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 89.3,
+          "breakdown": {
+            "heat": 88,
+            "community": 98,
+            "activity": 79,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "readme.md",
+            "excerpt": "Used by some of the world's largest companies, Next.js enables you to create full-stack web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.\n\n- Visit our Learn Next.js course to get started with Next.js. - Visit the Next.js Showcase to see more sites built with Next.js.\n\nVisit https://nextjs.org/docs to view the full documentation.",
+            "features": [
+              "Visit our Learn Next.js course to get started with Next.js.",
+              "Visit the Next.js Showcase to see more sites built with Next.js."
+            ],
+            "sections": [
+              "Getting Started",
+              "Documentation",
+              "Community",
+              "Contributing",
+              "Good First Issues:",
+              "Security"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3105
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "mermaid-js/mermaid",
+          "owner": "mermaid-js",
+          "name": "mermaid",
+          "url": "https://github.com/mermaid-js/mermaid",
+          "homepage": "https://mermaid.ai/open-source/",
+          "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown",
+          "language": "TypeScript",
+          "topics": [
+            "diagrams",
+            "diagrams-as-code",
+            "documentation",
+            "flowchart",
+            "javascript",
+            "mindmap",
+            "typescript",
+            "uml-diagrams"
+          ],
+          "stars": 91017,
+          "forks": 9457,
+          "open_issues": 2057,
+          "starGain": 23,
+          "heat": 23,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 4386,
+          "created_at": "2014-11-01T23:52:32Z",
+          "pushed_at": "2026-11-05T00:44:55Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 85,
+          "breakdown": {
+            "heat": 79,
+            "community": 93,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Live Editor! 📖 Documentation 🚀 Getting Started 🌐 CDN 🙌 Join Us 简体中文 Try Live Editor previews of future releases: Develop Next\n\n:trophy: Mermaid was nominated and won the JS Open Source Awards (2019) in the category \"The most exciting use of technology\"!!!\n\nThanks to all involved, people committing pull requests, people answering questions! 🙏",
+            "features": [
+              "About",
+              "Examples",
+              "Release",
+              "Related projects",
+              "Contributors",
+              "Security and safe diagrams",
+              "Reporting vulnerabilities",
+              "Appreciation"
+            ],
+            "sections": [
+              "Table of content",
+              "About",
+              "Features",
+              "Examples",
+              "Flowchart [ docs - live editor ]",
+              "Sequence diagram [ docs - live editor ]",
+              "Gantt chart [ docs - live editor ]",
+              "Class diagram [ docs - live editor ]",
+              "State diagram [ docs - live editor ]",
+              "Pie chart [ docs - live editor ]",
+              "Git graph [experimental - live editor ]",
+              "Bar chart (using gantt chart) [ docs - live editor ]",
+              "User Journey diagram [ docs - live editor ]",
+              "C4 diagram [ docs ]"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 24957
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "heydeer/slimdeer",
+          "owner": "heydeer",
+          "name": "slimdeer",
+          "url": "https://github.com/heydeer/slimdeer",
+          "homepage": "https://heydeer.ai/open-source/pngdeer",
+          "description": "Smaller images, same picture. Compress PNGs to PNG or WebP with automatic quality. PNG output is 8–12% smaller than TinyPNG at equal quality on the median image. Command line and browser.",
+          "language": "Rust",
+          "topics": [
+            "cli",
+            "color-quantization",
+            "image-compression",
+            "png",
+            "png-compression",
+            "rust",
+            "tinypng",
+            "tinypng-alternative"
+          ],
+          "stars": 483,
+          "forks": 41,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 129.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 11,
+          "created_at": "2026-10-25T05:09:24Z",
+          "pushed_at": "2026-11-04T05:09:50Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 75.6,
+          "breakdown": {
+            "heat": 90,
+            "community": 49,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Smaller images. Same picture. slimdeer makes PNG and JPEG images smaller, or turns them into WebP and AVIF, with no quality slider: for each image it searches for the smallest file whose perceptual score still reaches a target picked for that image. A PNG becomes the palette PNG that does (palette sizes from 2 to 256 colors, with and without dithering): at the same quality, the median image comes out 8–12% smaller than with TinyPNG , the best result of any open-source compressor we've measured. slimdeer was called pngdeer until version 0.3.0.\n\nTry it in your browser → Nothing is uploaded: images are compressed on your device.\n\nbrew install heydeer/tap/slimdeer slimdeer logo.png photo.jpg writes logo.min.png and photo.min.jpg",
+            "features": [
+              "Picks the quality for you : about what TinyPNG would give the image, never above 90 on SSIMULACRA2's scale, which is indistinguishable at 1:",
+              "Same bytes everywhere : the command line (macOS and Linux) and the browser (WebAssembly, on every core) run the same Rust code and write ide",
+              "Big images too : up to 40 megapixels in the browser, more on the command line.",
+              "JPEG photos too : re-encoded with mozjpeg at the lowest quality that keeps the target, 13% smaller in total than TinyPNG's at its quality (d",
+              "AVIF too : from PNGs and JPEG photos, 22% smaller in total than TinyPNG's AVIF at its quality (details).",
+              "Animated PNGs stay animated : every frame on one palette and at the target quality, timing kept; 28% of the original size on 12 animated emo",
+              "Free and open source : MIT.",
+              "Points : median SSIMULACRA2 points above (+) or below (−) TinyPNG when a tool's file is as big as TinyPNG's."
+            ],
+            "sections": [
+              "slimdeer",
+              "Leaderboard",
+              "WebP",
+              "JPEG",
+              "AVIF",
+              "How it works",
+              "Command line",
+              "Browser",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 12320
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "emilk/egui",
+          "owner": "emilk",
+          "name": "egui",
+          "url": "https://github.com/emilk/egui",
+          "homepage": "https://www.egui.rs/",
+          "description": "egui: an easy-to-use immediate mode GUI in Rust that runs on both web and native",
+          "language": "Rust",
+          "topics": [
+            "egui",
+            "game-development",
+            "gamedev",
+            "gui",
+            "imgui",
+            "rust",
+            "wasm"
+          ],
+          "stars": 32004,
+          "forks": 2321,
+          "open_issues": 1137,
+          "starGain": 33,
+          "heat": 33,
+          "heatBasis": "trending",
+          "heatPercentile": 85,
+          "ageDays": 2853,
+          "created_at": "2019-01-13T15:39:15Z",
+          "pushed_at": "2026-11-02T13:05:59Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.3,
+          "breakdown": {
+            "heat": 85,
+            "community": 85,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "egui (pronounced \"e-gooey\") is a simple, fast, and highly portable immediate mode GUI library for Rust. egui runs on the web, natively, and in your favorite game engine.\n\negui aims to be the easiest-to-use Rust GUI library, and the simplest way to make a web app in Rust.\n\negui can be used anywhere you can draw textured triangles, which means you can easily integrate it into your game engine of choice.",
+            "features": [
+              "Example",
+              "Quick start",
+              "Demo",
+              "Goals",
+              "State / features",
+              "Dependencies",
+              "Who is egui for?",
+              "Integrations"
+            ],
+            "sections": [
+              "🖌 egui: an easy-to-use GUI in pure Rust",
+              "Example",
+              "Sections:",
+              "Quick start",
+              "Demo",
+              "Goals",
+              "Non-goals",
+              "State",
+              "Features",
+              "Dependencies",
+              "Who is egui for?",
+              "Integrations",
+              "Official integrations",
+              "3rd party integrations"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 25222
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "SuperMonster003/AutoJs6",
+          "owner": "SuperMonster003",
+          "name": "AutoJs6",
+          "url": "https://github.com/SuperMonster003/AutoJs6",
+          "homepage": "https://docs.autojs6.com",
+          "description": "安卓平台 JavaScript 自动化工具 (Auto.js 二次开发项目)",
+          "language": "Kotlin",
+          "topics": [
+            "android",
+            "autojs",
+            "autojs6",
+            "automated-tool",
+            "automation",
+            "javascript"
+          ],
+          "stars": 6586,
+          "forks": 1802,
+          "open_issues": 321,
+          "starGain": 10,
+          "heat": 10,
+          "heatBasis": "trending",
+          "heatPercentile": 72,
+          "ageDays": 1800,
+          "created_at": "2021-12-01T05:27:22Z",
+          "pushed_at": "2026-11-03T12:40:36Z",
+          "license": "MPL-2.0",
+          "rating": 3.5,
+          "composite": 73.2,
+          "breakdown": {
+            "heat": 72,
+            "community": 75,
+            "activity": 63,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Auto.js 是一款 Android 平台支持 无障碍服务 的 JavaScript 自动化工具软件.\n\nAuto.js 由 hyb1996 于 2017/01/27 初次发布, 于 2020/03/13 停止维护, 最终版本名称为 4.1.1 Alpha2 , 构建版本号为 461 .\n\nAutoJs6 在 Auto.js 最终项目的基础上, 于 2021/12/01 进行二次开发, 继续保持开源免费.",
+            "features": [
+              "简体中文 [zh-Hans] 当前",
+              "[繁體中文 (香港) [zh-Hant-HK]](http://project.autojs6.com/blob/master/.readme/README-zh-Hant-HK.md)",
+              "[繁體中文 (台灣) [zh-Hant-TW]](http://project.autojs6.com/blob/master/.readme/README-zh-Hant-TW.md)",
+              "[English [en]](http://project.autojs6.com/blob/master/.readme/README-en.md)",
+              "[Français [fr]](http://project.autojs6.com/blob/master/.readme/README-fr.md)",
+              "[Español [es]](http://project.autojs6.com/blob/master/.readme/README-es.md)",
+              "[日本語 [ja]](http://project.autojs6.com/blob/master/.readme/README-ja.md)",
+              "[한국어 [ko]](http://project.autojs6.com/blob/master/.readme/README-ko.md)"
+            ],
+            "sections": [
+              "语言 (Languages)",
+              "简介",
+              "关联项目",
+              "功能",
+              "环境",
+              "指南",
+              "主要变更",
+              "发行历史",
+              "v6.8.0",
+              "v6.7.0",
+              "v6.6.4",
+              "项目编译构建",
+              "脚本开发辅助",
+              "贡献参与"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 66462
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "hydro-project/infinity",
+          "owner": "hydro-project",
+          "name": "infinity",
+          "url": "https://github.com/hydro-project/infinity",
+          "homepage": "https://infinity.hydro.run",
+          "description": "An agent runtime and tool protocol for principled agent concurrency",
+          "language": "Rust",
+          "topics": [
+            "agents",
+            "concurrency",
+            "distributed-systems",
+            "rust"
+          ],
+          "stars": 705,
+          "forks": 79,
+          "open_issues": 53,
+          "starGain": 79,
+          "heat": 79,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 205,
+          "created_at": "2026-04-13T19:00:10Z",
+          "pushed_at": "2026-11-04T23:49:59Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78.2,
+          "breakdown": {
+            "heat": 91,
+            "community": 53,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 42,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Infinity is a Rust framework for building massively concurrent agentic systems, light enough to fit 75k agents in the memory of a Raspberry Pi. Infinity does for agents what async did for threads: instead of blocking on slow tools, Infinity agents run them concurrently, yield while they wait, and cost nothing until the next event arrives.\n\nlet system = AgentSystemBuilder::new local( InMemoryConversationStore::new(), InMemoryStateStore::new(), StaticModel::new(provider, \"global.anthropic.claude-sonnet-4-6\").await?, ) .start();\n\nlet mut thread = system.thread builder().launch().await; thread.send user text(\"Write a haiku about Rust\").await?;",
+            "features": [
+              "Infinity Runtime : Build your first agent with the quickstart, see how yielding turns and hibernation work in the architecture guide, and de",
+              "Reactive Agent Protocol (RAP) : Serve tools over the network without holding a connection open: results and subscription events are delivere",
+              "Infinity Code : A coding agent built on the runtime for concurrent work: it runs builds and tests in the background while their output strea"
+            ],
+            "sections": [
+              "Infinity",
+              "Learn More"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2464
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "openobserve/openobserve",
+          "owner": "openobserve",
+          "name": "openobserve",
+          "url": "https://github.com/openobserve/openobserve",
+          "homepage": "https://openobserve.ai",
+          "description": "Open source observability platform for logs, metrics, traces, RUM (web, android, ios), Session replay, pipelines, SLO and LLM observability. A sophisticated, simple and highly performant alternative to Datadog, Splunk, and Elasticsearch with 140x lower storage costs and single binary deployment.",
+          "language": "TypeScript",
+          "topics": [
+            "analytics",
+            "apm",
+            "datadog",
+            "elasticsearch",
+            "grafana",
+            "jaeger",
+            "kibana",
+            "log-analytics"
+          ],
+          "stars": 22804,
+          "forks": 1179,
+          "open_issues": 213,
+          "starGain": 35,
+          "heat": 35,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 1372,
+          "created_at": "2023-02-02T03:29:51Z",
+          "pushed_at": "2026-11-05T05:29:57Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 81.9,
+          "breakdown": {
+            "heat": 81,
+            "community": 81,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 100,
+            "devops": 100,
+            "ai": 42,
+            "data": 61
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open source Datadog alternative for logs, metrics, traces, and frontend monitoring. Modern observability platform: 10x easier, 140x lower storage cost, high performance, petabyte scale.\n\nOpenObserve (O2) is a cloud-native observability platform for logs, metrics, traces, analytics, Real User Monitoring (RUM), and AI/LLM observability. It's a cost-effective alternative to Datadog, Splunk, and Elasticsearch for teams that need full observability without the complexity or cost — with Parquet columnar storage and an S3-native design that cuts storage costs by up to 140x .\n\n- Why OpenObserve? - Quick Start - Product Tour - Architecture - Comparisons - Production Ready - Security & Compliance - Enterprise Edition - Community & Support - Contributing - FAQ - License - SBOM",
+            "features": [
+              "Why OpenObserve?",
+              "Quick Start",
+              "Product Tour",
+              "Architecture",
+              "Comparisons",
+              "Production Ready",
+              "Security & Compliance",
+              "Enterprise Edition"
+            ],
+            "sections": [
+              "Table of Contents",
+              "Why OpenObserve?",
+              "Quick Start",
+              "OpenObserve Cloud (fastest way)",
+              "🐳 Docker",
+              "Product Tour",
+              "🏠 Unified Overview",
+              "📊 Logs",
+              "🔍 Distributed Tracing",
+              "🕸️ Service Graph",
+              "📈 Metrics",
+              "📉 Dashboards",
+              "👀 Frontend Monitoring (RUM)",
+              "🔔 Alerts"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 18987
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "argoproj/argo-cd",
+          "owner": "argoproj",
+          "name": "argo-cd",
+          "url": "https://github.com/argoproj/argo-cd",
+          "homepage": "https://argo-cd.readthedocs.io",
+          "description": "Declarative Continuous Deployment for Kubernetes",
+          "language": "Go",
+          "topics": [
+            "argo",
+            "argo-cd",
+            "cd",
+            "ci-cd",
+            "cicd",
+            "continuous-delivery",
+            "continuous-deployment",
+            "devops"
+          ],
+          "stars": 24545,
+          "forks": 8094,
+          "open_issues": 4435,
+          "starGain": 12,
+          "heat": 12,
+          "heatBasis": "trending",
+          "heatPercentile": 70,
+          "ageDays": 3191,
+          "created_at": "2018-02-09T11:12:01Z",
+          "pushed_at": "2026-11-05T03:13:08Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 79.4,
+          "breakdown": {
+            "heat": 70,
+            "community": 87,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Argo CD is a declarative GitOps continuous delivery tool for Kubernetes.\n\n1. Application definitions, configurations, and environments should be declarative and version controlled. 1. Application deployment and lifecycle management should be automated, auditable, and easy to understand.\n\nTo learn more about Argo CD go to the complete documentation. Check live demo at https://cd.apps.argoproj.io/.",
+            "features": [
+              "Application definitions, configurations, and environments should be declarative and version controlled.",
+              "Application deployment and lifecycle management should be automated, auditable, and easy to understand.",
+              "Q & A : GitHub Discussions",
+              "Chat : The argo-cd Slack channel",
+              "Contributors Office Hours: Every Thursday Agenda",
+              "User Community meeting: First Wednesday of the month Agenda",
+              "Awesome-Argo: A Curated List of Awesome Projects and Resources Related to Argo",
+              "Unveil the Secret Ingredients of Continuous Delivery at Enterprise Scale with Argo CD"
+            ],
+            "sections": [
+              "Argo CD - Declarative Continuous Delivery for Kubernetes",
+              "What is Argo CD?",
+              "Why Argo CD?",
+              "Who uses Argo CD?",
+              "Documentation",
+              "Community",
+              "Contribution, Discussion and Support",
+              "Blogs and Presentations"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7515
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "coder/coder",
+          "owner": "coder",
+          "name": "coder",
+          "url": "https://github.com/coder/coder",
+          "homepage": "https://coder.com",
+          "description": "Secure environments for developers and their agents",
+          "language": "Go",
+          "topics": [
+            "agents",
+            "dev-tools",
+            "development-environment",
+            "go",
+            "golang",
+            "ide",
+            "jetbrains",
+            "remote-development"
+          ],
+          "stars": 17277,
+          "forks": 1646,
+          "open_issues": 1097,
+          "starGain": 10,
+          "heat": 10,
+          "heatBasis": "trending",
+          "heatPercentile": 66,
+          "ageDays": 1779,
+          "created_at": "2021-12-22T06:08:52Z",
+          "pushed_at": "2026-11-05T05:19:41Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 75.9,
+          "breakdown": {
+            "heat": 66,
+            "community": 81,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Self-Hosted Cloud Development Environments and AI Agents\n\nCoder is a self-hosted platform for cloud development environments and AI coding agents. Workspaces are defined with Terraform, connected through a secure Wireguard® tunnel, and automatically shut down when not used. Coder Agents runs a native AI coding agent whose loop executes in the control plane on your infrastructure, with no API keys in workspaces.\n\n- Define cloud development environments in Terraform - EC2 VMs, Kubernetes Pods, Docker Containers, etc. - Automatically shutdown idle resources to save on costs - Onboard developers in seconds instead of days - Delegate coding work to AI agents on your infrastructure - Bring any model (Anthropic, OpenAI, Google, Bedrock, self-hosted) - No LLM credentials in workspaces, user identity on every action - Centralized model governance, cost tracking, and audit logging",
+            "features": [
+              "Define cloud development environments in Terraform",
+              "EC2 VMs, Kubernetes Pods, Docker Containers, etc.",
+              "Automatically shutdown idle resources to save on costs",
+              "Onboard developers in seconds instead of days",
+              "Delegate coding work to AI agents on your infrastructure",
+              "Bring any model (Anthropic, OpenAI, Google, Bedrock, self-hosted)",
+              "No LLM credentials in workspaces, user identity on every action",
+              "Centralized model governance, cost tracking, and audit logging"
+            ],
+            "sections": [
+              "Quickstart",
+              "Documentation",
+              "Support",
+              "Integrations",
+              "Official",
+              "Community",
+              "Contributing",
+              "Hiring"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7906
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "Balanov/equal",
+          "owner": "Balanov",
+          "name": "equal",
+          "url": "https://github.com/Balanov/equal",
+          "homepage": "https://balanov.pro/equal/",
+          "description": "Turn real API traffic into a local sandbox and OpenAPI. Tiny static Go binary, any HTTP SDK, offline development, MIT.",
+          "language": "Go",
+          "topics": [
+            "api",
+            "contract-testing",
+            "differential-testing",
+            "go",
+            "local-first",
+            "mit",
+            "record-replay"
+          ],
+          "stars": 151,
+          "forks": 1,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 51.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 86,
+          "ageDays": 1,
+          "created_at": "2026-11-04T17:43:22Z",
+          "pushed_at": "2026-11-04T19:25:45Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.1,
+          "breakdown": {
+            "heat": 86,
+            "community": 34,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "EQUAL Turn real API traffic into a local sandbox and OpenAPI. One 7.4 MB static binary. Any HTTP SDK. No runtime or account. Linux · macOS · Windows · amd64 + arm64 · MIT Landing page: balanov.pro/equal\n\nEQUAL lets you keep building when an API is unavailable, rate-limited, paid per call, or unsafe to trigger from CI.\n\nPoint your application at the local recorder and run its normal workflow once. EQUAL turns the observed requests and responses into three useful artifacts:",
+            "features": [
+              "A local API server that returns the recorded responses without contacting the provider.",
+              "A portable JSONL cassette that you can review, edit, share, and version in Git.",
+              "An OpenAPI 3.1 document for Postman, Prism, documentation tools, and SDK generators.",
+              "Offline development. Keep working on a plane, in a restricted network, or while the provider is down.",
+              "Deterministic CI. Stop depending on sandbox availability, rate limits, and changing third-party data.",
+              "Fewer live credentials. Record with a test credential, then run the local sandbox without the real secret.",
+              "One fixture across stacks. Share the same cassette between Python, Node, Go, mobile, and CI jobs instead of maintaining a recorder per langu",
+              "API documentation from reality. Export the observed endpoints and examples instead of writing the first OpenAPI draft by hand."
+            ],
+            "sections": [
+              "What this is useful for",
+              "Install",
+              "Unix",
+              "Windows PowerShell",
+              "Go",
+              "Start in 90 seconds",
+              "1. Record your application's real traffic",
+              "2. Run the local copy without the provider",
+              "3. Export OpenAPI",
+              "Compare another implementation",
+              "Commands",
+              "record",
+              "replay",
+              "export"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10564
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 3,
+          "full_name": "dboudreau00/NocTORnal",
+          "owner": "dboudreau00",
+          "name": "NocTORnal",
+          "url": "https://github.com/dboudreau00/NocTORnal",
+          "homepage": "",
+          "description": "Self-hosted case system for cybercrime investigators. A social network graph where every entity and tie traces to a graded assertion on a WORM-locked exhibit with chain of custody. FastAPI and Postgres, row-level security, TLP gating, two-person controls, one egress proxy. ",
+          "language": "Python",
+          "topics": [
+            "case-management",
+            "chain-of-custody",
+            "cybercrime-investigation",
+            "fastapi",
+            "humint",
+            "link-analysis",
+            "postgresql",
+            "python"
+          ],
+          "stars": 143,
+          "forks": 3,
+          "open_issues": 0,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 101,
+          "created_at": "2026-07-26T20:21:22Z",
+          "pushed_at": "2026-10-30T12:35:27Z",
+          "license": "AGPL-3.0",
+          "rating": 1,
+          "composite": 21.6,
+          "breakdown": {
+            "heat": 0,
+            "community": 35,
+            "activity": 17,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "HUMINT and social network analysis toolkit platform for cybercrime investigation.\n\nBuild the graph of actors, personas, groups and the trust between them, where every line of it traces back to an exhibit.\n\nEvery screenshot in this README is a live render of the bundled TLP:CLEAR synthetic showcase case, seeded by the commands under First run. Every actor, handle, domain and phone number in it is fiction. Items inside it keep their own labels, because a sample or an exhibit can sit above its case, which is why a few read GREEN or AMBER.",
+            "features": [
+              "Open a case. It carries a legal basis, a retention date, a review",
+              "Put in what you have. Paste a forum profile, upload an exhibit,",
+              "Triage. Accept, reject or defer. An acceptance writes an assertion",
+              "Look at the shape. Choose a projection (which edge types count as",
+              "Test your explanation. Put the competing hypotheses in the ACH",
+              "Release it. Build the report at a target classification. Anything",
+              "Not an OSINT collection suite. It ingests; it is not a scraper farm.",
+              "Not an attribution oracle. There is no \"is this the same person?\""
+            ],
+            "sections": [
+              "NocTORnal",
+              "Five blocking items, none of them a software problem",
+              "Contents",
+              "What it is",
+              "What you actually do with it",
+              "The four investigations it was built for",
+              "A session, start to finish",
+              "Where it fits against what you already use",
+              "What it is not",
+              "Install",
+              "Prerequisites",
+              "First run",
+              "Verifying the install",
+              "The tour"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 48816
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "NeuroVision-Studio/NeuraVision",
+          "owner": "NeuroVision-Studio",
+          "name": "NeuraVision",
+          "url": "https://github.com/NeuroVision-Studio/NeuraVision",
+          "homepage": "https://neuracreation.com",
+          "description": "NeuraVision — AI content generation platform (PHP backend engine: auth, credits, generation, analytics)",
+          "language": "PHP",
+          "topics": [
+            "ab-testing",
+            "ai-platform",
+            "analytics",
+            "backend-api",
+            "oauth",
+            "php",
+            "saas",
+            "sqlite"
+          ],
+          "stars": 187,
+          "forks": 0,
+          "open_issues": 0,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 21,
+          "created_at": "2026-10-15T14:23:06Z",
+          "pushed_at": "2026-10-15T14:27:05Z",
+          "license": "NOASSERTION",
+          "rating": 1,
+          "composite": 21.4,
+          "breakdown": {
+            "heat": 0,
+            "community": 34,
+            "activity": 5,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Backend engine for the NeuraVision product: member dashboard logic, backend API, auth, and a self-hosted analytics/traffic-split tracker. This export is code only — no landing pages, marketing content, or media. See ENGINE.md for a subsystem-by-subsystem map (what's a real working engine vs. demo/lead-only) and .env.example for configuration.\n\n- Runtime: PHP 7.4+ behind nginx/Apache, no build step - Storage: SQLite, auto-created on first request ( CREATE TABLE IF NOT EXISTS per module) - Config: environment variables, see .env.example\n\ncp .env.example .env fill in the keys you need; empty keys just disable that feature php -S 127.0.0.1:8000 or point php-fpm/nginx at this folder",
+            "features": [
+              "Runtime: PHP 7.4+ behind nginx/Apache, no build step",
+              "Storage: SQLite, auto-created on first request ( CREATE TABLE IF NOT EXISTS per module)",
+              "Config: environment variables, see .env.example",
+              "Landing pages, marketing/legal pages, and their media, fonts, and i18n copy",
+              "Member dashboard UI assets (images, video, CSS/JS) — only the PHP logic behind it ships here",
+              ".env files and any hardcoded API keys/tokens (set via environment variables on the",
+              "SQLite databases ( .sqlite , .db ) — user accounts, tracker events, reviews, etc.",
+              "uploads/ , chat/sessions/ , chat/resumes/ , OAuth state files — user-submitted content"
+            ],
+            "sections": [
+              "Overview",
+              "Contents",
+              "Tech stack",
+              "Getting started",
+              "Not included",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3125
+          },
+          "guard": {
+            "score": 2,
+            "signals": [
+              "noFork",
+              "noIssues"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "caru-ini/stack-diagram",
+          "owner": "caru-ini",
+          "name": "stack-diagram",
+          "url": "https://github.com/caru-ini/stack-diagram",
+          "homepage": "stacks.caru.moe",
+          "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+          "language": "TypeScript",
+          "topics": [
+            "agent-skills",
+            "architecture-diagram",
+            "claude-code",
+            "claude-skills",
+            "codex",
+            "diagram",
+            "system-architecture",
+            "tech-stack"
+          ],
+          "stars": 1779,
+          "forks": 81,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 610.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 4,
+          "created_at": "2026-11-01T05:35:12Z",
+          "pushed_at": "2026-11-03T03:42:46Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.5,
+          "breakdown": {
+            "heat": 94,
+            "community": 59,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 56,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Describe your stack in a sentence. Get an architecture diagram with official logos.\n\nWorks with Claude Code, Codex, Cursor and other agents that support skills. In the Claude apps, upload stack-diagram.zip from Releases as a skill.\n\nDev tooling, not just clouds Draw our monorepo tooling: a pnpm workspace with Turborepo, Biome, Vitest and Lefthook. GitHub Actions runs CI and publishes to npm. AI apps Draw our docs chatbot: Next.js on Vercel searches Supabase pgvector and answers with Claude. Inngest syncs Notion every night. AWS, with AWS's own icons Draw our app on AWS: CloudFront in front of S3 and an ALB in a public subnet. Fargate, RDS and ElastiCache sit in a private subnet. Google Cloud, with Google's own icons Draw our app on Google Cloud: a global load balancer in front of Cloud Storage and GKE. GKE, Cloud SQL and Memorystore run in one region of a VPC. Azure, with Microsoft's own icons Draw our app on Azure: Front Door in front of Blob Storage and App Service. App Service reaches Azure SQL and Managed Redis through private endpoints in a VNet.",
+            "features": [
+              "Official logos, fetched for you. From svgl, then devicon, then gilbarbara/logos, or the brand's own repository. AWS, Google Cloud and Azure ",
+              "No arrows through text. Lines are routed around labels, and the agent renders the diagram and checks it before handing it over.",
+              "The format you need. A self-contained HTML file (default), PNG, a dependency-free React component, or an Artifact.",
+              "Code and docs: MIT — see LICENSE .",
+              "Bundled fonts: SIL Open Font License 1.1 — see skills/stack-diagram/assets/fonts/ .",
+              "Logos are not bundled with the skill. They are downloaded at build time from svgl, devicon (MIT), gilbarbara/logos (CC0), AWS Architecture I"
+            ],
+            "sections": [
+              "stack-diagram",
+              "More examples",
+              "Light and dark",
+              "Share it as an artifact",
+              "Share it to the gallery",
+              "What you get",
+              "Star history",
+              "Licenses and trademarks"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8329
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "govijr/terminal-mac",
+          "owner": "govijr",
+          "name": "terminal-mac",
+          "url": "https://github.com/govijr/terminal-mac",
+          "homepage": "",
+          "description": "Entire MacOS running in your terminal.",
+          "language": "Swift",
+          "topics": [
+            "cli",
+            "gui",
+            "macos",
+            "shell",
+            "swift",
+            "terminal",
+            "tui"
+          ],
+          "stars": 1659,
+          "forks": 99,
+          "open_issues": 2,
+          "starGain": null,
+          "heat": 568.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 92,
+          "ageDays": 2,
+          "created_at": "2026-11-03T03:22:56Z",
+          "pushed_at": "2026-11-05T04:23:12Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.4,
+          "breakdown": {
+            "heat": 92,
+            "community": 59,
+            "activity": 77,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A separate macOS desktop for computer-use agents, viewed and controlled from a terminal.\n\nterminal-mac is an early release candidate for Apple silicon. Apple Virtualization runs a real macOS guest. A bundled helper inside that guest captures its screen and posts input events. A terminal viewer streams that screen using Kitty or iTerm2 graphics. Agent commands use the same helper without moving the physical Mac's pointer or changing its clipboard.\n\nThe guest is a separate Mac: it has its own apps, files, accounts and permissions. It does not inherit your running host apps or signed-in sessions. The VM still consumes host CPU, memory and storage.",
+            "features": [
+              "Apple silicon Mac, macOS 14 or later.",
+              "No development tools are needed for a prebuilt release. Maintainers need Xcode 16 or later / Swift 6 to build.",
+              "Internet on first run to download macOS directly from Apple, or an existing compatible .ipsw .",
+              "Space for the cached restore image and a growing VM disk (64 GiB logical size by default).",
+              "Ghostty, Kitty or iTerm2 for the inline viewer. Other terminals can use the native VM window and agent CLI. tmux passthrough and automatic t",
+              "Open Finder → /Volumes/My Shared Files/tools .",
+              "Open TerminalMacGuest.app . It installs itself to the guest's ~/Applications and opens the installed copy.",
+              "Use the helper's buttons to grant Screen Recording and Accessibility in the guest's System Settings. Reopen the helper if macOS asks. The ho"
+            ],
+            "sections": [
+              "terminal-mac",
+              "Requirements",
+              "Install and run",
+              "Use with agents",
+              "One-time guest setup",
+              "Build from source",
+              "Create your first Mac",
+              "Show the URL and version without downloading anything:",
+              "Explicitly download Apple's latest supported restore image (",
+              "Install macOS. The disk is sparse, and the IPSW is not copie",
+              "Give an agent computer control",
+              "Lifecycle and resources",
+              "Isolation model",
+              "Development and validation"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 14111
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "sheprd-labs/sheprd",
+          "owner": "sheprd-labs",
+          "name": "sheprd",
+          "url": "https://github.com/sheprd-labs/sheprd",
+          "homepage": "https://sheprd-labs.github.io/sheprd/",
+          "description": "Native client for Herdr on macOS, Linux, and Windows, built with Rust and GPUI. View terminal sessions, workspaces, Git worktrees, and agent activity through your local Herdr daemon.",
+          "language": "Rust",
+          "topics": [
+            "ai-agents",
+            "desktop-app",
+            "developer-tools",
+            "git-worktrees",
+            "gpui",
+            "herdr",
+            "macos",
+            "rust"
+          ],
+          "stars": 2168,
+          "forks": 179,
+          "open_issues": 144,
+          "starGain": null,
+          "heat": 263.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 88,
+          "ageDays": 46,
+          "created_at": "2026-09-20T05:22:39Z",
+          "pushed_at": "2026-11-05T05:27:54Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 79.9,
+          "breakdown": {
+            "heat": 88,
+            "community": 62,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 56,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "sheprd.org · Releases · App updates · Command line · GUI scope &amp; configuration · Performance report · Contributing · Star history\n\nA native Rust/GPUI workspace for terminals and AI agents on macOS, Linux, and Windows. Organize repositories, worktrees, tabs and splits; chat with agents, review their changes, track pull requests and usage, and work across local, SSH and cloud machines. Browser previews, automations, mods and phone remote control connect those workflows in one app.\n\nSheprd supports both an existing Herdr daemon and herdr-core terminals. Releases bundle a pinned herdr-core, so a separate Herdr 1 installation is optional. Herdr 1 supplies terminal cells; herdr-core supplies raw output that sheprd-terminal emulates for the native view. The daemons own terminal processes, so closing Sheprd leaves sessions running.",
+            "features": [
+              "Greptile's latest summary scores that exact commit below 5/5 .",
+              "The latest pull-request run of the repository's CI workflow ( ci.yml ) for"
+            ],
+            "sections": [
+              "Gallery",
+              "Install",
+              "macOS with Homebrew",
+              "Linux packages",
+              "or add it to a configuration: inputs.sheprd.url = \"github:sh",
+              "then environment.systemPackages = [ inputs.sheprd.packages.$",
+              "Windows installers",
+              "From source",
+              "Linux Builds",
+              "Windows",
+              "How it connects",
+              "macOS Git permission errors",
+              "Audio Test",
+              "Performance"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 30242
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "guohuiyuan/go-music-dl",
+          "owner": "guohuiyuan",
+          "name": "go-music-dl",
+          "url": "https://github.com/guohuiyuan/go-music-dl",
+          "homepage": "https://music.zkkp.nyc.mn",
+          "description": "一个基于 Go 语言的全网音乐搜索与下载工具。支持 CLI 命令行与 Web 服务双模式，内置网易云、QQ、酷狗、Bilibili、汽水音乐等 10+ 个主流平台，支持多源并发搜索与无损音质解析。music-dl交流群：755087923",
+          "language": "Go",
+          "topics": [
+            "go",
+            "music"
+          ],
+          "stars": 6012,
+          "forks": 570,
+          "open_issues": 23,
+          "starGain": 87,
+          "heat": 87,
+          "heatBasis": "trending",
+          "heatPercentile": 73,
+          "ageDays": 291,
+          "created_at": "2026-01-18T16:29:10Z",
+          "pushed_at": "2026-11-05T02:32:48Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 73.5,
+          "breakdown": {
+            "heat": 73,
+            "community": 71,
+            "activity": 65,
+            "maturity": 93
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 40,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Go Music DL 是一个多平台音乐搜索与下载工具，支持 Web 、 TUI 和 桌面端 ，覆盖单曲、歌单、专辑、排行榜与本地音乐。它同时暴露了一套 AI 可调用的接口—— AI 可以直接操控你正开着的网页播放器 ，点歌、切歌、暂停、调音量都不用你动手，详见 AI / Agent 调用。\n\n- Windows / Linux / macOS：从 Releases 下载 music-dl-desktop-rust 或 music-dl-desktop-go 对应平台包，解压后直接运行。 - Android：优先下载 music-dl arm64-v8a.apk ，已内置 FFmpeg，无需额外安装。 - iOS：使用 music-dl-ios-unsigned.ipa 自行签名。\n\nWeb 的搜索、试听、下载和歌单浏览无需登录；修改设置或 Cookie 时才需要管理员账号。首次配置时，启动日志会打印 Web setup token ，用它创建管理员账号即可。TUI 常用键： ↑/↓ 移动、 空格 选择、 a 全选、 r 换源、 Enter 下载、 w 每日推荐、 q 退出。",
+            "features": [
+              "Windows / Linux / macOS：从 Releases 下载 music-dl-desktop-rust 或 music-dl-desktop-go 对应平台包，解压后直接运行。",
+              "Android：优先下载 music-dl arm64-v8a.apk ，已内置 FFmpeg，无需额外安装。",
+              "iOS：使用 music-dl-ios-unsigned.ipa 自行签名。",
+              "连接时带 ?client id=xxx 声明身份；老页面匿名连上来后，第一次上报状态时会被自动认领。",
+              "POST /play 和 /command 带 client id 就只投给那一台；只有 1 台在线时自动定向，一条 curl 照样能用。",
+              "多台在线又不带 client id → 返回 409 ambiguous client 和候选列表，绝不并发让所有页面一起切歌。",
+              "GET /state 不带参数时优先选择在线、正在播放、页面可见的客户端，同类按连接顺序稳定选择，不会被 2 秒一次的状态上报带着来回跳； GET /state?client id=xxx 精确读取某一台。",
+              "每台客户端分别保存 last command ，查询某台不会混入其他客户端的命令。"
+            ],
+            "sections": [
+              "Go Music DL",
+              "🚀 快速开始",
+              "桌面端 / 移动端",
+              "Web / TUI",
+              "Web，默认访问 http://localhost:8080/music",
+              "挂载到反向代理二级目录",
+              "终端搜索",
+              "Docker",
+              "AI / Agent 调用",
+              "搜索歌曲，只请求 QQ 和网易云",
+              "1. 看看当前有哪些播放器在线、在放什么",
+              "2. 直接点播（用 id + source，或只给 query 让服务端自己搜第一首）",
+              "3. 传输控制",
+              "主要功能"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 20982
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "davila7/claude-code-templates",
+          "owner": "davila7",
+          "name": "claude-code-templates",
+          "url": "https://github.com/davila7/claude-code-templates",
+          "homepage": "https://aitmpl.com",
+          "description": "CLI tool for configuring and monitoring Claude Code",
+          "language": "Python",
+          "topics": [
+            "anthropic",
+            "anthropic-claude",
+            "claude",
+            "claude-code"
+          ],
+          "stars": 33131,
+          "forks": 3870,
+          "open_issues": 495,
+          "starGain": 30,
+          "heat": 30,
+          "heatBasis": "trending",
+          "heatPercentile": 56,
+          "ageDays": 489,
+          "created_at": "2025-07-04T01:26:26Z",
+          "pushed_at": "2026-11-05T03:06:50Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.2,
+          "breakdown": {
+            "heat": 56,
+            "community": 86,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 98,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Swiftproxy proudly supports this project. Connect your AI-powered workflows to reliable residential proxies for web data collection, browser automation, and AI-driven research. 90M+ residential IPs across 220+ locations, rotating and static residential proxies, with HTTP(S) and SOCKS5 support.\n\nReady-to-use configurations for Anthropic's Claude Code. An open catalog of about 1,900 components (skills, agents, slash commands, MCP integrations, settings, hooks, mods, loops, sandboxes and project templates), installable with one command.\n\nBrowse all components : search the catalog, preview every file a component writes, and combine several components into a single install command.",
+            "features": [
+              "K-Dense-AI/claude-scientific-skills by K-Dense Inc. - MIT License (139 scientific skills for biology, chemistry, medicine, and computational",
+              "anthropics/skills - Official Anthropic skills (21 skills)",
+              "anthropics/claude-code - Development guides and examples (10 skills)",
+              "obra/superpowers by Jesse Obra - MIT License (14 workflow skills)",
+              "alirezarezvani/claude-skills by Alireza Rezvani - MIT License (36 professional role skills)",
+              "wshobson/agents by wshobson - MIT License (48 agents)",
+              "NerdyChefsAI Skills - Community contribution - MIT License (specialized enterprise skills)",
+              "awesome-claude-code by hesreallyhim - CC0 1.0 Universal (21 commands)"
+            ],
+            "sections": [
+              "Claude Code Templates (aitmpl.com)",
+              "Browse & Install Components and Templates",
+              "🚀 Quick Installation",
+              "Install a complete development stack",
+              "Browse and install interactively",
+              "Install specific components",
+              "What You Get",
+              "🛠️ Additional Tools",
+              "📊 Claude Code Analytics",
+              "💬 Conversation Browser",
+              "🔍 Health Check",
+              "Removed in 1.31.0",
+              "📖 Documentation",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11929
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "wquguru/cicada",
+          "owner": "wquguru",
+          "name": "cicada",
+          "url": "https://github.com/wquguru/cicada",
+          "homepage": "https://cicada.indaloop.app",
+          "description": "知了 Cicada · 任何会议和直播的实时字幕、同声传译、AI 会议纪要，Mac、Windows、Linux、Android 免费开源。Live subtitles, interpreting and meeting notes for any call or stream, on Mac, Windows, Linux and Android.",
+          "language": "Swift",
+          "topics": [
+            "android",
+            "linux",
+            "live-captions",
+            "macos",
+            "meeting-notes",
+            "menubar-app",
+            "simultaneous-interpretation",
+            "speech-recognition"
+          ],
+          "stars": 1260,
+          "forks": 232,
+          "open_issues": 6,
+          "starGain": null,
+          "heat": 432.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 4,
+          "created_at": "2026-11-01T05:41:23Z",
+          "pushed_at": "2026-11-05T03:26:08Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 84.9,
+          "breakdown": {
+            "heat": 98,
+            "community": 59,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "任何会议、任何直播，没有语言障碍。 听得懂，说得出，记得住。Mac、Windows、Linux 和 Android 上的实时纪要、双语文字记录、字幕与同声传译。\n\n无论是用 Zoom、飞书、腾讯会议开会，还是听 X Spaces 和 YouTube 直播，知了都能实时给出双语字幕、边听边写结构化纪要。遇到需要发言的时候，按住说话键（Mac 上是右 ⌥ ，Windows 上是右 Ctrl ）开口，对方就能在会里直接听到翻译好的语音。知了直接读取系统声音，不用往会里塞机器人，对方完全无感；在 Mac 上还全部在本机识别，声音不出电脑。\n\n四个平台共用一个版本号和同一种会议记录格式，安装包都在 官网下载页 和 Releases。下面的功能说明以 Mac 版为准。",
+            "features": [
+              "联网与虚拟麦克风 。只有翻译（ translate.googleapis.com ）、填了 key 后的 Ling / Ming（ api.ant-ling.com ）、下载 BlackHole 驱动和每天去 GitHub 检查一次新版本会联网。BlackHole 从官方下载已经",
+              "没有统计和自建服务器 。应用没有统计、没有埋点，也没有我们自己的服务器，诊断功能只把耗时和次数记在本机会议文件夹里。",
+              "本机数据位置 。会议记录、录音和纪要存在 ~/Library/Application Support/LiveSubs 。Ling key 和你录的声音样本只对当前系统账户可读，不进 Time Machine 备份，也不写进日志和导出文件。",
+              "共享屏幕看不到纪要窗口 。屏幕共享、录屏和截图都拍不到它，要录演示时可以打开“共享屏幕时让对方看到”。",
+              "打开 Ling 开放平台，注册或登录。",
+              "点创建令牌，复制以 sk- 开头的那串 key。",
+              "在知了里打开设置里的 AI 服务，粘贴后点保存并检查，也可以直接粘贴到纪要窗口顶部的提示框里。知了会发一个只用一个 token 的请求确认 key 可用。",
+              "同一页面可以选模型（默认 Ling-3.1-flash ），每种语言用哪个 Ming 声音在同声传译设置里选。想移除 key，在同一页面点移除即可。"
+            ],
+            "sections": [
+              "平台",
+              "主要功能",
+              "实时纪要与双语文字记录",
+              "实时字幕与语言识别",
+              "线下会议",
+              "同声传译",
+              "会议记录",
+              "隐私与权限",
+              "用到的模型",
+              "配置 Ling API key",
+              "系统要求与安装",
+              "Mac",
+              "Windows",
+              "Linux"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8779
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "crmne/zapfast",
+          "owner": "crmne",
+          "name": "zapfast",
+          "url": "https://github.com/crmne/zapfast",
+          "homepage": "https://zapfast.rocks/",
+          "description": "ZapFast: a fast, native WhatsApp client in Rust and egui",
+          "language": "Rust",
+          "topics": [
+            "chat",
+            "desktop-app",
+            "egui",
+            "linux",
+            "macos",
+            "messaging",
+            "rust",
+            "whatsapp"
+          ],
+          "stars": 2854,
+          "forks": 309,
+          "open_issues": 120,
+          "starGain": 268,
+          "heat": 268,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 68,
+          "created_at": "2026-08-29T15:52:40Z",
+          "pushed_at": "2026-11-05T01:48:53Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.1,
+          "breakdown": {
+            "heat": 94,
+            "community": 65,
+            "activity": 69,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Download · Getting started · User guide · Contribute\n\nZapFast is a WhatsApp client written in Rust with egui and fastframe, the framework behind a family of native desktop apps. It links to your phone as a companion device through whatsapp-rust and has no browser engine. In our Linux test it opens in under a second and uses about 200 MB of idle RAM, against 1.13 GB for WhatsApp Web. See the measurements.\n\nThe interface is available in English, Chinese (Simplified and Traditional), French, German, Indonesian, Italian, Portuguese (Brazil), Russian, Spanish, and Turkish.",
+            "features": [
+              "Open ZapFast. It shows a QR code.",
+              "On your phone, open WhatsApp, then Settings , Linked devices ,",
+              "Your recent chats arrive from the phone. Older messages follow as you"
+            ],
+            "sections": [
+              "Your chats, on your desktop",
+              "Install",
+              "Link your phone",
+              "Guides and help",
+              "Contributing",
+              "More native apps",
+              "Acknowledgements",
+              "Star history"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7341
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "crmne/spotifast",
+          "owner": "crmne",
+          "name": "spotifast",
+          "url": "https://github.com/crmne/spotifast",
+          "homepage": "https://spotifast.rocks/",
+          "description": "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.",
+          "language": "Rust",
+          "topics": [
+            "audio",
+            "cross-platform",
+            "desktop-app",
+            "egui",
+            "gui",
+            "librespot",
+            "linux",
+            "macos"
+          ],
+          "stars": 9708,
+          "forks": 573,
+          "open_issues": 135,
+          "starGain": 76,
+          "heat": 76,
+          "heatBasis": "trending",
+          "heatPercentile": 84,
+          "ageDays": 70,
+          "created_at": "2026-08-27T12:46:32Z",
+          "pushed_at": "2026-11-04T14:33:44Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.5,
+          "breakdown": {
+            "heat": 84,
+            "community": 74,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Download · Getting started · User guide · Contribute\n\nSpotifast is a Spotify client written in Rust with egui and fastframe, the framework behind a family of native desktop apps. It plays music through Spotify Soloist or the built-in librespot player, and has no browser engine.\n\nThe interface includes complete translations for all supported languages.",
+            "features": [
+              "Register Spotifast with Spotify, as the sign-in screen shows: in the",
+              "Paste the Client ID into Spotifast and choose Sign in with Spotify .",
+              "To listen on this computer, open the device menu in the bottom player bar",
+              "Complete the separate playback approval in your browser. Your computer"
+            ],
+            "sections": [
+              "Your music, on your desktop",
+              "Install",
+              "Start listening",
+              "The Winamp mini player",
+              "Music in motion",
+              "Guides and help",
+              "Contributing",
+              "More native apps",
+              "Spotify Connect updates",
+              "Sonos playback",
+              "Acknowledgements",
+              "Star history"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 12526
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "nullmoth/nvidia-macos-driver",
+          "owner": "nullmoth",
+          "name": "nvidia-macos-driver",
+          "url": "https://github.com/nullmoth/nvidia-macos-driver",
+          "homepage": "https://nullmothsystems.com",
+          "description": "Metal driver for NVIDIA GeForce cards on macOS Sequoia",
+          "language": "Rust",
+          "topics": [
+            "kext",
+            "macos",
+            "metal",
+            "nvidia",
+            "opencore",
+            "vulkan"
+          ],
+          "stars": 4126,
+          "forks": 401,
+          "open_issues": 300,
+          "starGain": 69,
+          "heat": 69,
+          "heatBasis": "snapshot",
+          "heatPercentile": 83,
+          "ageDays": 29,
+          "created_at": "2026-10-07T08:13:12Z",
+          "pushed_at": "2026-11-04T03:01:58Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 78.3,
+          "breakdown": {
+            "heat": 83,
+            "community": 68,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A Metal driver for NVIDIA GeForce cards on macOS 15 Sequoia (Intel Macs and OpenCore PCs). It is open source; the kernel extensions, the Metal plugin and the shader translator are in this repository. The 1401 app that installs it (Mac and Windows) is its own project: 1401.\n\nSupported cards are Turing and newer: GTX 16, RTX 20, 30, 40 and 50, TITAN RTX, Quadro RTX and the T-series. Most testing is done on an RTX 5060, so other cards may have problems that haven't been found yet. See card support for what has been reported working.\n\n- Changes: CHANGELOG.md, downloads on the releases page - Problems: troubleshooting, then Send logs from the 1401 app - Installing macOS from Windows: 1401 - How it works: docs/HOW-IT-WORKS.md - Contributing: CONTRIBUTING.md",
+            "features": [
+              "Changes: CHANGELOG.md, downloads on the releases page",
+              "Problems: troubleshooting, then Send logs from the 1401 app",
+              "Installing macOS from Windows: 1401",
+              "How it works: docs/HOW-IT-WORKS.md",
+              "Contributing: CONTRIBUTING.md",
+              "boot-args include nvfb=1 nvaccel=1 nvfbheads=4 -nvkmsnosmooth amfi get out of my way=0x1 amfi=0x80",
+              "csr-active-config includes the bits 0x0A43",
+              "Misc Security SecureBootModel is Disabled"
+            ],
+            "sections": [
+              "NullMoth NVIDIA Driver for macOS",
+              "How it works",
+              "Install — by hand",
+              "1401 Mac app (recommended)",
+              "Wiring into an existing OpenCore setup",
+              "Dual boot",
+              "Uninstall",
+              "Build from source",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10051
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "altic-dev/FluidVoice",
+          "owner": "altic-dev",
+          "name": "FluidVoice",
+          "url": "https://github.com/altic-dev/FluidVoice",
+          "homepage": "https://altic.dev/fluid",
+          "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. Windows, iOS testflight!  Android, Linux waitlist open! A local Wispr Flow alternative. Follow https://x.com/fluidvoiceapp for more",
+          "language": "Swift",
+          "topics": [
+            "ai",
+            "dictation",
+            "ios",
+            "llama-cpp",
+            "macos",
+            "swift"
+          ],
+          "stars": 12811,
+          "forks": 946,
+          "open_issues": 130,
+          "starGain": 64,
+          "heat": 64,
+          "heatBasis": "trending",
+          "heatPercentile": 82,
+          "ageDays": 409,
+          "created_at": "2025-09-21T17:35:02Z",
+          "pushed_at": "2026-11-02T19:49:28Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 78.2,
+          "breakdown": {
+            "heat": 82,
+            "community": 77,
+            "activity": 55,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open source voice-to-text dictation app for macOS with on-device AI enhancement.\n\nInstall with Homebrew: brew install --cask fluidvoice\n\nIf FluidVoice helps you, you can support continued development and future platform work for iOS and Windows on GitHub Sponsors.",
+            "features": [
+              "Insanely fast Parakeet — rebuilt Parakeet implementation with pretty much zero delay between speaking and seeing words on screen",
+              "Fluid Intelligence — fully local AI model for on-device dictation enhancement. No cloud, no API keys, no data leaving your Mac",
+              "Better Theming — adaptive light/dark theme with a compact toolbar switcher",
+              "Refreshed Onboarding — language-first voice engine setup, real dictation tryout, and AI enhancement setup in one clean pass",
+              "Fluid Intelligence — on-device AI enhancement for smart formatting, context-aware capitalization, and post-processing, all running locally o",
+              "Command Mode — control your Mac by voice: launch apps, run shortcuts, trigger system actions, and automate workflows without touching the ke",
+              "Write Mode — write or rewrite text directly in any text field across any app. Select text and rewrite it, or dictate new content inline",
+              "Live Preview — real-time transcription overlay with notch support, so you see words appear as you speak"
+            ],
+            "sections": [
+              "FluidVoice",
+              "Support FluidVoice",
+              "What's New in 1.6.0",
+              "Fluid Intelligence",
+              "Fluid Intelligence Sneak Peek",
+              "Demo",
+              "Command Mode — Take any action on your Mac using FluidVoice",
+              "Write Mode — Write or rewrite text in any text box in any ap",
+              "Features",
+              "Supported Models",
+              "Parakeet TDT v3 Languages",
+              "Parakeet TDT v2 Languages",
+              "Cohere Transcribe Languages",
+              "Apple Speech Languages"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 17052
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "thedotmack/claude-mem",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "D4Vinci/Scrapling",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "vercel-labs/agent-desktop",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "calesthio/OpenMontage",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "JustVugg/colibri",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "garrytan/gstack",
+      "category": "ai",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/dsh-superagent-prototype",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "FlashML-org/FreeToken",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/DeepInfer",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "Zagitta/gpu-unlock",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "kornia/kornia",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}
