@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-05",
+    "updated": "2026-11-06",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 15,
+    "count": 29,
     "publicCount": 12,
     "campaigns": [
       {
@@ -1175,6 +1175,804 @@
         ]
       },
       "campaign": "topic-stuffing-2026-09"
+    },
+    {
+      "full_name": "DawnShaperFrost90/slideshow-video-maker",
+      "owner": "DawnShaperFrost90",
+      "name": "slideshow-video-maker",
+      "url": "https://github.com/DawnShaperFrost90/slideshow-video-maker",
+      "description": "Slideshow Video Maker 2026: Complete standalone setup with all features unlocked and ready to run.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:45:28Z",
+        "pushed_at": "2026-11-04T08:45:34Z",
+        "topics": [
+          "automation",
+          "beat-creator",
+          "beginner-daw",
+          "desktop",
+          "developer-tools",
+          "loop-music-maker",
+          "magix-free",
+          "magix-github"
+        ]
+      }
+    },
+    {
+      "full_name": "Surfacevicanopy/ifunbox",
+      "owner": "Surfacevicanopy",
+      "name": "ifunbox",
+      "url": "https://github.com/Surfacevicanopy/ifunbox",
+      "description": "Complete standalone setup for Ifunbox 2026. Ready-to-run desktop installation with all features pre-activated.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "330 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 330,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:43:30Z",
+        "pushed_at": "2026-11-04T08:43:36Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "game-files",
+          "ifunbox-2026",
+          "ifunbox-browse-ios-apps-windows",
+          "ifunbox-download-iphone-file-manager",
+          "ifunbox-iphone-explorer-pc-2026"
+        ]
+      }
+    },
+    {
+      "full_name": "SpyIllusionistRank/frp-unlock-tool",
+      "owner": "SpyIllusionistRank",
+      "name": "frp-unlock-tool",
+      "url": "https://github.com/SpyIllusionistRank/frp-unlock-tool",
+      "description": "Complete Frp Unlock Tool 2023 ready-to-run desktop installation build with all features unlocked.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "330 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 330,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:43:02Z",
+        "pushed_at": "2026-11-04T08:43:11Z",
+        "topics": [
+          "adb-frp-tool",
+          "android-frp",
+          "android-frp-premium",
+          "android-repair-tools",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "frp"
+        ]
+      }
+    },
+    {
+      "full_name": "AstralBursarProvide/fabfilter-total",
+      "owner": "AstralBursarProvide",
+      "name": "fabfilter-total",
+      "url": "https://github.com/AstralBursarProvide/fabfilter-total",
+      "description": "Fabfilter Total 2026: Full working installer with all features activated, ready for immediate desktop use.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "330 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 330,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:42:38Z",
+        "pushed_at": "2026-11-04T08:42:44Z",
+        "topics": [
+          "automation",
+          "compressor-plugin",
+          "desktop",
+          "developer-tools",
+          "fabfilter",
+          "fabfilter-2026",
+          "fabfilter-bundle",
+          "fabfilter-pro-q"
+        ]
+      }
+    },
+    {
+      "full_name": "beamechoinertia/fortnite-skin-swapper",
+      "owner": "beamechoinertia",
+      "name": "fortnite-skin-swapper",
+      "url": "https://github.com/beamechoinertia/fortnite-skin-swapper",
+      "description": "Fortnite Skin Swapper 2026 - Full working installer, ready-to-run desktop build with anti-ban system.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "330 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 330,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:43:02Z",
+        "pushed_at": "2026-11-04T08:43:09Z",
+        "topics": [
+          "automation",
+          "community-skins",
+          "desktop",
+          "developer-tools",
+          "fortnite-crashes-on-launch-pc",
+          "fortnite-sprites",
+          "fortnite-update-2026",
+          "offsets-dump"
+        ]
+      }
+    },
+    {
+      "full_name": "ProsecutorBreed/portfolio-rebalancer",
+      "owner": "ProsecutorBreed",
+      "name": "portfolio-rebalancer",
+      "url": "https://github.com/ProsecutorBreed/portfolio-rebalancer",
+      "description": "Portfolio Rebalancer 2026: Full working installer with all tools and features ready to run on your desktop.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "330 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 330,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:44:39Z",
+        "pushed_at": "2026-11-04T08:44:45Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "portfolio-rebalancing",
+          "python",
+          "rebalancer",
+          "rebalancing"
+        ]
+      }
+    },
+    {
+      "full_name": "ToneCommanderWave/fabfilter-pro",
+      "owner": "ToneCommanderWave",
+      "name": "fabfilter-pro",
+      "url": "https://github.com/ToneCommanderWave/fabfilter-pro",
+      "description": "Fabfilter Pro 2026: Full working installer with all features activated, ready to run on your desktop.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "330 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 330,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:42:35Z",
+        "pushed_at": "2026-11-04T08:42:41Z",
+        "topics": [
+          "automation",
+          "compressor-plugin",
+          "desktop",
+          "developer-tools",
+          "fabfilter",
+          "fabfilter-2026",
+          "fabfilter-bundle",
+          "fabfilter-pro-q"
+        ]
+      }
+    },
+    {
+      "full_name": "Roninteeliminate/unlocktool",
+      "owner": "Roninteeliminate",
+      "name": "unlocktool",
+      "url": "https://github.com/Roninteeliminate/unlocktool",
+      "description": "Unlocktool 2026 - Full working installer with all features unlocked and ready to run on your desktop.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "301 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 301,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:46:05Z",
+        "pushed_at": "2026-11-04T08:46:11Z",
+        "topics": [
+          "android-repair-tools",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering"
+        ]
+      }
+    },
+    {
+      "full_name": "SpiralVendorCure/imobie-anytrans",
+      "owner": "SpiralVendorCure",
+      "name": "imobie-anytrans",
+      "url": "https://github.com/SpiralVendorCure/imobie-anytrans",
+      "description": "Pre-activated desktop edition of Imobie Anytrans 2026 ready-to-run installation build.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "301 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 301,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:43:31Z",
+        "pushed_at": "2026-11-04T08:43:38Z",
+        "topics": [
+          "anytrans-download-iphone-manager",
+          "anytrans-transfer-photos-music-pc",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "imobie-2026",
+          "imobie-anytrans-2026",
+          "imobie-anytrans-full-windows-2026"
+        ]
+      }
+    },
+    {
+      "full_name": "PursuerTermiteTouch/startall-back",
+      "owner": "PursuerTermiteTouch",
+      "name": "startall-back",
+      "url": "https://github.com/PursuerTermiteTouch/startall-back",
+      "description": "Startall Back 2026: Full working installer for a professional desktop software utility configuration, ready to run.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "300 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:45:34Z",
+        "pushed_at": "2026-11-04T08:45:40Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "start-menu"
+        ]
+      }
+    },
+    {
+      "full_name": "PauseDirector27/touch-copy",
+      "owner": "PauseDirector27",
+      "name": "touch-copy",
+      "url": "https://github.com/PauseDirector27/touch-copy",
+      "description": "Touch Copy 2026: Complete standalone setup with all features pre-activated, ready to run on your desktop.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "300 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:45:45Z",
+        "pushed_at": "2026-11-04T08:45:51Z",
+        "topics": [
+          "automation",
+          "content-copy",
+          "copyfail",
+          "desktop",
+          "developer-tools",
+          "iphone",
+          "open-source",
+          "phone-tool"
+        ]
+      }
+    },
+    {
+      "full_name": "arcmotormanjudge/adobe-indesign",
+      "owner": "arcmotormanjudge",
+      "name": "adobe-indesign",
+      "url": "https://github.com/arcmotormanjudge/adobe-indesign",
+      "description": "Secure digital asset deployment pipeline 2026 complete standalone installation build. Ready-to-run full working installer with enhanced...",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "300 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:41:01Z",
+        "pushed_at": "2026-11-04T08:41:08Z",
+        "topics": [
+          "adobe-indesign",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "indesign-document",
+          "indesign-free-soft",
+          "indesign-scripts",
+          "open-source"
+        ]
+      }
+    },
+    {
+      "full_name": "BrightLeopardPop/catia-cad",
+      "owner": "BrightLeopardPop",
+      "name": "catia-cad",
+      "url": "https://github.com/BrightLeopardPop/catia-cad",
+      "description": "Complete Catia Cad 2026 standalone installation setup. Ready-to-run desktop version with all features pre-activated.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "300 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:41:55Z",
+        "pushed_at": "2026-11-04T08:42:02Z",
+        "topics": [
+          "automation",
+          "cad-drawings",
+          "catia",
+          "catia-v5",
+          "catiav5",
+          "desktop",
+          "developer-tools",
+          "open-source"
+        ]
+      }
+    },
+    {
+      "full_name": "LinePondCrochet64/discord-server-raider",
+      "owner": "LinePondCrochet64",
+      "name": "discord-server-raider",
+      "url": "https://github.com/LinePondCrochet64/discord-server-raider",
+      "description": "Discord Server Raider 2026 complete standalone installation setup. Ready-to-run desktop edition with all features pre-activated.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-06",
+      "removedAt": "2026-11-06",
+      "issues": [
+        "2026-11-06"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "300 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-04T08:42:29Z",
+        "pushed_at": "2026-11-04T08:42:36Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "discord-boost-tools",
+          "discord-boosting-tool",
+          "discord-boosts",
+          "discord-raid-protect",
+          "discord-raid-software"
+        ]
+      }
     }
   ]
 }

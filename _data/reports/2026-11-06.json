@@ -1,0 +1,2606 @@
+{
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T10:08:48.042+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-05",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 784,
+    "unclassified": 72,
+    "selected": 30,
+    "suppressedByHistory": 158,
+    "sameDateExempt": 0,
+    "removed": 0,
+    "removedTotal": 0,
+    "offTopic": 14,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "scenario-labs/skills",
+          "owner": "scenario-labs",
+          "name": "skills",
+          "url": "https://github.com/scenario-labs/skills",
+          "homepage": "https://www.skills.sh/scenario-labs/skills",
+          "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+          "language": "Python",
+          "topics": [
+            "3d-models",
+            "agent-skills",
+            "ai-agents",
+            "ai-art",
+            "blender",
+            "claude-code",
+            "claude-skills",
+            "codex"
+          ],
+          "stars": 3095,
+          "forks": 273,
+          "open_issues": 38,
+          "starGain": 667,
+          "heat": 667,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 86,
+          "created_at": "2026-08-12T10:08:49Z",
+          "pushed_at": "2026-11-05T23:21:04Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.5,
+          "breakdown": {
+            "heat": 96,
+            "community": 65,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Agent Skills that teach AI coding agents (Claude Code, Cursor, Codex, Copilot, and 70+ others) how to create production-ready content with Scenario through the Scenario MCP server: images, video, audio, textures, skyboxes, 3D assets, and custom-trained models, for games, entertainment, and any creative vertical.\n\nThe expert tools at the bottom of the list work differently: teams of skills that drive DCC (digital content creation) software and game engines installed on your machine (ZBrush, Blender, Maya, Unreal Engine, Unity, Godot, Roblox Studio), distilled from expert tutorials, conference talks, and official documentation. They need the application, not the Scenario MCP server, and each family folder's README records how it was built and how far it was verified.\n\nEverything for Scenario. Every Scenario skill, without the expert tools: the default for working through the Scenario MCP.",
+            "features": [
+              "To learn that a skill changed, watch this repository's releases (Watch, then Custom, then Releases",
+              "To pull the changes, run npx skills update where you installed, or re-run your original",
+              "To stay on a reviewed state, pin the install (see Install).",
+              "\"Generate four style-matched potion icons with transparent backgrounds for my RPG inventory\"",
+              "\"Make a seamless brick texture, then upscale it to 2048 without breaking the tiling\"",
+              "\"Turn this concept sketch into a 3D prop and let me preview it before I export the GLB\""
+            ],
+            "sections": [
+              "Install",
+              "Every Scenario skill, without the expert tools",
+              "Pick from the installer menu, grouped by topic (it opens wit",
+              "A single skill",
+              "Staying up to date",
+              "Skills",
+              "Getting started",
+              "Finding a direction",
+              "Images",
+              "Game art and 3D",
+              "Video and audio",
+              "Socials",
+              "Consistency and custom models",
+              "Reviewing and organizing output"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 69335
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "monid-ai/monid",
+          "owner": "monid-ai",
+          "name": "monid",
+          "url": "https://github.com/monid-ai/monid",
+          "homepage": "https://monid.ai",
+          "description": "Monid - OpenRouter for agent tools. Join our community at https://discord.gg/rQzztcgJV8",
+          "language": "TypeScript",
+          "topics": [
+            "ai-agents",
+            "developer-tools"
+          ],
+          "stars": 6130,
+          "forks": 764,
+          "open_issues": 170,
+          "starGain": null,
+          "heat": 583.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 72,
+          "created_at": "2026-08-26T03:45:18Z",
+          "pushed_at": "2026-11-03T08:21:12Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.8,
+          "breakdown": {
+            "heat": 93,
+            "community": 72,
+            "activity": 54,
+            "maturity": 93
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "monid.ai &nbsp;&middot;&nbsp; Docs &nbsp;&middot;&nbsp; Tool catalog &nbsp;&middot;&nbsp; Quickstart &nbsp;&middot;&nbsp; Development guide\n\nOpenRouter, but for agent tools. One base URL, one key, and an agent can reach 2,000+ tools across 72+ providers : web search and scraping, people and company enrichment, social platforms, reviews and market data, and video, image and voice generation.\n\nThis repo is the connector layer , the one generic framework every endpoint above is described in: how it is called, what it accepts, what it returns, how its usage is counted. A connector is declarative, so a coding agent can write one. Point it at your API docs and at this repo, and adding your API to Monid becomes a pull request.",
+            "features": [
+              "Read connectors/exa/ , the reference implementation, and",
+              "Write the provider and the endpoint.",
+              "Record a fixture with deno task record , then keep it trimmed.",
+              "deno task check && deno task test must pass with no network.",
+              "Open a pull request.",
+              "Email support@monid.ai with the PR link, a link to",
+              "validate input against the compiled JSON Schema",
+              "input.toRequest builds the request, with auth still unexecuted"
+            ],
+            "sections": [
+              "Monid (OpenRouter for agent tools)",
+              "Why it exists",
+              "How an agent uses it",
+              "Writing a connector",
+              "The shape",
+              "Quickstart",
+              "Let an agent write it",
+              "How it runs",
+              "Compile",
+              "The engine pipeline",
+              "Repo layout",
+              "OpenAI image endpoints",
+              "Learn more",
+              "Citation"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11567
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Thysrael/Horizon",
+          "owner": "Thysrael",
+          "name": "Horizon",
+          "url": "https://github.com/Thysrael/Horizon",
+          "homepage": "https://www.horizon1123.top",
+          "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
+          "language": "Python",
+          "topics": [
+            "aggregator",
+            "feishu-bot",
+            "llm",
+            "mcp",
+            "news",
+            "openclaw",
+            "python",
+            "webhook"
+          ],
+          "stars": 12889,
+          "forks": 1848,
+          "open_issues": 5,
+          "starGain": 485,
+          "heat": 485,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 259,
+          "created_at": "2026-02-20T08:22:45Z",
+          "pushed_at": "2026-11-06T01:23:46Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.1,
+          "breakdown": {
+            "heat": 92,
+            "community": 79,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. 构建你专属的 AI 新闻雷达\n\n📖 Live Demo · 📋 Configuration Guide · 💬 QQ Group · 简体中文 · 日本語\n\nGood reads are scattered across feeds, forums, and timelines. Your attention isn't unlimited. Horizon collects, filters, and deduplicates them, then brings the worthwhile ones to you with context and community discussion.",
+            "features": [
+              "📡 Bring Your Sources Together — Follow RSS, Hacker News, Reddit, Telegram, X, GitHub, financial news, and more.",
+              "🎯 Decide What's Worth Reading — Define scoring rubrics with profiles, set individual thresholds, and merge repeated stories within each pro",
+              "🧩 Give Every Read the Right Treatment — Choose summaries, context, solutions, or takeaways with Markdown prompts and JSON block definitions",
+              "💬 Go Beyond the Headline — Add web-researched background and community discussion where they help explain the story.",
+              "⚖️ Make Room for All Your Interests — Cap the briefing's length and each category's share so one busy topic doesn't crowd out the rest.",
+              "📬 Read Where You Already Are — Generate English and Chinese briefings as Markdown, publish to Pages, or deliver by email and webhook.",
+              "More source types, such as Discord",
+              "Publish releases on GitHub"
+            ],
+            "sections": [
+              "Screenshots",
+              "Why Horizon?",
+              "Features",
+              "One Briefing, Different Ways to Read",
+              "How It Works",
+              "Agent Skill",
+              "Quick Start",
+              "1. Install",
+              "Install with uv (recommended)",
+              "Install test/development extras when needed",
+              "Or with pip",
+              "Optional: build with comma-separated extras before the first",
+              "2. Configure",
+              "3. Run"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 24725
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Anil-matcha/Open-Generative-AI",
+          "owner": "Anil-matcha",
+          "name": "Open-Generative-AI",
+          "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+          "homepage": "https://muapi.ai/open-generative-ai?utm_source=github&utm_medium=about&utm_campaign=open-generative-ai",
+          "description": "Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 600+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
+          "language": "JavaScript",
+          "topics": [
+            "ai-art-generator",
+            "ai-image-generation",
+            "ai-video-generation",
+            "fal-ai-alternative",
+            "generative-ai",
+            "image-to-video",
+            "invideo-alternative",
+            "kling-ai"
+          ],
+          "stars": 32617,
+          "forks": 6195,
+          "open_issues": 46,
+          "starGain": 182,
+          "heat": 182,
+          "heatBasis": "trending",
+          "heatPercentile": 84,
+          "ageDays": 1276,
+          "created_at": "2023-05-09T14:12:37Z",
+          "pushed_at": "2026-11-05T16:36:29Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.3,
+          "breakdown": {
+            "heat": 84,
+            "community": 87,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Community: Join Discord for discussions and support\n\nWant to launch this as your own branded AI studio and charge your own customers for it? MuAPI White Label lets you spin up a fully white-labeled version of this app — your logo, your colors, your custom domain, your own pricing — with zero infra to manage. You keep the markup on every generation; MuAPI handles the models, the queue, and the billing plumbing underneath.\n\n- Your branding — logo, color theme, and a custom domain (e.g. studio.yourbrand.com ) - Your pricing — set your own credit/subscription prices for end users, keep the margin - No infra — no servers, workers, or model hosting to run yourself - All studios included — Image, Video, Audio, Lip Sync, Cinema, Workflows, and more, depending on plan",
+            "features": [
+              "Your branding — logo, color theme, and a custom domain (e.g. studio.yourbrand.com )",
+              "Your pricing — set your own credit/subscription prices for end users, keep the margin",
+              "No infra — no servers, workers, or model hosting to run yourself",
+              "All studios included — Image, Video, Audio, Lip Sync, Cinema, Workflows, and more, depending on plan",
+              "OpenAI API examples — GPT Image, Sora, and GPT endpoints through Muapi.",
+              "Google Gemini Media API examples — Nano Banana, Imagen, Veo, Gemini Omni, and speech endpoints.",
+              "MiniMax Media API examples — Hailuo, H3 Max, speech, and music workflows.",
+              "Kling Video API examples — Kling text-to-video, image-to-video, and motion control."
+            ],
+            "sections": [
+              "Open Generative AI — Unrestricted Open-Source Alternative to",
+              "💰 Turn This Into Your Own Product — White Label & Resell",
+              "What similar AI studios charge their users",
+              "API examples and model references",
+              "Related Projects",
+              "🌐 Try it Online — No Install Required",
+              "⬇️ Download Desktop App",
+              "macOS Installation Guide",
+              "Windows Installation — SmartScreen warning fix",
+              "Ubuntu / Linux Installation",
+              "Build Linux installers (AppImage + .deb)",
+              "⚡ Local Model Inference (Desktop App Only)",
+              "Engine 1 — sd.cpp (bundled)",
+              "Engine 2 — Wan2GP (your own install)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 38122
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "Fission-AI/OpenSpec",
+          "owner": "Fission-AI",
+          "name": "OpenSpec",
+          "url": "https://github.com/Fission-AI/OpenSpec",
+          "homepage": "https://openspec.dev/",
+          "description": "Spec-driven development (SDD) for AI coding assistants.",
+          "language": "TypeScript",
+          "topics": [
+            "ai",
+            "context-engineering",
+            "engineering",
+            "planning",
+            "prd",
+            "sdd",
+            "sdlc",
+            "spec"
+          ],
+          "stars": 74066,
+          "forks": 5083,
+          "open_issues": 202,
+          "starGain": 111,
+          "heat": 111,
+          "heatBasis": "trending",
+          "heatPercentile": 77,
+          "ageDays": 458,
+          "created_at": "2025-08-05T10:37:45Z",
+          "pushed_at": "2026-11-05T19:13:39Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82,
+          "breakdown": {
+            "heat": 77,
+            "community": 91,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "→ fluid not rigid → iterative not waterfall → easy not complex → built for brownfield not just greenfield → scalable from personal projects to enterprises\n\nFollow @0xTab on X for updates · Join the OpenSpec Discord for help and questions.\n\nYou: /opsx:explore AI: What would you like to explore? You: I want dark mode but I'm not sure how to do it cleanly. AI: Let me look at your styling setup... Cleanest path here: CSS variables + a small theme context, with system-preference detection. No new dependencies. Scope it? You: Yes, let's do it.",
+            "features": [
+              "WHEN the user clicks the theme toggle",
+              "THEN the app switches to dark mode and persists the choice",
+              "Cross-repo features — one change, one plan, even when the code lands in three repos.",
+              "Shared requirements — a platform team owns the specs; product teams reference them read-only, right where their coding agent can read them. ",
+              "Plan before code — capture the plan in the store now; the code repos catch up later.",
+              "Not sure what to build yet? Start with /opsx:explore , a no-stakes thinking partner that reads your code, weighs options, and shapes a plan ",
+              "Already know what you want? Go straight to /opsx:propose .",
+              "Agree before you build — human and AI align on specs before code gets written"
+            ],
+            "sections": [
+              "See it in action",
+              "ADDED Requirements",
+              "Requirement: Theme selection",
+              "Why teams adopt OpenSpec",
+              "Quick Start",
+              "Docs",
+              "Community schemas",
+              "Why OpenSpec?",
+              "How we compare",
+              "Updating OpenSpec",
+              "Usage Notes",
+              "Contributing",
+              "Other",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10781
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "UncensoredLabs/uncensored-ai-api",
+          "owner": "UncensoredLabs",
+          "name": "uncensored-ai-api",
+          "url": "https://github.com/UncensoredLabs/uncensored-ai-api",
+          "homepage": "https://uncensoredlabs.dev/?utm_source=github&utm_medium=repository&utm_campaign=uncensored-ai-api",
+          "description": "Uncensored AI API and browser chat: DeepSeek and GLM models, streaming, Python and TypeScript examples, pricing and setup guides.",
+          "language": "JavaScript",
+          "topics": [
+            "abliterated-models",
+            "ai-models",
+            "chat-api",
+            "deepseek",
+            "deepseek-flash-uncensored",
+            "deepseek-v4-1-flash-abliterated",
+            "developer-tools",
+            "glm"
+          ],
+          "stars": 866,
+          "forks": 29,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 297,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 4,
+          "created_at": "2026-11-01T20:53:34Z",
+          "pushed_at": "2026-11-01T20:57:07Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.6,
+          "breakdown": {
+            "heat": 97,
+            "community": 52,
+            "activity": 44,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 10,
+            "ai": 25,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Access uncensored and abliterated DeepSeek and GLM text models through one OpenAI-compatible API, or use them directly in browser Chat. Keep your client, change the base URL, and choose a model.\n\nGet started · Models and pricing · Browser Chat · Documentation\n\nBuilt in Switzerland. This is the official public repository for guides, configuration examples and API samples . The hosted platform's implementation is not included.",
+            "features": [
+              "Security research: reason through vulnerability chains, review application trust boundaries, and turn findings into regression tests.",
+              "Reverse engineering: explain decompiled routines, recover file-format structures, and compare a vulnerable function with its patch.",
+              "Developer tools: connect a coding assistant, process tool calls, or integrate streamed text into your own interface.",
+              "Creative work: explore difficult themes and unconventional characters with models designed for fewer refusals.",
+              "Trust and safety: create labeled evaluation cases and analyze moderation failure modes."
+            ],
+            "sections": [
+              "Uncensored AI API — UncensoredLabs",
+              "Start with a working request",
+              "Models",
+              "What to build",
+              "Guides and examples",
+              "Stay in touch",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5753
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Leaflet/Leaflet",
+          "owner": "Leaflet",
+          "name": "Leaflet",
+          "url": "https://github.com/Leaflet/Leaflet",
+          "homepage": "https://leafletjs.com",
+          "description": "🍃 number one JavaScript library for interactive maps 🇺🇦",
+          "language": "JavaScript",
+          "topics": [
+            "javascript",
+            "leaflet",
+            "maps"
+          ],
+          "stars": 45860,
+          "forks": 6210,
+          "open_issues": 331,
+          "starGain": 24,
+          "heat": 24,
+          "heatBasis": "trending",
+          "heatPercentile": 82,
+          "ageDays": 5888,
+          "created_at": "2010-09-22T16:57:44Z",
+          "pushed_at": "2026-11-05T23:10:30Z",
+          "license": "BSD-2-Clause",
+          "rating": 4,
+          "composite": 84.4,
+          "breakdown": {
+            "heat": 82,
+            "community": 89,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Leaflet was created in 2010 by Volodymyr Agafonkin, a Ukrainian citizen living in Kyiv.\n\nRussia's full-scale invasion of Ukraine began in February 2022 and is still going. Russian troops have killed tens of thousands of civilians and committed mass war crimes. Missiles and drones still hit Kyiv and other Ukrainian cities day and night.\n\nLeaflet is used for documenting Russia's war crimes, tracking the front line and finding humanitarian aid. The future of Ukraine is the future of Leaflet.",
+            "features": [],
+            "sections": [],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2861
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "OpenLabs-so/openanalytics",
+          "owner": "OpenLabs-so",
+          "name": "openanalytics",
+          "url": "https://github.com/OpenLabs-so/openanalytics",
+          "homepage": "https://getopen.so",
+          "description": "Open-source, privacy-first and cookieless web analytics with revenue attribution and an MCP server.",
+          "language": "TypeScript",
+          "topics": [
+            "agpl",
+            "analytics",
+            "clickhouse",
+            "cookieless",
+            "google-analytics-alternative",
+            "mcp-server",
+            "nextjs",
+            "open-source"
+          ],
+          "stars": 646,
+          "forks": 56,
+          "open_issues": 6,
+          "starGain": null,
+          "heat": 55.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 87,
+          "ageDays": 86,
+          "created_at": "2026-08-11T17:53:51Z",
+          "pushed_at": "2026-10-22T08:40:53Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 65.2,
+          "breakdown": {
+            "heat": 87,
+            "community": 51,
+            "activity": 6,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 35,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Privacy-first web analytics. One lightweight tracker script, no cookies, no cross-site profiles, aggregate-only reads — self-hostable on your own hardware under AGPL-3.0.\n\nA hosted instance runs at getopen.so , operated by the authors: the same code, someone else's servers.\n\nSponsored by the Neon Open Source Program. Neon is the managed Postgres behind getopen.so and the one we recommend for self-hosting — see Deploying with Neon.",
+            "features": [
+              "apps/web may import only packages/contracts — the OpenAPI document is the",
+              "ClickHouse is reachable only through the query gateway, which verifies",
+              "The tracker has a hard byte budget; a change that exceeds it fails CI.",
+              "The Postgres schema this repository builds contains no billing tables, and a"
+            ],
+            "sections": [
+              "OpenAnalytics",
+              "What is in this repository",
+              "Self-hosting",
+              "then open https://app.example.com and create the first accou",
+              "Privacy model",
+              "Contributing",
+              "License and trademark"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10240
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "ProxyShard/ShardBrowser",
+          "owner": "ProxyShard",
+          "name": "ShardBrowser",
+          "url": "https://github.com/ProxyShard/ShardBrowser",
+          "homepage": "",
+          "description": "Free, open-source anti-detect browser launcher for web scraping and multi-accounting. By the ShardX team (formerly ProxyShard). Engine-level fingerprint spoofing in Chromium 157 (WebGL / WebGPU / Client Hints / fonts / TLS), 220+ device profiles bundled, stable QUIC + WebRTC over SOCKS5.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-agents",
+            "anti-detect-browser",
+            "antidetect-browser",
+            "browser-fingerprinting",
+            "chromium",
+            "fingerprint",
+            "headless-browser",
+            "headless-chrome"
+          ],
+          "stars": 1429,
+          "forks": 165,
+          "open_issues": 19,
+          "starGain": 16,
+          "heat": 16,
+          "heatBasis": "snapshot",
+          "heatPercentile": 78,
+          "ageDays": 159,
+          "created_at": "2026-05-30T23:05:14Z",
+          "pushed_at": "2026-11-04T14:06:37Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 69.4,
+          "breakdown": {
+            "heat": 78,
+            "community": 59,
+            "activity": 55,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A free, open-source anti-detect browser launcher for web scraping and multi-accounting. Patched Chromium 157 with engine-level fingerprint spoofing, a local API, an MCP server and SDKs.\n\nOverview · Features · Screenshots · Comparison · Install · Usage\n\nShardBrowser is built by the ShardX team (formerly ProxyShard). ProxyShard provides full SOCKS5 UDP relay support (RFC 1928 §7) and active p0f TCP fingerprint spoofing at the proxy exit. This keeps the operating system presented by the proxy consistent with the SYN/ACK shape seen by websites. ShardBrowser is the anti-detect browser stack built to use those capabilities. The launcher manages profiles, binds proxies and ships a patched Chromium 157 build that applies fingerprint changes inside the browser engine.",
+            "features": [
+              "Desktop UI: workspace for daily work with profiles, proxies,",
+              "Local HTTP API: Bearer JWT authentication on 127.0.0.1:40325 .",
+              "MCP server: connects ShardBrowser to Claude Desktop, Cursor and other",
+              "Standalone SDKs: Python, Node and Rust libraries that ship the",
+              "Device identity: user agent, platform, vendor, CPU cores, RAM,",
+              "Graphics: WebGL renderer / vendor / extensions / limits, WebGPU",
+              "Audio: sample rate, channel count, optional per-profile noise on",
+              "Screen & window: full resolution + available area + DPR + color"
+            ],
+            "sections": [
+              "What it is",
+              "Fingerprint surfaces patched",
+              "Launcher features",
+              "Screenshots",
+              "Network: QUIC + WebRTC over SOCKS5",
+              "Bot / automation detection",
+              "Fingerprint consistency",
+              "Authenticity score",
+              "Comparison with other anti-detect browsers",
+              "Why this matters in practice",
+              "Quick start",
+              "Option A: download a release",
+              "Linux system dependencies",
+              "Option B: build from source"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 49875
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "electkismet/AxData",
+          "owner": "electkismet",
+          "name": "AxData",
+          "url": "https://github.com/electkismet/AxData",
+          "homepage": "https://electkismet.github.io/AxData/",
+          "description": "AxData 是一个开源量化数据库框架，覆盖通达信、巨潮、腾讯财经、新浪财经、东方财富、财联社、开盘红等公开源接口。",
+          "language": "Python",
+          "topics": [
+            "a-share",
+            "china-stock",
+            "data-platform",
+            "duckdb",
+            "financial-data",
+            "parquet",
+            "plugin-system",
+            "python"
+          ],
+          "stars": 326,
+          "forks": 124,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 23.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 81,
+          "ageDays": 123,
+          "created_at": "2026-07-05T23:30:52Z",
+          "pushed_at": "2026-09-16T11:22:22Z",
+          "license": "NOASSERTION",
+          "rating": 3,
+          "composite": 60.7,
+          "breakdown": {
+            "heat": 81,
+            "community": 49,
+            "activity": 0,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "本项目前身为 eltdx ，因此当前主要数据源和基础采集能力优先围绕通达信体系建设；同时默认数据源能力覆盖交易所、通达信、通达信扩展行情、巨潮、腾讯财经、新浪财经、东方财富、财联社、开盘红等公开源接口。由于接口目录会持续扩展，默认采集插件只内置少量稳定示例；有长期入库需求的接口，可以按数据源插件或采集器插件规范自行编写。欢迎开发者通过 AXP 分享插件，或提交 PR 将成熟数据源或采集器合并进项目。\n\n1. 本项目代码按 AxData Research-Only License 提供，主要面向个人学习、协议研究和非商业研究场景。 2. 本项目仅是一个开源量化数据库框架，其中数据接口部分基于互联网公开信息搜集、整理和适配。 3. 本项目不提供任何商业数据服务，也不对任何第三方数据的商业使用作出授权。通过本项目访问或获取第三方数据的，用户需自行确认并遵守对应网站、数据源、开源项目或服务协议；因商业使用、付费服务、生产服务、转售或其他用途产生的风险与责任由使用者自行承担。 4. 对第三方服务器或服务的访问，用户需自行遵守相关法律法规、数据源条款及服务协议。 5. 请勿将本项目用于侵犯他人权益、违反监管规定、绕过访问限制或滥用第三方服务的行为。\n\n代码授权见 LICENSE；第三方项目、第三方网站和第三方数据源仍归其各自权利人所有，并适用其各自许可证、条款和规则。",
+            "features": [
+              "本项目代码按 AxData Research-Only License 提供，主要面向个人学习、协议研究和非商业研究场景。",
+              "本项目仅是一个开源量化数据库框架，其中数据接口部分基于互联网公开信息搜集、整理和适配。",
+              "本项目不提供任何商业数据服务，也不对任何第三方数据的商业使用作出授权。通过本项目访问或获取第三方数据的，用户需自行确认并遵守对应网站、数据源、开源项目或服务协议；因商业使用、付费服务、生产服务、转售或其他用途产生的风险与责任由使用者自行承担。",
+              "对第三方服务器或服务的访问，用户需自行遵守相关法律法规、数据源条款及服务协议。",
+              "请勿将本项目用于侵犯他人权益、违反监管规定、绕过访问限制或滥用第三方服务的行为。",
+              "交流群：点击链接加入群聊"
+            ],
+            "sections": [
+              "项目简介",
+              "致谢与使用声明",
+              "快速开始",
+              "核心能力",
+              "Python SDK",
+              "界面预览",
+              "接口目录与字段说明",
+              "开始页与架构边界",
+              "采集任务",
+              "插件管理",
+              "采集与本地数据",
+              "插件体系",
+              "真实源小样本检查",
+              "目录结构"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8158
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "caddyserver/caddy",
+          "owner": "caddyserver",
+          "name": "caddy",
+          "url": "https://github.com/caddyserver/caddy",
+          "homepage": "https://caddyserver.com",
+          "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+          "language": "Go",
+          "topics": [
+            "acme",
+            "automatic-https",
+            "caddy",
+            "caddyfile",
+            "go",
+            "golang",
+            "http",
+            "http-server"
+          ],
+          "stars": 78815,
+          "forks": 5235,
+          "open_issues": 271,
+          "starGain": 54,
+          "heat": 54,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 4314,
+          "created_at": "2015-01-13T19:45:03Z",
+          "pushed_at": "2026-11-05T17:05:28Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 87.6,
+          "breakdown": {
+            "heat": 89,
+            "community": 91,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "a project Every site on HTTPS Releases · Documentation · Get Help &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Powered by\n\n- Features - Install - Build from source - For development - With version information and/or plugins - Quick start - Overview - Full documentation - Getting help - About\n\n- Easy configuration with the Caddyfile - Powerful configuration with its native JSON config - Dynamic configuration with the JSON API - Config adapters if you don't like JSON - Automatic HTTPS by default - ZeroSSL and Let's Encrypt for public names - Fully-managed local CA for internal names & IPs - Can coordinate with other Caddy instances in a cluster - Multi-issuer fallback - Encrypted ClientHello (ECH) support - Stays up when other servers go down due to TLS/OCSP/certificate-related issues - Production-ready after serving trillions of requests and managing millions of TLS certificates - Scales to hundreds of thousands of sites as proven in production - HTTP/1.1, HTTP/2, and HTTP/3 all supported by default - Highly extensible modular architecture lets Caddy do anything without bloat - Runs anywhere with no external dependencies (not even libc) - Written in Go, a language with higher memory safety guarantees than other servers - Actually fun to use - So much more to discover",
+            "features": [
+              "Features",
+              "Install",
+              "For development",
+              "With version information and/or plugins",
+              "Quick start",
+              "Overview",
+              "Full documentation",
+              "Getting help"
+            ],
+            "sections": [
+              "Warp, built for coding with multiple AI agents",
+              "Menu",
+              "Features",
+              "Install",
+              "Build from source",
+              "For development",
+              "With version information and/or plugins",
+              "Quick start",
+              "Overview",
+              "Full documentation",
+              "Getting help",
+              "About"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12657
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Wallbycontact/java-mod-rust-port-tool",
+          "owner": "Wallbycontact",
+          "name": "java-mod-rust-port-tool",
+          "url": "https://github.com/Wallbycontact/java-mod-rust-port-tool",
+          "homepage": "",
+          "description": "Feed it a Fabric or NeoForge mod jar and Smelt writes the Rust side for Horizon, with the unfinished parts flagged in the report.",
+          "language": "JavaScript",
+          "topics": [
+            "cli",
+            "fabric",
+            "horizon",
+            "minecraft",
+            "minecraft-mods",
+            "neoforge",
+            "porting",
+            "rust"
+          ],
+          "stars": 412,
+          "forks": 26,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 141.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 1,
+          "created_at": "2026-11-05T06:15:39Z",
+          "pushed_at": "2026-11-05T06:19:24Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.5,
+          "breakdown": {
+            "heat": 95,
+            "community": 47,
+            "activity": 69,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 100,
+            "devops": 85,
+            "ai": 30,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Download · How to use · What comes over · For mod developers · FAQ\n\nSmelt turns a Fabric or NeoForge mod into a mod for Minecraft on Rust : Horizon, the open-source rewrite of Minecraft: Java Edition 26.3. Java mods don't run there. Smelt rewrites them so they do.\n\nDrop the .jar on the window, wait a few seconds, press Add to Horizon . That's the whole app.",
+            "features": [
+              "Drop a mod's .jar on the window, or press Choose a file .",
+              "Press Add to Horizon .",
+              "Reading the mod. Smelt opens the .jar and works out the loader (Fabric or NeoForge), the side (client, server or both), every class, and eve",
+              "Rewriting it in Rust. Loader events become Horizon hook points: native tick , native hud , native key , native command and the rest. Method ",
+              "Packing it for Horizon. The result is compile-checked against the Horizon revision Smelt targets, then packed. Code goes into a .hnmod ; blo"
+            ],
+            "sections": [
+              "Download",
+              "How to use",
+              "What comes over",
+              "How it works",
+              "For mod developers",
+              "Build from source",
+              "FAQ",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8978
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "openchoreo/openchoreo",
+          "owner": "openchoreo",
+          "name": "openchoreo",
+          "url": "https://github.com/openchoreo/openchoreo",
+          "homepage": "https://openchoreo.dev",
+          "description": "OpenChoreo is an internal developer platform for Kubernetes",
+          "language": "Go",
+          "topics": [
+            "ai-agents",
+            "ci-cd",
+            "cncf",
+            "developer-platform",
+            "devops",
+            "gitops",
+            "internal-developer-platform",
+            "kubernetes"
+          ],
+          "stars": 1816,
+          "forks": 280,
+          "open_issues": 297,
+          "starGain": 36,
+          "heat": 36,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 615,
+          "created_at": "2025-02-28T14:34:35Z",
+          "pushed_at": "2026-11-05T13:01:31Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 76.6,
+          "breakdown": {
+            "heat": 81,
+            "community": 62,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 37,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "src=\"./docs/images/openchoreo-horizontal-color.png\" alt=\"OpenChoreo Platform Abstractions\" width=\"600\" / A complete, open-source developer platform for Kubernetes OpenChoreo is a developer platform for Kubernetes that lets developers and AI agents build, deploy, and operate apps, resources, and agentic workloads. It provides development and platform abstractions, a Backstage-powered developer portal, CI/CD, GitOps, and observability.\n\nKubernetes gives you powerful primitives like Namespaces, Deployments, CronJobs, Services, and NetworkPolicies, but they're too low-level for most developers. Platform engineers end up building the actual platform from scratch: defining higher-level abstractions, wiring together tools for delivery, security and observability, and maintaining all of it as an in-house product.\n\nThat means stitching together a developer portal, CI pipelines, GitOps workflows, an observability stack, and access controls and then owning the glue between them indefinitely. The result is a fragile, bespoke system that's expensive to maintain and hard to evolve.",
+            "features": [
+              "The Experience Plane is where developers, platform engineers, and SREs interact with the platform via a Backstage-powered OpenChoreo Portal,",
+              "The Control Plane sits at the center of OpenChoreo. It takes developer intent and platform intent expressed through high-level abstractions ",
+              "The Data Plane is where your workloads run. It is where OpenChoreo enforces and guarantees the semantics of those high-level abstractions, s",
+              "The Observability Plane feeds the loop with metrics, logs, and tracing, all surfaced through the abstractions your developers already unders",
+              "The optional CI Plane handles builds using cloud native Buildpacks and Argo Workflows by default.",
+              "Platform Configuration – Set up deployment pipelines and environments.",
+              "Deploy from Source – Deploy services and web apps from source code.",
+              "Deploy from Image – Deploy pre-built container images."
+            ],
+            "sections": [
+              "Why OpenChoreo?",
+              "What is OpenChoreo?",
+              "How does OpenChoreo work?",
+              "Getting Started",
+              "Samples",
+              "Join the Community & Contribute",
+              "Roadmap",
+              "How It Works",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11187
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "ashishps1/awesome-system-design-resources",
+          "owner": "ashishps1",
+          "name": "awesome-system-design-resources",
+          "url": "https://github.com/ashishps1/awesome-system-design-resources",
+          "homepage": "https://algomaster.io",
+          "description": "Learn System Design concepts and prepare for interviews using free resources.",
+          "language": "Java",
+          "topics": [
+            "awesome",
+            "backend",
+            "computer-science",
+            "distributed-systems",
+            "high-level-design",
+            "hld",
+            "interview",
+            "interview-questions"
+          ],
+          "stars": 43096,
+          "forks": 8931,
+          "open_issues": 25,
+          "starGain": 31,
+          "heat": 31,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 1108,
+          "created_at": "2023-10-25T01:50:42Z",
+          "pushed_at": "2026-11-01T09:36:12Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 76.2,
+          "breakdown": {
+            "heat": 79,
+            "community": 90,
+            "activity": 35,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 85,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "This repository contains free resources to learn System Design concepts and prepare for interviews.\n\n👉 Subscribe to my AlgoMaster Newsletter and get a FREE System Design Interview Handbook in your inbox.\n\n✅ If you are new to System Design, start here: System Design was HARD until I Learned these 30 Concepts",
+            "features": [
+              "Scalability",
+              "Availability",
+              "Reliability",
+              "SPOF",
+              "Latency vs Throughput vs Bandwidth",
+              "Consistent Hashing",
+              "CAP Theorem",
+              "Failover"
+            ],
+            "sections": [
+              "Awesome System Design Resources",
+              "⚙️ Core Concepts",
+              "🌐 Networking Fundamentals",
+              "🔌 API Fundamentals",
+              "🗄️ Database Fundamentals",
+              "⚡ Caching Fundamentals",
+              "🔄 Asynchronous Communication",
+              "🧩 Distributed System and Microservices",
+              "🖇️ Architectural Patterns",
+              "⚖️ System Design Tradeoffs",
+              "✅ How to Answer a System Design Interview Problem",
+              "💻 System Design Interview Problems",
+              "Easy",
+              "Medium"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13486
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "juicedata/juicefs",
+          "owner": "juicedata",
+          "name": "juicefs",
+          "url": "https://github.com/juicedata/juicefs",
+          "homepage": "https://juicefs.com",
+          "description": "JuiceFS is a distributed POSIX file system built on top of Redis and S3.",
+          "language": "Go",
+          "topics": [
+            "bigdata",
+            "cloud-native",
+            "distributed-systems",
+            "filesystem",
+            "go",
+            "golang",
+            "hdfs",
+            "object-storage"
+          ],
+          "stars": 14683,
+          "forks": 1347,
+          "open_issues": 245,
+          "starGain": 18,
+          "heat": 18,
+          "heatBasis": "trending",
+          "heatPercentile": 71,
+          "ageDays": 2128,
+          "created_at": "2021-01-08T09:39:46Z",
+          "pushed_at": "2026-11-05T09:34:29Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 76.1,
+          "breakdown": {
+            "heat": 71,
+            "community": 79,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "JuiceFS is a high-performance POSIX file system released under Apache License 2.0, particularly designed for the cloud-native environment. The data, stored via JuiceFS, will be persisted in Object Storage (e.g. Amazon S3) , and the corresponding metadata can be persisted in various compatible database engines such as Redis, MySQL, and TiKV based on the scenarios and requirements.\n\nWith JuiceFS, massive cloud storage can be directly connected to big data, machine learning, artificial intelligence, and various application platforms in production environments. Without modifying code, the massive cloud storage can be used as efficiently as local storage.\n\n1. Fully POSIX-compatible : Use as a local file system, seamlessly docking with existing applications without breaking business workflow. 2. Fully Hadoop-compatible : JuiceFS' Hadoop Java SDK is compatible with Hadoop 2.x and Hadoop 3.x as well as a variety of components in the Hadoop ecosystems. 3. S3-compatible : JuiceFS' S3 Gateway provides an S3-compatible interface. 4. Cloud Native : A Kubernetes CSI Driver is provided for easily using JuiceFS in Kubernetes. 5. Shareable : JuiceFS is a shared file storage that can be read and written by thousands of clients. 6. Strong Consistency : The confirmed modification will be immediately visible on all the servers mounted with the same file system. 7. Outstanding Performance : The latency can be as low as a few milliseconds, and the throughput can be expanded nearly unlimitedly (depe",
+            "features": [
+              "Fully POSIX-compatible : Use as a local file system, seamlessly docking with existing applications without breaking business workflow.",
+              "Fully Hadoop-compatible : JuiceFS' Hadoop Java SDK is compatible with Hadoop 2.x and Hadoop 3.x as well as a variety of components in the Ha",
+              "S3-compatible : JuiceFS' S3 Gateway provides an S3-compatible interface.",
+              "Cloud Native : A Kubernetes CSI Driver is provided for easily using JuiceFS in Kubernetes.",
+              "Shareable : JuiceFS is a shared file storage that can be read and written by thousands of clients.",
+              "Strong Consistency : The confirmed modification will be immediately visible on all the servers mounted with the same file system.",
+              "Outstanding Performance : The latency can be as low as a few milliseconds, and the throughput can be expanded nearly unlimitedly (depending ",
+              "Data Encryption : Supports data encryption in transit and at rest (please refer to the guide for more information)."
+            ],
+            "sections": [
+              "Highlighted Features",
+              "Architecture",
+              "Getting Started",
+              "Command Reference",
+              "Containers",
+              "Kubernetes",
+              "Hadoop Java SDK",
+              "Advanced Topics",
+              "POSIX Compatibility",
+              "Performance Benchmark",
+              "Basic benchmark",
+              "Throughput",
+              "Metadata IOPS",
+              "Analyze performance"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14779
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "feigeCode/navop",
+          "owner": "feigeCode",
+          "name": "navop",
+          "url": "https://github.com/feigeCode/navop",
+          "homepage": "https://navop.dev",
+          "description": "A native, all-in-one workspace for databases, SSH, SFTP, terminals, remote desktop, monitoring, and AI.",
+          "language": "Rust",
+          "topics": [
+            "ai-agents",
+            "clickhouse",
+            "dameng",
+            "duckdb",
+            "iotdb",
+            "kingbase",
+            "markdown",
+            "mermaid"
+          ],
+          "stars": 2095,
+          "forks": 207,
+          "open_issues": 88,
+          "starGain": null,
+          "heat": 151.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 119,
+          "created_at": "2026-07-10T06:01:54Z",
+          "pushed_at": "2026-11-06T01:48:30Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 84.6,
+          "breakdown": {
+            "heat": 99,
+            "community": 62,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 49,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Navop A native, all-in-one workspace for databases, SSH, SFTP, terminals, remote desktop, monitoring, and AI agents. Built with GPUI and Rust · GPU-accelerated rendering · No WebView\n\n中文 · Documentation · Features · Screenshots · Install · Latest Release · Contributing\n\n- Built-in support for MySQL, PostgreSQL, SQLite, DuckDB, SQL Server, and Oracle; ClickHouse and TDengine are provided as installable extension drivers, alongside Dameng DM, KingbaseES, GBase 8s, OceanBase, openGauss, Apache IoTDB, and Oscar. - Browse database objects, edit and run SQL with execution plans, import and export data, compare schemas and data, and visualize relationships with ER diagrams. - Dedicated Redis and MongoDB interfaces; middleware connections such as MQTT are provided through installable extensions (MQTT 3.1.1 over rustls, SSH tunneling, auto-resubscribe), with subscribe, messages, and publish views. - Table-data tabs support batch-editing selected cells, typed editors for date/time/numeric columns, and copying table or column names from context menus.",
+            "features": [
+              "Built-in support for MySQL, PostgreSQL, SQLite, DuckDB, SQL Server, and Oracle; ClickHouse and TDengine are provided as installable extensio",
+              "Browse database objects, edit and run SQL with execution plans, import and export data, compare schemas and data, and visualize relationship",
+              "Dedicated Redis and MongoDB interfaces; middleware connections such as MQTT are provided through installable extensions (MQTT 3.1.1 over rus",
+              "Table-data tabs support batch-editing selected cells, typed editors for date/time/numeric columns, and copying table or column names from co",
+              "SSH and local terminals with draggable split panes, quick commands, broadcast input, shell integration, session lock, recording and replay, ",
+              "Manage remote files with SFTP, FTP, and FTPS: uploads, downloads, search, favorites, remote editing (configurable size limits and default ed",
+              "Reusable local, remote ( ssh -R ), and dynamic SOCKS port forwarding; X11 forwarding; host-key change warnings with explicit fingerprints; a",
+              "Import SecureCRT sessions, monitor servers with native charts, and connect to remote desktops over RDP and VNC. On Windows, native MSTSC int"
+            ],
+            "sections": [
+              "Features",
+              "Databases and data tools",
+              "Remote access and operations",
+              "Editing, AI, and extensibility",
+              "Native desktop experience",
+              "Public MCP, Navop CLI, and Agent Skill",
+              "Install the Skill for Codex, or use --target agents for Agen",
+              "Screenshots",
+              "Install",
+              "Build from source",
+              "Linux dependencies",
+              "Run the application",
+              "Community and support",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13718
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "slothflowlabs/duckle",
+          "owner": "slothflowlabs",
+          "name": "duckle",
+          "url": "https://github.com/slothflowlabs/duckle",
+          "homepage": "https://duckle.org/",
+          "description": "Open-source ETL/ELT you deploy on your own servers or cloud. Built on DuckDB: no-code/low-code visual pipelines or SQL, 385 components, dbt, CDC, data quality, reverse ETL, lineage, MCP for AI agents. No vendor cloud, no per-row billing.",
+          "language": "Rust",
+          "topics": [
+            "cdc",
+            "connectors",
+            "data-engineering",
+            "data-integration",
+            "data-orchestration",
+            "data-pipeline",
+            "data-quality",
+            "data-transformation"
+          ],
+          "stars": 1551,
+          "forks": 120,
+          "open_issues": 82,
+          "starGain": null,
+          "heat": 92.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 169,
+          "created_at": "2026-05-21T06:32:39Z",
+          "pushed_at": "2026-11-04T17:19:24Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.7,
+          "breakdown": {
+            "heat": 98,
+            "community": 59,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 49,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Pipelines you own. Author and deploy to your servers or cloud.\n\nDuckle is an open-source ETL platform for teams who want their pipelines running on their own infrastructure. Author on a canvas, in Python or in SQL, then ship the same file to your own server or cloud account: duckle-runner serve runs it headless on a schedule, in Docker or on a box you own, with a web console, roles and an audit trail. Every pipeline is one file in git, so it outlives whoever wrote it. It compiles to SQL on DuckDB and uses every core you give the box, so a bigger instance is a faster pipeline: 96 million rows out of Postgres to Parquet in 39.9s . No vendor cloud. No per-row billing. No lock-in.\n\nDuckle in 49 seconds. The real app on real data, sound on.",
+            "features": [
+              "Where Duckle runs",
+              "What is Duckle?",
+              "What's new in v0.7.4",
+              "What's new in v0.7.3",
+              "What's new in v0.7.2",
+              "What's new in v0.7.1",
+              "What's new in v0.7.0",
+              "What's new in v0.6.1"
+            ],
+            "sections": [
+              "Quick links",
+              "What is Duckle?",
+              "Why Duckle is different",
+              "Screenshots",
+              "Quickstart (60 seconds)",
+              "Download / Install",
+              "Let an agent do it",
+              "CLI only (CI, cron, containers)",
+              "Run your first pipeline",
+              "1. Add a source",
+              "2. Add a transform",
+              "3. Add a sink",
+              "4. Run it",
+              "5. Iterate"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 333974
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Hebbian-Robotics/hflow",
+          "owner": "Hebbian-Robotics",
+          "name": "hflow",
+          "url": "https://github.com/Hebbian-Robotics/hflow",
+          "homepage": "https://hebbianrobotics.com",
+          "description": "SDK for robotics teams to verify the quality of their data used for AI model training.",
+          "language": "Python",
+          "topics": [
+            "airflow",
+            "data-engineering",
+            "data-pipeline",
+            "data-quality",
+            "dataset-curation",
+            "duckdb",
+            "foxglove",
+            "lerobot"
+          ],
+          "stars": 306,
+          "forks": 169,
+          "open_issues": 9,
+          "starGain": null,
+          "heat": 27.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 92,
+          "ageDays": 79,
+          "created_at": "2026-08-18T17:41:42Z",
+          "pushed_at": "2026-11-04T23:54:34Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 75.7,
+          "breakdown": {
+            "heat": 92,
+            "community": 49,
+            "activity": 55,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 73,
+            "devops": 41,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Hebbian Robotics (YC S26) is building HFlow, an open source SDK for scalable multimodal data pipelines in robotics and physical AI. It makes data tooling and practices typically developed inside large robotics teams accessible to teams of any size.\n\nWe believe processing data is a major bottleneck in robotics. A corpus can combine video, state, actions, timestamps, and metadata from many recording systems. Teams often feel the problem first in quality control: determining whether cameras froze, streams drifted out of sync, required topics disappeared, or duplicate recordings entered the corpus. As the corpus grows, fragmented scripts make it difficult to know what ran, audit the results, or reproduce a dataset.\n\nTeams can start with HFlow's built-in checks, write new transformations, checks, labels, and enrichments, or connect processing code they already use. HFlow handles the orchestration, storage, versioning, and curation around those steps.",
+            "features": [
+              "Your processing code stays yours. Transformations, quality checks, labels, and enrichments are plain Python functions in your own environmen",
+              "Episodes are MCAP , the container that ROS 2 records natively and Foxglove/Rerun open directly, written with in-band H.264 whose GOP length ",
+              "Processed episodes carry their provenance. The file itself records the schema, pipeline, and tool versions that produced it, plus its source",
+              "The pipeline is visible as a graph. HFlow renders Airflow DAGs so you can see how stages connect and monitor task status, logs, retries, and",
+              "Quality checks produce reusable evidence. Accessors extract the inputs existing processing code expects (numpy arrays, MP4 paths, JPEG frame",
+              "Query the corpus without loading the recordings. Metadata, quality measurements, tags, version stamps, and artifact locations live in the Pa",
+              "Hosted platform waitlist: tell us about your workflow.",
+              "Community Discord: join us for questions, feedback, and contribution discussion."
+            ],
+            "sections": [
+              "What you get",
+              "Hosting and scale",
+              "Community and hosted interest",
+              "Install and try it",
+              "What it looks like",
+              "Design principles",
+              "Requirements",
+              "Documentation",
+              "References",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16250
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "royalbhati/sqltoerdiagram",
+          "owner": "royalbhati",
+          "name": "sqltoerdiagram",
+          "url": "https://github.com/royalbhati/sqltoerdiagram",
+          "homepage": "https://sqltoerdiagram.com.",
+          "description": "ER diagram generator. Paste CREATE TABLE statements and get a clean, interactive ERD — runs 100% in your browser, nothing uploaded",
+          "language": "HTML",
+          "topics": [
+            "data-modeling",
+            "database",
+            "database-schema",
+            "dbdiagram",
+            "dbml",
+            "developer-tools",
+            "diagram",
+            "entity-relationship-diagram"
+          ],
+          "stars": 715,
+          "forks": 71,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 46.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 145,
+          "created_at": "2026-06-14T04:12:26Z",
+          "pushed_at": "2026-07-17T16:17:09Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 67.9,
+          "breakdown": {
+            "heat": 94,
+            "community": 53,
+            "activity": 2,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 21,
+            "backend": 73,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A free, open-source online ERD generator. Paste a SQL schema ( CREATE TABLE statements) → get a clean, interactive entity-relationship diagram.\n\n100% local · no signup · no upload. It runs entirely in your browser, so your schema never leaves your machine — no server, no backend. Live at sqltoerdiagram.com .\n\nEvery other SQL-diagram tool is either paywalled, ugly, or slow. SQL to ER Diagram is a single static page that stays smooth at hundreds of tables , edits your SQL two-way, and shares a whole diagram in a single link — with no account and nothing leaving your browser.",
+            "features": [
+              "Standard CREATE TABLE / ALTER TABLE DDL across PostgreSQL, MySQL, SQLite,",
+              "Canvas renderer with cached bitmaps + viewport culling — smooth at hundreds of",
+              "Declutter dense schemas : FK lines are soft by default; hover a table to",
+              "Drag tables, scroll / pinch to zoom , and pan.",
+              "Hub-aware layered auto-arrange : the most-connected table is placed on one side",
+              "Overlap-free : auto-arrange runs a separation pass so no two tables overlap.",
+              "Your arrangement is saved : positions and the camera persist automatically, so",
+              "Double-click a table name, column name, or column type to edit it inline. The"
+            ],
+            "sections": [
+              "SQL to ER Diagram",
+              "Why",
+              "Features",
+              "Parse",
+              "Visualize & navigate",
+              "Smart layout",
+              "Edit on the canvas → SQL updates",
+              "Annotate",
+              "Save, share & export",
+              "Editor & appearance",
+              "Run locally",
+              "Build & host",
+              "Supported SQL",
+              "BigQuery"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5979
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "exmergo/dex",
+          "owner": "exmergo",
+          "name": "dex",
+          "url": "https://github.com/exmergo/dex",
+          "homepage": "https://www.exmergo.com/dex",
+          "description": "Dex lets your agent build your analytics.",
+          "language": "Python",
+          "topics": [
+            "agent",
+            "agent-skills",
+            "analytics",
+            "analytics-engineering",
+            "bigquery",
+            "claude-code",
+            "claude-code-plugin",
+            "claude-code-skill"
+          ],
+          "stars": 114,
+          "forks": 51,
+          "open_issues": 172,
+          "starGain": null,
+          "heat": 7.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 73,
+          "ageDays": 135,
+          "created_at": "2026-06-23T16:37:57Z",
+          "pushed_at": "2026-11-05T21:11:04Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 67.6,
+          "breakdown": {
+            "heat": 73,
+            "community": 40,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 41,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Explore your data, build models and semantic layers, and keep them in sync as schemas change.\n\nWorks with databases, data warehouses, lakehouses, and SQL engine endpoints through supported connectors.\n\nClaude Code (run these inside Claude Code, one at a time):",
+            "features": [
+              "Explore your database, data warehouse, or SQL endpoint. Find the tables that matter, understand their structure, and verify how they join. G",
+              "Transform your dbt project and semantic layer. Create models, tests, docs, and metrics as reviewable plans, then build and verify on a dev t",
+              "Maintain your models and metrics as sources change. Detect drift in schemas, volumes, grain, and metric definitions, with proposed fixes to ",
+              "understand the schema without starting from scratch every session,",
+              "find the relevant tables among thousands,",
+              "account for what a query costs,",
+              "keep personal data out of its context,",
+              "keep models and metric definitions coherent as their sources change."
+            ],
+            "sections": [
+              "Dex",
+              "Install",
+              "What you get",
+              "Why",
+              "Try it in three commands",
+              "It is broken on purpose",
+              "How it works",
+              "Explore",
+              "Transform",
+              "Maintain",
+              "Connectors",
+              "Semantic layers",
+              "See it on a real project",
+              "Use Dex from Python"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 26033
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "blacklanternsecurity/bbot",
+          "owner": "blacklanternsecurity",
+          "name": "bbot",
+          "url": "https://github.com/blacklanternsecurity/bbot",
+          "homepage": "https://www.blacklanternsecurity.com/bbot/",
+          "description": "The recursive internet scanner for hackers. 🧡",
+          "language": "Python",
+          "topics": [
+            "asm",
+            "attack-surface-management",
+            "automation",
+            "bugbounty",
+            "cli",
+            "easm",
+            "hacking",
+            "neo4j"
+          ],
+          "stars": 10986,
+          "forks": 976,
+          "open_issues": 33,
+          "starGain": 26,
+          "heat": 26,
+          "heatBasis": "trending",
+          "heatPercentile": 53,
+          "ageDays": 1700,
+          "created_at": "2022-03-12T02:21:59Z",
+          "pushed_at": "2026-11-05T23:38:04Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 66.9,
+          "breakdown": {
+            "heat": 53,
+            "community": 77,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "https://github.com/blacklanternsecurity/bbot/assets/20261699/e539e89b-92ea-46fa-b893-9cde94eebf81\n\nA BBOT scan in real-time - visualization with VivaGraphJS\n\nFor more installation methods, including Docker, see Getting Started",
+            "features": [
+              "subdomain-enum",
+              "\"RE:/. (sign log)[ -]?out\"",
+              "iis-shortnames",
+              "subdomain-enum",
+              "web-screenshots",
+              "baddns-heavy",
+              "Neo4j",
+              "Teams"
+            ],
+            "sections": [
+              "BEE·bot is a multipurpose scanner inspired by Spiderfoot, bu",
+              "Installation",
+              "stable version",
+              "bleeding edge (dev branch)",
+              "Example Commands",
+              "1) Subdomain Finder",
+              "find subdomains of evilcorp.com",
+              "passive sources only",
+              "2) Web Spider",
+              "crawl evilcorp.com, extracting emails and other goodies",
+              "3) Email Gatherer",
+              "quick email enum with free APIs + scraping",
+              "pair with subdomain enum + web spider for maximum yield",
+              "4) Web Scanner"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 17059
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "fzn0x/idx",
+          "owner": "fzn0x",
+          "name": "idx",
+          "url": "https://github.com/fzn0x/idx",
+          "homepage": "https://ihsg.midoriresearch.com",
+          "description": "Analyze the Indonesian stock market (IDX/IHSG) from web terminal, CLI, or any AI agents via MCP server. IHSG Prices, Fundamentals, and Screening. Free and No API keys required. Changelog: https://github.com/fzn0x/idx/blob/main/CHANGELOG.md",
+          "language": "Rust",
+          "topics": [
+            "analytics",
+            "cli",
+            "finance",
+            "idx",
+            "ihsg",
+            "indonesia",
+            "mcp",
+            "rust"
+          ],
+          "stars": 172,
+          "forks": 23,
+          "open_issues": 51,
+          "starGain": null,
+          "heat": 32.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 56,
+          "ageDays": 20,
+          "created_at": "2026-10-16T17:51:21Z",
+          "pushed_at": "2026-11-06T02:06:14Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 60.7,
+          "breakdown": {
+            "heat": 56,
+            "community": 41,
+            "activity": 74,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 56,
+            "devops": 83,
+            "ai": 56,
+            "data": 42
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Indonesian stock market (IDX / IHSG) analysis for people and AI agents. One binary: a CLI that prints tables, a JSON mode for scripts, and an MCP server for agents.\n\n╭────────┬──────────────────────────────┬───────┬──────┬─────────┬───────┬───────┬───────┬───────────────┬─────────┬───────┬────────╮ │ Symbol ┆ Name ┆ Price ┆ Chg ┆ Chg % ┆ Open ┆ High ┆ Low ┆ Volume ┆ Mkt Cap ┆ P/E ┆ Div % │ ╞════════╪══════════════════════════════╪═══════╪══════╪═════════╪═══════╪═══════╪═══════╪═══════════════╪═════════╪═══════╪════════╡ │ BBCA ┆ PT Bank Central Asia Tbk ┆ 5,175 ┆ -900 ┆ -14.81% ┆ 5,825 ┆ 5,825 ┆ 5,175 ┆ 1,241,098,200 ┆ 635.7T ┆ 10.96 ┆ 6.27% │ │ BBRI ┆ PT Bank Rakyat Indonesia (P… ┆ 2,640 ┆ -460 ┆ -14.84% ┆ 2,640 ┆ 2,890 ┆ 2,640 ┆ 1,193,916,400 ┆ 397.8T ┆ 6.49 ┆ 13.48% │ │ TLKM ┆ Perusahaan Perseroan (Perse… ┆ 1,900 ┆ -330 ┆ -14.80% ┆ 1,900 ┆ 1,985 ┆ 1,900 ┆ 963,614,200 ┆ 187.3T ┆ 10.98 ┆ 10.01% │ ╰────────┴──────────────────────────────┴───────┴──────┴─────────┴───────┴───────┴───────┴───────────────┴─────────┴───────┴────────╯ Last trade 2026-10-16 16:14 WIB · market closed · delayed data\n\nidx -o json stocks quote BBCA jq '.data[0] {price, change pct, pe trailing, dividend yield pct}'",
+            "features": [
+              "Free data, no keys. Yahoo Finance and MSN Money for prices and",
+              "Built for agents. -o json emits a stable, schema-documented envelope",
+              "Works offline. Responses are cached with per-endpoint TTLs; --offline",
+              "Ownership, not just prices. KSEI's monthly register of holders above 1 %",
+              "Single static binary. Rust, no runtime, Linux / macOS / Windows.",
+              "stdout carries exactly one JSON document; everything else goes to stderr.",
+              "The envelope records provider , fetched at , cached , stale and warnings .",
+              "Fields the source did not return are null . Nothing is estimated."
+            ],
+            "sections": [
+              "Install",
+              "Commands",
+              "For scripts and agents",
+              "MCP server",
+              "Bandarmology",
+              "Data sources",
+              "Web terminal",
+              "Ownership data pipeline",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 27496
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "googleworkspace/cli",
+          "owner": "googleworkspace",
+          "name": "cli",
+          "url": "https://github.com/googleworkspace/cli",
+          "homepage": "https://developers.google.com/workspace",
+          "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+          "language": "Rust",
+          "topics": [
+            "agent-skills",
+            "ai-agent",
+            "automation",
+            "cli",
+            "discovery-api",
+            "gemini-cli-extension",
+            "google-admin",
+            "google-api"
+          ],
+          "stars": 32131,
+          "forks": 1986,
+          "open_issues": 139,
+          "starGain": 22,
+          "heat": 22,
+          "heatBasis": "trending",
+          "heatPercentile": 48,
+          "ageDays": 248,
+          "created_at": "2026-03-02T19:46:06Z",
+          "pushed_at": "2026-11-03T01:37:22Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 64,
+          "breakdown": {
+            "heat": 48,
+            "community": 84,
+            "activity": 51,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 56,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "One CLI for all of Google Workspace — built for humans and AI agents. Drive, Gmail, Calendar, and every Workspace API. Zero boilerplate. Structured JSON output. 40+ agent skills included.\n\ngws doesn't ship a static list of commands. It reads Google's own Discovery Service at runtime and builds its entire command surface dynamically. When Google Workspace adds an API endpoint or method, gws picks it up automatically.\n\n- Prerequisites - Installation - Quick Start - Why gws? - Authentication - AI Agent Skills - Advanced Usage - Environment Variables - Exit Codes - Architecture - Troubleshooting - Development",
+            "features": [
+              "Prerequisites",
+              "Installation",
+              "Quick Start",
+              "Why gws?",
+              "Authentication",
+              "AI Agent Skills",
+              "Advanced Usage",
+              "Environment Variables"
+            ],
+            "sections": [
+              "Contents",
+              "Prerequisites",
+              "Installation",
+              "Quick Start",
+              "Why gws?",
+              "List the 10 most recent files",
+              "Create a spreadsheet",
+              "Send a Chat message",
+              "Introspect any method's request/response schema",
+              "Stream paginated results as NDJSON",
+              "Authentication",
+              "Which setup should I use?",
+              "Interactive (local desktop)",
+              "Manual OAuth setup (Google Cloud Console)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 20235
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "guilyx/grip",
+          "owner": "guilyx",
+          "name": "grip",
+          "url": "https://github.com/guilyx/grip",
+          "homepage": "https://guilyx.github.io/grip/",
+          "description": "A git hook that won't let you push code you can't explain. Quizzes you on your own diff. Works with Claude Code, Codex, Cursor.",
+          "language": "Python",
+          "topics": [
+            "ai",
+            "claude-code",
+            "cli",
+            "code-review",
+            "codex",
+            "cursor",
+            "developer-tools",
+            "git-hooks"
+          ],
+          "stars": 373,
+          "forks": 55,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 45.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 62,
+          "ageDays": 46,
+          "created_at": "2026-09-20T22:49:36Z",
+          "pushed_at": "2026-10-28T14:21:29Z",
+          "license": "BSD-3-Clause",
+          "rating": 2.5,
+          "composite": 51.9,
+          "breakdown": {
+            "heat": 62,
+            "community": 48,
+            "activity": 0,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 56,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A git hook that won't let you push code you can't explain.\n\nBefore your code leaves your machine, grip reads the diff and asks you about it: why it is built this way, where it fails, what a malicious caller could do, how you know it works. In the terminal, or on a whiteboard of your change in the browser. A model grades your answers out of 100. Below your team's pass mark, the push waits.\n\nIt checks the developer, not the code. Let AI write it; just be able to defend it. Follow one real change from commit to push to see what it asks and how it grades.",
+            "features": [
+              "Five questions from your diff , graded against a hidden rubric into a Grip Score out",
+              "grip whiteboard : your change drawn as parts and arrows in the browser, with the",
+              "Works with what you have : reuse Claude Code, Codex or Gemini CLI as the model (no",
+              "Inside coding agents : /grip in Claude Code, Codex, Gemini CLI, Cursor and others,",
+              "Out of the way when it should be : a passed diff is remembered, a retry reuses its"
+            ],
+            "sections": [
+              "grip",
+              "Try it in 30 seconds",
+              "Features",
+              "Installation",
+              "Quick start",
+              "Configuration",
+              "Documentation",
+              "Contributing",
+              "Citation",
+              "License",
+              "Star history"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 6728
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "kackerx/sqlmux",
+          "owner": "kackerx",
+          "name": "sqlmux",
+          "url": "https://github.com/kackerx/sqlmux",
+          "homepage": "",
+          "description": "A tmux-style terminal database client with Vim keybindings for PostgreSQL, MySQL, SqlServer, Redis, and more.",
+          "language": "Go",
+          "topics": [
+            "cli",
+            "sql",
+            "tmux",
+            "tui"
+          ],
+          "stars": 251,
+          "forks": 14,
+          "open_issues": 5,
+          "starGain": null,
+          "heat": 34.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 58,
+          "ageDays": 38,
+          "created_at": "2026-09-29T09:55:26Z",
+          "pushed_at": "2026-11-02T10:01:57Z",
+          "license": "MIT",
+          "rating": 2.5,
+          "composite": 52.8,
+          "breakdown": {
+            "heat": 58,
+            "community": 42,
+            "activity": 36,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 56,
+            "devops": 83,
+            "ai": 40,
+            "data": 42
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "If you live in tmux and vim, your database client should too.\n\nWatch the 68-second tour (MP4): a SQLite table, the palette and quick SQL, split panes and sessions, Redis keys and the console.\n\nsqlmux runs natively in Windows Terminal, with PowerShell or cmd. Install it with npm install -g sqlmux , with go install as above, or from the sqlmux windows amd64.zip (or arm64 ) on the Releases page: unzip it and put sqlmux.exe on your PATH .",
+            "features": [
+              "The configuration lives in %APPDATA%\\sqlmux , history, state and layouts in %LOCALAPPDATA%\\sqlmux ( XDG variables still win when set).",
+              "password cmd , the external editor ( C-o , notepad when EDITOR is unset) and formatprg run through cmd /c .",
+              "There is no keychain support on Windows: the connection form saves the password in connections.toml ; use password cmd or password env to ke",
+              "The old console window (conhost) is not supported; use Windows Terminal. Install a Nerd Font there too, or use icons = \"ascii\" .",
+              "In WSL, sqlmux is the Linux build: install it there as on Linux.",
+              "Five engines in one tree : PostgreSQL, MySQL, SQLite, SQL Server and Redis, side by side in the same session.",
+              "tmux inside. Sessions, windows, split panes and tabs, with SPC as the leader ( SPC % splits, SPC c opens a window, SPC s lists sessions). Ea",
+              "Edit tables in place. Change cells, add and delete rows, then C-s saves everything in one transaction. Enum, boolean and time columns get pi"
+            ],
+            "sections": [
+              "Install",
+              "Windows",
+              "Features",
+              "Safety",
+              "Keys and configuration",
+              "Build from source",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8401
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "valentderah/totk-pc-recomp",
+          "owner": "valentderah",
+          "name": "totk-pc-recomp",
+          "url": "https://github.com/valentderah/totk-pc-recomp",
+          "homepage": "",
+          "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
+          "language": "C",
+          "topics": [
+            "game",
+            "linux",
+            "port",
+            "recompilation",
+            "windows"
+          ],
+          "stars": 5169,
+          "forks": 430,
+          "open_issues": 318,
+          "starGain": null,
+          "heat": 1698.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 8,
+          "created_at": "2026-10-29T12:32:46Z",
+          "pushed_at": "2026-11-05T17:15:10Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87.5,
+          "breakdown": {
+            "heat": 100,
+            "community": 70,
+            "activity": 86,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "TotK Recomp is a static recompilation of The Legend of Zelda: Tears of the Kingdom (Nintendo Switch, 2023) into a native x86-64 application for Windows and Linux (docs/architecture.md).\n\nEarly development. The game is playable on Windows and Linux; visual bugs and crashes are still expected.\n\nReport problems as issues, following CONTRIBUTING.md.",
+            "features": [
+              "Native code, not emulation",
+              "Game updates 1.1.0, 1.2.1 and 1.4.3; 1.2.1 and 1.4.3 saves carry over between them",
+              "Takes NSP and XCI game files, and compressed NSZ and XCZ as they are: the setup unpacks them itself",
+              "60 fps by default; up to 144 fps or the monitor's refresh rate (experimental)",
+              "Custom resolutions (1080p, 2k...), supersampling and AMD FSR 1 upscaling",
+              "NVIDIA DLSS / DLAA on RTX GPUs: the setup downloads nvngx dlss.dll from NVIDIA's DLSS SDK repository",
+              "HDR10 output with peak, game and HUD brightness settings",
+              "16:10 (Steam Deck, handhelds), 3:2 (Surface, Framework), 21:9 and 32:9 (ultrawide) game resolutions, with the camera and the interface in th"
+            ],
+            "sections": [
+              "TotK Recomp",
+              "Status",
+              "Features",
+              "Planned",
+              "Installing",
+              "Windows",
+              "Linux",
+              "Credits",
+              "License",
+              "Building from source"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6142
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "opengeos/GeoLibre",
+          "owner": "opengeos",
+          "name": "GeoLibre",
+          "url": "https://github.com/opengeos/GeoLibre",
+          "homepage": "https://geolibre.app",
+          "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+          "language": "TypeScript",
+          "topics": [
+            "cesium",
+            "data-science",
+            "duckdb",
+            "geolibre",
+            "geospatial",
+            "gis",
+            "mapbox",
+            "maplibre"
+          ],
+          "stars": 8415,
+          "forks": 948,
+          "open_issues": 23,
+          "starGain": null,
+          "heat": 512.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 162,
+          "created_at": "2026-05-27T19:34:31Z",
+          "pushed_at": "2026-11-06T00:10:00Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86.4,
+          "breakdown": {
+            "heat": 98,
+            "community": 75,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 70,
+            "backend": 15,
+            "devops": 12,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A free and open-source, lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs everywhere you do, in the web browser, on the desktop, on mobile, and inside Jupyter notebooks, all while keeping your data local and private.\n\nIt also ships 1,000+ geoprocessing tools that run entirely in your browser on WebAssembly — terrain, hydrology, LiDAR, remote sensing, and vector analysis with no server, no install, and no data ever leaving your machine.\n\nGeoLibre is built with Tauri v2 , React , TypeScript , MapLibre GL JS , DuckDB-WASM Spatial , and deck.gl . The same workspace runs as a native desktop app, native Android and iOS apps, in any modern web browser, and adapts responsively to mobile and small screens.",
+            "features": [
+              "Launch GeoLibre Web — the full app in your browser, nothing to install",
+              "Download the desktop app — Windows, macOS, and Linux installers",
+              "Get it on the Mac App Store — the sandboxed macOS build",
+              "Get it on the App Store — the native iOS app for iPhone and iPad",
+              "Get it on Google Play — the native Android app",
+              "Get the Chrome extension — open datasets you find on any webpage in GeoLibre",
+              "Use the Python package — embed and control the full app in Jupyter notebooks",
+              "Use the R package — build interactive maps in RStudio, Quarto, R Markdown, and Shiny"
+            ],
+            "sections": [
+              "GeoLibre",
+              "Demos",
+              "3D Tiles",
+              "NYC buildings and subways",
+              "Planetary basemaps",
+              "Video tutorials",
+              "Geoprocessing: 1,000+ tools, zero install",
+              "Documentation",
+              "Sponsor",
+              "Acknowledgements",
+              "Disclaimer",
+              "Citation",
+              "Star History",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 18073
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "longbridge/gpui-kit",
+          "owner": "longbridge",
+          "name": "gpui-kit",
+          "url": "https://github.com/longbridge/gpui-kit",
+          "homepage": "http://gpui-kit.com",
+          "description": "Rust GUI components for building fantastic cross-platform desktop application by using GPUI.",
+          "language": "Rust",
+          "topics": [
+            "desktop-application",
+            "gpui",
+            "rust",
+            "uikit"
+          ],
+          "stars": 19425,
+          "forks": 1208,
+          "open_issues": 148,
+          "starGain": 285,
+          "heat": 285,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 876,
+          "created_at": "2024-06-13T13:45:39Z",
+          "pushed_at": "2026-11-05T19:20:59Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 87,
+          "breakdown": {
+            "heat": 94,
+            "community": 81,
+            "activity": 69,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Build fantastic, high-performance desktop apps with Rust and GPUI.\n\nGPUI Kit is a comprehensive Rust desktop application framework. It combines a production-ready UI system with application-grade data, layout, and editing capabilities, all built on a reusable foundation of behavior, state, and infrastructure. GPUI Kit ships 75+ documented components and primitives, WebAssembly support, AccessKit accessibility, UI integration testing, and an optional JavaScript extension runtime.\n\ngpui-kit The one crate applications depend on ├── gpui-base Unstyled behavior, state, and infrastructure └── gpui-component GPUI Component: the complete styled UI system",
+            "features": [
+              "75+ Components and Primitives : Forms, navigation, overlays, data display, editing, feedback, and layout, with polished interactions and pro",
+              "Production Ready : Used to build Longbridge Pro from day one and continuously refined in a publicly shipped commercial desktop application.",
+              "WebAssembly : Run applications and the same component showcases on the web with wasm32-unknown-unknown .",
+              "Accessibility : AccessKit roles, names, states, relationships, and actions are built into the interaction layer and covered by tests.",
+              "UI Integration Testing : Render real components in headless windows, drive pointer and keyboard input, and assert state, focus, layout, and ",
+              "Native Feel : Modern controls inspired by macOS and Windows, backed by semantic themes and multiple sizes.",
+              "120 FPS : GPU-accelerated interfaces that remain smooth under load.",
+              "Data Tables : Virtual scrolling, fixed and resizable columns, sorting, and cell selection across hundreds of thousands of rows."
+            ],
+            "sections": [
+              "Features",
+              "Framework Architecture",
+              "Three layers. One ecosystem.",
+              "Showcase",
+              "Usage",
+              "GPUI Fast",
+              "Basic Example",
+              "Icons",
+              "Skills for AI Coding Agents",
+              "Development",
+              "Desktop Gallery (Story)",
+              "Examples",
+              "Dock layout system (panels, split views, tabs)",
+              "Markdown rendering"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12836
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Minireel/HGhub",
+          "owner": "Minireel",
+          "name": "HGhub",
+          "url": "https://github.com/Minireel/HGhub",
+          "homepage": "",
+          "description": "YellowFruit third-party client",
+          "language": "TypeScript",
+          "topics": [
+            "android",
+            "drama",
+            "free",
+            "movie-web-app",
+            "reels",
+            "windows"
+          ],
+          "stars": 1153,
+          "forks": 875,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 395.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 3,
+          "created_at": "2026-11-03T14:04:27Z",
+          "pushed_at": "2026-11-05T08:41:19Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 79.8,
+          "breakdown": {
+            "heat": 97,
+            "community": 62,
+            "activity": 68,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- 以访客身份正常使用 ：像普通访客一样浏览就好，请勿滥用本项目。 - 不要给上游增加压力 ：本项目本身不提供下载功能，请勿改动代码去做批量下载 / 批量抓取，也不要高频轮询、并发轰炸接口或挂机刷播放量；内置的封面与播放列表缓存请不要改小或关掉。 - 尊重上游版权 ：不要去除水印与站点标识，不要把剧集搬运、转码、修改后二次分发到别处（网盘、资源站、其他 App 等），更不能改完拿出去出售。 - 不要公开传播接口与直链 ：接口地址、播放直链、解密方式请勿公开张贴或打包成「资源站」——上游一旦封禁，所有人都没法再用。 - 不要商业化 ：禁止打包出售、接入广告 / 会员 / 付费点播，或作为收费服务的一部分分发（详见 LICENSE）。 - 合理使用 ：仅供个人学习、研究与自用；请在 24 小时内删除相关资源，并支持正版。 - 遵守当地法律 ：使用者应自行判断并承担合规责任。\n\n- 唯一官方仓库 ：github.com/Minireel/HGhub - 唯一下载渠道 ：GitHub Releases。仓库源码页不放任何可执行文件， 其余网站、网盘、QQ 群、公众号、第三方下载站分发的「HGhub」安装包 一律非官方 ，作者不保证其安全性与完整性。\n\n. ├─ src/ 前端 │ ├─ api.ts 接口封装 + 本地媒体协议 URL │ ├─ store.tsx 全局状态（导航栈 / 用户 / 本地收藏 / 主题） │ ├─ html.ts 吃瓜正文清洗与图片代理 │ ├─ components/ Feed（播放页）/ VideoSurface / PlayerControls / Panels / UI │ └─ pages/ Home / Search / Category / Profile / Posts ├─ src-tauri/ Rust 后端 │ └─ src/ │ ├─ net.rs 请求层（边缘信封 + 重试） │ ├─ api.rs 业务命令 │ ├─ media.rs 封面解密 + HLS 代理 + 缓存 │ └─ session.rs token 持久化 └─ docs/API.md 接口文档",
+            "features": [
+              "以访客身份正常使用 ：像普通访客一样浏览就好，请勿滥用本项目。",
+              "不要给上游增加压力 ：本项目本身不提供下载功能，请勿改动代码去做批量下载 / 批量抓取，也不要高频轮询、并发轰炸接口或挂机刷播放量；内置的封面与播放列表缓存请不要改小或关掉。",
+              "尊重上游版权 ：不要去除水印与站点标识，不要把剧集搬运、转码、修改后二次分发到别处（网盘、资源站、其他 App 等），更不能改完拿出去出售。",
+              "不要公开传播接口与直链 ：接口地址、播放直链、解密方式请勿公开张贴或打包成「资源站」——上游一旦封禁，所有人都没法再用。",
+              "不要商业化 ：禁止打包出售、接入广告 / 会员 / 付费点播，或作为收费服务的一部分分发（详见 LICENSE）。",
+              "合理使用 ：仅供个人学习、研究与自用；请在 24 小时内删除相关资源，并支持正版。",
+              "遵守当地法律 ：使用者应自行判断并承担合规责任。",
+              "唯一官方仓库 ：github.com/Minireel/HGhub"
+            ],
+            "sections": [
+              "HGhub",
+              "官方渠道与仿冒提醒",
+              "技术栈",
+              "目录",
+              "开发 / 构建",
+              "环境注意",
+              "实现要点",
+              "免责声明",
+              "License",
+              "常见问题",
+              "LinuxDO"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4582
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "tester-army/e2e",
+          "owner": "tester-army",
+          "name": "e2e",
+          "url": "https://github.com/tester-army/e2e",
+          "homepage": "https://e2e.com",
+          "description": "Next generation e2e testing framework for web and mobile apps.",
+          "language": "TypeScript",
+          "topics": [
+            "e2e",
+            "e2e-testing",
+            "end-to-end-testing",
+            "mobile",
+            "mobile-testing",
+            "playwright",
+            "web"
+          ],
+          "stars": 13332,
+          "forks": 693,
+          "open_issues": 75,
+          "starGain": 193,
+          "heat": 193,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 107,
+          "created_at": "2026-07-22T09:29:04Z",
+          "pushed_at": "2026-11-06T00:16:47Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 83.6,
+          "breakdown": {
+            "heat": 89,
+            "community": 77,
+            "activity": 69,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "e2e is an end-to-end testing framework for web and mobile apps. Describe a goal in natural language and an agent drives the app to reach it. Check the result with locators and assertions in the same test.\n\n// tests/checkout.e2e.ts import { test, expect } from 'e2e';\n\ntest('a member upgrades to Pro', async ({ app, agent, screen }) = { await app.open('/settings/billing');",
+            "features": [],
+            "sections": [
+              "e2e",
+              "Quick start",
+              "Packages",
+              "Core",
+              "Integrations",
+              "Documentation",
+              "Join us",
+              "Security",
+              "Telemetry",
+              "Status"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5681
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "pbakaus/impeccable",
+      "category": "ai",
+      "lastPushed": "2026-10-24",
+      "times": 1
+    },
+    {
+      "full_name": "D4Vinci/Scrapling",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "harry0703/MoneyPrinterTurbo",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "vercel-labs/agent-desktop",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "garrytan/gstack",
+      "category": "ai",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "JustVugg/colibri",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "The-PR-Agent/pr-agent",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "openai/codex",
+      "category": "ai",
+      "lastPushed": "2026-10-24",
+      "times": 1
+    },
+    {
+      "full_name": "NVIDIA/auto-ontology",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/dsh-superagent-prototype",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

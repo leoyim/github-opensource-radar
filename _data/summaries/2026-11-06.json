@@ -1,0 +1,122 @@
+{
+  "scenario-labs/skills": {
+    "summary_zh": "面向 AI 编码代理（Claude Code、Cursor、Codex、Copilot 等 70 余种）的 Agent Skills 集合，教它们通过 Scenario MCP 生成可用于生产的图像、视频、音频、纹理、天空盒与 3D 资产，并在花钱之前先选模型、先估价，保持角色与品牌前后一致。列表底部的 expert tools 走另一条路：由技能族驱动本机已安装的 DCC 软件与游戏引擎（ZBrush、Blender、Maya、Unreal、Unity、Godot、Roblox Studio），内容提炼自专家教程、会议演讲与官方文档，不依赖 MCP，每个族目录的 README 都记录了构建方式与验证边界。",
+    "highlight_zh": "把「生成内容的模型」和「操作本机专业软件的技能」拆成两套互不依赖的能力包。"
+  },
+  "monid-ai/monid": {
+    "summary_zh": "给 agent 用的工具版 OpenRouter：一个 base URL、一把 key，就能让代理触达 72 家以上供应商的 2000 多个工具，覆盖网页搜索与抓取、人物与公司信息补全、社交平台、评论与市场数据，以及视频、图像、语音生成。仓库本身是连接器层，用声明式描述每个端点的调用方式、入参、返回与计量规则，因此把 API 文档和这个仓库一起指给编码代理，新增一个工具的接入就变成一次 PR。",
+    "highlight_zh": "工具接入被压成一份声明式描述，代理读文档就能自己写连接器。"
+  },
+  "Thysrael/Horizon": {
+    "summary_zh": "可自托管的 AI 新闻雷达，生成中英双语每日简报。面对散落在订阅源、论坛与时间线里的好内容，它先采集、过滤、去重，再带着上下文与社区讨论把值得读的送到面前。标签里带 Feishu bot、webhook 与 MCP，指向推送与代理调用两条出口；项目同时提供在线演示、配置指南与中文文档。",
+    "highlight_zh": "重点不在抓取更多源，而在把去重之后的判断依据一起交付。"
+  },
+  "Anil-matcha/Open-Generative-AI": {
+    "summary_zh": "可自托管的 AI 图像与视频生成工作台，聚合 600 多个模型（Flux、Midjourney、Kling、Sora、Veo 等），覆盖文生图、图生视频、口型同步、工作流等场景，MIT 许可。README 主要介绍 MuAPI 的白标方案：换成自己的 logo、配色、自定义域名与定价即可对外运营，模型、队列与计费由平台侧承担，不需要自建推理基础设施。",
+    "highlight_zh": "把模型聚合层做成可整体贴牌的产品，开源仓库是这套商业化的入口。"
+  },
+  "Fission-AI/OpenSpec": {
+    "summary_zh": "面向 AI 编码助手的规格驱动开发（SDD）框架，自我定位是流动而非僵化、迭代而非瀑布、轻量而非复杂、面向存量代码而不只是新建项目，并能从个人项目扩展到企业规模。工作流以 /opsx:explore 之类的命令先探索再圈定范围：示例里用户说想加暗色模式但不确定做法，助手先查看现有样式结构，再给出 CSS 变量加小型 theme context、不引入新依赖的方案，确认后才进入实施。",
+    "highlight_zh": "先让代理看清存量代码并收敛范围，把「同意做什么」变成显式步骤。"
+  },
+  "UncensoredLabs/uncensored-ai-api": {
+    "summary_zh": "一个 OpenAI 兼容的 API 聚合层，同时提供浏览器 Chat：接入 DeepSeek 与 GLM 系列文本模型，支持流式输出，给出 Python 与 TypeScript 示例、模型与定价说明、配置指南。用法是保留现有客户端、只替换 base URL 并选择模型。仓库自述为官方公开仓库，仅包含指南、配置示例与 API 样例，托管平台的服务端实现不在其中。",
+    "highlight_zh": "换一个 base URL 就能沿用既有客户端，仓库交付的是接入说明而非平台源码。"
+  },
+  "Leaflet/Leaflet": {
+    "summary_zh": "长期作为 Web 地图基础层的交互式地图 JavaScript 库，以轻量、移动端友好与可插拔的扩展生态著称，提供瓦片图层、矢量覆盖、标记、控件与事件等基础抽象，BSD-2-Clause 许可。项目创建于 2010 年，本期 45,860 星、6,210 fork、331 个开放议题，是榜单里历史最长的项目之一。",
+    "highlight_zh": "十六年后仍稳在基础层：地图能力被拆成足够薄的一层抽象，才撑得住插件生态。"
+  },
+  "OpenLabs-so/openanalytics": {
+    "summary_zh": "隐私优先、无 cookie 的网站分析工具，附带收入归因与一个 MCP server。实现上是一段轻量 tracker 脚本，不做跨站画像，只做聚合读取，AGPL-3.0 许可、可部署在自己的硬件上；作者另运营同代码的托管实例 getopen.so，并说明自托管时推荐 Neon 的托管 Postgres。",
+    "highlight_zh": "把「不收集」写进架构：无 cookie、无跨站画像、只读聚合结果。"
+  },
+  "ProxyShard/ShardBrowser": {
+    "summary_zh": "开源的反检测浏览器启动器，用于网页抓取与多账号场景。它交付一份打过补丁的 Chromium 157，在引擎层完成 WebGL、WebGPU、Client Hints、字体与 TLS 指纹伪装，内置 220 多份设备配置，并让 QUIC 与 WebRTC 稳定走 SOCKS5；同时提供本地 API、MCP server 与 SDK。由 ShardX 团队（原 ProxyShard）维护，代理侧负责 SOCKS5 UDP 中继与出口处的 TCP 指纹一致性，浏览器侧负责把这些能力用起来。",
+    "highlight_zh": "指纹改造下沉到浏览器引擎内部，而不是靠注入脚本在页面层打补丁。"
+  },
+  "electkismet/AxData": {
+    "summary_zh": "开源量化数据库框架，前身为 eltdx，默认数据源围绕通达信体系，并覆盖交易所、巨潮、腾讯财经、新浪财经、东方财富、财联社、开盘红等公开接口，采用 DuckDB 与 Parquet、以数据源插件和采集器插件扩展。README 用主要篇幅界定边界：代码按 Research-Only License 提供，面向个人学习、协议研究与非商业研究，不提供商业数据服务，也不对第三方数据的商业使用作出授权，使用者需自行确认数据源条款。",
+    "highlight_zh": "数据接入靠插件规范扩展，仓库把授权与责任边界写得比功能清单更细。"
+  },
+  "caddyserver/caddy": {
+    "summary_zh": "Go 编写的跨平台 HTTP/1-2-3 Web 服务器，默认自动 HTTPS。配置有三层入口：简洁的 Caddyfile、原生 JSON 配置、可动态改配置的 JSON API，另有 config adapters 适配其他写法。证书侧支持 Let's Encrypt 与 ZeroSSL 的公共域名、为内部名称与 IP 全托管的本地 CA、集群内多实例协调、多签发者回退以及 Encrypted ClientHello；架构模块化，无外部依赖（连 libc 都不需要）。",
+    "highlight_zh": "把证书申请、续期、回退和内部 CA 收进默认行为，HTTPS 不再是部署步骤。"
+  },
+  "Wallbycontact/java-mod-rust-port-tool": {
+    "summary_zh": "Smelt 是一个迁移工具：把 Fabric 或 NeoForge 的 mod jar 转成 Rust 重写的 Minecraft: Java Edition「Horizon」可用的模组，未完成的部分会在转换报告里标出。Java 模组无法在 Horizon 上直接运行，它负责改写使其可用；交互被压缩成把 .jar 拖进窗口、等待几秒、点 Add to Horizon 三步。",
+    "highlight_zh": "跨语言生态迁移的诚实做法：能转的自动转，转不了的写进报告而不是假装完成。"
+  },
+  "openchoreo/openchoreo": {
+    "summary_zh": "面向 Kubernetes 的开源内部开发者平台，让开发者与 AI agent 构建、部署并运维应用、资源与 agentic 工作负载，提供开发与平台两层抽象、Backstage 驱动的开发者门户、CI/CD、GitOps 与可观测性。它针对的问题很具体：K8s 的 Namespace、Deployment、Service 等原语对多数开发者过低层，平台团队往往要自己拼装门户、流水线、发布、可观测与访问控制，并长期维护这层脆弱的胶水。",
+    "highlight_zh": "把平台团队自建的那层胶水做成产品，并让代理和人类共用同一套抽象。"
+  },
+  "ashishps1/awesome-system-design-resources": {
+    "summary_zh": "面向系统设计与面试准备的免费学习资源清单，GPL-3.0 许可，43,096 星、8,931 fork。README 主体是入口引导：订阅 AlgoMaster Newsletter 可获赠系统设计面试手册，并给出一篇面向新手的「30 个概念」入门文章作为起点。",
+    "highlight_zh": "价值在筛选与编排，不在原创内容：一份被大量开发者验证过的学习路径。"
+  },
+  "juicedata/juicefs": {
+    "summary_zh": "面向云原生环境的高性能 POSIX 分布式文件系统，Apache-2.0 许可。文件数据持久化到 S3 等对象存储，元数据可按需落在 Redis、MySQL、TiKV 等引擎。特性包括完全 POSIX 兼容（无需改代码即可当本地盘用）、Hadoop 2.x/3.x SDK 兼容、S3 网关、Kubernetes CSI Driver、上千客户端共享读写、强一致，以及毫秒级延迟与近乎可线性扩展的吞吐。",
+    "highlight_zh": "数据与元数据分离，让对象存储以本地文件系统的语义被现有程序直接使用。"
+  },
+  "feigeCode/navop": {
+    "summary_zh": "用 Rust 与 GPUI 构建的原生一体化工作台，覆盖数据库、SSH、SFTP、终端、远程桌面、监控与 AI agent，GPU 加速渲染、不使用 WebView。内置 MySQL、PostgreSQL、SQLite、DuckDB、SQL Server、Oracle，另以可安装扩展驱动提供 ClickHouse、TDengine、达梦、人大金仓、GBase 8s、OceanBase、openGauss、IoTDB 等；功能含 SQL 执行与执行计划、导入导出、库表与数据比对、ER 图、批量单元格编辑、Redis 与 MongoDB 专用界面，以及通过扩展接入的 MQTT。",
+    "highlight_zh": "数据库、终端、远程桌面与监控收进同一个无 WebView 的原生进程。"
+  },
+  "slothflowlabs/duckle": {
+    "summary_zh": "可部署在自有服务器或云账号的开源 ETL/ELT，基于 DuckDB：画布、Python 或 SQL 编排，385 个组件，覆盖 dbt、CDC、数据质量、反向 ETL、血缘与面向 AI agent 的 MCP。每条流水线是 git 里的一个文件，编译成 DuckDB SQL 后由 duckle-runner 无头定时运行，配 Web 控制台、角色与审计；用满机器所有核心，示例为 9600 万行 Postgres 转 Parquet 用时 39.9 秒。不绑定厂商云、不按行计费。",
+    "highlight_zh": "流水线即文件、跑在自己的机器上，性能随给的核数线性变化。"
+  },
+  "Hebbian-Robotics/hflow": {
+    "summary_zh": "面向机器人与物理 AI 团队的开源数据质量 SDK（团队为 YC S26），处理视频、状态、动作、时间戳与来自多套录制系统的元数据。它把常见的质控问题显式化：相机是否冻结、数据流是否失步、必需 topic 是否消失、语料里是否混进重复录制；随着语料膨胀，零散脚本难以回答跑过什么、结果如何审计、数据集能否复现。团队可用内置检查，也可自定义变换、检查、标注与富化，编排、存储、版本与策展由 SDK 承担。",
+    "highlight_zh": "把大模型训练前最容易忽略的一环——多模态语料的可复现质控——做成基础设施。"
+  },
+  "royalbhati/sqltoerdiagram": {
+    "summary_zh": "浏览器内 100% 本地运行的 ER 图生成器：粘贴 CREATE TABLE 语句，得到可交互的实体关系图。无需注册、无上传、无服务端，表结构不离开本机；支持双向编辑 SQL、用一个链接分享整张图，并称在数百张表规模下依然流畅。",
+    "highlight_zh": "把「不上传」做成产品前提，连分享都压缩进一个链接而不是一个账号。"
+  },
+  "exmergo/dex": {
+    "summary_zh": "让代理来搭建分析体系：探索数据、建立模型与语义层，并在 schema 变化时保持同步。通过受支持的连接器对接数据库、数据仓库、湖仓与 SQL 引擎端点；用法以 Claude Code 插件/技能的形式给出，在 Claude Code 内按顺序执行指令。README 摘录较短，具体实现细节以仓库文档为准。",
+    "highlight_zh": "把语义层的维护从人工巡检改成代理可读、可增量同步的任务。"
+  },
+  "blacklanternsecurity/bbot": {
+    "summary_zh": "Python 实现的递归互联网扫描器，标签覆盖攻击面管理（ASM/EASM）、自动化与漏洞赏金，AGPL-3.0 许可，项目已运行约 1700 天。README 摘录以实时扫描的可视化演示（VivaGraphJS）为主，并把 Docker 等安装方式指向 Getting Started 文档。",
+    "highlight_zh": "侦察的递归性是关键：一个发现会继续派生出下一轮扫描目标。"
+  },
+  "fzn0x/idx": {
+    "summary_zh": "印尼股市（IDX/IHSG）分析工具，交付一个 Rust 二进制，同时提供三种出口：给人的 CLI 表格、给脚本的 JSON 模式、给 AI agent 的 MCP server。覆盖 IHSG 行情、基本面与筛选，免费且不需要 API key；README 给出表格输出示例，并演示用 jq 从 JSON 结果里取价格、涨跌幅、市盈率与股息率。",
+    "highlight_zh": "同一个二进制同时是终端工具、数据接口和代理可调用的能力。"
+  },
+  "googleworkspace/cli": {
+    "summary_zh": "一条命令行覆盖 Drive、Gmail、Calendar、Sheets、Docs、Chat、Admin 等全部 Workspace API，面向人类与 AI agent，Rust 实现、Apache-2.0 许可。它不内置静态命令表，而是在运行时读取 Google 自己的 Discovery Service 动态构建整个命令面，Google 新增端点或方法即自动获得；输出为结构化 JSON，附带 40 多个 agent skills。",
+    "highlight_zh": "命令面由上游服务描述运行时生成，从根上避免 CLI 跟进 API 的滞后。"
+  },
+  "guilyx/grip": {
+    "summary_zh": "一个 git hook，用来拦下「自己解释不清」的代码：push 前读取 diff，追问为什么这样实现、哪里会失败、恶意调用者能做什么、怎么知道它有效，可在终端或在浏览器里对着本次改动的白板作答，由模型按百分制评分，低于团队设定的及格线就暂缓推送。配合 Claude Code、Codex、Cursor 使用，定位是检查开发者而非检查代码——代码可以让 AI 写，但要能自己辩护。",
+    "highlight_zh": "把代码评审的责任落回提交者：机器生成可以，解释不清不行。"
+  },
+  "kackerx/sqlmux": {
+    "summary_zh": "tmux 风格、带 Vim 键位的终端数据库客户端，支持 PostgreSQL、MySQL、SQL Server、Redis 等。演示覆盖 SQLite 表浏览、命令面板与快速 SQL、分屏与会话、Redis 键与控制台；原生运行于 Windows Terminal 的 PowerShell 或 cmd，提供 npm 全局安装、go install 与 Releases 压缩包三种方式。",
+    "highlight_zh": "把数据库操作对齐到 tmux + Vim 的肌肉记忆，而不是再学一套 GUI。"
+  },
+  "valentderah/totk-pc-recomp": {
+    "summary_zh": "《塞尔达传说：王国之泪》（Switch，2023）的静态重编译项目，输出为带 Vulkan 渲染器的 Windows / Linux x86-64 原生应用，游戏文件不包含在仓库内。项目自述处于早期开发：Windows 与 Linux 上已可游玩，但视觉缺陷与崩溃仍属预期；架构说明在 docs/architecture.md，问题反馈要求按 CONTRIBUTING.md 提交。",
+    "highlight_zh": "静态重编译把整机指令翻成原生代码，路线与模拟器完全不同。"
+  },
+  "opengeos/GeoLibre": {
+    "summary_zh": "轻量、云原生的开源 GIS 平台，可在浏览器、桌面、移动端和 Jupyter notebook 中运行，数据留在本地。内置 1000 多个地理处理工具，全部在浏览器 WebAssembly 里执行，覆盖地形、水文、LiDAR、遥感与矢量分析，无需服务端、无需安装。技术栈为 Tauri v2、React、TypeScript、MapLibre GL JS、DuckDB-WASM Spatial 与 deck.gl，同一 workspace 产出原生桌面、Android、iOS 与响应式 Web 应用。",
+    "highlight_zh": "把一千多个地理处理工具搬进浏览器 WASM，分析过程不再需要把数据送出去。"
+  },
+  "longbridge/gpui-kit": {
+    "summary_zh": "基于 GPUI 的 Rust 桌面应用组件库，提供 75 个以上有文档的组件与基础件，含 WebAssembly 支持、AccessKit 无障碍、UI 集成测试与可选的 JavaScript 扩展运行时。结构上分三层：应用只需依赖 gpui-kit，gpui-base 承载无样式的行为、状态与基础设施，gpui-component 提供完整样式化 UI 系统。",
+    "highlight_zh": "无样式行为层与样式化组件层分离，换皮肤不必重写交互逻辑。"
+  },
+  "Minireel/HGhub": {
+    "summary_zh": "YellowFruit 的第三方客户端，Tauri v2 架构：前端 src 含 API 封装、全局状态、正文清洗与图片代理、Feed 播放页与播放器控件；Rust 后端 src-tauri 分请求层（含重试）、业务命令、封面解密与 HLS 代理及缓存、会话持久化，另有 docs/API.md 接口文档。README 用主要篇幅列出使用约束：以访客身份浏览、不批量下载抓取或高频轮询、不去除水印与二次分发、不公开接口与直链、不商业化、24 小时内删除相关资源并支持正版，同时声明唯一官方仓库与仅通过 GitHub Releases 分发。",
+    "highlight_zh": "前后端职责划得很清楚，但仓库真正的重心是一份相当详尽的使用边界清单。"
+  },
+  "tester-army/e2e": {
+    "summary_zh": "面向 Web 与移动应用的端到端测试框架，Apache-2.0 许可。写法是用自然语言描述目标，由 agent 驱动应用去达成，再在同一个测试里用 locator 与断言校验结果；示例为「会员升级到 Pro」的场景，测试函数从 app、agent、screen 三个对象取能力，先打开账单设置页再继续。",
+    "highlight_zh": "把「要达成什么」交给代理，把「如何判定成功」留在断言里。"
+  }
+}
