@@ -1,35 +1,65 @@
 /* ============================================================
-   主题层：全部视觉决策集中在这里。
-   换肤 = 改这一份变量 + layouts/components 的类名映射。
+   主题层：Design Tokens + 六套中国风配色。
+   组件只用语义变量，换肤只改这里的主题块，不动任何组件样式。
 
    版式参照中文书籍：
    - 左侧书口（序号、章次），中间版心，右侧边栏（评分、走势）
    - 章首用中文数字，正文首行缩进两字，分隔一律用铅线，不用卡片阴影
-   - 双色印刷：墨 + 一色专色（墨绿），纸为冷调纸白，不用暖米色
+   - 双色印刷：墨 + 一色专色（随主题切换），纸为传统色里的纸白
    - 全书直角，唯一的圆是雷达标志里的圆
+
+   配色取传统色：青瓷、黛青、朱砂、竹翠、黛紫、松烟墨。
+   每套都给足「品牌 / 页面 / 文字 / 状态」四层 token，
+   暗色共用一套墨底，只把专色提亮，保持双色印刷的克制。
    ============================================================ */
 
 :root {
-  /* 纸与墨 */
-  --paper: #eeefea;
-  --paper-2: #e5e7e0;
-  --ink: #14181a;
-  --ink-2: #4b534e;
-  --ink-3: #626963;
-  --rule: #cdd0c7; /* 铅线 */
-  --rule-strong: #a2a89f;
-  --ink-rule: #1c2220; /* 书眉线、章首线、表顶线 */
-  --accent: #14573f; /* 专色：墨绿 */
-  --accent-soft: #dfe7e0;
-  /* 风险色阶：同一明度带上的四种印刷色，按严重度由朱红到灰排列。
-     只用于小面积标记（判定标准的色标、条目上的分类标签），不铺底、不做装饰。 */
-  --risk-supply: #a3371f;
-  --risk-supply-soft: #f0e0da;
-  --risk-popularity: #a3591a;
-  --risk-popularity-soft: #f4e7d6;
-  --risk-watch: #626963;
-  --risk-watch-soft: #e5e7e0;
+  /* ---------- Design Tokens（默认 = 01 青瓷雅韵） ---------- */
+  /* 品牌 */
+  --color-primary: #477f78;
+  --color-primary-hover: #386b64;
+  --color-primary-soft: #dfeae3;
+  --color-accent: #b08b52; /* 点缀：鎏金，只用于色标、印章一类小面积 */
+  /* 页面 */
+  --color-bg: #f5f7f2;
+  --color-surface: #e6ebe4;
+  --color-border: #c5d9ce;
+  --color-border-strong: #83a99b;
+  --color-rule-ink: #293d39; /* 书眉线、章首线、表顶线 */
+  /* 文字 */
+  --color-text: #293d39;
+  --color-text-secondary: #5e716b;
+  --color-text-muted: #8a9a93;
+  /* 状态 */
+  --color-success: #3b7b5a;
+  --color-warning: #b07b2c;
+  --color-warning-soft: #f4e9d5;
+  --color-danger: #b0473c;
+  --color-danger-soft: #f3e0dc;
+  /* 遮罩与阴影 */
+  --color-scrim: rgba(20, 24, 26, 0.45);
+  --color-shadow: rgba(20, 24, 26, 0.18);
   --grain: 0.05;
+
+  /* 兼容别名：全站旧样式仍用 --paper / --ink 这一组名字。
+     var() 在取用时才解析，因此会跟着 data-palette / data-theme 的覆盖一起变。 */
+  --paper: var(--color-bg);
+  --paper-2: var(--color-surface);
+  --ink: var(--color-text);
+  --ink-2: var(--color-text-secondary);
+  --ink-3: var(--color-text-muted);
+  --rule: var(--color-border); /* 铅线 */
+  --rule-strong: var(--color-border-strong);
+  --ink-rule: var(--color-rule-ink);
+  --accent: var(--color-primary); /* 专色 */
+  --accent-soft: var(--color-primary-soft);
+  /* 风险色阶：同一明度带上的印刷色，只用于小面积标记 */
+  --risk-supply: var(--color-danger);
+  --risk-supply-soft: var(--color-danger-soft);
+  --risk-popularity: var(--color-warning);
+  --risk-popularity-soft: var(--color-warning-soft);
+  --risk-watch: var(--color-text-muted);
+  --risk-watch-soft: var(--color-surface);
 
   /* 版面尺寸 */
   --w: 1044px; /* 含左右页边 */
@@ -37,8 +67,6 @@
   --rail: 72px; /* 书口 */
   --side: 140px; /* 右边栏 */
   --gap: 22px;
-  /* 书脊宽度。只在宽屏（≥1200px）显示，贴在版心之外，不占正文宽度 */
-  --spine: 54px;
 
   --h-nav: 60px;
   --h-ctrl: 46px;
@@ -48,24 +76,185 @@
   --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Mono", Consolas, monospace;
 }
 
-[data-theme="dark"] {
-  --paper: #101312;
-  --paper-2: #171b19;
-  --ink: #e4e5df;
-  --ink-2: #a7aca5;
-  --ink-3: #868c85;
-  --rule: #272c29;
-  --rule-strong: #3f4441;
-  --ink-rule: #5b615b;
-  --accent: #7fc4a4;
-  --accent-soft: #1a2b24;
-  --risk-supply: #e39279;
-  --risk-supply-soft: #2b1c17;
-  --risk-popularity: #dfa468;
-  --risk-popularity-soft: #2a2118;
-  --risk-watch: #868c85;
-  --risk-watch-soft: #1b1e1d;
+/* ---------- 六套中国风配色 ---------- */
+/* 01 青瓷雅韵即 :root 默认值，不重复声明。 */
+
+/* 02 黛青云山 */
+:root[data-palette='daiqing'] {
+  --color-primary: #315c78;
+  --color-primary-hover: #264a63;
+  --color-primary-soft: #dbe7ed;
+  --color-accent: #527f9a;
+  --color-bg: #f2f6f7;
+  --color-surface: #e3ebee;
+  --color-border: #c2d6dc;
+  --color-border-strong: #527f9a;
+  --color-rule-ink: #243746;
+  --color-text: #243746;
+  --color-text-secondary: #516a7a;
+  --color-text-muted: #8299a6;
+  --color-success: #2e7d68;
+  --color-warning: #b5822e;
+  --color-warning-soft: #f4ead7;
+  --color-danger: #b24a42;
+  --color-danger-soft: #f2e0dd;
+}
+
+/* 03 朱砂鎏金：朱红只作专色，不铺底 */
+:root[data-palette='zhusha'] {
+  --color-primary: #a83d35;
+  --color-primary-hover: #8c312b;
+  --color-primary-soft: #f0ded9;
+  --color-accent: #d6b779;
+  --color-bg: #f8f4ea;
+  --color-surface: #ede6d7;
+  --color-border: #ddd1bb;
+  --color-border-strong: #c87560;
+  --color-rule-ink: #302a28;
+  --color-text: #302a28;
+  --color-text-secondary: #6b5f57;
+  --color-text-muted: #9a8b7f;
+  --color-success: #4e7b52;
+  --color-warning: #b07b2c;
+  --color-warning-soft: #f4e6ce;
+  --color-danger: #93352e;
+  --color-danger-soft: #f0dcd5;
+}
+
+/* 04 翡翠竹影 */
+:root[data-palette='feicui'] {
+  --color-primary: #39765b;
+  --color-primary-hover: #2c6049;
+  --color-primary-soft: #ddebe0;
+  --color-accent: #76a68a;
+  --color-bg: #f3f7f0;
+  --color-surface: #e4ebe1;
+  --color-border: #b8d2bb;
+  --color-border-strong: #76a68a;
+  --color-rule-ink: #263b30;
+  --color-text: #263b30;
+  --color-text-secondary: #5a7264;
+  --color-text-muted: #8aa091;
+  --color-success: #39765b;
+  --color-warning: #ae7c2c;
+  --color-warning-soft: #f3e8d3;
+  --color-danger: #b04a3c;
+  --color-danger-soft: #f2e0db;
+}
+
+/* 05 紫气东方 */
+:root[data-palette='ziqi'] {
+  --color-primary: #7061a8;
+  --color-primary-hover: #5b4d8e;
+  --color-primary-soft: #e6e1f2;
+  --color-accent: #9589c4;
+  --color-bg: #f6f4fa;
+  --color-surface: #e9e5f2;
+  --color-border: #cdc5e0;
+  --color-border-strong: #9589c4;
+  --color-rule-ink: #332f46;
+  --color-text: #332f46;
+  --color-text-secondary: #635c7c;
+  --color-text-muted: #918aa6;
+  --color-success: #4e7f68;
+  --color-warning: #b0812f;
+  --color-warning-soft: #f4e9d6;
+  --color-danger: #b04a58;
+  --color-danger-soft: #f2dee3;
+}
+
+/* 06 墨韵宣纸：站点原配色，留作一键还原 */
+:root[data-palette='moyun'] {
+  --color-primary: #14573f;
+  --color-primary-hover: #0f4633;
+  --color-primary-soft: #dfe7e0;
+  --color-accent: #a3371f;
+  --color-bg: #eeefea;
+  --color-surface: #e5e7e0;
+  --color-border: #cdd0c7;
+  --color-border-strong: #a2a89f;
+  --color-rule-ink: #1c2220;
+  --color-text: #14181a;
+  --color-text-secondary: #4b534e;
+  --color-text-muted: #626963;
+  --color-success: #2d6a4f;
+  --color-warning: #a3591a;
+  --color-warning-soft: #f4e7d6;
+  --color-danger: #a3371f;
+  --color-danger-soft: #f0e0da;
+}
+
+/* ---------- 暗色：六套共用一层墨底，只把专色提亮 ---------- */
+:root[data-theme='dark'] {
+  --color-bg: #101312;
+  --color-surface: #171b19;
+  --color-border: #272c29;
+  --color-border-strong: #3f4441;
+  --color-rule-ink: #5b615b;
+  --color-text: #e4e5df;
+  --color-text-secondary: #a7aca5;
+  --color-text-muted: #868c85;
+  --color-primary-soft: #1a2b24;
+  --color-warning-soft: #2a2118;
+  --color-danger-soft: #2b1c17;
+  --color-scrim: rgba(0, 0, 0, 0.62);
+  --color-shadow: rgba(0, 0, 0, 0.5);
   --grain: 0.06;
+}
+
+:root[data-theme='dark'][data-palette='celadon'] {
+  --color-primary: #8fc3b6;
+  --color-primary-hover: #a9d6ca;
+  --color-primary-soft: #1a2e2a;
+  --color-accent: #d6b779;
+  --color-warning: #dfa468;
+  --color-danger: #e39279;
+  --color-success: #7fc4a4;
+}
+:root[data-theme='dark'][data-palette='daiqing'] {
+  --color-primary: #86b4d0;
+  --color-primary-hover: #a6c9df;
+  --color-primary-soft: #17262f;
+  --color-accent: #a5c3ca;
+  --color-warning: #d9a86c;
+  --color-danger: #e39a8b;
+  --color-success: #7fc0ac;
+}
+:root[data-theme='dark'][data-palette='zhusha'] {
+  --color-primary: #d98b7c;
+  --color-primary-hover: #e6a99d;
+  --color-primary-soft: #2b1a18;
+  --color-accent: #d6b779;
+  --color-warning: #d9a86c;
+  --color-danger: #e39279;
+  --color-success: #8cb98f;
+}
+:root[data-theme='dark'][data-palette='feicui'] {
+  --color-primary: #84bd9a;
+  --color-primary-hover: #a3d1b3;
+  --color-primary-soft: #182a20;
+  --color-accent: #76a68a;
+  --color-warning: #dcaa6c;
+  --color-danger: #e2957f;
+  --color-success: #84bd9a;
+}
+:root[data-theme='dark'][data-palette='ziqi'] {
+  --color-primary: #ae9ede;
+  --color-primary-hover: #c4b8ea;
+  --color-primary-soft: #221e30;
+  --color-accent: #9589c4;
+  --color-warning: #dcb072;
+  --color-danger: #e393a2;
+  --color-success: #8cc0a9;
+}
+:root[data-theme='dark'][data-palette='moyun'] {
+  --color-primary: #7fc4a4;
+  --color-primary-hover: #a2d6bd;
+  --color-primary-soft: #1a2b24;
+  --color-accent: #e39279;
+  --color-warning: #dfa468;
+  --color-danger: #e39279;
+  --color-success: #7fc4a4;
 }
 
 /* 字号基准即中文行单位：全站 rem 都以它为锚，改一处整版等比缩放 */
@@ -205,7 +394,7 @@ summary {
   border-bottom: 1px solid var(--ink-rule);
   box-shadow: 0 4px 0 -3px var(--rule);
 }
-/* 书眉顶格，不随书脊缩进 —— 书脊只从书眉下缘开始 */
+/* 书眉顶格，宽度只按版心算 */
 .nav-inner {
   display: flex;
   align-items: center;
@@ -239,114 +428,6 @@ summary {
 .ring-track {
   opacity: 0.24;
 }
-/* ---------- 书脊 ---------- */
-/* 「年份 / 日期 / 期次 / 当前方向」原在书眉中段，现在搬到版心左侧的窄条上。
-   每条信息横排一行、自上而下摞起来；弧面用横向渐变交代，上下各压两道竹节。 */
-.spine {
-  position: fixed;
-  top: var(--h-nav);
-  bottom: 0;
-  /* 贴住版心左缘留 8px 空隙；宽度改由 --spine 决定，收窄时不会脱开 */
-  left: calc(50% - var(--w) / 2 - var(--spine) - 8px);
-  z-index: 6;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  width: var(--spine);
-  padding: 48px 0;
-  font-family: 'FangSong', 'STFangsong', 'FangSong_GB2312', '仿宋', serif;
-  font-weight: 700;
-  font-size: 0.7rem;
-  line-height: 1.35;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: var(--ink-2);
-  /* 上下两道堵头布 + 中间一道弧面：都是背景层，不占 DOM */
-  background-color: var(--paper-2);
-  background-image:
-    linear-gradient(var(--accent), var(--accent)),
-    linear-gradient(var(--accent), var(--accent)),
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.07) 0%,
-      rgba(0, 0, 0, 0.018) 16%,
-      rgba(0, 0, 0, 0) 46%,
-      rgba(0, 0, 0, 0.014) 74%,
-      rgba(0, 0, 0, 0.08) 100%
-    );
-  background-size: 100% 3px, 100% 3px, 100% 100%;
-  background-position: 0 0, 0 100%, 0 0;
-  background-repeat: no-repeat;
-  border-left: 1px solid var(--rule);
-  border-right: 1px solid var(--rule);
-  /* 页脚把书脊压短时，避免竖排文字溢出到书脊之外 */
-  overflow: hidden;
-  user-select: none;
-  pointer-events: none;
-}
-@media (min-width: 1200px) {
-  .spine.is-on {
-    display: flex;
-  }
-}
-/* 竹节：上下各两道细线，宽度略窄于书脊，像压出来的两道棱 */
-.spine::before,
-.spine::after {
-  content: '';
-  position: absolute;
-  left: 7px;
-  right: 7px;
-  height: 1px;
-  background: var(--rule-strong);
-  opacity: 0.45;
-}
-.spine::before {
-  top: 32px;
-  box-shadow: 0 5px 0 var(--rule-strong);
-}
-.spine::after {
-  bottom: 32px;
-  box-shadow: 0 -5px 0 var(--rule-strong);
-}
-/* 书脊上的字一律竖排：汉字一字一行、数字两位一行、西文一词一行。
-   分词由 spineLines() 在构建期和前端统一完成（见 lib/format.ts），
-   这里只负责把每组的行摞成一列，行宽恒等于最宽的一个词。 */
-.spine-year,
-.spine-date,
-.spine-no,
-.spine-chap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  max-width: 100%;
-}
-.spine-year > span,
-.spine-date > span,
-.spine-no > span,
-.spine-chap > span {
-  /* 每行本身已是最小不可分单位，书脊再窄也只在行内截，不会横向撑开 */
-  white-space: nowrap;
-  line-height: 1.2;
-}
-/* 年份：两位一组，20 一行 26 一行 */
-.spine-year {
-  letter-spacing: 0.08em;
-  color: var(--ink-3);
-}
-.spine-no {
-  color: var(--ink-3);
-}
-/* 方向：按「/」分组后，再逐字/逐词成行，免得挤出书脊 */
-.spine-chap {
-  color: var(--accent);
-}
-.spine-chap:empty {
-  display: none;
-}
-
 .ring-progress {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
@@ -380,24 +461,504 @@ summary {
 .nav-short {
   display: none;
 }
-.theme-toggle {
+/* ---------- 书眉：金笺折扇 + 昼夜墨印 ----------
+   扇面取自 r48→r122 的扇环：金笺底、五十二道细折痕、淡墨山水与朱印；
+   十八根竹骨，最外两根为斑竹；六根主骨可点，当前一骨描金。 */
+.fan-picker {
+  --fan-0: #f6e7bd;
+  --fan-1: #e5c587;
+  --fan-2: #c9a265;
+  --fan-sheen: #fff9e0;
+  --fan-grain: #a9834a;
+  --fan-grain-2: #fdf3d1;
+  --fan-crease: #96713a;
+  --fan-ink: #43331a;
+  --fan-edge: #8a6330;
+  --fan-bone: #b78c55;
+  --fan-bone-strong: #946832;
+  --fan-bone-dark: #6b431e;
+  --fan-bone-fleck: #c9a462;
+  --fan-gold-solid: #eccf8e;
+  --fan-seal: #a83d35;
+  --fan-seal-ink: #f8ecd2;
+  --fan-mark: #9c3a30;
+  --fan-ridge-1: 0.16;
+  --fan-ridge-2: 0.11;
+  --fan-ridge-3: 0.2;
+  /* 扇面题跋与印文用楷体：系统自带的书法字体，缺字时回退宋体 */
+  --font-brush: 'STKaiti', 'Kaiti SC', 'KaiTi', 'Kaiti', 'AR PL UKai CN', 'Songti SC', 'Noto Serif SC', serif;
+  position: relative;
+}
+/* 夜读里扇面换成暗金，骨与朱印相应提亮，仍是一把金笺扇 */
+[data-theme='dark'] .fan-picker {
+  --fan-0: #56452a;
+  --fan-1: #42341f;
+  --fan-2: #322616;
+  --fan-sheen: #7d6535;
+  --fan-grain: #1e170d;
+  --fan-grain-2: #6d5930;
+  --fan-crease: #1a130a;
+  --fan-ink: #120e08;
+  --fan-edge: #241a0e;
+  --fan-bone: #8a6335;
+  --fan-bone-strong: #a87c46;
+  --fan-bone-dark: #5f4222;
+  --fan-bone-fleck: #b08a4e;
+  --fan-gold-solid: #c9a462;
+  --fan-seal: #b4453a;
+  --fan-seal-ink: #f4e3c6;
+  --fan-mark: #e6b877;
+  --fan-ridge-1: 0.34;
+  --fan-ridge-2: 0.24;
+  --fan-ridge-3: 0.42;
+}
+.fan-trigger,
+.seal-btn {
   width: 26px;
   height: 24px;
   display: grid;
   place-items: center;
   border: 1px solid var(--rule-strong);
+  box-shadow: inset 0 0 0 1px var(--paper), inset 0 0 0 2px var(--rule);
+  background: transparent;
   font-size: 0.76rem;
   line-height: 1;
   color: var(--ink-2);
-  background: transparent;
-  transition: color 0.14s ease, border-color 0.14s ease;
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.14s ease, color 0.14s ease;
 }
-.theme-toggle:hover {
+.fan-trigger::-webkit-details-marker {
+  display: none;
+}
+.fan-trigger::marker {
+  content: '';
+}
+.fan-trigger:hover,
+.fan-picker[open] .fan-trigger {
+  border-color: var(--ink-rule);
+  background: var(--accent-soft);
+}
+.seal-btn:hover {
   color: var(--ink);
-  border-color: var(--ink);
 }
-.theme-toggle:active {
+.fan-trigger:active,
+.seal-btn:active {
   transform: translateY(1px);
+}
+
+/* 常驻小扇：金笺弧面 + 六骨，当前一骨描金 */
+.fan-mini {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 12px;
+}
+.fan-mini::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  width: 18px;
+  height: 8px;
+  border: 1px solid var(--fan-edge);
+  border-bottom: 0;
+  border-radius: 18px 18px 0 0;
+  background: linear-gradient(to top, var(--fan-2), var(--fan-0));
+}
+.fan-mini-bone {
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  width: 1px;
+  height: 10px;
+  margin-left: -0.5px;
+  background: var(--fan-bone-strong);
+  transform-origin: 50% 100%;
+  transform: rotate(calc(-50deg + var(--i) * 20deg));
+}
+.fan-mini-bone.is-on {
+  width: 1.5px;
+  margin-left: -0.75px;
+  background: var(--color-accent);
+}
+
+/* ---------- 全屏折扇：无边框、透明底、云雾浮在屏上 ----------
+   点书眉的折扇按钮，整把扇子铺到视口中央；雾分两层，一层在扇后、一层在扇前，
+   各自缓慢漂移，与扇子的轻微起伏错开。 */
+.fan-board {
+  /* 扇子宽度同时受视口宽、面板上限与视口高约束，横屏也不会顶出屏幕 */
+  --fan-w: min(88vw, 700px, 96vh);
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 2.4vh, 26px);
+  padding: max(64px, env(safe-area-inset-top)) 14px max(24px, env(safe-area-inset-bottom));
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  animation: fan-unfold 0.36s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+@keyframes fan-unfold {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 除扇面外一律透明：底只留一层可点的空白，收扇靠它 */
+.fan-backdrop {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  cursor: zoom-out;
+}
+
+/* 扇子：宽度随视口，比例锁在 240:166，轻轻起伏 */
+.fan-plate {
+  position: relative;
+  z-index: 2;
+  width: var(--fan-w);
+  aspect-ratio: 240 / 166;
+  margin: 0;
+  /* 枢轴落在 150/166 处：开扇的缩放与旋转都从这一点发起 */
+  transform-origin: 50% 90.36%;
+  animation: fan-float 11s ease-in-out infinite alternate;
+}
+/* 每次展开由脚本重新挂上这个类，动画才会从头播 */
+.fan-plate.is-unfolding {
+  animation:
+    fan-sweep 0.76s cubic-bezier(0.25, 0.46, 0.45, 0.94) none,
+    fan-float 11s ease-in-out infinite alternate;
+}
+/* 开扇：一片窄角自枢轴扫开，骨、色钉、山水一同长出，末尾回弹少许 */
+@keyframes fan-sweep {
+  0% {
+    opacity: 0;
+    rotate: -3.6deg;
+    scale: 0.9;
+  }
+  9% {
+    opacity: 1;
+  }
+  58% {
+    rotate: 1deg;
+    scale: 1.012;
+  }
+  100% {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 1;
+  }
+}
+/* 扇面与扇骨被这道楔形裁切，枢轴上的扇钉扇柄留在外面 */
+.fan-plate.is-unfolding .fan-art {
+  animation: fan-sweep-clip 0.76s cubic-bezier(0.25, 0.46, 0.45, 0.94) none;
+}
+@keyframes fan-sweep-clip {
+  0% {
+    clip-path: polygon(
+      50% 90.36%,
+      47.09% -30.05%,
+      48.55% -30.1%,
+      50% -30.12%,
+      51.45% -30.1%,
+      52.91% -30.05%
+    );
+  }
+  100% {
+    clip-path: var(--fan-open);
+  }
+}
+/* 钉头比扇面晚半拍出现，免得楔形还没扫开就孤零零一粒钉 */
+.fan-plate.is-unfolding .fan-nail {
+  animation: fan-nail-in 0.76s cubic-bezier(0.25, 0.46, 0.45, 0.94) none;
+}
+@keyframes fan-nail-in {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ---------- 合扇：把开扇那套倒着走一遍 ---------- */
+/* 扇面自枢轴收拢成一条缝，末尾缩没；时长一秒出头，别让人觉得「啪」地消失 */
+.fan-plate.is-closing {
+  animation:
+    fan-sweep 1.05s cubic-bezier(0.45, 0.05, 0.35, 1) reverse both,
+    fan-float 11s ease-in-out infinite alternate;
+}
+.fan-plate.is-closing .fan-art {
+  animation: fan-sweep-clip 1.05s cubic-bezier(0.45, 0.05, 0.35, 1) reverse both;
+}
+.fan-plate.is-closing .fan-nail {
+  animation: fan-nail-in 1.05s cubic-bezier(0.45, 0.05, 0.35, 1) reverse both;
+}
+@keyframes fan-float {
+  from {
+    transform: translateY(-4px);
+  }
+  to {
+    transform: translateY(6px);
+  }
+}
+.fan-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* 三维折扇：画布叠在版面之上；SVG 退为贴图来源，也是没有 WebGL 时的替补 */
+.fan-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.fan-plate.is-3d .fan-canvas {
+  opacity: 1;
+}
+/* 三维时不再用二维的楔形裁切，改由模型自己的开扇动作 */
+.fan-plate.is-3d .fan-art {
+  clip-path: none;
+  animation: none;
+}
+.fan-plate.is-3d .fan-svg,
+.fan-plate.is-3d .fan-nail {
+  display: none;
+}
+
+/* 扇面与扇骨装在 art 层，开扇时整层被楔形裁切。
+   静态写死「全开」的形状，动画只是把它换成「闭合」再推回来——
+   万一浏览器迟迟不产出首帧，扇子也始终是展开的，不会卡在缝里。 */
+.fan-art {
+  --fan-open: polygon(
+    50% 90.36%,
+    -32.52% 73.6%,
+    -4.67% -0.54%,
+    50% -30.12%,
+    104.67% -0.54%,
+    132.52% 73.6%
+  );
+  position: absolute;
+  inset: 0;
+  clip-path: var(--fan-open);
+}
+/* 枢轴上的扇钉扇柄独立一层，钉头完整，不受开扇裁切影响 */
+.fan-nail {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.fan-ridge-1 {
+  opacity: var(--fan-ridge-1);
+}
+.fan-ridge-2 {
+  opacity: var(--fan-ridge-2);
+}
+.fan-ridge-3 {
+  opacity: var(--fan-ridge-3);
+}
+.fan-seal-text {
+  font-family: var(--font-brush);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+/* 题跋竖排，字距略松，像写在扇面上的行楷 */
+.fan-inscription {
+  font-family: var(--font-brush);
+  font-size: 4px;
+  letter-spacing: 0.4px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* 扇面上下两行小字：不描边、不加框 */
+.fan-head {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  width: var(--fan-w);
+  padding: 0;
+  border: 0;
+  font-family: var(--font-brush);
+  font-size: clamp(0.74rem, 1.1vw, 0.92rem);
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  text-shadow: 0 1px 2px var(--paper), 0 0 10px var(--paper);
+}
+.fan-head b {
+  font-family: var(--font-brush);
+  font-weight: 500;
+  color: var(--color-accent);
+}
+.fan-foot {
+  position: relative;
+  z-index: 4;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--font-brush);
+  font-size: clamp(0.68rem, 1vw, 0.84rem);
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+  text-align: center;
+  text-shadow: 0 1px 2px var(--paper), 0 0 10px var(--paper);
+}
+
+/* 底透明了，扇上两行小字得靠纸色光晕压住背后的页面 */
+.fan-head,
+.fan-foot {
+  text-shadow:
+    0 1px 3px var(--paper),
+    0 0 12px var(--paper),
+    0 0 26px var(--paper);
+}
+
+/* 右下角一枚小印：开扇音效开关，静时淡到几乎不打扰 */
+.fan-sound {
+  position: absolute;
+  right: clamp(12px, 2.4vw, 26px);
+  bottom: clamp(12px, 2.4vh, 24px);
+  z-index: 5;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--fan-edge);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--fan-ink);
+  font-family: var(--font-brush);
+  font-size: 0.78rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+}
+.fan-sound:hover,
+.fan-sound:focus-visible {
+  opacity: 0.95;
+}
+.fan-sound[aria-pressed='false'] {
+  border-color: var(--ink-3);
+  color: var(--ink-3);
+  opacity: 0.38;
+}
+
+/* 六根主骨：命中区与扇面等比缩放，色点保持固定的视觉大小 */
+.fan-bone {
+  --dot: clamp(5px, 1.2vmin, 9px);
+  position: absolute;
+  left: 50%;
+  /* 按钮铺满一根骨：底端在枢轴，顶端到扇面中段（r78），色钉正落在扇面上 */
+  bottom: 9.64%;
+  width: 4.17%;
+  height: 46.99%;
+  margin-left: -2.085%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  font: inherit;
+  cursor: pointer;
+  transform-origin: 50% 100%;
+  transform: rotate(var(--a));
+}
+/* 朱笔痕：自枢轴向上渐显，像在骨上点了一笔 */
+.fan-bone::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -3%;
+  bottom: 0%;
+  width: 26%;
+  margin-left: -13%;
+  background: linear-gradient(to top, transparent 20%, var(--fan-mark) 100%);
+  opacity: 0;
+  transition: opacity 0.16s ease, width 0.16s ease, margin-left 0.16s ease;
+}
+.fan-bone:hover::before,
+.fan-bone:focus-visible::before {
+  width: 30%;
+  margin-left: -15%;
+  opacity: 0.3;
+}
+.fan-bone.is-current::before {
+  width: 18%;
+  margin-left: -9%;
+  opacity: 0.45;
+}
+/* 铜钉式色点：金环里嵌一枚小色点，像钉在骨端的料色 */
+.fan-bone::after {
+  content: '';
+  position: absolute;
+  left: calc(50% - var(--dot) / 2);
+  top: calc(var(--dot) * -0.45);
+  width: var(--dot);
+  height: var(--dot);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    var(--swatch) 0 34%,
+    var(--fan-gold-solid) 36% 62%,
+    var(--fan-bone-strong) 64% 100%
+  );
+  box-shadow: 0 0 0 1px var(--fan-edge), 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+.fan-bone:hover::after,
+.fan-bone:focus-visible::after {
+  transform: scale(1.25);
+}
+.fan-bone.is-current::after {
+  box-shadow: 0 0 0 1px var(--paper), 0 0 0 2px var(--fan-mark);
+}
+.fan-bone:focus-visible {
+  outline: 1px solid var(--fan-mark);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (max-width: 520px) {
+  .fan-board {
+    --fan-w: min(92vw, 96vh);
+  }
+  .fan-head {
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+  }
+  .fan-foot {
+    font-size: 0.74rem;
+  }
+}
+
+/* 横屏手机：上下留白收紧，扇子仍要完整落进视口 */
+@media (max-height: 480px) {
+  .fan-board {
+    gap: 8px;
+    padding-top: max(40px, env(safe-area-inset-top));
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+  .fan-head,
+  .fan-foot {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+  }
 }
 
 /* ---------- 封面 ---------- */
@@ -1060,11 +1621,11 @@ body[data-role]:not([data-role="all"]) .repo .rel {
   display: grid;
 }
 .reader::backdrop {
-  background: rgb(0 0 0 / 0.58);
+  background: var(--color-scrim);
 }
 /* :target 那条路不进 top layer，::backdrop 不生效，用超大描边补一层遮罩 */
 .reader:target:not([open]) {
-  box-shadow: 0 0 0 100vmax rgb(0 0 0 / 0.58);
+  box-shadow: 0 0 0 100vmax var(--color-scrim);
 }
 .reader-head {
   display: flex;
@@ -1680,10 +2241,11 @@ body[data-role]:not([data-role="all"]) .repo .rel {
     gap: 16px;
   }
   .nav-links {
-    gap: 8px;
+    /* 五个栏目方牌 + 折扇 + 墨印，窄屏自动收紧间距 */
+    gap: clamp(4px, 1.2vw, 8px);
     font-size: 0.86rem;
   }
-  /* 四栏收成一字方牌，与主题切换同一种显示方式 */
+  /* 栏目收成一字方牌，与书眉折扇、墨印同一副尺寸 */
   .nav-label {
     display: none;
   }
@@ -2204,13 +2766,10 @@ h3,
   border-radius: 0;
   background: var(--paper);
   color: var(--ink);
-  box-shadow: 0 18px 40px rgba(20, 24, 26, 0.18);
+  box-shadow: 0 18px 40px var(--color-shadow);
 }
 .leave::backdrop {
-  background: rgba(20, 24, 26, 0.45);
-}
-[data-theme='dark'] .leave::backdrop {
-  background: rgba(0, 0, 0, 0.62);
+  background: var(--color-scrim);
 }
 .leave-inner {
   padding: 22px 24px 20px;
@@ -2269,5 +2828,16 @@ h3,
 @media print {
   .leave {
     display: none !important;
+  }
+}
+
+/* 极窄屏：五个栏目与折扇、墨印仍要顶格排下，只收书眉页边与控件间隙 */
+@media (max-width: 400px) {
+  .nav-inner {
+    padding: 0 12px;
+    gap: 10px;
+  }
+  .nav-links {
+    gap: 3px;
   }
 }

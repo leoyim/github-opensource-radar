@@ -1,8 +1,10 @@
----
+﻿---
+import { PALETTES } from '../lib/palettes';
+
 const base = import.meta.env.BASE_URL;
 const path = Astro.url.pathname;
 
-/* short 是窄屏的一字牌：与主题切换同一副方框，四栏并排仍放得下 */
+/* short 是窄屏的一字牌：与书眉控件同一副尺寸，七枚并排仍放得下 */
 const links = [
   {
     href: base,
@@ -15,6 +17,190 @@ const links = [
   { href: `${base}stats/`, label: '长期观察', short: '察', match: (p: string) => p.startsWith(`${base}stats`) },
   { href: `${base}removed/`, label: '风险提示', short: '险', match: (p: string) => p.startsWith(`${base}removed`) },
 ];
+
+/* 折扇几何：枢轴在扇柄底部，扇面取自 r48→r122 的扇环，展开 ±78° */
+const CX = 120;
+const CY = 150;
+const R_OUT = 122;
+const R_IN = 48;
+const A0 = -78;
+const A1 = 78;
+const rad = (deg: number) => (deg * Math.PI) / 180;
+const at = (deg: number, radius: number): [number, number] => [
+  +(CX + radius * Math.sin(rad(deg))).toFixed(2),
+  +(CY - radius * Math.cos(rad(deg))).toFixed(2),
+];
+const fanPath = (() => {
+  const [ox0, oy0] = at(A0, R_OUT);
+  const [ox1, oy1] = at(A1, R_OUT);
+  const [ix1, iy1] = at(A1, R_IN);
+  const [ix0, iy0] = at(A0, R_IN);
+  return `M${ox0} ${oy0} A${R_OUT} ${R_OUT} 0 0 1 ${ox1} ${oy1} L${ix1} ${iy1} A${R_IN} ${R_IN} 0 0 0 ${ix0} ${iy0} Z`;
+})();
+
+/* 扇面包边：沿外弧一道窄条，把扇面纸口包住 */
+const outerArc = (() => {
+  const [ox0, oy0] = at(A0, R_OUT);
+  const [ox1, oy1] = at(A1, R_OUT);
+  return `M${ox0} ${oy0} A${R_OUT} ${R_OUT} 0 0 1 ${ox1} ${oy1}`;
+})();
+
+/* 十八根骨，其中最外两根是斑竹大骨；六根主骨落在这六条射线上 */
+const BONES = 18;
+const STEP = (A1 - A0) / (BONES - 1);
+const boneAngles = Array.from({ length: BONES }, (_, i) => +(A0 + i * STEP).toFixed(3));
+const MAJORS = [1, 4, 7, 10, 13, 16];
+const majorAngles = MAJORS.map((i) => boneAngles[i]);
+
+/* 骨宽：最外两根是斑竹大骨，中间最粗、往两边渐细，骨架才有起伏 */
+const boneWidth = (i: number) => {
+  if (i === 0 || i === BONES - 1) return 5.2;
+  const mid = (BONES - 1) / 2;
+  const t = Math.abs(i - mid) / mid;
+  return +(2.7 - 1.2 * t).toFixed(2);
+};
+
+/* 骨节：竹骨分节处，节密则骨显老成；每骨错开一点点，避免机械感 */
+const BONE_NODES: number[][] = Array.from({ length: BONES }, (_, i) => {
+  const outer = i === 0 || i === BONES - 1;
+  const major = MAJORS.includes(i);
+  const raw = outer ? [7, 16, 25, 34, 43] : major ? [8, 17, 26, 35, 43] : [11, 22, 33];
+  const j = ((i * 5) % 3) * 0.75;
+  return raw.map((r, k) => +(r + (k % 2 ? j : 0)).toFixed(1));
+});
+
+/* 光自左上落下：骨的高光侧与暗边侧随光向翻面，全扇一致 */
+const LIGHT = { x: -0.5, y: -0.86 };
+
+/* 山脊半径：同一函数既画山形，也用来落皴笔 */
+const ridgeR = (a: number, baseR: number, amp: number, phase: number) =>
+  baseR + amp * Math.sin(a * 0.13 + phase) + amp * 0.35 * Math.sin(a * 0.42 + phase * 1.7);
+
+const ridge = (a0: number, a1: number, baseR: number, amp: number, depth: number, phase: number) => {
+  const top: string[] = [];
+  const foot: string[] = [];
+  for (let a = a0; a <= a1; a += 1) {
+    top.push(at(a, ridgeR(a, baseR, amp, phase)).join(' '));
+    foot.push(at(a, baseR - depth).join(' '));
+  }
+  return `M${top.join(' L')} L${foot.reverse().join(' L')} Z`;
+};
+
+/* 三层山：远淡、中浓、近坡只占左下，右侧留给水面 */
+const MOUNTAINS = [
+  { d: ridge(-78, 18, 106, 7, 18, 0.2), cls: 'fan-ridge-1' },
+  { d: ridge(-70, 4, 94, 6, 14, 1.9), cls: 'fan-ridge-2' },
+  { d: ridge(-78, -30, 80, 5, 11, 3.6), cls: 'fan-ridge-3' },
+];
+
+/* 皴笔：沿山脊往下落短弧，每 4.5° 一笔 */
+const cunLines = (a0: number, a1: number, baseR: number, amp: number, phase: number, drop: number) => {
+  const out: Array<[number, number, number]> = [];
+  for (let a = a0; a <= a1; a += 4.5) {
+    const [x, y] = at(a, ridgeR(a, baseR, amp, phase) - drop);
+    out.push([x, y, a]);
+  }
+  return out;
+};
+const cun1 = cunLines(-74, 14, 106, 7, 0.2, 3.6);
+const cun2 = cunLines(-66, 0, 94, 6, 1.9, 3.2);
+const cun3 = cunLines(-74, -32, 80, 5, 3.6, 2.8);
+
+/* 山腰云气：两道扇面底色的柔带，把山脚擦成留白 */
+const arc = (a0: number, a1: number, r: number) => {
+  const pts: string[] = [];
+  for (let a = a0; a <= a1; a += 1) pts.push(at(a, r).join(' '));
+  return `M${pts.join(' L')}`;
+};
+const MIST_BANDS = [
+  { d: arc(-68, -14, 89), w: 5.2, o: 0.45 },
+  { d: arc(-52, 6, 83), w: 3.4, o: 0.34 },
+  { d: arc(-60, -26, 76), w: 2.6, o: 0.28 },
+];
+
+/* 松林：四株点叶松，沿近坡错落 */
+const PINES = [
+  { a: -70, r: 66, s: 0.85, rot: -62 },
+  { a: -62, r: 73, s: 1.05, rot: -54 },
+  { a: -54, r: 77, s: 0.85, rot: -46 },
+  { a: -46, r: 81, s: 0.68, rot: -38 },
+];
+const PINE_DOTS: Array<[number, number]> = [
+  [-9.6, -7.6],
+  [-8.6, -6.4],
+  [-7.4, -8],
+  [-6.2, -6.2],
+  [-5, -7.4],
+  [-10.2, -8.6],
+  [9.6, -10.6],
+  [8.4, -9.4],
+  [7.2, -11],
+  [6, -9.6],
+  [4.8, -10.6],
+  [10.4, -11.4],
+  [-7, -13.4],
+  [-6, -12],
+  [-4.8, -13],
+  [-3.6, -12.2],
+  [-8.2, -12.6],
+  [-2, -13.8],
+  [-0.6, -14.8],
+  [1, -14],
+  [2, -15.2],
+  [3.2, -14.4],
+  [-1.4, -10.6],
+  [1.6, -8.8],
+  [-2, -6.4],
+  [1.8, -5.2],
+];
+
+/* 近景坡石 */
+const ROCKS = [
+  { a: -74, r: 61, s: 1 },
+  { a: -38, r: 64, s: 0.8 },
+  { a: -31, r: 69, s: 0.6 },
+];
+
+/* 边骨：贯通到扇沿的两片宽竹，是整把扇子的框；素面，只留光影 */
+const EDGE_W = 5.4;
+
+/* 边骨的横向明暗：靠光一侧亮、背光一侧暗，做出竹片圆磨过的手感 */
+const edgeShade = (a: number) => {
+  const radA = rad(a);
+  const nx = Math.cos(radA);
+  const ny = Math.sin(radA);
+  const side = nx * LIGHT.x + ny * LIGHT.y >= 0 ? 1 : -1;
+  const [cx, cy] = at(a, R_OUT / 2);
+  return {
+    id: a < 0 ? 'fanEdgeLeft' : 'fanEdgeRight',
+    x1: +(cx + side * nx * (EDGE_W / 2)).toFixed(2),
+    y1: +(cy + side * ny * (EDGE_W / 2)).toFixed(2),
+    x2: +(cx - side * nx * (EDGE_W / 2)).toFixed(2),
+    y2: +(cy - side * ny * (EDGE_W / 2)).toFixed(2),
+  };
+};
+
+/* 水面细纹：越靠外越淡，像远水 */
+const RIPPLES = Array.from({ length: 15 }, (_, i) => {
+  const a = 13 + i * 4.4;
+  const r = 57 + (i % 4) * 6.4;
+  const w = 5 + (i % 3) * 2.3;
+  return { a, r, w, o: 0.14 + (i % 3) * 0.05 };
+});
+
+/* 一叶扁舟、三只飞鸟 */
+const boatAt = at(40, 70);
+const BIRDS = [
+  { a: -8, r: 113, s: 1 },
+  { a: -1, r: 109, s: 0.85 },
+  { a: 5, r: 115, s: 0.72 },
+];
+
+/* 题款：题跋与两印一律竖直同向，字号各按自己的框子配
+   题跋自 (204,78) 起笔，配色印落在末列之下，品牌印另钤左上 */
+const textAt: [number, number] = [204, 78];
+const sealAt: [number, number] = [191.5, 103];
+const brandSealAt: [number, number] = [41.5, 61.5];
 ---
 
 <header class="nav">
@@ -48,7 +234,599 @@ const links = [
           </a>
         ))
       }
-      <button class="theme-toggle mono" data-theme-toggle aria-label="切换到深色">深</button>
+      <!-- 金笺折扇：十八根竹骨，六根主骨可点，当前一骨描金 -->
+      <details class="fan-picker" data-palette-picker>
+        <summary class="fan-trigger" aria-label="折扇，展开十八骨换配色" title="金笺折扇 · 十八骨">
+          <span class="fan-mini" aria-hidden="true">
+            {PALETTES.map((p, i) => (
+              <span class="fan-mini-bone" data-mini-bone={i} style={`--i:${i}`} />
+            ))}
+          </span>
+        </summary>
+        <div class="fan-board" role="dialog" aria-modal="true" aria-label="金笺折扇，选择配色">
+          <div class="fan-backdrop" data-fan-backdrop aria-hidden="true"></div>
+          <div class="fan-head">
+            <span>金笺折扇 · 十八骨</span>
+            <span>
+              当前 <b data-palette-current>瓷</b>
+            </span>
+          </div>
+          <div class="fan-plate">
+            <div class="fan-art">
+              <svg class="fan-svg" viewBox="0 0 240 166" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="fanGold" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="var(--fan-0)" />
+                  <stop offset="0.55" stop-color="var(--fan-1)" />
+                  <stop offset="1" stop-color="var(--fan-2)" />
+                </linearGradient>
+                <radialGradient id="fanSheen" cx="0.5" cy="0.28" r="0.75">
+                  <stop offset="0" stop-color="var(--fan-sheen)" stop-opacity="0.9" />
+                  <stop offset="1" stop-color="var(--fan-sheen)" stop-opacity="0" />
+                </radialGradient>
+                {/* 两片边骨的横向明暗：受光边亮、背光边沉 */}
+                <linearGradient
+                  id="fanEdgeLeft"
+                  gradientUnits="userSpaceOnUse"
+                  x1={edgeShade(A0).x1}
+                  y1={edgeShade(A0).y1}
+                  x2={edgeShade(A0).x2}
+                  y2={edgeShade(A0).y2}>
+                  <stop offset="0" stop-color="var(--fan-bone-fleck)" />
+                  <stop offset="0.22" stop-color="var(--fan-bone-strong)" />
+                  <stop offset="0.62" stop-color="var(--fan-bone-dark)" />
+                  <stop offset="1" stop-color="var(--fan-bone-dark)" />
+                </linearGradient>
+                <linearGradient
+                  id="fanEdgeRight"
+                  gradientUnits="userSpaceOnUse"
+                  x1={edgeShade(A1).x1}
+                  y1={edgeShade(A1).y1}
+                  x2={edgeShade(A1).x2}
+                  y2={edgeShade(A1).y2}>
+                  <stop offset="0" stop-color="var(--fan-bone-fleck)" />
+                  <stop offset="0.22" stop-color="var(--fan-bone-strong)" />
+                  <stop offset="0.62" stop-color="var(--fan-bone-dark)" />
+                  <stop offset="1" stop-color="var(--fan-bone-dark)" />
+                </linearGradient>
+                <pattern id="fanGrain" width="6" height="6" patternUnits="userSpaceOnUse">
+                  <path d="M0 6 L6 0" stroke="var(--fan-grain)" stroke-width="0.4" opacity="0.55" />
+                  <path d="M0 2 L2.6 6" stroke="var(--fan-grain-2)" stroke-width="0.35" opacity="0.5" />
+                </pattern>
+                <filter id="fanInk" x="-10%" y="-10%" width="120%" height="120%">
+                  <feGaussianBlur stdDeviation="0.3" />
+                </filter>
+                <filter id="fanMist" x="-10%" y="-10%" width="120%" height="120%">
+                  <feGaussianBlur stdDeviation="1.4" />
+                </filter>
+                <clipPath id="fanClip">
+                  <path d={fanPath} />
+                </clipPath>
+              </defs>
+
+              {/* 两片边骨先落纸：压在扇面之下撑住扇沿，扇面随后盖上来 */}
+              {[A0, A1].map((a) => {
+                const radA = rad(a);
+                const nx = Math.cos(radA);
+                const ny = Math.sin(radA);
+                const w = EDGE_W;
+                /* 向内让开半个身位：外缘正好压在扇沿上，不出扇面轮廓 */
+                const sgn = a < 0 ? 1 : -1;
+                const inX = sgn * nx;
+                const inY = sgn * ny;
+                const shift = (r: number) => (w / 2) * (r / R_OUT);
+                const [rx0, ry0] = at(a, 0);
+                const [rx1, ry1] = at(a, R_OUT);
+                const cx0 = rx0 + inX * shift(0);
+                const cy0 = ry0 + inY * shift(0);
+                const cx1 = rx1 + inX * shift(R_OUT);
+                const cy1 = ry1 + inY * shift(R_OUT);
+                const pt = (px: number, py: number) => `${px.toFixed(2)},${py.toFixed(2)}`;
+                return (
+                  <g>
+                    <path
+                      d={`M${pt(cx0 - nx * (w / 2), cy0 - ny * (w / 2))} L${pt(cx1 - nx * (w / 2), cy1 - ny * (w / 2))} L${pt(cx1 + nx * (w / 2), cy1 + ny * (w / 2))} L${pt(cx0 + nx * (w / 2), cy0 + ny * (w / 2))} Z`}
+                      fill={`url(#${a < 0 ? 'fanEdgeLeft' : 'fanEdgeRight'})`}
+                    />
+                    {/* 根部圆头，收拢在扇钉之下 */}
+                    <circle cx={cx0} cy={cy0} r={w / 2} fill="var(--fan-bone-dark)" />
+                  </g>
+                );
+              })}
+
+              <path d={fanPath} fill="url(#fanGold)" />
+              <g clip-path="url(#fanClip)">
+                <path d={fanPath} fill="url(#fanGrain)" opacity="0.5" />
+                <path d={fanPath} fill="url(#fanSheen)" />
+
+                {/* 远山与中山：先铺墨，再落皴笔 */}
+                <g filter="url(#fanInk)">
+                  <path class="fan-ridge-1" d={MOUNTAINS[0].d} fill="var(--fan-ink)" />
+                  <path class="fan-ridge-2" d={MOUNTAINS[1].d} fill="var(--fan-ink)" />
+                </g>
+                {cun1.map(([x, y, a]) => (
+                  <path
+                    transform={`translate(${x} ${y}) rotate(${a})`}
+                    d="M0 0 l0.3 2.6"
+                    fill="none"
+                    stroke="var(--fan-ink)"
+                    stroke-width="0.4"
+                    opacity="0.16"
+                  />
+                ))}
+                {cun2.map(([x, y, a]) => (
+                  <path
+                    transform={`translate(${x} ${y}) rotate(${a})`}
+                    d="M0 0 l0.3 2.2"
+                    fill="none"
+                    stroke="var(--fan-ink)"
+                    stroke-width="0.4"
+                    opacity="0.2"
+                  />
+                ))}
+
+                {/* 山腰云气：扇面底色的柔带把山脚擦淡 */}
+                <g filter="url(#fanMist)">
+                  {MIST_BANDS.map((mb) => (
+                    <path
+                      d={mb.d}
+                      fill="none"
+                      stroke="var(--fan-0)"
+                      stroke-width={mb.w}
+                      stroke-linecap="round"
+                      opacity={mb.o}
+                    />
+                  ))}
+                </g>
+
+                {/* 近坡与坡上皴笔 */}
+                <g filter="url(#fanInk)">
+                  <path class="fan-ridge-3" d={MOUNTAINS[2].d} fill="var(--fan-ink)" />
+                </g>
+                {cun3.map(([x, y, a]) => (
+                  <path
+                    transform={`translate(${x} ${y}) rotate(${a})`}
+                    d="M0 0 l0.25 2"
+                    fill="none"
+                    stroke="var(--fan-ink)"
+                    stroke-width="0.42"
+                    opacity="0.26"
+                  />
+                ))}
+
+                {/* 松林：主干、三层横枝、枝端针叶簇 */}
+                {PINES.map((p) => {
+                  const [px, py] = at(p.a, p.r);
+                  return (
+                    <g
+                      transform={`translate(${px} ${py}) rotate(${p.rot}) scale(${p.s})`}
+                      stroke="var(--fan-ink)"
+                      fill="none"
+                      opacity="0.58"
+                    >
+                      <path d="M0 0 C0.2 -4 0.4 -8 0.3 -15" stroke-width="1.05" />
+                      <path d="M0.3 -4.5 L-8 -7 M0.3 -7.5 L8 -10 M0.3 -10.5 L-6 -12.6" stroke-width="0.68" />
+                      <path
+                        d="M-8 -7 l-2 -1.4 M-8 -7 l-1.4 1.2 M8 -10 l2 -1.2 M8 -10 l1.2 1.6 M-6 -12.6 l-1.8 -1 M-6 -12.6 l-1 1.4"
+                        stroke-width="0.55"
+                      />
+                      {PINE_DOTS.map(([dx, dy]) => (
+                        <circle cx={dx} cy={dy} r="0.34" fill="var(--fan-ink)" stroke="none" />
+                      ))}
+                    </g>
+                  );
+                })}
+
+                {/* 坡石：墨块加一道留白高光 */}
+                {ROCKS.map((rk) => {
+                  const [rx, ry] = at(rk.a, rk.r);
+                  return (
+                    <g transform={`translate(${rx} ${ry}) rotate(${rk.a}) scale(${rk.s})`} opacity="0.45">
+                      <path d="M-5 0 q1 -5 5 -5.4 q4 0.4 5 5.4 z" fill="var(--fan-ink)" />
+                      <path d="M-3 -1.7 q3 -2.2 6 -1.2" stroke="var(--fan-0)" stroke-width="0.5" fill="none" opacity="0.65" />
+                    </g>
+                  );
+                })}
+
+                {/* 水面：十五道细纹 */}
+                {RIPPLES.map((rp) => {
+                  const [rx, ry] = at(rp.a, rp.r);
+                  return (
+                    <path
+                      transform={`translate(${rx} ${ry}) rotate(${rp.a})`}
+                      d={`M${-rp.w / 2} 0 q${rp.w / 4} 0.9 ${rp.w / 2} 0`}
+                      fill="none"
+                      stroke="var(--fan-ink)"
+                      stroke-width="0.42"
+                      opacity={rp.o}
+                    />
+                  );
+                })}
+
+                {/* 扁舟：船身、桅、帆、人影 */}
+                <g transform={`translate(${boatAt[0]} ${boatAt[1]}) rotate(40)`} opacity="0.58">
+                  <path d="M-8 0 q8 2.6 16 0 q-8 1.2 -16 0 z" fill="var(--fan-ink)" />
+                  <path d="M-1 -0.6 L-1 -6.4" stroke="var(--fan-ink)" stroke-width="0.55" />
+                  <path d="M-1 -6.4 l4.6 2.2 l-4.6 1.1 z" fill="var(--fan-ink)" opacity="0.75" />
+                  <path d="M0.5 -1.2 l0 -2.4" stroke="var(--fan-ink)" stroke-width="0.45" />
+                </g>
+
+                {/* 飞鸟 */}
+                {BIRDS.map((b) => {
+                  const [bx, by] = at(b.a, b.r);
+                  return (
+                    <path
+                      transform={`translate(${bx} ${by}) rotate(${b.a}) scale(${b.s})`}
+                      d="M0 0 q2 -1.6 4 0 q2 -1.6 4 0"
+                      fill="none"
+                      stroke="var(--fan-ink)"
+                      stroke-width="0.45"
+                      opacity="0.42"
+                    />
+                  );
+                })}
+
+                {/* 折痕最后落在画面上，贯穿山水 */}
+                {boneAngles.map((a, i) => {
+                  const [dx1, dy1] = at(a + 0.45, R_IN + 4);
+                  const [dx2, dy2] = at(a + 0.45, R_OUT - 1);
+                  const [lx1, ly1] = at(a - 0.45, R_IN + 4);
+                  const [lx2, ly2] = at(a - 0.45, R_OUT - 1);
+                  const major = MAJORS.includes(i);
+                  /* 骨影：纸被骨顶起，背光一侧落一道柔影，受光一侧挑一道亮脊 */
+                  const shX = -LIGHT.x * 0.9;
+                  const shY = -LIGHT.y * 0.9;
+                  return (
+                    <g>
+                      <line
+                        x1={+(dx1 + shX).toFixed(2)}
+                        y1={+(dy1 + shY).toFixed(2)}
+                        x2={+(dx2 + shX).toFixed(2)}
+                        y2={+(dy2 + shY).toFixed(2)}
+                        stroke="var(--fan-ink)"
+                        stroke-width={major ? 2.6 : 1.8}
+                        opacity={major ? 0.1 : 0.06}
+                        stroke-linecap="round"
+                      />
+                      <line
+                        x1={+(lx1 + LIGHT.x * 0.5).toFixed(2)}
+                        y1={+(ly1 + LIGHT.y * 0.5).toFixed(2)}
+                        x2={+(lx2 + LIGHT.x * 0.5).toFixed(2)}
+                        y2={+(ly2 + LIGHT.y * 0.5).toFixed(2)}
+                        stroke="var(--fan-0)"
+                        stroke-width={major ? 1.5 : 1}
+                        opacity="0.2"
+                        stroke-linecap="round"
+                      />
+                      <line
+                        x1={dx1}
+                        y1={dy1}
+                        x2={dx2}
+                        y2={dy2}
+                        stroke="var(--fan-crease)"
+                        stroke-width="0.55"
+                        opacity="0.2"
+                      />
+                      <line
+                        x1={lx1}
+                        y1={ly1}
+                        x2={lx2}
+                        y2={ly2}
+                        stroke="var(--fan-0)"
+                        stroke-width="0.45"
+                        opacity="0.3"
+                      />
+                    </g>
+                  );
+                })}
+
+                {/* 题款：题跋竖排两列，末列之下钤配色印，左上另钤品牌印 */}
+                <g transform={`translate(${textAt[0]} ${textAt[1]})`} fill="var(--fan-ink)" opacity="0.68">
+                  <text class="fan-inscription" x="0" y="0">山靜太古</text>
+                  <text class="fan-inscription" x="-7" y="0">日長小年</text>
+                </g>
+
+                {/* 配色印：一方小朱印，紧跟题跋末列 */}
+                <g transform={`translate(${sealAt[0]} ${sealAt[1]})`}>
+                  <rect width="11" height="11" rx="0.6" fill="var(--fan-seal)" opacity="0.92" />
+                  <rect
+                    x="1"
+                    y="1"
+                    width="9"
+                    height="9"
+                    rx="0.3"
+                    fill="none"
+                    stroke="var(--fan-seal-ink)"
+                    stroke-width="0.4"
+                    opacity="0.6"
+                  />
+                  <text
+                    class="fan-seal-text"
+                    x="5.5"
+                    y="5.5"
+                    text-anchor="middle"
+                    dominant-baseline="central"
+                    font-size="6.4"
+                    fill="var(--fan-seal-ink)"
+                    data-fan-seal>{PALETTES[0].short}</text>
+                </g>
+
+                {/* 品牌印：開源雷達，四字两行，横读即品牌名 */}
+                <g transform={`translate(${brandSealAt[0]} ${brandSealAt[1]})`}>
+                  <rect width="18" height="18" rx="0.8" fill="var(--fan-seal)" opacity="0.92" />
+                  <rect
+                    x="1.7"
+                    y="1.7"
+                    width="14.6"
+                    height="14.6"
+                    rx="0.3"
+                    fill="none"
+                    stroke="var(--fan-seal-ink)"
+                    stroke-width="0.45"
+                    opacity="0.55"
+                  />
+                  <text class="fan-seal-text" x="5.35" y="5.35" text-anchor="middle" dominant-baseline="central" font-size="6.4" fill="var(--fan-seal-ink)">開</text>
+                  <text class="fan-seal-text" x="12.75" y="5.35" text-anchor="middle" dominant-baseline="central" font-size="6.4" fill="var(--fan-seal-ink)">源</text>
+                  <text class="fan-seal-text" x="5.35" y="12.75" text-anchor="middle" dominant-baseline="central" font-size="6.4" fill="var(--fan-seal-ink)">雷</text>
+                  <text class="fan-seal-text" x="12.75" y="12.75" text-anchor="middle" dominant-baseline="central" font-size="6.4" fill="var(--fan-seal-ink)">達</text>
+                </g>
+              </g>
+
+              <path
+                d={fanPath}
+                fill="none"
+                stroke="var(--fan-edge)"
+                stroke-width="0.7"
+                stroke-linejoin="round"></path>
+
+              {/* 扇面包边：外弧一道窄条，压住扇面的纸口 */}
+              <path
+                d={outerArc}
+                fill="none"
+                stroke="var(--fan-edge)"
+                stroke-width="2.4"
+                stroke-linecap="round"></path>
+
+              {/* 十六根小骨：只在扇面之下露出内弧那一段，骨端各带一枚钉座 */}
+              {
+                boneAngles.slice(1, BONES - 1).map((a, k) => {
+                  const i = k + 1;
+                  const major = MAJORS.includes(i);
+                  const radA = rad(a);
+                  const nx = Math.cos(radA);
+                  const ny = Math.sin(radA);
+                  const w = +(major ? boneWidth(i) * 1.16 : boneWidth(i)).toFixed(2);
+                  /* 收分：靠枢轴细，往外渐粗，骨才有磨出来的锥度 */
+                  const wRoot = +(w * 0.8).toFixed(2);
+                  const [rx0, ry0] = at(a, 0);
+                  const [rx1, ry1] = at(a, R_IN);
+                  /* 光自左上落下，高光侧与暗边侧随光向翻面，全扇一致 */
+                  const facing = nx * LIGHT.x + ny * LIGHT.y;
+                  const side = facing >= 0 ? 1 : -1;
+                  const lit = Math.min(1, Math.abs(facing) * 2.4);
+                  const body = major ? 'var(--fan-bone-strong)' : 'var(--fan-bone)';
+                  const pt = (px: number, py: number) => `${px.toFixed(2)},${py.toFixed(2)}`;
+                  const bodyD = `M${[
+                    pt(rx0 - nx * (wRoot / 2), ry0 - ny * (wRoot / 2)),
+                    pt(rx1 - nx * (w / 2), ry1 - ny * (w / 2)),
+                    pt(rx1 + nx * (w / 2), ry1 + ny * (w / 2)),
+                    pt(rx0 + nx * (wRoot / 2), ry0 + ny * (wRoot / 2)),
+                  ].join(' L')} Z`;
+                  /* 沿骨两侧走的高光与暗边 */
+                  const [h0x, h0y] = at(a, 2.4);
+                  const [h1x, h1y] = at(a, R_IN - 1);
+                  const ho = side * w * 0.19;
+                  const so = -side * w * 0.24;
+                  return (
+                    <g>
+                      {/* 骨身：带收分的骨条 */}
+                      <path d={bodyD} fill={body} />
+                      {/* 受光侧高光 */}
+                      <line
+                        x1={+(h0x + nx * ho).toFixed(2)}
+                        y1={+(h0y + ny * ho).toFixed(2)}
+                        x2={+(h1x + nx * ho).toFixed(2)}
+                        y2={+(h1y + ny * ho).toFixed(2)}
+                        stroke="var(--fan-bone-fleck)"
+                        stroke-width={+Math.max(0.3, w * 0.2).toFixed(2)}
+                        stroke-linecap="round"
+                        opacity={+(0.26 + 0.32 * lit).toFixed(2)}
+                      />
+                      {/* 背光侧暗边 */}
+                      <line
+                        x1={+(h0x + nx * so).toFixed(2)}
+                        y1={+(h0y + ny * so).toFixed(2)}
+                        x2={+(h1x + nx * so).toFixed(2)}
+                        y2={+(h1y + ny * so).toFixed(2)}
+                        stroke="var(--fan-bone-dark)"
+                        stroke-width={+Math.max(0.3, w * 0.19).toFixed(2)}
+                        stroke-linecap="round"
+                        opacity={+(0.2 + 0.18 * lit).toFixed(2)}
+                      />
+                      {/* 骨节：横在骨上的一道细节线，节眼点其上 */}
+                      {BONE_NODES[i].map((r) => {
+                        const [jx, jy] = at(a, r);
+                        const half = w * 0.42;
+                        const jx0 = jx - nx * half;
+                        const jy0 = jy - ny * half;
+                        const jx1 = jx + nx * half;
+                        const jy1 = jy + ny * half;
+                        const eo = side * w * 0.12;
+                        return (
+                          <g>
+                            <line
+                              x1={+jx0.toFixed(2)}
+                              y1={+jy0.toFixed(2)}
+                              x2={+jx1.toFixed(2)}
+                              y2={+jy1.toFixed(2)}
+                              stroke="var(--fan-bone-dark)"
+                              stroke-width={+Math.max(0.16, w * 0.2).toFixed(2)}
+                              stroke-linecap="round"
+                              opacity="0.38"
+                            />
+                            <line
+                              x1={+(jx0 + nx * eo).toFixed(2)}
+                              y1={+(jy0 + ny * eo).toFixed(2)}
+                              x2={+(jx1 + nx * eo).toFixed(2)}
+                              y2={+(jy1 + ny * eo).toFixed(2)}
+                              stroke="var(--fan-bone-fleck)"
+                              stroke-width={+Math.max(0.14, w * 0.09).toFixed(2)}
+                              stroke-linecap="round"
+                              opacity="0.3"
+                            />
+                            {major && (
+                              <circle cx={+jx.toFixed(2)} cy={+jy.toFixed(2)} r={+Math.max(0.16, w * 0.07).toFixed(2)} fill="var(--fan-bone-dark)" opacity="0.4" />
+                            )}
+                          </g>
+                        );
+                      })}
+                      {/* 骨端钉座：套环 + 钉头 + 一点金芒 */}
+                      <g>
+                        <circle
+                          cx={rx1}
+                          cy={ry1}
+                          r={major ? 1.35 : 1.05}
+                          fill="none"
+                          stroke="var(--fan-bone-strong)"
+                          stroke-width="0.45"
+                          opacity="0.6"
+                        />
+                        <circle cx={rx1} cy={ry1} r={major ? 0.8 : 0.6} fill="var(--fan-bone-dark)" opacity="0.8" />
+                        {major && (
+                          <circle cx={+(rx1 - 0.3).toFixed(2)} cy={+(ry1 - 0.35).toFixed(2)} r="0.42" fill="var(--fan-gold-solid)" opacity="0.85" />
+                        )}
+                      </g>
+                    </g>
+                  );
+                })
+              }
+
+            </svg>
+            {
+              PALETTES.map((p, i) => (
+                <button
+                  class:list={['fan-bone', i === 0 && 'is-current']}
+                  type="button"
+                  style={`--swatch:${p.swatch}; --a:${majorAngles[i]}deg`}
+                  data-palette-option={p.id}
+                  data-palette-short={p.short}
+                  data-palette-name={p.name}
+                  data-palette-index={i}
+                  aria-pressed={i === 0 ? 'true' : 'false'}
+                  aria-label={`${p.name}：${p.desc}`}
+                  title={`${p.name} · ${p.desc}`}
+                />
+              ))
+            }
+            </div>
+
+            {/* 扇头与扇钉：枢轴是一根轴，骨条在钉下收拢成一段握持 */}
+            <svg class="fan-nail" viewBox="0 0 240 166" aria-hidden="true" focusable="false">
+              {/* 骨尾束：小骨在钉下叠拢，向下渐收 */}
+              <path d="M115.4 148.6 L124.6 148.6 L122.6 156 L117.4 156 Z" fill="var(--fan-bone-strong)" />
+              {[-3.2, -1.6, 0, 1.6, 3.2].map((o) => (
+                <line
+                  x1={+(CX + o).toFixed(2)}
+                  y1="149"
+                  x2={+(CX + o * 0.72).toFixed(2)}
+                  y2="155.8"
+                  stroke="var(--fan-bone-dark)"
+                  stroke-width="0.6"
+                  opacity="0.45"
+                />
+              ))}
+              {/* 束箍一道：尾端扎紧，穗子系于此 */}
+              <rect x="116.6" y="154.4" width="6.8" height="1.3" rx="0.6" fill="var(--fan-bone-dark)" opacity="0.5" />
+
+              {/* 扇轴：从束里穿出的一小截 */}
+              <line
+                x1={CX}
+                y1={CY - 1}
+                x2={CX}
+                y2={CY + 9.4}
+                stroke="var(--fan-bone-dark)"
+                stroke-width="2.2"
+                stroke-linecap="round"
+              />
+              <line
+                x1={+(CX - 0.3).toFixed(2)}
+                y1={CY - 1}
+                x2={+(CX - 0.3).toFixed(2)}
+                y2={CY + 9.4}
+                stroke="var(--fan-gold-solid)"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+              <line
+                x1={+(CX - 0.62).toFixed(2)}
+                y1={CY}
+                x2={+(CX - 0.62).toFixed(2)}
+                y2={CY + 8}
+                stroke="#fff"
+                stroke-width="0.42"
+                stroke-linecap="round"
+                opacity="0.5"
+              />
+              {/* 尾端一颗结 */}
+              <circle cx={CX} cy={CY + 10.2} r="1.7" fill="var(--fan-gold-solid)" />
+              <circle cx={+(CX - 0.55).toFixed(2)} cy={+(CY + 9.7).toFixed(2)} r="0.55" fill="#fff" opacity="0.5" />
+
+              {/* 扇钉：轴头上一枚圆铆钉，中间留一个孔 */}
+              <circle cx={CX} cy={CY} r="2.7" fill="var(--fan-gold-solid)" />
+              <circle cx={CX} cy={CY} r="1" fill="var(--fan-bone-dark)" />
+              <circle cx={+(CX - 0.72).toFixed(2)} cy={+(CY - 0.82).toFixed(2)} r="0.5" fill="#fff" opacity="0.55" />
+            </svg>
+          </div>
+          <p class="fan-foot">点骨换色 · 点空白收扇</p>
+          <button class="fan-sound" type="button" data-fan-sound aria-pressed="true" aria-label="开扇音效" title="开扇音效">音</button>
+        </div>
+      </details>
+      <!-- 墨印：日 / 月表示「点了会到的那一段时间」 -->
+      <button class="seal-btn" data-theme-toggle aria-label="切换到夜读" title="昼夜">月</button>
     </nav>
   </div>
 </header>
+
+<script>
+  import { initFan3D } from '../scripts/fan3d';
+
+  const picker = document.querySelector<HTMLDetailsElement>('[data-palette-picker]');
+  const plate = document.querySelector<HTMLElement>('.fan-plate');
+  const svg = document.querySelector<SVGSVGElement>('.fan-svg');
+  if (picker && plate && svg) {
+    const buttons = Array.from(picker.querySelectorAll<HTMLElement>('.fan-bone'));
+    let handle: Awaited<ReturnType<typeof initFan3D>> = null;
+    let booting = false;
+
+    /* 展开时才把三维那套拉起来：three 与模型都是按需取，不拖累首屏 */
+    const boot = () => {
+      if (handle || booting) return;
+      booting = true;
+      initFan3D({ plate, svg, picker, buttons })
+        .then((h) => {
+          handle = h;
+          booting = false;
+          if (h && picker.open) h.setActive(true);
+        })
+        .catch((err) => {
+          console.warn('[fan3d] init failed', err);
+          booting = false;
+        });
+    };
+
+    picker.addEventListener('toggle', () => {
+      if (picker.open) {
+        boot();
+        handle?.setActive(true);
+        handle?.setFold(false);
+      } else {
+        handle?.setActive(false);
+      }
+    });
+
+    /* 合扇：三维那侧把扇子向中轴收拢 */
+    picker.addEventListener('fan:closing', () => {
+      handle?.setFold(true);
+    });
+  }
+</script>

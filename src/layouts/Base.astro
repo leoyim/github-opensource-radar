@@ -34,7 +34,7 @@ const year = 2026;
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#eeefea" />
+    <meta name="theme-color" content="#f5f7f2" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -42,16 +42,17 @@ const year = 2026;
     <meta name="twitter:card" content="summary" />
     <script is:inline>
       (function () {
-        var t;
         try {
-          t = localStorage.getItem('theme');
+          var t = localStorage.getItem('theme');
           if (!t) {
             t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
           }
           document.documentElement.dataset.theme = t;
-          // 让浏览器 UI（地址栏 / 状态栏）跟随实际主题，而不是系统偏好
-          var m = document.querySelector('meta[name="theme-color"]');
-          if (m) m.setAttribute('content', t === 'dark' ? '#101312' : '#eeefea');
+          // 配色也要在首屏定好，否则会先闪一下默认青瓷再跳到用户选的那套。
+          // id 与 src/lib/palettes.ts 保持一致；非法值回退默认。
+          var p = localStorage.getItem('palette') || 'celadon';
+          if (!/^(celadon|daiqing|zhusha|feicui|ziqi|moyun)$/.test(p)) p = 'celadon';
+          document.documentElement.dataset.palette = p;
         } catch (e) {}
       })();
     </script>
@@ -107,15 +108,23 @@ const year = 2026;
     </dialog>
 
     <script is:inline>
-      // 按钮显示"将要切换到的模式"，而不是当前模式，避免语义歧义
+      // 地址栏颜色取当前主题的纸色：换配色与换明暗都走这一处，不再硬编码两个色值
+      function syncMeta() {
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (!meta) return;
+        var bg = getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim();
+        if (bg) meta.setAttribute('content', bg);
+      }
+
+      // 墨印刻的是「点了会到的那一段时间」：月入夜读，日回白昼
       function syncThemeButton(mode) {
         var btn = document.querySelector('[data-theme-toggle]');
         if (btn) {
-          btn.textContent = mode === 'dark' ? '浅' : '深';
-          btn.setAttribute('aria-label', mode === 'dark' ? '切换到浅色' : '切换到深色');
+          btn.textContent = mode === 'dark' ? '日' : '月';
+          btn.setAttribute('aria-label', mode === 'dark' ? '切换到白昼' : '切换到夜读');
+          btn.title = mode === 'dark' ? '白昼' : '夜读';
         }
-        var meta = document.querySelector('meta[name="theme-color"]');
-        if (meta) meta.setAttribute('content', mode === 'dark' ? '#101312' : '#eeefea');
+        syncMeta();
       }
       document.addEventListener('click', function (e) {
         var btn = e.target.closest('[data-theme-toggle]');
@@ -247,6 +256,290 @@ const year = 2026;
         dialog.addEventListener('cancel', function () {
           pending = null;
         });
+      })();
+
+      /* 六套中国风配色：只改 <html data-palette>，色值全部由 CSS token 决定 */
+      (function () {
+        var root = document.documentElement;
+        var picker = document.querySelector('[data-palette-picker]');
+        var current = document.querySelector('[data-palette-current]');
+        var options = document.querySelectorAll('[data-palette-option]');
+
+        function sync() {
+          var id = root.dataset.palette || 'celadon';
+          options.forEach(function (btn) {
+            var on = btn.getAttribute('data-palette-option') === id;
+            btn.classList.toggle('is-current', on);
+            btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+            if (!on) return;
+            var short = btn.getAttribute('data-palette-short') || '瓷';
+            var name = btn.getAttribute('data-palette-name') || short;
+            if (current) current.textContent = short;
+            // 常驻小扇与扇面朱印跟着当前骨走
+            var idx = Number(btn.getAttribute('data-palette-index')) || 0;
+            if (picker) {
+              picker.querySelectorAll('[data-mini-bone]').forEach(function (el) {
+                el.classList.toggle('is-on', Number(el.getAttribute('data-mini-bone')) === idx);
+              });
+              var seal = picker.querySelector('[data-fan-seal]');
+              if (seal) seal.textContent = short;
+            }
+            var trigger = picker && picker.querySelector('summary');
+            if (trigger) {
+              trigger.title = '折扇 · 当前' + name;
+              trigger.setAttribute('aria-label', '折扇，当前' + name + '，展开十八骨换配色');
+            }
+          });
+          syncMeta();
+        }
+
+        // 全屏扇子打开时锁住页面滚动，收扇后还原；焦点落到当前那根骨
+        function lockScroll(on) {
+          document.documentElement.style.overflow = on ? 'hidden' : '';
+          document.body.style.overflow = on ? 'hidden' : '';
+        }
+        if (picker) {
+          picker.addEventListener('toggle', function () {
+            lockScroll(picker.open);
+            var plate = picker.querySelector('.fan-plate');
+            if (!picker.open) {
+              if (plate) plate.classList.remove('is-unfolding');
+              return;
+            }
+            // 收扇时卸掉，展开时重挂：<details> 收起并不销毁内容，不这样动画只会播一次
+            if (plate) {
+              plate.classList.remove('is-unfolding');
+              void plate.offsetWidth;
+              plate.classList.add('is-unfolding');
+            }
+            var cur = picker.querySelector('.fan-bone.is-current');
+            if (cur) cur.focus({ preventScroll: true });
+          });
+        }
+
+        /* 开扇音：一声很轻的纸面掠过 ＋ 骨节轻碰，全部由 Web Audio 现场合成，不加载音频文件 */
+        var SFX = (function () {
+          var AC = window.AudioContext || window.webkitAudioContext;
+          var ctx = null;
+          var off = false;
+          try {
+            off = localStorage.getItem('fan-sound') === 'off';
+          } catch (err) {}
+
+          function noise(seconds) {
+            var len = Math.max(1, Math.floor(ctx.sampleRate * seconds));
+            var buf = ctx.createBuffer(1, len, ctx.sampleRate);
+            var data = buf.getChannelData(0);
+            for (var i = 0; i < len; i++) data[i] = Math.random() * 2 - 1;
+            return buf;
+          }
+
+          function unfold() {
+            if (off || !AC) return;
+            if (!ctx) {
+              try {
+                ctx = new AC();
+              } catch (err) {
+                return;
+              }
+            }
+            if (ctx.state === 'suspended') ctx.resume();
+            var t = ctx.currentTime + 0.02;
+
+            // 纸面掠过：带通扫频的噪声，先亮后暗
+            var paper = ctx.createBufferSource();
+            paper.buffer = noise(0.8);
+            var bp = ctx.createBiquadFilter();
+            bp.type = 'bandpass';
+            bp.Q.value = 1.2;
+            bp.frequency.setValueAtTime(560, t);
+            bp.frequency.exponentialRampToValueAtTime(2300, t + 0.3);
+            bp.frequency.exponentialRampToValueAtTime(1200, t + 0.58);
+            var pg = ctx.createGain();
+            pg.gain.setValueAtTime(0.0001, t);
+            pg.gain.exponentialRampToValueAtTime(0.06, t + 0.15);
+            pg.gain.exponentialRampToValueAtTime(0.0001, t + 0.6);
+            paper.connect(bp);
+            bp.connect(pg);
+            pg.connect(ctx.destination);
+            paper.start(t);
+            paper.stop(t + 0.66);
+
+            // 骨节轻轻一碰
+            var clack = ctx.createBufferSource();
+            clack.buffer = noise(0.12);
+            var lp = ctx.createBiquadFilter();
+            lp.type = 'lowpass';
+            lp.frequency.value = 460;
+            var cg = ctx.createGain();
+            cg.gain.setValueAtTime(0.0001, t + 0.44);
+            cg.gain.exponentialRampToValueAtTime(0.045, t + 0.47);
+            cg.gain.exponentialRampToValueAtTime(0.0001, t + 0.56);
+            clack.connect(lp);
+            lp.connect(cg);
+            cg.connect(ctx.destination);
+            clack.start(t + 0.44);
+            clack.stop(t + 0.58);
+          }
+
+          /* 合扇音：开扇声的倒向——纸面由亮转暗，收到底轻轻一记 */
+          function fold() {
+            if (off || !AC) return;
+            if (!ctx) {
+              try {
+                ctx = new AC();
+              } catch (err) {
+                return;
+              }
+            }
+            if (ctx.state === 'suspended') ctx.resume();
+            var t = ctx.currentTime + 0.02;
+
+            // 纸面收拢：带通扫频的噪声，由亮转暗
+            var paper = ctx.createBufferSource();
+            paper.buffer = noise(1.1);
+            var bp = ctx.createBiquadFilter();
+            bp.type = 'bandpass';
+            bp.Q.value = 1.1;
+            bp.frequency.setValueAtTime(2100, t);
+            bp.frequency.exponentialRampToValueAtTime(520, t + 0.86);
+            var pg = ctx.createGain();
+            pg.gain.setValueAtTime(0.0001, t);
+            pg.gain.exponentialRampToValueAtTime(0.055, t + 0.12);
+            pg.gain.exponentialRampToValueAtTime(0.0001, t + 0.92);
+            paper.connect(bp);
+            bp.connect(pg);
+            pg.connect(ctx.destination);
+            paper.start(t);
+            paper.stop(t + 0.98);
+
+            // 收拢到底的一声轻响
+            var clack = ctx.createBufferSource();
+            clack.buffer = noise(0.16);
+            var lp = ctx.createBiquadFilter();
+            lp.type = 'lowpass';
+            lp.frequency.value = 380;
+            var cg = ctx.createGain();
+            cg.gain.setValueAtTime(0.0001, t + 0.82);
+            cg.gain.exponentialRampToValueAtTime(0.05, t + 0.86);
+            cg.gain.exponentialRampToValueAtTime(0.0001, t + 0.99);
+            clack.connect(lp);
+            lp.connect(cg);
+            cg.connect(ctx.destination);
+            clack.start(t + 0.82);
+            clack.stop(t + 1);
+          }
+
+          return {
+            unfold: unfold,
+            fold: fold,
+            isOff: function () {
+              return off;
+            },
+            set: function (next) {
+              off = !!next;
+              try {
+                localStorage.setItem('fan-sound', off ? 'off' : 'on');
+              } catch (err) {}
+            }
+          };
+        })();
+
+        /* ---------- 合扇：收扇也要走一遍动效与声音 ---------- */
+        var CLOSE_MS = 1050; // 与 CSS 的 is-closing 时长对齐
+        var closing = false;
+        function beginClose() {
+          if (!picker || !picker.open || closing) return;
+          closing = true;
+          var plate = picker.querySelector('.fan-plate');
+          if (plate) {
+            plate.classList.remove('is-unfolding');
+            plate.classList.remove('is-closing');
+            // 强制回流：合扇用的是同一组关键帧，不这样动画会接着旧的时间轴跑
+            void plate.offsetWidth;
+            plate.classList.add('is-closing');
+          }
+          // 三维那侧据此把扇子向中轴合拢
+          picker.dispatchEvent(new CustomEvent('fan:closing'));
+          SFX.fold();
+          window.setTimeout(function () {
+            closing = false;
+            if (plate) plate.classList.remove('is-closing');
+            if (picker) {
+              picker.open = false;
+              var s = picker.querySelector('summary');
+              if (s) s.focus();
+            }
+          }, CLOSE_MS);
+        }
+
+        // 音效开关：按在扇子右下角那枚小印上
+        var soundBtn = document.querySelector('[data-fan-sound]');
+        function paintSound() {
+          if (!soundBtn) return;
+          var on = !SFX.isOff();
+          soundBtn.textContent = on ? '音' : '静';
+          soundBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+          var label = on ? '开扇音效：开，点击关闭' : '开扇音效：关，点击打开';
+          soundBtn.title = label;
+          soundBtn.setAttribute('aria-label', label);
+        }
+        paintSound();
+        if (soundBtn) {
+          soundBtn.addEventListener('click', function () {
+            SFX.set(!SFX.isOff());
+            paintSound();
+            if (!SFX.isOff()) SFX.unfold();
+          });
+        }
+
+        // 真正展开的那一刻发声；收扇走合扇音
+        if (picker) {
+          var fanTrigger = picker.querySelector('summary');
+          if (fanTrigger) {
+            fanTrigger.addEventListener('click', function (ev) {
+              if (closing) {
+                ev.preventDefault();
+                return;
+              }
+              if (picker.open) {
+                // 已展开时点图标：也走一遍合扇，不直接消失
+                ev.preventDefault();
+                beginClose();
+                return;
+              }
+              SFX.unfold();
+            });
+          }
+        }
+
+        document.addEventListener('click', function (e) {
+          var btn = e.target.closest('[data-palette-option]');
+          if (btn) {
+            var id = btn.getAttribute('data-palette-option');
+            root.dataset.palette = id;
+            try {
+              localStorage.setItem('palette', id);
+            } catch (err) {}
+            beginClose();
+            sync();
+            return;
+          }
+          // 点透明底或扇面之外的空白收扇
+          if (e.target.closest('[data-fan-backdrop]')) {
+            beginClose();
+            return;
+          }
+          if (picker && picker.open && !picker.contains(e.target)) beginClose();
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && picker && picker.open) {
+            beginClose();
+          }
+        });
+
+        sync();
       })();
     </script>
   </body>

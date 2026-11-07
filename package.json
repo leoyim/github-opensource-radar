@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "build:fan": "node tools/build-fan-glb.mjs",
     "ingest": "node tools/ingest.mjs",
     "sync:removals": "node tools/sync-removals.mjs",
     "check:removals": "node tools/sync-removals.mjs --check"
@@ -14,6 +15,7 @@
   "dependencies": {
     "astro": "^5.0.0",
     "lunar-javascript": "^1.7.7",
-    "marked": "^18.1.1"
+    "marked": "^18.1.1",
+    "three": "^0.187.0"
   }
 }
