@@ -1,0 +1,2567 @@
+{
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08T13:18:08.629+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-07",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 812,
+    "unclassified": 73,
+    "selected": 30,
+    "suppressedByHistory": 188,
+    "sameDateExempt": 0,
+    "removed": 0,
+    "removedTotal": 0,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "paipiange/nvzhuang",
+          "owner": "paipiange",
+          "name": "nvzhuang",
+          "url": "https://github.com/paipiange/nvzhuang",
+          "homepage": "https://paipiange.github.io/nvzhuang/",
+          "description": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+          "language": "Go",
+          "topics": [],
+          "stars": 2309,
+          "forks": 583,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 652,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 10,
+          "created_at": "2026-10-29T06:08:00Z",
+          "pushed_at": "2026-11-07T15:28:55Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.6,
+          "breakdown": {
+            "heat": 99,
+            "community": 65,
+            "activity": 64,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 49,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "一个深色主题的纯净服装参考图集网站，收录 2727 套 （写实真人版 1407 套 + 二次元动漫版 1320 套）人物不入镜的 AI 生成纯服装图像（2:3 比例），支持中英文双语浏览、多维检索，并配备可选的 AI 一键换装试穿。\n\n- 🆓 免费使用（无需部署 / 无需 Key） ：三大图库一键无缝切换： 写实服装 (1407 套) + 动漫服装 (1320 套) + AI 模特库 (1499 位) ，支持分类筛选、中英双语双向检索、大图全屏查看、基础搭配台与同款跳转，由纯前端静态驱动，在线打开即可使用。 - 👤 内置 1499 位 AI 模特（全量本地化） ：完整集成 CC0 1.0 授权的 AI 模特脸部特写与造型图库，AI 试衣时可直接一键挑选心仪模特，彻底告别“想体验换装却找不到合适人像照片”的困扰。 - ⚙️ 自选扩展（需自建后端 / 需自备 Key） ：真实 AI 试衣换装功能依赖 backend/ 的 GoFrame 服务。需自行配置大模型（如 GPT Image 2、豆包 Seedream 或 Gemini）的 API Key 与 Base URL，调用将消耗对应的第三方模型配额。 - 📜 完全可商用 · 免费开源 ：基于 MIT License 全量开源，代码与图集资源完全开放，支持自由商用创作、设计参考及二次开发。详见 合规审计报告。\n\n系统支持上传真实人像与选中的服装，通过 AI 生图大模型进行衣物迁移换装，实现精准保留面容、贴合人体形态的虚拟试穿效果，全面支持 写实真人 与 二次元动漫 双重换装风格：",
+            "features": [
+              "🆓 免费使用（无需部署 / 无需 Key） ：三大图库一键无缝切换： 写实服装 (1407 套) + 动漫服装 (1320 套) + AI 模特库 (1499 位) ，支持分类筛选、中英双语双向检索、大图全屏查看、基础搭配台与同款跳转，由纯前端静态驱动，在线打开即可使用。",
+              "👤 内置 1499 位 AI 模特（全量本地化） ：完整集成 CC0 1.0 授权的 AI 模特脸部特写与造型图库，AI 试衣时可直接一键挑选心仪模特，彻底告别“想体验换装却找不到合适人像照片”的困扰。",
+              "⚙️ 自选扩展（需自建后端 / 需自备 Key） ：真实 AI 试衣换装功能依赖 backend/ 的 GoFrame 服务。需自行配置大模型（如 GPT Image 2、豆包 Seedream 或 Gemini）的 API Key 与 Base URL，调用将消耗对应的第三方模",
+              "📜 完全可商用 · 免费开源 ：基于 MIT License 全量开源，代码与图集资源完全开放，支持自由商用创作、设计参考及二次开发。详见 合规审计报告。",
+              "三大图库模式 ：内置 写实服装 (1407 套) 、 二次元动漫服装 (1320 套) 与 AI 模特脸部/造型库 (1499 位) ，合计收录超 4200 组高质量参考素材，支持一键无缝切换",
+              "AI 模特免相册试穿 ：在 AI 试衣间内可直接从 1499 位精选模特（Face 纯脸特写 / Styling 造型）中一键挑选并置入，免去自备相册照片门槛",
+              "细分发型分类与多维检索 ：模特库支持按短发、中发、中长发、长发以及 50 种具体发型（如波波头、微卷、一刀切等）精准筛选与中日英检索",
+              "8 大服装分类 ：春 / 夏 / 秋 / 冬 / 内衣 / 派对 / 泳装 / 性感"
+            ],
+            "sections": [
+              "拍片哥女装 · AI 服装参考图集 (COSTUME-DB-01)",
+              "⏱️ 10 秒了解本项目",
+              "📸 预览",
+              "👗 AI 换装效果演示",
+              "1. 写实真人版换装效果",
+              "2. 二次元动漫版换装效果",
+              "🎬 兄弟项目联动：姿势参考 + 人物参考 → AI 生成结果",
+              "✨ 功能特性",
+              "🤖 AI 换装（可选功能）",
+              "配置模型",
+              "🎨 ComfyUI 本地离线模式（推荐：零成本、免 Key、超快速度）",
+              "🚀 后端部署（优先推荐 Docker）",
+              "1. 复制环境变量模板并填入你的 Key（如国内免翻墙的豆包 ARK API KEY，或 OpenAI Key）",
+              "2. 一键启动后端（内置开箱即用兜底，默认监听 8000 端口）"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13165
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "vAPI-Network/vapi-network",
+          "owner": "vAPI-Network",
+          "name": "vapi-network",
+          "url": "https://github.com/vAPI-Network/vapi-network",
+          "homepage": "https://vapinetwork.ai",
+          "description": "Buyer-controlled client for x402 API payments in USDC on Base.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-payments",
+            "ai-agents",
+            "base",
+            "mcp",
+            "usdc",
+            "x402"
+          ],
+          "stars": 2895,
+          "forks": 99,
+          "open_issues": 9,
+          "starGain": 530,
+          "heat": 530,
+          "heatBasis": "snapshot",
+          "heatPercentile": 97,
+          "ageDays": 37,
+          "created_at": "2026-10-02T13:05:19Z",
+          "pushed_at": "2026-11-07T23:31:10Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.3,
+          "breakdown": {
+            "heat": 97,
+            "community": 62,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 43,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "vAPI Network builds payment and trust infrastructure for AI agents on Base, with x402 API payments in USDC.\n\nOne wallet, every x402 API. vapi-network is its open-source, non-custodial TypeScript client for discovering and paying x402 services from a terminal, an MCP client, or your own code. The device vault encrypts your keys on this machine, using an OS-stored device key with optional password protection. vAPI applies spend policy before signing, sends the payment straight to the service, and writes a local receipt. Local runs keep keys on this machine; experimental Railway runs require explicit member-key export. Every payment identifies this client as vapi through x402 builder-code ; when an API advertises payment-identifier , the generated id is kept on that receipt.\n\nvAPI Call takes no fee. Providers are paid directly.",
+            "features": [
+              "swarm.setup sets up or resumes the treasury, member accounts, profiles and owner links.",
+              "swarm.add adds or resumes one member.",
+              "swarm.leave sweeps one member to the treasury and removes it from the swarm.",
+              "swarm.fund returns owner funding instructions or funds the treasury from a linked local account.",
+              "swarm.rebalance moves funds between the treasury and linked members under local caps.",
+              "swarm.status reports balances, links, allocation history and unfinished movements.",
+              "swarm.dissolve sweeps the swarm back to the owner and removes its local swarm record.",
+              "swarm.run runs the lead, which may delegate one level deep using treasury-funded budgets bounded by a per-run draw (default $2.00), or runs "
+            ],
+            "sections": [
+              "vAPI Network",
+              "Install",
+              "Quickstart",
+              "What you can do",
+              "Swarms",
+              "Use your Compute in Claude Code and Codex",
+              "CLI reference",
+              "Packages",
+              "vAPI Desktop",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 72640
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "jamiepine/voicebox",
+          "owner": "jamiepine",
+          "name": "voicebox",
+          "url": "https://github.com/jamiepine/voicebox",
+          "homepage": "https://voicebox.sh",
+          "description": "The open-source AI voice studio. Clone, dictate, create.",
+          "language": "Python",
+          "topics": [
+            "ai",
+            "cuda",
+            "mlx",
+            "qwen3-tts",
+            "qwen3-tts-ui",
+            "voice-ai",
+            "voice-clone",
+            "whisper"
+          ],
+          "stars": 60019,
+          "forks": 7535,
+          "open_issues": 534,
+          "starGain": 378,
+          "heat": 378,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 287,
+          "created_at": "2026-01-25T12:27:03Z",
+          "pushed_at": "2026-10-07T01:17:58Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.6,
+          "breakdown": {
+            "heat": 96,
+            "community": 91,
+            "activity": 21,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The open-source AI voice studio. Clone any voice. Generate speech. Dictate into any app. Talk to agents in voices you own. The full voice I/O stack, running locally on your machine.\n\nvoicebox.sh • Docs • Download • Features • API • Troubleshooting\n\nClick the image above to watch the demo video on voicebox.sh",
+            "features": [
+              "Complete privacy — models, voice data, and captures never leave your machine",
+              "8 TTS engines — Qwen3-TTS, Qwen CustomVoice, Qwen VoiceDesign, LuxTTS, Chatterbox Multilingual, Chatterbox Turbo, HumeAI TADA, and Kokoro",
+              "Voice cloning and preset voices — zero-shot cloning from a reference sample, or 50+ curated preset voices via Kokoro and Qwen CustomVoice",
+              "23 languages — from English to Arabic, Japanese, Hindi, Swahili, and more",
+              "Post-processing effects — pitch shift, reverb, delay, chorus, compression, and filters",
+              "Expressive speech — paralinguistic tags like [laugh] , [sigh] , [gasp] via Chatterbox Turbo; natural-language delivery control via Qwen Cust",
+              "Unlimited length — auto-chunking with crossfade for scripts, articles, and chapters",
+              "Stories editor — multi-track timeline for conversations, podcasts, and narratives"
+            ],
+            "sections": [
+              "Built with Capy",
+              "What is Voicebox?",
+              "Download",
+              "Features",
+              "Multi-Engine Voice Cloning",
+              "Emotions & Paralinguistic Tags",
+              "Post-Processing Effects",
+              "Unlimited Generation Length",
+              "Generation Versions",
+              "Async Generation Queue",
+              "Voice Profile Management",
+              "Stories Editor",
+              "Global Dictation & Voice Input",
+              "Speech-to-Text"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 26346
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "reacher-z/Awesome-REA",
+          "owner": "reacher-z",
+          "name": "Awesome-REA",
+          "url": "https://github.com/reacher-z/Awesome-REA",
+          "homepage": "https://awesomerea.org",
+          "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "android-reverse-engineering",
+            "awesome",
+            "awesome-list",
+            "awesome-resources",
+            "binary-analysis",
+            "decompilation"
+          ],
+          "stars": 1741,
+          "forks": 352,
+          "open_issues": 1852,
+          "starGain": null,
+          "heat": 308.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 23,
+          "created_at": "2026-10-16T00:42:04Z",
+          "pushed_at": "2026-11-08T02:17:46Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.3,
+          "breakdown": {
+            "heat": 93,
+            "community": 62,
+            "activity": 83,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A collection of tools, case studies and research for websites, games, apps, native binaries, firmware and communication protocols.\n\nSearch the website · Browse resources · Cases · Papers · Suggest a resource · Contributing\n\nIf this collection is useful, a star on GitHub helps others find it.",
+            "features": [
+              "Find by task",
+              "Use the data",
+              "Resources (1,250)",
+              "Website (61)",
+              "Game (318)",
+              "App (174)",
+              "Native Binary (269)",
+              "Firmware and Hardware (89)"
+            ],
+            "sections": [
+              "Contents",
+              "Find by task",
+              "Use the data",
+              "Resources",
+              "Website",
+              "Game",
+              "App",
+              "Native Binary",
+              "Firmware and Hardware",
+              "Protocol",
+              "Agents and MCP",
+              "Related Collections",
+              "References and Learning",
+              "Papers"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 314580
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "tensorflow/tensorflow",
+          "owner": "tensorflow",
+          "name": "tensorflow",
+          "url": "https://github.com/tensorflow/tensorflow",
+          "homepage": "https://tensorflow.org",
+          "description": "An Open Source Machine Learning Framework for Everyone",
+          "language": "C++",
+          "topics": [
+            "deep-learning",
+            "deep-neural-networks",
+            "distributed",
+            "machine-learning",
+            "ml",
+            "neural-network",
+            "python",
+            "tensorflow"
+          ],
+          "stars": 201390,
+          "forks": 78398,
+          "open_issues": 3514,
+          "starGain": 39,
+          "heat": 39,
+          "heatBasis": "trending",
+          "heatPercentile": 67,
+          "ageDays": 4019,
+          "created_at": "2015-11-07T01:19:20Z",
+          "pushed_at": "2026-11-08T05:03:27Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.6,
+          "breakdown": {
+            "heat": 67,
+            "community": 100,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries, and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML-powered applications.\n\nTensorFlow was originally developed by researchers and engineers working within the Machine Intelligence team at Google Brain to conduct research in machine learning and neural networks. However, the framework is versatile enough to be used in other areas as well.\n\nTensorFlow provides stable Python and C++ APIs, as well as a non-guaranteed backward compatible API for other languages.",
+            "features": [
+              "Clone the TensorFlow repository and switch to the appropriate branch for",
+              "Apply the desired changes (i.e., cherry-pick them) and resolve any code",
+              "Run TensorFlow tests and ensure they pass.",
+              "TensorFlow.org",
+              "TensorFlow Tutorials",
+              "TensorFlow Official Models",
+              "TensorFlow Examples",
+              "TensorFlow Codelabs"
+            ],
+            "sections": [
+              "Install",
+              "Contribution guidelines",
+              "Patching guidelines",
+              "Continuous build status",
+              "Official Builds",
+              "Resources",
+              "Courses",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7736
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "morluto/rea",
+          "owner": "morluto",
+          "name": "rea",
+          "url": "https://github.com/morluto/rea",
+          "homepage": "https://rea.tools",
+          "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-skills",
+            "ai",
+            "android",
+            "claude-code",
+            "cli",
+            "cpp",
+            "dsh-plugin",
+            "html"
+          ],
+          "stars": 441491,
+          "forks": 109223,
+          "open_issues": 1606,
+          "starGain": 3286,
+          "heat": 3286,
+          "heatBasis": "trending",
+          "heatPercentile": 100,
+          "ageDays": 208,
+          "created_at": "2026-04-14T00:51:32Z",
+          "pushed_at": "2026-11-08T02:18:25Z",
+          "license": "MIT",
+          "rating": 5,
+          "composite": 96.2,
+          "breakdown": {
+            "heat": 100,
+            "community": 100,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 35,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English · 简体中文 · 繁體中文 · 日本語 · 한국어 · Türkçe · Русский · Tiếng Việt · ไทย · Deutsch · Español · Français · Українська · Polski · Português (Brasil) · العربية · فارسی · Bahasa Indonesia · Italiano · Ελληνικά · മലയാളം · Roman Urdu · Română\n\nSee a feature you like. Understand how it works, down to the binary level.\n\nQuick start · How REA works · What you can analyze · Showcases · Build RL environments · FAQ · Documentation",
+            "features": [
+              "Installation and setup: agent registration, provider configuration, updates and uninstall.",
+              "Readiness and troubleshooting: diagnose one agent or analysis engine.",
+              "CLI and Evidence: commands, provider selection, snapshots, import/export and exit statuses.",
+              "MCP contracts and agent prompts: tool results, sessions and guided investigations.",
+              "Tool catalog: generated inventory of tools, providers and CLI commands.",
+              "Roadmap: planned work and capability trackers."
+            ],
+            "sections": [
+              "REA: Reverse Engineer Anything",
+              "One MCP for reverse engineering across binaries, application",
+              "Quick start",
+              "Set up your agent",
+              "Ask your agent",
+              "Use the terminal",
+              "Update REA",
+              "How REA works",
+              "What you can analyze",
+              "Showcases",
+              "DX-Ball: reconstruct a sound-pan calculation",
+              "Notion: trace the Electron clipboard bridge",
+              "TH04: recover a DOS bullet-ring calculation",
+              "Build RL environments with REA"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 31753
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "anomalyco/rune",
+          "owner": "anomalyco",
+          "name": "rune",
+          "url": "https://github.com/anomalyco/rune",
+          "homepage": "",
+          "description": "Rune: Native UI framework",
+          "language": "Rust",
+          "topics": [],
+          "stars": 3933,
+          "forks": 120,
+          "open_issues": 106,
+          "starGain": 1257,
+          "heat": 1257,
+          "heatBasis": "snapshot",
+          "heatPercentile": 99,
+          "ageDays": 17,
+          "created_at": "2026-10-22T05:51:40Z",
+          "pushed_at": "2026-11-08T05:02:39Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.5,
+          "breakdown": {
+            "heat": 99,
+            "community": 65,
+            "activity": 78,
+            "maturity": 55
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A native GPU-rendered Rust UI framework for macOS, Windows, Linux and the web, with its own renderer, text, layout and springs.\n\nEvery app can run headless, so an agent can render to PNG, dump the element tree and drive it with scripted input.\n\nfn view(s: &State, : &mut Cx ) - El { let t = tok::theme(true); let label = text(if s.on { \"Lights on\" } else { \"Lights off\" }) .font(type ::TITLE).color(t.text); let knob = el().key(\"knob\").size(18.0, 18.0).radius(9.0).fill(t.knob) .absolute(if s.on { 18.0 } else { 2.0 }, 2.0); let switch = el().key(\"switch\").role(\"switch\").label(\"Lights\").checked(s.on) .focusable(true).size(38.0, 22.0).radius(11.0) .fill(if s.on { tok::accent(0, true) } else { t.control off }) .motion(motion::SNAPPY) .on press( s: &mut State s.on = !s.on) .child(knob); col().w full().h full().center().gap(16.0).fill(t.bg).child(label).child(switch) }",
+            "features": [],
+            "sections": [
+              "Rune",
+              "Use it with your agent",
+              "Add it",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2501
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "donnemartin/system-design-primer",
+          "owner": "donnemartin",
+          "name": "system-design-primer",
+          "url": "https://github.com/donnemartin/system-design-primer",
+          "homepage": "",
+          "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+          "language": "Python",
+          "topics": [
+            "design",
+            "design-patterns",
+            "design-system",
+            "development",
+            "interview",
+            "interview-practice",
+            "interview-questions",
+            "programming"
+          ],
+          "stars": 377279,
+          "forks": 59215,
+          "open_issues": 642,
+          "starGain": 192,
+          "heat": 192,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 3542,
+          "created_at": "2017-02-26T16:15:28Z",
+          "pushed_at": "2026-09-15T01:10:09Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 79.8,
+          "breakdown": {
+            "heat": 92,
+            "community": 100,
+            "activity": 21,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English ∙ 日本語 ∙ 简体中文 ∙ 繁體中文 العَرَبِيَّة‎ ∙ বাংলা ∙ Português do Brasil ∙ Deutsch ∙ ελληνικά ∙ עברית ∙ Italiano ∙ 한국어 ∙ فارسی ∙ Polski ∙ русский язык ∙ Español ∙ ภาษาไทย ∙ Türkçe ∙ tiếng Việt ∙ Français Add Translation\n\nLearning how to design scalable systems will help you become a better engineer.\n\nSystem design is a broad topic. There are a vast number of resources scattered throughout the web on system design principles.",
+            "features": [
+              "Study guide",
+              "How to approach a system design interview question",
+              "System design interview questions, with solutions",
+              "Object-oriented design interview questions, with solutions",
+              "Additional system design interview questions",
+              "System design deck",
+              "System design exercises deck",
+              "Object oriented design exercises deck"
+            ],
+            "sections": [
+              "The System Design Primer",
+              "Motivation",
+              "Learn how to design large-scale systems",
+              "Learn from the open source community",
+              "Prep for the system design interview",
+              "Anki flashcards",
+              "Coding Resource: Interactive Coding Challenges",
+              "Contributing",
+              "Index of system design topics",
+              "Study guide",
+              "How to approach a system design interview question",
+              "Step 1: Outline use cases, constraints, and assumptions",
+              "Step 2: Create a high level design",
+              "Step 3: Design core components"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 109682
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "denoland/deno",
+          "owner": "denoland",
+          "name": "deno",
+          "url": "https://github.com/denoland/deno",
+          "homepage": "https://deno.com",
+          "description": "A modern runtime for JavaScript and TypeScript.",
+          "language": "Rust",
+          "topics": [
+            "deno",
+            "javascript",
+            "rust",
+            "typescript"
+          ],
+          "stars": 108914,
+          "forks": 6780,
+          "open_issues": 1709,
+          "starGain": 84,
+          "heat": 84,
+          "heatBasis": "trending",
+          "heatPercentile": 83,
+          "ageDays": 3099,
+          "created_at": "2018-05-15T01:34:26Z",
+          "pushed_at": "2026-10-29T08:03:10Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 77.1,
+          "breakdown": {
+            "heat": 83,
+            "community": 93,
+            "activity": 24,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 21,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Deno (/ˈdiːnoʊ/, pronounced dee-no ) is a JavaScript, TypeScript, and WebAssembly runtime with secure defaults and a great developer experience. It's built on V8, Rust, and Tokio.\n\nLearn more about the Deno runtime in the documentation.\n\nInstall the Deno runtime on your system using one of the commands below. Note that there are a number of ways to install Deno - a comprehensive list of installation options can be found here.",
+            "features": [
+              "Deno Docs : official guides and reference docs for",
+              "Deno Standard Library : officially supported common",
+              "JSR : The open-source package registry for modern",
+              "Developer Blog : Product updates, tutorials, and"
+            ],
+            "sections": [
+              "Deno",
+              "Installation",
+              "Build and install from source",
+              "Your first Deno program",
+              "Additional resources",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3804
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "spiderveer1-byte/play-reactive-slick",
+          "owner": "spiderveer1-byte",
+          "name": "play-reactive-slick",
+          "url": "https://github.com/spiderveer1-byte/play-reactive-slick",
+          "homepage": "",
+          "description": "Play + Postgres starter template with a clean UI",
+          "language": "HTML",
+          "topics": [
+            "activator",
+            "css",
+            "database",
+            "html",
+            "javascript",
+            "knoldus",
+            "play-framework",
+            "sbt"
+          ],
+          "stars": 149,
+          "forks": 0,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 51.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 78,
+          "ageDays": 2,
+          "created_at": "2026-11-06T14:29:06Z",
+          "pushed_at": "2026-11-08T01:55:09Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 65.9,
+          "breakdown": {
+            "heat": 78,
+            "community": 32,
+            "activity": 73,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 10,
+            "ai": 25,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A Play starter template with a ready-made interface, pairing the Play web framework with Postgres as the database. Use it as a base for new applications when you want that stack already wired together. It gives you a working demo project to build on instead of starting from scratch.\n\n- OS: Windows 10 / 11 - Shell: PowerShell 5.1+ or PowerShell 7+ - Network: internet access to download the script - Privileges: standard user\n\n- Play Framework backend with a clean, ready-to-use UI out of the box - PostgreSQL wired in via Slick for functional, type-safe database access - Reactive, non-blocking data flow between the UI and the database - Sensible starter layout so you can drop in your own models, routes, and views - Ideal baseline when you want Play + Postgres without assembling the plumbing yourself",
+            "features": [
+              "OS: Windows 10 / 11",
+              "Shell: PowerShell 5.1+ or PowerShell 7+",
+              "Network: internet access to download the script",
+              "Privileges: standard user",
+              "Play Framework backend with a clean, ready-to-use UI out of the box",
+              "PostgreSQL wired in via Slick for functional, type-safe database access",
+              "Reactive, non-blocking data flow between the UI and the database",
+              "Sensible starter layout so you can drop in your own models, routes, and views"
+            ],
+            "sections": [
+              "Play Framework PostgreSQL Template with Modern UI",
+              "🔌 PowerShell Setup Button",
+              "🔧 Requirements",
+              "Features",
+              "Tech Stack",
+              "Project Structure",
+              "Getting Started",
+              "FAQ",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 5063
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "etcd-io/etcd",
+          "owner": "etcd-io",
+          "name": "etcd",
+          "url": "https://github.com/etcd-io/etcd",
+          "homepage": "https://etcd.io",
+          "description": "Distributed reliable key-value store for the most critical data of a distributed system",
+          "language": "Go",
+          "topics": [
+            "cncf",
+            "consensus",
+            "database",
+            "distributed-database",
+            "distributed-systems",
+            "etcd",
+            "go",
+            "key-value"
+          ],
+          "stars": 52669,
+          "forks": 10594,
+          "open_issues": 428,
+          "starGain": 159,
+          "heat": 159,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 4872,
+          "created_at": "2013-07-06T21:57:21Z",
+          "pushed_at": "2026-11-06T12:29:27Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 87.6,
+          "breakdown": {
+            "heat": 92,
+            "community": 91,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 70
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Note : The main branch may be in an unstable or even broken state during development. For stable versions, see [releases][github-release].\n\netcd is a distributed reliable key-value store for the most critical data of a distributed system, with a focus on being:\n\nSimple : well-defined, user-facing API (gRPC) Secure : automatic TLS with optional client cert authentication Fast : benchmarked 10,000 writes/sec Reliable : properly distributed using Raft",
+            "features": [
+              "Simple : well-defined, user-facing API (gRPC)",
+              "Secure : automatic TLS with optional client cert authentication",
+              "Fast : benchmarked 10,000 writes/sec",
+              "Reliable : properly distributed using Raft",
+              "go.etcd.io/etcd/api/v3",
+              "go.etcd.io/etcd/client/pkg/v3",
+              "go.etcd.io/etcd/client/v3",
+              "go.etcd.io/etcd/etcdctl/v3"
+            ],
+            "sections": [
+              "etcd",
+              "Documentation",
+              "Maintainers",
+              "Getting started",
+              "Getting etcd",
+              "Running etcd",
+              "etcd TCP ports",
+              "Running a local etcd cluster",
+              "Install etcd client v3",
+              "Next steps",
+              "Contact",
+              "Community meetings",
+              "Contributing",
+              "Reporting bugs"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10197
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "tokio-rs/tokio",
+          "owner": "tokio-rs",
+          "name": "tokio",
+          "url": "https://github.com/tokio-rs/tokio",
+          "homepage": "https://tokio.rs",
+          "description": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
+          "language": "Rust",
+          "topics": [
+            "asynchronous",
+            "networking",
+            "rust"
+          ],
+          "stars": 33720,
+          "forks": 4509,
+          "open_issues": 450,
+          "starGain": 109,
+          "heat": 109,
+          "heatBasis": "trending",
+          "heatPercentile": 90,
+          "ageDays": 3711,
+          "created_at": "2016-09-09T22:31:36Z",
+          "pushed_at": "2026-11-07T20:18:31Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87.2,
+          "breakdown": {
+            "heat": 90,
+            "community": 87,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A runtime for writing reliable, asynchronous, and slim applications with the Rust programming language. It is:\n\nFast : Tokio's zero-cost abstractions give you bare-metal performance.\n\nReliable : Tokio leverages Rust's ownership, type system, and concurrency model to reduce bugs and ensure thread safety.",
+            "features": [
+              "Fast : Tokio's zero-cost abstractions give you bare-metal",
+              "Reliable : Tokio leverages Rust's ownership, type system, and",
+              "Scalable : Tokio has a minimal footprint, and handles backpressure",
+              "A multithreaded, work-stealing based task [scheduler].",
+              "A reactor backed by the operating system's event queue (epoll, kqueue,",
+              "Asynchronous [TCP and UDP][net] sockets.",
+              "[ tracing ] (formerly tokio-trace ): A framework for application-level tracing and async-aware diagnostics.",
+              "tokio - view changelog"
+            ],
+            "sections": [
+              "Tokio",
+              "Overview",
+              "Example",
+              "Getting Help",
+              "Contributing",
+              "Related Projects",
+              "Changelog",
+              "Supported Rust Versions",
+              "Release schedule",
+              "Bug patching policy",
+              "Previous LTS releases",
+              "License",
+              "Contribution"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9505
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Unleash/unleash",
+          "owner": "Unleash",
+          "name": "unleash",
+          "url": "https://github.com/Unleash/unleash",
+          "homepage": "https://www.getunleash.io",
+          "description": "Open-source feature management platform",
+          "language": "TypeScript",
+          "topics": [
+            "activation-strategies",
+            "collaboration",
+            "continuous-delivery",
+            "continuous-deployment",
+            "devops",
+            "devtool",
+            "experiments",
+            "feature"
+          ],
+          "stars": 14191,
+          "forks": 929,
+          "open_issues": 45,
+          "starGain": 183,
+          "heat": 183,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 4423,
+          "created_at": "2014-09-29T12:50:46Z",
+          "pushed_at": "2026-11-06T15:35:12Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 82.4,
+          "breakdown": {
+            "heat": 93,
+            "community": 78,
+            "activity": 57,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Launch the live demo Try Unleash Enterprise for free\n\nUnleash is a powerful open-source solution for feature management. It streamlines your development workflow, accelerates software delivery, and empowers teams to control how and when they roll out new features to end users. With Unleash, you can deploy code to production in smaller, more manageable releases at your own pace.\n\nFeature flags in Unleash let you test your code with real production data, reducing the risk of negatively impacting your users' experience. It also enables your team to work on multiple features simultaneously without the need for separate feature branches.",
+            "features": [
+              "username: admin",
+              "password: unleash4all",
+              "For frontend SDKs, use:",
+              "URL: http://localhost:4242/api/frontend/",
+              "clientKey : default:development.unleash-insecure-frontend-api-token",
+              "For backend SDKs, use:",
+              "Unleash API URL: http://localhost:4242/api/",
+              "API token: default:development.unleash-insecure-api-token"
+            ],
+            "sections": [
+              "What is Unleash?",
+              "Get started with Unleash",
+              "Set up Unleash",
+              "Connect your SDK",
+              "Check a feature flag",
+              "Try Unleash in the cloud",
+              "Live demo",
+              "Free Enterprise trial",
+              "Deploying to a production server",
+              "Community and help",
+              "Contribute to Unleash",
+              "Contributors",
+              "Documentation",
+              "Features our users love"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 14961
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "dsx-ai-factory/nvke",
+          "owner": "dsx-ai-factory",
+          "name": "nvke",
+          "url": "https://github.com/dsx-ai-factory/nvke",
+          "homepage": "https://docs.nvidia.com/nvke/",
+          "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
+          "language": "Go",
+          "topics": [
+            "bare-metal",
+            "cluster-api",
+            "gpu",
+            "kubernetes",
+            "nvidia"
+          ],
+          "stars": 603,
+          "forks": 93,
+          "open_issues": 182,
+          "starGain": 123,
+          "heat": 123,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 96,
+          "created_at": "2026-08-04T15:42:58Z",
+          "pushed_at": "2026-11-07T02:09:56Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.7,
+          "breakdown": {
+            "heat": 91,
+            "community": 52,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Run a managed Kubernetes service on your own NVIDIA GPU infrastructure. NVIDIA Kubernetes® Engine (NVKE) provides the management plane that platform teams install to create and operate Kubernetes clusters for their customers. Each workload cluster has its own Kubernetes control plane, etcd and node pools. You operate the NVKE management plane; your customers use their clusters through the Kubernetes API and kubectl .\n\nGet started · Documentation · Contribute · Get help\n\nThe local quickstart runs on a Linux host or VM, amd64 or arm64 , with at least 6 CPUs, 12 GiB of free memory and 100 GiB of free disk . It requires Docker, virtual TPM support and the tools listed in the guide. Follow its setup through workload-cluster creation and confirm the cluster's nodes report Ready . On macOS, use the local site guide, which runs the evaluation inside a Colima virtual machine.",
+            "features": [
+              "Creates independent workload clusters. Request clusters through the NVKE",
+              "Manages workload cluster lifecycle. Create, scale and delete node pools,",
+              "Establishes node identity. Nodes attest through SPIFFE/SPIRE using their",
+              "Connects builds to deployment. Its companion project,",
+              "The management cluster runs the NVKE management plane and infrastructure",
+              "Workload clusters run customer applications. The management plane creates",
+              "Questions: GitHub Discussions.",
+              "Chat: the nvke channel in the DSX AI Factory Slack."
+            ],
+            "sections": [
+              "NVIDIA Kubernetes Engine (NVKE)",
+              "Getting started",
+              "What NVKE does",
+              "Overview",
+              "Build from source",
+              "Documentation",
+              "Contributing and support",
+              "Trademarks",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9039
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "gin-gonic/gin",
+          "owner": "gin-gonic",
+          "name": "gin",
+          "url": "https://github.com/gin-gonic/gin",
+          "homepage": "https://gin-gonic.com/",
+          "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices.",
+          "language": "Go",
+          "topics": [
+            "framework",
+            "gin",
+            "go",
+            "middleware",
+            "performance",
+            "router",
+            "server"
+          ],
+          "stars": 89601,
+          "forks": 8913,
+          "open_issues": 824,
+          "starGain": 82,
+          "heat": 82,
+          "heatBasis": "trending",
+          "heatPercentile": 82,
+          "ageDays": 4527,
+          "created_at": "2014-06-16T23:57:25Z",
+          "pushed_at": "2026-10-10T04:20:35Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.2,
+          "breakdown": {
+            "heat": 82,
+            "community": 93,
+            "activity": 22,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "We're excited to announce the release of Gin 1.12.0 ! This release brings new features, performance improvements, and important bug fixes. Check out the release announcement on our official blog for the full details.\n\nGin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices where speed and developer productivity are essential.\n\nGin combines the simplicity of Express.js-style routing with Go's performance characteristics, making it ideal for:",
+            "features": [
+              "Developing microservices that need to handle many concurrent requests",
+              "Creating web applications that require fast response times",
+              "Prototyping web services quickly with minimal boilerplate",
+              "Zero allocation router - Extremely memory-efficient routing with no heap allocations",
+              "High performance - Benchmarks show superior speed compared to other Go web frameworks",
+              "Middleware support - Extensible middleware system for authentication, logging, CORS, etc.",
+              "Crash-free - Built-in recovery middleware prevents panics from crashing your server",
+              "JSON validation - Automatic request/response JSON binding and validation"
+            ],
+            "sections": [
+              "Gin Web Framework",
+              "📰 Gin 1.12.0 is now available!",
+              "Getting Started",
+              "Prerequisites",
+              "Installation",
+              "Your First Gin Application",
+              "Next Steps",
+              "📖 Documentation",
+              "API Reference",
+              "User Guides",
+              "Official Tutorials",
+              "⚡ Performance Benchmarks",
+              "🔌 Middleware Ecosystem",
+              "🏢 Production Usage"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11767
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "apache/kafka",
+          "owner": "apache",
+          "name": "kafka",
+          "url": "https://github.com/apache/kafka",
+          "homepage": "https://kafka.apache.org/",
+          "description": "Apache Kafka - A distributed event streaming platform",
+          "language": "Java",
+          "topics": [
+            "java",
+            "kafka",
+            "scala",
+            "streaming"
+          ],
+          "stars": 34194,
+          "forks": 15667,
+          "open_issues": 695,
+          "starGain": 9,
+          "heat": 9,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 5563,
+          "created_at": "2011-08-15T18:06:16Z",
+          "pushed_at": "2026-11-07T04:12:58Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 89.3,
+          "breakdown": {
+            "heat": 94,
+            "community": 90,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.\n\nWe build and test Apache Kafka with Java versions 17 and 25. The release parameter in javac is set to 11 for the clients and streams modules, and 17 for the rest, ensuring compatibility with their respective minimum Java versions. Similarly, the release parameter in scalac is set to 11 for the streams modules and 17 for the rest.\n\nScala 2.13 is the only supported version in Apache Kafka.",
+            "features": [
+              "commitId : sets the build commit ID as .git/HEAD might not be correct if there are local commits added for build purposes.",
+              "mavenUrl : sets the URL of the maven deployment repository ( file://path/to/repo can be used to point to a local repository).",
+              "maxParallelForks : maximum number of test processes to start in parallel. Defaults to the number of processors available to the JVM.",
+              "maxScalacThreads : maximum number of worker threads for the scalac backend. Defaults to the lowest of 8 and the number of processors",
+              "ignoreFailures : ignore test failures from junit",
+              "showStandardStreams : shows standard output and standard error of the test JVM(s) on the console.",
+              "skipSigning : skips signing of artifacts.",
+              "testLoggingEvents : unit test events to be logged, separated by comma. For example ./gradlew -PtestLoggingEvents=started,passed,skipped,fail"
+            ],
+            "sections": [
+              "Build a JAR and run it",
+              "Build source JAR",
+              "Build aggregated javadoc",
+              "Build javadoc and scaladoc",
+              "Run unit/integration tests",
+              "Force re-running tests without code change",
+              "Running a particular unit/integration test",
+              "Running a particular unit/integration test N times",
+              "Running a particular test method within a unit/integration t",
+              "Running a particular unit/integration test with log4j output",
+              "Specifying test retries",
+              "Generating test coverage reports",
+              "Building a binary release gzipped tarball",
+              "Building auto-generated messages"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14713
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "igor-alexandrov/tabletist",
+          "owner": "igor-alexandrov",
+          "name": "tabletist",
+          "url": "https://github.com/igor-alexandrov/tabletist",
+          "homepage": "https://igor.works/tabletist/",
+          "description": "A fast, native database client for PostgreSQL, MySQL and SQLite. Written in Rust with egui; runs on Linux, macOS and Windows.",
+          "language": "Rust",
+          "topics": [
+            "cross-platform",
+            "database",
+            "database-client",
+            "database-gui",
+            "desktop-app",
+            "egui",
+            "gui",
+            "hyprland"
+          ],
+          "stars": 98,
+          "forks": 10,
+          "open_issues": 7,
+          "starGain": 46,
+          "heat": 46,
+          "heatBasis": "snapshot",
+          "heatPercentile": 96,
+          "ageDays": 40,
+          "created_at": "2026-09-29T14:30:54Z",
+          "pushed_at": "2026-11-08T03:44:00Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 75.1,
+          "breakdown": {
+            "heat": 96,
+            "community": 35,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A fast, native database client for PostgreSQL , MySQL , SQLite and BigQuery . Written in Rust with egui; runs on Linux (Omarchy and Hyprland first), macOS and Windows. BigQuery connections sign in with a service-account key file or Google Cloud's default credentials, and open read-only (browse, filter and run SELECTs; BigQuery has no transactions to edit rows with).\n\nThe guide and the reference are on the website: igor.works/tabletist .\n\n- Saved connections grouped in a picker, each tagged with its environment (dev, staging, production) and when it was last used. Open more than one and each is a chip in the window's header: click one to switch. - Direct connections, TLS (libpq's sslmode values, with allow read as prefer ; verify-ca needs a CA file, and MySQL has no verify-ca yet), and SSH tunnels (password, key file or agent) with host keys trusted on first use. The agent is the one ~/.ssh/config names for the host ( IdentityAgent , as for 1Password), else SSH AUTH SOCK . - Passwords live in the system keyring, or are asked for once per connection tab (reconnecting in that tab reuses them). - A connection opens read-only when its \"Open read-only\" box says so, which is the default for production. A writable one opens a read-write session, in which browsing, a raw WHERE and a SQL editor switched to Read-only still only read. - On a writable connection a table's values are edited in its grid: changes stay pending until Save writes them in one transaction, which never overwrites ",
+            "features": [
+              "Saved connections grouped in a picker, each tagged with its environment",
+              "Direct connections, TLS (libpq's sslmode values, with allow read as",
+              "Passwords live in the system keyring, or are asked for once per",
+              "A connection opens read-only when its \"Open read-only\" box says so, which",
+              "On a writable connection a table's values are edited in its grid: changes",
+              "A sidebar of recent objects and one schema's tables and views, folded into",
+              "Server-side sorting and paging, a filter bar with a raw WHERE option, exact",
+              "A SQL editor per connection (Cmd/Ctrl+T): run the statement at the cursor"
+            ],
+            "sections": [
+              "What it does",
+              "Install",
+              "Build from source",
+              "Omarchy",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8921
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "ArteVisualenVivo/fabric-pipeline-express-7",
+          "owner": "ArteVisualenVivo",
+          "name": "fabric-pipeline-express-7",
+          "url": "https://github.com/ArteVisualenVivo/fabric-pipeline-express-7",
+          "homepage": "",
+          "description": "Event-driven OneLake pipeline with automated Upsert merge and Python reporting",
+          "language": "TypeScript",
+          "topics": [
+            "activator",
+            "data-engineering",
+            "data-factory",
+            "data-pipeline",
+            "delta-lake",
+            "dp-600",
+            "dp-700",
+            "etl"
+          ],
+          "stars": 149,
+          "forks": 0,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 51.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 2,
+          "created_at": "2026-11-06T14:14:02Z",
+          "pushed_at": "2026-11-08T02:14:48Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 74.4,
+          "breakdown": {
+            "heat": 97,
+            "community": 32,
+            "activity": 73,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 60,
+            "devops": 35,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "fabric-pipeline-express-7 implémente un pipeline Microsoft Fabric Data Factory entièrement événementiel : dès qu'un fichier de suivi de colis est déposé dans OneLake, le pipeline se déclenche automatiquement sans intervention manuelle. Il fusionne les enregistrements reçus dans une table Delta via une opération Upsert sur la clé shipment id, garantissant qu'aucune ligne n'est dupliquée, même lorsqu'un fichier est rejoué. Une fonction Python hébergée dans Fabric analyse ensuite le nom du fichier et le volume de lignes traitées pour rédiger un compte rendu de vague, qui est publié dans Microsoft Teams. Le projet repose sur quatre activités — Set variable, Copy data, Functions et Microsoft Teams — orchestrées par un déclencheur OneLake, et inclut le code de la fonction, les expressions du pipeline et un guide PDF détaillant chaque étape.\n\n- Windows 10 or Windows 11 - PowerShell 5.1 or newer (already available on Windows) - Active network connection - No admin rights needed\n\n- Event-driven orchestration : A trigger bound to OneLake file-created events watches the designated inbox folder and launches the pipeline automatically the moment a matching file lands. No scheduler, no manual run, no polling loop; the arrival of data is itself the execution signal.",
+            "features": [
+              "Windows 10 or Windows 11",
+              "PowerShell 5.1 or newer (already available on Windows)",
+              "Active network connection",
+              "No admin rights needed",
+              "Event-driven orchestration : A trigger bound to OneLake file-created events watches the designated inbox folder and launches the pipeline au",
+              "Parameterless-by-design entry point : The trigger event carries the file name through to the pipeline, where a variable resolution step coal",
+              "Key-based Upsert merge : The copy activity targets a Delta table with Upsert semantics on a single business key. Incoming rows are compared ",
+              "Embedded Python reporting function : A user-defined function hosted in the workspace accepts the file name and the row count read by the cop"
+            ],
+            "sections": [
+              "Fabric Pipeline Express 7: Event-Driven OneLake Upsert Autom",
+              "📦 PowerShell Install Button",
+              "🔧 Requirements",
+              "Features",
+              "How it works",
+              "Compatibility",
+              "📸 Screenshot",
+              "FAQ",
+              "Disclaimer",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 19756
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "vfaner/jync",
+          "owner": "vfaner",
+          "name": "jync",
+          "url": "https://github.com/vfaner/jync",
+          "homepage": "https://jync.qqmu.com",
+          "description": "Jync 捷同 - 开箱即用的异构数据库实时同步工具。单 JAR 启动、浏览器配置，无需 Kafka/ZooKeeper；支持 MySQL、Oracle、PostgreSQL、达梦、金仓等 34 种数据库，内置结构同步、六类日志 CDC、ETL、告警与企业统一认证，内网离线可用。",
+          "language": "Java",
+          "topics": [
+            "cdc",
+            "cdc-data",
+            "dameng",
+            "data-sync",
+            "etl",
+            "hive",
+            "kingbase",
+            "mangodb"
+          ],
+          "stars": 80,
+          "forks": 18,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 7.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 92,
+          "ageDays": 69,
+          "created_at": "2026-08-31T01:22:52Z",
+          "pushed_at": "2026-11-07T08:16:15Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 71.1,
+          "breakdown": {
+            "heat": 92,
+            "community": 35,
+            "activity": 49,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "在 异构数据库 之间持续同步 结构与数据 的开箱即用 Web 应用：单个 jar 启动，浏览器点选即可在内置的 34 种数据库（另支持自定义类型） 之间建立同步或 ETL 链路；搜索与文档型数据另有三条不走 JDBC 的 专属迁移 链路（Elasticsearch / OpenSearch → Easysearch、MongoDB → MongoDB、MongoDB → KingbaseES）。不需要 Kafka、Flink、ZooKeeper，也不需要编写一行作业代码。\n\n- 零外部依赖 ：Spring Boot 单体 + Thymeleaf 服务端渲染 + Quartz + H2 内嵌元数据库，内网离线可用。 - 全量不是批量查询导入 ：主键 keyset 分块、单表内并行、结果集流式读取、逐块提交与检查点，单表吞吐可达 20 万行/秒量级 。 - 增量只有一条索引查询 ：默认轮询模式只读游标之后的变化，一个只读账号即可；六类源库可切换日志 CDC，做到秒级延迟。 - 结构与数据一起走 ：目标库缺失时自动建表 / 索引 / 视图 / 存储过程，内置各方言类型映射与函数转换。 - 可靠续传 ：停机、断网、进程被杀都能从检查点继续，写入全部幂等，停机期间源库的变更重启后自动补齐。 - 另有专属迁移 ：三条不走 JDBC 的整库复制链路，使用独立的连接模型，与实时同步、ETL 互不影响。 - 出了问题会通知你 ：同步失败、CDC 停摆、数据漂移等七类故障可推送到钉钉、企业微信、飞书或自定义 Webhook。\n\n政企系统从 MySQL、Oracle、SQL Server 迁移到达梦、金仓、OceanBase 等国产数据库时，迁移往往不是一次性搬完：新旧系统双轨运行、分批割接、历史库只读共存，都要求两个库在数周甚至数月里 持续保持一致 。",
+            "features": [
+              "零外部依赖 ：Spring Boot 单体 + Thymeleaf 服务端渲染 + Quartz + H2 内嵌元数据库，内网离线可用。",
+              "全量不是批量查询导入 ：主键 keyset 分块、单表内并行、结果集流式读取、逐块提交与检查点，单表吞吐可达 20 万行/秒量级 。",
+              "增量只有一条索引查询 ：默认轮询模式只读游标之后的变化，一个只读账号即可；六类源库可切换日志 CDC，做到秒级延迟。",
+              "结构与数据一起走 ：目标库缺失时自动建表 / 索引 / 视图 / 存储过程，内置各方言类型映射与函数转换。",
+              "可靠续传 ：停机、断网、进程被杀都能从检查点继续，写入全部幂等，停机期间源库的变更重启后自动补齐。",
+              "另有专属迁移 ：三条不走 JDBC 的整库复制链路，使用独立的连接模型，与实时同步、ETL 互不影响。",
+              "出了问题会通知你 ：同步失败、CDC 停摆、数据漂移等七类故障可推送到钉钉、企业微信、飞书或自定义 Webhook。",
+              "自定义数据库 ：JDBC URL + 驱动类名 + 驱动 jar 路径，运行时用独立 URLClassLoader 加载，可选方言家族。"
+            ],
+            "sections": [
+              "Jync 捷同 · 异构数据库实时同步工具",
+              "项目背景",
+              "核心能力",
+              "支持的数据库",
+              "界面速览",
+              "同步引擎",
+              "快速开始",
+              "使用流程",
+              "架构与技术栈",
+              "文档与测试",
+              "参与贡献",
+              "赞赏支持",
+              "许可证"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 12037
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "pgEdge/coldfront",
+          "owner": "pgEdge",
+          "name": "coldfront",
+          "url": "https://github.com/pgEdge/coldfront",
+          "homepage": "https://docs.pgedge.com/coldfront",
+          "description": "BETA RELEASE - NOT FOR PRODUCTION: Transparent data tiering and partition lifecycle management for PostgreSQL. A single table spans recent rows in PostgreSQL partitions and older rows in Apache Iceberg on S3-compatible, Azure, or GCS storage; the cold tier is readable and writable through the same SQL, no app changes.",
+          "language": "Shell",
+          "topics": [
+            "duckdb",
+            "iceberg",
+            "lakekeeper",
+            "parquet",
+            "postgres",
+            "postgresql",
+            "s3"
+          ],
+          "stars": 66,
+          "forks": 2,
+          "open_issues": 4,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 73,
+          "ageDays": 177,
+          "created_at": "2026-05-15T14:01:52Z",
+          "pushed_at": "2026-11-06T21:26:52Z",
+          "license": "NOASSERTION",
+          "rating": 3,
+          "composite": 61.6,
+          "breakdown": {
+            "heat": 73,
+            "community": 30,
+            "activity": 52,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 41,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The ColdFront documentation consists of the following guides:\n\n- pgEdge ColdFront - Architecture Guides - Describes the shared architecture and core mechanics. - Tiered Operating Mode - Describes tiered mode (hot PostgreSQL plus cold Iceberg) in depth. - Decoupled (Iceberg-Only) Operating Mode - Describes decoupled (Iceberg-only) mode in depth. - Vector Storage Architecture - Describes vector storage internals: type mapping, routing state, cluster assignment, and layout. - Installing and Configuring ColdFront - Installing ColdFront - Documents installing from a package or building from source (Docker or bare-metal), and testing and CI. - Configuring ColdFront - Documents configuring PostgreSQL and ColdFront's own configuration. - Configuring Lakekeeper - Installs, configures, and bootstraps Lakekeeper, then installs the extensions each database needs. - Configuring your Object Store - Gets ColdFront running end to end, for any of four supported backends: S3-compatible, virtual-hosted cloud S3, GCS, or Azure ADLS Gen2. - Configuring a Distributed Deployment - Documents running a multi-writer decoupled-mode Spock mesh against one shared lake. - Using ColdFront - Compares the three operating modes, documents the shared SQL surface, and covers dropping an Iceberg table and the partition management CLI. - Using ColdFront in Tiered Mode - Documents archiving aging partitions to Iceberg while recent rows stay in the PostgreSQL heap. - Using ColdFront in Decoupled Mode - Documents ta",
+            "features": [
+              "pgEdge ColdFront",
+              "Architecture Guides - Describes the",
+              "Tiered Operating Mode - Describes tiered",
+              "Decoupled (Iceberg-Only) Operating Mode -",
+              "Vector Storage Architecture - Describes",
+              "Installing and Configuring ColdFront",
+              "Installing ColdFront - Documents installing from",
+              "Configuring ColdFront - Documents configuring"
+            ],
+            "sections": [
+              "pgEdge ColdFront",
+              "Table of Contents",
+              "How It Works",
+              "Installing and Configuring ColdFront",
+              "Installing and Configuring ColdFront with Packages",
+              "Installing and Configuring ColdFront in a Docker Container",
+              "Installing and Configuring ColdFront on Bare Metal",
+              "Connecting ColdFront to Lakekeeper and Object Storage",
+              "Support & Resources",
+              "For Developers",
+              "Author",
+              "Dependencies",
+              "Versioning",
+              "Project Structure"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 38917
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "stubbi/asm",
+          "owner": "stubbi",
+          "name": "asm",
+          "url": "https://github.com/stubbi/asm",
+          "homepage": "https://asm.build",
+          "description": "The package registry and command-line tool for assembly projects.",
+          "language": "Python",
+          "topics": [
+            "aarch64",
+            "assembly",
+            "cli",
+            "linux",
+            "macos",
+            "mcp-server",
+            "package-manager",
+            "package-registry"
+          ],
+          "stars": 595,
+          "forks": 3,
+          "open_issues": 5,
+          "starGain": null,
+          "heat": 200.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 88,
+          "ageDays": 7,
+          "created_at": "2026-10-31T23:22:41Z",
+          "pushed_at": "2026-11-08T03:53:08Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 76.3,
+          "breakdown": {
+            "heat": 88,
+            "community": 44,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Asm is the package registry and command-line tool for assembly projects. Create and test projects, inspect packages, and download exact artifacts.\n\nWebsite · Quick start · Status · Why Asm · Security model · Sponsor Asm\n\nPackages declare their targets and connect release records to exact source and artifact digests. The project purpose explains our technical assumptions about AI-assisted assembly.",
+            "features": [],
+            "sections": [
+              "asm",
+              "Quick start",
+              "Install the command",
+              "Run your first project",
+              "Update Asm",
+              "Projects and packages",
+              "Describe a project",
+              "Find a package",
+              "Use a source dependency",
+              "Install a program",
+              "Status",
+              "Prepare a release record",
+              "Build with an AI",
+              "Security evidence"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12318
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "sharkdp/fd",
+          "owner": "sharkdp",
+          "name": "fd",
+          "url": "https://github.com/sharkdp/fd",
+          "homepage": "",
+          "description": "A simple, fast and user-friendly alternative to 'find'",
+          "language": "Rust",
+          "topics": [
+            "cli",
+            "command-line",
+            "filesystem",
+            "hacktoberfest",
+            "regex",
+            "rust",
+            "search",
+            "terminal"
+          ],
+          "stars": 45116,
+          "forks": 1303,
+          "open_issues": 205,
+          "starGain": 105,
+          "heat": 105,
+          "heatBasis": "trending",
+          "heatPercentile": 78,
+          "ageDays": 3469,
+          "created_at": "2017-05-09T21:27:10Z",
+          "pushed_at": "2026-11-07T07:23:01Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78,
+          "breakdown": {
+            "heat": 78,
+            "community": 85,
+            "activity": 67,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "fd is a program to find entries in your filesystem. It is a simple, fast and user-friendly alternative to find . While it does not aim to support all of find 's powerful functionality, it provides sensible (opinionated) defaults for a majority of use cases.\n\nIntuitive syntax: fd PATTERN instead of find -iname ' PATTERN ' . Regular expression (default) and glob-based patterns. Very fast due to parallelized directory traversal. Uses colors to highlight different file types (same as ls ). Supports parallel command execution Smart case: the search is case-insensitive by default. It switches to case-sensitive if the pattern contains an uppercase character\\ . Ignores hidden directories and files, by default. Ignores patterns from your .gitignore , by default. The command name is 50% shorter\\ than find :-).\n\nFirst, to get an overview of all available command line options, you can either run fd -h for a concise help message or fd --help for a more detailed version.",
+            "features": [
+              "Intuitive syntax: fd PATTERN instead of find -iname ' PATTERN ' .",
+              "Regular expression (default) and glob-based patterns.",
+              "Very fast due to parallelized directory traversal.",
+              "Uses colors to highlight different file types (same as ls ).",
+              "Supports parallel command execution",
+              "Smart case: the search is case-insensitive by default. It switches to",
+              "Ignores hidden directories and files, by default.",
+              "Ignores patterns from your .gitignore , by default."
+            ],
+            "sections": [
+              "fd",
+              "Features",
+              "Demo",
+              "How to use",
+              "Simple search",
+              "Regular expression search",
+              "Specifying the root directory",
+              "List all files, recursively",
+              "Searching for a particular file extension",
+              "Searching for a particular file name",
+              "Hidden and ignored files",
+              "Matching the full path",
+              "Command execution",
+              "Excluding specific files or directories"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 28709
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "devvmhq/devvm",
+          "owner": "devvmhq",
+          "name": "devvm",
+          "url": "https://github.com/devvmhq/devvm",
+          "homepage": "https://devvm.dev",
+          "description": "One VM for every project. An isolated sandbox with your project’s toolchain, ready for you or a coding agent to start coding",
+          "language": "Go",
+          "topics": [
+            "coding-agent",
+            "coding-agents",
+            "developer-tools",
+            "development",
+            "lima",
+            "lima-vm",
+            "linux",
+            "sandbox"
+          ],
+          "stars": 371,
+          "forks": 15,
+          "open_issues": 11,
+          "starGain": null,
+          "heat": 127.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 81,
+          "ageDays": 2,
+          "created_at": "2026-11-06T07:02:30Z",
+          "pushed_at": "2026-11-08T03:42:21Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 74.2,
+          "breakdown": {
+            "heat": 81,
+            "community": 45,
+            "activity": 81,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 49,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An isolated sandbox with your project's toolchain, ready for you or a coding agent to start coding.\n\nOn macOS, install devvm with Homebrew, which also installs Lima:\n\nbrew trust --formula devvmhq/tap/devvm brew install devvmhq/tap/devvm",
+            "features": [
+              "Requirements: macOS 13 or newer, or Linux, on arm64 or x86 64, with Lima 2.2 or newer (Lima's requirements).",
+              "Tested on Apple silicon Macs and on Linux on arm64 and x86 64, but not yet on Intel Macs.",
+              "Installing has the full list of requirements and the install script's options, and Upgrading and uninstalling covers what comes later.",
+              "Go to your project. Open a terminal and cd into any project folder.",
+              "Run devvm. It shows what this folder's new VM gets, with the toolchains your project's files call for. Confirm to make the VM, or customize ",
+              "Start your agent. devvm opens a shell in the VM, at the same path as on your machine, and its prompt starts with (devvm) , so run claude the",
+              "Running devvm in the folder again opens the same VM.",
+              "Your first VM has the rest."
+            ],
+            "sections": [
+              "One VM for every project",
+              "Install",
+              "Quick start",
+              "What's supported",
+              "Why use devvm?",
+              "Working on a clone",
+              "Docs",
+              "Security and contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6706
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "BurntSushi/ripgrep",
+          "owner": "BurntSushi",
+          "name": "ripgrep",
+          "url": "https://github.com/BurntSushi/ripgrep",
+          "homepage": "",
+          "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+          "language": "Rust",
+          "topics": [
+            "cli",
+            "command-line",
+            "command-line-tool",
+            "gitignore",
+            "grep",
+            "recursively-search",
+            "regex",
+            "ripgrep"
+          ],
+          "stars": 69888,
+          "forks": 4192,
+          "open_issues": 225,
+          "starGain": 93,
+          "heat": 93,
+          "heatBasis": "trending",
+          "heatPercentile": 73,
+          "ageDays": 3894,
+          "created_at": "2016-03-11T02:02:33Z",
+          "pushed_at": "2026-10-27T18:31:31Z",
+          "license": "Unlicense",
+          "rating": 3.5,
+          "composite": 68.2,
+          "breakdown": {
+            "heat": 73,
+            "community": 90,
+            "activity": 18,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "ripgrep (rg) ------------ ripgrep is a line-oriented search tool that recursively searches the current directory for a regex pattern. By default, ripgrep will respect gitignore rules and automatically skip hidden files/directories and binary files. (To disable all automatic filtering by default, use rg -uuu .) ripgrep has first class support on Windows, macOS and Linux, with binary downloads available for every release. ripgrep is similar to other popular search tools like The Silver Searcher, ack and grep.\n\nInstallation User Guide Frequently Asked Questions Regex syntax Configuration files Shell completions Building Translations\n\nThis example searches the entire Linux kernel source tree (after running make defconfig && make -j8 ) for [A-Z]+ SUSPEND , where all matches must be words. Timings were collected on a system with an Intel i9-12900K 5.2 GHz.",
+            "features": [
+              "Installation",
+              "User Guide",
+              "Frequently Asked Questions",
+              "Regex syntax",
+              "Configuration files",
+              "Shell completions",
+              "Translations",
+              "It can replace many use cases served by other search tools"
+            ],
+            "sections": [
+              "CHANGELOG",
+              "Documentation quick links",
+              "Screenshot of search results",
+              "Quick examples comparing tools",
+              "Why should I use ripgrep?",
+              "Why shouldn't I use ripgrep?",
+              "Is it really faster than everything else?",
+              "Feature comparison",
+              "Playground",
+              "Installation",
+              "Building",
+              "Running tests",
+              "Related tools",
+              "Vulnerability reporting"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 21599
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "notepad-plus-plus/notepad-plus-plus",
+          "owner": "notepad-plus-plus",
+          "name": "notepad-plus-plus",
+          "url": "https://github.com/notepad-plus-plus/notepad-plus-plus",
+          "homepage": "https://notepad-plus-plus.org/",
+          "description": "Notepad++ official repository",
+          "language": "C++",
+          "topics": [
+            "editor",
+            "notepad",
+            "notepad-official",
+            "windows"
+          ],
+          "stars": 29808,
+          "forks": 5424,
+          "open_issues": 2908,
+          "starGain": 9,
+          "heat": 9,
+          "heatBasis": "trending",
+          "heatPercentile": 34,
+          "ageDays": 4243,
+          "created_at": "2015-03-28T00:05:08Z",
+          "pushed_at": "2026-11-07T16:27:06Z",
+          "license": "NOASSERTION",
+          "rating": 3,
+          "composite": 61.5,
+          "breakdown": {
+            "heat": 34,
+            "community": 86,
+            "activity": 77,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Notepad++ is a free (free as in both \"free speech\" and \"free beer\") source code editor and Notepad replacement that supports several programming languages and natural languages. Running in the MS Windows environment, its use is governed by GPL License.\n\nSee the Notepad++ official site for more information.\n\nNotepad++ GPG Release Key ------------------------- Since the release of version 7.6.5 Notepad++ is signed using GPG with the following key:",
+            "features": [
+              "Signer: Notepad++",
+              "E-mail: don.h@free.fr",
+              "Key ID: 0x8D84F46E",
+              "Key fingerprint: 14BC E436 2749 B2B5 1F8C 7122 6C42 9F1D 8D84 F46E",
+              "Key type: RSA 4096/4096",
+              "Created: 2019-03-11",
+              "Expires: 2027-03-13"
+            ],
+            "sections": [],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2138
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "physicsdolphin/nv-uefi-unlocker",
+          "owner": "physicsdolphin",
+          "name": "nv-uefi-unlocker",
+          "url": "https://github.com/physicsdolphin/nv-uefi-unlocker",
+          "homepage": "",
+          "description": "UEFI pre-driver NVIDIA GPU unlocker for Windows Linux Hackintosh and all EFI-bootable system (Rust): SEC2 scrubber -> FWSEC/WPR2 -> signed Booter -> V67 four-write payload, read-back verified. Verified on most RTX 20 30 40 Series.",
+          "language": "Rust",
+          "topics": [],
+          "stars": 2068,
+          "forks": 189,
+          "open_issues": 29,
+          "starGain": null,
+          "heat": 505.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 13,
+          "created_at": "2026-10-26T06:22:24Z",
+          "pushed_at": "2026-11-08T05:12:52Z",
+          "license": "GPL-2.0",
+          "rating": 4,
+          "composite": 80.8,
+          "breakdown": {
+            "heat": 97,
+            "community": 62,
+            "activity": 77,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "解开 NVIDIA 显卡的 Tensor 计算性能限制。从 U 盘启动，解锁后自动进入 Windows 或 Linux 或任意操作系统，无需刷写 VBIOS；断电后恢复原状。\n\n先看 → 常见问题 （USB 文件放置 / 回锁与睡眠 / 雷电与 eGPU / Secure Boot / 安全约束——绝大多数操作问题已有答案；背景概念见 什么是 UEFI / DXE / 链式引导）\n\n实测 FP16 / BF16 / TF32 张量吞吐最高约 2.6× · FP8 最高约 1.9× · 图像 / 视频生成 +14–75% · DirectML 推理算子最高 +94% · LLM 推理 prefill 最高 +19%（decode +5%）· 无 VBIOS 刷写，断电即复原 （逐卡数据见兼容性矩阵；增益受功耗墙与精度路径制约——LLM 行为双卡 MoE 实测，非微基准外推）",
+            "features": [
+              "魔改 VBIOS 的计算负载 P8 锁（ 90） ：2080 Ti 的 EFI 事务被 booter 明文反汇编证明 源码级成功 ，Windows 里黑屏低频的真凶却是卡上刷过的 kingpin 类极限测试 BIOS（NV 发给 OEM 超频工作室的跑分特供，带 compute ",
+              "X99 + CSM 交棒定律（ 35/ 61） ：\"事务全绿但 Windows 落 Code 12\"历经四轮结论反转，最终定为交棒 console 归属链定律——与解锁/芯片族/拓扑无关，CSM off 即愈；后被 Zagitta 上游用户在 X99 上独立复现引证。→ 定律全文",
+              "雷电解锁 = staging 低位化（ 74） ：TB 平台 ≥4 GiB DMA 全链不可达的三死形定位 + 两机两实现单变量实锤，催生 v2.1.8 默认低位 staging（现零反例）。→ 取证矩阵",
+              "从固件的一次性启动菜单选择 U 盘。",
+              "版本屏按 空格或回车 运行；其他键或 30 秒不操作会中止事务并交回系统引导器。目标 GPU 暂时黑屏或冻结末帧属正常现象。",
+              "等待工具完成并自动链回系统，日志在 U 盘根目录 loader.log 。",
+              "Windows 下用 release 页 单独附带的 ssdiag-x86 64-windows.exe 检查系统内状态（它不再打进 zip——内含内核驱动、宿主未签名，整包会被部分杀软引擎误报，见 杀软误报），并用相同负载比较解锁前后的性能。Linux 可在源码仓库运行 sud",
+              "先完成本工具的解锁，在系统内确认状态并记录基准。"
+            ],
+            "sections": [
+              "nv-uefi-unlocker 之 老黄刀法回退器 · 常见问题 FAQ",
+              "“震惊！老黄刀法还能被回退？？？”",
+              "GTX 16 + RTX 20 + RTX 30 + RTX 40 系列通用的 UEFI 预驱动 NVIDIA GPU ",
+              "兼容性速览",
+              "社区成功反馈与复现",
+              "复现截图示例",
+              "实战案例",
+              "开始使用",
+              "1. 获取工具并检查前置条件",
+              "2. 制作启动 U 盘",
+              "3. 启动并验证",
+              "自行构建（可选）",
+              "与 nvoc 配合",
+              "关于作者与团队"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 36813
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "chadyi/StudyOnTV",
+          "owner": "chadyi",
+          "name": "StudyOnTV",
+          "url": "https://github.com/chadyi/StudyOnTV",
+          "homepage": "",
+          "description": "StudyOnTV (Tiledaoti TV) — open-source Android TV app where kids unlock screen time by answering questions. Runs fully on the TV: no server, no account. Parents scan a QR code and manage questions from the LAN. Learn first. Watch later.",
+          "language": "Kotlin",
+          "topics": [
+            "android",
+            "android-tv",
+            "children",
+            "digital-wellbeing",
+            "edtech",
+            "education",
+            "family",
+            "kids"
+          ],
+          "stars": 887,
+          "forks": 205,
+          "open_issues": 33,
+          "starGain": null,
+          "heat": 304.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 7,
+          "created_at": "2026-11-01T15:31:22Z",
+          "pushed_at": "2026-11-07T13:37:02Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 80.8,
+          "breakdown": {
+            "heat": 96,
+            "community": 57,
+            "activity": 77,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Learn first. Watch later. · 支持Android 平板、手机和电视，不需要自建服务器\n\n手机和平板直接下载安装；电视可通过 U 盘或 ADB 安装。首次打开设置管理密码，权限可以按需开启，也可以稍后再设置。\n\n孩子先完成学习任务，再解锁设备使用时间，到时显示新的学习任务。平板和手机支持触屏、公式、语音输入与手写，电视支持遥控器。题库、规则、使用记录和加练池都保存在被控设备。",
+            "features": [
+              "手机/平板/TV GitHub 下载（首选）",
+              "手机 / 平板版 · 蒲公英备用下载",
+              "TV 版 · 蒲公英备用下载",
+              "开放题型 ：单选、多选、判断、填空、主观题；题干和选项支持 LaTeX 公式，离线显示。",
+              "多种玩法 ：按组闯关、连续答对、自由练习，可设置正确率和任务数量。时段可选「仅时段内可用」或「仅时段内需要答题」；后者在时段外自由使用、不扣余额，适合白天老人看电视、17–21 点再管控。",
+              "星级奖励 ：1–5 星题目分别设置时长奖励，仍受每日上限约束。",
+              "累计加练 ：答错达到阈值就增加加练题，跨天、重启保留，答对加练题逐道扣除。",
+              "主观题批改 ：家长手动批改、WorkBuddy / Codex 等 Agent 批改，或配置 DeepSeek 等兼容 AI API。"
+            ],
+            "sections": [
+              "题了个题 · 平板 / 手机 / TV",
+              "先学再看 · 让每一点进步被看见",
+              "安装",
+              "它能做什么",
+              "截图",
+              "家长能设置什么",
+              "题库",
+              "它是怎么工作的",
+              "FAQ",
+              "技术栈",
+              "社区建议与致谢",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 6073
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "ranxianglei/billion-context",
+          "owner": "ranxianglei",
+          "name": "billion-context",
+          "url": "https://github.com/ranxianglei/billion-context",
+          "homepage": "",
+          "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+          "language": "TypeScript",
+          "topics": [
+            "dsh-plugin"
+          ],
+          "stars": 4693,
+          "forks": 377,
+          "open_issues": 902,
+          "starGain": 191,
+          "heat": 191,
+          "heatBasis": "trending",
+          "heatPercentile": 90,
+          "ageDays": 94,
+          "created_at": "2026-08-06T08:27:34Z",
+          "pushed_at": "2026-11-08T05:17:48Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 79.9,
+          "breakdown": {
+            "heat": 90,
+            "community": 69,
+            "activity": 77,
+            "maturity": 69
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\n\nQQ Group: 1056132097 (full) 1108730198 (full) 1129868472 (open)\n\n- Model-Driven Incremental Hierarchical Compression: Training-Free Multi-Generational Context Management for Long-Lived Coding Agents (English, v0.2)",
+            "features": [
+              "Model-Driven Incremental Hierarchical Compression: Training-Free Multi-Generational Context Management for Long-Lived Coding Agents (English",
+              "1,500-Item Cross-Benchmark Evaluation ( LongMemEval-S · ContextBench · MemoryAgentBench ) (中文版) — head-to-head comparison of billion-context",
+              "compress — fold a message range into a detailed summary.",
+              "decompress — restore a compressed range when exact details are needed again.",
+              "search context — keyword search over compressed summaries and visible messages.",
+              "acp status — context-usage overview plus which ranges are still compressible.",
+              "Native plugin (most native): bili plugin install — bili",
+              "Launcher (config-free): one bili command brings up the proxy and"
+            ],
+            "sections": [
+              "billion-context",
+              "Community",
+              "📄 Paper / Preprint",
+              "📊 Independent Third-Party Benchmarks",
+              "Why",
+              "How it works",
+              "Context-management tools",
+              "Which do I need?",
+              "Install",
+              "Quickstart",
+              "Option 1 — Native plugin ( bili plugin install pi / omp / op",
+              "Option 2 — Launcher ( bili pi / bili codex / bili claude / b",
+              "Option 3 — URL change ( /bili/ prefix)",
+              "Health check (proxy up + where it forwards)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 79333
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "maxrave-dev/SimpMusic",
+          "owner": "maxrave-dev",
+          "name": "SimpMusic",
+          "url": "https://github.com/maxrave-dev/SimpMusic",
+          "homepage": "https://simpmusic.org/",
+          "description": "A cross-platform music app using YouTube Music for backend",
+          "language": "Kotlin",
+          "topics": [
+            "android",
+            "android-16",
+            "android-app",
+            "android-application",
+            "android-auto",
+            "compose-multiplatform",
+            "exoplayer",
+            "kotlin"
+          ],
+          "stars": 12987,
+          "forks": 729,
+          "open_issues": 381,
+          "starGain": 91,
+          "heat": 91,
+          "heatBasis": "trending",
+          "heatPercentile": 84,
+          "ageDays": 1303,
+          "created_at": "2023-04-15T04:53:33Z",
+          "pushed_at": "2026-11-06T18:21:18Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 80.7,
+          "breakdown": {
+            "heat": 84,
+            "community": 77,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "SimpMusic A FOSS YouTube Music client for Android and Desktop with many features from Spotify, SponsorBlock, ReturnYouTubeDislike using Compose Multiplatform to develop. Download On vivo phones, install SimpMusic-full-vivo- .apk from Releases for Origin Island and the music widget. It installs as a separate app and can't sit next to Spotify. Nightly Build\n\n- Play music from YouTube Music or YouTube for free, without ads and in the background - Recognize the song playing near you, then find it in SimpMusic (Android) (NEW) - Add your own synced lyrics, line by line or word by word, to songs that have none (NEW) - Read YouTube comments in Now Playing, and post, reply or like them when signed in (NEW) - Your library sidebar on Desktop with your playlists, albums, artists and podcasts (NEW) - Three Now Playing styles: Classic, Material 3 Expressive and a redesigned Apple Music player with Apple Music-style lyrics (NEW) - Ten-band equalizer with presets and AutoEq headphone profiles, plus Delay and Reverb effects, or your phone's system equalizer on Android (NEW) - Pick the speaker, headphones or Cast device SimpMusic plays on, without moving other apps' audio (NEW) - SimpMusic Wrapped: your year in music, plus monthly recap playlists (NEW) - On-device listening analytics: charts, period history, listening clock and a shareable listening receipt (NEW) - Word-by-word Apple Music-style lyrics, romanization for 12 languages, share lyrics as an image, landscape fullscreen lyrics and a ",
+            "features": [
+              "Play music from YouTube Music or YouTube for free, without ads and in the background",
+              "Recognize the song playing near you, then find it in SimpMusic (Android) (NEW)",
+              "Add your own synced lyrics, line by line or word by word, to songs that have none (NEW)",
+              "Read YouTube comments in Now Playing, and post, reply or like them when signed in (NEW)",
+              "Your library sidebar on Desktop with your playlists, albums, artists and podcasts (NEW)",
+              "Three Now Playing styles: Classic, Material 3 Expressive and a redesigned Apple Music player with Apple Music-style lyrics (NEW)",
+              "Ten-band equalizer with presets and AutoEq headphone profiles, plus Delay and Reverb effects, or your phone's system equalizer on Android (N",
+              "Pick the speaker, headphones or Cast device SimpMusic plays on, without moving other apps' audio (NEW)"
+            ],
+            "sections": [
+              "Features ✨️",
+              "Screenshots",
+              "Full or FOSS version",
+              "Desktop app",
+              "Which file should I download?",
+              "Log in guide: https://www.simpmusic.org/blogs/en/how-to-log-",
+              "Some limitations on Desktop app:",
+              "Translation",
+              "Contributing",
+              "Legal Disclaimer & Terms of Use",
+              "1. 100% Free, Open-Source & Strictly Non-Commercial",
+              "2. A Custom Browser with Content Filtering",
+              "3. Support Content Creators",
+              "4. No Hosting of Copyrighted Material"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 18560
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "gkd-kit/gkd",
+          "owner": "gkd-kit",
+          "name": "gkd",
+          "url": "https://github.com/gkd-kit/gkd",
+          "homepage": "https://gkd.li",
+          "description": "基于无障碍，高级选择器，订阅规则的自定义屏幕点击安卓应用 | An Android APP with custom screen tapping based on Accessibility, Advanced Selectors, and Subscription Rules",
+          "language": "Kotlin",
+          "topics": [
+            "accessibility",
+            "android",
+            "auto",
+            "click",
+            "compose",
+            "compose-multiplatform",
+            "jetpack-compose",
+            "kotlin"
+          ],
+          "stars": 44247,
+          "forks": 2115,
+          "open_issues": 10,
+          "starGain": 81,
+          "heat": 81,
+          "heatBasis": "trending",
+          "heatPercentile": 82,
+          "ageDays": 1223,
+          "created_at": "2023-07-04T03:59:15Z",
+          "pushed_at": "2026-11-07T17:54:09Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 81.2,
+          "breakdown": {
+            "heat": 82,
+            "community": 86,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "通过自定义规则，在指定界面，满足指定条件(如屏幕上存在特定文字)时，点击特定的节点或位置或执行其他操作\n\n要加入此列表, 需点击仓库主页右上角设置图标后在 Topics 中添加 gkd-subscription\n\n[@[vid=\\\"menu\\\"] [text^=\\\"广告\\\"]](https://i.gkd.li/i/14881985?gkd=QFt2aWQ9Im1lbnUiXSA8IFt2aWQ9Im1lbnVfY29udGFpbmVyIl0gLSBbdmlkPSJkb3RfdGV4dF9sYXlvdXQiXSA-IFt0ZXh0Xj0i5bm 5ZGKIl0)",
+            "features": [
+              "应用架构与依赖",
+              "Desktop 启动与调试",
+              "本地数据与产物",
+              "开发约束",
+              "kotlin-json5",
+              "kotlin-codeorigin",
+              "android-api-diff",
+              "remap"
+            ],
+            "sections": [
+              "gkd",
+              "免责声明",
+              "安装",
+              "截图",
+              "订阅",
+              "选择器",
+              "开发",
+              "衍生",
+              "捐赠"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3946
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "cheaper-inference/OmniRoute",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "JuliusBrussee/caveman",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "lobehub/lobehub",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "garrytan/gstack",
+      "category": "ai",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "ggml-org/llama.cpp",
+      "category": "ai",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "google/skills",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "lemomo-ai/lemo-opuscar",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "NVIDIA/auto-ontology",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "Anil-matcha/Open-Generative-AI",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/dsh-superagent-prototype",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "scenario-labs/skills",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

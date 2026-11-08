@@ -1,0 +1,122 @@
+{
+  "google/skills": {
+    "summary_zh": "Google 官方维护的 Agent Skills 仓库，把 Google 产品与 Google Cloud 的领域知识整理成可安装的技能包：涵盖上手引导、IAM 认证授权、Foundation Builder、云上入职、多产品组合方案与 solution-architecture 工作流，以及 Agent Gateway 多代理安全、跨云 agentic analytics 等进阶主题。安装时按需选择具体技能、目标代理与生效范围（项目级或全局），依赖 npx，另有插件、更新与支持章节。Python 实现、Apache-2.0 许可。",
+    "highlight_zh": "把云平台的正确姿势写成代理可加载的技能，而不是每次临时编提示词。"
+  },
+  "lemomo-ai/lemo-opuscar": {
+    "summary_zh": "面向 Claude Code 的影片风格工具箱，提供 66 种现成风格并支持自制，每种风格都由一份风格提示词加一支完全用代码生成的示范短片组成，明确不使用视频模型。画面走 canvas/WebGL 页面逐帧渲染，配乐取自免费采样库的原创编排，旁白用文本转语音；首次使用会把指引、工具与风格提示词下载到 ~/lemo-opuscar 供所有影片共享，每支影片的源码到成片都留在启动目录。可复制技能目录移植给其他代理，支持更新与卸载。JavaScript、MIT 许可。",
+    "highlight_zh": "风格是带示范短片的代码规格，产出可复现、可改稿，不靠模型碰运气。"
+  },
+  "lobehub/lobehub": {
+    "summary_zh": "把 super-agents 加进团队已在使用的聊天里，让它们自行承接工作并每周改进。README 以「新同事入职」的叙事组织产品：Day 1 欢迎、Week 1 首个任务、Month 1–2 融入团队、Month 3 通过考核，另有 Marketplace 扩展、文档站、changelog 与自托管方案（Docker Compose、一键部署）。标签含 agent-harness、loop-engineering、proactive-agent、mcp 与 skills，指向持续运行的代理工作环。TypeScript 实现，许可证标注 NOASSERTION。",
+    "highlight_zh": "重心从「对话界面」转向「代理如何在组织里长期工作」。"
+  },
+  "multica-ai/multica": {
+    "summary_zh": "可自托管的 source-available 工作空间，把工作像派给同事一样派给 AI 编码代理：代理领取 issue、报告进度、提出阻塞并交回复核。它不取代现有代理 CLI，兼容 Claude Code、Codex、Cursor、Copilot、Kimi、OpenCode 等；Agents as teammates 让代理带名字与运行时出现在看板，Squads 由 leader 路由任务，Skills 把解法沉淀成复用手册，Autopilots 按 cron 跑站会与审计。运行时是本机或云主机上的守护进程，代码不离开自己的机器。Go 实现，许可证标注 NOASSERTION。",
+    "highlight_zh": "只做人与一群代理的编排层，执行环境仍握在使用者手里。"
+  },
+  "infiniflow/ragflow": {
+    "summary_zh": "从开源 RAG 引擎演进为 agent 原生的数据库与上下文基础设施，融合 RAG 与 Agent 能力为 LLM 提供上下文层。README 强调 Quality in, quality out，提供模板化分块、Knowledge Compilation、Agentic Retrieval、带出处且降低幻觉的引用、异构数据源兼容与自动化 RAG 工作流，并给出系统架构、本地与 Docker 部署、路线图。Go 实现、Apache-2.0 许可。",
+    "highlight_zh": "把质量控制前置到入库与切分，再一路管到检索与可追溯引用。"
+  },
+  "vitejs/vite": {
+    "summary_zh": "现代前端构建工具，由两部分组成：基于原生 ES 模块、提供即时启动与极快 HMR 的开发服务器，以及预配置输出高度优化静态资源的生产构建命令（现用 Rolldown）。提供通用插件接口、完整类型化 API，仓库以 monorepo 组织多个 Packages。2,391 天、83,844 星，TypeScript 实现、MIT 许可。",
+    "highlight_zh": "开发期不打包、生产期才优化，这个判断重新划了前端工具的速度基线。"
+  },
+  "sveltejs/svelte": {
+    "summary_zh": "把框架职责前移到编译期的 Web 方案：编译器将声明式组件转换成精确定位、直接更新 DOM 的高效 JavaScript，因此浏览器端不需要背通用运行时。项目由志愿者维护、MIT 许可，README 仅含 What is Svelte、Roadmap、Contributing、License 等简洁章节，另提供官网与 Discord 社区。3,638 天、88,658 星，是本期年龄最长的前端项目。",
+    "highlight_zh": "虚拟 DOM 不是必选项：更新决策可以在构建期就算完。"
+  },
+  "tailwindlabs/tailwindcss": {
+    "summary_zh": "utility-first 的 CSS 框架，用组合单一职责的工具类快速搭建自定义界面，把样式决策放回标记里，减少选择器层级叠加与跨文件跳转。标签含 functional-css、postcss、responsive、utility-classes，可与主流构建工具集成。README 极简，只有 Documentation、Community、Contributing 三节。3,319 天、98,169 星，TypeScript 实现、MIT 许可。",
+    "highlight_zh": "它解决的是样式表随项目规模熵增，而不只是让 CSS 写得更短。"
+  },
+  "angular/angular": {
+    "summary_zh": "面向移动端与桌面 Web 应用的完整开发平台，基于 TypeScript/JavaScript，提供架构、组件与模板、表单、API 等成体系文档，以及 SSR、Schematics、懒加载、PWA 等工程化能力。仓库同时交付 Getting Started、Local Development、Upgrading、Changelog 与贡献规范，强调长期可维护的一致约定。4,432 天、101,386 星，MIT 许可。",
+    "highlight_zh": "从目录结构到升级路径都给官方答案，卖的是大型团队的一致性。"
+  },
+  "oven-sh/bun": {
+    "summary_zh": "把 JavaScript/TypeScript 运行时、打包器、测试运行器与包管理器收进单个可执行文件 bun，以 Node.js 的 drop-in 替代为目标，内置 TypeScript、JSX 与 bun init / bun create / bun run 等入口，提供 install script、npm、Homebrew、Docker、Windows 多种安装方式。README 标注由 Rust 编写、底层为 JavaScriptCore，许可证标记 NOASSERTION。2,033 天、96,667 星。",
+    "highlight_zh": "少一层工具间适配，代价是四类能力被绑进同一个二进制。"
+  },
+  "quarkusio/quarkus": {
+    "summary_zh": "面向容器与 Kubernetes 的 Java 框架，核心思路是把大量工作从运行时挪到构建期，换取快速启动与更小的内存占用。README 列出 Container First、Cloud Native（12 factor）、Versatile（从最小微服务到大型单体）、Fast startup、JVM and native 双形态、统一命令式与响应式、基于标准与 Developer Joy 等条目，另提供 Getting Started、迁移指南与 Release Planning。Java 实现、Apache-2.0 许可。",
+    "highlight_zh": "不换语言，只把框架的工作时机从运行时前移到构建期。"
+  },
+  "rust-lang/rust": {
+    "summary_zh": "Rust 语言主源码仓库，包含编译器、标准库与文档。README 以三条概括设计目标：性能（快速、内存高效，适合关键服务与嵌入式设备，易与其他语言集成）、可靠性（丰富类型系统与所有权模型保证内存和线程安全）、生产力（完善文档、优秀的编译器诊断与先进工具链），其余为 Quick Start、源码构建、Getting Help、Contributing 与商标条款。Apache-2.0 许可，5,987 天、121,482 星。",
+    "highlight_zh": "把内存与并发缺陷从运行期前移成编译期错误，代价是更陡的入门曲线。"
+  },
+  "astral-sh/ruff": {
+    "summary_zh": "用 Rust 编写的极快 Python linter 与 formatter，宣称比 Flake8/Black 快 10–100 倍，内置 900 多条规则与缓存机制，支持自动修复、pyproject.toml 配置、Python 3.15，并对齐 Flake8、isort、Black 的既有行为以便无痛替换。可通过 uv、pip、pipx 及多系统包管理器安装，README 含完整安装、用法与配置章节。MIT 许可，1,550 天、50,718 星。",
+    "highlight_zh": "把替换成本压到最低：规则对齐、配置可迁、一个二进制替代一串工具。"
+  },
+  "prometheus/prometheus": {
+    "summary_zh": "CNCF 的系统与服务监控系统：以「指标名 + 一组 key/value 维度」定义时间序列，配 PromQL 做聚合查询；单节点自治、不依赖分布式存储，采用 HTTP pull 采集（批处理任务可经网关推送），通过服务发现或静态配置发现目标，支持分层与水平联邦。提供预编译二进制、Docker 镜像、源码构建、Remote Write 与 React UI 开发说明。Go 实现、Apache-2.0 许可，5,096 天、67,209 星。",
+    "highlight_zh": "多维数据模型加 PromQL 是内核，采集与展示都能替换。"
+  },
+  "moby/moby": {
+    "summary_zh": "Docker 创建的开源上游项目，提供用于组装容器系统的「乐高组件」：构建工具、registry、编排工具与运行时等。README 阐明四条原则（Modular、Batteries included but swappable、Usable security、Developer focused），并说明与 Docker 的关系、Go modules、Release tags，以及从 github.com/docker/docker 到 github.com/moby/moby 的 import 路径迁移。Go 实现、Apache-2.0 许可，5,040 天、72,352 星。",
+    "highlight_zh": "交付的是可单独替换的组件边界，而不是又一个容器发行版。"
+  },
+  "apache/airflow": {
+    "summary_zh": "以编程方式编写、调度与监控工作流的编排平台，把数据任务用 DAG 代码表达，从而可评审、可测试、可回滚。README 重点在治理与兼容：Project Focus、Principles、Requirements、用户界面、语义化版本与版本生命周期，以及 Python / Kubernetes 版本支持矩阵和参考镜像的 OS 支持，另提供 PyPI 安装、便捷包与官方源码获取方式。Apache 基金会项目，Python 实现、Apache-2.0 许可，4,225 天、47,402 星。",
+    "highlight_zh": "把工作流变成可评审的代码，管住依赖、重试与回填这些散落的杂事。"
+  },
+  "kestra-io/kestra": {
+    "summary_zh": "开源的事件驱动编排平台，用声明式、语言无关的 YAML 把数据、AI 与基础设施工作流统一到同一控制平面，任务定义可 Git 版本化，号称可扩展到百万次执行。README 含 2.0 新特性、Quick Start、插件生态与插件开发、关键概念、可视化构建工作流、Infrastructure as Code，以及 AWS CloudFormation 与 Azure/GCP Terraform 部署模板、本地 5 分钟启动。Java 实现、Apache-2.0 许可。",
+    "highlight_zh": "编排不该按负载类型分家：数据、infra、流程与代理任务共用一套声明式定义。"
+  },
+  "airbytehq/airbyte": {
+    "summary_zh": "开源的数据移动（ELT）平台，把数据从 API、数据库与文件搬到数仓、数据湖和 AI 应用，主张只有开源连接器生态才能覆盖长尾数据源并允许自行定制。支持自托管 Airbyte Core 与 Airbyte Cloud；README 新增通过 Airbyte MCP 从 Claude、ChatGPT、Cursor、VS Code 等代理使用数据能力的入口，Cloud 侧另有让代理读实时数据的 context layer。Python 实现，许可证标记 NOASSERTION。",
+    "highlight_zh": "连接器长尾是护城河，MCP 出口把这套能力延伸到代理的上下文供给。"
+  },
+  "meta/rocksdb": {
+    "summary_zh": "可嵌入、持久化的键值存储库，适合作为快速键值服务的核心构件。它基于 Log-Structured-Merge-Database（LSM）设计，尤其适配闪存，并在写放大、空间放大与读放大之间提供灵活取舍；由 Meta（原 Facebook）Database Engineering Team 开发维护，源自 LevelDB 的早期工作。README 仅含标题与 License 两节，C++ 实现、GPL-2.0 许可，5,090 天、32,251 星。",
+    "highlight_zh": "它是被上层数据库嵌进去的那一层，不显眼却被依赖最广。"
+  },
+  "pingcap/tidb": {
+    "summary_zh": "开源、云原生的分布式 SQL 数据库，以两阶段提交支撑 ACID 分布式事务，面向高可用、水平与垂直扩展、强一致与高性能。最新描述强调为不可预测增长的 agentic 负载而建，原生支持事务、分析与向量搜索，标签新增 agent-context、agent-memory、agentic；README 仍以 Key Features、Quick Start、Architecture 等传统能力为主线。Go 实现、Apache-2.0 许可，4,080 天、40,715 星。",
+    "highlight_zh": "老牌分布式库把叙事迁到代理场景：事务、分析、向量检索不再各占一套系统。"
+  },
+  "sherlock-project/sherlock": {
+    "summary_zh": "按用户名在 400 多个社交网络上检索对应账号的命令行工具，面向 CTI、取证、信息收集与 infosec 场景。README 含 Installation、General usage、Credits、Star History、License，并说明 Debian、Ubuntu、Homebrew、Kali、BlackArch 等发行版的社区维护包并非项目官方直接支持。Python 实现、MIT 许可，2,875 天、98,577 星，本期 +1,761 为全榜日增第一。",
+    "highlight_zh": "价值在一份持续维护的站点清单，把重复的手工核查压成一次检索。"
+  },
+  "zed-industries/zed": {
+    "summary_zh": "由 Atom 与 Tree-sitter 原班团队打造的高性能多人协作代码编辑器，用 Rust 与自研 gpui GPU 渲染框架重写底层，不走 Electron/WebView。支持 macOS、Linux、Windows，可直接下载或经包管理器安装，README 分平台给出源码构建说明，并含 Developing Zed、Licensing、Sponsorship 等章节。2,086 天、93,709 星，许可证标记 NOASSERTION。",
+    "highlight_zh": "从渲染层重做，才谈得上把性能与多人协作同时做成一等能力。"
+  },
+  "microsoft/vscode": {
+    "summary_zh": "Code - OSS 源码仓库，即 Visual Studio Code 的开源基础，MIT 许可。README 明确区分本仓库与含厂商定制的官方发行版，说明 roadmap、月度迭代与 endgame 计划都在仓库公开，并提供从源码构建运行、开发工作流、调试测试、编码规范与 PR 流程文档，另有 Bundled Extensions、Development Container 与 Code of Conduct。TypeScript 实现，4,082 天、195,045 星，是本期星标总量最高的项目。",
+    "highlight_zh": "把迭代过程本身公开成可参与的仓库，和编辑器技术同样重要。"
+  },
+  "sharkdp/bat": {
+    "summary_zh": "cat(1) 的增强替代：语法高亮、Git 变更集成、显示不可打印字符、自动分页，并能与 less 等工具组合。主题系统兼顾终端兼容性（ansi 3-bit、base16、base16-256 等），README 用大量篇幅说明集成方式与 Ubuntu、Alpine、Arch、Fedora、Gentoo 等安装路径，另有多语言文档与项目目标说明。Rust 实现、Apache-2.0 许可，3,122 天、61,204 星。",
+    "highlight_zh": "不引入新概念，只把一个每天几十次的高频动作的默认行为补完整。"
+  },
+  "nushell/nushell": {
+    "summary_zh": "让管道传递结构化数据而非文本流的新型 shell，命令返回带类型的表格与记录，筛选、排序、聚合用统一语法表达。README 含 Status、Learning About Nu、Installation、Configuration、Philosophy、Pipelines、Opening files、Plugins、Goals 等章节，并明确说明项目已达最小可用质量、部分命令可能不稳定、设计仍会变化；文档以 Nushell book 为主。Rust 实现、MIT 许可，2,737 天、40,996 星。",
+    "highlight_zh": "放弃与 POSIX 语法兼容，换取跨命令、跨平台一致的数据模型。"
+  },
+  "nodejs/node": {
+    "summary_zh": "开源、跨平台的 JavaScript 运行时。README 用大幅篇幅讲交付与治理：Support、Release types（Current / LTS / Nightly）、Download、Verifying binaries、Building Node.js、Security，以及项目团队成员、TSC、Collaborators、Collaborator emeriti、Triagers 等角色，并说明采用开放治理模型、由 OpenJS Foundation 支持。4,363 天、123,390 星，许可证标记 NOASSERTION，本期 +192 为跨端方向第一。",
+    "highlight_zh": "被长期信任的一半原因是 LTS 通道与开放治理这两套制度设计。"
+  },
+  "InlitX/GymMane": {
+    "summary_zh": "纯本地的 Android 健身记录应用，明确「无账号、无广告、不联网」：在身体部位图点选肌群生成训练，记录组数、重量与休息计时，支持热身/递减/力竭/休息暂停/集群组与 RPE、RIR、超级组、单侧配重、例行计划与轮换；按动作做进阶建议，统计容量、连续天数、周目标、PR 与含估算 1RM 的力量曲线，另有营养模块（beta）。README 含 Your data、Privacy、Download 与真机截图。Dart/Flutter、GPL-3.0 许可，94 天、1,545 星，本期 +153。",
+    "highlight_zh": "本期唯一 ≤100 天的新仓：把账号、广告、联网都拿掉，功能反而更聚焦。"
+  },
+  "GopeedLab/gopeed": {
+    "summary_zh": "用 Go 与 Flutter 构建的跨平台下载管理器，统一支持 HTTP/HTTPS、BitTorrent、magnet 与 ed2k，含 DHT、uTP、Web Seeds、选择性下载、并发与多连接加速；任务可暂停、续传、重试、批量与按状态筛选。主界面由 Flutter 原生渲染，不用 Electron 或 WebView，支持主题与八种强调色、响应式布局；另提供浏览器集成、JavaScript 扩展、REST API、CLI 与自托管 Web UI，覆盖 Windows/macOS/Linux/Android/iOS/Web 及 Docker、QNAP。Dart、GPL-3.0 许可，2,757 天、27,470 星。",
+    "highlight_zh": "Go 下载核心 + Flutter 多端界面 + 可插拔扩展层，一套代码覆盖六端。"
+  },
+  "tiann/KernelSU": {
+    "summary_zh": "基于内核的 Android root 方案：内核态 su 与 root 权限管理、基于 metamodules 的模块系统（为 systemless 修改提供可插拔基础设施），以及 App Profile 按应用把 root 权限收进笼子。官方支持 Android GKI 2.0 设备（kernel 5.10+），旧内核 4.14+ 另有支持路径；README 含兼容性状态、安装、构建、多语言文档、讨论与安全章节，并注明 kernel 目录文件为 GPL-2.0-only。Kotlin、GPL-3.0 许可，1,429 天、20,203 星。",
+    "highlight_zh": "把「能不能 root」和「给谁 root」拆成两层处理。"
+  },
+  "TeamNewPipe/NewPipe": {
+    "summary_zh": "Android 上的轻量自由软件流媒体前端，支持 YouTube / YouTube Music、PeerTube 及其全部实例、Bandcamp、SoundCloud、media.ccc.de 等服务，不依赖官方客户端与账号。提供最高 4K 播放、后台仅加载音频流以省流量、悬浮画中画模式；README 含 Supported Services、Features、Installation and updates、APK Info、Privacy Policy、Contribution 与多语言文档。Java 实现、GPL-3.0 许可，4,082 天、40,481 星。",
+    "highlight_zh": "把「取流与播放」从官方客户端里剥出来，代价是对上游改动的脆弱性。"
+  }
+}

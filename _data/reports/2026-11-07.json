@@ -1,0 +1,2505 @@
+{
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T11:10:12.232+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-06",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 858,
+    "unclassified": 90,
+    "selected": 30,
+    "suppressedByHistory": 171,
+    "sameDateExempt": 0,
+    "removed": 0,
+    "removedTotal": 0,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "google/skills",
+          "owner": "google",
+          "name": "skills",
+          "url": "https://github.com/google/skills",
+          "homepage": "",
+          "description": "Agent Skills for Google products and technologies",
+          "language": "Python",
+          "topics": [
+            "google",
+            "googlecloud",
+            "skills"
+          ],
+          "stars": 22875,
+          "forks": 1925,
+          "open_issues": 26,
+          "starGain": 534,
+          "heat": 534,
+          "heatBasis": "trending",
+          "heatPercentile": 97,
+          "ageDays": 220,
+          "created_at": "2026-03-31T19:02:20Z",
+          "pushed_at": "2026-11-06T22:01:22Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 85.5,
+          "breakdown": {
+            "heat": 97,
+            "community": 83,
+            "activity": 65,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "This repository contains Agent Skills for Google products and technologies, including Google Cloud.\n\nWhen prompted, select specific skills or all skills, the target agents to configure, and the installation scope (project or global).\n\nIf npx is not available in your environment, install Node.js, which includes npm and npx .",
+            "features": [
+              "Getting started with Google Cloud",
+              "Authenticating and Authorizing to Google Cloud (IAM)",
+              "Google Cloud Recipe: Foundation Builder",
+              "Onboarding to Google Cloud",
+              "Multi-product solution skills",
+              "Google Cloud solution-architecture workflow",
+              "Agent Gateway multi-agent security",
+              "Agentic analytics across cloud providers and data types"
+            ],
+            "sections": [
+              "Agent Skills",
+              "Installation",
+              "Updating Skills",
+              "Available Skills",
+              "Additional Google skills",
+              "Plugins",
+              "Support",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 20565
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "lemomo-ai/lemo-opuscar",
+          "owner": "lemomo-ai",
+          "name": "lemo-opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar",
+          "homepage": "https://lemomo-ai.github.io/lemo-opuscar/",
+          "description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "ai-short-film",
+            "ai-video",
+            "animation",
+            "canvas",
+            "claude",
+            "claude-code"
+          ],
+          "stars": 13078,
+          "forks": 1513,
+          "open_issues": 19,
+          "starGain": 399,
+          "heat": 399,
+          "heatBasis": "snapshot",
+          "heatPercentile": 95,
+          "ageDays": 42,
+          "created_at": "2026-09-26T10:10:41Z",
+          "pushed_at": "2026-11-07T03:08:55Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86.1,
+          "breakdown": {
+            "heat": 95,
+            "community": 79,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A toolbox of film styles made in code: 66 ready to use, and your own. Pick a style or make one from scratch, bring your story, and let your coding agent direct. 66 种影片风格，每种都配一支完全用代码做出来的短片 · 🇨🇳 中文用户请看 简体中文说明\n\n⚠️ Built for Claude. The styles are tuned for Claude Opus 5.5; other models may not reproduce them well, so use them with care.\n\n🆕 2026-10-29 · 7 new styles : a Memphis diorama by @EianLu, a metro map, a chalkboard and more. See them ↓ 🆕 2026-10-22 · Edit & Documentary : 8 styles cut from real footage, documents and data. See them ↓ 🆕 2026-10-22 · Make a style your own : change a style or start blank, and keep it. See how ↓ 🆕 2026-10-16 · Evidence Films : 8 styles that film real material, every number sourced. See them ↓",
+            "features": [
+              "🎨 Picture : canvas and WebGL pages, rendered frame by frame",
+              "🎵 Music : original scores from free sample libraries",
+              "🎙️ Voice : text-to-speech narration",
+              "On first use it downloads the guides, tools and style prompts to ~/lemo-opuscar , shared by all your films.",
+              "Each film's project, from source to finished video, goes in the folder you started from.",
+              "For other agents, copy plugin/skills/lemo-opuscar/ into their skills folder.",
+              "anything it can't decide about your topic;",
+              "whether you have your own voice, music or other material ;"
+            ],
+            "sections": [
+              "Lemo-Opuscar",
+              "🎬 Feature presentation: OPUSCAR 98",
+              "👋 About me",
+              "How to use",
+              "Option 1: install the skill (recommended)",
+              "Option 2: clone the repo",
+              "Then just say what you want",
+              "Make a style your own",
+              "Before you start",
+              "Update or uninstall",
+              "The styles",
+              "🆕 New · 2026-10-29",
+              "Edit & Documentary",
+              "Evidence Films"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 36659
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "lobehub/lobehub",
+          "owner": "lobehub",
+          "name": "lobehub",
+          "url": "https://github.com/lobehub/lobehub",
+          "homepage": "https://lobehub.com",
+          "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
+          "language": "TypeScript",
+          "topics": [
+            "agent",
+            "agent-collaboration",
+            "agent-harness",
+            "loop-engineering",
+            "mcp",
+            "personal-assistant",
+            "proactive-agent",
+            "skills"
+          ],
+          "stars": 84252,
+          "forks": 16105,
+          "open_issues": 1364,
+          "starGain": 209,
+          "heat": 209,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 1266,
+          "created_at": "2023-05-21T07:19:12Z",
+          "pushed_at": "2026-11-07T03:09:22Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 89.3,
+          "breakdown": {
+            "heat": 88,
+            "community": 94,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Add super-agents to the chats your team already uses. They take on work by themselves and get better every week.\n\nEnglish · 简体中文 · [Official Site][official-site] · [Changelog][changelog] · [Documents][docs] · [Blog][blog] · [Feedback][github-issues-link]\n\n- 👋🏻 Getting Started & Join Our Community - ✨ Features - From new hire to one of the team - Day 1 Welcome to the team - Week 1 Its first task - Month 1–2 Settling in as the team grows - Month 3 It passes its review - Bring them onto your team - 🧩 Marketplace - 📖 Documentation - 🛳 Self Hosting - A Docker Compose (recommended) - B One-click deploy - ⌨️ Local Development - 🤝 Contributing - ❤️ Sponsor - 🔬 Research",
+            "features": [
+              "👋🏻 Getting Started & Join Our Community",
+              "✨ Features",
+              "From new hire to one of the team",
+              "Day 1 Welcome to the team",
+              "Week 1 Its first task",
+              "Month 1–2 Settling in as the team grows",
+              "Month 3 It passes its review",
+              "Bring them onto your team"
+            ],
+            "sections": [
+              "LobeHub",
+              "👋🏻 Getting Started & Join Our Community",
+              "✨ Features",
+              "From new hire to one of the team",
+              "Day 1 Welcome to the team",
+              "Week 1 Its first task",
+              "Month 1–2 Settling in as the team grows",
+              "Month 3 It passes its review",
+              "Bring them onto your team",
+              "🧩 Marketplace",
+              "📖 Documentation",
+              "🛳 Self Hosting",
+              "A Docker Compose (recommended)",
+              "B One-click deploy"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 31581
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "multica-ai/multica",
+          "owner": "multica-ai",
+          "name": "multica",
+          "url": "https://github.com/multica-ai/multica",
+          "homepage": "https://multica.ai",
+          "description": "Make humans and AI agents work as one team — open-source and self-hostable.",
+          "language": "Go",
+          "topics": [],
+          "stars": 55175,
+          "forks": 7272,
+          "open_issues": 1907,
+          "starGain": 130,
+          "heat": 130,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 297,
+          "created_at": "2026-01-13T17:59:46Z",
+          "pushed_at": "2026-11-06T18:17:49Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 83.1,
+          "breakdown": {
+            "heat": 81,
+            "community": 90,
+            "activity": 77,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Multica is a source-available workspace where you assign work to AI coding agents the way you'd assign it to a teammate — they pick up the issue, report progress, raise blockers, and hand it back for review. Self-hostable, works with the agent CLIs you already use, no lock-in.\n\nWebsite · Docs · Quickstart · Download · Vision · Self-Hosting · Discord · X\n\nYou already run Claude Code, Codex, and three other agents. Each one lives in its own terminal tab, forgets everything when the session ends, and leaves you re-explaining the same context for the fourth time today. The more agents you add, the more of your day goes to babysitting them.",
+            "features": [
+              "The agent CLIs you already use → Claude Code, Codex, Cursor, Copilot, Kimi, OpenCode, and more.",
+              "Agents as teammates → Give each one a name, a provider, and a runtime — they show up on the board like anyone else.",
+              "Squads → Put agents and people on one team; the leader routes the work.",
+              "Skills → Turn a solved problem into a playbook every agent reuses.",
+              "Your own runtime → Their desk is your machine — a daemon on your laptop or cloud box. Code never leaves it.",
+              "Assign an issue → Pick an agent as assignee the way you'd pick a colleague — it takes the work from there.",
+              "Autopilots → Run standups, audits, and reports on a cron — nobody to remind.",
+              "Chat → Ask your workspace a question, or start work without filing anything."
+            ],
+            "sections": [
+              "What is Multica?",
+              "Build the team.",
+              "Hand off the work.",
+              "Stay in the loop.",
+              "Make it yours.",
+              "Get started",
+              "Your first agent in five minutes",
+              "Runtimes",
+              "Documentation",
+              "Architecture",
+              "Development",
+              "Why \"Multica\"?",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16597
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "infiniflow/ragflow",
+          "owner": "infiniflow",
+          "name": "ragflow",
+          "url": "https://github.com/infiniflow/ragflow",
+          "homepage": "https://ragflow.io",
+          "description": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.",
+          "language": "Go",
+          "topics": [
+            "agent-harness",
+            "agent-native-database",
+            "agentic-ai",
+            "agentic-retrieval",
+            "agentic-search",
+            "ai",
+            "ai-agents",
+            "context-engine"
+          ],
+          "stars": 93701,
+          "forks": 11251,
+          "open_issues": 1333,
+          "starGain": 86,
+          "heat": 86,
+          "heatBasis": "trending",
+          "heatPercentile": 77,
+          "ageDays": 1061,
+          "created_at": "2023-12-12T06:13:13Z",
+          "pushed_at": "2026-11-06T13:09:08Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 83.6,
+          "breakdown": {
+            "heat": 77,
+            "community": 94,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 49,
+            "devops": 35,
+            "ai": 100,
+            "data": 56
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- 💡 What is RAGFlow? - 🎮 Get Started - 🔥 Latest Updates - 🌟 Key Features - 🔎 System Architecture - 🏠 Local Deployment - 📚 Documentation - 📜 Roadmap - 🏄 Community - 🙌 Contributing\n\nRAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs. It offers a streamlined RAG workflow adaptable to enterprises of any scale. Powered by a converged context engine and pre-built agent templates, RAGFlow enables developers to transform complex data into high-fidelity, production-ready AI systems with exceptional efficiency and precision.\n\n- 2026-09-29 RAGFlow 1.0.0-rc1 released. - 2026-09-10 Added website content ingestion through sitemaps. - 2026-08-19 Introduced Knowledge Compilation to generate Wikis, Graphs, Trees, PageIndex, Mind Maps, Timelines, and Skills at the document and dataset levels. - 2026-08-19 Introduced Agentic RAG with Low, Medium, High, and Ultra thinking modes. - 2026-07-02 Added Google BigQuery data source ingestion and incremental synchronization.",
+            "features": [
+              "💡 What is RAGFlow?",
+              "🎮 Get Started",
+              "🔥 Latest Updates",
+              "🌟 Key Features",
+              "🔎 System Architecture",
+              "🏠 Local Deployment",
+              "📚 Documentation",
+              "📜 Roadmap"
+            ],
+            "sections": [
+              "💡 What is RAGFlow?",
+              "🎮 Get Started",
+              "🔥 Latest Updates",
+              "🌟 Key Features",
+              "🍭 \"Quality in, quality out\"",
+              "🍱 Template-based chunking",
+              "🧩 Knowledge Compilation",
+              "🧠 Agentic Retrieval",
+              "🌱 Grounded citations with reduced hallucinations",
+              "🍔 Compatibility with heterogeneous data sources",
+              "🛀 Automated and effortless RAG workflow",
+              "🔎 System Architecture",
+              "🏠 Local Deployment",
+              "🐳 Docker Deployment"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16639
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "vitejs/vite",
+          "owner": "vitejs",
+          "name": "vite",
+          "url": "https://github.com/vitejs/vite",
+          "homepage": "http://vite.dev",
+          "description": "Next generation frontend tooling. It's fast!",
+          "language": "TypeScript",
+          "topics": [
+            "build-tool",
+            "dev-server",
+            "frontend",
+            "hmr",
+            "vite"
+          ],
+          "stars": 83844,
+          "forks": 9235,
+          "open_issues": 838,
+          "starGain": 160,
+          "heat": 160,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 2391,
+          "created_at": "2020-04-21T05:03:57Z",
+          "pushed_at": "2026-11-06T11:40:02Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 90.2,
+          "breakdown": {
+            "heat": 93,
+            "community": 93,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- 💡 Instant Server Start - ⚡️ Lightning Fast HMR - 🛠️ Rich Features - 📦 Optimized Build - 🔩 Universal Plugin Interface - 🔑 Fully Typed APIs\n\nVite (French word for \"quick\", pronounced /viːt/ , like \"veet\") is a build tool that aims to provide a faster and leaner development experience for modern web projects. It consists of two major parts:\n\n- A dev server that provides rich feature enhancements over native ES modules, for example extremely fast Hot Module Replacement (HMR).",
+            "features": [
+              "💡 Instant Server Start",
+              "⚡️ Lightning Fast HMR",
+              "🛠️ Rich Features",
+              "📦 Optimized Build",
+              "🔩 Universal Plugin Interface",
+              "🔑 Fully Typed APIs",
+              "A dev server that provides rich feature enhancements over native ES modules, for example extremely fast Hot Module Replacement (HMR).",
+              "A build command that bundles your code with Rolldown, pre-configured to output highly optimized static assets for production."
+            ],
+            "sections": [
+              "Vite ⚡",
+              "Packages",
+              "Contribution",
+              "License",
+              "Sponsors"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3397
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "sveltejs/svelte",
+          "owner": "sveltejs",
+          "name": "svelte",
+          "url": "https://github.com/sveltejs/svelte",
+          "homepage": "https://svelte.dev",
+          "description": "web development for the rest of us",
+          "language": "JavaScript",
+          "topics": [
+            "compiler",
+            "template",
+            "ui"
+          ],
+          "stars": 88658,
+          "forks": 6795,
+          "open_issues": 1277,
+          "starGain": 152,
+          "heat": 152,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 3638,
+          "created_at": "2016-11-20T18:13:05Z",
+          "pushed_at": "2026-11-07T02:50:56Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 88.1,
+          "breakdown": {
+            "heat": 89,
+            "community": 92,
+            "activity": 79,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Svelte is a new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.\n\nLearn more at the Svelte website, or stop by the Discord chatroom.\n\nSvelte is an MIT-licensed open source project with its ongoing development made possible entirely by fantastic volunteers. If you'd like to support their efforts, please consider:",
+            "features": [
+              "Becoming a backer on Open Collective."
+            ],
+            "sections": [
+              "What is Svelte?",
+              "Supporting Svelte",
+              "Roadmap",
+              "Contributing",
+              "Is svelte.dev down?",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1730
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "tailwindlabs/tailwindcss",
+          "owner": "tailwindlabs",
+          "name": "tailwindcss",
+          "url": "https://github.com/tailwindlabs/tailwindcss",
+          "homepage": "https://tailwindcss.com/",
+          "description": "A utility-first CSS framework for rapid UI development.",
+          "language": "TypeScript",
+          "topics": [
+            "css",
+            "css-framework",
+            "functional-css",
+            "postcss",
+            "responsive",
+            "tailwindcss",
+            "utility-classes"
+          ],
+          "stars": 98169,
+          "forks": 7088,
+          "open_issues": 115,
+          "starGain": 152,
+          "heat": 152,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 3319,
+          "created_at": "2017-10-06T14:59:14Z",
+          "pushed_at": "2026-11-06T14:50:08Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87.4,
+          "breakdown": {
+            "heat": 89,
+            "community": 93,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A utility-first CSS framework for rapidly building custom user interfaces.\n\nFor help, discussion about best practices, or feature ideas:\n\nIf you're interested in contributing to Tailwind CSS, please read our contributing docs before submitting a pull request .",
+            "features": [],
+            "sections": [
+              "Documentation",
+              "Community",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1838
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "angular/angular",
+          "owner": "angular",
+          "name": "angular",
+          "url": "https://github.com/angular/angular",
+          "homepage": "https://angular.dev",
+          "description": "Deliver web apps with confidence 🚀",
+          "language": "TypeScript",
+          "topics": [
+            "angular",
+            "javascript",
+            "pwa",
+            "typescript",
+            "web",
+            "web-framework",
+            "web-performance"
+          ],
+          "stars": 101386,
+          "forks": 28912,
+          "open_issues": 1034,
+          "starGain": 135,
+          "heat": 135,
+          "heatBasis": "trending",
+          "heatPercentile": 85,
+          "ageDays": 4432,
+          "created_at": "2014-09-18T16:12:01Z",
+          "pushed_at": "2026-11-06T19:39:34Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86.8,
+          "breakdown": {
+            "heat": 85,
+            "community": 97,
+            "activity": 76,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages.\n\nGet started with Angular, learn the fundamentals and explore advanced topics on our documentation website.\n\n- [Getting Started][quickstart] - [Architecture][architecture] - [Components and Templates][componentstemplates] - [Forms][forms] - [API][api]",
+            "features": [
+              "[Getting Started][quickstart]",
+              "[Architecture][architecture]",
+              "[Components and Templates][componentstemplates]",
+              "[Forms][forms]",
+              "[Angular Elements][angularelements]",
+              "[Server Side Rendering][ssr]",
+              "[Schematics][schematics]",
+              "[Lazy Loading][lazyloading]"
+            ],
+            "sections": [
+              "Documentation",
+              "Advanced",
+              "Local Development",
+              "Development Setup",
+              "Prerequisites",
+              "Setting Up a Project",
+              "Quickstart",
+              "Ecosystem",
+              "Changelog",
+              "Upgrading",
+              "Contributing",
+              "Contributing Guidelines",
+              "Want to Help?",
+              "Code of Conduct"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4678
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "oven-sh/bun",
+          "owner": "oven-sh",
+          "name": "bun",
+          "url": "https://github.com/oven-sh/bun",
+          "homepage": "https://bun.com",
+          "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+          "language": "Rust",
+          "topics": [
+            "bun",
+            "bundler",
+            "javascript",
+            "javascriptcore",
+            "jsx",
+            "nodejs",
+            "npm",
+            "react"
+          ],
+          "stars": 96667,
+          "forks": 5272,
+          "open_issues": 9814,
+          "starGain": 119,
+          "heat": 119,
+          "heatBasis": "trending",
+          "heatPercentile": 83,
+          "ageDays": 2033,
+          "created_at": "2021-04-14T00:48:17Z",
+          "pushed_at": "2026-11-07T03:09:46Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 86.8,
+          "breakdown": {
+            "heat": 83,
+            "community": 92,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 21,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Documentation &nbsp;&nbsp;•&nbsp;&nbsp; Discord &nbsp;&nbsp;•&nbsp;&nbsp; Issues &nbsp;&nbsp;•&nbsp;&nbsp; Roadmap\n\nBun is an all-in-one toolkit for JavaScript and TypeScript apps. It ships as a single executable called bun .\n\nAt its core is the Bun runtime , a fast JavaScript runtime designed as a drop-in replacement for Node.js . It's written in Rust and powered by JavaScriptCore under the hood, dramatically reducing startup times and memory usage.",
+            "features": [
+              "What is Bun?",
+              "Installation",
+              "Quickstart",
+              "TypeScript",
+              "TypeScript 6",
+              "bun init",
+              "bun create",
+              "bun run"
+            ],
+            "sections": [
+              "Read the docs →",
+              "What is Bun?",
+              "Install",
+              "with install script (recommended)",
+              "on windows",
+              "with npm",
+              "with Homebrew",
+              "with Docker",
+              "Upgrade",
+              "Quick links",
+              "Guides",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 26197
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "quarkusio/quarkus",
+          "owner": "quarkusio",
+          "name": "quarkus",
+          "url": "https://github.com/quarkusio/quarkus",
+          "homepage": "https://quarkus.io",
+          "description": "Quarkus: Supersonic Subatomic Java. ",
+          "language": "Java",
+          "topics": [
+            "cloud-native",
+            "hacktoberfest",
+            "java",
+            "kubernetes",
+            "reactive"
+          ],
+          "stars": 15974,
+          "forks": 3358,
+          "open_issues": 2931,
+          "starGain": null,
+          "heat": 193.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 3046,
+          "created_at": "2018-07-06T00:44:20Z",
+          "pushed_at": "2026-11-06T22:10:36Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 87.7,
+          "breakdown": {
+            "heat": 94,
+            "community": 82,
+            "activity": 79,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Quarkus is a Cloud Native, (Linux) Container First framework for writing Java applications.\n\nContainer First : Minimal footprint Java applications optimal for running in containers. Cloud Native : Embraces 12 factor architecture in environments like Kubernetes. Versatile : From the smallest microservice to the largest monolith. Fast startup : We do more at build time, we start fast. JVM and native JVM for high throughput, native for constrained environments. Unify imperative and reactive : Brings under one programming model non-blocking and imperative styles of development. Standards-based : Based on the standards and frameworks you love and use (RESTEasy and JAX-RS, Hibernate ORM and JPA, Netty, Eclipse Vert.x, Eclipse MicroProfile, Apache Camel...). Developer Joy : Development centric experience without compromise to bring your amazing apps to life in no time.\n\nWe collect all the migration notes in our migration guides.",
+            "features": [
+              "Container First :",
+              "Cloud Native :",
+              "Versatile :",
+              "Fast startup :",
+              "JVM and native",
+              "Unify imperative and reactive :",
+              "Standards-based :",
+              "Developer Joy :"
+            ],
+            "sections": [
+              "Quarkus - Supersonic Subatomic Java",
+              "Getting Started",
+              "Migration Guides",
+              "Release Planning",
+              "How to build Quarkus"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3751
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "rust-lang/rust",
+          "owner": "rust-lang",
+          "name": "rust",
+          "url": "https://github.com/rust-lang/rust",
+          "homepage": "https://www.rust-lang.org",
+          "description": "Empowering everyone to build reliable and efficient software.",
+          "language": "Rust",
+          "topics": [
+            "compiler",
+            "language",
+            "rust"
+          ],
+          "stars": 121482,
+          "forks": 17368,
+          "open_issues": 12617,
+          "starGain": 192,
+          "heat": 192,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 5987,
+          "created_at": "2010-06-16T20:39:03Z",
+          "pushed_at": "2026-11-07T00:47:39Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 92.2,
+          "breakdown": {
+            "heat": 93,
+            "community": 96,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "src=\"https://raw.githubusercontent.com/rust-lang/www.rust-lang.org/master/static/images/rust-social-wide-light.svg\" width=\"50%\"\n\n[Website][Rust] [Getting started] [Learn] [Documentation] [Contributing]\n\nThis is the main source code repository for [Rust]. It contains the compiler, standard library, and documentation.",
+            "features": [
+              "Performance: Fast and memory-efficient, suitable for critical services, embedded devices, and easily integrated with other languages.",
+              "Reliability: Our rich type system and ownership model ensure memory and thread safety, reducing bugs at compile-time.",
+              "Productivity: Comprehensive documentation, a compiler committed to providing great diagnostics, and advanced tooling including package manag"
+            ],
+            "sections": [
+              "Why Rust?",
+              "Quick Start",
+              "Installing from Source",
+              "Getting Help",
+              "Contributing",
+              "License",
+              "Trademark"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3304
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "astral-sh/ruff",
+          "owner": "astral-sh",
+          "name": "ruff",
+          "url": "https://github.com/astral-sh/ruff",
+          "homepage": "https://docs.astral.sh/ruff",
+          "description": "An extremely fast Python linter and code formatter, written in Rust.",
+          "language": "Rust",
+          "topics": [
+            "linter",
+            "pep8",
+            "python",
+            "python3",
+            "ruff",
+            "rust",
+            "rustpython",
+            "static-analysis"
+          ],
+          "stars": 50718,
+          "forks": 2613,
+          "open_issues": 2259,
+          "starGain": 169,
+          "heat": 169,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 1550,
+          "created_at": "2022-08-09T17:17:44Z",
+          "pushed_at": "2026-11-07T02:56:15Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 89.2,
+          "breakdown": {
+            "heat": 91,
+            "community": 87,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An extremely fast Python linter and code formatter, written in Rust.\n\n- ⚡️ 10-100x faster than existing linters (like Flake8) and formatters (like Black) - 🐍 Installable via pip - 🛠️ pyproject.toml support - 🤝 Python 3.15 compatibility - ⚖️ Drop-in parity with Flake8, isort, and Black - 📦 Built-in caching, to avoid re-analyzing unchanged files - 🔧 Fix support, for automatic error correction (e.g., automatically remove unused imports) - 📏 Over 900 built-in rules, with native re-implementations of popular Flake8 plugins, like flake8-bugbear - ⌨️ First-party editor integrations for VS Code and more - 🌎 Monorepo-friendly, with hierarchical and cascading configuration\n\nRuff aims to be orders of magnitude faster than alternative tools while integrating more functionality behind a single, common interface.",
+            "features": [
+              "⚡️ 10-100x faster than existing linters (like Flake8) and formatters (like Black)",
+              "🐍 Installable via pip",
+              "🛠️ pyproject.toml support",
+              "🤝 Python 3.15 compatibility",
+              "⚖️ Drop-in parity with Flake8, isort, and Black",
+              "📦 Built-in caching, to avoid re-analyzing unchanged files",
+              "🔧 Fix support, for automatic error correction (e.g., automatically remove unused imports)",
+              "📏 Over 900 built-in rules, with native re-implementations"
+            ],
+            "sections": [
+              "Ruff",
+              "Testimonials",
+              "Table of Contents",
+              "Getting Started",
+              "Installation",
+              "With uv.",
+              "With pip.",
+              "With pipx.",
+              "On macOS and Linux.",
+              "On Windows.",
+              "For a specific version.",
+              "Usage",
+              "Configuration",
+              "Exclude a variety of commonly ignored directories."
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 19606
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "prometheus/prometheus",
+          "owner": "prometheus",
+          "name": "prometheus",
+          "url": "https://github.com/prometheus/prometheus",
+          "homepage": "https://prometheus.io/",
+          "description": "The Prometheus monitoring system and time series database.",
+          "language": "Go",
+          "topics": [
+            "alerting",
+            "graphing",
+            "hacktoberfest",
+            "metrics",
+            "monitoring",
+            "prometheus",
+            "time-series"
+          ],
+          "stars": 67209,
+          "forks": 10989,
+          "open_issues": 1075,
+          "starGain": 148,
+          "heat": 148,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 5096,
+          "created_at": "2012-11-24T11:14:12Z",
+          "pushed_at": "2026-11-06T17:19:24Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 88.2,
+          "breakdown": {
+            "heat": 88,
+            "community": 92,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.\n\nThe features that distinguish Prometheus from other metrics and monitoring systems are:\n\nA multi-dimensional data model (time series defined by metric name and set of key/value dimensions) PromQL, a powerful and flexible query language to leverage this dimensionality No dependency on distributed storage; single server nodes are autonomous An HTTP pull model for time series collection Pushing time series is supported via an intermediary gateway for batch jobs Targets are discovered via service discovery or static configuration Multiple modes of graphing and dashboarding support Support for hierarchical and horizontal federation",
+            "features": [
+              "A multi-dimensional data model (time series defined by metric name and set of key/value dimensions)",
+              "PromQL, a powerful and flexible query language to leverage this dimensionality",
+              "No dependency on distributed storage; single server nodes are autonomous",
+              "An HTTP pull model for time series collection",
+              "Pushing time series is supported via an intermediary gateway for batch jobs",
+              "Targets are discovered via service discovery or static configuration",
+              "Multiple modes of graphing and dashboarding support",
+              "Support for hierarchical and horizontal federation"
+            ],
+            "sections": [
+              "Architecture overview",
+              "Install",
+              "Precompiled binaries",
+              "Docker images",
+              "Building from source",
+              "Service discovery plugins",
+              "Building the Docker image",
+              "Using Prometheus as a Go Library",
+              "Remote Write",
+              "Prometheus code base",
+              "React UI Development",
+              "More information",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9689
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "moby/moby",
+          "owner": "moby",
+          "name": "moby",
+          "url": "https://github.com/moby/moby",
+          "homepage": "https://mobyproject.org/",
+          "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
+          "language": "Go",
+          "topics": [
+            "containers",
+            "docker",
+            "go",
+            "golang"
+          ],
+          "stars": 72352,
+          "forks": 19318,
+          "open_issues": 3944,
+          "starGain": 123,
+          "heat": 123,
+          "heatBasis": "trending",
+          "heatPercentile": 86,
+          "ageDays": 5040,
+          "created_at": "2013-01-18T18:10:57Z",
+          "pushed_at": "2026-11-06T02:17:38Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 87.4,
+          "breakdown": {
+            "heat": 86,
+            "community": 94,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Moby is an open-source project created by Docker to enable and accelerate software containerization.\n\nIt provides a \"Lego set\" of toolkit components, the framework for assembling them into custom container-based systems, and a place for all container enthusiasts and professionals to experiment and exchange ideas. Components include container build tools, a container registry, orchestration tools, a runtime and more, and these can be used as building blocks in conjunction with other tools and projects.\n\nMoby is an open project guided by strong principles, aiming to be modular, flexible and without too strong an opinion on user experience. It is open to the community to help set its direction.",
+            "features": [
+              "Modular: the project includes lots of components that have well-defined functions and APIs that work together.",
+              "Batteries included but swappable: Moby includes enough components to build fully featured container systems, but its modular architecture en",
+              "Usable security: Moby provides secure defaults without compromising usability.",
+              "Developer focused: The APIs are intended to be functional and useful to build powerful tools.",
+              "import \"github.com/docker/docker/client\"",
+              "import \"github.com/moby/moby/client\"",
+              "import \"github.com/docker/docker/api/types\"",
+              "import \"github.com/moby/moby/api/types\""
+            ],
+            "sections": [
+              "Principles",
+              "Audience",
+              "Relationship with Docker",
+              "Go modules",
+              "Release tags",
+              "Migrating from github.com/docker/docker"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5487
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "apache/airflow",
+          "owner": "apache",
+          "name": "airflow",
+          "url": "https://github.com/apache/airflow",
+          "homepage": "https://airflow.apache.org/",
+          "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+          "language": "Python",
+          "topics": [
+            "airflow",
+            "apache",
+            "apache-airflow",
+            "automation",
+            "dag",
+            "data-engineering",
+            "data-integration",
+            "data-orchestrator"
+          ],
+          "stars": 47402,
+          "forks": 18319,
+          "open_issues": 1855,
+          "starGain": 21,
+          "heat": 21,
+          "heatBasis": "trending",
+          "heatPercentile": 90,
+          "ageDays": 4225,
+          "created_at": "2015-04-13T18:04:58Z",
+          "pushed_at": "2026-11-07T03:10:15Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 89.8,
+          "breakdown": {
+            "heat": 90,
+            "community": 92,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to you under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. --\n\nsrc=\"https://github.com/apache/airflow/blob/19ebcac2395ef9a6b6ded3a2faa29dc960c1e635/docs/apache-airflow/img/logos/wordmark 1.png?raw=true\" alt=\"Apache Airflow logo\" /",
+            "features": [
+              "Project Focus",
+              "Principles",
+              "Requirements",
+              "Getting started",
+              "Installing from PyPI",
+              "Installation",
+              "Official source code",
+              "Convenience packages"
+            ],
+            "sections": [
+              "Apache Airflow",
+              "Project Focus",
+              "Principles",
+              "Requirements",
+              "Getting started",
+              "Installing from PyPI",
+              "Installation",
+              "Official source code",
+              "Convenience packages",
+              "User Interface",
+              "Semantic versioning",
+              "Version Life Cycle",
+              "Support for Python and Kubernetes versions",
+              "Base OS support for reference Airflow images"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 41734
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "kestra-io/kestra",
+          "owner": "kestra-io",
+          "name": "kestra",
+          "url": "https://github.com/kestra-io/kestra",
+          "homepage": "https://go.kestra.io/home",
+          "description": "Orchestrate everything, everywhere. The open-source control plane for workflows across data, infrastructure, business processes and AI agents. Declarative YAML, event-driven, any language, Git-versioned, scalable to millions of executions.",
+          "language": "Java",
+          "topics": [
+            "ai-agents",
+            "automation",
+            "control-plane",
+            "data-engineering",
+            "data-orchestration",
+            "data-orchestrator",
+            "devops",
+            "etl"
+          ],
+          "stars": 30164,
+          "forks": 3511,
+          "open_issues": 722,
+          "starGain": 12,
+          "heat": 12,
+          "heatBasis": "trending",
+          "heatPercentile": 83,
+          "ageDays": 2632,
+          "created_at": "2019-08-24T13:56:15Z",
+          "pushed_at": "2026-11-06T18:38:55Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 84,
+          "breakdown": {
+            "heat": 83,
+            "community": 85,
+            "activity": 74,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 43,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open-source orchestration platform for data, AI, and infrastructure workflows\n\nKestra is an open-source, event-driven orchestration platform for data, AI, and infrastructure workflows. It unifies scheduled and event-driven automation behind a declarative, language-agnostic interface. By bringing Infrastructure as Code best practices to your data, process, and microservice pipelines, you can build reliable workflows directly from the UI in just a few lines of YAML, let the built-in AI Copilot write them for you, or generate them straight from your coding agent (Claude Code, Cursor, Windsurf, and others) with Agent Skills.\n\n- ✨ What's New in 2.0 - 🚀 Quick Start - 🧩 Plugin Ecosystem - 📚 Key Concepts - 🎨 Build Workflows Visually - 🔧 Extensible and Developer-Friendly - 🌐 Join the Community - 🤝 Contributing - 📄 License - ⭐️ Stay Updated",
+            "features": [
+              "✨ What's New in 2.0",
+              "🚀 Quick Start",
+              "🧩 Plugin Ecosystem",
+              "📚 Key Concepts",
+              "🎨 Build Workflows Visually",
+              "🔧 Extensible and Developer-Friendly",
+              "🌐 Join the Community",
+              "🤝 Contributing"
+            ],
+            "sections": [
+              "🌟 What is Kestra?",
+              "📖 Table of Contents",
+              "✨ What's New in 2.0",
+              "🚀 Quick Start",
+              "Launch on AWS (CloudFormation)",
+              "Launch on Azure (Terraform deployment)",
+              "Launch on Google Cloud (Terraform deployment)",
+              "Get Started Locally in 5 Minutes",
+              "🧩 Plugin Ecosystem",
+              "📚 Key Concepts",
+              "🎨 Build Workflows Visually",
+              "🔧 Extensible and Developer-Friendly",
+              "Plugin Development",
+              "Infrastructure as Code"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 22520
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "airbytehq/airbyte",
+          "owner": "airbytehq",
+          "name": "airbyte",
+          "url": "https://github.com/airbytehq/airbyte",
+          "homepage": "https://airbyte.com",
+          "description": "Open-source data movement for ELT pipelines and AI agents — from APIs, databases & files to warehouses, lakes, and AI applications. Both self-hosted and Cloud.",
+          "language": "Python",
+          "topics": [
+            "bigquery",
+            "change-data-capture",
+            "data",
+            "data-analysis",
+            "data-collection",
+            "data-engineering",
+            "data-integration",
+            "data-pipeline"
+          ],
+          "stars": 22330,
+          "forks": 5441,
+          "open_issues": 2774,
+          "starGain": 8,
+          "heat": 8,
+          "heatBasis": "trending",
+          "heatPercentile": 80,
+          "ageDays": 2293,
+          "created_at": "2020-07-27T23:55:54Z",
+          "pushed_at": "2026-11-07T02:19:10Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 83.7,
+          "breakdown": {
+            "heat": 80,
+            "community": 85,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open-source data movement for ELT pipelines and AI agents — from APIs, databases & files to warehouses, lakes, and AI applications\n\nWe believe that only an open-source solution to data movement can cover the long tail of data sources while empowering data engineers to customize existing connectors. Our ultimate vision is to help you move data from any source to any destination — whether that destination is a data warehouse, a data lake, or an AI agent through the Airbyte MCP. Airbyte provides a catalog of 700+ connectors for APIs, databases, data warehouses, data lakes, and AI applications.\n\n- Move and sync data. Deploy Airbyte Core or sign up for Airbyte Cloud and follow the Cloud getting started guide. Choose from 700+ connectors for APIs, databases, warehouses, lakes, and other data systems.",
+            "features": [
+              "Move and sync data. Deploy Airbyte Core or sign up for Airbyte Cloud and follow the Cloud getting started guide. Choose from 700+ connectors",
+              "Work with Airbyte from your AI agent through the Airbyte MCP. Your AI agent (Claude, ChatGPT, Cursor, VS Code Copilot, and many others) can ",
+              "Call APIs and search data directly (Airbyte Cloud only). Through the context layer, AI agents can read live data from supported sources and "
+            ],
+            "sections": [
+              "Getting Started",
+              "Join the Airbyte Community",
+              "Contributing",
+              "Security",
+              "License",
+              "Thank You"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8902
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "meta/rocksdb",
+          "owner": "meta",
+          "name": "rocksdb",
+          "url": "https://github.com/meta/rocksdb",
+          "homepage": "http://rocksdb.org",
+          "description": "A library that provides an embeddable, persistent key-value store for fast storage.",
+          "language": "C++",
+          "topics": [
+            "database",
+            "storage-engine"
+          ],
+          "stars": 32251,
+          "forks": 7010,
+          "open_issues": 1825,
+          "starGain": 4,
+          "heat": 4,
+          "heatBasis": "trending",
+          "heatPercentile": 71,
+          "ageDays": 5090,
+          "created_at": "2012-11-30T06:16:18Z",
+          "pushed_at": "2026-11-07T00:27:15Z",
+          "license": "GPL-2.0",
+          "rating": 4,
+          "composite": 79.2,
+          "breakdown": {
+            "heat": 71,
+            "community": 88,
+            "activity": 79,
+            "maturity": 93
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 35,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "RocksDB is developed and maintained by Facebook Database Engineering Team. It is built on earlier work on LevelDB by Sanjay Ghemawat (sanjay@google.com) and Jeff Dean (jeff@google.com)\n\nThis code is a library that forms the core building block for a fast key-value server, especially suited for storing data on flash drives. It has a Log-Structured-Merge-Database (LSM) design with flexible tradeoffs between Write-Amplification-Factor (WAF), Read-Amplification-Factor (RAF) and Space-Amplification-Factor (SAF). It has multi-threaded compactions, making it especially suitable for storing multiple terabytes of data in a single database.\n\nStart with example usage here: https://github.com/meta/rocksdb/tree/main/examples",
+            "features": [],
+            "sections": [
+              "RocksDB: A Persistent Key-Value Store for Flash and RAM Stor",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1561
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "pingcap/tidb",
+          "owner": "pingcap",
+          "name": "tidb",
+          "url": "https://github.com/pingcap/tidb",
+          "homepage": "https://www.tidb.io/",
+          "description": "TiDB is built for agentic workloads that grow unpredictably, with ACID guarantees and native support for transactions, analytics, and vector search. No data silos. No noisy neighbors. No infrastructure ceiling.",
+          "language": "Go",
+          "topics": [
+            "agent",
+            "agent-context",
+            "agent-memory",
+            "agentic",
+            "ai",
+            "cloud-native",
+            "database",
+            "distributed-database"
+          ],
+          "stars": 40715,
+          "forks": 6292,
+          "open_issues": 7527,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "trending",
+          "heatPercentile": 67,
+          "ageDays": 4080,
+          "created_at": "2015-09-06T04:01:52Z",
+          "pushed_at": "2026-11-07T02:49:27Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78.6,
+          "breakdown": {
+            "heat": 67,
+            "community": 88,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 49,
+            "ai": 49,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "TiDB (/’taɪdiːbi:/, \"Ti\" stands for Titanium) is an open-source, cloud-native, distributed SQL database designed for high availability, horizontal and vertical scalability, strong consistency, and high performance.\n\n- Key Features - Quick Start - Need Help? - Architecture - Contributing - License - See Also - Acknowledgments\n\n- Distributed Transactions : TiDB uses a two-phase commit protocol to ensure ACID compliance, providing strong consistency. Transactions span multiple nodes, and TiDB's distributed nature ensures data correctness even in the presence of network partitions or node failures.",
+            "features": [
+              "Key Features",
+              "Quick Start",
+              "Need Help?",
+              "Architecture",
+              "Contributing",
+              "See Also",
+              "Acknowledgments",
+              "Distributed Transactions : TiDB uses a two-phase commit protocol to ensure ACID compliance, providing strong consistency. Transactions span "
+            ],
+            "sections": [
+              "TiDB",
+              "Key Features",
+              "Quick Start",
+              "Need Help?",
+              "Architecture",
+              "Contributing",
+              "License",
+              "See Also",
+              "Acknowledgments"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10820
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "sherlock-project/sherlock",
+          "owner": "sherlock-project",
+          "name": "sherlock",
+          "url": "https://github.com/sherlock-project/sherlock",
+          "homepage": "https://sherlockproject.xyz",
+          "description": "Hunt down social media accounts by username across social networks",
+          "language": "Python",
+          "topics": [
+            "cli",
+            "cti",
+            "cybersecurity",
+            "forensics",
+            "hacktoberfest",
+            "information-gathering",
+            "infosec",
+            "linux"
+          ],
+          "stars": 98577,
+          "forks": 11708,
+          "open_issues": 362,
+          "starGain": 1761,
+          "heat": 1761,
+          "heatBasis": "trending",
+          "heatPercentile": 100,
+          "ageDays": 2875,
+          "created_at": "2018-12-24T14:30:48Z",
+          "pushed_at": "2026-11-06T05:15:07Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 92.9,
+          "breakdown": {
+            "heat": 100,
+            "community": 94,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Hunt down social media accounts by username across 400+ social networks\n\nInstallation &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp; Usage &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp; Contributing\n\nCommunity-maintained packages are available for Debian ( = 13), Ubuntu ( = 22.10), Homebrew, Kali, and BlackArch. These packages are not directly supported or maintained by the Sherlock Project.",
+            "features": [],
+            "sections": [
+              "Installation",
+              "General usage",
+              "Credits",
+              "Star History",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 5596
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "zed-industries/zed",
+          "owner": "zed-industries",
+          "name": "zed",
+          "url": "https://github.com/zed-industries/zed",
+          "homepage": "https://zed.dev",
+          "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+          "language": "Rust",
+          "topics": [
+            "gpui",
+            "rust-lang",
+            "text-editor",
+            "zed"
+          ],
+          "stars": 93709,
+          "forks": 11506,
+          "open_issues": 3030,
+          "starGain": 306,
+          "heat": 306,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 2086,
+          "created_at": "2021-02-20T03:01:06Z",
+          "pushed_at": "2026-11-07T02:55:50Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 89.9,
+          "breakdown": {
+            "heat": 89,
+            "community": 94,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Welcome to Zed, a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.\n\nOn macOS, Linux, and Windows you can download Zed directly or install Zed via your local package manager (macOS/Linux/Windows).\n\n- Building Zed for macOS - Building Zed for Linux - Building Zed for Windows",
+            "features": [
+              "Web (tracking discussion)",
+              "Is it showing a no license specified error for a crate you've created? If so, add publish = false under [package] in your crate's Cargo.toml",
+              "Is the error failed to satisfy license requirements for a dependency? If so, first determine what license the project has and whether this s",
+              "Is cargo-about unable to find the license for a dependency? If so, add a clarification field at the end of script/licenses/zed-licenses.toml"
+            ],
+            "sections": [
+              "Zed",
+              "Installation",
+              "Developing Zed",
+              "Contributing",
+              "Licensing",
+              "Sponsorship"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2852
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "microsoft/vscode",
+          "owner": "microsoft",
+          "name": "vscode",
+          "url": "https://github.com/microsoft/vscode",
+          "homepage": "https://code.visualstudio.com",
+          "description": "Visual Studio Code",
+          "language": "TypeScript",
+          "topics": [
+            "editor",
+            "electron",
+            "microsoft",
+            "typescript",
+            "visual-studio-code"
+          ],
+          "stars": 195045,
+          "forks": 44427,
+          "open_issues": 21845,
+          "starGain": 301,
+          "heat": 301,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 4082,
+          "created_at": "2015-09-03T20:23:38Z",
+          "pushed_at": "2026-11-07T03:02:11Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 89.8,
+          "breakdown": {
+            "heat": 88,
+            "community": 100,
+            "activity": 80,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "This repository (\" Code - OSS \") is where we (Microsoft) develop the Visual Studio Code product together with the community. Not only do we work on code and issues here, but we also publish our roadmap, monthly iteration plans, and our endgame plans. This source code is available to everyone under the standard MIT license.\n\nVisual Studio Code is a distribution of the Code - OSS repository with Microsoft-specific customizations released under a traditional Microsoft product license.\n\nVisual Studio Code combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.",
+            "features": [
+              "Submit bugs and feature requests, and help us verify them as they are checked in",
+              "Review source code changes",
+              "Review the documentation and make pull requests for anything from typos to new content.",
+              "How to build and run from source",
+              "The development workflow, including debugging and running tests",
+              "Coding guidelines",
+              "Submitting pull requests",
+              "Finding an issue to work on"
+            ],
+            "sections": [
+              "Visual Studio Code - Open Source (\"Code - OSS\")",
+              "The Repository",
+              "Visual Studio Code",
+              "Contributing",
+              "Feedback",
+              "Related Projects",
+              "Bundled Extensions",
+              "Development Container",
+              "Code of Conduct",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6726
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "sharkdp/bat",
+          "owner": "sharkdp",
+          "name": "bat",
+          "url": "https://github.com/sharkdp/bat",
+          "homepage": "",
+          "description": "A cat(1) clone with wings.",
+          "language": "Rust",
+          "topics": [
+            "cli",
+            "command-line",
+            "git",
+            "hacktoberfest",
+            "rust",
+            "syntax-highlighting",
+            "terminal",
+            "tool"
+          ],
+          "stars": 61204,
+          "forks": 3069,
+          "open_issues": 564,
+          "starGain": 138,
+          "heat": 138,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 3122,
+          "created_at": "2018-04-21T10:52:23Z",
+          "pushed_at": "2026-11-06T22:35:58Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 80.4,
+          "breakdown": {
+            "heat": 81,
+            "community": 89,
+            "activity": 75,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A cat(1) clone with syntax highlighting and Git integration.\n\nKey Features • How To Use • Installation • Customization • Project goals, alternatives [English] [ 中文 ] [ 日本語 ] [ 한국어 ] [ Русский ]\n\nbat supports syntax highlighting for a large number of programming and markup languages:",
+            "features": [
+              "be for widely used systems",
+              "be non-obvious",
+              "be from somewhat official sources",
+              "ansi looks decent on any terminal. It uses 3-bit colors: black, red, green,",
+              "base16 is designed for base16 terminal themes. It uses",
+              "base16-256 is designed for tinted-shell.",
+              "Enjoy maximum compatibility. Some terminal utilities do not support more than 3-bit colors.",
+              "Adapt to terminal theme changes. Even for already printed output."
+            ],
+            "sections": [
+              "Syntax highlighting",
+              "Git integration",
+              "Show non-printable characters",
+              "Automatic paging",
+              "How to use",
+              "Integration with other tools",
+              "in your .bashrc/.zshrc/ rc",
+              "Installation",
+              "On Ubuntu (using apt )",
+              "On Ubuntu (using most recent .deb packages)",
+              "On Alpine Linux",
+              "On Arch Linux",
+              "On Fedora",
+              "On Gentoo Linux"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 34198
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "nushell/nushell",
+          "owner": "nushell",
+          "name": "nushell",
+          "url": "https://github.com/nushell/nushell",
+          "homepage": "https://www.nushell.sh/",
+          "description": "A new type of shell",
+          "language": "Rust",
+          "topics": [
+            "nushell",
+            "rust",
+            "shell"
+          ],
+          "stars": 40996,
+          "forks": 2343,
+          "open_issues": 1457,
+          "starGain": 131,
+          "heat": 131,
+          "heatBasis": "trending",
+          "heatPercentile": 80,
+          "ageDays": 2737,
+          "created_at": "2019-05-10T16:59:42Z",
+          "pushed_at": "2026-11-06T12:38:23Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.8,
+          "breakdown": {
+            "heat": 80,
+            "community": 86,
+            "activity": 75,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- Status - Learning About Nu - Installation - Configuration - Philosophy - Pipelines - Opening files - Plugins - Goals - Officially Supported By - Contributing - License\n\nThis project has reached a minimum-viable-product level of quality. Many people use it as their daily driver, but it may be unstable for some commands. Nu's design is subject to change as it matures.\n\nThe Nushell book is the primary source of Nushell documentation. You can find a full list of Nu commands in the book, and we have many examples of using Nu in our cookbook.",
+            "features": [
+              "Status",
+              "Learning About Nu",
+              "Installation",
+              "Configuration",
+              "Philosophy",
+              "Pipelines",
+              "Opening files",
+              "Plugins"
+            ],
+            "sections": [
+              "Nushell",
+              "Table of Contents",
+              "Status",
+              "Learning About Nu",
+              "Installation",
+              "Linux and macOS",
+              "Windows",
+              "Configuration",
+              "Philosophy",
+              "Pipelines",
+              "= ╭────┬──────────┬──────┬─────────┬───────────────╮",
+              "= │ │ name │ type │ size │ modified │",
+              "= ├────┼──────────┼──────┼─────────┼───────────────┤",
+              "= │ 0 │ .cargo │ dir │ 0 B │ 9 minutes ago │"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11374
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "nodejs/node",
+          "owner": "nodejs",
+          "name": "node",
+          "url": "https://github.com/nodejs/node",
+          "homepage": "https://nodejs.org",
+          "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+          "language": "JavaScript",
+          "topics": [
+            "javascript",
+            "js",
+            "linux",
+            "macos",
+            "mit",
+            "node",
+            "nodejs",
+            "runtime"
+          ],
+          "stars": 123390,
+          "forks": 38735,
+          "open_issues": 1317,
+          "starGain": 192,
+          "heat": 192,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 4363,
+          "created_at": "2014-11-26T19:57:11Z",
+          "pushed_at": "2026-11-07T00:35:47Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 91.5,
+          "breakdown": {
+            "heat": 94,
+            "community": 98,
+            "activity": 78,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 18,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Node.js is an open-source, cross-platform JavaScript runtime environment.\n\nFor information on using Node.js, see the [Node.js website][].\n\nThe Node.js project uses an open governance model. The [OpenJS Foundation][] provides support for the project.",
+            "features": [
+              "Support",
+              "Release types",
+              "Download",
+              "Current and LTS releases",
+              "Nightly releases",
+              "API documentation",
+              "Verifying binaries",
+              "Security"
+            ],
+            "sections": [
+              "Node.js",
+              "Table of contents",
+              "Support",
+              "Release types",
+              "Download",
+              "Verifying binaries",
+              "Building Node.js",
+              "Security",
+              "Contributing to Node.js",
+              "Current project team members",
+              "TSC (Technical Steering Committee)",
+              "Collaborators",
+              "Collaborator emeriti",
+              "Triagers"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 42604
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "InlitX/GymMane",
+          "owner": "InlitX",
+          "name": "GymMane",
+          "url": "https://github.com/InlitX/GymMane",
+          "homepage": "https://inlitx.github.io/GymMane/",
+          "description": " Offline gym log for Android. No account, no ads, no internet.",
+          "language": "Dart",
+          "topics": [
+            "android",
+            "bodybuilding",
+            "dart",
+            "exercises",
+            "f-droid",
+            "fitness",
+            "flutter",
+            "gym"
+          ],
+          "stars": 1545,
+          "forks": 164,
+          "open_issues": 29,
+          "starGain": 153,
+          "heat": 153,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 94,
+          "created_at": "2026-08-05T12:02:49Z",
+          "pushed_at": "2026-11-06T20:49:58Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 79.4,
+          "breakdown": {
+            "heat": 91,
+            "community": 60,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A free, offline gym log for Android. Tap the muscles you want to train, log your sets and watch your numbers go up.\n\nPlain screenshots , every screen straight off the phone\n\nToday &nbsp;·&nbsp; Body map &nbsp;·&nbsp; Live session &nbsp;·&nbsp; Progress",
+            "features": [
+              "Tap the muscles on a body map and get a session",
+              "Reps, weight and a rest timer with your own sound",
+              "Warm-up, drop, failure, rest-pause and cluster sets, with RPE or RIR",
+              "Supersets and plates per side",
+              "Routines and weekly plans, or a rotation",
+              "Progression per exercise, so the app sets your next weights",
+              "Volume, streaks, weekly goal and PRs",
+              "Strength curves with estimated 1RM and strength per bodyweight"
+            ],
+            "sections": [
+              "GymMane",
+              "What it does",
+              "Training",
+              "Progress",
+              "Exercises and tools",
+              "Your data",
+              "Nutrition (beta)",
+              "Download",
+              "Privacy",
+              "Contributing",
+              "Support",
+              "License",
+              "Star history"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10958
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "GopeedLab/gopeed",
+          "owner": "GopeedLab",
+          "name": "gopeed",
+          "url": "https://github.com/GopeedLab/gopeed",
+          "homepage": "https://gopeed.com",
+          "description": "  A fast, modern download manager for HTTP, BitTorrent, Magnet, and ed2k. Cross-platform, built with Golang and Flutter.",
+          "language": "Dart",
+          "topics": [
+            "android",
+            "bittorrent",
+            "cross-platform",
+            "download-manger",
+            "downloader",
+            "downloadmanager",
+            "ed2k",
+            "flutter"
+          ],
+          "stars": 27470,
+          "forks": 1792,
+          "open_issues": 355,
+          "starGain": 58,
+          "heat": 58,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 2757,
+          "created_at": "2019-04-21T07:23:32Z",
+          "pushed_at": "2026-11-06T01:32:45Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 80.5,
+          "breakdown": {
+            "heat": 79,
+            "community": 83,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Gopeed (short for Go Speed ) is a fast, modern, free, and open-source download manager built with Go and Flutter. It supports HTTP, HTTPS, BitTorrent, magnet links, and ed2k on desktop, mobile, and the web.\n\nBeyond core download management, Gopeed offers browser integration, JavaScript extensions, a REST API, a CLI, and a self-hosted web UI for customization and automation.\n\n- ⚡ High-speed downloads — combine concurrent tasks, multi-connection HTTP transfers, and peer-to-peer BitTorrent downloads to make the most of your bandwidth. - 🧲 Multiple protocols — download HTTP/HTTPS files, torrents, magnet links, and ed2k resources from a single app. - 🌱 Full-featured BitTorrent — use DHT peer discovery, uTP transport, Web Seeds, selective file downloads, tracker management, peer and piece statistics, and ratio- or time-based seeding limits. - 📋 Flexible task management — pause, resume, retry, run batch operations, search, filter by status, organize with categories, and recover tasks after a restart. - 🪶 Lightweight native experience — the main interface is rendered natively with Flutter. No Electron. No WebView shell. Enjoy a smaller footprint, lower overhead, and responsive performance. - 💻 Cross-platform — available for Windows, macOS, Linux, Android, iOS, and the web, with Docker and QNAP deployment options. - 🎨 Customizable appearance — follow your system theme or choose light or dark mode, with eight accent colors. - 📐 Responsive interface — task lists, navigation, sett",
+            "features": [
+              "⚡ High-speed downloads — combine concurrent tasks, multi-connection HTTP transfers, and peer-to-peer BitTorrent downloads to make the most o",
+              "🧲 Multiple protocols — download HTTP/HTTPS files, torrents, magnet links, and ed2k resources from a single app.",
+              "🌱 Full-featured BitTorrent — use DHT peer discovery, uTP transport, Web Seeds, selective file downloads, tracker management, peer and piece",
+              "📋 Flexible task management — pause, resume, retry, run batch operations, search, filter by status, organize with categories, and recover ta",
+              "🪶 Lightweight native experience — the main interface is rendered natively with Flutter. No Electron. No WebView shell. Enjoy a smaller foot",
+              "💻 Cross-platform — available for Windows, macOS, Linux, Android, iOS, and the web, with Docker and QNAP deployment options.",
+              "🎨 Customizable appearance — follow your system theme or choose light or dark mode, with eight accent colors.",
+              "📐 Responsive interface — task lists, navigation, settings, and detail views adapt to phones, tablets, and resizable desktop windows."
+            ],
+            "sections": [
+              "🚀 Introduction",
+              "✨ Features",
+              "🤖 AI Integration",
+              "⬇️ Download",
+              "🧪 Gopeed 2.0.0 Beta",
+              "Stable release",
+              "🛠️ Command-line tool",
+              "🔌 Browser Extension",
+              "📱 WeChat Official Account",
+              "💝 Donate",
+              "👨‍💻 Development",
+              "🌍 Environment",
+              "📋 Clone",
+              "🤝 Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9064
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "tiann/KernelSU",
+          "owner": "tiann",
+          "name": "KernelSU",
+          "url": "https://github.com/tiann/KernelSU",
+          "homepage": "https://kernelsu.org",
+          "description": "A Kernel based root solution for Android",
+          "language": "Kotlin",
+          "topics": [
+            "android",
+            "kernel",
+            "kernelsu",
+            "root",
+            "su"
+          ],
+          "stars": 20203,
+          "forks": 4927,
+          "open_issues": 80,
+          "starGain": 58,
+          "heat": 58,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 1429,
+          "created_at": "2022-12-09T14:03:54Z",
+          "pushed_at": "2026-11-07T02:33:54Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 79.9,
+          "breakdown": {
+            "heat": 79,
+            "community": 84,
+            "activity": 69,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English Español 简体中文 繁體中文 日本語 한국어 Polski Português (Brasil) Türkçe Русский Tiếng Việt Indonesia עברית हिंदी Italiano\n\n1. Kernel-based su and root access management. 2. Module system based on metamodules: Pluggable infrastructure for systemless modifications. 3. App Profile: Lock up the root power in a cage.\n\nKernelSU officially supports Android GKI 2.0 devices (kernel 5.10+). Older kernels (4.14+) are also supported, but the kernel will need to be built manually.",
+            "features": [
+              "Kernel-based su and root access management.",
+              "Module system based on metamodules: Pluggable infrastructure for systemless modifications.",
+              "App Profile: Lock up the root power in a cage.",
+              "Installation",
+              "How to build",
+              "Official website",
+              "Telegram: @KernelSU",
+              "Files under the kernel directory are GPL-2.0-only."
+            ],
+            "sections": [
+              "KernelSU",
+              "Features",
+              "Compatibility state",
+              "Usage",
+              "Translation",
+              "Discussion",
+              "Security",
+              "License",
+              "Credits"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3220
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "TeamNewPipe/NewPipe",
+          "owner": "TeamNewPipe",
+          "name": "NewPipe",
+          "url": "https://github.com/TeamNewPipe/NewPipe",
+          "homepage": "https://newpipe.net",
+          "description": "A libre lightweight streaming front-end for Android.",
+          "language": "Java",
+          "topics": [
+            "4k",
+            "android",
+            "bandcamp",
+            "download-videos",
+            "newpipe",
+            "peertube",
+            "soundcloud",
+            "translation"
+          ],
+          "stars": 40481,
+          "forks": 3962,
+          "open_issues": 1443,
+          "starGain": 49,
+          "heat": 49,
+          "heatBasis": "trending",
+          "heatPercentile": 75,
+          "ageDays": 4082,
+          "created_at": "2015-09-03T23:39:26Z",
+          "pushed_at": "2026-11-06T12:01:37Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 81.1,
+          "breakdown": {
+            "heat": 75,
+            "community": 87,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 15,
+            "data": 14
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "NewPipe A libre lightweight streaming front-end for Android.\n\nRead this document in other languages: Deutsch, English, Español, Français, हिन्दी, Italiano, 한국어, Português Brasil, Polski, ਪੰਜਾਬੀ , 日本語, Română, Soomaali, Türkçe, 正體中文, অসমীয়া, Српски, العربية\n\nYouTube (website) and YouTube Music (website) (wiki) PeerTube (website) and all its instances (open the website to know what that means!) (wiki) Bandcamp (website) (wiki) SoundCloud (website) (wiki) media.ccc.de (website) (wiki)",
+            "features": [
+              "YouTube (website) and YouTube Music (website) (wiki)",
+              "PeerTube (website) and all its instances (open the website to know what that means!) (wiki)",
+              "Bandcamp (website) (wiki)",
+              "SoundCloud (website) (wiki)",
+              "media.ccc.de (website) (wiki)",
+              "Watch videos at resolutions up to 4K",
+              "Listen to audio in the background, only loading the audio stream to save data",
+              "Popup mode (floating player, aka Picture-in-Picture)"
+            ],
+            "sections": [
+              "Screenshots",
+              "Supported Services",
+              "Description",
+              "Features",
+              "Installation and updates",
+              "APK Info",
+              "Contribution",
+              "Donate",
+              "Privacy Policy",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13766
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "D4Vinci/Scrapling",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "Anil-matcha/Open-Generative-AI",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "NVIDIA/auto-ontology",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "scenario-labs/skills",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/dsh-superagent-prototype",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/DeepInfer",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "Zagitta/gpu-unlock",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/onnxruntime",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "monid-ai/monid",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "react/react",
+      "category": "frontend",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "tangency-labs/solidcraft",
+      "category": "frontend",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}
