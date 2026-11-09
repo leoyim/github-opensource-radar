@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-08",
+    "updated": "2026-11-09",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 29,
-    "publicCount": 12,
+    "count": 45,
+    "publicCount": 13,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -1971,6 +1971,933 @@
           "discord-boosts",
           "discord-raid-protect",
           "discord-raid-software"
+        ]
+      }
+    },
+    {
+      "full_name": "FangSongBang/solidworks-cad",
+      "owner": "FangSongBang",
+      "name": "solidworks-cad",
+      "url": "https://github.com/FangSongBang/solidworks-cad",
+      "description": "SolidWorks CAD 2026 pre-configured environment for streamlined workstation deployment and efficient production build setup.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": 9.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-08 22:29:47，8 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "400 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "星标数为整百",
+          "detail": "星标恰好为 400，与自然增长下的取值分布略有偏离"
+        },
+        {
+          "type": "content",
+          "label": "README 仅提供粘贴执行的命令",
+          "detail": "README 正文 2060 字符，以「打开终端 → 粘贴命令 → 回车」为主体，未给出源码结构、构建步骤或发布包，也未提供可审阅的安装方式"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 CaveIguana56/roshade-for-roblox、CopperHammerPeace/delta-force-trainer-tool、Creekchodome/passfab-unlocker 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "README 以粘贴执行命令代替源码与构建说明，安装过程无法预先审阅。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联。",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 1,
+        "license": "",
+        "created_at": "2026-11-08T14:29:47Z",
+        "pushed_at": "2026-11-08T14:29:55Z",
+        "topics": [
+          "automation",
+          "cad-automation",
+          "civil-engineering-ai",
+          "desktop",
+          "developer-tools",
+          "fea",
+          "guide-setup-solidworks-cad",
+          "how-to-install-solidworks-cad"
+        ]
+      }
+    },
+    {
+      "full_name": "updatesealeradicate/start11",
+      "owner": "updatesealeradicate",
+      "name": "start11",
+      "url": "https://github.com/updatesealeradicate/start11",
+      "description": "Start11 2023 pre-configured environment for efficient desktop software utility deployment on professional workstations.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "401 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 401,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:40:51Z",
+        "pushed_at": "2026-11-08T08:40:59Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "guide-setup-start11",
+          "how-to-install-start11",
+          "how-to-setup-start11",
+          "open-source",
+          "python"
+        ]
+      }
+    },
+    {
+      "full_name": "CaveIguana56/roshade-for-roblox",
+      "owner": "CaveIguana56",
+      "name": "roshade-for-roblox",
+      "url": "https://github.com/CaveIguana56/roshade-for-roblox",
+      "description": "Roshade For Roblox 2026 pre-configured environment for automated desktop software utility deployment.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T14:29:45Z",
+        "pushed_at": "2026-11-08T14:29:52Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "guide-setup-roshade-for-roblox",
+          "how-to-install-roshade-for-roblox",
+          "how-to-setup-roshade-for-roblox",
+          "open-source",
+          "python"
+        ]
+      }
+    },
+    {
+      "full_name": "CopperHammerPeace/delta-force-trainer-tool",
+      "owner": "CopperHammerPeace",
+      "name": "delta-force-trainer-tool",
+      "url": "https://github.com/CopperHammerPeace/delta-force-trainer-tool",
+      "description": "Delta Force 1.5 automated deployment pipeline for secure, efficient enterprise desktop software utility configuration, ensuring robust...",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T14:29:45Z",
+        "pushed_at": "2026-11-08T14:29:52Z",
+        "topics": [
+          "automation",
+          "delta-force",
+          "delta-force-aim-assist",
+          "desktop",
+          "developer-tools",
+          "guide-setup-delta-force-trainer-tool",
+          "how-to-install-delta-force-trainer-tool",
+          "how-to-setup-delta-force-trainer-tool"
+        ]
+      }
+    },
+    {
+      "full_name": "Creekchodome/passfab-unlocker",
+      "owner": "Creekchodome",
+      "name": "passfab-unlocker",
+      "url": "https://github.com/Creekchodome/passfab-unlocker",
+      "description": "Passfab Unlocker 2023 pre-configured environment for secure and efficient desktop software utility management.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T14:29:45Z",
+        "pushed_at": "2026-11-08T14:29:51Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "device-recovery",
+          "guide-setup-passfab-iphone-unlocker",
+          "how-to-install-passfab-iphone-unlocker",
+          "how-to-setup-passfab-iphone-unlocker",
+          "open-source"
+        ]
+      }
+    },
+    {
+      "full_name": "shoregladiatormesh/ifunbox",
+      "owner": "shoregladiatormesh",
+      "name": "ifunbox",
+      "url": "https://github.com/shoregladiatormesh/ifunbox",
+      "description": "Ifunbox 2023 pre-configured environment for seamless desktop software utility configuration and deployment.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:39:06Z",
+        "pushed_at": "2026-11-08T08:39:12Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "game-files",
+          "guide-setup-ifunbox",
+          "how-to-install-ifunbox",
+          "how-to-setup-ifunbox",
+          "ifunbox-2026"
+        ]
+      }
+    },
+    {
+      "full_name": "Wantfuchannel/whale-tracker",
+      "owner": "Wantfuchannel",
+      "name": "whale-tracker",
+      "url": "https://github.com/Wantfuchannel/whale-tracker",
+      "description": "Whale Tracker 2023 automated deployment pipeline for efficient desktop software utility configuration management.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:41:26Z",
+        "pushed_at": "2026-11-08T08:41:33Z",
+        "topics": [
+          "automation",
+          "blockchain-intelligence",
+          "desktop",
+          "developer-tools",
+          "guide-setup-whale-tracker",
+          "high-transaction-tracker",
+          "how-to-install-whale-tracker",
+          "how-to-setup-whale-tracker"
+        ]
+      }
+    },
+    {
+      "full_name": "OhmUrchinSee/abbyy-finereader-pdf",
+      "owner": "OhmUrchinSee",
+      "name": "abbyy-finereader-pdf",
+      "url": "https://github.com/OhmUrchinSee/abbyy-finereader-pdf",
+      "description": "Abbyy Finereader Pdf 18.5 automated deployment pipeline for efficient desktop utility setup and configuration in 2026.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:36:54Z",
+        "pushed_at": "2026-11-08T08:37:00Z",
+        "topics": [
+          "abbyy",
+          "abbyy-finereade",
+          "acrobat",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "guide-setup-abbyy-finereader-pdf",
+          "how-to-install-abbyy-finereader-pdf"
+        ]
+      }
+    },
+    {
+      "full_name": "ShapeMareAmplify/honkai-star-rail-trainer-tool",
+      "owner": "ShapeMareAmplify",
+      "name": "honkai-star-rail-trainer-tool",
+      "url": "https://github.com/ShapeMareAmplify/honkai-star-rail-trainer-tool",
+      "description": "Honkai Star Rail 2026 automated deployment pipeline with pre-configured environment ready for instant local execution.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:38:55Z",
+        "pushed_at": "2026-11-08T08:39:02Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "guide-setup-honkai-star-rail-trainer-tool",
+          "how-to-install-honkai-star-rail-trainer-tool",
+          "how-to-setup-honkai-star-rail-trainer-tool",
+          "open-source",
+          "python"
+        ]
+      }
+    },
+    {
+      "full_name": "varnishhorseengage/studioonepro7",
+      "owner": "varnishhorseengage",
+      "name": "studioonepro7",
+      "url": "https://github.com/varnishhorseengage/studioonepro7",
+      "description": "Studioonepro7 2026 automated deployment pipeline pre-configured environment for professional desktop software utility configuration.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:41:04Z",
+        "pushed_at": "2026-11-08T08:41:10Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "guide-setup-studioonepro7",
+          "how-to-install-studioonepro7",
+          "how-to-setup-studioonepro7",
+          "open-source",
+          "presonus-2026"
+        ]
+      }
+    },
+    {
+      "full_name": "PsycheGradeSpeak/chief-architect-premier",
+      "owner": "PsycheGradeSpeak",
+      "name": "chief-architect-premier",
+      "url": "https://github.com/PsycheGradeSpeak/chief-architect-premier",
+      "description": "Chief Architect Premier 2026 pre-configured environment for seamless automated deployment pipeline in professional desktop software utility.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:37:48Z",
+        "pushed_at": "2026-11-08T08:37:54Z",
+        "topics": [
+          "automation",
+          "chief-architect",
+          "chief-architect-setup-failed-fix",
+          "chief-architect-x16",
+          "chief-architect-x16-not-installing-on-windows-11",
+          "desktop",
+          "developer-tools",
+          "guide-setup-chief-architect"
+        ]
+      }
+    },
+    {
+      "full_name": "SymbolSteward/ozone-12-advanced",
+      "owner": "SymbolSteward",
+      "name": "ozone-12-advanced",
+      "url": "https://github.com/SymbolSteward/ozone-12-advanced",
+      "description": "Ozone 12 Advanced pre-configured environment for streamlined desktop software utility setup in isolated local workstation deployment.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:40:08Z",
+        "pushed_at": "2026-11-08T08:40:15Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "guide-setup-ozone-12",
+          "how-to-install-ozone-12",
+          "how-to-setup-ozone-12",
+          "izotope-ozone",
+          "izotope-rx-latest"
+        ]
+      }
+    },
+    {
+      "full_name": "SleuthPropagate/imobie-anytrans",
+      "owner": "SleuthPropagate",
+      "name": "imobie-anytrans",
+      "url": "https://github.com/SleuthPropagate/imobie-anytrans",
+      "description": "Imobie Anytrans 1.5.3 - Local workstation deployment package for efficient media management and synchronization tasks in enterprise environments.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:39:11Z",
+        "pushed_at": "2026-11-08T08:39:17Z",
+        "topics": [
+          "anytrans-download-iphone-manager",
+          "anytrans-transfer-photos-music-pc",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "guide-setup-imobie-anytrans",
+          "how-to-install-imobie-anytrans",
+          "how-to-setup-imobie-anytrans"
+        ]
+      }
+    },
+    {
+      "full_name": "ratioableladle/dft-pro",
+      "owner": "ratioableladle",
+      "name": "dft-pro",
+      "url": "https://github.com/ratioableladle/dft-pro",
+      "description": "Professional Desktop Toolkit Dft Pro 2023 pre-configured environment for seamless local workstation deployment and automated pipeline setup.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:37:55Z",
+        "pushed_at": "2026-11-08T08:38:00Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "dft",
+          "dft-freedft-calculations",
+          "dft-pro",
+          "dft-pro-2026",
+          "dft-pro-crack"
+        ]
+      }
+    },
+    {
+      "full_name": "tonenotecitadel/robux-generator",
+      "owner": "tonenotecitadel",
+      "name": "robux-generator",
+      "url": "https://github.com/tonenotecitadel/robux-generator",
+      "description": "Robux Generator 2026 pre-configured environment for seamless desktop utility deployment.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:40:31Z",
+        "pushed_at": "2026-11-08T08:40:39Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "guide-setup-robux-generator",
+          "how-to-install-robux-generator",
+          "how-to-setup-robux-generator",
+          "open-source",
+          "python"
+        ]
+      }
+    },
+    {
+      "full_name": "Patroldeovercome/ads-blocker",
+      "owner": "Patroldeovercome",
+      "name": "ads-blocker",
+      "url": "https://github.com/Patroldeovercome/ads-blocker",
+      "description": "Ads Blocker 2023 automated deployment pipeline for efficient desktop software utility configuration and seamless local workstation execution.",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-09",
+      "removedAt": "2026-11-09",
+      "issues": [
+        "2026-11-09"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 未标注，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "400 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 400,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-08T08:36:56Z",
+        "pushed_at": "2026-11-08T08:37:02Z",
+        "topics": [
+          "adblock-lists",
+          "adblocker-ultimate-list",
+          "adblockplus",
+          "adguard-list",
+          "adsblock",
+          "automation",
+          "block-ads",
+          "desktop"
         ]
       }
     }

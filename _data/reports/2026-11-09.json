@@ -1,0 +1,2482 @@
+{
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-09T09:44:06.143+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-08",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 774,
+    "unclassified": 57,
+    "selected": 29,
+    "suppressedByHistory": 188,
+    "sameDateExempt": 0,
+    "removed": 1,
+    "removedTotal": 1,
+    "offTopic": 15,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "meta/astryx",
+          "owner": "meta",
+          "name": "astryx",
+          "url": "https://github.com/meta/astryx",
+          "homepage": "http://astryx.atmeta.com",
+          "description": "An open source design system that's fully customizable and agent ready",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 16928,
+          "forks": 1332,
+          "open_issues": 651,
+          "starGain": 875,
+          "heat": 875,
+          "heatBasis": "trending",
+          "heatPercentile": 99,
+          "ageDays": 303,
+          "created_at": "2026-01-09T16:20:32Z",
+          "pushed_at": "2026-11-09T01:43:27Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 88.5,
+          "breakdown": {
+            "heat": 99,
+            "community": 80,
+            "activity": 76,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An open source design system that's fully customizable and built for how we build now: by people and the agents working alongside them.\n\nDocs · Storybook · Sandbox · Contributing · Discord\n\nAstryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, designers, and product teams who depend on it every day.",
+            "features": [
+              "Open internals. Components are built to be composed at any level, not locked behind a closed top-level API. The building blocks you'd reach ",
+              "No styling lock-in. Astryx authors its styles with StyleX, but that's invisible to consumers. Override with className using Tailwind, CSS mo",
+              "Customize without wrapping. A theme is a set of CSS custom property overrides, so a designer can make Astryx unmistakably theirs without for",
+              "Built for people and agents. The API, docs, and CLI are designed together so a person and an AI assistant build the same way, from the same ",
+              "Guidance over enforcement. Components give you capability rather than guardrails that fight you. Design opinions live in docs and examples —",
+              "Strong, documented conventions. Every component follows the same naming, prop, and composition rules, and every one is thoroughly documented",
+              "One system for humans and AI. The API, conventions, docs, and CLI are designed together so people and AI assistants build the same way. Ever",
+              "Earned by measurement. We test conventions rather than assert them, hold the results loosely, and revisit them when a new situation proves t"
+            ],
+            "sections": [
+              "Astryx",
+              "Overview",
+              "Getting Started",
+              "npm",
+              "pnpm",
+              "yarn",
+              "Packages",
+              "Principles",
+              "Architecture",
+              "Foundations",
+              "Components",
+              "Patterns",
+              "Project Structure",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9082
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "storytold/artcraft",
+          "owner": "storytold",
+          "name": "artcraft",
+          "url": "https://github.com/storytold/artcraft",
+          "homepage": "https://getartcraft.com",
+          "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+          "language": "Rust",
+          "topics": [
+            "3d-graphics",
+            "ai",
+            "aivideo",
+            "filmmaking",
+            "imagegeneration"
+          ],
+          "stars": 39926,
+          "forks": 6254,
+          "open_issues": 684,
+          "starGain": 335,
+          "heat": 335,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 1683,
+          "created_at": "2022-03-31T23:19:12Z",
+          "pushed_at": "2026-11-09T01:22:48Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 90.6,
+          "breakdown": {
+            "heat": 95,
+            "community": 88,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "https://github.com/user-attachments/assets/7339bd09-3e0d-44a7-a024-af9de64e4c11\n\nDownload ArtCraft · GitHub releases · Build from source\n\nArtCraft is the IDE for interactive AI image and video creation. Compose in 2D, stage scenes in 3D, and choose the models that fit your work. Turn prompting into crafting with visual tools for precise, repeatable results.",
+            "features": [
+              "Stable releases for Windows, macOS, and Linux",
+              "Latest builds on GitHub (including AppImage, DEB, RPM, Arch, and Flatpak packages)",
+              "Linux packaging notes",
+              "Development setup",
+              "Linux packaging",
+              "Developer documentation",
+              "Desktop build and development scripts",
+              "Roadmap"
+            ],
+            "sections": [
+              "Show, Don't Tell: Advanced Crafting Features",
+              "Quick and Easy Prompting",
+              "Models and Providers Supported within ArtCraft",
+              "Downloads",
+              "Documentation",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 15267
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "microsoft/TokenEconomizer",
+          "owner": "microsoft",
+          "name": "TokenEconomizer",
+          "url": "https://github.com/microsoft/TokenEconomizer",
+          "homepage": "",
+          "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
+          "language": "Python",
+          "topics": [
+            "agentic-ai",
+            "agentic-coding",
+            "ai-coding",
+            "ai-coding-assistant",
+            "anthropic",
+            "artificial-intelligence",
+            "claude-code",
+            "codex"
+          ],
+          "stars": 5287,
+          "forks": 319,
+          "open_issues": 9,
+          "starGain": 328,
+          "heat": 328,
+          "heatBasis": "snapshot",
+          "heatPercentile": 95,
+          "ageDays": 27,
+          "created_at": "2026-10-13T04:16:50Z",
+          "pushed_at": "2026-11-08T22:09:30Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81,
+          "breakdown": {
+            "heat": 95,
+            "community": 69,
+            "activity": 63,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Aaron J. Li 1 , Weijia Xu 2 , Chandan Singh 2 , Zixiao Chen 3 , Jeevana Priya Inala 2 , Charlotte Siska 3 , Acar Tamersoy 3 , Bin Yu 1 , Ion Stoica 1 , Michel Galley 2 , Jianfeng Gao 2 1 UC Berkeley &nbsp; 2 Microsoft Research &nbsp; 3 Microsoft Security\n\nOur measurement on SWE-Bench tasks: 18.4–30.9% lower mean cost across five agent–model combinations, cheaper in all 30 repository × combination cells, and Pass@1 up in 4 of 5 . Results\n\nTokenEconomizer makes coding agents cheaper to run in the repositories you work in often, without changing the agent itself. It learns from the sessions an agent has already run in a repository, and uses that experience to cut waste in the sessions that follow. It has three mechanisms:",
+            "features": [
+              "Micro-skills: remember how the repository works. Sessions keep rediscovering the same",
+              "Tool pruning: stop loading tools that go unused. Every loaded tool's definition is sent with",
+              "Failure-loop intervention (the loop guard): step in when a turn is stuck. When a turn (the",
+              "Work through what the agent already reads. Facts enter the context at session start, and",
+              "Count cost as it is billed. Most tokens in a session are cached re-reads, so cost is",
+              "Protect task success. Facts form only from repeated evidence, tools are removed only after",
+              "Keep every action reversible. A fact that later sessions contradict is dropped, removed",
+              "Codex before 0.141.0 does not run plugin hooks at all."
+            ],
+            "sections": [
+              "TokenEconomizer: Experience-Driven Black-Box Cost Control fo",
+              "Results",
+              "How it works",
+              "Quick start",
+              "Install",
+              "Supported versions",
+              "Everyday commands",
+              "Settings",
+              "What it does on each agent",
+              "When a turn gets stuck",
+              "Repository",
+              "Reproducing the experiments",
+              "Citation",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 29266
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "elie222/rakazo",
+          "owner": "elie222",
+          "name": "rakazo",
+          "url": "https://github.com/elie222/rakazo",
+          "homepage": "https://rakazo.com",
+          "description": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-agents",
+            "chatgpt",
+            "docker",
+            "electron",
+            "expo",
+            "grok",
+            "llm",
+            "self-hosted"
+          ],
+          "stars": 7572,
+          "forks": 1356,
+          "open_issues": 163,
+          "starGain": 107,
+          "heat": 107,
+          "heatBasis": "trending",
+          "heatPercentile": 84,
+          "ageDays": 88,
+          "created_at": "2026-08-13T06:28:56Z",
+          "pushed_at": "2026-11-09T01:40:05Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.5,
+          "breakdown": {
+            "heat": 84,
+            "community": 75,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 37,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Rakazo is an open source, self-hosted alternative to Grok Bot.\n\nPersistent AI teammates with their own memory, routines, apps, and computer. Run it on your own machine, with your own model.\n\nIt is also an alternative to Meta Muse, OpenAI Dots, Instinct, OpenClaw, Hermes Agent, and Claude Duet.",
+            "features": [
+              "Computer and browser use",
+              "Private or shared team computers",
+              "Sandboxes in Docker, the cloud, or on your own machine",
+              "Delegation and subagents",
+              "Voice chat and calls",
+              "Any model, with your own keys",
+              "Thousands of app integrations, plus MCP",
+              "Self-hosting"
+            ],
+            "sections": [
+              "Rakazo",
+              "Features",
+              "Every bot gets a computer",
+              "Bots that work together",
+              "Routines",
+              "Pages",
+              "Connected apps",
+              "On every device",
+              "Quick start (published images)",
+              "Run on a server",
+              "edit .env: SANDBOX PROVIDER=boat (or e2b / daytona / createo",
+              "Local development (source checkout)",
+              "Desktop and mobile",
+              "UI language"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 18242
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "kortix-ai/CompanyOS",
+          "owner": "kortix-ai",
+          "name": "CompanyOS",
+          "url": "https://github.com/kortix-ai/CompanyOS",
+          "homepage": "https://kortix.com",
+          "description": "Kortix CompanyOS – the open-source operating system for your company. Multiplayer AI agents, your company as code, sovereign on your infrastructure or ours.",
+          "language": "TypeScript",
+          "topics": [
+            "ai",
+            "ai-agents",
+            "company-as-code",
+            "company-operating-system",
+            "company-os",
+            "companyos",
+            "llm",
+            "open-source"
+          ],
+          "stars": 20580,
+          "forks": 3462,
+          "open_issues": 63,
+          "starGain": 72,
+          "heat": 72,
+          "heatBasis": "trending",
+          "heatPercentile": 78,
+          "ageDays": 764,
+          "created_at": "2024-10-05T17:01:01Z",
+          "pushed_at": "2026-11-09T01:43:05Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 80.4,
+          "breakdown": {
+            "heat": 78,
+            "community": 84,
+            "activity": 69,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The open-source CompanyOS: the cloud-native agent harness for companies.\n\nOpen Source &nbsp;·&nbsp; Extensible &nbsp;·&nbsp; Multiplayer &nbsp;·&nbsp; Sovereign\n\nAlways-on agents that start on events, run in parallel and share one memory of your company.",
+            "features": [
+              "Outcome. You state it once, in plain words, with the rules that matter.",
+              "Plan. An agent owns it end to end, breaks it into work and wakes itself on a schedule.",
+              "Work. Agents run on their own cloud computers at any hour, started by schedules, webhooks and your tools.",
+              "Verify. A separate agent checks the result, and changes land through a change request you approve.",
+              "Learn. What the agents learned goes back into company memory and skills. Every run makes the next one better.",
+              "SciencePal , the AI research assistant of the Hong Kong Institute of AI for Science at City University of Hong Kong, built from Kortix's ope",
+              "Platinum , a sandbox cloud for AI agents, built and tested by agents on Kortix.",
+              "Kortix itself : an intake agent triages every issue and worker agents fix it on their own machines."
+            ],
+            "sections": [
+              "Kortix CompanyOS",
+              "A new kind of system",
+              "Kortix, end to end",
+              "What is a CompanyOS?",
+              "Three things make it yours",
+              "Give it an outcome. AI agents run it 24/7.",
+              "Quickstart",
+              "1 · Install the CLI",
+              "2 · Scaffold a project: kortix.yaml plus your agents, skills",
+              "3 · Ship it: push the repo and bring the whole thing live in",
+              "What runs on Kortix CompanyOS",
+              "Self-host",
+              "Security",
+              "AI Transformation, done for you"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16822
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "vercel-labs/json-render",
+          "owner": "vercel-labs",
+          "name": "json-render",
+          "url": "https://github.com/vercel-labs/json-render",
+          "homepage": "https://json-render.dev",
+          "description": "The Generative UI framework",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 19457,
+          "forks": 1030,
+          "open_issues": 129,
+          "starGain": 149,
+          "heat": 149,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 298,
+          "created_at": "2026-01-14T17:22:39Z",
+          "pushed_at": "2026-11-06T17:27:34Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 80.1,
+          "breakdown": {
+            "heat": 91,
+            "community": 80,
+            "activity": 56,
+            "maturity": 75
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Generate dynamic, personalized UIs from prompts without sacrificing reliability. Predefined components and actions for safe, predictable output.\n\nnpm install @json-render/core @json-render/react-native\n\nnpm install @json-render/core @json-render/remotion",
+            "features": [
+              "Guardrailed - AI can only use components in your catalog",
+              "Predictable - JSON output matches your schema, every time",
+              "Fast - Stream and render progressively as the model responds",
+              "Cross-Platform - React, Vue, Svelte, Solid (web), React Native (mobile) from the same catalog",
+              "Batteries Included - 36 pre-built shadcn/ui components ready to use",
+              "{ \"$state\": \"/state/key\" } - reads a value from the state model",
+              "{ \"$cond\": , \"$then\": , \"$else\": } - evaluates a condition and picks a branch",
+              "{ \"$template\": \"Hello, ${/user/name}!\" } - interpolates state values into strings"
+            ],
+            "sections": [
+              "json-render",
+              "for React",
+              "for React with pre-built shadcn/ui components",
+              "or for React Native",
+              "or for video",
+              "or for PDF documents",
+              "or for HTML email",
+              "or for Vue",
+              "or for Svelte",
+              "or for SolidJS",
+              "or for terminal UIs",
+              "or for full Next.js apps (routes, layouts, SSR, metadata)",
+              "or for 3D scenes (and gaussian splatting via the GaussianSpl",
+              "Why json-render?"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 26209
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "mantrakp04/ardia",
+          "owner": "mantrakp04",
+          "name": "ardia",
+          "url": "https://github.com/mantrakp04/ardia",
+          "homepage": "https://ardia.dev",
+          "description": "A free Chromium browser for the Mac: Arc's sidebar, Dia's polish. Chat on Discord: discord.gg/TdhuXrbcA6",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 1484,
+          "forks": 155,
+          "open_issues": 443,
+          "starGain": 85,
+          "heat": 85,
+          "heatBasis": "trending",
+          "heatPercentile": 87,
+          "ageDays": 142,
+          "created_at": "2026-06-19T19:56:08Z",
+          "pushed_at": "2026-11-09T00:47:14Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 77.7,
+          "breakdown": {
+            "heat": 87,
+            "community": 59,
+            "activity": 75,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Arc’s sidebar and Dia’s polish on real Chromium. Free and open source. Ads and trackers stay out.\n\n121 MB DMG · macOS 14 Sonoma or later · Apple Silicon · Notarized by Apple Like your paint wet? The nightly has every fix the day it’s made, smudges and all. Homebrew: brew install mantrakp04/tap/ardia ardia.dev · What’s new · All releases · Discord\n\nMove the address bar into the sidebar and the page runs all the way to the top of the window.",
+            "features": [
+              "Work stays at work. Each profile keeps its own logins, history, extensions and colour. Swipe the sidebar to switch.",
+              "Little Ardia. ⌥⌘N opens a small window with one page and no sidebar.",
+              "Groups on contact. Drop a tab on a tab and they’re a group, named for you.",
+              "Moves in for you. Bookmarks, history, passwords and logins from Chrome, Safari, Firefox, Arc, Dia and five more. Arc’s spaces, pinned tabs a",
+              "Paints like Arc. Gradient themes per profile: up to three colours, some grain, some blur.",
+              "Syncs through your iCloud. End-to-end encrypted, in a folder in your own iCloud Drive. No server of ours in the middle.",
+              "Command bar. ⌘L finds tabs, history and bookmarks, does your sums, and knows doc.new and 16 friends.",
+              "Tidies up. ⌥⌘K sweeps the tabs you haven’t touched into Recently Cleaned."
+            ],
+            "sections": [
+              "Lose the toolbar.",
+              "Two pages, one window.",
+              "Refuses to leave the picture.",
+              "Your extensions come along.",
+              "Ads and trackers stay out.",
+              "Also in there",
+              "It’s actually Chromium.",
+              "Build it yourself",
+              "Run it",
+              "How Dia's New Tab light works",
+              "Architecture notes",
+              "Status",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12414
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Open-Dev-Society/OpenStock",
+          "owner": "Open-Dev-Society",
+          "name": "OpenStock",
+          "url": "https://github.com/Open-Dev-Society/OpenStock",
+          "homepage": "https://openstock-ods.vercel.app",
+          "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
+          "language": "TypeScript",
+          "topics": [
+            "coderabbit",
+            "inngest",
+            "nextjs",
+            "shadcn-ui",
+            "stock-market",
+            "tailwindcss"
+          ],
+          "stars": 21363,
+          "forks": 2657,
+          "open_issues": 13,
+          "starGain": 66,
+          "heat": 66,
+          "heatBasis": "trending",
+          "heatPercentile": 86,
+          "ageDays": 406,
+          "created_at": "2025-09-28T18:16:32Z",
+          "pushed_at": "2026-11-04T12:13:42Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 77.5,
+          "breakdown": {
+            "heat": 86,
+            "community": 83,
+            "activity": 33,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Orbit . Free, open-source macOS screen recorder, screenshot tool and video editor: auto-zoom, smooth cursor, backgrounds, web recordings and AI agent recording.\n\nOpen OpenStock · Changelog · Self-host it · Sponsor · Discord\n\nMarkets, minus the paywall. OpenStock is a free, open-source alternative to expensive market platforms: track prices, watch the whole market and dig into company insights. Use it at openstock-ods.vercel.app, or run your own copy with every feature.",
+            "features": [
+              "🔋 Features",
+              "⏱️ How fresh is the data",
+              "⚙️ Tech stack",
+              "🤸 Quick start",
+              "🔐 Environment variables",
+              "🐳 Self-hosting: Docker, prebuilt image, one-click deploys, Vercel",
+              "🧱 Project structure",
+              "📡 How it works"
+            ],
+            "sections": [
+              "OpenStock",
+              "📋 Table of Contents",
+              "🔋 Features",
+              "⏱️ How fresh is the data",
+              "⚙️ Tech stack",
+              "🤸 Quick start",
+              "🔐 Environment variables",
+              "🐳 Self-hosting",
+              "Docker Compose",
+              "Prebuilt image",
+              "One-click deploys",
+              "Railway",
+              "Vercel",
+              "🧱 Project structure"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 34047
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "4ian/GDevelop",
+          "owner": "4ian",
+          "name": "GDevelop",
+          "url": "https://github.com/4ian/GDevelop",
+          "homepage": "https://gdevelop.io",
+          "description": "🎮 Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.",
+          "language": "JavaScript",
+          "topics": [
+            "2d-game",
+            "2d-game-engine",
+            "3d",
+            "3d-game",
+            "3d-game-engine",
+            "game",
+            "game-development",
+            "game-engine"
+          ],
+          "stars": 28620,
+          "forks": 1651,
+          "open_issues": 650,
+          "starGain": 53,
+          "heat": 53,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 4515,
+          "created_at": "2014-06-29T19:58:38Z",
+          "pushed_at": "2026-11-07T21:13:05Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 80.7,
+          "breakdown": {
+            "heat": 79,
+            "community": 83,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "GDevelop is a full-featured, no-code, open-source game development software. You can build 2D, 3D and multiplayer games for mobile (iOS, Android), desktop and the web. GDevelop is designed to be fast and incredibly intuitive: make games using an easy-to-understand yet powerful event-based system and modular behaviors. Create with AI that assists or builds alongside you.\n\n- Find GDevelop games on gd.games, the gaming platform for games powered by GDevelop. - See the showcase of games created with GDevelop and published on Steam, iOS (App Store), Android (Google Play), Itch.io, Newgrounds, CrazyGames, Poki...\n\nGDevelop is composed of an editor , a game engine , an ecosystem of extensions as well as online services and commercial support.",
+            "features": [
+              "Find GDevelop games on gd.games, the gaming platform for games powered by GDevelop.",
+              "See the showcase of games created with GDevelop and published on Steam, iOS (App Store), Android (Google Play), Itch.io, Newgrounds, CrazyGa",
+              "GDevelop forums and Discord chat.",
+              "GDevelop homepage.",
+              "GDevelop wiki (documentation).",
+              "Help translate GDevelop in your language: GDevelop project on Crowdin.",
+              "Open-source extensions (official or experimental), community extensions, examples, tutorials are on GitHub.",
+              "GDevelop Roadmap on Trello.com, for a global view of the features that could be added. Please vote and comment here for new features/request"
+            ],
+            "sections": [
+              "Getting started",
+              "Games made with GDevelop",
+              "Technical architecture",
+              "Links",
+              "Community",
+              "Development Roadmap",
+              "License",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9219
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "XiaoYouChR/Ghost-Downloader-3",
+          "owner": "XiaoYouChR",
+          "name": "Ghost-Downloader-3",
+          "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+          "homepage": "https://gd.xychr.com/",
+          "description": "The only downloader you need. 下载器的集大成者。",
+          "language": "Python",
+          "topics": [
+            "async",
+            "asyncio",
+            "bittorent",
+            "bt",
+            "cross-platform",
+            "download-manager",
+            "downloader",
+            "fluent-design"
+          ],
+          "stars": 10867,
+          "forks": 707,
+          "open_issues": 79,
+          "starGain": 53,
+          "heat": 53,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 1181,
+          "created_at": "2023-08-16T04:23:44Z",
+          "pushed_at": "2026-11-08T09:22:31Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 76.9,
+          "breakdown": {
+            "heat": 79,
+            "community": 76,
+            "activity": 65,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 30,
+            "data": 21
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Fast where it matters. Every downloader is fast on a good connection. The real test is a bad one. Smart chunking without file merging. Auto-detects bandwidth. Real-browser TLS fingerprints, invisible to anti-bot checks. One app instead of five. Everything in one place, nothing watered down. HTTP , Magnet/BT , FTP , M3U8 , MPEG-DASH , eD2k . YouTube and Bilibili with clip selection, any quality and subtitles, playlists and multi-part episodes. GitHub and HuggingFace with mirror acceleration. See it. Sniff it. Download it. A download button follows the video, any quality you want. The extension popup lists every medium on the page. Click it there, or just download as you normally would, the desktop app takes over seamlessly. No copying links, and authentication state carries over. Native on every platform. It shows in the details. One app, four systems, native experience everywhere. On Android, it records live M3U8 streams and keeps downloading in the background. Always in control Effortlessly. aria2 -compatible RPC API for third-party tools. Change the URL, headers, or proxy mid-download. Progress is never lost.\n\nStarted as a passion project to help a Bilibili creator manage resources. Now it ships on four platforms, handles virtually every download protocol, and has a growing Feature Packs plugin ecosystem.\n\nhttps://github.com/user-attachments/assets/d97dc8c9-f320-4645-8dcd-0d9dc4cf2eab",
+            "features": [
+              "Fast where it matters. Every downloader is fast on a good connection. The real test is a bad one. Smart chunking without file merging. Auto-",
+              "One app instead of five. Everything in one place, nothing watered down. HTTP , Magnet/BT , FTP , M3U8 , MPEG-DASH , eD2k . YouTube and Bilib",
+              "See it. Sniff it. Download it. A download button follows the video, any quality you want. The extension popup lists every medium on the page",
+              "Native on every platform. It shows in the details. One app, four systems, native experience everywhere. On Android, it records live M3U8 str",
+              "Always in control Effortlessly. aria2 -compatible RPC API for third-party tools. Change the URL, headers, or proxy mid-download. Progress is",
+              "[ ] Make the plugin API public (Feature Packs system is operational, API stabilizing)",
+              "[ ] Enhanced task editing, such as binding multiple Sessions to one task",
+              "Fork the Project"
+            ],
+            "sections": [
+              "The only downloader you need",
+              "Features",
+              "About The Project",
+              "Screenshots",
+              "Command Line",
+              "see which files the torrent contains",
+              "download only files 0 and 3 into ./downloads",
+              "wait until the download finishes",
+              "Roadmap",
+              "Sponsor",
+              "Contributing",
+              "Translation Contributors",
+              "License",
+              "Contact"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14101
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "TwiN/gatus",
+          "owner": "TwiN",
+          "name": "gatus",
+          "url": "https://github.com/TwiN/gatus",
+          "homepage": "https://gatus.io",
+          "description": "Automated developer-oriented status page with alerting and incident support",
+          "language": "Go",
+          "topics": [
+            "alerting",
+            "container",
+            "dashboard",
+            "devops",
+            "docker",
+            "go",
+            "golang",
+            "health"
+          ],
+          "stars": 12648,
+          "forks": 894,
+          "open_issues": 436,
+          "starGain": 100,
+          "heat": 100,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 2623,
+          "created_at": "2019-09-04T02:35:40Z",
+          "pushed_at": "2026-11-07T03:59:57Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.6,
+          "breakdown": {
+            "heat": 89,
+            "community": 77,
+            "activity": 62,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Gatus is a developer-oriented health dashboard that gives you the ability to monitor your services using HTTP, ICMP, TCP, and even DNS queries as well as evaluate the result of said queries by using a list of conditions on values like the status code, the response time, the certificate expiration, the body and many others. The icing on top is that each of these health checks can be paired with alerting via Slack, Teams, PagerDuty, Discord, Twilio and many more.\n\nI personally deploy it in my Kubernetes cluster and let it monitor the status of my core applications: https://status.twin.sh/\n\nLooking for a managed solution? Check out Gatus.io.",
+            "features": [
+              "Table of Contents",
+              "Why Gatus?",
+              "Features",
+              "Usage",
+              "Configuration",
+              "Endpoints",
+              "External Endpoints",
+              "Suites (ALPHA)"
+            ],
+            "sections": [
+              "Table of Contents",
+              "Why Gatus?",
+              "Features",
+              "Usage",
+              "Configuration",
+              "Configuration",
+              "Endpoints",
+              "External Endpoints",
+              "Suites (ALPHA)",
+              "Conditions",
+              "Web",
+              "UI",
+              "Announcements",
+              "Storage"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 223186
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "glanceapp/glance",
+          "owner": "glanceapp",
+          "name": "glance",
+          "url": "https://github.com/glanceapp/glance",
+          "homepage": "",
+          "description": "A self-hosted dashboard that puts all your feeds in one place",
+          "language": "Go",
+          "topics": [
+            "aggregator",
+            "dashboard",
+            "docker",
+            "feed-reader",
+            "go",
+            "homelab",
+            "homepage",
+            "monitoring"
+          ],
+          "stars": 38100,
+          "forks": 1518,
+          "open_issues": 319,
+          "starGain": 29,
+          "heat": 29,
+          "heatBasis": "trending",
+          "heatPercentile": 75,
+          "ageDays": 925,
+          "created_at": "2024-04-27T18:55:38Z",
+          "pushed_at": "2026-11-07T15:59:44Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 76.2,
+          "breakdown": {
+            "heat": 75,
+            "community": 85,
+            "activity": 65,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Glance Install • Configuration • Discord • Sponsor Community widgets • Preconfigured pages • Themes\n\nRSS feeds Subreddit posts Hacker News posts Weather forecasts YouTube channel uploads Twitch channels Market prices Docker containers status Server stats Custom widgets and many more...\n\nLow memory usage Few dependencies Minimal vanilla JS Single <20mb binary available for multiple OSs & architectures and just as small Docker container Uncached pages usually load within ~1s (depending on internet speed and number of widgets)",
+            "features": [
+              "Subreddit posts",
+              "Hacker News posts",
+              "Weather forecasts",
+              "YouTube channel uploads",
+              "Twitch channels",
+              "Market prices",
+              "Docker containers status",
+              "Server stats"
+            ],
+            "sections": [
+              "Features",
+              "Various widgets",
+              "Fast and lightweight",
+              "Tons of customizability",
+              "Optimized for mobile devices",
+              "Themeable",
+              "Configuration",
+              "Installation",
+              "Linux",
+              "Windows",
+              "Common issues",
+              "FAQ",
+              "and so on for all widgets...",
+              "Feature requests"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 14624
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "roundStars"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "google/gvisor",
+          "owner": "google",
+          "name": "gvisor",
+          "url": "https://github.com/google/gvisor",
+          "homepage": "https://gvisor.dev",
+          "description": "Application Kernel for Containers",
+          "language": "Go",
+          "topics": [
+            "containers",
+            "docker",
+            "kernel",
+            "kubernetes",
+            "linux",
+            "oci",
+            "sandbox"
+          ],
+          "stars": 19924,
+          "forks": 2068,
+          "open_issues": 1144,
+          "starGain": 15,
+          "heat": 15,
+          "heatBasis": "trending",
+          "heatPercentile": 67,
+          "ageDays": 3118,
+          "created_at": "2018-04-26T21:28:49Z",
+          "pushed_at": "2026-11-09T01:42:06Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 75.6,
+          "breakdown": {
+            "heat": 67,
+            "community": 82,
+            "activity": 78,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "gVisor provides a strong layer of isolation between running applications and the host operating system. It is an application kernel that implements a [Linux-like interface][linux]. Unlike Linux, it is written in a memory-safe language (Go) and runs in userspace.\n\ngVisor includes an [Open Container Initiative (OCI)][oci] runtime called runsc that makes it easy to work with existing container tooling. The runsc runtime integrates with Docker and Kubernetes, making it simple to run sandboxed containers.\n\ngVisor is not a syscall filter (e.g. seccomp-bpf ), nor a wrapper over Linux isolation primitives (e.g. firejail , AppArmor, etc.). gVisor is also not a VM in the everyday sense of the term (e.g. VirtualBox, QEMU).",
+            "features": [
+              "gVisor is not a syscall filter (e.g. seccomp-bpf ), nor a wrapper over",
+              "gVisor is also not a VM in the everyday sense of the term (e.g.",
+              "Linux 5.6+",
+              "[Docker version 17.09.0 or greater][docker]",
+              "Look at the build dockerfile for the canonical",
+              "Install and use [bazelisk][bazelisk]. Otherwise, make sure your bazel",
+              "Get an invitation from the self-service page at",
+              "Accept the invitation that you get in your email."
+            ],
+            "sections": [
+              "What is gVisor?",
+              "What isn't gVisor?",
+              "Why does gVisor exist?",
+              "Documentation",
+              "Installing from source",
+              "Requirements",
+              "Building",
+              "Building directly with Bazel (without Docker)",
+              "Testing",
+              "Makefile",
+              "Bazel",
+              "Mac OS",
+              "You can then run the tests, e.g.:",
+              "Using go get"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7597
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "apple/container",
+          "owner": "apple",
+          "name": "container",
+          "url": "https://github.com/apple/container",
+          "homepage": "https://apple.github.io/container/documentation/",
+          "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon. ",
+          "language": "Swift",
+          "topics": [],
+          "stars": 51112,
+          "forks": 1807,
+          "open_issues": 595,
+          "starGain": 16,
+          "heat": 16,
+          "heatBasis": "trending",
+          "heatPercentile": 70,
+          "ageDays": 527,
+          "created_at": "2025-05-30T21:26:05Z",
+          "pushed_at": "2026-11-06T22:38:46Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 74.5,
+          "breakdown": {
+            "heat": 70,
+            "community": 86,
+            "activity": 62,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 85,
+            "ai": 30,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "container is a tool that you can use to create and run Linux containers as lightweight virtual machines on your Mac. It's written in Swift, and optimized for Apple silicon.\n\nThe tool consumes and produces OCI-compatible container images, so you can pull and run images from any standard container registry. You can push images that you build to those registries as well, and run the images in any other OCI-compatible application.\n\ncontainer uses the Containerization Swift package for low-level container, image, and process management.",
+            "features": [
+              "Take a guided tour of container by building, running, and publishing a simple web server image.",
+              "Learn how to use various container features.",
+              "Explore the container-examples repo that contains examples that show you how to work with container , such as developing Linux apps in a con",
+              "Read a brief description and technical overview of container .",
+              "Browse the full command reference.",
+              "View the project API documentation."
+            ],
+            "sections": [
+              "Get started",
+              "Requirements",
+              "Initial install",
+              "Run your first container",
+              "Upgrade or downgrade",
+              "Uninstall",
+              "Next steps",
+              "Contributing",
+              "Project Status"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5322
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "VictoriaMetrics/VictoriaMetrics",
+          "owner": "VictoriaMetrics",
+          "name": "VictoriaMetrics",
+          "url": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+          "homepage": "https://victoriametrics.com/",
+          "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database",
+          "language": "Go",
+          "topics": [
+            "database",
+            "grafana",
+            "graphite",
+            "influxdb",
+            "kubernetes",
+            "metrics",
+            "monitoring",
+            "observability"
+          ],
+          "stars": 18058,
+          "forks": 1795,
+          "open_issues": 777,
+          "starGain": 15,
+          "heat": 15,
+          "heatBasis": "trending",
+          "heatPercentile": 67,
+          "ageDays": 2962,
+          "created_at": "2018-09-30T09:58:01Z",
+          "pushed_at": "2026-11-06T18:45:24Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 73.6,
+          "breakdown": {
+            "heat": 67,
+            "community": 81,
+            "activity": 62,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 70
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "VictoriaMetrics is a fast, cost-effective, and scalable solution for monitoring and managing time series data. It delivers high performance and reliability, making it an ideal choice for businesses of all sizes.\n\nHere are some resources and information about VictoriaMetrics:\n\n- Case studies : Grammarly, Roblox, Wix, Spotify,.... - Available : Binary releases, Docker images on Docker Hub and Quay, Source code. - Deployment types : Single-node version and Cluster version under Apache License 2.0. - Getting started: Read key concepts and follow the quick start guide. - Community : Slack (join via Slack Inviter), X (Twitter), YouTube. See full list here. - Changelog : Project evolves fast - check the CHANGELOG, and How to upgrade. - Enterprise support: Contact us for commercial support with additional enterprise features. - Enterprise releases: Enterprise and long-term support releases (LTS) are publicly available and can be evaluated for free using a free trial license. - Security: we achieved security certifications for Database Software Development and Software-Based Monitoring Services.",
+            "features": [
+              "Case studies : Grammarly, Roblox, Wix, Spotify,....",
+              "Available : Binary releases, Docker images on Docker Hub and Quay, Source code.",
+              "Deployment types : Single-node version and Cluster version under Apache License 2.0.",
+              "Getting started: Read key concepts and follow the",
+              "Community : Slack (join via Slack Inviter), X (Twitter), YouTube. See full list here.",
+              "Changelog : Project evolves fast - check the CHANGELOG, and How to upgrade.",
+              "Enterprise support: Contact us for commercial support with additional enterprise features.",
+              "Enterprise releases: Enterprise and long-term support releases (LTS) are publicly available and can be evaluated for free"
+            ],
+            "sections": [
+              "VictoriaMetrics",
+              "Prominent features",
+              "Enterprise version",
+              "Benchmarks",
+              "Community and contributions",
+              "VictoriaMetrics Logo",
+              "VictoriaMetrics Logo Usage Guidelines",
+              "Logo Usage Rules",
+              "Join the team"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13671
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "microsoft/sqlsimtools",
+          "owner": "microsoft",
+          "name": "sqlsimtools",
+          "url": "https://github.com/microsoft/sqlsimtools",
+          "homepage": "https://microsoft.github.io/sqlsimtools/",
+          "description": "Open-source load testing and benchmarking tools for SQL Server, Azure SQL, and SQL database in Microsoft Fabric: sqlsim, sqlpysim, and sqlsim Studio",
+          "language": "PowerShell",
+          "topics": [
+            "azure-sql",
+            "azure-sql-database",
+            "benchmarking",
+            "database-performance",
+            "github-copilot",
+            "load-testing",
+            "microsoft-fabric",
+            "mssql-python"
+          ],
+          "stars": 47,
+          "forks": 4,
+          "open_issues": 13,
+          "starGain": null,
+          "heat": 5.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 92,
+          "ageDays": 44,
+          "created_at": "2026-09-25T14:43:25Z",
+          "pushed_at": "2026-10-20T22:27:32Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 62.2,
+          "breakdown": {
+            "heat": 92,
+            "community": 29,
+            "activity": 9,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 73,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open-source load testing and benchmarking tools for SQL Server, Azure SQL, and SQL database in Microsoft Fabric: native and Python workload engines, a local browser studio, and agent guidance for repeatable performance experiments.\n\nInstall &nbsp; &nbsp; Build from source &nbsp; &nbsp; Use with agents &nbsp; &nbsp; Releases\n\nAll four target SQL Server 2019, 2022, and 2025, Azure SQL Database, Azure SQL Managed Instance, and SQL database in Microsoft Fabric.",
+            "features": [],
+            "sections": [
+              "Four Ways to Work",
+              "Get Started",
+              "Agent-Ready by Design",
+              "Explore",
+              "Built in the Open"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9814
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "pug-sh/pug",
+          "owner": "pug-sh",
+          "name": "pug",
+          "url": "https://github.com/pug-sh/pug",
+          "homepage": "https://pug.sh",
+          "description": "Open-source product analytics",
+          "language": "Go",
+          "topics": [
+            "ai",
+            "analytics",
+            "assistant",
+            "clickhouse",
+            "connectrpc",
+            "dpdp",
+            "flutter",
+            "flutter-analytics"
+          ],
+          "stars": 109,
+          "forks": 13,
+          "open_issues": 0,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "snapshot",
+          "heatPercentile": 78,
+          "ageDays": 158,
+          "created_at": "2026-06-04T13:10:04Z",
+          "pushed_at": "2026-11-08T18:49:42Z",
+          "license": "AGPL-3.0",
+          "rating": 3,
+          "composite": 64.6,
+          "breakdown": {
+            "heat": 78,
+            "community": 37,
+            "activity": 53,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 41,
+            "ai": 49,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Pug is an open-source product analytics platform. Capture events, identify the people behind them, and explore behavior through funnels, retention, trends, segmentation, and user-flow analysis, all surfaced on customizable dashboards.\n\n- Event ingestion : a NATS-backed capture pipeline with automatic geo, user-agent, bot-detection, and web-attribution enrichment. - Web analytics : an overview auto-built from your events: visitors, sessions, pageviews, bounce rate, and traffic sources, with no tile to wire up. - Live view : every visitor on a real-time world map, down to the person and the event they just fired. - Profiles : identify and alias the users behind events, with a ClickHouse-backed profile and activity API. - Insights : trends, funnels, retention, segmentation, user flow (Sankey), and top-K breakdowns, with filtering, breakdowns, and period-over-period comparison. - Dashboards : compose insight and markdown tiles on a grid with a board-level time window, accelerated by a pre-aggregated rollup fast path. - Privacy & compliance : GDPR/DPDP data-subject erasure of a person's events and profile.\n\nOverview : a web-analytics view auto-built from your events, with the previous period alongside.",
+            "features": [
+              "Event ingestion : a NATS-backed capture pipeline with automatic geo,",
+              "Web analytics : an overview auto-built from your events: visitors,",
+              "Live view : every visitor on a real-time world map, down to the person and",
+              "Profiles : identify and alias the users behind events, with a",
+              "Insights : trends, funnels, retention, segmentation, user flow (Sankey),",
+              "Dashboards : compose insight and markdown tiles on a grid with a",
+              "Privacy & compliance : GDPR/DPDP data-subject erasure of a person's",
+              "Go : backend services and workers, exposed over Connect RPC (HTTP/2)"
+            ],
+            "sections": [
+              "Pug",
+              "Features",
+              "Tech stack",
+              "Self-hosting",
+              "Quick start",
+              "Build the binary into bin/pug",
+              "Start dev infrastructure (PostgreSQL, NATS, ClickHouse)",
+              "Run migrations (Postgres, NATS, ClickHouse)",
+              "Seed the demo project with events, profiles, and dashboards",
+              "(resets the local Postgres and ClickHouse databases; see \"De",
+              "Start the dev server + workers together",
+              "Demo data",
+              "Development",
+              "Architecture"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8956
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "yuyuejia/datay",
+          "owner": "yuyuejia",
+          "name": "datay",
+          "url": "https://github.com/yuyuejia/datay",
+          "homepage": "http://datay.yuyuejia.com.cn/",
+          "description": "DataY 是一套轻量、高性能的数据平台，一个 JAR、自研流批一体处理引擎，自研分布式调度框架，在 2 核 4G 的机器上 就能跑通 数据集成 → 数据建模 → 数据开发 → 任务调度 → 数据应用 的完整链路。",
+          "language": "Java",
+          "topics": [
+            "data-pipeline",
+            "data-platform",
+            "etl",
+            "etl-pipeline"
+          ],
+          "stars": 38,
+          "forks": 16,
+          "open_issues": 0,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "snapshot",
+          "heatPercentile": 78,
+          "ageDays": 43,
+          "created_at": "2026-09-26T14:01:34Z",
+          "pushed_at": "2026-11-08T15:39:13Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 64.1,
+          "breakdown": {
+            "heat": 78,
+            "community": 30,
+            "activity": 52,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "传统数据平台动辄十几台机器、上百 G 内存，部署复杂、运维成本高。DataY 的理念是： 用最极致的技术栈精简，交付最完整的数据能力。\n\nDataY = DataX + Nifi + DolphinScheduler ，但它不是三个工具的拼盘，而是把这三类能力重新设计成一套运行时：\n\n- 自研流批一体数据集成框架，负责「进得来、算得动」； - 自研分布式调度框架，负责「调得准、跑得稳」； - AI 原生能力，负责「用得上、可自动化」。",
+            "features": [
+              "自研流批一体数据集成框架，负责「进得来、算得动」；",
+              "自研分布式调度框架，负责「调得准、跑得稳」；",
+              "AI 原生能力，负责「用得上、可自动化」。",
+              "支持 MySQL / PostgreSQL / Oracle / SAP HANA / Doris / ClickHouse / DuckDB 等二十余种数据源",
+              "可视化拖拽画布编排 ETL 数据流，也可 JSON 配置文件一键跑任务",
+              "支持全量同步、增量同步、MySQL CDC / PostgreSQL CDC / Oracle CDC 实时同步",
+              "自动建表（DDL 转换），源表改字段自动同步到目标",
+              "支持跨库数据比对：按主键关联两侧表，DuckDB SQL 计算差异，结果文件写入本地或 MinIO，可按任务执行实例 ID 获取结果"
+            ],
+            "sections": [
+              "DataY · 轻量数据平台",
+              "为什么是 DataY？",
+              "项目结构",
+              "五大能力，一个平台",
+              "🔌 数据集成（Data Integration）",
+              "📐 维度建模（Dimensional Modeling）",
+              "⏰ 任务调度（Job Scheduler）",
+              "🚀 高性能数仓（High-Performance Warehouse）",
+              "🤖 智能问数（AI Data Agent）",
+              "🧰 MCP Harness（让 Agent 直接操作平台对象）",
+              "环境要求",
+              "一键部署",
+              "下载",
+              "启动（单机模式，调度+执行合一），AI 能力需要提供 AI API Key，默认为 Deepseek 原厂Key"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 5305
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "astrnox/TATAbox",
+          "owner": "astrnox",
+          "name": "TATAbox",
+          "url": "https://github.com/astrnox/TATAbox",
+          "homepage": "https://tatabox.cc.cd/",
+          "description": "Your Complete Biology Study Companion — From Gaokao to Competition Level;高中生生物学习平台-高考到竞赛全链路学习方案",
+          "language": "JavaScript",
+          "topics": [
+            "biology",
+            "education",
+            "educational",
+            "educational-project",
+            "educational-software",
+            "highschool",
+            "highschool-project",
+            "highschool-students"
+          ],
+          "stars": 85,
+          "forks": 8,
+          "open_issues": 15,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 64,
+          "ageDays": 92,
+          "created_at": "2026-08-09T13:00:59Z",
+          "pushed_at": "2026-11-08T07:55:41Z",
+          "license": "MPL-2.0",
+          "rating": 3,
+          "composite": 60,
+          "breakdown": {
+            "heat": 64,
+            "community": 34,
+            "activity": 59,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 60,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "TATABOX 是一个面向高中生的生物学习网站。无论是备战全国中学生生物联赛、刷高考模拟题，还是巩固课本知识，都可以在这里完成。\n\n- 无需注册即可刷题；注册后可同步错题本与学习进度 - 极简版 ：手机或低性能设备可打开 tatabox.cc.cd/lite.html，只有「今日 / 练 / 复 / 错 / 榜」五个视图，启动更快、干扰更少 - 错题本、练习与组卷均支持打印：A4 自动分页、题目与答案解析可分模式出纸 - AI 导师、拍照搜题等功能需自行配置 API Key（均使用各大模型的免费额度，站内有教程） - 支持离线使用：可添加到手机主屏幕或 PC 作为 App 运行，并在「我的 → 数据管理」按需下载核心/完整离线题库\n\ngit clone https://github.com/astrnox/TATAbox.git cd TATABOX",
+            "features": [
+              "无需注册即可刷题；注册后可同步错题本与学习进度",
+              "极简版 ：手机或低性能设备可打开 tatabox.cc.cd/lite.html，只有「今日 / 练 / 复 / 错 / 榜」五个视图，启动更快、干扰更少",
+              "错题本、练习与组卷均支持打印：A4 自动分页、题目与答案解析可分模式出纸",
+              "AI 导师、拍照搜题等功能需自行配置 API Key（均使用各大模型的免费额度，站内有教程）",
+              "支持离线使用：可添加到手机主屏幕或 PC 作为 App 运行，并在「我的 → 数据管理」按需下载核心/完整离线题库",
+              "数据库 ：在 Supabase 创建免费项目，先执行 唯一基线 sql/schema.sql ，再执行 sql/migration tracker.sql （版本追踪），最后按版本顺序执行 sql/migration v2.sql → migration v3 security.",
+              "AI 功能 ：用户在「我的 → 设置」中自行填写 API Key，开发者无需管理",
+              "门禁自查 ：提交前运行 npm test （manifest 锚点 + 数据/迁移口径 + ESLint + 设计审计 + 单元测试/覆盖率 + 烟雾测试）"
+            ],
+            "sections": [
+              "TATABOX — 高中生生物学习平台",
+              "这是什么",
+              "快速开始",
+              "直接使用（学生 / 教师）",
+              "自行部署 / 二次开发",
+              "1. 克隆仓库",
+              "2. 本地预览（任选其一）",
+              "3. 浏览器访问 http://localhost:8000",
+              "功能一览",
+              "近期更新",
+              "核心算法",
+              "1. 间隔重复调度（FSRS）",
+              "2. 能力估计（IRT + BKT）",
+              "3. 拍照搜题/加错题（OCR）"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8769
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "samyfodil/musql",
+          "owner": "samyfodil",
+          "name": "musql",
+          "url": "https://github.com/samyfodil/musql",
+          "homepage": "",
+          "description": "SQLite-compatible database with a JIT; 300× C SQLite, 1000× Turso.",
+          "language": "Go",
+          "topics": [
+            "go",
+            "golang",
+            "jit",
+            "sql",
+            "sqlite",
+            "sqlite3"
+          ],
+          "stars": 126,
+          "forks": 16,
+          "open_issues": 11,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 64,
+          "ageDays": 115,
+          "created_at": "2026-07-17T07:25:26Z",
+          "pushed_at": "2026-11-09T00:37:26Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 59.3,
+          "breakdown": {
+            "heat": 64,
+            "community": 38,
+            "activity": 63,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "SQLite-compatible SQL, accelerated by columnar storage and a JIT compiler.\n\nmusql pairs a new storage format optimized for columnar execution with just-in-time (JIT) compilation. The format stores columns contiguously; the JIT turns supported query paths into native machine code at runtime. Filters and aggregates work directly over those columns, reducing row decoding and interpreter overhead. In a 100,000-row read benchmark, a filtered count ran about 300× faster than C SQLite and nearly 1,000× faster than Turso . See performance for the full comparison and measurement scope.\n\nUse it as an embedded database through database/sql , import existing SQLite data, or replicate a database across nodes that need to work independently.",
+            "features": [
+              "A format built for fast queries. The .musq segment format gives compiled",
+              "JIT-compiled execution. Supported query paths run as native machine code,",
+              "Familiar SQL. Joins, window functions, triggers, JSON, full-text search,",
+              "Vector search. libSQL's vector functions, column types and",
+              "SQLite import and export. Move databases between SQLite and musql's",
+              "Replication over your own network. Choose CRDT replication for independent",
+              "C SQLite and Turso are each called natively through their C APIs, with no Go",
+              "Each workload is checked against C SQLite on up to 40 bind values, then timed"
+            ],
+            "sections": [
+              "musql",
+              "Get started",
+              "In a Go program",
+              "From the command line",
+              "As a server, no Go needed",
+              "From an existing SQLite database",
+              "Performance",
+              "SQLite compatibility",
+              "Import and export databases",
+              "Bring an existing SQLite database into musql.",
+              "Export a musql database for SQLite tools or another applicat",
+              "What is tested",
+              "Moving from another Go driver",
+              "Vector search"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 20899
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "NiazMorshed2007/reanimate",
+          "owner": "NiazMorshed2007",
+          "name": "reanimate",
+          "url": "https://github.com/NiazMorshed2007/reanimate",
+          "homepage": "",
+          "description": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "animation",
+            "claude-code",
+            "claude-skills",
+            "frontend",
+            "motion",
+            "playwright"
+          ],
+          "stars": 1441,
+          "forks": 126,
+          "open_issues": 6,
+          "starGain": null,
+          "heat": 389.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 11,
+          "created_at": "2026-10-29T06:20:59Z",
+          "pushed_at": "2026-10-31T12:49:35Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 70.8,
+          "breakdown": {
+            "heat": 96,
+            "community": 59,
+            "activity": 19,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 77,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A lot of good ideas start on someone else's site. Ask an agent to rebuild one from a link or a screenshot and it makes one pass, calls it done, and misses. It can't see the motion or tell how far off it is.\n\nreanimate records the original, rebuilds it in your code, then records the copy the same way and compares the two. Each round shows what's still off, so the agent keeps going until the numbers match. You end up with a close starting point to make your own.\n\nThe skills CLI asks which agents to set up; add -a claude-code to skip the question. Then, in Claude Code, say what you want, where it is and where it should go:",
+            "features": [
+              "Record. It films the reference in a headless browser at a fixed viewport and frame rate: a video, numbered frames, every CSS and Web Animati",
+              "Spec. One row per element per property: start, duration, from → to, easing, stagger. A row with a \"?\" means the frames haven't been read yet",
+              "Verify. It films the copy the same way, compares timing, easing and pixels, and makes side-by-side sheets.",
+              "Repeat. It fixes the biggest difference and films again, usually 2 to 5 rounds. Whatever still doesn't match after 5 is listed in its report",
+              "Pages behind a login, YouTube and Loom can't be recorded directly; hand it a screen recording.",
+              "Physics springs are fitted from their overshoot and settle time, not read from the source.",
+              "Workers are seeded and traced, but their own clocks run in real time. Canvases inside iframes need the iframe's own URL.",
+              "When a clone can't reproduce the reference's random generator, particles are compared with a blurred mismatch (density, colour, motion) inst"
+            ],
+            "sections": [
+              "Install",
+              "How it works",
+              "Examples",
+              "Canvas, WebGL and 3D",
+              "Limits",
+              "Repository",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 12013
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "googlecolab/google-colab-cli",
+          "owner": "googlecolab",
+          "name": "google-colab-cli",
+          "url": "https://github.com/googlecolab/google-colab-cli",
+          "homepage": "",
+          "description": "A CLI for interacting with Google Colab runtimes",
+          "language": "Python",
+          "topics": [],
+          "stars": 2083,
+          "forks": 298,
+          "open_issues": 41,
+          "starGain": 104,
+          "heat": 104,
+          "heatBasis": "trending",
+          "heatPercentile": 55,
+          "ageDays": 205,
+          "created_at": "2026-04-17T22:12:32Z",
+          "pushed_at": "2026-11-06T10:30:44Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 57.3,
+          "breakdown": {
+            "heat": 55,
+            "community": 63,
+            "activity": 50,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A command-line interface for Google Colab. Provision high-performance CPU, GPU, and TPU runtimes, execute local code, manage remote files, and orchestrate automated cloud pipelines — directly from your terminal.\n\nDesigned to support seamless developer productivity, headless automation, and AI agent integrations.\n\nInstant VM Provisioning: Spin up CPU, GPU (T4, L4, G4, H100, A100), or TPU (v5e1, v6e1) runtimes in seconds. Robust Code Execution: Run local Python scripts, Jupyter Notebooks ( .ipynb ), or piped stdin code; launch interactive REPLs or raw TTY console shells. Ephemeral Job Runner ( colab run ): Provision a fresh VM, execute a local script with forwarded arguments, retrieve output files, and automatically tear down the runtime in a single command. Activity-Based Liveness: Sessions stay alive as long as the kernel is active, with the Colab backend automatically maintaining liveness. Seamless Workspace Automation: Mount Google Drive, authenticate Google Cloud Platform (GCP) credentials, and install dependencies with high-performance uv package management. State & Log Archival: Inspect local session states or export interactive history logs to standard Jupyter Notebooks, Markdown, or structured JSONL.",
+            "features": [
+              "Instant VM Provisioning: Spin up CPU, GPU (T4, L4, G4, H100, A100), or TPU (v5e1, v6e1) runtimes in seconds.",
+              "Robust Code Execution: Run local Python scripts, Jupyter Notebooks ( .ipynb ), or piped stdin code; launch interactive REPLs or raw TTY cons",
+              "Ephemeral Job Runner ( colab run ): Provision a fresh VM, execute a local script with forwarded arguments, retrieve output files, and automa",
+              "Activity-Based Liveness: Sessions stay alive as long as the kernel is active, with the Colab backend automatically maintaining liveness.",
+              "Seamless Workspace Automation: Mount Google Drive, authenticate Google Cloud Platform (GCP) credentials, and install dependencies with high-",
+              "State & Log Archival: Inspect local session states or export interactive history logs to standard Jupyter Notebooks, Markdown, or structured",
+              "--auth {oauth2,adc} — Authentication strategy for the Colab API (default: adc ).",
+              "-c, --client-oauth-config PATH — Path to public OAuth client credentials configuration (default: ~/.colab-cli-oauth-config.json )."
+            ],
+            "sections": [
+              "Colab CLI",
+              "Key Features",
+              "Installation",
+              "Using uv (recommended)",
+              "Using pip",
+              "Quick Start",
+              "1. Provision a new session",
+              "2. Execute code from stdin",
+              "3. Stop and release the VM resource",
+              "Command Index",
+              "Session Management",
+              "Execution",
+              "File Operations",
+              "Automation & Utilities"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9218
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "swipt-automation/swipt",
+          "owner": "swipt-automation",
+          "name": "swipt",
+          "url": "https://github.com/swipt-automation/swipt",
+          "homepage": "https://swipt.io",
+          "description": "The universal iOS automation platform",
+          "language": "Go",
+          "topics": [
+            "automation",
+            "ios",
+            "mcp"
+          ],
+          "stars": 342,
+          "forks": 16,
+          "open_issues": 12,
+          "starGain": null,
+          "heat": 92.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 53,
+          "ageDays": 11,
+          "created_at": "2026-10-29T08:39:54Z",
+          "pushed_at": "2026-11-08T18:22:23Z",
+          "license": "NOASSERTION",
+          "rating": 3,
+          "composite": 59,
+          "breakdown": {
+            "heat": 53,
+            "community": 44,
+            "activity": 74,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 49,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- iOS 27 (First-tier support) - iOS 17.4–26 (I do not have actual devices for testing)\n\n- Swipt SDK: A TypeScript SDK built upon CoreDevice, Accessibility services, and other developer services. - Swipt API (MCP-compatible): Allows you to run a JS REPL based on the Swipt SDK directly, enabling you to control an iPhone or iPad, manage and debug Swiplets. - Swipt CLI: A client for the Swipt API that offers a more comprehensive set of features than MCP. - Swiplet: Apps that run within Swipt, built using the Swipt SDK and SwiftUI.\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.",
+            "features": [
+              "iOS 27 (First-tier support)",
+              "iOS 17.4–26 (I do not have actual devices for testing)",
+              "Swipt SDK: A TypeScript SDK built upon CoreDevice, Accessibility services, and other developer services.",
+              "Swipt API (MCP-compatible): Allows you to run a JS REPL based on the Swipt SDK directly, enabling you to control an iPhone or iPad, manage a",
+              "Swipt CLI: A client for the Swipt API that offers a more comprehensive set of features than MCP.",
+              "Swiplet: Apps that run within Swipt, built using the Swipt SDK and SwiftUI."
+            ],
+            "sections": [
+              "Requirements",
+              "Architecture",
+              "Documentation",
+              "LICENSE"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1602
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "ParadevAI/Paradev",
+          "owner": "ParadevAI",
+          "name": "Paradev",
+          "url": "https://github.com/ParadevAI/Paradev",
+          "homepage": "https://paradev.com",
+          "description": "Paradev is an open-source Codex App and Conductor alternative. Orchestrate an army coding agents in parallel with your own subscriptions.",
+          "language": "TypeScript",
+          "topics": [
+            "ade",
+            "agent",
+            "agent-orchestration",
+            "ai-agents",
+            "ai-coding",
+            "claude-code",
+            "cli",
+            "codex"
+          ],
+          "stars": 16109,
+          "forks": 1440,
+          "open_issues": 1234,
+          "starGain": 39,
+          "heat": 39,
+          "heatBasis": "trending",
+          "heatPercentile": 42,
+          "ageDays": 384,
+          "created_at": "2025-10-21T09:16:51Z",
+          "pushed_at": "2026-11-09T01:43:47Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 65,
+          "breakdown": {
+            "heat": 42,
+            "community": 80,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 56,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Run Claude Code, Codex, or another CLI agent with terminals, code review, and browser previews in one workspace.\n\nDownload for macOS &nbsp;&bull;&nbsp; Documentation &nbsp;&bull;&nbsp; Changelog &nbsp;&bull;&nbsp; Discord\n\nParadev is a desktop app for running CLI coding agents in parallel. Each task gets its own Git worktree, branch, and terminals, so Claude Code, Codex, OpenCode, Gemini CLI, Cursor Agent, or any other CLI agent can work on several tasks in one repository at the same time.",
+            "features": [
+              "One worktree per task : agents work in separate copies of the repository, on separate branches",
+              "Review in the app : a Changes pane to review, commit, push, and open pull requests, and a pull request pane with checks, review threads, and",
+              "In-app browser : preview each workspace's dev server, with ports detected per workspace",
+              "Agent status : the sidebar shows which agent is working, done, or waiting on you",
+              "Beyond one machine : remote hosts, an iPhone and iPad app, and automations that start agents on a schedule or from an event (Pro plan)",
+              "macOS : Apple Silicon (.dmg) · Intel (.dmg)",
+              "Linux : x64 AppImage (experimental; macOS is the primary target)",
+              "Windows : not yet available"
+            ],
+            "sections": [
+              "Paradev (formerly Superset)",
+              "What is Paradev?",
+              "Documentation for agents",
+              "Install",
+              "Start with one task",
+              "Review and revise",
+              "Built-in Diff Viewer",
+              "In-App Browser & Ports",
+              "Run independent tasks",
+              "Parallel Workspaces",
+              "Agent Monitoring",
+              "Built-in Terminal",
+              "Command Palette",
+              "Work across devices and on a schedule"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 25036
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "longbridge/nsh",
+          "owner": "longbridge",
+          "name": "nsh",
+          "url": "https://github.com/longbridge/nsh",
+          "homepage": "https://nsh.dev",
+          "description": "Native Shell is a native UI framework for iOS, Android, macOS, Windows, Linux and the web, built in Rust.",
+          "language": "Rust",
+          "topics": [
+            "cross-platform",
+            "gui",
+            "native",
+            "nsh"
+          ],
+          "stars": 2114,
+          "forks": 129,
+          "open_issues": 87,
+          "starGain": null,
+          "heat": 356.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 25,
+          "created_at": "2026-10-14T14:59:36Z",
+          "pushed_at": "2026-11-09T01:44:35Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 84.4,
+          "breakdown": {
+            "heat": 98,
+            "community": 61,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Build once, native everywhere. Native Shell is a native UI framework for iOS, Android, macOS, Windows, Linux and the web, built in Rust. It unifies components, state, logic and API, with app-owned visual design and platform rendering: native views on iOS, Android, macOS, Windows and Linux, HTML on the web, GPUI in GPUI apps, character Cells in a terminal, with the platform's own text, input and interaction (a menu is a popup on the desktop and a sheet on a phone). Write the whole app in Rust, its screens in TSX, or combine both with shared Rust components.\n\nPackage it as a standalone app on every platform, or embed it in an existing one. On the same engine, apps load TSX modules at run time — plugins, features, UI generated by AI — delivered as signed packages and run in a sandbox the host configures.\n\nNative views and interaction, with an app-owned design: NSH shares components, state and APIs across platforms, while the app controls colors, typography, spacing, shapes and motion. nsh/base provides the behavior and accessible structure of common controls such as Button , Checkbox and Switch ; apps and community libraries give them a look. Platform modules expose capabilities specific to their platforms, such as the mobile system tab bar.",
+            "features": [
+              "Write apps in Rust, TSX, or both, and render with each platform's own UI, sharing the same reactive engine,",
+              "Give your app its own look: NSH provides the primitives, Tailwind classes, a theme and an unstyled UI foundation",
+              "Embed in existing native apps alongside components such as maps and web views, or package as standalone apps",
+              "Deliver TSX screens at run time with signed packages and host-controlled sandbox capabilities.",
+              "Iterate with TSX hot updates, headless tracing and a single Rust-built nsh CLI for building and packaging.",
+              "GPUI, Zed's UI framework: the typed units and geometry ( Points , Point , Size ,",
+              "GPUI Kit: gpui-base 's unstyled base components, which nsh-base",
+              "shadcn/ui: the design tokens of NSH's theme, its default theme ( neutral ) and the"
+            ],
+            "sections": [
+              "Native Shell (NSH)",
+              "Goals",
+              "Features",
+              "Platforms",
+              "Quick start",
+              "Examples",
+              "Skills for AI coding agents",
+              "Acknowledgements",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10005
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "oinkvm/oink",
+          "owner": "oinkvm",
+          "name": "oink",
+          "url": "https://github.com/oinkvm/oink",
+          "homepage": "",
+          "description": "Your computers, working as one. Share keyboard, mouse, trackpad, clipboard, drag and drop and audio across Macs and PCs.",
+          "language": "Rust",
+          "topics": [
+            "audio-sharing",
+            "barrier-alternative",
+            "clipboard-sync",
+            "cross-platform",
+            "drag-and-drop",
+            "keyboard-sharing",
+            "kvm",
+            "macos"
+          ],
+          "stars": 866,
+          "forks": 70,
+          "open_issues": 18,
+          "starGain": 195,
+          "heat": 195,
+          "heatBasis": "snapshot",
+          "heatPercentile": 93,
+          "ageDays": 20,
+          "created_at": "2026-10-19T21:08:57Z",
+          "pushed_at": "2026-11-08T22:48:12Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 77.5,
+          "breakdown": {
+            "heat": 93,
+            "community": 54,
+            "activity": 70,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Oink, short for \"Oink Is Not only a KVM\", is modern software that builds a peer-to-peer sharing network across multiple Windows and Mac computers. Use the keyboard, mouse and trackpad of any device to control any nearby device, with the same native feel everywhere; play the audio of several devices through the speakers or headphones connected to one of them; share the clipboard and drag and drop between devices; discover devices on the local network automatically; all traffic is encrypted by default.\n\nGet installers and matching source from GitHub Releases.\n\n- Mac: Apple silicon (arm64), macOS 14.2+; Intel (x64), macOS 14.2+ (untested) - Windows: x64, Windows 10 version 1809 (build 17763) or later, or Windows 11. Windows 10 versions before 22H2 are untested. Windows 10 LTSC (such as LTSC 2019 / LTSC 2021) does not include the WebView2 Runtime; install the Microsoft Edge WebView2 Runtime (Evergreen) first: https://developer.microsoft.com/microsoft-edge/webview2/",
+            "features": [
+              "Mac: Apple silicon (arm64), macOS 14.2+; Intel (x64), macOS 14.2+ (untested)",
+              "Windows: x64, Windows 10 version 1809 (build 17763) or later, or Windows 11. Windows 10 versions before 22H2 are untested. Windows 10 LTSC ("
+            ],
+            "sections": [
+              "Oink — Oink Is Not only a KVM",
+              "Install",
+              "Sponsor",
+              "Contributing",
+              "FAQ",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3821
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "jithin-sabu/purge-app",
+          "owner": "jithin-sabu",
+          "name": "purge-app",
+          "url": "https://github.com/jithin-sabu/purge-app",
+          "homepage": "https://purgemac.com",
+          "description": "Free up your Mac. Safely. A free, open-source native Mac app that clears the cache and junk your Mac piles up on its own. Files go to the Trash by default, so you can put them back.",
+          "language": "Swift",
+          "topics": [
+            "cache-cleaner",
+            "developer-tools",
+            "disk-cleanup",
+            "free-disk-space",
+            "free-space",
+            "junk-cleaner",
+            "junk-removal",
+            "junk-remover"
+          ],
+          "stars": 1734,
+          "forks": 93,
+          "open_issues": 20,
+          "starGain": 125,
+          "heat": 125,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 182,
+          "created_at": "2026-05-11T00:32:20Z",
+          "pushed_at": "2026-11-08T13:43:31Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 77.5,
+          "breakdown": {
+            "heat": 88,
+            "community": 59,
+            "activity": 62,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A free, open-source native Mac app that clears the cache and junk your Mac piles up on its own. Files go to the Trash by default, so you can put them back.\n\nDownload &nbsp;·&nbsp; Install guide &nbsp;·&nbsp; Build from source &nbsp;·&nbsp; Security\n\nYour Mac quietly fills up with cache and junk you never see and never asked for. Purge finds it, marks what is safe, and clears it in one click.",
+            "features": [
+              "Where your space went : one bar for the whole disk. Used, free and total come straight from the volume, so they match System Settings. App C",
+              "A row per category with its size and share of the disk. Click one to open its tab",
+              "Everything else opens too. Click the row and a page shows what it holds: four figures for what you can do about the space, over a map where ",
+              "Scan Everything (⇧⌘R) scans every category, one at a time so the Mac stays responsive. When you open Purge it does the same on its own. Larg",
+              "Each byte is counted once: an app's cache folder counts under App Caches, not again under the app",
+              "Apple Intelligence models (macOS 27, Apple silicon): the on-device models macOS files under System Data, with no switch to remove them. Remo",
+              "Per-app cache folders with friendly names, brand icons, and a plain-language explanation if you want to read it",
+              "System Junk like application logs, crash reports, macOS installers, and leftover macOS update files"
+            ],
+            "sections": [
+              "Features",
+              "Overview",
+              "App Caches",
+              "Dev Tools",
+              "Large Files",
+              "App Uninstaller",
+              "Safety labels",
+              "Cleaning",
+              "Settings",
+              "More",
+              "Keyboard shortcuts",
+              "Download",
+              "Installation",
+              "Install with Homebrew"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 28407
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "samolego/Canta",
+          "owner": "samolego",
+          "name": "Canta",
+          "url": "https://github.com/samolego/Canta",
+          "homepage": "https://samolego.github.io/Canta/",
+          "description": "Uninstall any Android app without root (with power of Shizuku). Debloat your device as you wish, with Android app or even from your browser!",
+          "language": "Kotlin",
+          "topics": [
+            "android",
+            "app-manager",
+            "debloater",
+            "no-root",
+            "shizuku"
+          ],
+          "stars": 6837,
+          "forks": 162,
+          "open_issues": 37,
+          "starGain": 104,
+          "heat": 104,
+          "heatBasis": "trending",
+          "heatPercentile": 85,
+          "ageDays": 1167,
+          "created_at": "2023-08-29T19:07:03Z",
+          "pushed_at": "2026-11-08T10:00:10Z",
+          "license": "LGPL-3.0",
+          "rating": 4,
+          "composite": 78.8,
+          "breakdown": {
+            "heat": 85,
+            "community": 69,
+            "activity": 62,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Uninstall any\\ app without root! Powered by Shizuku (Android 16 fork).\n\nDon't want to download and have a data USB cable and a Chromium-based browser? Try Canta directly on the web, without installing anything!\n\nCanta allows you to uninstall pre-installed or user apps without root , by leveraging Shizuku. It integrates with the Universal Debloat List to provide safe recommendations.",
+            "features": [
+              "✅ No root required",
+              "✅ Detects previously uninstalled apps (even across reinstalls)",
+              "✅ Works on Android 9.0+ (SDK 28+)",
+              "⚠️ No permanent bricking (If you uninstall critical apps , you can experience bootloop and have to factory reset !)",
+              "install Shizuku",
+              "note: Android 16 might need forked version",
+              "install Canta",
+              "select an app and click the trash button"
+            ],
+            "sections": [
+              "Canta",
+              "Download",
+              "📖 About",
+              "Screenshots",
+              "Verification",
+              "How-to",
+              "Translations",
+              "Thanks",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7855
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "GyulyVGC/sniffnet",
+          "owner": "GyulyVGC",
+          "name": "sniffnet",
+          "url": "https://github.com/GyulyVGC/sniffnet",
+          "homepage": "https://sniffnet.app",
+          "description": "Comfortably monitor your network traffic 🕵️‍♂️",
+          "language": "Rust",
+          "topics": [
+            "app",
+            "application",
+            "cybersecurity",
+            "gui",
+            "iced",
+            "ip-geolocation",
+            "ipfix",
+            "linux"
+          ],
+          "stars": 42103,
+          "forks": 1975,
+          "open_issues": 56,
+          "starGain": 80,
+          "heat": 80,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 1561,
+          "created_at": "2022-07-31T21:55:56Z",
+          "pushed_at": "2026-11-08T18:10:18Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.8,
+          "breakdown": {
+            "heat": 81,
+            "community": 86,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Application to comfortably monitor your network traffic. Cross-platform. Intuitive. Reliable.\n\nTranslated in: 🇨🇳 🇩🇪 🇫🇷 🇷🇺 🇵🇹 🇪🇦 🇮🇹 🇵🇱 +&nbsp;18&nbsp;more&nbsp;languages\n\nSniffnet is completely free, open-source software which needs lots of effort and time to develop and maintain.",
+            "features": [
+              "💻 choose a network adapter of your PC to inspect",
+              "🏷️ select a set of filters to apply to the observed traffic",
+              "📁 import and export comprehensive capture reports as PCAP files",
+              "📊 view overall statistics about your Internet traffic",
+              "📈 view real-time charts about traffic intensity",
+              "🏠 identify connections in your local network",
+              "🌍 discover the geographical location of remote hosts",
+              "🌐 find out domain name and ASN of the hosts you are exchanging traffic with"
+            ],
+            "sections": [
+              "Support Sniffnet's development 💖",
+              "Download",
+              "Features",
+              "User manual",
+              "Troubleshooting",
+              "Missing dependencies",
+              "Rendering problems",
+              "In any case, don't hesitate to open an issue, and I will do ",
+              "Acknowledgements",
+              "Stay in the loop"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13233
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "milind-soni/OpenMausBot",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "Anil-matcha/Open-Generative-AI",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "lobehub/lobehub",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "reacher-z/Awesome-REA",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "lemomo-ai/lemo-opuscar",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "vAPI-Network/vapi-network",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "jamiepine/voicebox",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "paipiange/nvzhuang",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/dsh-superagent-prototype",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "Zagitta/gpu-unlock",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

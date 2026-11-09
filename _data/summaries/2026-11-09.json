@@ -1,0 +1,118 @@
+{
+  "meta/astryx": {
+    "summary_zh": "Meta 开源的 TypeScript 设计系统，源自公司内部使用八年的组件体系，README 称其支撑过 13,000 余个应用。核心取向是「开放内部」：组件可在任意层级组合，不被封闭的顶层 API 锁住；自身用 StyleX 编写样式但消费方无感，可用 className、Tailwind 或 CSS Modules 覆盖；主题只是一组 CSS 自定义属性覆盖值，不必套一层包装组件。API、约定、文档与 CLI 一起设计，明确把人和编码代理当作同一类使用者，主张「指导优于强制」，并用实测而非断言来验证约定。章节覆盖 Getting Started、Packages、Principles、Architecture、Foundations、Components、Patterns 与项目结构。MIT 许可。",
+    "highlight_zh": "把设计系统同时设计给人用和给代理用，等于默认了「组件的主要读者已不只是人」。"
+  },
+  "storytold/artcraft": {
+    "summary_zh": "面向艺术家、设计师与影片创作者的 AI 图像与视频创作 IDE，用 Rust 编写、Apache-2.0 许可。README 把定位写得很明确：先在 2D 里构图、在 3D 里布置场景，再挑选合适的模型，把提示词式生成变成可精确控制、可重复的「手工制作」；功能表以构图、角色一致性、机位控制等具体场景逐项展示。提供 Windows、macOS、Linux 稳定版，以及 AppImage、DEB、RPM、Arch、Flatpak 等打包格式，另有从源码构建、开发脚本与路线图说明。项目创建于 2022 年，README 章节包括高级创作特性、快速提示、支持的模型与供应商、下载和文档。",
+    "highlight_zh": "把生成式创作的重心从「写更好的提示词」挪到「先把场景搭好」。"
+  },
+  "microsoft/TokenEconomizer": {
+    "summary_zh": "微软研究院与 UC Berkeley 等机构合作的编码代理成本控制工具，Python 实现、Apache-2.0 许可，论文式 README 附结果与复现实验章节。它不改代理本身，而是从同一仓库已跑过的会话里学习，减少后续会话的浪费，三条机制分别是：micro-skills 记住仓库的工作方式、tool pruning 停止加载长期未用的工具定义、loop guard 在单个回合卡住时介入。README 报告在 SWE-Bench 任务上五种代理—模型组合的平均成本降低 18.4%–30.9%，30 个仓库×组合单元全部更便宜，Pass@1 在五组中四组上升。设计上强调按实际计费口径计成本、只从重复证据形成事实、所有动作可回滚，并注明低版本 Codex 不运行插件钩子。",
+    "highlight_zh": "降本不靠换模型，而是让代理复用自己在这个仓库里已经学到的经验。"
+  },
+  "elie222/rakazo": {
+    "summary_zh": "开源自托管的 Grok Bot 替代方案，TypeScript 实现、Apache-2.0 许可，README 也把它与若干同类商业助理并列。定位是「有自己电脑的常驻 AI 队友」：每个机器人带自己的记忆、例程、应用与计算环境，可自主选择模型并自带密钥。功能覆盖浏览器与计算机操作、私有或团队共享电脑、Docker／云端／本机沙箱、委派与子代理、语音通话、数千种应用集成与 MCP、以及自托管部署。章节包含每个机器人一台电脑、机器人协作、Routines、Pages、Connected apps、跨设备、已发布镜像快速启动、服务器运行与本地源码开发，并提供桌面与移动端入口。",
+    "highlight_zh": "把「持久记忆 + 专属沙箱 + 定时任务」打包成一个可自托管的代理运行单位。"
+  },
+  "kortix-ai/CompanyOS": {
+    "summary_zh": "把公司运营抽象成代码与常驻代理的开源 CompanyOS，TypeScript 实现，许可证标注 NOASSERTION，README 自述为云原生 agent harness。流程写成五步：用自然语言声明一次结果与规则，代理端到端拆解并按计划唤醒自己；代理在各自的云电脑上按定时器、webhook 与工具启动；另一个代理独立核验结果，变更经由人工批准的 change request 落地；每次运行学到的内容回写进公司记忆与技能。快速开始是安装 CLI、生成 kortix.yaml 与 agents/skills、推送仓库即上线。README 另列自托管、安全、端到端架构，并给出 SciencePal、Platinum 与项目自身用 intake agent 分流 issue 的案例。",
+    "highlight_zh": "把核验与批准单独拆成一道人工闸门，是这套「代理自动运营」叙事里最关键的约束。"
+  },
+  "vercel-labs/json-render": {
+    "summary_zh": "Vercel Labs 开源的生成式 UI 框架，TypeScript 实现、Apache-2.0 许可。核心思路是让模型只输出符合既定 schema 的 JSON，再由前端按组件目录渲染，因此 AI 只能选用开发者预先登记的组件与动作，输出可预测、可流式渐进渲染。同一份组件目录可输出到 React、Vue、Svelte、Solid、React Native，以及视频、PDF、HTML 邮件、终端 UI、完整 Next.js 应用与 3D 场景等目标；内置 36 个 shadcn/ui 组件。规格里提供 $state 读取状态、$cond/$then/$else 条件分支与 $template 字符串插值等表达式。README 按目标平台分节给出安装方式，并设 Why json-render 章节解释取舍。",
+    "highlight_zh": "把「模型生成界面」约束成「模型只填一份受目录与 schema 约束的 JSON」。"
+  },
+  "mantrakp04/ardia": {
+    "summary_zh": "面向 macOS 的免费开源 Chromium 浏览器，TypeScript 实现、GPL-3.0 许可，README 用「Arc 的侧边栏 + Dia 的打磨」概括取向。地址栏移入侧边栏、页面顶到窗口顶端；每个 profile 保留各自的登录、历史、扩展与配色，轻扫侧栏切换；标签拖叠成组，支持小窗模式与命令栏。可从 Chrome、Safari、Firefox、Arc、Dia 等导入书签、历史与密码，提供按 profile 的渐变主题，同步走用户自己的 iCloud Drive 且端到端加密、没有自有服务器中转，并内置广告与追踪拦截。发布为 121 MB DMG，要求 macOS 14 及以上、Apple Silicon，经 Apple 公证，另有 Homebrew 与 nightly。章节含架构说明、自行构建、状态与许可证。",
+    "highlight_zh": "把差异化押在浏览器壳层的交互与同步上，底层坚持真实 Chromium 与用户自有 iCloud。"
+  },
+  "Open-Dev-Society/OpenStock": {
+    "summary_zh": "开源的行情与个股信息平台，TypeScript 实现、AGPL-3.0 许可，自述为昂贵行情终端的免费替代：跟踪价格、设置个性化提醒、查看公司洞察，并强调永久免费与公开构建。README 章节覆盖功能清单、数据新鲜度说明、技术栈、快速开始、环境变量、自托管与项目结构；自托管给出 Docker Compose、预构建镜像，以及 Railway、Vercel 等一键部署路径。仓库标签指向 Next.js、Tailwind CSS、shadcn/ui、Inngest 等前端与任务编排组合，另有线上可直接使用的站点。项目 406 天、21,363 星，社区规模较大。",
+    "highlight_zh": "把行情终端做成可自托管的 Web 应用，并把「数据有多新」单独写成一章交代清楚。"
+  },
+  "4ian/GDevelop": {
+    "summary_zh": "老牌开源无代码游戏开发软件，2014 年创建，JavaScript 实现、许可证标注 NOASSERTION，支持 2D、3D 与多人游戏，可发布到 iOS、Android、桌面与 Web。它以事件系统加模块化行为描述游戏逻辑，强调不写代码也能上手，并提供 AI 辅助创作。README 的 Technical architecture 说明项目由编辑器、游戏引擎、扩展生态、在线服务与商业支持五部分组成，引擎目录 GDJS 用 TypeScript 编写、借 PixiJS 与 Three.js 做 2D/3D WebGL 渲染。另设入门、作品展示、社区、路线图、许可证与星标历史等章节，并指向 gd.games 平台与文档 wiki。",
+    "highlight_zh": "十多年过去，它仍把「无代码事件系统」作为引擎的第一入口，而不是把它降级成辅助功能。"
+  },
+  "XiaoYouChR/Ghost-Downloader-3": {
+    "summary_zh": "跨平台的开源下载管理器，Python 实现、GPL-3.0 许可，README 自称「下载器的集大成者」。协议覆盖 HTTP、Magnet/BT、FTP、M3U8、MPEG-DASH、eD2k，并支持 YouTube、Bilibili 的清晰度、字幕与播放列表，以及 GitHub、HuggingFace 镜像加速。实现上强调智能分块且无需文件合并、自动带宽探测与真实浏览器 TLS 指纹；浏览器扩展可嗅探页面媒体并接管下载，桌面端提供 aria2 兼容的 RPC 接口，允许下载中修改 URL、请求头与代理并保留进度。覆盖四个平台的原生体验，Android 上可录制直播流并后台续传，另有 Feature Packs 插件生态。章节含命令行、路线图、贡献与翻译者名单。",
+    "highlight_zh": "把「协议覆盖、浏览器嗅探、断点续传、外部 RPC」收进同一个客户端，而不是再开第五个下载器。"
+  },
+  "TwiN/gatus": {
+    "summary_zh": "面向开发者的健康检查与状态页工具，Go 实现、Apache-2.0 许可。它用 HTTP、ICMP、TCP、DNS 等查询探测服务，并对状态码、响应时间、证书到期时间、响应体等取值设置条件来判定健康，每个检查都可配对 Slack、Teams、PagerDuty、Discord、Twilio 等告警渠道。README 篇幅很长，章节覆盖 Why Gatus、Features、Usage、Configuration、Endpoints、External Endpoints、Suites（ALPHA）、Conditions、Web、UI、Announcements 与 Storage，把配置、判定规则与持久化各自展开。作者自述将其部署在 Kubernetes 集群中监控核心应用，并另提供托管版本入口。项目 2,623 天、12,648 星。",
+    "highlight_zh": "把「健康」定义为可对查询结果写条件表达式，而不是简单探活。"
+  },
+  "glanceapp/glance": {
+    "summary_zh": "自托管的信息聚合仪表盘，Go 实现、AGPL-3.0 许可，把各类订阅源集中到一页。内置组件覆盖 RSS、Subreddit、Hacker News、天气、YouTube 频道更新、Twitch、行情、Docker 容器状态与服务器指标，并支持自定义 widget。README 强调低内存占用、依赖少、只用极简原生 JS、单个小于 20MB 的多平台二进制与同样小巧的容器镜像，未缓存页面通常约 1 秒加载；另设移动端优化、主题、配置、Linux 与 Windows 安装、常见问题与功能请求等章节。项目 925 天、38,100 星，是本期星标最高的后端项目之一。",
+    "highlight_zh": "把「首屏一秒内打开」当作硬指标，用单二进制和少依赖换掉整套前端框架。"
+  },
+  "google/gvisor": {
+    "summary_zh": "为容器提供隔离层的应用内核，Go 实现、Apache-2.0 许可。它用内存安全语言在用户态实现一套类 Linux 接口，位于运行中的应用与宿主操作系统之间；随项目提供 OCI 运行时 runsc，可直接接入 Docker 与 Kubernetes 的既有工具链。README 特设 What isn't gVisor 一章，明确说明它既不是 seccomp-bpf 这类系统调用过滤器，也不是 firejail、AppArmor 等隔离原语的封装，更不是 VirtualBox、QEMU 意义上的虚拟机。其余章节涵盖存在理由、文档、从源码安装、环境要求、Bazel 构建、测试与 Makefile。项目 3,118 天、19,924 星。",
+    "highlight_zh": "用用户态应用内核重做系统调用面，是容器隔离里与 seccomp、VM 都不同的一条路线。"
+  },
+  "apple/container": {
+    "summary_zh": "Apple 开源的 Mac 容器工具，Swift 实现、Apache-2.0 许可，针对 Apple silicon 优化。它用轻量虚拟机在 Mac 上创建并运行 Linux 容器，消费与产出 OCI 兼容镜像，因此可从任意标准镜像仓库拉取、推送，并能在其他 OCI 兼容工具中运行；底层容器、镜像与进程管理交由 Containerization Swift 包完成。README 章节以实操为主：Get started、Requirements、Initial install、Run your first container、升级与降级、卸载、Next steps、Contributing 与 Project Status，并指向引导教程、命令参考与项目 API 文档。项目 527 天、51,112 星。",
+    "highlight_zh": "每台容器一台轻量 VM，用平台原生虚拟化换取隔离边界，同时保持 OCI 兼容。"
+  },
+  "VictoriaMetrics/VictoriaMetrics": {
+    "summary_zh": "面向时序数据的监控与存储方案，Go 实现、Apache-2.0 许可。Prominent features 章节列出：可作为 Prometheus 的长期存储，或在 Grafana 中直接替代 Prometheus 与 Graphite；提供流聚合能力，可作 StatsD 替代；支持 PromQL 与自有的 MetricsQL；无外部依赖、单二进制、命令行标志配置、即时快照备份恢复；多数据源写入后可经单一查询入口做全局查询，并支持 Prometheus exporters、remote write 等多种摄入协议。部署形态分单节点版与集群版，两者均在 Apache-2.0 下提供，企业版另列商业功能与长期支持版本。章节含基准测试、社区、贡献与徽标使用规范。项目 2,962 天、18,058 星。",
+    "highlight_zh": "把长期存储、全局查询视图与多协议摄入收进单二进制，同时保留集群版路径。"
+  },
+  "microsoft/sqlsimtools": {
+    "summary_zh": "微软开源的 SQL 负载测试与基准工具集，MIT 许可，覆盖 SQL Server 2019／2022／2025、Azure SQL Database、Azure SQL Managed Instance 与 Microsoft Fabric 中的 SQL 数据库。README 以「Four Ways to Work」组织四种入口：sqlsim Studio 是本地浏览器应用，可配置、运行、监控、重放与比较负载；sqlsim 是基于 C++／ODBC 的低开销查询与并发负载引擎；sqlpysim 是共享核心负载接口的 Python 移植版，并注明存在已记录的兼容性差距；Workload Builder 与随附技能让编码代理按自然语言设计、运行并比较负载。状态说明写明 sqlsim 与 sqlpysim 在 Windows、Ubuntu x64 为公开预览，macOS ARM64 为邀请制私有预览。章节另有 Get Started、Agent-Ready by Design、Explore 与 Built in the Open。仓库主语言标注 PowerShell。",
+    "highlight_zh": "把性能压测拆成浏览器、原生引擎、Python 与代理技能四条入口，共用同一套负载接口。"
+  },
+  "pug-sh/pug": {
+    "summary_zh": "开源的产品分析平台，Go 实现、AGPL-3.0 许可，用于采集事件、识别事件背后的用户，并在可定制看板上做漏斗、留存、趋势、分群与用户流分析。功能清单包含：基于 NATS 的事件采集管线并自动补全地理位置、UA、机器人识别与归因信息；自动生成访客、会话、浏览量与流量来源的 Web 分析概览；实时世界地图 Live view；基于 ClickHouse 的用户档案与活动 API；趋势、漏斗、留存、分群、Sankey 用户流与 top-K 拆解，支持过滤与环比；由 insight 与 markdown 图块组成的看板，并有预聚合快路径；GDPR／DPDP 数据主体删除。后端服务与 workers 经 Connect RPC（HTTP/2）暴露，本地开发依赖 PostgreSQL、NATS 与 ClickHouse。章节含 Tech stack、Self-hosting、Quick start、Development 与 Architecture。",
+    "highlight_zh": "把事件采集、实时画像与漏斗留存收进一套可自托管的 Go 服务，并单独处理数据主体删除。"
+  },
+  "yuyuejia/datay": {
+    "summary_zh": "中文开源的轻量数据平台，Java 实现、Apache-2.0 许可，主张一个 JAR、自研流批一体处理引擎与自研分布式调度框架，在 2 核 4G 的机器上跑通数据集成、维度建模、数据开发、任务调度到数据应用的完整链路。README 用「DataY = DataX + Nifi + DolphinScheduler」作类比，但强调不是三个工具的拼盘，而是重新设计成一套运行时。能力覆盖二十余种数据源（MySQL、PostgreSQL、Oracle、SAP HANA、Doris、ClickHouse、DuckDB 等）、拖拽画布或 JSON 配置编排 ETL、全量与增量同步及多种 CDC、自动建表与 DDL 转换、基于 DuckDB SQL 的跨库数据比对；另有高性能数仓、智能问数 AI Data Agent 与让代理直接操作平台对象的 MCP Harness。章节含环境要求、一键部署、单机模式启动与项目结构。",
+    "highlight_zh": "把数据平台的部署门槛压到一个 JAR 与 2 核 4G，并把 MCP 入口写进平台能力清单。"
+  },
+  "astrnox/TATAbox": {
+    "summary_zh": "面向高中生的生物学习网站，JavaScript 实现、MPL-2.0 许可，覆盖高考到竞赛的练习链路。README 说明无需注册即可刷题，注册后可同步错题本与学习进度；为低性能设备提供只含五个视图的极简版页面；错题本、练习与组卷支持 A4 自动分页打印，题目与答案可分开出纸；AI 导师与拍照搜题由使用者在设置中自填 API Key；支持添加到主屏幕离线使用，并可按需下载离线题库。项目结构里给出 Supabase 数据库初始化（基线 schema 加按版本顺序的迁移脚本）与提交前的门禁自查（npm test 覆盖 manifest 锚点、数据与迁移口径、ESLint、设计审计、单测与烟雾测试）。核心算法章节列出间隔重复调度 FSRS、能力估计 IRT 与 BKT，以及拍照搜题 OCR。",
+    "highlight_zh": "学习产品里少见地把数据库迁移顺序、数据口径与测试门禁写进 README，而不只讲功能。"
+  },
+  "samyfodil/musql": {
+    "summary_zh": "与 SQLite 兼容的嵌入式数据库，Go 实现、Apache-2.0 许可，README 自述通过列式存储格式与 JIT 编译加速查询。自定义的 .musq 段格式把列连续存放，JIT 在运行时把受支持的查询路径编译为原生机器码，过滤与聚合直接作用于列，以减少行解码与解释器开销；项目给出的 10 万行读基准中，一次带过滤的计数约比 C SQLite 快 300 倍、比 Turso 快近 1,000 倍，并注明测量范围。功能包括熟悉的 SQL（连接、窗口函数、触发器、JSON、全文检索）、libSQL 风格的向量搜索、SQLite 数据库导入导出、基于自有网络的 CRDT 复制，以及 Go database/sql 嵌入、命令行与独立服务器三种使用方式。章节另有 Performance、SQLite compatibility、What is tested、Moving from another Go driver 与 Vector search。",
+    "highlight_zh": "用列式段格式加 JIT 重做 SQLite 兼容查询路径，同时保留导入导出与嵌入式用法。"
+  },
+  "NiazMorshed2007/reanimate": {
+    "summary_zh": "一个面向 Claude Code 的技能包，JavaScript 实现、MIT 许可，用来逐帧逆向网页动画并验证复刻结果。README 把流程写成四步：Record 用无头浏览器在固定视口与帧率下录制参考页面，产出视频、编号帧以及每一条 CSS 与 Web Animations 属性；Spec 把动画整理成「每元素每属性一行」的规格表，记录起始、时长、起止值、缓动与错峰，未读的帧标问号；Verify 用同样方式录制复刻页面，比较时间、缓动与像素并生成并排对照表；Repeat 修最大差异再录，通常二到五轮，五轮后仍不一致的差异列入报告。Limits 章节列明登录页、YouTube、Loom 无法直接录制需提供屏幕录像，物理弹簧由过冲与稳定时间拟合，以及 iframe 内 canvas、随机数生成器等边界情况。章节另有 Install、How it works、Examples 与 Canvas／WebGL／3D。",
+    "highlight_zh": "把「像不像」变成可逐帧比较的数字，让代理知道还差多少、而不是自己宣布完成。"
+  },
+  "googlecolab/google-colab-cli": {
+    "summary_zh": "与 Google Colab 运行时交互的命令行工具，Python 实现、Apache-2.0 许可，面向终端、无头自动化与代理集成。Key Features 列出：数秒内供应 CPU、GPU（T4、L4、G4、H100、A100）或 TPU（v5e1、v6e1）运行时；执行本地 Python 脚本、Jupyter Notebook、stdin 管道代码，或启动交互式 REPL 与原始 TTY 控制台；colab run 作为临时任务运行器，供应新 VM、带参数执行本地脚本、取回输出文件并自动拆除；会话在 kernel 活跃期间由 Colab 后端维持；可挂载 Google Drive、认证 GCP 凭据并用 uv 安装依赖；会话状态与交互历史可导出为 Notebook、Markdown 或 JSONL。README 提供 uv／pip 安装、三步 Quick Start、命令索引与认证参数说明，默认认证策略为 adc。",
+    "highlight_zh": "把 Colab 从浏览器里的 Notebook 变成一条可编排、用完即拆的命令行算力通道。"
+  },
+  "swipt-automation/swipt": {
+    "summary_zh": "自称通用 iOS 自动化平台，元数据主语言标注 Go，仓库仅 11 天。README 篇幅很短，Architecture 章节列出四个组成部分：Swipt SDK 是建立在 CoreDevice、无障碍服务与其他开发者服务之上的 TypeScript SDK；Swipt API 与 MCP 兼容，可基于 SDK 直接运行 JS REPL 来控制 iPhone／iPad 并管理调试 Swiplets；Swipt CLI 提供比 MCP 更完整的功能集；Swiplet 是用 Swipt SDK 与 SwiftUI 构建、运行在 Swipt 内的应用。兼容性写明 iOS 27 为一等支持，iOS 17.4–26 因作者没有真机而未实测。章节仅有 Requirements、Architecture、Documentation 与 LICENSE，README 正文附有 GPLv3 的再分发条款，而仓库元数据里的许可证标注为 NOASSERTION。",
+    "highlight_zh": "把设备控制做成 MCP 兼容的 JS REPL，让代理以写代码的方式操作真机。"
+  },
+  "ParadevAI/Paradev": {
+    "summary_zh": "开源的桌面应用，TypeScript 实现、MIT 许可，自述为 Codex App 与 Conductor 的替代，用于用自己的订阅并行编排多个编码代理。每个任务获得独立的 Git worktree、分支与终端，因此 Claude Code、Codex、OpenCode、Gemini CLI、Cursor Agent 等 CLI 代理可在同一仓库的不同任务上同时工作。内置 Changes 面板可审阅、提交、推送并发起 PR，另有带 checks 与 review threads 的 PR 面板；内置浏览器按 workspace 预览 dev server 并自动检测端口；侧栏显示各代理处于工作、完成还是等待人工；还有 Diff Viewer、内置终端与命令面板。平台支持 macOS（Apple Silicon 与 Intel 的 dmg）与 Linux x64 AppImage（实验性，macOS 为主要目标），Windows 尚未提供；远程主机、移动应用与按计划或事件启动代理列为 Pro 方案能力。",
+    "highlight_zh": "用「一任务一 worktree」把并行代理的冲突面隔离在 Git 层，而不是靠提示词协调。"
+  },
+  "longbridge/nsh": {
+    "summary_zh": "Rust 编写的原生 UI 框架 Native Shell（NSH），覆盖 iOS、Android、macOS、Windows、Linux 与 Web，元数据许可证标注 NOASSERTION。它统一组件、状态、逻辑与 API，但把外观交给应用自己定义、把渲染交给各平台：桌面与移动端用原生视图、Web 用 HTML、GPUI 应用用 GPUI、终端用字符 Cells，并沿用平台自己的文本、输入与交互习惯（同一个菜单在桌面是弹出层、在手机是底部面板）。应用可全部用 Rust 写、界面用 TSX 写，或两者混用并共享 Rust 组件；既能打包成独立应用，也能嵌入既有原生应用与地图、Web 视图等组件并存。运行时可加载 TSX 模块（插件、功能或 AI 生成的界面），以签名包交付并在宿主配置的沙箱中运行。nsh/base 只给 Button、Checkbox、Switch 等控件的行为与无障碍结构，外观由应用与社区库提供；设计 token 参考 shadcn/ui，实现参考 Zed 的 GPUI。章节含 Goals、Features、Platforms、Quick start、Examples 与面向编码代理的 Skills。",
+    "highlight_zh": "共享状态与逻辑，但把渲染和外观分别交还平台与应用，避免「一套画布铺满所有端」。"
+  },
+  "oinkvm/oink": {
+    "summary_zh": "Rust 编写、GPL-3.0 许可的跨设备共享工具，名字自解为 Oink Is Not only a KVM。它在多台 Windows 与 Mac 电脑之间建立点对点共享网络：用任意一台的键盘、鼠标与触控板控制附近设备，保持一致的原生手感；把多台设备的音频汇总到其中一台的扬声器或耳机播放；共享剪贴板与拖放；自动发现局域网内的设备；所有流量默认加密。README 篇幅较短，章节为 Install、Sponsor、Contributing、FAQ、License，安装包与对应源码从 GitHub Releases 获取。平台要求写得较细：Mac 需 Apple silicon 或 Intel、macOS 14.2 及以上（Intel 标注未测试），Windows 需 x64 且 Windows 10 1809／build 17763 或 Windows 11，并提示旧版 LTSC 不含 WebView2 Runtime 需先安装 Evergreen 运行时。",
+    "highlight_zh": "不止键鼠共享：把音频汇总、剪贴板与拖放也放进同一条默认加密的局域网链路。"
+  },
+  "jithin-sabu/purge-app": {
+    "summary_zh": "免费开源的原生 macOS 清理工具，Swift 实现、MIT 许可，删除的文件默认移到废纸篓，因而可以还原。README 按类别展开功能：整盘空间条直接读取卷信息，用量与系统设置一致；每行列出类别大小与占比，点开可见四类可处理空间与磁盘地图；Scan Everything（⇧⌘R）逐类别扫描以保持 Mac 响应；每个字节只计一次，应用缓存只归入 App Caches 不重复计入；Apple Intelligence 模型（macOS 27、Apple silicon）归为 System Data 且不提供移除开关。另有按应用整理的缓存目录（含友好名称、品牌图标与通俗说明）、系统垃圾（日志、崩溃报告、安装包与更新残留）、开发者工具缓存、大文件与应用卸载器。章节含 Features、Overview、Safety labels、Cleaning、Settings、键盘快捷键、Download、Homebrew 安装与 Security。",
+    "highlight_zh": "把「默认进废纸篓」「每个字节只算一次」「系统模型不给删」写成明确规则，而不是靠用户自己小心。"
+  },
+  "samolego/Canta": {
+    "summary_zh": "Kotlin 实现、LGPL-3.0 许可的 Android 工具，借助 Shizuku 在无需 root 的前提下卸载预装或用户应用。README 列出的能力包括：无需 root、能识别此前卸载过的应用（即便应用已被重装）、支持 Android 9.0 及以上（SDK 28+）、集成 Universal Debloat List 给出较稳妥的建议；也提供基于 Chromium 浏览器的网页端用法，无需下载应用或准备数据线与 USB。How-to 给出三步：安装 Shizuku、安装 Canta、选中应用后点垃圾桶，并注明 Android 16 可能需要 Shizuku 的 fork 版本。README 同时明确警告：虽不会永久变砖，但卸载关键系统应用可能导致启动循环并需要恢复出厂设置。章节另有 Download、About、Screenshots、Verification、Translations 与 Star History。",
+    "highlight_zh": "把「能删什么」交给社区维护的 Universal Debloat List，而不是让用户凭包名猜。"
+  },
+  "GyulyVGC/sniffnet": {
+    "summary_zh": "跨平台、直观的网络流量监控桌面应用，Rust 实现、Apache-2.0 许可，README 强调免费开源并说明维护投入较大。功能清单包括：选择要检查的网卡、对观察到的流量应用过滤条件、以 PCAP 文件导入导出完整抓包报告、查看整体网络统计、实时流量强度图表、识别本地网络中的连接、查询远端主机的地理位置，以及查看正在通信主机的域名与 ASN。界面提供包括简体中文在内的二十余种语言翻译。章节为 Download、Features、User manual、Troubleshooting（含缺失依赖与渲染问题的排查入口）、Acknowledgements 与 Stay in the loop。项目 1,561 天、42,103 星，是本期星标总量最高的项目之一。",
+    "highlight_zh": "把抓包从命令行工具变成有实时图表、地理位置与 ASN 信息的可读桌面应用。"
+  }
+}
