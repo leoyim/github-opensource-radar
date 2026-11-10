@@ -1,0 +1,98 @@
+{
+  "JuneYaooo/rea-video": {
+    "summary_zh": "把一段视频拆成逐镜头的取证报告：判断每个镜头是实拍、AI 生成还是代码渲染，并给出可复刻的配方。它以 Agent Skill 的形式运行，在 Claude Code、Codex 等编码代理里一句话安装并调用，底层依赖 ffmpeg 与 Python 3.10+。产出是一份 report.html，含逐帧证据、提示词、机位与布光说明、音频拆解，以及按「要拍 / 要生成 / 要写码」拆开的复刻计划；字幕、贴纸、剪辑节奏、人声与配乐 BPM 都有时间轴标注。定位不是生成视频，而是反向解释视频是怎么做出来的。Apache-2.0 许可，11 天新仓已 5,569 星、804 fork。",
+    "highlight_zh": "当 AI 视频多到分不清真假，先出现的不是检测器，而是一份教你怎么复刻的施工报告。"
+  },
+  "superplanehq/superplane": {
+    "summary_zh": "把「积压 issue → 可评审 PR」做成一条可见的流水线。它持续评估哪些 backlog 任务适合交给编码代理，把高置信度的那部分送进统一工作流，串联源码管理、CI、评审、审批与反馈；每次运行套用同一套流程级护栏，检查不通过就把可操作的上下文退回给代理，让人只处理需要判断力的部分。支持自选模型、云端或私有部署，核心引擎 Apache-2.0；自托管可跑单机 Docker Compose，也可上 Kubernetes。README 明确把「歧义任务留在人手里」写进设计前提。Go + React，551 天、9,440 星、218 个 open issue。",
+    "highlight_zh": "代理编排的重点从「让 agent 多干活」移到「哪些活根本不该派给它」。"
+  },
+  "DIYgod/pinky": {
+    "summary_zh": "让编码代理通过 MCP 操作一台真实的 iPhone 或 Android 手机，而审批权留在人手里。桌面端是 Go 写的原生应用（MyGo 绘制界面，无 Electron、无 webview，安装包 16–22 MB），覆盖 macOS、Windows、Linux；手机侧支持 Android 10–17 与 iOS 17.4 以上。关键设计是「高危动作由网关强制执行，而不是写进提示词请求代理自觉」：支付、转账、删除、打电话、安装、跳出应用的链接等都要等用户点击确认，PIN 只存在本地且代理读不到。可在设置里一键接入 Claude Code、Codex、Cursor 等任意支持 MCP 的代理，无需账号，Apache-2.0 许可。3 天新仓，1,445 星、本期 +603 为全榜第一。",
+    "highlight_zh": "把「请不要转账」从提示词里的请求，改成网关层面拦下来的硬约束。"
+  },
+  "KKKKhazix/AIHOT": {
+    "summary_zh": "一个自己找热点、自己写日报的网站框架，开源的是线上 AI 热点站同一份引擎。流程是：多信源收资料 → 大模型先筛一遍再独立打两次分 → 写成中文标题与摘要 → 把不同来源讲同一件事的条目聚成一个事件 → 按讨论热度排序 → 每天早上出日报。仓库把网站、后台、精选流程、聚簇与热度算法，以及所有提示词原文和入选门槛一并公开，附 18 个公开海外 AI 资讯源做示范。作者是设计师出身，README 坦承代码由人与 AI 共同重写、并非打磨过的通用框架，也明确要求改名换 Logo 后再用于自己的行业。Node.js 24 + PostgreSQL 17 + Docker Compose，MIT 许可，42 天 10,081 星、2,352 fork。",
+    "highlight_zh": "连提示词和入选门槛都一起开源，等于把「编辑判断力」也交了出来。"
+  },
+  "openfilm/openfilm": {
+    "summary_zh": "让编码代理写视频，并让人能逐帧改回去。它把影片表达为一个 film.html：镜头是网页，每个镜头用 frame(t) 画出任意时刻，浏览器能画的 three.js、WebGL、canvas、SVG、CSS、GSAP 都能用，不引入 Remotion 之类的框架；素材、图片、声音按轨道剪在一起，样式走 CSS。配套的 Studio 是跑在浏览器里的本地编辑器，可以移动、缩放、旋转页面内元素，改文字、颜色与样式，也能裁剪片段和修剪时间轴。因为代理本来就懂网页，不需要额外学一套 DSL。TypeScript + MIT 许可，37 天 5,528 星、526 fork。",
+    "highlight_zh": "不给代理发明新的视频语言，直接让它写已经最熟的 HTML。"
+  },
+  "raysan5/raylib": {
+    "summary_zh": "一个用纯 C99 写成的游戏编程库，信条是「没有花哨界面、没有可视化助手、没有调试按钮，就是最纯粹的斯巴达式写代码」。它不依赖外部库，所需依赖全部内置；用自研的 rlgl 抽象层封装 OpenGL（1.1 到 4.3 及 ES 2.0/3.0），另有无需 OpenGL 的 rlsw 软件渲染后端；支持多种压缩纹理格式与 TTF/OTF/FNT/BDF 字体。平台覆盖 Windows、Linux、macOS、树莓派、Android 与 HTML5。灵感来自 Borland BGI 与 XNA，README 明确说它特别适合原型、工具、图形应用、嵌入式与教学。Zlib 许可，13 年老项目 35,618 星、3,381 fork，本期 +26。",
+    "highlight_zh": "在框架越堆越厚的年代，一个「零外部依赖 + 纯 C」的库活了 13 年还在涨星。"
+  },
+  "D3voz/openjutsu": {
+    "summary_zh": "本地跑的视频人物 / 物体替换工具，定位为 Higgsfield Genjutsu 的开源替代。丢进一段视频和一张人物照片，按生成即可把画面中的主体换掉，也能改发型服装、移除物体或换场景，而相机运动、剪辑点、动作与音轨保持不变。全链路跑在自有 GPU 与开放权重模型上：MiniMax H3 生成视频、SAM 3.1 跟踪人物、Qwen3-VL 8B 描述画面与镜头，FLUX.3 Klein 做重打光。应用主体是一个 Next.js 前端套在 ComfyUI 工作流之上，遵循 Comfy 的 comfy-reshoot 参考实现。提供简单动作迁移、1–4 人多角色高级迁移、物体替换与后处理修脸等模式。MIT 许可，15 天 2,043 星、291 fork。",
+    "highlight_zh": "把闭源的视频换人能力拆成「开放权重模型 + ComfyUI 工作流 + 一个薄前端」。"
+  },
+  "yilecoding/fastapi-react-admin": {
+    "summary_zh": "一套开箱即用的后台管理底座：FastAPI + React 19 + shadcn/ui，行级数据权限、保持状态的多标签页、审批流、受权限约束的 AI 助手、开放 API、S3 断点续传，数据库支持 PostgreSQL / SQL Server / MySQL。同一仓库含 Web、Electron 桌面与移动端三套模板，桌面端只补浏览器做不到的静默打印、本地硬件与自动更新，移动端共享 API 类型与翻译；依赖单向流动由 pnpm arch:check 在 CI 中强制检查。工程约束是最大卖点：1,600+ 测试跑真实数据库与真实浏览器、不用 mock，前后端类型由 OpenAPI 生成，另有 50+ 份按目录编写的 CLAUDE.md / AGENTS.md 记录踩过的坑，专供编码助手阅读。MIT 许可，80 天 131 星、109 fork。",
+    "highlight_zh": "把「给 AI 看的规则」写进 50 多份目录级文档，测试不用 mock 跑真实库与真实浏览器。"
+  },
+  "opencoredev/social-sdk": {
+    "summary_zh": "面向独立开发者与小团队的 TypeScript 社交平台接入工具包，用带类型的统一接口覆盖 X、Threads、Bluesky、YouTube、TikTok、Instagram、LinkedIn 的发布、读取与分析 / 评论能力。每个平台的能力通过 typed capability manifest 声明，平台原生操作放在显式子路径导入后面；既可直连平台，也可切到 Zernio、Post for Me、PostFast、Postiz、Buffer 等托管后端。设计上有两处值得注意：多目标投递返回各自独立的结果（完成 / 处理中 / 不确定 / 失败），而不是一个总状态；另有确定性 mock 后端用于本地开发与契约测试，以及一个只做适配器发现、能力检查、诊断与请求校验、绝不联网的 CLI。MIT 许可，62 天 841 星。",
+    "highlight_zh": "把「七个平台各有各的失败方式」建模成逐目标独立结果，而不是吞成一个布尔值。"
+  },
+  "anefzaoui/misterdownloadmanager": {
+    "summary_zh": "一款用纯 Rust 从零编写、明确声明「非逆向工程」的洁净室下载管理器，对标 IDM，覆盖 Windows 10/11、主流 Linux 发行版与 macOS（实验性），提供 86 种语言，无广告、无试用、无需注册。核心能力是分段并发加速、崩溃或断网后断点续传、浏览器扩展捕获下载（Firefox / Chrome / Edge / Brave / Opera / Vivaldi）、网页视频下载与播放列表 / 字幕、批量链接抓取归组与解压、定时队列（可唤醒计算机并在完成后关机）、限定走指定网卡的 VPN 绑定与 kill switch，以及从手机或服务器远程控制。界面用 egui。GPL-3.0 许可，12 天新仓 4,099 星、285 fork、85 个 issue。",
+    "highlight_zh": "把「下载加速」这件老需求用 Rust 洁净室重写一遍，还把远程控制和调度队列一并做齐。"
+  },
+  "gosom/google-maps-scraper": {
+    "summary_zh": "从 Google Maps 抽取地点结构化数据的开源工具，字段覆盖名称、地址、电话、网站、评分、评论数、经纬度、评论与邮箱等。Go 编写、MIT 许可，提供 CLI、Web UI、REST API 三种使用形态，并支持 Docker（推荐）、源码构建与分布式抓取；另有可选的 self-hosted 平台与 SaaS 版。本期值得注意的变化是它把「让 AI 代理来找线索」写成第一入口：按 Agent Skills 规范提供技能包，在 Claude Code、Codex、Cursor、GitHub Copilot 等工具里用自然语言描述目标，由代理规划搜索、先跑小样本验证、再启动本地全量抓取并跟进结果。1,297 天的老项目 7,780 星、1,214 fork，本期 +205。",
+    "highlight_zh": "一个跑了三年半的抓取器，把新入口改成了「让编码代理替你规划搜索」。"
+  },
+  "SagerNet/sing-box": {
+    "summary_zh": "Go 编写的通用网络代理平台，项目定位在 README 里只有一句「The universal proxy platform」，正文主体是 GPL-3.0 许可证全文与文档站链接（sing-box.sagernet.org），技术细节集中在外部文档而非仓库 README。它是本期榜单中年龄最长的项目之一（1,594 天），累计 39,805 星、4,919 fork、407 个 open issue，本期 +40。元数据标注语言为 Go、许可 NOASSERTION（README 许可证段为 GPL-3.0 且附加「衍生作品不得未经同意使用本名称或暗示关联」条款）。打包生态成熟，README 直接引用 repology 的多发行版打包状态徽章。",
+    "highlight_zh": "README 几乎只有一句定位和一份许可证，细节全交给外部文档——老牌基础设施的极简写法。"
+  },
+  "HakanSeven12/OpenCADStudio": {
+    "summary_zh": "用 Rust 写的开源 2D 制图与 3D 建模应用，同时提供桌面版与 Web 版，主打原生读写 DWG / DXF 而不经转换服务。2D 侧有直线、多段线、曲线、样条、填充、对象捕捉、追踪、图层、块与外部参照；制图侧有文字、标注、引线、公差、表格、模型空间 / 图纸空间、视口与打印样式；3D 侧基于内核提供实体图元、拉伸、旋转、扫掠、放样、布尔运算与 ACIS 实体细分。渲染通过 wgpu 做 GPU 加速，支持正交与透视相机。扩展能力含原生插件、命令脚本、无头转换与基于行的 JSON 自动化 API，README 提供 21 种语言版本与 Windows / Linux / macOS 构建及安装包说明。GPL-3.0 许可，233 天 3,937 星、474 fork。",
+    "highlight_zh": "把 DWG 原生读写、内核 3D 建模和 wgpu 渲染放进一个 Rust 应用，还给了无头自动化接口。"
+  },
+  "woodpecker-ci/woodpecker": {
+    "summary_zh": "一个轻量但可扩展的 CI/CD 引擎，Go 编写、Apache-2.0 许可。默认用 SQLite 作数据库，README 给出明确的资源数字：空闲时 Server 约 100 MB 内存、Agent 约 30 MB，这个量级使它适合自托管在小规格机器上。围绕引擎提供多种安装方式、插件生态、多语言翻译与公共实例列表；项目由 Open Collective 与 GitHub Sponsors 支持。2,777 天的老项目 8,147 星、738 fork、378 个 open issue，本期 +14。README 结构极简（安装与资源、支持、文档、翻译、公共实例、插件、许可），把细节全部交给外部文档站。",
+    "highlight_zh": "空闲 100 MB 内存跑一整套 CI/CD，自托管门槛低到能塞进边缘设备。"
+  },
+  "DokaDev/datarig": {
+    "summary_zh": "一个住在终端里的全功能数据库客户端，Rust 编写、Apache-2.0 与 MIT 双许可，主打轻、快、默认安全。最核心的设计是「改动先挂起」：在网格里改的数据不会立刻写库，必须先读过确切的 SQL 变更语句才提交，避免手滑直接落库。支持 PostgreSQL 与 MySQL、多个连接各自开标签页并排使用；结果显式分页而不是一次全量加载，单个原生二进制即可运行；全键盘操作、Vim 键位，按空格会提示下一步可用按键。README 给出 macOS / Linux / Windows 的 release 包与 cargo install 源码构建路径（需 Rust 1.93、clang 与 libclang）。41 天、58 星、5 fork、7 个 issue，本期无历史基线，是本期数据方向唯一的新仓。",
+    "highlight_zh": "把「改数据前先读一遍将要执行的 SQL」做成默认行为，而不是事后靠回滚补救。"
+  },
+  "cortega26/chile-hub": {
+    "summary_zh": "把智利公开数据做成可直接消费的数据集：地理、人口、经济、卫生、教育与行政区划，全部经过整理、规范化与校验，输出 Parquet 等格式，Polars、DuckDB、SQLite、Excel 一行代码即可读取。项目针对的是公共数据常见的最后一公里问题——Excel 格式反复变、地区编码丢前导零、来源分散、命名细微差异导致关联失败；因此把统一的 CUT 地域编码作为跨表连接的强制主键。可信度建设写得很实：1,505 个 pytest 用例校验抽取、契约与数据完整性，25 份 ADR 记录每项架构决策的上下文与取舍，全数据集监控 schema 漂移，每个 build 记录时间戳、抽取器版本与来源。提供浏览器数据浏览、Python API、CLI 与使用示例。MIT 许可，163 天 139 星、13 fork。",
+    "highlight_zh": "用 1,505 个测试和 25 份 ADR 回答「公共数据凭什么能直接信」。"
+  },
+  "vivekpandey76/Mysql-course": {
+    "summary_zh": "一套从入门到进阶的 MySQL 课程仓库，配套 20 小时 YouTube 视频逐章讲解。内容覆盖过滤、连接、子查询、窗口函数、CTE、CRUD 等，全部示例跑在同一个样例数据库上，每篇文档都是可独立阅读的一课，附可直接复制执行的 SQL 与演算过程，概念按顺序自然递进。另附面试练习、LeetCode SQL 50、附加题与公司分类题，并说明每题的解题思路而不只是给一个通过的答案。仓库按 docs 目录组织，从 Part 0 样例数据库建表与灌数据开始。面向 SQL 初学者、想补中级查询的开发者与分析师、准备面试的人。MIT 许可，159 天 124 星、28 fork、0 个 open issue。",
+    "highlight_zh": "把 20 小时视频课拆成同一套样例库上可复制执行的独立课文，而不是散落的 SQL 片段。"
+  },
+  "GetCassis/analytics-agent-articles": {
+    "summary_zh": "一份按问题域组织的阅读清单，收录各数据团队自建分析代理（analytics agent）的工程文章。首推三篇分别来自 Anthropic（自助分析如何靠技能、指标定义、文档与评测落地，并说明数据模型变化时怎么保持更新）、OpenAI（内部数据代理的上下文准备、检索、权限与评测架构）与 Ramp（在既有 dbt 项目上搭建，给出上下文表与领域文档的 SQL / Jinja 示例）。其余条目按实际痛点分组：给代理喂上下文、测试答案与模型变更、纠错与保持上下文新鲜、降低成本与延迟、以及怎么让团队真的用起来，涉及 Ramp、Gorgias、Cloudflare、DoorDash、Meta、Uber、LinkedIn、ClickHouse、Vercel 等团队的实践。提供推荐首读、内部构建与按问题浏览三种入口，并接受文章推荐。61 天 66 星，本期 +2。",
+    "highlight_zh": "不谈模型，只按「上下文怎么喂、答案怎么测、成本怎么降」归档一线团队的踩坑记录。"
+  },
+  "starlake-ai/quack-on-demand": {
+    "summary_zh": "给 DuckDB / DuckLake 补上缺失的服务层：一个生产级 SQL 网关，用 Arrow Flight SQL 作线协议，可被 JDBC / ODBC / ADBC 客户端直接连接。Scala 编写、Apache-2.0 许可，能力包括多租户连接池、表级 / 行级 / 列级安全、可插拔认证（数据库 / JWT / OIDC，可接 Keycloak、Azure AD、Google、Cognito）、按角色路由与实时管理控制台。README 给出一条命令的演示：uvx qod@latest serve --demo 即可在本机起一个预置好行列权限的种子仓库，切换 principal 能直接看到脱敏与行过滤生效；也可指向自己的 .duckdb 文件、Parquet / CSV 目录或 s3:// 前缀。文档明确写出适用边界：单应用内嵌用 DuckDB 本身即可，TB 级跨节点 shuffle 与 join 应看 Trino / Dremio / StarRocks。166 天 144 星、11 fork、12 个 issue，本期 +0。",
+    "highlight_zh": "一条命令起一个带行列脱敏的多租户 DuckDB 服务，还把「什么时候不该用它」写进 README。"
+  },
+  "TooonyChen/finallyshell": {
+    "summary_zh": "一个按 FinalShell 布局重做的 SSH 客户端，用 Go 编写、MyGo 绘制界面，把会话标签从横排改成可滚动、可拖拽重排的竖排列表：左上服务器状态、其下会话列表、右侧终端、下方远程文件。功能覆盖连接管理、服务器监控、文件与终端，还补了一批细节：本地终端标签、终端里跑 Claude Code / Codex / Gemini CLI 时会话标签显示对应标识、中英文与明暗主题跟随系统、全部快捷键可改（shell 必需的 Ctrl+C / Ctrl+R 会拒绝并说明原因）、最小化到托盘、有连接时关闭需确认、单实例运行、每日检查并安装签名更新。底部技术栈标注 libghostty。3 天新仓 420 星、41 fork、4 个 issue，本期无历史基线。",
+    "highlight_zh": "把 FinalShell 的熟布局迁到 Go 原生实现，顺手把「终端里在跑哪个 agent」也显示到标签上。"
+  },
+  "jhaizhou-ops/S2Arm": {
+    "summary_zh": "把用户自有的 Switch 游戏原生带到 iPhone / iPad / Mac：不是模拟器，而是把游戏代码重写为 ARM64 直接在设备处理器上运行，图形直连 Metal，整个游戏库装进一个 App。C# 实现、Apache-2.0 许可，平台要求 iOS / iPadOS 18+ 与 Apple silicon 的 macOS 15+，并明确「自带游戏与密钥」。交付方式是在 Mac 或 Windows 上跑图形化启动器：导入游戏本体、更新与 DLC 到同一文件夹，选择目标设备后点 Build，再按引导用自己的 Apple ID 签名安装（Windows 启动器附带签名工具）。README 单列「Honest boundaries」与「License and legal」章节说明边界，并致谢 Ryujinx、NX2Apple 等上游项目。2 天新仓 1,835 星、361 fork、141 个 issue，本期无基线，是本期最年轻的项目。",
+    "highlight_zh": "不做模拟而做静态重编译，把游戏直接变成设备上跑的 ARM64 原生程序。"
+  },
+  "CYQawa/YunX": {
+    "summary_zh": "一款 Kotlin 编写的 Android 应用，把网盘分享链接与内容平台链接的解析、下载与预览做进同一个客户端。网盘侧识别夸克 / UC / 迅雷 / 百度 / 139 / 123 / 115 / 光鸭 / 蓝奏云等分享链接并自动匹配提取码；解析侧覆盖短视频与图文平台的分享链接。下载引擎用 Range 分片并发（上限 32）与断点续传，任务保存请求头与固定分片规划；图片 / 视频 / 音频可在线预览，逐请求带上 Referer 与 Cookie 以避免直链 403；图文笔记按两列网格铺开，支持翻页、双指放大、单张下载与长按多选；下载按文件夹或批次自动归组，部分网盘取链后会做临时转存清理。多平台登录分别走 WebView Cookie、账号密码 / 短信验证码或换取 JWT。提供技术栈、构建说明、常见问题与免责声明章节。AGPL-3.0 许可，95 天 6,934 星、356 fork，本期 +133，为移动方向日增第一。",
+    "highlight_zh": "把「取链、鉴权、分片、预览」这些易碎环节收进一个客户端，并逐请求补齐 Referer 与 Cookie。"
+  },
+  "waligoraamodio288-rgb/hongguo-desktop-releases": {
+    "summary_zh": "一个第三方短剧客户端的发布仓库，把同一套观看体验铺到 Windows 正式版、Mac M 系列测试版与 Android TV / 盒子 / 投影的 ARM32 / ARM64 测试版，由渠道有数独立维护、免费使用。Windows 侧不用安卓模拟器即可浏览分类、搜索剧名、收藏并接着本机进度看，支持老板键（隐藏时暂停、恢复续播）、倍速、选集与自动连播；1.0.19 起可读取本人手机云片单，并优化全屏选集、画面适配、迷你窗与离线文件管理。README 按设备给出下载矩阵与安装前确认项（Windows 10/11 x64、TV 需 Android 5.0+ 且按架构选包、Mac 仅 M 系列 macOS 14+ 且 Intel 暂不支持），并写明安装包体积、升级前须完全退出旧程序、已有 WebView2 会复用、缺失时安装程序需联网补齐等细节。观看进度保存在桌面端、不与手机端账号历史同步。57 天 5,663 星、313 fork、1,223 个 open issue，本期 +51。",
+    "highlight_zh": "一个第三方客户端把桌面、电视与遥控操作一起做齐，还把安装失败的每种原因写进 README。"
+  },
+  "Saffsanity/sill": {
+    "summary_zh": "把 Mac 上的任意一个窗口（或整个桌面）实时搬到 iPhone / iPad 上，并用触摸、Apple Pencil、触控板与键盘反向操作。Swift 编写、Apache-2.0 许可，Mac 端常驻菜单栏，抓取窗口后编码为 HEVC 视频，经 TLS 1.3 加密连接直送设备端；输入沿同一条通道回传，中间没有账号、没有服务器。连接方式有四选一：同一局域网、USB 有线、无共同网络时的直连无线、或走自己的 VPN（如 Tailscale）做远程访问。要求 Mac 为 macOS 14+（Apple silicon 或 Intel）、设备为 iOS / iPadOS 17+；Mac 端需授予屏幕录制权限。iPhone 竖持时画面在上、按钮与按键在下，Pencil 可用于精细操作。Mac 端为免费公证包，也可用 Homebrew 安装；iOS 端 App Store 免费并支持从源码构建。49 天 4,763 星、285 fork、167 个 issue，本期 +38。",
+    "highlight_zh": "无账号、无中转服务器，用 HEVC 加 TLS 1.3 把 Mac 窗口变成 iPad 上的可交互画面。"
+  }
+}

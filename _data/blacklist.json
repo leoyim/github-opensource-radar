@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 45,
-    "publicCount": 13,
+    "count": 55,
+    "publicCount": 15,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -2898,6 +2898,622 @@
           "automation",
           "block-ads",
           "desktop"
+        ]
+      }
+    },
+    {
+      "full_name": "radim-hossain94/abbyy-finereader-pdf",
+      "owner": "radim-hossain94",
+      "name": "abbyy-finereader-pdf",
+      "url": "https://github.com/radim-hossain94/abbyy-finereader-pdf",
+      "description": "ABBYY FineReader PDF: Full-Featured Desktop OCR and Document Conversion Installer",
+      "language": "HTML",
+      "category": "inflated-popularity",
+      "categoryLabel": "热度异常",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": 6.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "480 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库 OhmUrchinSee/abbyy-finereader-pdf 已因同类投放被列入黑名单（2026-11-09），本次换个账号重新上架"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 AbhiKamane/ai-app-builder-open、abdulmannanmalik13-wq/adobe-substance-3d-studio、nabilaolivia2104-commits/adobe-indesign-deployment-pipeline 等 9 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "同名仓库在短期内更换账号重复出现，热度来源难以与自然增长区分。",
+      "advice": "如需评估，请以仓库源码与提交记录为准，不要以星标数作为判断依据。",
+      "snapshot": {
+        "stars": 480,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:30:42Z",
+        "pushed_at": "2026-11-09T18:26:16Z",
+        "topics": [
+          "abbyy",
+          "abbyy-finereade",
+          "acrobat",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python"
+        ]
+      }
+    },
+    {
+      "full_name": "thiagoaureliomartins-programador/chief-architect-premier",
+      "owner": "thiagoaureliomartins-programador",
+      "name": "chief-architect-premier",
+      "url": "https://github.com/thiagoaureliomartins-programador/chief-architect-premier",
+      "description": "Chief Architect Premier 2026: Pre-Configured Desktop Edition with All Features Enabled",
+      "language": "Rust",
+      "category": "inflated-popularity",
+      "categoryLabel": "热度异常",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": 6.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "480 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "correlation",
+          "label": "同名仓库更换账号重复发布",
+          "detail": "同名仓库 PsycheGradeSpeak/chief-architect-premier 已因同类投放被列入黑名单（2026-11-09），本次换个账号重新上架"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 AbhiKamane/ai-app-builder-open、abdulmannanmalik13-wq/adobe-substance-3d-studio、abhijot11/fabfilter-total 等 13 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "同名仓库在短期内更换账号重复出现，热度来源难以与自然增长区分。",
+      "advice": "如需评估，请以仓库源码与提交记录为准，不要以星标数作为判断依据。",
+      "snapshot": {
+        "stars": 480,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:45:00Z",
+        "pushed_at": "2026-11-09T18:26:23Z",
+        "topics": [
+          "automation",
+          "chief-architect",
+          "chief-architect-setup-failed-fix",
+          "chief-architect-x16",
+          "chief-architect-x16-not-installing-on-windows-11",
+          "desktop",
+          "developer-tools",
+          "how-to-install-chief-architect-x16-on-pc"
+        ]
+      }
+    },
+    {
+      "full_name": "abhijot11/fabfilter-total",
+      "owner": "abhijot11",
+      "name": "fabfilter-total",
+      "url": "https://github.com/abhijot11/fabfilter-total",
+      "description": "Fabfilter Total 2026 security assessment toolkit with full feature validation and installer verifica",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 1 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "481 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 481,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-06T20:58:36Z",
+        "pushed_at": "2026-11-10T00:53:17Z",
+        "topics": [
+          "automation",
+          "compressor-plugin",
+          "desktop",
+          "developer-tools",
+          "fabfilter",
+          "fabfilter-2026",
+          "fabfilter-bundle",
+          "fabfilter-pro-q"
+        ]
+      }
+    },
+    {
+      "full_name": "mahmoudtawfik1998/secure-pdf-document-processor",
+      "owner": "mahmoudtawfik1998",
+      "name": "secure-pdf-document-processor",
+      "url": "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor",
+      "description": "Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 1 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "481 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 481,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-06T21:23:09Z",
+        "pushed_at": "2026-11-10T00:05:19Z",
+        "topics": [
+          "acrobat-dc-pro",
+          "acrobat-for-free-2026",
+          "acrobat-no-limits",
+          "acrobat-pdf",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "forms-acrobat-pro"
+        ]
+      }
+    },
+    {
+      "full_name": "AbhiKamane/ai-app-builder-open",
+      "owner": "AbhiKamane",
+      "name": "ai-app-builder-open",
+      "url": "https://github.com/AbhiKamane/ai-app-builder-open",
+      "description": "Open-source AI app builder for full-stack Next.js apps with hosting and auth",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "frontend",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": null,
+      "campaign": "installer-wave-2026-11-b",
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 ai-app-builder、ai-code-generation、ai-web-app-builder 等 8 个技术主题词，README 主体是 Windows / PowerShell 环境要求与安装脚本使用说明，未见 Next.js 工程源码或构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤；正文以桌面安装环境与脚本执行说明为主"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "479 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        },
+        {
+          "type": "correlation",
+          "label": "同批投放的时间与文本相关性",
+          "detail": "与本期另外 5 个仓库在 2026-11-06 20:33–21:23 的约 50 分钟内先后创建，星标数集中在 479–481，README 采用同一套「下载脚本 → PowerShell 执行 → 预激活安装包」模板"
+        }
+      ],
+      "verdict": "仓库以 ai-app-builder、ai-code-generation、ai-web-app-builder 等主题词标注自身，但正文与该方向的技术实现无关，缺少可复用的工程内容与构建链，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 479,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-06T20:33:39Z",
+        "pushed_at": "2026-11-10T01:51:10Z",
+        "topics": [
+          "ai-app-builder",
+          "ai-code-generation",
+          "ai-open-source",
+          "ai-web-app-builder",
+          "ai-web-builder",
+          "app-builder",
+          "auth",
+          "bolt-alternative"
+        ]
+      }
+    },
+    {
+      "full_name": "abdulmannanmalik13-wq/adobe-substance-3d-studio",
+      "owner": "abdulmannanmalik13-wq",
+      "name": "adobe-substance-3d-studio",
+      "url": "https://github.com/abdulmannanmalik13-wq/adobe-substance-3d-studio",
+      "description": "Adobe Substance 3D Creative Studio 2026 - Secure Asset Pipeline Desktop Installer",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": null,
+      "campaign": "installer-wave-2026-11-b",
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 automation、desktop、developer-tools、software-engineering 等 8 个技术主题词，正文是预激活桌面安装包与资产部署流程说明，未见对应的源码实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤；正文以独立安装包的分发说明为主"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "481 星标、零 fork、零 issue，未见二次使用或反馈记录"
+        },
+        {
+          "type": "correlation",
+          "label": "同批投放的时间与文本相关性",
+          "detail": "与本期另外 5 个仓库在 2026-11-06 20:33–21:23 的约 50 分钟内先后创建，星标数集中在 479–481，README 采用同一套「下载脚本 → PowerShell 执行 → 预激活安装包」模板"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向的技术实现无关，缺少可复用的工程内容与构建链，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 481,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:33:06Z",
+        "pushed_at": "2026-11-10T00:54:28Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "substance"
+        ]
+      }
+    },
+    {
+      "full_name": "AbhramJohn/instagram-engagement-bot",
+      "owner": "AbhramJohn",
+      "name": "instagram-engagement-bot",
+      "url": "https://github.com/AbhramJohn/instagram-engagement-bot",
+      "description": "Community-driven Instagram Liker Bot with advanced automation for desktop",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": null,
+      "campaign": "installer-wave-2026-11-b",
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 automation、desktop、developer-tools、insta-bot 等 8 个技术主题词，正文是桌面安装包的使用说明，未提供可审阅的源码结构或构建链"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤；正文以桌面安装包的使用说明为主"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "481 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        },
+        {
+          "type": "correlation",
+          "label": "同批投放的时间与文本相关性",
+          "detail": "与本期另外 5 个仓库在 2026-11-06 20:33–21:23 的约 50 分钟内先后创建，星标数集中在 479–481，README 采用同一套「下载脚本 → PowerShell 执行 → 预激活安装包」模板"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向的技术实现无关，缺少可复用的工程内容与构建链，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 481,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-06T21:06:03Z",
+        "pushed_at": "2026-11-10T00:02:40Z",
+        "topics": [
+          "autolike",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "insta-bot",
+          "instagram-commenter",
+          "instagram-follow",
+          "instagram-followers-free"
+        ]
+      }
+    },
+    {
+      "full_name": "Dipanshu9997/seedphrase-audit",
+      "owner": "Dipanshu9997",
+      "name": "seedphrase-audit",
+      "url": "https://github.com/Dipanshu9997/seedphrase-audit",
+      "description": "seedphrasegenerator: full-feature desktop installer for security research and testing",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": null,
+      "campaign": "installer-wave-2026-11-b",
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 automation、developer-tools、ethereum-checker、phrase-generator 等 8 个技术主题词，正文是预配置安装包的功能说明，未见对应技术实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤；正文以预配置安装包的功能说明为主"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "480 星标、零 fork、零 issue，未见二次使用或反馈记录"
+        },
+        {
+          "type": "correlation",
+          "label": "同批投放的时间与文本相关性",
+          "detail": "与本期另外 5 个仓库在 2026-11-06 20:33–21:23 的约 50 分钟内先后创建，星标数集中在 479–481，README 采用同一套「下载脚本 → PowerShell 执行 → 预激活安装包」模板"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向的技术实现无关，缺少可复用的工程内容与构建链，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 480,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T21:23:44Z",
+        "pushed_at": "2026-11-10T01:19:34Z",
+        "topics": [
+          "automation",
+          "crypto-checker-tool",
+          "desktop",
+          "developer-tools",
+          "ethereum-checker",
+          "mnemonic-phrase",
+          "open-source",
+          "phrase-generator"
+        ]
+      }
+    },
+    {
+      "full_name": "marcoscarrillo26/audio-workbench-desktop",
+      "owner": "marcoscarrillo26",
+      "name": "audio-workbench-desktop",
+      "url": "https://github.com/marcoscarrillo26/audio-workbench-desktop",
+      "description": "Advanced Audio Workbench 2023 Standalone Desktop Setup with Secure Asset Deployment Pipeline",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": null,
+      "campaign": "installer-wave-2026-11-b",
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 automation、desktop、developer-tools、audio-editing-programs 等 8 个技术主题词，正文是桌面版安装包与部署流程说明，未见音频处理源码或构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤；正文以桌面版安装包的分发说明为主"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "480 星标、零 fork、零 issue，未见二次使用或反馈记录"
+        },
+        {
+          "type": "correlation",
+          "label": "同批投放的时间与文本相关性",
+          "detail": "与本期另外 5 个仓库在 2026-11-06 20:33–21:23 的约 50 分钟内先后创建，星标数集中在 479–481，README 采用同一套「下载脚本 → PowerShell 执行 → 预激活安装包」模板"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向的技术实现无关，缺少可复用的工程内容与构建链，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 480,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:36:35Z",
+        "pushed_at": "2026-11-09T20:37:37Z",
+        "topics": [
+          "acrobat",
+          "adobe-audition",
+          "audio-editing-programs",
+          "audio-editing-windows-platform",
+          "audio-mixing-software",
+          "audition-download-installation-guide",
+          "audition-for-windows",
+          "audition-free"
+        ]
+      }
+    },
+    {
+      "full_name": "anas7757/android-unlocker-desktop",
+      "owner": "anas7757",
+      "name": "android-unlocker-desktop",
+      "url": "https://github.com/anas7757/android-unlocker-desktop",
+      "description": "AndroidUnlocker 2026: Professional Desktop Utility Installer for Android Devices",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "mobile",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-10",
+      "removedAt": "2026-11-10",
+      "issues": [
+        "2026-11-10"
+      ],
+      "score": null,
+      "campaign": "installer-wave-2026-11-b",
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 automation、desktop、developer-tools、python 等 8 个技术主题词，正文是预配置桌面工具安装包的说明，未见对应源码实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤；正文以预配置桌面工具安装包的说明为主"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "479 星标、零 fork、零 issue，未见二次使用或反馈记录"
+        },
+        {
+          "type": "correlation",
+          "label": "同批投放的时间与文本相关性",
+          "detail": "与本期另外 5 个仓库在 2026-11-06 20:33–21:23 的约 50 分钟内先后创建，星标数集中在 479–481，README 采用同一套「下载脚本 → PowerShell 执行 → 预激活安装包」模板"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向的技术实现无关，缺少可复用的工程内容与构建链，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 479,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:35:31Z",
+        "pushed_at": "2026-11-09T07:44:02Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "ios-hacking",
+          "ios26iphone",
+          "lockeraser-ios-2026",
+          "open-source",
+          "python"
         ]
       }
     }

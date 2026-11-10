@@ -1,0 +1,2085 @@
+{
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T09:48:21.615+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-09",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 746,
+    "unclassified": 57,
+    "selected": 24,
+    "suppressedByHistory": 186,
+    "sameDateExempt": 0,
+    "removed": 2,
+    "removedTotal": 2,
+    "offTopic": 8,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "JuneYaooo/rea-video",
+          "owner": "JuneYaooo",
+          "name": "rea-video",
+          "url": "https://github.com/JuneYaooo/rea-video",
+          "homepage": "https://www.reavideo.ai/",
+          "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻。",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "ai-video",
+            "aigc-detection",
+            "claude-code",
+            "codex",
+            "ffmpeg",
+            "prompt-engineering",
+            "remotion"
+          ],
+          "stars": 5569,
+          "forks": 804,
+          "open_issues": 4,
+          "starGain": null,
+          "heat": 1460.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 11,
+          "created_at": "2026-10-29T16:15:01Z",
+          "pushed_at": "2026-11-09T15:40:48Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 87.5,
+          "breakdown": {
+            "heat": 100,
+            "community": 72,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Shot by shot: was it filmed, AI-generated or coded, and how to remake it.\n\nWebsite 中文 English Русский 日本語 한국어 Español Português Français Deutsch\n\nLeft: a TikTok ad shot on a phone. Right: an AI remake with another product. rea-video's verdict: the left is all live footage, one set and two camera positions; the right is all AI, 8 shots across 3 generations.",
+            "features": [
+              "a one-line summary, e.g. \"41% AI video + 59% code UI, 8 s of real screen recording, library music at 122 BPM\"",
+              "a remake plan, split into what to film, what to generate and what to code",
+              "a full report.html with per-shot frames, evidence, prompts, camera and lighting notes, and the audio breakdown",
+              "Captions and styled text: start and end of each line (exports to SRT / ASS), plus color, outline and how the text comes in",
+              "Stickers, emoji, picture-in-picture: where they sit and how long they stay",
+              "Editing: where the cuts are, how fast, whether they hit the beat",
+              "Audio: human or AI voice, AI or library music and its BPM, where each sound effect lands",
+              "Material you'll need to supply yourself: screen recordings, screenshots, product photos"
+            ],
+            "sections": [
+              "Quick start",
+              "What it can break down",
+              "Examples",
+              "Remakes",
+              "Accuracy",
+              "How it works",
+              "Star History",
+              "FAQ",
+              "Docs",
+              "Community",
+              "Credits"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 15646
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "superplanehq/superplane",
+          "owner": "superplanehq",
+          "name": "superplane",
+          "url": "https://github.com/superplanehq/superplane",
+          "homepage": "https://superplane.com",
+          "description": "Open source factory for one-shot engineering",
+          "language": "Go",
+          "topics": [
+            "agent-orchestration",
+            "agentic-workflows",
+            "ai-agents",
+            "ai-coding",
+            "ai-software-engineering",
+            "developer-tools",
+            "go",
+            "react"
+          ],
+          "stars": 9440,
+          "forks": 702,
+          "open_issues": 218,
+          "starGain": 228,
+          "heat": 228,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 551,
+          "created_at": "2025-05-07T17:48:39Z",
+          "pushed_at": "2026-11-09T21:23:34Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 85.4,
+          "breakdown": {
+            "heat": 93,
+            "community": 75,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 43,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Try SuperPlane · Website · Docs · Self-host · Discord\n\nSuperPlane turns high-confidence backlog issues into verified, review-ready pull requests so engineers can focus on work that needs judgment.\n\nSuperPlane lets AI agents fully automate routine development work. It coordinates coding agents, source control, CI, review, approvals and feedback in one visible system so engineers do not have to project-manage every step.",
+            "features": [
+              "Sign up and create a workspace.",
+              "Connect a GitHub repository.",
+              "Choose a small bug, a test fix, or a documentation update for the first run.",
+              "Follow the quickstart for setup.",
+              "Read the product overview to learn how SuperPlane coordinates agents and verification.",
+              "Use Docker Compose on one Linux VM.",
+              "Use Kubernetes on AWS, Azure, or Google Cloud.",
+              "Read the contributing guide."
+            ],
+            "sections": [
+              "About",
+              "How it works",
+              "Turn backlog issues into work agents can deliver",
+              "Bring verified changes to human review",
+              "Getting started",
+              "SuperPlane Cloud",
+              "Self-host",
+              "Contributing",
+              "Community and license"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4872
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "DIYgod/pinky",
+          "owner": "DIYgod",
+          "name": "pinky",
+          "url": "https://github.com/DIYgod/pinky",
+          "homepage": "",
+          "description": "Let AI agents use your phone, with you in the loop.",
+          "language": "Go",
+          "topics": [],
+          "stars": 1445,
+          "forks": 157,
+          "open_issues": 11,
+          "starGain": 603,
+          "heat": 603,
+          "heatBasis": "snapshot",
+          "heatPercentile": 98,
+          "ageDays": 3,
+          "created_at": "2026-11-06T16:53:14Z",
+          "pushed_at": "2026-11-10T01:29:16Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.3,
+          "breakdown": {
+            "heat": 98,
+            "community": 59,
+            "activity": 81,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Pinky lets any agent (Claude Code, Claude Desktop, Codex, Cursor or a script) operate a real iPhone or Android phone over MCP, while you watch on your computer, approve risky steps, take over and review what happened. Approvals are enforced by Pinky's gateway, not by instructions to the agent.\n\n- Every platform. One app for macOS (Apple silicon and Intel), Windows and Linux. It drives Android phones (Android 10 to 17) and iPhones on iOS 17.4 or later: nothing to install on iOS 27 and later, and a helper installed once from Xcode on iOS 17.4 to 26, which you can also choose on iOS 27 (tried there and on Simulators, not yet on a phone below 27; details). - Tiny and native. The window is drawn by MyGo on the GPU, with no Electron and no webview: a 16–22 MB download that idles at about 70 MB of memory and 0% CPU on a Mac. - Any agent, one click. Settings › Agents connects Claude Code, Claude Desktop, Codex, Cursor and more, and any agent that can use MCP servers works, on the same computer or over HTTP. - Locked phone? Unlock it from your computer. Save the phone's PIN in Pinky once, then confirm each unlock with Touch ID, Windows Hello or your keyring's password. Agents never see the PIN. - Free and open source under the Apache-2.0 license, with no account to create.\n\nYou approve the risky steps. Payments, trades and transfers wait for your click; in Settings › Safety you can have sends, orders, deletions, calls, installs, links that leave the app and settings changes wait too, ",
+            "features": [
+              "Every platform. One app for macOS (Apple silicon and Intel), Windows and Linux. It drives Android phones (Android 10 to 17) and iPhones on i",
+              "Tiny and native. The window is drawn by MyGo on the GPU, with no Electron and no webview: a 16–22 MB download that idles at about 70 MB of m",
+              "Any agent, one click. Settings › Agents connects Claude Code, Claude Desktop, Codex, Cursor and more, and any agent that can use MCP servers",
+              "Locked phone? Unlock it from your computer. Save the phone's PIN in Pinky once, then confirm each unlock with Touch ID, Windows Hello or you",
+              "Free and open source under the Apache-2.0 license, with no account to create.",
+              "Mac: download pinky- -arm64.dmg for a Mac with Apple silicon (M1 or later) or pinky- -amd64.dmg for an Intel Mac. Open it and drag Pinky to ",
+              "Windows: download pinky-setup- -amd64.exe and run it. It installs Pinky for your account, without administrator rights. The installer is not",
+              "Linux: on Debian and Ubuntu, download pinky amd64.deb and install it with sudo apt install ./pinky amd64.deb . On other systems, unpack pink"
+            ],
+            "sections": [
+              "Get started",
+              "What you need",
+              "1. Download and install Pinky",
+              "2. Connect your phone",
+              "3. Add Pinky to your agent",
+              "4. Try it",
+              "Using Pinky",
+              "Phones",
+              "Phones away from home",
+              "Updates",
+              "Usage statistics, crash reports and feedback",
+              "FAQ",
+              "Build from source",
+              "macOS"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 59238
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "KKKKhazix/AIHOT",
+          "owner": "KKKKhazix",
+          "name": "AIHOT",
+          "url": "https://github.com/KKKKhazix/AIHOT",
+          "homepage": "https://aihot.news",
+          "description": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
+          "language": "TypeScript",
+          "topics": [
+            "ai",
+            "chinese",
+            "content-curation",
+            "daily-digest",
+            "docker-compose",
+            "llm",
+            "mcp",
+            "news-aggregator"
+          ],
+          "stars": 10081,
+          "forks": 2352,
+          "open_issues": 1,
+          "starGain": 291,
+          "heat": 291,
+          "heatBasis": "snapshot",
+          "heatPercentile": 95,
+          "ageDays": 42,
+          "created_at": "2026-09-28T23:40:05Z",
+          "pushed_at": "2026-11-09T21:08:11Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.3,
+          "breakdown": {
+            "heat": 95,
+            "community": 78,
+            "activity": 56,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "一个自己找热点、自己写日报的网站框架。 把信源换成你的，把精选标准换成你的 KnowHow，它就是你的行业热点站。\n\nAIHOT 是我做的一个 AI 热点网站。它每天从一批信源里收资料，用大模型先筛一遍、再独立打两次分，挑出真正值得看的，写成中文标题和摘要；把不同来源说的同一件事聚成一个事件，按有多少人在说排出热点；每天早上出一份日报。\n\n这个仓库是它的引擎和框架：网站、后台、精选流程、聚簇和热度算法， 所有提示词的原文和入选门槛 ，都在这里。",
+            "features": [
+              "我不是专业的开发者。 我是设计师出身，半年前还看不太懂代码。这套代码是我和 AI 一起重写的，比以前干净了很多，但一定还有写得不好的地方。发现问题欢迎提 Issue，我不一定能很快回复，先说声抱歉。",
+              "这是 AIHOT 的引擎。 它和 AIHOT 线上跑的是同一份引擎代码，同步时直接从线上导出，不是精心打磨的通用框架。以后 AIHOT 的更新，我会尽量同步过来，但没法保证每一次都同步。模型榜、Codex 重置监控、主题页的大事记这些只对 AI 行业有意义的功能，可安装的 Age",
+              "里面没有 AIHOT 的信源名单和运营数据。 仓库带了 18 个公开的海外 AI 资讯源做示范，够你跑起来看效果；真正的信源，要换成你自己行业的。",
+              "请不要用 AIHOT 的名字和 Logo。 换上你自己的名字，它就是你的站。"
+            ],
+            "sections": [
+              "这是什么",
+              "为什么开源",
+              "说在前面",
+              "它是怎么工作的",
+              "聚簇与热点",
+              "速度",
+              "你会得到什么",
+              "看一眼",
+              "跑起来",
+              "把它改成你的行业",
+              "文档",
+              "交流与贡献",
+              "最后",
+              "许可"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7734
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "openfilm/openfilm",
+          "owner": "openfilm",
+          "name": "openfilm",
+          "url": "https://github.com/openfilm/openfilm",
+          "homepage": "https://openfilm.dev",
+          "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-video",
+            "claude-code",
+            "codex",
+            "coding-agents",
+            "html",
+            "motion-graphics",
+            "video-agent",
+            "video-editor"
+          ],
+          "stars": 5528,
+          "forks": 526,
+          "open_issues": 35,
+          "starGain": 170,
+          "heat": 170,
+          "heatBasis": "snapshot",
+          "heatPercentile": 88,
+          "ageDays": 37,
+          "created_at": "2026-10-04T09:29:07Z",
+          "pushed_at": "2026-11-09T19:48:33Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81,
+          "breakdown": {
+            "heat": 88,
+            "community": 71,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "OpenFilm lets your coding agent make videos, and lets you edit them.\n\nAsk Codex, Claude Code or any coding agent to make a film. It writes the film as web pages, and Studio, a local editor that runs in your browser, shows it taking shape. Then change anything you like, by hand or by asking.\n\n- One HTML file. film.html cuts animated web pages, footage, pictures and sound together on tracks, styled with CSS. Nothing new to learn: your agent already knows the web. - One function. Each shot is a web page that draws any moment with frame(t) , using anything a browser can draw: three.js, WebGL, canvas, SVG, CSS, GSAP, video and more. No framework (like Remotion or HyperFrames): one function is enough. - One real editor. Move, scale and rotate any element inside a page, change its text, color and style; place, crop and restyle every clip, trim and cut them on the timeline.",
+            "features": [
+              "One HTML file. film.html cuts animated web pages, footage, pictures and sound together on tracks, styled",
+              "One function. Each shot is a web page that draws any moment with frame(t) , using anything a browser can",
+              "One real editor. Move, scale and rotate any element inside a page, change its text, color and style; place,"
+            ],
+            "sections": [
+              "About",
+              "Install",
+              "Commands",
+              "Studio",
+              "Skills",
+              "How it works",
+              "From source",
+              "Community",
+              "Contributing",
+              "License",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10199
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "raysan5/raylib",
+          "owner": "raysan5",
+          "name": "raylib",
+          "url": "https://github.com/raysan5/raylib",
+          "homepage": "http://www.raylib.com",
+          "description": "A simple and easy-to-use library to enjoy videogames programming",
+          "language": "C",
+          "topics": [
+            "android",
+            "c",
+            "embedded",
+            "esp32",
+            "game-development",
+            "game-engine",
+            "gamedev",
+            "graphics"
+          ],
+          "stars": 35618,
+          "forks": 3381,
+          "open_issues": 14,
+          "starGain": 26,
+          "heat": 26,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 4764,
+          "created_at": "2013-10-24T15:46:04Z",
+          "pushed_at": "2026-11-09T07:43:39Z",
+          "license": "Zlib",
+          "rating": 4,
+          "composite": 80.6,
+          "breakdown": {
+            "heat": 81,
+            "community": 86,
+            "activity": 59,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "raylib is a simple and easy-to-use library to enjoy videogames programming.\n\nraylib is highly inspired by Borland BGI graphics lib and by XNA framework and it's especially well suited for prototyping, tooling, graphical applications, embedded systems and education.\n\nNOTE for ADVENTURERS: raylib is a programming library to enjoy videogames programming; no fancy interface, no visual helpers, no debug button... just coding in the most pure spartan-programmers way.",
+            "features": [
+              "NO external dependencies , all required libraries are included in raylib",
+              "Multiple platforms supported: Windows, Linux, MacOS, RPI, Android, HTML5... and more!",
+              "Written in plain C code (C99) using PascalCase/camelCase notation",
+              "Hardware accelerated with OpenGL: 1.1, 2.1, 3.3, 4.3, ES 2.0, ES 3.0",
+              "Unique OpenGL abstraction layer (usable as standalone module): rlgl",
+              "Software Renderer backend (no OpenGL required!): rlsw",
+              "Multiple Texture formats supported, including compressed formats (DXT, ETC, ASTC)",
+              "Multiple Fonts formats supported (TTF, OTF, FNT, BDF, sprite fonts)"
+            ],
+            "sections": [],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11101
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "D3voz/openjutsu",
+          "owner": "D3voz",
+          "name": "openjutsu",
+          "url": "https://github.com/D3voz/openjutsu",
+          "homepage": "",
+          "description": "One-click character swap for videos: an open-source, local Higgsfield Genjutsu alternative built on ComfyUI and MiniMax H3, with FLUX.3 Klein relighting.",
+          "language": "TypeScript",
+          "topics": [
+            "character-swap",
+            "comfyui",
+            "minimax-h3",
+            "nextjs",
+            "open-weights",
+            "opensourcehiggsfield",
+            "video-generation"
+          ],
+          "stars": 2043,
+          "forks": 291,
+          "open_issues": 48,
+          "starGain": 73,
+          "heat": 73,
+          "heatBasis": "snapshot",
+          "heatPercentile": 89,
+          "ageDays": 15,
+          "created_at": "2026-10-26T13:48:11Z",
+          "pushed_at": "2026-10-30T07:49:51Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 69.4,
+          "breakdown": {
+            "heat": 89,
+            "community": 63,
+            "activity": 22,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An open-source, Genjutsu-style character and object swap for video. Drop a video and a character photo, press Generate , and the main person in the video is replaced by your character. Or change their hair or clothes, remove something, or put them somewhere else. The camera, cuts, motion and soundtrack stay. Everything runs on open weights on your own GPU: MiniMax H3 for the video, SAM 3.1 to track people, and Qwen3-VL 8B to describe the pictures and shots.\n\nThe app is a small Next.js front end over a ComfyUI workflow. It uses @comfyorg/sdk , following Comfy's comfy-reshoot reference app.\n\nhttps://github.com/user-attachments/assets/2d8d763a-1764-49a6-9116-d6d1be661ff6",
+            "features": [
+              "Simple motion transfer : available. One character replaces the main person (the one who fills the most of the frame). Runs workflows/simple.",
+              "Advanced motion transfer : available. 1–4 characters, each with an optional role; every tracked person is matched to a role per shot, and pe",
+              "Object swap : available. Change what SAM tracks (hair, a jacket, a car) into what you describe or show in a picture; Remove it; or change th",
+              "From picture (under Object swap): FLUX prepares the character in the raw video frame's pose and body cut while keeping the character picture",
+              "Post-processing : available, for a finished video. Fix faces : H3 draws faces poorly when the person is small in the frame, so this redraws ",
+              "An NVIDIA GPU. Tested on an RTX 4060 Ti 16 GB with 64 GB of system RAM; the H3 int8 models stream from RAM.",
+              "ComfyUI 0.41.2 or newer. Core provides MiniMax H3, SAM 3.1 and TextGenerate.",
+              "Node.js 22.6 or newer, and Python for comfy-api-proxy ."
+            ],
+            "sections": [
+              "Openjutsu",
+              "First visit: visual describer",
+              "Modes",
+              "Requirements",
+              "Custom nodes",
+              "Models",
+              "Run it locally",
+              "Tips",
+              "How it works",
+              "Deploy on the Comfy Developer Platform",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 29434
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "yilecoding/fastapi-react-admin",
+          "owner": "yilecoding",
+          "name": "fastapi-react-admin",
+          "url": "https://github.com/yilecoding/fastapi-react-admin",
+          "homepage": "https://fra.wubunan.com",
+          "description": "Admin foundation on FastAPI + React 19 + shadcn/ui — row-level permissions, multi-tab that keeps state, approval workflow, permission-bound AI assistant, open API, S3 resumable uploads; PostgreSQL / SQL Server / MySQL",
+          "language": "Python",
+          "topics": [
+            "admin-dashboard",
+            "admin-template",
+            "ai-agent",
+            "approval-workflow",
+            "electron",
+            "fastapi",
+            "i18n",
+            "mcp"
+          ],
+          "stars": 131,
+          "forks": 109,
+          "open_issues": 4,
+          "starGain": null,
+          "heat": 11.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 70,
+          "ageDays": 80,
+          "created_at": "2026-08-21T21:30:30Z",
+          "pushed_at": "2026-11-10T01:31:48Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 65.1,
+          "breakdown": {
+            "heat": 70,
+            "community": 43,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 35,
+            "data": 21
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A batteries-included admin foundation · FastAPI + React 19 + shadcn/ui\n\nRow-level permissions · multi-tab that keeps state · approval workflow · an AI assistant that can't overreach · S3 storage with resumable uploads · web, desktop and mobile\n\nLive demo · Docs · Quick start · Features · Releases",
+            "features": [
+              "The web admin console is the core, ready to use",
+              "The desktop template loads the web build and only adds what a browser can't do: silent printing, local hardware, auto-update",
+              "The mobile template has native screens and shares the API types and translations with web",
+              "The layering is enforced : dependencies flow one way, and pnpm arch:check checks it in CI",
+              "Tests — 1,600+ tests against a real database and a real browser, no mocks, on every CI run; the E2E report is public",
+              "Types — frontend/backend types are generated from OpenAPI, so an API change the pages didn't follow fails type checking",
+              "Rules written for AI — 50+ per-directory CLAUDE.md / AGENTS.md files record pitfalls found by testing; a coding assistant reads the one for ",
+              "A backend inside the AI ecosystem — Python + FastAPI, with the built-in AI assistant on pydantic-ai"
+            ],
+            "sections": [
+              "fastapi-react-admin",
+              "🌱 Why build it?",
+              "One repo for web, desktop and mobile",
+              "Built for working with AI",
+              "✨ Why this one",
+              "How it compares",
+              "Features",
+              "Stack",
+              "Mobile app",
+              "Databases",
+              "Quick start",
+              "Quality",
+              "Docs",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 14933
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "opencoredev/social-sdk",
+          "owner": "opencoredev",
+          "name": "social-sdk",
+          "url": "https://github.com/opencoredev/social-sdk",
+          "homepage": "https://social-sdk.dev",
+          "description": "Typed TypeScript SDK for direct and managed social platform integrations, with capability checks, explicit outcomes, and deterministic testing.",
+          "language": "TypeScript",
+          "topics": [
+            "api-integration",
+            "atproto",
+            "bluesky",
+            "bun",
+            "developer-tools",
+            "instagram",
+            "linkedin",
+            "nodejs"
+          ],
+          "stars": 841,
+          "forks": 87,
+          "open_issues": 3,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "snapshot",
+          "heatPercentile": 55,
+          "ageDays": 62,
+          "created_at": "2026-09-08T23:40:28Z",
+          "pushed_at": "2026-11-09T15:07:54Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 60.5,
+          "breakdown": {
+            "heat": 55,
+            "community": 54,
+            "activity": 57,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Social SDK is an open-source TypeScript toolkit for solo founders and small teams adding social features to their apps. Publish, read, and access analytics or comments where available across X, Threads, Bluesky, YouTube, TikTok, Instagram, and LinkedIn through a typed interface.\n\nChoose direct platform access or a managed backend: Zernio, Post for Me, PostFast, Postiz, or Buffer.\n\nRather not run it yourself? Social SDK Cloud, the hosted version, is taking early-access signups. Join the list.",
+            "features": [
+              "Direct adapters for Bluesky, Instagram, LinkedIn, Threads, TikTok, X, and YouTube",
+              "Optional managed backends for Zernio, Post for Me, PostFast, Postiz, and Buffer",
+              "Typed capability manifests and platform-native operations behind explicit subpath imports",
+              "Independent per-destination outcomes for complete, processing, uncertain, and failed work",
+              "A deterministic mock backend for local development and contract tests",
+              "A CLI for adapter discovery, capability checks, diagnostics, and request validation that never contacts a social platform",
+              "Installation",
+              "Mock quickstart"
+            ],
+            "sections": [
+              "Install",
+              "or",
+              "Usage",
+              "Platforms and backends",
+              "CLI",
+              "Documentation",
+              "Guides",
+              "Sponsors"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7796
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "anefzaoui/misterdownloadmanager",
+          "owner": "anefzaoui",
+          "name": "misterdownloadmanager",
+          "url": "https://github.com/anefzaoui/misterdownloadmanager",
+          "homepage": "https://misterdownloadmanager.com",
+          "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+          "language": "Rust",
+          "topics": [
+            "bittorrent-client",
+            "debrid",
+            "download-accelerator",
+            "download-manager",
+            "downloadmanager",
+            "egui",
+            "file-downloader",
+            "gallery-dl"
+          ],
+          "stars": 4099,
+          "forks": 285,
+          "open_issues": 85,
+          "starGain": null,
+          "heat": 1044.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 12,
+          "created_at": "2026-10-29T01:25:19Z",
+          "pushed_at": "2026-11-10T01:43:41Z",
+          "license": "GPL-3.0",
+          "rating": 4.5,
+          "composite": 88.4,
+          "breakdown": {
+            "heat": 100,
+            "community": 67,
+            "activity": 81,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "🧩 Browser extension: The Chrome Web Store's is for\n\n⭐ Like it? Give it a star. MDM has no ads and no marketing budget: stars are how people find it.\n\nWindows 10 and 11 · Linux (Ubuntu, Debian, Mint, Fedora, openSUSE, Arch and more) · macOS (Apple Silicon and Intel, experimental) 86 languages · no ads, no trial, no sign-up",
+            "features": [
+              "Speeds up every download by fetching parts of the file at the same time, and keeps",
+              "Resumes after a crash, a restart or a dropped connection, without starting over.",
+              "Catches downloads from Firefox, Chrome, Edge, Brave, Opera and Vivaldi (the extension is",
+              "Downloads videos from web pages (a button appears over the video; playlists, subtitles,",
+              "Many links at once : the Link grabber sorts them into packages and extracts the archives",
+              "Downloads overnight with queues and a scheduler that can wake the computer, then shuts it",
+              "Through your VPN only , if you want: hold every download to one network adapter, with a kill",
+              "From your phone, or on a server : control MDM from a phone on your home network, or run it"
+            ],
+            "sections": [
+              "Mister Download Manager",
+              "Why switch from IDM?",
+              "Download",
+              "On Linux",
+              "On a Mac? Be the first to try it",
+              "🌍 In your language",
+              "Screenshots",
+              "What it does",
+              "The benchmark in detail",
+              "Not a reverse-engineering project",
+              "For developers",
+              "Status and helping out",
+              "Made possible by these amazing humans",
+              "⭐ Star history"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 40331
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "gosom/google-maps-scraper",
+          "owner": "gosom",
+          "name": "google-maps-scraper",
+          "url": "https://github.com/gosom/google-maps-scraper",
+          "homepage": "",
+          "description": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place",
+          "language": "Go",
+          "topics": [
+            "agent-skills",
+            "claude-skills",
+            "codex-skills",
+            "distributed-scraper",
+            "distributed-scraping",
+            "golang",
+            "google-maps",
+            "google-maps-scraping"
+          ],
+          "stars": 7780,
+          "forks": 1214,
+          "open_issues": 64,
+          "starGain": 205,
+          "heat": 205,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 1297,
+          "created_at": "2023-04-22T14:35:13Z",
+          "pushed_at": "2026-11-08T10:51:13Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.1,
+          "breakdown": {
+            "heat": 94,
+            "community": 75,
+            "activity": 58,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Extract Google Maps business leads, emails, reviews, phone numbers, websites, ratings, coordinates, and more with a free open-source CLI, Web UI, REST API, and optional self-hosted platform.\n\nUse it for lead generation, local business research, sales prospecting, data enrichment, or developer automation.\n\nThe easiest way to use Google Maps Scraper is with an AI coding agent such as Claude Code, Codex, Cursor, GitHub Copilot, or any Agent Skills-compatible tool. You describe the leads you want; the agent plans the searches, runs a small validation, starts the full local scrape, monitors it, and helps you work with the results.",
+            "features": [
+              "Quick Start",
+              "Command Line",
+              "Web UI",
+              "REST API",
+              "SaaS Edition",
+              "AI Agent Skill",
+              "Recipes",
+              "Proxy Sponsors"
+            ],
+            "sections": [
+              "Google Maps Scraper",
+              "Ask an AI Agent to Get Leads",
+              "Sponsored By",
+              "Why Use This Scraper?",
+              "Table of Contents",
+              "Quick Start",
+              "Command Line",
+              "Web UI",
+              "REST API",
+              "SaaS Edition",
+              "AI Agent Skill",
+              "Installation",
+              "Using Docker (Recommended)",
+              "Build from Source"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 29328
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "SagerNet/sing-box",
+          "owner": "SagerNet",
+          "name": "sing-box",
+          "url": "https://github.com/SagerNet/sing-box",
+          "homepage": "https://sing-box.sagernet.org/",
+          "description": "The universal proxy platform",
+          "language": "Go",
+          "topics": [],
+          "stars": 39805,
+          "forks": 4919,
+          "open_issues": 407,
+          "starGain": 40,
+          "heat": 40,
+          "heatBasis": "trending",
+          "heatPercentile": 77,
+          "ageDays": 1594,
+          "created_at": "2022-06-30T13:27:22Z",
+          "pushed_at": "2026-11-09T15:18:09Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 78.6,
+          "breakdown": {
+            "heat": 77,
+            "community": 88,
+            "activity": 72,
+            "maturity": 75
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program. If not, see .",
+            "features": [],
+            "sections": [
+              "sing-box",
+              "Documentation",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1032
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "HakanSeven12/OpenCADStudio",
+          "owner": "HakanSeven12",
+          "name": "OpenCADStudio",
+          "url": "https://github.com/HakanSeven12/OpenCADStudio",
+          "homepage": "",
+          "description": "A CAD application built with Rust — 2D/3D drawing, DWG/DXF support, and GPU-accelerated rendering",
+          "language": "Rust",
+          "topics": [
+            "cad",
+            "dwg",
+            "dwg-compatible",
+            "dwg-editor",
+            "dwg-files",
+            "dwg-parser",
+            "dwg-reader",
+            "dwg-support"
+          ],
+          "stars": 3937,
+          "forks": 474,
+          "open_issues": 75,
+          "starGain": 32,
+          "heat": 32,
+          "heatBasis": "trending",
+          "heatPercentile": 74,
+          "ageDays": 233,
+          "created_at": "2026-03-22T11:53:50Z",
+          "pushed_at": "2026-11-09T19:22:33Z",
+          "license": "GPL-3.0",
+          "rating": 3.5,
+          "composite": 72.1,
+          "breakdown": {
+            "heat": 74,
+            "community": 68,
+            "activity": 67,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English · Български · Português (Brasil) · Čeština · Nederlands · Français · Suomi · Deutsch · Ελληνικά · Magyar · Italiano · 日本語 · 한국어 · ລາວ · Polski · Русский · 简体中文 · Español · 繁體中文 · Türkçe · हिन्दी · العربية\n\nOpen-source 2D drafting and 3D modeling for desktop and web, built with Rust.\n\nLaunch the web app · Download the desktop app · Join the discussion",
+            "features": [
+              "Native drawing workflow — open, edit, recover, and save DWG and DXF files without a conversion service.",
+              "Precise 2D drafting — lines, polylines, curves, splines, hatches, object snaps, tracking, layers, blocks, and external references.",
+              "Documentation tools — text, dimensions, leaders, tolerances, tables, model space, paper space, viewports, and plot styles.",
+              "Kernel-backed 3D modeling — solid primitives, extrusion, revolution, sweep, loft, Boolean operations, and ACIS entity tessellation.",
+              "GPU rendering — accelerated 2D and 3D viewports through wgpu , with orthographic and perspective cameras.",
+              "Extensible workflows — native plugins, command scripts, headless conversion, and a line-based JSON automation API.",
+              "OpenCADStudio- -windows-x86 64-installer.msi / …-windows-arm64-installer.msi — recommended installer with Start Menu shortcuts, DWG/DXF file",
+              "OpenCADStudio- -windows-x86 64-portable.exe / …-windows-arm64-portable.exe — standalone application; no installation required."
+            ],
+            "sections": [
+              "Overview",
+              "Highlights",
+              "File workflows",
+              "Desktop or web",
+              "Install",
+              "Windows",
+              "Linux",
+              "macOS",
+              "Languages",
+              "Build from source",
+              "Desktop",
+              "Web",
+              "Automation",
+              "Plugins"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12328
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "woodpecker-ci/woodpecker",
+          "owner": "woodpecker-ci",
+          "name": "woodpecker",
+          "url": "https://github.com/woodpecker-ci/woodpecker",
+          "homepage": "https://woodpecker-ci.org",
+          "description": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.",
+          "language": "Go",
+          "topics": [
+            "automation",
+            "ci",
+            "cicd",
+            "devops",
+            "docker",
+            "kubernetes",
+            "woodpeckerci"
+          ],
+          "stars": 8147,
+          "forks": 738,
+          "open_issues": 378,
+          "starGain": 14,
+          "heat": 14,
+          "heatBasis": "trending",
+          "heatPercentile": 65,
+          "ageDays": 2777,
+          "created_at": "2019-04-03T18:06:38Z",
+          "pushed_at": "2026-11-09T20:18:48Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 72.9,
+          "breakdown": {
+            "heat": 65,
+            "community": 74,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.\n\nWoodpecker can be installed in various ways (see the Installation Instructions) and runs with SQLite as database by default. It requires around 100 MB of RAM (Server) and 30 MB (Agent) at runtime in idle mode.\n\nYou can support the project by becoming a backer on Open Collective or via GitHub Sponsors.",
+            "features": [],
+            "sections": [
+              "Woodpecker",
+              "Installation & Resources",
+              "Support",
+              "Documentation",
+              "Translation",
+              "Public Woodpecker Instances",
+              "Plugins",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4086
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "DokaDev/datarig",
+          "owner": "DokaDev",
+          "name": "datarig",
+          "url": "https://github.com/DokaDev/datarig",
+          "homepage": "https://dokadev.github.io/datarig/",
+          "description": "A full-featured database client that lives in your terminal: light, fast, and safe by default.",
+          "language": "Rust",
+          "topics": [
+            "cli",
+            "data-editor",
+            "database",
+            "database-client",
+            "explain",
+            "mysql",
+            "mysql-client",
+            "postgres"
+          ],
+          "stars": 58,
+          "forks": 5,
+          "open_issues": 7,
+          "starGain": null,
+          "heat": 7.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 92,
+          "ageDays": 41,
+          "created_at": "2026-09-29T14:49:17Z",
+          "pushed_at": "2026-11-10T01:36:54Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 72.2,
+          "breakdown": {
+            "heat": 92,
+            "community": 31,
+            "activity": 62,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A full-featured database client that lives in your terminal: light, fast, and safe by default.\n\nOr take the archive for macOS, Linux or Windows from GitHub Releases. On Linux, these two need no build tools; a build from source needs Rust 1.93, clang and libclang (the packages for each distribution are in Install):\n\ngit clone https://github.com/DokaDev/datarig && cd datarig && cargo install --locked --path crates/tui",
+            "features": [
+              "Safe by default. Changes made in the grid stay pending until you have read the exact",
+              "Full-featured. PostgreSQL and MySQL, several connections side by side with their own tabs,",
+              "Light and fast. One native binary. Results are paged explicitly instead of loaded whole,",
+              "Keyboard first. Vim keys throughout; press Space and wait to see what can follow. The",
+              "the Apache License, Version 2.0 (LICENSE-APACHE)",
+              "the MIT license (LICENSE-MIT)"
+            ],
+            "sections": [
+              "datarig",
+              "Why datarig",
+              "Features",
+              "Status",
+              "Quick start",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10071
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "cortega26/chile-hub",
+          "owner": "cortega26",
+          "name": "chile-hub",
+          "url": "https://github.com/cortega26/chile-hub",
+          "homepage": "https://tooltician.com/chile-hub/",
+          "description": "Datos públicos de Chile curados, normalizados y validados: geografía, demografía, economía, salud, educación y distritos electorales. Listos para consumir en una línea de código con Polars, DuckDB, SQLite y Excel.",
+          "language": "Python",
+          "topics": [
+            "chile",
+            "data-engineering",
+            "datasets",
+            "datos",
+            "datos-abiertos",
+            "duckdb",
+            "open-data",
+            "parquet"
+          ],
+          "stars": 139,
+          "forks": 13,
+          "open_issues": 10,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "snapshot",
+          "heatPercentile": 83,
+          "ageDays": 163,
+          "created_at": "2026-05-30T19:42:14Z",
+          "pushed_at": "2026-11-09T19:29:11Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 69.9,
+          "breakdown": {
+            "heat": 83,
+            "community": 38,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Deja de pelear con planillas, enlaces rotos y esquemas incompatibles. Datos públicos de Chile curados, normalizados, validados y listos para Python, SQL, Excel y pipelines. La última milla entre “el dato existe” y “el dato ya sirve”.\n\nExplorar datos en el navegador · Instalar · Ver capas · Auditar calidad\n\nSi trabajas con datos de Chile, probablemente ya conoces la fricción: archivos Excel con formatos cambiantes, códigos territoriales que pierden ceros, fuentes dispersas, APIs inconsistentes y cruces que fallan por diferencias mínimas de nombres.",
+            "features": [
+              "1505 tests ( pytest --collect-only ) que validan extracción, contratos e integridad de datos.",
+              "25 ADRs ( docs/adr/ ) que documentan cada decisión de arquitectura con su contexto, consecuencias y tradeoffs — no solo el \"qué\", sino el \"p",
+              "Drift monitoreado: todos los datasets bajo vigilancia de deriva de esquema; cualquier",
+              "Trazabilidad completa: cada build registra timestamp, versión de extractor y"
+            ],
+            "sections": [
+              "El dato público existe. El problema es dejarlo listo para us",
+              "Instalar y usar en 30 segundos",
+              "Cruce territorial garantizado: la clave es el CUT, nunca un ",
+              "Por qué confiar",
+              "Seis pilares, auditables y verificables en cada build",
+              "Respaldo adicional",
+              "Menos trabajo repetido",
+              "Qué incluye",
+              "Formatos de salida",
+              "🍳 Recetas de uso",
+              "🧰 API y CLI",
+              "API Python compacta",
+              "CLI: los comandos más usados",
+              "Inspección y consulta"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 53288
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "vivekpandey76/Mysql-course",
+          "owner": "vivekpandey76",
+          "name": "Mysql-course",
+          "url": "https://github.com/vivekpandey76/Mysql-course",
+          "homepage": "https://www.youtube.com/playlist?list=PLkFShEMrLia1jn4NLHAEI8gX3lIWW6kH9",
+          "description": "🐬 Beginner-to-advanced MySQL course — filtering, joins, subqueries, window functions, CTEs & more. Hands-on guides with copy-paste SQL on one sample database. 🎥 Full video walkthrough on YouTube.",
+          "language": "",
+          "topics": [
+            "crud",
+            "database",
+            "dbms",
+            "joins",
+            "mysql",
+            "mysql-course",
+            "mysql-full-course",
+            "sql"
+          ],
+          "stars": 124,
+          "forks": 28,
+          "open_issues": 0,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 74,
+          "ageDays": 159,
+          "created_at": "2026-06-04T04:51:03Z",
+          "pushed_at": "2026-10-26T06:40:05Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 55.1,
+          "breakdown": {
+            "heat": 74,
+            "community": 39,
+            "activity": 0,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 73,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "🎥 Learn it step-by-step on YouTube → Watch the Full 20-Hour MySQL Course\n\nThis is a structured, beginner-to-advanced MySQL reference built to pair with the video course. Every guide is written as a standalone lesson with clear explanations, copy-paste-ready SQL, and worked examples against a single, consistent sample database — so concepts build naturally from one part to the next.\n\nWhether you're preparing for an interview, leveling up at work, or just starting out, work through the parts in order or jump straight to the topic you need.",
+            "features": [
+              "Set up the sample database — start with Part 0: Sample Database and run the schema + seed data in your MySQL instance.",
+              "Follow along with the video — each guide maps to a section of the 20-hour MySQL course video.",
+              "Practice — every query in these docs runs against the sample database, so you can experiment as you learn.",
+              "Beginners learning SQL for the first time",
+              "Developers & analysts brushing up on intermediate/advanced querying",
+              "Interview candidates revising joins, subqueries, window functions, and CTEs",
+              "LeetCode grinders who want the reasoning behind each solution, not just an accepted answer"
+            ],
+            "sections": [
+              "🐬 MySQL — From Zero to Query Master",
+              "A hands-on, example-driven guide to writing real-world SQL i",
+              "📖 About This Repository",
+              "🚀 Getting Started",
+              "Clone the repo",
+              "Load the sample database into MySQL, then start with docs/00",
+              "📚 Course Contents",
+              "🧩 Interview Practice",
+              "🏆 LeetCode SQL 50",
+              "🎁 Bonus Problems",
+              "🏢 Company-Based Questions",
+              "🗂️ Repository Structure",
+              "🎯 Who This Is For",
+              "🤝 Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10186
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "GetCassis/analytics-agent-articles",
+          "owner": "GetCassis",
+          "name": "analytics-agent-articles",
+          "url": "https://github.com/GetCassis/analytics-agent-articles",
+          "homepage": "",
+          "description": "A curated list of articles from data teams building analytics agents.",
+          "language": "",
+          "topics": [
+            "ai-agents",
+            "analytics",
+            "data-engineering",
+            "reading-list",
+            "text-to-sql"
+          ],
+          "stars": 66,
+          "forks": 3,
+          "open_issues": 0,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "snapshot",
+          "heatPercentile": 83,
+          "ageDays": 61,
+          "created_at": "2026-09-09T16:01:00Z",
+          "pushed_at": "2026-11-04T11:02:07Z",
+          "license": "",
+          "rating": 2.5,
+          "composite": 54.2,
+          "breakdown": {
+            "heat": 83,
+            "community": 30,
+            "activity": 18,
+            "maturity": 50
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A curated list of articles from data teams building analytics agents.\n\nRecommended first reads · Internal builds · Browse by problem · Related reading · Contribute\n\n1. Anthropic — How a team makes self-service analytics work. Skills, metric definitions, documentation, and evaluations (Jun 2026), including how the team keeps them current as data models change. 2. OpenAI — Inside an in-house data agent. The architecture behind context preparation, retrieval, permissions, and evaluations (Jan 2026). 3. Ramp — Building one around an existing dbt project. SQL and Jinja examples for context tables and domain documentation (Oct 2025).",
+            "features": [
+              "Anthropic — How a team makes self-service analytics work. Skills, metric definitions, documentation, and evaluations (Jun 2026), including h",
+              "OpenAI — Inside an in-house data agent. The architecture behind context preparation, retrieval, permissions, and evaluations (Jan 2026).",
+              "Ramp — Building one around an existing dbt project. SQL and Jinja examples for context tables and domain documentation (Oct 2025).",
+              "Giving the agent context: Ramp, Gorgias, AngelList, Astronomer, Bitrise, BlaBlaCar, Cloudflare, DoorDash, incident.io, Meta, OpenAI, Qonto, ",
+              "Testing answers and model changes: Gorgias, Anthropic, ClickHouse, DoorDash, Ramp, LinkedIn, Meta, Uber, Checkr, KOHO, Webflow.",
+              "Fixing mistakes and keeping context current: Bitrise, DoorDash, GitHub, Gorgias, incident.io, Meta, Replit, Astronomer, Checkr, LangChain, O",
+              "Reducing cost and latency: Cloudflare, DoorDash, Gorgias, Vercel.",
+              "Getting people to use it: Alan, Astronomer, Bitrise, Faire, incident.io, Ramp, LinkedIn, Meta, Qonto, KOHO, LangChain, Red Hat, Anthropic, O"
+            ],
+            "sections": [
+              "Analytics agents built by data teams",
+              "Recommended first reads",
+              "Internal builds",
+              "Browse by problem",
+              "Related reading",
+              "Suggest an article"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14278
+          },
+          "guard": {
+            "score": 1,
+            "signals": [
+              "noLicense"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "starlake-ai/quack-on-demand",
+          "owner": "starlake-ai",
+          "name": "quack-on-demand",
+          "url": "https://github.com/starlake-ai/quack-on-demand",
+          "homepage": "https://qod.starlake.ai",
+          "description": "Production-grade SQL gateway in front of DuckDB Quack + DuckLake + Iceberg. Multi-tenant pools, pluggable auth (DB/JWT/OIDC), table-level ACLs, role-aware routing, and a live admin console",
+          "language": "Scala",
+          "topics": [
+            "apache-arrow",
+            "arrow-flight-sql",
+            "duckdb",
+            "ducklake",
+            "flightsql",
+            "lakehouse",
+            "query-engine",
+            "sql-gateway"
+          ],
+          "stars": 144,
+          "forks": 11,
+          "open_issues": 12,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 166,
+          "created_at": "2026-05-27T22:41:51Z",
+          "pushed_at": "2026-11-09T17:32:26Z",
+          "license": "Apache-2.0",
+          "rating": 1.5,
+          "composite": 32.6,
+          "breakdown": {
+            "heat": 0,
+            "community": 38,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The open-source serving layer for DuckDB and DuckLake. Multi-tenant DuckDB serving with table, row, and column level security, and Arrow Flight SQL on the wire.\n\nuvx qod@latest serve --demo the full gateway on your laptop: no install, no Postgres uvx qod@latest serve ./sales.duckdb the same gateway over YOUR DuckDB file, persistent + secured uvx qod@latest serve ./warehouse/ ...or a directory of parquet / csv uvx qod@latest serve s3://bucket/data/ ...or a remote prefix QOD ADMIN PASSWORD='change-me' uvx qod@latest serve ./sales.duckdb set the admin password up front, no prompt\n\nOne command boots a seeded warehouse with row, column, and table security already live. Connect with tenant=acme + pool=bi (in the admin UI login, set the tenant to acme ) and switch principals to watch the policies apply:",
+            "features": [
+              "alice / demo-alice (analyst) - c phone comes back masked to , and only BUILDING -segment rows appear",
+              "acme-admin / demo-acme-admin - same query, full unmasked data",
+              "a table alice has no grant on - denied",
+              "Expose a DuckLake / DuckDB warehouse to multiple teams or apps over a standard wire protocol (Arrow Flight SQL: works with JDBC, ODBC, ADBC,",
+              "Authenticate users against your existing identity provider (Keycloak / Azure AD / Google / Cognito / JWT / database) and enforce table-level",
+              "Run several tenants on shared infrastructure without giving each one a private DuckDB process to manage; each tenant owns a separate DuckLak",
+              "Just need a single embedded DuckDB inside one application: use DuckDB directly",
+              "Need a distributed query engine with cross-node shuffles and joins on TB-scale tables: look at Trino / Dremio / StarRocks. Quack on Demand r"
+            ],
+            "sections": [
+              "Quack on Demand",
+              "admin login: user admin; password admin with --demo, otherwi",
+              "(prompted, or QOD ADMIN PASSWORD; first run only, never stor",
+              "admin UI: http://localhost:20900/ui/",
+              "FlightSQL edge: localhost:31338",
+              "DuckDB (native Quack): quack:localhost:9494",
+              "Ctrl-C stops the gateway and its nodes; so does uvx qod@late",
+              "Hybrid: join your local DuckDB with QoD tables",
+              "The missing serving layer",
+              "Who is this for?",
+              "Quick start",
+              "Native Linux / macOS / Windows",
+              "Docker",
+              "trivial on Linux; on Mac/Windows requires Docker Desktop or "
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 35748
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "TooonyChen/finallyshell",
+          "owner": "TooonyChen",
+          "name": "finallyshell",
+          "url": "https://github.com/TooonyChen/finallyshell",
+          "homepage": "",
+          "description": "类finalshell的ssh客户端 // An source-available finalshell copy, with go runtime and mygo UI",
+          "language": "Go",
+          "topics": [
+            "finalshell",
+            "libghostty",
+            "mygo-ui",
+            "ssh",
+            "ssh-client",
+            "terminal"
+          ],
+          "stars": 420,
+          "forks": 41,
+          "open_issues": 4,
+          "starGain": null,
+          "heat": 144,
+          "heatBasis": "velocity",
+          "heatPercentile": 64,
+          "ageDays": 3,
+          "created_at": "2026-11-07T00:34:42Z",
+          "pushed_at": "2026-11-10T01:13:09Z",
+          "license": "NOASSERTION",
+          "rating": 3,
+          "composite": 64.5,
+          "breakdown": {
+            "heat": 64,
+            "community": 48,
+            "activity": 78,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 67,
+            "backend": 56,
+            "devops": 83,
+            "ai": 40,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An SSH client with FinalShell's layout and vertical session tabs, written in Go.\n\nEnglish · 简体中文 Install · Features · Shortcuts · Full documentation\n\nIf you have used FinalShell, you already know your way around: server stats at the top left, sessions under them, the terminal on the right and the remote files below it. Finallyshell keeps that layout and puts the session tabs in a vertical list you can scroll and drag to reorder.",
+            "features": [
+              "Need a shell on your own computer? The terminal button next to \"+\" opens a local terminal tab, with the same terminal, command bar and quick",
+              "Running Claude Code, Codex, Gemini CLI or another coding agent? Its logo shows on the session tab while it runs, so tabs to the same server ",
+              "English and Simplified Chinese, following the system language or chosen in Options.",
+              "Light and dark appearance, following the system or chosen in Options.",
+              "Every shortcut can be changed. Keys the shell needs, such as Ctrl + C or Ctrl + R , are refused with an explanation.",
+              "Minimize to the tray or menu bar, and confirm before closing while sessions are connected.",
+              "Only one copy runs at a time: opening it again brings the running window forward.",
+              "Updates itself: it checks once a day, or when you ask, and installs a signed update in place."
+            ],
+            "sections": [
+              "Install",
+              "Features",
+              "Connections",
+              "Server monitor",
+              "Files",
+              "Terminal",
+              "And also",
+              "Keyboard shortcuts",
+              "FAQ",
+              "Build from source",
+              "Contributing",
+              "Acknowledgements",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 16247
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "jhaizhou-ops/S2Arm",
+          "owner": "jhaizhou-ops",
+          "name": "S2Arm",
+          "url": "https://github.com/jhaizhou-ops/S2Arm",
+          "homepage": "https://github.com/jhaizhou-ops/S2Arm/releases",
+          "description": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。",
+          "language": "C#",
+          "topics": [
+            "apple-silicon",
+            "arm64",
+            "game-porting",
+            "ios",
+            "ipados",
+            "macos",
+            "metal",
+            "s2arm"
+          ],
+          "stars": 1835,
+          "forks": 361,
+          "open_issues": 141,
+          "starGain": null,
+          "heat": 629.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 2,
+          "created_at": "2026-11-08T05:49:46Z",
+          "pushed_at": "2026-11-10T01:50:49Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 87.9,
+          "breakdown": {
+            "heat": 98,
+            "community": 63,
+            "activity": 90,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Your own Switch games, running natively on iPhone, iPad and Mac. Game code is rewritten to native ARM64 and runs directly on the device's processor, with graphics going straight to Metal. Your whole library lives in one app, and a few clicks in the Mac or Windows launcher take a game from import to play.\n\nPlatforms: iPhone / iPad (iOS / iPadOS 18 and later) · Mac (Apple silicon, macOS 15 and later) · Build on Mac or Windows · Android / HarmonyOS coming soon · License: Apache-2.0 · Bring your own games\n\n简体中文 · Download the launcher · All releases · Evidence",
+            "features": [
+              "Download the Mac or Windows launcher from the download page and open it. Building for iPhone on a Mac needs the free Xcode from the App Stor",
+              "Import your own keys and games. Put the base game, updates and DLC in one folder and import them together.",
+              "Choose iPhone / iPad or this Mac, then click Build.",
+              "Follow the launcher to sign and install with your own Apple ID (the Windows launcher ships with the Impactor signing tool), open S2Arm, and ",
+              "Co-developers : thank you to everyone who has opened a pull request or issue in this project. Your code, device testing and bug reports shap",
+              "Virtual gamepad and gear menu : the in-game gear menu and in-place gamepad editing on iOS follow the MeloNX-style design that @neexuan broug",
+              "Ryujinx (Ryujinx Team and Contributors, MIT): upstream for system services and shader translation; S2Arm's compatibility layer is built on i",
+              "NX2Apple (LNPANDY, MIT): upstream of the launcher interface."
+            ],
+            "sections": [
+              "A native port, not an emulator",
+              "One app, your whole library",
+              "Graphical launchers, next to zero setup",
+              "Let an AI drive",
+              "Have an AI do it for you",
+              "Tested at scale",
+              "Fast, smooth, and easy on the battery",
+              "Platforms",
+              "Getting started",
+              "Honest boundaries",
+              "Development",
+              "Thanks",
+              "Star History",
+              "License and legal"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14051
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "CYQawa/YunX",
+          "owner": "CYQawa",
+          "name": "YunX",
+          "url": "https://github.com/CYQawa/YunX",
+          "homepage": "",
+          "description": "YunX云析 ✨一个安卓 网盘解析 + 视频平台解析 下载app✨",
+          "language": "Kotlin",
+          "topics": [],
+          "stars": 6934,
+          "forks": 356,
+          "open_issues": 53,
+          "starGain": 133,
+          "heat": 133,
+          "heatBasis": "trending",
+          "heatPercentile": 87,
+          "ageDays": 95,
+          "created_at": "2026-08-06T16:42:44Z",
+          "pushed_at": "2026-11-07T06:04:32Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 72.5,
+          "breakdown": {
+            "heat": 87,
+            "community": 71,
+            "activity": 50,
+            "maturity": 55
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "识别夸克 / UC / 迅雷 / 百度 / 139 / 123 / 115 / 光鸭 / 蓝奏云 / 蓝奏云优享版 的分享链接并自动匹配提取码；也能解析抖音 / 小红书 / 快手 / 微博 / AcFun / 哔哩哔哩 / Pixiv 的视频与图集。Range 分片并发 + 断点续传，图片 / 视频 / 音频可在线预览。\n\n- 网盘分享链接解析 —— 识别夸克 / UC / 迅雷 / 百度 / 139 / 123 / 115 / 光鸭 / 蓝奏云 / 蓝奏云优享版 的分享链接，自动匹配提取码\n\n- 视频链接解析 —— 粘贴抖音 / 小红书 / 快手 / 微博 / AcFun 的分享链接免登录直出直链；哔哩哔哩登录后画质更高，Pixiv 未登录只能拿到部分公开作品、在「账号」页粘贴浏览器 Cookie 后可解析全部作品（含 R18 与受限作品），哔哩哔哩的音视频分轨由应用内部合轨（不依赖 ffmpeg）",
+            "features": [
+              "网盘分享链接解析 —— 识别夸克 / UC / 迅雷 / 百度 / 139 / 123 / 115 / 光鸭 / 蓝奏云 / 蓝奏云优享版 的分享链接，自动匹配提取码",
+              "视频链接解析 —— 粘贴抖音 / 小红书 / 快手 / 微博 / AcFun 的分享链接免登录直出直链；哔哩哔哩登录后画质更高，Pixiv 未登录只能拿到部分公开作品、在「账号」页粘贴浏览器 Cookie 后可解析全部作品（含 R18 与受限作品），哔哩哔哩的音视频分轨由应用内部",
+              "高速下载 —— Range 分片并发 + 断点续传，任务保存请求头与固定分片规划，并发上限 32",
+              "在线预览与播放 —— 图片 / 视频 / 音频直接在线播放（逐请求带上 Referer / Cookie，直链不再 403）；网盘里的常见文本文件也能在线打开",
+              "图集两列网格 —— 图文笔记直接把图铺成两列，点开可翻页 / 双指放大 / 单张下载，长按进入多选批量下载",
+              "下载自动归组 —— 整个文件夹、或一次批量下载的图片，在下载页收纳成一个可折叠分组",
+              "临时转存清理 —— 百度 / 迅雷 / 光鸭取链后清理；夸克保留到下载完成或删除任务后清理",
+              "多平台登录 —— 夸克 / UC / 百度 / 139 / 115 使用 WebView Cookie；迅雷 / 光鸭 使用账号密码 / 短信验证码；123 使用账号密码换取 JWT；蓝奏云 / 蓝奏云优享版 使用账号密码"
+            ],
+            "sections": [
+              "云析 · YunX",
+              "截图",
+              "功能",
+              "支持平台",
+              "使用",
+              "技术栈",
+              "构建",
+              "友情推荐",
+              "常见问题",
+              "反倒卖",
+              "免责声明",
+              "开源协议",
+              "贡献者",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5555
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "waligoraamodio288-rgb/hongguo-desktop-releases",
+          "owner": "waligoraamodio288-rgb",
+          "name": "hongguo-desktop-releases",
+          "url": "https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases",
+          "homepage": "https://shiyuemenghui.top/",
+          "description": "红果短剧第三方客户端｜Windows 正式版、Mac M系列测试版、Android TV ARM32/ARM64 测试版。找剧、收藏、本机续播与电视遥控操作；免费使用，由渠道有数独立维护。",
+          "language": "",
+          "topics": [
+            "ai-drama",
+            "android",
+            "android-tv",
+            "apk",
+            "arm64",
+            "desktop-app",
+            "hongguo",
+            "tv-app"
+          ],
+          "stars": 5663,
+          "forks": 313,
+          "open_issues": 1223,
+          "starGain": 51,
+          "heat": 51,
+          "heatBasis": "snapshot",
+          "heatPercentile": 73,
+          "ageDays": 57,
+          "created_at": "2026-09-14T02:03:16Z",
+          "pushed_at": "2026-11-09T15:59:37Z",
+          "license": "",
+          "rating": 3.5,
+          "composite": 72.3,
+          "breakdown": {
+            "heat": 73,
+            "community": 70,
+            "activity": 76,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Windows 10 / 11 x64（64 位） · 安装包 109.4 MiB 。普通使用只需下载 .exe ，不需要下载源码 ZIP、 .sig 或 latest.json 。\n\n分享 Windows 下载请使用固定最新版入口；TV 和 Mac 请分享上方各自入口。无需关注、回帖或私信取包。\n\n- 1.0.19 支持读取本人手机云片单，优化播放器全屏选集、画面适配、迷你窗和离线文件管理；具体检索及播放可用性仍受内容服务和网络影响。",
+            "features": [
+              "不用安卓模拟器，在电脑上浏览分类、搜索剧名、收藏并接着本机进度看。",
+              "老板键隐藏时暂停、恢复时续播，支持倍速、选集和自动连播。",
+              "1.0.19 支持读取本人手机云片单，优化播放器全屏选集、画面适配、迷你窗和离线文件管理；具体检索及播放可用性仍受内容服务和网络影响。",
+              "通过上方链接下载 hongguo-1.0.20-windows-x86 64-setup.exe 。",
+              "升级前通过设置或托盘完全退出旧程序，再按安装程序完成安装；沿用原安装目录和用户资料，无需先卸载旧版本。已有可用 WebView2 时会复用，缺失时安装程序需联网补齐。如果进度条接近终点但仍显示执行 guoban-webview2-setup.exe ，安装程序正在等待运行环境补装",
+              "打开应用，浏览分类或搜索剧名，进入详情后播放。观看进度保存在桌面端，不代表同步手机红果 App 账号和历史。",
+              "遇到故障：提交问题。请说明系统、软件版本、操作步骤、预期和实际结果。",
+              "有功能想法：提出建议。先描述使用场景，方便判断改进方向。"
+            ],
+            "sections": [
+              "红果短剧｜Windows、Mac 测试版与 Android TV",
+              "按设备选择下载",
+              "Windows 桌面版：先看演示，再选安装包",
+              "Mac 公开测试版：邀请 M 系列用户体验",
+              "电视、盒子、投影与平板",
+              "软件界面",
+              "三步开始使用",
+              "怎么找到其他季",
+              "播放中断时",
+              "旧版无法播放，先检查哪个版本？",
+              "版本变化与已知反馈",
+              "使用反馈",
+              "下载与安装说明",
+              "关于本仓库"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9421
+          },
+          "guard": {
+            "score": 1,
+            "signals": [
+              "noLicense"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Saffsanity/sill",
+          "owner": "Saffsanity",
+          "name": "sill",
+          "url": "https://github.com/Saffsanity/sill",
+          "homepage": "https://getsill.app",
+          "description": "Any window from your Mac, live on your iPhone or iPad. Touch, Apple Pencil, trackpad and keys. Free, open source, no servers.",
+          "language": "Swift",
+          "topics": [
+            "apple-pencil",
+            "hevc",
+            "ios",
+            "ipad",
+            "ipados",
+            "iphone",
+            "iphone-duo",
+            "macos"
+          ],
+          "stars": 4763,
+          "forks": 285,
+          "open_issues": 167,
+          "starGain": 38,
+          "heat": 38,
+          "heatBasis": "snapshot",
+          "heatPercentile": 66,
+          "ageDays": 49,
+          "created_at": "2026-09-22T08:06:15Z",
+          "pushed_at": "2026-11-10T01:41:54Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 71.7,
+          "breakdown": {
+            "heat": 66,
+            "community": 68,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Sill shows a window from your Mac, or the whole desktop, on your iPhone or iPad. You use it there with touch, a trackpad, a keyboard or Apple Pencil. Sill for Mac captures the window, encodes it as HEVC video and sends it to the Sill app on your device. Your taps, clicks, scrolls and keys go back to your Mac. Your Mac and your device connect on the same network, over a USB cable, with Direct Wireless Connection when they share no network, or through your own VPN, such as Tailscale, with Remote Access. There is no account and no server in between.\n\ngetsill.app · Download for Mac · Support · Privacy · Terms\n\nSill for Mac is a free, notarized download from getsill.app; with Homebrew, brew install --cask saffsanity/sill/sill installs the same download from Sill's own tap. Sill for iPhone and iPad is free on the App Store, and you can also build it from source (below).",
+            "features": [
+              "A Mac with Apple silicon or an Intel processor, on macOS 14 or later.",
+              "An iPhone or iPad with iOS 17 or iPadOS 17 or later.",
+              "On your Mac, Sill asks for Screen Recording, to show your windows, and",
+              "Your Mac and your device on the same network, joined by a USB cable, or near",
+              "Sill for Mac lives in the menu bar. When your device picks a window, or",
+              "The picture goes over an encrypted connection (TLS 1.3) straight to the",
+              "Your input goes back the same way: taps and clicks, scrolls with",
+              "On iPhone , held upright, the picture is on top with buttons, keys and a"
+            ],
+            "sections": [
+              "Sill",
+              "Screenshots",
+              "Requirements",
+              "How it works",
+              "Tips",
+              "Building from source",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 16400
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "storytold/artcraft",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "Anil-matcha/Open-Generative-AI",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "reacher-z/Awesome-REA",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/TokenEconomizer",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "vAPI-Network/vapi-network",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "paipiange/nvzhuang",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/dsh-superagent-prototype",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/DeepInfer",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "Zagitta/gpu-unlock",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "monid-ai/monid",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "ruvnet/RuView",
+      "category": "frontend",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [],
+  "regenerated": true
+}
