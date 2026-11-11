@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 55,
-    "publicCount": 15,
+    "count": 62,
+    "publicCount": 20,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -3514,6 +3514,525 @@
           "lockeraser-ios-2026",
           "open-source",
           "python"
+        ]
+      }
+    },
+    {
+      "full_name": "manjushree-iyer/soundpad-audio-suite",
+      "owner": "manjushree-iyer",
+      "name": "soundpad-audio-suite",
+      "url": "https://github.com/manjushree-iyer/soundpad-audio-suite",
+      "description": "Soundpad: Advanced Audio Processing for Professional DAW Workflows",
+      "language": "Go",
+      "category": "inflated-popularity",
+      "categoryLabel": "热度异常",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "firstSeen": "2026-11-11",
+      "removedAt": "2026-11-11",
+      "issues": [
+        "2026-11-11"
+      ],
+      "score": 6.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后仅有单次推送",
+          "detail": "仓库创建于 2026-11-07 05:24:56，117 秒后完成唯一一次推送，此后没有新的提交记录"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "773 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "correlation",
+          "label": "与多个仓库在同一时间窗内创建",
+          "detail": "与 Forgavin/ultra-iso-desktop-setup、RafliAbdulHaliim/sylenth-1-enhancement-suite、xavier442/pump-fun-desktop 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
+        }
+      ],
+      "verdict": "多项元数据特征同时偏离常态，建议在核实前不要直接引入。",
+      "advice": "建议先自行核对仓库历史与代码，再决定是否引入。",
+      "snapshot": {
+        "stars": 773,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-06T21:24:56Z",
+        "pushed_at": "2026-11-06T21:26:53Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "soundboard"
+        ]
+      }
+    },
+    {
+      "full_name": "RyoTheOne/dxo-photolab-10-config",
+      "owner": "RyoTheOne",
+      "name": "dxo-photolab-10-config",
+      "url": "https://github.com/RyoTheOne/dxo-photolab-10-config",
+      "description": "dxo-photolab-10: complete standalone config, ready to run, nothing held back",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-11",
+      "removedAt": "2026-11-11",
+      "issues": [
+        "2026-11-11"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 1 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "772 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 772,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-06T20:56:41Z",
+        "pushed_at": "2026-11-08T08:45:00Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "digital-photography",
+          "dxo-photolab-coupon",
+          "dxo-photolab-discount-code",
+          "dxo-photolab-elite",
+          "dxo-photolab-elite-download"
+        ]
+      }
+    },
+    {
+      "full_name": "ayanprob/coreldraw-desktop-installer",
+      "owner": "ayanprob",
+      "name": "coreldraw-desktop-installer",
+      "url": "https://github.com/ayanprob/coreldraw-desktop-installer",
+      "description": "CorelDraw 2026 Professional Desktop Installer with Ready-to-Run Utility Configuration",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "firstSeen": "2026-11-11",
+      "removedAt": "2026-11-11",
+      "issues": [
+        "2026-11-11"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间高度集中",
+          "detail": "仓库创建于 2026-11-06 20:49:17 UTC，与本期另外 3 个同类仓库在 2026-11-06 20:49–21:09 的 20 分钟内先后创建，投放节奏高度一致"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "774 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录近乎空白",
+          "detail": "在当前星标量级下仅有 1 个 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 以引导执行脚本为主",
+          "detail": "README 正文 14523 字符，主体是「PowerShell 5.1+ → 联网下载脚本 → 运行」的安装说明与商业软件功能描述，未提供可审阅的源码结构、构建步骤或发布包校验方式"
+        },
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 automation、coreldraw-* 及 crashplan-app / crashplan-hack 等 8 个主题词，其中 crashplan 系列词与 CorelDraw 主体无关；仓库语言为 HTML，未见对应源码实现"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明开源许可证",
+          "detail": "仓库未提供任何许可证，代码的可用范围与再分发条件均未界定"
+        },
+        {
+          "type": "correlation",
+          "label": "与同批仓库特征一致",
+          "detail": "与本期另外 3 个「商业软件桌面安装包」仓库在星标数（773–774）、零 fork、README 章节顺序与文案模板上高度一致，属同一投放批次"
+        },
+        {
+          "type": "correlation",
+          "label": "与既有台账同批",
+          "detail": "与 2026-11-10 已列入内部台账的同批仓库（如 adobe-substance-3d-studio、android-unlocker-desktop）在命名与文案模式上一致"
+        }
+      ],
+      "verdict": "多项公开元数据与正文特征同时偏离常态，安装流程需要执行外部下载脚本且缺少可审阅的源码主体，本期不纳入推荐。",
+      "advice": "建议先自行核对仓库历史与代码，不建议在未经隔离的环境执行其安装脚本。",
+      "snapshot": {
+        "stars": 774,
+        "forks": 0,
+        "open_issues": 1,
+        "license": "",
+        "created_at": "2026-11-06T20:49:17Z",
+        "pushed_at": "2026-11-10T22:46:06Z",
+        "topics": [
+          "automation",
+          "coreldraw-docs",
+          "coreldraw-windows-download",
+          "crashplan-app",
+          "crashplan-for-small-business",
+          "crashplan-for-small-business-crack",
+          "crashplan-hack",
+          "crashplan-windows-setup-2026"
+        ]
+      },
+      "campaign": "installer-wave-2026-11-b"
+    },
+    {
+      "full_name": "daiphu2708-crypto/melodyne-5-desktop-setup",
+      "owner": "daiphu2708-crypto",
+      "name": "melodyne-5-desktop-setup",
+      "url": "https://github.com/daiphu2708-crypto/melodyne-5-desktop-setup",
+      "description": "Melodyne-5: Professional Audio Editing Desktop Suite with Full Feature Set",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "firstSeen": "2026-11-11",
+      "removedAt": "2026-11-11",
+      "issues": [
+        "2026-11-11"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间高度集中",
+          "detail": "仓库创建于 2026-11-06 21:09:49 UTC，与本期另外 3 个同类仓库在 2026-11-06 20:49–21:09 的 20 分钟内先后创建，投放节奏高度一致"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "773 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录近乎空白",
+          "detail": "在当前星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 以引导执行脚本为主",
+          "detail": "README 正文 14890 字符，主体是「PowerShell 5.1+ → 联网下载脚本 → 运行」的安装说明与商业软件功能描述，未提供可审阅的源码结构、构建步骤或发布包校验方式"
+        },
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 automation、desktop、developer-tools、melodyne-* 等 8 个主题词，仓库语言为 HTML，正文以商业软件安装包说明为主，未见对应源码实现"
+        },
+        {
+          "type": "metadata",
+          "label": "许可证声明与仓库内容不对应",
+          "detail": "仓库声明 MIT 许可证，但内容主体是商业软件的预激活安装包分发说明，未提供可审阅的第一方源码，许可范围与仓库实际内容不对应"
+        },
+        {
+          "type": "correlation",
+          "label": "与同批仓库特征一致",
+          "detail": "与本期另外 3 个「商业软件桌面安装包」仓库在星标数（773–774）、零 fork、README 章节顺序与文案模板上高度一致，属同一投放批次"
+        },
+        {
+          "type": "correlation",
+          "label": "与既有台账同批",
+          "detail": "与 2026-11-10 已列入内部台账的同批仓库（如 adobe-substance-3d-studio、android-unlocker-desktop）在命名与文案模式上一致"
+        }
+      ],
+      "verdict": "多项公开元数据与正文特征同时偏离常态，安装流程需要执行外部下载脚本且缺少可审阅的源码主体，本期不纳入推荐。",
+      "advice": "建议先自行核对仓库历史与代码，不建议在未经隔离的环境执行其安装脚本。",
+      "snapshot": {
+        "stars": 773,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T21:09:49Z",
+        "pushed_at": "2026-11-11T01:00:35Z",
+        "topics": [
+          "automation",
+          "celemony",
+          "celemony-melodyne-install-setup-windows-2026",
+          "desktop",
+          "developer-tools",
+          "melodyne",
+          "melodyne-2026",
+          "melodyne-download"
+        ]
+      },
+      "campaign": "installer-wave-2026-11-b"
+    },
+    {
+      "full_name": "leanislizarzado/ibm-spss-desktop-suite",
+      "owner": "leanislizarzado",
+      "name": "ibm-spss-desktop-suite",
+      "url": "https://github.com/leanislizarzado/ibm-spss-desktop-suite",
+      "description": "IBM SPSS Statistics 2026 Standalone Setup with Full Feature Configuration",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "firstSeen": "2026-11-11",
+      "removedAt": "2026-11-11",
+      "issues": [
+        "2026-11-11"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间高度集中",
+          "detail": "仓库创建于 2026-11-06 21:04:22 UTC，与本期另外 3 个同类仓库在 2026-11-06 20:49–21:09 的 20 分钟内先后创建，投放节奏高度一致"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "773 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录近乎空白",
+          "detail": "在当前星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 以引导执行脚本为主",
+          "detail": "README 正文 14673 字符，主体是「PowerShell 5.1+ → 联网下载脚本 → 运行」的安装说明与商业软件功能描述，未提供可审阅的源码结构、构建步骤或发布包校验方式"
+        },
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 analytics-suite、ibm-analytics、ibm-watson-services 等 8 个主题词，仓库语言为 HTML，正文以商业软件安装包说明为主，未见对应源码实现"
+        },
+        {
+          "type": "metadata",
+          "label": "许可证声明与仓库内容不对应",
+          "detail": "仓库声明 MIT 许可证，但内容主体是商业软件的预激活安装包分发说明，未提供可审阅的第一方源码，许可范围与仓库实际内容不对应"
+        },
+        {
+          "type": "correlation",
+          "label": "与同批仓库特征一致",
+          "detail": "与本期另外 3 个「商业软件桌面安装包」仓库在星标数（773–774）、零 fork、README 章节顺序与文案模板上高度一致，属同一投放批次"
+        },
+        {
+          "type": "correlation",
+          "label": "与既有台账同批",
+          "detail": "与 2026-11-10 已列入内部台账的同批仓库（如 adobe-substance-3d-studio、android-unlocker-desktop）在命名与文案模式上一致"
+        }
+      ],
+      "verdict": "多项公开元数据与正文特征同时偏离常态，安装流程需要执行外部下载脚本且缺少可审阅的源码主体，本期不纳入推荐。",
+      "advice": "建议先自行核对仓库历史与代码，不建议在未经隔离的环境执行其安装脚本。",
+      "snapshot": {
+        "stars": 773,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T21:04:22Z",
+        "pushed_at": "2026-11-11T01:03:12Z",
+        "topics": [
+          "analytics-suite",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "ibm-analytics",
+          "ibm-spss",
+          "ibm-spss-install-setup-windows-2026",
+          "ibm-watson-services"
+        ]
+      },
+      "campaign": "installer-wave-2026-11-b"
+    },
+    {
+      "full_name": "shayannazar84-hero/honkai-star-rail-companion-suite",
+      "owner": "shayannazar84-hero",
+      "name": "honkai-star-rail-companion-suite",
+      "url": "https://github.com/shayannazar84-hero/honkai-star-rail-companion-suite",
+      "description": "Honkai Star Rail 2026 Trainer Tool: Complete Standalone Setup, Ready to Run",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "firstSeen": "2026-11-11",
+      "removedAt": "2026-11-11",
+      "issues": [
+        "2026-11-11"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间高度集中",
+          "detail": "仓库创建于 2026-11-06 21:03:36 UTC，与本期另外 3 个同类仓库在 2026-11-06 20:49–21:09 的 20 分钟内先后创建，投放节奏高度一致"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "773 星标但没有任何 fork，缺少通常意义上的二次使用痕迹"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录近乎空白",
+          "detail": "在当前星标量级下没有任何 issue，缺少使用者的反馈痕迹"
+        },
+        {
+          "type": "content",
+          "label": "README 以引导执行脚本为主",
+          "detail": "README 正文 9767 字符，主体是「PowerShell 5.1+ → 联网下载脚本 → 运行」的安装说明与商业软件功能描述，未提供可审阅的源码结构、构建步骤或发布包校验方式"
+        },
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "标注了 automation、python、scripts、software-engineering 等 8 个技术主题词，仓库语言为 HTML 且没有源码目录，正文以游戏工具安装包说明为主"
+        },
+        {
+          "type": "metadata",
+          "label": "许可证声明与仓库内容不对应",
+          "detail": "仓库声明 MIT 许可证，但内容主体是商业软件的预激活安装包分发说明，未提供可审阅的第一方源码，许可范围与仓库实际内容不对应"
+        },
+        {
+          "type": "correlation",
+          "label": "与同批仓库特征一致",
+          "detail": "与本期另外 3 个「商业软件桌面安装包」仓库在星标数（773–774）、零 fork、README 章节顺序与文案模板上高度一致，属同一投放批次"
+        },
+        {
+          "type": "correlation",
+          "label": "与既有台账同批",
+          "detail": "与 2026-11-10 已列入内部台账的同批仓库（如 adobe-substance-3d-studio、android-unlocker-desktop）在命名与文案模式上一致"
+        }
+      ],
+      "verdict": "多项公开元数据与正文特征同时偏离常态，安装流程需要执行外部下载脚本且缺少可审阅的源码主体，本期不纳入推荐。",
+      "advice": "建议先自行核对仓库历史与代码，不建议在未经隔离的环境执行其安装脚本。",
+      "snapshot": {
+        "stars": 773,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T21:03:36Z",
+        "pushed_at": "2026-11-11T01:32:53Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "star-rail-bot"
+        ]
+      },
+      "campaign": "installer-wave-2026-11-b"
+    },
+    {
+      "full_name": "Vadim-Matsul/it-mountain-hh-verification-tests",
+      "owner": "Vadim-Matsul",
+      "name": "it-mountain-hh-verification-tests",
+      "url": "https://github.com/Vadim-Matsul/it-mountain-hh-verification-tests",
+      "description": "Готовая база из 5 881 ответа по 21 тесту hh.ru - сдать с первой попытки",
+      "language": "",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "frontend",
+      "status": "excluded",
+      "state": "blocked",
+      "campaign": "editorial-boundary",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-11",
+      "removedAt": "2026-11-11",
+      "issues": [
+        "2026-11-11"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "README 主体为第三方平台测试的答案集合",
+          "detail": "README 开篇自述「HH 把测试当作质量筛选，我们知道那其实是运气筛选，所以我们把它破解了」，随后逐项罗列 21 项技能验证测试的题号与参考答案（自述 61,000+ 条记录），通篇未见项目自身的实现说明、架构描述或可运行代码"
+        },
+        {
+          "type": "metadata",
+          "label": "仓库未标注语言、无第一方工程结构",
+          "detail": "language 字段为空，topics 以 cheatsheet、coding-interview 为主，主体是题库与答案索引而非工程实现，不具备可解读的技术主体"
+        },
+        {
+          "type": "metadata",
+          "label": "未声明明确许可证",
+          "detail": "license 为 NOASSERTION，内容的使用与再分发条件未界定"
+        },
+        {
+          "type": "content",
+          "label": "用途指向应试而非技术学习",
+          "detail": "description 明示「一次通过」，定位是通过特定招聘平台技能验证的捷径，与开源项目的技术价值判断不在同一维度"
+        }
+      ],
+      "verdict": "项目主体是面向特定招聘平台技能验证的答案集合，缺少第一方技术实现与可复现的工程结构，无法支撑技术解读，故不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 121,
+        "forks": 2,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-07-30T05:54:16Z",
+        "pushed_at": "2026-11-01T00:19:52Z",
+        "topics": [
+          "algorithms",
+          "cheatsheet",
+          "coding-interview",
+          "css",
+          "data-structures",
+          "docker",
+          "git",
+          "headhunter"
         ]
       }
     }

@@ -1,0 +1,2232 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T09:44:27.483+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-10",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 790,
+    "unclassified": 64,
+    "selected": 25,
+    "suppressedByHistory": 208,
+    "sameDateExempt": 0,
+    "removed": 5,
+    "removedTotal": 5,
+    "offTopic": 2,
+    "watchlisted": 0,
+    "regenerated": true,
+    "reviewedAt": "2026-11-11T02:58:35.436Z"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ZhuLinsen/daily_stock_analysis",
+          "owner": "ZhuLinsen",
+          "name": "daily_stock_analysis",
+          "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+          "homepage": "https://dsa.zhulinsen.tech",
+          "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+          "language": "Python",
+          "topics": [
+            "a-stock",
+            "ai-agent",
+            "aigc",
+            "llm",
+            "quant",
+            "quantitative-finance",
+            "quantitative-trading"
+          ],
+          "stars": 69573,
+          "forks": 56686,
+          "open_issues": 43,
+          "starGain": 960,
+          "heat": 960,
+          "heatBasis": "trending",
+          "heatPercentile": 98,
+          "ageDays": 305,
+          "created_at": "2026-01-10T06:43:20Z",
+          "pushed_at": "2026-11-10T11:51:09Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 91.2,
+          "breakdown": {
+            "heat": 98,
+            "community": 95,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "💖 赞助商 (Sponsors) 感谢 Modelflare 赞助本项目！由美国 Havenbyte LLC 运营，满血稳定不掺水，低成本接入 GPT、Claude、Gemini、Grok 及 40+ 图片/视频模型。指定 OpenAI 分组提供 65% / 75% / 85% 每日缓存命中率保障 ；单笔充值 US$20 解锁 GPT 0.015x ， US$50 解锁 Claude 0.03x 。 专属链接注册\n\nSettings → Secrets and variables → Actions → New repository secret\n\n默认先选一个模型服务商并填写 API Key；需要多模型、图片识别、本地模型或高级路由时，再参考 LLM 配置指南。",
+            "features": [
+              "上证指数: 3250.12 (🟢+0.85%)",
+              "深证成指: 10521.36 (🟢+1.02%)",
+              "创业板指: 2156.78 (🟢+1.35%)",
+              "支持均线金叉、缠论、波浪理论、多头趋势、热点题材、事件驱动、成长质量、预期重估等内置策略",
+              "支持实时行情、K 线、技术指标、新闻和风险信息调用",
+              "支持多轮追问、会话导出、发送到通知渠道和后台执行",
+              "支持自定义策略文件与多 Agent 编排（实验性）"
+            ],
+            "sections": [
+              "📈 股票智能分析系统",
+              "🖥️ 产品预览",
+              "✨ 功能特性",
+              "技术栈与数据来源",
+              "🚀 快速开始",
+              "方式一：GitHub Actions（推荐）",
+              "方式二：客户端配置教程 / 本地运行 / Docker 部署",
+              "克隆项目",
+              "安装依赖",
+              "配置环境变量",
+              "运行分析",
+              "📱 推送效果",
+              "决策仪表盘",
+              "大盘复盘"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10704
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "garrytan/gbrain",
+          "owner": "garrytan",
+          "name": "gbrain",
+          "url": "https://github.com/garrytan/gbrain",
+          "homepage": "",
+          "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 32508,
+          "forks": 4841,
+          "open_issues": 806,
+          "starGain": 462,
+          "heat": 462,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 219,
+          "created_at": "2026-04-05T14:40:56Z",
+          "pushed_at": "2026-11-11T01:34:40Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 85.2,
+          "breakdown": {
+            "heat": 93,
+            "community": 87,
+            "activity": 77,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Give the agent you already use a memory you control. GBrain stores explicit facts with their sources, supports corrections and withdrawal, and makes the same memory available across your agents. Start with keyless memory and keyword retrieval; add semantic search, synthesis, and background enrichment when you need them.\n\nGBrain is MIT-licensed and free to self-host; gbrain.io is optional paid hosting.\n\nKeep skills beside knowledge. New local brains include memory skills in their content root. Agents can join an authorized catalog; only approved editors can publish. Managed coding-agent installs add an owned native router; restart and real-use verification are separate steps. Staged migration preserves sharing choices and personal edits. See shared brain skills.",
+            "features": [
+              "Add GBrain to my existing agent — recommended. Keep your agent's identity and save memory inside its environment. No new personal-agent iden",
+              "Use the brain on my own computer from everywhere. One command publishes it over MCP on your Tailscale tailnet and keeps it running: gbrain m",
+              "Connect my existing hosted brain. Follow hosted harness access to choose native OAuth or a private machine connection. For dashboard login, ",
+              "A synthesis layer that gives you the actual answer. Synthesized, well-cited prose across people, companies, deals, and ideas. Not \"here are ",
+              "A typed knowledge graph. Trusted local page writes extract supported references without LLM calls when auto-linking is enabled. Remote put p",
+              "people/alice — Alice runs engineering at Acme...",
+              "meetings/2026-03-15-alice-q1 — Q1 product review with Alice...",
+              "meetings/2026-01-08-acme-kickoff — Kickoff meeting with Acme team..."
+            ],
+            "sections": [
+              "Choose your setup",
+              "What this looks like",
+              "Install",
+              "Here's how to self-host it",
+              "CLI standalone (no agent)",
+              "Optional: a new personal agent",
+              "Connect GBrain to your AI client (MCP)",
+              "Two ways to query your brain",
+              "raw retrieval: top pages by hybrid score, no answer-generati",
+              "brain layer: synthesized answer with citations and gap analy",
+              "How to get data in",
+              "Your brain's shape (schema packs)",
+              "Tutorials",
+              "What it does (the loop)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 34919
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "opensandbox-group/OpenSandbox",
+          "owner": "opensandbox-group",
+          "name": "OpenSandbox",
+          "url": "https://github.com/opensandbox-group/OpenSandbox",
+          "homepage": "https://open-sandbox.ai",
+          "description": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
+          "language": "Python",
+          "topics": [
+            "aaif",
+            "ai",
+            "ai-agent",
+            "ai-infra",
+            "kubernetes",
+            "sandbox"
+          ],
+          "stars": 17154,
+          "forks": 1621,
+          "open_issues": 186,
+          "starGain": 323,
+          "heat": 323,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 329,
+          "created_at": "2025-12-17T08:41:09Z",
+          "pushed_at": "2026-11-10T16:13:48Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 86.1,
+          "breakdown": {
+            "heat": 92,
+            "community": 81,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 43,
+            "devops": 42,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Run AI agents in sandboxes on your own infrastructure.\n\nOpenSandbox gives AI applications isolated environments to execute code, run commands, manage files, and operate browsers or desktops. Start locally with Docker and deploy on Kubernetes through a unified sandbox API.\n\nQuick Start · Examples · Documentation · Fast Sandbox",
+            "features": [
+              "Docker (required for local execution)",
+              "Python 3.10+ (required for examples and local runtime)",
+              "Docker Hub: docker.io/opensandbox/",
+              "GitHub Container Registry: ghcr.io/opensandbox-group/opensandbox/",
+              "Alibaba Cloud Container Registry: sandbox-registry.cn-zhangjiakou.cr.aliyuncs.com/opensandbox/",
+              "Website — Project homepage and documentation site",
+              "Architecture — System design and component responsibilities",
+              "Deployment Guide — Kubernetes installation and operations"
+            ],
+            "sections": [
+              "Features",
+              "Getting Started",
+              "Install and Configure the Sandbox Server",
+              "Show help",
+              "uvx opensandbox-server -h",
+              "Create a Sandbox and Execute Commands/Scripts",
+              "Examples",
+              "SDKs",
+              "CLI",
+              "or",
+              "MCP",
+              "Official Container Images",
+              "Documentation",
+              "Contact and Discussion"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11632
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "homeassistant-ai/ha-mcp",
+          "owner": "homeassistant-ai",
+          "name": "ha-mcp",
+          "url": "https://github.com/homeassistant-ai/ha-mcp",
+          "homepage": "https://homeassistant-ai.github.io/ha-mcp/",
+          "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+          "language": "Python",
+          "topics": [
+            "ai",
+            "claude",
+            "hacs",
+            "home-assistant",
+            "home-automation",
+            "llm",
+            "mcp",
+            "model-context-protocol"
+          ],
+          "stars": 6693,
+          "forks": 432,
+          "open_issues": 17,
+          "starGain": 790,
+          "heat": 790,
+          "heatBasis": "trending",
+          "heatPercentile": 97,
+          "ageDays": 423,
+          "created_at": "2025-09-14T13:23:45Z",
+          "pushed_at": "2026-11-11T00:27:16Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 85,
+          "breakdown": {
+            "heat": 97,
+            "community": 71,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.\n\nThe recommended way to run ha-mcp is the HA-MCP integration . It installs into Home Assistant through HACS (the built-in Marketplace on Home Assistant 2026.11+), runs the full server in-process , and works on every Home Assistant installation type — Home Assistant OS, Supervised, Container, and Core — with full feature parity. It is the easiest setup in every case: setup asks for an administrator access token and how clients may connect.\n\nAdd it to Home Assistant via HACS or, on Home Assistant 2026.11+, the Marketplace (the preferred install):",
+            "features": [
+              "Install the HA-MCP integration (requires Home Assistant 2026.8.0 or newer ; see compatibility details). On Home Assistant 2026.8–2026.10 , o",
+              "Restart Home Assistant.",
+              "Decide which administrator account the server acts as. Either create a long-lived access token on your own account (your profile → Security ",
+              "Go to Settings → Devices & Services → Add Integration , search for HA-MCP and choose HA-MCP Server . Paste your token, or enter the user nam",
+              "Copy the connect URL from the entry's Configure screen ( Settings → Devices & Services → “HA-MCP — Manage Home Assistant with AI” → HA-MCP S",
+              "Paste that URL into your AI client — done.",
+              "Replaces other install methods: the in-process server is a complete, standalone ha-mcp install — it takes the place of the app (add-on), Doc",
+              "Local only? Leave remote access disabled at setup (or turn off Remote access via webhook in the entry options) — no webhook is registered at"
+            ],
+            "sections": [
+              "🚀 Get Started",
+              "🏠 Home Assistant app (add-on)",
+              "Other install methods",
+              "🧪 Demo server (Windows / macOS / Linux)",
+              "🧙 Setup Wizard for 15+ clients",
+              "💬 What Can You Do With It?",
+              "✨ Features",
+              "🆚 ha-mcp vs. Home Assistant's built-in MCP Server",
+              "🔌 Custom Component (ha mcp tools) — File & YAML Services",
+              "Install",
+              "🧠 Better Results with Agent Skills",
+              "Bundled Skills (built-in)",
+              "🔍 Tool Discovery for AI Agents",
+              "Smaller or local LLMs (Ollama, etc.)"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 46975
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "Imbad0202/academic-research-skills",
+          "owner": "Imbad0202",
+          "name": "academic-research-skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "homepage": "https://buymeacoffee.com/crucify020v",
+          "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+          "language": "Python",
+          "topics": [
+            "academic-pipeline",
+            "academic-writing",
+            "ai-research",
+            "claude",
+            "claude-code",
+            "literature-review",
+            "peer-review",
+            "prompt-engineering"
+          ],
+          "stars": 56367,
+          "forks": 4291,
+          "open_issues": 41,
+          "starGain": 225,
+          "heat": 225,
+          "heatBasis": "trending",
+          "heatPercentile": 87,
+          "ageDays": 258,
+          "created_at": "2026-02-26T06:31:01Z",
+          "pushed_at": "2026-11-10T04:34:01Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 84.5,
+          "breakdown": {
+            "heat": 87,
+            "community": 89,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A comprehensive suite of Claude Code skills for academic research, covering the full pipeline from research to publication.\n\nInstall in 30 seconds (Claude Code CLI / VS Code / JetBrains, v3.7.0+):\n\n/plugin marketplace add Imbad0202/academic-research-skills /plugin install academic-research-skills",
+            "features": [
+              "Claude Code (latest; plugin packaging requires recent versions)",
+              "ANTHROPIC API KEY exported, or set on first claude run",
+              "Optional: Pandoc for DOCX, tectonic + Source Han Serif TC for APA 7.0 PDF (Markdown output works without either)",
+              "Optional (real Python): needed only for the write-scope guard and a few opt-in commands; the core skills are prompt-driven. Details, includi",
+              "Academic Writing Shouldn't Be a Solo Act — full pipeline walkthrough (English)",
+              "學術寫作不該是一個人的事：一套開源 AI 協作工具如何改變研究者的工作流 — 完整使用指南（繁體中文）",
+              "Deep Research — 13-agent research team with Socratic guided mode, PRISMA systematic review, intent detection, dialogue health monitoring, op",
+              "Academic Paper — 12-agent paper writing with Style Calibration, Writing Quality Check, LaTeX hardening, visualization, revision coaching, ci"
+            ],
+            "sections": [
+              "Academic Research Skills for Claude Code",
+              "Why human-in-the-loop, not full automation?",
+              "Architecture & pipeline",
+              "Quick install",
+              "Performance & cost",
+              "Guides & articles",
+              "Features at a glance",
+              "Showcase: real pipeline output",
+              "Companion: Experiment Agent",
+              "Usage",
+              "Quick Start",
+              "Start a full research pipeline",
+              "Start with Socratic guidance",
+              "Write a paper with guided planning"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 46775
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "BareBrowser/bare-browser",
+          "owner": "BareBrowser",
+          "name": "bare-browser",
+          "url": "https://github.com/BareBrowser/bare-browser",
+          "homepage": "",
+          "description": "Bare is a de-Googled Chromium build for Android, built for privacy, control, and freedom on the web. It strips Google tracking, telemetry, and AI integration while keeping browser extensions and uBlock Origin. It adds background video playback, saving media from sites that normally block it, your choice of download manager, and more.",
+          "language": "Python",
+          "topics": [
+            "adblock",
+            "android",
+            "android-browser",
+            "browser",
+            "browser-extensions",
+            "chromium",
+            "degoogled",
+            "mobile-browser"
+          ],
+          "stars": 823,
+          "forks": 21,
+          "open_issues": 115,
+          "starGain": null,
+          "heat": 70.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 87,
+          "ageDays": 87,
+          "created_at": "2026-08-15T21:42:56Z",
+          "pushed_at": "2026-11-09T23:01:31Z",
+          "license": "BSD-3-Clause",
+          "rating": 3.5,
+          "composite": 72.8,
+          "breakdown": {
+            "heat": 87,
+            "community": 51,
+            "activity": 63,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Bare removes Google sign-in, browser telemetry and AI features from Chromium. Desktop extensions work, and uBlock Origin comes installed.\n\n- Version: 2.0.2 . versionCode 802000215 (arm64) and 802000210 (32-bit arm). - Base: Chromium 157.0.8103.46 (commit 800628ad ). - Runs on: Android 10 or newer, on arm64 or 32-bit ARM. There is no x86 build. - Size: 295 patches, 44,691 insertions and 3,210 deletions across 860 files.\n\n- Install desktop extensions from the Chrome Web Store, a CRX file or an unpacked folder. Pin the ones you use to the toolbar. - Use the full uBlock Origin, included by default. You can disable or remove it. - Put the address bar at the top or bottom, arrange the toolbar, and switch between list and grid views for tabs. - Open your tabs in a drawer that slides in from the left, as page thumbnails or as a list. The regular tab switcher has the same grid or list choice. - Set each button on the bottom bar, including Find in page, Search, Back, Forward and the tabs drawer. Swipe along the bottom bar or the address bar to switch tabs. A minimal address bar is a single row with New tab, Tabs and Menu, and you can hide items from the three dot menu. - Find Settings grouped into Your Browser, Preferences & tools and Bare. Pick an app icon (Light, Dark or Retro), let the System theme use true black, and make pages fit the phone's width while keeping the user agent you chose. - Manage extensions on a phone-sized page that shows each one's version and status, with switc",
+            "features": [
+              "Version: 2.0.2 . versionCode 802000215 (arm64) and 802000210",
+              "Base: Chromium 157.0.8103.46 (commit 800628ad ).",
+              "Runs on: Android 10 or newer, on arm64 or 32-bit ARM. There is no x86 build.",
+              "Size: 295 patches, 44,691 insertions and 3,210 deletions across 860 files.",
+              "Install desktop extensions from the Chrome Web Store, a CRX file or an unpacked folder. Pin",
+              "Use the full uBlock Origin, included by default. You can",
+              "Put the address bar at the top or bottom, arrange the toolbar, and switch between list and grid",
+              "Open your tabs in a drawer that slides in from the left, as page thumbnails or as a list. The"
+            ],
+            "sections": [
+              "What you can do",
+              "Install",
+              "For developers",
+              "Network behaviour",
+              "Credits"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 6294
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "kubai087/glasswork",
+          "owner": "kubai087",
+          "name": "glasswork",
+          "url": "https://github.com/kubai087/glasswork",
+          "homepage": "https://www.kubai.design/glasswork/",
+          "description": "A liquid glass material you can take apart, tune and copy as CSS: a refracting thick rim, wallpaper-adaptive ink and live wallpapers, in a playground.",
+          "language": "JavaScript",
+          "topics": [
+            "backdrop-filter",
+            "css",
+            "design-engineering",
+            "glassmorphism",
+            "liquid-glass",
+            "playground",
+            "refraction",
+            "svg-filters"
+          ],
+          "stars": 60,
+          "forks": 4,
+          "open_issues": 0,
+          "starGain": 6,
+          "heat": 6,
+          "heatBasis": "snapshot",
+          "heatPercentile": 69,
+          "ageDays": 6,
+          "created_at": "2026-11-05T04:20:35Z",
+          "pushed_at": "2026-11-05T17:03:52Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 57,
+          "breakdown": {
+            "heat": 69,
+            "community": 30,
+            "activity": 35,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Glasswork is a standalone playground for the liquid glass material used on Lumno's New Tab page. Tint, blur, rim refraction, rim light and text color can each be adjusted from the panel, and Copy CSS exports the resulting code.\n\nOpen the playground · Announcement on X · Installation\n\n- Independent settings for light and dark glass: tint color and strength, blur, saturation, brightness, contrast, rim light, bevel and shadow. - Adjustable rim refraction: width, edge offset, falloff and dispersion. Corner smoothing is also adjustable, and the refraction follows the corner shape. - Adaptive glass: the busier the wallpaper behind a surface, the denser its tint, while text contrast stays at 4.5:1 or above. - A range of built-in backgrounds: five generations of macOS abstract wallpapers (Tahoe, Sonoma, Ventura, Monterey and Big Sur, with light and dark versions that follow the theme; Tahoe and Sonoma are animated), six animated wallpapers rendered in WebGL (each in a light and a dark version), and random photos from Unsplash. - Custom images and videos, added by uploading, dragging onto the page, pasting a file or pasting a link. Local files are opened in the browser only and never uploaded. A notice at the top of the page indicates when a background is loading. - The search bar, player and tint slider can be dragged across the wallpaper; double-click to return one to its original position. - Five presets: Lumno, Clear glass, Frosted, Thick slab and Vivid. Presets change only the ma",
+            "features": [
+              "Independent settings for light and dark glass: tint color and strength, blur, saturation, brightness, contrast, rim light, bevel and shadow.",
+              "Adjustable rim refraction: width, edge offset, falloff and dispersion. Corner smoothing is also adjustable, and the refraction follows the c",
+              "Adaptive glass: the busier the wallpaper behind a surface, the denser its tint, while text contrast stays at 4.5:1 or above.",
+              "A range of built-in backgrounds: five generations of macOS abstract wallpapers (Tahoe, Sonoma, Ventura, Monterey and Big Sur, with light and",
+              "Custom images and videos, added by uploading, dragging onto the page, pasting a file or pasting a link. Local files are opened in the browse",
+              "The search bar, player and tint slider can be dragged across the wallpaper; double-click to return one to its original position.",
+              "Five presets: Lumno, Clear glass, Frosted, Thick slab and Vivid. Presets change only the material and refraction, so adjusted colors, theme ",
+              "All settings are stored in the URL, so a shared link reproduces the same result."
+            ],
+            "sections": [
+              "Glasswork",
+              "Features",
+              "How it works",
+              "Using it in your project",
+              "Installing with an AI coding tool",
+              "Manual setup",
+              "URL parameters",
+              "Running locally",
+              "Browser support",
+              "License and credits"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10467
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "VII-Cae/hyalite--liquid-glass",
+          "owner": "VII-Cae",
+          "name": "hyalite--liquid-glass",
+          "url": "https://github.com/VII-Cae/hyalite--liquid-glass",
+          "homepage": "https://vii-cae.github.io/hyalite--liquid-glass/demo/index.html",
+          "description": "Real refraction liquid glass for the web: SDF lens maps + SVG displacement + backdrop-filter. One file, no WebGL.",
+          "language": "JavaScript",
+          "topics": [
+            "backdrop-filter",
+            "css",
+            "glassmorphism",
+            "liquid-glass",
+            "refraction",
+            "svg-filters"
+          ],
+          "stars": 265,
+          "forks": 15,
+          "open_issues": 0,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "snapshot",
+          "heatPercentile": 55,
+          "ageDays": 65,
+          "created_at": "2026-09-07T01:20:43Z",
+          "pushed_at": "2026-09-11T12:58:50Z",
+          "license": "MIT",
+          "rating": 2.5,
+          "composite": 47.4,
+          "breakdown": {
+            "heat": 55,
+            "community": 43,
+            "activity": 0,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Real refraction “liquid glass” for the web. One file, no WebGL, no build step.\n\nHyalite treats an element as a slab of glass with a bevelled edge. For the element’s exact size and corner radii it computes a lens map, feeds it to an SVG filter, and lets the browser bend whatever is behind the element through backdrop-filter: url( …) . The centre stays clear; the edge pulls the world inward the way a thick piece of glass does, darkens where it magnifies, and catches a line of light along the rim. Straight lines curve, not smear.\n\nThree pages, live on GitHub Pages — open them in a Chromium browser, everything else falls back to a plain blur:",
+            "features": [
+              "demo/index.html — all four engines at once, each on the settings its own release was shown at : 0.1.0 bends, 0.2.0 does it cheaply, 0.3.1 lo",
+              "demo/edge-lab.html — the three bevel profiles side by side on one set of parameters, with an oscilloscope for the edge: displacement, the br",
+              "demo/cases.html — self-checking page: asymmetric, elliptical and overlap-rule radii, twins sharing a filter, size buckets, quarter-symmetry ",
+              "demo/run-cases.mjs — not a page to open: a command-line script that runs cases.html in a real headless Chromium and prints red/green with an",
+              "Distance field. A signed distance function of the rounded rectangle (per-corner radii) gives, for every pixel, how deep inside the edge it s",
+              "Snell’s law. The glass is a slab of thickness with a quarter-circle bevel of width bevel . A view ray refracts toward the surface normal at ",
+              "Folding, optionally. The decay slope is capped at slope px/px. At 1 the sampling point stands still (infinite stretch); above it the image m",
+              "No stairs. Chromium samples the bent picture nearest-neighbour — Skia’s displacement effect is pinned to kNearest (skbug 40045448). A slope "
+            ],
+            "sections": [
+              "hyalite",
+              "Use",
+              "API",
+              "Options",
+              "Caching, in two levels",
+              "Corners",
+              "How it works",
+              "Browser support",
+              "Performance",
+              "Gotchas",
+              "Sharing",
+              "Credits and prior art"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21404
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Zproger/Aurum",
+          "owner": "Zproger",
+          "name": "Aurum",
+          "url": "https://github.com/Zproger/Aurum",
+          "homepage": "",
+          "description": "Self-hosted personal finance OS — cash flow, net worth, budgets, and every income stream you own. Free for personal use.",
+          "language": "TypeScript",
+          "topics": [
+            "budgeting",
+            "crypto-portfolios",
+            "docker",
+            "expense-tracker",
+            "fastapi",
+            "finance",
+            "finance-tracker",
+            "net-worth"
+          ],
+          "stars": 272,
+          "forks": 41,
+          "open_issues": 6,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 51,
+          "ageDays": 86,
+          "created_at": "2026-08-16T15:34:55Z",
+          "pushed_at": "2026-11-10T13:15:47Z",
+          "license": "NOASSERTION",
+          "rating": 2.5,
+          "composite": 54.3,
+          "breakdown": {
+            "heat": 51,
+            "community": 45,
+            "activity": 58,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "See where every dollar comes from. Know where every dollar goes.\n\nAurum is a source-available personal finance operating system — a complete, granular, real-time picture of your money: cash flow, net worth, budgets, subscriptions, assets, and every income stream you own.\n\nFeatures • Screenshots • Getting Started • API Docs • Security • Contributing • License",
+            "features": [
+              "Fragmentation is the enemy. Bank apps, brokerage apps, crypto wallets, spreadsheets, subscription trackers — your financial picture is scatt",
+              "Most trackers stop at \"what happened.\" Aurum also flags rising spending categories, unbudgeted expenses, and shifts in your savings rate — b",
+              "The 80/20 rule, enforced. Aurum can group your capital by risk level and warn you the moment too much of it is exposed.",
+              "It should be free, forever — for you. Financial clarity shouldn't sit behind a paywall. Aurum is source-available and self-hosted — your dat",
+              "macOS / Windows: install Docker Desktop — it bundles both.",
+              "Linux: follow the official install guide for your distribution, then install the Compose plugin if it isn't already included.",
+              "If you leave AURUM BASIC AUTH USER / AURUM BASIC AUTH PASSWORD unset in .env , anyone who can reach the container can read, edit, and delete",
+              "Set both variables before exposing your instance beyond your own machine (a VPS, a subdomain, a Tailscale/VPN endpoint someone else might sh"
+            ],
+            "sections": [
+              "Aurum",
+              "🖼️ Screenshots",
+              "📖 Overview",
+              "💡 Why Aurum",
+              "🧩 Core Features",
+              "💰 Cash Flow & Transactions",
+              "📈 Net Worth Engine",
+              "🪙 Crypto Tracker",
+              "🎯 Budgets, Goals & Recurring Payments",
+              "📊 Reports & Advice",
+              "🧮 Returns Calculator",
+              "🔔 Proactive Alerts",
+              "🌐 Bilingual, Mobile-First",
+              "💾 Full Backup & Restore"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 14197
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "libracoder/kiri",
+          "owner": "libracoder",
+          "name": "kiri",
+          "url": "https://github.com/libracoder/kiri",
+          "homepage": "https://runkiri.com",
+          "description": "A small, fast container runtime for macOS, Windows and Linux",
+          "language": "Rust",
+          "topics": [
+            "containers",
+            "docker",
+            "kubernetes",
+            "linux",
+            "macos",
+            "oci",
+            "windows"
+          ],
+          "stars": 1476,
+          "forks": 95,
+          "open_issues": 59,
+          "starGain": null,
+          "heat": 457.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 8,
+          "created_at": "2026-11-02T16:11:30Z",
+          "pushed_at": "2026-11-10T21:37:01Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 85.7,
+          "breakdown": {
+            "heat": 99,
+            "community": 58,
+            "activity": 82,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A tiny, fast container runtime for macOS, Windows and Linux. Runs your Docker images and works with the docker CLI, Compose and buildx you already use.\n\n🇬🇧 🇮🇩 🇩🇪 🇪🇸 🇫🇷 🇮🇹 🇵🇱 🇧🇷 🇻🇳 🇹🇷 🇷🇺 🇯🇵 🇰🇷 🇨🇳 🇹🇼 Kiri speaks 15 languages. Is yours one?\n\nKiri is a lightweight replacement for Docker Desktop and OrbStack, written in Rust. It runs containers in one small Linux VM (or straight on the kernel on Linux) and speaks the Docker Engine API, so your tools just work.",
+            "features": [
+              "Fast : a container starts and exits in about 2.5 ms through the Docker API. That's around 80 times faster than Docker Desktop.",
+              "Light : the VM sleeps after 60 s idle, the daemon stays at about 15 MB, and it wakes in about 0.15 s.",
+              "Compatible : docker , Compose, buildx, docker login and amd64 images through Rosetta.",
+              "Local domains : http:// .kiri.local , with HTTPS from Kiri's own certificate authority.",
+              "More than containers : a one-command Kubernetes cluster and Linux machines.",
+              "A native window for containers, images, volumes and networks, plus a menu bar item.",
+              "In your language : 15 languages, on macOS, Windows and Linux alike.",
+              "Features: everything supported today, release files and known issues"
+            ],
+            "sections": [
+              "Why Kiri",
+              "In your language",
+              "Install",
+              "Quick start",
+              "Numbers",
+              "How it works",
+              "Documentation",
+              "Roadmap",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6141
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "fosrl/pangolin",
+          "owner": "fosrl",
+          "name": "pangolin",
+          "url": "https://github.com/fosrl/pangolin",
+          "homepage": "https://pangolin.net",
+          "description": "Modern networking and security platform providing secure access and connectivity to apps, infrastructure, and AI workloads. Connect and protect your users.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-gateway",
+            "gateway",
+            "nat-traversal",
+            "oidc",
+            "pam",
+            "pangolin",
+            "remote-access",
+            "reverse-proxy"
+          ],
+          "stars": 23568,
+          "forks": 828,
+          "open_issues": 120,
+          "starGain": 108,
+          "heat": 108,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 775,
+          "created_at": "2024-09-27T02:16:47Z",
+          "pushed_at": "2026-11-11T01:38:15Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 86.3,
+          "breakdown": {
+            "heat": 92,
+            "community": 81,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 100,
+            "devops": 85,
+            "ai": 35,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Get started with Pangolin Cloud at app.pangolin.net\n\nPangolin is an open-source SASE platform, built on WireGuard®, with a simple mission: connect and protect your users, wherever they are. It brings networking and security together as one system including a zero-trust VPN, zero-trust reverse proxy, privileged access management, and an identity-aware AI gateway, all sharing one identity and policy model. It's the same idea behind platforms like Cloudflare One, Zscaler, and Prisma but open, self-hostable, and built to stay light and easy to deploy.\n\nLegacy SASE platforms got the idea right: connectivity and security belong together. But they delivered it as a heavyweight, closed, cloud-locked stack assembled from years of patchwork. Pangolin exists to do that unification differently, in the open, self-hostable, and simple enough that administrators actually enjoy running it.",
+            "features": [
+              "Open source, not a black box : the code is open and auditable, so you can see exactly how your traffic is handled and how access decisions g",
+              "Networking and security as one platform : sites, reverse proxy, client access, RBAC, and the AI gateway share one identity and policy model,",
+              "Lightweight by design : the whole platform is built to stay small and fast: easy to self-host on a small server, with a lightweight, user-sp",
+              "Enjoyable to use : a clean, modern interface and a setup flow that gets out of your way, so managing access feels simple instead of like fig",
+              "Zero trust from day one : access is granted per resource, not per network, with identity provider integration, role-based access control, an",
+              "Run it your way : self-host the Community Edition for free, step up to the Enterprise Edition for advanced features, or use Pangolin Cloud i",
+              "Get started for free with Pangolin Cloud.",
+              "Or, check out the quick install guide for how to self-host Pangolin."
+            ],
+            "sections": [
+              "Networking and security that's unified, open, and simple",
+              "Installation",
+              "Deployment Options",
+              "Key Features",
+              "Connect remote networks with sites and NAT traversal",
+              "Browser-based reverse proxy access",
+              "Client-based private resource access",
+              "Identity-aware AI gateway",
+              "Give users and roles access to resources",
+              "Find and launch resources from a personalized home page",
+              "Download Clients",
+              "Get Started",
+              "Sign up now",
+              "Check out the docs"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10375
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "HolyArrs/HolyArrs",
+          "owner": "HolyArrs",
+          "name": "HolyArrs",
+          "url": "https://github.com/HolyArrs/HolyArrs",
+          "homepage": "https://holyarrs.com",
+          "description": "One self-hosted app for your shows, movies and music.",
+          "language": "Go",
+          "topics": [
+            "docker",
+            "homelab",
+            "jellyfin",
+            "media-server",
+            "plex",
+            "self-hosted"
+          ],
+          "stars": 588,
+          "forks": 27,
+          "open_issues": 76,
+          "starGain": null,
+          "heat": 201.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 1,
+          "created_at": "2026-11-09T23:53:25Z",
+          "pushed_at": "2026-11-10T21:37:35Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 82.7,
+          "breakdown": {
+            "heat": 95,
+            "community": 49,
+            "activity": 87,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Save this as docker-compose.yml in a new folder on a local disk:\n\nname: holyarrs services: holyarrs: image: holyarrs/holyarrs:latest container name: holyarrs environment: - PUID=1000 - PGID=1000 - TZ=America/New York volumes: - /your/local/path:/config - /path/to/movies:/movies optional - /path/to/tv:/tv optional - /path/to/music:/music optional - /path/to/downloads:/downloads optional ports: - 6262:6262 restart: unless-stopped\n\nOpen http://your-server:6262 and make the owner account. A short setup walks you through folders, a downloader and a Source.",
+            "features": [
+              "TZ=America/New York",
+              "/your/local/path:/config",
+              "/path/to/movies:/movies optional",
+              "/path/to/tv:/tv optional",
+              "/path/to/music:/music optional",
+              "/path/to/downloads:/downloads optional",
+              "Downloaders: qBittorrent, Transmission, Deluge, SABnzbd, NZBGet",
+              "Media servers: Plex, Jellyfin, Emby"
+            ],
+            "sections": [
+              "🚀 Running in two minutes",
+              "💡 Why I built it",
+              "🎬 Ask for a title, and it shows up in your library",
+              "🤝 It works with what you already run",
+              "🚚 Bring your old setup with you",
+              "🧭 What it doesn't do yet",
+              "❓ Questions people ask first",
+              "📖 The manual",
+              "Supported architectures",
+              "Version tags",
+              "Usage",
+              "docker compose (recommended)",
+              "docker cli",
+              "Parameters"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21449
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "mikefarah/yq",
+          "owner": "mikefarah",
+          "name": "yq",
+          "url": "https://github.com/mikefarah/yq",
+          "homepage": "https://mikefarah.gitbook.io/yq/",
+          "description": "yq is a portable command-line YAML, JSON, XML, CSV, TOML, HCL  and properties processor",
+          "language": "Go",
+          "topics": [
+            "bash",
+            "cli",
+            "csv",
+            "devops-tools",
+            "golang",
+            "hcl",
+            "json",
+            "portable"
+          ],
+          "stars": 16260,
+          "forks": 1296,
+          "open_issues": 323,
+          "starGain": 9,
+          "heat": 9,
+          "heatBasis": "trending",
+          "heatPercentile": 62,
+          "ageDays": 4063,
+          "created_at": "2015-09-26T22:14:44Z",
+          "pushed_at": "2026-11-09T04:15:37Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 70.9,
+          "breakdown": {
+            "heat": 62,
+            "community": 80,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A lightweight and portable command-line YAML, JSON, INI and XML processor. yq uses jq (a popular JSON processor) like syntax but works with yaml files as well as json, kyaml, xml, ini, properties, csv and tsv. It doesn't yet support everything jq does - but it does support the most common operations and functions, and more is being added continuously.\n\nyq is written in Go - so you can download a dependency free binary for your platform and you are good to go! If you prefer there are a variety of package managers that can be used as well as Docker and Podman, all listed below.\n\nIf the input is a symbolic link, yq replaces the link and leaves its target unchanged.",
+            "features": [
+              "name: Set foobar to cool",
+              "name: Get an entry with a variable that might contain dots or spaces",
+              "name: Reuse a variable obtained in another step",
+              "Instant Results: See the output of your yq filter in real-time.",
+              "Error Handling: Encounter a syntax error? It will display the error message and the results of the closest valid filter",
+              "Detailed documentation with many examples",
+              "Written in portable go, so you can download a lovely dependency free binary",
+              "Uses similar syntax as jq but works with YAML, INI, JSON and XML files"
+            ],
+            "sections": [
+              "yq",
+              "Quick Usage Guide",
+              "Basic Operations",
+              "Advanced Operations",
+              "merge two files",
+              "merge using globs (note: ea evaluates all files at once inst",
+              "Note: requires input file - add your file at the end",
+              "Convert JSON to YAML (pretty print)",
+              "Convert YAML to JSON",
+              "Convert XML to YAML",
+              "Install",
+              "Download the latest binary",
+              "wget",
+              "Set your platform variables (adjust as needed)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 19214
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "k0sproject/k0s",
+          "owner": "k0sproject",
+          "name": "k0s",
+          "url": "https://github.com/k0sproject/k0s",
+          "homepage": "https://docs.k0sproject.io",
+          "description": "k0s - The Zero Friction Kubernetes",
+          "language": "Go",
+          "topics": [
+            "kubernetes"
+          ],
+          "stars": 6585,
+          "forks": 541,
+          "open_issues": 270,
+          "starGain": 6,
+          "heat": 6,
+          "heatBasis": "trending",
+          "heatPercentile": 60,
+          "ageDays": 2345,
+          "created_at": "2020-06-10T10:44:09Z",
+          "pushed_at": "2026-11-11T00:44:09Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 67.6,
+          "breakdown": {
+            "heat": 60,
+            "community": 72,
+            "activity": 73,
+            "maturity": 79
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "k0s is an open source, all-inclusive Kubernetes distribution, which is configured with all of the features needed to build a Kubernetes cluster and packaged as a single binary for ease of use. Due to its simple design, flexible deployment options and modest system requirements, k0s is well suited for\n\nk0s drastically reduces the complexity of installing and running a CNCF certified Kubernetes distribution. With k0s new clusters can be bootstrapped in minutes and developer friction is reduced to zero. This allows anyone with no special skills or expertise in Kubernetes to easily get started.\n\nk0s is distributed as a single binary with zero host OS dependencies besides the host OS kernel. It works with any Linux without additional software packages or configuration. Any security vulnerabilities or performance issues can be fixed directly in the k0s distribution that makes it extremely straightforward to keep the clusters up-to-date and secure.",
+            "features": [
+              "Edge and IoT",
+              "Certified and 100% upstream Kubernetes",
+              "Multiple installation methods: single-node, multi-node, airgap and Docker",
+              "Automatic lifecycle management with k0sctl: upgrade, backup and restore",
+              "Modest system requirements (1 vCPU, 1 GB RAM)",
+              "Available as a single binary with no external runtime dependencies besides the kernel",
+              "Flexible deployment options with control plane isolation as default",
+              "Scalable from a single node to large, high-available clusters"
+            ],
+            "sections": [
+              "k0s - The Zero Friction Kubernetes",
+              "Overview",
+              "Key Features",
+              "Getting Started",
+              "Join the Community",
+              "Community calls",
+              "Adopters",
+              "Motivation",
+              "Status",
+              "Scope",
+              "Build",
+              "Smoke test"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10732
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "chinese-poetry/chinese-poetry",
+          "owner": "chinese-poetry",
+          "name": "chinese-poetry",
+          "url": "https://github.com/chinese-poetry/chinese-poetry",
+          "homepage": "https://awesome-poetry.top/",
+          "description": "The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库,  唐宋两朝近一万四千古诗人,  接近5.5万首唐诗加26万宋诗.  两宋时期1564位词人，21050首词。",
+          "language": "JavaScript",
+          "topics": [
+            "chinese",
+            "chinese-poetry",
+            "ci",
+            "json",
+            "poetry",
+            "tangshi"
+          ],
+          "stars": 54245,
+          "forks": 10936,
+          "open_issues": 141,
+          "starGain": 53,
+          "heat": 53,
+          "heatBasis": "trending",
+          "heatPercentile": 97,
+          "ageDays": 3722,
+          "created_at": "2016-09-02T03:32:25Z",
+          "pushed_at": "2026-06-17T01:56:08Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.4,
+          "breakdown": {
+            "heat": 97,
+            "community": 91,
+            "activity": 16,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 73,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "最全的中华古典文集数据库，包含 5.5 万首唐诗、26 万首宋诗、2.1 万首宋词和其他古典文集。诗人包括唐宋两朝近 1.4 万古诗人，和两宋时期 1.5 千古词人。数据来源于互联网。\n\n为什么要做这个仓库? 古诗是中华民族乃至全世界的瑰宝，我们应该传承下去，虽然有古典文集，但大多数人并没有拥有这些书籍。从某种意义上来说，这些庞大的文集离我们是有一定距离的。而电子版方便拷贝，所以此开源数据库诞生了。此数据库通过 JSON 格式分发，可以让你很方便的开始你的项目。\n\n古诗采集没有记录过程，因为古诗数据庞大，目标网站有限制，采集过程经常中断超过了一个星期。2017 年新加入全宋词，全宋词爬取过程及数据分析。",
+            "features": [
+              "唐诗宋诗",
+              "五代·花间集",
+              "五代·南唐二主词",
+              "幽梦影",
+              "四书五经",
+              "纳兰性德诗集",
+              "御定全唐詩",
+              "直接提交 PR 或者通过 issue 讨论来优化完善此数据库，理论上古诗歌体非宗教类都欢迎加入，部分有争议性的数据需要社区投票讨论决定是否加入。关于诗句的纠错在创建 PR 时请标明出处。更多规范请参考贡献规范文档。"
+            ],
+            "sections": [
+              "高频词分析图",
+              "数据集",
+              "贡献",
+              "赞助者",
+              "贡献者",
+              "案例展示",
+              "Star History",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6055
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "addlayer-io/dbine",
+          "owner": "addlayer-io",
+          "name": "dbine",
+          "url": "https://github.com/addlayer-io/dbine",
+          "homepage": "https://dbine.com",
+          "description": "DBine database manager: a free desktop app for 130+ SQL and NoSQL databases and cloud services, with notebooks, schema & data compare, cross-engine migration, a local AI assistant, an MCP server and encrypted cloud sync. Rust + Tauri.",
+          "language": "Rust",
+          "topics": [
+            "cassandra",
+            "clickhouse",
+            "database-client",
+            "database-gui",
+            "database-manager",
+            "databricks",
+            "duckdb",
+            "kdb"
+          ],
+          "stars": 38,
+          "forks": 3,
+          "open_issues": 6,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 68,
+          "ageDays": 44,
+          "created_at": "2026-09-28T10:58:41Z",
+          "pushed_at": "2026-11-09T16:34:20Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 58.7,
+          "breakdown": {
+            "heat": 68,
+            "community": 27,
+            "activity": 52,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "DBine is a desktop multi-engine database manager from AddLayer. One app works with 130+ databases and cloud services : relational, analytical, document, key-value, graph, time-series and search databases. It runs on Windows, macOS and Linux.\n\n- macOS (Homebrew): brew install --cask addlayer-io/tap/dbine - Windows (winget): winget install AddLayer.DBine (it installs the version published in winget; DBine then updates itself to the latest). - Linux: .flatpak , .AppImage , .deb and .rpm packages in Releases. - All platforms: installers on dbine.com.\n\nIt is built with Tauri 2 , a Rust core and a Vue 3 + Element Plus UI. The interface is a VS Code-style workbench. Each engine is its own crate and queries are organized inside each database.",
+            "features": [
+              "macOS (Homebrew): brew install --cask addlayer-io/tap/dbine",
+              "Windows (winget): winget install AddLayer.DBine (it installs the",
+              "Linux: .flatpak , .AppImage , .deb and .rpm packages in",
+              "All platforms: installers on dbine.com.",
+              "Tree per connection and per database. The first node of each database is",
+              "Explorer cache. When a connection opens, databases, objects and columns",
+              "Folders and groups , for example per client or per environment. They can",
+              "Import connections from DBeaver, DbGate, DataGrip / JetBrains, Azure Data"
+            ],
+            "sections": [
+              "DBine",
+              "Install",
+              "What it does",
+              "Explorer and connections",
+              "Monitor and Profiler",
+              "Editor and results",
+              "Design and structure",
+              "Administration",
+              "Script library",
+              "Cloud sync",
+              "AI assistant",
+              "MCP server",
+              "Security",
+              "Updates"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 34408
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Koukyosyumei/h5i-db",
+          "owner": "Koukyosyumei",
+          "name": "h5i-db",
+          "url": "https://github.com/Koukyosyumei/h5i-db",
+          "homepage": "https://koukyosyumei.github.io/h5i-db/",
+          "description": "An agent-native workspace for quantitative research: an in-terminal notebook, a high-performance time-series database, and a high-throughput backtesting engine. Written in Rust.",
+          "language": "Rust",
+          "topics": [
+            "ai-agents",
+            "backtesting",
+            "database",
+            "dataframe",
+            "financial-analysis",
+            "financial-data",
+            "financial-markets",
+            "fintech"
+          ],
+          "stars": 38,
+          "forks": 2,
+          "open_issues": 4,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 68,
+          "ageDays": 112,
+          "created_at": "2026-07-22T03:04:48Z",
+          "pushed_at": "2026-10-16T21:27:34Z",
+          "license": "Apache-2.0",
+          "rating": 2.5,
+          "composite": 50.1,
+          "breakdown": {
+            "heat": 68,
+            "community": 26,
+            "activity": 5,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "h5i-db is an embedded time-series database and event-driven backtester for quant research.\n\n- Backtest from Python: pip install h5i-db , no server. Replays 3.05M events/s, and every run is pinned to a data version. - No lookahead by construction: pin a decision time, and no row from after it can reach your frame. - Cheap experiments: each run executes in its own fork of the database. A parameter sweep is one fork per trial, ranked out of sample, with no data copied. - Review in the browser: h5i-db ui puts trials, forks, versions and pending writes on one page, ordered by what needs a human next.\n\npip install h5i-db Python library: database + backtester cargo install h5i-db-cli CLI and web UI h5i-db ui market.db review surface on 127.0.0.1:7351 npx skills add h5i-dev/h5i-db agent skill (Claude Code, Codex, Cursor, …)",
+            "features": [
+              "Backtest from Python: pip install h5i-db , no server. Replays 3.05M events/s, and every run is pinned to a data version.",
+              "No lookahead by construction: pin a decision time, and no row from after it can reach your frame.",
+              "Cheap experiments: each run executes in its own fork of the database. A parameter sweep is one fork per trial, ranked out of sample, with no",
+              "Review in the browser: h5i-db ui puts trials, forks, versions and pending writes on one page, ordered by what needs a human next.",
+              "Venues: Kalshi, Polymarket, Hyperliquid, Binance, Limitless, Opinion, Manifold, and any OHLCV or trade dump. Loaders read files you already ",
+              "Statistics: factor and performance metrics at alphalens and empyrical parity, plus deflated Sharpe and probability of backtest overfitting.",
+              "Data in and out: db.append , db.sql(...) , time-series SQL (ASOF join, time bucket , vwap , rolling windows), and any past version through d",
+              "Review queue: frozen strategies with their code, parameters, equity curve, costs and holdout result, to promote, reject or comment on."
+            ],
+            "sections": [
+              "h5i-db",
+              "1. Backtest in Python",
+              "2. Research lab",
+              "3. Documentation",
+              "4. License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 5224
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "apitap/apitap-lib",
+          "owner": "apitap",
+          "name": "apitap-lib",
+          "url": "https://github.com/apitap/apitap-lib",
+          "homepage": "https://apitap.dev",
+          "description": "Move whole tables between databases fast — Postgres, MySQL, ClickHouse, BigQuery. Rust engine, one-line Python API, bounded memory.",
+          "language": "Rust",
+          "topics": [
+            "benchmark",
+            "bigquery",
+            "clickhouse",
+            "data-engineering",
+            "data-ingestions",
+            "data-pipeline",
+            "data-transfer",
+            "elt"
+          ],
+          "stars": 53,
+          "forks": 6,
+          "open_issues": 1,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 122,
+          "created_at": "2026-07-11T23:21:13Z",
+          "pushed_at": "2026-11-11T01:29:53Z",
+          "license": "MIT",
+          "rating": 1.5,
+          "composite": 29.9,
+          "breakdown": {
+            "heat": 0,
+            "community": 30,
+            "activity": 57,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Move whole tables between databases at wire speed, in bounded memory.\n\napitap is a transfer engine, not an API client. It speaks the databases' own wire formats — binary COPY , RowBinary, LOAD DATA , logical replication, the MySQL binlog — through its own Rust wire clients, moves tables over parallel range pipes, publishes them with atomic swaps, and keeps memory flat no matter how big the table is. The Python package is a thin binding in the spirit of Polars: one call, no daemon, no local state files. Docs and a public sandbox are at apitap.dev.\n\nreport = apitap.transfer( \"postgres://user:pass@src-host/db\", \"clickhouse://user:pass@warehouse:8123/db\", table=\"public.events\", ) print(f\"{report.rows:,} rows in {report.elapsed ms} ms over {report.parallel} pipes\")",
+            "features": [
+              "100 GB (232M rows, 15 columns) through a 0.5 vCPU / 256 MB container in 8m57s ,",
+              "Ten 1M-row tables in one call, the tool alone capped at 0.5 vCPU / 256 MB:",
+              "CDC: one 650K-event replication window, every tool at 0.5 vCPU / 256 MB —",
+              "DataFrames: filter + group by over 50M rows in 9.9 s on 0.5 vCPU / 256 MB ,",
+              "Probe the source catalog: columns, types, nullability, primary key,",
+              "Plan spans. An integer cursor splits into contiguous key ranges",
+              "Negotiate the wire format — the first format the destination accepts",
+              "Stage. A staging table (or object prefix) named with this run's"
+            ],
+            "sections": [
+              "apitap",
+              "At a glance",
+              "Why apitap",
+              "Quick start",
+              "1. Full refresh — staging table, atomic swap, never a partia",
+              "2. Incremental — only rows past the destination's watermark ",
+              "3. Batch CDC — first run bootstraps from a pinned snapshot, ",
+              "4. Many tables, one memory budget — or a whole schema",
+              "5. ClickHouse DDL: engine, ORDER BY, ON CLUSTER",
+              "6. Warehouses, lakes, files",
+              "7. Spreadsheets and repositories as sources (all-text column",
+              "8. DataFrames — same parallel pipes, Arrow batches built in ",
+              "Connection URLs",
+              "The API"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 61456
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "autumoswitzerland/Webduck",
+          "owner": "autumoswitzerland",
+          "name": "Webduck",
+          "url": "https://github.com/autumoswitzerland/Webduck",
+          "homepage": "https://webduck.autumo.ch",
+          "description": "A self-hosted DuckDB-as-a-Service server with REST API and Web UI.",
+          "language": "Python",
+          "topics": [
+            "analytics",
+            "csv",
+            "database",
+            "docker",
+            "duckdb",
+            "fastapi",
+            "json",
+            "open-source"
+          ],
+          "stars": 55,
+          "forks": 1,
+          "open_issues": 0,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 109,
+          "created_at": "2026-07-24T19:04:23Z",
+          "pushed_at": "2026-11-10T23:12:08Z",
+          "license": "AGPL-3.0",
+          "rating": 1.5,
+          "composite": 28.7,
+          "breakdown": {
+            "heat": 0,
+            "community": 28,
+            "activity": 54,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 73,
+            "devops": 49,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A self-hosted DuckDB-as-a-Service server with REST API and Web UI. WebDuck is designed for web hosting providers who want to offer their customers a ready-to-use administration interface for DuckDB databases and data analytics — out of the box, just like the database admin tools that come with any hosting package.\n\n- DuckDB storage engine with file-locking for safe concurrent access - REST API — admin endpoints (project/DB management) + database endpoints (SQL queries) - Web UI (NiceGUI) — dark mode with yellow/amber theme - Dashboard — server status cards, live REST traffic monitor (queries/min, active sessions), storage overview with per-project sizes and trash totals - Trash — soft-delete projects/databases with restore, permanent delete per entry, empty trash - JWT authentication for admin API, optional project-key auth for database access - Per-database write protection — lock a database to read-only, independent of passwords: passwords control who may access, write protection controls what may be done to the data. It protects the data only — compacting, deleting and managing passwords in the web UI keep working at any time - bcrypt password hashing (never plaintext) - SQL editor — multi-statement support with sequential execution, query history (Alt+Up/Alt+Down, Alt+Enter) - SQL upload — execute multi-statement SQL scripts from files - Database compression — reclaims space DuckDB leaves behind after updates/deletes; a hint highlights databases with high fragmentation - ",
+            "features": [
+              "DuckDB storage engine with file-locking for safe concurrent access",
+              "REST API — admin endpoints (project/DB management) + database endpoints (SQL queries)",
+              "Web UI (NiceGUI) — dark mode with yellow/amber theme",
+              "Dashboard — server status cards, live REST traffic monitor (queries/min, active sessions), storage overview with per-project sizes and trash",
+              "Trash — soft-delete projects/databases with restore, permanent delete per entry, empty trash",
+              "JWT authentication for admin API, optional project-key auth for database access",
+              "Per-database write protection — lock a database to read-only, independent of passwords: passwords control who may access, write protection c",
+              "bcrypt password hashing (never plaintext)"
+            ],
+            "sections": [
+              "Features",
+              "Web UI",
+              "Installation",
+              "pip (Python)",
+              "Docker",
+              "Download docker-compose.yml",
+              "Set password",
+              "Start - An admin user is created automatically",
+              "Quick Start",
+              "pip",
+              "Initialize - Create an admin user",
+              "Create additional admin users (optional)",
+              "Start server",
+              "Docker"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14478
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "backnotprop/plannotator",
+          "owner": "backnotprop",
+          "name": "plannotator",
+          "url": "https://github.com/backnotprop/plannotator",
+          "homepage": "https://plannotator.ai",
+          "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
+          "language": "TypeScript",
+          "topics": [
+            "agents",
+            "claude-code",
+            "code-review",
+            "codex",
+            "obsidian",
+            "opencode",
+            "pi-mono",
+            "plan-mode"
+          ],
+          "stars": 10009,
+          "forks": 758,
+          "open_issues": 147,
+          "starGain": 51,
+          "heat": 51,
+          "heatBasis": "trending",
+          "heatPercentile": 53,
+          "ageDays": 318,
+          "created_at": "2025-12-28T02:09:40Z",
+          "pushed_at": "2026-11-11T01:37:36Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 67.5,
+          "breakdown": {
+            "heat": 53,
+            "community": 75,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Everything you need to annotate and stay in the loop with your agents Inbox Surface • Artifacts • Code Review Annotate plans, specs, markdown, HTML, and other interactive artifacts. Review diffs and PRs. Send feedback to your agent.\n\nPlannotator Inbox · Official site · Code Review · Visual HTML Skills · Herdr Annotate · (Legacy) Plan Mode\n\n⭐️ NEW: Plannotator Inbox is the missing layer between you and managing multi-agent work.",
+            "features": [
+              "URL annotation fetches the requested site, through Jina Reader by default for public pages or directly when Jina is disabled or unavailable.",
+              "GitHub and GitLab review uses your authenticated CLI and Git remote to retrieve PR or MR data.",
+              "Ask AI and review agents send the selected question and relevant plan, document, repository, or diff context to your configured provider. Wh",
+              "Sharing sends the complete link to whoever or whatever service you use to deliver it. Encrypted short links upload ciphertext to the paste s",
+              "Workspaces is a separate hosted product, so the open source app's local-storage model does not apply to content placed there."
+            ],
+            "sections": [
+              "Plannotator",
+              "Review documents, plans, and agent messages",
+              "Code Review",
+              "Annotate HTML Artifacts",
+              "Plannotator Inbox",
+              "Herdr Annotate: Plannotator in the Terminal",
+              "Commands",
+              "Annotate",
+              "Code review",
+              "Plan mode",
+              "CLI",
+              "Privacy and network behavior",
+              "Link sharing",
+              "Install"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 31090
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ],
+      "removedInReview": 4
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "expo/exact",
+          "owner": "expo",
+          "name": "exact",
+          "url": "https://github.com/expo/exact",
+          "homepage": "",
+          "description": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.",
+          "language": "Rust",
+          "topics": [
+            "ai-agents",
+            "appkit",
+            "coding-agents",
+            "cross-platform",
+            "css",
+            "ios",
+            "linux",
+            "macos"
+          ],
+          "stars": 2206,
+          "forks": 48,
+          "open_issues": 57,
+          "starGain": null,
+          "heat": 658.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 9,
+          "created_at": "2026-11-02T01:29:01Z",
+          "pushed_at": "2026-11-11T01:08:35Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.7,
+          "breakdown": {
+            "heat": 99,
+            "community": 59,
+            "activity": 82,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 18,
+            "devops": 12,
+            "ai": 21,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.\n\nWeb iOS macOS The browser's own DOM and CSS UIKit views, native controls and the system's tab bar AppKit views and native controls\n\nOne app.contract , the same screen on three hosts, captured by the agent driver. Softwear is a demonstration store you can generate from exact-templates : it shows Alternative Apparel's catalog, is not affiliated with that brand, and takes no real orders or payments.",
+            "features": [
+              "Three principles",
+              "How it works",
+              "Quick start",
+              "Contract",
+              "Example apps",
+              "What works today, and what doesn't yet",
+              "Repository map",
+              "Working on Exact"
+            ],
+            "sections": [
+              "Exact",
+              "Contents",
+              "Three principles",
+              "1. Agent native",
+              "2. Speed is king",
+              "3. Write the web, ship the platform",
+              "How it works",
+              "Quick start",
+              "1. Install the tools",
+              "2. Run Caltrain in the browser",
+              "3. Run it natively",
+              "4. Drive it the way an agent does",
+              "5. Make your own app",
+              "Feedback"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 44725
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "we-promise/sure",
+          "owner": "we-promise",
+          "name": "sure",
+          "url": "https://github.com/we-promise/sure",
+          "homepage": "https://sure.am",
+          "description": "The personal finance app for everyone (by everyone)",
+          "language": "Ruby",
+          "topics": [],
+          "stars": 11993,
+          "forks": 892,
+          "open_issues": 896,
+          "starGain": 159,
+          "heat": 159,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 476,
+          "created_at": "2025-07-23T04:13:55Z",
+          "pushed_at": "2026-11-11T01:38:54Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 82.9,
+          "breakdown": {
+            "heat": 88,
+            "community": 77,
+            "activity": 77,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Deutsch Español Français 日本語 한국어 Português Русский 中文\n\nThe Maybe Finance (archived/abandoned repo) team spent most of 2021–2022 building a full-featured personal finance and wealth management app. It even included an “Ask an Advisor” feature that connected users with a real CFP/CFA — all included with your subscription.\n\nThe business end of things didn't work out, and so they stopped developing the app in mid-2023.",
+            "features": [
+              "Be sure to include the original AGPLv3 license and clearly state in your README that your fork is based on Maybe Finance but is not affiliat",
+              "\"Maybe\" is a trademark of Maybe Finance Inc. and therefore, use of it is NOT allowed in forked repositories (or the logo)",
+              "See .ruby-version file for required Ruby version",
+              "PostgreSQL 9.3 (latest stable version recommended)",
+              "Redis 5.4 (latest stable version recommended)",
+              "Email: user@example.com",
+              "Password: Password1!",
+              "Mac dev setup"
+            ],
+            "sections": [
+              "Sure: The personal finance app for everyone",
+              "Backstory",
+              "Hosting Sure",
+              "Forking and Attribution",
+              "Performance Issues",
+              "Local Development Setup",
+              "Requirements",
+              "Getting Started",
+              "Optionally, load demo data",
+              "Setup Guides",
+              "One-click Install",
+              "License and Trademarks"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7806
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "21stware/bowel",
+          "owner": "21stware",
+          "name": "bowel",
+          "url": "https://github.com/21stware/bowel",
+          "homepage": "https://bowel.dev",
+          "description": "Bowel is a mihomo client for macOS, Windows, Linux and Android.",
+          "language": "Go",
+          "topics": [
+            "android",
+            "clash",
+            "clash-meta",
+            "linux",
+            "macos",
+            "mcp",
+            "mihomo",
+            "proxy-client"
+          ],
+          "stars": 409,
+          "forks": 23,
+          "open_issues": 5,
+          "starGain": null,
+          "heat": 140.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 87,
+          "ageDays": 3,
+          "created_at": "2026-11-07T17:45:52Z",
+          "pushed_at": "2026-11-10T17:37:57Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 76.6,
+          "breakdown": {
+            "heat": 87,
+            "community": 46,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "bowel is a mihomo client for macOS, Windows, Linux and Android.\n\nThe desktop interface is built in Go and rendered directly via the GPU, with no WebView. The Android app is built with Flutter and has the same cards and skins.\n\nRoute traffic by purpose, and select exit nodes manually or automatically by speed.",
+            "features": [
+              "Custom rules : Route specific domains, keywords, or IP ranges, and test where addresses go.",
+              "Measured exit locations : Verify true exit locations through Cloudflare trace.",
+              "Gateway mode (macOS, Linux): Turn this computer into a LAN gateway for devices like TVs and consoles.",
+              "TUN (macOS, Windows, Linux): Intercept traffic from applications that ignore system proxy settings.",
+              "Developer tools (macOS, Linux): Docker, the terminal and Git ignore the system proxy. bowel lists which ones aren't connected, writes their ",
+              "Download sources : Measures the official source and each mirror for npm, pip, Go and Cargo, and switches in one click. When the current sour",
+              "Private networks : Addresses on your LAN, Tailscale and company VPN go direct automatically, in global mode too.",
+              "MCP : Built-in MCP server for Claude Code and other agents to read status and troubleshoot connections. It asks you before changing settings"
+            ],
+            "sections": [
+              "Features",
+              "Routes",
+              "Connections",
+              "Providers",
+              "Menu bar",
+              "Skins",
+              "Other",
+              "Install",
+              "Command line",
+              "/etc/systemd/system/bowel.service",
+              "Develop",
+              "Credits",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13113
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "upscayl/upscayl",
+          "owner": "upscayl",
+          "name": "upscayl",
+          "url": "https://github.com/upscayl/upscayl",
+          "homepage": "https://upscayl.org",
+          "description": "🆙 Upscayl - #1 Free and Open Source AI Image Upscaler for Linux, MacOS and Windows.",
+          "language": "TypeScript",
+          "topics": [
+            "ai",
+            "electron",
+            "esrgan",
+            "gigapixel",
+            "gigapixel-images",
+            "image",
+            "image-upscaling",
+            "topaz"
+          ],
+          "stars": 52187,
+          "forks": 2734,
+          "open_issues": 55,
+          "starGain": 82,
+          "heat": 82,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 1564,
+          "created_at": "2022-07-30T17:19:20Z",
+          "pushed_at": "2026-10-05T19:13:12Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 72.7,
+          "breakdown": {
+            "heat": 81,
+            "community": 88,
+            "activity": 13,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Special thanks to our sponsors: Warp, the intelligent terminal for developers Use images as AI context in your terminal!\n\nRequestly - Free & Open-Source alternative to Postman All-in-one platform to Test, Mock and Intercept APIs.\n\nUpscayl lets you enlarge and enhance low-resolution images using advanced AI algorithms. Enlarge images without losing quality. It's almost like magic! 🎩🪄",
+            "features": [
+              "👨‍💻 Installation",
+              "🐧 Linux",
+              "🍎 macOS",
+              "🐌 Windows",
+              "👨‍🏫 Documentation - Tutorials and Guides",
+              "⚖️ Demo Results (Before and After)",
+              "🤫 Roadmap",
+              "🛠 Developing Upscayl"
+            ],
+            "sections": [
+              "🆙 Upscayl",
+              "Contents",
+              "👨‍💻 Installation",
+              "🐧 Linux",
+              "💼 Portable Method",
+              "🍎 macOS",
+              "🍺 Homebrew",
+              "🐌 Windows",
+              "👨‍🏫 Documentation - Tutorials and Guides",
+              "⚖️ Results",
+              "🤫 Roadmap",
+              "🛠 Development",
+              "🏃 Running",
+              "INSTALL DEPENDENCIES"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12895
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "kota-zo/myspoti",
+          "owner": "kota-zo",
+          "name": "myspoti",
+          "url": "https://github.com/kota-zo/myspoti",
+          "homepage": "",
+          "description": "Native Android client for Spotify, built with Jetpack Compose",
+          "language": "Kotlin",
+          "topics": [
+            "ad-free",
+            "adblock",
+            "android",
+            "jetpack-compose",
+            "kotlin",
+            "lyrics",
+            "music-player",
+            "music-video"
+          ],
+          "stars": 1839,
+          "forks": 99,
+          "open_issues": 148,
+          "starGain": 76,
+          "heat": 76,
+          "heatBasis": "snapshot",
+          "heatPercentile": 79,
+          "ageDays": 28,
+          "created_at": "2026-10-14T13:01:34Z",
+          "pushed_at": "2026-11-10T21:41:20Z",
+          "license": "GPL-3.0",
+          "rating": 3.5,
+          "composite": 72.7,
+          "breakdown": {
+            "heat": 79,
+            "community": 60,
+            "activity": 71,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Spotify without ads, on a free account. Your own Spotify account, playlists and Wrapped, in a native Android app that blocks the ads, with offline downloads through extensions you install.\n\nNo audio ads, no video ads, no banners, and no 30-second break between songs. Myspoti switches off the ad breaks of Spotify's own player, so a free account plays like Premium: pick any song, skip as much as you want. No Premium, no modified Spotify app, nothing to root.\n\nMyspoti has no download source of its own. Install a download-source extension (Settings, Extensions) and you can download a song, an album, a playlist or all your Liked Songs, and listen with no connection: on the plane, in the metro, with no data. The extension decides where the files come from and in which formats (FLAC, M4A or MP3); Myspoti keeps them encrypted on your phone, refuses a file that is not the song's length, and keeps downloaded playlists in step: songs you add on Spotify download by themselves.",
+            "features": [
+              "Download the APK from the latest release and open it (Android 10 or later). Android asks once to allow installs from your browser or file ma",
+              "Tap Log in with Spotify and sign in.",
+              "Pick the sound quality, allow what you want (notifications, Bluetooth, local files…), and you are in.",
+              "Myspoti- -ARMv8.apk : almost every phone from the last ten years (64-bit). When in doubt, take this one.",
+              "Myspoti- -ARMv7.apk : older or entry-level 32-bit phones (an app such as CPU-Z or Device Info shows which one yours is; if ARMv8 refuses to ",
+              "Myspoti- -universal.apk : both in one, larger.",
+              "Myspoti- -TV.apk : Android TV and Google TV (the same app; on a TV it opens its TV screens).",
+              "Stable ( app.myspoti.stable ): leave \"Include prereleases\" off and set the APK filter to ^Myspoti-[0-9]. -ARMv8\\.apk$ (or -ARMv7 , -TV )."
+            ],
+            "sections": [
+              "Myspoti",
+              "Why Myspoti",
+              "🚫 Spotify with no ads, on a free account",
+              "⬇️ Offline downloads, through extensions",
+              "✨ And everything you expect from Spotify, and more",
+              "What is it?",
+              "Get started",
+              "What you get",
+              "New since 1.1",
+              "Screenshots",
+              "Questions",
+              "Not included",
+              "Disclaimer",
+              "Support"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 16308
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "debpalash/VoiceStudio",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "milind-soni/OpenMausBot",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "meta/astryx",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "JuliusBrussee/caveman",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "JuneYaooo/rea-video",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "Anil-matcha/Open-Generative-AI",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "ggml-org/llama.cpp",
+      "category": "ai",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "infiniflow/ragflow",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "vAPI-Network/vapi-network",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "reacher-z/Awesome-REA",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "DIYgod/pinky",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

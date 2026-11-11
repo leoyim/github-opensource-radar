@@ -1,0 +1,102 @@
+{
+  "ZhuLinsen/daily_stock_analysis": {
+    "summary_zh": "LLM 驱动的多市场股票分析系统，覆盖 A 股、港股、美股、日股、韩股、台股与 ETF，把行情、公告、新闻与技术指标聚合成含评分、买卖点、风险警报与操作检查清单的决策看板，内置 15 种策略并支持多轮追问。可经 GitHub Actions、Docker 或 FastAPI 定时运行，推送到企业微信、飞书、Telegram 等六个渠道。免费行情源零配置可用但稳定性不保证；fork 数接近星标的八成，说明多数人把它当自己的实例在跑。",
+    "highlight_zh": "它卖的不是预测准确率，而是「每天该看什么」的固定流程。"
+  },
+  "garrytan/gbrain": {
+    "summary_zh": "YC 总裁 Garry Tan 自用后开源的 agent 记忆层：事实带来源，支持更正与撤回，通过 MCP 让 Claude Code、Codex、Cursor 等客户端共享同一份记忆，一条命令即可发布到 Tailscale 内网。作者公开了生产规模——15.5 万页、2.4 万人、5,340 家公司、66 个定时任务。806 个 open issue 与复杂的授权边界说明它仍在快速演进，适合愿意读文档的人先用。",
+    "highlight_zh": "记忆的所有权与可审计性，比记忆容量更值得先解决。"
+  },
+  "opensandbox-group/OpenSandbox": {
+    "summary_zh": "AAIF 旗下的 agent 沙箱运行时：Docker 本地起、K8s 集群跑，统一 API 管理代码执行、文件、浏览器与桌面，配套出入站网络策略、凭据保险箱与五种语言 SDK。Fast Sandbox 基于 Firecracker，沙箱创建 64ms P50 / 125.4ms P99，支持保留内存与磁盘状态的暂停恢复。适合要把 agent 放进生产、又不愿给它宿主权限的平台团队。",
+    "highlight_zh": "沙箱的难点不是能跑，而是密度、延迟、状态与网络边界同时成立。"
+  },
+  "homeassistant-ai/ha-mcp": {
+    "summary_zh": "把 Home Assistant 的 87 个操作面做成 MCP 工具，让 Claude、ChatGPT 直接查设备、改自动化。以 HACS 或 2026.11 起的 Marketplace 集成形态运行在 HA 进程内，覆盖 OS、Supervised、Container、Core 四种安装，配 15+ 客户端配置向导。以管理员身份行事意味着权限面很大，建议先用只读工具验证一周再放开写入。",
+    "highlight_zh": "安装路径缩到两步，代价是把 87 个写操作交给模型判断。"
+  },
+  "Imbad0202/academic-research-skills": {
+    "summary_zh": "Claude Code 的学术研究技能套件，覆盖研究、写作、审稿、修订、定稿六阶段，每阶段设人工确认卡点；Stage 2.5 与 4.5 按 7 类失败模式阻断，引用带来源与三层定位锚，审稿人可对金标准集测自身漏判率。README 用两篇 2026 年实证（全自动研究系统的失败模式、1.11 亿条引用的幻觉审计）说明为何不做全自动。CC BY-NC 4.0 禁止商用。",
+    "highlight_zh": "它把「哪里必须停下来让人确认」做成了流程的一部分。"
+  },
+  "BareBrowser/bare-browser": {
+    "summary_zh": "基于 Chromium 157 的 Android 浏览器分支，移除账号、遥测与内置 AI，保留桌面扩展与完整版 uBlock Origin，支持息屏播放、媒体保存、无痕生物识别锁与可开关的加固项。README 给出可核对的改动量：295 个补丁、860 个文件、44,691 行新增。仅 arm64 与 32 位 ARM、Android 10 以上，115 个 open issue 说明兼容毛刺仍在。",
+    "highlight_zh": "把「移除了什么」量化到补丁与代码行，比口号可信。"
+  },
+  "kubai087/glasswork": {
+    "summary_zh": "液态玻璃材质实验台：明暗两套参数独立可调，边缘折射可控宽度、偏移、衰减与色散，壁纸越复杂着色越浓且文字对比度守在 4.5:1；内置五世代 macOS 壁纸与六张 WebGL 动态壁纸，参数写入 URL，一键复制生成的 CSS。仅 6 天、60 星、MIT、无构建步骤，折射依赖 Chromium 与 WebGL，其它浏览器退化为普通模糊。",
+    "highlight_zh": "把好看的材质拆成可调参数与可读的六层结构。"
+  },
+  "VII-Cae/hyalite--liquid-glass": {
+    "summary_zh": "单文件实现的真实折射玻璃：按元素尺寸与圆角算出 SDF 透镜图，经 SVG 位移后由 backdrop-filter 弯折背景，中心通透、边缘向内拉扯、直线被折弯而非涂抹。不用 WebGL、无需构建。附四代引擎同页对比、边缘示波器与 headless Chromium 自检脚本。Chromium 之外退化为普通模糊，且已两个月未更新。",
+    "highlight_zh": "做的是真折射而非看起来像玻璃，还用可执行测试钉住边界。"
+  },
+  "Zproger/Aurum": {
+    "summary_zh": "自托管的个人财务操作系统，把现金流、净值、预算、订阅与每条收入流放进同一模型，按资本类型（生息/中性/消耗）与风险等级分组，能标出悄然上涨的支出与「看似被动」的收入。采用 PolyForm Noncommercial 许可：代码可读、可跑、可改但不可转售，个人使用永久免费。86 天、272 星，自托管的备份与安全责任由使用者承担。",
+    "highlight_zh": "把财务当系统来观察，而不是记流水账。"
+  },
+  "libracoder/kiri": {
+    "summary_zh": "Rust 写的轻量容器运行时，用一个 Linux 小虚拟机跑 Docker 镜像，兼容 docker CLI、Compose、buildx 与 Rosetta，附本地域名与自带 CA、一键 K8s 集群、原生窗口与 15 种语言界面。作者实测容器启停约 2.5ms、守护进程约 15MB、唤醒约 0.15 秒。仅 8 天、59 个 open issue，适合与 Docker Desktop 并行试用而非直接替换。",
+    "highlight_zh": "不改命令、只换运行时，迁移成本几乎为零。"
+  },
+  "fosrl/pangolin": {
+    "summary_zh": "基于 WireGuard 的开源 SASE：把零信任 VPN、零信任反代、特权访问管理与身份感知 AI 网关收敛到一套身份与策略模型，对标 Cloudflare One 一类商业产品但可自托管。775 天、2.3 万星、120 个 open issue。许可证字段为 NOASSERTION，商用前需核实条款；零信任的价值取决于策略设计，规则放宽就退化为普通 VPN。",
+    "highlight_zh": "四套系统收敛成一套身份模型，门槛在策略而非部署。"
+  },
+  "HolyArrs/HolyArrs": {
+    "summary_zh": "把 Sonarr、Radarr、Lidarr、Prowlarr、Bazarr、Seerr 六个媒体自动化应用合并成一个 15MB 容器，单端口 6262、单次登录，支持按体积/质量/语言选择发布、请求审批、播出日历，以及从旧应用试跑迁移并可撤销。README 对比六个应用合计 718.2MB，1 万部标题下空闲内存约 140MiB。上线仅 1 天、76 个 open issue，适合并行试验。",
+    "highlight_zh": "六个应用的维护成本，远高于它们提供的功能之和。"
+  },
+  "mikefarah/yq": {
+    "summary_zh": "单二进制的 YAML、JSON、XML、CSV、TOML、HCL 处理器，沿用 jq 语法，支持就地修改、多文件合并、格式互转与环境变量注入。4,063 天、1.6 万星、MIT，无运行时依赖，适合塞进任何 CI 镜像。注意 v3 与 v4 语法不兼容，且 -i 对符号链接是替换链接本身而非目标文件。",
+    "highlight_zh": "少一个运行时依赖，就少一类流水线故障。"
+  },
+  "k0sproject/k0s": {
+    "summary_zh": "单二进制的 CNCF 认证 Kubernetes 发行版：除内核外零宿主依赖，内置 CNI、CoreDNS、Metrics Server，支持单节点、多节点、高可用与 air-gapped 离线安装，配 k0sctl 做声明式生命周期管理与升级。2,345 天、6,585 星，OpenSSF 最佳实践徽章与夜间多发行版 OS 测试在跑。许可证字段为 NOASSERTION，分发前需确认条款。",
+    "highlight_zh": "把 K8s 的安装依赖压到只剩内核，边缘与离线才真正可行。"
+  },
+  "chinese-poetry/chinese-poetry": {
+    "summary_zh": "以 JSON 分发的中华古典文集语料库：5.5 万首唐诗、26 万首宋诗、2.1 万首宋词，另含论语、诗经、四书五经、蒙学、纳兰性德等子集。按文集分目录、结构稳定，附采集过程记录与贡献规范（纠错需标出处、争议条目社区投票）。2016 年至今持续维护、5.4 万星。数据来源于互联网采集，存在异文与归属争议，出版级使用需自行校勘。",
+    "highlight_zh": "产品是数据本身，价值在结构稳定与来源披露。"
+  },
+  "addlayer-io/dbine": {
+    "summary_zh": "Rust + Tauri 的桌面多引擎数据库管理器：单应用连接 130+ 种数据库与云服务，带 VS Code 风格工作台、可联查两库的笔记本、结构与数据对比、跨引擎迁移、本地 AI 助手与 MCP server，凭据可取自外部密钥源。安全扫描（OSV/Trivy/CodeQL）状态对外发布，全渠道分发。44 天、38 星、3 fork，社区验证极少，免费与付费边界需确认。",
+    "highlight_zh": "一个客户端管所有库，代价是几乎没有社区背书。"
+  },
+  "Koukyosyumei/h5i-db": {
+    "summary_zh": "Rust 写的嵌入式时序库加事件驱动回测引擎：钉住决策时点后，该时点之后写入的数据无法进入帧，从结构上排除未来函数；参数网格按 trial 各起一个数据库 fork、不复制数据，按样本外排名；每次运行绑定数据版本并可重放校验。内置 Kalshi、Polymarket、Hyperliquid 等场所模型。112 天、38 星，适合研究而非生产。",
+    "highlight_zh": "把「有没有用未来数据」从人工纪律变成存储层约束。"
+  },
+  "apitap/apitap-lib": {
+    "summary_zh": "用各数据库原生线协议搬整表的传输引擎：支持 Postgres、MySQL、ClickHouse、BigQuery，覆盖全量、增量与基于 WAL/binlog 的批量 CDC，靠并行区间管道、原子切换与恒定内存实现大表迁移，还能在 Rust 侧跨源 JOIN 两个库。Rust 引擎配一行 Python API。122 天、53 星，自实现协议的兼容成本需长期承担。",
+    "highlight_zh": "不用通用驱动，直接说各库的原生协议。"
+  },
+  "autumoswitzerland/Webduck": {
+    "summary_zh": "自托管的 DuckDB 即服务：REST API 加 NiceGUI 界面，含项目隔离、JWT 鉴权、按库写保护、软删除回收站、数据库压缩与 CSV/Parquet/JSON 导入导出。写保护与密码正交——密码管谁能访问，写保护管能对数据做什么。109 天、55 星、1 个 fork，功能面完整但长期维护依赖单一作者。",
+    "highlight_zh": "补的是 DuckDB 作为嵌入式库缺的那一层多用户治理。"
+  },
+  "backnotprop/plannotator": {
+    "summary_zh": "给编码 agent 做审阅的本地浏览器工作区：批注计划、规格、HTML 与消息，评审本地 diff 与远程 PR，反馈一键送回 agent；Inbox 把多 agent 留下的问题与待审文件汇到一个窗口，点选即回。支持十余种 agent 与 Git、GitButler、jj、Perforce、GitHub、GitLab。318 天、1 万星、147 个 open issue，多 agent 组合仍有兼容毛刺。",
+    "highlight_zh": "人的反馈如何精准落位，是 agent 工作流里被低估的一环。"
+  },
+  "expo/exact": {
+    "summary_zh": "Expo 团队的跨端运行时：用 Contract 声明式语言描述界面、TypeScript 或 Rust 写逻辑，编译成 plan 后在 Web（约 20KB 运行时驱动真实 DOM）、macOS/iOS（Rust 布局内核 + AppKit/UIKit）与 Linux 上原生渲染，UI 层无 WebView、无 JS 桥。README 记录了一次约 57 分钟完成三端待办应用的 agent 实验。仅 9 天，API 与语法都可能快速变动。",
+    "highlight_zh": "不是把 Web 装进 App，而是把 UI 编译成中间表示再原生渲染。"
+  },
+  "we-promise/sure": {
+    "summary_zh": "接手已停更的 Maybe Finance 的社区 fork：自托管个人财务应用，覆盖资产、负债、投资、净值、预算与交易分类，浏览器、macOS 桌面端、移动端与 API 共用一套数据，可被 LLM agent 访问。README 完整交代了前项目投入近百万美元后停更的经过。896 个 open issue 说明历史债务与安全补丁都压在社区身上。",
+    "highlight_zh": "一个高完成度项目停更后被社区接住，这在开源里并不常见。"
+  },
+  "21stware/bowel": {
+    "summary_zh": "mihomo 内核的跨平台图形客户端：桌面端用 Go 经 GPU 直绘、不走 WebView，Android 端用 Flutter 复用同一套卡片与皮肤。支持按用途分流、连接面板逐条改道、订阅多形态导入、十三套皮肤、TUN 与网关模式、开发工具代理接管，内置 MCP 供 agent 排障。仅 3 天、409 星，许可证字段未标注，稳定性尚未经时间检验。",
+    "highlight_zh": "桌面放弃 WebView 改用 GPU 直绘，把周边琐事做进主界面。"
+  },
+  "upscayl/upscayl": {
+    "summary_zh": "本地运行的 AI 图像放大工具，基于 Real-ESRGAN 系列模型，支持批量处理与自定义模型导入，跨 Linux、macOS、Windows，图片不出本机。1,564 天、5.2 万星，长期位居同类首位。硬门槛是必须 Vulkan 兼容 GPU，许多核显无法运行；超分是模型推断而非还原，会补出原图不存在的细节，不适合取证类场景。",
+    "highlight_zh": "把研究流水线做成双击即用，但先确认显卡支持 Vulkan。"
+  },
+  "kota-zo/myspoti": {
+    "summary_zh": "Jetpack Compose 写的原生 Spotify 客户端：把官方 Web Player 藏在应用内、用手机 DRM 播放，界面自绘并驱动它，因此播放上报与 Wrapped 与官方一致；支持逐词歌词、官方 MV 与扩展式离线下载。28 天、1,839 星。绕过广告与离线限制与 Spotify 服务条款冲突，账号风险与扩展来源风险由使用者承担。",
+    "highlight_zh": "不硬碰 DRM，只接管界面与交互——代价写在条款里。"
+  }
+}
