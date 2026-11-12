@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 62,
-    "publicCount": 20,
+    "count": 66,
+    "publicCount": 24,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -12,6 +12,13 @@
         "window": "2026-10-31 — 2026-11-02",
         "repos": 12,
         "note": "同一组商品名（Ads Blocker / StartAll Back / Roblox Game Copier 等）在不同账号下重复上架，两个波次各自集中在数分钟内创建；README 为同一份「打开终端、粘贴命令、回车」的文本模板，逐字节等长；星标 200–502、零 fork、零 issue、无许可证。"
+      },
+      {
+        "id": "installer-wave-2026-11-c",
+        "label": "「预激活安装包」批量投放（第三波）",
+        "window": "2026-11-06 — 2026-11-12",
+        "repos": 4,
+        "note": "四个仓库在 23 分钟内先后创建，以商业软件「预激活独立安装包」为标题，README 版式一致（PowerShell 一键安装按钮 + 徽章 + 预激活说明），星标集中在 1,229–1,304、零 fork、零 issue、语言标注 HTML 且不含源码目录；与此前两波投放呈现相同文本模板与主题词组合，商品名与账号均已更换。"
       }
     ]
   },
@@ -4033,6 +4040,377 @@
           "docker",
           "git",
           "headhunter"
+        ]
+      }
+    },
+    {
+      "full_name": "flgomes/dxo-photolab-10-desktop",
+      "owner": "flgomes",
+      "name": "dxo-photolab-10-desktop",
+      "url": "https://github.com/flgomes/dxo-photolab-10-desktop",
+      "description": "DxO PhotoLab 10 desktop build for professional photo processing workflows",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-c",
+      "firstSeen": "2026-11-12",
+      "removedAt": "2026-11-12",
+      "issues": [
+        "2026-11-12"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-06T20:56:37Z，与 aida-64-extreme、archicad-desktop-setup、autodesk-inventor-desktop-config 在 23 分钟内先后创建，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "1,229 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "仓库不含可审阅的源码",
+          "detail": "语言标注为 HTML，仓库体积约 248 KB，以 README 与图片文件为主，未见可运行的源码目录或构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "README 主体为第三方商业软件的预激活安装包",
+          "detail": "README 以「DxO PhotoLab 10 完整独立桌面版 / 预激活」自述，页面顶部提供 PowerShell 一键安装按钮并指向第三方 GitHub Pages 下载页，未给出源码结构、构建步骤或可预先审阅的安装方式。"
+        },
+        {
+          "type": "content",
+          "label": "许可标注需要进一步核对",
+          "detail": "README 未给出明确的许可证说明，仓库元数据声明为 MIT；且内容涉及第三方商业软件的分发，授权范围建议以权利方说明为准。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文内容不对应",
+          "detail": "topics 以 dxo-photolab-coupon、dxo-photolab-discount-code、dxo-photolab-sale 等优惠与下载词，同时标有 python、scripts 等技术词，但仓库内未见对应的源码或脚本。"
+        },
+        {
+          "type": "correlation",
+          "label": "与既有批次采用同一文本版式",
+          "detail": "与 10 月底以来两波已记录的同类仓库版式一致（商品名标题 + PowerShell 安装按钮 + 徽章 + 预激活说明），仅更换商品名与账号；四个仓库星标集中在 1,229–1,304 区间，且均为零 fork、零 issue。"
+        }
+      ],
+      "verdict": "README 以一键 PowerShell 安装按钮指向第三方下载页，未提供可审阅的源码与构建说明；多项元数据特征同时偏离常态。",
+      "advice": "建议先自行核对仓库内容与第三方来源，再决定是否引入；不建议在常用环境直接执行其安装命令。",
+      "snapshot": {
+        "stars": 1229,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:56:37Z",
+        "pushed_at": "2026-11-12T01:16:12Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "digital-photography",
+          "dxo-photolab-coupon",
+          "dxo-photolab-discount-code",
+          "dxo-photolab-elite",
+          "dxo-photolab-elite-download",
+          "dxo-photolab-essential",
+          "dxo-photolab-pro-install-windows-raw-editor",
+          "dxo-photolab-sale",
+          "open-source",
+          "pro-photo",
+          "python",
+          "scripts",
+          "software-engineering",
+          "system",
+          "utility",
+          "windows-app"
+        ]
+      }
+    },
+    {
+      "full_name": "hembramneeraj3-create/aida-64-extreme",
+      "owner": "hembramneeraj3-create",
+      "name": "aida-64-extreme",
+      "url": "https://github.com/hembramneeraj3-create/aida-64-extreme",
+      "description": "Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-c",
+      "firstSeen": "2026-11-12",
+      "removedAt": "2026-11-12",
+      "issues": [
+        "2026-11-12"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-06T20:33:44Z，与 dxo-photolab-10-desktop、archicad-desktop-setup、autodesk-inventor-desktop-config 在 23 分钟内先后创建，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "1,304 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "仓库不含可审阅的源码",
+          "detail": "语言标注为 HTML，仓库体积约 166 KB，以 README 与图片文件为主，未见可运行的源码目录或构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "README 主体为第三方商业软件的预激活安装包",
+          "detail": "README 以「AIDA 64 Extreme 2026 完整独立桌面版 / 预激活」自述，页面顶部提供 PowerShell 一键安装按钮并指向第三方 GitHub Pages 下载页，未给出源码结构、构建步骤或可预先审阅的安装方式。"
+        },
+        {
+          "type": "content",
+          "label": "许可标注需要进一步核对",
+          "detail": "README 徽章标注 Apache-2.0，仓库元数据声明为 MIT；且内容涉及第三方商业软件的分发，授权范围建议以权利方说明为准。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文内容不对应",
+          "detail": "topics 以 aida64-free-setup、aida64-extreme-setup 等安装与下载词，同时标有 python、scripts 等技术词，但仓库内未见对应的源码或脚本。"
+        },
+        {
+          "type": "correlation",
+          "label": "与既有批次采用同一文本版式",
+          "detail": "与 10 月底以来两波已记录的同类仓库版式一致（商品名标题 + PowerShell 安装按钮 + 徽章 + 预激活说明），仅更换商品名与账号；四个仓库星标集中在 1,229–1,304 区间，且均为零 fork、零 issue。"
+        }
+      ],
+      "verdict": "README 以一键 PowerShell 安装按钮指向第三方下载页，未提供可审阅的源码与构建说明；多项元数据特征同时偏离常态。",
+      "advice": "建议先自行核对仓库内容与第三方来源，再决定是否引入；不建议在常用环境直接执行其安装命令。",
+      "snapshot": {
+        "stars": 1304,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:33:44Z",
+        "pushed_at": "2026-11-12T01:15:58Z",
+        "topics": [
+          "aida64",
+          "aida64-extreme-compatibility-check",
+          "aida64-extreme-detailed-reporting",
+          "aida64-extreme-hardware-diagnostics",
+          "aida64-extreme-setup",
+          "aida64-extreme-system-information",
+          "aida64-free-setup",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "pc-diagnostics-windows-platform",
+          "python",
+          "scripts",
+          "software-engineering",
+          "system",
+          "utility",
+          "windows-app"
+        ]
+      }
+    },
+    {
+      "full_name": "AleRibeiro44/archicad-desktop-setup",
+      "owner": "AleRibeiro44",
+      "name": "archicad-desktop-setup",
+      "url": "https://github.com/AleRibeiro44/archicad-desktop-setup",
+      "description": "Archicad 2026 complete standalone desktop setup with pre-configured ready-to-run installation",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-c",
+      "firstSeen": "2026-11-12",
+      "removedAt": "2026-11-12",
+      "issues": [
+        "2026-11-12"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-06T20:36:04Z，与 dxo-photolab-10-desktop、aida-64-extreme、autodesk-inventor-desktop-config 在 23 分钟内先后创建，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "1,301 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "仓库不含可审阅的源码",
+          "detail": "语言标注为 HTML，仓库体积约 207 KB，以 README 与图片文件为主，未见可运行的源码目录或构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "README 主体为第三方商业软件的预激活安装包",
+          "detail": "README 以「Archicad 2026 完整独立桌面版 / 预激活」自述，页面顶部提供 PowerShell 一键安装按钮并指向第三方 GitHub Pages 下载页，未给出源码结构、构建步骤或可预先审阅的安装方式。"
+        },
+        {
+          "type": "content",
+          "label": "许可标注需要进一步核对",
+          "detail": "README 徽章标注 ISC，仓库元数据声明为 MIT；且内容涉及第三方商业软件的分发，授权范围建议以权利方说明为准。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文内容不对应",
+          "detail": "topics 以 archicad-download、graphisoft-archicad-install-setup-windows-2026 等下载与安装词，同时标有 python、scripts 等技术词，但仓库内未见对应的源码或脚本。"
+        },
+        {
+          "type": "correlation",
+          "label": "与既有批次采用同一文本版式",
+          "detail": "与 10 月底以来两波已记录的同类仓库版式一致（商品名标题 + PowerShell 安装按钮 + 徽章 + 预激活说明），仅更换商品名与账号；四个仓库星标集中在 1,229–1,304 区间，且均为零 fork、零 issue。"
+        }
+      ],
+      "verdict": "README 以一键 PowerShell 安装按钮指向第三方下载页，未提供可审阅的源码与构建说明；多项元数据特征同时偏离常态。",
+      "advice": "建议先自行核对仓库内容与第三方来源，再决定是否引入；不建议在常用环境直接执行其安装命令。",
+      "snapshot": {
+        "stars": 1301,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:36:04Z",
+        "pushed_at": "2026-11-11T23:10:07Z",
+        "topics": [
+          "archicad",
+          "archicad-2026",
+          "archicad-download",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "graphisoft-archicad-install-setup-windows-2026",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "system",
+          "utility",
+          "windows-app"
+        ]
+      }
+    },
+    {
+      "full_name": "PHISHER420/autodesk-inventor-desktop-config",
+      "owner": "PHISHER420",
+      "name": "autodesk-inventor-desktop-config",
+      "url": "https://github.com/PHISHER420/autodesk-inventor-desktop-config",
+      "description": "Autodesk Inventor 2026 Professional Desktop Installer with Pre-Configured Full Feature Set",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-c",
+      "firstSeen": "2026-11-12",
+      "removedAt": "2026-11-12",
+      "issues": [
+        "2026-11-12"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-06T20:40:29Z，与 dxo-photolab-10-desktop、aida-64-extreme、archicad-desktop-setup 在 23 分钟内先后创建，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生严重失衡",
+          "detail": "1,300 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "仓库不含可审阅的源码",
+          "detail": "语言标注为 HTML，仓库体积约 195 KB，以 README 与图片文件为主，未见可运行的源码目录或构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "README 主体为第三方商业软件的预激活安装包",
+          "detail": "README 以「Autodesk Inventor 2026 完整独立桌面版 / 预激活」自述，页面顶部提供 PowerShell 一键安装按钮并指向第三方 GitHub Pages 下载页，未给出源码结构、构建步骤或可预先审阅的安装方式。"
+        },
+        {
+          "type": "content",
+          "label": "许可标注需要进一步核对",
+          "detail": "README 徽章标注 PostgreSQL，仓库元数据声明为 MIT；且内容涉及第三方商业软件的分发，授权范围建议以权利方说明为准。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文内容不对应",
+          "detail": "topics 以 autodesk-inventor-pro-pc 等商品词，并夹有 inventory-app、offsets-dump、stock-inventory 等与正文无关的词，同时标有 python、scripts 等技术词，但仓库内未见对应的源码或脚本。"
+        },
+        {
+          "type": "correlation",
+          "label": "与既有批次采用同一文本版式",
+          "detail": "与 10 月底以来两波已记录的同类仓库版式一致（商品名标题 + PowerShell 安装按钮 + 徽章 + 预激活说明），仅更换商品名与账号；四个仓库星标集中在 1,229–1,304 区间，且均为零 fork、零 issue。"
+        }
+      ],
+      "verdict": "README 以一键 PowerShell 安装按钮指向第三方下载页，未提供可审阅的源码与构建说明；多项元数据特征同时偏离常态。",
+      "advice": "建议先自行核对仓库内容与第三方来源，再决定是否引入；不建议在常用环境直接执行其安装命令。",
+      "snapshot": {
+        "stars": 1300,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:40:29Z",
+        "pushed_at": "2026-11-12T01:18:18Z",
+        "topics": [
+          "autodesk-inventor-pro",
+          "autodesk-inventor-pro-pc",
+          "automation",
+          "developer-tools",
+          "inventor",
+          "inventor-automation",
+          "inventor-design",
+          "inventor-parts",
+          "inventory-app",
+          "inventory-system",
+          "offsets-dump",
+          "open-source",
+          "python",
+          "real-time-inventory",
+          "scripts",
+          "software-engineering",
+          "stock-inventory",
+          "system",
+          "utility",
+          "windows-app"
         ]
       }
     }

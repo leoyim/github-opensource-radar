@@ -1,0 +1,2275 @@
+{
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T09:39:57.832+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-11",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 562,
+    "unclassified": 32,
+    "selected": 26,
+    "suppressedByHistory": 161,
+    "sameDateExempt": 0,
+    "removed": 4,
+    "removedTotal": 4,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "regenerated": true,
+    "reviewedAt": "2026-11-12T10:06:27.986+08:00"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "Lee-xeo/Claude-Cage",
+          "owner": "Lee-xeo",
+          "name": "Claude-Cage",
+          "url": "https://github.com/Lee-xeo/Claude-Cage",
+          "homepage": "https://lee-xeo.github.io/Claude-Cage/",
+          "description": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+          "language": "Go",
+          "topics": [],
+          "stars": 3345,
+          "forks": 381,
+          "open_issues": 57,
+          "starGain": 2063,
+          "heat": 2063,
+          "heatBasis": "snapshot",
+          "heatPercentile": 100,
+          "ageDays": 11,
+          "created_at": "2026-10-31T15:07:08Z",
+          "pushed_at": "2026-11-11T17:17:57Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86,
+          "breakdown": {
+            "heat": 100,
+            "community": 67,
+            "activity": 79,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "简体中文 · 繁體中文 · Русский · العربية · فارسی · 한국어 · Español · မြန်မာဘာသာ · Беларуская · پښتو · دری · አማርኛ · Soomaali · ትግርኛ · Français\n\n作为一个只是想和 Claude 对话与合作的正常用户，受够了折腾各种 VPS，指纹浏览器，环境检测，面对封号的担惊受怕和财产损失。我们提出 Claude Cage 项目： 一个开箱即用的桌面程序，配置好自己的网络代理，集中管理隔离环境、时区语言和环境检查。\n\nClaude Cage 让你在熟悉的系统里与 Claude 一起工作：Mac 上用 macOS 虚拟机，Windows 上用 Windows 虚拟机，也可以选择轻量的 Linux 环境。终端、浏览器、编辑器和官方 Claude Desktop 汇集在同一个工作台，项目按需共享，网络独立管理；还可以连接自己的服务器，或用手机接续电脑上的任务。支持以下几个重点功能：",
+            "features": [
+              "和主机隔离的网络设置，Cage 自己接管和代理内部的所有网络流量",
+              "和主机隔离的指纹设置，包括时区、语言等，支持自动与代理 IP 同步",
+              "针对 Claude 使用过程中的全链路适配（浏览器登录，授权，claude code 进程）",
+              "内置网络与隔离检查，关键检查失败或证据不完整时暂停外网；社区和第三方检测提供补充参考",
+              "在一个窗口里完成工作。 用终端运行 Claude Code，用编辑器查看改动，用 Cage 浏览器预览服务和完成登录。",
+              "用熟悉的系统开发。 选择 macOS、Windows 或 Linux 客机，使用对应平台的工具；也可自动匹配本机系统版本，下载官方镜像并创建独立环境。 选择客机系统",
+              "控制共享范围。 只共享默认工作区和明确打开的项目文件夹；主机的 Claude 登录、浏览器配置和 SSH 密钥不会自动导入。",
+              "看清网络状态。 内置代理管理支持导入订阅、选择节点和检查出口。关键检查未通过时，环境保持离线；代理不可用时没有直连回退。"
+            ],
+            "sections": [
+              "受够了 Anthropic",
+              "你可以用它做什么",
+              "快速开始",
+              "下载与安装",
+              "三步开始",
+              "1. 选择代理",
+              "2. 启动环境",
+              "3. 打开项目，运行 Claude",
+              "使用前了解这些边界",
+              "文档与贡献",
+              "来源与许可",
+              "参考与致谢"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7750
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "wheresryan22/anatomy",
+          "owner": "wheresryan22",
+          "name": "anatomy",
+          "url": "https://github.com/wheresryan22/anatomy",
+          "homepage": "https://skills.wheresryan.sh/anatomy",
+          "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skill",
+            "open-source",
+            "svg",
+            "vizualization"
+          ],
+          "stars": 26763,
+          "forks": 2251,
+          "open_issues": 75,
+          "starGain": 256,
+          "heat": 256,
+          "heatBasis": "snapshot",
+          "heatPercentile": 93,
+          "ageDays": 35,
+          "created_at": "2026-10-08T10:12:49Z",
+          "pushed_at": "2026-10-18T20:20:24Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 77.4,
+          "breakdown": {
+            "heat": 93,
+            "community": 84,
+            "activity": 14,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Quick start · Gallery · What it makes · Install · Usage · Examples · How it works · Limits\n\nAsk Claude for a figure that explains a technical idea, and Anatomy has it invent a physical thing whose working is the concept. A cache key that skips work when nothing changed becomes a pin-tumbler lock that only turns when every pin matches. One GPU context serving many canvases becomes a gantry plotter whose single print head visits 16 wells.\n\nThen Claude builds that thing out of dozens of small, solid, shaded parts, puts it in a framed card with a title, a hint and a live readout, makes it move calmly under the pointer and the keyboard, and checks its own work by zooming in on every joint. Every number the figure shows comes from the same small model that moves its parts.",
+            "features": [
+              "When Codex asks to run a check outside the sandbox, approve it for that command. This needs the default approval policy = \"on-request\" .",
+              "Or allow it once in ~/.codex/config.toml :",
+              "Or run the check yourself in a normal terminal, for example node scripts/capture.mjs page.html --out shots/page.png .",
+              "Name the idea, not the drawing. Say what it should explain and give the real numbers (sizes, counts, rates, thresholds). Anatomy invents the",
+              "Or name the object. If you already know the machine you want (an espresso machine, a Bunsen burner, a lock), say so, and say what should mov",
+              "Say where it will live. A standalone HTML page, a lone SVG file, or a React/Next.js component; light or dark. The build differs for each.",
+              "SKILL.md is what Claude reads. It sets the workflow: collect the true numbers first, invent the object, write a parts list, plan the world, ",
+              "kit/ is the drawing library the figures are built from: the isometric camera, solids and a parts library ( iso-kit ), round parts on any axi"
+            ],
+            "sections": [
+              "Quick start",
+              "Gallery",
+              "What it makes",
+              "Install",
+              "Usage",
+              "Examples",
+              "How it works",
+              "Requirements",
+              "Limits",
+              "Share a figure",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 25983
+          },
+          "guard": {
+            "score": 1.5,
+            "signals": [
+              "batchCluster"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "RuoJi6/ARTEX",
+          "owner": "RuoJi6",
+          "name": "ARTEX",
+          "url": "https://github.com/RuoJi6/ARTEX",
+          "homepage": "https://artex-demo-ruoji6.vercel.app/",
+          "description": "Autumn-27/ARTEX 持续维护开源版本",
+          "language": "Go",
+          "topics": [
+            "agent",
+            "artex"
+          ],
+          "stars": 1707,
+          "forks": 995,
+          "open_issues": 21,
+          "starGain": 148,
+          "heat": 148,
+          "heatBasis": "snapshot",
+          "heatPercentile": 88,
+          "ageDays": 34,
+          "created_at": "2026-10-09T00:56:36Z",
+          "pushed_at": "2026-11-11T11:26:29Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 76.7,
+          "breakdown": {
+            "heat": 88,
+            "community": 65,
+            "activity": 61,
+            "maturity": 83
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "本仓库为独立维护的 RuoJi6/ARTEX，保留 https://github.com/Autumn-27/ARTEX 的原始提交历史与 AGPL-3.0 许可证。程序发布包从本仓库 Releases 下载，Docker 镜像 ruoji6/artex 由本仓库 GitHub Actions 构建并发布。\n\n全局「审批记录」、任务内「拦截审批」及对话中的审批卡片均支持展开查看详情。展示结构参考 AegisHook 的审批详情组件，沿用 ARTEX 的组件和主题：\n\n- 在「 资产同步 」页填 ScopeSentry 的地址与 API Key，接入数据源； - 按 项目 或 任务 维度选择要同步的目标与资产类型（域名 / 子域 / IP / 端口 / 站点 / 端点…）； - 一键导入并按公司资产范围归并，直接进入 ARTEX 的资产图供 agent 探索使用。",
+            "features": [
+              "在「 资产同步 」页填 ScopeSentry 的地址与 API Key，接入数据源；",
+              "按 项目 或 任务 维度选择要同步的目标与资产类型（域名 / 子域 / IP / 端口 / 站点 / 端点…）；",
+              "一键导入并按公司资产范围归并，直接进入 ARTEX 的资产图供 agent 探索使用。",
+              "在自己的 Vercel 账号创建空项目，设置名称（例如 artex-demo-ruoji6 ）。保持 Git 未连接 ，避免每次提交都自动部署。 web/vercel.json 也禁用了 Git 自动部署。",
+              "在 Settings → Build and Deployment 中选择 Next.js 、Node.js 22.x ，安装命令可覆盖为 npm ci ，构建命令为 npm run build ，Output Directory 保持默认。 Root Directory 留空 ",
+              "在项目的 Environment Variables 中添加 NEXT PUBLIC MOCK=1 ，至少应用于 Production 。不要设置 NEXT EXPORT=1 ，也不要填写数据库连接或模型密钥。",
+              "在项目 Settings → General 复制 Project ID ；在团队 Settings → General 复制 Team ID （对应 VERCEL ORG ID ）。确认 Domains 中有准备使用的生产域名。",
+              "在 Vercel Account Settings → Tokens 创建部署 Token，范围选择项目所在团队，并设置适当有效期。将其直接保存到 GitHub 仓库 Settings → Secrets and variables → Actions → Secrets ，名称"
+            ],
+            "sections": [
+              "ARTEX",
+              "致谢",
+              "截图预览",
+              "审批记录详情",
+              "资产同步（ScopeSentry）",
+              "部署自己的在线 Demo（随正式 Release 自动更新）",
+              "首次配置 Vercel",
+              "首次部署与重试",
+              "安装",
+              "方式一：一键安装脚本（推荐）",
+              "方式二：Docker Compose（手动）",
+              "→ http://localhost:8787",
+              "方式三：下载预编译二进制（Releases）",
+              "方式四：从源码编译单二进制"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 22470
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "t8y2/motty",
+          "owner": "t8y2",
+          "name": "motty",
+          "url": "https://github.com/t8y2/motty",
+          "homepage": "https://motty.page",
+          "description": "SSH, SFTP, port forwarding, VNC/RDP and an AI assistant、MCP in one native window — a Go desktop app built on Viva, with no webview.",
+          "language": "Go",
+          "topics": [
+            "ai-assistant",
+            "golang",
+            "native",
+            "port-forwarding",
+            "rdp",
+            "sftp",
+            "ssh",
+            "ssh-client"
+          ],
+          "stars": 954,
+          "forks": 100,
+          "open_issues": 132,
+          "starGain": 94,
+          "heat": 94,
+          "heatBasis": "snapshot",
+          "heatPercentile": 84,
+          "ageDays": 21,
+          "created_at": "2026-10-22T09:56:24Z",
+          "pushed_at": "2026-11-12T01:49:39Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.4,
+          "breakdown": {
+            "heat": 84,
+            "community": 55,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A real session: the file panel, a shell following a deploy log, and the assistant reading the same terminal.\n\nMotty is a desktop SSH client. The terminal, the SFTP panel, port forwards, remote desktops and an AI assistant share one window, so a session does not need a second app for files or a browser tab for a screen.\n\nThe full documentation lives at ; this file covers the project, the packages and how to build it.",
+            "features": [
+              "Open Hosts and choose New host .",
+              "Enter a name, address and account name.",
+              "Pick authentication: the running agent, a private-key file or the password.",
+              "Connect and compare the host-key fingerprint with the server. Trust it once or",
+              "The tab opens on the login shell. A server that asks for a one-time code gets",
+              "Go 1.26 or newer.",
+              "The Viva framework checked out beside this repository as ../viva . Viva is a",
+              "macOS with Metal and Xcode command-line tools, Windows 10/11, or Linux with"
+            ],
+            "sections": [
+              "Why Motty?",
+              "Install",
+              "Quick start",
+              "Features",
+              "The terminal",
+              "Hosts and authentication",
+              "Files",
+              "Forwarding and jump chains",
+              "Remote desktops",
+              "Assistant and MCP",
+              "Backup and sync",
+              "Build from source",
+              "Development builds",
+              "Security"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 23812
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "JosssphZhou/poki",
+          "owner": "JosssphZhou",
+          "name": "poki",
+          "url": "https://github.com/JosssphZhou/poki",
+          "homepage": "https://poki.bot",
+          "description": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.",
+          "language": "Swift",
+          "topics": [
+            "ai-agents",
+            "automation",
+            "ios",
+            "iphone",
+            "mcp",
+            "model-context-protocol"
+          ],
+          "stars": 979,
+          "forks": 181,
+          "open_issues": 54,
+          "starGain": 58,
+          "heat": 58,
+          "heatBasis": "snapshot",
+          "heatPercentile": 78,
+          "ageDays": 6,
+          "created_at": "2026-11-05T15:04:31Z",
+          "pushed_at": "2026-11-11T19:42:44Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 76.2,
+          "breakdown": {
+            "heat": 78,
+            "community": 57,
+            "activity": 83,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 43,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Install Poki on my iPhone from https://github.com/JosssphZhou/poki\n\nThe agent follows the install-poki skill and runs bin/install-iphone.mjs , which does every step it can by itself. You only do what iOS asks of you: type your Apple Account into a Poki Setup window on the Mac, tap Trust and turn on Developer Mode on the iPhone, trust the developer, and open Poki. When Poki first opens it asks for Automation Mode: tap Continue and enter the iPhone passcode. If you cancel, turn Poki on again to be asked again. The agent tells you each one in a sentence when it comes up. A free Apple Account works.\n\nRequires macOS 14+, Node.js 24+, iOS 18+, a USB data cable, an Apple Account, and a compatible VPN/proxy app on the iPhone that routes 10.7.0.1 back to it, such as Karing or Shadowrocket configured through Poki's Setup instructions. On iOS 27 and later Poki controls the iPhone through its native services by default. On iOS 18 to 26 it uses the XCTest session instead, as Alpha 0.2.9 did; this release was not tested on a physical iPhone below iOS 27. Xcode is not required. Free Apple Account signing lasts 7 days and needs renewal. Enable UI Automation in the iPhone's Developer settings and configure model access in Poki. With an older Poki Setup and no Xcode, the agent asks you to finish model-key and connection setup manually and reports those checks as unverified until you confirm them.",
+            "features": [],
+            "sections": [
+              "Quick start",
+              "Poki on your iPhone",
+              "Poki MCP for your agent",
+              "Prebuilt macOS arm64 package",
+              "Try a task",
+              "Docs",
+              "Roadmap",
+              "Star History",
+              "Poki keyboard",
+              "Core contributors",
+              "Thanks",
+              "Disclaimer",
+              "License",
+              "Acknowledgments"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 28474
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "MillionSend/millionsend",
+          "owner": "MillionSend",
+          "name": "millionsend",
+          "url": "https://github.com/MillionSend/millionsend",
+          "homepage": "https://millionsend.com",
+          "description": "The open-source email platform — self-host on your own AWS SES, or use the cloud. Resend-compatible API.",
+          "language": "TypeScript",
+          "topics": [
+            "aws-ses",
+            "docker",
+            "email",
+            "email-api",
+            "email-marketing",
+            "honojs",
+            "mailgun-alternative",
+            "newsletter"
+          ],
+          "stars": 270,
+          "forks": 28,
+          "open_issues": 9,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "snapshot",
+          "heatPercentile": 70,
+          "ageDays": 90,
+          "created_at": "2026-08-13T20:26:58Z",
+          "pushed_at": "2026-11-10T23:19:16Z",
+          "license": "AGPL-3.0",
+          "rating": 3,
+          "composite": 64.5,
+          "breakdown": {
+            "heat": 70,
+            "community": 44,
+            "activity": 55,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Self-host on your own AWS SES, or use the hosted cloud. Resend-compatible API — migrating means changing two environment variables, not rewriting your integration.\n\nThe hosted monitor uses TypeSafe's Jev, a System One model built for typed decisions in software. A new team's mail in its first window and its broadcasts, and any team's mail to a destination it has never used, are scored before SES takes them and wait for the verdict, about half a second; everything else is sampled after it is sent, and sending never waits on it. Self-hosters leave it off unless they set ABUSE JUDGE=typesafe .\n\nOne command, in an empty directory — no clone needed:",
+            "features": [],
+            "sections": [
+              "Features",
+              "Run it locally",
+              "License",
+              "Community"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 4217
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Aarav2709/Morrow",
+          "owner": "Aarav2709",
+          "name": "Morrow",
+          "url": "https://github.com/Aarav2709/Morrow",
+          "homepage": "",
+          "description": "Morrow is an open source, privacy first, offline workspace note taking app, presented as an alternative to Notion, and other apps!",
+          "language": "TypeScript",
+          "topics": [
+            "css",
+            "react",
+            "typescript"
+          ],
+          "stars": 288,
+          "forks": 14,
+          "open_issues": 1,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 58,
+          "ageDays": 29,
+          "created_at": "2026-10-13T13:45:27Z",
+          "pushed_at": "2026-11-11T15:33:13Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 56.3,
+          "breakdown": {
+            "heat": 58,
+            "community": 43,
+            "activity": 55,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Morrow is a free, open source, local first workspace for your notes, databases and ideas. Every page is a plain Markdown file in a folder you choose. No account, no subscription and no cloud, and no AI unless you bring your own. Just a calm place to write and think, on your own computer.\n\nhttps://github.com/user-attachments/assets/a279710f-1a50-4f1a-82ff-17714cfe7641\n\n- Yours. Your notes are a folder of Markdown files. Open them in any app, sync them with Syncthing, iCloud, Dropbox or git, and keep them forever. Edits made elsewhere show up in Morrow straight away. Nothing is sent anywhere: no accounts, no telemetry, no ads. It works with the network cable unplugged. - Calm. A focused writing surface with careful typography, and only the features that earn their place. - Trustworthy. Morrow only rewrites a file you changed in Morrow. Every change is saved as you type, failed writes are retried, earlier versions of every page are kept, a file changed elsewhere while you were editing is kept in page history, and deleted pages go to the system trash. - Compatible. Wiki links, callouts, tags, properties, maths and canvases use the same formats as Obsidian, so an existing vault opens as it is. Notion exports, databases included, import in one step. - Everything built in. Databases, canvases, graph, sync, encryption and flashcards come with Morrow, with nothing to install or configure. - AI free unless you want it. Morrow has no AI of its own and sends nothing anywhere. An optional",
+            "features": [
+              "Yours. Your notes are a folder of Markdown files. Open them in any app,",
+              "Calm. A focused writing surface with careful typography, and only the",
+              "Trustworthy. Morrow only rewrites a file you changed in Morrow. Every",
+              "Compatible. Wiki links, callouts, tags, properties, maths and canvases use",
+              "Everything built in. Databases, canvases, graph, sync, encryption and",
+              "AI free unless you want it. Morrow has no AI of its own and sends nothing",
+              "Pages in a sidebar tree with icons, drag and drop, favourites and a trash",
+              "A rich editor : headings, lists, checklists, quotes, callouts with titles"
+            ],
+            "sections": [
+              "Morrow",
+              "Why Morrow",
+              "Features",
+              "Status",
+              "Coming from Obsidian",
+              "Coming from Notion",
+              "Where your data lives",
+              "Contributing",
+              "How Morrow was made",
+              "Licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11233
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "oxomkbk/Furnish",
+          "owner": "oxomkbk",
+          "name": "Furnish",
+          "url": "https://github.com/oxomkbk/Furnish",
+          "homepage": "https://oxomkbk.github.io/Furnish/",
+          "description": "Web装修设计工具，集 2D 平面布置与 three.js 3D 漫游于一体，内置 12 套户型、多方案管理与自定义家具库，支持多选编辑、对齐吸附、碰撞检查及三语暗色模式。",
+          "language": "HTML",
+          "topics": [
+            "3d",
+            "design",
+            "html5",
+            "threejs",
+            "web"
+          ],
+          "stars": 75,
+          "forks": 25,
+          "open_issues": 0,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 58,
+          "ageDays": 39,
+          "created_at": "2026-10-03T16:07:34Z",
+          "pushed_at": "2026-10-03T16:08:54Z",
+          "license": "MIT",
+          "rating": 2.5,
+          "composite": 47,
+          "breakdown": {
+            "heat": 58,
+            "community": 36,
+            "activity": 0,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "在浏览器里打开 index.html 就能用的户型装修设计工具：左边拖家具、中间改平面、右边看预算，一键切 3D 看效果。 单文件、零依赖、离线可用 ——双击即开，不用装环境、不用联网、不用登录，所有数据只存在你自己的浏览器里。\n\n- 🏠 Ai 资源网 —— 免费 AI 工具与资源导航站，本项目页脚同样挂着这枚友链，欢迎互相串门。\n\n- 30 秒上手 - 界面速览 - 功能详解 - 户型库与方案管理 · 家具库 · 编辑与选中 · 编辑辅助 - 预算与报价 · 风格方案 · 2D 工具 · 3D 场景 - 导出、打印与分享 · 外观与语言 · 数据与防丢失 - 键盘快捷键 - 数据存放 - 项目结构 - 如何新增一套户型 - 实现与维护说明 - 已知边界",
+            "features": [
+              "🏠 Ai 资源网 —— 免费 AI 工具与资源导航站，本项目页脚同样挂着这枚友链，欢迎互相串门。",
+              "30 秒上手",
+              "界面速览",
+              "功能详解",
+              "户型库与方案管理 · 家具库 · 编辑与选中 · 编辑辅助",
+              "预算与报价 · 风格方案 · 2D 工具 · 3D 场景",
+              "导出、打印与分享 · 外观与语言 · 数据与防丢失",
+              "键盘快捷键"
+            ],
+            "sections": [
+              "户型装修设计工具",
+              "友情链接",
+              "目录",
+              "30 秒上手",
+              "界面速览",
+              "功能详解",
+              "户型库与方案管理",
+              "家具库",
+              "编辑与选中",
+              "编辑辅助",
+              "预算与报价",
+              "风格方案",
+              "2D 工具",
+              "3D 场景"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10048
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "jeokeo011222/quantbot",
+          "owner": "jeokeo011222",
+          "name": "quantbot",
+          "url": "https://github.com/jeokeo011222/quantbot",
+          "homepage": "",
+          "description": "QuantBot（AI 量化机器人）的全量源码。基于 **Go+React + TypeScript + Vite** 构建，通过 **Wails** 与 Go 后端通信，提供 A 股量化交易的图形界面：六维判势、多因子选股、AI 智能体决策、策略回测、实时活动、审计日志等。",
+          "language": "Go",
+          "topics": [
+            "a-shares",
+            "ai-agent",
+            "algorithmic-trading",
+            "backtesting",
+            "china-stock-market",
+            "duckdb",
+            "factor-investing",
+            "fintech"
+          ],
+          "stars": 90,
+          "forks": 37,
+          "open_issues": 0,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 76,
+          "created_at": "2026-08-27T15:28:45Z",
+          "pushed_at": "2026-11-09T05:31:30Z",
+          "license": "NOASSERTION",
+          "rating": 1.5,
+          "composite": 25.6,
+          "breakdown": {
+            "heat": 0,
+            "community": 38,
+            "activity": 37,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 31,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "不是聊天机器人，不是简单选股器。 而是一套从 研究 → 策略 → 回测 → 风控 → 组合 → 交易 → 复盘 的完整量化投资工作流。\n\n🚀 快速开始 · 🧠 AI 投资团队 · 📊 量化能力 · 🛡️ 风控体系 · 📡 数据源 · 🗺️ Roadmap\n\nQuantBot │ ┌───────────┼───────────┐ ↓ ↓ ↓ Research Strategy Risk │ │ │ └───────────┼───────────┘ ↓ Portfolio ↓ Trading ↓ Review │ └──────→ Next Day",
+            "features": [
+              "规则风控门 ： 生效仓位 = min(规则, 主张, 异议, Kelly) —— AI 只能让仓位 更保守 ，绝不放大越线。",
+              "硬回退 ：LLM 未配置 / 失败 / 超时 → 完全回退规则决策，AI 单点故障不阻断交易。",
+              "可审计 ：辩论方向、多空论据、共识度、Kelly 系数全部写入决策证据链，前端可查。",
+              "口语化问题 ：如\"行情走弱时怎么应对\"，Planner 识别后直接影响风险等级。",
+              "单票上限按风险等级定 ：保守 15% / 均衡 20% / 成长 30%。",
+              "小额成长方案走激进配置 ：弱市现金约 10%、保留至少 3 只候选，避免资金闲置。",
+              "成交/活动流补齐展示 股票代码与名称 ，避免同名时间戳被误合并。",
+              "≥80 强势（0.8~1.0） · 60~79 结构性震荡（0.4~0.6） · 40~59 偏弱（0.2~0.3） · <40 退潮风险（0.0~0.1）"
+            ],
+            "sections": [
+              "🤖 QuantBot",
+              "一个真正会每天工作的 A 股量化交易系统",
+              "📥 立即下载",
+              "🌟 QuantBot 是什么？",
+              "✨ 核心亮点",
+              "🧠 AI 投资团队",
+              "5 个 Agent，不是 5 个聊天窗口。",
+              "💬 CIO 决策主张层：多空辩论 + Kelly 仓位缩放",
+              "📝 Planner 投资规划",
+              "🧾 交易活动流",
+              "⏱️ 每天自动工作的投资流程",
+              "🌅 盘前",
+              "📈 盘中",
+              "🌙 盘后"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9246
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "vladocar/Sumi.css",
+          "owner": "vladocar",
+          "name": "Sumi.css",
+          "url": "https://github.com/vladocar/Sumi.css",
+          "homepage": "https://vladocar.github.io/Sumi.css/docs.html",
+          "description": "A minimalist, classless-first CSS framework.",
+          "language": "HTML",
+          "topics": [
+            "css",
+            "css-framework",
+            "css-grid"
+          ],
+          "stars": 230,
+          "forks": 5,
+          "open_issues": 1,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 23,
+          "created_at": "2026-10-20T01:38:15Z",
+          "pushed_at": "2026-11-03T23:31:59Z",
+          "license": "MIT",
+          "rating": 1,
+          "composite": 23.2,
+          "breakdown": {
+            "heat": 0,
+            "community": 39,
+            "activity": 8,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A minimalist, classless-first CSS framework. Write plain, semantic HTML and it looks finished. Add a class only when you want something specific.\n\n- One file, no build step. 6.7 KB minified and gzipped, with no JavaScript and no dependencies. - Classless by default. Headings, forms, tables, cards, accordions, modals and navigation are styled from the HTML element alone. - Light and dark mode. It follows the visitor's system setting automatically, and data-theme lets you force either mode. - Easy to theme. Every color, font, size and radius is a CSS custom property. - Easy to override. Element styles have zero specificity, so your own CSS always wins without !important . - Accessible. Visible focus rings, ARIA-driven states ( aria-invalid , aria-busy , aria-current ) and support for reduced motion.\n\n- Install - Quick start - What gets styled - Classes and attributes - Layout - Typography - Theming - Dark mode - Overriding styles - Browser support - Files - License",
+            "features": [
+              "One file, no build step. 6.7 KB minified and gzipped, with no JavaScript and no dependencies.",
+              "Classless by default. Headings, forms, tables, cards, accordions, modals and navigation are styled from the HTML element alone.",
+              "Light and dark mode. It follows the visitor's system setting automatically, and data-theme lets you force either mode.",
+              "Easy to theme. Every color, font, size and radius is a CSS custom property.",
+              "Easy to override. Element styles have zero specificity, so your own CSS always wins without !important .",
+              "Accessible. Visible focus rings, ARIA-driven states ( aria-invalid , aria-busy , aria-current ) and support for reduced motion.",
+              "Install",
+              "Quick start"
+            ],
+            "sections": [
+              "Sumi.css",
+              "Contents",
+              "Install",
+              "Quick start",
+              "What gets styled",
+              "Classes and attributes",
+              "A few examples",
+              "Layout",
+              "Typography",
+              "Theming",
+              "Main tokens",
+              "Dark mode",
+              "Overriding styles",
+              "Browser support"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11895
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "snowops-oss/snowopslabs",
+          "owner": "snowops-oss",
+          "name": "snowopslabs",
+          "url": "https://github.com/snowops-oss/snowopslabs",
+          "homepage": "https://labs.snowops.net",
+          "description": "Learn platform engineering by breaking and fixing real Kubernetes clusters.",
+          "language": "Go",
+          "topics": [
+            "chaos-engineering",
+            "devops",
+            "homelab",
+            "incident-response",
+            "k3d",
+            "kubernetes",
+            "observability",
+            "platform-engineering"
+          ],
+          "stars": 130,
+          "forks": 24,
+          "open_issues": 58,
+          "starGain": null,
+          "heat": 11.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 74,
+          "ageDays": 81,
+          "created_at": "2026-08-22T19:13:29Z",
+          "pushed_at": "2026-11-11T18:24:25Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 67,
+          "breakdown": {
+            "heat": 74,
+            "community": 39,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A flight simulator for platform engineers: a real Kubernetes platform on your laptop, broken on purpose, with your fix graded.\n\nSnowOps Labs is a Kubernetes platform-engineering simulator. One command builds a production-shaped cluster on your laptop: real Prometheus, Grafana, Loki, Tempo, Argo CD, Istio, Kafka and Vault, not mocks. Then it breaks that cluster in ways you will meet on call, and grades how you fix it against the live cluster.\n\nPractise what production never lets you practise: finding why every pod is Ready while a third of requests fail, draining a node under load without breaking the SLO, or picking a service mesh with evidence instead of opinion. It runs on macOS (Apple Silicon and Intel), Linux and Windows via WSL2, or in your browser through GitHub Codespaces.",
+            "features": [
+              "macOS, Linux, or Windows with WSL2.",
+              "Docker with at least 2 CPUs and 4 GB of memory. On macOS you don't need to",
+              "About 10 GB of free disk for the VM, images and cluster."
+            ],
+            "sections": [
+              "Try it",
+              "The four loops",
+              "Who it is for",
+              "What you can practise",
+              "See it in action",
+              "How it compares",
+              "What's inside",
+              "What you need",
+              "Install",
+              "Your first lab",
+              "When something goes wrong",
+              "Documentation",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 15377
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "denialwm/denial",
+          "owner": "denialwm",
+          "name": "denial",
+          "url": "https://github.com/denialwm/denial",
+          "homepage": "https://denialwm.org",
+          "description": " A smooth, customizable Wayland compositor with glass effects, three window layouts, and settings you can actually click. We got a little carried away.",
+          "language": "Rust",
+          "topics": [
+            "arch-linux",
+            "compositor",
+            "dart",
+            "debian",
+            "desktop-environment",
+            "drm",
+            "fedora",
+            "flutter"
+          ],
+          "stars": 1447,
+          "forks": 50,
+          "open_issues": 53,
+          "starGain": 10,
+          "heat": 10,
+          "heatBasis": "snapshot",
+          "heatPercentile": 67,
+          "ageDays": 117,
+          "created_at": "2026-07-17T15:38:48Z",
+          "pushed_at": "2026-11-10T23:48:58Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 67.2,
+          "breakdown": {
+            "heat": 67,
+            "community": 56,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "https://github.com/user-attachments/assets/2c7335bb-7363-46b1-8e3a-0d98c36c64b1\n\n- Stacking, tiling, and scrolling tiling layouts. - Workspaces and touchpad gestures. Plenty of room for projects you'll definitely finish someday. - Smooth animations and transitions. - Blur and customizable glass. Subtlety is available in Settings. - Light and dark themes. Pick an accent color or borrow one from your wallpaper. - Settings for layouts, displays, input, shortcuts, and appearance. It's a desktop. You should be able to configure it with a mouse. - Live shell editing and hot reload. - Wayland apps, optional X11 support through Xwayland, multiple monitors, screenshots, and screen sharing.\n\nHyprland and niri users are welcome. We won't tell.",
+            "features": [
+              "Stacking, tiling, and scrolling tiling layouts.",
+              "Workspaces and touchpad gestures. Plenty of room for projects you'll",
+              "Smooth animations and transitions.",
+              "Blur and customizable glass. Subtlety is available in Settings.",
+              "Light and dark themes. Pick an accent color or borrow one from your wallpaper.",
+              "Settings for layouts, displays, input, shortcuts, and appearance.",
+              "Live shell editing and hot reload.",
+              "Wayland apps, optional X11 support through Xwayland, multiple monitors, screenshots,"
+            ],
+            "sections": [
+              "Features",
+              "Support Denial",
+              "Install",
+              "Edit the shell",
+              "Under the hood",
+              "Why Denial",
+              "Made through dialogue",
+              "Documentation",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8000
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "apimartymtjlijx/minimax-m3-api-fr",
+          "owner": "apimartymtjlijx",
+          "name": "minimax-m3-api-fr",
+          "url": "https://github.com/apimartymtjlijx/minimax-m3-api-fr",
+          "homepage": "https://go.apimart.ai/k-2ccee7",
+          "description": "AI API gateway / relay: 307 models behind one OpenAI-compatible key. image2.5 $0.0085/image, Seedance 2.0 Mini $0.01056/sec, LLM from $0.0228/M tokens. USD settlement, pay-as-you-go, $1 minimum top-up.",
+          "language": "Python",
+          "topics": [
+            "ai-api-gateway",
+            "api",
+            "api-aggregator",
+            "api-pricing",
+            "apimart-fr",
+            "llm-api-gateway",
+            "openai-compatible",
+            "pay-as-you-go"
+          ],
+          "stars": 91,
+          "forks": 0,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 11.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 71,
+          "ageDays": 44,
+          "created_at": "2026-09-29T03:34:40Z",
+          "pushed_at": "2026-11-11T14:28:04Z",
+          "license": "NOASSERTION",
+          "rating": 3,
+          "composite": 60.5,
+          "breakdown": {
+            "heat": 71,
+            "community": 29,
+            "activity": 52,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 42,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Get an API key · Live pricing · Model page · ⚡ 60-second quickstart\n\nWhy teams call MiniMax M3 ( minimax-m3 ) through APIMart\n\n- One key, entire catalog. The same https://api.apimart.ai/v1 base URL and Authorization header reach MiniMax M3 ( minimax-m3 ) and 300+ other image, video and language models — switch the model field, not your client. - Per-second billing. A job is charged for the seconds it actually generates at the resolution you picked. - The charge comes back in the response. Every completed task reports the amount billed ( cost / credits cost ); a task marked failed is refunded. - Async by design. Submit, take the task id , poll GET /v1/tasks/{id} — batching and retries are ordinary queue work, not a bespoke integration.",
+            "features": [
+              "One key, entire catalog. The same https://api.apimart.ai/v1 base URL and Authorization header reach MiniMax M3 ( minimax-m3 ) and 300+ other",
+              "Per-second billing. A job is charged for the seconds it actually generates at the resolution you picked.",
+              "The charge comes back in the response. Every completed task reports the amount billed ( cost / credits cost ); a task marked failed is refun",
+              "Async by design. Submit, take the task id , poll GET /v1/tasks/{id} — batching and retries are ordinary queue work, not a bespoke integratio"
+            ],
+            "sections": [
+              "MiniMax M3 API ( minimax-m3 )",
+              "Model id and routes",
+              "Pricing",
+              "Request parameters",
+              "Quickstart",
+              "FAQ",
+              "Attributed links (how this repository is measured)",
+              "Disclosure",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5662
+          },
+          "guard": {
+            "score": 1.5,
+            "signals": [
+              "batchCluster"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "uptimy/agent",
+          "owner": "uptimy",
+          "name": "agent",
+          "url": "https://github.com/uptimy/agent",
+          "homepage": "https://www.upti.my",
+          "description": "Self-hosted uptime monitoring in one binary: websites, APIs, databases, cron jobs and Kubernetes, with a status page and alerts. An Uptime Kuma alternative.",
+          "language": "Go",
+          "topics": [
+            "cron-monitoring",
+            "golang",
+            "healthcheck",
+            "heartbeat",
+            "helm-chart",
+            "kubernetes",
+            "monitoring",
+            "railway"
+          ],
+          "stars": 80,
+          "forks": 1,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 10.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 70,
+          "ageDays": 42,
+          "created_at": "2026-10-01T13:24:31Z",
+          "pushed_at": "2026-11-11T15:06:53Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 60.8,
+          "breakdown": {
+            "heat": 70,
+            "community": 30,
+            "activity": 55,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Uptime monitoring that runs inside your network. Check private services, databases and cron jobs. Get alerted anywhere. Publish a status page.\n\nExternal monitors only see what's on the internet. The agent runs next to your services, so it checks what they can't:\n\nhealthchecks: - name: API type: http target: http://api.railway.internal:8080/health private networking - name: Database type: postgres target: ${DATABASE URL} logs in and runs a query - name: Checkout type: kubernetes target: shop/deployment/checkout all replicas ready heartbeats: - name: Nightly backup cron: \"0 3 \" alerts when a run is missed or fails",
+            "features": [
+              "name: Database",
+              "name: Checkout",
+              "name: Nightly backup",
+              "Healthchecks: HTTP, Postgres, MySQL, Redis, TCP, ping, DNS, TLS expiry and Kubernetes workloads",
+              "Heartbeats for cron jobs, backups and workers: missed runs, failures and how long each run took",
+              "Alerts by email, Slack, Teams, Discord, Telegram, ntfy, PagerDuty, webhooks and 30+ more, retried for up to an hour if a channel is down",
+              "Status page on your own domain, with incidents, maintenance windows and badges",
+              "Monitors as code in YAML, or from Kubernetes labels, alongside the ones you click together"
+            ],
+            "sections": [
+              "Install",
+              "Docker",
+              "Kubernetes",
+              "Railway",
+              "What it does",
+              "Kubernetes: label it and it's monitored",
+              "Railway: monitor the whole project",
+              "Coming from Uptime Kuma",
+              "Uptimy Cloud (optional)",
+              "Docs",
+              "Help & support",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6036
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "wangwanjie/gately",
+          "owner": "wangwanjie",
+          "name": "gately",
+          "url": "https://github.com/wangwanjie/gately",
+          "homepage": "https://gately.cn",
+          "description": "Open-source, auditable network gateway for homelabs, NAS and servers: DDNS, STUN traversal, port forwarding with SNI routing, reverse proxy and web server, ACME certificates, WAF, Tailscale, frp, Cloudflare Tunnel, Docker and web terminal in one binary. Runs on Docker, fnOS, OpenWrt, Linux, macOS and Windows.",
+          "language": "Go",
+          "topics": [
+            "acme",
+            "cloudflare-tunnel",
+            "ddns",
+            "docker",
+            "fnos",
+            "frp",
+            "golang",
+            "homelab"
+          ],
+          "stars": 499,
+          "forks": 54,
+          "open_issues": 3,
+          "starGain": 5,
+          "heat": 5,
+          "heatBasis": "snapshot",
+          "heatPercentile": 62,
+          "ageDays": 27,
+          "created_at": "2026-10-15T23:10:45Z",
+          "pushed_at": "2026-11-11T10:38:52Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 62.5,
+          "breakdown": {
+            "heat": 62,
+            "community": 50,
+            "activity": 57,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Website &nbsp;·&nbsp; Quick start &nbsp;·&nbsp; Install guide &nbsp;·&nbsp; Docs &nbsp;·&nbsp; Download &nbsp;·&nbsp; Changelog\n\nEnglish 简体中文 繁體中文 日本語 한국어 Español Français Deutsch Русский Português (Brasil)\n\nDNS and NAT traversal, reverse proxy and HTTPS certificates, WAF and intrusion prevention, single sign-on and file sharing: everything your home network and servers need at the edge, managed from one console. Run it on a NAS, a soft router or a cloud server and set it all up in your browser. Open source under Apache-2.0; your config and data stay on your own device, and nothing is collected or reported.",
+            "features": [
+              "Works with the fnOS unified gateway : click the Gately icon on the fnOS desktop and the admin UI opens through the fnOS unified gateway unde",
+              "Signs fnOS administrators in with their fnOS session : turn on Settings → Access control → Sign in with fnOS and fnOS administrators who are",
+              "On the LAN the admin UI is also at http:// :16680 . The default account is admin and the default password is gately.cn .",
+              "The app runs as root , so it can listen on 80/443, manage Docker through docker.sock , and open a real Web terminal. Install it only on a NA",
+              "Config lives in the app's var directory and is kept on uninstall unless you choose \"delete all\" in the uninstall wizard. Upgrading is anothe",
+              "The package also adds a gately command ( /usr/local/bin/gately ) for gately ctl and gately mcp .",
+              "Port 16680 is shared with the Docker image. Stop the gately container before starting the native app.",
+              "Verify the download as described in Verifying release artifacts; .fpk files are listed in checksums.txt ."
+            ],
+            "sections": [
+              "Quick Start",
+              "Docker",
+              "Features",
+              "Everything at a glance",
+              "Web services that can replace nginx",
+              "Network topology",
+              "One port 443 for every service",
+              "Dynamic DNS for all the major providers",
+              "Intrusion prevention",
+              "frp, Tailscale and Cloudflare Tunnel",
+              "And more",
+              "Why Gately",
+              "Performance",
+              "Development"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 37215
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "EmbrasureAI/flow",
+          "owner": "EmbrasureAI",
+          "name": "flow",
+          "url": "https://github.com/EmbrasureAI/flow",
+          "homepage": "",
+          "description": "Stream PostgreSQL changes into standard Apache Iceberg tables, built in Rust.",
+          "language": "Rust",
+          "topics": [
+            "apache-iceberg",
+            "cdc",
+            "change-data-capture",
+            "data-engineering",
+            "iceberg",
+            "logical-replication",
+            "postgresql",
+            "rust"
+          ],
+          "stars": 89,
+          "forks": 8,
+          "open_issues": 4,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 71,
+          "ageDays": 64,
+          "created_at": "2026-09-08T20:45:39Z",
+          "pushed_at": "2026-11-12T00:52:54Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 61,
+          "breakdown": {
+            "heat": 71,
+            "community": 34,
+            "activity": 60,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Stream PostgreSQL changes into Apache Iceberg. Written in Rust.\n\nDocumentation · Quickstart · Benchmarks · Contributing · Issues\n\nFlow copies existing PostgreSQL rows, then continuously replicates inserts, updates and deletes into standard Iceberg tables. Query the tables directly through a compatible Iceberg reader, using your catalog and object storage.",
+            "features": [
+              "Postgres to Iceberg in one service. Initial COPY and ongoing logical",
+              "Standard tables. Parquet data with Iceberg v2 position deletes or v3 deletion",
+              "Mutable data. Inserts, updates, deletes and primary-key changes, plus",
+              "Durable recovery. A transaction journal, persistent row index and publication",
+              "Maintenance alongside ingestion. Local data/delete compaction and",
+              "PostgreSQL 14–18 sources, with inserts, updates, deletes and primary-key",
+              "Unpartitioned Iceberg v2 (position deletes) and v3 (deletion vectors) tables",
+              "The type mappings; JSON and JSONB replicate as"
+            ],
+            "sections": [
+              "Highlights",
+              "Quickstart",
+              "Build from source",
+              "Build a container image",
+              "Connect your own database",
+              "How it works",
+              "Support and status",
+              "Documentation",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9769
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "tobilg/duckdb-differential",
+          "owner": "tobilg",
+          "name": "duckdb-differential",
+          "url": "https://github.com/tobilg/duckdb-differential",
+          "homepage": "",
+          "description": "Versioned DuckDB databases, locally or replicated through S3, for people and agents",
+          "language": "C++",
+          "topics": [
+            "agents",
+            "branching",
+            "duckdb",
+            "duckdb-extension"
+          ],
+          "stars": 50,
+          "forks": 2,
+          "open_issues": 0,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 71,
+          "ageDays": 33,
+          "created_at": "2026-10-09T16:16:00Z",
+          "pushed_at": "2026-11-02T10:35:57Z",
+          "license": "MIT",
+          "rating": 2.5,
+          "composite": 48.5,
+          "breakdown": {
+            "heat": 71,
+            "community": 28,
+            "activity": 0,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 35,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An experimental C++ extension for stock DuckDB 2.0 that adds versioning to ordinary DuckDB databases: snapshots, time travel, branches, clones, restore and S3 export. Native catalogs, SQL, transactions, indexes and compression run unchanged over a durable differential filesystem that shares unchanged data between all versions. The SQL surface follows DuckLake's conventions.\n\nINSTALL differential FROM community; LOAD differential; ATTACH 'differential:sales' AS sales; -- created on first use CREATE TABLE sales.t AS SELECT 42 AS value; CALL differential create snapshot('sales', name = 'baseline', message = 'initial load'); UPDATE sales.t SET value = 99; ATTACH 'differential:sales' AS old (SNAPSHOT NAME 'baseline'); SELECT value FROM old.t; -- 42 SELECT value FROM sales.t AT (VERSION = 1); -- 42, DuckLake-style time travel FROM sales.snapshots();\n\nStatus: experimental Build from source and load the local artifact (development); community installation commands describe the planned release. Full v1 acceptance is not complete. Only macOS arm64 and a MinIO S3 endpoint are fully tested; real AWS was exercised manually (exports, reads, branch heads), and other platforms are untested.",
+            "features": [
+              "SQL capabilities: settings, ATTACH, S3 and secrets, time travel, functions",
+              "Usage lifecycle: from creation to cleanup",
+              "Installation",
+              "Durability and storage",
+              "Processes, users and hosts: what can be shared",
+              "Agent skill: setup for coding agents",
+              "Development: building from source, tests, CI and releases",
+              "Options in the statement win over a differential secret, which wins over an s3 secret."
+            ],
+            "sections": [
+              "duckdb-differential",
+              "Documentation",
+              "Contents",
+              "Installation",
+              "SQL capabilities",
+              "Settings",
+              "ATTACH",
+              "S3 and secrets",
+              "Time travel and catalog functions",
+              "Functions",
+              "Usage lifecycle",
+              "Durability and storage",
+              "Processes, users and hosts",
+              "Agent skill"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 31500
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Quantrail-Data/CH-Ops",
+          "owner": "Quantrail-Data",
+          "name": "CH-Ops",
+          "url": "https://github.com/Quantrail-Data/CH-Ops",
+          "homepage": "https://ch-ops.io",
+          "description": "Admin tool and GUI for ClickHouse® database. Self-hosting  ClickHouse® database made easy.",
+          "language": "JavaScript",
+          "topics": [
+            "admin-dashboard",
+            "admin-panel",
+            "administration",
+            "clickhouse",
+            "dba",
+            "ui"
+          ],
+          "stars": 44,
+          "forks": 6,
+          "open_issues": 26,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 148,
+          "created_at": "2026-06-17T12:28:26Z",
+          "pushed_at": "2026-11-11T11:50:24Z",
+          "license": "Apache-2.0",
+          "rating": 1.5,
+          "composite": 30.4,
+          "breakdown": {
+            "heat": 0,
+            "community": 29,
+            "activity": 62,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 21,
+            "backend": 73,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "CHOps works with clusters on bare metal, VMs, Docker, Kubernetes under an operator, cloud instances, and managed services.\n\nIf CHOps saves you time, please star this repository. It helps.\n\nCHOps is for the people who run ClickHouse&reg; themselves: data platform teams, DBAs, and the DevOps engineer who inherited the cluster. CHOps brings the daily work of operating ClickHouse&reg; into one browser UI. You find a slow query, stop a runaway, check replication, watch merges, or review access with a click, not a command.",
+            "features": [
+              "Shows every query that runs right now. You sort by memory, runtime, or rows read, and you can kill queries.",
+              "Searches query history. You find what was slow, when, and who ran it.",
+              "Tracks merges, mutations, parts, replication lag, and the distributed DDL queue.",
+              "Provides a SQL editor with autocomplete, tabs, cost estimates, and EXPLAIN.",
+              "Saves queries with their parameter defaults. Tomorrow's check is one click.",
+              "Exports results in 22 formats, such as CSV, JSON, Parquet, and ORC. Compression is optional.",
+              "Sends alerts when a threshold you define is crossed. Alerts go to email, Slack, Google Chat, Microsoft Teams, or PagerDuty.",
+              "Runs BACKUP and RESTORE against S3-compatible storage. It lists what you already have."
+            ],
+            "sections": [
+              "CHOps",
+              "A ClickHouse&reg; GUI and admin tool. Self-hosting the Click",
+              "What is CHOps?",
+              "Feature Overview",
+              "Run CHOps",
+              "Should print: Ok.",
+              "Run with Docker",
+              "1. Make an encryption secret.",
+              "2. Start the container.",
+              "Run with Docker Compose",
+              "Run a prebuilt binary",
+              "Required configuration",
+              "Update to a new version",
+              "Then run the \"docker run\" command again."
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 34724
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Chrisinho8/DACH-data-job-market",
+          "owner": "Chrisinho8",
+          "name": "DACH-data-job-market",
+          "url": "https://github.com/Chrisinho8/DACH-data-job-market",
+          "homepage": "https://chrisinho8.github.io/DACH-data-job-market/",
+          "description": "Daily tracker of the AI/Data job market in Germany, Austria and Switzerland. 3,000+ live postings processed through a Databricks + Delta Lake pipeline, with links to the original listings. Free and open, published on GitHub Pages.",
+          "language": "Python",
+          "topics": [
+            "api",
+            "apis-json",
+            "dashboard",
+            "data-engineering",
+            "databricks",
+            "job-board",
+            "job-search",
+            "job-tracker"
+          ],
+          "stars": 54,
+          "forks": 4,
+          "open_issues": 0,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 106,
+          "created_at": "2026-07-29T10:25:12Z",
+          "pushed_at": "2026-11-11T07:05:42Z",
+          "license": "MIT",
+          "rating": 1.5,
+          "composite": 28.4,
+          "breakdown": {
+            "heat": 0,
+            "community": 30,
+            "activity": 50,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 73,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A daily snapshot of the DACH AI/data-job market: 3,000+ live postings from 1,200+ employers across Germany, Austria and Switzerland. Every day at 08:00 UTC+2 a Databricks pipeline queries the Adzuna API for 18 AI/data related job titles in all three countries, deduplicates and classifies the results through a bronze/silver/gold Delta Lake. It then gets scanned against a curated 71-term skills dictionary and published to a static GitHub Page.\n\n- See the shape of the market - volumes by role, city and country, how long postings stay open, seniority mix, tool mentions and many more. - Read the postings behind any number. Every chart is a count of real postings, and those postings are browsable: search by title or employer, filter by role, country, city and seniority, sort by newest or longest-open. - Watch it move. Nothing is ever overwritten, so each run adds to the record and every figure gains a second dimension: not just how many AI roles are open, but whether that number is climbing or declining.\n\nalt=\"Filtering the DACH map by role and switching between the bubble and heat-map views\"",
+            "features": [
+              "See the shape of the market - volumes by role, city and country, how long postings stay open, seniority mix, tool mentions and many more.",
+              "Read the postings behind any number. Every chart is a count of real postings, and those postings are browsable: search by title or employer,",
+              "Watch it move. Nothing is ever overwritten, so each run adds to the record and every figure gains a second dimension: not just how many AI r",
+              "created is the aggregator's date , possibly when it indexed the posting rather than when the employer published it.",
+              "Descriptions are capped at 500 characters and 99.6% are truncated. Tool counts measure mentioned in the title or opening paragraph - a floor",
+              "AI counts are a floor , for the reason in the scope table. The dropped share is printed on every run of 03 silver clean.py ; if it climbs, t",
+              "A posting in the browser is not necessarily open. It was live at the last refresh. Nothing re-checks whether it has since been filled or wit",
+              "There is no remote or on-site distinction. The aggregator returns a single city per listing and no remote flag, so the pipeline cannot tell "
+            ],
+            "sections": [
+              "What's up with the AI/Data job market in Austria, Germany an",
+              "How the tracker might help you",
+              "Overview of the map",
+              "Main take-aways of the data (State of 20.08.2026)",
+              "Scope: what counts as a AI/Data job",
+              "Architecture of the pipeline",
+              "Limitations of this tracker",
+              "Running it yourself",
+              "Tech stack",
+              "Licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7990
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "northgraindata/dsui",
+          "owner": "northgraindata",
+          "name": "dsui",
+          "url": "https://github.com/northgraindata/dsui",
+          "homepage": "https://dsui.northgraindata.com",
+          "description": "The AI-native control plane for your data stack.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-agent",
+            "airflow",
+            "clickhouse",
+            "control-plane",
+            "data-engineering",
+            "data-stack",
+            "database-gui",
+            "dbt"
+          ],
+          "stars": 36,
+          "forks": 1,
+          "open_issues": 22,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 81,
+          "created_at": "2026-08-22T18:02:30Z",
+          "pushed_at": "2026-11-09T11:39:56Z",
+          "license": "Apache-2.0",
+          "rating": 1.5,
+          "composite": 26.9,
+          "breakdown": {
+            "heat": 0,
+            "community": 25,
+            "activity": 48,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 60,
+            "devops": 35,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Connect your data tools and manage them from one place. Explore your infrastructure, run operations, and work across services with AI that understands your stack.\n\nConnect tools through adapters, run service operations, and use DSUI Agent to work across your connected stack. Extend the platform with plugins and SDKs.\n\nDSUI does not try to replace the tools you already run. Airflow stays the best place for Airflow, and your warehouse keeps its own console. DSUI is the one workspace you keep open for the everyday operations across all of them:",
+            "features": [
+              "Check a failed DAG or a failing dbt run.",
+              "Inspect a table or run a query.",
+              "See whether a service is healthy.",
+              "Ask DSUI Agent to investigate across several services in one conversation.",
+              "id: warehouse",
+              "./dsui.yaml:/etc/dsui/dsui.yaml:ro",
+              "dsui-data:/data"
+            ],
+            "sections": [
+              "The AI-native control plane for your data stack.",
+              "One control plane across your stack",
+              "DSUI Agent",
+              "Get started",
+              "Docker deployment",
+              "Example: a DuckDB workspace",
+              "Adapters",
+              "Plugins and custom capabilities",
+              "Self-hosted deployment",
+              "Telemetry",
+              "DSUI Cloud",
+              "Community",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7200
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "huamidev/GestaltX",
+          "owner": "huamidev",
+          "name": "GestaltX",
+          "url": "https://github.com/huamidev/GestaltX",
+          "homepage": "",
+          "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
+          "language": "Swift",
+          "topics": [],
+          "stars": 6291,
+          "forks": 2434,
+          "open_issues": 53,
+          "starGain": null,
+          "heat": 2157.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 3,
+          "created_at": "2026-11-09T05:15:48Z",
+          "pushed_at": "2026-11-11T03:51:20Z",
+          "license": "GPL-3.0",
+          "rating": 4.5,
+          "composite": 86,
+          "breakdown": {
+            "heat": 100,
+            "community": 75,
+            "activity": 80,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A MobileGestalt editor for iPhone and iPad. Developed by huamidev.\n\nUsually, changing the region code is enough to try enabling AI; there is no need to change Sales Region. Selecting United States for Region Code sets RegionCode to LL and keeps the sales-region suffix. You can also choose China (Mainland), Hong Kong, Taiwan, Japan or the United Kingdom. Sales Region and Region Code can be applied together: the sales suffix follows Sales Region, while the code follows Region Code.\n\nIf you previously changed Sales Region, restore your device’s original sales region and apply it first.",
+            "features": [
+              "forcequitOS / Taj C — worse query",
+              "neonmodder123",
+              "skadz108",
+              "rooootdev — NeoSpring",
+              "Nouvborne — Ketamine",
+              "PoomSmart — MGKeys",
+              "leminlimez — Nugget",
+              "rooootdev — mond"
+            ],
+            "sections": [
+              "Features",
+              "Compatibility",
+              "Download",
+              "Import a plist",
+              "Language support",
+              "Credits",
+              "Disclaimer",
+              "License",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7615
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ],
+      "removedInReview": 4
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "kota-zo/Orpheon",
+          "owner": "kota-zo",
+          "name": "Orpheon",
+          "url": "https://github.com/kota-zo/Orpheon",
+          "homepage": "",
+          "description": "Native Android client for Spotify, built with Jetpack Compose",
+          "language": "Kotlin",
+          "topics": [
+            "ad-free",
+            "adblock",
+            "android",
+            "apple-music",
+            "jetpack-compose",
+            "kotlin",
+            "lyrics",
+            "music-player"
+          ],
+          "stars": 1921,
+          "forks": 107,
+          "open_issues": 156,
+          "starGain": null,
+          "heat": 304.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 29,
+          "created_at": "2026-10-14T13:01:34Z",
+          "pushed_at": "2026-11-12T00:52:24Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 81.6,
+          "breakdown": {
+            "heat": 98,
+            "community": 60,
+            "activity": 72,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Formerly Myspoti. The community chose the new name; version 1.0.0 is the first under it. The icon is a placeholder until the real one is made.\n\nComing from Myspoti? Update it to 2.4.1: it offers to install Orpheon, a new app next to it. Betas are on the releases page.\n\nA music player for Android, Android TV and Wear OS, with your Spotify account. Your own Spotify account, playlists and Wrapped, in a native Android app, with sound and offline downloads through extensions you install.",
+            "features": [
+              "Download the APK from the Orpheon 1.0.0-beta.1 release and open it (Android 10 or later). Android asks once to allow installs from your brow",
+              "Tap Log in with Spotify and sign in.",
+              "Pick the sound quality, allow what you want (notifications, Bluetooth, local files…), and you are in.",
+              "Orpheon- -ARMv8.apk : almost every phone from the last ten years (64-bit). When in doubt, take this one.",
+              "Orpheon- -ARMv7.apk : older or entry-level 32-bit phones (an app such as CPU-Z or Device Info shows which one yours is; if ARMv8 refuses to ",
+              "Orpheon- -universal.apk : both in one, larger.",
+              "Orpheon- -TV.apk : Android TV and Google TV (the same app; on a TV it opens its TV screens).",
+              "Stable ( app.orpheon ): leave \"Include prereleases\" off and set the APK filter to ^Orpheon-[0-9]. -ARMv8\\.apk$ (or -ARMv7 , -TV )."
+            ],
+            "sections": [
+              "Orpheon",
+              "Why Orpheon",
+              "⬇️ Offline downloads, through extensions",
+              "✨ And everything you expect from Spotify, and more",
+              "What is it?",
+              "Get started",
+              "What you get",
+              "New since 1.1",
+              "Screenshots",
+              "Questions",
+              "Not included",
+              "Disclaimer",
+              "Support",
+              "For developers"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 15914
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "ch6vip/novel-sound",
+          "owner": "ch6vip",
+          "name": "novel-sound",
+          "url": "https://github.com/ch6vip/novel-sound",
+          "homepage": "",
+          "description": "内容聚合 Android 客户端：小说/短剧/漫剧/听书/漫画，Flutter UI + 进程内 Rust 核心，无自建服务器、无需 root",
+          "language": "Dart",
+          "topics": [
+            "android",
+            "audiobook",
+            "dart",
+            "flutter",
+            "manga",
+            "novel",
+            "rust"
+          ],
+          "stars": 1399,
+          "forks": 211,
+          "open_issues": 60,
+          "starGain": null,
+          "heat": 133.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 89,
+          "ageDays": 71,
+          "created_at": "2026-09-01T18:58:43Z",
+          "pushed_at": "2026-11-12T01:28:31Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 76.9,
+          "breakdown": {
+            "heat": 89,
+            "community": 60,
+            "activity": 69,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "什锦铺是一款支持 安卓和 Windows 的开源阅读与影音应用。在线看故事，也能导入自己的电子书，把喜欢的作品和进度留在书架里。\n\n- 在线阅读小说，也能导入 TXT / EPUB 电子书。 - 字体、字号、翻页方式随心调，支持深色、纯黑和墨水屏模式。 - 支持系统朗读和真人有声书，可调倍速、定时停止、后台播放。\n\n- 安卓 ：大多数手机选择推荐安装包；旧款 32 位设备使用备用安装包。 - Windows ：下载 Windows 压缩包，完整解压后打开 fqapp.exe ，保留同目录的其他文件。更多用法见 Windows 说明。",
+            "features": [
+              "在线阅读小说，也能导入 TXT / EPUB 电子书。",
+              "字体、字号、翻页方式随心调，支持深色、纯黑和墨水屏模式。",
+              "支持系统朗读和真人有声书，可调倍速、定时停止、后台播放。",
+              "短剧、漫剧、漫画集中浏览，按作品名称或编号搜索。",
+              "自动保存阅读和播放进度，下次打开接着看。",
+              "收藏喜欢的作品，分组整理，导出备份后可在新设备恢复。",
+              "提前下载内容，没网时继续阅读或播放。",
+              "安卓 ：大多数手机选择推荐安装包；旧款 32 位设备使用备用安装包。"
+            ],
+            "sections": [
+              "主要功能",
+              "📖 看小说，听故事",
+              "🎬 追短剧，看漫画",
+              "📚 整理书架，离线慢慢看",
+              "下载与安装",
+              "开始使用",
+              "常见问题",
+              "参与与支持",
+              "🤝 QQ 交流群",
+              "❤️ 赞助",
+              "👥 贡献者",
+              "Star History",
+              "致谢与许可"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4314
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Ebony-Vinyl/EAC-Desktop",
+          "owner": "Ebony-Vinyl",
+          "name": "EAC-Desktop",
+          "url": "https://github.com/Ebony-Vinyl/EAC-Desktop",
+          "homepage": "",
+          "description": "Embracing All Creation (Desktop) — Dedicated to the Harmonious Coexistence of Hundreds of DSH Plugins / 揽尽万象（桌面版） —— 致力于让数百个DSH插件和谐共存",
+          "language": "JavaScript",
+          "topics": [
+            "ai-agent",
+            "deepseek",
+            "deepseek-harness",
+            "desktop",
+            "desktop-app",
+            "dsh",
+            "dsh-plugin",
+            "dsh-plugins"
+          ],
+          "stars": 3328,
+          "forks": 88,
+          "open_issues": 20,
+          "starGain": 75,
+          "heat": 75,
+          "heatBasis": "snapshot",
+          "heatPercentile": 83,
+          "ageDays": 89,
+          "created_at": "2026-08-14T16:29:54Z",
+          "pushed_at": "2026-11-10T06:12:09Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.3,
+          "breakdown": {
+            "heat": 83,
+            "community": 63,
+            "activity": 53,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Deepseek Harness EAC 是基于 DeepSeek Harness 的开源桌面工作台。它将对话、项目文件、工具执行与插件生态连接起来，配合原生窗口、独立运行环境和随包运行时，让你从安装直接进入工作。\n\nEAC · Embracing All Creation · 揽尽万象。 开放的是能力，清晰的是边界：桌面壳负责体验，服务层负责运行，Harness 内核负责 Agent，扩展包负责更多可能。\n\nEAC 启动器（独立的多实例 / 多内核管理器，可与桌面端并存安装）： EAC-Launcher v0.1.0 Windows x64 自带 Node 24.22.1 运行时，无需另装 Node。使用说明见 launcher/README.md 。",
+            "features": [
+              "桌面壳定位资源并启动 sidecar ，传入产品数据根与通道信息。",
+              "DPX 建立或复用环境 ，在读取用户配置与插件模块前应用运行时变量。",
+              "服务层准备 profile 与配套插件 ，启动 dsh 并等待服务就绪。",
+              "主窗口进入 Web UI ，由 Harness 承担会话与工具执行；桌面操作通过桥接层交给宿主。",
+              "桌面集成不承包业务。 原生能力留在 L1，业务服务放在 L2，扩展优先通过插件契约接入。",
+              "环境管理复用成熟实现。 DPX 负责注册表、环境身份与默认路径；EAC 通过适配层调用，避免重复维护两套规则。",
+              "分发以实际装配为准。 插件目录、同步清单与依赖工件共同组成发行包，资源缺失在装配阶段暴露。",
+              "界面资源有可核对的来源。 UI skin manager 与默认壳资源通过锁文件固定工件，并在装配时校验 SHA-256。"
+            ],
+            "sections": [
+              "目录",
+              "核心能力",
+              "快速开始",
+              "下载与启动",
+              "架构设计",
+              "从双击到执行",
+              "让复杂性留在明确的边界里",
+              "插件与外观",
+              "桌面配套能力",
+              "扩展分发",
+              "皮肤契约",
+              "数据与环境",
+              "开发指南",
+              "工程导航"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13792
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "fzn0x/mixmusic",
+          "owner": "fzn0x",
+          "name": "mixmusic",
+          "url": "https://github.com/fzn0x/mixmusic",
+          "homepage": "https://mixmusic.functionx.dev",
+          "description": "MixMusic is a native desktop player for YouTube Music and Spotify on macOS, Windows and Linux with Community Themes and Plugins. iOS and Android Coming Soon.",
+          "language": "Go",
+          "topics": [
+            "aac",
+            "chromecast",
+            "foss",
+            "golang",
+            "high-quality-audio",
+            "kiss-principle",
+            "linux",
+            "live-streaming"
+          ],
+          "stars": 409,
+          "forks": 36,
+          "open_issues": 11,
+          "starGain": null,
+          "heat": 70.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 82,
+          "ageDays": 24,
+          "created_at": "2026-10-18T21:02:40Z",
+          "pushed_at": "2026-11-12T00:29:28Z",
+          "license": "GPL-3.0",
+          "rating": 3.5,
+          "composite": 72.7,
+          "breakdown": {
+            "heat": 82,
+            "community": 47,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 15,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "If your music is split between YouTube Music and Spotify, you usually need two apps, with two searches, two queues and two libraries. MixMusic puts both services in one player:\n\n- One search. It looks through YouTube Music and Spotify at once, and marks each result with the service it comes from. - One queue and one library. A Spotify track can play right after a YouTube Music one, and a playlist can hold tracks from both. - No account needed. YouTube Music plays as soon as you open the app. Sign in only if you want your own library. Spotify is optional. - A small program. MixMusic is one Go program that draws its own windows on the GPU. There is no browser inside it to download or keep in memory. - Yours to change. Four layouts and fourteen themes come with it, the community adds more themes and plugins, and any command can have a key of your own. - Private. MixMusic has no account, server, analytics or telemetry of its own. - Free and open source, under the MIT license or the GPL 3.0.\n\n- One search for both services. Results from YouTube Music and Spotify side by side, each marked with its service. YouTube Music results show how many times each track was played, so the original stands out from covers. - One queue. Mix tracks of both services, shuffle and repeat across them, and let a radio carry on when the queue runs out. - Explore. New releases, trending songs, the charts, moods and genres, and related songs for what plays. - Synced lyrics that follow the song, or plain t",
+            "features": [
+              "One search. It looks through YouTube Music and Spotify at once, and",
+              "One queue and one library. A Spotify track can play right after a",
+              "No account needed. YouTube Music plays as soon as you open the app.",
+              "A small program. MixMusic is one Go program that draws its own",
+              "Yours to change. Four layouts and fourteen themes come with it, the",
+              "Private. MixMusic has no account, server, analytics or telemetry of",
+              "Free and open source, under the MIT license or the GPL 3.0.",
+              "One search for both services. Results from YouTube Music and Spotify"
+            ],
+            "sections": [
+              "Why MixMusic",
+              "Features",
+              "Search and play",
+              "Your library",
+              "Spotify, three ways",
+              "Sound",
+              "On your desktop",
+              "Make it yours",
+              "A look around",
+              "Install",
+              "The first launch",
+              "The Flatpak",
+              "Accounts (all optional)",
+              "Build from source"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 29371
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "timoncool/YuE2-Studio",
+          "owner": "timoncool",
+          "name": "YuE2-Studio",
+          "url": "https://github.com/timoncool/YuE2-Studio",
+          "homepage": "https://timoncool.github.io/YuE2-Studio/",
+          "description": "Local AI song generator with an editable score — YuE2 on your GPU: full songs with vocals, sheet music, covers, exact replay. Native Windows app, no Python, installer with auto-update.",
+          "language": "TypeScript",
+          "topics": [
+            "abc-notation",
+            "ai-music",
+            "covers",
+            "cuda",
+            "ggml",
+            "local-ai",
+            "music-generation",
+            "offline"
+          ],
+          "stars": 2087,
+          "forks": 243,
+          "open_issues": 36,
+          "starGain": 45,
+          "heat": 45,
+          "heatBasis": "snapshot",
+          "heatPercentile": 77,
+          "ageDays": 50,
+          "created_at": "2026-09-22T23:06:11Z",
+          "pushed_at": "2026-11-11T12:05:12Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 73.6,
+          "breakdown": {
+            "heat": 77,
+            "community": 62,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Full songs with an editable score, generated on your own GPU. One executable — no Python, no Node.js, no launcher.\n\nYuE2 Studio is a desktop studio for YuE2 , the open song model from M-A-P that writes a score before it sings. Describe a style, write the lyrics, and the model composes a melody with chords as sheet music, then performs it as a full song with vocals. The score comes back with the track: read it, edit it, and render the same composition again with a different sound. Windows installer with auto-update or a portable folder, runs offline on an NVIDIA card with 6 GB of VRAM or more; AMD and Intel cards through Vulkan are experimental.\n\nIt is built on yue2.cpp, the native C++/CUDA port of YuE2. The studio around it is Rust and React in a Tauri window — nothing in the runtime path is Python.",
+            "features": [
+              "Install the studio from the latest release and start it.",
+              "Connect to its MCP server at http://127.0.0.1:8791/mcp :",
+              "Read the skill it serves (resource studio://skill , prompt studio ), the same text as",
+              "A player of its own — a ten-band equalizer on Winamp's frequencies with its presets,",
+              "Save as, and a Files panel — songs, stems, MIDI, lyric sheets, scores and videos are",
+              "A proxy for the whole studio — HTTP, HTTPS, SOCKS5 or SOCKS4, with a login: model",
+              "Full songs from a style and lyrics — up to ten minutes, in the languages the model",
+              "Read and edit the score — the model writes its composition in ABC notation first; the"
+            ],
+            "sections": [
+              "YuE2 Studio",
+              "For AI agents",
+              "What you can do",
+              "Compose and edit MIDI",
+              "Screenshots",
+              "Samples",
+              "Community reviews",
+              "What it needs",
+              "Linux (experimental)",
+              "What runs where",
+              "Quick start",
+              "Drive it from an agent (MCP)",
+              "Models",
+              "Everything else the studio downloads"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 54295
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "JuneYaooo/rea-video",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "DIYgod/pinky",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/TokenEconomizer",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "paipiange/nvzhuang",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/dsh-superagent-prototype",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "Zagitta/gpu-unlock",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "monid-ai/monid",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "deepseek-ai/DeepInfer",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "tangency-labs/solidcraft",
+      "category": "frontend",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "anomalyco/rune",
+      "category": "frontend",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "heydamir/unslop",
+      "category": "frontend",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "AienTech/dossier",
+      "category": "frontend",
+      "lastPushed": "2026-10-28",
+      "times": 1
+    },
+    {
+      "full_name": "oxc-project/tsrs",
+      "category": "frontend",
+      "lastPushed": "2026-10-24",
+      "times": 1
+    },
+    {
+      "full_name": "zephium-browser/Zephium",
+      "category": "frontend",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

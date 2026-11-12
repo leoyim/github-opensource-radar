@@ -1,0 +1,106 @@
+{
+  "Lee-xeo/Claude-Cage": {
+    "summary_zh": "为 Claude 与 Claude Code 提供虚拟机级隔离工作台的 Go 桌面程序：Cage 接管客机全部网络流量并管理代理节点与出口检查，同时隔离时区、语言等环境指纹；终端、浏览器、编辑器与官方 Claude Desktop 汇集在同一窗口，主机登录凭据与 SSH 密钥不自动导入，项目文件夹按需共享。可选 macOS / Windows / Linux 客机，支持连接自有服务器与手机接续任务。",
+    "highlight_zh": "它把散落在 VPS、指纹浏览器和代理配置里的隔离工作，收进了一个桌面工作台。"
+  },
+  "wheresryan22/anatomy": {
+    "summary_zh": "一份给 Claude / Codex 用的 agent skill：把抽象技术概念翻译成一台等距视角的机械装置，再用数十个带阴影的实心部件拼出可交互 SVG，配标题、提示与实时读数，可选 WebGL shader 与 3D 效果。缓存键会变成弹子锁，单 GPU 上下文会变成龙门绘图仪；图上每个数字都来自驱动部件运动的同一个小模型，生成后还会放大逐关节自查。",
+    "highlight_zh": "它要求模型先造一台能运转的机器，再让这台机器解释概念。"
+  },
+  "RuoJi6/ARTEX": {
+    "summary_zh": "AI 自主渗透测试系统的社区维护分支，Go 后端 + Next.js 前端，保留原仓库提交历史与 AGPL-3.0 许可。除仪表盘、任务会话、探索链路、资产覆盖图、流量录制与人在环路对话外，本期补全了全局审批记录、任务内拦截审批与对话审批卡片的详情展开，并支持从 ScopeSentry 按项目或任务同步域名、IP、端口、站点等资产直接进资产图。发版走本仓库 Releases 与自建 Docker 镜像。",
+    "highlight_zh": "维护权交接之外，它把「资产范围」与「人工卡点」做成了可展开审阅的界面。"
+  },
+  "t8y2/motty": {
+    "summary_zh": "Go 编写的原生桌面 SSH 客户端，基于 Viva 框架、不内嵌 WebView。终端、SFTP 文件面板、端口转发、VNC/RDP 远程桌面与 AI 助手共用一个窗口，助手读取的就是当前终端上下文。支持从 OpenSSH config、PuTTY、MobaXterm 等导入主机，密码进 AES-256-GCM 保险库、密钥进系统密钥库，转发规则仅绑定回环并随所属标签停止；命令面板让键盘操作覆盖绝大多数动作。",
+    "highlight_zh": "SSH 会话周边那些「再开一个 app」的动作，被收进了同一个原生窗口。"
+  },
+  "JosssphZhou/poki": {
+    "summary_zh": "让 AI agent 操作真实 iPhone 的本地 MCP 方案：免越狱、免额外硬件，Mac 侧跑本地 MCP server，iPhone 侧装 Swift 应用并开启开发者模式与自动化模式。安装由 install-iphone skill 引导 agent 自动完成，人只需在 Mac 输入 Apple Account、在手机上点信任与开开关；再通过兼容的 VPN / 代理 app 把 10.7.0.1 回环回手机。要求 macOS 14+、Node.js 24+、iOS 18+ 与 USB 数据线。",
+    "highlight_zh": "把「agent 操作真机」从云设备农场拉回到一根 USB 线上。"
+  },
+  "MillionSend/millionsend": {
+    "summary_zh": "可自托管的开源邮件发送平台，兼容 Resend API——迁移只需改两个环境变量，而不必重写集成。自托管时用自己的 AWS SES；托管版另有基于 TypeSafe 模型的滥用判定，新团队首批邮件与发往新地址的邮件在 SES 接收前评分（约半秒），其余发后抽样，自托管默认关闭且发送链路不等待判定。TypeScript / Hono.js，空目录一条命令即可启动。",
+    "highlight_zh": "卖点是迁移成本：换两个环境变量就能把发送链路搬回自己的 AWS 账号。"
+  },
+  "Aarav2709/Morrow": {
+    "summary_zh": "本地优先的离线笔记工作台，每一页都是你选定文件夹里的一枚普通 Markdown 文件：无账号、无订阅、无云、无遥测，也不自带 AI。目录树、数据库、画布、关系图、加密、Wiki 链接、callouts、属性与公式都在本地运行，文件可用任意编辑器打开，也能交给 Syncthing、iCloud、Dropbox 或 git 同步，外部改动会即时反映。程序只重写你在 Morrow 里改过的那个文件。",
+    "highlight_zh": "不是「又做一个 Notion」，而是让一个 Markdown 文件夹长出 Notion 的界面。"
+  },
+  "oxomkbk/Furnish": {
+    "summary_zh": "单文件、零依赖、离线可用的户型装修设计工具：双击 index.html 就能用。左侧家具库拖入 2D 平面图，可多选、旋转、改尺寸、对齐吸附与碰撞检查，按 T 键切到 three.js 3D 场景看鸟瞰或漫游；内置 12 套户型、多方案另存、自定义家具库、三语与暗色模式，右侧给出家具家电与墙地面的参考报价并可导出 CSV，还能把整套布置压进一条分享链接。",
+    "highlight_zh": "门槛低到「双击即开」，代价是所有方案都只活在当前浏览器里。"
+  },
+  "jeokeo011222/quantbot": {
+    "summary_zh": "面向 A 股的量化交易桌面工作流，覆盖研究、策略、回测、风控、组合、交易到复盘：Go 后端经 Wails 与 React 18 + TypeScript + Vite 前端通信，本地用 DuckDB。五个 agent 组成「AI 投资团队」，CIO 层做多空辩论并用 Kelly 缩放仓位，但生效仓位取 min(规则, 主张, 异议, Kelly)，规则风控门只允许 AI 让仓位更保守；LLM 未配置、失败或超时会硬回退到规则决策，辩论方向与共识度写入可查的决策证据链。",
+    "highlight_zh": "工程看点是把 AI 的主张关进规则风控门并留下证据链；许可与分发形态要先看清。"
+  },
+  "vladocar/Sumi.css": {
+    "summary_zh": "极简的 classless-first CSS 框架：一个 6.7 KB（gzip）文件，无构建、无 JavaScript、无依赖。写语义化 HTML 就已经有完整样式，标题、表单、表格、卡片、手风琴、模态与导航都从元素本身获得外观；元素选择器零特异性，自己的 CSS 不必靠 !important 覆盖。明暗跟随系统且可用 data-theme 指定，颜色、字体、尺寸、圆角全部是 CSS 自定义属性，并带可见焦点环、ARIA 状态与减少动效支持。",
+    "highlight_zh": "它赢在不替你做决定：先写 HTML，需要什么才加一个 class。"
+  },
+  "snowops-oss/snowopslabs": {
+    "summary_zh": "给平台工程师的「飞行模拟器」：一条命令在本机搭出生产形态的 Kubernetes 集群，装的是真的 Prometheus、Grafana、Loki、Tempo、Argo CD、Istio、Kafka 与 Vault，不是 mock；随后故意把集群弄坏，并对照活集群的实际状态给修复打分。练习包括「所有 pod 都 Ready 但三分之一请求失败」、负载下排空节点不破 SLO、以及用证据而不是偏好去选服务网格。支持 macOS、Linux、WSL2 与浏览器里的 Codespaces。",
+    "highlight_zh": "把生产里不许练的故障排查，变成一张可重复做、按真实集群状态判分的本地考卷。"
+  },
+  "denialwm/denial": {
+    "summary_zh": "可点击配置的 Wayland 合成器，提供堆叠、平铺与滚动平铺三种布局、工作区与触控板手势、平滑动画、可调模糊与玻璃效果、明暗主题与壁纸取色。设置面板覆盖布局、显示、输入、快捷键与外观，并支持 shell 实时编辑与热重载；多显示器、截图、屏幕共享与经 Xwayland 的可选 X11 支持也在列，README 明确欢迎 Hyprland 与 niri 用户。",
+    "highlight_zh": "它把「合成器得手写配置文件」这条默认，改成了一个能用鼠标点开的设置面板。"
+  },
+  "apimartymtjlijx/minimax-m3-api-fr": {
+    "summary_zh": "一份围绕第三方模型网关服务的接入与定价文档：同一个 OpenAI 兼容 base URL 与 Authorization 头可达 300 多个图像、视频与语言模型，按秒计费、响应内返回本次扣费、失败任务退款，异步任务走「提交 → 拿 task id → 轮询」。仓库以 Markdown 说明、价格表与请求示例为主，并设有归因链接与披露章节；不含可独立运行的网关实现。",
+    "highlight_zh": "当作结构化价目表与接入示例是合适的，当作可自托管的开源组件则不成立。"
+  },
+  "uptimy/agent": {
+    "summary_zh": "单二进制的自托管可用性监控，把探测器放进内网，覆盖外部监控看不到的私有服务：HTTP、Postgres、MySQL、Redis、TCP、ping、DNS、TLS 到期与 Kubernetes 工作负载。cron 任务与备份可作为心跳监控，漏跑、失败与耗时都能告警；支持邮件、Slack、Teams、Discord、Telegram、ntfy、PagerDuty 等 30 多种渠道并在渠道故障时重试至一小时，配置用 YAML 写成「监控即代码」，可挂自有域名状态页。",
+    "highlight_zh": "差异点不在又一个状态页，而在把内网数据库和 cron 漏跑当作一等公民。"
+  },
+  "wangwanjie/gately": {
+    "summary_zh": "面向家庭实验室、NAS 与自建服务器的开源网络边缘网关，把 DDNS、STUN 穿透、带 SNI 路由的端口转发、反向代理与 Web 服务、ACME 证书、WAF 与入侵防御、SSO、文件分享、Tailscale / frp / Cloudflare Tunnel、Docker 管理与 Web 终端收进一个浏览器控制台。支持 fnOS 统一网关集成与会话登录，Apache-2.0，配置与数据留在本机且不上报。",
+    "highlight_zh": "把 NAS 上装十个工具变成配十项能力；便利与风险同源，因为那个进程同时拿着 root 与 docker.sock。"
+  },
+  "EmbrasureAI/flow": {
+    "summary_zh": "Rust 写的 PostgreSQL → Apache Iceberg 流式 CDC 服务：先用 COPY 搬存量行，再通过逻辑复制持续同步 insert / update / delete 到标准 Iceberg 表，之后可用任意兼容的 Iceberg 读取器、自己的 catalog 与对象存储直接查询。支持主键变更、无主键表追加写入、Iceberg v2 位置删除与 v3 删除向量，并用事务日志、持久行索引与 publication ledger 支持重放、重连与中断续传；后台 compaction 与摄取跑在同一进程。",
+    "highlight_zh": "用一个 Rust 进程把「全量 + 增量 + 合并」收在一起，API 面小得不像一套数据管道。"
+  },
+  "tobilg/duckdb-differential": {
+    "summary_zh": "给 DuckDB 2.0 加版本控制的实验性 C++ 扩展：快照、时间旅行、分支、克隆、恢复与 S3 导出，SQL 写法沿用 DuckLake 约定。原生 catalog、SQL、事务、索引与压缩都不变，底层换成在不同版本间共享未变数据的差分文件系统；ATTACH 一个 differential: 库后即可 create_snapshot、按 SNAPSHOT NAME 或 AT (VERSION = 1) 读回旧值，还附一份给编码 agent 用的配置 skill。",
+    "highlight_zh": "把 git 式分支与快照塞进 DuckDB 的 ATTACH 里，思路干净，但实验性定位要记牢。"
+  },
+  "Quantrail-Data/CH-Ops": {
+    "summary_zh": "面向自托管 ClickHouse 的浏览器运维界面：实时查询可按内存、耗时或读取行数排序并直接终止，历史查询能查到谁在何时跑了什么；merges、mutations、parts、复制延迟与分布式 DDL 队列集中展示。带自动补全、多标签、成本估算与 EXPLAIN 的 SQL 编辑器支持保存带参数默认值的查询，结果可导出 22 种格式；覆盖裸机、虚拟机、Docker、K8s operator、云实例与托管服务。",
+    "highlight_zh": "重点不是又一个查询界面，而是把「找到并停掉那条跑飞的查询」做成一次点击。"
+  },
+  "Chrisinho8/DACH-data-job-market": {
+    "summary_zh": "德语区（德 / 奥 / 瑞）AI 与数据岗位市场的每日快照：每天 08:00（UTC+2）由 Databricks 管道查询 Adzuna API 的 18 类职位，经 bronze / silver / gold Delta Lake 去重分类，再用 71 词技能词典扫描，发布为静态 GitHub Pages。当前覆盖 3,000 多条在招岗位与 1,200 多家雇主，每张图表都能下钻到原始岗位；数据每日追加、不覆盖，因此每个数字都带时间序列。",
+    "highlight_zh": "最值得读的是 README 里的 Scope 与 Limitations——岗位统计最容易错的正是「什么算一个岗位」。"
+  },
+  "northgraindata/dsui": {
+    "summary_zh": "数据栈的「AI 原生控制平面」：通过适配器把 Airflow、dbt、ClickHouse、DuckDB 等已有工具接进一个工作区，用于查失败 DAG、跑查询、看服务健康，并让 DSUI Agent 在一次会话里跨多个服务排查。支持插件与 SDK 扩展、Docker 部署与 dsui.yaml 配置；README 明确不替代任何现有工具——Airflow 的事仍归 Airflow，仓库只承担跨服务的日常操作层。",
+    "highlight_zh": "克制之处在于声明「不替代任何工具」；能不能用起来取决于适配器与凭证治理，而不是 Agent。"
+  },
+  "huamidev/GestaltX": {
+    "summary_zh": "面向 iPhone / iPad 的 MobileGestalt 编辑器，用 Swift / SwiftUI 读写系统私有配置字段。功能按显示、设备、iPad、智能能力与高级标志分组：灵动岛与常亮显示、机型名称与充电上限、Action Button、Apple Pencil 与台前调度、区域码与设备能力标志等都能在界面里调整；另有字段编辑器支持增删改查 CacheExtra 的多种数据类型、本地 plist 导入导出、自动备份恢复与 7 语言界面。",
+    "highlight_zh": "本期传播最快的项目，本质是一套对私有配置键的可视化读写器——备份比功能清单更重要。"
+  },
+  "kota-zo/Orpheon": {
+    "summary_zh": "Android、Android TV 与 Wear OS 上的 Spotify 原生客户端，用 Kotlin + Jetpack Compose 写成，前身是 Myspoti。使用自己的 Spotify 账号、歌单与 Wrapped，界面提供沉浸与经典两种形态；声音与离线下载不写死在主程序里，而是由使用者另行安装的扩展提供。提供 ARMv8 / ARMv7 两种 APK，从旧版 2.4.1 可直接引导安装新应用。",
+    "highlight_zh": "应用只管体验，音源与下载交给扩展——这也把合规边界一并交给了使用者。"
+  },
+  "ch6vip/novel-sound": {
+    "summary_zh": "跨平台内容聚合阅读与影音客户端：小说、短剧、漫剧、听书与漫画集中浏览，也支持导入自己的 TXT / EPUB。Flutter 做界面、Rust 核心跑在进程内，既不依赖作者自建服务器，也不需要 root；字体、翻页、深色 / 纯黑 / 墨水屏模式、系统朗读与真人有声书、进度自动保存、书架分组备份与离线预下载都在列。提供 Android 7.0+ 与 Windows 10/11 安装包。",
+    "highlight_zh": "客户端自给自足是它的技术特点，也意味着可用性完全受制于上游内容源。"
+  },
+  "Ebony-Vinyl/EAC-Desktop": {
+    "summary_zh": "基于 DeepSeek Harness 的开源桌面工作台，把对话、项目文件、工具执行与庞大的 DSH 插件生态接到一起：随包准备 Node.js、npm 与 dsh 运行资源，打开即是本地 Web UI；支持在工作目录发起任务并查看 / 还原文件变更、长任务的上下文压缩与有界溢出恢复、插件目录与启停、保护中心的快照 / 体检 / 回滚。另有可并存的 EAC-Launcher 管理多实例与多内核。",
+    "highlight_zh": "它回答的是「几百个插件怎么在一台桌面上互不打架」，主线是环境身份、装配锁文件与回滚。"
+  },
+  "fzn0x/mixmusic": {
+    "summary_zh": "把 YouTube Music 与 Spotify 合进一个原生桌面播放器：一次搜索同时查两个服务并标注来源，一个队列与一个资料库可混排两家曲目；不登录也能播 YouTube Music，Spotify 可选登录。程序是单个 Go 可执行文件、直接在 GPU 上绘制窗口，不内嵌浏览器、无账号与遥测；内置四种布局与十四套主题，社区可加主题与插件，任意命令都能绑快捷键。",
+    "highlight_zh": "一个 Go 程序自己画窗口是最硬的技术选择；真正难的是账号与内容来源这两件客户端之外的事。"
+  },
+  "timoncool/YuE2-Studio": {
+    "summary_zh": "本地整曲生成工作台：YuE2 模型先写出带和弦的乐谱再演唱，输入风格描述与歌词即可得到带人声的完整歌曲，乐谱随音轨一起返回，可读、可改、可换音色重渲染。单个可执行文件，无 Python / Node / 启动器；Windows 安装包带自动更新，NVIDIA 6 GB 显存以上可离线运行，AMD / Intel 经 Vulkan 为实验性。内置十段均衡器、分轨与 MIDI 导出，并提供本地 MCP server 供 agent 驱动整条流程。",
+    "highlight_zh": "把生成式音乐从「出一段音频」推进到「出一份可编辑的谱」。"
+  }
+}
