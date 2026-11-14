@@ -1,0 +1,118 @@
+{
+  "QwenLM/qwen-code": {
+    "summary_zh": "开源终端编码 agent，自动记忆、自动技能、子 agent 与 MCP 开箱即用；可运行时切换 OpenAI/Anthropic/Gemini/Qwen 及 Ollama/vLLM 本地模型，另有 IDE 插件、桌面端、Web UI、TS/Python/Java SDK、qwen -p 无头模式与 qwen serve 守护进程（HTTP+SSE/ACP），框架与模型双开源。",
+    "highlight_zh": "把 agent 从某个厂商的界面，变成一个可换模型、可进 CI 的工程组件。"
+  },
+  "NVIDIA/SkillSpector": {
+    "summary_zh": "面向 agent 技能的安装前安全扫描器，覆盖 17 类 71 种漏洞模式（提示注入、数据外泄、权限提升、供应链、过度代理等），支持 Git 仓库/URL/zip/目录/单文件输入，提供 Docker 方式、Pi 与 OpenCode 扩展，并对分析资源设失败即关闭的上限。README 引述抽样数据：31,132 个技能中 26.1% 含漏洞、5.2% 疑似恶意。",
+    "highlight_zh": "技能市场扩张的同时，终于有人把「装之前先扫一遍」做成了门禁。"
+  },
+  "anthropics/claude-plugins-official": {
+    "summary_zh": "Anthropic 官方插件目录，记录第三方插件投稿统一迁移到 claude.ai/directory/manage 的过渡规则：/plugins 放自研插件、/external_plugins 放迁移前第三方与渠道插件，插件名不可变、改名需登记 renames 映射，UI 名称用 displayName，并说明 skill-bundle 结构、仓库检查覆盖范围与许可。",
+    "highlight_zh": "对仍依赖旧 marketplace.json 的插件作者，这是一条需要尽快跟进的迁移通知。"
+  },
+  "Gentleman-Programming/gentle-ai": {
+    "summary_zh": "不替换现有 agent，而是给 Claude Code、Cursor、OpenCode、Codex、Pi 等 17 种 agent 补一层配置：Engram 持久记忆、ODD 小步开发、测试先行、RDD 有界复核、确定性流程，以及可选技能、MCP、人格设定与面向 Pi 的 Gentle Shell；Go 编写、MIT、强调无 agent 锁定。",
+    "highlight_zh": "把「agent 该按什么流程做事」从提示词技巧，变成可安装、可版本化的配置层。"
+  },
+  "headroomlabs-ai/headroom": {
+    "summary_zh": "在工具输出、日志、RAG 片段与文件进 LLM 之前先压缩，支持内联库、零改代码代理、agent wrap、MCP server 四种形态；README 给出四类 agent 场景输入 token 减少 21–57%、重复 JSON/日志超 90%、散文几乎无收益、输出 token 减少 31.7%（95% CI）的实测，压缩在本机完成且原文可按需取回。",
+    "highlight_zh": "难得把收益区间和「散文场景没用」一起写清楚，压缩是可回退的，不是黑盒。"
+  },
+  "daijro/camoufox": {
+    "summary_zh": "基于定制 Firefox 的开源反检测浏览器，面向网页采集与 AI agent：指纹伪装做在浏览器本体而非页面注入，launcher 从 fpgen 抽取设备身份经 CAMOU_CONFIG 注入，NewContext() 可为单个上下文设置独立身份，Playwright 通过自带的 Juggler 驱动；项目自述仍在开发中，不宜用于稳定生产。",
+    "highlight_zh": "伪装放进浏览器而不是页面脚本，身份自洽且能被 Playwright 直接驱动。"
+  },
+  "YunaiV/ruoyi-vue-pro": {
+    "summary_zh": "国产中后台全家桶：Spring Boot 多模块 + MyBatis Plus + Redis/Redisson，含 RBAC/数据权限、SaaS 多租户、Flowable 工作流、支付短信、商城/ERP/MES/IM 与 AI 模块，代码生成器一键产出前后端与 SQL；前端有 Vue3/Vue2 三套后台与 uni-app 移动端，数据库兼容多种国产库，分支按 JDK 8/17/25 分线维护。",
+    "highlight_zh": "2,120 天、三条 JDK 分支并行维护，看点是长期取舍而不是单日热度。"
+  },
+  "tabler/tabler-icons": {
+    "summary_zh": "6,287 枚 MIT 许可 SVG 图标，统一 24×24 网格、2px 描边，含 5,233 枚描边版与 1,054 枚填充版；按 React、Vue、Svelte、Webfont、SVG sprite 等分别发布官方 npm 包并共享版本号，社区另有 Angular 与 Jetpack Compose 适配。",
+    "highlight_zh": "风格统一、许可干净、多框架官方包齐全，是低风险的默认图标选择。"
+  },
+  "quickjs-ng/quickjs": {
+    "summary_zh": "Fabrice Bellard 与 Charlie Gordon 的原版 QuickJS 停更后由社区接手的分支，继续跟进最新 ECMAScript 规范；C 实现、MIT 许可、小型可嵌入 JS 引擎，README 极简，入门与 API 文档在项目网站，由 bnoordhuis、saghul 等维护。",
+    "highlight_zh": "位置关键但定位极窄：接手了一个被大量下游依赖的停更引擎。"
+  },
+  "ovenpasta/adi2": {
+    "summary_zh": "给 Ada 补现代 GUI 工具箱：基于 SDL3，支持 CSS 选择器/伪类/过渡/渐变（.css 保存即热重载）、XML 布局编译成带类型的 Ada 包、HTML 视图与 SVG/Lottie、Gettext 兼容国际化、HiDPI 单位、焦点与剪贴板，并把 CSS/字体/图片/翻译/SVG sprite 打进单个可执行文件。",
+    "highlight_zh": "61 星却交出本期前端方向最完整的能力清单，XML 与 Ada 两条路径收敛到同一 API。"
+  },
+  "louislam/uptime-kuma": {
+    "summary_zh": "一条 Docker 命令可跑的自托管监控：支持 HTTP(s)/TCP/关键字/JSON Query/WebSocket/Ping/DNS/Push/Steam/Docker 容器等探测，20 秒间隔、90+ 通知渠道、多状态页可映射自有域名，另有证书信息、代理支持与 2FA；Node.js + Socket.IO 单页应用，提供 Docker/PM2 多种部署。",
+    "highlight_zh": "「先有监控」这一步的稳妥默认项，但单机自身也是需要备份的单点。"
+  },
+  "apache/zookeeper": {
+    "summary_zh": "6,441 天、约 17.6 年的 Apache 分布式协调服务，提供配置管理、命名、成员发现与选主等原语，由 ZAB 共识保证；仓库按 zookeeper-server、zookeeper-jute 等模块用 Maven 构建，3.5.5 起发布到 Maven 中央仓库，README 为纯导航，正文全在官网与 Wiki。",
+    "highlight_zh": "本期年龄最大的项目，它的作用是坐标：新组件仍建立在经典协调假设之上。"
+  },
+  "rustfs/rustfs": {
+    "summary_zh": "Rust 实现的 S3 兼容分布式对象存储，兼容进度以清单跟踪，支持与 MinIO/Ceph 迁移共存，另原生支持 OpenStack Swift API 与 Keystone 认证；面向数据湖、AI 与大数据高吞吐优化，Apache 2.0 许可（README 明确以此避开 AGPL 限制），提供一键安装、Docker/Podman 与源码构建。",
+    "highlight_zh": "Rust + Apache 2.0 + S3 兼容，把竞争定位从功能转向了性能与许可。"
+  },
+  "crowdsecurity/crowdsec": {
+    "summary_zh": "开源 IDS/IPS、WAF 与 bot 检测引擎，覆盖 Linux/Windows/Docker/Kubernetes，读取本机日志与流量并聚合参与者上报的信号形成实时社区恶意 IP 名单；Hub 提供场景与处置组件，Console 提供可视化与额外名单，检测与数据留在自托管一侧。",
+    "highlight_zh": "把「本地检测 + 群体情报 + 可插拔处置」组合完整，但别一上来就自动封禁。"
+  },
+  "kubescape/kubescape": {
+    "summary_zh": "CNCF 孵化的 Kubernetes 安全平台，可扫描当前集群、YAML 文件/目录与容器镜像，提供风险分析、态势管理、合规与错误配置检查，规则映射 NSA、MITRE ATT&CK 等框架；覆盖 IDE、CI/CD 与集群内（In-Cluster Operator），一行脚本即可安装。",
+    "highlight_zh": "开发、流水线、运行时三个切面用同一套规则与口径，结果才可比。"
+  },
+  "datasifaw/airflow-weather-pipeline": {
+    "summary_zh": "法语书写的完整数据工程教学项目：Airflow 2.9.1 调度 DAG 从 OpenWeatherMap 拉天气数据，经 psycopg2/requests 写入 PostgreSQL 13，pgAdmin 管库、Metabase 出按城市平均温湿度看板，Docker Compose 一键拉起，端口、目录结构与数据结构单列成章。",
+    "highlight_zh": "不是新工具，而是把调度、入库、管理、看板四环节写成能照着跑的闭环。"
+  },
+  "MrXujiang/opne-aureka": {
+    "summary_zh": "本地表格问答分析工具：上传 Excel/CSV 后以自然语言提问，Agent 自动完成意图识别 → SQL 生成 → DuckDB 查询 → 分析 → ECharts 图表推荐，SSE 流式输出 SQL/表格/图表/结论，一键沉淀报告并可回溯会话；数据存在本地 SQLite + DuckDB，TypeScript 前后端分离。",
+    "highlight_zh": "让不会写 SQL 的人也能问表，但生成的 SQL 必须人工核对再信结论。"
+  },
+  "xxddpac/netra": {
+    "summary_zh": "旁路网络观测平台：单二进制内嵌 SQLite 与 DuckDB，XDP 原生抓包与内核态聚合，不依赖 Redis/ClickHouse/Elasticsearch；只从 SPAN/mirror 口读流量副本、不进转发路径，可用自然语言查询观测数据并通过 MCP 接 CMDB、威胁情报与 SOC；Go 编写，需 root 等价能力。",
+    "highlight_zh": "本期技术密度最高的一项——用嵌入式分析引擎换掉整套外部数据栈。"
+  },
+  "northgraindata/dbt-doctor": {
+    "summary_zh": "dbt 项目静态体检 CLI（TypeScript）：检查缺失文档、缺失测试、弱覆盖率、schema 漂移、陈旧模型、源新鲜度、命名规范与超大 DAG 区域，共 122 条规则并输出评分；支持 diff/staged 模式、PR 阻断与退出码、配置化静默与 SQL/YAML 内联屏蔽、GitHub Actions 及面向编码 agent 的安装。",
+    "highlight_zh": "把「数据项目也会腐化」做成可卡在 CI 里的规则，还能在存量项目里渐进启用。"
+  },
+  "Nonanti/narwhal": {
+    "summary_zh": "Rust 终端数据库工作台，单静态二进制支持 postgres/mysql/sqlite/duckdb/clickhouse/mssql 六种引擎，含方言感知 schema diff 与 DDL、追加式审计日志、可取消流式查询、ER 图、SSH 隧道与密钥保险库，vim 等三种编辑模式、Lua+WASM 沙箱插件，并内置 MCP server 把连接与查询暴露给编辑器里的 agent。",
+    "highlight_zh": "DBA 工具链与 agent 接口收进同一个进程，不必再架一层代理。"
+  },
+  "rtk-ai/rtk": {
+    "summary_zh": "面向编码 agent 的成本削减层：单个 Rust 二进制作为 CLI 代理，过滤常见开发命令输出以省 60–90% token；过滤器失败回退原始输出并透传退出码，被截断内容标明完整版位置且可 rtk bypass，rtk gain 统一记账；另有可选 proxy 清理 API 重发流量、大文件交低价模型与 terse 输出模式。",
+    "highlight_zh": "失败回退、退出码透传、可 bypass 三条约束，比单纯「压缩上下文」更可验证。"
+  },
+  "tasks/tasks": {
+    "summary_zh": "Astrid 于 2013 年被收购关停后，社区以其开源 Android 应用代码为基础延续的待办应用；提供 Google Play 与 F-Droid 双渠道、桌面 alpha、Pebble/Rebble 表盘，Kotlin / Compose Multiplatform 指向跨端复用，README 给出 SHA-256/SHA-1/Team ID 与公钥供发布包签名校验。",
+    "highlight_zh": "把签名校验、双渠道分发与文档持续维护了十余年，价值在软件延续性。"
+  },
+  "zellij-org/zellij": {
+    "summary_zh": "Rust 终端工作区/复用器，强调「不为强大牺牲简单」：默认配置即可完成分屏与会话管理，另有自定义配置、Layouts 布局、路线图、FAQ 与屏播教程；源码可用 cargo xtask run / test 构建与测试，MIT 许可。",
+    "highlight_zh": "装好就能用，想深挖也有得挖——在 tmux 与简易终端之间找了个中间形态。"
+  },
+  "cli/cli": {
+    "summary_zh": "GitHub 官方命令行工具 gh，把 pull request、issue、release 等概念搬到终端与本地 git 并排工作；覆盖 GitHub.com、Enterprise Cloud 与受支持的企业版，支持 macOS/Windows/Linux 及 Homebrew、预编译包、WinGet 等安装方式，可进 Codespaces/GitHub Actions，并新增可随版本更新的 Agent skills。",
+    "highlight_zh": "连官方 CLI 也开始把自己变成 agent 可调用的能力源。"
+  },
+  "RoutineMiku/apkstart": {
+    "summary_zh": "Windows 上的安卓应用运行器：双击 .apk 即解析安装并生成真实图标的桌面快捷方式，每个应用一个独立窗口（改标题、竖屏比例、可缩放并记忆尺寸），按 LAUNCHER 入口启动并有 18 秒存活观察与闪退重试；共享目录双向同步，壳层零第三方依赖，提供约 1.3GB 单文件安装版与约 100MB 便携版。",
+    "highlight_zh": "把模拟器整个藏起来，只留下「双击 APK → 一个窗口」的体验。"
+  },
+  "tidain/YunX-Desktop": {
+    "summary_zh": "Kotlin 编写的 Windows 桌面下载客户端，覆盖多种网盘分享、视频平台与磁力/BT/ed2k，Range 分片并发 + 断点续传、B 站高清自动合轨；附 Manifest V3 浏览器扩展可嗅探页面资源、接管与归还浏览器下载（含冷却），多账号凭据加密存本机并可导出加密备份，另有便携版与安装版。",
+    "highlight_zh": "本期 +457 为移动端最高日增，需求真实，但使用前先确认内容访问与保存权限。"
+  },
+  "OpenSelena/libreget": {
+    "summary_zh": "Tauri 2.0 + Rust + Svelte 的跨平台下载与媒体工具箱，覆盖 1,800+ 站点，含 25 类 158 个工具（转换、字幕、转录、PDF、压缩等）、便携模式、Linux 媒体插件与浏览器扩展配对；内置 MCP server 与 Claude Code 插件，可让 agent 调用下载与工具能力，整体 local-first。",
+    "highlight_zh": "同时面向人和 agent 两类消费者，桌面工具的新接口形态。"
+  },
+  "Renly1994/xiaotang-daozai": {
+    "summary_zh": "Rust + egui 的 Windows 桌面信息岛：收在屏幕边缘、鼠标靠近展开，可选刘海/胶囊与三边停靠；微信/QQ 未读按多开账号分别提示且依据任务栏闪动、不读聊天正文，通知正文默认隐藏并遮罩验证码，另有歌词、验证码、日程待办、AI 额度、天气等模块，支持多屏避让与 80%–140% 缩放，不依赖 Electron。",
+    "highlight_zh": "11 天 +282，且在隐私上把「不读正文、默认隐藏」写成了设计约束。"
+  },
+  "tw93/Pake": {
+    "summary_zh": "一条命令把任意网页打包成 macOS/Windows/Linux 桌面应用，安装包通常小于 10MB；基于 Rust Tauri 与系统 WebView、不捆绑 Chromium，支持快捷键、沉浸式窗口、拖拽、样式自定义与广告移除并自动抓图标；提供 CLI、在线构建、桌面应用与现成 Popular Packages。",
+    "highlight_zh": "用系统 WebView 换掉捆绑浏览器引擎，体积与维护成本降一个量级。"
+  }
+}

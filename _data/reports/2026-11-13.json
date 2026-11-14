@@ -1,0 +1,1968 @@
+{
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-13T09:37:27.898+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-12",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 778,
+    "unclassified": 63,
+    "selected": 22,
+    "suppressedByHistory": 237,
+    "sameDateExempt": 0,
+    "removed": 4,
+    "removedTotal": 4,
+    "offTopic": 4,
+    "watchlisted": 0,
+    "regenerated": true,
+    "reviewedAt": "2026-11-13T09:54:13.389+08:00"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "rehan-remade/universal-modder",
+          "owner": "rehan-remade",
+          "name": "universal-modder",
+          "url": "https://github.com/rehan-remade/universal-modder",
+          "homepage": "",
+          "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
+          "language": "Python",
+          "topics": [
+            "age-of-empires",
+            "claude-code",
+            "claude-code-plugin",
+            "fal",
+            "game-assets",
+            "game-modding",
+            "mcp",
+            "modding"
+          ],
+          "stars": 9650,
+          "forks": 1077,
+          "open_issues": 30,
+          "starGain": null,
+          "heat": 1206.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 44,
+          "created_at": "2026-09-30T05:00:35Z",
+          "pushed_at": "2026-11-13T00:39:14Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.6,
+          "breakdown": {
+            "heat": 98,
+            "community": 76,
+            "activity": 66,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Skills, tools and a shared knowledge base that let any AI coding agent mod almost any PC game you own. The agent finds the game, works out the engine and the route, reads the real code, builds the mod, makes art, 3D and sound with fal , tests it in the running game, cuts the video, and writes down what it learned for the next agent.\n\nPick your agent. Each gets the same skills (Agent Skills format), the fal MCP server, and the um CLI.\n\nInside a clone, each agent finds the skills where it looks for them: .agents/skills (Codex, Gemini CLI, Copilot, Cursor, OpenCode) and .claude/skills (Claude Code) are copies of skills/ . Instructions are in AGENTS.md , which CLAUDE.md and GEMINI.md point to. MCP config is in .mcp.json , .codex/config.toml , .cursor/mcp.json , .vscode/mcp.json and opencode.json (which also points OpenCode at skills/ ).",
+            "features": [
+              "search the knowledge base;",
+              "recon, then pick a route;",
+              "set up a safe lab (saves backed up);",
+              "read the actual code;",
+              "generate assets;",
+              "verify in the real game;",
+              "write a field note for the next agent.",
+              "the exact versions that worked;"
+            ],
+            "sections": [
+              "Install",
+              "Try it",
+              "A knowledge base that AIs write for AIs",
+              "What's inside",
+              "Built with it",
+              "Rules it follows",
+              "Made a mod with it?",
+              "Credits",
+              "Star history"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 24216
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "GoogleChrome/modern-web-guidance-src",
+          "owner": "GoogleChrome",
+          "name": "modern-web-guidance-src",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+          "homepage": "https://goo.gle/modern-web-guidance",
+          "description": "Keep your coding agent up to date with the latest web best practices",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 3050,
+          "forks": 200,
+          "open_issues": 386,
+          "starGain": 739,
+          "heat": 739,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 289,
+          "created_at": "2026-01-27T20:22:24Z",
+          "pushed_at": "2026-11-13T01:30:43Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.5,
+          "breakdown": {
+            "heat": 95,
+            "community": 64,
+            "activity": 75,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "This repo is the source repository for GoogleChrome/modern-web-guidance and includes the code and documentation for authoring, calibrating, and evaluating its contents.\n\nModern Web Guidance is a set of skills that embed web platform expertise, best practices, and browser compatibility data directly into your coding agents. It helps to steer your coding agents away from legacy patterns, and instead toward solutions that harness the power and capabilities of the modern web platform.\n\nSee CONTRIBUTING.md and GOVERNANCE.md for how we work on the project and orientation of the codebase.",
+            "features": [
+              "Modern Browser APIs : Helping models correctly structure APIs they frequently misuse.",
+              "Performance & Accessibility : Preferring platform-level APIs that can be optimized by the browser and include built-in accessibility afforda",
+              "Responsible Fallbacks : Guiding models to use sensible, lightweight fallbacks instead of heavy polyfills or legacy libraries.",
+              "accessible-error-announcement : Synchronize programmatic accessibility states (like aria-invalid) with the visual :user-invalid state to ens",
+              "accessible-generated-content : Use CSS generated content ( ::before / ::after ) in ways that stay accessible, including alternative text for",
+              "respect-os-text-scale : Respect the operating system's text scale preference for a page so font sizes, layout, and rem-based measurements fo",
+              "language-detection : Detect the language of user-generated content or already present site content.",
+              "language-model : Run on-device natural language inference in the browser using the Prompt API, with streaming output, structured JSON respon"
+            ],
+            "sections": [
+              "Modern Web Guidance (Source)",
+              "Quickstart",
+              "Search for relevant guides",
+              "Retrieve a guide by ID",
+              "Scan a codebase for legacy patterns to modernize",
+              "Why?",
+              "What's Included?",
+              "Core Disciplines",
+              "CSS & Layout (140 features)",
+              "HTML & DOM (36 features)",
+              "JavaScript & APIs (74 features)",
+              "Safe Adoption of Modern Features",
+              "Project Configuration ( .mwgrc )",
+              "How It Works"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 107943
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "onehumanbeing/esp32-iphone-agent",
+          "owner": "onehumanbeing",
+          "name": "esp32-iphone-agent",
+          "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+          "homepage": "https://handsy.tech?ref=github",
+          "description": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
+          "language": "Swift",
+          "topics": [
+            "ai-agent",
+            "airplay",
+            "automation",
+            "computer-use",
+            "dsh-plugin",
+            "esp32",
+            "esp32-s3",
+            "iphone"
+          ],
+          "stars": 4891,
+          "forks": 670,
+          "open_issues": 21,
+          "starGain": null,
+          "heat": 723.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 32,
+          "created_at": "2026-10-11T19:10:25Z",
+          "pushed_at": "2026-11-12T23:05:10Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.5,
+          "breakdown": {
+            "heat": 94,
+            "community": 70,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Your AI looks at the iPhone screen, then taps, swipes and types for you, through a $7 ESP32 board plugged into the phone. No computer, no changes to iOS.\n\nTry on TestFlight · Flash the board · Not a developer? · Watch the demo · Docs · Changelog\n\nA real iPhone doing a Duolingo lesson by itself, sped up 8×. Nobody touches the screen.",
+            "features": [
+              "It hears the phone. The board forwards AirPlay audio and the iPhone turns it into words, so listening",
+              "Free Jev line. Jev takes the plain steps in a fraction of a second and leaves the rest to the large model;",
+              "Long tasks. No 40-step limit; any stopped run can continue. Every run can be replayed step by step on the phone.",
+              "Get the board. A Seeed XIAO ESP32S3, about $7: what to buy.",
+              "Flash it in Chrome or Edge. No tools to install: handsy.tech/install.",
+              "Install the app and follow its four setup steps. TestFlight ·",
+              "Eyes — AirPlay to the board. The board opens its own Wi-Fi hotspot and appears in the phone's Screen Mirroring",
+              "Hands — USB HID. The board is a standard USB mouse and keyboard. With AssistiveTouch on, the mouse moves an"
+            ],
+            "sections": [
+              "What's new",
+              "Why a board",
+              "Not a developer? Start here",
+              "How it works",
+              "Hardware",
+              "Quick start",
+              "1. Flash the board (plugged into the Mac)",
+              "2. Install the app",
+              "3. Set up (once, in the app)",
+              "4. Give it a task",
+              "Use from a coding agent",
+              "Model and prompts",
+              "Project layout",
+              "Harness development"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 22831
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Sandflow-ai/sand3d",
+          "owner": "Sandflow-ai",
+          "name": "sand3d",
+          "url": "https://github.com/Sandflow-ai/sand3d",
+          "homepage": "https://sandflow.ai/sand3d/",
+          "description": "3D modeling in Python, built for LLMs.",
+          "language": "HTML",
+          "topics": [
+            "3d",
+            "blender",
+            "cad",
+            "llm",
+            "procedural-modeling",
+            "python",
+            "usd"
+          ],
+          "stars": 1920,
+          "forks": 211,
+          "open_issues": 12,
+          "starGain": null,
+          "heat": 549.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 92,
+          "ageDays": 10,
+          "created_at": "2026-11-03T08:23:03Z",
+          "pushed_at": "2026-11-12T16:28:07Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 80.9,
+          "breakdown": {
+            "heat": 92,
+            "community": 62,
+            "activity": 74,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "sand3d is a Python library for writing 3D objects as short programs: profiles, solids, edits, frames, joints and assemblies, over Blender's bpy . A program says how a shape is made, part by part and in its own words, so a model writes it in a few hundred tokens and a person can read it.\n\n&nbsp;Website · &nbsp;Docs · &nbsp;Datasets · &nbsp;Explorer\n\n- Short. A part takes 2 to 6× fewer tokens than the same part in Blender Python, CadQuery or FeatureScript (details). - The whole API fits in a prompt , about 3,600 tokens (the API). - Named, not computed. Parts, edges and faces are reached by name, never by hand-computed coordinates. - Deterministic. The same program builds the same mesh, bit for bit.",
+            "features": [
+              "Short. A part takes 2 to 6× fewer tokens than the same part in Blender Python, CadQuery or FeatureScript (details).",
+              "The whole API fits in a prompt , about 3,600 tokens (the API).",
+              "Named, not computed. Parts, edges and faces are reached by name, never by hand-computed coordinates.",
+              "Deterministic. The same program builds the same mesh, bit for bit."
+            ],
+            "sections": [
+              "Why sand3d",
+              "A whole object, part by part",
+              "Export: GLB, URDF, USD, IFC, OBJ, STL",
+              "Install",
+              "A first program",
+              "Give it to your LLM",
+              "What is in it",
+              "Datasets",
+              "Citation",
+              "Contributing and license"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11835
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "agentes-chat/agentes-chat",
+          "owner": "agentes-chat",
+          "name": "agentes-chat",
+          "url": "https://github.com/agentes-chat/agentes-chat",
+          "homepage": "https://agentes.chat",
+          "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+          "language": "TypeScript",
+          "topics": [
+            "agentic-ai",
+            "ai-agents",
+            "browser-automation",
+            "chat",
+            "claude",
+            "claude-code",
+            "codex",
+            "collaboration"
+          ],
+          "stars": 1186,
+          "forks": 185,
+          "open_issues": 146,
+          "starGain": null,
+          "heat": 406.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 88,
+          "ageDays": 4,
+          "created_at": "2026-11-09T00:50:28Z",
+          "pushed_at": "2026-11-13T01:40:34Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 82.1,
+          "breakdown": {
+            "heat": 88,
+            "community": 58,
+            "activity": 89,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 49,
+            "backend": 35,
+            "devops": 37,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Website · Cloud · Self-hosting · Features · Discussions\n\nAgents join your channels and DMs with a role, an owner and a budget, work where everyone can see, and ask before anything sensitive. They think with Claude, ChatGPT and Codex, Gemini, Grok or any OpenRouter model, use MCP tools, and get a computer and a browser of their own. Self-host it for free with your own model keys, or use agentes.chat Cloud: both run this same codebase.\n\n- One conversation for people and agents. Agents are members of the workspace, not a sidebar bot: they read the channel, answer when it's theirs to answer, and hand work back and forth. - Safe by default. Merges, deploys and anything a connector marks sensitive wait for a person's approval in the chat. Every model call is budgeted and recorded per agent. - Agents that actually do the work. Their own computer, a real browser you can watch and take over, Claude Code and Codex, routines on a schedule or an event, memory that learns. - Yours to run. One command on a Linux server, Postgres as the only dependency, web, desktop and phone apps that connect to your server.",
+            "features": [
+              "One conversation for people and agents. Agents are members of the workspace, not a sidebar",
+              "Safe by default. Merges, deploys and anything a connector marks sensitive wait for a person's",
+              "Agents that actually do the work. Their own computer, a real browser you can watch and take",
+              "Yours to run. One command on a Linux server, Postgres as the only dependency, web, desktop and",
+              "Cloud: sign up at agentes.chat.",
+              "Your own server (Linux):"
+            ],
+            "sections": [
+              "Why agentes.chat",
+              "Quick start",
+              "Features",
+              "Contributing",
+              "License",
+              "Community"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10492
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "openai/codex-security",
+          "owner": "openai",
+          "name": "codex-security",
+          "url": "https://github.com/openai/codex-security",
+          "homepage": "https://developers.openai.com/codex/security",
+          "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+          "language": "TypeScript",
+          "topics": [
+            "ai-security",
+            "application-security",
+            "cli",
+            "code-scanning",
+            "codex",
+            "codex-security",
+            "cybersecurity",
+            "devsecops"
+          ],
+          "stars": 12447,
+          "forks": 978,
+          "open_issues": 144,
+          "starGain": 643,
+          "heat": 643,
+          "heatBasis": "trending",
+          "heatPercentile": 99,
+          "ageDays": 122,
+          "created_at": "2026-07-13T22:00:13Z",
+          "pushed_at": "2026-11-13T01:12:48Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 88.7,
+          "breakdown": {
+            "heat": 99,
+            "community": 77,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Codex Security helps you find, investigate, and fix vulnerabilities in your code. Use its security workflows in Codex, or automate them with the @openai/codex-security CLI and TypeScript SDK.\n\n- In Codex: choose a security workflow. - In a terminal: install the CLI and scan your repository. - In automation: use the TypeScript SDK or GitHub Action.\n\n- Scan repositories, selected paths, or Git changes. Deep scans repeat Standard scans and return their deduplicated findings. - Validate candidate findings, generate patches, and verify existing fixes. - Draft SECURITY.md policies and save threat models for later review. - Browse saved scans and findings, identify duplicates, assess severity against your own rubric, and suggest owners from source and Git history. - Preview third-party scanner findings, save them locally, or publish supported reports to Codex Security Cloud. Scanner import guides. - Track findings in Linear, Jira, or GitHub, publish completed scans, or export SARIF, JSON, and CSV. Integration workflows. - Automate scans across repositories or project components, including in CI and containers.",
+            "features": [
+              "In Codex: choose a security workflow.",
+              "In a terminal: install the CLI and scan your repository.",
+              "In automation: use the TypeScript SDK or",
+              "Scan repositories, selected paths, or Git changes. Deep scans repeat Standard scans and return their deduplicated findings.",
+              "Validate candidate findings, generate patches, and verify existing fixes.",
+              "Draft SECURITY.md policies and save threat models for later review.",
+              "Browse saved scans and findings, identify duplicates, assess severity against",
+              "Preview third-party scanner findings, save them locally, or publish supported reports to Codex Security Cloud. Scanner import guides."
+            ],
+            "sections": [
+              "Codex Security",
+              "Features",
+              "Use in Codex",
+              "Quick start",
+              "Scan options",
+              "Scan selected paths.",
+              "Scan committed changes from a base revision to HEAD.",
+              "Run a deep scan of the repository.",
+              "TypeScript SDK",
+              "Read existing Cloud findings",
+              "Generate SECURITY.md",
+              "Save and export threat models",
+              "GitHub Actions",
+              "Containerized bulk scans"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9871
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "shinyobjectz/raea",
+          "owner": "shinyobjectz",
+          "name": "raea",
+          "url": "https://github.com/shinyobjectz/raea",
+          "homepage": "https://raea.io",
+          "description": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeScript, rendered on your own GPU. Rust + Bevy, macOS, Linux and Windows.",
+          "language": "TypeScript",
+          "topics": [
+            "3d",
+            "agent-skills",
+            "ai-agents",
+            "ai-video",
+            "bevy",
+            "claude-code",
+            "game-engine",
+            "gpu"
+          ],
+          "stars": 2286,
+          "forks": 165,
+          "open_issues": 11,
+          "starGain": null,
+          "heat": 386.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 92,
+          "ageDays": 25,
+          "created_at": "2026-10-18T18:08:48Z",
+          "pushed_at": "2026-11-13T00:48:37Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 80.8,
+          "breakdown": {
+            "heat": 92,
+            "community": 62,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Tell your AI what to make. Videos, motion graphics, 3D and games, written as React and TypeScript (the code your AI already writes) and rendered on your own GPU, faster than they play.\n\nraea.io · Made in raea · Why raea · Docs · Releases\n\nThe raea app is where you make video and games with your AI. Download it from raea.io for the Mac, Windows or Linux. It tells you when a new version is out; on the Mac it updates itself.",
+            "features": [
+              "Video and motion graphics. Layout, text, Tailwind, SVG and animation, composited on the GPU and encoded in",
+              "Games. Input, physics, sound and 3D, played live with raea play , and exported as a program of their own",
+              "3D. Scenes in TypeScript drawn by Bevy 0.20: cameras, lights, materials, glTF models,",
+              "Sound. One mixer for live play and offline render, instruments and effects, and local models for foley and",
+              "Built for agents. Everything it draws stays queryable as data, so an agent can render a frame, look at it, and",
+              "Agent skills. They live in raea-skills, pinned here as",
+              "Claude Code plugin. /plugin marketplace add shinyobjectz/raea , then /plugin install raea@raea .",
+              "Craft guides. raea guide prints the floor every edit is held to and the guides for pitches, explainers, stories,"
+            ],
+            "sections": [
+              "The app",
+              "Install",
+              "Hello",
+              "What it does",
+              "Use it from your agent",
+              "Build from source",
+              "What's in here",
+              "Licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8304
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "vercel-labs/ui",
+          "owner": "vercel-labs",
+          "name": "ui",
+          "url": "https://github.com/vercel-labs/ui",
+          "homepage": "https://ui-sdk.dev",
+          "description": "A library of behaviors for agents to build the next generation of user interfaces.",
+          "language": "TypeScript",
+          "topics": [
+            "accessibility",
+            "agent",
+            "agents",
+            "aria",
+            "behaviors",
+            "component",
+            "component-library",
+            "headless"
+          ],
+          "stars": 1609,
+          "forks": 34,
+          "open_issues": 3,
+          "starGain": null,
+          "heat": 335.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 17,
+          "created_at": "2026-10-26T17:39:27Z",
+          "pushed_at": "2026-11-12T20:45:19Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78.5,
+          "breakdown": {
+            "heat": 90,
+            "community": 56,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 35,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A library of behaviors for agents to build the next generation of user interfaces.\n\nKeyboard navigation, focus, selection, dismissal, popups, drag and drop and the ARIA they need live in @ui-sdk/core , with adapters for React, Vue, Svelte, Solid and Web Components.\n\nUI SDK is in beta. Install core and the adapter for your framework:",
+            "features": [],
+            "sections": [
+              "UI SDK",
+              "Install",
+              "Example",
+              "React",
+              "Vue",
+              "Svelte",
+              "Solid",
+              "Web Components",
+              "Contributing",
+              "Security",
+              "Beta terms"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5329
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "axios/axios",
+          "owner": "axios",
+          "name": "axios",
+          "url": "https://github.com/axios/axios",
+          "homepage": "https://axios-http.com",
+          "description": "Promise based HTTP client for the browser and node.js",
+          "language": "JavaScript",
+          "topics": [
+            "hacktoberfest",
+            "http-client",
+            "javascript",
+            "nodejs",
+            "promise"
+          ],
+          "stars": 109395,
+          "forks": 12020,
+          "open_issues": 123,
+          "starGain": 55,
+          "heat": 55,
+          "heatBasis": "trending",
+          "heatPercentile": 76,
+          "ageDays": 4469,
+          "created_at": "2014-08-18T22:30:27Z",
+          "pushed_at": "2026-11-11T12:36:21Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.9,
+          "breakdown": {
+            "heat": 76,
+            "community": 95,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "💎 Platinum sponsors <a href=\"https://thanks.dev/?utm source& x3D;axios&amp;utm medium& x3D;sponsorlist&amp;utm campaign& x3D;sponsorship\" style=\"padding: 10px; display: inline-block\" target=\" blank\"\n\nwidth=\"90px\" height=\"90px\" src=\"https://images.opencollective.com/thanks-dev/360b917/logo/256.png?height=256\" alt=\"Thanks.dev\" / <p align=\"center\"\n\nWe're passionate about making open source sustainable. Scan your dependency tree to better understand which open source projects need funding. <a href=\"https://thanks.dev/?utm source& x3D;axios&amp;utm medium& x3D;readme sponsorlist&amp;utm campaign& x3D;sponsorship\" target=\" blank\"",
+            "features": [
+              "Features",
+              "Browser support",
+              "Installing",
+              "Package manager",
+              "Example",
+              "Axios API",
+              "Request method aliases",
+              "Concurrency"
+            ],
+            "sections": [
+              "Table of contents",
+              "Features",
+              "Browser support",
+              "Installing",
+              "Package manager",
+              "CDN",
+              "Example",
+              "axios API",
+              "Request method aliases",
+              "Concurrency (deprecated)",
+              "Creating an instance",
+              "Instance methods",
+              "Request config",
+              "Security notice: decompression-bomb protection is opt-in"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 108106
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "RocketChat/Rocket.Chat",
+          "owner": "RocketChat",
+          "name": "Rocket.Chat",
+          "url": "https://github.com/RocketChat/Rocket.Chat",
+          "homepage": "https://rocket.chat/",
+          "description": "The Secure CommsOS™ for mission-critical operations",
+          "language": "TypeScript",
+          "topics": [
+            "chat",
+            "collaboration",
+            "foss",
+            "free",
+            "hacktoberfest",
+            "javascript",
+            "meteor",
+            "mit"
+          ],
+          "stars": 46502,
+          "forks": 14148,
+          "open_issues": 4404,
+          "starGain": 52,
+          "heat": 52,
+          "heatBasis": "trending",
+          "heatPercentile": 75,
+          "ageDays": 4196,
+          "created_at": "2015-05-19T07:36:09Z",
+          "pushed_at": "2026-11-13T00:54:28Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 82.9,
+          "breakdown": {
+            "heat": 75,
+            "community": 91,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The ultimate secure open-source solution for team communications\n\nRocket.Chat is an open-source, secure, fully customizable communications platform developed in TypeScript for organizations with high standards of data protection.\n\nWe are the ultimate solution for team communications, enabling real-time conversations between colleagues, with other companies, and with your customers or citizens, regardless of how they connect with you. The result is an increase in productivity and user satisfaction rates.",
+            "features": [
+              "Deployment and workspace management : Flexible and reliable self-hosted, cloud, and air-gapped deployment options with scalable architecture",
+              "Security and sovereignty : Rocket.Chat is secure by design, with features such as identity management, end-to-end encryption, and role and a",
+              "Team collaboration : Unified collaboration experience for asynchronous and real-time communication with seamless messaging options, voice ca",
+              "Extend and integrate : Install public apps from the Rocket.Chat Marketplace, build your own apps with Apps-Engine, and integrate with extern",
+              "Are you deploying Rocket.Chat on your own servers? You can deploy using one of the recommended methods: Docker, Podman, or Kubernetes. Refer",
+              "Do you need to run the workspace on an isolated network? Set up an air-gapped workspace to use Rocket.Chat without internet access, suitable",
+              "Looking for a custom cloud-hosted solution without handling infrastructure? Check out our premium, dedicated cloud hosting options that adap",
+              "Interested in decentralized communication? Enable federation to securely communicate and share resources across a federated network."
+            ],
+            "sections": [
+              "🚀 Platform overview",
+              "💻 Deploy Rocket.Chat",
+              "📱 Desktop and mobile apps",
+              "📖 Rocket.Chat documentation",
+              "🛡️ Trust and compliance",
+              "🛠️ Additional resources for developers",
+              "🧩 Apps-Engine",
+              "🆕 Feature request",
+              "🤝 Community",
+              "👥 Contributions",
+              "💼 Become a Rocketeer",
+              "🗞️ Get the Latest News"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8881
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "fatedier/frp",
+          "owner": "fatedier",
+          "name": "frp",
+          "url": "https://github.com/fatedier/frp",
+          "homepage": "",
+          "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+          "language": "Go",
+          "topics": [
+            "expose",
+            "firewall",
+            "frp",
+            "go",
+            "http-proxy",
+            "nat",
+            "p2p",
+            "proxy"
+          ],
+          "stars": 110572,
+          "forks": 15318,
+          "open_issues": 41,
+          "starGain": 34,
+          "heat": 34,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 3979,
+          "created_at": "2015-12-21T15:24:59Z",
+          "pushed_at": "2026-11-10T09:44:59Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.9,
+          "breakdown": {
+            "heat": 79,
+            "community": 95,
+            "activity": 49,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "frp is an open source project with its ongoing development made possible entirely by the support of our awesome sponsors. If you'd like to join them, please consider sponsoring frp's development.\n\nGold Sponsors Swiftproxy - Premium Global Residential Proxy Network Reliable residential IPs across 220+ locations, helping frp users test remote access, verify connectivity, and access region-specific network resources worldwide. Free testing available, with 10% off using code PROXY90.\n\nIf you're looking for a meeting recording API, consider checking out Recall.ai,",
+            "features": [
+              "Development Status",
+              "About V2",
+              "Architecture",
+              "Example Usage",
+              "Access your computer in a LAN network via SSH",
+              "Multiple SSH services sharing the same port",
+              "Accessing Internal Web Services with Custom Domains in LAN",
+              "Forward DNS query requests"
+            ],
+            "sections": [
+              "frp",
+              "Sponsors",
+              "Recall.ai - API for meeting recordings",
+              "What is frp?",
+              "Table of Contents",
+              "Development Status",
+              "About V2",
+              "Architecture",
+              "Example Usage",
+              "Access your computer in a LAN network via SSH",
+              "Multiple SSH services sharing the same port",
+              "Accessing Internal Web Services with Custom Domains in LAN",
+              "Forward DNS query requests",
+              "Forward Unix Domain Socket"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 48322
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "apache/solr",
+          "owner": "apache",
+          "name": "solr",
+          "url": "https://github.com/apache/solr",
+          "homepage": "https://solr.apache.org/",
+          "description": "Apache Solr open-source search software",
+          "language": "Java",
+          "topics": [
+            "backend",
+            "information-retrieval",
+            "java",
+            "lucene",
+            "nosql",
+            "search",
+            "search-engine",
+            "solr"
+          ],
+          "stars": 1700,
+          "forks": 869,
+          "open_issues": 277,
+          "starGain": null,
+          "heat": 25.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 68,
+          "ageDays": 2089,
+          "created_at": "2021-02-23T00:12:42Z",
+          "pushed_at": "2026-11-12T18:13:00Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 70.3,
+          "breakdown": {
+            "heat": 68,
+            "community": 64,
+            "activity": 72,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 85,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to You under the Apache License, Version 2.0 the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. --\n\nSolr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.",
+            "features": [
+              "Users Mailing List",
+              "Slack: solr-dev channel in the ASF Slack workspace",
+              "IRC: solr on libera.chat",
+              "To build a Solr dev distribution:",
+              "To run the Solr dev distribution locally:",
+              "Open a web browser and go to http://localhost:8983/solr/ to access the Solr Admin interface. You can also use the bin/solr script to create ",
+              "Mailing Lists",
+              "Slack: solr-dev in the the-asf organization. Sign up at https://the-asf.slack.com/messages/CE70MDPMF"
+            ],
+            "sections": [
+              "Welcome to the Apache Solr project!",
+              "Download",
+              "Running Solr",
+              "Installing Solr",
+              "Running Solr in Docker",
+              "Running Solr on Kubernetes",
+              "How to Use",
+              "Support",
+              "Developer Documentation",
+              "Quickstart",
+              "Get Involved"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4728
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "roundStars"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "apache/ozone",
+          "owner": "apache",
+          "name": "ozone",
+          "url": "https://github.com/apache/ozone",
+          "homepage": "https://ozone.apache.org",
+          "description": "Scalable, reliable, distributed storage system optimized for data analytics and object store workloads.",
+          "language": "Java",
+          "topics": [
+            "big-data",
+            "hadoop",
+            "kubernetes",
+            "object-store",
+            "s3",
+            "storage"
+          ],
+          "stars": 1334,
+          "forks": 657,
+          "open_issues": 171,
+          "starGain": null,
+          "heat": 17.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 67,
+          "ageDays": 2598,
+          "created_at": "2019-10-02T15:56:19Z",
+          "pushed_at": "2026-11-12T15:58:56Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 70.1,
+          "breakdown": {
+            "heat": 67,
+            "community": 62,
+            "activity": 69,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 70
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Ozone is a scalable, redundant, and distributed object store for Hadoop and Cloud-native environments. Apart from scaling to billions of objects of varying sizes, Ozone can function effectively in containerized environments such as Kubernetes and YARN.\n\nMULTI-PROTOCOL SUPPORT: Ozone supports different protocols like S3 and Hadoop File System APIs. SCALABLE: Ozone is designed to scale to tens of billions of files and blocks and, in the future, even more. CONSISTENT: Ozone is a strongly consistent object store. This consistency is achieved by using protocols like RAFT. CLOUD-NATIVE: Ozone is designed to work well in containerized environments like YARN and Kubernetes. SECURE: Ozone integrates with Kerberos infrastructure for authentication, supports native ACLs and integrates with Ranger for access control and supports TDE and on-wire encryption. HIGHLY AVAILABLE: Ozone is a fully replicated system that is designed to survive multiple failures.\n\nThe latest documentation is generated together with the releases and hosted on the apache site.",
+            "features": [
+              "MULTI-PROTOCOL SUPPORT: Ozone supports different protocols like S3 and Hadoop File System APIs.",
+              "SCALABLE: Ozone is designed to scale to tens of billions of files and blocks and, in the future, even more.",
+              "CONSISTENT: Ozone is a strongly consistent object store. This consistency is achieved by using protocols like RAFT.",
+              "CLOUD-NATIVE: Ozone is designed to work well in containerized environments like YARN and Kubernetes.",
+              "SECURE: Ozone integrates with Kerberos infrastructure for authentication, supports native ACLs and integrates with Ranger for access control",
+              "HIGHLY AVAILABLE: Ozone is a fully replicated system that is designed to survive multiple failures.",
+              "Ozone web page",
+              "Mailing lists"
+            ],
+            "sections": [
+              "Documentation",
+              "Contact",
+              "Download",
+              "Quick start",
+              "Run Ozone with Docker Compose",
+              "create a temporary file to upload to Ozone via S3 support",
+              "Run Ozone from released artifact",
+              "Run on Kubernetes",
+              "Build from source",
+              "Contribute",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5671
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "moby/buildkit",
+          "owner": "moby",
+          "name": "buildkit",
+          "url": "https://github.com/moby/buildkit",
+          "homepage": "https://github.com/moby/moby/issues/34227",
+          "description": "concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit",
+          "language": "Go",
+          "topics": [
+            "builder",
+            "buildkit",
+            "cloud-native",
+            "containers",
+            "docker",
+            "dockerfile",
+            "go",
+            "golang"
+          ],
+          "stars": 10410,
+          "forks": 1570,
+          "open_issues": 858,
+          "starGain": 16,
+          "heat": 16,
+          "heatBasis": "trending",
+          "heatPercentile": 65,
+          "ageDays": 3452,
+          "created_at": "2017-05-31T17:04:10Z",
+          "pushed_at": "2026-11-12T09:05:27Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 73.7,
+          "breakdown": {
+            "heat": 65,
+            "community": 77,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "BuildKit is a toolkit for converting source code to build artifacts in an efficient, expressive and repeatable manner.\n\n- Automatic garbage collection - Extendable frontend formats - Concurrent dependency resolution - Efficient instruction caching - Build cache import/export - Nested build job invocations - Distributable workers - Multiple output formats - Pluggable architecture - Execution without root privileges\n\nRead the proposal from https://github.com/moby/moby/issues/32925",
+            "features": [
+              "Automatic garbage collection",
+              "Extendable frontend formats",
+              "Concurrent dependency resolution",
+              "Efficient instruction caching",
+              "Nested build job invocations",
+              "Distributable workers",
+              "Multiple output formats",
+              "Pluggable architecture"
+            ],
+            "sections": [
+              "BuildKit",
+              "Used by",
+              "Quick start",
+              "Linux Setup",
+              "Windows Setup",
+              "macOS Setup",
+              "Build from source",
+              "Exploring LLB",
+              "Frontends",
+              "Exploring Dockerfiles",
+              "or",
+              "Output",
+              "exported tarball is also compatible with OCI spec",
+              "Cache"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 46342
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "jenkinsci/jenkins",
+          "owner": "jenkinsci",
+          "name": "jenkins",
+          "url": "https://github.com/jenkinsci/jenkins",
+          "homepage": "https://www.jenkins.io",
+          "description": "Jenkins automation server",
+          "language": "Java",
+          "topics": [
+            "cicd",
+            "continuous-delivery",
+            "continuous-deployment",
+            "continuous-integration",
+            "devops",
+            "groovy",
+            "hacktoberfest",
+            "java"
+          ],
+          "stars": 26770,
+          "forks": 9826,
+          "open_issues": 3631,
+          "starGain": 8,
+          "heat": 8,
+          "heatBasis": "trending",
+          "heatPercentile": 58,
+          "ageDays": 5834,
+          "created_at": "2010-11-22T21:21:23Z",
+          "pushed_at": "2026-11-12T16:11:30Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.7,
+          "breakdown": {
+            "heat": 58,
+            "community": 87,
+            "activity": 77,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- About - What to Use Jenkins for and When to Use It - Downloads - Getting Started (Development) - Source - Contributing to Jenkins - News and Website - Governance - Adopters - License\n\nIn a nutshell, Jenkins is the leading open-source automation server. Built with Java, it provides over 2,000 plugins to support automating virtually anything, so that humans can spend their time doing things machines cannot.\n\nUse Jenkins to automate your development workflow, so you can focus on work that matters most. Jenkins is commonly used for:",
+            "features": [
+              "About",
+              "What to Use Jenkins for and When to Use It",
+              "Downloads",
+              "Getting Started (Development)",
+              "Source",
+              "Contributing to Jenkins",
+              "News and Website",
+              "Governance"
+            ],
+            "sections": [
+              "Table of Contents",
+              "About",
+              "What to Use Jenkins for and When to Use It",
+              "Downloads",
+              "Getting Started (Development)",
+              "Source",
+              "Contributing to Jenkins",
+              "News and Website",
+              "Governance",
+              "Adopters",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5683
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "supabase/supabase",
+          "owner": "supabase",
+          "name": "supabase",
+          "url": "https://github.com/supabase/supabase",
+          "homepage": "https://supabase.com",
+          "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+          "language": "TypeScript",
+          "topics": [
+            "ai",
+            "alternative",
+            "auth",
+            "database",
+            "deno",
+            "embeddings",
+            "example",
+            "firebase"
+          ],
+          "stars": 114936,
+          "forks": 15129,
+          "open_issues": 1196,
+          "starGain": 97,
+          "heat": 97,
+          "heatBasis": "trending",
+          "heatPercentile": 99,
+          "ageDays": 2589,
+          "created_at": "2019-10-12T05:56:49Z",
+          "pushed_at": "2026-11-13T01:19:42Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 94.6,
+          "breakdown": {
+            "heat": 99,
+            "community": 96,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 21,
+            "backend": 73,
+            "devops": 35,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Supabase is the Postgres development platform. We're building the features of Firebase using enterprise-grade open source tools.\n\n- [x] Hosted Postgres Database. Docs - [x] Authentication and Authorization. Docs - [x] Auto-generated APIs. - [x] REST. Docs - [x] GraphQL. Docs - [x] Realtime subscriptions. Docs - [x] Functions. - [x] Database Functions. Docs - [x] Edge Functions. Docs - [x] File Storage. Docs - [x] AI + Vector/Embeddings Toolkit. Docs - [x] Dashboard.\n\nWatch \"releases\" of this repo to get notified of major updates.",
+            "features": [
+              "[x] Hosted Postgres Database. Docs",
+              "[x] Authentication and Authorization. Docs",
+              "[x] Auto-generated APIs.",
+              "[x] REST. Docs",
+              "[x] GraphQL. Docs",
+              "[x] Realtime subscriptions. Docs",
+              "[x] Functions.",
+              "[x] Database Functions. Docs"
+            ],
+            "sections": [
+              "Supabase",
+              "Documentation",
+              "Community & Support",
+              "How it works",
+              "Badges",
+              "Translations"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16664
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "n8n-io/n8n",
+          "owner": "n8n-io",
+          "name": "n8n",
+          "url": "https://github.com/n8n-io/n8n",
+          "homepage": "https://n8n.io",
+          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+          "language": "TypeScript",
+          "topics": [
+            "ai",
+            "apis",
+            "automation",
+            "cli",
+            "data-flow",
+            "development",
+            "integration-framework",
+            "integrations"
+          ],
+          "stars": 210333,
+          "forks": 61491,
+          "open_issues": 1228,
+          "starGain": 167,
+          "heat": 167,
+          "heatBasis": "trending",
+          "heatPercentile": 51,
+          "ageDays": 2701,
+          "created_at": "2019-06-22T09:24:21Z",
+          "pushed_at": "2026-11-12T22:44:04Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 73.9,
+          "breakdown": {
+            "heat": 51,
+            "community": 100,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 56,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Fair-code platform to build and deploy AI agents and workflows. Combine a visual canvas with custom code, run it self-hosted or in the cloud, and connect to 1500+ integrations. AI automation you can trust with real work, from prototype to production.\n\n- AI-Native Automation Platform : Build and operationalize AI workflows and multi-step agents using your own data, models, and tools - Model Flexibility, No Lock-In : Connect to OpenAI, Anthropic, Google, or open-source models and switch providers without changing your architecture - From Prototype to Production : Design multi-step AI workflows with logic, tool use, human approvals, and full observability - Code When You Need It : Combine visual building with JavaScript, Python, and npm packages for advanced AI workflows - Enterprise-Ready AI : Self-host or deploy securely with role-based access, audit trails, and support for sensitive data - Leverage What Already Exists : 1500+ integrations and 9,000+ workflow templates to connect AI with your existing systems\n\nTry n8n instantly with our install script (requires Docker):",
+            "features": [
+              "AI-Native Automation Platform : Build and operationalize AI workflows and multi-step agents using your own data, models, and tools",
+              "Model Flexibility, No Lock-In : Connect to OpenAI, Anthropic, Google, or open-source models and switch providers without changing your archi",
+              "From Prototype to Production : Design multi-step AI workflows with logic, tool use, human approvals, and full observability",
+              "Code When You Need It : Combine visual building with JavaScript, Python, and npm packages for advanced AI workflows",
+              "Enterprise-Ready AI : Self-host or deploy securely with role-based access, audit trails, and support for sensitive data",
+              "Leverage What Already Exists : 1500+ integrations and 9,000+ workflow templates to connect AI with your existing systems",
+              "📚 Documentation",
+              "🔧 1500+ Integrations"
+            ],
+            "sections": [
+              "n8n – The Platform for AI Agents and Workflow Automation",
+              "Key Capabilities",
+              "Quick Start",
+              "Resources",
+              "Support",
+              "License",
+              "Contributing",
+              "Join the Team",
+              "What does n8n mean?"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 3978
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "tauri-apps/tauri",
+          "owner": "tauri-apps",
+          "name": "tauri",
+          "url": "https://github.com/tauri-apps/tauri",
+          "homepage": "https://tauri.app",
+          "description": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
+          "language": "Rust",
+          "topics": [
+            "desktop-app",
+            "high-performance",
+            "mobile-app",
+            "native-app",
+            "rust",
+            "web-frontend",
+            "webview"
+          ],
+          "stars": 112856,
+          "forks": 4218,
+          "open_issues": 1510,
+          "starGain": 90,
+          "heat": 90,
+          "heatBasis": "trending",
+          "heatPercentile": 83,
+          "ageDays": 2680,
+          "created_at": "2019-07-13T09:09:37Z",
+          "pushed_at": "2026-11-12T22:00:47Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 86.5,
+          "breakdown": {
+            "heat": 83,
+            "community": 92,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Tauri is a framework for building tiny, blazingly fast binaries for all major operating systems. Developers can integrate any front-end framework that compiles to HTML, JS and CSS for building their user interface. The backend of the application is a rust-sourced binary with an API that the front-end can interact with.\n\nThe user interface in Tauri apps currently leverages tao as a window handling library on macOS, Windows, Linux, Android and iOS. To render your application, Tauri uses WRY, a library which provides a unified interface to the system webview, leveraging WKWebView on macOS & iOS, WebView2 on Windows, WebKitGTK on Linux and Android System WebView on Android.\n\nTo learn more about the details of how all of these pieces fit together, please consult this ARCHITECTURE.md document.",
+            "features": [
+              "Built-in app bundler to create app bundles in formats like .app , .dmg , .deb , .rpm , .AppImage and Windows installers like .exe (via NSIS)",
+              "Built-in self updater (desktop only)",
+              "System tray icons",
+              "Native notifications",
+              "Native WebView Protocol (tauri doesn't create a localhost http(s) server to serve the WebView contents)",
+              "GitHub action for streamlined CI",
+              "VS Code extension",
+              "Original Tauri Logo Designs by Alve Larsson, Daniel Thompson-Yvetot and Guillaume Chau"
+            ],
+            "sections": [
+              "Introduction",
+              "Getting Started",
+              "Features",
+              "Platforms",
+              "Contributing",
+              "Documentation",
+              "Partners",
+              "Organization",
+              "Licenses"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6055
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "amontlabs/lcu",
+          "owner": "amontlabs",
+          "name": "lcu",
+          "url": "https://github.com/amontlabs/lcu",
+          "homepage": "https://lcu.amontlabs.com",
+          "description": "Codex computer use, decoupled from the app, for usage inside any harness.",
+          "language": "JavaScript",
+          "topics": [
+            "accessibility",
+            "agent-skills",
+            "browser-automation",
+            "claude-code",
+            "codex-cli",
+            "computer-use",
+            "desktop-automation",
+            "library"
+          ],
+          "stars": 2417,
+          "forks": 163,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 276.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 51,
+          "created_at": "2026-09-22T15:08:18Z",
+          "pushed_at": "2026-11-12T12:09:05Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80,
+          "breakdown": {
+            "heat": 96,
+            "community": 62,
+            "activity": 51,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "https://github.com/user-attachments/assets/bd9d0809-8a6c-4931-a51c-b98daf05cb5f\n\nLCU exposes Codex's original computer-use runtime to your harness without requiring Codex authentication. The official ChatGPT desktop app must still be installed locally: it supplies the runtime and instructions, while LCU handles setup and harness integration.\n\nInstall and configure LCU for this harness using the latest release. Follow https://raw.githubusercontent.com/amontlabs/lcu/main/docs/INSTALLATION.md Check my OS, architecture, and prerequisites, then guide me through any required permissions.",
+            "features": [
+              "Desktop apps: read windows, click, type, and take screenshots.",
+              "Chrome, when enabled: read and control tabs through the official extension, with site approval.",
+              "In your harness: adapters are available for Pi, Codex CLI, and Claude Code, with experimental Oh My Pi, Hermes, DeepSeek Harness and Junie i",
+              "Allow this conversation for the current chat only.",
+              "Always allow to remember the app (offered only when the runtime allows it).",
+              "Deny to refuse.",
+              "Pass an app name, a bundle identifier or an .app path.",
+              "Listing is free; allow and revoke need you at the machine, so an agent running them is stopped by the prompt."
+            ],
+            "sections": [
+              "Quick start",
+              "Features",
+              "Approve apps from Claude, natively",
+              "Manage approved apps with Touch ID",
+              "Keep Computer Use across turns (Claude Code)",
+              "Permissions",
+              "Requirements",
+              "Install manually",
+              "Enable Chrome",
+              "Enable computer-audio recording",
+              "Pi commands",
+              "Documentation"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10184
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "leemysw/yovoice",
+          "owner": "leemysw",
+          "name": "yovoice",
+          "url": "https://github.com/leemysw/yovoice",
+          "homepage": "https://yovoice.leemysw.com",
+          "description": "Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores — 100% offline, zero API fees.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-music",
+            "audio",
+            "desktop-app",
+            "local-ai",
+            "macos",
+            "mcp",
+            "midi",
+            "music-generation"
+          ],
+          "stars": 2172,
+          "forks": 164,
+          "open_issues": 7,
+          "starGain": null,
+          "heat": 231.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 58,
+          "created_at": "2026-09-15T15:18:35Z",
+          "pushed_at": "2026-11-12T11:34:46Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 79.7,
+          "breakdown": {
+            "heat": 93,
+            "community": 62,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 18,
+            "devops": 10,
+            "ai": 21,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "yovoice is an open-source, local-first audio and music creation studio for macOS, Windows and Linux.\n\nTurn text into expressive speech, natural cloned voices, complete vocal songs, and multi-track scores right on your machine. Featuring zero-shot voice cloning, emotional performance controls, AI music generation with lyrics, and General MIDI score arranging— all running 100% locally with zero cloud API calls, zero per-character fees, and zero Python environment headaches.\n\n- 🔒 100% Local Privacy : Runs entirely on your local GPU/CPU. Your manuscripts, reference voices, and creations never leave your computer. - 💸 Zero Recurring Fees : Say goodbye to per-character/per-minute meters and expensive cloud voice/music subscriptions. - ⚡ Native C++ Performance (No Python Hell) : Powered by audio.cpp v0.9.3. Ships with bundled Windows CUDA 12.4/13.3 runtimes and native macOS Metal support. Double-click and create—no Conda or PyTorch conflicts. - 🎛️ Creator Workstation : Multi-take versioning for side-by-side comparison, waveform trimming, timeline scrolling, and clean stems/MIDI export. - 🤖 MCP & AI Agent Ecosystem : Chat with DeepSeek, Qwen, Claude, OpenAI, or local Ollama to create and edit works end to end. Includes a native Model Context Protocol (MCP) server for Cursor and Claude Code.",
+            "features": [
+              "🔒 100% Local Privacy : Runs entirely on your local GPU/CPU. Your manuscripts, reference voices, and creations never leave your computer.",
+              "💸 Zero Recurring Fees : Say goodbye to per-character/per-minute meters and expensive cloud voice/music subscriptions.",
+              "⚡ Native C++ Performance (No Python Hell) : Powered by audio.cpp v0.9.3. Ships with bundled Windows CUDA 12.4/13.3 runtimes and native macOS",
+              "🎛️ Creator Workstation : Multi-take versioning for side-by-side comparison, waveform trimming, timeline scrolling, and clean stems/MIDI exp",
+              "🤖 MCP & AI Agent Ecosystem : Chat with DeepSeek, Qwen, Claude, OpenAI, or local Ollama to create and edit works end to end. Includes a nati",
+              "Speech, voice design and cloning — clone a reference voice, design a voice from a description, adjust emotion and delivery, and edit takes o",
+              "Story dubbing — import text or subtitle files, assign a character to each line, and generate line by line.",
+              "Transcribe and subtitles — turn audio or video into timed subtitle lines and export SRT / WebVTT, fill in a reference transcript automatical"
+            ],
+            "sections": [
+              "Why yovoice?",
+              "Features",
+              "Supported Models",
+              "Installation",
+              "Quick Start",
+              "CLI & Agent Skill",
+              "Development",
+              "Community",
+              "Contributing",
+              "Acknowledgements",
+              "Star History",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14505
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Eynzof/Hermes-CN-Desktop",
+          "owner": "Eynzof",
+          "name": "Hermes-CN-Desktop",
+          "url": "https://github.com/Eynzof/Hermes-CN-Desktop",
+          "homepage": "https://hermesagent.org.cn",
+          "description": "Hermes Agent CN desktop app, Windows-First, built with Tauri, Typescript and Rust. Isolated Hermes Agent core insides. ",
+          "language": "TypeScript",
+          "topics": [
+            "ai-agent",
+            "desktop-app",
+            "hermes-agent",
+            "react",
+            "rust",
+            "tauri",
+            "typescript"
+          ],
+          "stars": 1940,
+          "forks": 103,
+          "open_issues": 186,
+          "starGain": null,
+          "heat": 113,
+          "heatBasis": "velocity",
+          "heatPercentile": 85,
+          "ageDays": 176,
+          "created_at": "2026-05-21T03:58:05Z",
+          "pushed_at": "2026-11-11T08:06:53Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 76.2,
+          "breakdown": {
+            "heat": 85,
+            "community": 60,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 70,
+            "backend": 15,
+            "devops": 10,
+            "ai": 21,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Hermes Agent CN Desktop 是 Hermes Agent 中文社区推出的桌面客户端，原生支持 Windows 与 macOS 系统。项目基于 Tauri v2、Rust、React 和 TypeScript 构建，包含 Hermes-CN-Core 中文社区修改版的 Hermes Agent 内核。\n\n官网与下载页见 desktop.hermesagent.org.cn。桌面端隶属于 Hermes Agent 中文社区 生态，社区主站提供中文文档、实践指南、社群入口和更多生态项目。\n\n感谢优云智算赞助了本项目！优云智算是UCloud旗下AI云平台，提供稳定、全面的国内外模型API，仅一个key即可调用。主打包月、按次的高性价比 国模Coding Plan套餐，同时提供官转稳定海外模型。支持接入 Claude Code、Codex 及 API 调用。支持企业高并发、7 24技术支持、自助开票。通过 此链接 注册的用户，可得免费5元平台体验金！",
+            "features": [
+              "一键安装，使用门槛极低 ：针对 Windows 和 macOS 用户适配，下载安装后配置 API Key 或本地模型端点即可使用。",
+              "轻量，跨平台 ：Tauri 使用系统 WebView，不需要随应用打包 Chromium，安装包体积小，支持 Windows 及 macOS。",
+              "内置独立 Hermes Agent 内核 ：桌面端支持安装、更新、签名校验、健康检查和回滚本地 Hermes Agent 内核。",
+              "面向 Agent 的完整 UI ：支持聊天、流式输出、附件、MCP 工具、Skills、Memory、Profiles、定时任务、LaTeX/Mermaid 渲染和运行时健康面板。",
+              "中文模型与平台生态 ：覆盖主流云端模型服务商和 Ollama、vLLM、LM Studio、llama.cpp 等本地部署方案，并提供飞书等平台接入配置；更多中文生态内容见 Hermes Agent 中文社区。",
+              "生产级传输桥 ：生产模式下通过 Rust command 代理 REST 与上传；Gateway 使用官方 /api/ws ，打包态必要时通过 Rust WS 中继绕过 WebView 限制，并集中处理鉴权。",
+              "YOLO 模式开关 ：「设置 → 常规」底部独立的「高风险操作」区提供开关，开启需二次确认，自动批准危险命令（对应后端 HERMES YOLO MODE ），切换后自动重启内核生效，详见 docs/yolo-mode.md。",
+              "macOS Apple Silicon DMG： Hermes.Agent.CN.Desktop 0.8.0-rc8 aarch64.dmg"
+            ],
+            "sections": [
+              "Hermes Agent CN Desktop",
+              "❤️赞助商",
+              "Hermes Agent 中文社区",
+              "演示",
+              "原型图预览",
+              "演示视频",
+              "界面截图",
+              "项目定位",
+              "亮点",
+              "下载",
+              "开发环境要求",
+              "快速开始",
+              "构建",
+              "为当前平台构建生产包"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10532
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "appwrite/appwrite",
+          "owner": "appwrite",
+          "name": "appwrite",
+          "url": "https://github.com/appwrite/appwrite",
+          "homepage": "https://appwrite.io",
+          "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+          "language": "TypeScript",
+          "topics": [
+            "android",
+            "appwrite",
+            "backend",
+            "backend-as-a-service",
+            "docker",
+            "firebase",
+            "firewall",
+            "flutter"
+          ],
+          "stars": 58069,
+          "forks": 5871,
+          "open_issues": 738,
+          "starGain": 78,
+          "heat": 78,
+          "heatBasis": "trending",
+          "heatPercentile": 80,
+          "ageDays": 2775,
+          "created_at": "2019-04-08T16:36:25Z",
+          "pushed_at": "2026-11-13T01:08:40Z",
+          "license": "BSD-3-Clause",
+          "rating": 4,
+          "composite": 84.3,
+          "breakdown": {
+            "heat": 80,
+            "community": 90,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 70,
+            "backend": 15,
+            "devops": 12,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Appwrite The open-source cloud for agents and developers. Appwrite is an MCP and agent-first platform for building and scaling apps. Give your agents Auth, Databases, Storage, Functions, Messaging, Realtime, and Hosting, all in one place.\n\nAppwrite is an MCP and agent-first, open-source platform for building and scaling apps. MCP is included, so coding agents can operate on a live Appwrite project. Appwrite is available as a managed cloud platform and can also be self-hosted on infrastructure you control.\n\nIt is designed for the AI agents in your workflow as well as for developers. Connect Cursor, Claude Code, Codex, and other agents through the hosted MCP server, or integrate an SDK into your app. Modular products stay unified from the first prototype to production scale.",
+            "features": [
+              "Products",
+              "Installation \\& Setup",
+              "Self-Hosting",
+              "Unix",
+              "Windows",
+              "PowerShell",
+              "Docker API version mismatch",
+              "Upgrade from an Older Version"
+            ],
+            "sections": [
+              "Products",
+              "Installation & Setup",
+              "Self-Hosting",
+              "Unix",
+              "Windows",
+              "Docker API version mismatch",
+              "Upgrade from an Older Version",
+              "One-Click Setups",
+              "Getting Started",
+              "Agents",
+              "SDKs",
+              "Architecture",
+              "Contributing",
+              "Security"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 17797
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "meta/astryx",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "openfilm/openfilm",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "reacher-z/Awesome-REA",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "JuneYaooo/rea-video",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "ggml-org/llama.cpp",
+      "category": "ai",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "tensorflow/tensorflow",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "vAPI-Network/vapi-network",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/TokenEconomizer",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "wheresryan22/anatomy",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

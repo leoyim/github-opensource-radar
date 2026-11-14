@@ -1,0 +1,90 @@
+{
+  "rehan-remade/universal-modder": {
+    "summary_zh": "给编码 agent 用的游戏 mod 工作流：一套 Agent Skills 技能、fal MCP 与 um CLI，让 agent 先勘察游戏引擎与真实代码、备份存档并搭隔离实验环境，再用 fal 生成美术/3D/音频，在运行中的游戏里验证、剪出展示视频，最后写一份 field note 供下一个 agent 续用。技能按 .agents/skills 与 .claude/skills 两套路径分发，指令统一在 AGENTS.md，MCP 配置覆盖各家 agent 的配置文件。",
+    "highlight_zh": "它让上一任 agent 踩过的坑，变成下一任 agent 能直接检索的知识库条目。"
+  },
+  "GoogleChrome/modern-web-guidance-src": {
+    "summary_zh": "由 Chrome、Edge、Firefox 与 MDN 团队共同维护的 Web 平台指引源仓库：把浏览器兼容数据、最佳实践与现代化改写建议做成编码 agent 可检索的技能。npx 一条命令安装，支持按问题 search、按 ID retrieve、扫描代码库里的遗留模式，内容含 CSS 与布局约 140 项、HTML 与 DOM 约 36 项、JavaScript 与 API 约 74 项，并可用 .mwgrc 声明项目采用的特性范围；本仓同时保存内容的编写、校准与评估代码。",
+    "highlight_zh": "把「该用哪个现代 API」从模型的记忆问题，变成一次可检索、可评测的查询。"
+  },
+  "onehumanbeing/esp32-iphone-agent": {
+    "summary_zh": "用约 7 美元的 XIAO ESP32S3 让模型操作真实 iPhone：板子开 Wi-Fi 热点，iPhone 经屏幕镜像把画面交给它当眼睛，USB HID 配合 AssistiveTouch 当手，AirPlay 音频还能转成文字让模型听。免 Mac、免开发者账号、免越狱，Chrome/Edge 内即可刷固件，配好应用后接任意 OpenAI 兼容视觉模型；长任务可续跑，每次运行能在手机上逐步回放。README 附 NOTICE 署名要求。",
+    "highlight_zh": "把真机控制从云设备农场，压到一块插在手机上的通用开发板。"
+  },
+  "Sandflow-ai/sand3d": {
+    "summary_zh": "面向语言模型的 Python 3D 建模库，构建在 Blender 的 bpy 之上：用 profiles、solids、edits、frames、joints 与 assemblies 把物体写成短程序，部件、边与面按名字引用而非手算坐标，同一程序生成逐位一致的网格。同一部件比 Blender Python/CadQuery/FeatureScript 少 2–6 倍 token，整份 API 约 3,600 token 可放进 prompt；README 用 38 行写出带四个关节的滚筒洗衣机，支持导出 GLB、URDF、USD、IFC、OBJ、STL。",
+    "highlight_zh": "把 3D 模型变成人和模型都能读、能改、能复现的一段程序。"
+  },
+  "agentes-chat/agentes-chat": {
+    "summary_zh": "自托管的开源团队协作平台，人与 AI agent 同处频道和 DM：agent 有角色、owner 与预算，可用 Claude、Codex、Gemini、Grok 或 OpenRouter 模型，带 MCP 工具、自己的电脑与可接管的浏览器、定时 routines 与记忆。合并、部署等敏感动作在聊天里等人工批准，每次模型调用按 agent 记账；Docker Compose + Postgres 一条命令部署，Web/桌面/手机共用同一代码库，AGPL-3.0 许可。",
+    "highlight_zh": "agent 不再是侧边栏，而是有预算、要审批、做事过程人人可见的频道成员。"
+  },
+  "openai/codex-security": {
+    "summary_zh": "OpenAI 的 Codex Security CLI 与 TypeScript SDK，把漏洞发现到修复串成一条可自动化的链路：可扫描整个仓库、指定路径或 base→HEAD 的提交变更，Deep scan 会重复扫描并去重；支持验证候选发现、生成补丁、复核已有修复、起草 SECURITY.md 与保存威胁模型，还能按自定义 rubric 定级、依源码与 Git 历史建议负责人。结果可导出 SARIF/JSON/CSV，接 Linear、Jira、GitHub、GitHub Action 与容器化批量扫描。",
+    "highlight_zh": "它关心的不是又多一种扫描器，而是发现之后谁来判、谁来改、改完怎么复核。"
+  },
+  "shinyobjectz/raea": {
+    "summary_zh": "Render Anything Engine：用 React 与 TypeScript 把视频、动效、3D 和游戏写成接收当前帧的组件，由本机 Rust/Bevy 引擎在 GPU 上渲染，速度可快于播放。v0.1.1 是首个含桌面应用的完整版，覆盖 macOS Apple Silicon、Linux x86_64 与 Windows x86_64；安装脚本会把 raea-skills 放进 agent 的技能目录，画面始终保持为可查询数据，agent 能渲染一帧、查看、再改，另有 craft guides 与 Claude Code 插件。",
+    "highlight_zh": "生成出来的不是一段不能改的视频，而是一份人和 agent 都能逐帧查的程序。"
+  },
+  "vercel-labs/ui": {
+    "summary_zh": "给编码 agent 用的无头交互行为库：@ui-sdk/core 收录键盘导航、焦点、选择、dismissal、popups、拖放及对应 ARIA，不含视觉样式，配 React、Vue、Svelte、Solid 与 Web Components 五种 adapter。开发者用 definePrimitive 定义状态与 api，再用 createParts 绑定元素；可通过 npx skills add vercel-labs/ui --skill ui-sdk 把写法交给 agent。当前为 beta，Apache-2.0 许可。",
+    "highlight_zh": "组件库给的是外观，它给的是最容易写错的那部分：焦点与无障碍行为。"
+  },
+  "axios/axios": {
+    "summary_zh": "浏览器与 Node.js 共用的 Promise HTTP 客户端：请求方法别名、实例化与实例方法、拦截器、请求配置、取消与进度事件都走同一套接口，底层按运行时切换适配器。README 篇幅很大，含安装、示例、并发（已弃用）等章节，并在目录中明确标出「decompression-bomb protection is opt-in」的安全提示，把解压防护的取舍交给使用方。MIT 许可。",
+    "highlight_zh": "十二年后它的更新重点，已经从加功能变成把安全默认值的边界写清楚。"
+  },
+  "RocketChat/Rocket.Chat": {
+    "summary_zh": "面向数据主权场景的开源协作平台，TypeScript 全栈：自托管、云托管与 air-gapped 气隙工作区三种部署形态，支持 Docker、Podman、Kubernetes；含身份管理、端到端加密、基于角色与属性的访问控制、跨组织 federation、消息与语音、桌面与移动端，以及 Marketplace 与 Apps-Engine 应用扩展。README 单列 Trust and compliance 章节。GitHub 对许可证标注为 NOASSERTION，需以仓库文件为准。",
+    "highlight_zh": "真正稀缺的能力不是聊天，而是「完全离网也能长期跑」这一部署形态。"
+  },
+  "fatedier/frp": {
+    "summary_zh": "Go 编写的快速反向代理，用于把 NAT 或防火墙后的本地服务暴露到公网：frps 部署在有公网地址的节点，frpc 在内网侧注册规则，支持 TCP、UDP、HTTP、HTTPS、按域名转发与 P2P 连接模式。README 按场景给出大量配置示例，从 SSH 访问内网机器、多 SSH 服务共享端口、自定义域名访问内网 Web，到转发 DNS 查询、Unix Domain Socket、启用 HTTPS 与私有暴露，并含 V2 状态与架构说明。",
+    "highlight_zh": "一份配置就能开一个入口，也因此最需要一份「谁开的、何时关」的台账。"
+  },
+  "apache/solr": {
+    "summary_zh": "基于 Apache Lucene 的开源搜索平台，统一承载全文、向量与地理空间检索，对外提供 HTTP 接口与 Admin 管理界面（默认 8983 端口）。README 是典型 ASF 入口文档：下载、本地运行、Docker 与 Kubernetes 部署、bin/solr 快速创建集合、开发者文档与从源码构建 dev 发行版，另列用户邮件列表、Slack 与 IRC 支持渠道。Apache-2.0 许可。",
+    "highlight_zh": "关键词、向量和地理位置三类检索，不必拆成三套索引与三套运维。"
+  },
+  "apache/ozone": {
+    "summary_zh": "面向 Hadoop 与云原生环境的分布式对象存储：同时提供 S3 与 Hadoop File System API，设计目标为数百亿文件与块，用 Raft 等协议实现强一致，支持 YARN 与 Kubernetes，集成 Kerberos、原生 ACL、Ranger、TDE 与传输加密，全副本高可用。README 给出 Docker Compose 快速体验、发布包运行、Kubernetes 部署与源码构建四条路径。Apache-2.0 许可。",
+    "highlight_zh": "让 S3 接口与既有 Hadoop 计算栈读同一份数据，而不必整体迁云。"
+  },
+  "moby/buildkit": {
+    "summary_zh": "把源码转成构建产物的底层工具包：自动垃圾回收、可扩展前端格式、并发依赖解析、高效指令缓存与缓存导入导出、嵌套构建任务、可分布式 worker、多输出格式与无 root 执行。中间表示为 LLB，可用 buildctl 与外部 frontend 探索；README 明确自 Docker Engine 23.0 起 docker build 已默认经由 Buildx 使用它，独立版功能更全。Apache-2.0 许可。",
+    "highlight_zh": "多数人每天都在用它，只是不必读这份文档——直到要优化缓存或自定义构建语法。"
+  },
+  "jenkinsci/jenkins": {
+    "summary_zh": "Java 编写的开源自动化服务器，官方提供 2,000 多个插件覆盖构建、测试、静态分析与各类集成；发行形态含 WAR、Docker 镜像、原生包与安装器，并有 Weekly 与 LTS 两条发布线。README 列出典型用途、开发环境起步、贡献指南、治理、采用者与许可信息。MIT 许可，是本期年龄最大的入选项目（5,834 天）。",
+    "highlight_zh": "增量最小的一项，却和接入、检索、存储、构建一起拼成了完整的生产链路。"
+  },
+  "supabase/supabase": {
+    "summary_zh": "以 Postgres 为核心的开发平台，用开源组件实现 Firebase 式能力：托管 Postgres、认证与授权、自动生成的 REST/GraphQL/Realtime/Database Functions/Edge Functions API、文件存储、AI 与向量嵌入工具包，以及管理 Dashboard。各组件共享数据库层的身份与权限模型，README 以清单列出每个组件与文档入口，并给出 Forum、Issues、邮件与 Discord 四类支持渠道。Apache-2.0 许可。",
+    "highlight_zh": "数据库、接口与权限收敛到一处定义，便利与安全边界其实是同一件事。"
+  },
+  "n8n-io/n8n": {
+    "summary_zh": "自托管或云端皆可的工作流自动化平台，近期定位已转向 AI agent 流程：可视化画布支持逻辑、工具调用、分支与人工审批，复杂处可写 JavaScript、Python 并引入 npm 包；模型可接 OpenAI、Anthropic、Google 或开源方案，切换供应商不改架构。带角色访问控制与审计轨迹，README 列出 1,500+ 集成与 9,000+ 模板，并给出需 Docker 的一键安装脚本。GitHub 对许可证标注为 NOASSERTION。",
+    "highlight_zh": "让可视化编排和手写代码在同一条流程里各做擅长的事，审批点就放在会写外部系统之前。"
+  },
+  "tauri-apps/tauri": {
+    "summary_zh": "用前端技术 + Rust 后端构建桌面与移动应用的框架：窗口层 tao 覆盖 macOS/Windows/Linux/Android/iOS，渲染层 WRY 统一调用各平台系统 WebView（WKWebView、WebView2、WebKitGTK、Android System WebView），不随包分发浏览器。内置打包器可产出 .app/.dmg/.deb/.rpm/.AppImage 与 NSIS/WiX 安装器，另有桌面自更新、系统托盘、原生通知、GitHub Action、VS Code 扩展；Native WebView Protocol 不启动 localhost 服务。npm create tauri-app 起步，MIT 与 Apache-2.0 双许可。",
+    "highlight_zh": "把渲染交给系统、把原生边界收进 Rust，包体和本地监听面一起变小。"
+  },
+  "amontlabs/lcu": {
+    "summary_zh": "把 Codex 原有的 computer-use 运行时从官方桌面应用中解耦出来，供 Pi、Codex CLI、Claude Code 及若干实验性 harness 使用：可读取窗口、点击、输入、截图，启用 Chrome 后经官方扩展按站点批准控制标签页。运行时仍由本机已安装的官方 ChatGPT 桌面应用提供，因此无需 Codex 认证；首次控制应用会发起本地授权，allow/revoke 必须在机器前操作，已批准应用可用 Touch ID 管理，另支持跨轮次保留状态。MIT 许可。",
+    "highlight_zh": "能力可以从别处来，但「允许控制哪个应用」这一步始终要人本机点头。"
+  },
+  "leemysw/yovoice": {
+    "summary_zh": "完全本地运行的 AI 音频与音乐工作台：文字转语音、按描述设计音色、参考声音克隆与情绪调整、带人声的整曲、General MIDI 多轨编曲，以及按角色逐行生成的故事配音和 SRT/WebVTT 字幕导出。底层为原生 C++ 的 audio.cpp，Windows 随包提供 CUDA 运行时、macOS 走 Metal，不依赖 Python 环境；界面含多 take 对比、波形裁剪与 stems/MIDI 导出，并内置 MCP server 与 agent skill 供 Cursor、Claude Code 等调用。Apache-2.0 许可。",
+    "highlight_zh": "数据不出本机，也省掉了劝退最多人的那套 Python 环境。"
+  },
+  "Eynzof/Hermes-CN-Desktop": {
+    "summary_zh": "Hermes Agent 中文社区的桌面客户端，Tauri v2 + Rust + React + TypeScript，Windows 优先并支持 macOS：系统 WebView 不打包 Chromium，内置独立 Hermes-CN-Core 内核，支持安装、更新、签名校验、健康检查与回滚。界面覆盖聊天流式输出、附件、MCP 工具、Skills、Memory、Profiles、定时任务、LaTeX/Mermaid 与运行时健康面板；适配主流云端模型与 Ollama/vLLM/LM Studio/llama.cpp，并有飞书接入。Rust 侧代理 REST 与上传、集中处理鉴权，另设需二次确认的 YOLO 高风险模式。当前 v0.8.0-rc8。",
+    "highlight_zh": "把内核的升级与回滚也做成桌面功能，而不只是给命令行套一层界面。"
+  },
+  "appwrite/appwrite": {
+    "summary_zh": "面向开发者与编码 agent 的开源后端平台，产品线含 Auth、Databases、Storage、Functions、Messaging、Realtime、Hosting 与 WAF，支持托管云或自托管，数据库可选自有方案或托管 PostgreSQL/MySQL。内置 MCP，Cursor、Claude Code、Codex 等可对运行中的项目执行操作；README 给出 Unix/Windows/PowerShell 安装、Docker API 版本不匹配、旧版升级与一键部署等实操章节，并有 SDKs、Architecture 与 Security 说明。BSD-3-Clause 许可。",
+    "highlight_zh": "agent 不再只生成配置文本，而是能对真实项目动手——权限边界因此更要紧。"
+  }
+}
