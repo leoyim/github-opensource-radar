@@ -1,0 +1,2090 @@
+{
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-15T11:18:40.934+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-14",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 786,
+    "unclassified": 67,
+    "selected": 24,
+    "suppressedByHistory": 237,
+    "sameDateExempt": 0,
+    "removed": 2,
+    "removedTotal": 2,
+    "offTopic": 5,
+    "watchlisted": 0,
+    "regenerated": true,
+    "reviewedAt": "2026-11-15T11:31:59.674+08:00"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ChromeDevTools/chrome-devtools-mcp",
+          "owner": "ChromeDevTools",
+          "name": "chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "homepage": "https://developer.chrome.com/docs/devtools/agents",
+          "description": "Chrome DevTools for coding agents",
+          "language": "TypeScript",
+          "topics": [
+            "browser",
+            "chrome",
+            "chrome-devtools",
+            "debugging",
+            "devtools",
+            "mcp",
+            "mcp-server",
+            "puppeteer"
+          ],
+          "stars": 56361,
+          "forks": 4772,
+          "open_issues": 129,
+          "starGain": 664,
+          "heat": 664,
+          "heatBasis": "trending",
+          "heatPercentile": 99,
+          "ageDays": 430,
+          "created_at": "2025-09-11T10:39:55Z",
+          "pushed_at": "2026-11-15T03:06:25Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 90.5,
+          "breakdown": {
+            "heat": 99,
+            "community": 89,
+            "activity": 71,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 49,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Chrome DevTools for agents ( chrome-devtools-mcp ) lets your coding agent (such as Antigravity, Claude, Cursor or Copilot) control and inspect a live Chrome browser. It is available as a Model-Context-Protocol (MCP) server and as a [CLI][cli]. Both give your AI coding assistant access to the full power of Chrome DevTools for reliable automation, in-depth debugging, and performance analysis.\n\n[Tool reference][tool-reference] [CLI][cli] [Skills][skills] [Changelog][changelog] [Contributing][contributing] [Troubleshooting][troubleshooting] [Design Principles][design-principles]\n\n- Get performance insights : Uses Chrome DevTools to record traces and extract actionable performance insights. - Advanced browser debugging : Analyze network requests, take screenshots and check browser console messages (with source-mapped stack traces). - Reliable automation . Uses puppeteer to automate actions in Chrome and automatically wait for action results.",
+            "features": [
+              "Get performance insights : Uses [Chrome",
+              "Advanced browser debugging : Analyze network requests, take screenshots and",
+              "Reliable automation . Uses",
+              "Node.js LTS version.",
+              "Chrome current stable version or newer.",
+              "npm",
+              "Claude Code: Run /plugin marketplace add ChromeDevTools/chrome-devtools-mcp , then /plugin install chrome-devtools-mcp@chrome-devtools-plugi",
+              "Copilot / VS Code: Run Chat: Install Plugin From Source and enter ChromeDevTools/chrome-devtools-mcp ."
+            ],
+            "sections": [
+              "Chrome DevTools for agents",
+              "Key features",
+              "Disclaimers",
+              "Usage statistics",
+              "Update checks",
+              "Requirements",
+              "Getting started",
+              "MCP Client configuration",
+              "Your first prompt",
+              "CLI",
+              "Skills",
+              "Install skills as a plugin",
+              "Install skills manually",
+              "Example for Claude Code. Use the skills directory of your ag"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9583
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "dream-num/univer",
+          "owner": "dream-num",
+          "name": "univer",
+          "url": "https://github.com/dream-num/univer",
+          "homepage": "https://univer.ai",
+          "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+          "language": "TypeScript",
+          "topics": [
+            "board",
+            "collaboration",
+            "doc",
+            "docx",
+            "excel",
+            "offce365",
+            "office",
+            "pdf"
+          ],
+          "stars": 24814,
+          "forks": 2253,
+          "open_issues": 166,
+          "starGain": 495,
+          "heat": 495,
+          "heatBasis": "trending",
+          "heatPercentile": 98,
+          "ageDays": 1508,
+          "created_at": "2022-09-29T12:09:14Z",
+          "pushed_at": "2026-11-15T03:11:29Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 89.9,
+          "breakdown": {
+            "heat": 98,
+            "community": 83,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 43,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- 💡 What is Univer? - Open-source capabilities - 🚀 Build on the open-source foundation - Quick start: an open-source spreadsheet editor - Connect your application to editable content - 🏗️ Explore the open-source architecture - Give custom features clear boundaries - Compose cross-feature edits and undo/redo - Connect applications and agents through Facade APIs and events - 🧩 Extend your application with Univer Office SDK - Scope and licensing - 🌐 Application patterns and ecosystem - Univer Workspace: an Office SDK reference application - CLI, agent integrations, and developer skills - 📚 Documentation and contributing - Runtime compatibility - 💬 Community - 🔒 Security - ❤️ Sponsors - 📄 License\n\nUniver is an Office SDK for building Office applications inside your own product. It provides Office editing, calculation, collaboration, and file processing for people and existing agents, using your data and permissions. The product family covers spreadsheets, documents, presentations, relational tables, canvases, and PDFs.\n\n- Web SDK is the foundation: content models, editing, rendering, formula calculation, and Facade APIs (application-facing APIs). Compose its plugins into an embedded editor or your own Office application, and reuse the content models, commands, and calculation for Headless processing without an interactive editor. - Server SDK adds backend services for real-time collaboration, edit history, and Office file import and export. - AI SDK connects Office capab",
+            "features": [
+              "💡 What is Univer?",
+              "Open-source capabilities",
+              "🚀 Build on the open-source foundation",
+              "Quick start: an open-source spreadsheet editor",
+              "Connect your application to editable content",
+              "🏗️ Explore the open-source architecture",
+              "Give custom features clear boundaries",
+              "Compose cross-feature edits and undo/redo"
+            ],
+            "sections": [
+              "💡 What is Univer?",
+              "Open-source capabilities",
+              "🚀 Build on the open-source foundation",
+              "Quick start: an open-source spreadsheet editor",
+              "Connect your application to editable content",
+              "🏗️ Explore the open-source architecture",
+              "Give custom features clear boundaries",
+              "Compose cross-feature edits and undo/redo",
+              "Connect applications and agents through Facade APIs and even",
+              "🧩 Extend your application with Univer Office SDK",
+              "Scope and licensing",
+              "🌐 Application patterns and ecosystem",
+              "Univer Workspace: an Office SDK reference application",
+              "CLI, agent integrations, and developer skills"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 51140
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "aaif-goose/goose",
+          "owner": "aaif-goose",
+          "name": "goose",
+          "url": "https://github.com/aaif-goose/goose",
+          "homepage": "https://goose-docs.ai/",
+          "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+          "language": "Rust",
+          "topics": [
+            "acp",
+            "ai",
+            "ai-agents",
+            "mcp"
+          ],
+          "stars": 56620,
+          "forks": 6591,
+          "open_issues": 549,
+          "starGain": 72,
+          "heat": 72,
+          "heatBasis": "trending",
+          "heatPercentile": 83,
+          "ageDays": 813,
+          "created_at": "2024-08-23T19:03:36Z",
+          "pushed_at": "2026-11-14T23:49:13Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 85.4,
+          "breakdown": {
+            "heat": 83,
+            "community": 90,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "your native open source AI agent — desktop app, CLI, and API — for code, workflows, and everything in between\n\n<a href=\"https://opensource.org/licenses/Apache-2.0\"\n\n<a href=\"https://github.com/aaif-goose/goose/actions/workflows/ci.yml\"",
+            "features": [
+              "Quickstart",
+              "Installation",
+              "Tutorials",
+              "Documentation",
+              "Governance",
+              "Custom Distributions — build your own goose distro with preconfigured providers, extensions, and branding",
+              "Diagnostics & Reporting",
+              "Known Issues"
+            ],
+            "sections": [
+              "goose",
+              "Get started",
+              "Quick links",
+              "Need help?",
+              "a little goose humor 🪿",
+              "goose around with us"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3435
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "tradermonty/claude-trading-skills",
+          "owner": "tradermonty",
+          "name": "claude-trading-skills",
+          "url": "https://github.com/tradermonty/claude-trading-skills",
+          "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+          "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+          "language": "Python",
+          "topics": [],
+          "stars": 4893,
+          "forks": 1007,
+          "open_issues": 69,
+          "starGain": 553,
+          "heat": 553,
+          "heatBasis": "trending",
+          "heatPercentile": 99,
+          "ageDays": 391,
+          "created_at": "2025-10-19T16:37:29Z",
+          "pushed_at": "2026-11-15T01:32:38Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.9,
+          "breakdown": {
+            "heat": 99,
+            "community": 71,
+            "activity": 68,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Claude Trading Skills started as a personal project to use AI to improve my own trading process.\n\nClaude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors.\n\nIt is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satellite strategy when market conditions are favorable.",
+            "features": [
+              "Time-constrained individual investors",
+              "Long-term investors who also want disciplined swing-trading upside",
+              "Dividend and ETF investors who want structured portfolio review",
+              "Traders who want to manage risk before finding trade candidates",
+              "Investors who want to journal and improve their decision process",
+              "market-breadth-analyzer — public CSV breadth scoring; no API key",
+              "uptrend-analyzer — public CSV uptrend participation; no API key",
+              "position-sizer — pure calculation; no I/O"
+            ],
+            "sections": [
+              "Claude Trading Skills",
+              "Disclaimer",
+              "Who This Is For",
+              "Recommended Starting Path",
+              "See Example Outputs",
+              "What This Actually Costs",
+              "No API Key Starter Path",
+              "Repository Layout",
+              "Getting Started",
+              "Use with Claude Web App",
+              "Use with Claude Code (desktop or CLI)",
+              "Supported platforms",
+              "Companion Work Package",
+              "Core Skill Areas"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 43815
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "ModernRelay/omnigraph",
+          "owner": "ModernRelay",
+          "name": "omnigraph",
+          "url": "https://github.com/ModernRelay/omnigraph",
+          "homepage": "https://omnigraph.dev",
+          "description": "Object-storage native graph database with branching and typed ontology",
+          "language": "Rust",
+          "topics": [
+            "apache-arrow",
+            "context-graph",
+            "datafusion",
+            "graph-database",
+            "knowledge-graph",
+            "lakehouse",
+            "lance",
+            "mcp"
+          ],
+          "stars": 2454,
+          "forks": 309,
+          "open_issues": 185,
+          "starGain": 217,
+          "heat": 217,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 218,
+          "created_at": "2026-04-10T17:50:30Z",
+          "pushed_at": "2026-11-15T00:11:27Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.8,
+          "breakdown": {
+            "heat": 93,
+            "community": 64,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 49,
+            "devops": 35,
+            "ai": 100,
+            "data": 56
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Object-storage native graph database with branching and typed ontology. Unified retrieval engine (vector/BM25/graph) · Git-style workflows · Open data format (Lance)\n\nQuickstart &nbsp;·&nbsp; Docs &nbsp;·&nbsp; Cookbooks &nbsp;·&nbsp; CLI &nbsp;·&nbsp; Studio &nbsp;·&nbsp; llms.txt\n\nOmnigraph is engineered for the new workload introduced by long-horizon agents: multiple agents sharing a typed world model to continuously retrieve and update context and coordinate work. Agents and UIs can become thin stateless consumers of durable state.",
+            "features": [
+              "Engine-wide enforcement: every write path goes through the same Cedar gate, so the HTTP server, the CLI, and the embedded SDK obey identical",
+              "Declared in the cluster: a policy bundle is bound to graphs (or the whole server) via policies: → applies to .",
+              "Scoped: rules apply per graph, per branch, or server-wide.",
+              "Static server credentials: static bearer tokens are hashed at startup and compared in constant time.",
+              "Forge-proof identity: the actor is resolved server-side from the token; clients can't set it.",
+              "0.14 highlights and upgrade actions · User guide",
+              "Cluster guide · Deployment guide · CLI reference",
+              "Schema · Queries · Search · Policy"
+            ],
+            "sections": [
+              "Capabilities",
+              "What you can build",
+              "Install",
+              "Studio",
+              "Set it up with an AI agent",
+              "Deploy",
+              "cluster.yaml",
+              "Query and mutate",
+              "Security & governance",
+              "Clients & SDKs",
+              "Docs",
+              "Build and test",
+              "Contributing",
+              "Community"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13154
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "juliangarnier/anime",
+          "owner": "juliangarnier",
+          "name": "anime",
+          "url": "https://github.com/juliangarnier/anime",
+          "homepage": "https://animejs.com",
+          "description": "JavaScript animation engine",
+          "language": "JavaScript",
+          "topics": [
+            "animation",
+            "anime",
+            "canvas",
+            "css",
+            "javascript",
+            "javascript-library",
+            "svg"
+          ],
+          "stars": 74681,
+          "forks": 5098,
+          "open_issues": 130,
+          "starGain": 78,
+          "heat": 78,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 3898,
+          "created_at": "2016-03-13T21:37:45Z",
+          "pushed_at": "2026-11-02T22:25:55Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 77.8,
+          "breakdown": {
+            "heat": 92,
+            "community": 91,
+            "activity": 16,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Anime.js is a fast, multipurpose and lightweight JavaScript animation library with a simple, yet powerful API. It works with CSS properties, SVG, DOM attributes and JavaScript Objects.\n\nAnime.js is 100% free and is only made possible with the help of our sponsors. Help the project become sustainable by sponsoring us on GitHub Sponsors .\n\nanimate('.square', { x: 320, rotate: { from: -180 }, duration: 1250, delay: stagger(65, { from: 'center' }), ease: 'inOutQuint', loop: true, alternate: true });",
+            "features": [],
+            "sections": [
+              "Anime.js",
+              "Sponsors",
+              "Platinum sponsors",
+              "Silver sponsors",
+              "Usage",
+              "V4 Documentation",
+              "V3 Migration guide",
+              "NPM development scripts"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5336
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "semgrep/semgrep",
+          "owner": "semgrep",
+          "name": "semgrep",
+          "url": "https://github.com/semgrep/semgrep",
+          "homepage": "https://semgrep.dev",
+          "description": "Lightweight static analysis for many languages. Find bug variants with patterns that look like source code.",
+          "language": "C",
+          "topics": [
+            "c",
+            "go",
+            "java",
+            "javascript",
+            "production",
+            "python",
+            "r2c",
+            "ruby"
+          ],
+          "stars": 17683,
+          "forks": 1178,
+          "open_issues": 1000,
+          "starGain": 37,
+          "heat": 37,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 2529,
+          "created_at": "2019-12-13T09:29:54Z",
+          "pushed_at": "2026-11-13T00:03:04Z",
+          "license": "LGPL-2.1",
+          "rating": 4,
+          "composite": 83.1,
+          "breakdown": {
+            "heat": 88,
+            "community": 80,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Semgrep is a fast, open-source, static analysis tool that searches code, finds bugs, and enforces secure guardrails and coding standards. Semgrep supports 30+ languages and can run in an IDE, as a pre-commit check, and as part of CI/CD workflows.\n\nSemgrep is semantic grep for code. While running grep \"2\" would only match the exact string 2 , Semgrep would match x = 1; y = x + 1 when searching for 2 . Semgrep rules look like the code you already write; no abstract syntax trees, regex wrestling, or painful DSLs.\n\nNote that in security contexts, Semgrep Community Edition will miss many true positives as it can only analyze code within the boundaries of a single function or file. If you want to use Semgrep for security purposes ( SAST , SCA , or secrets scanning ), the Semgrep AppSec Platform is strongly recommended since it adds the following critical capabilities:",
+            "features": [
+              "Improved core analysis capabilities (cross-file, cross-function, data-flow reachability) that greatly reduce false positives by 25% and incr",
+              "Contextual post-processing of findings with Semgrep Assistant (AI) to further reduce noise by ~20%. In addition, Assistant enriches findings",
+              "Customizable policies and seamless integration into developer workflows, giving security teams granular control over where, when, and how di",
+              "From the Semgrep AppSec Platform",
+              "From the CLI",
+              "Register on semgrep.dev",
+              "Explore the demo findings to learn how Semgrep works",
+              "Scan your project by navigating to Projects Scan New Project Run scan in CI"
+            ],
+            "sections": [
+              "Language support",
+              "Getting started 🚀",
+              "Option 1: Getting started from the Semgrep Appsec Platform (",
+              "Notes:",
+              "Option 2: Getting started from the CLI",
+              "Semgrep Ecosystem",
+              "Semgrep Rules",
+              "Extensions",
+              "Documentation",
+              "Metrics",
+              "More",
+              "Upgrading",
+              "Using pipx",
+              "Using uv tool command"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 20552
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "wailsapp/wails",
+          "owner": "wailsapp",
+          "name": "wails",
+          "url": "https://github.com/wailsapp/wails",
+          "homepage": "https://wails.io",
+          "description": "Create beautiful applications using Go",
+          "language": "Go",
+          "topics": [
+            "angular",
+            "desktop-application",
+            "go",
+            "golang",
+            "javascript",
+            "linux",
+            "macos",
+            "react"
+          ],
+          "stars": 37111,
+          "forks": 1936,
+          "open_issues": 406,
+          "starGain": 21,
+          "heat": 21,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 2891,
+          "created_at": "2018-12-15T23:14:06Z",
+          "pushed_at": "2026-11-15T02:24:41Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82,
+          "breakdown": {
+            "heat": 81,
+            "community": 85,
+            "activity": 75,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 25,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Build desktop applications using Go & Web Technologies.\n\nEnglish · 简体中文 · 日本語 · 한국어 · Español · Português · Русский · Francais · Uzbek · Deutsch · Türkçe · Bahasa Indonesia\n\n- Table of Contents - Introduction - Features - Roadmap - Getting Started - Sponsors - FAQ - Stargazers over time - Contributors - License - Inspiration",
+            "features": [
+              "Table of Contents",
+              "Introduction",
+              "Features",
+              "Roadmap",
+              "Getting Started",
+              "Sponsors",
+              "Stargazers over time",
+              "Contributors"
+            ],
+            "sections": [
+              "Table of Contents",
+              "Introduction",
+              "Features",
+              "Roadmap",
+              "Getting Started",
+              "Sponsors",
+              "Powered By",
+              "FAQ",
+              "Stargazers over time",
+              "Contributors",
+              "License",
+              "Inspiration"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7652
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "LibreTranslate/LibreTranslate",
+          "owner": "LibreTranslate",
+          "name": "LibreTranslate",
+          "url": "https://github.com/LibreTranslate/LibreTranslate",
+          "homepage": "https://libretranslate.com",
+          "description": "Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.",
+          "language": "Python",
+          "topics": [
+            "api",
+            "machine",
+            "translate",
+            "translation",
+            "translator"
+          ],
+          "stars": 17719,
+          "forks": 1857,
+          "open_issues": 134,
+          "starGain": 130,
+          "heat": 130,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 2156,
+          "created_at": "2020-12-19T19:19:34Z",
+          "pushed_at": "2026-11-14T12:22:54Z",
+          "license": "AGPL-3.0",
+          "rating": 4.5,
+          "composite": 85.8,
+          "breakdown": {
+            "heat": 92,
+            "community": 81,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Free and Open Source Machine Translation API, entirely self-hosted. Unlike other APIs, it doesn't rely on proprietary software such as Google or Azure to perform translations. Instead, its translation engine is powered by the open source Argos Translate library.\n\n- Quickstart - Usage Instructions - Community Resources\n\nThis work is largely possible thanks to Argos Translate, which powers the translation engine.",
+            "features": [
+              "Quickstart",
+              "Usage Instructions",
+              "Community Resources"
+            ],
+            "sections": [
+              "LibreTranslate",
+              "Getting Started",
+              "Credits",
+              "License",
+              "Trademark"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2171
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "NginxProxyManager/nginx-proxy-manager",
+          "owner": "NginxProxyManager",
+          "name": "nginx-proxy-manager",
+          "url": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+          "homepage": "https://nginxproxymanager.com",
+          "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+          "language": "JavaScript",
+          "topics": [
+            "nginx",
+            "nginx-proxy"
+          ],
+          "stars": 34715,
+          "forks": 3973,
+          "open_issues": 837,
+          "starGain": 14,
+          "heat": 14,
+          "heatBasis": "trending",
+          "heatPercentile": 74,
+          "ageDays": 3251,
+          "created_at": "2017-12-20T23:01:16Z",
+          "pushed_at": "2026-11-12T03:14:02Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.4,
+          "breakdown": {
+            "heat": 74,
+            "community": 86,
+            "activity": 57,
+            "maturity": 93
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "This project comes as a pre-built Docker image that enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.\n\nI created this project to fill a personal need to provide users with an easy way to accomplish reverse proxying hosts with SSL termination, and it had to be so easy that a monkey could do it. This goal hasn't changed. While there might be advanced options, they are optional, and the project should be as simple as possible so that the barrier to entry here is low.\n\n- Beautiful and Secure Admin Interface based on Tabler - Easily create forwarding domains, redirections, streams, and 404 hosts without knowing anything about Nginx - Free SSL using Let's Encrypt or provide your own custom SSL certificates - Access Lists and basic HTTP Authentication for your hosts - Advanced Nginx configuration available for super users - User management, permissions, and audit log",
+            "features": [
+              "Quick Setup",
+              "Full Setup",
+              "Screenshots",
+              "Beautiful and Secure Admin Interface based on Tabler",
+              "Easily create forwarding domains, redirections, streams, and 404 hosts without knowing anything about Nginx",
+              "Free SSL using Let's Encrypt or provide your own custom SSL certificates",
+              "Access Lists and basic HTTP Authentication for your hosts",
+              "Advanced Nginx configuration available for super users"
+            ],
+            "sections": [
+              "Project Goal",
+              "Features",
+              "Hosting your home network",
+              "Quick Setup",
+              "Contributing",
+              "Contributors",
+              "Getting Support"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 4391
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "rust-lang/rust-clippy",
+          "owner": "rust-lang",
+          "name": "rust-clippy",
+          "url": "https://github.com/rust-lang/rust-clippy",
+          "homepage": "https://clippy.rust-lang.org/",
+          "description": "A bunch of lints to catch common mistakes and improve your Rust code. Book: https://doc.rust-lang.org/clippy/",
+          "language": "Rust",
+          "topics": [
+            "lint",
+            "rust"
+          ],
+          "stars": 13652,
+          "forks": 2249,
+          "open_issues": 2887,
+          "starGain": 5,
+          "heat": 5,
+          "heatBasis": "trending",
+          "heatPercentile": 67,
+          "ageDays": 4379,
+          "created_at": "2014-11-19T07:49:21Z",
+          "pushed_at": "2026-11-14T23:30:12Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 75.5,
+          "breakdown": {
+            "heat": 67,
+            "community": 80,
+            "activity": 79,
+            "maturity": 93
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A collection of lints to catch common mistakes and improve your Rust code.\n\nLints are divided into categories, each with a default lint level. You can choose how much Clippy is supposed to ~~annoy~~ help you by changing the lint level by category.\n\nMore to come, please file an issue if you have ideas!",
+            "features": [
+              "Strict coding styles (e.g. [ clippy::else if without else ]).",
+              "Additional restrictions on CI (e.g. [ clippy::todo ]).",
+              "Preventing panicking in certain functions (e.g. [ clippy::unwrap used ]).",
+              "Running a lint only on a subset of code (e.g. [forbid(clippy::float arithmetic)] on a module).",
+              "Usage instructions",
+              "Configuration",
+              "Contributing",
+              "rustup component add clippy"
+            ],
+            "sections": [
+              "Clippy",
+              "Usage",
+              "As a cargo subcommand ( cargo clippy )",
+              "Using clippy-driver",
+              "Travis CI",
+              "Configuration",
+              "Allowing/denying lints",
+              "Configure the behavior of some lints",
+              "default of disallowed-names is [\"foo\", \"baz\", \"quux\"]",
+              "Specifying the minimum supported Rust version",
+              "Cargo.toml",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11094
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "RookieEnough/Orion-Store",
+          "owner": "RookieEnough",
+          "name": "Orion-Store",
+          "url": "https://github.com/RookieEnough/Orion-Store",
+          "homepage": "https://orionstore.pages.dev",
+          "description": "The ultimate home for Open Source and Cleaned apps. OrionStore offers instant access to YouTube Morphe, YT Music Morphe, and essential open-source tools without the clutter. No servers, no tracking, just a beautiful, modern gateway to the apps you love.",
+          "language": "Kotlin",
+          "topics": [],
+          "stars": 4152,
+          "forks": 139,
+          "open_issues": 87,
+          "starGain": 59,
+          "heat": 59,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 352,
+          "created_at": "2025-11-28T11:15:56Z",
+          "pushed_at": "2026-11-11T18:32:33Z",
+          "license": "GPL-3.0",
+          "rating": 3.5,
+          "composite": 74.7,
+          "breakdown": {
+            "heat": 88,
+            "community": 66,
+            "activity": 47,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 85,
+            "ai": 30,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A transparent app store built around public releases, inspectable metadata, and automation you can actually follow. Now fully native.\n\nSaw a few people asking about \"trackers\" flagged in App Manager or TrackerControl, so wanted to clear up what those actually are.\n\n- Scanners flag library components by name, not active surveillance. - Everything flagged comes from one library, the Unity Ads SDK behind the optional \"Fuel the Code\" quest. - Since 2.4.5 Orion strips everything from it that Fuel the Code does not need: its app-start hook, its background service, and the advertising ID and ad-measurement permissions. What is left is FullScreenWebViewDisplay , the screen that plays the video you chose to watch.",
+            "features": [
+              "Scanners flag library components by name, not active surveillance.",
+              "Everything flagged comes from one library, the Unity Ads SDK behind the optional \"Fuel the Code\" quest.",
+              "Since 2.4.5 Orion strips everything from it that Fuel the Code does not need: its app-start hook, its background service, and the advertisin",
+              "Unity only starts when you tap to watch a rewarded video in \"Fuel the Code\" for XP. It never runs at app start.",
+              "There are zero background services, no banner ads, and no advertising ID. Orion collects and sends no user data.",
+              "If you do not care about the rewarded XP quest, you can block it right there in App Manager. The store will still work completely fine.",
+              "Public JSON catalog with inspectable configuration",
+              "Multi-source releases (GitHub, GitLab, Codeberg)"
+            ],
+            "sections": [
+              "Orion Store 2.0 · Native at last",
+              "Overview",
+              "Orbit and Obtainium",
+              "What makes Orion different",
+              "Feature atlas",
+              "And a lot more",
+              "Screenshots",
+              "Official developer badges",
+              "How to Get Your Badge Integration Link:",
+              "How the project is structured",
+              "Building",
+              "Legacy web app",
+              "Data, workers and automation",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 22888
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "SigmaHQ/sigma",
+          "owner": "SigmaHQ",
+          "name": "sigma",
+          "url": "https://github.com/SigmaHQ/sigma",
+          "homepage": "https://sigmahq.io/",
+          "description": "Main Sigma Rule Repository",
+          "language": "Python",
+          "topics": [
+            "elasticsearch",
+            "ids",
+            "logging",
+            "monitoring",
+            "security",
+            "siem",
+            "signatures",
+            "splunk"
+          ],
+          "stars": 11510,
+          "forks": 2943,
+          "open_issues": 359,
+          "starGain": 10,
+          "heat": 10,
+          "heatBasis": "trending",
+          "heatPercentile": 68,
+          "ageDays": 3613,
+          "created_at": "2016-12-24T09:48:49Z",
+          "pushed_at": "2026-11-15T01:38:10Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 74.5,
+          "breakdown": {
+            "heat": 68,
+            "community": 79,
+            "activity": 74,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Welcome to the Sigma main rule repository. The place where detection engineers, threat hunters and all defensive security practitioners collaborate on detection rules. The repository offers more than 3000 detection rules of different type and aims to make reliable detections accessible to all at no cost.\n\nCurrently the repository offers three types of rules:\n\nGeneric Detection Rules - Are threat agnostic, their aim is to detect a behavior or an implementation of a technique or procedure that was, can or will be used by a potential threat actor. Threat Hunting Rules - Are broader in scope and are meant to give the analyst a starting point to hunt for potential suspicious or malicious activity Emerging Threat Rules - Are rules that cover specific threats, that are timely and relevant for certain periods of time. These threats include specific APT campaigns, exploitation of Zero-Day vulnerabilities, specific malware used during an attack,...etc. Compliance Rules - Are rules that help you identify compliance violations based on well known security frameworks such as CIS Controls, NIST, ISO 27001,...etc. Placeholder Rules - Are rules that get their final meaning at conversion or usage time of the rule.",
+            "features": [
+              "Generic Detection Rules - Are threat agnostic, their aim is to detect a behavior or an implementation of a technique or procedure that was, ",
+              "Threat Hunting Rules - Are broader in scope and are meant to give the analyst a starting point to hunt for potential suspicious or malicious",
+              "Emerging Threat Rules - Are rules that cover specific threats, that are timely and relevant for certain periods of time. These threats inclu",
+              "Compliance Rules - Are rules that help you identify compliance violations based on well known security frameworks such as CIS Controls, NIST",
+              "Placeholder Rules - Are rules that get their final meaning at conversion or usage time of the rule.",
+              "A continuously growing list of detection and hunting rules, peer reviewed by a community of professional Detection Engineers.",
+              "Vendor agnostic detection rules.",
+              "Easily shareable across communities and reports"
+            ],
+            "sections": [
+              "Sigma - Generic Signature Format for SIEM Systems",
+              "Explore Sigma",
+              "What is Sigma",
+              "Why Sigma",
+              "🌟 Key Features",
+              "🏗️ Rule Creation",
+              "🔎 Contributing & Making PRs",
+              "📦 Rule Packages",
+              "🧬 Rule Usage and Conversion",
+              "🚨 Reporting False Positives or New Rule Ideas",
+              "💬 Community",
+              "🌐 Official Resources",
+              "📚 Resources & Further Reading",
+              "Projects or Products that use or integrate Sigma rules"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13146
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "getlago/lago",
+          "owner": "getlago",
+          "name": "lago",
+          "url": "https://github.com/getlago/lago",
+          "homepage": "https://www.getlago.com",
+          "description": "Open Source Metering and Usage Based Billing API ⭐️ Consumption tracking, Subscription management, Pricing iterations, Payment orchestration & Revenue analytics",
+          "language": "Go",
+          "topics": [
+            "analytics",
+            "billing",
+            "clickhouse",
+            "events",
+            "fintech",
+            "go",
+            "ingestion",
+            "invoices"
+          ],
+          "stars": 10857,
+          "forks": 792,
+          "open_issues": 20,
+          "starGain": 20,
+          "heat": 20,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 1721,
+          "created_at": "2022-02-28T09:22:45Z",
+          "pushed_at": "2026-11-14T04:42:01Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 84.8,
+          "breakdown": {
+            "heat": 96,
+            "community": 76,
+            "activity": 59,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 84,
+            "devops": 41,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Agentic-first monetization infrastructure for AI products Meter tokens, compute, API calls, or any product usage. Turn usage into pricing, credits, entitlements, invoices, payments, and revenue. Use Lago Direct for your own product, or Lago Embedded to power monetization for your customers. Talk to us about Lago Cloud · Build with your AI agent · Run the AI billing demo · Documentation\n\n“Lago has been able to follow the pace of our releases and has allowed us to focus on what we do best.” Timothée Lacroix, CTO at Mistral AI · Read the customer story\n\nGive your coding agent Lago's public documentation, then choose the API, CLI, or MCP for your workflow. Paste this prompt to start:",
+            "features": [
+              "tokens by model, input, output, cache, reasoning, or tool call",
+              "GPU, CPU, storage, and other compute consumption",
+              "API calls, transactions, seats, active users, or custom events",
+              "prepaid credits with automatic top-ups",
+              "subscriptions with allowances, minimum commitments, and overages",
+              "self-serve plans and negotiated enterprise contracts in the same system",
+              "Idempotent ingestion. Lago deduplicates usage events by transaction id , so retrying an event does not bill it twice. Read the ingestion gui",
+              "Atomic batches. If one event in a batch is invalid, Lago rejects the batch and persists none of its events. Read the batch API reference."
+            ],
+            "sections": [
+              "Build with your AI agent",
+              "See Lago price an AI workload",
+              "What is Lago?",
+              "How Lago fits into your stack",
+              "Lago Direct and Lago Embedded",
+              "Agentic-first by design",
+              "Platform",
+              "Production characteristics",
+              "Chosen by teams operating at scale",
+              "Deployment options",
+              "1. Lago Cloud (recommended)",
+              "2. Self-hosted and on-premise",
+              "Also available",
+              "Deploy Lago"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 19930
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "UniForgeStack/monorm",
+          "owner": "UniForgeStack",
+          "name": "monorm",
+          "url": "https://github.com/UniForgeStack/monorm",
+          "homepage": "https://pypi.org/project/monorm/",
+          "description": "An async ORM for Python and TypeScript with one Rust core: one Prisma schema, typed models, migrations, PostgreSQL and SQLite.",
+          "language": "Rust",
+          "topics": [
+            "async",
+            "database",
+            "migrations",
+            "orm",
+            "postgresql",
+            "prisma",
+            "python",
+            "rust"
+          ],
+          "stars": 48,
+          "forks": 1,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 6,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 44,
+          "created_at": "2026-10-02T04:31:01Z",
+          "pushed_at": "2026-11-10T06:02:52Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 63.3,
+          "breakdown": {
+            "heat": 90,
+            "community": 27,
+            "activity": 23,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An async ORM for Python and TypeScript with one Rust core. You write the schema once in Prisma syntax. The Rust core plans the SQL and runs it on PostgreSQL or SQLite. Both languages get the same queries, the same migrations and generated, typed models.\n\nAbout 1.97× faster end to end than Django (async), up to 3.55×. Source: the geometric mean of 20 cases in one run on one machine, with the database round trip included (results). Method, limits and the cases where it is not faster: Benchmarks.\n\nmodel User { id Int @id @default(autoincrement()) name String posts Post[] } model Post { id Int @id @default(autoincrement()) title String published Boolean author id Int author User @relation(fields: [author id], references: [id]) }",
+            "features": [
+              "Queries: window functions, CTEs (also recursive), subqueries and EXISTS , aggregates over relations, full-text search, JSON and array column",
+              "Writes: upsert ( ON CONFLICT ), bulk insert, bulk update, update and delete with RETURNING .",
+              "Schema: check and exclusion constraints, partial and non-btree indexes, triggers and SQL functions, declarative partitions, all with migrati",
+              "Operations: row and advisory locks, read replicas, tenants with row-level security, N+1 detection, query hooks and OpenTelemetry.",
+              "Raw SQL is still there when you need it.",
+              "The schema language is Prisma's. One schema.prisma file, with the editor tooling that already exists (docs).",
+              "The model API is Django-style. Model.objects , filter() , load() and migrations that come from the schema.",
+              "Typed expressions in the style of SQLAlchemy, and generated typed models (docs)."
+            ],
+            "sections": [
+              "MonOrm",
+              "Example",
+              "Why",
+              "One ORM for every language",
+              "All of SQL, in the ORM",
+              "Django packages, built in",
+              "Familiar design",
+              "Inspired by",
+              "Quickstart",
+              "Upgrade from the split packages",
+              "Features",
+              "Databases and platforms",
+              "Benchmarks",
+              "Status and limits"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14428
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "KingDasWinx/Dexo",
+          "owner": "KingDasWinx",
+          "name": "Dexo",
+          "url": "https://github.com/KingDasWinx/Dexo",
+          "homepage": "https://dexo.kingdaswinx.com.br",
+          "description": "A terminal database workbench for PostgreSQL, MySQL, MariaDB and SQLite, with guardrails for AI agents. Written in Rust.",
+          "language": "Rust",
+          "topics": [
+            "arch",
+            "archlinux",
+            "cli",
+            "database",
+            "database-client",
+            "developer-tools",
+            "keyboard-driven",
+            "local-first"
+          ],
+          "stars": 50,
+          "forks": 4,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 4.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 89,
+          "ageDays": 93,
+          "created_at": "2026-08-14T02:55:58Z",
+          "pushed_at": "2026-10-12T23:25:58Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 59.3,
+          "breakdown": {
+            "heat": 89,
+            "community": 29,
+            "activity": 0,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Dexo A terminal database workbench with guardrails for AI agents.\n\nbrew install kingdaswinx/tap/dexo or any install below dexo --demo a sample shop, nothing to connect to\n\nDexo is a keyboard-driven workbench for PostgreSQL, MySQL, MariaDB and SQLite, with DuckDB as a plugin: a terminal UI, a command line and an MCP server for AI agents. A DELETE without WHERE on production waits for you to type the connection's name, a read-only connection is read-only on the server too, and an agent writes only with the access you give it, each write waiting for your approval. Everything stays on your machine.",
+            "features": [
+              "Workbench : catalog tree, SQL editor with Vim mode and live diagnostics, results grid and a command palette.",
+              "Data : insert and delete rows in the grid with a review before anything is written, filter and sort, import, export, backup and restore.",
+              "Schema : object forms with a DDL preview, and schema diff between databases, snapshots and files.",
+              "Query plans : EXPLAIN drawn as a tree; on Postgres with hypopg, try an index before building it.",
+              "Connections : TLS, SSH tunnels, proxies, password managers, and databases found in Docker.",
+              "AI agents : an MCP server with read-only profiles, allowlists, timed write access per connection and approval for each write.",
+              "Command line : query, export, import, explain and diff from scripts, with the same guardrails.",
+              "Local-first : no telemetry; passwords stay in the operating system's keychain or your password manager."
+            ],
+            "sections": [
+              "Features",
+              "Screenshots",
+              "Installation",
+              "Plugins",
+              "Getting started",
+              "AI agents",
+              "Compatibility",
+              "Privacy",
+              "Documentation",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8304
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "GoogleChrome/lighthouse",
+          "owner": "GoogleChrome",
+          "name": "lighthouse",
+          "url": "https://github.com/GoogleChrome/lighthouse",
+          "homepage": "https://developer.chrome.com/docs/lighthouse/overview/",
+          "description": "Automated auditing, performance metrics, and best practices for the web.",
+          "language": "JavaScript",
+          "topics": [
+            "audit",
+            "best-practices",
+            "chrome-devtools",
+            "developer-tools",
+            "performance-analysis",
+            "performance-metrics",
+            "pwa",
+            "web"
+          ],
+          "stars": 31093,
+          "forks": 9790,
+          "open_issues": 436,
+          "starGain": 17,
+          "heat": 17,
+          "heatBasis": "trending",
+          "heatPercentile": 73,
+          "ageDays": 3904,
+          "created_at": "2016-03-08T01:03:11Z",
+          "pushed_at": "2026-11-13T01:36:56Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.9,
+          "breakdown": {
+            "heat": 73,
+            "community": 88,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 49,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "readme.md",
+            "excerpt": "- Using Lighthouse - Using Lighthouse in Chrome DevTools - Using the Chrome extension - Using the Node CLI CLI options - Using the Node module - Viewing a report Online Viewer - Docs & Recipes - Developing Lighthouse Setup Run Tests Docs - Associated Products and Projects - Lighthouse Integrations in Web Perf services - Lighthouse Integrations in non-Web Perf services - Plugins - Related projects - FAQ How does Lighthouse work? Can I configure the lighthouse run? How does Lighthouse use network throttling, and how can I make it better? Are results sent to a remote server? How do I get localized Lighthouse results? How do I author custom audits to extend Lighthouse? How do I contribute?\n\nLighthouse is integrated directly into the Chrome DevTools, under the \"Lighthouse\" panel.\n\nRun it : open Chrome DevTools, select the Lighthouse panel, and hit \"Generate report\".",
+            "features": [
+              "Using Lighthouse",
+              "Using Lighthouse in Chrome DevTools",
+              "Using the Chrome extension",
+              "Using the Node CLI",
+              "CLI options",
+              "Using the Node module",
+              "Viewing a report",
+              "Online Viewer"
+            ],
+            "sections": [
+              "Lighthouse",
+              "Using Lighthouse in Chrome DevTools",
+              "Using the Chrome extension",
+              "Using the Node CLI",
+              "or use yarn:",
+              "yarn global add lighthouse",
+              "CLI options",
+              "saves ./ .report.html",
+              "json output sent to stdout",
+              "saves ./report.html",
+              "NOTE: specifying an output path with multiple formats ignore",
+              "saves ./myfile.report.json and ./myfile.report.html",
+              "saves ./ .report.json and ./ .report.html",
+              "saves ~/mydir/foo.report.html"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 33902
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "0x0funky/agent-sprite-forge",
+          "owner": "0x0funky",
+          "name": "agent-sprite-forge",
+          "url": "https://github.com/0x0funky/agent-sprite-forge",
+          "homepage": "",
+          "description": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts.",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "claude-code",
+            "codex",
+            "grok-build",
+            "pixel-art",
+            "sprite-generator"
+          ],
+          "stars": 5731,
+          "forks": 559,
+          "open_issues": 14,
+          "starGain": 39,
+          "heat": 39,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 205,
+          "created_at": "2026-04-23T20:52:52Z",
+          "pushed_at": "2026-11-13T01:41:03Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.8,
+          "breakdown": {
+            "heat": 81,
+            "community": 71,
+            "activity": 50,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 56,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Approve one generated still. Get every action of the character, keyed, looped, timed and exported for your engine.\n\nAgent skills for Claude Code (plugin), Codex and Grok . The agent generates a master still with the best image route you have, makes one image-to-video clip per action from it, and deterministic Python tools gate, key, register, loop, retime, finish and package every action for Godot, Aseprite or a web game.\n\n1. One approved master still Generated by the local Codex CLI ( image gen ), take 1 of 3. 2. Six actions, one image-to-video clip each Grok image-to-video (local CLI), soft-matte keyed, registered, loops picked by measurement, one-shots retimed to game speed, HD finish with the colour lock. Real timing.",
+            "features": [
+              "pixel look.py (generate2dsprite): ask-master and master draw the figure you like again, alone and large, and read it as the 1x master; ask-c",
+              "pixel motion.py (video2dsprite): prepare , frames , finish , measure , breath : the frames of an image-to-video clip read back on the sprite",
+              "Only on request. Nothing else changes: the HD, pixel and hibit finishes and their defaults are untouched.",
+              "The reference sets the look (pixel size, shading, outline); the characters are your own. The whole route, what you accept and when, and its ",
+              "master still.py --finish hibit : masters as flat lineless cel-shaded art, the input the hibit finish wants.",
+              "finish frames.py hibit and sprite set.py plan --finish hibit : the palette, the 8x8 majority-vote downscale, hysteresis, lone-pixel cleanup ",
+              "hibit plate.py (generate2dmap): 480x270 backgrounds (x4 = 1080p) with a 14-colour palette, a paper-cut smoothing pass and shade maps for lig",
+              "fx pixelfx.py ( check , list , render ) for route A and hibit fx.py pixelize for route B."
+            ],
+            "sections": [
+              "Agent Sprite Forge",
+              "One still → a whole game-ready sprite set",
+              "New: pixel looks, 1x sprites that follow a reference",
+              "New: hibit, real pixel art from flat AI art",
+              "FX: pixelfx (recommended) or the image route",
+              "What's new in 0.4 — the big upgrade",
+              "Quickstart",
+              "1. Install",
+              "2. Make the master still",
+              "3. Make the sprite set",
+              "Routes and providers",
+              "Supported providers",
+              "Setting API keys",
+              "Spend records"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 55964
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "dreammis/social-auto-upload",
+          "owner": "dreammis",
+          "name": "social-auto-upload",
+          "url": "https://github.com/dreammis/social-auto-upload",
+          "homepage": "https://sap-doc.nasdaddy.com/",
+          "description": "自动化上传视频到社交媒体：抖音、小红书、视频号、tiktok、youtube、bilibili",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "bilibili",
+            "douyin",
+            "tiktok",
+            "xiaohongshu",
+            "youtube"
+          ],
+          "stars": 16548,
+          "forks": 2808,
+          "open_issues": 87,
+          "starGain": 34,
+          "heat": 34,
+          "heatBasis": "trending",
+          "heatPercentile": 80,
+          "ageDays": 1077,
+          "created_at": "2023-12-04T07:49:16Z",
+          "pushed_at": "2026-10-22T18:42:22Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 71.1,
+          "breakdown": {
+            "heat": 80,
+            "community": 82,
+            "activity": 15,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "social-auto-upload 是一个面向内容创作者和运营者的多平台发布工具，提供统一 CLI 和供 Codex、OpenClaw、Claude Code 等 Agent 使用的 Skill。\n\nCLI 命令按平台维护在 sau commands/ ，发布流程位于 uploader/ 。日常变更记录见 CHANGELOG.md，稳定版本通过 GitHub Release 发布。\n\n感谢 DolOffer 对本项目的支持！对于做内容矩阵、多平台分发和 AI 自动化运营的创作者来说，ChatGPT、Claude、YouTube Premium、Spotify、Apple Music、Notion、Office 等数字工具往往是长期成本。DolOffer 提供 AI、视频、音乐和效率工具相关的订阅与充值服务，帮助用户更低成本地配置常用数字产品。更多说明可查看 DolOffer Guide 。使用优惠码 AI8888 可额外享受 9 折优惠，具体价格和服务规则以官网为准。 轻视AI：一句话生产MG动画，适合知识，科普，讲解，教程，介绍等类型视频的低成本制作，视频矩阵，养号等，成本只有seedance等1%。现在 注册 送1500积分 ClawPower 是一家稳定可靠 AI 大模型中转服务商，提供 Claude、GPT、Gemini 60+ 大模型接入。无论是 OpenClaw、Hermes 智能体自动化场景，Claude Code、Codex 编程工具接入，还是公众号、小红书内容创作；都能获得稳定、顺滑、可长期使用的模型服务体验。低至官方价格的 30%，点击 免费领取 5 刀现金 体验券 成为赞助商 如果您有意赞助本项目，请扫描左侧微信二维码（添加时请注明来意： 赞助 ）。",
+            "features": [
+              "💡 功能特性",
+              "💾 安装指南",
+              "🤖 AI Agent",
+              "🏁 快速开始",
+              "📝 更新日志",
+              "📃 详细文档",
+              "🐾 交流与支持",
+              "🤝 贡献指南"
+            ],
+            "sections": [
+              "social-auto-upload",
+              "💎 赞助商",
+              "目录",
+              "💡功能特性",
+              "按内容形态",
+              "💾安装指南",
+              "自己上手使用",
+              "AI Agent",
+              "🏁快速开始",
+              "方式 1：使用 CLI",
+              "换成 dayu、xueqiu、zhihu 等平台名称即可；具体登录要求见对应文档。",
+              "方式 2：使用 examples",
+              "📃详细文档",
+              "🐾交流与支持"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 15077
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "s1dashu/quiet-md",
+          "owner": "s1dashu",
+          "name": "quiet-md",
+          "url": "https://github.com/s1dashu/quiet-md",
+          "homepage": "https://quiet.md",
+          "description": "Blazing-fast native notes app and rich-text editor for macOS, Windows, and Linux. Built with Rust + GPUI. Local-first and beautifully designed.",
+          "language": "Rust",
+          "topics": [],
+          "stars": 1865,
+          "forks": 164,
+          "open_issues": 63,
+          "starGain": null,
+          "heat": 444.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 14,
+          "created_at": "2026-11-01T14:22:53Z",
+          "pushed_at": "2026-11-14T20:38:21Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.3,
+          "breakdown": {
+            "heat": 98,
+            "community": 61,
+            "activity": 77,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A fast, quiet, local notes app. Drawn natively with Rust + GPUI. Your notes stay on your computer, stored in the Feishu (Lark) DocxXML format.\n\nWebsite · Download · Performance · Features · Contributing\n\n⚡ Fast, the native kind of fast. The whole interface is drawn on the GPU by Rust and GPUI. No WebView, no Electron. In a one-million-character document, typing, deleting and scrolling all stay under 6 ms per frame at P95.",
+            "features": [
+              "macOS : unzip and drag quiet.md.app into Applications. The app is signed and notarized by Apple.",
+              "Windows : run the installer. By default it installs for the current user only, and uninstalling never deletes your notes. If SmartScreen app",
+              "Linux (experimental): chmod +x quiet-md- .AppImage and run it; without FUSE, add --appimage-extract-and-run . AppImage 0.1.10 and later supp",
+              "Editing : headings, ordered and bulleted lists, to-dos, quotes, code blocks with syntax highlighting, LaTeX math, tables (with merged cells)",
+              "Version history : each note keeps snapshots of its previous contents as it saves (20 by default, 1–30 under Settings › Documents). A drawer ",
+              "Organizing : a document tree, pinning, favorites, full-text search and a trash.",
+              "Import and export : import Markdown folders (Obsidian picture embeds and callouts included) and Feishu (Lark) DocxXML; export Markdown and P",
+              "Shortcuts : press ⌘ / ( Ctrl+/ on Windows) to see them all. Every one can be rebound. On Windows, Ctrl stands in for ⌘ and Alt for ⌥; the ap"
+            ],
+            "sections": [
+              "Why Quiet.md",
+              "Download",
+              "Performance",
+              "Features",
+              "Contributors",
+              "Recent updates",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12313
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Likely7/Veyra-NRVideo",
+          "owner": "Likely7",
+          "name": "Veyra-NRVideo",
+          "url": "https://github.com/Likely7/Veyra-NRVideo",
+          "homepage": "",
+          "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+          "language": "C++",
+          "topics": [],
+          "stars": 2329,
+          "forks": 193,
+          "open_issues": 71,
+          "starGain": 420,
+          "heat": 420,
+          "heatBasis": "trending",
+          "heatPercentile": 98,
+          "ageDays": 67,
+          "created_at": "2026-09-09T10:58:42Z",
+          "pushed_at": "2026-11-14T05:53:56Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 78.9,
+          "breakdown": {
+            "heat": 98,
+            "community": 63,
+            "activity": 63,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Super Resolution · Denoising · HDR · Frame Generation · Capture · PS5 / Xbox / PC Streaming\n\nTurn local video, capture cards and game streaming into one real-time GPU enhancement pipeline.\n\n79K+ cumulative Veyra portable-package downloads (79,332 as of 2026-11-08) · 103K+ downloads across all GitHub Release assets (103,337 including source archives, checksums and images). GitHub Releases · Counts are download events, not unique users.",
+            "features": [
+              "Rebuilt interface: Home, Cinema, Professional List, Nodes, Colour, Export and Settings; Simplified/Traditional Chinese, English and Japanese",
+              "Node editing and layered NR: executable connections, independent NR/colour parameters, separate List/Node configurations, sessions and prese",
+              "PC / Xbox streaming: Moonlight/Sunshine-compatible PC streaming and unofficial experimental Xbox support, alongside PS5, capture cards and s",
+              "New export workflow: editable ordered queue, trimming, MP4/MKV, multiple audio/embedded subtitle tracks, cancellation/retry and completion s",
+              "Enhancement and compatibility: SF310.9.16 performance/legacy models, NVIDIA original for RTX50 and AMD lmxxf, DLSS/XeSS/FSR options, capture",
+              "SR: true dual RTX Video SR with separate second-pass controls, plus SR-then-downsample; ordinary 8K retained, new graphs check VRAM budget.",
+              "GPU options: NVIDIA Low Latency Off / On / On + Boost; experimental RX 7000 RedDuke NR, Small/Original and per-layer scale; separate RX 9000",
+              "FG: sparse-noise-tolerant full-frame dedup, remove coarse generated-frame discard, smoothed anchors, optional VFG regulation, adaptive VSync"
+            ],
+            "sections": [
+              "Veyra",
+              "Real-time GPU Video Enhancement for Windows",
+              "Highlights",
+              "New in 2.1.2",
+              "New in 2.1.1",
+              "New in 2.1.0",
+              "Install and upgrade",
+              "Using 2.0",
+              "Sources and pages",
+              "List mode",
+              "Node mode — build a processing chain",
+              "Capture and streaming",
+              "Export",
+              "OBS and settings"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 23834
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Trapbraneedle/IPTV_Player_2.0",
+          "owner": "Trapbraneedle",
+          "name": "IPTV_Player_2.0",
+          "url": "https://github.com/Trapbraneedle/IPTV_Player_2.0",
+          "homepage": "",
+          "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes. ",
+          "language": "Go",
+          "topics": [
+            "dash",
+            "ip-tv",
+            "iptv",
+            "iptv-channels",
+            "iptv-m3u8",
+            "iptv-player",
+            "iptv-player-application",
+            "iptvtools"
+          ],
+          "stars": 666,
+          "forks": 12,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 228.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 1,
+          "created_at": "2026-11-14T19:25:19Z",
+          "pushed_at": "2026-11-14T19:26:53Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.8,
+          "breakdown": {
+            "heat": 96,
+            "community": 48,
+            "activity": 72,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 15,
+            "data": 14
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "MegaCubo Free is a powerful IPTV player that gives you access to thousands of free TV channels from around the world in stunning 4K quality. Whether you're into news, sports, movies, or documentaries, MegaCubo Free has something for everyone.\n\nNo more: - ❌ Expensive cable subscriptions - ❌ Geo-restricted content - ❌ Buffering and lag - ❌ Complicated setup processes\n\nOnly: - ✅ Thousands of free channels - ✅ 4K Ultra HD streaming - ✅ Fast and stable performance - ✅ Simple and intuitive interface",
+            "features": [
+              "❌ Expensive cable subscriptions",
+              "❌ Geo-restricted content",
+              "❌ Buffering and lag",
+              "❌ Complicated setup processes",
+              "✅ Thousands of free channels",
+              "✅ 4K Ultra HD streaming",
+              "✅ Fast and stable performance",
+              "✅ Simple and intuitive interface"
+            ],
+            "sections": [
+              "📺 MegaCubo Free – Stream Live TV Channels in 4K Without Lim",
+              "🎴 Feature Cards",
+              "🎯 What Is MegaCubo Free?",
+              "🆚 MegaCubo Free vs. Traditional IPTV Players",
+              "⚡ How MegaCubo Free Works",
+              "🚀 Key Features at a Glance",
+              "🌍 Channel Categories",
+              "💡 Bonus: The \"Turbo Stream\" Secret",
+              "🖥️ System Requirements",
+              "❓ Frequently Asked Questions",
+              "🏁 Final Words",
+              "🔍 SEO Keywords & Tags",
+              "Primary Keywords",
+              "Secondary Keywords"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8781
+          },
+          "guard": {
+            "score": 2.5,
+            "signals": [
+              "singlePush",
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "moeru-ai/airi",
+          "owner": "moeru-ai",
+          "name": "airi",
+          "url": "https://github.com/moeru-ai/airi",
+          "homepage": "https://airi.moeru.ai/docs/",
+          "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-companion",
+            "ai-vtuber",
+            "airi",
+            "digital-life",
+            "grok-companion",
+            "live2d",
+            "neuro-sama",
+            "neurosama"
+          ],
+          "stars": 51434,
+          "forks": 5186,
+          "open_issues": 302,
+          "starGain": 46,
+          "heat": 46,
+          "heatBasis": "trending",
+          "heatPercentile": 83,
+          "ageDays": 713,
+          "created_at": "2024-12-01T16:33:36Z",
+          "pushed_at": "2026-11-15T01:13:18Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.8,
+          "breakdown": {
+            "heat": 83,
+            "community": 89,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "[ Join Discord Server ] [ Try it ] [ 简体中文 ] [ 日本語 ] [ Русский ] [ Tiếng Việt ] [ Français ] [ 한국어 ]\n\nHave you dreamed about having a cyber living being (cyber waifu, digital pet) or digital companion that could play with and talk to you?\n\nWith the power of modern large language models like ChatGPT and famous Claude, asking a virtual being to roleplay and chat with us is already easy enough for everyone. Platforms like Character.ai (a.k.a. c.ai) and JanitorAI as well as local playgrounds like SillyTavern are already good-enough solutions for a chat based or visual adventure game like experience.",
+            "features": [
+              "DevLog @ 2026.03.23: Mobile performance and game engine exploration - March 23, 2026",
+              "DevLog @ 2026.03.14: VRM stage lifecycle, cache, and observability - March 14, 2026",
+              "DevLog @ 2026.02.16: Dome Keeper data collection and training pipeline - February 16, 2026",
+              "DevLog @ 2026.01.01: AIRI Pocket and FlowChat memory experiments - January 1, 2026",
+              "DevLog @ 2025.10.20: Electron migration, new models, and Moeru AI updates - October 20, 2025",
+              "DevLog @ 2025.08.26: Pure vision progress for airi-factorio - August 26, 2025",
+              "DevLog @ 2025.08.05: AIRI v0.7 release highlights - August 5, 2025",
+              "DevLog @ 2025.08.01: Streaming text animation and grapheme clusters - August 1, 2025"
+            ],
+            "sections": [
+              "Recent DevLogs & Stories",
+              "What's So Special About This Project?",
+              "Current Progress & Roadmap",
+              "Development",
+              "Stage Web (Browser Version at airi.moeru.ai)",
+              "Stage Tamagotchi (Desktop Version)",
+              "Stage Pocket (Mobile Version)",
+              "Or",
+              "Documentation Site",
+              "Publish",
+              "Support of LLM API Providers (powered by xsai)",
+              "Sub-projects Born from This Project",
+              "Similar Projects",
+              "Open sourced ones"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 27146
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "kopia/kopia",
+          "owner": "kopia",
+          "name": "kopia",
+          "url": "https://github.com/kopia/kopia",
+          "homepage": "https://kopia.io",
+          "description": "Cross-platform backup tool for Windows, macOS & Linux with fast, incremental backups, client-side end-to-end encryption, compression and data deduplication. CLI and GUI included.",
+          "language": "Go",
+          "topics": [
+            "backup",
+            "cloud",
+            "deduplication",
+            "encryption",
+            "google-cloud-storage"
+          ],
+          "stars": 14703,
+          "forks": 803,
+          "open_issues": 949,
+          "starGain": 43,
+          "heat": 43,
+          "heatBasis": "trending",
+          "heatPercentile": 82,
+          "ageDays": 3983,
+          "created_at": "2015-12-19T22:47:14Z",
+          "pushed_at": "2026-11-15T01:40:04Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.2,
+          "breakdown": {
+            "heat": 82,
+            "community": 78,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 15,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Kopia is a fast and secure open-source backup/restore tool that allows you to create encrypted snapshots of your data and save the snapshots to remote or cloud storage of your choice, to network-attached storage or server, or locally on your machine. Kopia does not 'image' your whole machine. Rather, Kopia allows you to backup/restore any and all files/directories that you deem are important or critical.\n\nKopia has both CLI (command-line interface) and GUI (graphical user interface) versions, making it the perfect tool for both advanced and regular users. You can read more about Kopia's unique features -- which include compression, deduplication, user-controlled end-to-end encryption, and error correction -- to get a better understanding of how Kopia works.\n\nWhen ready, head to the installation page to download and install Kopia, and make sure to read the Getting Started Guide for a step-by-step walkthrough of how to use Kopia.",
+            "features": [
+              "Amazon S3 and any cloud storage that is compatible with S3",
+              "Azure Blob Storage",
+              "Backblaze B2",
+              "Google Cloud Storage",
+              "Any remote server or cloud storage that supports WebDAV",
+              "Any remote server or cloud storage that supports SFTP",
+              "Some of the cloud storage options supported by Rclone",
+              "Requires you to download and setup Rclone in addition to Kopia, but after that Kopia manages/runs Rclone for you"
+            ],
+            "sections": [],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6334
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "ggml-org/llama.cpp",
+      "category": "ai",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "JuliusBrussee/caveman",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "JustVugg/colibri",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "JuneYaooo/rea-video",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "anthropics/claude-plugins-official",
+      "category": "ai",
+      "lastPushed": "2026-11-14",
+      "times": 1
+    },
+    {
+      "full_name": "CopilotKit/OpenBot",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "headroomlabs-ai/headroom",
+      "category": "ai",
+      "lastPushed": "2026-11-14",
+      "times": 1
+    },
+    {
+      "full_name": "GoogleChrome/modern-web-guidance-src",
+      "category": "ai",
+      "lastPushed": "2026-11-13",
+      "times": 1
+    },
+    {
+      "full_name": "openfilm/openfilm",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "QwenLM/qwen-code",
+      "category": "ai",
+      "lastPushed": "2026-11-14",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "JosssphZhou/poki",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "amosblomqvist/learnharness",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "reacher-z/Awesome-REA",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

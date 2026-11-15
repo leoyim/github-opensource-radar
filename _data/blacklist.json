@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 76,
-    "publicCount": 30,
+    "count": 83,
+    "publicCount": 32,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -17,8 +17,15 @@
         "id": "installer-wave-2026-11-c",
         "label": "「预激活安装包」批量投放（第三波）",
         "window": "2026-11-06 — 2026-11-12",
-        "repos": 9,
-        "note": "八个仓库在 2026-11-06 20:33—20:56 的同一窗口内先后创建，以商业软件「预激活独立安装包」为标题，README 版式一致（PowerShell 一键安装按钮 + 徽章 + 预激活说明），星标集中在 1,199—1,304、零 fork、零 issue、语言标注 HTML 且不含源码目录，附 MIT 许可文件却无对应源码；与此前两波投放呈现相同文本模板与主题词组合，商品名与账号均已更换。11-12 期先发现四个，11-13 期按同一证据口径补齐同窗口另外四个。 11-14 期按同一证据口径补齐同窗口第 9 个仓库。"
+        "repos": 11,
+        "note": "八个仓库在 2026-11-06 20:33—20:56 的同一窗口内先后创建，以商业软件「预激活独立安装包」为标题，README 版式一致（PowerShell 一键安装按钮 + 徽章 + 预激活说明），星标集中在 1,199—1,304、零 fork、零 issue、语言标注 HTML 且不含源码目录，附 MIT 许可文件却无对应源码；与此前两波投放呈现相同文本模板与主题词组合，商品名与账号均已更换。11-12 期先发现四个，11-13 期按同一证据口径补齐同窗口另外四个。 11-14 期按同一证据口径补齐同窗口第 9 个仓库。 11-15 期按同一证据口径补齐同窗口另外两个仓库（display-fusion、dvd-creator-game-enhancement），共 11 个。"
+      },
+      {
+        "id": "topic-stuffing-2026-11",
+        "label": "「主题堆砌」引流页面（内部台账）",
+        "window": "2026-11-01 — 2026-11-14",
+        "repos": 4,
+        "note": "以 485 B 的 initial.html 与 CONTRIBUTING.md 为主体，无 README 正文与源码目录，零 fork / 零 issue / 无许可证，集中申报与正文无关的技术主题词。按 11-13 期同一证据口径补录为内部台账，不公示、不占推荐位。"
       }
     ]
   },
@@ -5150,6 +5157,552 @@
           "machine-learning-audio",
           "open-source",
           "ozone"
+        ]
+      }
+    },
+    {
+      "full_name": "pastebin2019/multiaccountmanager-enhancement",
+      "owner": "pastebin2019",
+      "name": "multiaccountmanager-enhancement",
+      "url": "https://github.com/pastebin2019/multiaccountmanager-enhancement",
+      "description": "Multiaccountmanager 2026: Complete Standalone Setup, Fully Pre-Activated, Ready to Install",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-15",
+      "removedAt": "2026-11-15",
+      "issues": [
+        "2026-11-15"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 1 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "1104 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 1104,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-06T21:13:18Z",
+        "pushed_at": "2026-11-14T23:39:25Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "multiaccount",
+          "multiinstance",
+          "open-source",
+          "python",
+          "quick-login"
+        ]
+      }
+    },
+    {
+      "full_name": "Vesuvio1/display-fusion",
+      "owner": "Vesuvio1",
+      "name": "display-fusion",
+      "url": "https://github.com/Vesuvio1/display-fusion",
+      "description": "Display Fusion 2026 standalone desktop setup with complete feature configuration",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-c",
+      "firstSeen": "2026-11-15",
+      "removedAt": "2026-11-15",
+      "issues": [
+        "2026-11-15"
+      ],
+      "score": 3.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-06T20:54:55Z，与 11-12、11-13、11-14 三期已按同一口径撤回的九个「预激活安装包」仓库同处于 2026-11-06 20:33—20:56 的创建窗口，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "1175 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "源码主体与仓库体积不对应",
+          "detail": "仓库标注 HTML，主体为 index.html 落地页（13911 B）与 README.md（16182 B）；src/ 目录仅含一个 147 B 的 index.ts，未包含与所述的完整桌面应用相称的源码或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替构建说明",
+          "detail": "README 顶部为「一键安装」图片按钮，指向该账号自己的 GitHub Pages 页面；正文以独立安装包、离线部署、静默安装参数为主，缺少源码编译、依赖声明或贡献流程。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附 MIT 许可文件，但 README 描述的是第三方商业软件的「预激活独立安装包」，权利基础与所分发内容难以对应。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与同批仓库使用相同的章节结构（Requirements / Features / FAQ / Disclaimer / License）、相近篇幅与同一组「免激活、无联网校验、全功能默认开启」的商品化措辞；申报的 20 个主题词多为同一商品名的变体或无关词，正文并未涉及其中多数技术主题。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已撤回批次同批上架",
+          "detail": "与 Sanidhya0510/dvd-creator-game-enhancement 以及此前三期已归入该批次的九个仓库处于同一创建窗口、同一模板下上架，商品名与账号更换而版式、章节结构与主题词组合未变；两项在创建时间、README 版式与仓库结构上与前九项一致，故按同一事实口径一并归入该批次。"
+        }
+      ],
+      "verdict": "README 以一键安装入口代替源码与构建说明，所述为第三方桌面工具的「预激活」分发，安装过程与授权依据均无法预先审阅；同批仓库此前已按相同口径撤回。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联，并通过官方渠道获取相应软件。",
+      "snapshot": {
+        "stars": 1175,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T20:54:55Z",
+        "pushed_at": "2026-11-15T00:50:36Z",
+        "topics": [
+          "automation",
+          "desktop-tools",
+          "developer-tools",
+          "display-management",
+          "displayfusion",
+          "displayfusion-2026",
+          "displayfusion-multi-monitor-install-windows-2026",
+          "displayfusion-pro",
+          "displayfusion-setup",
+          "dual-monitor",
+          "for-displayfusion-tools",
+          "monitor-profiles",
+          "monitor-setup",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "system",
+          "taskbar-tools",
+          "utility"
+        ]
+      }
+    },
+    {
+      "full_name": "Sanidhya0510/dvd-creator-game-enhancement",
+      "owner": "Sanidhya0510",
+      "name": "dvd-creator-game-enhancement",
+      "url": "https://github.com/Sanidhya0510/dvd-creator-game-enhancement",
+      "description": "DVD-Creator 2026: Full Desktop Build, Every Feature Enabled",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-c",
+      "firstSeen": "2026-11-15",
+      "removedAt": "2026-11-15",
+      "issues": [
+        "2026-11-15"
+      ],
+      "score": 4.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-06T20:55:25Z，与 11-12、11-13、11-14 三期已按同一口径撤回的九个「预激活安装包」仓库同处于 2026-11-06 20:33—20:56 的创建窗口，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "1155 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "源码主体与仓库体积不对应",
+          "detail": "仓库标注 HTML，主体为 index.html 落地页（16270 B）与 README.md（11837 B）；src/ 目录仅含 84 B 的 index.ts 与 83 B 的 types.ts，未包含与所述的完整桌面应用相称的源码或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替构建说明",
+          "detail": "README 顶部为「一键安装」图片按钮，指向该账号自己的 GitHub Pages 页面；正文以独立安装包、离线部署、静默安装参数为主，缺少源码编译、依赖声明或贡献流程。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库未附任何许可证文件，README 描述的却是第三方商业工具的「全功能解锁」分发包，权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与同批仓库使用相同的章节结构（Requirements / Features / FAQ / Disclaimer / License）、相近篇幅与同一组「免激活、无联网校验、全功能默认开启」的商品化措辞；申报的 20 个主题词多为同一商品名的变体或无关词，正文并未涉及其中多数技术主题。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已撤回批次同批上架",
+          "detail": "与 Vesuvio1/display-fusion 以及此前三期已归入该批次的九个仓库处于同一创建窗口、同一模板下上架，商品名与账号更换而版式、章节结构与主题词组合未变；两项在创建时间、README 版式与仓库结构上与前九项一致，故按同一事实口径一并归入该批次。"
+        }
+      ],
+      "verdict": "README 以一键安装入口代替源码与构建说明，所述为第三方桌面工具的「全功能解锁」分发，安装过程与授权依据均无法预先审阅；同批仓库此前已按相同口径撤回。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联，并通过官方渠道获取相应软件。",
+      "snapshot": {
+        "stars": 1155,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-06T20:55:25Z",
+        "pushed_at": "2026-11-15T01:22:10Z",
+        "topics": [
+          "acer-nitro",
+          "ais-data",
+          "aiseesoft-data-recovery-speed-comparison",
+          "aiseesoft-fonelab-for-ios",
+          "aiseesoft-recover-deleted-files",
+          "aiseesoft-video-converter-pc",
+          "aosp-build",
+          "automation",
+          "compound-engineering",
+          "developer-tools",
+          "dvd-authoring-on-windows",
+          "dvd-menu-customization-windows",
+          "ios-open-source",
+          "open-source",
+          "python",
+          "scripts",
+          "software-engineering",
+          "system",
+          "utility",
+          "windows-app"
+        ]
+      }
+    },
+    {
+      "full_name": "BeforeSamurai/oh-i-see-resocket",
+      "owner": "BeforeSamurai",
+      "name": "oh-i-see-resocket",
+      "url": "https://github.com/BeforeSamurai/oh-i-see-resocket",
+      "description": "Evidence-backed visual regression audits for web apps with Playwright: responsive UI checks, accessibility signals, screenshots, measurements, and reproducible findings.",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "frontend",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "campaign": "topic-stuffing-2026-11",
+      "firstSeen": "2026-11-15",
+      "removedAt": "2026-11-15",
+      "issues": [
+        "2026-11-15"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 front-end、nextjs、web-testing、design 等 9 个技术主题词，仓库描述与可见内容为「视觉回归审计」的宣传叙述，未涉及该方向的工程实现。"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，总体积约 7 KB，根目录仅 initial.html（485 B）与 CONTRIBUTING.md，没有可审阅的源码结构、构建步骤或 README 正文。"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "92 星标、零 fork、零 issue，创建与最近一次推送相隔 7 秒，未见二次使用或反馈记录，且未声明开源许可证。"
+        },
+        {
+          "type": "correlation",
+          "label": "同批上架且版式一致",
+          "detail": "与 VexorDusk41914/resp-Leaderboard、Forgeobyggdrasil/rpocket-team-whalefeed 等仓库使用同一份 485 B 的 initial.html 与相近的 CONTRIBUTING.md 版式，创建时间、星标数与主题词组合呈现明显的一致性。"
+        },
+        {
+          "type": "content",
+          "label": "内容缺少可复用的工程信息",
+          "detail": "仓库没有 README 正文、安装说明、接口文档或可运行的示例代码；主题词覆盖多个互不相关的技术方向，正文却未见对应内容，难以作为该方向的工程参考。"
+        }
+      ],
+      "verdict": "仓库以 front-end、nextjs、web-testing 等主题词标注自身，但缺少与该方向对应的源码与说明，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 92,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-05T11:58:02Z",
+        "pushed_at": "2026-11-05T11:58:09Z",
+        "topics": [
+          "antislop",
+          "design",
+          "front-end",
+          "mobile",
+          "nextjs",
+          "ui",
+          "web",
+          "web-testing",
+          "win32-api"
+        ]
+      }
+    },
+    {
+      "full_name": "Heliothornczar68951/bunny-hopping-rpocket",
+      "owner": "Heliothornczar68951",
+      "name": "bunny-hopping-rpocket",
+      "url": "https://github.com/Heliothornczar68951/bunny-hopping-rpocket",
+      "description": "Classic FPS movement for Minecraft: a Fabric mod with real air strafing and bunny hopping. Install it on a server too to give everyone the same physics.",
+      "language": null,
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "frontend",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "campaign": "topic-stuffing-2026-11",
+      "firstSeen": "2026-11-15",
+      "removedAt": "2026-11-15",
+      "issues": [
+        "2026-11-15"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 css、es-modules、html5-game、browser-game 等 12 个技术主题词，仓库描述与可见内容为 Minecraft 模组移动机制的叙述，未涉及该方向的工程实现。"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言未标注，总体积约 10 KB，根目录仅 initial.html（485 B）与 CONTRIBUTING.md，没有可审阅的源码结构、构建步骤或 README 正文。"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "83 星标、零 fork、零 issue，创建与最近一次推送相隔 9 秒，未见二次使用或反馈记录，且未声明开源许可证。"
+        },
+        {
+          "type": "correlation",
+          "label": "同批上架且版式一致",
+          "detail": "与 BeforeSamurai/oh-i-see-resocket、VexorDusk41914/resp-Leaderboard 等仓库使用同一份 485 B 的 initial.html 与相近的 CONTRIBUTING.md 版式，创建时间、星标数与主题词组合呈现明显的一致性。"
+        },
+        {
+          "type": "content",
+          "label": "内容缺少可复用的工程信息",
+          "detail": "仓库没有 README 正文、安装说明、接口文档或可运行的示例代码；主题词覆盖多个互不相关的技术方向，正文却未见对应内容，难以作为该方向的工程参考。"
+        }
+      ],
+      "verdict": "仓库以 css、es-modules、html5-game 等主题词标注自身，但缺少与该方向对应的源码与说明，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 83,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-01T10:14:09Z",
+        "pushed_at": "2026-11-01T10:14:18Z",
+        "topics": [
+          "browser-game",
+          "css",
+          "es-modules",
+          "game-physics",
+          "html5-game",
+          "influx-timer",
+          "kz",
+          "movement",
+          "sourcepawn",
+          "stats",
+          "surf-timer",
+          "video"
+        ]
+      }
+    },
+    {
+      "full_name": "VexorDusk41914/resp-Leaderboard",
+      "owner": "VexorDusk41914",
+      "name": "resp-Leaderboard",
+      "url": "https://github.com/VexorDusk41914/resp-Leaderboard",
+      "description": "ZPI is the real time onchain activity score for wallets interacting within the Zeroloss ecosystem",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "data",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "campaign": "topic-stuffing-2026-11",
+      "firstSeen": "2026-11-15",
+      "removedAt": "2026-11-15",
+      "issues": [
+        "2026-11-15"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 clickhouse、data-engineering、kafka、sql 等 20 个技术主题词，仓库描述与可见内容为链上钱包活跃度评分的叙述，未涉及该方向的工程实现。"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，总体积约 3 KB，根目录仅 initial.html（485 B）与 CONTRIBUTING.md，没有可审阅的源码结构、构建步骤或 README 正文。"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "50 星标、零 fork、零 issue，创建与最近一次推送相隔 10 秒，未见二次使用或反馈记录，且未声明开源许可证。"
+        },
+        {
+          "type": "correlation",
+          "label": "同批上架且版式一致",
+          "detail": "与 Forgeobyggdrasil/rpocket-team-whalefeed 在 2026-11-14 11:34—11:36 的两分钟内先后创建，均标注 50 星标且共享同一套链上数据主题词，创建时间、星标数与主题词组合呈现明显的一致性。"
+        },
+        {
+          "type": "content",
+          "label": "内容缺少可复用的工程信息",
+          "detail": "仓库没有 README 正文、安装说明、接口文档或可运行的示例代码；主题词覆盖多个互不相关的技术方向，正文却未见对应内容，难以作为该方向的工程参考。"
+        }
+      ],
+      "verdict": "仓库以 clickhouse、data-engineering、kafka 等主题词标注自身，但缺少与该方向对应的源码与说明，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 50,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-14T11:34:05Z",
+        "pushed_at": "2026-11-14T11:34:15Z",
+        "topics": [
+          "arbitration",
+          "clickhouse",
+          "coinflip",
+          "commit-reveal",
+          "cypherpunk",
+          "data-engineering",
+          "dev-tools",
+          "dice",
+          "dispute-resolution",
+          "dune-analytics",
+          "eip-1153",
+          "gambling",
+          "gamefi",
+          "gas-optimization",
+          "kafka",
+          "rating",
+          "roulette",
+          "router",
+          "whale-flow",
+          "yul-assembly"
+        ]
+      }
+    },
+    {
+      "full_name": "Forgeobyggdrasil/rpocket-team-whalefeed",
+      "owner": "Forgeobyggdrasil",
+      "name": "rpocket-team-whalefeed",
+      "url": "https://github.com/Forgeobyggdrasil/rpocket-team-whalefeed",
+      "description": "whalefeed - open source utility, updated 2026-10-04",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "data",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "campaign": "topic-stuffing-2026-11",
+      "firstSeen": "2026-11-15",
+      "removedAt": "2026-11-15",
+      "issues": [
+        "2026-11-15"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 duckdb、dune、sql、data-engineering 等 18 个技术主题词，仓库描述与可见内容为 NFT 巨鲸追踪工具的叙述，未涉及该方向的工程实现。"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，总体积约 3 KB，根目录仅 initial.html（485 B）与 CONTRIBUTING.md，没有可审阅的源码结构、构建步骤或 README 正文。"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "50 星标、零 fork、零 issue，创建与最近一次推送相隔 8 秒，未见二次使用或反馈记录，且未声明开源许可证。"
+        },
+        {
+          "type": "correlation",
+          "label": "同批上架且版式一致",
+          "detail": "与 VexorDusk41914/resp-Leaderboard 在 2026-11-14 11:34—11:36 的两分钟内先后创建，均标注 50 星标且共享同一套链上数据主题词，创建时间、星标数与主题词组合呈现明显的一致性。"
+        },
+        {
+          "type": "content",
+          "label": "内容缺少可复用的工程信息",
+          "detail": "仓库没有 README 正文、安装说明、接口文档或可运行的示例代码；主题词覆盖多个互不相关的技术方向，正文却未见对应内容，难以作为该方向的工程参考。"
+        }
+      ],
+      "verdict": "仓库以 duckdb、dune、sql 等主题词标注自身，但缺少与该方向对应的源码与说明，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 50,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-14T11:35:38Z",
+        "pushed_at": "2026-11-14T11:35:46Z",
+        "topics": [
+          "bayc",
+          "challengue",
+          "collectibles",
+          "duckdb",
+          "dune",
+          "floor-price",
+          "meme-coin",
+          "monitor",
+          "nft-collection",
+          "nft-tools",
+          "reservoir",
+          "satoshi",
+          "sql",
+          "tracker",
+          "transactions",
+          "whale",
+          "winapi",
+          "wintermute"
         ]
       }
     }

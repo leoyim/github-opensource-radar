@@ -1,0 +1,98 @@
+{
+  "ChromeDevTools/chrome-devtools-mcp": {
+    "summary_zh": "把 Chrome DevTools 的能力以 MCP 服务器与 CLI 两种形态交给编码 agent：可操控真实 Chrome 实例、录制性能 trace 并给出可执行的优化结论、读取控制台与网络请求做深度调试，另附可安装的 Skills 插件与用量统计/更新检查开关。",
+    "highlight_zh": "让 agent 从「看代码猜效果」变成「打开浏览器验证效果」。"
+  },
+  "dream-num/univer": {
+    "summary_zh": "开源 Office SDK，把文档、表格、幻灯片、PDF 的编辑与协同能力嵌进自己的产品；以可扩展内核 + Facade API 暴露给上层应用与 AI agent，支持自定义功能边界、跨功能编辑与统一撤销重做，并提供 CLI、agent 集成与开发者技能。",
+    "highlight_zh": "把 Office 从一款软件拆成一套可嵌入、可被 agent 调用的内容编辑内核。"
+  },
+  "aaif-goose/goose": {
+    "summary_zh": "开源可扩展的通用 AI agent，提供桌面端、CLI 与 API 三种入口，可接任意 LLM，不止于代码建议，还能安装、执行、编辑与测试；支持 ACP 与 MCP 协议扩展工具链。",
+    "highlight_zh": "把 agent 做成可换模型、可换工具、可进脚本的本地运行时，而非某个 IDE 的附属功能。"
+  },
+  "tradermonty/claude-trading-skills": {
+    "summary_zh": "面向长期投资者与纪律性波段交易的 Claude Skills 工作流工具包，涵盖市场分析、技术图表、经济日历、选股筛选与策略开发；给出推荐上手路径、示例输出、成本说明与无 API Key 的起步方案，并可直接用于 Claude Web 与 Claude Code。",
+    "highlight_zh": "把投研流程写成可复用、可审阅的技能包，而不是一段临时提示词。"
+  },
+  "ModernRelay/omnigraph": {
+    "summary_zh": "以对象存储为原生底座的图数据库，带 Git 式分支与类型化本体；统一向量 / BM25 / 图检索，采用开放的 Lance 数据格式，面向多个 agent 共享并持续更新同一份世界模型的场景，提供 CLI、Studio、集群部署、SDK 与安全治理说明。",
+    "highlight_zh": "为长周期多 agent 协作准备的「共享记忆层」，用分支管理状态变更。"
+  },
+  "juliangarnier/anime": {
+    "summary_zh": "轻量 JavaScript 动画引擎，统一驱动 CSS 属性、SVG、DOM 属性与普通对象；V4 提供 stagger、时间轴与缓动等组合能力，并附 V3 迁移指南与 NPM 开发脚本，项目由赞助支持、完全免费。",
+    "highlight_zh": "用一套 API 把页面上所有「会动的东西」收进同一个时间轴。"
+  },
+  "semgrep/semgrep": {
+    "summary_zh": "轻量级静态分析工具，规则长得像源码本身，无需手写 AST 或复杂 DSL；支持 30+ 语言，可在 IDE、pre-commit 与 CI/CD 中运行，用于找 bug 变体、落实安全护栏与编码规范，另有规则库、扩展与指标说明。",
+    "highlight_zh": "把安全与编码规范写成看得懂的代码模式，让检查能进每一次提交。"
+  },
+  "wailsapp/wails": {
+    "summary_zh": "用 Go 加 Web 技术构建跨平台桌面应用，前端可用 React、Angular 等框架，覆盖 Windows / macOS / Linux；提供 CLI、功能清单、路线图、FAQ 与多语言文档，是把现有 Web 前端封装成原生窗口的常见选择。",
+    "highlight_zh": "后端留在 Go、界面交给 Web，桌面应用不必再养两套技术栈。"
+  },
+  "LibreTranslate/LibreTranslate": {
+    "summary_zh": "完全自托管的开源机器翻译 API，不依赖 Google / Azure 等专有服务，翻译引擎由开源的 Argos Translate 驱动；支持离线部署，提供快速开始、使用说明与社区资源，AGPL-3.0 许可。",
+    "highlight_zh": "把翻译能力留在自己的机器上，数据与调用链都可控。"
+  },
+  "NginxProxyManager/nginx-proxy-manager": {
+    "summary_zh": "预构建的 Docker 镜像，用简洁的管理界面配置 Nginx 反向代理与免费 SSL 证书，无需深入掌握 Nginx 或 Let's Encrypt；基于 Tabler 界面，支持转发域名、重定向、访问列表等，高级选项保持可选。",
+    "highlight_zh": "把反向代理和证书签发收敛到一个「不用懂 Nginx」的界面里。"
+  },
+  "rust-lang/rust-clippy": {
+    "summary_zh": "Rust 官方的 lint 集合，用于捕捉常见错误、改进代码风格；按类别划分默认 lint 级别，可通过 cargo clippy 或 clippy-driver 调用，支持在 CI 中配置允许/拒绝级别、MSRV 与 disallowed-names 等细节。",
+    "highlight_zh": "把 Rust 的社区经验变成可配置、可进 CI 的默认检查。"
+  },
+  "RookieEnough/Orion-Store": {
+    "summary_zh": "面向开源与精简版 Android 应用的原生应用商店客户端，强调公开发行版、可查阅的元数据与可追溯的自动化；2.0 起完全原生化，含 Orbit / Obtainium 集成、开发者徽章、构建说明与关于追踪器扫描结果的说明。",
+    "highlight_zh": "把「应用从哪来、被改了什么」写进元数据，而不只是做一个下载器。"
+  },
+  "SigmaHQ/sigma": {
+    "summary_zh": "面向 SIEM 的通用检测规则格式与主规则库，提供 3000+ 条检测规则，含通用检测、威胁狩猎等类型；规则与具体平台解耦，可转换到多种 SIEM/日志查询语法，并有规则包、转换工具、误报反馈与贡献流程。",
+    "highlight_zh": "让检测规则一次编写、多平台复用，成为可共享的防御资产。"
+  },
+  "getlago/lago": {
+    "summary_zh": "开源的计量与按用量计费基础设施，把 token、算力、API 调用等使用量转成定价、额度、权益、发票、支付与收入分析；提供 Lago Direct / Embedded 两种接入、自托管与云部署，并把「让编码 agent 按文档调用 API / CLI / MCP」写成正式路径。",
+    "highlight_zh": "为 AI 产品补上最后一段：用量怎么变成账单。"
+  },
+  "UniForgeStack/monorm": {
+    "summary_zh": "一套 Rust 内核驱动的异步 ORM，Python 与 TypeScript 共用一份 Prisma 风格 schema，自动生成带类型的模型、迁移与查询，支持 PostgreSQL / SQLite；README 给出 20 个用例的端到端基准（几何均值约 1.97× Django async）并单列方法与局限章节。",
+    "highlight_zh": "让两种语言说同一套数据模型，把查询计划收进一个 Rust 核心。"
+  },
+  "KingDasWinx/Dexo": {
+    "summary_zh": "Rust 编写的终端数据库工作台，支持 PostgreSQL、MySQL、MariaDB、SQLite 与 DuckDB 插件；提供 TUI、命令行与 MCP 服务器，对 AI agent 的写操作逐条等待批准、只读连接在服务端也保持只读，数据全部留在本地。",
+    "highlight_zh": "把「agent 能不能改库」做成一条需要你点头的护栏。"
+  },
+  "GoogleChrome/lighthouse": {
+    "summary_zh": "Web 页面自动化审计工具，覆盖性能、可访问性、最佳实践、PWA 等指标；可在 Chrome DevTools、扩展、Node CLI 与 Node 模块中使用，支持自定义审计、节流配置、本地化结果与多种报告输出格式，并列出大量第三方集成与插件。",
+    "highlight_zh": "把「页面快不快、合不合规」变成一份可复现、可进 CI 的报告。"
+  },
+  "0x0funky/agent-sprite-forge": {
+    "summary_zh": "面向 Claude Code / Codex / Grok 的 agent 技能包，从一张确认过的主图生成成套 2D 精灵表、透明 PNG 帧与动画 GIF；用确定性 Python 工具完成抠像、对齐、循环选取、重定时与打包，输出可直接给 Godot、Aseprite 或网页游戏使用，并附多供应商路由与花费记录。",
+    "highlight_zh": "把「一张图扩成整套角色动作」的生成过程拆成可复现的确定性步骤。"
+  },
+  "dreammis/social-auto-upload": {
+    "summary_zh": "面向内容创作者的多平台视频发布工具，统一 CLI 与可供 Codex / Claude Code 等 agent 使用的 Skill，覆盖抖音、小红书、视频号、TikTok、YouTube、B 站等；命令按平台维护在 sau commands/，发布流程位于 uploader/，提供 CLI 与 examples 两种上手方式及详细文档。",
+    "highlight_zh": "把一次上传变成可编排、可复用的多平台发布流程。"
+  },
+  "s1dashu/quiet-md": {
+    "summary_zh": "用 Rust + GPUI 原生绘制的本地优先笔记与富文本编辑器，覆盖 macOS / Windows / Linux；不用 WebView 也不依赖 Electron，笔记以纯文件形式保存在本机，README 给出百万字符文档下输入、删除与滚动 P95 均低于 6ms/帧的性能数据。",
+    "highlight_zh": "把编辑器的流畅度交回 GPU 绘制，而不是继续堆 WebView。"
+  },
+  "Likely7/Veyra-NRVideo": {
+    "summary_zh": "Windows 上的实时 GPU 视频增强与采集工具，把本地视频、采集卡与游戏串流纳入同一条处理链，提供超分、降噪、HDR、帧生成与录制导出；支持列表模式与节点式处理链编排、OBS 联动，README 说明了安装升级路径与下载量统计口径。",
+    "highlight_zh": "把过去分散在播放器、滤镜与录制软件里的增强步骤连成一条可编排的链。"
+  },
+  "Trapbraneedle/IPTV_Player_2.0": {
+    "summary_zh": "跨 Windows / macOS / Linux / Android 与 TV Box 的 IPTV 播放应用，支持 M3U 播放列表、EPG 与社区频道列表，涵盖 DASH、M3U8、Xtream 等常见源格式；仓库含 Go 与 Python 实现、模块化目录与 Apache-2.0 许可，README 以功能介绍与 FAQ 为主。",
+    "highlight_zh": "把多种直播源格式收进一个跨端播放器，配置与频道列表可自行维护。"
+  },
+  "moeru-ai/airi": {
+    "summary_zh": "自托管的虚拟伙伴/数字生命容器，支持实时语音对话、Live2D 形象与游戏交互（Minecraft、Factorio），覆盖 Web、macOS、Windows 并规划桌面与移动形态；可接多家 LLM API，README 列出开发日志、路线图、子项目与同类开源项目对照。",
+    "highlight_zh": "把「能陪你说话、还能一起玩」的虚拟伙伴做成可自托管的开源工程。"
+  },
+  "kopia/kopia": {
+    "summary_zh": "跨平台备份与恢复工具，提供快速增量备份、客户端端到端加密、压缩与去重，快照可存到本地、NAS、服务器或自选云存储；同时提供 CLI 与 GUI，覆盖 Windows / macOS / Linux，支持用户自主管理的密钥与快照策略。",
+    "highlight_zh": "把备份做成可验证的加密快照，而不是一堆复制过去的文件。"
+  }
+}
