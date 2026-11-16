@@ -10,7 +10,7 @@ const issue = loadIssue(latest);
 
 <Base
   title={`开源雷达 · ${displayDate(latest)} GitHub 热点日报`}
-  description={`${issue.date} 的 GitHub 热点日报：${issue.stats.candidates} 个候选，${issue.stats.selected} 个入选，按六个方向归档并附中文摘要。`}
+  description={`${issue.date} 的 GitHub 热点日报：${issue.stats.candidates} 个候选，${issue.stats.selected} 个入选，按 ${issue.categories.length} 个方向归档并附中文摘要。`}
 >
   <IssueView issue={issue} issueNo={dates.length} latest />
 </Base>
