@@ -1,0 +1,102 @@
+{
+  "ag-ui-protocol/ag-ui": {
+    "summary_zh": "面向 agent 与用户界面的开放事件协议：后端在执行过程中发出约 16 种标准事件，前端经中间件映射为 UI 状态，传输可用 SSE、WebSocket 或 webhook；内置参考 HTTP 实现与默认连接器，覆盖流式对话、双向状态同步、生成式 UI、前端工具与人工确认，并列出 LangChain、CrewAI、Google ADK、Microsoft Agent Framework 等一批框架集成。",
+    "highlight_zh": "MCP 管工具、A2A 管互通，AG-UI 补的是「agent 怎么走进界面」这一层。"
+  },
+  "n8n-io/nod": {
+    "summary_zh": "n8n 推出的开源桌面个人 agent，运行在本机、模型可自选，自带独立浏览器与计算机环境，能在真实网站上追发票、退订阅、填表单；每天从邮件与日历生成会前简报，起草回复须经用户批准后才发送，并按计划盯价格变化。记忆只从用户自己的消息学习，逐条可见、可编辑、可遗忘。",
+    "highlight_zh": "把「动手前先问一句」写成产品主轴，而不是事后补一道开关。"
+  },
+  "Tencent/LoopForge": {
+    "summary_zh": "自托管的编码 agent 工作空间：在聊天里向 Main Bot 描述需求，它开 Docker 沙箱、检出仓库、分派项目角色并开出 PR；跑通的流程可存成 SOP，按 Agent、Script、Human-gate 与子 SOP 节点依序执行，支持审批、退回、暂停与从任一节点重跑。规划、实现、评审、测试各自独立配置，兼容十种 agent CLI，两条路径共享同一份 requirement 以便汇总交付与成本。",
+    "highlight_zh": "把「一次跑通」固化成「每次都按同一套阶段与签字交付」。"
+  },
+  "PrefectHQ/fastmcp": {
+    "summary_zh": "Python 侧的 MCP 应用框架，用装饰器把普通函数变成合规工具，schema、校验与文档自动生成；客户端连任意 server 时由框架托管传输协商、认证与协议生命周期。三根支柱为 Servers、Clients 与可在对话内渲染交互 UI 的 Apps，另有官方 TypeScript 版本与 llms.txt 文档。",
+    "highlight_zh": "FastMCP 1.0 已并入官方 MCP Python SDK，是这套协议最 mainstream 的落地路径。"
+  },
+  "unslothai/unsloth": {
+    "summary_zh": "本地运行与训练模型的桌面应用，另有 Studio Web UI 与 Core 代码形态；支持 LLM、GGUF、扩散与音频模型，覆盖 NVIDIA/AMD/Intel/CPU/Vulkan 与多 GPU，提供微调、RL、导出 GGUF/FP8 等格式，以及浏览器操作、私有搜索与 RAG、LAN 远程访问和 OpenAI 兼容 API；Unsloth Start 可一条命令把本地模型接给 Claude Code、Codex 等 agent。",
+    "highlight_zh": "从「训练加速库」长成「本地模型的桌面运行时」，并直接对上 agent 工作流。"
+  },
+  "jaegertracing/jaeger": {
+    "summary_zh": "CNCF 毕业的分布式追踪平台，v2 已发布并大量复用 OpenTelemetry Collector 组件：一条 docker run 即可起 all-in-one（UI、collector、query 与内存存储），经 OTLP gRPC 4317 / HTTP 4318 接收数据；架构含 Collector、存储插件、Query Service 与 UI，并对配置弃用、Go 版本跟随与存储后端生命周期给出成文策略。",
+    "highlight_zh": "3,866 天的老项目换到 OTel 骨架上，追踪层的工业标准仍在收敛。"
+  },
+  "paimonsoror/telltaledns": {
+    "summary_zh": "面向家庭与小型网络的 DNS 服务器：每条查询归因到具名设备、分阶段计时并解释应答原因，按设备/分组配置拦截、计划、安全搜索与重写，保存前可预览对昨日真实流量的影响；支持 DoT/DoH/DoQ、DNSSEC 与完整递归，Pi 与 K8s 可组成同一集群，控制面故障时从最后一份好配置继续应答。单个静态二进制约 13 MiB，附仪表盘、Prometheus/OpenTelemetry、REST API 与带审批的 MCP 工具。",
+    "highlight_zh": "把「谁在问、为什么这样答」做成一等能力，连控制面挂掉都不停解析。"
+  },
+  "dani-garcia/vaultwarden": {
+    "summary_zh": "用 Rust 实现的 Bitwarden Client API 替代服务端，兼容官方移动端、桌面端与浏览器扩展，适合官方服务资源占用过高时的自托管；覆盖个人库、Send、附件、组织（集合/共享/角色/组/事件日志/策略）、FIDO2 WebAuthn 等多种 2FA、紧急访问与管理后台，镜像发布到 ghcr.io、docker.io 与 quay.io。",
+    "highlight_zh": "十年量级的自建标杆，最难的替代壁垒是客户端兼容广度而非功能数量。"
+  },
+  "meshery/meshery": {
+    "summary_zh": "CNCF 旗下的自服务工程平台，用可视化、可协作的 GitOps 设计与管理所有基于 Kubernetes 的基础设施与应用，覆盖多云与多集群，提供配置/部署/运行的生命周期管理与 380+ 云原生集成；支持 Helm 与容器部署，并有浏览器内可直接试用的 Cloud Native Playground。",
+    "highlight_zh": "把多集群变更从「手写 YAML」拉回可评审、可协作的视图。"
+  },
+  "gravitational/teleport": {
+    "summary_zh": "统一基础设施访问的身份感知代理：以单个 Go 二进制提供短期证书 CA、统一访问控制与安全隧道，覆盖 SSH、Kubernetes、数据库、RDP、内部 Web 应用、云控制台、Git 与 MCP 服务器；支持 SSO/MFA、一致的 RBAC/ABAC、JIT 临时提权与全链路会话录制审计，无需长期密钥、VPN 或跳板机。",
+    "highlight_zh": "把「人、机器、工作负载」收进同一身份层，连 MCP 端点也纳入了访问范围。"
+  },
+  "starlake-ai/qod": {
+    "summary_zh": "面向 DuckDB / DuckLake 的开源服务层：把湖仓变成多租户 SQL 仓库，按需节点与最少负载路由，表级 RBAC、列级安全与动态脱敏在查询时于引擎内判定；经 Arrow Flight SQL 供 JDBC/ODBC/ADBC 与 BI 工具直连，本地 DuckDB 也能通过 Quack 协议 ATTACH 网关并与本地表 join。AI agent 经 MCP 用同一身份，写入走分支由人工合并，单二进制自有部署。",
+    "highlight_zh": "DuckLake 有意留白的那部分——并发、认证、授权、路由——被单独做成了一层。"
+  },
+  "go-sqlex/sqlex": {
+    "summary_zh": "jmoiron/sqlx 的 100% API 兼容替代品，迁移只需改 import；新增 Auto-Rebind（统一 `?` 适配各库占位符）、SQL 解析修正、Hook 拦截体系、自动 IN 展开、JSONValue[T] 泛型列、NamedGet/NamedSelect、CloseWithErr 与统一接口，并逐条列出对应上游 issue 的 20+ 项缺陷修复（含数据损坏、panic 与静默丢数据）。",
+    "highlight_zh": "改一行 import 就能换掉老库，还把 sqlx 那些静默 bug 一条条列了 issue 号。"
+  },
+  "arielshakaramiro/assignment-data-pipeline": {
+    "summary_zh": "Python + Pandas/NumPy 的汽车数据集 ETL 教学项目：对 205×30 的脏数据做去重、文本归一、多格式日期统一、中位数/众数填充与 Min-Max 缩放、序数/One-Hot/频率编码，并为每步写出方法理由，特别说明事实型日期字段刻意不插补；附 pytest、GitHub Actions CI、数据流程图与 EDA 对比图。",
+    "highlight_zh": "把「为什么这样填、为什么这里必须留空」写成明文，比只交代码更有参考价值。"
+  },
+  "tobilg/quacklake": {
+    "summary_zh": "跑在 Cloudflare Workers / Durable Objects 上的 Quack 协议服务，把 DuckLake 目录元数据存进每个目录独立的 SQLite：暴露 /quack 端点，以第一方 HS256 JWT 或第三方 OIDC/JWKS 校验身份，按目录映射与授权策略在执行前判定 SQL，支持签名 connection_id 路由、SQL 授权分类、DuckDB→SQLite 改写、事务快照回滚与 OpenAPI Admin API。",
+    "highlight_zh": "把湖仓控制面搬到边缘；README 把「尚未实现」也逐条列清，定位是协议实验床而非完整服务器。"
+  },
+  "antithesishq/bombadil": {
+    "summary_zh": "面向 Web 与终端 UI 的属性测试工具：自主探索交互序列、校验开发者定义的正确性属性，目标是更早发现更难的组合态缺陷；可跑在开发者本机、CI 与 Antithesis 确定性测试环境，附完整 Manual 与安装、示例章节，由 Antithesis 用 Rust 构建。",
+    "highlight_zh": "把「不变量」交给机器去撞，而不是靠人把用例写全。"
+  },
+  "assistant-ui/assistant-ui": {
+    "summary_zh": "生产级 AI 聊天的 React/TypeScript 组件库，以 Thread、Message、Composer 等原语组合界面，内置流式、重试、附件、Markdown、语音听写与可访问性；支持把工具调用渲染成 React 组件与行内人工审批，并适配 Vercel AI SDK、LangGraph、AG-UI/A2A、Google ADK 与自定义后端。",
+    "highlight_zh": "不是给你一个聊天气泡，而是给你一套能换后端、能改到每个像素的原语。"
+  },
+  "tree-sitter/tree-sitter": {
+    "summary_zh": "解析器生成器与增量解析库：为源文件构建具体语法树并在编辑时高效更新，目标是通用到能解析任意语言、快到支持编辑器逐键解析、在语法错误下仍给出可用结果，且运行时以纯 C 编写无依赖；提供 Rust 绑定、Wasm 绑定与命令行 CLI。",
+    "highlight_zh": "4,758 天仍在榜的现代编辑器语法底座，判断新代码工具是否需要自建解析层的参照系。"
+  },
+  "nolly-studio/cult-ui": {
+    "summary_zh": "150+ 个免费开源动效组件（近期新增 58 个），覆盖插画、设备外框、卡片、地球、看板与玻璃拟态；每个组件都是 shadcn/ui registry item，用 CLI 把源码复制进自己的项目，统一采用 Tailwind CSS v4 与 shadcn 主题令牌，多数动效基于 Motion。",
+    "highlight_zh": "把「源码归自己」的做法从基础控件推到展示型动效组件。"
+  },
+  "compose-miuix-ui/miuix": {
+    "summary_zh": "面向 Compose Multiplatform 的 MIUI 风格 UI 库，覆盖 Android、iOS、macOS、Desktop 与 Web；以 MiuixTheme / ThemeController 提供明暗与 Monet 动态取色，拆成 ui、preference、icons、glass、blur、squircle、nav、window 等 10 个可独立引入的模块，其中 miuix-window 专管桌面窗口与标题栏。",
+    "highlight_zh": "一次写好铺到五端，连桌面标题栏都给了现成方案；但 README 明说 API 仍是实验性。"
+  },
+  "ratatui/ratatui": {
+    "summary_zh": "Rust 终端 UI（TUI）库，用 Frame / Widget 组织仪表盘与交互式控制台程序，提供 cargo generate 模板、Quickstart、Widget 与 App 两级示例、架构与 Breaking Changes 文档；支持 no_std 目标（配合 Mousefood 等后端）并可单独调整 layout-cache，2023 年从 tui-rs fork 后持续维护。",
+    "highlight_zh": "文档、模板与破坏性变更清单齐到接近「生态」级别，是 Rust TUI 的默认答案。"
+  },
+  "esphome/esphome": {
+    "summary_zh": "Open Home Foundation 旗下的 ESP 设备声明式固件项目，仓库 README 极简，主要指向 esphome.io 文档站、GitHub Issues 与 Discussions 功能请求；以配置而非手写固件驱动家庭自动化节点，配套性能基准、CI 与 Discord 社区。",
+    "highlight_zh": "3,145 天的成熟项目，能力边界全在文档站——别按仓库首页篇幅判断它。"
+  },
+  "FrigadeHQ/yogurt": {
+    "summary_zh": "本地优先的开源 AI 会议笔记（Granola 的免费替代）：不加 bot 入会，直接录麦克风与电脑声音，用 whisper.cpp / Apple SpeechAnalyzer 转写、llama.cpp 跑本地开放权重模型做摘要与带来源问答；音频、转写与处理都留在本机、无需账户，支持 99 种语言、Mac 说话人识别、Markdown 导出与默认关闭的只读本地 MCP server，覆盖 Mac/Windows/Linux。",
+    "highlight_zh": "本地、不加 bot、无账户三条同时做到；代价是首次要下 5–14 GB 以上模型。"
+  },
+  "ersinkoc/phonebox": {
+    "summary_zh": "把闲置 Android 9+ 手机变成电脑桌面副屏：Android 全屏 App 配 .NET 10 桌面 agent，经 USB 或 Wi-Fi 连接 Windows/Linux/macOS，无需 root、账户或云服务；浏览器可视化编辑器提供 115 个 widget、30 个模板与多页面实时预览，可显示 PC 状态、Claude Code/Codex 配额与会话、音乐与触控宏、Home Assistant 自动化，并能在手机上应答 Claude Code 的 Allow/Deny。",
+    "highlight_zh": "旧硬件复用的同时，把 agent 的配额与权限审批也放上了副屏。"
+  },
+  "harry0703/MangoDisk": {
+    "summary_zh": "Tauri 2 + Rust 的跨平台磁盘清理与隐私工具，覆盖 macOS/Windows/Linux；深度清理系统与应用缓存、浏览器数据、IDE/Xcode/Docker/项目构建产物，并单列 AI 工具与本地模型（Ollama、LM Studio、Hugging Face、ComfyUI 等）占用，提供 treemap/sunburst 空间分析、大文件与重复文件清理、隐私清理、启动项与右键菜单管理、操作历史、资源实时监控与 AI 解释。",
+    "highlight_zh": "把「本地大模型占了多少磁盘」当成一个独立清理类目，很贴合当下的新存储痛点。"
+  },
+  "utmapp/UTM": {
+    "summary_zh": "基于 QEMU 的全系统仿真与虚拟机宿主，覆盖 iOS、macOS 与 visionOS，可在 iPhone/iPad/Mac 上跑 Windows、Linux 等系统；支持 30+ 处理器（x86_64/ARM64/RISC-V）、SPICE/QXL 图形、USB 设备与 TCG JIT，macOS 另有 Hypervisor.framework 硬件加速与 Virtualization.framework 启动 macOS guest，UTM SE 用线程解释器规避 iOS 的 JIT 限制以便普通侧载。",
+    "highlight_zh": "把完整 QEMU 搬进 iOS，并给出「要性能」与「要可侧载」两条明确路径。"
+  }
+}

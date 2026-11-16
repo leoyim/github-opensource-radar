@@ -1,0 +1,2157 @@
+{
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T09:32:04.382+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-15",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 783,
+    "unclassified": 71,
+    "selected": 25,
+    "suppressedByHistory": 231,
+    "sameDateExempt": 0,
+    "removed": 5,
+    "removedTotal": 5,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "regenerated": true,
+    "reviewedAt": "2026-11-16T09:45:03.665+08:00"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、Agent、RAG、推理与训练框架",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ag-ui-protocol/ag-ui",
+          "owner": "ag-ui-protocol",
+          "name": "ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui",
+          "homepage": "https://ag-ui.com",
+          "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+          "language": "TypeScript",
+          "topics": [
+            "ag-ui-protocol",
+            "agent-frontend",
+            "agent-ui",
+            "agentic-workflow",
+            "ai-agents"
+          ],
+          "stars": 17898,
+          "forks": 1820,
+          "open_issues": 593,
+          "starGain": 355,
+          "heat": 355,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 558,
+          "created_at": "2025-05-07T12:49:37Z",
+          "pushed_at": "2026-11-15T02:26:33Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86.6,
+          "breakdown": {
+            "heat": 93,
+            "community": 81,
+            "activity": 69,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 49,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications. Built for simplicity and flexibility, it enables seamless integration between AI agents, real time user context, and user interfaces.\n\nJoin our Discord → &nbsp;&nbsp;&nbsp; Read the Docs → &nbsp;&nbsp;&nbsp; Go to the AG-UI Dojo → &nbsp;&nbsp;&nbsp; Follow us →\n\n- The AG-UI Dojo - Build AG-UI-powered applications(Quickstart) - Build new AG-UI framework integrations (Quickstart) - Book a call to discuss an AG-UI integration with a new framework - Join the Discord Community",
+            "features": [
+              "The AG-UI Dojo",
+              "Book a call to discuss an AG-UI integration with a new framework",
+              "Join the Discord Community",
+              "During agent executions, agent backends emit events compatible with one of AG-UI's ~16 standard event types",
+              "Agent backends can accept one of a few simple AG-UI compatible inputs as arguments",
+              "Works with any event transport (SSE, WebSockets, webhooks, etc.)",
+              "Allows for loose event format matching , enabling broad agent and app interoperability",
+              "MCP gives agents tools"
+            ],
+            "sections": [
+              "AG-UI: The Agent-User Interaction Protocol",
+              "🚀 Getting Started",
+              "What is AG-UI?",
+              "Why AG-UI?",
+              "Where does AGUI fit in the agentic protocol stack?",
+              "🚀 Features",
+              "🛠 Supported Integrations",
+              "Frameworks",
+              "🤝 Partnerships",
+              "🧩 1st Party",
+              "🌐 Community",
+              "Agent Interaction Protocols",
+              "Infrastructure / Deployment",
+              "Specification (standard)"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13478
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "n8n-io/nod",
+          "owner": "n8n-io",
+          "name": "nod",
+          "url": "https://github.com/n8n-io/nod",
+          "homepage": "https://nod.n8n.io/",
+          "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+          "language": "TypeScript",
+          "topics": [
+            "agents",
+            "ai-agent",
+            "ai-assistant",
+            "anthropic",
+            "automation",
+            "browser-automation",
+            "computer-use",
+            "electron"
+          ],
+          "stars": 1739,
+          "forks": 235,
+          "open_issues": 29,
+          "starGain": 438,
+          "heat": 438,
+          "heatBasis": "snapshot",
+          "heatPercentile": 96,
+          "ageDays": 51,
+          "created_at": "2026-09-25T13:46:42Z",
+          "pushed_at": "2026-11-15T21:20:04Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.2,
+          "breakdown": {
+            "heat": 96,
+            "community": 61,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "It chases invoices, preps your calls and cancels trials, on real websites. It runs on your machine with the model you choose, and asks before it acts for you.\n\nmacOS 14+ (Apple silicon or Intel ) · Windows 11 preview · Linux x64 preview · Free and open source · ChatGPT Plus or Pro, or an AI key\n\nEvery note, visible. See, edit, or forget each one, with the message it came from. Drafts that sound like you. Learns your style from sent emails, with no names or numbers. Tell it once. Say something changed, and it uses the new fact from then on. It learns how to do a task. Reuses the steps, and fixes them when a site changes.",
+            "features": [
+              "Runs on your computer or server. Files, memory, and saved logins stay there. Your model provider gets what each task needs.",
+              "Uses the model you choose. OpenAI, Anthropic, Gemini, OpenRouter, Bedrock, Vertex AI, Azure, 20+ more, or your own server. Or sign in with C",
+              "Follows your rules. The server checks each app action, and each website step that can change something, against your request and rules. Anyt",
+              "Keeps secrets out of the model. Vault enters passwords, codes, and cards privately on the website.",
+              "Shows what it did. Every action and sign-in is in Usage, with costs and a monthly limit on API models.",
+              "Policy lives in the server, not the prompt. The trust check, Vault, payments, and spending limits run in the server.",
+              "Untrusted by default. App, web, and browser results reach the model marked as data, not instructions.",
+              "Keys stay out of the sandbox. Provider keys never enter the workspace or the browser."
+            ],
+            "sections": [],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 17983
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Tencent/LoopForge",
+          "owner": "Tencent",
+          "name": "LoopForge",
+          "url": "https://github.com/Tencent/LoopForge",
+          "homepage": "https://loopforge.cn",
+          "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+          "language": "Go",
+          "topics": [
+            "agent-orchestration",
+            "agentic-workflow",
+            "ai-agents",
+            "ai-coding",
+            "claude-code",
+            "code-review",
+            "codebuddy",
+            "codex"
+          ],
+          "stars": 1526,
+          "forks": 272,
+          "open_issues": 86,
+          "starGain": 423,
+          "heat": 423,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 111,
+          "created_at": "2026-07-28T03:51:01Z",
+          "pushed_at": "2026-11-15T11:05:37Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 81.8,
+          "breakdown": {
+            "heat": 95,
+            "community": 61,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Two ways to work · Quick start · SOPs · Features · Local · FAQ · Docs\n\nhttps://github.com/user-attachments/assets/8af401d9-1aae-427c-b4bc-455c12d17beb\n\nLoopForge is a self-hosted workspace where your team ships software with coding agents. Describe what you need to Main Bot in chat: it opens a Docker sandbox, checks out your repositories, delegates to project roles, and opens the PR. When a way of working proves itself, save it as an SOP (a standard workflow of agents, scripts and human gates) so the next requirement is delivered the same way, with review and approval built in.",
+            "features": [
+              "Repeatable. Same SOP, same stages, same checks for every requirement. Start from built-in backend, frontend, bug-fix and product SOPs.",
+              "Separated roles. Planning, implementation, review and testing each get their own prompt, executor, model, rules, Skills and MCP tools. A rol",
+              "Human in the loop. Approval gates where they matter. Read the report, approve, or send the work back to a chosen step.",
+              "Observable and resumable. Node status, tool traces, logs and artifacts in one place. Pause, retry a failed step, or rerun from any node.",
+              "Your stack, your servers. Ten coding-agent CLIs as executors, from CodeBuddy, Codex and Claude Code to OpenCode, Cursor CLI and more. GitHub",
+              "Switch to the demo project, open Templates , and open Platform check · script & approval .",
+              "Click Run SOP . A real script writes a report, then the run waits for you at the approval step.",
+              "Approve it from Needs review or the run page, and watch the run continue to its final artifact."
+            ],
+            "sections": [
+              "Two ways to work",
+              "Why LoopForge",
+              "Quick start",
+              "Try it without an API key",
+              "What you need for real work",
+              "How SOPs work",
+              "Features",
+              "LoopForge Local",
+              "Run inside your target project, e.g. for Claude Code",
+              "FAQ",
+              "Documentation",
+              "Community",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 22594
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "PrefectHQ/fastmcp",
+          "owner": "PrefectHQ",
+          "name": "fastmcp",
+          "url": "https://github.com/PrefectHQ/fastmcp",
+          "homepage": "https://gofastmcp.com",
+          "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+          "language": "Python",
+          "topics": [
+            "agents",
+            "fastmcp",
+            "llms",
+            "mcp",
+            "mcp-clients",
+            "mcp-servers",
+            "mcp-tools",
+            "model-context-protocol"
+          ],
+          "stars": 28540,
+          "forks": 2605,
+          "open_issues": 237,
+          "starGain": 82,
+          "heat": 82,
+          "heatBasis": "trending",
+          "heatPercentile": 76,
+          "ageDays": 716,
+          "created_at": "2024-11-30T01:47:40Z",
+          "pushed_at": "2026-11-16T01:20:03Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 80.5,
+          "breakdown": {
+            "heat": 76,
+            "community": 85,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The Model Context Protocol (MCP) connects LLMs to tools and data. FastMCP is a full MCP application framework for servers, clients, and interactive apps. A server starts with ordinary Python:\n\n@mcp.tool def add(a: int, b: int) - int: \"\"\"Add two numbers\"\"\" return a + b\n\nBuilding an effective MCP application is harder than it looks. FastMCP handles all of it. Declare a tool with a Python function, and the schema, validation, and documentation are generated automatically. Connect to a server with a URL, and transport negotiation, authentication, and protocol lifecycle are managed for you. You focus on your logic, and the MCP part just works: with FastMCP, best practices are built in.",
+            "features": [
+              "Upgrading from FastMCP 3",
+              "Upgrading from FastMCP 2",
+              "Upgrading from MCP SDK v1 or v2",
+              "Upgrading from the low-level SDK v1 or v2",
+              "llms.txt is essentially a sitemap, listing all the pages in the documentation.",
+              "llms-full.txt contains the entire documentation. Note this may exceed the context window of your LLM."
+            ],
+            "sections": [
+              "FastMCP 🚀",
+              "Why FastMCP",
+              "Scale MCP with FastMCP Gateway",
+              "Installation",
+              "📚 Documentation",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7764
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "unslothai/unsloth",
+          "owner": "unslothai",
+          "name": "unsloth",
+          "url": "https://github.com/unslothai/unsloth",
+          "homepage": "https://unsloth.ai/docs",
+          "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
+          "language": "Python",
+          "topics": [
+            "agent",
+            "ai",
+            "chatgpt",
+            "deepseek",
+            "fine-tuning",
+            "gemma",
+            "image-generation",
+            "llama"
+          ],
+          "stars": 79574,
+          "forks": 7419,
+          "open_issues": 451,
+          "starGain": 61,
+          "heat": 61,
+          "heatBasis": "trending",
+          "heatPercentile": 72,
+          "ageDays": 1082,
+          "created_at": "2023-11-29T16:50:09Z",
+          "pushed_at": "2026-11-16T01:22:34Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 80.9,
+          "breakdown": {
+            "heat": 72,
+            "community": 92,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 43,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Unsloth is the first desktop app to run and train models.\n\nDownload the native Unsloth Desktop app for your operating system: Platform Link Windows Download macOS Download Linux / Ubuntu (deb) Download Linux / Ubuntu (ARM64) (deb) Download Linux (AppImage) Download Windows (ARM64) Download\n\nThe Unsloth Docker image unsloth/unsloth is available on Docker. Read guide.",
+            "features": [
+              "Discord",
+              "𝕏 (Twitter)",
+              "Reddit",
+              "Run and train LLMs, MLX, GGUF, diffusion, decision, embedding, audio models: Qwen3.8, GLM-5.3-Flash, Kimi K3, Qwen-Image-2.1, MiniMax-H3, De",
+              "Agents & Tools: Use local models with Claude Code, Codex, and MCP, including tool calling and code execution.",
+              "Browser use: Navigate sites, fill out forms, read PDFs, and edit files beside your chat with a local model.",
+              "Sandboxing: Restrict which files your model can access when it runs commands in a sandbox.",
+              "Search & RAG: Use private and unlimited web search, deep research, auto-compaction (rolling context window) and RAG."
+            ],
+            "sections": [
+              "⚡ Get started",
+              "⭐ Features",
+              "Run & Build with AI",
+              "Train & Deploy",
+              "🚀 Unsloth Start",
+              "📥 Install",
+              "Unsloth Desktop (recommended)",
+              "Unsloth Studio (web UI)",
+              "for a public Cloudflare HTTPS link: use -e UNSLOTH STUDIO SE",
+              "Unsloth Core (code-based)",
+              "📒 Free Notebooks",
+              "📥 Advanced Installation",
+              "💚 Community and Links",
+              "Citation"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 25979
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "antithesishq/bombadil",
+          "owner": "antithesishq",
+          "name": "bombadil",
+          "url": "https://github.com/antithesishq/bombadil",
+          "homepage": "https://antithesishq.github.io/bombadil/",
+          "description": "Property-based testing for web and terminal UIs",
+          "language": "Rust",
+          "topics": [
+            "antithesis",
+            "pbt",
+            "playwright",
+            "property-based-testing",
+            "testing",
+            "ui",
+            "web"
+          ],
+          "stars": 1978,
+          "forks": 78,
+          "open_issues": 46,
+          "starGain": 202,
+          "heat": 202,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 333,
+          "created_at": "2025-12-17T14:47:29Z",
+          "pushed_at": "2026-11-13T13:03:10Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.3,
+          "breakdown": {
+            "heat": 96,
+            "community": 59,
+            "activity": 51,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Property-based testing for web and terminal UIs, autonomously exploring and validating correctness properties, finding harder bugs earlier .\n\nRuns in your local developer environment, in CI, and inside Antithesis.\n\nLearn all about Bombadil with the following resources:",
+            "features": [
+              "The Bombadil Manual",
+              "Installation",
+              "Examples"
+            ],
+            "sections": [
+              "Bombadil",
+              "Documentation",
+              "Join us"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1406
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "assistant-ui/assistant-ui",
+          "owner": "assistant-ui",
+          "name": "assistant-ui",
+          "url": "https://github.com/assistant-ui/assistant-ui",
+          "homepage": "https://www.assistant-ui.com",
+          "description": "Typescript/React Library for AI Chat 💬🚀",
+          "language": "TypeScript",
+          "topics": [
+            "ai-chatbot",
+            "base-ui",
+            "chatbot",
+            "conversational-ai",
+            "copilot",
+            "radix-ui",
+            "react-chatbot",
+            "shadcn"
+          ],
+          "stars": 13240,
+          "forks": 1344,
+          "open_issues": 83,
+          "starGain": 75,
+          "heat": 75,
+          "heatBasis": "trending",
+          "heatPercentile": 87,
+          "ageDays": 1089,
+          "created_at": "2023-11-22T16:01:17Z",
+          "pushed_at": "2026-11-16T01:29:21Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.3,
+          "breakdown": {
+            "heat": 87,
+            "community": 79,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Product · Documentation · Examples · Discord · Contact Sales\n\nassistant-ui is an open-source TypeScript/React library to build production-grade AI chat experiences fast.\n\nThe fastest path is the CLI, which scaffolds a Next.js app or adds the styled components to an existing project:",
+            "features": [
+              "Composable primitives : build any chat UX from Thread , Message , Composer , ThreadList , ActionBar , and friends. Style every pixel yoursel",
+              "Production UX out of the box : streaming, auto-scroll, retries, attachments, markdown, code highlighting, voice dictation, keyboard shortcut",
+              "Generative UI : render tool calls and JSON as React components, collect inline human approvals, and expose safe frontend actions to the mode",
+              "Strong TypeScript : typed runtime APIs, tool schemas, message parts, and adapters end to end.",
+              "Examples",
+              "Documentation",
+              "Discord",
+              "Book a sales call"
+            ],
+            "sections": [
+              "The UX of ChatGPT in your React app 💬🚀",
+              "Installation",
+              "Usage",
+              "What you get",
+              "Backends",
+              "Customization",
+              "Used in production by",
+              "Demos",
+              "Community & Support",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9428
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "tree-sitter/tree-sitter",
+          "owner": "tree-sitter",
+          "name": "tree-sitter",
+          "url": "https://github.com/tree-sitter/tree-sitter",
+          "homepage": "https://tree-sitter.github.io",
+          "description": "An incremental parsing system for programming tools",
+          "language": "Rust",
+          "topics": [
+            "c",
+            "incremental",
+            "parser",
+            "parsing",
+            "rust",
+            "tree-sitter",
+            "wasm"
+          ],
+          "stars": 27477,
+          "forks": 3038,
+          "open_issues": 115,
+          "starGain": 10,
+          "heat": 10,
+          "heatBasis": "trending",
+          "heatPercentile": 74,
+          "ageDays": 4758,
+          "created_at": "2013-11-06T06:16:00Z",
+          "pushed_at": "2026-11-16T01:21:07Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.2,
+          "breakdown": {
+            "heat": 74,
+            "community": 85,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Tree-sitter is a parser generator tool and an incremental parsing library. It can build a concrete syntax tree for a source file and efficiently update the syntax tree as the source file is edited. Tree-sitter aims to be:\n\n- General enough to parse any programming language - Fast enough to parse on every keystroke in a text editor - Robust enough to provide useful results even in the presence of syntax errors - Dependency-free so that the runtime library (which is written in pure C) can be embedded in any application\n\n- Documentation - Rust binding - Wasm binding - Command-line interface",
+            "features": [
+              "General enough to parse any programming language",
+              "Fast enough to parse on every keystroke in a text editor",
+              "Robust enough to provide useful results even in the presence of syntax errors",
+              "Dependency-free so that the runtime library (which is written in pure C) can be embedded in any application",
+              "Documentation",
+              "Rust binding",
+              "Wasm binding",
+              "Command-line interface"
+            ],
+            "sections": [
+              "tree-sitter",
+              "Links"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 1153
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "nolly-studio/cult-ui",
+          "owner": "nolly-studio",
+          "name": "cult-ui",
+          "url": "https://github.com/nolly-studio/cult-ui",
+          "homepage": "https://www.cult-ui.com",
+          "description": "Animated components for design engineers. 150+ free shadcn/ui components, built with Tailwind CSS and Motion. MIT licensed.",
+          "language": "TypeScript",
+          "topics": [
+            "components",
+            "design-engineering",
+            "framer-motion",
+            "nextjs",
+            "react",
+            "shadcn-ui",
+            "tailwindcss",
+            "typescript"
+          ],
+          "stars": 7463,
+          "forks": 398,
+          "open_issues": 16,
+          "starGain": 96,
+          "heat": 96,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 902,
+          "created_at": "2024-05-28T04:57:48Z",
+          "pushed_at": "2026-10-29T03:57:51Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 73,
+          "breakdown": {
+            "heat": 92,
+            "community": 72,
+            "activity": 9,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "150+ animated components, all free. Including 58 just added. Open source, built to drop into any shadcn/ui project.\n\nBrowse components · Docs · Installation · Changelog\n\nEvery component is a shadcn/ui registry item. The CLI copies the source into your project, so you own the code.",
+            "features": [
+              "llms.txt indexes every page, and llms-full.txt has the full docs in one file.",
+              "Add .md to any docs URL for clean markdown, for example /docs/components/dock.md .",
+              "The shadcn MCP server lets Cursor, Claude Code and VS Code search and install Cult UI components from a prompt.",
+              "AI SDK Agents – 100+ Vercel AI SDK agent patterns with live previews and full-stack templates.",
+              "Newcopy – An AI cofounder that knows your brand. Marketing copy that converts.",
+              "Best Models – Independent ranking of the best models on Vercel AI Gateway, updated daily.",
+              "Eve Directory – The open registry for Eve agents. Inspect every file before you install."
+            ],
+            "sections": [
+              "Cult UI",
+              "Install",
+              "Just added",
+              "Built with Cult UI",
+              "For AI agents",
+              "Cult UI stays free",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12497
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "compose-miuix-ui/miuix",
+          "owner": "compose-miuix-ui",
+          "name": "miuix",
+          "url": "https://github.com/compose-miuix-ui/miuix",
+          "homepage": "http://compose-miuix-ui.github.io/miuix/",
+          "description": "A UI library for Compose Multiplatform",
+          "language": "Kotlin",
+          "topics": [
+            "compose-multiplatform",
+            "compose-multiplatform-library",
+            "compose-ui",
+            "miuix"
+          ],
+          "stars": 1650,
+          "forks": 136,
+          "open_issues": 7,
+          "starGain": 6,
+          "heat": 6,
+          "heatBasis": "trending",
+          "heatPercentile": 68,
+          "ageDays": 832,
+          "created_at": "2024-08-06T09:36:19Z",
+          "pushed_at": "2026-11-15T15:39:04Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 66.9,
+          "breakdown": {
+            "heat": 68,
+            "community": 60,
+            "activity": 59,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "kotlin { sourceSets { commonMain.dependencies { implementation(\"top.yukonga.miuix.kmp:miuix-ui: \") // Optional: Add miuix-preference for preference components implementation(\"top.yukonga.miuix.kmp:miuix-preference: \") // Optional: Add miuix-icons for more icons implementation(\"top.yukonga.miuix.kmp:miuix-icons: \") // Optional: Add miuix-glass-icons for the Glass icon set implementation(\"top.yukonga.miuix.kmp:miuix-glass-icons: \") // Optional: Add miuix-blur for blur effects implementation(\"top.yukonga.miuix.kmp:miuix-blur: \") // Optional: Add miuix-squircle for squircle (smooth rounded corner) shapes implementation(\"top.yukonga.miuix.kmp:miuix-squircle: \") // Optional: Add miuix-glass for the glass surfaces and components implementation(\"top.yukonga.miuix.kmp:miuix-glass: \") // Optional: Add miuix-nav for navigation implementation(\"top.yukonga.miuix.kmp:miuix-nav: \") // Other dependencies... } // Optional: Add miuix-window for desktop window and caption bar styling (Desktop JVM) desktopMain.dependencies { implementation(\"top.yukonga.miuix.kmp:miuix-window: \") } // Other sourceSets... } // Other configurations... }\n\n- Provide a color scheme via MiuixTheme(colors = ...) , e.g., lightColorScheme() or darkColorScheme() .\n\n@Composable fun AppTheme( content: @Composable () - Unit ) { val colors = if (isSystemInDarkTheme()) darkColorScheme() else lightColorScheme() return MiuixTheme( colors = colors, content = content ) }",
+            "features": [
+              "Provide a color scheme via MiuixTheme(colors = ...) , e.g., lightColorScheme() or darkColorScheme() .",
+              "Use ThemeController to manage modes and enable Monet dynamic colors. Pass keyColor to set a custom seed color."
+            ],
+            "sections": [
+              "Miuix",
+              "Supported Platforms",
+              "Demos",
+              "Modules",
+              "Getting Started",
+              "Usage",
+              "Screenshots"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 6089
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "jaegertracing/jaeger",
+          "owner": "jaegertracing",
+          "name": "jaeger",
+          "url": "https://github.com/jaegertracing/jaeger",
+          "homepage": "https://www.jaegertracing.io/",
+          "description": "CNCF Jaeger, a Distributed Tracing Platform",
+          "language": "Go",
+          "topics": [
+            "cncf",
+            "distributed-tracing",
+            "hacktoberfest",
+            "jaeger",
+            "observability",
+            "opentelemetry",
+            "tracing"
+          ],
+          "stars": 23414,
+          "forks": 3247,
+          "open_issues": 627,
+          "starGain": null,
+          "heat": 249.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 3866,
+          "created_at": "2016-04-15T18:49:02Z",
+          "pushed_at": "2026-11-15T22:10:26Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 88.9,
+          "breakdown": {
+            "heat": 94,
+            "community": 84,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "💥💥💥 Jaeger v2 is out! Read the blog post and try it out.\n\ndocker run --rm --name jaeger \\ -p 16686:16686 \\ -p 4317:4317 \\ -p 4318:4318 \\ jaegertracing/jaeger:latest\n\nFor production deployments and more options, see the Getting Started Guide.",
+            "features": [
+              "Soon after the release of a new Go minor version N , updates will be made to the build and tests steps to accommodate the latest Go minor ve",
+              "Soon after the release of a new Go minor version N , support for Go version N-1 will be removed and version N will become the minimum requir",
+              "Elasticsearch: follow Elastic's Product and Version End of Life Policy.",
+              "OpenSearch: follow the OpenSearch Release Schedule and Maintenance Policy. In practice, this means the current major version and the previou",
+              "Cassandra: follow Apache Cassandra's maintained release lines, as published on the Cassandra download page, with the Jaeger support target b",
+              "ClickHouse: follow ClickHouse's release and backport policy and production guidance for stable and LTS releases. Jaeger treats LTS releases ",
+              "UI",
+              "Data model"
+            ],
+            "sections": [
+              "Jaeger - a Distributed Tracing System",
+              "Quick Start",
+              "Run Jaeger all-in-one (includes UI, collector, query, and in",
+              "Access the UI at http://localhost:16686",
+              "Send traces via OTLP: gRPC on port 4317, HTTP on port 4318",
+              "Architecture",
+              "Get Involved",
+              "Version Compatibility Guarantees",
+              "Go Version Compatibility Guarantees",
+              "Storage Backend Version Support Policy",
+              "Related Repositories",
+              "Components",
+              "Documentation",
+              "Building From Source"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13685
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "paimonsoror/telltaledns",
+          "owner": "paimonsoror",
+          "name": "telltaledns",
+          "url": "https://github.com/paimonsoror/telltaledns",
+          "homepage": "https://paimonsoror.github.io/telltaledns/",
+          "description": "A small, fast DNS resolver and ad blocker that explains every answer. Per-device rules, encrypted DNS, and clustering across a Raspberry Pi and Kubernetes.",
+          "language": "Rust",
+          "topics": [
+            "adblock",
+            "dns",
+            "dns-over-https",
+            "dns-over-quic",
+            "dns-over-tls",
+            "dns-resolver",
+            "homelab",
+            "kubernetes"
+          ],
+          "stars": 323,
+          "forks": 15,
+          "open_issues": 17,
+          "starGain": 105,
+          "heat": 105,
+          "heatBasis": "snapshot",
+          "heatPercentile": 91,
+          "ageDays": 44,
+          "created_at": "2026-10-03T00:48:48Z",
+          "pushed_at": "2026-11-16T01:24:22Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 75.5,
+          "breakdown": {
+            "heat": 91,
+            "community": 44,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 42,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Every connection on your network starts with a DNS lookup. TelltaleDNS answers it in microseconds, filters it by your rules per device, and shows you exactly who asked, what they asked, and why it answered the way it did. It runs on a Raspberry Pi, in Kubernetes, or on both as one cluster that keeps answering even when parts of it fail.\n\nThe dashboard on a demo network. Every device, name, and address in it is made up.\n\nGive everyone who runs a home or small network an honest, real-time view of what their devices are doing, and full control over it, without trading away speed, footprint, or reliability.",
+            "features": [
+              "See: every query is attributed to a device, explained, and timed per stage.",
+              "Decide: your rules per device and group, enforced instantly at no performance cost.",
+              "Never fail: DNS keeps answering from its last good config, whatever happens to the control plane.",
+              "Run anywhere: the same artifact on a Pi, in a cluster, or both at once.",
+              "Every answer explained. The query log ties each query to a named device, times every stage, and says why it was answered that way. Names com",
+              "Your rules, per device. Blocklists, groups for each network or VLAN, schedules, safe search, blocked services, rewrites, and quick rules. Be",
+              "Encrypted both ways. DoT, DoH, and DoQ for your devices and to your upstreams, DNSSEC validation, and full recursion when you'd rather not f",
+              "Watch it work. A dashboard for the whole cluster, one node, or one site. A heatmap of when your network asks, a flow from each group to its "
+            ],
+            "sections": [
+              "TelltaleDNS",
+              "Mission",
+              "What it does",
+              "Quick start",
+              "Spec index",
+              "Contributors",
+              "Built with Claude",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10015
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "dani-garcia/vaultwarden",
+          "owner": "dani-garcia",
+          "name": "vaultwarden",
+          "url": "https://github.com/dani-garcia/vaultwarden",
+          "homepage": "",
+          "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+          "language": "Rust",
+          "topics": [
+            "bitwarden",
+            "bitwarden-rs",
+            "docker",
+            "rocket",
+            "rust",
+            "vaultwarden"
+          ],
+          "stars": 70791,
+          "forks": 3460,
+          "open_issues": 84,
+          "starGain": 46,
+          "heat": 46,
+          "heatBasis": "trending",
+          "heatPercentile": 84,
+          "ageDays": 3193,
+          "created_at": "2018-02-17T22:40:20Z",
+          "pushed_at": "2026-11-15T20:20:46Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 82.1,
+          "breakdown": {
+            "heat": 84,
+            "community": 90,
+            "activity": 68,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An alternative server implementation of the Bitwarden Client API, written in Rust and compatible with official Bitwarden clients [disclaimer], perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.\n\nA nearly complete implementation of the Bitwarden Client API is provided, including:\n\nPersonal Vault Send Attachments Website icons Personal API Key Organizations - Collections, Password Sharing, Member Roles, Groups, Event Logs, Admin Password Reset, Directory Connector, Policies Multi/Two Factor Authentication - Authenticator, Email, FIDO2 WebAuthn, YubiKey, Duo Emergency Access Vaultwarden Admin Backend Modified Web Vault client (Bundled within our containers)",
+            "features": [
+              "Personal Vault",
+              "Send",
+              "Attachments",
+              "Website icons",
+              "Personal API Key",
+              "Organizations",
+              "Collections,",
+              "Multi/Two Factor Authentication"
+            ],
+            "sections": [
+              "Features",
+              "Usage",
+              "Docker/Podman CLI",
+              "Docker Compose",
+              "Get in touch",
+              "Contributors",
+              "Disclaimer",
+              "Bitwarden RS"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11157
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "meshery/meshery",
+          "owner": "meshery",
+          "name": "meshery",
+          "url": "https://github.com/meshery/meshery",
+          "homepage": "https://meshery.io",
+          "description": "Meshery, the cloud native manager",
+          "language": "Go",
+          "topics": [
+            "cloud-native",
+            "cncf",
+            "control-plane",
+            "gitops",
+            "golang",
+            "gsoc",
+            "hacktoberfest",
+            "infrastructure-as-code"
+          ],
+          "stars": 12207,
+          "forks": 4189,
+          "open_issues": 2441,
+          "starGain": 14,
+          "heat": 14,
+          "heatBasis": "trending",
+          "heatPercentile": 70,
+          "ageDays": 2923,
+          "created_at": "2018-11-14T13:41:00Z",
+          "pushed_at": "2026-11-16T00:39:49Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 76.9,
+          "breakdown": {
+            "heat": 70,
+            "community": 81,
+            "activity": 80,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "If you like Meshery, please ★ this repository to show your support! 🤩 MESHERY IS A CLOUD NATIVE COMPUTING FOUNDATION PROJECT\n\nA self-service engineering platform, Meshery , is the open source, cloud native manager that enables the design and management of all Kubernetes-based infrastructure and applications (multi-cloud). As an extensible platform, Meshery offers visual and collaborative GitOps, freeing you from the chains of YAML while managing Kubernetes multi-cluster deployments.\n\nTry Meshery in your browser using the Cloud Native Playground ( teaser video ) &nbsp; Project Overview Presentation --",
+            "features": [
+              "Functionality",
+              "Meshery Architecture",
+              "Join the Meshery community!",
+              "Contributing",
+              "Stargazers",
+              "Validate configurations: Ensure your deployment specifications (e.g., YAML manifests, Helm charts, Meshery Designs) are syntactically correc",
+              "Identify potential issues: Detect errors in your configurations, such as invalid resource definitions, missing fields, or API version mismat",
+              "Preview changes: Understand the objects that Kubernetes would create or modify during a real deployment."
+            ],
+            "sections": [
+              "Functionality",
+              "Infrastructure Lifecycle Management",
+              "Multiple Kubernetes Clusters and Multiple Clouds",
+              "Visually and collaboratively manage your infrastructure",
+              "Workspaces: Your team's Google Drive for cloud native projec",
+              "Platform Engineering with Meshery's Extension Points",
+              "Performance Management",
+              "Join the Meshery community",
+              "Contributing",
+              "Cloning this repository (sparse clone recommended)",
+              "Blobless partial clone, then check out everything EXCEPT the",
+              "Stargazers",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 29538
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "gravitational/teleport",
+          "owner": "gravitational",
+          "name": "teleport",
+          "url": "https://github.com/gravitational/teleport",
+          "homepage": "https://goteleport.com",
+          "description": "The easiest, and most secure way to access and protect all of your infrastructure.",
+          "language": "Go",
+          "topics": [
+            "audit",
+            "bastion",
+            "certificate",
+            "cluster",
+            "database-access",
+            "firewall",
+            "firewalls",
+            "go"
+          ],
+          "stars": 21100,
+          "forks": 2190,
+          "open_issues": 3239,
+          "starGain": 2,
+          "heat": 2,
+          "heatBasis": "trending",
+          "heatPercentile": 54,
+          "ageDays": 4276,
+          "created_at": "2015-03-02T19:36:00Z",
+          "pushed_at": "2026-11-13T23:19:03Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 68.9,
+          "breakdown": {
+            "heat": 54,
+            "community": 83,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Teleport provides connectivity, authentication, access controls and audit for infrastructure.\n\nSet up single sign-on (SSO) for all of your cloud and on-prem infrastructure. Protect access to servers, Kubernetes clusters, databases, Windows desktops, web applications, and cloud APIs without long-lived keys or passwords. Establish secure tunnels to reach resources behind NATs and firewalls without VPNs or bastion hosts. Record and audit activity across SSH, Kubernetes, database, RDP, and web sessions. Apply consistent Role-Based and Attribute-Based Access Control (RBAC/ABAC) across users, machines, workloads, and resource types. Enforce least privilege and Just-in-Time (JIT) access requests for elevated roles or sensitive systems. Maintain a single identity and access layer for both human users and workloads.\n\nTeleport works with SSH, Kubernetes, databases, RDP, cloud consoles, internal web services, Git repositories, and Model Context Protocol (MCP) servers.",
+            "features": [
+              "Set up single sign-on (SSO) for all of your cloud and on-prem",
+              "Protect access to servers, Kubernetes clusters, databases, Windows",
+              "Establish secure tunnels to reach resources behind NATs and firewalls",
+              "Record and audit activity across SSH, Kubernetes, database, RDP, and web",
+              "Apply consistent Role-Based and Attribute-Based Access Control (RBAC/ABAC)",
+              "Enforce least privilege and Just-in-Time (JIT) access requests for",
+              "Maintain a single identity and access layer for both human users and",
+              "Introduction"
+            ],
+            "sections": [
+              "More Information",
+              "Table of Contents",
+              "Introduction",
+              "Why We Built Teleport",
+              "Supporting and Contributing",
+              "Installing and Running",
+              "Docker",
+              "Deploy Teleport",
+              "For Local Testing and Development",
+              "Building Teleport",
+              "Dockerized Build",
+              "Local Build",
+              "Web UI",
+              "Run Teleport as a single-node cluster in development mode:"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 20766
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "roundStars"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "starlake-ai/qod",
+          "owner": "starlake-ai",
+          "name": "qod",
+          "url": "https://github.com/starlake-ai/qod",
+          "homepage": "https://qod.starlake.ai",
+          "description": "Production-grade SQL gateway in front of DuckDB Quack + DuckLake + Iceberg. Multi-tenant pools, pluggable auth (DB/JWT/OIDC), table-level ACLs, role-aware routing, and a live admin console",
+          "language": "Scala",
+          "topics": [
+            "apache-arrow",
+            "arrow-flight-sql",
+            "duckdb",
+            "ducklake",
+            "flightsql",
+            "lakehouse",
+            "query-engine",
+            "sql-gateway"
+          ],
+          "stars": 146,
+          "forks": 11,
+          "open_issues": 20,
+          "starGain": null,
+          "heat": 8.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 172,
+          "created_at": "2026-05-27T22:41:51Z",
+          "pushed_at": "2026-11-15T23:02:13Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 73.6,
+          "breakdown": {
+            "heat": 90,
+            "community": 38,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The open-source, agent-safe data plane for DuckDB and DuckLake. One governed endpoint for people, BI tools and AI agents: table, row and column level security decided inside the engine, branch-based writes a human merges, and Arrow Flight SQL, ADBC, MCP and native DuckDB on the wire, on any cloud or on-prem.\n\nuvx qod@latest serve --demo the full gateway on your laptop: no install, no Postgres uvx qod@latest serve ./sales.duckdb the same gateway over YOUR DuckDB file, persistent + secured uvx qod@latest serve ./warehouse/ ...or a directory of parquet / csv uvx qod@latest serve s3://bucket/data/ ...or a remote prefix QOD ADMIN PASSWORD='change-me' uvx qod@latest serve ./sales.duckdb set the admin password up front, no prompt\n\nOne command boots a seeded warehouse with row, column, and table security already live. Connect with tenant=acme + pool=bi (in the admin UI login, set the tenant to acme ) and switch principals to watch the policies apply:",
+            "features": [
+              "alice / demo-alice (analyst) - c phone comes back masked to , and only BUILDING -segment rows appear",
+              "acme-admin / demo-acme-admin - same query, full unmasked data",
+              "a table alice has no grant on - denied",
+              "Expose a DuckLake / DuckDB warehouse to multiple teams or apps over a standard wire protocol (Arrow Flight SQL: works with JDBC, ODBC, ADBC,",
+              "Authenticate users against your existing identity provider (Keycloak / Azure AD / Google / Cognito / JWT / database) and enforce table-level",
+              "Run several tenants on shared infrastructure without giving each one a private DuckDB process to manage; each tenant owns a separate DuckLak",
+              "Just need a single embedded DuckDB inside one application: use DuckDB directly",
+              "Need a distributed query engine with cross-node shuffles and joins on TB-scale tables: look at Trino / Dremio / StarRocks. Quack on Demand r"
+            ],
+            "sections": [
+              "Quack on Demand",
+              "admin login: user admin; password admin with --demo, otherwi",
+              "(prompted, or QOD ADMIN PASSWORD; first run only, never stor",
+              "admin UI: http://localhost:20900/ui/",
+              "FlightSQL edge: localhost:31338",
+              "DuckDB (native Quack): quack:localhost:9494",
+              "Ctrl-C stops the gateway and its nodes; so does uvx qod@late",
+              "Hybrid: join your local DuckDB with QoD tables",
+              "The missing serving layer",
+              "Who is this for?",
+              "Quick start",
+              "Native Linux / macOS / Windows",
+              "Docker",
+              "trivial on Linux; on Mac/Windows requires Docker Desktop or "
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 36103
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "go-sqlex/sqlex",
+          "owner": "go-sqlex",
+          "name": "sqlex",
+          "url": "https://github.com/go-sqlex/sqlex",
+          "homepage": "",
+          "description": "A drop-in modernization of jmoiron/sqlx that fixes lexer bugs, automates IN expansion, and adds pluggable hooks — built for Go 1.21+.",
+          "language": "Go",
+          "topics": [
+            "databases",
+            "mysql",
+            "postgresql",
+            "sql",
+            "sqlserver",
+            "sqlx"
+          ],
+          "stars": 53,
+          "forks": 2,
+          "open_issues": 7,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 153,
+          "created_at": "2026-06-16T12:59:26Z",
+          "pushed_at": "2026-11-03T01:50:03Z",
+          "license": "MIT",
+          "rating": 1,
+          "composite": 17.9,
+          "breakdown": {
+            "heat": 0,
+            "community": 28,
+            "activity": 7,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 41,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "sqlex is fully API-compatible with sqlx. All sqlx methods ( Get , Select , Exec , NamedQuery , Preparex , etc.) work identically. Migrating takes 30 seconds — just change the import path. New features are purely additive and optional.\n\n- import \"github.com/jmoiron/sqlx\" + import \"github.com/go-sqlex/sqlex\"\n\n- 🚀 Auto-Rebind — write ? everywhere, works on PostgreSQL ( $1 ), MySQL ( ? ), SQLite ( ? ), SQL Server ( @p1 ). No more manual db.Rebind() . Including Preparex . - 🐛 SQL parsing fixes — colons in strings, :: type casts, ? in comments are correctly handled. Silent bugs from sqlx are gone. - 🎯 Unified interfaces — Ext / ExtContext / NamedExt / BindExt / Preparer / PreparerContext with compile-time checks. Write func f(ext NamedExt) and pass DB, Tx, or Conn. - 🔀 Auto IN expansion — slices in IN (?) detected and expanded automatically on all methods. - 🪝 Hook system — pluggable SQL interceptors for logging, tracing, metrics (onion model), with both global and per-call granularity. - 📦 JSONValue[T] — generic JSON column type with auto serialize/deserialize. - 🛡️ StrictMode — lenient by default (matching sqlx Unsafe() ), optionally strict for debugging. - 🛠️ 20+ bug fixes — data corruption, panics, silent data loss, and cross-database failures from jmoiron/sqlx, all fixed. See Critical Bug Fixes.",
+            "features": [
+              "import \"github.com/jmoiron/sqlx\"",
+              "import \"github.com/go-sqlex/sqlex\"",
+              "🚀 Auto-Rebind — write ? everywhere, works on PostgreSQL ( $1 ), MySQL ( ? ), SQLite ( ? ), SQL Server ( @p1 ). No more manual db.Rebind() .",
+              "🐛 SQL parsing fixes — colons in strings, :: type casts, ? in comments are correctly handled. Silent bugs from sqlx are gone.",
+              "🎯 Unified interfaces — Ext / ExtContext / NamedExt / BindExt / Preparer / PreparerContext with compile-time checks. Write func f(ext NamedE",
+              "🔀 Auto IN expansion — slices in IN (?) detected and expanded automatically on all methods.",
+              "🪝 Hook system — pluggable SQL interceptors for logging, tracing, metrics (onion model), with both global and per-call granularity.",
+              "📦 JSONValue[T] — generic JSON column type with auto serialize/deserialize."
+            ],
+            "sections": [
+              "sqlex",
+              "Installation",
+              "Migration from jmoiron/sqlx",
+              "Gradual adoption",
+              "Quick Start",
+              "New Features",
+              "Critical Bug Fixes from sqlx",
+              "Usage Examples",
+              "Basic CRUD",
+              "Named Parameter Queries",
+              "IN Queries",
+              "Prepared Statements",
+              "Transaction Management",
+              "JSONValue[T]"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 30801
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "arielshakaramiro/assignment-data-pipeline",
+          "owner": "arielshakaramiro",
+          "name": "assignment-data-pipeline",
+          "url": "https://github.com/arielshakaramiro/assignment-data-pipeline",
+          "homepage": "",
+          "description": "A Python/Pandas ETL pipeline that turns a deliberately messy automotive dataset into production-ready data, with 15 pytest tests and GitHub Actions CI.",
+          "language": "Python",
+          "topics": [
+            "data-cleaning",
+            "data-engineering",
+            "data-pipeline",
+            "etl",
+            "github-actions",
+            "pandas",
+            "pytest",
+            "python"
+          ],
+          "stars": 66,
+          "forks": 1,
+          "open_issues": 1,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 78,
+          "created_at": "2026-08-30T05:05:20Z",
+          "pushed_at": "2026-09-12T13:57:58Z",
+          "license": "MIT",
+          "rating": 1,
+          "composite": 17.2,
+          "breakdown": {
+            "heat": 0,
+            "community": 29,
+            "activity": 2,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Pipeline ETL menggunakan Python + Pandas + NumPy untuk mengolah dataset otomotif mentah menjadi processed dataset yang siap dipakai pada tahap analisis atau pemodelan berikutnya. Dilengkapi unit test (pytest) dan continuous integration (GitHub Actions) yang menjalankan ulang pipeline pada setiap push.\n\nRaw CSV → Load Data → Data Inspection → Data Cleaning → Data Transformation → Processed CSV\n\nDataset berisi spesifikasi kendaraan (merek, dimensi, mesin, harga, konsumsi bahan bakar, dsb). Versi mentah ( automobileEDA dirty training.csv ) sengaja dibuat \"kotor\": mengandung missing values , duplikat, penulisan kategori yang tidak konsisten, format tanggal campuran, serta kolom kategorikal berbentuk teks.",
+            "features": [
+              "Missing values pada 7 kolom (lihat tabel di atas).",
+              "Duplicate records — 4 baris identik penuh.",
+              "Penulisan kategori tidak konsisten (huruf besar/kecil):",
+              "make : ALFA-ROMERO , Audi , BMW vs alfa-romero , audi , bmw",
+              "body-style : SEDAN , Sedan , sedan",
+              "drive-wheels : AWD , RWD vs fwd , rwd",
+              "fuel-system : MPFI , Mpfi , mpfi",
+              "Whitespace berlebih — nilai make seperti dodge , mercury , porsche ."
+            ],
+            "sections": [
+              "Data Pipeline — Automobile Dataset (ETL)",
+              "Alur Data (ETL)",
+              "1. Deskripsi Singkat Dataset",
+              "2. Struktur Folder Project",
+              "3. Kondisi Awal Dataset",
+              "4. Permasalahan yang Ditemukan",
+              "5. Data Cleaning yang Dilakukan",
+              "6. Data Transformation yang Dilakukan",
+              "Contoh Nilai Sebelum & Sesudah Transformasi",
+              "7. Jumlah Data Sebelum & Sesudah Diproses",
+              "8. Cara Menjalankan",
+              "Instal dependency",
+              "Jalankan pipeline",
+              "Jalankan test"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9784
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "tobilg/quacklake",
+          "owner": "tobilg",
+          "name": "quacklake",
+          "url": "https://github.com/tobilg/quacklake",
+          "homepage": "",
+          "description": "A DuckLake data catalog based on quack, deployed to Cloudflare",
+          "language": "TypeScript",
+          "topics": [
+            "cloudflare",
+            "data-catalog",
+            "duckdb",
+            "ducklake",
+            "durable-objects",
+            "quack"
+          ],
+          "stars": 82,
+          "forks": 1,
+          "open_issues": 0,
+          "starGain": 0,
+          "heat": 0,
+          "heatBasis": "snapshot",
+          "heatPercentile": 0,
+          "ageDays": 173,
+          "created_at": "2026-05-26T15:25:08Z",
+          "pushed_at": "2026-09-29T14:22:19Z",
+          "license": "MIT",
+          "rating": 1,
+          "composite": 17.1,
+          "breakdown": {
+            "heat": 0,
+            "community": 30,
+            "activity": 0,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 60,
+            "devops": 35,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "quacklake is a Cloudflare Workers / Durable Objects service that speaks DuckDB's experimental Quack HTTP protocol and stores DuckLake catalog metadata in Durable Object SQLite storage.\n\nThe Worker exposes one public Quack endpoint at /quack . Clients authenticate by sending a JWT as the Quack auth string. A valid JWT resolves to one catalog Durable Object and one normalized principal, then quacklake applies the catalog's server-side authorization policy before executing catalog SQL.\n\nThis is an alpha implementation. It is useful for protocol integration work, local Worker tests, and R2-backed DuckLake metadata smoke tests. It is not a full DuckDB server.",
+            "features": [
+              "Quack binary request/response transport through POST /quack .",
+              "CONNECTION REQUEST , PREPARE REQUEST , FETCH REQUEST , APPEND REQUEST , and DISCONNECT MESSAGE .",
+              "JWT-only catalog authentication.",
+              "First-party HS256 quacklake JWT credentials.",
+              "Third-party OIDC JWT verification through configured providers and JWKS.",
+              "Catalog auth mappings that select a catalog for verified OIDC principals.",
+              "Catalog auth policies that authorize SQL and append requests before execution.",
+              "SQLite-backed query execution with DuckDB-style compatibility rewrites."
+            ],
+            "sections": [
+              "quacklake",
+              "Status",
+              "Guides",
+              "Architecture",
+              "Project Layout",
+              "Quick Start",
+              "Configuration Summary",
+              "Client Usage Summary",
+              "Notes"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12828
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ratatui/ratatui",
+          "owner": "ratatui",
+          "name": "ratatui",
+          "url": "https://github.com/ratatui/ratatui",
+          "homepage": "https://ratatui.rs",
+          "description": "A Rust crate for cooking up terminal user interfaces (TUIs) 👨‍🍳🐀 https://ratatui.rs",
+          "language": "Rust",
+          "topics": [
+            "cli",
+            "ratatui",
+            "rust",
+            "terminal",
+            "terminal-user-interface",
+            "tui",
+            "widgets"
+          ],
+          "stars": 23312,
+          "forks": 826,
+          "open_issues": 198,
+          "starGain": 18,
+          "heat": 18,
+          "heatBasis": "trending",
+          "heatPercentile": 73,
+          "ageDays": 1372,
+          "created_at": "2023-02-12T21:56:20Z",
+          "pushed_at": "2026-11-12T17:50:08Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 74.1,
+          "breakdown": {
+            "heat": 73,
+            "community": 81,
+            "activity": 51,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- Quickstart - Documentation - Templates - Built with Ratatui - Contributing - Acknowledgements - License\n\n[Ratatui Website] · [Docs] · [Widget Examples] · [App Examples] · [Changelog] \\ [Breaking Changes] · [Contributing] · [Report a bug] · [Request a Feature]\n\n[Ratatui][Ratatui Website] ( ˌræ.təˈtu.i ) is a Rust crate for cooking up terminal user interfaces (TUIs). It provides a simple and flexible way to create text-based user interfaces in the terminal, which can be used for command-line applications, dashboards, and other interactive console programs.",
+            "features": [
+              "Quickstart",
+              "Documentation",
+              "Templates",
+              "Built with Ratatui",
+              "Contributing",
+              "Acknowledgements",
+              "[Docs] - the full API documentation for the library on docs.rs.",
+              "[Ratatui Website] - explains the library's concepts and provides step-by-step tutorials."
+            ],
+            "sections": [
+              "Quickstart",
+              "Documentation",
+              "Templates",
+              "Embedded and no std",
+              "Built with Ratatui",
+              "Contributing",
+              "Acknowledgements",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8469
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "esphome/esphome",
+          "owner": "esphome",
+          "name": "esphome",
+          "url": "https://github.com/esphome/esphome",
+          "homepage": "https://esphome.io/",
+          "description": "ESPHome is a system to control your ESP32, ESP8266, BK72xx, RP2040 by simple yet powerful configuration files and control them remotely through Home Automation systems.",
+          "language": "C++",
+          "topics": [
+            "esp32",
+            "esp8266",
+            "hacktoberfest",
+            "home-assistant",
+            "home-automation",
+            "iot",
+            "mqtt",
+            "platformio"
+          ],
+          "stars": 12111,
+          "forks": 5807,
+          "open_issues": 709,
+          "starGain": 4,
+          "heat": 4,
+          "heatBasis": "trending",
+          "heatPercentile": 61,
+          "ageDays": 3145,
+          "created_at": "2018-04-06T23:23:25Z",
+          "pushed_at": "2026-11-16T01:14:07Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 73.6,
+          "breakdown": {
+            "heat": 61,
+            "community": 81,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "",
+            "features": [],
+            "sections": [
+              "ESPHome"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 933
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "FrigadeHQ/yogurt",
+          "owner": "FrigadeHQ",
+          "name": "yogurt",
+          "url": "https://github.com/FrigadeHQ/yogurt",
+          "homepage": "https://yogurt.so",
+          "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-meeting-assistant",
+            "ai-notetaker",
+            "electron",
+            "granola-alternative",
+            "linux",
+            "llama-cpp",
+            "local-ai",
+            "local-first"
+          ],
+          "stars": 1655,
+          "forks": 93,
+          "open_issues": 26,
+          "starGain": null,
+          "heat": 567.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 5,
+          "created_at": "2026-11-10T20:01:01Z",
+          "pushed_at": "2026-11-16T00:39:18Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 85.6,
+          "breakdown": {
+            "heat": 98,
+            "community": 59,
+            "activity": 82,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 21,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Private AI meeting notes. A free, open-source alternative to Granola.\n\nYogurt records your calls without adding a bot to the meeting. macOS 14.4+ (Apple Silicon) · Windows 10 2004+ (x64) · Ubuntu 22.04+ or similar (x64 AppImage) · 8 GB memory yogurt.so · Help · Build and run locally · MIT license Made by Frigade .\n\n- Live transcripts. Yogurt records calls and turns speech into text as you talk. - Meeting summaries. Yogurt writes up the conversation and any notes you add. - Private by default. Your audio, transcripts and AI processing stay on your computer. - Free and open source. You can use Yogurt without an account. - Who said what. Yogurt names speakers from Zoom, Teams and Meet on Mac only. - Languages. Multi-language mode transcribes 99 languages. - Recording reminders. Yogurt offers to record when a supported call starts. - Answers with sources. Yogurt answers questions across meetings and links to the source. - Folders and search. You can find meetings by folder, title, notes or transcript. - Copy and export. You can copy notes or transcripts, or save both as Markdown. - Local MCP server. Your chosen assistant app can read your notes when you allow access. - Automatic stop. Yogurt stops recording when the call ends.",
+            "features": [
+              "Live transcripts. Yogurt records calls and turns speech into text as you talk.",
+              "Meeting summaries. Yogurt writes up the conversation and any notes you add.",
+              "Private by default. Your audio, transcripts and AI processing stay on your computer.",
+              "Free and open source. You can use Yogurt without an account.",
+              "Who said what. Yogurt names speakers from Zoom, Teams and Meet on Mac only.",
+              "Languages. Multi-language mode transcribes 99 languages.",
+              "Recording reminders. Yogurt offers to record when a supported call starts.",
+              "Answers with sources. Yogurt answers questions across meetings and links to the source."
+            ],
+            "sections": [
+              "What it does",
+              "Watch the demo",
+              "How it works",
+              "FAQ",
+              "Build from source",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8176
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "ersinkoc/phonebox",
+          "owner": "ersinkoc",
+          "name": "phonebox",
+          "url": "https://github.com/ersinkoc/phonebox",
+          "homepage": "https://ersinkoc.github.io/phonebox/",
+          "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 115 widgets for system stats, AI coding, media and automation. USB or paired Wi-Fi. No cloud required.",
+          "language": "C#",
+          "topics": [
+            "android",
+            "claude-code",
+            "codex",
+            "dashboard",
+            "desk-panel",
+            "dotnet",
+            "linux",
+            "macos"
+          ],
+          "stars": 1292,
+          "forks": 118,
+          "open_issues": 25,
+          "starGain": null,
+          "heat": 401.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 8,
+          "created_at": "2026-11-07T16:45:16Z",
+          "pushed_at": "2026-11-15T23:48:32Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.8,
+          "breakdown": {
+            "heat": 98,
+            "community": 58,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English · Türkçe · Deutsch · Français · Español · Italiano · Português · Nederlands · Polski · Русский · 中文 (简体)\n\nPC stats, AI coding sessions, music and touch controls over USB or Wi-Fi. Windows, Linux and macOS. No root, PhoneBox account or cloud service required.\n\nPhoneBox pairs a full-screen Android app with a small desktop agent . Build your panel in a browser-based visual editor: 115 widgets , 30 templates , multiple pages and a live preview. Connect several phones with their own layouts, or switch one phone between paired computers.",
+            "features": [
+              "Manual download: unzip the agent for your system from the release page",
+              "Scoop (Windows):",
+              "From source: see the installation guide and development guide.",
+              "winget: manifests are prepared in packaging/winget; see the installation guide for details.",
+              "Windows agent: the SignPath Foundation application is pending; releases are unsigned until approved.",
+              "Android app: release APKs use the project's own signing key, independently of SignPath.",
+              "Team roles: committer, reviewer and signing approver: ersinkoc.",
+              "Privacy: see the privacy policy."
+            ],
+            "sections": [
+              "What you can do",
+              "Quick start",
+              "1. Install the desktop agent",
+              "2. Connect the phone",
+              "3. Make it yours",
+              "Pages & templates",
+              "Platform support",
+              "Documentation",
+              "Security & privacy",
+              "Development",
+              "Code signing policy",
+              "Sponsor",
+              "Star History",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13425
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "harry0703/MangoDisk",
+          "owner": "harry0703",
+          "name": "MangoDisk",
+          "url": "https://github.com/harry0703/MangoDisk",
+          "homepage": "https://mangodisk.app/",
+          "description": "Safety-first disk cleaner and space analyzer for macOS, Windows and Linux, with duplicate cleanup, app uninstall, startup management, system optimization, and maintenance.",
+          "language": "Rust",
+          "topics": [
+            "app-uninstaller",
+            "cache-cleaner",
+            "cross-platform",
+            "desktop-app",
+            "disk-cleaner",
+            "disk-cleanup",
+            "disk-space-analyzer",
+            "duplicate-files"
+          ],
+          "stars": 5775,
+          "forks": 404,
+          "open_issues": 7,
+          "starGain": 66,
+          "heat": 66,
+          "heatBasis": "trending",
+          "heatPercentile": 86,
+          "ageDays": 107,
+          "created_at": "2026-08-01T03:00:29Z",
+          "pushed_at": "2026-11-13T14:56:45Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 76.5,
+          "breakdown": {
+            "heat": 86,
+            "community": 70,
+            "activity": 46,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Recover storage used by everyday apps, development work, and AI tools. Find caches, build artifacts, and local models in one place, without hunting through hidden folders:\n\n- System and user caches : Reclaim space taken up over time by system temporary files, diagnostic data, and rebuildable caches. - Application caches : Keep application caches, logs, update packages, and temporary content from quietly consuming more and more storage. - Browser data : Reclaim space used by cached and temporary web data from Chrome, Edge, Firefox, Brave, Arc, Opera, and other browsers. - Developer tools and Xcode : Quickly recover substantial storage used by package managers, IDEs, compiler caches, and Xcode development data. - Container caches : Free up space used by inactive build caches and rebuildable data from Docker and other container tools. - Project build artifacts : Recover space used by rebuildable dependencies, caches, and build directories across Node.js, Rust, Gradle, Swift, Python, .NET, Godot, CMake, and other projects. - AI tools : Reclaim space taken up by caches, old logs, and temporary downloads from tools such as ChatGPT, Codex, and Claude, without tracking down each tool's data folders. - AI models : See how much space local models from Ollama, LM Studio, Hugging Face, and ComfyUI use, and remove those you no longer need to make room for new models and everyday files. Models are selected manually and must be downloaded again if needed later. - Application optimization : ",
+            "features": [
+              "System and user caches : Reclaim space taken up over time by system temporary files, diagnostic data, and rebuildable caches.",
+              "Application caches : Keep application caches, logs, update packages, and temporary content from quietly consuming more and more storage.",
+              "Browser data : Reclaim space used by cached and temporary web data from Chrome, Edge, Firefox, Brave, Arc, Opera, and other browsers.",
+              "Developer tools and Xcode : Quickly recover substantial storage used by package managers, IDEs, compiler caches, and Xcode development data.",
+              "Container caches : Free up space used by inactive build caches and rebuildable data from Docker and other container tools.",
+              "Project build artifacts : Recover space used by rebuildable dependencies, caches, and build directories across Node.js, Rust, Gradle, Swift,",
+              "AI tools : Reclaim space taken up by caches, old logs, and temporary downloads from tools such as ChatGPT, Codex, and Claude, without tracki",
+              "AI models : See how much space local models from Ollama, LM Studio, Hugging Face, and ComfyUI use, and remove those you no longer need to ma"
+            ],
+            "sections": [
+              "What MangoDisk Can Do",
+              "1. Deep Cleanup",
+              "2. Large File Cleanup",
+              "3. Duplicate File Cleanup",
+              "4. Disk Space Analysis",
+              "5. Privacy Cleanup",
+              "6. Application Uninstall and Cleanup",
+              "7. Startup Item Management",
+              "8. System Optimization",
+              "9. System Maintenance",
+              "10. Context Menus (Windows)",
+              "11. Operation History",
+              "Resource Usage and Memory Management",
+              "AI Explanations"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 22127
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "utmapp/UTM",
+          "owner": "utmapp",
+          "name": "UTM",
+          "url": "https://github.com/utmapp/UTM",
+          "homepage": "https://getutm.app",
+          "description": "Virtual machines for iOS and macOS",
+          "language": "Swift",
+          "topics": [
+            "apple",
+            "emulation",
+            "ios",
+            "jailbreak",
+            "macos",
+            "qemu",
+            "utm",
+            "virtual-machines"
+          ],
+          "stars": 36909,
+          "forks": 1922,
+          "open_issues": 1012,
+          "starGain": 25,
+          "heat": 25,
+          "heatBasis": "trending",
+          "heatPercentile": 64,
+          "ageDays": 2774,
+          "created_at": "2019-04-12T16:09:24Z",
+          "pushed_at": "2026-11-15T23:46:01Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 74.7,
+          "breakdown": {
+            "heat": 64,
+            "community": 85,
+            "activity": 77,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "UTM is a full featured system emulator and virtual machine host for iOS, macOS, and visionOS. It is based off of QEMU. In short, it allows you to run Windows, Linux, and more on your Mac, iPhone, and iPad. More information at https://getutm.app/ and https://mac.getutm.app/\n\nFull system emulation (MMU, devices, etc) using QEMU 30+ processors supported including x86 64, ARM64, and RISC-V VGA graphics mode using SPICE and QXL Text terminal mode USB devices JIT based acceleration using QEMU TCG Frontend designed from scratch for macOS 12+ and iOS 15+ using the latest and greatest APIs Create, manage, run VMs directly from your device\n\nHardware accelerated virtualization using Hypervisor.framework and QEMU Boot macOS guests with Virtualization.framework",
+            "features": [
+              "Full system emulation (MMU, devices, etc) using QEMU",
+              "30+ processors supported including x86 64, ARM64, and RISC-V",
+              "VGA graphics mode using SPICE and QXL",
+              "Text terminal mode",
+              "JIT based acceleration using QEMU TCG",
+              "Frontend designed from scratch for macOS 12+ and iOS 15+ using the latest and greatest APIs",
+              "Create, manage, run VMs directly from your device",
+              "Hardware accelerated virtualization using Hypervisor.framework and QEMU"
+            ],
+            "sections": [
+              "UTM",
+              "Features",
+              "Additional macOS Features",
+              "UTM SE",
+              "Install",
+              "Development",
+              "macOS Development",
+              "iOS Development",
+              "Related",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4309
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "dream-num/univer",
+      "category": "ai",
+      "lastPushed": "2026-11-15",
+      "times": 1
+    },
+    {
+      "full_name": "ChromeDevTools/chrome-devtools-mcp",
+      "category": "ai",
+      "lastPushed": "2026-11-15",
+      "times": 1
+    },
+    {
+      "full_name": "Ebony-Vinyl/dsh-our-free-model",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "tashfeenahmed/freellmapi",
+      "category": "ai",
+      "lastPushed": "2026-11-04",
+      "times": 1
+    },
+    {
+      "full_name": "google/elephant-goldfish-model",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "davila7/claude-code-templates",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "JuneYaooo/rea-video",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "GoogleChrome/modern-web-guidance-src",
+      "category": "ai",
+      "lastPushed": "2026-11-13",
+      "times": 1
+    },
+    {
+      "full_name": "tradermonty/claude-trading-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-15",
+      "times": 1
+    },
+    {
+      "full_name": "openfilm/openfilm",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "kajisho5/ffmpeg-skill",
+      "category": "ai",
+      "lastPushed": "2026-10-29",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "ModernRelay/omnigraph",
+      "category": "ai",
+      "lastPushed": "2026-11-15",
+      "times": 1
+    },
+    {
+      "full_name": "aaif-goose/goose",
+      "category": "ai",
+      "lastPushed": "2026-11-15",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/TokenEconomizer",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "agentes-chat/agentes-chat",
+      "category": "ai",
+      "lastPushed": "2026-11-13",
+      "times": 1
+    },
+    {
+      "full_name": "qybaihe/bla",
+      "category": "ai",
+      "lastPushed": "2026-11-05",
+      "times": 1
+    },
+    {
+      "full_name": "reacher-z/Awesome-REA",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}
