@@ -1,0 +1,1826 @@
+{
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T09:47:16.428+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-16",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 872,
+    "unclassified": 69,
+    "selected": 20,
+    "suppressedByHistory": 257,
+    "sameDateExempt": 0,
+    "removed": 1,
+    "removedTotal": 1,
+    "offTopic": 2,
+    "watchlisted": 0,
+    "regenerated": true,
+    "watchlist": [],
+    "reviewedAt": "2026-11-17T02:09:38.707Z"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "lidge-jun/opencodex",
+          "owner": "lidge-jun",
+          "name": "opencodex",
+          "url": "https://github.com/lidge-jun/opencodex",
+          "homepage": "https://opencodex.me/",
+          "description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+          "language": "TypeScript",
+          "topics": [
+            "ai-gateway",
+            "ai-tools",
+            "anthropic",
+            "chatgpt",
+            "claude",
+            "claude-code",
+            "codex",
+            "codex-cli"
+          ],
+          "stars": 18599,
+          "forks": 1521,
+          "open_issues": 141,
+          "starGain": null,
+          "heat": 1177.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 151,
+          "created_at": "2026-06-18T23:03:18Z",
+          "pushed_at": "2026-11-16T20:18:11Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 88.5,
+          "breakdown": {
+            "heat": 97,
+            "community": 81,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 43,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "One local gateway for your AI coding tools and models. and connect OpenCode, Pi, Qoder, WorkBuddy, Kilo, Cline, T3 Code and more through managed configs. See every supported tool →\n\nnpm install -g --allow-scripts=bun @bitkyc08/opencodex ocx start\n\nThe picker is stock Claude Code. The brain behind it isn't.",
+            "features": [
+              "Use any LLM with Codex, Claude Code, Claude Desktop, and Grok Build — 40+ providers out of",
+              "Combos — one virtual model id with failover or weighted round-robin across providers. See",
+              "Sub-agents on any model — feature routed models in Codex's sub-agent picker, with v1/v2",
+              "Log in once, skip the API key — OAuth for xAI, Anthropic, and Kimi; or forward",
+              "Web search & vision sidecars — non-OpenAI models get real web search and image understanding",
+              "See what's happening — the dashboard shows providers, OAuth status, model selection, and a",
+              "Clean exit, zero residue — ocx stop restores Codex to its original configuration.",
+              "Bounded memory ownership — every long-lived cache, ring buffer, and protocol-translation"
+            ],
+            "sections": [
+              "Claude Code, running any model",
+              "Codex, running any model",
+              "Claude Desktop, running any model",
+              "Grok Build, running any model",
+              "Quick start",
+              "Personal install (CLI)",
+              "Connect your tool",
+              "Sponsors",
+              "Supported platforms",
+              "Highlights",
+              "Model routing",
+              "JEV Auto routing (optional)",
+              "Providers & adapters",
+              "CLI"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 29304
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "cobusgreyling/loop-engineering",
+          "owner": "cobusgreyling",
+          "name": "loop-engineering",
+          "url": "https://github.com/cobusgreyling/loop-engineering",
+          "homepage": "https://cobusgreyling.github.io/loop-engineering/",
+          "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
+          "language": "TypeScript",
+          "topics": [
+            "agentic-ai",
+            "ai-agents",
+            "ai-coding",
+            "anthropic",
+            "automation",
+            "claude",
+            "claude-code",
+            "codex"
+          ],
+          "stars": 11793,
+          "forks": 1583,
+          "open_issues": 22,
+          "starGain": null,
+          "heat": 721.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 161,
+          "created_at": "2026-06-09T06:28:20Z",
+          "pushed_at": "2026-11-16T11:21:08Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 85.3,
+          "breakdown": {
+            "heat": 95,
+            "community": 78,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 37,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Quickstart · What do you want to do? · Refactor path · 中文 · Pattern picker\n\nnpx @cobusgreyling/loop init . --pattern daily-triage --tool claude npx @cobusgreyling/loop doctor .\n\n--tool defaults to claude if you omit it. Swap for grok , codex , or opencode . Week one is report-only .",
+            "features": [
+              "Add your project to adopters",
+              "Share a story (failures first-class)",
+              "Live good first issue list",
+              "Show your loop · Ask anything",
+              "Cobus Greyling — Loop Engineering",
+              "Addy Osmani — Loop Engineering",
+              "Lulla et al. 2026 — Building Blocks, Adoption, and Impact (this repo is the community reference they reviewed)",
+              "Attribution"
+            ],
+            "sections": [
+              "Loop Engineering",
+              "What do you want to do?",
+              "Patterns",
+              "Getting started",
+              "Examples by tool",
+              "Operating & safety",
+              "Help wanted",
+              "Sources",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7057
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Human-Agent-Society/reef",
+          "owner": "Human-Agent-Society",
+          "name": "reef",
+          "url": "https://github.com/Human-Agent-Society/reef",
+          "homepage": "https://reefinfra.ai",
+          "description": "Infrastructure for continually self‑improving agents",
+          "language": "Python",
+          "topics": [
+            "agent-infrastructure",
+            "ai-agents",
+            "continual-learning",
+            "inference",
+            "llm",
+            "llm-training",
+            "reinforcement-learning",
+            "self-improving-agents"
+          ],
+          "stars": 7832,
+          "forks": 740,
+          "open_issues": 159,
+          "starGain": null,
+          "heat": 713.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 78,
+          "created_at": "2026-08-31T01:39:18Z",
+          "pushed_at": "2026-11-17T01:49:13Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 85.6,
+          "breakdown": {
+            "heat": 94,
+            "community": 74,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Infrastructure for continually self‑improving agents\n\nReef is the first open-source infrastructure for continual self-improving agents. It connects agent inference, feedback, learning, and versioned delivery. Use it to train model weights with Slime and SGLang, or improve an agent's harness, including its prompts, rules, and skills.\n\n🚀 Get started 🗺️ Roadmap 🗓️ Office Hours 📣 Launch post 💬 Join Discord 📱 Join WeChat Group",
+            "features": [
+              "2026-11: We are refactoring Reef to a control plane + workers architecture. Some recipes and examples can fail on main until the refactor is",
+              "2026-11: A scenario can split its traffic across its served artifacts 1227, also through Semantic Router 859. The new python harness adapter",
+              "2026-10: Tinker runs as a training component 901. Episodes and agents can run in Modal Sandboxes 942. The artifact repository can live on Hu",
+              "2026-09: reef-infra v0.1.0 is on PyPI. New recipes: GEPA, SDFT, SDPO and Meta-Harness. Reef serves the OpenAI Responses API at /v1/responses",
+              "2026-08: Reef is open source. Read the launch post.",
+              "Quickstart: install Reef, connect a client, and inspect the version history",
+              "HTTP API: use the HTTP API and report feedback",
+              "Write a recipe: configure how Reef processes data and produces updates"
+            ],
+            "sections": [
+              "📰 News",
+              "🎯 When to use Reef",
+              "🧩 How Reef fits your stack",
+              "🔄 How it works",
+              "📦 Installation",
+              "From PyPI",
+              "From source",
+              "🔧 Using Reef",
+              "Weight-training deployment",
+              "Create the scenario; a repeated request returns the existing",
+              "Wait until inference is ready for the scenario",
+              "Send a provider-compatible inference request",
+              "Sending report about the inference",
+              "Harness-evolving deployment"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21394
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "kuafuai/andee",
+          "owner": "kuafuai",
+          "name": "andee",
+          "url": "https://github.com/kuafuai/andee",
+          "homepage": "https://heyandee.com",
+          "description": "Andee lives on your phone or Mac and uses any app like you do—no integrations, no root, any model; memory and passwords never leave your device | Andee 住进你的手机或 Mac，像你一样操作任何 App——无需集成、无需 Root、支持任意模型，记忆和密码绝不离开设备。",
+          "language": "Kotlin",
+          "topics": [
+            "agent",
+            "ai",
+            "ai-agents",
+            "android-automation",
+            "mobile-agents",
+            "personal-agent",
+            "personal-ai",
+            "phone-automation"
+          ],
+          "stars": 6148,
+          "forks": 291,
+          "open_issues": 23,
+          "starGain": null,
+          "heat": 643.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 61,
+          "created_at": "2026-09-17T13:20:59Z",
+          "pushed_at": "2026-11-16T02:31:43Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 81.9,
+          "breakdown": {
+            "heat": 93,
+            "community": 70,
+            "activity": 59,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "alt=\"Andee — it becomes the soul of the device. A phone, a tablet, or anything with a body.\"\n\nBuild online · Install · Getting started · Features · Build from source · Provisioning · What it looks like · Permissions · Verifiability · Security · Disclaimer · License\n\nNot the assistant that helps you operate your phone — not a tool, not a companion.",
+            "features": [
+              "Open https://www.codeflying.app/andee → build → scan to download",
+              "Grant Overlay, then Accessibility → the ball appears; tap it to talk",
+              "It lives in the device, not in a vendor's cloud. The brain runs on the device itself, against any",
+              "Its notebook never leaves the device. What it remembers about you — habits, promises, the things it",
+              "It behaves the same when nobody is watching. After a conversation goes quiet it sends itself a",
+              "It has a character, not a theme. Six looks, nineteen moods, and a face the model picks itself,",
+              "Works in every app — and needs nothing from the app. No intent to expose, no SDK to adopt, no",
+              "Holds lines a prompt cannot talk it out of. A stranger's notification cannot unlock the vault or grant"
+            ],
+            "sections": [
+              "Install",
+              "What it is",
+              "Why it is not the assistant already in your phone",
+              "What it does — and where it stops",
+              "Key features",
+              "Hands — it uses your phone the way you do",
+              "Mind — it gets to know you",
+              "Face — a character, not a theme",
+              "Show and tell",
+              "Body",
+              "Two bodies, and friends",
+              "Engineering",
+              "Architecture",
+              "Build from source"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 81602
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "nexu-io/open-design",
+          "owner": "nexu-io",
+          "name": "open-design",
+          "url": "https://github.com/nexu-io/open-design",
+          "homepage": "https://open-design.ai",
+          "description": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-skills",
+            "ai-design",
+            "byok",
+            "claude-code-for-design",
+            "claude-design",
+            "codex-design",
+            "cursor-design",
+            "deepseek"
+          ],
+          "stars": 107945,
+          "forks": 12266,
+          "open_issues": 1403,
+          "starGain": null,
+          "heat": 5810.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 203,
+          "created_at": "2026-04-28T04:25:20Z",
+          "pushed_at": "2026-11-17T01:11:36Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 94.4,
+          "breakdown": {
+            "heat": 99,
+            "community": 95,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "OpenDesign: The 1st Collaborative AI Design Agent Workspace\n\nWebsite · Download · OpenDesign Cloud · Discord · Follow @OpenDesignHQ\n\nOpenDesign is the 1st collaborative AI design agent workspace . Start with a brief, then use your coding agent or OpenDesign Cloud to create a prototype that follows your design system. Share it with your team for feedback, and let your agent refine it in the same project.",
+            "features": [
+              "🤖 Agent-native, model-agnostic. We don't ship an agent. The claude / codex / cursor-agent / copilot / hermes / kimi already on your PATH ar",
+              "🧠 Brand-grade by default. Every render reads the active package's DESIGN.md as the core brand contract. 151 design-system packages ship wit",
+              "🖥️ Local-first, BYOK at every layer. Native desktop apps for macOS (Apple Silicon + Intel) and Windows (x64). Linux desktop users can curre",
+              "🌍 Composable on four planes. Plugins carry runnable workflows · functional skills carry agent behavior · design templates carry rendering b",
+              "🔁 Refresh an existing codebase. Hand a git repo + DESIGN.md to the agent and it refactors your real components to the brand spec.",
+              "🔒 Privacy by conviction. Projects can run locally or in your own deployment. Cloud model and OpenDesign Cloud requests are sent to the corr",
+              "macOS (Apple Silicon · Intel x64) → open-design.ai or GitHub Releases",
+              "Windows (x64) → open-design.ai or GitHub Releases"
+            ],
+            "sections": [
+              "What is OpenDesign",
+              "Product tour",
+              "Core pages",
+              "Studio — create and refine in one project",
+              "Product videos with OpenMotion",
+              "Platform Compatibility",
+              "Demo",
+              "1 · Prototypes — web · desktop · mobile",
+              "2 · Live artifacts & dashboards",
+              "3 · Decks — magazine decks, weekly updates, pitches",
+              "4 · Images — gpt-image-2 , ImageRouter, custom API",
+              "5 · Video & HyperFrames — agent-native motion graphics",
+              "Why OpenDesign",
+              "Quick start"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 54504
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "career-ops-hq/career-ops",
+          "owner": "career-ops-hq",
+          "name": "career-ops",
+          "url": "https://github.com/career-ops-hq/career-ops",
+          "homepage": "https://career-ops.org",
+          "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCode and other AI CLIs, or as a Claude Code plugin.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-agent",
+            "ai-job-search",
+            "ats",
+            "career",
+            "career-ops",
+            "claude-code",
+            "claude-code-plugin"
+          ],
+          "stars": 83117,
+          "forks": 15264,
+          "open_issues": 468,
+          "starGain": null,
+          "heat": 4213.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 226,
+          "created_at": "2026-04-04T18:21:18Z",
+          "pushed_at": "2026-11-16T17:58:29Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 91.9,
+          "breakdown": {
+            "heat": 96,
+            "community": 94,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English Español Deutsch Français Português (Brasil) 한국어 日本語 简体中文 繁體中文 Українська Русский Polski Dansk Norsk (bokmål) தமிழ் العربية हिन्दी Türkçe Tiếng Việt Bahasa Indonesia\n\nMonths of sending CVs into&nbsp;silence. So I built the filter I&nbsp;needed.\n\n740&nbsp;listings&nbsp;evaluated. 68&nbsp;applied. 12&nbsp;interviews.&nbsp;1&nbsp;offer. I was its first user. I got the&nbsp;job. Then&nbsp;I&nbsp;open-& 8288;sourced&nbsp;it.",
+            "features": [
+              "Still open? It checks that the posting is still live before you write a word.",
+              "Not you? It scores the role against your real CV and tells you to skip a weak fit. You can override it.",
+              "Worth it? It drafts the CV, the cover letter and the answers. You read them. You send them.",
+              "Who do I talk to? It finds the person and drafts the note. It never sends it.",
+              "Where does it all go? Every application stays on your machine. Nothing is uploaded to us.",
+              "What should I learn? After a run of noes, it names the gap.",
+              "Auto-submit an application. It drafts the answer to every field; you review and click Submit. The script never POSTs ( prepare-application.m",
+              "Send an email. Drafts only. There is no mail transport anywhere in this codebase."
+            ],
+            "sections": [
+              "Your turn",
+              "You don't have to search alone",
+              "Sponsors",
+              "What career-ops does for you",
+              "What career-ops will not do",
+              "Features",
+              "How It Works",
+              "Quick Start",
+              "On a non-Debian/Ubuntu Linux distro (Fedora, Arch, ...), Chr",
+              "libraries aren't installed by the line above — install them ",
+              "your distro's package manager if PDF generation fails to lau",
+              "(Playwright's own docs list the required libraries per platf",
+              "2. Open your AI CLI in this directory. On first launch it wa",
+              "through setup (your CV, profile and target roles) by chattin"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 46229
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "sickn33/agentic-awesome-skills",
+          "owner": "sickn33",
+          "name": "agentic-awesome-skills",
+          "url": "https://github.com/sickn33/agentic-awesome-skills",
+          "homepage": "https://aaskills.tech/",
+          "description": "2,955+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "agentic-skills",
+            "ai-agent-skills",
+            "ai-agents",
+            "ai-coding",
+            "ai-workflows",
+            "antigravity",
+            "antigravity-skills"
+          ],
+          "stars": 49818,
+          "forks": 7223,
+          "open_issues": 6,
+          "starGain": null,
+          "heat": 2137.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 306,
+          "created_at": "2026-01-14T17:48:09Z",
+          "pushed_at": "2026-11-16T17:12:16Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87.3,
+          "breakdown": {
+            "heat": 94,
+            "community": 90,
+            "activity": 59,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 56,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Agentic Awesome Skills is a library of 2,981+ installable SKILL.md playbooks for Claude Code, Codex, Cursor, Gemini CLI and other AI coding agents. AAS Core helps Codex or Claude search the complete local catalog, record the skills the agent chooses, and preview a plan you can inspect before changing a target. Core does not rank or recommend skills.\n\nStart here: Explore the skill catalog · Codex setup · Claude Code setup · Install or update without npm\n\nProject identity: Agentic Awesome Skills (AAS) was previously named Antigravity Awesome Skills . The official repository is sickn33/agentic-awesome-skills, and the official website is aaskills.tech. Original code and tooling use MIT; original written content uses CC BY 4.0. Imported skills retain their own license and attribution requirements; see License.",
+            "features": [
+              "Watch the Introduction",
+              "Support the Project",
+              "AAS Core: Agent-First Preview",
+              "Installation",
+              "Choose Your Tool",
+              "Recommended Specialized Plugins",
+              "Bundles & Workflows",
+              "Browse 2,981+ Skills"
+            ],
+            "sections": [
+              "Agentic Awesome Skills — AI Skills & AAS Core",
+              "Table of Contents",
+              "Watch the Introduction",
+              "Support the Project",
+              "AAS Core: Agent-First Preview",
+              "Installation",
+              "From selection to use",
+              "Install selected skills directly",
+              "Choose Your Tool",
+              "Recommended Specialized Plugins",
+              "Bundles & Workflows",
+              "Browse 2,981+ Skills",
+              "Troubleshooting",
+              "Stable Skills Manifest v1"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 126910
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "cathrynlavery/diagram-design",
+          "owner": "cathrynlavery",
+          "name": "diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "homepage": "https://diagramdesign.dev",
+          "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+          "language": "HTML",
+          "topics": [
+            "agent-skills",
+            "claude-code",
+            "codex",
+            "data-visualization",
+            "diagrams",
+            "drawio",
+            "mermaid",
+            "svg"
+          ],
+          "stars": 67652,
+          "forks": 4530,
+          "open_issues": 38,
+          "starGain": null,
+          "heat": 3533.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 214,
+          "created_at": "2026-04-16T18:01:16Z",
+          "pushed_at": "2026-11-12T21:14:19Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.8,
+          "breakdown": {
+            "heat": 96,
+            "community": 90,
+            "activity": 39,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An agent skill that draws diagrams as one self-contained HTML + SVG file, in your brand. 50 diagram types. No shadows. No Mermaid slop.\n\nInstall · What it makes · Quickstart · Match your brand · Import · Export · Contributing\n\n- \"Make me an architecture diagram of my app: frontend, backend, database, Redis cache.\" - \"I need a quadrant showing Q2 projects by impact vs effort.\" - \"Give me a sequence of a bearer call with token refresh on 401.\" - \"Onboard diagram-design to https://yoursite.com\" (pulls your palette and fonts so every diagram after this one matches your site)",
+            "features": [
+              "\"Make me an architecture diagram of my app: frontend, backend, database, Redis cache.\"",
+              "\"I need a quadrant showing Q2 projects by impact vs effort.\"",
+              "\"Give me a sequence of a bearer call with token refresh on 401.\"",
+              "\"Onboard diagram-design to https://yoursite.com\" (pulls your palette and fonts so every diagram after this one matches your site)",
+              "SVG extracts the node and injects Google Fonts so it renders standalone in browsers, Figma, and Illustrator. Animation bindings follow names",
+              "PNG rasterizes the diagram via Playwright at 2× by default. One-time setup: pip install playwright && playwright install chromium .",
+              "--registry : for diagrams using the traceable block decomposition pattern, also emits .registry.json , a structured projection of every bloc",
+              "A routine request (\"make me a flowchart\") loads SKILL.md , exactly one type reference, and at most the two core references ( primitives-core"
+            ],
+            "sections": [
+              "Install",
+              "Pi: register the checkout as a local package",
+              "Claude Code: symlink the inner skill",
+              "Other Agent Skills hosts: create only the roots you use",
+              "How it compares",
+              "Why I built it",
+              "What it makes",
+              "Onboarding: make it look like your brand",
+              "The flow",
+              "What gets extracted",
+              "Contrast checks happen automatically",
+              "Accessible by default",
+              "Offline fonts",
+              "Manual override"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 55897
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "img2threejs/img2threejs",
+          "owner": "img2threejs",
+          "name": "img2threejs",
+          "url": "https://github.com/img2threejs/img2threejs",
+          "homepage": "https://img2threejs.io",
+          "description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
+          "language": "Python",
+          "topics": [
+            "3d",
+            "ai-agents",
+            "claude-code",
+            "computer-graphics",
+            "generative",
+            "image-to-3d",
+            "procedural-generation",
+            "threejs"
+          ],
+          "stars": 21466,
+          "forks": 1832,
+          "open_issues": 122,
+          "starGain": null,
+          "heat": 1508.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 125,
+          "created_at": "2026-07-15T02:58:39Z",
+          "pushed_at": "2026-11-16T10:16:03Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 89.6,
+          "breakdown": {
+            "heat": 100,
+            "community": 82,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Rebuild the object in a reference image as a code-only, procedural Three.js model.\n\nQuality-gated, animation-ready, and deliberately token-efficient — reconstruction-by-code, not photogrammetry, mesh extraction, or downloaded art packs.\n\nReference images reconstructed in code as animation-ready Three.js models, running live in the browser.",
+            "features": [
+              "Objects and characters. Each subject is classified object , character , or hybrid . Objects follow the hard-surface pipeline; characters rou",
+              "Detail-first analysis. Before code generation the pipeline enumerates a detailInventory of identity-defining small details (gloss, bevel/rou",
+              "Maximum likeness for a specific person or character. An opt-in projection-first path fits a parametric template to image landmarks, de-light",
+              "Multi-view silhouette carving. An opt-in geometryDescriptor.visualHull intersects at least two deterministic orthographic binary silhouettes",
+              "CS2 weapon review gates. Knife and Glock-18 routes use family-specific component contracts. The review records exactness tier, family identi",
+              "Resumable local workflow. forge/state.py records an ordered, evidence-backed intake/pass checklist for the generic profile and every registe",
+              "Material reference pipeline. Every visible material region can be cropped, analyzed, resolved against the versioned Three.js material regist",
+              "Python-assisted browser rendering. Python may orchestrate camera batches, hashes, manifests, and deterministic diagnostics, but the target b"
+            ],
+            "sections": [
+              "img2threejs",
+              "→ Open the Live Demo Gallery",
+              "Live demos",
+              "What it does",
+              "Subjects and detail accuracy",
+              "How it works",
+              "Quick start",
+              "1. Install the base skill",
+              "2. Install the plugin harness, if needed",
+              "3. Choose plugins — do not install everything by default",
+              "4. Run a reconstruction in your agent",
+              "5. Audit and maintain the installation",
+              "Driving it harder",
+              "Copy-paste prompts for the GLB-reference route"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 46206
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Noniv/abyssal-garden",
+          "owner": "Noniv",
+          "name": "abyssal-garden",
+          "url": "https://github.com/Noniv/abyssal-garden",
+          "homepage": "https://noniv.github.io/abyssal-garden/",
+          "description": "A dreamy underwater world you can swim through in your browser: swaying kelp forests, sunbeams, a sunken ship and manta rays. Everything is generated by code with WebGPU (no images, models or sound files), all in a single 97 KB HTML file.",
+          "language": "JavaScript",
+          "topics": [],
+          "stars": 1728,
+          "forks": 261,
+          "open_issues": 6,
+          "starGain": null,
+          "heat": 592.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 4,
+          "created_at": "2026-11-12T13:57:34Z",
+          "pushed_at": "2026-11-14T17:41:33Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.5,
+          "breakdown": {
+            "heat": 99,
+            "community": 61,
+            "activity": 63,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A dreamy underwater world you can swim through, right in your browser.\n\nTowering kelp forests, sunbeams pouring through a rippling surface, a sunken ship, manta rays gliding overhead. And all of it is made by code: no images, no 3D models, no sound files. The whole world fits in one 96 KB HTML file .\n\n1. Download index.html . 2. Open it in Chrome or Edge on a desktop computer. 3. Wait a few seconds while the world is built, then press Dive in and start swimming.",
+            "features": [
+              "Download index.html .",
+              "Open it in Chrome or Edge on a desktop computer.",
+              "Wait a few seconds while the world is built, then press Dive in and start swimming.",
+              "Kelp forests that sway in the current and sparkle with tiny gold and green specks",
+              "Light rays streaming down from a wavy surface, with shimmering caustics on the sea floor",
+              "A sunken wooden ship , a giant stone whale tail , rock arches, canyons and floating boulders",
+              "Manta rays , schools of fish, rising bubbles and drifting particles",
+              "A purple grotto with glowing magenta ground cover, coral and barrel sponges"
+            ],
+            "sections": [
+              "Abyssal Garden",
+              "Try it",
+              "What's down there",
+              "Controls",
+              "Detail levels",
+              "How it works",
+              "Make it your own",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 6608
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "nestjs/nest",
+          "owner": "nestjs",
+          "name": "nest",
+          "url": "https://github.com/nestjs/nest",
+          "homepage": "https://nestjs.com",
+          "description": "A progressive TypeScript framework for Node.js backends: from a small API in one file to efficient, scalable, enterprise-grade systems 🚀",
+          "language": "TypeScript",
+          "topics": [
+            "framework",
+            "hacktoberfest",
+            "javascript",
+            "javascript-framework",
+            "microservices",
+            "nest",
+            "nestjs",
+            "node"
+          ],
+          "stars": 77115,
+          "forks": 8727,
+          "open_issues": 37,
+          "starGain": 29,
+          "heat": 29,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 3572,
+          "created_at": "2017-02-04T20:12:52Z",
+          "pushed_at": "2026-11-16T20:01:53Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.4,
+          "breakdown": {
+            "heat": 79,
+            "community": 92,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "Readme.md",
+            "excerpt": "Nest is a TypeScript framework for building backends on Node.js, from a small API in one file to an enterprise-grade system with many teams. It gives an application modules, dependency injection, and one place each for validation, authentication and error handling, so a project keeps its shape as it grows.\n\nIt runs on Express, Fastify or Node's own node:http , and its first-party packages cover most of what a backend needs, so you can start small and add them as you go.\n\nnpx @nestjs/cli new my-api cd my-api npm run start:dev",
+            "features": [
+              "From Express, one route at a time or all at once.",
+              "From Fastify, keeping your plugins.",
+              "As the backend of a Next.js app, moving route handlers across one by one.",
+              "To check out the guide, visit docs.nestjs.com. :books:",
+              "要查看中文 指南, 请访问 docs.nestjs.cn. :books:",
+              "가이드 문서는 docs.nestjs.com에서 확인하실 수 있습니다. :books:",
+              "ガイドは docs.nestjs.comでご確認ください。 :books:",
+              "Author - Kamil Myśliwiec"
+            ],
+            "sections": [
+              "Description",
+              "Quick start",
+              "First-party packages",
+              "Moving to Nest",
+              "Using a coding agent",
+              "Philosophy",
+              "Getting started",
+              "Questions",
+              "Issues",
+              "Observability",
+              "Consulting",
+              "Support",
+              "Backers",
+              "Stay in touch"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 15454
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "ocornut/imgui",
+          "owner": "ocornut",
+          "name": "imgui",
+          "url": "https://github.com/ocornut/imgui",
+          "homepage": "",
+          "description": "Dear ImGui: Bloat-free Graphical User interface for C++ with minimal dependencies",
+          "language": "C++",
+          "topics": [
+            "api",
+            "cplusplus",
+            "framework",
+            "game-development",
+            "game-engine",
+            "gamedev",
+            "gui",
+            "imgui"
+          ],
+          "stars": 77138,
+          "forks": 12114,
+          "open_issues": 1211,
+          "starGain": 18,
+          "heat": 18,
+          "heatBasis": "trending",
+          "heatPercentile": 74,
+          "ageDays": 4501,
+          "created_at": "2014-07-21T14:29:47Z",
+          "pushed_at": "2026-11-16T17:33:51Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.9,
+          "breakdown": {
+            "heat": 74,
+            "community": 93,
+            "activity": 76,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 21,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "\"Give someone state and they'll have a bug one day, but teach them how to represent state in two separate locations that have to be kept in sync and they'll have bugs for a lifetime.\" -ryg\n\n(This library is available under a free and permissive license, but needs financial support to sustain its continued improvements. In addition to maintenance and stability there are many desirable features yet to be added. If your company is using Dear ImGui, please consider reaching out.)\n\nBusinesses: support continued development and maintenance via invoiced sponsoring/support contracts: &nbsp;&nbsp; E-mail: contact @ dearimgui dot com Individuals: support continued development and maintenance here. Also see Funding page.",
+            "features": [
+              "Minimize state synchronization.",
+              "Minimize UI-related state storage on user side.",
+              "Minimize setup and maintenance.",
+              "Easy to use to create dynamic UI which are the reflection of a dynamic data set.",
+              "Easy to use to create code-driven and data-driven tools.",
+              "Easy to use to create ad hoc short-lived tools and long-lived, more elaborate tools.",
+              "Easy to hack and improve.",
+              "Portable, minimize dependencies, run on target (consoles, phones, etc.)."
+            ],
+            "sections": [
+              "The Pitch",
+              "Usage",
+              "How it works",
+              "Releases & Changelogs",
+              "Demo",
+              "Gallery",
+              "Getting Started & Integration",
+              "Support, Frequently Asked Questions (FAQ)"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 22001
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "getarcaneapp/arcane",
+          "owner": "getarcaneapp",
+          "name": "arcane",
+          "url": "https://github.com/getarcaneapp/arcane",
+          "homepage": "https://getarcane.app",
+          "description": "Modern Docker Management, Designed for Everyone",
+          "language": "Go",
+          "topics": [
+            "compose",
+            "container-management",
+            "containers",
+            "docker",
+            "docker-compose",
+            "docker-management",
+            "go",
+            "self-hosted"
+          ],
+          "stars": 8769,
+          "forks": 405,
+          "open_issues": 11,
+          "starGain": 46,
+          "heat": 46,
+          "heatBasis": "trending",
+          "heatPercentile": 78,
+          "ageDays": 577,
+          "created_at": "2025-04-19T00:43:29Z",
+          "pushed_at": "2026-11-17T01:39:29Z",
+          "license": "BSD-3-Clause",
+          "rating": 4,
+          "composite": 76.7,
+          "breakdown": {
+            "heat": 78,
+            "community": 73,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "For setup instructions, configuration details, and development guides, visit the official documentation site .\n\nThis project is supported by the following amazing people:\n\nView the Software Bill of Materials (SBOM) for Arcane at getarcane.app/sbom .",
+            "features": [],
+            "sections": [
+              "Documentation",
+              "Sponsors",
+              "Security & Transparency",
+              "Translating"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 2507
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "ollaya-dev/ollaya",
+          "owner": "ollaya-dev",
+          "name": "ollaya",
+          "url": "https://github.com/ollaya-dev/ollaya",
+          "homepage": "https://ollaya.dev",
+          "description": "Jev-compatible API server for open decision models. Ollama for decision models: pull and serve 29 model families (Laya, pplx-decider, Clef, Winnow, coba...) locally or self-hosted behind /v1/systemone. The TypeSafe SDK works unchanged: set its base URL and pick an open model. CLI, desktop app, Docker, MCP server, public bench.",
+          "language": "Rust",
+          "topics": [
+            "calibration",
+            "decision-model",
+            "decision-models",
+            "inference-server",
+            "jev",
+            "jev-alternative",
+            "jev-compatible",
+            "laya"
+          ],
+          "stars": 1468,
+          "forks": 92,
+          "open_issues": 15,
+          "starGain": null,
+          "heat": 163.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 54,
+          "created_at": "2026-09-23T22:11:15Z",
+          "pushed_at": "2026-11-10T18:55:04Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 74.2,
+          "breakdown": {
+            "heat": 97,
+            "community": 58,
+            "activity": 23,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 42,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Website · Models · Bench · Docs · Releases · Hugging Face\n\nA decision model reads a state (a message, an email, a ticket, any JSON) plus typed questions ( choice , score , noul ) and returns calibrated probabilities in a single forward pass, in milliseconds. It never generates text. Ollaya pulls these models by name and serves them from a local daemon behind a self-hosted, Jev-compatible API (TypeSafe's /v1/systemone wire format), so the TypeSafe SDK and existing Jev clients work unchanged once they point at Ollaya and name an open model.\n\ncurl -fsSL https://ollaya.dev/install.sh sh ollaya run winnow:e4b --preset triage \"Third time this year you've double-charged me. Refund it today or I'm cancelling and moving to a competitor.\"",
+            "features": [
+              "One binary. ollaya serve runs the daemon; ollaya run , pull , list , ps , show , rm ,",
+              "TypeSafe-compatible. POST /v1/systemone , /v1/decisions and GET /v1/models are",
+              "Native API. /api/decide adds routing information and timings. /api/pull streams",
+              "Weights come from their authors. Ollaya publishes only small ONNX graphs, about 3 MB each.",
+              "For agents. ollaya mcp serves the models to Claude Code, Claude Desktop, Cursor and other",
+              "Routers. laya detects the script and language of each request, then answers with",
+              "Modelfiles. You can bake a question set into your own model:",
+              "Fast and exact."
+            ],
+            "sections": [
+              "A self-hosted, Jev-compatible API",
+              "Features",
+              "Models",
+              "Results",
+              "Install",
+              "Repository",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 19581
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "contrastdata/flow",
+          "owner": "contrastdata",
+          "name": "flow",
+          "url": "https://github.com/contrastdata/flow",
+          "homepage": "",
+          "description": "Stream PostgreSQL changes into standard Apache Iceberg tables, built in Rust.",
+          "language": "Rust",
+          "topics": [
+            "apache-iceberg",
+            "cdc",
+            "change-data-capture",
+            "data-engineering",
+            "iceberg",
+            "logical-replication",
+            "postgresql",
+            "rust"
+          ],
+          "stars": 89,
+          "forks": 8,
+          "open_issues": 9,
+          "starGain": null,
+          "heat": 8.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 69,
+          "created_at": "2026-09-08T20:45:39Z",
+          "pushed_at": "2026-11-17T00:47:34Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 71.7,
+          "breakdown": {
+            "heat": 94,
+            "community": 34,
+            "activity": 63,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Stream PostgreSQL changes into Apache Iceberg. Written in Rust.\n\nDocumentation · Quickstart · Benchmarks · Contributing · Issues\n\nFlow copies existing PostgreSQL rows, then continuously replicates inserts, updates and deletes into standard Iceberg tables. Query the tables directly through a compatible Iceberg reader, using your catalog and object storage.",
+            "features": [
+              "Postgres to Iceberg in one service. Initial COPY and ongoing logical",
+              "Standard tables. Parquet data with Iceberg v2 position deletes or v3 deletion",
+              "Mutable data. Inserts, updates, deletes and primary-key changes, plus",
+              "Durable recovery. A transaction journal, persistent row index and publication",
+              "Maintenance alongside ingestion. Local data/delete compaction and",
+              "PostgreSQL 14–18 sources, with inserts, updates, deletes and primary-key",
+              "Unpartitioned Iceberg v2 (position deletes) and v3 (deletion vectors) tables",
+              "The type mappings; JSON and JSONB replicate as"
+            ],
+            "sections": [
+              "Highlights",
+              "Quickstart",
+              "Build from source",
+              "Build a container image",
+              "Connect your own database",
+              "How it works",
+              "Support and status",
+              "Documentation",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9769
+          },
+          "guard": {
+            "score": 3,
+            "signals": [
+              "templateClone"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ccch1mneyyy/dsh-TUI",
+          "owner": "ccch1mneyyy",
+          "name": "dsh-TUI",
+          "url": "https://github.com/ccch1mneyyy/dsh-TUI",
+          "homepage": "https://dshtui.com/",
+          "description": "DSH's officially top-recommended TUI plugin — high performance, low overhead, cute pixel whale, smooth mouse interaction. One-command install via npm. / DSH 官方首推的 TUI 插件，高性能低占用，可爱像素鲸鱼，流畅鼠标交互，npm 一键安装",
+          "language": "TypeScript",
+          "topics": [
+            "claude-code",
+            "coding-agent",
+            "deepseek",
+            "deepseek-harness",
+            "dsh-plugin",
+            "ink",
+            "react",
+            "terminal"
+          ],
+          "stars": 7808,
+          "forks": 372,
+          "open_issues": 159,
+          "starGain": null,
+          "heat": 636,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 96,
+          "created_at": "2026-08-13T12:49:31Z",
+          "pushed_at": "2026-11-17T01:06:05Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86.6,
+          "breakdown": {
+            "heat": 97,
+            "community": 72,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 77,
+            "backend": 49,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The prompt footer hides completed goals once the turn is idle; the Todo side panel retains their history. Ctrl+Q folds todos while working and hides/restores the idle goal/todo footer. Clicking its todo header also hides it while idle. Hiding changes only this display: a new goal/todo snapshot or session reveals it again, and /goal clear does not clear todos.\n\nSplit diff cards give one-sided additions and deletions the full body width, without an empty opposite pane. Ordinary edits remain side by side, and mixed files choose their layout separately before folding or streaming reveal.\n\nCompaction status stays on one line in narrow panes: phase and cancellation hints yield first, then the label is shortened; elapsed time is shown only as a complete field.",
+            "features": [
+              "Pixel whale pet — three startup intros, click to wake; freezes after the first task.",
+              "Launchpad and first-run guide — every ordinary launch lands on a landing page with a real input box (big text + whale + quick actions, dropp",
+              "Terminal-native UI — streaming Markdown, tool cards, / and @ completion, L12-14 ranges, history search, zh/en UI.",
+              "Notifications — one switch covers four system notifications: task completion, a tool approval waiting for your decision, a question waiting ",
+              "Native cursor — focused text inputs inherit your terminal's cursor shape, color, blinking, and enabled animation or trail effects in both in",
+              "Images — Kitty/Sixel thumbnails, centered preview with zoom and pan, paste-time fitting, text fallback. Kitty images scale to the reserved c",
+              "Mermaid diagrams — fences drawn as Unicode diagrams.",
+              "LaTeX math — $…$ and $$…$$ formulas as Unicode text, fractions and limits stacked in display blocks; mathRendering: image typesets block and"
+            ],
+            "sections": [
+              "dsh-TUI",
+              "Highlights",
+              "Preview",
+              "Featured & Listed",
+              "Quick Start",
+              "Windows one-click installer (x64)",
+              "Command-line installation",
+              "Install the CLI and this plugin globally (ships the dsh-tui ",
+              "Start (first run auto-initializes the profile; needs pnpm)",
+              "Both dsh-tui and the short dst alias start the same TUI.",
+              "CLI",
+              "Importing conversations from other agents ( dsh-tui migrate ",
+              "Experimental: Claude backend",
+              "once, in the dsh-tui profile directory (the SDK is an option"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 79862
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "frs0n/GestaltEdit",
+          "owner": "frs0n",
+          "name": "GestaltEdit",
+          "url": "https://github.com/frs0n/GestaltEdit",
+          "homepage": "",
+          "description": "iOS 27 MobileGestalt editor",
+          "language": "Swift",
+          "topics": [],
+          "stars": 1209,
+          "forks": 92,
+          "open_issues": 69,
+          "starGain": 125,
+          "heat": 125,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 98,
+          "created_at": "2026-08-11T05:37:17Z",
+          "pushed_at": "2026-11-16T16:03:49Z",
+          "license": "GPL-3.0",
+          "rating": 3.5,
+          "composite": 74.1,
+          "breakdown": {
+            "heat": 92,
+            "community": 57,
+            "activity": 66,
+            "maturity": 55
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A MobileGestalt utility that runs directly on iPhone and iPad\n\nEdit com.apple.MobileGestalt.plist on-device. Capability presets, a full field editor, and backup/restore.\n\nPresets — Organized by purpose: Siri AI, Dynamic Island, display, iPad features and everyday device features. iPadOS Mode includes multitasking, Stage Manager and iPad app support in one selection. Liquid Glass uses a single effects selector. Extended presets include HDR photos, AOD widgets/brightness, Audio Mix, FaceTime spatial audio, seven device regions. Options are filtered by system version. Siri AI retains supported device regions and adjusts known restricted device regions when needed; it does not change Apple Account region. Settings-page options and internal experiments are collapsed under Advanced; tap ⓘ for limitations where available. Capability overrides do not guarantee hardware or service support. Selections stage changes until Apply; removing a selection does not undo an already applied preset. Use Backups to restore prior values.",
+            "features": [
+              "iOS / iPadOS 27.0 or later (iOS / iPadOS 26 is not supported for on-device MobileGestalt access)",
+              "Developer Mode enabled",
+              "A signing tool such as iLoader",
+              "Download GestaltEdit.ipa from Releases.",
+              "Install iLoader, connect your device, and sign in with your Apple ID (used only for local signing).",
+              "Import the IPA to sign and install it, then trust the certificate under Settings → General → VPN & Device Management.",
+              "Nugget — presets and iPadOS support",
+              "MGKeys, Erosion, mond, GestaltX — capability mapping and preset references; see catalog sources"
+            ],
+            "sections": [
+              "GestaltEdit",
+              "Features",
+              "Requirements",
+              "Install",
+              "Apple Watch",
+              "Credits",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5664
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "supercli-site/xiaobai-kanban",
+          "owner": "supercli-site",
+          "name": "xiaobai-kanban",
+          "url": "https://github.com/supercli-site/xiaobai-kanban",
+          "homepage": "https://xiaobai.supercli.site",
+          "description": "中文 AI 编程助手入门教程：认识 Agent、表达需求、安装 CLI 与学习 Git 工作流。 / Chinese beginner guide to coding agents, CLI setup, and Git workflows.",
+          "language": "HTML",
+          "topics": [
+            "agent-guide",
+            "ai-agent",
+            "ai-coding",
+            "beginner-friendly",
+            "chinese",
+            "cli",
+            "coding-agent",
+            "command-line"
+          ],
+          "stars": 580,
+          "forks": 52,
+          "open_issues": 0,
+          "starGain": 95,
+          "heat": 95,
+          "heatBasis": "snapshot",
+          "heatPercentile": 89,
+          "ageDays": 49,
+          "created_at": "2026-09-29T02:19:05Z",
+          "pushed_at": "2026-11-17T01:20:24Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 74.6,
+          "breakdown": {
+            "heat": 89,
+            "community": 51,
+            "activity": 55,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 49,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "如果你已经能让 AI 生成代码、改样式、修报错，但总觉得来回改很多轮还是差点意思—— 你不是缺工具，是缺 节奏感 。这条主线专门讲这个。\n\nDSH 的口号是 Everything is a Plugin ，所以 先装「能装插件的插件」 —— 之后所有安装都在对话里完成，不用回命令行：\n\ngit --version 2 /dev/null && echo \"✅ Git: $(git --version)\" echo \"❌ Git 未安装 → https://git-scm.com\"",
+            "features": [
+              "打开 https://gitlab.com/-/user settings/personal access tokens",
+              "Token name: HYM-Dev ，勾选: api , read repository , write repository",
+              "创建 → ⚠️ 立刻复制",
+              "对 Agent 说：「用这个 token 登录 GitLab： glpat-xxxx 」",
+              "打开 https://github.com/settings/tokens → Generate new token (classic)",
+              "Note: HYM-Dev ，勾选: repo （全部）、 read:org",
+              "生成 → ⚠️ 立刻复制"
+            ],
+            "sections": [
+              "🧭 小白看板 — 让 Agent 帮你写代码",
+              "⚡ 10 秒开始",
+              "🗺️ 学习路径",
+              "🌱 第一步：认识 Agent",
+              "🚀 第二步：动手试试",
+              "💰 第三步之二：不想花钱？先看这个",
+              "🛠️ 第三步：装工具、学流程",
+              "🧠 第四步：看懂全貌（一条链，一次讲透）",
+              "📮 第五步：进阶能力",
+              "🎵 第五步之二：会用 AI 写代码了？进 vibe coding 主线",
+              "🧰 配套工具箱",
+              "🪜 先按你现在的水平挑一个，别一上来就装五个",
+              "🔧 我做的工具：按你会遇到的场景挑",
+              "第零步：自检"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 30867
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "krishhgg/Insomnia",
+          "owner": "krishhgg",
+          "name": "Insomnia",
+          "url": "https://github.com/krishhgg/Insomnia",
+          "homepage": "https://getinsomnia.app",
+          "description": "A macOS menu bar app that safely keeps your MacBook awake with the lid closed, for timed agent sessions.",
+          "language": "Swift",
+          "topics": [
+            "ai-agents",
+            "amphetamine-alternative",
+            "caffeinate",
+            "clamshell-mode",
+            "claude-code",
+            "codex",
+            "keep-awake",
+            "macos"
+          ],
+          "stars": 2065,
+          "forks": 146,
+          "open_issues": 39,
+          "starGain": null,
+          "heat": 210,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 64,
+          "created_at": "2026-09-14T06:06:19Z",
+          "pushed_at": "2026-11-14T14:29:53Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.2,
+          "breakdown": {
+            "heat": 95,
+            "community": 61,
+            "activity": 51,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A macOS menu bar app for timed awake sessions. Insomnia is an eye icon that lives in your MacBook menu bar. It has no Dock icon and no main window. Set how long your Mac stays awake, choose what happens when the lid closes, and see when something could not be undone.\n\nWebsite · Install · Using it · Lid close · Recovery · Security\n\nRequires macOS 26 or later on an Apple Silicon Mac.",
+            "features": [
+              "The app, at ~/Applications/Insomnia.app .",
+              "A recovery agent , a launchd job that runs every minute. If the app is",
+              "A sudoers rule at /etc/sudoers.d/insomnia . A sudoers rule decides who",
+              "Start. Click the eye in the menu bar, enter days, hours and minutes,",
+              "Add time. Click the eye or the countdown during a session.",
+              "End early. Press and hold the end control next to the countdown, or",
+              "Settings and status. Right-click the eye. Quit asks Insomnia to undo",
+              "Menu bar style. The Menu bar picker in Settings General has four"
+            ],
+            "sections": [
+              "Install",
+              "Build from source",
+              "Using it",
+              "What happens when the lid closes",
+              "How recovery works",
+              "Optional extras",
+              "Uninstall",
+              "Development",
+              "Star history",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16211
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "shadps4-emu/shadPS4",
+          "owner": "shadps4-emu",
+          "name": "shadPS4",
+          "url": "https://github.com/shadps4-emu/shadPS4",
+          "homepage": "https://shadps4.net/",
+          "description": "PlayStation 4 emulator for Windows, Linux, macOS and FreeBSD written in C++",
+          "language": "C++",
+          "topics": [
+            "cpp",
+            "cpp23",
+            "emulation",
+            "emulator",
+            "imgui",
+            "linux",
+            "macos",
+            "playstation4"
+          ],
+          "stars": 34242,
+          "forks": 2909,
+          "open_issues": 349,
+          "starGain": 53,
+          "heat": 53,
+          "heatBasis": "trending",
+          "heatPercentile": 77,
+          "ageDays": 1485,
+          "created_at": "2022-10-24T09:48:37Z",
+          "pushed_at": "2026-11-16T18:24:11Z",
+          "license": "GPL-2.0",
+          "rating": 4,
+          "composite": 81.1,
+          "breakdown": {
+            "heat": 77,
+            "community": 86,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "shadPS4 is an early PlayStation 4 emulator for Windows , Linux and macOS written in C++.\n\nIf you encounter problems or have doubts, do not hesitate to look at the Quickstart .\\ To verify that a game works, you can look at shadPS4 Game Compatibility .\\ To discuss shadPS4 development, suggest ideas or to ask for help, join our Discord server .\\ To get the latest news, go to our X (Twitter) or our website .\\ You can donate to the project via our Kofi page .\n\nCurrently, the emulator can successfully run games like Bloodborne , Dark Souls Remastered , Red Dead Redemption , and many other games.",
+            "features": [
+              "georgemoralis",
+              "psucien",
+              "viniciuslrangel",
+              "roamic",
+              "squidbus",
+              "frodo",
+              "Stephen Miller",
+              "kalaposfos13"
+            ],
+            "sections": [
+              "General information",
+              "Status",
+              "Why",
+              "Building",
+              "Docker",
+              "Windows",
+              "Linux",
+              "macOS",
+              "Usage examples",
+              "Debugging and reporting issues",
+              "Keyboard and Mouse Mappings",
+              "Firmware files",
+              "Main team",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10654
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "dream-num/univer",
+      "category": "ai",
+      "lastPushed": "2026-11-15",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "elie222/rakazo",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/TokenEconomizer",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "n8n-io/nod",
+      "category": "ai",
+      "lastPushed": "2026-11-16",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "Sandflow-ai/sand3d",
+      "category": "ai",
+      "lastPushed": "2026-11-13",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "paipiange/nvzhuang",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "morluto/rea",
+      "category": "agent",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "paperclipai/paperclip",
+      "category": "agent",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "tt-a1i/archify",
+      "category": "agent",
+      "lastPushed": "2026-10-28",
+      "times": 1
+    },
+    {
+      "full_name": "Gathin23/cleanyourtv",
+      "category": "agent",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "addyosmani/agent-skills",
+      "category": "agent",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "milind-soni/OpenMausBot",
+      "category": "agent",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "jub0t/Concat",
+      "category": "agent",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "category": "agent",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "NVIDIA/SkillSpector",
+      "category": "agent",
+      "lastPushed": "2026-11-14",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

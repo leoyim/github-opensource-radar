@@ -1,0 +1,82 @@
+{
+  "lidge-jun/opencodex": {
+    "summary_zh": "本地 LLM 网关：同时接受 Responses、Chat Completions 与 Anthropic Messages 三种请求格式，翻译成各供应商的协议，并把流式输出、工具调用、推理与图像传递下去。支持 40+ 供应商与 Codex、Claude Code、Claude Desktop、Grok Build 等客户端；提供「组合」（一个虚拟模型 id 跨供应商做故障切换或加权轮询）、OAuth 登录与 Web 搜索、视觉旁路，ocx stop 可把宿主工具恢复到原配置。",
+    "highlight_zh": "一个本地网关把「客户端」与「模型供应商」解耦，换模型不必换工具。"
+  },
+  "cobusgreyling/loop-engineering": {
+    "summary_zh": "给编码 agent 设计「循环」的模式库与 CLI：不是再写一条 prompt，而是搭一套能发现任务、分派给 agent、验证结果并持久化状态的流程。内置 8 种模式（每日分诊、精简循环、PR 看护、CI 清扫、依赖清扫、变更日志起草、合并后清理、Issue 分诊），一条 npx 命令初始化，并按 L1 只报告、L2 辅助、L3 无人值守三档逐步放开，附成本估算与 Loop Ready 评分。",
+    "highlight_zh": "从「写下一个 prompt」转向「设计一条能自我运转的工作循环」。"
+  },
+  "Human-Agent-Society/reef": {
+    "summary_zh": "面向「持续自我改进 agent」的基础设施：把推理、反馈、学习与版本化交付连成一条链路。既可用 Slime、SGLang 训练模型权重，也可只优化 agent 的 harness（提示词、规则、技能）；在线服务请求的同时记录反馈、产出更新，并把通过验证的版本提交进版本历史。当前正从单体重构为控制面加 worker 架构，部分 recipe 在 main 上可能失败。",
+    "highlight_zh": "把「推理—反馈—训练—灰度」做成一条常驻在线的闭环，而不是离线实验。"
+  },
+  "kuafuai/andee": {
+    "summary_zh": "住进设备的 agent：Android 装一个 APK、Mac 装一个 app，借助无障碍与悬浮层操作任意应用，不需要 root 或自定义 ROM；记忆与密码留在本机，多台设备上的实例可互相通信。默认推荐路径是商业站点的在线构建（模型与语音 key 预配置、新账号有免费额度、之后按 token 计费），也可以从源码自行构建并接入自有模型。",
+    "highlight_zh": "把 agent 从「帮你操作手机」改成「住进设备里」，代价是默认走商业构建通道。"
+  },
+  "nexu-io/open-design": {
+    "summary_zh": "面向设计协作的 agent 工作空间：从一句 brief 起步，交给本机已装的 coding agent（claude、codex、cursor-agent、copilot 等）或云端服务，按项目的设计系统生成原型、网站、仪表盘与演示，再让 agent 在同一项目里迭代。仓库提供技能、设计模板、设计系统与插件，Apache-2.0，可自行检查与改写；不自带模型，模型由用户自带。",
+    "highlight_zh": "不自带 agent，把「设计工作流」架在你已经信任的 coding agent 之上。"
+  },
+  "career-ops-hq/career-ops": {
+    "summary_zh": "开源 AI 求职 agent：把职位贴进来，先确认岗位是否仍在招，再按你的简历给 1 至 5 分，判定不值得就劝你跳过；值得则定制 ATS 友好的简历与求职信，最后由你按下提交。作者自述用它在 740 个岗位里投了 68 份、拿到 12 次面试与 1 个 offer，全部在本机运行。",
+    "highlight_zh": "把「海投」改成「先评分再投」，选择权仍在候选人手里。"
+  },
+  "sickn33/agentic-awesome-skills": {
+    "summary_zh": "面向编码 agent 的技能库：收录 2,981 个以上可安装的 SKILL.md 剧本，覆盖 Claude Code、Codex、Cursor、Gemini CLI 等宿主。配套的 AAS Core 负责本地目录检索、记录 agent 选了哪些技能，并在改动目标前给出可审阅的计划预览；项目明确自己不排序、不推荐。原名为 Antigravity Awesome Skills，代码 MIT、文本 CC BY 4.0，导入技能各自保留原许可。",
+    "highlight_zh": "技能库拼的是规模，配套工具拼的是「应用前先让你看清要改什么」。"
+  },
+  "cathrynlavery/diagram-design": {
+    "summary_zh": "一个 agent 技能：把图表画成一个自包含的 HTML 加 SVG 文件，双击即可打开。提供约 50 种图表类型（架构图、象限图、时序图等），可按目标站点的配色与字体做品牌对齐，支持从 drawio、Mermaid、Excalidraw、PlantUML 导入，也能导出 PNG 或 SVG；agent 会先说明打算画哪种图，再落笔。",
+    "highlight_zh": "把「画架构图」变成「让 agent 产出一个可直接打开的单文件」。"
+  },
+  "img2threejs/img2threejs": {
+    "summary_zh": "把参考图里的物体重建为纯代码的三维模型：不导出网格、不做摄影测量，而是生成可读、可动画的 Three.js 代码，并按质量门槛校验。流程会先判断主体属于物体、角色还是混合，再枚举细节做程序化建模，主打 token 效率与后续可编辑性，适合需要「能改的 3D 资产」而不是一次性模型的场景。",
+    "highlight_zh": "不导出网格，直接生成可读、可改的 Three.js 代码。"
+  },
+  "Noniv/abyssal-garden": {
+    "summary_zh": "浏览器里的水下世界：一片会随水流摆动的海带森林、从波纹水面垂下的光柱、沉船与石鲸尾、成群的蝠鲼与气泡，全部由代码生成，没有图片、模型或音频文件，整个世界压在一个约 96 KB 的 HTML 里。直接用 WebGPU 绘制，不依赖游戏引擎或 3D 库，音景由 Web Audio 实时合成，并提供三档画质与自动降级。",
+    "highlight_zh": "96 KB 单文件跑出的水下世界，全程 WebGPU 手写、零外部素材。"
+  },
+  "nestjs/nest": {
+    "summary_zh": "Node.js 的服务端框架：用模块、依赖注入与分层把校验、鉴权、异常处理各归一处，让一个人写的 API 和多团队维护的系统共用同一套结构。可从 Express 或 Fastify 逐条路由迁移，也可作为 Next.js 应用的后端，配套 CLI、文档与长期维护的生态。",
+    "highlight_zh": "十年老框架仍在榜，说明「结构化后端」的需求没有退潮。"
+  },
+  "ocornut/imgui": {
+    "summary_zh": "Dear ImGui：无冗余依赖的 C++ 即时模式 GUI 库，用最少的 UI 状态与状态同步成本，画出由数据驱动的动态界面。适合工具、调试面板与游戏内编辑器，被大量引擎与图形工具采用，十二年量级后仍在日常更新。",
+    "highlight_zh": "即时模式 GUI 的标杆，靠「少存状态」换开发效率。"
+  },
+  "getarcaneapp/arcane": {
+    "summary_zh": "自托管的 Docker 管理平台：把容器、Compose 项目与镜像运维收进一个现代化界面，定位是给所有人用的 Docker 管理，BSD-3-Clause 许可，main 分支为 v3。附 SBOM 与 Crowdin 翻译流程，适合不想只靠命令行管理一堆容器的个人与小团队。",
+    "highlight_zh": "Docker 管理的自托管界面，把 compose 与容器运维从命令行搬到面板。"
+  },
+  "ollaya-dev/ollaya": {
+    "summary_zh": "决策模型的服务层：像 Ollama 跑 LLM 那样，在本机拉取并运行开放的决策模型。输入一段状态（消息、邮件、工单或任意 JSON）加类型化问题（choice、score、noul），单次前向即返回校准后的概率，毫秒级、不生成文本。对外提供与 TypeSafe Jev 线格式一致的接口，一个二进制即可起服务，适合做路由、护栏、分诊与工具审批。",
+    "highlight_zh": "把路由、护栏、分诊从 LLM 调用里剥离成毫秒级的概率判断。"
+  },
+  "contrastdata/flow": {
+    "summary_zh": "把 PostgreSQL 的变更持续写入标准 Apache Iceberg 表：先做一次全量 COPY，再用逻辑复制持续同步插入、更新与删除，数据以 Parquet 落盘、用 Iceberg v2 位置删除或 v3 删除向量表达变更，经 Iceberg REST catalog 发布到 S3 兼容存储。事务日志、持久化行索引与发布账本支撑重放、重连与中断恢复，后台压缩与写入同进程完成。当前为 beta。",
+    "highlight_zh": "一个 Rust 进程把 Postgres CDC 与 Iceberg 表维护合成一条链路。"
+  },
+  "ccch1mneyyy/dsh-TUI": {
+    "summary_zh": "DeepSeek Harness 的终端界面：像素鲸鱼开屏、实时工作状态、流式思考、双击 Esc 回溯时间、上下文进度条与 TPS 表，另有一套待办侧栏与分栏 diff 卡片。它只消费 DSH 的公开导出，不改核心，安装即启用、卸载不留补丁，正在从「挂载插件」转向「带独立入口的应用」。",
+    "highlight_zh": "一个纯外围插件，把终端 agent 的「可观测性」做成了产品。"
+  },
+  "frs0n/GestaltEdit": {
+    "summary_zh": "在 iPhone 与 iPad 上直接编辑 com.apple.MobileGestalt.plist 的工具：按用途组织的预设（Siri AI、灵动岛、显示、iPad 功能等）、逐字段编辑器与自动备份恢复，可按系统版本过滤可选项。需要 iOS 27 以上、开发者模式与签名工具，作者明确警告错误的取值可能损坏系统功能、需恢复设备。",
+    "highlight_zh": "把 iOS 的隐藏能力开关做成图形界面，能力与风险同样真实。"
+  },
+  "supercli-site/xiaobai-kanban": {
+    "summary_zh": "面向零基础的中文 AI 编程教程站：从「Agent 是什么」讲到怎么把需求说清楚，路径包括认识 Agent、第一次实战、安装与登录 CLI、Git 工作流，以及从「我不会」到「代码上线」的整链讲解；用 VitePress 组织成可顺序阅读的文档，并附术语词典与需求模板。",
+    "highlight_zh": "把「怎么跟 agent 说话」拆成可照做的路径，而不是又一份工具清单。"
+  },
+  "krishhgg/Insomnia": {
+    "summary_zh": "macOS 菜单栏小工具：设定一段时长让 Mac 保持唤醒，合盖也不睡，适合跑长时 agent 会话。由 launchd 恢复代理每分钟检查，若应用异常退出则尝试撤销改动；安装会写入一条 sudoers 规则，放行 4 条 pmset 命令。作者标注为实验性，并提醒注意散热与恢复可能失败。",
+    "highlight_zh": "给「合盖跑长任务」一个带结束时间与自动恢复的开关。"
+  },
+  "shadps4-emu/shadPS4": {
+    "summary_zh": "用 C++ 写的 PlayStation 4 模拟器，覆盖 Windows、Linux、macOS 与 FreeBSD。项目仍处早期，README 直接指向游戏兼容性列表——想验证某款游戏能否运行，先查列表再看 quickstart，是这类项目最实际的进度条。",
+    "highlight_zh": "PS4 模拟进入「能跑起来」阶段，兼容性列表就是最诚实的进度条。"
+  }
+}

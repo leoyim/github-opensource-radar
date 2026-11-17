@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-16",
+    "updated": "2026-11-17",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 88,
-    "publicCount": 37,
+    "count": 91,
+    "publicCount": 38,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -33,6 +33,12 @@
         "window": "2026-11-14 — 2026-11-15",
         "repos": 4,
         "note": "四个仓库在 2026-11-14 21:36 的 45 秒窗口内及次日 11:13 先后创建，以不同商业软件名（Office、Office Pro、Outlook、Tableau Prep）的「Standalone Offline Build for Windows 11」为标题；README 使用逐字相同的徽章组、章节结构、下载按钮与 PowerShell 部署表格，篇幅均在 13–14 KB。仓库标注 C++，files/ 目录只有三个 220–282 B 的占位源文件，docs/ 下为约 20 KB 的落地页，没有可审阅的源码或构建链；星标 111–358、零 fork、零 issue，附 MIT 许可文件而分发第三方商业软件的离线安装包，申报的 20 个主题词含多个与正文无关的方向词。"
+      },
+      {
+        "id": "editorial-boundary",
+        "label": "收录边界判定",
+        "window": "2026-11-17",
+        "note": "以政治、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。"
       }
     ]
   },
@@ -6126,6 +6132,169 @@
           "mt5-ea",
           "mt5-headless"
         ]
+      }
+    },
+    {
+      "full_name": "interplains/Zero-Breach-Toolkit",
+      "owner": "interplains",
+      "name": "Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "description": "Free, offline checks for known mercenary spyware on Windows, Mac, Linux, iPhone and Android.",
+      "language": "Python",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "mobile",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "internal",
+      "campaign": "editorial-boundary",
+      "firstSeen": "2026-11-17",
+      "removedAt": "2026-11-17",
+      "issues": [
+        "2026-11-17"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "品牌与域名以族群受难叙事命名",
+          "detail": "仓库 README 标注项目出自 archivegenocide，检测页面域名为 archivegenocide.com，产品命名直接以「种族灭绝档案」为核心概念。"
+        },
+        {
+          "type": "content",
+          "label": "正文列举特定族群与国家指向的案例",
+          "detail": "README 在说明检测目标时，明确列出针对特定族群的监控软件案例，并以记者、活动人士、人权维护者与少数族裔作为核心受众叙事。"
+        },
+        {
+          "type": "metadata",
+          "label": "技术实现与传播定位分离",
+          "detail": "仓库为 Python 实现的离线检测工具，约 30 MB、Apache-2.0、531 fork，技术主体存在；但对外传播主轴是族群与政治受难叙事，而非工程技术本身。"
+        }
+      ],
+      "verdict": "项目以族群与政治受难叙事作为品牌与传播主轴，主体技术内容不足以覆盖其定位，超出「公共议题但主体为技术内容」的收录边界，不进入推荐位，亦不作展示。",
+      "advice": "",
+      "snapshot": {
+        "stars": 5149,
+        "forks": 531,
+        "open_issues": 1,
+        "license": "Apache-2.0",
+        "created_at": "2026-10-25T14:41:34Z",
+        "pushed_at": "2026-11-17T01:51:37Z",
+        "topics": []
+      }
+    },
+    {
+      "full_name": "grottosanninvoyage/k8s-homelab-sailor",
+      "owner": "grottosanninvoyage",
+      "name": "k8s-homelab-sailor",
+      "url": "https://github.com/grottosanninvoyage/k8s-homelab-sailor",
+      "description": "Homelab k8s sailor log — ingress, storage classes and upgrades.",
+      "language": "",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "backend",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "campaign": "topic-stuffing-2026-11",
+      "firstSeen": "2026-11-17",
+      "removedAt": "2026-11-17",
+      "issues": [
+        "2026-11-17"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建后极短时间内推送",
+          "detail": "仓库创建于 2026-11-15T18:00:57Z，首次推送为 2026-11-15T18:02:01Z，间隔约一分钟，此后无持续开发记录。"
+        },
+        {
+          "type": "content",
+          "label": "安装步骤引导执行远程脚本",
+          "detail": "README 的「Setup in 3 steps」第 3 步为一条 PowerShell 命令，从外部地址取回内容并直接执行，仓库内没有与之对应的源码、安装包或校验信息。"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体与工程结构",
+          "detail": "仓库体积约 5 KB，顶层仅有 README、运行说明、安全声明与素材目录，未标注任何编程语言，也没有依赖清单或构建步骤。"
+        },
+        {
+          "type": "metadata",
+          "label": "缺少使用痕迹",
+          "detail": "99 个星标、零 fork、零 issue、零 watcher，未见二次使用或问题反馈记录。"
+        },
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注 kubernetes、devops、homelab、infra、self-hosted 五个技术主题，正文是通用性的上手引导，未涉及该方向的工程实现或配置示例。"
+        },
+        {
+          "type": "correlation",
+          "label": "版式与既往投放高度相似",
+          "detail": "README 的徽章组合、三步式安装与要点清单，与近期多批同类页面在结构上高度一致。"
+        }
+      ],
+      "verdict": "仓库在创建后极短时间内完成推送，体积仅数 KB 且无源码语言与工程结构，README 以安装指引为名引导执行远程命令，属高风险的投放页面，不进入推荐位。",
+      "advice": "看到同类「一键安装」指引时，建议先核对仓库是否有公开源码与构建说明，不要直接执行来源不明的命令。",
+      "snapshot": {
+        "stars": 99,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-15T18:00:57Z",
+        "pushed_at": "2026-11-15T18:02:01Z",
+        "topics": [
+          "devops",
+          "homelab",
+          "infra",
+          "kubernetes",
+          "self-hosted"
+        ]
+      }
+    },
+    {
+      "full_name": "xiaojieonly/Ehviewer_CN_SXJ",
+      "owner": "xiaojieonly",
+      "name": "Ehviewer_CN_SXJ",
+      "url": "https://github.com/xiaojieonly/Ehviewer_CN_SXJ",
+      "description": "ehviewer，用爱发电，快乐前行",
+      "language": "C",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "mobile",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "internal",
+      "campaign": "editorial-boundary",
+      "firstSeen": "2026-11-17",
+      "removedAt": "2026-11-17",
+      "issues": [
+        "2026-11-17"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "项目自述指向成人内容平台",
+          "detail": "README 首段自述为某一成人漫画站点在 Android 平台的浏览器，下载与更新说明围绕该站点展开。"
+        },
+        {
+          "type": "metadata",
+          "label": "技术实现真实但主题不适配公开日报",
+          "detail": "仓库为长期维护的 Android 客户端，C 为主、C 与 Kotlin 混合，2.9 万星标、785 fork，技术主体存在；但其主题面向成人内容消费，不适宜在公开技术日报中展示。"
+        }
+      ],
+      "verdict": "项目主体为面向成人内容平台的第三方客户端，虽不在政治、战争、族群与歧视类判定范围内，但主题不适宜在公开技术日报中展示，本期不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 29212,
+        "forks": 785,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2020-08-24T00:00:00Z",
+        "pushed_at": "2026-11-02T00:00:00Z",
+        "topics": []
       }
     }
   ]
