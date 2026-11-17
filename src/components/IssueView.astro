@@ -58,55 +58,138 @@ const readers = issue.categories
   });
 const baselineNote =
   issue.baseline.heatBasis === 'snapshot' ? '热度取与上一份快照对比的真实日增' : '首期无基线，热度按星标速度估算';const baselineDate = issue.baseline.prevSnapshotDate ? issue.baseline.prevSnapshotDate.slice(5) : '无';
+
+/* ---------- 信号晨报版面用 ---------- */
+/* 电讯条：按真实日增取前八条，全零时退回星标数排序 */
+const wireItems = [...issue.categories.flatMap((c) => c.items)]
+  .sort((a, b) => (b.starGain ?? 0) - (a.starGain ?? 0) || b.stars - a.stars)
+  .slice(0, 8);
+/* 雷达光点：六个方向按固定坐标落位，count 为真实入选数 */
+const BLIP_POS: Array<[number, number, string]> = [
+  [31, 25, 'hot'],
+  [67, 21, 'left'],
+  [72, 53, 'left'],
+  [48, 76, ''],
+  [23, 61, ''],
+  [39, 44, ''],
+  [62, 80, 'left'],
+  [14, 42, ''],
+];
+const blips = issue.categories
+  .map((c, i) => ({
+    label: c.short ?? c.label,
+    count: c.items.length,
+    x: BLIP_POS[i % BLIP_POS.length][0],
+    y: BLIP_POS[i % BLIP_POS.length][1],
+    cls: BLIP_POS[i % BLIP_POS.length][2],
+  }))
+  .slice(0, BLIP_POS.length);
+/* 观象台：农历拆月 / 日，方向分布条的百分比上限 */
+const lunarParts = almanac.lunarDate.split('月');
+const lunarMonth = `${lunarParts[0]}月`;
+const lunarDay = lunarParts[1] ?? almanac.lunarDate;
+const maxCat = Math.max(...catCounts, 1);
+const issueNoPad = String(issueNo).padStart(3, '0');
+const dateShort = issue.date.slice(5).replace('-', '.');
 ---
 
 <article class="issue">
-  <header class="cover">
-    <div class="cover-main">
-      <p class="cover-kicker">GitHub 热点日报</p>
-      <h1><time datetime={issue.date}>{displayDate(issue.date)}</time></h1>
-      <p class="cover-lede">
+  <div class="wire" aria-label="今日电讯">
+    <span class="wire-label">电讯</span>
+    <div class="wire-track">
+      <div class="wire-set">
+        {wireItems.map((it) => (
+          <span class="wire-item">
+            <b>{it.name}</b>
+            {it.starGain != null && it.starGain > 0 ? <em>+{it.starGain}</em> : <em>—</em>}
+            <span>{it.stars} ★</span>
+          </span>
+        ))}
+        <span class="wire-item">
+          <b>入选 {total}</b>
+          <span>候选 {issue.stats.candidates}</span>
+        </span>
+      </div>
+      <div class="wire-set" aria-hidden="true">
+        {wireItems.map((it) => (
+          <span class="wire-item">
+            <b>{it.name}</b>
+            {it.starGain != null && it.starGain > 0 ? <em>+{it.starGain}</em> : <em>—</em>}
+            <span>{it.stars} ★</span>
+          </span>
+        ))}
+        <span class="wire-item">
+          <b>入选 {total}</b>
+          <span>候选 {issue.stats.candidates}</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <header class="front" aria-labelledby="cover-title">
+    <div class="fc-rail" aria-label="期号与日期">
+      <div class="rail-bottom">
+        <div class="rail-block">
+          <span>ISSUE</span>
+          <strong>{issueNoPad}</strong>
+          <small>
+            {almanac.ganzhiYear}年 · {almanac.lunarDate}
+          </small>
+        </div>
+        <div class="rail-block">
+          <span>DATE</span>
+          <strong>{dateShort}</strong>
+          <small>
+            {issue.date} / {weekdayOf(issue.date)}
+          </small>
+        </div>
+        <div class="rail-block total">
+          <span>基线</span>
+          <strong>{baselineDate}</strong>
+          <small>对比基线</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <p class="kicker">
+        <span class="seal-chip" aria-hidden="true">雷达</span>
+        <span>GitHub 热点日报 · 第 {issueNoPad} 期</span>
+      </p>
+      <h1 id="cover-title">
+        <time datetime={issue.date}>{displayDate(issue.date)}</time>
+      </h1>
+      <p class="dek">
         从 {issue.stats.candidates} 个候选仓库中按四项指标加权，每个方向上限 {perCat}
         个{uneven ? `（${shortCats.map((c) => `${c.label} ${c.items.length} 个`).join('、')}候选不足）` : ''}，共 {total} 个项目，附中文精读摘要。
       </p>
+      <div class="hero-stats" aria-label="本期数据">
+        <div class="stat"><b>{issue.stats.candidates}</b><span>候选</span></div>
+        <div class="stat"><b>{total}</b><span>入选</span></div>
+        <div class="stat"><b>{issue.categories.length}</b><span>覆盖方向</span></div>
+        <div class="stat"><b>{issue.stats.suppressedByHistory}</b><span>去重拦截</span></div>
+      </div>
     </div>
 
-    <aside class="cover-meta">
-      <dl>
-        <div><dt>期次</dt><dd>第 {String(issueNo).padStart(2, '0')} 期</dd></div>
-        <div><dt>星期</dt><dd>{weekdayOf(issue.date)}</dd></div>
-        <div><dt>农历</dt><dd>{almanac.ganzhiYear}年 {almanac.lunarDate}</dd></div>
-        <div><dt>节气</dt><dd class={almanac.jieQi ? 'tag' : undefined}>{jieQiLine(almanac)}</dd></div>
-        <div><dt>对比基线</dt><dd>{baselineDate}</dd></div>
-        {removed.length > 0 && <div><dt>筛查移除</dt><dd class="tag">{removed.length}</dd></div>}
-        {latest && <div><dt>状态</dt><dd class="tag">最新一期</dd></div>}
-      </dl>
-    </aside>
-
-    <figure class="cover-table">
-      <table>
-        <caption class="vh">本期概览</caption>
-        <thead>
-          <tr>
-            <th scope="col">候选</th>
-            <th scope="col">入选</th>
-            <th scope="col">覆盖方向</th>
-            <th scope="col">去重拦截</th>
-            <th scope="col">每向上限</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{issue.stats.candidates}</td>
-            <td>{total}</td>
-            <td>{issue.categories.length}</td>
-            <td>{issue.stats.suppressedByHistory}</td>
-            <td>{perCat}</td>
-          </tr>
-        </tbody>
-      </table>
-      <figcaption>表 1　本期概览　｜　{baselineNote}</figcaption>
-    </figure>
+    <div class="radar" role="img" aria-label={`今日 ${total} 条信号在 ${issue.categories.length} 个方向上的分布`}>
+      <div class="radar-top">
+        <span><b>SIGNAL MAP</b> / 今日分布</span>
+        <span class="live">LIVE</span>
+      </div>
+      <div class="scope" aria-hidden="true">
+        <div class="sweep"></div>
+        <div class="scope-center"></div>
+        {blips.map((b) => (
+          <span class:list={['blip', b.cls]} style={`left:${b.x}%;top:${b.y}%`}>
+            <b>{b.label}</b> {b.count}
+          </span>
+        ))}
+      </div>
+      <div class="radar-bottom">
+        <span><b>{total}</b> SIGNALS / {issue.categories.length} BANDS</span>
+        <span>SCAN {issue.date.replaceAll('-', ' ')}</span>
+      </div>
+    </div>
   </header>
 
   <div class="controls">
@@ -167,35 +250,98 @@ const baselineNote =
     </div>
   </div>
 
-  <div class="issue-body">
-    {
-      issue.categories.map((cat, ci) => (
-        <section class="cat" id={`cat-${cat.id}`} data-cat={cat.id}>
-          <header class="cat-head">
-            <span class="cat-no" aria-hidden="true">{CN_NO[ci] ?? String(ci + 1)}</span>
-            <h2>{cat.label}</h2>
-            <p class="cat-desc">{cat.desc}</p>
-          </header>
-          {cat.items.length === 0 ? (
-            <p class="empty">
-              <b>本期该方向无新增</b>
-              候选项目均已被近 30 天推送覆盖，或数量不足。
-            </p>
-          ) : (
-            <div class="repo-list">
-              {cat.items.map((item, i) => (
-                <RepoRow
-                  item={item}
-                  index={i + 1}
-                  series={seriesFor(item.full_name)}
-                  interpretation={interpretationOf(issue.date, item.full_name)}
-                />
-              ))}
+  <div class="board">
+    <div class="content issue-body">
+      {
+        issue.categories.map((cat, ci) => (
+          <section class="cat" id={`cat-${cat.id}`} data-cat={cat.id}>
+            <div class="sec-head">
+              <span class="sec-no mono" aria-hidden="true">
+                {CN_NO[ci] ?? String(ci + 1)}
+              </span>
+              <h2>{cat.label}</h2>
+              <span class="spacer"></span>
+              <span class="note mono">
+                {cat.items.length} / 上限 {perCat}
+              </span>
             </div>
-          )}
+            {cat.desc && <p class="cat-desc">{cat.desc}</p>}
+            {cat.items.length === 0 ? (
+              <p class="empty">
+                <b>本期该方向无新增</b>
+                候选项目均已被近 30 天推送覆盖，或数量不足。
+              </p>
+            ) : (
+              <div class="repo-list">
+                {cat.items.map((item, i) => (
+                  <RepoRow
+                    item={item}
+                    index={i + 1}
+                    series={seriesFor(item.full_name)}
+                    interpretation={interpretationOf(issue.date, item.full_name)}
+                  />
+                ))}
+              </div>
+            )}
+          </section>
+        ))
+      }
+    </div>
+
+    <aside class="aside" aria-label="观象台">
+      <section class="panel">
+        <h3>观象 · ALMANAC</h3>
+        <div class="almanac-top">
+          <div class="lunar-day">{lunarDay}</div>
+          <div class="lunar-meta">
+            <b>
+              {almanac.ganzhiYear}年 {lunarMonth}
+            </b>
+            {issue.date}
+            <br />
+            {weekdayOf(issue.date)}
+          </div>
+        </div>
+        <div class="yiji">
+          <div><i>节气</i><span class={almanac.jieQi ? 'tag' : undefined}>{jieQiLine(almanac)}</span></div>
+          <div><i>热度</i><span>{baselineNote}</span></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>方向分布 · READOUT</h3>
+        <div class="rd-bars">
+          {issue.categories.map((c) => (
+            <div class="rd-bar">
+              <span>{c.label}</span>
+              <div class="rd-track"><i style={`--p:${Math.round((c.items.length / maxCat) * 100)}%`}></i></div>
+              <b>{c.items.length}</b>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>本期移除 · REMOVED</h3>
+        <div class="removed-big">
+          <b>{String(removed.length).padStart(2, '0')}</b>
+          <span>OUT OF EDITION</span>
+        </div>
+        <p class="panel-small">
+          判定只依据可复核的公开事实，完整台账见
+          <a class="more" href={`${base}removed/`}>风险提示 →</a>
+        </p>
+      </section>
+
+      {latest && (
+        <section class="panel">
+          <h3>编者按 · NOTE</h3>
+          <p class="panel-small">
+            本期为最新一期，<a class="more" href="#observation">本期观察 →</a>
+          </p>
         </section>
-      ))
-    }
+      )}
+    </aside>
   </div>
 
   {
@@ -576,136 +722,3 @@ const baselineNote =
   writeUrl(false);
   requestAnimationFrame(restoreHash);
 </script>
-
-<style>
-  /* 本期移除：版式上按「附录」处理——比正文轻，但要能独立读完 */
-  .removed {
-    margin: 46px 0 0;
-    padding-top: 22px;
-    border-top: 2px solid var(--ink-rule);
-  }
-  .rm-head {
-    margin-bottom: 14px;
-  }
-  .rm-list {
-    list-style: none;
-  }
-  .rm-item {
-    padding: 16px 0 18px;
-    border-top: 1px solid var(--rule);
-  }
-  .rm-item:first-child {
-    border-top: none;
-    padding-top: 4px;
-  }
-  .rm-line {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .rm-no {
-    font-family: var(--mono);
-    font-size: 0.76rem;
-    color: var(--ink-3);
-    min-width: 24px;
-  }
-  .rm-name {
-    font-weight: 600;
-    color: var(--ink);
-    text-decoration: none;
-    border-bottom: 1px solid var(--rule-strong);
-  }
-  .rm-name:hover {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
-  }
-  .rm-tag {
-    font-size: 0.7rem;
-    color: var(--ink-2);
-    background: var(--paper-2);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    padding: 0 6px;
-  }
-  .rm-tag.is-ghost {
-    background: transparent;
-    color: var(--ink-3);
-  }
-  .rm-desc {
-    color: var(--ink-3);
-    font-size: 0.8rem;
-    margin: 5px 0 0 34px;
-  }
-  .rm-verdict {
-    color: var(--ink);
-    font-size: 0.9rem;
-    line-height: 1.85;
-    margin: 7px 0 0 34px;
-    max-width: 64ch;
-  }
-  .rm-ev {
-    margin: 9px 0 0 34px;
-  }
-  .rm-ev summary {
-    font-size: 0.78rem;
-    color: var(--accent);
-    cursor: pointer;
-  }
-  .rm-ev ul {
-    list-style: none;
-    margin: 8px 0 0;
-    padding-left: 0;
-  }
-  .rm-ev li {
-    font-size: 0.81rem;
-    color: var(--ink-2);
-    line-height: 1.8;
-    padding: 6px 0 6px 12px;
-    border-left: 2px solid var(--rule);
-    margin-bottom: 6px;
-  }
-  .rm-ev li b {
-    color: var(--ink);
-    font-weight: 600;
-    margin: 0 8px 0 0;
-  }
-  .rm-ev-type {
-    display: inline-block;
-    font-family: var(--mono);
-    font-size: 0.66rem;
-    color: var(--ink-3);
-    border: 1px solid var(--rule);
-    border-radius: 3px;
-    padding: 0 5px;
-    margin-right: 7px;
-  }
-  .rm-advice {
-    margin: 9px 0 0 34px;
-    font-size: 0.8rem;
-    color: var(--ink-2);
-    background: var(--paper-2);
-    border-left: 3px solid var(--rule-strong);
-    padding: 7px 12px;
-    line-height: 1.75;
-  }
-  .rm-foot {
-    margin-top: 16px;
-    font-size: 0.82rem;
-  }
-  .rm-foot a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-  .rm-foot a:hover {
-    text-decoration: underline;
-  }
-  @media (max-width: 640px) {
-    .rm-desc,
-    .rm-verdict,
-    .rm-ev,
-    .rm-advice {
-      margin-left: 0;
-    }
-  }
-</style>

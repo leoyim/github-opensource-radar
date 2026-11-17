@@ -3,7 +3,6 @@ import RatingMeter from './RatingMeter.astro';
 import MetricBars from './MetricBars.astro';
 import Sparkline from './Sparkline.astro';
 import { num, heatLabel } from '../lib/format';
-import { avatarOf } from '../lib/load';
 import type { IssueItem, SeriesPoint } from '../lib/schema';
 import type { Interpretation } from '../lib/interpretations';
 
@@ -20,43 +19,34 @@ const hasScores = Object.keys(scores).length > 0;
 const starValues = series.map((p) => p.stars);
 
 const slug = item.full_name.replace('/', '__');
-const avatar = avatarOf(item.owner);
 const words = interpretation ? Math.max(100, Math.round(interpretation.chars / 100) * 100) : 0;
 const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
 ---
 
-<article class="repo" id={`repo-${slug}`} data-rank={index} data-scores={JSON.stringify(scores)} data-name={item.full_name}>
-  <div class="repo-rank mono">#{index}</div>
+<!-- 信号列表行：版式取「报纸榜单」，交互钩子（data-scores / .rel / .repo-rank / data-read）原样保留 -->
+<article
+  class="repo row"
+  id={`repo-${slug}`}
+  data-rank={index}
+  data-scores={JSON.stringify(scores)}
+  data-name={item.full_name}
+>
+  <span class="row-rank repo-rank mono">{String(index).padStart(2, '0')}</span>
 
-  <div class="repo-main">
-    <h3 class="repo-title">
-      <span class="repo-owner">{item.owner} /</span>
+  <div class="row-main">
+    <p class="row-owner mono">{item.owner}</p>
+    <h3 class="row-name">
       <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
-      {item.language && <span class="repo-lang mono">{item.language}</span>}
+      {item.language && <span class="row-lang mono">{item.language}</span>}
     </h3>
 
-    {item.description && <p class="repo-desc">{item.description}</p>}
-
-    <div class="repo-meta">
-      <span><strong>{num(item.stars)}</strong> stars</span>
-      <span><strong>{num(item.forks)}</strong> forks</span>
-      {
-        item.starGain != null && item.starGain > 0 ? (
-          <span class="gain"><strong>+{num(item.starGain)}</strong> / 日</span>
-        ) : (
-          <span>≈ {item.heat} / 天</span>
-        )
-      }
-      <span>{heatLabel(item.heatBasis)}</span>
-      {item.license && <span>{item.license}</span>}
-    </div>
-
-    {item.summary_zh && <p class="repo-summary">{item.summary_zh}</p>}
-    {item.highlight_zh && <p class="repo-highlight">{item.highlight_zh}</p>}
+    {item.description && <p class="row-desc">{item.description}</p>}
+    {item.summary_zh && <p class="row-sum">{item.summary_zh}</p>}
+    {item.highlight_zh && <p class="row-hl">{item.highlight_zh}</p>}
 
     {
       item.topics && item.topics.length > 0 && (
-        <ul class="repo-topics">
+        <ul class="row-topics">
           {item.topics.slice(0, 8).map((t) => (
             <li class="topic">{t}</li>
           ))}
@@ -66,22 +56,40 @@ const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
 
     {
       hasActions && (
-        <div class="repo-actions">
-          {interpretation && (
-            <a class="read-btn" href={`#read-${slug}`} data-read={slug}>
-              详细解读
-              <span class="read-btn-n mono">约 {words} 字</span>
-            </a>
-          )}
+        <div class="row-extra">
           <MetricBars breakdown={item.breakdown} />
         </div>
       )
     }
   </div>
 
-  <div class="repo-side">
+  <div class="signals">
+    <span><b>{num(item.stars)}</b> ★</span>
+    {
+      item.starGain != null && item.starGain > 0 ? (
+        <span class="up">
+          <b>+{num(item.starGain)}</b> / 日
+        </span>
+      ) : (
+        <span>
+          ≈ {item.heat} / 天
+        </span>
+      )
+    }
+    <span>{heatLabel(item.heatBasis)}</span>
+    {item.forks ? <span><b>{num(item.forks)}</b> forks</span> : null}
+    {item.license && <span>{item.license}</span>}
+    {
+      starValues.length >= 2 && (
+        <span class="row-spark">
+          <Sparkline values={starValues} label={`${item.full_name} 星标走势`} />
+        </span>
+      )
+    }
+  </div>
+
+  <div class="verdict">
     <RatingMeter rating={item.rating} />
-    {starValues.length >= 2 && <Sparkline values={starValues} label={`${item.full_name} 星标走势`} />}
     {
       hasScores && (
         <div class="rel" aria-hidden="true">
@@ -90,29 +98,13 @@ const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
         </div>
       )
     }
-    <!-- 项目标记：优先用 owner 头像（GitHub 上仓库页显示的就是它），
-         地址来自 _data/owners.json 的离线缓存；缓存缺这一项或图挂了，
-         就露出底下那层首字母，不会出现破图。 -->
-    <span class="mark">
-      <span class="avatar" aria-hidden="true">
-        <span>{item.owner.slice(0, 1)}</span>
-        {
-          avatar && (
-            <img
-              src={avatar}
-              alt=""
-              width="96"
-              height="96"
-              loading="lazy"
-              decoding="async"
-              referrerpolicy="no-referrer"
-              onerror="this.remove()"
-            />
-          )
-        }
-      </span>
-    </span>
   </div>
 
+  <div class="row-action">
+    {interpretation && (
+      <a class="read" href={`#read-${slug}`} data-read={slug}>
+        解读<span class="read-n mono">{words} 字</span>
+      </a>
+    )}
+  </div>
 </article>
-

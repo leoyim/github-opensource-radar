@@ -1,0 +1,190 @@
+// 开源雷达 · 模块依赖（当前态，构建期静态导入 + 少量运行期动态导入）
+// 源：src/** 与 tools/** 的 import 关系
+// 渲染：dot -Tsvg artifact/diagrams/module-dependencies.dot -o artifact/diagrams/module-dependencies.svg
+// 说明：实线 = 构建期 import；粗虚线 = 动态 import；点线 = 文件读写/资源引用。
+digraph module_dependencies {
+  graph [
+    rankdir=TB,
+    fontname="Microsoft YaHei",
+    fontsize=12,
+    nodesep=0.3,
+    ranksep=0.5,
+    compound=true,
+    bgcolor="white",
+    pad="0.3"
+  ];
+  node [
+    shape=box,
+    style="rounded,filled",
+    fontname="Microsoft YaHei",
+    fontsize=9,
+    color="#9AA39A",
+    fillcolor="#F6F7F4",
+    penwidth=1.0
+  ];
+  edge [
+    fontname="Microsoft YaHei",
+    fontsize=8,
+    color="#6F7A6F",
+    arrowsize=0.6
+  ];
+
+  subgraph cluster_pages {
+    label="src/pages（路由层）";
+    fontsize=10;
+    color="#C9C2B4";
+    style="rounded";
+    p_latest [label="index.astro"];
+    p_post [label="posts/[date].astro"];
+    p_proj_index [label="projects/index.astro"];
+    p_proj_page [label="projects/[page].astro"];
+    p_lang_index [label="projects/lang/[lang]/index.astro"];
+    p_lang_page [label="projects/lang/[lang]/[page].astro"];
+    p_archive [label="archive.astro"];
+    p_stats [label="stats.astro"];
+    p_removed [label="removed.astro"];
+  }
+
+  subgraph cluster_views {
+    label="src/layouts + components（展示层）";
+    fontsize=10;
+    color="#C9C2B4";
+    style="rounded";
+    base [label="layouts/Base.astro"];
+    nav [label="SiteNav.astro"];
+    issueview [label="IssueView.astro"];
+    reporow [label="RepoRow.astro"];
+    reader [label="ReaderDialog.astro"];
+    meters [label="RatingMeter / MetricBars / Sparkline"];
+    projectsview [label="ProjectsView.astro"];
+    projectrow [label="ProjectRow.astro"];
+    pager [label="ProjectPager.astro"];
+    css [label="styles/global.css", shape=note];
+  }
+
+  subgraph cluster_lib {
+    label="src/lib（数据与规则层）";
+    fontsize=10;
+    color="#C9C2B4";
+    style="rounded";
+    schema [label="schema.ts", fillcolor="#EEF1F6"];
+    load [label="load.ts", fillcolor="#EEF1F6"];
+    projects [label="projects.ts", fillcolor="#EEF1F6"];
+    interp [label="interpretations.ts", fillcolor="#EEF1F6"];
+    almanac [label="almanac.ts", fillcolor="#EEF1F6"];
+    format [label="format.ts", fillcolor="#EEF1F6"];
+    palettes [label="palettes.ts", fillcolor="#EEF1F6"];
+  }
+
+  subgraph cluster_client {
+    label="src/scripts（客户端）";
+    fontsize=10;
+    color="#C9C2B4";
+    style="rounded";
+    fan3d [label="fan3d.ts", fillcolor="#F5EDEC"];
+  }
+
+  subgraph cluster_tools {
+    label="tools/（数据面 CLI）";
+    fontsize=10;
+    color="#C9C2B4";
+    style="rounded";
+    ingest [label="ingest.mjs", fillcolor="#F3F6F2"];
+    sync [label="sync-removals.mjs", fillcolor="#F3F6F2"];
+    fanbuild [label="build-fan-glb.mjs", fillcolor="#F3F6F2"];
+  }
+
+  subgraph cluster_external {
+    label="外部依赖与数据";
+    fontsize=10;
+    color="#C9C2B4";
+    style="rounded,dashed";
+    astro [label="astro", shape=folder, fillcolor="#FFFFFF"];
+    marked [label="marked", shape=folder, fillcolor="#FFFFFF"];
+    lunar [label="lunar-javascript", shape=folder, fillcolor="#FFFFFF"];
+    three [label="three", shape=folder, fillcolor="#FFFFFF"];
+    nodefs [label="node:fs / node:path", shape=folder, fillcolor="#FFFFFF"];
+    data [label="_data/", shape=cylinder, fillcolor="#F7F2E8"];
+    overrides [label="overrides/observations/", shape=cylinder, fillcolor="#F5EDEC"];
+    public [label="public/", shape=folder, fillcolor="#EDF3ED"];
+  }
+
+  // 页面 → 布局/组件
+  p_latest -> base;
+  p_latest -> issueview;
+  p_post -> base;
+  p_post -> issueview;
+  p_proj_index -> base;
+  p_proj_index -> projectsview;
+  p_proj_page -> base;
+  p_proj_page -> projectsview;
+  p_lang_index -> base;
+  p_lang_index -> projectsview;
+  p_lang_page -> base;
+  p_lang_page -> projectsview;
+  p_archive -> base;
+  p_stats -> base;
+  p_removed -> base;
+
+  // 页面 → lib
+  p_latest -> load;
+  p_post -> load;
+  p_archive -> load;
+  p_archive -> almanac;
+  p_stats -> load;
+  p_stats -> almanac;
+  p_stats -> format;
+  p_removed -> load;
+  p_removed -> format;
+  p_proj_index -> projects;
+  p_proj_page -> projects;
+  p_lang_index -> projects;
+  p_lang_page -> projects;
+
+  // 组件 → 组件/lib
+  base -> nav;
+  base -> css;
+  issueview -> reporow;
+  issueview -> reader;
+  issueview -> load;
+  issueview -> almanac;
+  issueview -> interp;
+  issueview -> format;
+  reporow -> meters;
+  reporow -> format;
+  reporow -> load;
+  projectsview -> projectrow;
+  projectsview -> pager;
+  projectsview -> projects;
+  nav -> palettes;
+  nav -> fan3d [label="script import", style=bold];
+
+  // lib 内部
+  load -> schema;
+  load -> nodefs;
+  projects -> load;
+  interp -> load;
+  interp -> marked;
+  almanac -> lunar;
+
+  // 工具链
+  ingest -> sync [label="applyRemovals()", style=bold];
+  ingest -> nodefs;
+  sync -> nodefs;
+  fanbuild -> nodefs;
+  ingest -> data [label="读/写", style=dotted];
+  sync -> data [label="读台账/写报告", style=dotted];
+  fanbuild -> public [label="写 fan.glb", style=dotted];
+
+  // 数据与资源
+  data -> load [label="构建期读取", style=dotted];
+  data -> interp [style=dotted];
+  overrides -> interp [label="优先读取", style=dotted];
+  public -> base [label="seal/favicon", style=dotted];
+  fan3d -> public [label="fan.glb", style=dotted];
+  fan3d -> three [label="dynamic import", style=bold, color="#A83D35"];
+
+  // Astro 是页面/组件的运行时/构建时框架
+  p_latest -> astro [style=dotted, label="framework"];
+  base -> astro [style=dotted, label="framework"];
+}

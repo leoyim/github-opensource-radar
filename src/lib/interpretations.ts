@@ -63,6 +63,16 @@ const countChars = (body: string): number =>
 
 const render = (md: string): string => marked.parse(md, { async: false, gfm: true }) as string;
 
+/**
+ * 解读正文的小节标题（## 1. 它解决什么问题）渲染成一枚「编号标签」，
+ * 编号进徽标、标题另起一档；不含编号的 h2 不动。
+ */
+const sectionize = (html: string): string =>
+  html.replace(
+    /<h2>(\d+)\s*[.、．]\s*/g,
+    (_, n) => `<h2 class="prose-sec"><span class="prose-sec-n">${n}</span>`,
+  );
+
 export function interpretationOf(date: string, fullName: string): Interpretation | null {
   const key = `${date}/${fullName}`;
   if (cache.has(key)) return cache.get(key) ?? null;
@@ -74,7 +84,7 @@ export function interpretationOf(date: string, fullName: string): Interpretation
   }
 
   const body = bodyOf(md);
-  const result: Interpretation = { html: render(body), chars: countChars(body) };
+  const result: Interpretation = { html: sectionize(render(body)), chars: countChars(body) };
   cache.set(key, result);
   return result;
 }

@@ -1,0 +1,111 @@
+// 开源雷达 · 数据流水线（当前态）
+// 源：README.md、tools/ingest.mjs、tools/sync-removals.mjs、src/lib/*
+// 渲染：dot -Tsvg artifact/diagrams/data-pipeline.dot -o artifact/diagrams/data-pipeline.svg
+// 说明：实线 = 已实现的写入/读取/构建；虚线 = 运行期第三方依赖；边的标签描述数据而非“业务动作”。
+digraph data_pipeline {
+  graph [
+    rankdir=TB,
+    fontname="Microsoft YaHei",
+    fontsize=12,
+    nodesep=0.35,
+    ranksep=0.55,
+    compound=true,
+    bgcolor="white",
+    pad="0.3"
+  ];
+  node [
+    shape=box,
+    style="rounded,filled",
+    fontname="Microsoft YaHei",
+    fontsize=10,
+    color="#9AA39A",
+    fillcolor="#F6F7F4",
+    penwidth=1.1
+  ];
+  edge [
+    fontname="Microsoft YaHei",
+    fontsize=9,
+    color="#6F7A6F",
+    arrowsize=0.7
+  ];
+
+  subgraph cluster_upstream {
+    label="上游日报流水线（仓库外，外部系统）";
+    fontsize=11;
+    color="#C9C2B4";
+    style="rounded,dashed";
+    ghdata [label="GitHub 数据源\nTrending / Search API / 仓库元数据", shape=box, fillcolor="#EEF2EE"];
+    upstream [label="采集 · 去重 · 评分 · 筛查", shape=box, fillcolor="#EEF2EE"];
+    updata [label="上游 data/\nreports · summaries · snapshots\ninterpretations · blacklist · owners", shape=cylinder, fillcolor="#E8EFE9"];
+    ghdata -> upstream [label="抓取候选与元数据"];
+    upstream -> updata [label="按日产出"];
+  }
+
+  subgraph cluster_repo {
+    label="本仓库（数据面）";
+    fontsize=11;
+    color="#C9C2B4";
+    style="rounded";
+    ingest [label="tools/ingest.mjs\n按日期只读搬运", fillcolor="#F3F6F2"];
+    sync [label="tools/sync-removals.mjs\napplyRemovals()", fillcolor="#F3F6F2"];
+    reports [label="_data/reports/*.json\n每期榜单", shape=cylinder, fillcolor="#F7F2E8"];
+    summaries [label="_data/summaries/*.json\n中文摘要", shape=cylinder, fillcolor="#F7F2E8"];
+    series [label="_data/series/*.json\n星标序列", shape=cylinder, fillcolor="#F7F2E8"];
+    interps [label="_data/interpretations/\n详细解读 + index.md", shape=cylinder, fillcolor="#F7F2E8"];
+    owners [label="_data/owners.json\n头像缓存", shape=cylinder, fillcolor="#F7F2E8"];
+    blacklist [label="_data/blacklist.json\n移除台账", shape=cylinder, fillcolor="#F7F2E8"];
+    overrides [label="overrides/observations/\n本期观察人工修订", shape=cylinder, fillcolor="#F5EDEC"];
+  }
+
+  subgraph cluster_build {
+    label="构建期";
+    fontsize=11;
+    color="#C9C2B4";
+    style="rounded";
+    contract [label="schema.ts\n契约断言", fillcolor="#EEF1F6"];
+    astro [label="Astro build\nload / projects / interpretations / almanac", fillcolor="#EEF1F6"];
+    dist [label="dist/\n静态 HTML · CSS · JS · 资源", shape=folder, fillcolor="#EDF3ED"];
+  }
+
+  subgraph cluster_delivery {
+    label="发布与运行期";
+    fontsize=11;
+    color="#C9C2B4";
+    style="rounded";
+    actions [label="GitHub Actions\nbuild + deploy", fillcolor="#EEF1F6"];
+    pages [label="GitHub Pages + CDN\nosradar.leoyim.cn", shape=box, fillcolor="#EDF3ED"];
+    browser [label="读者浏览器\nHTML/CSS/内联 JS", shape=box, fillcolor="#FFFFFF"];
+    avatars [label="avatars.githubusercontent.com\nowner 头像", shape=box, style="rounded,dashed", fillcolor="#FFFFFF"];
+  }
+
+  updata -> ingest [label="只读复制", style=bold];
+  ingest -> reports [label="写报告"];
+  ingest -> summaries [label="写摘要"];
+  ingest -> series [label="派生 + 回填"];
+  ingest -> interps [label="复制 .md"];
+  ingest -> owners [label="合并缓存"];
+  ingest -> blacklist [label="整份复制"];
+  ingest -> sync [label="进程内调用", style=dashed];
+
+  blacklist -> sync [label="读台账"];
+  sync -> reports [label="删条目 / 撤附录\n重算 stats.selected", color="#A83D35"];
+
+  reports -> contract [label="读取"];
+  summaries -> contract [label="读取"];
+  series -> contract [label="读取"];
+  interps -> contract [label="读取"];
+  owners -> contract [label="读取"];
+  blacklist -> contract [label="读取"];
+  overrides -> astro [label="优先覆盖"];
+  contract -> astro [label="校验通过"];
+  astro -> dist [label="生成静态页面", style=bold];
+
+  dist -> actions [label="upload-pages-artifact"];
+  actions -> pages [label="deploy-pages", style=bold];
+  pages -> browser [label="HTML/CSS/JS", style=bold];
+  browser -> avatars [label="头像图片", style=dashed];
+
+  // 说明：CI 不运行 ingest；数据必须先提交进仓库。
+  ci_note [label="注意：GitHub Actions 只构建\ndist/，不访问上游、不运行 ingest", shape=note, fillcolor="#FFF8E1", color="#D6C68A"];
+  actions -> ci_note [style=invis];
+}

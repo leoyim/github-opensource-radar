@@ -1,0 +1,86 @@
+// 开源雷达 · 发布路径与运行期依赖（当前态）
+// 源：.github/workflows/pages.yml、astro.config.mjs、public/CNAME、README.md
+// 渲染：dot -Tsvg artifact/diagrams/deployment-release.dot -o artifact/diagrams/deployment-release.svg
+// 阅读：实线 = 发布/构建路径；虚线 = 读者运行期依赖。
+digraph deployment_release {
+  graph [
+    rankdir=LR,
+    fontname="Microsoft YaHei",
+    fontsize=12,
+    nodesep=0.35,
+    ranksep=0.55,
+    compound=true,
+    bgcolor="white",
+    pad="0.3"
+  ];
+  node [
+    shape=box,
+    style="rounded,filled",
+    fontname="Microsoft YaHei",
+    fontsize=10,
+    color="#9AA39A",
+    fillcolor="#F6F7F4",
+    penwidth=1.1
+  ];
+  edge [
+    fontname="Microsoft YaHei",
+    fontsize=9,
+    color="#6F7A6F",
+    arrowsize=0.7
+  ];
+
+  subgraph cluster_workstation {
+    label="维护者本地";
+    fontsize=11;
+    color="#C9C2B4";
+    style="rounded";
+    ingest [label="ingest / sync-removals\n写 _data/", fillcolor="#F3F6F2"];
+    localbuild [label="npm run build\n本地预览（可选）", fillcolor="#F3F6F2"];
+  }
+
+  subgraph cluster_github {
+    label="GitHub";
+    fontsize=11;
+    color="#C9C2B4";
+    style="rounded";
+    repo [label="仓库 main\n代码 + _data + 工作流", shape=box, fillcolor="#EEF1F6"];
+    actions [label="GitHub Actions\nubuntu-latest · Node 22", shape=box, fillcolor="#EEF1F6"];
+    npm [label="npm registry", shape=box, fillcolor="#FFFFFF"];
+    artifact [label="Pages artifact\ndist/", shape=folder, fillcolor="#EDF3ED"];
+  }
+
+  subgraph cluster_delivery {
+    label="托管与域名";
+    fontsize=11;
+    color="#C9C2B4";
+    style="rounded";
+    pages [label="GitHub Pages + CDN\nosradar.leoyim.cn", shape=box, fillcolor="#EDF3ED"];
+    dns [label="DNS\nosradar → leoyim.github.io", shape=box, fillcolor="#FFFFFF"];
+  }
+
+  subgraph cluster_user {
+    label="读者侧";
+    fontsize=11;
+    color="#C9C2B4";
+    style="rounded";
+    browser [label="浏览器\nHTML/CSS/内联 JS", shape=box, fillcolor="#FFFFFF"];
+    avatars [label="avatars.githubusercontent.com\n头像图片", shape=box, style="rounded,dashed", fillcolor="#FFFFFF"];
+    outbound [label="站外目标站点\n（用户主动点击）", shape=box, style="rounded,dashed", fillcolor="#FFFFFF"];
+  }
+
+  ingest -> repo [label="git add/commit/push（--push 可选）", style=bold];
+  repo -> actions [label="push main / workflow_dispatch", style=bold];
+  actions -> npm [label="npm ci"];
+  actions -> artifact [label="npm run build\nSITE_URL + SITE_BASE\n校验 CNAME / index.html"];
+  artifact -> pages [label="deploy-pages", style=bold];
+  dns -> pages [label="CNAME 解析"];
+
+  pages -> browser [label="HTTPS 静态资源", style=bold];
+  browser -> avatars [label="头像 img", style=dashed];
+  browser -> outbound [label="外链（先弹 dialog）", style=dashed];
+
+  localbuild -> repo [label="产物不入库\ndist/ 被 .gitignore 忽略", style=dotted];
+
+  ci_note [label="数据采集不在 CI：\nActions 不运行 ingest、不访问上游目录", shape=note, fillcolor="#FFF8E1", color="#D6C68A"];
+  actions -> ci_note [style=invis];
+}
