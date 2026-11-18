@@ -1,0 +1,1703 @@
+{
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T09:42:56.897+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-17",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 847,
+    "unclassified": 63,
+    "selected": 19,
+    "suppressedByHistory": 259,
+    "sameDateExempt": 0,
+    "removed": 4,
+    "removedTotal": 4,
+    "offTopic": 2,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "BaaRai/ARTEX",
+          "owner": "BaaRai",
+          "name": "ARTEX",
+          "url": "https://github.com/BaaRai/ARTEX",
+          "homepage": "",
+          "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
+          "language": "Go",
+          "topics": [],
+          "stars": 6943,
+          "forks": 3048,
+          "open_issues": 14,
+          "starGain": 2069,
+          "heat": 2069,
+          "heatBasis": "snapshot",
+          "heatPercentile": 100,
+          "ageDays": 40,
+          "created_at": "2026-10-08T21:14:39Z",
+          "pushed_at": "2026-11-18T00:42:50Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 83.4,
+          "breakdown": {
+            "heat": 100,
+            "community": 76,
+            "activity": 64,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Autonomous penetration testing that keeps its receipts.\n\nSelf-hosted multi-agent offensive security. A planner explores, workers run real tools, and every finding stays bound to the assets and HTTP traffic that prove it.\n\nQuick start · Screenshots · How it works · Install · Configuration · Security",
+            "features": [
+              "It explores, it doesn't chat. Goal decomposition, intent dispatch, worker execution and",
+              "Two graphs, one audit trail. The shared asset graph says what exists ; the per-task",
+              "Findings with evidence. A recording MITM proxy and a browser extension capture real traffic;",
+              "Autonomy with brakes. Human-in-the-loop approvals, argv-prefix rules, scope/deny gates,",
+              "Self-hosted and model-agnostic. One Go binary with the Next.js UI embedded, PostgreSQL,",
+              "Asset graph (shared across tasks). One source of truth for root domain / subdomain / ip /",
+              "Exploration graph (per task). The task's reasoning and progress: goal / intent / fact /",
+              "Anchors link them. exploration anchors(node id, asset id) ties intents, facts and findings"
+            ],
+            "sections": [
+              "ARTEX",
+              "Quick start",
+              "Multi-provider workers",
+              "Screenshots",
+              "How it works",
+              "Dual-graph architecture: exploration graph + asset graph",
+              "The engine loop",
+              "Durable attack chains, shared worker memory",
+              "Features",
+              "Evidence, not chat logs",
+              "Control without slowing down",
+              "Assets and coverage",
+              "Platform",
+              "Installation"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 35882
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "ZiChuanLan/freebie-radar",
+          "owner": "ZiChuanLan",
+          "name": "freebie-radar",
+          "url": "https://github.com/ZiChuanLan/freebie-radar",
+          "homepage": "",
+          "description": "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 1439,
+          "forks": 244,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 493.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 6,
+          "created_at": "2026-11-12T09:08:11Z",
+          "pushed_at": "2026-11-17T17:25:24Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.9,
+          "breakdown": {
+            "heat": 97,
+            "community": 60,
+            "activity": 69,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "资源雷达 · Resource Radar 全网福利、黑五好价、拼车交易、开源项目与新闻资讯的多兴趣自托管聚合雷达站 六大内容形态分流 · 27 类分频道目录 · 统一屏蔽词省额度 · AI 语义定级 · 多路由精准推送\n\n资源雷达（Resource Radar / repo: freebie-radar ） 是一款轻量、开箱即用的多兴趣社区信息聚合与精准推送工作台。它从各大开发者社区、游戏平台、软件限免站、GitHub、Reddit、Bluesky、Telegram 频道及自定义 RSS 采集信息，并通过 「规则初筛与统一屏蔽 → AI 语义定级与分流 → 分频道目录呈现 → 多路由精准推送」 把每条内容送到它该去的位置：\n\n- 只想纯粹蹲羊毛？首页默认 「真福利精选」 严格锁定 AI 验真的 freebie （直接白嫖 + 实操可领的有条件福利），绝不被付费好价、拼车、二手或新闻污染。 - 想看 黑五 VPS 好价 / 合规拼车 / 开源项目 / 重大新闻与科技资讯 ？一键切换顶部兴趣频道即可浏览各自专属的下级分类、真实有效计数与图文卡片，并可分别配置互不干扰的 Telegram 专题推送路由。",
+            "features": [
+              "只想纯粹蹲羊毛？首页默认 「真福利精选」 严格锁定 AI 验真的 freebie （直接白嫖 + 实操可领的有条件福利），绝不被付费好价、拼车、二手或新闻污染。",
+              "想看 黑五 VPS 好价 / 合规拼车 / 开源项目 / 重大新闻与科技资讯 ？一键切换顶部兴趣频道即可浏览各自专属的下级分类、真实有效计数与图文卡片，并可分别配置互不干扰的 Telegram 专题推送路由。",
+              "6 大内容形态（ kind ） ： freebie （白嫖福利）、 deal （特价好价·含黑五 VPS/拼车/二手出鸡）、 opensource （开源项目）、 news （重要新闻）、 info （行业资讯·指南）、 noise （纯求助/灌水噪音）。",
+              "27 个垂直领域（ category ） ：覆盖 ai （AI 额度）、 vps （VPS/主机）、 cloud （云服务）、 domain （域名/建站）、 opensource （开源软件）、 software （软件授权）、 dev （开发/工程）、 design （设计/",
+              "8 个兴趣频道与自适应下级分类 ：真福利、全部白嫖、实物福利、网盘/网课、好价、开源、重要新闻、行业资讯；",
+              "「真福利 / 全部白嫖」只展现福利类目（隐藏拼车/交易/新闻要闻，网盘/网课/实物福利各自独立成频道），统计数字实时排除 noise 假数；",
+              "「重要新闻 / 行业资讯」自动切换为资讯栏目视角（时政要闻、国际要闻、经济/商业、股票/市场、科技前沿、AI 前沿、开发工程、开源生态、安全/漏洞、硬件数码、综合资讯）；",
+              "切换频道自动重置不兼容的形态、获取方式与价格上限，避免空屏串态。"
+            ],
+            "sections": [
+              "界面预览",
+              "核心特性",
+              "1. 多兴趣频道与「形态 × 领域 × 获取方式」正交分类",
+              "2. 三层高信噪比治理（统一屏蔽 · AI 定级 · 零 Token 重整）",
+              "3. 三种响应式视图与零请求封面图提取",
+              "4. 多路由精准 Telegram 推送",
+              "5. 极简部署与单密码鉴权分区",
+              "工作流架构",
+              "快速开始（开箱即用）",
+              "方式一：Docker Compose（推荐，1 分钟跑起来）",
+              "可选：复制并编辑环境变量（设置 ADMIN TOKEN 管理密码、Telegram 推送、AI 等）",
+              "启动服务（默认监听 http://127.0.0.1:8788）",
+              "{\"ok\":true,\"version\":\"0.1.0\",...}",
+              "方式二：源码运行（Node.js ≥ 22.5 + pnpm 10）"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10078
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "blader/humanizer",
+          "owner": "blader",
+          "name": "humanizer",
+          "url": "https://github.com/blader/humanizer",
+          "homepage": "https://skills.sh/blader/humanizer",
+          "description": "Agent skill that removes signs of AI-generated writing from text",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "ai-humanizer",
+            "ai-writing",
+            "chatgpt",
+            "claude",
+            "claude-code",
+            "codex",
+            "cursor"
+          ],
+          "stars": 70391,
+          "forks": 5529,
+          "open_issues": 5,
+          "starGain": 457,
+          "heat": 457,
+          "heatBasis": "snapshot",
+          "heatPercentile": 97,
+          "ageDays": 304,
+          "created_at": "2026-01-18T05:30:15Z",
+          "pushed_at": "2026-11-10T01:35:15Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.8,
+          "breakdown": {
+            "heat": 97,
+            "community": 91,
+            "activity": 8,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Humanizer makes AI-written text sound like a person wrote it, without changing what it says. It is built on Wikipedia's Signs of AI writing, the guide Wikipedia editors use to catch AI-generated text, and it works in Claude Code, Codex, and any other agent that supports skills.\n\nIn a blind test, judges preferred Humanizer's rewrite over the original AI text 16 times out of 16 ( 229).\n\nHumanizer edits for human readers. It does not try to get past AI detectors, and detectors still flag most of its output.",
+            "features": [
+              "Not X but Y: \"It's not just a feature, it's a shift.\"",
+              "One-line closers: \"Let that sink in.\"",
+              "Sayings that sound deep: \"At its core, what really matters is...\"",
+              "A staged run-up: \"Here's the thing.\" \"Honestly?\"",
+              "Arguing with no one: \"I'm not saying X, but...\"",
+              "Wikipedia: Signs of AI writing is the source for the pattern list.",
+              "WikiProject AI Cleanup maintains the page."
+            ],
+            "sections": [
+              "Humanizer",
+              "The five strongest tells",
+              "Installation",
+              "Claude Code",
+              "Codex",
+              "pi",
+              "Claude.ai and Claude Desktop",
+              "Other agents",
+              "Usage",
+              "Match your voice",
+              "How it works",
+              "The 26 patterns",
+              "A. Staging instead of stating",
+              "B. Rhythm by rule"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13118
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "QuantumNous/new-api",
+          "owner": "QuantumNous",
+          "name": "new-api",
+          "url": "https://github.com/QuantumNous/new-api",
+          "homepage": "https://www.newapi.ai",
+          "description": "Open-source AI gateway. Self-hosted LLM gateway with OpenAI-, Claude- and Gemini-compatible APIs, model routing, access control, usage tracking and cost accounting.",
+          "language": "Go",
+          "topics": [
+            "ai-gateway",
+            "api-management",
+            "claude",
+            "deepseek",
+            "gemini",
+            "llm-gateway",
+            "model-routing",
+            "newapi"
+          ],
+          "stars": 52103,
+          "forks": 12723,
+          "open_issues": 1479,
+          "starGain": 79,
+          "heat": 79,
+          "heatBasis": "trending",
+          "heatPercentile": 82,
+          "ageDays": 1103,
+          "created_at": "2023-11-10T19:33:36Z",
+          "pushed_at": "2026-11-17T06:44:49Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 85,
+          "breakdown": {
+            "heat": 82,
+            "community": 91,
+            "activity": 74,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Screenshots • Capabilities • Quick start • Deployment • Development • Documentation\n\nNew API is a self-hosted AI gateway for applications, agents, and teams. Connect upstream model services, expose a consistent API to your clients, and manage routing, access, usage, and costs in one place.\n\nUse it to share authorized model access across a team, switch providers without configuring every client again, or operate a private multi-model service with a web console. Upstreams include OpenAI, Anthropic, Google Gemini, Azure OpenAI, AWS Bedrock, Vertex AI, DeepSeek, Qwen, and other compatible services.",
+            "features": [
+              "Add a channel with your upstream API key, available models, and group assignment; run a channel test.",
+              "Configure model pricing and ensure the user has quota or a valid subscription.",
+              "Create an API key in the console with access to the same group and models.",
+              "Set your client's base URL to http://localhost:3000/v1 for OpenAI-compatible clients and use the New API-issued key ."
+            ],
+            "sections": [
+              "New API",
+              "📝 Project Description",
+              "Screenshots",
+              "🤝 Trusted Partners",
+              "🙏 Special Thanks",
+              "Capabilities",
+              "Protocols and endpoints",
+              "Quick start",
+              "Try locally with Docker",
+              "Make your first request",
+              "Deployment",
+              "Docker Compose",
+              "Storage and configuration",
+              "Development and extensions"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 17639
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "Vincentwei1021/video-shotcraft",
+          "owner": "Vincentwei1021",
+          "name": "video-shotcraft",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft",
+          "homepage": "https://vincentwei1021.github.io/video-shotcraft/",
+          "description": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "ai-video",
+            "claude-code",
+            "claude-code-skills",
+            "claude-skills",
+            "codex",
+            "motion-design"
+          ],
+          "stars": 21015,
+          "forks": 1933,
+          "open_issues": 4,
+          "starGain": 408,
+          "heat": 408,
+          "heatBasis": "snapshot",
+          "heatPercentile": 94,
+          "ageDays": 122,
+          "created_at": "2026-07-19T11:44:41Z",
+          "pushed_at": "2026-11-17T17:57:43Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 85.4,
+          "breakdown": {
+            "heat": 94,
+            "community": 82,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "▶ Browse all 150 shots in the Gallery · 🎬 Watch the Showcase\n\nTell Claude Code or Codex \"make a promo for my product\". The agent captures your real pages, picks shots from a library of tuned motion recipes, storyboards the film, animates it with Remotion, cuts it to the beat, adds sound design, checks every frame and hands you a finished MP4 you can keep editing.\n\nIt is not a video generator. Every frame is drawn by code from your own screenshots and copy, so the result is sharp, on-brand and fully editable.",
+            "features": [
+              "2026-09 · Motion Workbench. Keep editing the delivered film in a CapCut-style browser editor.",
+              "2026-08 · video-talkcraft , the narration-video",
+              "2026-08 · JianYing (CapCut CN) export. The final film becomes an editable JianYing draft: per-shot clips,",
+              "Concurrency cap. remotion still/render fails with \"Maximum for --concurrency is 2\" on low-core",
+              "Old headless removal. Recent Chrome/Chromium dropped the old headless mode, so pointing Remotion at",
+              "Blocked CDN. If remotion.media is unreachable (common in mainland China), the automatic headless-shell",
+              "Code and docs: Apache-2.0.",
+              "Freesound audio: each file under its recorded license; retain the project manifest and publish required CC BY credits."
+            ],
+            "sections": [
+              "video-shotcraft",
+              "What it does",
+              "What's new",
+              "❤️ Sponsors",
+              "Install",
+              "Use",
+              "Shot library",
+              "Motion Workbench",
+              "What you get",
+              "Showcase",
+              "Requirements",
+              "Audio and assets",
+              "License",
+              "Acknowledgements"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 19841
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "coreyhaines31/marketingskills",
+          "owner": "coreyhaines31",
+          "name": "marketingskills",
+          "url": "https://github.com/coreyhaines31/marketingskills",
+          "homepage": "https://marketing-skills.com",
+          "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "ai-seo",
+            "claude",
+            "claude-code",
+            "claude-code-plugin",
+            "claude-skills",
+            "codex"
+          ],
+          "stars": 61053,
+          "forks": 8896,
+          "open_issues": 102,
+          "starGain": 237,
+          "heat": 237,
+          "heatBasis": "trending",
+          "heatPercentile": 85,
+          "ageDays": 306,
+          "created_at": "2026-01-15T19:45:23Z",
+          "pushed_at": "2026-11-18T01:16:17Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 85.7,
+          "breakdown": {
+            "heat": 85,
+            "community": 91,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 31
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the Agent Skills spec.\n\nBuilt by Corey Haines. Need hands-on help? Check out Conversion Factory — Corey's agency for conversion optimization, landing pages, and growth strategy. Want to learn more about marketing? Subscribe to Swipe Files. Want to get dangerously good at using AI for marketing? Check out AI Marketing Training. Want an autonomous AI agent that uses these skills to be your CMO? Try Magister.\n\nNew to the terminal and coding agents? Check out the companion guide Coding for Marketers.",
+            "features": [
+              "Fork this repository",
+              "Customize skills for your specific needs",
+              "Clone your fork into your projects",
+              "cro - Pages and forms",
+              "signup - Registration flows",
+              "onboarding - Post-signup activation",
+              "popups - Modals and overlays",
+              "paywalls - In-app upgrade moments"
+            ],
+            "sections": [
+              "Marketing Skills for AI Agents",
+              "Partners",
+              "What are Skills?",
+              "How Skills Work Together",
+              "Available Skills",
+              "Installation",
+              "Option 1: CLI Install (Recommended)",
+              "Install all skills",
+              "Install specific skills",
+              "List available skills",
+              "Option 2: Claude Code Plugin",
+              "Add the marketplace",
+              "Install all marketing skills",
+              "Option 3: OpenAI Codex Plugin"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 25621
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "erkamyaman/rust-anything",
+          "owner": "erkamyaman",
+          "name": "rust-anything",
+          "url": "https://github.com/erkamyaman/rust-anything",
+          "homepage": "https://www.npmjs.com/package/rust-anything",
+          "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+          "language": "Rust",
+          "topics": [
+            "agent-skills",
+            "claude-code",
+            "cli",
+            "code-migration",
+            "codex",
+            "ffi",
+            "golang",
+            "java"
+          ],
+          "stars": 1402,
+          "forks": 93,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 480.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 2,
+          "created_at": "2026-11-16T12:10:36Z",
+          "pushed_at": "2026-11-18T01:20:09Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.8,
+          "breakdown": {
+            "heat": 95,
+            "community": 58,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 63,
+            "devops": 56,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Rewrite your whole app in Rust, one piece at a time. rust-anything records what your Node.js (TypeScript/JavaScript), Python, C, Go, Ruby or Java app does today, then checks every piece of the Rust rewrite against that recording before it moves on, until the app is pure Rust. CLIs, HTTP servers and libraries; your coding agent (or you) writes the Rust. It can only catch what the recording covers: see What it can't catch. Only need the slow part fast? Port just that, one hot path at a time:\n\nMeasured on 4 cores; every number has a benchmark in demo/ that first checks the results are identical. Calling Rust once per small function is usually slower than a JIT; rust-anything finds the loop worth moving, and moves it.\n\nPaste this into Claude Code, Codex, Cursor or Gemini CLI and let your agent install it:",
+            "features": [
+              "\"Rewrite this CLI in Rust with rust-anything, end to end, and prove it behaves the same.\"",
+              "\"This search feels slow. Profile it with rust-anything and move the hot loop to Rust.\"",
+              "\"Plan a migration of src/parser/ to Rust with rust-anything; port the first unit and prove it.\"",
+              "\"Bench the Rust port in rust/text-rs against the original and tell me whether to ship it.\"",
+              "Grilling : the agent asks in rounds, each question with its recommended answer, until every",
+              "Research : background agents read each dependency's primary sources and write",
+              "Across sessions : rust/MAP.md lists every unit with its state; a session claims one unit",
+              "Cutover : the agent does what it can and writes rust/cutover.sh , an interactive script for"
+            ],
+            "sections": [
+              "Quick start",
+              "Works with",
+              "write src/port.rs (or let your agent), then:",
+              "Languages",
+              "How it works",
+              "The loop",
+              "Port a whole app",
+              "write the glue in rust/app/src/units/textkit.rs, then:",
+              "Servers",
+              "Libraries",
+              "each unit through the loop: bridge, record, port.rs, build, ",
+              "Case study: x18n's core",
+              "Hot paths: keep the data in Rust",
+              "- fuzzyScore: a quarter of the run, called per key by matche"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 39339
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "mdiri-ai/SoduWork",
+          "owner": "mdiri-ai",
+          "name": "SoduWork",
+          "url": "https://github.com/mdiri-ai/SoduWork",
+          "homepage": "https://www.soduwork.ai",
+          "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-harness",
+            "agent-orchestration",
+            "agent-workflows",
+            "ai-agents",
+            "ai-workflows",
+            "anti-slop",
+            "claude-code",
+            "codex"
+          ],
+          "stars": 1715,
+          "forks": 212,
+          "open_issues": 112,
+          "starGain": null,
+          "heat": 330.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 92,
+          "ageDays": 20,
+          "created_at": "2026-10-29T02:43:14Z",
+          "pushed_at": "2026-11-17T23:42:48Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.3,
+          "breakdown": {
+            "heat": 92,
+            "community": 61,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A chat ends with an answer. A SoduWork request ends when the person who asked signs off.\n\nWorks with Pi · OpenCode · DeepSeek Harness · Qwen Code · Kimi Code · Codex Harness · Codex\n\ngit clone https://github.com/mdiri-ai/SoduWork cd SoduWork",
+            "features": [
+              "Pick a harness for each step and switch mid-conversation",
+              "Routine steps on cheap or local models, strong models where it matters",
+              "Long tasks go to your own cloud runner",
+              "Plugins are reviewed before they are shared, granted to teams or people, and can be revoked",
+              "Roles, usage, cost and an audit log",
+              "Every request carries its acceptance criteria",
+              "A separate AI review checks each one",
+              "A person makes the final call"
+            ],
+            "sections": [
+              "SoduWork",
+              "The AI-native engine for teams and their agents",
+              "What SoduWork can do for you",
+              "Core ideas",
+              "Quick start",
+              "Already added an API key? Start here",
+              "Why SoduWork",
+              "How it works",
+              "Multi-harness · Multi-agent",
+              "Plugins and apps",
+              "How SoduWork compares",
+              "Architecture",
+              "Where does my data go?",
+              "FAQ"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 24430
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "lodash/lodash",
+          "owner": "lodash",
+          "name": "lodash",
+          "url": "https://github.com/lodash/lodash",
+          "homepage": "https://lodash.com/",
+          "description": "A modern JavaScript utility library delivering modularity, performance, & extras.",
+          "language": "JavaScript",
+          "topics": [
+            "javascript",
+            "lodash",
+            "modules",
+            "utilities"
+          ],
+          "stars": 61466,
+          "forks": 7392,
+          "open_issues": 126,
+          "starGain": 178,
+          "heat": 178,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 5338,
+          "created_at": "2012-04-07T04:11:46Z",
+          "pushed_at": "2026-10-01T23:04:09Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 78.5,
+          "breakdown": {
+            "heat": 91,
+            "community": 91,
+            "activity": 16,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Site Docs FP Guide Contributing Wiki Code of Conduct Governance Twitter Chat\n\n$ npm run build $ lodash -o ./dist/lodash.js $ lodash core -o ./dist/lodash.core.js\n\nCore build (~4 kB gzipped) Full build (~24 kB gzipped) CDN copies",
+            "features": [
+              "Core build (~4 kB gzipped)",
+              "Full build (~24 kB gzipped)",
+              "CDN copies",
+              "Iterating arrays, objects, & strings",
+              "Manipulating & testing values",
+              "Creating composite functions",
+              "lodash & per method packages",
+              "lodash-es, babel-plugin-lodash, & lodash-webpack-plugin"
+            ],
+            "sections": [
+              "lodash v4.18.1",
+              "Download",
+              "Installation",
+              "Why Lodash?",
+              "Module Formats"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3619
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "pnpm/pnpm",
+          "owner": "pnpm",
+          "name": "pnpm",
+          "url": "https://github.com/pnpm/pnpm",
+          "homepage": "https://pnpm.io",
+          "description": "Fast, disk space efficient package manager",
+          "language": "Rust",
+          "topics": [
+            "dependency-manager",
+            "install",
+            "javascript",
+            "modules",
+            "node",
+            "nodejs",
+            "npm",
+            "package-manager"
+          ],
+          "stars": 37115,
+          "forks": 1990,
+          "open_issues": 205,
+          "starGain": 12,
+          "heat": 12,
+          "heatBasis": "trending",
+          "heatPercentile": 72,
+          "ageDays": 3947,
+          "created_at": "2016-01-28T07:40:43Z",
+          "pushed_at": "2026-11-18T01:39:59Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.7,
+          "breakdown": {
+            "heat": 72,
+            "community": 85,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Fast. Up to 2x faster than the alternatives (see benchmark). Efficient. Files inside node modules are linked from a single content-addressable storage. Great for monorepos. Strict. A package can access only dependencies that are specified in its package.json . Deterministic. Has a lockfile called pnpm-lock.yaml . Works as a Node.js version manager. See pnpm runtime. Works everywhere. Supports Windows, Linux, and macOS. Battle-tested. Used in production by teams of all sizes since 2016. Experimental Rust port. Includes pacquet, an experimental port of the CLI written in Rust. See the full feature comparison with npm and Yarn.\n\npnpm uses a content-addressable filesystem to store all files from all module directories on a disk. When using npm, if you have 100 projects using lodash, you will have 100 copies of lodash on disk. With pnpm, lodash will be stored in a content-addressable storage, so:\n\n1. If you depend on different versions of lodash, only the files that differ are added to the store. If lodash has 100 files, and a new version has a change only in one of those files, pnpm update will only add 1 new file to the storage. 1. All the files are saved in a single place on the disk. When packages are installed, their files are linked from that single place consuming no additional disk space. Linking is performed using either hard-links or reflinks (copy-on-write).",
+            "features": [
+              "Fast. Up to 2x faster than the alternatives (see benchmark).",
+              "Efficient. Files inside node modules are linked from a single content-addressable storage.",
+              "Great for monorepos.",
+              "Strict. A package can access only dependencies that are specified in its package.json .",
+              "Deterministic. Has a lockfile called pnpm-lock.yaml .",
+              "Works as a Node.js version manager. See pnpm runtime.",
+              "Works everywhere. Supports Windows, Linux, and macOS.",
+              "Battle-tested. Used in production by teams of all sizes since 2016."
+            ],
+            "sections": [
+              "Platinum Sponsors",
+              "Gold Sponsors",
+              "Silver Sponsors",
+              "Background",
+              "Getting Started",
+              "Benchmark",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16157
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "BurntSushi/jiff",
+          "owner": "BurntSushi",
+          "name": "jiff",
+          "url": "https://github.com/BurntSushi/jiff",
+          "homepage": "",
+          "description": "A datetime library for Rust that encourages you to jump into the pit of success.",
+          "language": "Rust",
+          "topics": [
+            "calendar",
+            "civil",
+            "date",
+            "date-time",
+            "datetime",
+            "duration",
+            "iana",
+            "iso8601"
+          ],
+          "stars": 3170,
+          "forks": 141,
+          "open_issues": 13,
+          "starGain": 81,
+          "heat": 81,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 1004,
+          "created_at": "2024-02-17T18:31:06Z",
+          "pushed_at": "2026-11-18T01:42:13Z",
+          "license": "Unlicense",
+          "rating": 4,
+          "composite": 78.9,
+          "breakdown": {
+            "heat": 93,
+            "community": 64,
+            "activity": 64,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Jiff ==== Jiff is a datetime library for Rust that encourages you to jump into the pit of success. The focus of this library is providing high level datetime primitives that are difficult to misuse and have reasonable performance. Jiff supports automatic and seamless integration with the Time Zone Database, DST aware arithmetic and rounding, formatting and parsing zone aware datetimes losslessly, opt-in Serde support and a whole lot more.\n\nJiff takes enormous inspiration from [Temporal], which is a [TC39] proposal to improve datetime handling in JavaScript.\n\nAPI documentation on docs.rs Comparison with chrono , time , hifitime and icu The API design rationale for Jiff Platform support CHANGELOG",
+            "features": [
+              "API documentation on docs.rs",
+              "Comparison with chrono , time , hifitime and icu",
+              "The API design rationale for Jiff",
+              "Platform support",
+              "CHANGELOG",
+              "How should Jiff determine the time zone transitions for an IANA time zone",
+              "How should Jiff determine the default time zone for the current system?",
+              "When a dependency is practically required in order to interact with a"
+            ],
+            "sections": [
+              "Documentation",
+              "Example",
+              "Usage",
+              "Crate features",
+              "Performance",
+              "Platform support",
+              "Dependencies",
+              "Minimum Rust version policy"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8711
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "seaweedfs/seaweedfs",
+          "owner": "seaweedfs",
+          "name": "seaweedfs",
+          "url": "https://github.com/seaweedfs/seaweedfs",
+          "homepage": "https://seaweedfs.com",
+          "description": "SeaweedFS is a distributed storage system for object storage (S3), file systems, Iceberg table buckets, and Lance vector buckets, designed to handle billions of files with O(1) disk access and effortless horizontal scaling.",
+          "language": "Go",
+          "topics": [
+            "blob-storage",
+            "cloud-drive",
+            "distributed-file-system",
+            "distributed-storage",
+            "erasure-coding",
+            "fuse",
+            "hadoop-hdfs",
+            "hdfs"
+          ],
+          "stars": 36129,
+          "forks": 3125,
+          "open_issues": 702,
+          "starGain": 25,
+          "heat": 25,
+          "heatBasis": "trending",
+          "heatPercentile": 76,
+          "ageDays": 4509,
+          "created_at": "2014-07-14T16:41:37Z",
+          "pushed_at": "2026-11-18T01:15:01Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.5,
+          "breakdown": {
+            "heat": 76,
+            "community": 86,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "SeaweedFS is a simple and highly scalable distributed file system. There are two objectives:\n\n1. to store billions of files! 2. to serve the files fast!\n\nOne SeaweedFS cluster serves an S3 object store, a POSIX file system, a lakehouse with S3 Tables and a built-in Iceberg REST Catalog, and vector search with S3 Vector Buckets, all on shared storage. Each blob is one disk read away, capacity grows by starting another volume server, and cloud storage can be cached or tiered transparently. Blob reads and writes have O(1) complexity and can run at the full speed supported by the underlying hardware.",
+            "features": [
+              "to store billions of files!",
+              "to serve the files fast!",
+              "Download Binaries for different platforms",
+              "Wiki Documentation",
+              "HTTP REST API for the filer, master, and volume servers",
+              "Community: Slack, Twitter, Telegram, Reddit, Mailing List",
+              "SeaweedFS White Paper and introduction slides: 2025.5, 2021.5, 2019.3",
+              "Quick Start"
+            ],
+            "sections": [
+              "SeaweedFS",
+              "Quick Start",
+              "One command",
+              "Docker",
+              "Docker Compose",
+              "Kubernetes with Helm",
+              "Build from source",
+              "Scale out",
+              "Why SeaweedFS",
+              "Fast",
+              "Scalable",
+              "The most complete S3 API",
+              "A data warehouse with S3 Tables",
+              "Vector search with S3 Vector Buckets"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 36671
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "hibernate/hibernate-orm",
+          "owner": "hibernate",
+          "name": "hibernate-orm",
+          "url": "https://github.com/hibernate/hibernate-orm",
+          "homepage": "http://hibernate.org",
+          "description": "Idiomatic persistence for Java and relational databases",
+          "language": "Java",
+          "topics": [
+            "database",
+            "envers",
+            "hibernate",
+            "hibernate-orm",
+            "jakarta-persistence",
+            "jakartaee",
+            "java",
+            "jdbc"
+          ],
+          "stars": 6488,
+          "forks": 3838,
+          "open_issues": 208,
+          "starGain": null,
+          "heat": 54.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 5888,
+          "created_at": "2010-10-04T16:15:52Z",
+          "pushed_at": "2026-11-18T00:12:12Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 87.3,
+          "breakdown": {
+            "heat": 96,
+            "community": 76,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.adoc",
+            "excerpt": "Hibernate exposes relational data in a natural and type safe form,\n\n- making it easy to write complex queries and work with their results, - letting the program easily synchronize changes made in memory with the database, - respecting the ACID properties of transactions , - automatically handling temporal data and audit logging , - taking care of multi-tenancy and row-level security , - and allowing performance optimizations to be made after the basic persistence logic has already been written.\n\nHibernate is the best way for a program written in Java to take advantage of the power of the relational model, and of the expressivity of SQL, without sacrificing performance or code reuse.",
+            "features": [
+              "making it easy to write complex queries and work with their results,",
+              "letting the program easily synchronize changes made in memory with the database,",
+              "respecting the ACID properties of transactions ,",
+              "automatically handling temporal data and audit logging ,",
+              "taking care of multi-tenancy and row-level security ,",
+              "and allowing performance optimizations to be made after the basic persistence logic has already been written.",
+              "https://docs.gradle.org/current/userguide/userguide single.html[Gradle User Guide] is a typical user guide in that",
+              "https://docs.gradle.org/current/dsl/index.html[Gradle DSL Guide] is unique and excellent in quickly"
+            ],
+            "sections": [],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8638
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "atuinsh/atuin",
+          "owner": "atuinsh",
+          "name": "atuin",
+          "url": "https://github.com/atuinsh/atuin",
+          "homepage": "https://atuin.sh",
+          "description": "✨ Making your shell magical",
+          "language": "Rust",
+          "topics": [
+            "bash",
+            "fish",
+            "history",
+            "rust",
+            "shell",
+            "zsh"
+          ],
+          "stars": 32509,
+          "forks": 1047,
+          "open_issues": 457,
+          "starGain": 21,
+          "heat": 21,
+          "heatBasis": "trending",
+          "heatPercentile": 68,
+          "ageDays": 2235,
+          "created_at": "2020-10-04T23:01:58Z",
+          "pushed_at": "2026-11-17T23:13:09Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 75.5,
+          "breakdown": {
+            "heat": 68,
+            "community": 83,
+            "activity": 74,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Atuin gives you, and your agents, a history of everything that happened in your terminal.\n\nShell history Atuin replaces your shell history with a SQLite database that records exit codes, working directories, hosts and durations. Hit Ctrl r and find any command you've ever run, on any machine.\n\nAgent Threads Atuin captures your Claude Code, Codex, OpenCode and other agent sessions. Start a thread on your laptop, then atuin resume it on a different machine, in a different harness.",
+            "features": [
+              "Catpuccin for Atuin",
+              "eshell-atuin",
+              "mob (tiny creatures in your terminal)"
+            ],
+            "sections": [
+              "Quick Start",
+              "History",
+              "search for all successful make commands, recorded after 3pm ",
+              "Threads",
+              "Sync",
+              "Related projects",
+              "Community",
+              "Contributors"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9526
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "clice-io/clice",
+          "owner": "clice-io",
+          "name": "clice",
+          "url": "https://github.com/clice-io/clice",
+          "homepage": "https://docs.clice.io/clice/",
+          "description": "A C/C++, Objective-C and CUDA language server built on Clang: crash-isolated worker processes, C++20 modules and compilation contexts out of the box, plus a CLI to index, query and refactor whole projects.",
+          "language": "C++",
+          "topics": [
+            "c",
+            "clang",
+            "cpp",
+            "cpp-modules",
+            "cpp20",
+            "cuda",
+            "language-server",
+            "llvm"
+          ],
+          "stars": 1778,
+          "forks": 101,
+          "open_issues": 38,
+          "starGain": 84,
+          "heat": 84,
+          "heatBasis": "trending",
+          "heatPercentile": 76,
+          "ageDays": 846,
+          "created_at": "2024-07-25T04:42:24Z",
+          "pushed_at": "2026-11-17T10:44:12Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 72.4,
+          "breakdown": {
+            "heat": 76,
+            "community": 59,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 56,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A C/C++ language server written in modern C++, and more than a language server. Like clangd and ccls it is built on LLVM/Clang, but it is redesigned from the ground up to solve the problems their architecture has left unsolved for years. See What is clice?\n\nThe story behind clice and how it was built: clice v1.0 Released: Welcome to Modern C++.\n\n- Multi-process compilation — Compiles run in a pool of isolated worker processes, as in a modern browser. A compile that crashes or leaks on a corner case or on half-typed code costs one worker, not the server: navigation and highlighting keep working, and memory and compile priorities are managed across the pool.",
+            "features": [
+              "Multi-process compilation — Compiles run in a pool of isolated worker processes, as in a modern browser. A compile that crashes or leaks on ",
+              "Modules and a shared cache — Full C++20 named module support from a compile commands.json listing the module files: clice scans the dependen",
+              "Compilation contexts — Non-self-contained files work out of the box: a header compiles in the context of a file including it, detected when ",
+              "Better template support — A pseudo-instantiator works out what dependent names refer to without concrete arguments, and a template instantia",
+              "Works out of the box — Most projects need nothing but a compile commands.json : clice detects the environment of 50+ toolchains, nvcc, MSYS2",
+              "clice index builds the project's persisted index ahead of time, resumably, so an editor starts warm.",
+              "clice lint runs clang-tidy over the project's units in a process pool and reports a shared header's findings once; with --index the same par",
+              "clice format formats the files the configuration and the compilation database name, in parallel, with clang-format."
+            ],
+            "sections": [
+              "clice",
+              "Language Server",
+              "Command Line",
+              "Built with Modern C++",
+              "Getting Started",
+              "Install",
+              "Editor Setup",
+              "Project Setup",
+              "Documentation",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10952
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "Ray-lea/Argus",
+          "owner": "Ray-lea",
+          "name": "Argus",
+          "url": "https://github.com/Ray-lea/Argus",
+          "homepage": "https://argustask.com",
+          "description": "现代 Windows 任务管理器 · A modern task manager for Windows, built with Rust and GPUI Kit.",
+          "language": "Rust",
+          "topics": [
+            "gpui",
+            "process-manager",
+            "rust",
+            "system-monitor",
+            "task-manager",
+            "windows",
+            "windows-11"
+          ],
+          "stars": 1921,
+          "forks": 84,
+          "open_issues": 37,
+          "starGain": null,
+          "heat": 265.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 37,
+          "created_at": "2026-10-12T12:11:07Z",
+          "pushed_at": "2026-11-17T22:23:18Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 82.4,
+          "breakdown": {
+            "heat": 97,
+            "community": 59,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "简体中文 · 繁體中文 · English · Español · Deutsch · 日本語 · Français · Русский\n\nArgus 采用 Rust 直接调用 Windows 原生接口，基于 GPUI Kit 原生组件构建界面，图表曲线随屏幕刷新率连续流动。项目名称取自希腊神话中的百眼巨人阿尔戈斯（Argus Panoptes）。\n\n如果 Argus 对日常使用有所帮助，欢迎在 GitHub 上点亮 Star。这是对项目最直接的支持，也能让更多人发现它。",
+            "features": [
+              "操作系统 ：Windows 10 22H2（内部版本 19045）及以上版本（含 Windows 11），仅支持 x64 架构",
+              "图形 ：支持 DirectX 11 的图形设备与驱动",
+              "Rust stable-x86 64-pc-windows-msvc 工具链（1.100.0 及以上）",
+              "Node.js 26.13.1 及以上的 26.x 版本（亦支持 24.22.3 及以上的 24.x LTS）与 pnpm 12.18.0",
+              "Visual Studio Build Tools（勾选“使用 C++ 的桌面开发”工作负载）",
+              "[ ] 硬件传感器扩展 ：基于官方 PawnIO 驱动持续扩大消费级硬件的传感器覆盖范围（当前支持见硬件支持范围）",
+              "[ ] 快捷键扩展 ：区分左右修饰键，支持仅由修饰键或两个普通键组成的组合",
+              "代码提交与审查（Committers and reviewers） ：@Ray-lea，负责维护代码及审查外部贡献。"
+            ],
+            "sections": [
+              "Argus",
+              "⭐ Star 趋势",
+              "✨ 特性",
+              "📦 下载",
+              "💻 系统要求",
+              "🔧 从源码构建",
+              "🔑 快捷键",
+              "📚 文档",
+              "💬 交流与反馈",
+              "🤝 参与贡献",
+              "🧭 路线图",
+              "🔐 代码签名策略（Code signing policy）",
+              "🙏 致谢",
+              "📄 许可证"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 11113
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "jackotom/hongguo-drama",
+          "owner": "jackotom",
+          "name": "hongguo-drama",
+          "url": "https://github.com/jackotom/hongguo-drama",
+          "homepage": "https://github.com/jackotom/hongguo-drama/releases/latest",
+          "description": "红果短剧桌面版 · 支持 M 系列 Mac、Intel Mac 和 Windows · 三来源搜索、播放、下载与追剧 · GPL-3.0 开源",
+          "language": "JavaScript",
+          "topics": [
+            "apple-silicon",
+            "electron",
+            "hongguo",
+            "macos",
+            "short-drama",
+            "video-downloader",
+            "video-player",
+            "xifan"
+          ],
+          "stars": 1708,
+          "forks": 265,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 218.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 42,
+          "created_at": "2026-10-07T00:06:45Z",
+          "pushed_at": "2026-11-17T08:36:46Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 80,
+          "breakdown": {
+            "heat": 96,
+            "community": 61,
+            "activity": 53,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "当前正式版：7.5 （内部 7.5.0 ，构建 7.5.2 ）。本轮优先修复播放接口 HTTP 200 空响应，移植纯 JavaScript Android v5 签名与新播放器请求协议；保留下载临时清理EPERM修复。按用户本轮明确要求，仅发行Mac双架构与Windows。\n\n7.5已正式发布并设Latest。双Mac App与DMG本轮新签名、公证Accepted和装订，arm64真实下载／静音播放、Windows队列及安装升级验收通过。 Windows使用GitHub虚拟机，EXE未签名；Intel Mac仅Rosetta验收，具体结果见7.5回执。\n\n7.5正式发行页 · SHA256 · 精确源码。实际状态见7.5记录。上游部分网页片源仍可能404、只提供预览或超时，不保证所有内容永久可播。",
+            "features": [
+              "升级到 6.4 ：安装版保留应用内更新入口；完整6.3到6.4应用内更新尚未实测；也可退出旧程序后替换 Mac 应用或运行 Windows 安装包。便携版保留同目录的 data 后手动替换；1.75 及更早版本需要手动安装。",
+              "后续更新 ：Mac 与 Windows 安装版可在应用内下载新版，下载完成后由你点击重启安装，不强制升级。Windows 便携版继续通过发行页下载并手动替换。",
+              "Mac ：6.4双架构 App 与 DMG 均已完成 Developer ID 签名、Apple 公证 Accepted 和票据装订。无需全局关闭 Gatekeeper；公证不等于 App Store 审核或内容授权。",
+              "Windows ：安装版和便携版 EXE 尚未签名，可能出现系统安全提示。请核对官方下载来源；便携版首次启动会展开临时运行文件。安装版沿用原用户资料目录；3.4 起便携版把设置和下载记录放在程序目录的 data 文件夹，移动程序时请连同该文件夹一起保留。安装版与便携版不能同时运行",
+              "普通使用只需上表安装文件 ：发行页中的 Mac 更新 ZIP、 latest .yml 和 .blockmap 供更新程序使用； source 文件和 GitHub 自动生成的 Source code 是源码，不能直接运行。",
+              "升级到 6.3 ：安装版保留应用内更新入口；完整6.2到6.3应用内更新尚未实测；也可退出旧程序后替换 Mac 应用或运行 Windows 安装包。便携版保留同目录的 data 后手动替换；1.75 及更早版本需要手动安装。",
+              "后续更新 ：Mac 与 Windows 安装版可在应用内下载新版，下载完成后由你点击重启安装，不强制升级。Windows 便携版继续通过发行页下载并手动替换。",
+              "Mac ：6.3双架构 App 与 DMG 均已完成 Developer ID 签名、Apple 公证 Accepted 和票据装订。无需全局关闭 Gatekeeper；公证不等于 App Store 审核或内容授权。"
+            ],
+            "sections": [
+              "下载与安装",
+              "开始使用",
+              "7.5（正式发布）",
+              "7.4",
+              "7.3",
+              "7.2",
+              "7.1",
+              "7.0（已正式发布）",
+              "6.9",
+              "6.8",
+              "6.7",
+              "6.6",
+              "6.5",
+              "6.4"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 58286
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "3641397194-wq/gpt6-Astra",
+          "owner": "3641397194-wq",
+          "name": "gpt6-Astra",
+          "url": "https://github.com/3641397194-wq/gpt6-Astra",
+          "homepage": "https://coldcoffeeai.com/",
+          "description": "冷咖啡破甲工作台 · GPT-6.2 Astra / Sol · 十五个 AI 模型席位，可视化路由、技能安装与手机中转接入；支持 Windows / macOS / Linux / Android，附 iOS 源码。",
+          "language": "JavaScript",
+          "topics": [
+            "android",
+            "astra",
+            "claude",
+            "coldbrew",
+            "deepseek",
+            "gpt-6-2",
+            "grok",
+            "ios"
+          ],
+          "stars": 2290,
+          "forks": 477,
+          "open_issues": 17,
+          "starGain": null,
+          "heat": 190.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 92,
+          "created_at": "2026-08-17T19:36:40Z",
+          "pushed_at": "2026-11-18T00:35:26Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.5,
+          "breakdown": {
+            "heat": 95,
+            "community": 65,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "冷咖啡 · GPT-6.2 Astra / Sol 连接更简单，模型随手切，过程看得见。 电脑上看清每次请求，手机上随时开始对话。Astra 与 Sol 加入推荐区，保留你已有的模型与中转配置；支持冷咖啡付费中转，也支持自选兼容服务商。 看看 Android ↓ &nbsp;·&nbsp; 看看 iPhone ↓ &nbsp;·&nbsp; 下载安装 ↓ &nbsp;·&nbsp; 开通冷咖啡中转 ↗ &nbsp;·&nbsp; 闭源与定制服务 ↓ 电脑端界面 · DeepSeek 插件 · 上手使用 · 十五个 AI 模型 · 加入冷咖啡社群 3.3.0-preview.3 预览版 · Windows / macOS / Linux / Android / iOS · coldcoffeeai.com\n\n✦ GPT-6.2 Astra ✦ GPT-6.2 Sol 读取服务商目录后，一键选择可用的 Astra。 与 Astra 并列展示，需要时随手切换到 Sol。 填写自己的 Key → 读取模型 → 选择并发送。可用型号、额度与价格以你接入的中转为准；请求保留目录返回的准确 ID。 接入教程 ↗ 连接 · 先读取服务商 模型 · 精确 ID 再发送 界面截图仅展示客户端信息层级；图中名称和列表内容不代表实时账号权益或付费模型生成已验证。\n\n电脑 · 冷咖啡破甲工作台 手机 · Android / iOS 十五个模型席位、技能安装与备份恢复、真实路由可视化、DeepSeek Harness 插件。 Android APK、iOS SwiftUI 客户端、自定义中转、读取模型、流式对话、六类移动研究工作台、会话记录与冷咖啡社区。 查看电脑端路由与工作台 ↓ 查看移动端界面与接入方法 ↓",
+            "features": [],
+            "sections": [],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 28057
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "rikkahub/rikkahub",
+          "owner": "rikkahub",
+          "name": "rikkahub",
+          "url": "https://github.com/rikkahub/rikkahub",
+          "homepage": "https://rikka-ai.com",
+          "description": "RikkaHub is an Android APP that supports for multiple LLM providers.",
+          "language": "Kotlin",
+          "topics": [
+            "agent",
+            "android",
+            "app",
+            "chatgpt",
+            "deepseek",
+            "gemini",
+            "jetpack-compose",
+            "llm-ui"
+          ],
+          "stars": 8964,
+          "forks": 907,
+          "open_issues": 304,
+          "starGain": 55,
+          "heat": 55,
+          "heatBasis": "trending",
+          "heatPercentile": 82,
+          "ageDays": 616,
+          "created_at": "2025-03-11T14:46:55Z",
+          "pushed_at": "2026-11-17T10:28:30Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 80.2,
+          "breakdown": {
+            "heat": 82,
+            "community": 75,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 12,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A native Android LLM chat client that supports switching between different providers for conversations 🤖💬\n\n- 🎨 Material 3 Expressive design - 📦 Workspace: a proot-based Linux agent environment - 📱 Phone Use: let the AI operate your phone - 🎬 Media generation (image and video) - 🔄 Multiple AI Provider Support: custom API / URL / models (all OpenAI, Google, Anthropic compatible api) - 🖥️ Web access for multi-platform use - 🛠️ MCP and Skills support - 📝 Markdown Rendering (with code highlighting, Latex formulas, tables, Mermaid) - 🔍 Search capabilities (Exa, Tavily, Zhipu, LinkUp, Brave, Perplexity, etc.) - 🧩 Prompt variables (model name, time, etc.) - 🤳 QR code export and import for providers - 🤖 Agent customization - 🧠 File-based memory - 📝 AI Translation - 🌐 Custom HTTP request headers and request bodies - 💌 Silly Tavern character card import\n\n- Kotlin (Development language) - Koin (Dependency Injection) - Jetpack Compose (UI framework) - DataStore (Preference data storage) - Room (Database) - Coil (Image loading) - Material 3 Expressive (UI design) - Navigation 3 (Navigation) - Okhttp (HTTP client) - kotlinx.serialization (JSON serialization)",
+            "features": [
+              "🎨 Material 3 Expressive design",
+              "📦 Workspace: a proot-based Linux agent environment",
+              "📱 Phone Use: let the AI operate your phone",
+              "🎬 Media generation (image and video)",
+              "🔄 Multiple AI Provider Support: custom API / URL / models (all OpenAI, Google, Anthropic compatible api)",
+              "🖥️ Web access for multi-platform use",
+              "🛠️ MCP and Skills support",
+              "📝 Markdown Rendering (with code highlighting, Latex formulas, tables, Mermaid)"
+            ],
+            "sections": [
+              "🚀 Download",
+              "💖 Sponsors",
+              "✨ Features",
+              "✨ Development",
+              "💰 Donate",
+              "⭐ Star History",
+              "📄 License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6299
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "pbakaus/impeccable",
+      "category": "ai",
+      "lastPushed": "2026-10-24",
+      "times": 1
+    },
+    {
+      "full_name": "JuliusBrussee/caveman",
+      "category": "ai",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/TokenEconomizer",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "n8n-io/nod",
+      "category": "ai",
+      "lastPushed": "2026-11-16",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "lidge-jun/opencodex",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "Sandflow-ai/sand3d",
+      "category": "ai",
+      "lastPushed": "2026-11-13",
+      "times": 1
+    },
+    {
+      "full_name": "cobusgreyling/loop-engineering",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "kuafuai/andee",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "paipiange/nvzhuang",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "morluto/rea",
+      "category": "agent",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "category": "agent",
+      "lastPushed": "2026-10-26",
+      "times": 1
+    },
+    {
+      "full_name": "milind-soni/OpenMausBot",
+      "category": "agent",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "yetone/magpie",
+      "category": "agent",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "farion1231/cc-switch",
+      "category": "agent",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [],
+  "reviewedAt": "2026-11-18T10:14:32.338+08:00",
+  "regenerated": true
+}
