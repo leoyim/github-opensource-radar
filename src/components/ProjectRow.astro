@@ -1,7 +1,7 @@
 ---
 /**
- * 项目索引里的一行。比正文卡片紧凑：一屏能看八到十条，符合「索引」的密度。
- * 点击直达该仓库在最近一期里的锚点（正文里已有 id="repo-<slug>"）。
+ * 项目索引里的一行：排名 / 头像 / 名称简介 / 语言 / 星标与涨星 / 评分 / 期次。
+ * 语言、涨星、评分各自成列，便于横向比对；data-* 供搜索与三维排序使用。
  */
 import { avatarOf } from '../lib/load';
 import { num } from '../lib/format';
@@ -10,18 +10,44 @@ import type { Project } from '../lib/projects';
 interface Props {
   project: Project;
   base: string;
+  /** 索引页搜索模式：第 PAGE_SIZE 条之后先隐藏，交给前端过滤 */
+  startHidden?: boolean;
 }
 
-const { project: p, base } = Astro.props;
+const { project: p, base, startHidden = false } = Astro.props;
 const avatar = avatarOf(p.owner);
 const slug = p.full_name.replace('/', '__');
 const href = `${base}posts/${p.date}/#repo-${slug}`;
 const day = p.date.slice(5);
 const gain = typeof p.starGain === 'number' && p.starGain > 0 ? p.starGain : null;
 const blurb = p.summary_zh || p.description || '';
+const haystack = [
+  p.full_name,
+  p.owner,
+  p.name,
+  p.summary_zh || '',
+  p.description || '',
+  p.language || '',
+  p.categoryLabel,
+  (p.topics ?? []).join(' '),
+]
+  .join(' ')
+  .toLowerCase();
 ---
 
-<a class="proj" href={href}>
+<a
+  class="proj"
+  id={`proj-${slug}`}
+  href={href}
+  data-search={haystack}
+  data-rating={p.rating}
+  data-stars={p.stars}
+  data-gain={gain ?? Math.round(p.heat)}
+  data-date={p.date}
+  hidden={startHidden || undefined}
+>
+  <span class="proj-no">{String(p.rank).padStart(2, '0')}</span>
+
   <span class="proj-mark">
     <span>{p.owner.slice(0, 1)}</span>
     {
@@ -46,19 +72,29 @@ const blurb = p.summary_zh || p.description || '';
         <span class="proj-owner">{p.owner} /</span>
         {p.name}
       </span>
-      <span class="proj-meta">
-        {p.language && <span>{p.language}</span>}
-        <span>{p.rating.toFixed(1)} 分</span>
-        <span>{num(p.stars)} ★</span>
-        {gain ? <span class="proj-gain">+{num(gain)} / 日</span> : <span>≈ {num(Math.round(p.heat))} / 天</span>}
-      </span>
     </span>
     {blurb && <span class="proj-zh">{blurb}</span>}
   </span>
 
-  <span class="proj-tail">
-    <span class="proj-no">#{String(p.rank).padStart(2, '0')}</span>
-    <span>{day}</span>
-    {p.times > 1 && <span class="proj-times">×{p.times}</span>}
+  <span class="proj-metrics">
+    <span class="proj-lang">{p.language || '未标注'}</span>
+
+    <span class="proj-nums">
+      <b>{num(p.stars)}</b>
+      {
+        gain ? (
+          <em class="proj-gain">+{num(gain)} / 日</em>
+        ) : (
+          <em>≈ {num(Math.round(p.heat))} / 天</em>
+        )
+      }
+    </span>
+
+    <span class="proj-score">{p.rating.toFixed(1)}</span>
+
+    <span class="proj-tail">
+      <span>{day}</span>
+      {p.times > 1 && <span class="proj-times">×{p.times}</span>}
+    </span>
   </span>
 </a>

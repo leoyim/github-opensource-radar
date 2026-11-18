@@ -1,6 +1,8 @@
 ---
 /**
  * 项目索引页主体。全部页与语言页共用：只有标题、筛选态与 basePath 不同。
+ * searchable 模式（全部页）会把全部项目行随页输出（第 2 页起先隐藏），
+ * 由前端关键字过滤 + 三维排序接管分页；语言页保持静态分页不动。
  */
 import { catalogTotals, langStats, PAGE_SIZE, type Project } from '../lib/projects';
 import ProjectRow from './ProjectRow.astro';
@@ -16,9 +18,12 @@ interface Props {
   activeLang?: string | null;
   /** 当前语言显示名；全部页为 null */
   langName?: string | null;
+  /** 全部页开启关键字搜索：items 需传全量而非当页切片 */
+  searchable?: boolean;
 }
 
-const { items, page, pages, total, basePath, activeLang = null, langName = null } = Astro.props;
+const { items, page, pages, total, basePath, activeLang = null, langName = null, searchable = false } =
+  Astro.props;
 
 const base = import.meta.env.BASE_URL;
 const allHref = `${base}projects/`;
@@ -30,7 +35,7 @@ const kicker = isLang ? '语言' : '全部项目';
 const heading = isLang ? langName : '项目索引';
 const lede = isLang
   ? `${langName} 项目共 ${total} 条，按最近上榜排序。同一仓库多次上榜只占一行，数据取最近一次出现的记录。点任意一行回到该仓库所在的那一期。`
-  : `把 ${totals.issues} 期日报里出现过的仓库摊平成一份目录，按最近上榜排序。同一仓库多次上榜只占一行，数据取最近一次出现的记录。可按语言收窄范围，逐页翻阅。`;
+  : `把 ${totals.issues} 期日报里出现过的仓库摊平成一份目录，按最近上榜排序。同一仓库多次上榜只占一行，数据取最近一次出现的记录。可按语言收窄范围、按关键字即时检索与排序。`;
 
 const start = total === 0 ? 0 : (page - 1) * PAGE_SIZE + 1;
 const end = Math.min(total, start + items.length - 1);
@@ -53,8 +58,30 @@ const end = Math.min(total, start + items.length - 1);
 </header>
 
 <div class="filters">
+  {
+    searchable && (
+      <div class="filter-row proj-search-row">
+        <div class="proj-search">
+          <svg viewBox="0 0 18 18" width="14" height="14" aria-hidden="true" focusable="false">
+            <circle cx="7.3" cy="7.3" r="4.8" fill="none" stroke="currentColor" stroke-width="1.4" />
+            <path d="M11 11 L16 16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+          </svg>
+          <input
+            type="search"
+            data-proj-search
+            placeholder="搜索仓库、作者或描述..."
+            aria-label="搜索项目"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button type="button" class="proj-search-clear" data-proj-clear aria-label="清空搜索" hidden>
+            ×
+          </button>
+        </div>
+      </div>
+    )
+  }
   <div class="filter-row">
-    <span class="filter-label">语言</span>
     <div class="filter-chips">
       <a class="chip" href={allHref} aria-pressed={activeLang === null ? 'true' : 'false'}>
         全部 <span class="n">{totals.projects}</span>
@@ -70,15 +97,34 @@ const end = Math.min(total, start + items.length - 1);
         ))
       }
     </div>
-    <span class="filter-count">
-      共 <b>{total}</b> 条{total > 0 && <span class="filter-range"> · {start}–{end}</span>}
+    {
+      searchable && (
+        <div class="proj-sort" role="group" aria-label="排序方式">
+          <button type="button" class="chip" data-sort-btn="recent" aria-pressed="true">最近</button>
+          <button type="button" class="chip" data-sort-btn="gain" aria-pressed="false">涨星</button>
+          <button type="button" class="chip" data-sort-btn="rating" aria-pressed="false">评分</button>
+        </div>
+      )
+    }
+    <span class="filter-count" data-search-count hidden></span>
+    <span class="filter-count" data-static-count>
+      显示 <b>{searchable ? Math.min(24, total) : items.length}</b> / {total}
     </span>
   </div>
 </div>
 
-<div class="proj-list">
-  {items.map((p) => <ProjectRow project={p} base={base} />)}
+<div class="proj-list" data-proj-list>
+  {items.map((p, i) => <ProjectRow project={p} base={base} startHidden={searchable && i >= PAGE_SIZE} />)}
 </div>
+
+{
+  searchable && (
+    <p class="proj-empty" data-proj-empty hidden>
+      <b>无匹配项目</b>
+      换个关键字试试：支持仓库名、中英简介、语言与话题，空格分隔即多条件同时命中。
+    </p>
+  )
+}
 
 <ProjectPager page={page} pages={pages} basePath={basePath} />
 
@@ -86,3 +132,134 @@ const end = Math.min(total, start + items.length - 1);
   <span>共 {total} 个项目 · 第 {page} / {pages} 页 · 按最近上榜排序</span>
   <span class="mono">开源雷达 · 项目索引</span>
 </div>
+
+{
+  searchable && (
+    <script>
+      // 关键字即时过滤 + 三维排序：全部项目行已随页输出，空格分词 AND 匹配 data-search。
+      // 搜索/排序态接管分页（翻页器隐藏、显示命中数），q/sort 写回 URL 可分享。
+      const input = document.querySelector('[data-proj-search]');
+      if (input) {
+        const list = document.querySelector('[data-proj-list]');
+        const rows = Array.from(document.querySelectorAll('.proj'));
+        const pager = document.querySelector('.pages');
+        const staticCount = document.querySelector('[data-static-count]');
+        const countEl = document.querySelector('[data-search-count]');
+        const emptyEl = document.querySelector('[data-proj-empty]');
+        const clearBtn = document.querySelector('[data-proj-clear]');
+        const sortBtns = Array.from(document.querySelectorAll('[data-sort-btn]'));
+        const PAGE_SIZE = 24;
+
+        const originals = rows.map((r) => ({
+          name: r.querySelector('.proj-name'),
+          zh: r.querySelector('.proj-zh'),
+          nameHtml: r.querySelector('.proj-name') ? r.querySelector('.proj-name').innerHTML : '',
+          zhHtml: r.querySelector('.proj-zh') ? r.querySelector('.proj-zh').innerHTML : '',
+        }));
+
+        const escapeHtml = (s) =>
+          s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+        const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+        const paint = (r, meta, tokens) => {
+          const re = new RegExp('(' + tokens.map(escapeRe).join('|') + ')', 'gi');
+          if (meta.name) meta.name.innerHTML = escapeHtml(meta.name.textContent).replace(re, '<mark>$1</mark>');
+          if (meta.zh) meta.zh.innerHTML = escapeHtml(meta.zh.textContent).replace(re, '<mark>$1</mark>');
+        };
+        const repaint = (meta) => {
+          if (meta.name) meta.name.innerHTML = meta.nameHtml;
+          if (meta.zh) meta.zh.innerHTML = meta.zhHtml;
+        };
+
+        const initialOrder = rows.slice();
+        const origMap = new Map(rows.map((r, i) => [r, originals[i]]));
+
+        const sortRows = (mode) => {
+          const key = (r, k) => Number(r.dataset[k] || 0);
+          const ordered = initialOrder.slice();
+          if (mode === 'rating') {
+            ordered.sort((a, b) => key(b, 'rating') - key(a, 'rating') || key(b, 'stars') - key(a, 'stars'));
+          } else if (mode === 'gain') {
+            ordered.sort((a, b) => key(b, 'gain') - key(a, 'gain') || key(b, 'stars') - key(a, 'stars'));
+          }
+          // recent = 数据原本顺序；只有 DOM 顺序与目标不一致时才动节点
+          if (ordered.some((r, i) => list.children[i] !== r)) {
+            ordered.forEach((r) => list.appendChild(r));
+          }
+          return ordered;
+        };
+
+        let sort = 'recent';
+
+        const apply = (raw) => {
+          const q = raw.trim();
+          const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+          const searching = tokens.length > 0;
+          const ordered = sortRows(sort);
+
+          let visible = 0;
+          ordered.forEach((r, i) => {
+            const hit = !searching || tokens.every((t) => (r.dataset.search || '').includes(t));
+            r.hidden = searching ? !hit : i >= PAGE_SIZE;
+            if (!r.hidden) visible += 1;
+            const meta = origMap.get(r);
+            if (searching && hit) paint(r, meta, tokens);
+            else repaint(meta);
+          });
+
+          if (searching) {
+            countEl.textContent = '显示 ' + visible + ' / ' + rows.length;
+            countEl.hidden = false;
+            staticCount.hidden = true;
+            pager.hidden = true;
+            emptyEl.hidden = visible > 0;
+          } else {
+            countEl.hidden = true;
+            staticCount.hidden = false;
+            pager.hidden = false;
+            emptyEl.hidden = true;
+          }
+          clearBtn.hidden = !searching;
+
+          sortBtns.forEach((b) => b.setAttribute('aria-pressed', b.dataset.sortBtn === sort ? 'true' : 'false'));
+
+          const url = new URL(location.href);
+          if (searching) url.searchParams.set('q', q);
+          else url.searchParams.delete('q');
+          if (sort !== 'recent') url.searchParams.set('sort', sort);
+          else url.searchParams.delete('sort');
+          history.replaceState(
+            null,
+            '',
+            url.pathname + (url.searchParams.toString() ? '?' + url.searchParams.toString() : '') + location.hash
+          );
+        };
+
+        let timer = 0;
+        input.addEventListener('input', () => {
+          clearTimeout(timer);
+          timer = setTimeout(() => apply(input.value), 120);
+        });
+        clearBtn.addEventListener('click', () => {
+          input.value = '';
+          apply('');
+          input.focus();
+        });
+        sortBtns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            sort = btn.dataset.sortBtn;
+            apply(input.value);
+          });
+        });
+
+        // 从 URL 恢复 q / sort（可分享、刷新保留）
+        const p0 = new URLSearchParams(location.search);
+        const q0 = p0.get('q');
+        const s0 = p0.get('sort');
+        if (s0 === 'gain' || s0 === 'rating') sort = s0;
+        if (q0) input.value = q0;
+        if (q0 || sort !== 'recent') apply(input.value);
+      }
+    </script>
+  )
+}
