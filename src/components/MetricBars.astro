@@ -3,9 +3,11 @@ import type { Breakdown } from '../lib/schema';
 
 interface Props {
   breakdown?: Breakdown;
+  /** 默认展开（新版面在右侧数据面板中直接亮出四行） */
+  open?: boolean;
 }
 
-const { breakdown } = Astro.props;
+const { breakdown, open = false } = Astro.props;
 const rows = [
   { key: 'heat', label: '热度增速' },
   { key: 'community', label: '社区规模' },
@@ -16,7 +18,7 @@ const rows = [
 
 {
   breakdown && (
-    <details class="breakdown">
+    <details class="breakdown" open={open || undefined}>
       <summary>评分依据</summary>
       <div class="bars">
         {rows.map((r) => {

@@ -22,6 +22,7 @@ export const PALETTES: Palette[] = [
   { id: 'celadon', name: '青瓷雅韵', short: '瓷', desc: '温润 · 清雅 · 克制', swatch: '#477F78', surface: '#F5F7F2' },
   { id: 'daiqing', name: '黛青云山', short: '黛', desc: '沉静 · 理性 · 云山', swatch: '#315C78', surface: '#F2F6F7' },
   { id: 'zhusha', name: '朱砂鎏金', short: '朱', desc: '典雅 · 印章 · 宣纸', swatch: '#A83D35', surface: '#F8F4EA' },
+  { id: 'zhihuang', name: '栀黄秋声', short: '栀', desc: '灿金 · 明艳 · 秋实', swatch: '#B8860B', surface: '#FAF6EA' },
   { id: 'feicui', name: '翡翠竹影', short: '竹', desc: '自然 · 生长 · 竹影', swatch: '#39765B', surface: '#F3F7F0' },
   { id: 'ziqi', name: '紫气东方', short: '紫', desc: '创新 · 未来 · 东方', swatch: '#7061A8', surface: '#F6F4FA' },
   { id: 'moyun', name: '墨韵宣纸', short: '墨', desc: '经典 · 墨绿 · 冷纸白', swatch: '#14573F', surface: '#EEEFEA' },

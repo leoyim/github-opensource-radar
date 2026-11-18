@@ -2,7 +2,7 @@
 import RatingMeter from './RatingMeter.astro';
 import MetricBars from './MetricBars.astro';
 import Sparkline from './Sparkline.astro';
-import { num, heatLabel } from '../lib/format';
+import { num } from '../lib/format';
 import type { IssueItem, SeriesPoint } from '../lib/schema';
 import type { Interpretation } from '../lib/interpretations';
 
@@ -20,10 +20,13 @@ const starValues = series.map((p) => p.stars);
 
 const slug = item.full_name.replace('/', '__');
 const words = interpretation ? Math.max(100, Math.round(interpretation.chars / 100) * 100) : 0;
-const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
 ---
 
-<!-- 信号列表行：版式取「报纸榜单」，交互钩子（data-scores / .rel / .repo-rank / data-read）原样保留 -->
+<!--
+  条目卡：左主栏（名称/摘要/标签/评分依据）+ 右数据面板（评分/指标/走势/解读按钮）。
+  面板自上而下填满，主栏底部一行收口，不留空档。
+  交互钩子（data-scores / .rel / .repo-rank / data-read）原样保留。
+-->
 <article
   class="repo row"
   id={`repo-${slug}`}
@@ -44,63 +47,65 @@ const hasActions = Boolean(interpretation) || Boolean(item.breakdown);
     {item.summary_zh && <p class="row-sum">{item.summary_zh}</p>}
     {item.highlight_zh && <p class="row-hl">{item.highlight_zh}</p>}
 
-    {
-      item.topics && item.topics.length > 0 && (
-        <ul class="row-topics">
-          {item.topics.slice(0, 8).map((t) => (
-            <li class="topic">{t}</li>
-          ))}
-        </ul>
-      )
-    }
-
-    {
-      hasActions && (
-        <div class="row-extra">
-          <MetricBars breakdown={item.breakdown} />
-        </div>
-      )
-    }
+    <div class="row-foot">
+      {
+        item.topics && item.topics.length > 0 && (
+          <ul class="row-topics">
+            {item.topics.slice(0, 8).map((t) => (
+              <li class="topic">{t}</li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
   </div>
 
-  <div class="signals">
-    <span><b>{num(item.stars)}</b> ★</span>
-    {
-      item.starGain != null && item.starGain > 0 ? (
-        <span class="up">
-          <b>+{num(item.starGain)}</b> / 日
-        </span>
-      ) : (
-        <span>
-          ≈ {item.heat} / 天
-        </span>
-      )
-    }
-    <span>{heatLabel(item.heatBasis)}</span>
-    {item.forks ? <span><b>{num(item.forks)}</b> forks</span> : null}
-    {item.license && <span>{item.license}</span>}
+  <div class="row-side">
+    <div class="side-score">
+      <RatingMeter rating={item.rating} />
+      {
+        hasScores && (
+          <div class="rel" aria-hidden="true">
+            <div class="rel-bar"><i></i></div>
+            <div class="rel-num">0%</div>
+          </div>
+        )
+      }
+    </div>
+
+    <dl class="side-data">
+      <div><dt>星标</dt><dd><b>{num(item.stars)}</b> ★</dd></div>
+      {
+        item.starGain != null && item.starGain > 0 ? (
+          <div>
+            <dt>热度</dt>
+            <dd class="up"><b>+{num(item.starGain)}</b> / 日 · {item.heatBasis === 'snapshot' ? '真实日增' : item.heatBasis === 'trending' ? 'Trending 日增' : '速度估算'}</dd>
+          </div>
+        ) : (
+          <div>
+            <dt>热度</dt>
+            <dd>≈ {item.heat} / 天 · {item.heatBasis === 'snapshot' ? '真实日增' : item.heatBasis === 'trending' ? 'Trending 日增' : '速度估算'}</dd>
+          </div>
+        )
+      }
+      {item.forks ? <div><dt>Forks</dt><dd><b>{num(item.forks)}</b></dd></div> : null}
+      {item.license && <div><dt>许可</dt><dd>{item.license}</dd></div>}
+    </dl>
+
+    {item.breakdown && (
+      <div class="side-breakdown">
+        <MetricBars breakdown={item.breakdown} open />
+      </div>
+    )}
+
     {
       starValues.length >= 2 && (
-        <span class="row-spark">
+        <div class="side-spark">
           <Sparkline values={starValues} label={`${item.full_name} 星标走势`} />
-        </span>
-      )
-    }
-  </div>
-
-  <div class="verdict">
-    <RatingMeter rating={item.rating} />
-    {
-      hasScores && (
-        <div class="rel" aria-hidden="true">
-          <div class="rel-bar"><i></i></div>
-          <div class="rel-num">0%</div>
         </div>
       )
     }
-  </div>
 
-  <div class="row-action">
     {interpretation && (
       <a class="read" href={`#read-${slug}`} data-read={slug}>
         解读<span class="read-n mono">{words} 字</span>

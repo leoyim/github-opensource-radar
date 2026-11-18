@@ -1,6 +1,7 @@
 ---
 import SiteNav from '../components/SiteNav.astro';
 import '../styles/global.css';
+import { listDates } from '../lib/load';
 
 interface Props {
   title: string;
@@ -14,8 +15,12 @@ const {
 
 const base = import.meta.env.BASE_URL;
 
+// 站点起点：数据里最早的一期（listDates 为倒序，取末位）
+const sinceDate = listDates().at(-1) ?? '';
+
 // 反馈直达新建 issue，省去用户自己找仓库入口
 const issueNewUrl = 'https://github.com/leoyim/github-opensource-radar/issues/new';
+const repoUrl = 'https://github.com/leoyim/github-opensource-radar';
 
 // 只有配置了真实站点地址才输出 canonical / og:url，避免本地构建产出占位域名
 const hasRealSite = Boolean(Astro.site) && !/example\.github\.io/.test(Astro.site!.href);
@@ -51,7 +56,7 @@ const year = 2026;
           // 配色也要在首屏定好，否则会先闪一下默认青瓷再跳到用户选的那套。
           // id 与 src/lib/palettes.ts 保持一致；非法值回退默认。
           var p = localStorage.getItem('palette') || 'celadon';
-          if (!/^(celadon|daiqing|zhusha|feicui|ziqi|moyun)$/.test(p)) p = 'celadon';
+          if (!/^(celadon|daiqing|zhusha|zhihuang|feicui|ziqi|moyun)$/.test(p)) p = 'celadon';
           document.documentElement.dataset.palette = p;
         } catch (e) {}
       })();
@@ -76,17 +81,32 @@ const year = 2026;
             条目信息取自公开数据与项目 README，可能存在滞后或误差；外部链接的内容与安全性由目标站点负责，
             是否使用、是否执行其中的命令，请自行判断。
           </p>
-          <p class="imprint">
-            <a href={issueNewUrl} target="_blank" rel="noopener noreferrer">建议与勘误</a>
-            <br />
-            © {year} OpenSource Radar
-            <br />
-            印章字形：开元小篆／全字库
-          </p>
         </div>
         <!-- 印章：字形取自《说文》小篆字体轮廓（public/seal.svg，开元小篆／全字库），
              右列「開源」、左列「靁達」，竖读自右向左 -->
         <div class="seal" aria-hidden="true"><span class="seal-art"></span></div>
+        <!-- 版权行：单行排满整个页脚宽度，含构建/部署/站点起点标识 -->
+        <p class="imprint">
+          <a href={issueNewUrl} target="_blank" rel="noopener noreferrer">建议与勘误</a>
+          <span class="dot" aria-hidden="true">·</span>
+          <span>© {year} OpenSource Radar</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span>印章字形：开元小篆／全字库</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <a
+            href={`${repoUrl}/actions`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="每日数据由 GitHub Actions 定时抓取与构建">Built by GitHub Actions</a>
+          <span class="dot" aria-hidden="true">·</span>
+          <a
+            href={`${repoUrl}/deployments`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="静态产物由 GitHub Pages 发布">Deployed by GitHub Pages</a>
+          <span class="dot" aria-hidden="true">·</span>
+          <span title="数据里最早的一期，即本站起点">Since {sinceDate}</span>
+        </p>
       </div>
     </footer>
     <button class="to-top" type="button" data-to-top aria-label="回到顶部">↑</button>
@@ -258,285 +278,101 @@ const year = 2026;
         });
       })();
 
-      /* 六套中国风配色：只改 <html data-palette>，色值全部由 CSS token 决定 */
+      /* 六套中国风配色：自绘下拉。只改 <html data-palette>，色值全部由 CSS token 决定 */
       (function () {
         var root = document.documentElement;
         var picker = document.querySelector('[data-palette-picker]');
-        var current = document.querySelector('[data-palette-current]');
-        var options = document.querySelectorAll('[data-palette-option]');
+        if (!picker) return;
+        var trigger = picker.querySelector('[data-palette-trigger]');
+        var menu = picker.querySelector('[data-palette-menu]');
+        var dot = picker.querySelector('[data-palette-dot]');
+        var nameEl = picker.querySelector('[data-palette-name]');
+        var options = Array.prototype.slice.call(menu.querySelectorAll('[data-palette-option]'));
+        var NAME = {};
+        options.forEach(function (o) {
+          NAME[o.getAttribute('data-palette-option')] = (o.textContent || '').trim();
+        });
+
+        function setOpen(on) {
+          if (on === picker.classList.contains('is-open')) return;
+          picker.classList.toggle('is-open', on);
+          trigger.setAttribute('aria-expanded', on ? 'true' : 'false');
+          if (on) {
+            menu.hidden = false;
+            var cur = menu.querySelector('[aria-selected="true"]') || options[0];
+            if (cur) cur.focus({ preventScroll: true });
+          } else {
+            menu.hidden = true;
+          }
+        }
+
+        function apply(id) {
+          if (!NAME[id]) return;
+          root.dataset.palette = id;
+          try {
+            localStorage.setItem('palette', id);
+          } catch (err) {}
+          sync();
+        }
 
         function sync() {
           var id = root.dataset.palette || 'celadon';
-          options.forEach(function (btn) {
-            var on = btn.getAttribute('data-palette-option') === id;
-            btn.classList.toggle('is-current', on);
-            btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-            if (!on) return;
-            var short = btn.getAttribute('data-palette-short') || '瓷';
-            var name = btn.getAttribute('data-palette-name') || short;
-            if (current) current.textContent = short;
-            // 常驻小扇与扇面朱印跟着当前骨走
-            var idx = Number(btn.getAttribute('data-palette-index')) || 0;
-            if (picker) {
-              picker.querySelectorAll('[data-mini-bone]').forEach(function (el) {
-                el.classList.toggle('is-on', Number(el.getAttribute('data-mini-bone')) === idx);
-              });
-              var seal = picker.querySelector('[data-fan-seal]');
-              if (seal) seal.textContent = short;
-            }
-            var trigger = picker && picker.querySelector('summary');
-            if (trigger) {
-              trigger.title = '折扇 · 当前' + name;
-              trigger.setAttribute('aria-label', '折扇，当前' + name + '，展开十八骨换配色');
-            }
+          options.forEach(function (o) {
+            var on = o.getAttribute('data-palette-option') === id;
+            o.setAttribute('aria-selected', on ? 'true' : 'false');
           });
+          var sw = getComputedStyle(menu.querySelector('[data-palette-option="' + id + '"]')).getPropertyValue('--sw').trim();
+          if (dot && sw) dot.style.background = sw;
+          if (nameEl) nameEl.textContent = NAME[id] || id;
           syncMeta();
         }
 
-        // 全屏扇子打开时锁住页面滚动，收扇后还原；焦点落到当前那根骨
-        function lockScroll(on) {
-          document.documentElement.style.overflow = on ? 'hidden' : '';
-          document.body.style.overflow = on ? 'hidden' : '';
-        }
-        if (picker) {
-          picker.addEventListener('toggle', function () {
-            lockScroll(picker.open);
-            var plate = picker.querySelector('.fan-plate');
-            if (!picker.open) {
-              if (plate) plate.classList.remove('is-unfolding');
-              return;
-            }
-            // 收扇时卸掉，展开时重挂：<details> 收起并不销毁内容，不这样动画只会播一次
-            if (plate) {
-              plate.classList.remove('is-unfolding');
-              void plate.offsetWidth;
-              plate.classList.add('is-unfolding');
-            }
-            var cur = picker.querySelector('.fan-bone.is-current');
-            if (cur) cur.focus({ preventScroll: true });
-          });
-        }
-
-        /* 开扇音：一声很轻的纸面掠过 ＋ 骨节轻碰，全部由 Web Audio 现场合成，不加载音频文件 */
-        var SFX = (function () {
-          var AC = window.AudioContext || window.webkitAudioContext;
-          var ctx = null;
-          var off = false;
-          try {
-            off = localStorage.getItem('fan-sound') === 'off';
-          } catch (err) {}
-
-          function noise(seconds) {
-            var len = Math.max(1, Math.floor(ctx.sampleRate * seconds));
-            var buf = ctx.createBuffer(1, len, ctx.sampleRate);
-            var data = buf.getChannelData(0);
-            for (var i = 0; i < len; i++) data[i] = Math.random() * 2 - 1;
-            return buf;
-          }
-
-          function unfold() {
-            if (off || !AC) return;
-            if (!ctx) {
-              try {
-                ctx = new AC();
-              } catch (err) {
-                return;
-              }
-            }
-            if (ctx.state === 'suspended') ctx.resume();
-            var t = ctx.currentTime + 0.02;
-
-            // 纸面掠过：带通扫频的噪声，先亮后暗
-            var paper = ctx.createBufferSource();
-            paper.buffer = noise(0.8);
-            var bp = ctx.createBiquadFilter();
-            bp.type = 'bandpass';
-            bp.Q.value = 1.2;
-            bp.frequency.setValueAtTime(560, t);
-            bp.frequency.exponentialRampToValueAtTime(2300, t + 0.3);
-            bp.frequency.exponentialRampToValueAtTime(1200, t + 0.58);
-            var pg = ctx.createGain();
-            pg.gain.setValueAtTime(0.0001, t);
-            pg.gain.exponentialRampToValueAtTime(0.06, t + 0.15);
-            pg.gain.exponentialRampToValueAtTime(0.0001, t + 0.6);
-            paper.connect(bp);
-            bp.connect(pg);
-            pg.connect(ctx.destination);
-            paper.start(t);
-            paper.stop(t + 0.66);
-
-            // 骨节轻轻一碰
-            var clack = ctx.createBufferSource();
-            clack.buffer = noise(0.12);
-            var lp = ctx.createBiquadFilter();
-            lp.type = 'lowpass';
-            lp.frequency.value = 460;
-            var cg = ctx.createGain();
-            cg.gain.setValueAtTime(0.0001, t + 0.44);
-            cg.gain.exponentialRampToValueAtTime(0.045, t + 0.47);
-            cg.gain.exponentialRampToValueAtTime(0.0001, t + 0.56);
-            clack.connect(lp);
-            lp.connect(cg);
-            cg.connect(ctx.destination);
-            clack.start(t + 0.44);
-            clack.stop(t + 0.58);
-          }
-
-          /* 合扇音：开扇声的倒向——纸面由亮转暗，收到底轻轻一记 */
-          function fold() {
-            if (off || !AC) return;
-            if (!ctx) {
-              try {
-                ctx = new AC();
-              } catch (err) {
-                return;
-              }
-            }
-            if (ctx.state === 'suspended') ctx.resume();
-            var t = ctx.currentTime + 0.02;
-
-            // 纸面收拢：带通扫频的噪声，由亮转暗
-            var paper = ctx.createBufferSource();
-            paper.buffer = noise(1.1);
-            var bp = ctx.createBiquadFilter();
-            bp.type = 'bandpass';
-            bp.Q.value = 1.1;
-            bp.frequency.setValueAtTime(2100, t);
-            bp.frequency.exponentialRampToValueAtTime(520, t + 0.86);
-            var pg = ctx.createGain();
-            pg.gain.setValueAtTime(0.0001, t);
-            pg.gain.exponentialRampToValueAtTime(0.055, t + 0.12);
-            pg.gain.exponentialRampToValueAtTime(0.0001, t + 0.92);
-            paper.connect(bp);
-            bp.connect(pg);
-            pg.connect(ctx.destination);
-            paper.start(t);
-            paper.stop(t + 0.98);
-
-            // 收拢到底的一声轻响
-            var clack = ctx.createBufferSource();
-            clack.buffer = noise(0.16);
-            var lp = ctx.createBiquadFilter();
-            lp.type = 'lowpass';
-            lp.frequency.value = 380;
-            var cg = ctx.createGain();
-            cg.gain.setValueAtTime(0.0001, t + 0.82);
-            cg.gain.exponentialRampToValueAtTime(0.05, t + 0.86);
-            cg.gain.exponentialRampToValueAtTime(0.0001, t + 0.99);
-            clack.connect(lp);
-            lp.connect(cg);
-            cg.connect(ctx.destination);
-            clack.start(t + 0.82);
-            clack.stop(t + 1);
-          }
-
-          return {
-            unfold: unfold,
-            fold: fold,
-            isOff: function () {
-              return off;
-            },
-            set: function (next) {
-              off = !!next;
-              try {
-                localStorage.setItem('fan-sound', off ? 'off' : 'on');
-              } catch (err) {}
-            }
-          };
-        })();
-
-        /* ---------- 合扇：收扇也要走一遍动效与声音 ---------- */
-        var CLOSE_MS = 1050; // 与 CSS 的 is-closing 时长对齐
-        var closing = false;
-        function beginClose() {
-          if (!picker || !picker.open || closing) return;
-          closing = true;
-          var plate = picker.querySelector('.fan-plate');
-          if (plate) {
-            plate.classList.remove('is-unfolding');
-            plate.classList.remove('is-closing');
-            // 强制回流：合扇用的是同一组关键帧，不这样动画会接着旧的时间轴跑
-            void plate.offsetWidth;
-            plate.classList.add('is-closing');
-          }
-          // 三维那侧据此把扇子向中轴合拢
-          picker.dispatchEvent(new CustomEvent('fan:closing'));
-          SFX.fold();
-          window.setTimeout(function () {
-            closing = false;
-            if (plate) plate.classList.remove('is-closing');
-            if (picker) {
-              picker.open = false;
-              var s = picker.querySelector('summary');
-              if (s) s.focus();
-            }
-          }, CLOSE_MS);
-        }
-
-        // 音效开关：按在扇子右下角那枚小印上
-        var soundBtn = document.querySelector('[data-fan-sound]');
-        function paintSound() {
-          if (!soundBtn) return;
-          var on = !SFX.isOff();
-          soundBtn.textContent = on ? '音' : '静';
-          soundBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
-          var label = on ? '开扇音效：开，点击关闭' : '开扇音效：关，点击打开';
-          soundBtn.title = label;
-          soundBtn.setAttribute('aria-label', label);
-        }
-        paintSound();
-        if (soundBtn) {
-          soundBtn.addEventListener('click', function () {
-            SFX.set(!SFX.isOff());
-            paintSound();
-            if (!SFX.isOff()) SFX.unfold();
-          });
-        }
-
-        // 真正展开的那一刻发声；收扇走合扇音
-        if (picker) {
-          var fanTrigger = picker.querySelector('summary');
-          if (fanTrigger) {
-            fanTrigger.addEventListener('click', function (ev) {
-              if (closing) {
-                ev.preventDefault();
-                return;
-              }
-              if (picker.open) {
-                // 已展开时点图标：也走一遍合扇，不直接消失
-                ev.preventDefault();
-                beginClose();
-                return;
-              }
-              SFX.unfold();
-            });
-          }
-        }
-
-        document.addEventListener('click', function (e) {
-          var btn = e.target.closest('[data-palette-option]');
-          if (btn) {
-            var id = btn.getAttribute('data-palette-option');
-            root.dataset.palette = id;
-            try {
-              localStorage.setItem('palette', id);
-            } catch (err) {}
-            beginClose();
-            sync();
-            return;
-          }
-          // 点透明底或扇面之外的空白收扇
-          if (e.target.closest('[data-fan-backdrop]')) {
-            beginClose();
-            return;
-          }
-          if (picker && picker.open && !picker.contains(e.target)) beginClose();
+        trigger.addEventListener('click', function () {
+          setOpen(!picker.classList.contains('is-open'));
         });
 
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' && picker && picker.open) {
-            beginClose();
+        menu.addEventListener('click', function (e) {
+          var o = e.target.closest('[data-palette-option]');
+          if (!o) return;
+          apply(o.getAttribute('data-palette-option'));
+          setOpen(false);
+          trigger.focus({ preventScroll: true });
+        });
+
+        // 方向键在色板间移动，Enter/Space 选中，Esc 收起
+        menu.addEventListener('keydown', function (e) {
+          var cur = document.activeElement;
+          var idx = options.indexOf(cur);
+          if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            var step = e.key === 'ArrowDown' ? 1 : -1;
+            options[(idx + step + options.length) % options.length].focus();
+          } else if (e.key === 'Home') {
+            e.preventDefault();
+            options[0].focus();
+          } else if (e.key === 'End') {
+            e.preventDefault();
+            options[options.length - 1].focus();
+          } else if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            if (cur && idx >= 0) {
+              apply(cur.getAttribute('data-palette-option'));
+              setOpen(false);
+              trigger.focus({ preventScroll: true });
+            }
+          } else if (e.key === 'Escape') {
+            e.preventDefault();
+            setOpen(false);
+            trigger.focus({ preventScroll: true });
           }
+        });
+
+        // 点外面收起
+        document.addEventListener('click', function (e) {
+          if (picker.classList.contains('is-open') && !picker.contains(e.target)) setOpen(false);
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && picker.classList.contains('is-open')) setOpen(false);
         });
 
         sync();
