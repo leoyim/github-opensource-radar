@@ -25,7 +25,7 @@ export const PALETTES: Palette[] = [
   { id: 'zhihuang', name: '栀黄秋声', short: '栀', desc: '灿金 · 明艳 · 秋实', swatch: '#B8860B', surface: '#FAF6EA' },
   { id: 'feicui', name: '翡翠竹影', short: '竹', desc: '自然 · 生长 · 竹影', swatch: '#39765B', surface: '#F3F7F0' },
   { id: 'ziqi', name: '紫气东方', short: '紫', desc: '创新 · 未来 · 东方', swatch: '#7061A8', surface: '#F6F4FA' },
-  { id: 'moyun', name: '墨韵宣纸', short: '墨', desc: '经典 · 墨绿 · 冷纸白', swatch: '#14573F', surface: '#EEEFEA' },
+  { id: 'moyun', name: '松烟宣纸', short: '墨', desc: '玄墨 · 松烟 · 宣纸', swatch: '#1F1E1C', surface: '#F7F4EC' },
 ];
 
 export const DEFAULT_PALETTE = 'celadon';

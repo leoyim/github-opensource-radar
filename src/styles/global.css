@@ -22,6 +22,10 @@
    ============================================================ */
 :root {
   /* ---- 色相组（默认 = 01 青瓷雅韵） ---- */
+  /* 展示字体与字重随配色走：楷/仿/隶没有真粗体，字重一律 400、层级靠字号；
+     仓库名、评分等「功能性标题」仍锁宋体（--serif），保证索引页的可读性 */
+  --font-display: "Kaiti SC", "STKaiti", KaiTi, "DFKai-SB", var(--serif);
+  --display-weight: 400;
   --hue: #477f78;
   --hue-deep: #2f5f59;
   --hue-wash: #dfeae3;
@@ -133,6 +137,8 @@
   --ink-c: #1f3341;
   --ink2-c: #3f5868;
   --ink3-c: #5d7482;
+  --font-display: var(--serif);
+  --display-weight: 600;
 }
 
 /* 03 朱砂鎏金：朱红只作专色，不铺底 */
@@ -151,6 +157,8 @@
   --ink-c: #2b2523;
   --ink2-c: #534942;
   --ink3-c: #6f6055;
+  --font-display: "STFangsong", "FangSong", "FangSong_GB2312", var(--serif);
+  --display-weight: 400;
 }
 
 /* 04 栀黄秋声：栀子染出的灿金，纸面微暖，黄只作专色不铺底 */
@@ -169,6 +177,8 @@
   --ink-c: #332b18;
   --ink2-c: #5c5138;
   --ink3-c: #7a6f52;
+  --font-display: "Kaiti SC", "STKaiti", KaiTi, "DFKai-SB", var(--serif);
+  --display-weight: 400;
 }
 
 /* 05 翡翠竹影 */
@@ -187,6 +197,8 @@
   --ink-c: #21352a;
   --ink2-c: #43594c;
   --ink3-c: #5c7364;
+  --font-display: "LiSu", "STLiti", var(--serif);
+  --display-weight: 400;
 }
 
 /* 06 紫气东方 */
@@ -205,24 +217,28 @@
   --ink-c: #2d2940;
   --ink2-c: #4d4762;
   --ink3-c: #6a6380;
+  --font-display: var(--sans);
+  --display-weight: 700;
 }
 
-/* 07 墨韵宣纸 */
+/* 07 松烟宣纸：松烟墨黑作专色，宣纸暖白铺底，朱砂作印 */
 :root[data-palette='moyun'] {
-  --hue: #14573f;
-  --hue-deep: #0f4633;
-  --hue-wash: #dfe7e0;
-  --hue-bright: #6fbf9c;
+  --hue: #1f1e1c;
+  --hue-deep: #141312;
+  --hue-wash: #e9e6df;
+  --hue-bright: #b7b3aa;
   --hue-accent2: #a3371f;
   --seal: #a3371f;
-  --seal-ink: #8a2c18;
-  --paper-c: #eeefea;
-  --paper2-c: #e5e7e0;
-  --rule-c: #c4c9bf;
-  --rule-strong-c: #969d93;
-  --ink-c: #14181a;
-  --ink2-c: #444c47;
-  --ink3-c: #59625c;
+  --seal-ink: #7d2917;
+  --paper-c: #f7f4ec;
+  --paper2-c: #efebe0;
+  --rule-c: #d9d3c4;
+  --rule-strong-c: #8f8b80;
+  --ink-c: #1f1e1c;
+  --ink2-c: #4a4741;
+  --ink3-c: #6b675e;
+  --font-display: var(--serif);
+  --display-weight: 600;
 }
 
 /* ---------- 夜航：墨底接管纸墨，色相接到各配色的亮金上 ---------- */
@@ -286,10 +302,10 @@
   --color-accent: #9589c4;
 }
 :root[data-theme='dark'][data-palette='moyun'] {
-  --color-primary: #7fc4a4;
-  --color-primary-hover: #a2d6bd;
-  --color-primary-soft: #1a2b24;
-  --color-accent: #e39279;
+  --color-primary: #c9c5ba;
+  --color-primary-hover: #d8d4c9;
+  --color-primary-soft: #1c1c1a;
+  --color-accent: #c9a06b;
 }
 
 /* 字号基准即中文行单位：全站 rem 都以它为锚，改一处整版等比缩放 */
@@ -2599,10 +2615,10 @@ html {
   height: var(--h-nav);
 }
 .nav .brand > span:first-of-type {
-  font-family: var(--serif);
+  font-family: var(--font-display);
   font-size: 17px;
   letter-spacing: 0.22em;
-  font-weight: 600;
+  font-weight: var(--display-weight);
   line-height: 1.15;
 }
 .nav .brand-sub {
@@ -2671,7 +2687,7 @@ html {
   width: 62px;
   background: var(--ink);
   color: var(--paper);
-  font-family: var(--serif);
+  font-family: var(--font-display);
   font-size: 11px;
   letter-spacing: 0.2em;
   writing-mode: vertical-rl;
@@ -2741,9 +2757,9 @@ html {
 }
 .rail-block strong {
   display: block;
-  font-family: var(--serif);
+  font-family: var(--font-display);
   font-size: 30px;
-  font-weight: 600;
+  font-weight: var(--display-weight);
   line-height: 1;
   letter-spacing: 0.02em;
   font-variant-numeric: tabular-nums;
@@ -2798,9 +2814,9 @@ html {
 }
 .front h1 {
   margin: 22px 0 20px;
-  font-family: var(--serif);
+  font-family: var(--font-display);
   font-size: clamp(46px, 6vw, 88px);
-  font-weight: 600;
+  font-weight: var(--display-weight);
   line-height: 1.04;
   letter-spacing: 0.01em;
 }
@@ -3032,9 +3048,9 @@ html {
   color: var(--accent-text);
 }
 .sec-head h2 {
-  font-family: var(--serif);
+  font-family: var(--font-display);
   font-size: 25px;
-  font-weight: 600;
+  font-weight: var(--display-weight);
   letter-spacing: 0.05em;
   line-height: 1.2;
 }
@@ -3446,9 +3462,9 @@ a.read:hover .read-n {
   gap: 14px;
 }
 .lunar-day {
-  font-family: var(--serif);
+  font-family: var(--font-display);
   font-size: 44px;
-  font-weight: 600;
+  font-weight: var(--display-weight);
   line-height: 0.95;
   letter-spacing: 0.02em;
 }
