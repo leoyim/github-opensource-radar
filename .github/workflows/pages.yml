@@ -19,15 +19,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # actions 按提交 SHA 钉版，避免 tag 被移库后执行到改动过的代码
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 22
           cache: npm
 
       - name: Install dependencies
         run: npm ci
+
+      # 镜像 registry 不支持 audit 端点（返回 NOT_IMPLEMENTED），必须指定官方源；
+      # 阈值 high：high 及以上的已知通告直接让部署失败
+      - name: Audit dependencies
+        run: npm audit --registry=https://registry.npmjs.org --audit-level=high
 
       # 部署在自定义域名根路径：site 用于 canonical / og:url，base 恒为 '/'
       - name: Build
@@ -41,7 +47,7 @@ jobs:
           test -f dist/CNAME && echo "CNAME: $(cat dist/CNAME)"
           test -f dist/index.html && echo "index.html ok"
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: dist
 
@@ -53,4 +59,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

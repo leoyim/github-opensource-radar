@@ -13,9 +13,13 @@
     "check:removals": "node tools/sync-removals.mjs --check"
   },
   "dependencies": {
-    "astro": "^5.0.0",
+    "astro": "^7.4.13",
     "lunar-javascript": "^1.7.7",
     "marked": "^18.1.1",
+    "sanitize-html": "^2.18.2",
     "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/sanitize-html": "^2.16.2"
   }
 }

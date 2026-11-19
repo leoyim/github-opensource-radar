@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { marked } from 'marked';
-import { DATA_DIR } from './load';
+import sanitizeHtml from 'sanitize-html';
+import { DATA_DIR, PROJECT_ROOT } from './load';
 
 /**
  * 逐项详细解读：上游 data/interpretations/<date>/<owner>__<name>.md，
@@ -61,7 +61,28 @@ const countChars = (body: string): number =>
     .replace(/[#>*`|_~\-[\]()!]/g, '')
     .replace(/\s+/g, '').length;
 
-const render = (md: string): string => marked.parse(md, { async: false, gfm: true }) as string;
+/**
+ * 解读正文源自仓库 README 摘录（外部可控内容），marked 默认放行原生 HTML。
+ * 构建期过一道白名单消毒：标签、属性、URL scheme 全部收紧，
+ * <script> / 事件属性 / javascript: 链接直接丢弃，署名 <sub> 一类无害标签保留。
+ */
+const sanitize = (html: string): string =>
+  sanitizeHtml(html, {
+    allowedTags: [
+      'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+      'p', 'ul', 'ol', 'li', 'blockquote', 'hr', 'br',
+      'strong', 'em', 'del', 'code', 'pre', 'sub', 'sup',
+      'a', 'table', 'thead', 'tbody', 'tr', 'th', 'td',
+    ],
+    allowedAttributes: {
+      a: ['href', 'title'],
+    },
+    allowedSchemes: ['http', 'https', 'mailto'],
+    disallowedTagsMode: 'discard',
+  });
+
+const render = (md: string): string =>
+  sanitize(marked.parse(md, { async: false, gfm: true }) as string);
 
 /**
  * 解读正文的小节标题（## 1. 它解决什么问题）渲染成一枚「编号标签」，
@@ -109,9 +130,7 @@ function sectionOf(md: string, title: string): string | null {
  * 台账回写会改动当期文字（项目撤下、数量变化），这类修订若写进 _data 会被下一次
  * ingest 整份覆盖，所以另存一份：存在则优先，且只放「本期横向观察」这一节的正文。
  */
-const OBSERVATIONS = path.resolve(
-  fileURLToPath(new URL('../../overrides/observations', import.meta.url))
-);
+const OBSERVATIONS = path.join(PROJECT_ROOT, 'overrides', 'observations');
 
 /** 本期观察：整期的横向分析，放在正文末尾，作为收束 */
 export function observationOf(date: string): string | null {

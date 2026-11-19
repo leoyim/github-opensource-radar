@@ -175,6 +175,11 @@ export function assertIssue(value: unknown, ctx: string): Issue {
       const ip = `${at}.items[${ii}]`;
       if (!isObj(item)) fail(ip, 'object', item);
       if (typeof item.full_name !== 'string') fail(`${ip}.full_name`, 'string', item.full_name);
+      // owner/repo 之外的形态（多余斜杠、路径穿越片段）一律拒收：后续
+      // replace('/', '__') 只换首个斜杠，畸形 full_name 理论上可读写任意路径
+      else if (!/^[A-Za-z0-9][A-Za-z0-9_.-]*\/[A-Za-z0-9][A-Za-z0-9_.-]*$/.test(item.full_name)) {
+        fail(`${ip}.full_name`, 'owner/repo 格式', item.full_name);
+      }
       if (typeof item.url !== 'string') fail(`${ip}.url`, 'string', item.url);
       if (typeof item.rating !== 'number') fail(`${ip}.rating`, 'number', item.rating);
       if (typeof item.stars !== 'number') fail(`${ip}.stars`, 'number', item.stars);
