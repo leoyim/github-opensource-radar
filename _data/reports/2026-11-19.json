@@ -1,0 +1,1752 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T09:53:40.176+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-18",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 890,
+    "unclassified": 64,
+    "selected": 19,
+    "suppressedByHistory": 287,
+    "sameDateExempt": 0,
+    "removed": 2,
+    "removedTotal": 2,
+    "offTopic": 1,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "pingdotgg/t3code",
+          "owner": "pingdotgg",
+          "name": "t3code",
+          "url": "https://github.com/pingdotgg/t3code",
+          "homepage": "https://t3.codes",
+          "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+          "language": "TypeScript",
+          "topics": [
+            "agent-orchestration",
+            "agents",
+            "ai",
+            "chatgpt",
+            "claude",
+            "claude-code",
+            "code",
+            "vibe-coding"
+          ],
+          "stars": 65290,
+          "forks": 11448,
+          "open_issues": 3631,
+          "starGain": 1220,
+          "heat": 1220,
+          "heatBasis": "trending",
+          "heatPercentile": 98,
+          "ageDays": 283,
+          "created_at": "2026-02-08T23:46:22Z",
+          "pushed_at": "2026-11-19T01:53:18Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 93.5,
+          "breakdown": {
+            "heat": 98,
+            "community": 92,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "T3 Code runs the coding agents on your machine and gives them one fast interface. Start a thread at your desk, then approve the next step from your phone.\n\nIt works with Claude Code, Codex, Cursor, OpenCode, Grok Build, Antigravity, Kiro, Pi, Muse Code, fx, and any ACP agent. If an agent is set up on your computer, T3 Code can control it.\n\n- Your subscriptions. T3 Code does not resell tokens. It drives the agents you are already signed in to. - Every agent in one place. Change models in the middle of a thread. Let Claude hand a task to Codex. - Desktop, web, and phone. One server, and every client shows the same threads. There are apps for iOS and Android. - Remote ready. Run agents on any machine. Connect over your local network, Tailscale, or T3 Connect. - Git built in. Each thread can work in its own worktree. Review the diff, then commit, push, and open a pull request with one button. - Fast. Performance is a feature here. We measure it, and we treat a dropped frame as a bug. - Open. MIT licensed. If you don't like something, fork it.",
+            "features": [
+              "Your subscriptions. T3 Code does not resell tokens. It drives the agents you are already signed in to.",
+              "Every agent in one place. Change models in the middle of a thread. Let Claude hand a task to Codex.",
+              "Desktop, web, and phone. One server, and every client shows the same threads. There are apps for iOS and Android.",
+              "Remote ready. Run agents on any machine. Connect over your local network, Tailscale, or T3 Connect.",
+              "Git built in. Each thread can work in its own worktree. Review the diff, then commit, push, and open a pull request with one button.",
+              "Fast. Performance is a feature here. We measure it, and we treat a dropped frame as a bug.",
+              "Open. MIT licensed. If you don't like something, fork it.",
+              "Install and first run"
+            ],
+            "sections": [
+              "What you get",
+              "Install",
+              "Desktop app",
+              "Command line",
+              "Phone",
+              "Sign in to an agent",
+              "\"Wait, what are you selling me?\"",
+              "Documentation",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5357
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "mvanhorn/last30days-skill",
+          "owner": "mvanhorn",
+          "name": "last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "homepage": "",
+          "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "language": "Python",
+          "topics": [
+            "ai-prompts",
+            "ai-skill",
+            "bluesky",
+            "claude",
+            "claude-code",
+            "clawhub",
+            "deep-research",
+            "hackernews"
+          ],
+          "stars": 70055,
+          "forks": 6245,
+          "open_issues": 22,
+          "starGain": 1059,
+          "heat": 1059,
+          "heatBasis": "trending",
+          "heatPercentile": 97,
+          "ageDays": 299,
+          "created_at": "2026-01-23T20:37:37Z",
+          "pushed_at": "2026-11-17T22:37:11Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86.5,
+          "breakdown": {
+            "heat": 97,
+            "community": 91,
+            "activity": 58,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English Français Deutsch Español Português (Brasil) 日本語 简体中文 العربية فارسی Türkçe\n\nAn AI agent-led search engine scored by upvotes, likes, and real money - not editors.\n\nThis README tracks the current v4 pipeline. The runtime skill spec lives in skills/last30days/SKILL.md, which is the source of truth for the latest command and setup behavior.",
+            "features": [
+              "Patent Secret Signals: a company run reads that month's US patent filings, with no key, and flags only the ones that are out of character or",
+              "Jobs Page Secret Signals: it reads the company's own careers page and flags the roles that give away what's coming, including new teams nobo",
+              "Quote lines: the best Reddit, X, YouTube, TikTok, and Instagram comments sit on their own line under the story they back up, translated when",
+              "Polymarket odds line: one line under the story it bears on, with how much the odds moved.",
+              "Yahoo Finance line: a listed company's share price over the last 30 days next to the S&P 500, plus its biggest single-day move.",
+              "Knows who you mean: \"Apple\" resolves to the company, its site, and its ticker on its own.",
+              "Reddit as you: with your OK, Reddit searches as your own logged-in account.",
+              "Digg covers every topic now, not just AI and tech."
+            ],
+            "sections": [
+              "/last30days",
+              "Why this exists",
+              "Sources, scored by the people",
+              "What people actually use it for",
+              "What's new",
+              "Install",
+              "Claude Code (recommended)",
+              "Quick Try-Link",
+              "Grok (xAI Build CLI)",
+              "Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills h",
+              "claude.ai (web)",
+              "Claude Desktop",
+              "OpenClaw",
+              "Manual (developer)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 34932
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "jingyaogong/minimind",
+          "owner": "jingyaogong",
+          "name": "minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "homepage": "https://jingyaogong.github.io/minimind",
+          "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+          "language": "Python",
+          "topics": [
+            "artificial-intelligence",
+            "large-language-model"
+          ],
+          "stars": 66497,
+          "forks": 8731,
+          "open_issues": 62,
+          "starGain": 687,
+          "heat": 687,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 845,
+          "created_at": "2024-07-27T04:34:12Z",
+          "pushed_at": "2026-11-18T15:09:40Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 88.7,
+          "breakdown": {
+            "heat": 95,
+            "community": 92,
+            "activity": 66,
+            "maturity": 93
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "此开源项目旨在完全从 0 开始，仅用 3 块钱成本与 2 小时训练时间，即可训练出规模约为 64M 的超小语言模型 MiniMind。 MiniMind 系列极其轻量，主线最小版本体积约为 GPT-3 的 $\\frac{1}{2700}$，力求让普通个人 GPU 也能快速完成训练与复现。 项目同时开源了大模型的极简结构与完整训练链路，覆盖 MoE、数据清洗、预训练（Pretrain）、监督微调（SFT）、LoRA、RLHF（DPO）、RLAIF（PPO / GRPO / CISPO）、Tool Use、Agentic RL、自适应思考与模型蒸馏等全过程代码。 MiniMind 同时拓展了视觉模态模型 MiniMind-V、多模态 Omni 模型 MiniMind-O、扩散语言模型（MiniMind-dLM）、线性模型（MiniMind-Linear），详见 Discussion。 项目所有核心算法代码均从 0 使用 PyTorch 原生实现，不依赖第三方库提供的高层抽象接口。 这不仅是一个大语言模型全阶段开源复现项目，也是一套面向 LLM 入门与实践的教程。 希望此项目能为更多人提供一个可复现、可理解、可扩展的起点，一起感受创造的乐趣，并推动更广泛 AI 社区的进步。\n\n大语言模型（Large Language Model, LLM）的出现，引发了全球范围内对 AI 的空前关注。无论是 ChatGPT、DeepSeek 还是 Qwen，都以惊艳的效果让人真切感受到这场技术浪潮的冲击力。然而，动辄数百亿参数的模型规模，使得它们对个人设备而言不仅难以训练，甚至连部署都显得遥不可及。打开大模型的“黑盒子”，真正去理解其内部运作机制，本应是一件令人心潮澎湃的事。遗憾的是，绝大多数探索最终都止步于使用 LoRA 等技术对现有大模型做少量微调，学习一些新指令或特定任务。这更像是在教牛顿如何使用 21 世纪的智能手机——虽然有趣，却偏离了理解物理本质的初衷。\n\n与此同时，第三方的大模型框架与工具库，如 transformers / trl / peft 等，往往只暴露出高度抽象的接口。只需短短十几行代码，就可以完成“加载模型 + 加载数据集 + 推理 + 强化学习”的全流程训练。这种高效封装固然便利，却也在一定程度上把开发者与底层实现隔离开来，削弱了深入理解 LLM 核心代码的机会。我认为 “用乐高自己拼出一架飞机，远比坐在头等舱里飞行更让人兴奋”，然而更现实的问题是，互联网上充斥着大量付费课程和营销内容，用漏洞百出、一知半解的讲解包装所谓的 AI 教程。正因如此，本项目的初衷就是尽可能降低 LLM 的学习门槛，让每个人都能从理解每一行代码开始，从 0 开始亲手训练一个极小的语言模型。是的，从 零开始训练 ，而不是仅仅停留在 推理 层面。最低只需不到 3 块钱的服务器成本，就能亲身体验从 0 到 1 构建一个语言模型的全过程。",
+            "features": [
+              "此开源项目旨在完全从 0 开始，仅用 3 块钱成本与 2 小时训练时间，即可训练出规模约为 64M 的超小语言模型 MiniMind。",
+              "MiniMind 系列极其轻量，主线最小版本体积约为 GPT-3 的 $\\frac{1}{2700}$，力求让普通个人 GPU 也能快速完成训练与复现。",
+              "项目同时开源了大模型的极简结构与完整训练链路，覆盖 MoE、数据清洗、预训练（Pretrain）、监督微调（SFT）、LoRA、RLHF（DPO）、RLAIF（PPO / GRPO / CISPO）、Tool Use、Agentic RL、自适应思考与模型蒸馏等全过程代码。",
+              "MiniMind 同时拓展了视觉模态模型 MiniMind-V、多模态 Omni 模型 MiniMind-O、扩散语言模型（MiniMind-dLM）、线性模型（MiniMind-Linear），详见 Discussion。",
+              "项目所有核心算法代码均从 0 使用 PyTorch 原生实现，不依赖第三方库提供的高层抽象接口。",
+              "这不仅是一个大语言模型全阶段开源复现项目，也是一套面向 LLM 入门与实践的教程。",
+              "希望此项目能为更多人提供一个可复现、可理解、可扩展的起点，一起感受创造的乐趣，并推动更广泛 AI 社区的进步。",
+              "提供完整的 MiniMind-LLM 结构代码（Dense + MoE），当前主线结构对齐 Qwen3 / Qwen3-MoE 生态。"
+            ],
+            "sections": [
+              "📌 项目介绍",
+              "📌 快速开始",
+              "第0步",
+              "克隆仓库、安装依赖",
+              "Ⅰ 🚀 模型推理",
+              "1' 下载模型",
+              "方式1",
+              "方式2",
+              "2' CLI 推理",
+              "方式1：使用 Transformers 格式模型",
+              "方式2：基于 PyTorch 模型（确保./out目录下有对应权重）",
+              "3'（可选）WebUI",
+              "可能需要 python =3.10 ，安装 pip install streamlit",
+              "⚠️ 须先将 transformers 格式模型文件夹复制到 ./scripts/ 目录下（例如：cp -r minim"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 78738
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "huggingface/transformers",
+          "owner": "huggingface",
+          "name": "transformers",
+          "url": "https://github.com/huggingface/transformers",
+          "homepage": "https://huggingface.co/transformers",
+          "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+          "language": "Python",
+          "topics": [
+            "audio",
+            "deep-learning",
+            "deepseek",
+            "gemma",
+            "glm",
+            "hacktoberfest",
+            "llm",
+            "machine-learning"
+          ],
+          "stars": 169190,
+          "forks": 35226,
+          "open_issues": 1106,
+          "starGain": 205,
+          "heat": 205,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 2942,
+          "created_at": "2018-10-29T13:56:00Z",
+          "pushed_at": "2026-11-19T01:48:38Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 90.9,
+          "breakdown": {
+            "heat": 89,
+            "community": 99,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "<!--- Copyright 2020 The HuggingFace Team. All rights reserved.\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. --",
+            "features": [
+              "Easy-to-use state-of-the-art models:",
+              "High performance on natural language understanding & generation, computer vision, audio, video, and multimodal tasks.",
+              "Low barrier to entry for researchers, engineers, and developers.",
+              "Few user-facing abstractions with just three classes to learn.",
+              "A unified API for using all our pretrained models.",
+              "Lower compute costs, smaller carbon footprint:",
+              "Share trained models instead of training from scratch.",
+              "Reduce compute time and production costs."
+            ],
+            "sections": [
+              "Installation",
+              "venv",
+              "uv",
+              "pip",
+              "uv",
+              "pip",
+              "uv",
+              "Quickstart",
+              "Why should I use Transformers?",
+              "When shouldn't I use Transformers?",
+              "100 projects using Transformers",
+              "Example models",
+              "Citation"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16901
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "google-labs-code/stitch-skills",
+          "owner": "google-labs-code",
+          "name": "stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+          "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 10416,
+          "forks": 1368,
+          "open_issues": 21,
+          "starGain": 365,
+          "heat": 365,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 306,
+          "created_at": "2026-01-16T17:17:17Z",
+          "pushed_at": "2026-11-18T05:00:25Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.1,
+          "breakdown": {
+            "heat": 91,
+            "community": 77,
+            "activity": 59,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).\n\nThe fastest way to set up the full Stitch plugin suite globally.\n\nAdd the Stitch Skills marketplace, then install the plugins you need.",
+            "features": [
+              "stitch-design — design-focused skills",
+              "stitch-build — build and component skills",
+              "stitch-utilities — utility and helper skills",
+              "Validation : Skills that convert Stitch HTML to other UI frameworks and validate the syntax.",
+              "Decoupling Data : Skills that convert static design content into external mock data files.",
+              "Generate Designs : Skills that generate new design screens in Stitch from a given set of data."
+            ],
+            "sections": [
+              "Stitch Design Skills",
+              "Quick Start",
+              "1. Install Plugins (Recommended)",
+              "Claude Code — installs into the current project",
+              "Cursor — installs into the current workspace",
+              "Project-local (recommended)",
+              "repeat for other skills under plugins/ /skills/",
+              "2. Install Skills Selectively",
+              "Prerequisites",
+              "Available Plugins",
+              "Design ( stitch-design )",
+              "Build ( stitch-build )",
+              "Utilities ( stitch-utilities )",
+              "Repository Structure"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11129
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "NVIDIA/SkillEvaluator",
+          "owner": "NVIDIA",
+          "name": "SkillEvaluator",
+          "url": "https://github.com/NVIDIA/SkillEvaluator",
+          "homepage": "https://docs.nvidia.com/skills/skillevaluator/",
+          "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+          "language": "Python",
+          "topics": [
+            "agent-evaluation",
+            "agent-plugins",
+            "agent-security",
+            "agent-skills",
+            "agentic-ai",
+            "benchmark",
+            "claude-code",
+            "codex"
+          ],
+          "stars": 3746,
+          "forks": 518,
+          "open_issues": 67,
+          "starGain": 312,
+          "heat": 312,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 148,
+          "created_at": "2026-06-24T02:32:26Z",
+          "pushed_at": "2026-11-18T21:04:10Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.2,
+          "breakdown": {
+            "heat": 89,
+            "community": 68,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Evaluate and improve AI agent skills and plugins: quality, security, overlap, compatibility, and real impact across agents\n\nSkillEvaluator checks AI agent skills and plugins, and measures a skill's effect on task results: start with quality checks, then compare runs with and without a skill.\n\nCatch skill issues before merge. Connect your repository to SkillEvaluator with a CI template for automated quality and security gates, without building or maintaining evaluation code.",
+            "features": [
+              "Sign in at build.nvidia.com and complete enrollment.",
+              "Open a model page, select Get API Key , and generate your key.",
+              "Complete scanner setup, start Docker, and prepare a reviewed dataset. Install every tier, set the provider and key, then validate:"
+            ],
+            "sections": [
+              "Get started",
+              "⚡ Harness check: will your agent load your skill?",
+              "Quickstart",
+              "Check your skill without a key",
+              "Run all three tiers with a free NVIDIA Build key",
+              "Bring skill evaluation to your repository",
+              "Three-tier overview",
+              "Run the combined pipeline",
+              "Run from a source checkout",
+              "Research and citation",
+              "Documentation",
+              "Installation and third-party software",
+              "Contributing",
+              "Support"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 15483
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "aoci-spec/aoci-code",
+          "owner": "aoci-spec",
+          "name": "aoci-code",
+          "url": "https://github.com/aoci-spec/aoci-code",
+          "homepage": "www.aoci.ai",
+          "description": "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code knowledge that gives Claude Code, Codex, Cursor, and opencode long-term context, memory, and code intelligence.",
+          "language": "Go",
+          "topics": [
+            "agent-memory",
+            "agents-md",
+            "ai-coding",
+            "ai-context",
+            "claude-code",
+            "code-indexing",
+            "code-intelligence",
+            "codex"
+          ],
+          "stars": 2213,
+          "forks": 233,
+          "open_issues": 18,
+          "starGain": 279,
+          "heat": 279,
+          "heatBasis": "snapshot",
+          "heatPercentile": 86,
+          "ageDays": 103,
+          "created_at": "2026-08-08T11:33:08Z",
+          "pushed_at": "2026-11-17T18:06:34Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 76.5,
+          "breakdown": {
+            "heat": 86,
+            "community": 63,
+            "activity": 56,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 63,
+            "devops": 56,
+            "ai": 100,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A persistent, Git-versioned map of your entire codebase — written by your coding agent, governed by a local MCP server. Agents read it once and know the system, instead of re-reading the repo on every task.\n\nhttps://github.com/user-attachments/assets/31636873-3e05-401f-849a-1f1ea87cd0a4\n\nBuild large systems without losing the plot. In Codex, Claude Code, Cursor, OpenCode, and similar agents, your agent starts every task already knowing the whole system: what each file is for, what it depends on, and what must not break. It stops searching and re-reading the codebase for every request. People who are not professional developers can keep iterating on their own systems; professional developers can hand the whole system to an agent and keep their attention on architecture and design.",
+            "features": [
+              "CodeGraph parses your code into a graph of symbols and calls. When the agent asks a question, it returns the exact source and call paths. It",
+              "AOCI-CODE has the model write one line per file and table: what it is for, what it connects to, and what must not break. The agent reads the",
+              "Use both: the index to know the system, CodeGraph to fetch the exact code while working.",
+              "Run init to initialize AOCI and integrate MCP for the current host; if this host does",
+              "Tell me to restart the agent so the newly written MCP server takes effect",
+              "Not a one-time summary. The index evolves with the system and stays in the project, where you can diff, review, version, and roll it back wi",
+              "More than \"where files are.\" It records responsibilities, strong relationships, public contracts, transaction boundaries, compatibility cons",
+              "Portable. The index is stored with the project, not tied to a model, an agent, or a session. While it is aligned with the code, any agent an"
+            ],
+            "sections": [
+              "AOCI-CODE",
+              "What it does",
+              "What it looks like",
+              "How is this different from CodeGraph?",
+              "What to expect",
+              "Quick start",
+              "How it works",
+              "Manual integration",
+              "Requirements",
+              "Current release: use a verified package or build from source",
+              "Manual initialization",
+              "Have the agent build the first index (important)",
+              "Verify alignment",
+              "Run basic diagnostics"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 78114
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "virgiliojr94/book-to-skill",
+          "owner": "virgiliojr94",
+          "name": "book-to-skill",
+          "url": "https://github.com/virgiliojr94/book-to-skill",
+          "homepage": "",
+          "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "book-to-skill",
+            "context-engineering",
+            "document-processing",
+            "edtech",
+            "knowledge-base",
+            "knowledge-management"
+          ],
+          "stars": 38406,
+          "forks": 4089,
+          "open_issues": 36,
+          "starGain": 108,
+          "heat": 108,
+          "heatBasis": "snapshot",
+          "heatPercentile": 71,
+          "ageDays": 202,
+          "created_at": "2026-05-01T02:09:39Z",
+          "pushed_at": "2026-11-18T22:28:06Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 75.2,
+          "breakdown": {
+            "heat": 71,
+            "community": 87,
+            "activity": 66,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Turn any technical book, document folder, or collection of sources into a unified agent skill — ready to study, reference, and use while you work in GitHub Copilot CLI, Amp, Claude Code, Codex, Hermes Agent, OpenCode, or OpenClaw.\n\nWhy · What it generates · Beyond books · How it works · Usage · Install · FAQ · Performance · Architecture · Changelog\n\n24×–51× fewer tokens than dumping the book into context to answer one question, measured on real books ( how it's measured ).",
+            "features": [
+              "Point it at a file, folder, or glob — /book-to-skill ./my-book.pdf",
+              "It distills the book into a skill — frameworks, decision rules, anti-patterns, and per-chapter files. Structure, not a summary.",
+              "Your agent loads it on demand — ask /my-book replication and it reads the right chapter and answers from the real content, no hallucination.",
+              "📄 \"Let me just search the PDF\" → you get a list of pages, not answers",
+              "🧠 \"I'll ask the agent about this book\" → it either hallucinates or says it doesn't have the content",
+              "📝 \"I'll take notes as I read\" → you end up with a 200-line doc you never open again",
+              "Internal documentation — architecture decision records, runbooks, onboarding guides. Fold a whole docs/ folder into one skill and ask it whi",
+              "Brand & design systems — voice guidelines, tone-of-voice docs, component principles. Turn a brand book into a skill your team queries instea"
+            ],
+            "sections": [
+              "🤔 Why",
+              "📦 What it generates",
+              "🏢 Beyond books",
+              "🧾 The Discovery Loop Tax",
+              "⚙️ How it works",
+              "🚀 Usage",
+              "📥 Install",
+              "One command, any host — via the cross-agent skills CLI:",
+              "Or manually — clone into your skills folder (registers /book",
+              "(Copilot CLI: ~/.copilot/skills/ · Amp/cross-agent: ~/.agent",
+              "(Hermes Agent: ${HERMES HOME:-$HOME/.hermes}/skills/ /)",
+              "(OpenClaw: ${OPENCLAW STATE DIR:-$HOME/.openclaw}/skills/; ~",
+              "(OpenCode: ~/.agents/skills/ — it also reads ~/.config/openc",
+              "❓ FAQ"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 15046
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "jquery/jquery",
+          "owner": "jquery",
+          "name": "jquery",
+          "url": "https://github.com/jquery/jquery",
+          "homepage": "https://jquery.com",
+          "description": "jQuery JavaScript Library",
+          "language": "JavaScript",
+          "topics": [
+            "jquery"
+          ],
+          "stars": 60020,
+          "forks": 20709,
+          "open_issues": 95,
+          "starGain": 266,
+          "heat": 266,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 6438,
+          "created_at": "2009-04-03T15:20:14Z",
+          "pushed_at": "2026-11-17T19:00:49Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87,
+          "breakdown": {
+            "heat": 96,
+            "community": 93,
+            "activity": 61,
+            "maturity": 79
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Meetings are currently held on the matrix.org platform.\n\nMeeting minutes can be found at meetings.jquery.org.\n\nThe latest version of jQuery is available at https://jquery.com/download/.",
+            "features": [
+              "Getting Involved",
+              "Core Style Guide",
+              "Writing Code for jQuery Projects",
+              "Browser support",
+              "jQuery also supports Node, browser extensions, and other non-browser environments.",
+              "ajax : All AJAX functionality: $.ajax() , $.get() , $.post() , $.ajaxSetup() , .load() , transports, and ajax event shorthands such as .ajax",
+              "ajax/xhr : The XMLHttpRequest AJAX transport only.",
+              "ajax/script : The AJAX transport only; used to retrieve scripts."
+            ],
+            "sections": [
+              "jQuery — New Wave JavaScript",
+              "Version support",
+              "Contribution Guides",
+              "References to issues/PRs",
+              "Environments in which to use jQuery",
+              "What you need to build your own jQuery",
+              "How to build your own jQuery",
+              "Build all jQuery release files",
+              "Building a Custom jQuery",
+              "Build Script Help",
+              "Modules",
+              "Running the Unit Tests",
+              "Essential Git",
+              "Cleaning"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 15042
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "solidjs/solid",
+          "owner": "solidjs",
+          "name": "solid",
+          "url": "https://github.com/solidjs/solid",
+          "homepage": "https://solidjs.com",
+          "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+          "language": "TypeScript",
+          "topics": [
+            "declarative",
+            "fine-grained",
+            "javascript",
+            "jsx",
+            "performance",
+            "proxies",
+            "reactive",
+            "solid"
+          ],
+          "stars": 36598,
+          "forks": 1184,
+          "open_issues": 25,
+          "starGain": 40,
+          "heat": 40,
+          "heatBasis": "trending",
+          "heatPercentile": 79,
+          "ageDays": 3130,
+          "created_at": "2018-04-24T16:36:27Z",
+          "pushed_at": "2026-11-19T01:03:09Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.3,
+          "breakdown": {
+            "heat": 79,
+            "community": 84,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Solid is a declarative JavaScript library for building user interfaces. Instead of a Virtual DOM, it compiles templates to real DOM nodes and updates them with fine-grained reactivity. Declare your state and use it throughout your app — when a piece of state changes, only the code that depends on it re-runs.\n\nimport { createSignal } from \"solid-js\"; import { render } from \"@solidjs/web\";\n\nfunction Counter() { const [count, setCount] = createSignal(0); const doubled = () = count() 2;",
+            "features": [
+              "Fine-grained updates to the real DOM — no virtual DOM diff.",
+              "Declarative reactive primitives ( createSignal , createMemo , createStore ).",
+              "Render-once components — your component function is plain JavaScript that runs once.",
+              "Automatic dependency tracking — reading reactive state subscribes to it.",
+              "Microtask-batched updates with flush() for synchronous interop.",
+              "First-class async: any computation can return a Promise / AsyncIterable ; is the boundary.",
+              "Optimistic UI primitives ( createOptimistic , createOptimisticStore ) and structured action(...) mutations.",
+              "Streaming SSR and progressive hydration."
+            ],
+            "sections": [
+              "At a glance",
+              "Key features",
+              "Quick start",
+              "Coming from Solid 1.x?",
+              "For LLMs / AI assistants",
+              "Repository",
+              "Why Solid?",
+              "Performant",
+              "Powerful",
+              "Pragmatic",
+              "Productive",
+              "More",
+              "Browser support",
+              "Community"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14021
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Automattic/harper",
+          "owner": "Automattic",
+          "name": "harper",
+          "url": "https://github.com/Automattic/harper",
+          "homepage": "https://writewithharper.com",
+          "description": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
+          "language": "Rust",
+          "topics": [
+            "chrome-extension",
+            "developer-tools",
+            "english-language",
+            "grammar-checker",
+            "nodejs",
+            "react",
+            "rust",
+            "svelte"
+          ],
+          "stars": 17845,
+          "forks": 845,
+          "open_issues": 1065,
+          "starGain": 28,
+          "heat": 28,
+          "heatBasis": "trending",
+          "heatPercentile": 74,
+          "ageDays": 1124,
+          "created_at": "2023-10-22T02:58:35Z",
+          "pushed_at": "2026-11-18T23:33:25Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 79,
+          "breakdown": {
+            "heat": 74,
+            "community": 79,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Harper is an English grammar checker designed to be just right. I created it after years of dealing with the shortcomings of the competition.\n\nGrammarly was too expensive and too overbearing. Its suggestions lacked context, and were often just plain wrong . Not to mention: it's a privacy nightmare. Everything you write with Grammarly is sent to their servers. Their privacy policy claims they don't sell the data, but that doesn't mean they don't use it to train large language models and god knows what else. Not only that, but the round-trip-time of the network request makes revising your work all the more tedious.\n\nLanguageTool is great, if you have gigabytes of RAM to spare and are willing to download the ~16GB n-gram dataset. Besides the memory requirements, I found LanguageTool too slow: it would take several seconds to lint even a moderate-size document.",
+            "features": [
+              "Frequently Asked Questions",
+              "Obsidian Documentation",
+              "harper-ls Documentation",
+              "Supported Editors' Documentation",
+              "Visual Studio Code",
+              "Neovim",
+              "Helix",
+              "Emacs"
+            ],
+            "sections": [
+              "Language Support",
+              "Performance Issues",
+              "Links",
+              "Huge Thanks"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3884
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "storybookjs/storybook",
+          "owner": "storybookjs",
+          "name": "storybook",
+          "url": "https://github.com/storybookjs/storybook",
+          "homepage": "https://storybook.js.org",
+          "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation",
+          "language": "TypeScript",
+          "topics": [
+            "angular",
+            "components",
+            "design-systems",
+            "documentation",
+            "html",
+            "javascript",
+            "react",
+            "react-native"
+          ],
+          "stars": 91638,
+          "forks": 10598,
+          "open_issues": 1848,
+          "starGain": 23,
+          "heat": 23,
+          "heatBasis": "trending",
+          "heatPercentile": 72,
+          "ageDays": 3898,
+          "created_at": "2016-03-18T04:23:44Z",
+          "pushed_at": "2026-11-18T20:34:13Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.9,
+          "breakdown": {
+            "heat": 72,
+            "community": 94,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Storybook is a frontend workshop for building UI components and pages in isolation. Thousands of teams use it for UI development, testing, and documentation. Find out more at storybook.js.org !\n\n- 🚀 Getting Started - 📒 Projects - 🛠 Supported Frameworks & Examples - 🔗Addons - 🏅 Badges & Presentation materials - 👥 Community - 👏 Contributing - 👨‍💻 Development scripts - 💸 Sponsors - 💵 Backers - :memo: License\n\nVisit Storybook's website to learn more about Storybook and to get started.",
+            "features": [
+              "🚀 Getting Started",
+              "📒 Projects",
+              "🛠 Supported Frameworks & Examples",
+              "🔗Addons",
+              "🏅 Badges & Presentation materials",
+              "👥 Community",
+              "👏 Contributing",
+              "👨‍💻 Development scripts"
+            ],
+            "sections": [
+              "Table of contents",
+              "Getting Started",
+              "Documentation",
+              "Examples",
+              "Community",
+              "Projects",
+              "Supported Frameworks",
+              "Addons",
+              "Badges & Presentation materials",
+              "Community",
+              "Contributing",
+              "Development scripts",
+              "Sponsors",
+              "Backers"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 22310
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "TencentCloud/CubeSandbox",
+          "owner": "TencentCloud",
+          "name": "CubeSandbox",
+          "url": "https://github.com/TencentCloud/CubeSandbox",
+          "homepage": "https://cubesandbox.com",
+          "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+          "language": "Go",
+          "topics": [
+            "agents",
+            "container",
+            "sandbox"
+          ],
+          "stars": 13360,
+          "forks": 1235,
+          "open_issues": 240,
+          "starGain": 41,
+          "heat": 41,
+          "heatBasis": "trending",
+          "heatPercentile": 76,
+          "ageDays": 223,
+          "created_at": "2026-04-10T03:00:31Z",
+          "pushed_at": "2026-11-19T01:53:12Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 78.9,
+          "breakdown": {
+            "heat": 76,
+            "community": 78,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Instant, Concurrent, Secure & Lightweight Sandbox Service for AI Agents\n\n中文文档 · Quick Start · Documentation · Changelog · X(Twitter) · Top Contributor Program · Submit Use Case\n\nCube Sandbox is a high-performance, out-of-the-box secure sandbox service built on RustVMM and KVM. It supports both single-node deployment and easy scaling to multi-node clusters. It is compatible with the E2B SDK and can create a hardware-isolated, fully serviceable sandbox in under 60ms with less than 5MB of memory overhead.",
+            "features": [
+              "Cold start benchmarked on bare-metal. 60ms at single concurrency; under 50 concurrent creations, avg 67ms, P95 90ms, P99 137ms — consistentl",
+              "Memory overhead measured with sandbox specs ≤ 32GB. Larger configurations may see a marginal increase.",
+              "Check overview — Open Overview , confirm nodes are Ready and capacity looks healthy",
+              "Prepare a template — Install an official preset from Template Store ; skip if you already have a READY template under Templates",
+              "Create a sandbox — Sandboxes → + New sandbox , pick a READY template, and view live logs on the detail page within seconds",
+              "Documentation Home — complete guide navigation",
+              "☁️ PVM Deployment — deploy on ordinary cloud VMs without bare metal or nested virtualization",
+              "Template Concepts — image-to-template concepts and workflows"
+            ],
+            "sections": [
+              "📰 News",
+              "Product Highlights",
+              "Demos",
+              "Benchmarks",
+              "Quick Start",
+              "First thing after install: open the Web console",
+              "Deep Dive",
+              "Architecture",
+              "Community & Contributing",
+              "Roadmap",
+              "Contributors",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 24483
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "db-branch/db-branch",
+          "owner": "db-branch",
+          "name": "db-branch",
+          "url": "https://github.com/db-branch/db-branch",
+          "homepage": "https://db-branch.com/",
+          "description": "Instant MySQL database branches on ZFS clones, clustered across VMs with ProxySQL routing",
+          "language": "Go",
+          "topics": [
+            "database"
+          ],
+          "stars": 70,
+          "forks": 1,
+          "open_issues": 2,
+          "starGain": null,
+          "heat": 24,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 6,
+          "created_at": "2026-11-13T11:10:27Z",
+          "pushed_at": "2026-11-18T03:35:35Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 73,
+          "breakdown": {
+            "heat": 95,
+            "community": 29,
+            "activity": 68,
+            "maturity": 89
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Instant database branches for MySQL and PostgreSQL, on your own servers.\n\nTest a migration, let an AI agent loose, or give every pull request its own copy of the database. db-branch creates a copy-on-write branch of a large database in seconds, with nothing copied. Break it, reset it, throw it away. Built on ZFS clones, self-hosted, Apache-2.0.\n\nStatus: Beta. db-branch is usable today, but APIs and command-line details may still change before 1.0. It is an independent open-source project, built from scratch.",
+            "features": [
+              "In your browser, 0 minutes. A live console demo runs entirely in the page (nothing real is created):",
+              "On a Mac or Windows machine, about 2 minutes. db-branch needs Linux and ZFS, so run it in an Ubuntu VM with Multipass. One command makes the",
+              "The history module is turned on, and the paid modules run for 30 days without a key. --record records a branch so it can be restored to any ",
+              "The pool is a file, so it is slower and not meant for real data. The first admin password is admin ; the console asks for a new one at the f",
+              "On Apple Silicon (and other arm64 machines) the setup downloads about 800 MB for MySQL, against 80 MB on Intel, because Oracle ships no mini",
+              "If the setup fails, /etc/motd says so, and sudo tail -n 30 /var/log/cloud-init-output.log in the VM shows why.",
+              "Delete the VM with multipass delete --purge db-branch-eval .",
+              "On your own Ubuntu server. See Install."
+            ],
+            "sections": [
+              "db-branch",
+              "Try it",
+              "Use cases",
+              "What it does",
+              "Web Console",
+              "Install",
+              "First branch",
+              "How it works",
+              "Editions",
+              "Documentation",
+              "Contributing, security, support",
+              "License",
+              "日本語"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8952
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "nvm-sh/nvm",
+          "owner": "nvm-sh",
+          "name": "nvm",
+          "url": "https://github.com/nvm-sh/nvm",
+          "homepage": "",
+          "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+          "language": "Shell",
+          "topics": [
+            "bash",
+            "install",
+            "lts",
+            "node",
+            "node-js",
+            "nodejs",
+            "nvm",
+            "nvmrc"
+          ],
+          "stars": 96158,
+          "forks": 10781,
+          "open_issues": 371,
+          "starGain": 237,
+          "heat": 237,
+          "heatBasis": "trending",
+          "heatPercentile": 92,
+          "ageDays": 6061,
+          "created_at": "2010-04-15T17:47:47Z",
+          "pushed_at": "2026-11-18T22:19:08Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87.8,
+          "breakdown": {
+            "heat": 92,
+            "community": 94,
+            "activity": 74,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- Intro - About - Installing and Updating - Install & Update Script - Additional Notes - Installing in Docker - Installing in Docker for CICD-Jobs - Troubleshooting on Linux - Troubleshooting on macOS - Ansible - Verify Installation - Important Notes - Git Install - Manual Install - Manual Upgrade - Usage - Long-term Support - Version Categories - Migrating Global Packages While Installing - Migrating Global Packages Between Installed Versions - Offline Install - Default Global Packages From File While Installing - io.js - System Version of Node - Listing Versions - Setting Custom Colors - Persisting custom colors - Suppressing colorized output - Restoring PATH - Set default node version - Use a mirror of node binaries - Pass Authorization header to mirror - Platforms without official binaries - .nvmrc - Deeper Shell Integration - Calling nvm use automatically in a directory with a .nvmrc file - bash - zsh - fish - Running Tests - Environment variables - Bash Completion - Usage - Compatibility Issues - Installing nvm on Alpine Linux - Alpine Linux 3.13+ - Alpine Linux 3.5 - 3.12 - Uninstalling / Removal - Manual Uninstall - Docker For Development Environment - Problems - macOS Troubleshooting - WSL Troubleshooting - Maintainers - Project Support - Enterprise Support - License - Copyright notice\n\nnvm allows you to quickly install and use different versions of node via the command line.\n\n$ nvm install 24 Now using node v24.14.0 (npm v11.9.0) $ node -v v24.14.0 $ nvm use 22 Now ",
+            "features": [
+              "Intro",
+              "About",
+              "Installing and Updating",
+              "Install & Update Script",
+              "Additional Notes",
+              "Installing in Docker",
+              "Installing in Docker for CICD-Jobs",
+              "Troubleshooting on Linux"
+            ],
+            "sections": [
+              "Node Version Manager [ ][3] [ ][4]",
+              "Table of Contents",
+              "Intro",
+              "About",
+              "Installing and Updating",
+              "Install & Update Script",
+              "Use bash for the shell",
+              "Create a script file sourced by both interactive and non-int",
+              "Download and install nvm",
+              "install curl",
+              "install nvm",
+              "set env",
+              "install node",
+              "set ENTRYPOINT for reloading nvm-environment"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 64255
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "trycua/cua",
+          "owner": "trycua",
+          "name": "cua",
+          "url": "https://github.com/trycua/cua",
+          "homepage": "https://cua.ai",
+          "description": "Scale computer-use 2.0 with open-source drivers, cross-OS sandboxes, and benchmarks for training, evaluation, and data generation.",
+          "language": "Rust",
+          "topics": [
+            "agent",
+            "ai-agent",
+            "apple",
+            "computer-use",
+            "computer-use-agent",
+            "containerization",
+            "cua",
+            "desktop-automation"
+          ],
+          "stars": 32618,
+          "forks": 2459,
+          "open_issues": 1581,
+          "starGain": 101,
+          "heat": 101,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 656,
+          "created_at": "2025-01-31T15:02:49Z",
+          "pushed_at": "2026-11-18T23:53:48Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87,
+          "breakdown": {
+            "heat": 88,
+            "community": 85,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 21,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- Cua Spaces: Install the app and run your first Space. - Cua Driver: Operate Calculator and verify its result. - Lume: Create a Tahoe VM and connect over SSH. - Cua SDK and CLI: Install cua and create a local sandbox. - CUA-S1: Explore small, specialized models for computer-use decisions. - Cua Bench: Create and verify a simulated task.\n\nBring your own agent and model, or explore CUA-S1 for specialized decisions. Cua provides the computer and automation tools. Computer-Use 2.0 describes an agent moving between code, APIs, and graphical interfaces within the same task.\n\nCombine your existing computers into one supercomputer. Your computers, shared by your team and its agents.",
+            "features": [
+              "Cua Spaces: Install the app and run your first Space.",
+              "Cua Driver: Operate Calculator and verify its result.",
+              "Lume: Create a Tahoe VM and connect over SSH.",
+              "Cua SDK and CLI: Install cua and create a local sandbox.",
+              "CUA-S1: Explore small, specialized models for computer-use decisions.",
+              "Cua Bench: Create and verify a simulated task.",
+              "Teleport. Move a signed-in app, such as Chrome or Slack, into a Space and it opens there still signed in. Your sessions stay in the Cua Keyv",
+              "Multiplayer. You and your agents work on the same desktop, each with your own cursor. Step in to make a choice, then hand the desktop back."
+            ],
+            "sections": [
+              "Choose your path",
+              "Cua Spaces",
+              "Cua Driver",
+              "See Cua Driver in action",
+              "Lume",
+              "Cua SDK and CLI",
+              "CUA-S1",
+              "Cua Bench",
+              "Packages",
+              "Deprecated packages",
+              "Resources",
+              "Citation",
+              "Contributing",
+              "Licensing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 21487
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "zephyr4123/snug",
+          "owner": "zephyr4123",
+          "name": "snug",
+          "url": "https://github.com/zephyr4123/snug",
+          "homepage": "",
+          "description": "为 UU远程 打造的 Mac 移动端工作区：独立竖屏、窗口自适应铺满、字号随屏放大、触控遵循 iOS 交互习惯，让 Mac 在手机上拥有原生级的操作体验。A native-grade iPhone workspace for controlling your Mac over UU Remote.",
+          "language": "Swift",
+          "topics": [
+            "gestures",
+            "ipad",
+            "iphone",
+            "macos",
+            "macos-app",
+            "menubar-app",
+            "productivity",
+            "remote-control"
+          ],
+          "stars": 938,
+          "forks": 67,
+          "open_issues": 10,
+          "starGain": 463,
+          "heat": 463,
+          "heatBasis": "snapshot",
+          "heatPercentile": 98,
+          "ageDays": 6,
+          "created_at": "2026-11-13T03:26:21Z",
+          "pushed_at": "2026-11-18T16:52:45Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.9,
+          "breakdown": {
+            "heat": 98,
+            "community": 54,
+            "activity": 76,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "为 UU远程 打造 · 远程 Mac 的显示与触控增强 每台设备专属屏幕 · 原生触屏手势 · App 资源库\n\n下载 · 原生体验 · 多设备 · App 资源库 · 截图 · 对比 · 安装 · 使用 · 限制 · 开发\n\nSnug for macOS 通用安装包，支持 Apple 芯片与 Intel，适用于 macOS 14 及更新版本 已签名并经 Apple 公证，拖入「应用程序」即可使用",
+            "features": [
+              "竖屏、横屏 ：按机型计算比例，避让 UU远程 工具栏，2 倍 HiDPI；横屏适合代码、终端与宽幅页面",
+              "窗口铺满 ：所选窗口独占全屏",
+              "字号放大 ：Ghostty、终端、iTerm2、VS Code、Cursor、Zed 自动放大，按 App 分别记忆",
+              "仅作用于手机屏与平板屏，其他屏幕及本机触控板、鼠标不受影响",
+              "横屏、竖屏 ：按机型计算比例，全屏铺满",
+              "原生手势 ：同手机屏，滚动、右键、拖选均由触控完成，无需外接触控板",
+              "字号适中 ：基准略大于平板原生，适合长时间使用",
+              "左右两栏 ：横屏时 App 资源库分为 App 与窗口两栏，参见 App 资源库"
+            ],
+            "sections": [
+              "Snug",
+              "📥 下载",
+              "✨ 每台设备，原生体验",
+              "手机：竖屏 · 横屏",
+              "原生手势",
+              "平板：铺满 · 原生手势",
+              "电脑：铺满 · 无黑边",
+              "🧩 一台 Mac，所有设备",
+              "自定义屏幕",
+              "屏幕列表",
+              "🗂 App 资源库",
+              "与 iPhone 一致的操作",
+              "适配任意 App",
+              "📸 截图"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 14348
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "ventoy/Ventoy",
+          "owner": "ventoy",
+          "name": "Ventoy",
+          "url": "https://github.com/ventoy/Ventoy",
+          "homepage": "https://www.ventoy.net",
+          "description": "A new bootable USB solution.",
+          "language": "C",
+          "topics": [
+            "arm64",
+            "auto-install",
+            "bootable-usb",
+            "bsd",
+            "chromeos",
+            "iso-files",
+            "legacy",
+            "linux"
+          ],
+          "stars": 80947,
+          "forks": 5077,
+          "open_issues": 1018,
+          "starGain": 139,
+          "heat": 139,
+          "heatBasis": "trending",
+          "heatPercentile": 90,
+          "ageDays": 2444,
+          "created_at": "2020-03-10T15:19:19Z",
+          "pushed_at": "2026-10-22T08:11:00Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 78.2,
+          "breakdown": {
+            "heat": 90,
+            "community": 91,
+            "activity": 23,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Ventoy is an open source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files. With Ventoy, you don't need to format the disk over and over, just copy the image files to the USB drive and boot them. You can copy many image files at a time and Ventoy will give you a boot menu to select them. You can also browse ISO/WIM/IMG/VHD(x)/EFI files in local disk and boot them. x86 Legacy BIOS, IA32 UEFI, x86 64 UEFI, ARM64 UEFI and MIPS64EL UEFI are supported in the same way. Both MBR and GPT partition style are supported in the same way. Most type of OS supported(Windows/WinPE/Linux/Unix/ChromeOS/Vmware/Xen...) 1300+ ISO files are tested ( List ). 90%+ distros in distrowatch.com supported ( Details ). Official Website: https://www.ventoy.net\n\nWindows Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, Windows Server 2022, Windows Server 2025, WinPE\n\nLinux Debian, Ubuntu, CentOS(6/7/8/9/10), RHEL(6/7/8/9/10), Deepin, Fedora, Rocky Linux, AlmaLinux, EuroLinux(6/7/8/9), openEuler, OpenAnolis, SLES, openSUSE, MX Linux, Manjaro, Linux Mint, Endless OS, Elementary OS, Solus, Linx, Zorin, antiX, PClinuxOS, Arch, ArcoLinux, ArchLabs, BlackArch, Obarun, Artix Linux, Puppy Linux, Tails, Slax, Kali, Mageia, Slackware, Q4OS, Archman, Gentoo, Pentoo, NixOS, Kylin, openKylin, Ubuntu Kylin, KylinSec, Lubuntu, Xubuntu, Kubuntu, Ubuntu MATE, Ubuntu Budgie, Ubuntu Studio, Bluestar, OpenMandriva, ",
+            "features": [
+              "100% open source",
+              "Simple to use",
+              "Fast (limited only by the speed of copying iso file)",
+              "Can be installed in USB/Local Disk/SSD/NVMe/SD Card",
+              "Directly boot from ISO/WIM/IMG/VHD(x)/EFI files, no extraction needed",
+              "Support to browse and boot ISO/WIM/IMG/VHD(x)/EFI files in local disk",
+              "No need to be continuous in disk for ISO/WIM/IMG/VHD(x)/EFI files",
+              "MBR and GPT partition style supported (1.0.15+)"
+            ],
+            "sections": [
+              "Tested OS",
+              "Tested Image Report",
+              "Ventoy Browser",
+              "VentoyPlugson",
+              "Features",
+              "Installation Instructions",
+              "Compile Instructions",
+              "Document",
+              "FAQ",
+              "Forum",
+              "Donation"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11806
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Chevey339/kelivo",
+          "owner": "Chevey339",
+          "name": "kelivo",
+          "url": "https://github.com/Chevey339/kelivo",
+          "homepage": "https://kelivo.psycheas.top",
+          "description": "A Flutter LLM Chat Client. Support Mobile & Desktop.",
+          "language": "Dart",
+          "topics": [
+            "ai",
+            "android",
+            "chatbot",
+            "chatbox",
+            "flutter",
+            "flutter-apps",
+            "harmony",
+            "harmonyos"
+          ],
+          "stars": 4665,
+          "forks": 530,
+          "open_issues": 626,
+          "starGain": 80,
+          "heat": 80,
+          "heatBasis": "trending",
+          "heatPercentile": 85,
+          "ageDays": 447,
+          "created_at": "2025-08-29T08:57:55Z",
+          "pushed_at": "2026-11-18T08:51:23Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 80.5,
+          "breakdown": {
+            "heat": 85,
+            "community": 70,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Use every major model in one app, give it a workspace to get real work done, and keep your data on your own device.\n\nKelivo is a cross-platform LLM client built with Flutter for Android, iOS, macOS, Windows and Linux. Connect your own API keys or sign in with a supported subscription, and switch between OpenAI, Gemini, Claude, DeepSeek, OpenRouter and any OpenAI-compatible service without switching apps.\n\nKelivo goes beyond chat. Models can search the web, call MCP servers, follow skills and remember what matters to you. Bind a conversation to a workspace and the model can read and edit files and run commands: inside a Linux sandbox on your phone, or in a native shell on your computer.",
+            "features": [
+              "Add a model provider. Open Settings → Providers , enter an API key for a preset provider or add your own endpoint, then fetch its model list",
+              "Start a conversation. Select a model from the input bar. Turn on web search, MCP servers, tools or reasoning for the current chat from the s",
+              "Let the model work with files (optional). Open Settings → Workspace & environment and create a workspace, then bind it to a conversation fro",
+              "Native protocols : OpenAI Chat Completions and Responses API, Google Gemini and Vertex AI, and Anthropic Claude, plus any OpenAI-compatible ",
+              "Built-in presets for OpenAI, Gemini, Claude, DeepSeek, OpenRouter, SiliconFlow, Alibaba Cloud, Zhipu AI, xAI, ByteDance and more.",
+              "Account sign-in : use a ChatGPT (Codex), Grok or Kimi Code account directly. Kelivo syncs the available models and shows your usage limits.",
+              "Model capabilities : set input and output modalities, tool use and reasoning per model. Choose a reasoning level from off to maximum, or set",
+              "Provider-side tools , where supported: native web search, URL context, code execution, code interpreter and image generation."
+            ],
+            "sections": [
+              "Kelivo",
+              "💡 Overview",
+              "💖 Sponsors",
+              "📸 Screenshots",
+              "🚀 Download",
+              "🧭 Getting Started",
+              "✨ Features",
+              "🧠 Models and Providers",
+              "🤖 Agent and Workspaces",
+              "🧩 Assistants, Memory and Context",
+              "🔍 Search, Voice and Vision",
+              "📝 Reading and Organizing",
+              "🎨 Appearance",
+              "🔒 Data and Privacy"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 19884
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "dream-num/univer",
+      "category": "ai",
+      "lastPushed": "2026-11-15",
+      "times": 1
+    },
+    {
+      "full_name": "ggml-org/llama.cpp",
+      "category": "ai",
+      "lastPushed": "2026-10-27",
+      "times": 1
+    },
+    {
+      "full_name": "tensorflow/tensorflow",
+      "category": "ai",
+      "lastPushed": "2026-11-08",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "BaaRai/ARTEX",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "QuantumNous/new-api",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "opensandbox-group/OpenSandbox",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "n8n-io/nod",
+      "category": "ai",
+      "lastPushed": "2026-11-16",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/TokenEconomizer",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "lidge-jun/opencodex",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "ZiChuanLan/freebie-radar",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "Sandflow-ai/sand3d",
+      "category": "ai",
+      "lastPushed": "2026-11-13",
+      "times": 1
+    },
+    {
+      "full_name": "cobusgreyling/loop-engineering",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "kuafuai/andee",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [],
+  "reviewedAt": "2026-11-19T02:14:13.794+08:00",
+  "regenerated": true
+}

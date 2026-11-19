@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 97,
-    "publicCount": 42,
+    "count": 100,
+    "publicCount": 44,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -17,8 +17,8 @@
         "id": "installer-wave-2026-11-c",
         "label": "「预激活安装包」批量投放（第三波）",
         "window": "2026-11-06 — 2026-11-12",
-        "repos": 14,
-        "note": "八个仓库在 2026-11-06 20:33—20:56 的同一窗口内先后创建，以商业软件「预激活独立安装包」为标题，README 版式一致（PowerShell 一键安装按钮 + 徽章 + 预激活说明），星标集中在 1,199—1,304、零 fork、零 issue、语言标注 HTML 且不含源码目录，附 MIT 许可文件却无对应源码；与此前两波投放呈现相同文本模板与主题词组合，商品名与账号均已更换。11-12 期先发现四个，11-13 期按同一证据口径补齐同窗口另外四个。 11-14 期按同一证据口径补齐同窗口第 9 个仓库。 11-15 期按同一证据口径补齐同窗口另外两个仓库（display-fusion、dvd-creator-game-enhancement），共 11 个。 11-16 期另发现一个使用相同模板的仓库（metatrader-5-bot，创建于 2026-11-06 21:09），一并归入本批次，共 12 个。 11-18 期按同一证据口径补齐同窗口另外两个仓库（windows-optimizer、rust-external-trainer-tool，分别创建于 21:32 与 21:21），共 14 个。"
+        "repos": 16,
+        "note": "八个仓库在 2026-11-06 20:33—20:56 的同一窗口内先后创建，以商业软件「预激活独立安装包」为标题，README 版式一致（PowerShell 一键安装按钮 + 徽章 + 预激活说明），星标集中在 1,199—1,304、零 fork、零 issue、语言标注 HTML 且不含源码目录，附 MIT 许可文件却无对应源码；与此前两波投放呈现相同文本模板与主题词组合，商品名与账号均已更换。11-12 期先发现四个，11-13 期按同一证据口径补齐同窗口另外四个。 11-14 期按同一证据口径补齐同窗口第 9 个仓库。 11-15 期按同一证据口径补齐同窗口另外两个仓库（display-fusion、dvd-creator-game-enhancement），共 11 个。 11-16 期另发现一个使用相同模板的仓库（metatrader-5-bot，创建于 2026-11-06 21:09），一并归入本批次，共 12 个。 11-18 期按同一证据口径补齐同窗口另外两个仓库（windows-optimizer、rust-external-trainer-tool，分别创建于 21:32 与 21:21），共 14 个。 11-19 期在同一创建窗口内另发现两个使用相同版式的仓库（microsoft-365-desktop、reason-14-installer，分别创建于 21:11 与 21:20），一并归入本批次，共 16 个。"
       },
       {
         "id": "topic-stuffing-2026-11",
@@ -6777,6 +6777,225 @@
           "wow-emulator",
           "wrath-of-the-lich-king"
         ]
+      }
+    },
+    {
+      "full_name": "ilsa99/microsoft-365-desktop",
+      "owner": "ilsa99",
+      "name": "microsoft-365-desktop",
+      "url": "https://github.com/ilsa99/microsoft-365-desktop",
+      "description": "Microsoft 365 2024 Standalone Desktop Setup with Pre-Configured Tools",
+      "language": "JavaScript",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-c",
+      "firstSeen": "2026-11-19",
+      "removedAt": "2026-11-19",
+      "issues": [
+        "2026-11-19"
+      ],
+      "score": 1.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-06T21:11:04Z，与同日 20:33—21:32 窗口内多个「独立部署包」仓库先后创建，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "1,104 星标但只有 1 个 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录近乎空白",
+          "detail": "在现有星标量级下仅有 1 条 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 JavaScript，根目录主体为 index.html 落地页（约 18.6 KB）、README.md（约 15 KB）与 files/ 图片资源，另有 46 B 的配置文件与 169 B 的 package.json，未包含可审阅的源码目录或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 引导执行外部脚本",
+          "detail": "README 以「一键安装 / 快速安装」按钮为主体，指向仓库自身的 Pages 页面，并注明需要联网获取安装脚本；安装过程无法预先审阅。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附 MIT 许可文件，README 描述的却是第三方商业办公套件的「预配置独立部署包」，权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与同批仓库使用相同的章节结构（Requirements / Features / FAQ / Disclaimer / License）、相近篇幅与同一组商品化措辞；申报的 20 个主题词多为「办公套件 / 免费 / 自动化」等变体，正文并未涉及其中多数技术主题。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已撤回批次同批上架",
+          "detail": "与 2026-11-12 起多期已撤回的「预激活安装包」仓库处于同一创建窗口、同一模板下上架，商品名与账号更换而版式未变；此前 11-18 期在同一创建窗口内已发现并撤回另外两个仓库。"
+        }
+      ],
+      "verdict": "README 以一键安装入口代替源码与构建说明，所述为第三方商业软件的预配置分发，安装过程与授权依据均无法预先审阅；同批仓库此前已作同样处理。",
+      "advice": "不建议在任何环境执行其安装命令；如需相应软件，建议通过官方渠道获取并核对授权。",
+      "snapshot": {
+        "stars": 1104,
+        "forks": 1,
+        "open_issues": 1,
+        "license": "MIT",
+        "created_at": "2026-11-06T21:11:04Z",
+        "pushed_at": "2026-11-19T01:39:50Z",
+        "topics": [
+          "automation",
+          "developer-tools",
+          "excel-automation",
+          "libreoffice-extension",
+          "microsoft-excel-advanced",
+          "microsoft-keys",
+          "microsoft-office",
+          "microsoft-suite"
+        ]
+      }
+    },
+    {
+      "full_name": "tianjanahary05-source/reason-14-installer",
+      "owner": "tianjanahary05-source",
+      "name": "reason-14-installer",
+      "url": "https://github.com/tianjanahary05-source/reason-14-installer",
+      "description": "reason-14: Full Working Installer for Professional Desktop Software, Ready to Run in 2026",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-c",
+      "firstSeen": "2026-11-19",
+      "removedAt": "2026-11-19",
+      "issues": [
+        "2026-11-19"
+      ],
+      "score": 2,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-06T21:20:39Z，与 microsoft-365-desktop（21:11:04Z）及同日 20:33—21:32 窗口内多个仓库先后创建，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "1,104 星标但只有 1 个 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录近乎空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，根目录主体为 index.html 落地页（约 16 KB）、README.md（约 14.8 KB）与 files/ 图片资源，另有 87 B 与 69 B 的配置文件，未包含可审阅的源码目录或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 引导执行外部脚本",
+          "detail": "README 以「一键安装 / 快速安装」按钮为主体，指向仓库自身的 Pages 页面，并注明需要联网获取安装脚本；安装过程无法预先审阅。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附 MIT 许可文件，README 结尾又称按「专有最终用户许可」分发，并描述为第三方商业音频工作站的「预激活独立构建」，许可表述互相矛盾且权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与同批仓库使用相同的章节结构（Requirements / Features / FAQ / Disclaimer / License）、相近篇幅与同一组商品化措辞；申报的 20 个主题词多为同一商品名与年份的变体，正文并未涉及其中多数技术主题。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已撤回批次同批上架",
+          "detail": "与 2026-11-12 起多期已撤回的「预激活安装包」仓库处于同一创建窗口、同一模板下上架，商品名与账号更换而版式未变；此前 11-18 期在同一创建窗口内已发现并撤回另外两个仓库。"
+        }
+      ],
+      "verdict": "README 以快速安装入口代替源码与构建说明，所述为第三方商业软件的预激活分发，安装过程与授权依据均无法预先审阅；同批仓库此前已作同样处理。",
+      "advice": "不建议在任何环境执行其安装命令；如需相应软件，建议通过官方渠道获取并核对授权。",
+      "snapshot": {
+        "stars": 1104,
+        "forks": 1,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-06T21:20:39Z",
+        "pushed_at": "2026-11-19T01:48:33Z",
+        "topics": [
+          "automation",
+          "daw-software",
+          "developer-tools",
+          "open-source",
+          "pro-edition",
+          "python",
+          "rack-synth",
+          "reason-12"
+        ]
+      }
+    },
+    {
+      "full_name": "huami1314/GestaltX",
+      "owner": "huami1314",
+      "name": "GestaltX",
+      "url": "https://github.com/huami1314/GestaltX",
+      "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.",
+      "language": "Swift",
+      "category": "off-topic",
+      "categoryLabel": "选题边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "internal",
+      "campaign": "editorial-boundary",
+      "firstSeen": "2026-11-19",
+      "removedAt": "2026-11-19",
+      "issues": [
+        "2026-11-19"
+      ],
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "文档中并列列举不当",
+          "detail": "README 在说明设备区域码选项时，将中国部分地区与主权国家并列列举，表述不合宜。"
+        },
+        {
+          "type": "content",
+          "label": "主体内容偏设备配置",
+          "detail": "项目核心功能为读写设备配置描述文件以调整机型与区域相关参数，属特定设备的配置工具，与本期聚焦的通用开源工程议题匹配度有限。"
+        },
+        {
+          "type": "content",
+          "label": "展示价值不足",
+          "detail": "相关能力依赖特定系统版本与私有接口，复用范围与可审阅性受限，不作为本期推荐内容。"
+        },
+        {
+          "type": "correlation",
+          "label": "人工复核结论",
+          "detail": "经人工复核，本期不纳入榜单展示，且不对外作任何风险提示；处置仅针对本期选目，不对项目技术质量或作者作推断。"
+        }
+      ],
+      "verdict": "按本期选目边界不纳入展示，不对外作风险提示。",
+      "advice": "",
+      "snapshot": {
+        "stars": 8385,
+        "forks": 2728,
+        "open_issues": 101,
+        "license": "GPL-3.0",
+        "created_at": "2026-11-09T05:15:48Z",
+        "pushed_at": "2026-11-17T02:00:13Z",
+        "topics": []
       }
     }
   ]

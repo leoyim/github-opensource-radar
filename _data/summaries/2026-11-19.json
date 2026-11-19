@@ -1,0 +1,78 @@
+{
+  "pingdotgg/t3code": {
+    "summary_zh": "把本机上已经装好的 coding agent 收进同一个界面：服务端跑在装有 agent 的机器上，桌面、Web、iOS、Android 共用同一批线程，电脑起的任务可以在手机上批准下一步。支持 Claude Code、Codex、Cursor、OpenCode、Grok Build、Antigravity、Kiro、Pi、Muse Code、fx 与任意 ACP agent，用的是用户自己的订阅，不转售 token。同一线程内可以中途换模型，也能让 Claude 把任务交给 Codex；每个线程可绑定独立 git worktree，审查 diff 后一键 commit、push、开 PR。远程走局域网、Tailscale 或 T3 Connect，README 把掉帧当作 bug，MIT 许可。",
+    "highlight_zh": "竞争点从「哪个 agent 更强」转向「怎么统一驱动已有的 agent」，还顺手把 worktree 隔离和多端同会话做实了。"
+  },
+  "mvanhorn/last30days-skill": {
+    "summary_zh": "一个按真实互动而非编辑推荐排序信息的 Agent Skill：并行检索 Reddit、HN、Polymarket、GitHub 等开箱可用来源，向导再解锁 X、YouTube、TikTok、arXiv、Techmeme，按 upvote、点赞、转录命中与预测市场赔率交叉打分，最后由 agent 裁判合成一份带出处的简报。公司类话题还会带上专利、招聘页与股价。以 Agent Skills 标准分发，Claude Code 走 marketplace，其余 50+ 宿主用 npx skills add；README 只是说明，实际命令与设置以 SKILL.md 为准。",
+    "highlight_zh": "跨平台围墙的编排才是价值所在——不是又一个检索接口，而是把「人们用什么投票」变成可合成的证据。"
+  },
+  "jingyaogong/minimind": {
+    "summary_zh": "从零训练一个约 64M 语言模型的完整开源链路，宣称最低约 3 元成本、2 小时即可在个人 GPU 上跑通，最小版本约为 GPT-3 的 1/2700。核心算法全部用 PyTorch 原生实现，不借第三方高层抽象，覆盖 MoE、数据清洗、预训练、SFT、LoRA、DPO、PPO/GRPO/CISPO、Tool Use、Agentic RL、自适应思考与蒸馏；另延伸出视觉、多模态、扩散语言模型与线性模型分支。中文 README 兼作 LLM 入门教程，明确定位是可复现、可理解、可扩展的教学起点。",
+    "highlight_zh": "卖的不是模型效果，而是「每一行都能看见」的全阶段训练代码，恰好补上多数教程缺的那一环。"
+  },
+  "huggingface/transformers": {
+    "summary_zh": "定位为模型定义框架：统一描述文本、视觉、音频、视频与多模态模型，同时服务推理与训练。因为模型定义被生态共同遵循，Axolotl、Unsloth、DeepSpeed、FSDP 等训练框架，vLLM、SGLang、TGI 等推理引擎，以及 llama.cpp、mlx 等周边库都能复用同一份定义。Hub 上有 100 万+ 基于它的 checkpoint；Pipeline 高层 API 覆盖生成、对话、语音识别、图像分类，自动处理预处理与输出。要求 Python 3.11+ / PyTorch 2.6+，支持 pip、uv 与源码安装，另有 serve 与命令行对话。",
+    "highlight_zh": "本期少见的「模型层」本身的老牌入选，看点是生态枢纽位置而非新特性——它是别人复用的那一层定义。"
+  },
+  "google-labs-code/stitch-skills": {
+    "summary_zh": "一组遵循 Agent Skills 开放标准的技能包，把「设计稿 ↔ 代码」的往返做成可分发能力。按 design / build / utilities 三组组织：design 侧含前端代码转 Stitch 设计、文图生成与编辑屏幕、设计变体、设计系统管理、抽取 DESIGN.md 与静态 HTML、上传资产；build 侧含设计稿转 React 组件、React Native 组件、React+Vite 仪表盘、shadcn/ui 集成与 Remotion 演示视频；utilities 侧含 DESIGN.md / SITE.md 生成、提示词增强与单提示生成多页站点。通过 marketplace、plugin 或 npx skills 安装，支持 sparse checkout 只取所需目录，依赖 Stitch MCP server。",
+    "highlight_zh": "把设计工作流拆成可组合的技能包，方向是「能力交付」而不是再造一个设计工具。"
+  },
+  "NVIDIA/SkillEvaluator": {
+    "summary_zh": "给 Agent Skills 与插件做三层评估：Tier 1 是 500+ 静态规则与检测模式（质量、schema、版本、PII、许可证、Unicode、脚本 lint、安全与依赖审计），无需 LLM key；另有 Harness Check 不需跑 agent 就能预判各宿主是否会加载该技能（描述被截断、目录未扫描等）。Tier 2 做语义重叠检测与合成评测数据集，Tier 3 用 live agent 对比有无技能的真实表现（skill lift）。提供 `ci init` 接入 GitHub/GitLab 出可下载报告，属 NVIDIA Verified Skills 流水线一环。",
+    "highlight_zh": "少见地把「技能是否被加载」「是否安全」「是否真的有用」三件事分开度量，Harness Check 尤其切中痛点。"
+  },
+  "aoci-spec/aoci-code": {
+    "summary_zh": "为整个代码库与数据库 schema 建一份随 Git 版本化的持久地图，由 coding agent 自己写入、由本地 MCP server 治理。agent 开工前读一次就知道每个文件的用途、依赖关系与哪些东西不能动，不必每次任务重扫仓库。Go 实现的本地优先 MCP server + CLI，面向 Claude Code、Codex、Cursor、OpenCode 提供长期上下文、记忆与代码智能；索引是地图而非源码副本，仍可按需下钻到具体文件。",
+    "highlight_zh": "把上下文从「对话里」搬到「仓库里」，Git 版本化让这份地图可审查、可回滚。"
+  },
+  "virgiliojr94/book-to-skill": {
+    "summary_zh": "把技术书或任意结构化文档编译成按需加载的技能包：输入 PDF/EPUB/DOCX/MD/HTML/RTF/MOBI、目录或 glob，输出 SKILL.md（核心心智模型 + 章节索引）、每章独立文件、术语表、模式清单与速查表。章节按需加载、不占技能预算，官方实测回答单次问题比整本塞进上下文少 24×–51× token。两半组成：确定性 Python 抽取器负责文档转干净文本，规范驱动的生成器由宿主 agent 依 SKILL.md 整理结构。支持 analyze-only、从分析结果生成、更新 fold-in 等模式，也适用于内部文档、设计系统、论文簇与规范。",
+    "highlight_zh": "把「结构化」的成本在转换时一次性付掉，让后续查询成本与答案长度成正比，而不是每次重新导航整本书。"
+  },
+  "jquery/jquery": {
+    "summary_zh": "前端领域最老牌的 DOM 操作库，本期入选的直接背景是 jQuery 4.0.0 已于 2026-01 发布：4.x（main 分支）完整支持，3.x 仅收关键更新，2.x 与 1.x 停止支持，官方建议全部升级。README 现在更像一份构建与治理文档：自定义构建可用 --exclude 裁剪 ajax / css / effects / event / deferred / selector 等模块（排除 selector 时回退到原生 querySelectorAll 包装），支持 --esm、--factory、--amd、slim 变体与 ESM 产物（dist-module/），也说明在 Node、浏览器扩展等非浏览器环境的用法。",
+    "highlight_zh": "看点不是新 API，而是 6,438 天的项目如何把大版本迁移、模块裁剪与长期支持策略讲清楚。"
+  },
+  "solidjs/solid": {
+    "summary_zh": "不用虚拟 DOM 的声明式 UI 库：编译期把 JSX 转成真实 DOM 操作，组件函数只在挂载时执行一次，状态变化只重跑依赖它的表达式。本期入选对应 Solid 2.0 的 API 重构——pnpm monorepo 拆出 solid-js / @solidjs/web / @solidjs/signals / @solidjs/compiler（基于 Oxc 的原生 JSX 编译器）等包，1.x 在独立分支维护并配迁移指南。新增乐观 UI 原语 createOptimistic、action(...) 结构化变更、微任务批量更新与 flush() 同步互操作、流式 SSR 与渐进 hydration。仓库还内置面向 LLM 的 SKILL.md 入门与 CHEATSHEET.md，并随 npm 包分发，避免模型按 1.x 旧 API 生成代码。",
+    "highlight_zh": "把「细粒度响应式」讲成可验证的编译产物，还专门为 AI 助手准备了防旧 API 误导的技能文件。"
+  },
+  "Automattic/harper": {
+    "summary_zh": "离线、隐私优先的英文语法检查器，用 Rust 实现。作者动机很直接：Grammarly 价格高、建议常缺上下文且把文本传回服务器；LanguageTool 虽可自托管，却要数 GB 内存与约 16 GB 的 n-gram 数据集，lint 一篇中等文档要数秒。Harper 的目标是「刚刚好」——本地运行、响应快、不上传写作内容，可作为开发者工具、浏览器扩展与编辑器集成（topics 含 chrome-extension、nodejs、react、svelte）。1,065 个 open issue 说明它已从个人项目进入多宿主适配阶段。",
+    "highlight_zh": "把「不联网」当成架构前提而非隐私声明，正面回应云端语法检查的延迟与数据外发两个痛点。"
+  },
+  "storybookjs/storybook": {
+    "summary_zh": "在隔离环境里构建、文档化与测试 UI 组件的前端工作台，数千团队用它做组件开发与设计系统落地。支持 React、Angular、Vue 3、Web Components、React Native、HTML、Ember、Svelte、Preact、Qwik 等渲染器，并有一整套 addons 覆盖设计、文档、测试与交互；API 可扩展到 React Native、Android、iOS、Flutter 的移动端开发。README 现在主要是入口导航：官网、文档站、storybook.new 在线示例、Component Encyclopedia 案例库，以及 Discord / Discussions / Open Collective 等社区通道。",
+    "highlight_zh": "把「组件在真实使用前的独立验收」标准化成一套跨框架工作台，是设计系统落地的基础设施。"
+  },
+  "TencentCloud/CubeSandbox": {
+    "summary_zh": "基于 RustVMM 与 KVM 的 AI Agent 安全沙箱服务，兼容 E2B SDK，宣称 60ms 内创建硬件隔离沙箱、单实例内存开销小于 5MB。每个沙箱跑独立 OS 内核的 MicroVM，靠资源池与快照克隆跳过冷启动；支持单机部署与多节点集群。版本线清晰：0.3 引入 CubeCoW 写时复制快照引擎，0.4 加凭据保险箱（密钥不进沙箱）与 Dashboard，0.5 加 AutoPause、Terraform 部署、ARM64 与网络策略加固，0.6 加 K8s 部署与 Volume 框架，0.7 做跨节点暂停/恢复与控制面分离，0.8（2026-11-12）带来 JuiceFS COW 存储后端、调度器插件系统与 Prometheus/Grafana 可观测性。已进 CNCF Landscape，Go 主项目配 PyPI 客户端。",
+    "highlight_zh": "把「agent 要执行不可信代码」落成硬件级隔离，且用快照把冷启动压到毫秒级。"
+  },
+  "db-branch/db-branch": {
+    "summary_zh": "给 MySQL / PostgreSQL 做「数据库分支」的自托管工具，底层是 ZFS clone：分支是 base 快照的克隆，创建时零字节复制，实测 PostgreSQL 约 0.5 秒、MySQL 约 3 秒即可用，每个分支跑自己的数据库进程与端口。支持 branch reset 回到创建态、--ttl 自动过期、checkpoint / restore 任意回档、单分支版本升级（先存检查点、失败自动回滚），CLI / REST API / Web 控制台 / MCP server 共用同一套 API，多机可组 Raft 集群并用 ProxySQL 按用户名或查询注释路由。核心 Apache-2.0，认证/SSO、审计、历史、diff 等为独立闭源自托管模块，无托管云版本，当前为 Beta。",
+    "highlight_zh": "把 Git 式分支语义带到数据库，还内置 MCP server 让 agent 自己开分支跑危险迁移。"
+  },
+  "nvm-sh/nvm": {
+    "summary_zh": "6,061 天的 Node 版本管理工具，POSIX 兼容的 bash 脚本，一条命令安装并切换多个 Node 版本。README 更像一份覆盖极全的运维手册：安装与更新脚本、Docker 与 CI 场景、Linux/macOS/WSL/Alpine 故障排查、Ansible、离线安装、镜像与 Authorization 头、.nvmrc 与 bash/zsh/fish 的深度 Shell 集成、全局包迁移、自定义颜色、默认全局包、卸载与企业支持。本期当日 +237，属于长期稳定型基础设施的代表。",
+    "highlight_zh": "不靠新特性留在榜上，靠的是把跨 shell、跨平台、离线与 CI 的边界情况全部写进文档。"
+  },
+  "trycua/cua": {
+    "summary_zh": "面向 computer-use agent 的开源工具集，仓库里同时放着四条线：Cua Spaces（把自有电脑组成团队与 agent 共享的桌面池，支持 macOS VM、Linux/Omarchy 镜像、自有云账号，带会话加密保管与 Teleport 登录态迁移、多人多光标协作）、Cua Driver（跨 macOS / Windows / Linux 检查与操作原生应用和浏览器，走 CLI / MCP / SDK，支持后台投递不抢焦点）、Lume（Apple Silicon 上用 Virtualization.Framework 建本地 macOS / Linux VM）、Cua Bench 与 CUA-S1 决策模型（构造任务、评测 agent、导出轨迹）。所谓 Computer-Use 2.0 指 agent 在同一任务里于代码、API 与图形界面之间移动。Spaces 个人免费，应用采用 FSL-1.1-MIT 源可用许可。",
+    "highlight_zh": "把「给 agent 一台真电脑」拆成桌面、驱动、虚拟机与评测四层，且明确区分开源与源可用部分。"
+  },
+  "zephyr4123/snug": {
+    "summary_zh": "为 UU远程 补上移动端体验的 macOS 工具：在被控 Mac 上按控制端机型新增比例匹配的虚拟屏幕（手机竖/横屏、平板、电脑），窗口铺满、文字与控件放大，并把触屏手势按 iOS 习惯重映射（单指滑动变页面滚动带惯性、长按拖动变拖选文字、长按松开变右键）。内置 19 个品牌 785 款手机与 46 款平板的机型库，最多 4 块屏幕分别开关；还有 App 资源库（运行中/全部/拼音首字母搜索、开关窗口、退出 App、截图裁剪）。承接自 UUyc-companion 并保留原作者版权与提交历史，Swift + MIT，已签名公证，只需装在被控 Mac。",
+    "highlight_zh": "不改造远程协议，而是「多开一块比例对的屏幕」——用显示层配置解决触控与黑边问题。"
+  },
+  "ventoy/Ventoy": {
+    "summary_zh": "制作可启动 U 盘的开源工具：把 ISO/WIM/IMG/VHD(x)/EFI 文件直接拷进 U 盘即可，启动时给一个菜单供选择，不必反复格式化；也能浏览本地磁盘上的镜像并启动。同一方式支持 x86 Legacy BIOS、IA32 UEFI、x86_64 UEFI、ARM64 UEFI、MIPS64EL UEFI，MBR 与 GPT 分区表都行。官方称已测试 1300+ ISO、覆盖 distrowatch 上 90%+ 发行版，涵盖 Windows/WinPE、各类 Linux/Unix、ChromeOS、VMware、Xen 等。C 实现、GPL-3.0，2,444 天项目。",
+    "highlight_zh": "一次安装、之后只拷镜像——把「多系统启动盘」从重复格式化变成文件管理问题。"
+  },
+  "Chevey339/kelivo": {
+    "summary_zh": "Flutter 写的开源 LLM 客户端，覆盖 Android、iOS、macOS、Windows、Linux（鸿蒙在独立仓库）。可填自有 API key 或用受支持的账号登录，在 OpenAI、Gemini、Claude、DeepSeek、OpenRouter 及任意 OpenAI 兼容服务间切换而不用换 App；支持原生协议与 ChatGPT/Codex、Grok、Kimi Code 账号登录、多 key 负载均衡、按模型设置推理级别与自定义请求头/代理。不止聊天：模型可联网搜索、调 MCP server、遵循 skills、记忆，绑定 workspace 后能读写文件与执行命令（手机端 Linux 沙箱 / 桌面端原生 shell）。会话、设置与文件全部本地存储，无自有账号体系，可备份到 WebDAV 或 S3 兼容存储，AGPL-3.0。",
+    "highlight_zh": "把「多模型 + MCP + skills + 工作区」塞进一个本地优先的跨端客户端，且不设账号系统。"
+  }
+}
