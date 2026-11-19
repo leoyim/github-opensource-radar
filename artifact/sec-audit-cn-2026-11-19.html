@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安全审计报告 · 开源雷达 · 2026-11-19</title>
+<style>
+  :root {
+    --paper: #f7f4ec;
+    --paper-2: #efe9dc;
+    --ink: #2b2a26;
+    --ink-2: #55524a;
+    --ink-3: #8a8577;
+    --rule: #d8d2c2;
+    --rule-strong: #b9b19c;
+    --accent: #9a3b2e;
+    --sev-critical: #7d1f14;
+    --sev-high: #9a3b2e;
+    --sev-mid: #a06a1f;
+    --sev-low: #5c6b4a;
+    --sev-pass: #3f6142;
+    --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", SimSun, serif;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 48px 28px 80px; }
+
+  header.cover { border-bottom: 3px double var(--rule-strong); padding-bottom: 26px; }
+  .kicker {
+    font-family: var(--mono); font-size: 12px; letter-spacing: .18em;
+    color: var(--accent); margin: 0 0 6px;
+  }
+  h1 { font-size: 30px; margin: 0 0 10px; letter-spacing: .04em; }
+  .lede { color: var(--ink-2); margin: 0; max-width: 68ch; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 10px 26px;
+    margin-top: 18px; font-family: var(--mono); font-size: 12.5px; color: var(--ink-3);
+  }
+  .meta b { color: var(--ink-2); font-weight: 600; }
+  .readonly-tag {
+    display: inline-block; border: 1px solid var(--sev-pass); color: var(--sev-pass);
+    border-radius: 4px; padding: 0 8px; font-size: 12px;
+  }
+
+  .scoreboard {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;
+    margin: 30px 0 8px;
+  }
+  .score {
+    background: var(--paper-2); border: 1px solid var(--rule);
+    border-top: 3px solid var(--tone, var(--rule-strong));
+    padding: 12px 14px; text-align: center;
+  }
+  .score .n { font-size: 26px; font-weight: 700; font-family: var(--mono); color: var(--tone, var(--ink)); }
+  .score .t { font-size: 12.5px; color: var(--ink-2); letter-spacing: .06em; }
+  .s-critical { --tone: var(--sev-critical); }
+  .s-high { --tone: var(--sev-high); }
+  .s-mid { --tone: var(--sev-mid); }
+  .s-low { --tone: var(--sev-low); }
+  .s-pass { --tone: var(--sev-pass); }
+
+  h2 {
+    font-size: 20px; margin: 46px 0 14px; padding-bottom: 8px;
+    border-bottom: 2px solid var(--rule-strong); letter-spacing: .03em;
+  }
+  h2 .h2-note { font-size: 12.5px; color: var(--ink-3); font-weight: 400; margin-left: 10px; font-family: var(--mono); }
+  h3 { font-size: 16px; margin: 26px 0 8px; }
+  p { margin: 8px 0; }
+
+  .scope { background: var(--paper-2); border-left: 3px solid var(--rule-strong); padding: 14px 18px; color: var(--ink-2); font-size: 14px; }
+  .scope p { margin: 4px 0; }
+
+  article.finding {
+    border: 1px solid var(--rule); border-left: 4px solid var(--tone, var(--rule-strong));
+    background: #fbf9f3; margin: 16px 0; padding: 16px 20px 14px;
+  }
+  article.finding.high { --tone: var(--sev-high); }
+  article.finding.mid { --tone: var(--sev-mid); }
+  article.finding.low { --tone: var(--sev-low); }
+  .f-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+  .f-id { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+  .f-title { font-size: 15.5px; font-weight: 700; }
+  .tag {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .03em;
+    border: 1px solid var(--tone, var(--rule-strong)); color: var(--tone, var(--ink-2));
+    border-radius: 4px; padding: 0 7px; white-space: nowrap;
+  }
+  .tag.owasp { border-color: var(--rule-strong); color: var(--ink-3); }
+  .f-body { font-size: 14px; color: var(--ink-2); }
+  .f-body ul { margin: 6px 0; padding-left: 22px; }
+  .f-body li { margin: 4px 0; }
+  .f-body .label { color: var(--ink); font-weight: 600; }
+  code, .path {
+    font-family: var(--mono); font-size: 12.5px;
+    background: var(--paper-2); border: 1px solid var(--rule);
+    border-radius: 3px; padding: 0 5px; color: var(--ink);
+    word-break: break-all;
+  }
+  .fix { margin-top: 8px; padding: 8px 12px; background: var(--paper-2); border-left: 3px solid var(--tone, var(--rule-strong)); font-size: 13.5px; }
+  .fix .label { color: var(--tone, var(--ink)); }
+
+  table.pass { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 12px 0; }
+  table.pass th, table.pass td { border: 1px solid var(--rule); padding: 8px 12px; text-align: left; vertical-align: top; }
+  table.pass th { background: var(--paper-2); font-weight: 600; white-space: nowrap; }
+  table.pass td:first-child { white-space: nowrap; color: var(--sev-pass); font-weight: 600; }
+  table.pass td { color: var(--ink-2); }
+
+  .conclusion {
+    margin-top: 40px; padding: 20px 24px;
+    background: var(--paper-2); border: 1px solid var(--rule-strong);
+    border-top: 3px solid var(--accent);
+  }
+  .conclusion h2 { margin-top: 0; border: none; padding: 0; }
+  footer { margin-top: 46px; padding-top: 14px; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
+
+  @media (max-width: 640px) {
+    .scoreboard { grid-template-columns: repeat(2, 1fr); }
+    .wrap { padding: 28px 16px 60px; }
+    h1 { font-size: 24px; }
+  }
+  @media print {
+    body { background: #fff; }
+    article.finding { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="cover">
+  <p class="kicker">SEC-AUDIT-CN · 安全审计与内容治理专项</p>
+  <h1>开源雷达 · 安全审计报告</h1>
+  <p class="lede">对 <b>github-opensource-radar</b> 展示站及其上游 <b>Github-Push-EveryDay</b> 筛查/搬运链路的全量只读审计：代码、配置、依赖（OWASP Top 10 对齐）＋ 黑名单移除与推荐口径一致性核查。</p>
+  <div class="meta">
+    <span><b>审计日期</b> 2026-11-19</span>
+    <span><b>数据范围</b> 2026-10-23 → 2026-11-18（24 期）</span>
+    <span><b>台账</b> 97 条（公示 42 / 内部 55）</span>
+    <span class="readonly-tag">只读审计 · 未修改任何代码与数据</span>
+  </div>
+</header>
+
+<section class="scoreboard">
+  <div class="score s-critical"><div class="n">0</div><div class="t">严重</div></div>
+  <div class="score s-high"><div class="n">2</div><div class="t">高</div></div>
+  <div class="score s-mid"><div class="n">3</div><div class="t">中</div></div>
+  <div class="score s-low"><div class="n">5</div><div class="t">低</div></div>
+  <div class="score s-pass"><div class="n">7</div><div class="t">通过项</div></div>
+</section>
+
+<h2>审计范围与前提</h2>
+<div class="scope">
+  <p>站点为 Astro <b>纯静态输出</b>：无服务端运行时、无用户输入面、构建期不发起网络请求。认证 / 会话 / SQL 注入 / SSRF 等 OWASP 类别不适用；审计重心为<b>供应链与依赖安全、构建期 XSS 信任边界、内容治理口径一致性</b>。</p>
+  <p>治理机制核对覆盖：上游 <code>scripts/lib/guard.mjs</code>（screenPolitical / screenTopicStuffing）、<code>config/categories.json</code>（gateTopics）、<code>scripts/lib/scoring.mjs</code> 接线；本站 <code>tools/ingest.mjs</code>、<code>tools/sync-removals.mjs</code>、<code>_data/</code> 全部期次数据与 <code>dist/</code> 产物。</p>
+</div>
+
+<h2>高<span class="h2-note">应尽快修复 · 2 项</span></h2>
+
+<article class="finding high">
+  <div class="f-head">
+    <span class="f-id">H-1</span>
+    <span class="tag">内容治理</span>
+    <span class="f-title">2026-11-03 期「本期横向观察」仍具名描述已移除项目，数字与重生成榜单不符 —— 已渲染上线</span>
+  </div>
+  <div class="f-body">
+    <ul>
+      <li><span class="label">文件：</span><code>_data/interpretations/2026-11-03/index.md</code>（<code>## 本期横向观察</code> 第 1、3、5 条）；渲染出口 <code>src/components/IssueView.astro:411</code></li>
+      <li><span class="label">事实：</span>该节仍点名 <code>roblox-game-copier</code>、<code>startall-back</code>、<code>ads-blocker</code> 并称其占「工具类第 2、3、4 名」；但榜单已重生成，工具类第 2–4 名实为 openrig / linearmouse / OpenTodo。总星增写 <b>6,213</b>（实际 <b>6,334</b>）、「<b>9</b> 个无基线」（实际 <b>8</b>）。</li>
+      <li><span class="label">影响：</span>该期<b>无 override 修订</b>，<code>dist/posts/2026-11-03/index.html</code> 已确认含上述具名内容，线上页面直接违反「被移除项目的相关条目与描述须同步更新或清除」「各文件口径一致」。</li>
+    </ul>
+    <div class="fix"><span class="label">修复：</span>仿照 11-02 期做法新增 <code>overrides/observations/2026-11-03.md</code>（去具名、改准数字、交代三个空壳去向），或在上游回写 index.md 后重新 ingest。</div>
+  </div>
+</article>
+
+<article class="finding high">
+  <div class="f-head">
+    <span class="f-id">H-2</span>
+    <span class="tag">A06 过时组件</span>
+    <span class="f-title">astro 5.18.2 存在 1 critical + 3 high + 1 low 已知安全通告</span>
+  </div>
+  <div class="f-body">
+    <ul>
+      <li><span class="label">涉及：</span>Astro XSS 系列（spread 属性名 / <code>define:vars</code> / slot 名 / transition 指令等）、sharp 继承的 libvips / libheif / librsvg 漏洞、zod 超大集合内存耗尽、esbuild <b>Windows dev-server 任意文件读取</b>（与本机 win32 开发环境直接相关）。</li>
+      <li><span class="label">缓解现状：</span>纯静态、无 hydrated islands，多数 XSS 通告实际不可利用；但 dev-server 漏洞与构建期图像处理风险仍在。</li>
+    </ul>
+    <div class="fix"><span class="label">修复：</span>评估升级 astro 7.4.13（semver-major，需回归构建与样式）；至少在 CI 加入 <code>npm audit --registry=https://registry.npmjs.org</code> 门禁。</div>
+  </div>
+</article>
+
+<h2>中<span class="h2-note">建议修复 · 3 项</span></h2>
+
+<article class="finding mid">
+  <div class="f-head">
+    <span class="f-id">M-1</span>
+    <span class="tag">内容治理</span>
+    <span class="f-title">摘要与解读文件层残留黑名单项目（展示层未渲染，但违反文件级同步要求）</span>
+  </div>
+  <div class="f-body">
+    <ul>
+      <li><span class="label">摘要：</span><code>_data/summaries/2026-11-02.json</code> 仍含 <code>CelestialStarfish/Ads-Blocker</code>、<code>gryphonautocratmatch/StartAll-Back</code>、<code>azurerockcode/Roblox-Game-Copier</code> 三个键。</li>
+      <li><span class="label">解读：</span>残留 6 篇 —— 11-02 与 11-03 各 3 篇（如 <code>_data/interpretations/2026-11-03/Bridgeyaprovide__roblox-game-copier.md</code>）；另有 6 个孤儿序列文件（<code>_data/series/</code>）。</li>
+      <li><span class="label">根因：</span><code>tools/sync-removals.mjs</code> 只回写 reports，不覆盖 summaries / interpretations / series；上游源文件未清，<code>ingest --all</code> 会再次搬入。因报告条目已撤下，这些文件当前<b>不上页面</b>，但口径未闭环。</li>
+    </ul>
+    <div class="fix"><span class="label">修复：</span>上游同步清理三类文件，或扩展 sync-removals 的回写范围（本次审计未改）。</div>
+  </div>
+</article>
+
+<article class="finding mid">
+  <div class="f-head">
+    <span class="f-id">M-2</span>
+    <span class="tag">A03 注入 / XSS</span>
+    <span class="f-title">上游 Markdown 原生 HTML 直通 set:html，构成构建期存储型 XSS 信任边界</span>
+  </div>
+  <div class="f-body">
+    <ul>
+      <li><span class="label">文件：</span><code>src/lib/interpretations.ts:64</code>（marked 默认放行 raw HTML）→ <code>src/components/ReaderDialog.astro:26</code>、<code>IssueView.astro:411</code>。</li>
+      <li><span class="label">风险：</span>解读正文源自仓库 README 摘录（外部可控内容）；恶意 README 若诱导上游生成含 <code>&lt;script&gt;</code> / 事件属性的 md，将在构建期注入静态页。</li>
+    </ul>
+    <div class="fix"><span class="label">修复：</span>构建期消毒（DOMPurify / rehype-sanitize），或 marked 配置禁用原生 HTML（署名 <code>&lt;sub&gt;</code> 可改为模板注入）。</div>
+  </div>
+</article>
+
+<article class="finding mid">
+  <div class="f-head">
+    <span class="f-id">M-3</span>
+    <span class="tag">A06 / A05</span>
+    <span class="f-title">本地 SCA 实际失效：镜像 registry 不支持 audit，CI 亦无审计步骤</span>
+  </div>
+  <div class="f-body">
+    <ul>
+      <li><span class="label">事实：</span>默认 registry 为 npmmirror，其 audit 端点返回 <code>NOT_IMPLEMENTED</code>，<code>npm audit</code> 长期静默失败；<code>.github/workflows/pages.yml</code> 无审计步骤。本次改用官方 registry 才取得真实结果（见 H-2）。</li>
+    </ul>
+    <div class="fix"><span class="label">修复：</span>CI 固定官方 registry 执行 audit 并设告警阈值；本地可用 <code>npm audit --registry=https://registry.npmjs.org</code>。</div>
+  </div>
+</article>
+
+<h2>低<span class="h2-note">酌情处理 · 5 项</span></h2>
+
+<article class="finding low">
+  <div class="f-head">
+    <span class="f-id">L-1</span>
+    <span class="tag">内容治理</span>
+    <span class="f-title">/removed/ 排序非严格「期次倒序」</span>
+  </div>
+  <div class="f-body">
+    <p><code>src/lib/load.ts:123</code> 采用「retracted 优先 + removedAt 倒序」，导致 11-18 的 blocked 条目（如 FarhanNaem/startall-back）排在 11-16 的 retracted 批次之后。属有意设计且两页共用同一规则，但与补充要求的字面口径有偏差，建议确认取舍。</p>
+  </div>
+</article>
+
+<article class="finding low">
+  <div class="f-head">
+    <span class="f-id">L-2</span>
+    <span class="tag">内容治理</span>
+    <span class="f-title">个别公示条目结论措辞偏观察态</span>
+  </div>
+  <div class="f-body">
+    <p>如 <code>manjushree-iyer/soundpad-audio-suite</code> 的 verdict 为「建议在核实前不要直接引入」（verdictOf 兜底句），与「已移除」的公示语境不完全相称；证据链本身充分（5 项、含 correlation）。另：台账证据族均为 metadata / content / correlation，尚无 public-opinion / expert-critique / issue-reports 实例（要求中为举例，非强制）。</p>
+  </div>
+</article>
+
+<article class="finding low">
+  <div class="f-head">
+    <span class="f-id">L-3</span>
+    <span class="tag">A08 完整性</span>
+    <span class="f-title">ingest --push 用 git add -A 全量暂存并自动推送</span>
+  </div>
+  <div class="f-body">
+    <p><code>tools/ingest.mjs:199</code>：可能把 Temp/、artifact/ 等非数据文件带入公开仓库。</p>
+    <div class="fix"><span class="label">修复：</span>仅暂存 <code>_data/</code> 与 <code>overrides/</code>。</div>
+  </div>
+</article>
+
+<article class="finding low">
+  <div class="f-head">
+    <span class="f-id">L-4</span>
+    <span class="tag">A03 加固</span>
+    <span class="f-title">full_name 仅校验 string 类型，未断言 owner/repo 格式</span>
+  </div>
+  <div class="f-body">
+    <p><code>src/lib/schema.ts:177</code>；且 <code>replace('/', '__')</code> 只替换首个斜杠，构造性恶意 full_name 理论上可路径穿越读/写文件。上游为 GitHub API 数据，现实不可利用，属纵深防御项。</p>
+  </div>
+</article>
+
+<article class="finding low">
+  <div class="f-head">
+    <span class="f-id">L-5</span>
+    <span class="tag">A05 配置</span>
+    <span class="f-title">GitHub Pages 无法自定义安全响应头；CI actions 未钉 SHA</span>
+  </div>
+  <div class="f-body">
+    <p>CSP / HSTS 缺失属平台限制，静态站风险有限，可加 <code>&lt;meta&gt;</code> CSP 缓解；actions 钉 major 标签（v4）而非 commit SHA，建议钉版。</p>
+  </div>
+</article>
+
+<h2>通过项<span class="h2-note">已逐一核实 · 7 项</span></h2>
+<table class="pass">
+  <tr><th style="width:180px">核查点</th><th>结论与证据</th></tr>
+  <tr><td>榜单零残留</td><td>24 期 reports 中无任何黑名单条目（含附录）；<code>stats.selected</code> 与实际条目数、方向数全部一致；<code>sync-removals --check</code> 退出码 0。</td></tr>
+  <tr><td>internal 零公示</td><td>55 条 off-topic（含政治类）仅入台账；<code>/removed/</code>、统计页、dist 产物均无泄漏（dist/removed 中仅出现公示条目 unlocktool）；对外计数不含 internal。</td></tr>
+  <tr><td>证据链充分</td><td>97 条台账零缺证据；42 条公示条目均 ≥2 项证据且含 content / correlation 佐证，符合「仅元数据不得移除」设计；措辞总体委婉中肯。</td></tr>
+  <tr><td>治理机制接线</td><td>上游 <code>screenTopicStuffing</code>（guard.mjs:286：无语言 + 零 fork/issue + 无许可证 + ≥3 专业主题词且覆盖率 ≤1/3）、<code>screenPolitical</code>、<code>gateTopics</code>（scoring.mjs:26，analytics/bi 泛词不再构成 data 类准入）均已接入 fetch-daily 流水线；黑名单参与跨期索引，换账号重发可被 nameRotation 捕获。</td></tr>
+  <tr><td>11-02 期观察合规</td><td>已通过 <code>overrides/observations/2026-11-02.md</code> 去具名，数字与榜单一致（星增合计 6,483 核对相符）。</td></tr>
+  <tr><td>密钥与注入面</td><td>无密钥 / 令牌泄漏；无运行时网络请求；<code>execFileSync</code> 固定参数，无命令注入；无 eval / 动态代码执行。</td></tr>
+  <tr><td>CI 与数据契约</td><td>CI 最小权限（contents:read / pages:write / id-token:write）；<code>npm ci</code> 锁文件安装；构建期数据契约校验（schema.ts assertIssue / assertSeries）健全。</td></tr>
+</table>
+
+<div class="conclusion">
+  <h2>结论</h2>
+  <p>治理链路整体闭环良好：榜单、统计、公示口径全部一致，内部条目零泄漏，两项自动判定机制均已在代码层接线。最紧迫的是 <b>H-1（11-03 期观察文本的线上违规）</b>与 <b>H-2（astro 依赖升级）</b>；其次是把 summaries / interpretations / series 纳入移除回写范围（M-1），堵住「只删榜单、遗留解读」的结构性缺口。</p>
+  <p>本次为只读审计，<b>未修改任何代码与数据</b>；全部修复建议留待另行授权执行。</p>
+</div>
+
+<footer>
+  sec-audit-cn · 审计执行：Qoder 安全审计流程 · 2026-11-19 ·
+  证据固定方式：只读脚本比对 _data 全量期次 / dist 产物 / 上游 guard 接线 / npm audit（官方 registry）
+</footer>
+
+</div>
+</body>
+</html>
