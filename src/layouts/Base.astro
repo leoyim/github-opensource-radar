@@ -42,7 +42,7 @@ const year = 2026;
     -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://avatars.githubusercontent.com https://github.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
     />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -107,7 +107,11 @@ const year = 2026;
             href={`${repoUrl}/actions`}
             target="_blank"
             rel="noopener noreferrer"
-            title="每日数据由 GitHub Actions 定时抓取与构建">Built by GitHub Actions</a>
+            title="每日数据由 GitHub Actions 定时抓取与构建">Built by GitHub Actions<img
+              class="ci-badge"
+              src={`${repoUrl}/actions/workflows/pages.yml/badge.svg`}
+              alt="Actions 构建状态"
+              loading="lazy" /></a>
           <span class="dot" aria-hidden="true">·</span>
           <a
             href={`${repoUrl}/deployments`}

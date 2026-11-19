@@ -3952,6 +3952,13 @@ a.read:hover .read-n {
 .imprint .dot {
   color: var(--ink-3);
 }
+/* 构建状态徽标：跟在「Built by GitHub Actions」后面，压到文字基线上 */
+.imprint .ci-badge {
+  height: 13px;
+  vertical-align: -2px;
+  margin-left: 6px;
+  opacity: 0.85;
+}
 
 /* ---------- 项目索引：关键字搜索 ---------- */
 
