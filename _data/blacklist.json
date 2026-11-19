@@ -1137,7 +1137,7 @@
           "detail": "与 Forgavin/ultra-iso-desktop-setup、RafliAbdulHaliim/sylenth-1-enhancement-suite、xavier442/pump-fun-desktop 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
         }
       ],
-      "verdict": "多项元数据特征同时偏离常态，建议在核实前不要直接引入。",
+      "verdict": "多项元数据特征同时偏离常态，判定为热度异常，已从榜单移除。",
       "advice": "建议先自行核对仓库历史与代码，再决定是否引入。",
       "snapshot": {
         "stars": 773,

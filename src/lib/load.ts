@@ -7,7 +7,27 @@ import { assertIssue, assertSeries, type Issue, type RemovalEntry, type RemovalL
  * 数据层：只读 _data/，不做任何网络请求。
  * _data 由 tools/ingest.mjs 从上游项目拷贝进来，站点从不反过来写上游。
  */
-export const DATA_DIR = path.resolve(fileURLToPath(new URL('../../_data', import.meta.url)));
+/**
+ * 项目根下的 _data/。astro 7 之后预渲染 chunk 落在 dist/.prerender/chunks/，
+ * 直接相对 import.meta.url 会解析到 dist/_data，所以向上逐级回溯，
+ * 以「存在 marker 目录」为准定位项目根，兜底回构建工作目录。
+ */
+function locateRoot(marker: string): string {
+  let dir = path.dirname(fileURLToPath(import.meta.url));
+  for (let i = 0; i < 6 && path.parse(dir).root !== dir; i++) {
+    try {
+      if (fs.statSync(path.join(dir, marker)).isDirectory()) return dir;
+    } catch {
+      /* 继续向上 */
+    }
+    dir = path.dirname(dir);
+  }
+  return path.resolve(process.cwd());
+}
+
+export const DATA_DIR = path.join(locateRoot('_data'), '_data');
+/** 项目根（构建期预渲染脚本定位项目内资源时统一从这里出发） */
+export const PROJECT_ROOT = locateRoot('_data');
 const REPORTS = path.join(DATA_DIR, 'reports');
 const SUMMARIES = path.join(DATA_DIR, 'summaries');
 const SERIES = path.join(DATA_DIR, 'series');

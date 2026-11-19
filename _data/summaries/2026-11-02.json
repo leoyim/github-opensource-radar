@@ -87,18 +87,6 @@
     "summary_zh": "以兑换码形式批量赠送 X Premium 的自动化系统：兑换页让用户自助输入兑换码与 X 用户名，管理后台负责生成/停用兑换码、批次管理与统计，服务端用 AES-256-GCM 逐条加密凭据、付款前校验金额与商户、多张银行卡轮换。技术上它需要提交 X 账号的 auth_token 与 ct0 Cookie，以及真实银行卡的卡号、有效期、CVC、持卡人姓名与账单地址。31 天、1,283 星，heat 按创建速度估算。",
     "highlight_zh": "它不是工具，是一份凭据收集流程：Cookie + 完整卡信息交给一台服务器，风险全由提交者承担。建议当反诈样本看。"
   },
-  "CelestialStarfish/Ads-Blocker": {
-    "summary_zh": "⚠️ 疑似投毒仓库。创建 2 天、400 星、0 fork、无源码、无语言标注、无许可证，README 唯一内容是「打开 PowerShell → 粘贴命令 → 等待安装」，描述使用「Pre-activated local build for testing and deployment」这类规避审查的措辞，features 为下载关键词堆砌。与同期的 StartAll-Back、Roblox-Game-Copier 共用完全相同的 README 模板，仅替换软件名——不同 owner、同一文案、同一时间窗、零 fork 高星，是协同刷星的标准特征。",
-    "highlight_zh": "不要执行它的任何命令。PowerShell 一行命令即获得完整用户权限，而载荷在仓库之外，不可审计。"
-  },
-  "gryphonautocratmatch/StartAll-Back": {
-    "summary_zh": "⚠️ 与 Ads-Blocker 同模板的第二个投毒仓库：创建 2 天、400 星、0 fork、无源码无许可，README 与另两个仓库逐句相同，只是把目标软件名换成 StartAllBack，同样要求用户在 PowerShell 中执行粘贴来的命令。features 字段堆砌 pre activated / standalone installer / offline setup 等下载关键词。三仓分属广告拦截、开始菜单工具、游戏复制三个互不重叠的需求域，目的是覆盖更多搜索词。",
-    "highlight_zh": "「预激活安装包 + 粘贴 PowerShell 命令」这个组合，看到就该关页面，不需要再判断。"
-  },
-  "azurerockcode/Roblox-Game-Copier": {
-    "summary_zh": "⚠️ 同批第三个投毒仓库：声称提供 Roblox 游戏复制工具，README 与 Ads-Blocker、StartAll-Back 逐句一致，同样是粘贴 PowerShell 命令安装「预激活版本」。创建 2 天、400 星、0 fork、无源码无许可。三个仓库在同一时间窗以不同 owner 发布、共用一套文案模板，属批量投放；这条的受众是年轻玩家，对「免费复制游戏」抵抗力更低，潜在危害最大。",
-    "highlight_zh": "三个不同需求、同一套文案，就是批量投毒的指纹——它进榜说明采集缺少恶意仓库过滤。"
-  },
   "Predidit/Kazumi": {
     "summary_zh": "Flutter 写的跨端番剧采集与播放器，核心机制是把「一个番剧站」压缩成最多五行 XPath 规则：目录、详情、播放地址各一段，规则可导入、可分享、可在线更新，客户端不必随站点改版发版。已实现弹幕、时间表、多视频源切换、追番列表、DLNA 投屏、番剧下载与跨设备同步，并基于 Anime4K 做实时超分辨率。覆盖 Android 10+、Windows 10+、macOS 10.15+、iOS 13+（侧载）、HarmonyOS 5.0（分支仓库）以及需要自建服务端的 Web 端。",
     "highlight_zh": "40,612 星、907 天的老项目仍在移动类第一，说明「规则生态」比「App 功能」更能撑时间；代价是内容合法性完全落在规则指向的第三方站点上。"

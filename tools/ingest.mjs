@@ -196,7 +196,8 @@ function pushToRemote(dateLabel) {
     return;
   }
   try {
-    git(['add', '-A']);
+    // 只暂存数据与修订，避免把 Temp/、artifact/ 等本地杂物带进公开仓库
+    git(['add', '_data', 'overrides']);
     const staged = git(['diff', '--cached', '--name-only']);
     if (!staged) {
       console.log('   没有需要提交的变更');

@@ -34,6 +34,16 @@ const year = 2026;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      平台限制：GitHub Pages 无法自定义响应头，这里用 meta CSP 补一层。
+      Pages 服务本身不受它约束（报文级别做不到），主要堵的是页面内意外引入的
+      外部脚本/样式/对象；脚本与样式需 unsafe-inline：首屏主题脚本和行内样式
+      都内联在文档里。GitHub Pages 服务自带的 X-Frame-Options 仍由平台下发。
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
     <title>{title}</title>
     <meta name="description" content={description} />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
