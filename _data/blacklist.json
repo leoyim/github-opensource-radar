@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 100,
-    "publicCount": 44,
+    "count": 101,
+    "publicCount": 45,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -31,8 +31,8 @@
         "id": "installer-wave-2026-11-d",
         "label": "「离线安装包」批量投放（第四波）",
         "window": "2026-11-14 — 2026-11-15",
-        "repos": 5,
-        "note": "四个仓库在 2026-11-14 21:36 的 45 秒窗口内及次日 11:13 先后创建，以不同商业软件名（Office、Office Pro、Outlook、Tableau Prep）的「Standalone Offline Build for Windows 11」为标题；README 使用逐字相同的徽章组、章节结构、下载按钮与 PowerShell 部署表格，篇幅均在 13–14 KB。仓库标注 C++，files/ 目录只有三个 220–282 B 的占位源文件，docs/ 下为约 20 KB 的落地页，没有可审阅的源码或构建链；星标 111–358、零 fork、零 issue，附 MIT 许可文件而分发第三方商业软件的离线安装包，申报的 20 个主题词含多个与正文无关的方向词。 11-18 期按同一证据口径补齐 11-15 晚间使用相同徽章、章节与部署表格的一个仓库（whalefeed），共 5 个。"
+        "repos": 6,
+        "note": "四个仓库在 2026-11-14 21:36 的 45 秒窗口内及次日 11:13 先后创建，以不同商业软件名（Office、Office Pro、Outlook、Tableau Prep）的「Standalone Offline Build for Windows 11」为标题；README 使用逐字相同的徽章组、章节结构、下载按钮与 PowerShell 部署表格，篇幅均在 13–14 KB。仓库标注 C++，files/ 目录只有三个 220–282 B 的占位源文件，docs/ 下为约 20 KB 的落地页，没有可审阅的源码或构建链；星标 111–358、零 fork、零 issue，附 MIT 许可文件而分发第三方商业软件的离线安装包，申报的 20 个主题词含多个与正文无关的方向词。 11-18 期按同一证据口径补齐 11-15 晚间使用相同徽章、章节与部署表格的一个仓库（whalefeed），共 5 个；另核对到一个创建于 2026-11-13T23:49:45Z、使用相同徽章与章节结构的 DxO PhotoLab 条目，事实特征一致，一并归集，共 6 个。"
       },
       {
         "id": "editorial-boundary",
@@ -1137,7 +1137,7 @@
           "detail": "与 Forgavin/ultra-iso-desktop-setup、RafliAbdulHaliim/sylenth-1-enhancement-suite、xavier442/pump-fun-desktop 等 11 个仓库 在 15 分钟内先后创建，投放节奏高度一致"
         }
       ],
-      "verdict": "多项元数据特征同时偏离常态，判定为热度异常，已从榜单移除。",
+      "verdict": "多项元数据特征同时偏离常态，建议在核实前不要直接引入。",
       "advice": "建议先自行核对仓库历史与代码，再决定是否引入。",
       "snapshot": {
         "stars": 773,
@@ -6996,6 +6996,100 @@
         "created_at": "2026-11-09T05:15:48Z",
         "pushed_at": "2026-11-17T02:00:13Z",
         "topics": []
+      }
+    },
+    {
+      "full_name": "ben-miller-23/dxo-photolab-10-desktop",
+      "owner": "ben-miller-23",
+      "name": "dxo-photolab-10-desktop",
+      "url": "https://github.com/ben-miller-23/dxo-photolab-10-desktop",
+      "description": "DxO PhotoLab 10 2026 desktop setup with DeepPRIME XD denoising for clean high-ISO shots, optical corrections from measured lens profiles, and non-destructive RAW workflow with local adjustments on Windows 11",
+      "language": "C++",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-d",
+      "firstSeen": "2026-11-20",
+      "removedAt": "2026-11-20",
+      "issues": [
+        "2026-11-20"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在同一窗口",
+          "detail": "仓库创建于 2026-11-13T23:49:45Z，与 11-14 起先后上架的一组「Standalone Offline Build for Windows 11」条目处于相近时间窗，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "307 星标但没有任何 fork，也缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 C++，仓库体积约 234 KB，files/ 下仅 main.cpp（269 B）、platform.cpp（220 B）、util.cpp（282 B）三个占位文件，主体为 14,066 B 的 README 与 docs/ 落地页素材，未包含可审阅的源码目录或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 标题为「DxO PhotoLab 10 2026: Standalone Offline Build for Windows 11」，首屏由徽章组与 Download 章节的 installer-card 下载按钮构成，按钮指向仓库自身的 Pages 页面；文中说明首次运行需手动放行系统对未签名安装程序的提示。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附 MIT 许可文件，README 描述的却是第三方商业图像软件的独立离线分发包，并自述与商标权利人无关联、非厂商发布，权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与 11-14 起已归集的一组条目使用相同的徽章组、章节结构（Intro / Download / Features / Requirements / FAQ / Disclaimer）、相近篇幅与同一组「Standalone Offline Build」措辞；申报的 19 个主题词含多个优惠码、折扣类词，正文并未涉及其中多数技术主题。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已归集批次同批上架",
+          "detail": "与 11-12 期已归集的 dxo-photolab-10-desktop 条目使用同一商品名、与 11-14 起的一组条目使用同一 README 模板，账号与创建时间更换而版式未变；核对元数据、README 原文与同批条目的时间及文本相关性后，本期不纳入推荐，该条目此前亦未进入任何期次的推荐位。处置仅针对本期选目，不对作者作推断。"
+        }
+      ],
+      "verdict": "README 以下载入口代替源码与构建说明，所述为第三方商业软件的独立离线分发，安装过程与授权依据均无法预先审阅；与 11-14 起的一组同类条目特征一致。",
+      "advice": "不建议在任何环境执行其安装程序；如需相应软件，建议通过官方渠道获取并核对授权。",
+      "snapshot": {
+        "stars": 307,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-13T23:49:45Z",
+        "pushed_at": "2026-11-17T18:55:54Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "digital-photography",
+          "dxo-photolab-coupon",
+          "dxo-photolab-discount-code",
+          "dxo-photolab-elite",
+          "dxo-photolab-elite-download",
+          "dxo-photolab-essential",
+          "dxo-photolab-pro-install-windows-raw-editor",
+          "dxo-photolab-sale",
+          "open-source",
+          "pro-photo",
+          "python",
+          "scripts",
+          "software-engineering",
+          "system",
+          "utility",
+          "windows-app"
+        ]
       }
     }
   ]

@@ -1,0 +1,90 @@
+{
+  "firecrawl/firecrawl": {
+    "summary_zh": "把网页抓取、清洗与检索收敛成一条供 AI agent 使用的接口。README 并列给出三种用法：本机单个二进制把网站转成干净 Markdown、作为 MCP server 挂进 agent 并在 localhost 提供 API；云端托管版在同样能力上加搜索与 Alexandria 的 550+ 数据源；自托管则从 apps/api 部署完整服务端，自带队列、worker 与数据库。仓库同时维护本地实现、自托管服务端与各语言 SDK，三种形态共用同一套接口语义，AGPL-3.0 许可。",
+    "highlight_zh": "本期 AI 方向增量第一（当日 +825）。看点不在抓取本身，而在「接口不变、部署形态可换」：本机验证、云端扩容、内网自托管走的是同一套调用语义，且以 MCP 入口直接落在 agent 工具层。选型要先定形态——许可义务、数据源范围与运维成本三者差异明显。"
+  },
+  "openvinotoolkit/openvino": {
+    "summary_zh": "Intel 开源的推理优化与部署工具包，位于训练框架与目标硬件之间：把 PyTorch、TensorFlow、ONNX、Keras、PaddlePaddle、JAX/Flax 训练出的模型转换并优化为中间表示，再由统一运行时按 CPU（x86/ARM）、集成/独立 GPU 或 NPU 分派执行，部署端不必带上原训练框架。可通过 Optimum Intel 直接接入 Hugging Face Hub 的 transformers 与 diffusers 模型，覆盖计算机视觉、语音、NLP 与生成式 AI，Apache-2.0 许可。",
+    "highlight_zh": "本期最老的项目之一（2,958 天），解决的仍是推理侧长期存在的部署碎片化。它不生产模型，只把「多框架 → 多硬件」的适配收敛成一层。是否值得引入，取决于目标硬件是否落在它的优势区间，以及是否愿意维护模型转换链路。"
+  },
+  "simplexai-labs/linger": {
+    "summary_zh": "面向消费级 Mac 与 PC 的本地个人 agent，主张零 token 费、数据不出本机。核心是 model–harness co-design：MoE 推理引擎 PolyStrata 把模型最忙的专家留在 GPU，其余下沉到 RAM 或 SSD，让 125B 的 Qwen3.8-Flash-Next 在 12 GB 显卡 + 64 GB 内存上运行。上层 harness 负责长期记忆与主动任务，与推理引擎共用同一台机器。仓库仅创建 10 天，许可标注 NOASSERTION。",
+    "highlight_zh": "本期最年轻的入选项目之一（10 天、1,609 星）。新意在于用 MoE 专家分层把百 B 模型压进消费级显存，并把记忆、主动执行与推理放在一台机器上闭环，让隐私从口号变成可运行架构。但极年轻、许可不明、性能强依赖硬件，适合愿意实测的早期采用者。"
+  },
+  "earendil-works/pi": {
+    "summary_zh": "一个刻意保持极薄的 coding agent 骨架：统一 LLM API、agent loop 与 TUI，明确不带 sub-agents 与 plan mode，把编排能力留给使用者。定制通过 extensions、skills、prompt templates、themes 四类可插拔单元完成，并可打包成 Pi packages 经 npm 或 git 分享。支持交互式、print/JSON 自动化、RPC 远程控制与 TypeScript SDK；安装方式含固定依赖的安装脚本、npm 直装与 Nix 离线构建，需 Node.js 22.19+，MIT 许可。",
+    "highlight_zh": "15,859 fork 说明定制需求真实存在。它把「可塑性」做成首要目标，关键在于 Pi packages 让定制不再只是本地 hack，而能跨机器复用。代价是复杂编排要自建，且引入他人包等同于在 agent 里执行第三方代码。README 还明示新贡献者的 issue/PR 默认自动关闭，社区路径与常规开源项目不同。"
+  },
+  "elementalsouls/Claude-BugHunter": {
+    "summary_zh": "面向 Claude Code 的 drop-in 安全测试技能包，把 681 份已披露 HackerOne 报告的方法论整理成 82 个技能与 15 个 slash command。内容分三层：思维框架（bb-methodology 五阶段流程、redteam-mindset 作用域纪律）、按 24 类核心漏洞拆分的 58 个 hunt 技能（检测模式、payload、绕过表、链路模板）与企业边界平台 CVE 链路；交付层含 triage-validation、reporting 与 evidence-hygiene（7-Question Gate、VRT 分级、OOS 反驳、PII 脱敏）。纯文本资产，可审阅、可裁剪、可只装子集，MIT 许可。",
+    "highlight_zh": "本期全榜增量第一（当日 +1,349）。卖点不是攻防能力本身，而是把合规与作用域边界一起编码进技能——7-Question Gate 与 PII 脱敏是当作功能在做的。内容含 payload 与企业平台链路，只可用于有明确书面授权的目标，宿主权限与网络边界必须另行收紧。"
+  },
+  "xerj-org/xerj": {
+    "summary_zh": "单个 Rust 二进制的 AI 检索引擎，为代码、文档、日志、JSONL/CSV 与 PDF 建 BM25、向量及混合索引，提供无需 grep 的代码搜索、agent memory 与 RAG 后端，并暴露 Elasticsearch 兼容 API。Query-1 走的是反 RAG 路径：读问题后写一段短程序，由引擎在已存事实上执行查找、比较与计数，查找结果指向带引用片段的具体事实，计数返回程序哈希；数据不支持就返回 UNKNOWN，事实冲突返回 CONFLICT。四核 CPU 离线运行，无需 embedding 或 GPU，Apache-2.0 许可。",
+    "highlight_zh": "它质疑的是 RAG 的默认分工：与其让模型润色检索结果，不如让检索端给出可复核的程序化答案。UNKNOWN / CONFLICT 两个显式状态比「更准的答案」更重要。边界也清楚——精确查证很强，开放域模糊提问会被如实拒绝，接入前要先确认自己的问题类型。"
+  },
+  "ApodexAI/FrontierAgent": {
+    "summary_zh": "开源的 agent runtime、终端产品与评测套件，面向长周期研究与文件类工作。TUI 提供两种原生工作流：ReAct 由单个有状态 agent 在任务沙箱内研究、读写、执行命令并迭代；Agent Team 由协调者维护任务板、把独立工作并行委派给子 agent、汇总报告再综合结果。框架、工具、工作流与评测层保持分离、各自可独立复用，同一套工作流引擎同时驱动 TUI 与用于评测 Apodex 模型的 benchmark runner。macOS / Linux 一条命令启动，无需预装、不强依赖 Docker，Apache-2.0 许可。",
+    "highlight_zh": "分层与「评测/产品共用引擎」是两点关键设计：把 agent 研究从产品里解放出来，也让基准结果具备可解释性。创建仅 90 天、13 个 issue，社区验证与 Windows 支持有限；评测项偏向自家模型，横向比较需谨慎。"
+  },
+  "microsoft/markitdown": {
+    "summary_zh": "轻量 Python 工具，把 PDF、PowerPoint、Word、Excel、图片、音频、HTML、CSV/JSON/XML、ZIP、YouTube URL、EPub 等统一转成 Markdown，供 LLM 与文本分析管线消费。与 textract 相比，它明确放弃高保真还原，重点保留标题、列表、表格、链接等对下游切分与提示处理重要的结构。图片支持 EXIF 与自动字幕、音频支持 EXIF 与语音转写，README 注明这两类能力依赖 web-hosted 服务。MIT 许可，可与 autogen、langchain 等链路组合。",
+    "highlight_zh": "解决的是「输入格式归一化」这一层稳定需求，用统一的 Markdown 语义结构换掉五花八门的解析器输出。定位克制、生态成熟，是文档 RAG 里低风险默认选择。注意它主动放弃视觉还原，且字幕/转写会把数据送到外部服务，离线与合规场景需单独处理。"
+  },
+  "lbjlaq/Antigravity-Manager": {
+    "summary_zh": "用 Tauri v2 + React（Rust 后端）做的跨平台桌面应用，为同时使用多个 AI 服务账号的场景提供本地控制面：一键无缝切换账号、对不同服务做协议转换、按策略智能调度请求，形成常驻的低成本本地 AI 中继站。凭据与配额状态集中在本地桌面端，而不是散落在各家客户端。中英双语说明，许可标注 NOASSERTION。",
+    "highlight_zh": "在 AI 客户端普遍是 Web 形态时，把调度层做成常驻本地桌面端是不同落点。真正需要使用者自己把关的是合规边界：多账号调度与协议转换是否触及上游服务条款、账号凭据如何保管，工具本身不替你回答。1,696 个 open issue 也提示兼容面广、需锁版本验证。"
+  },
+  "twentyhq/twenty": {
+    "summary_zh": "面向技术团队的开源 CRM，主张「像业务代码一样 build、ship、version」：把数据模型、字段、视图与流程变成可声明、可版本化的资产，纳入既有 git 与 CI/CD 流程。以 TypeScript + GraphQL 为核心的现代 Web 应用，提供 `npm install -g twenty` 本地初始化与 React 集成，同时有分钟级开通、无需运维的托管 workspace。定位为 Salesforce 的开源替代，许可标注 NOASSERTION。",
+    "highlight_zh": "核心主张是把 CRM 从「后台配置」变成「可版本化的工程资产」，对已用 git/CI 管业务的团队很有说服力。成熟度高、社区大、托管与自建双路径清晰。代价是深度定制后与上游升级的长期冲突，以及许可标注不明需自行确认。"
+  },
+  "mastra-ai/mastra": {
+    "summary_zh": "为 TypeScript 团队准备的 AI 应用与 agent 框架，覆盖从早期原型到生产就绪的完整链路，内置 agents、evals、workflows 等 AI 应用常用模式，并围绕可靠性提供 tune / scale 相关能力。可与 React、Next.js、Node 集成，也能作为独立 server 部署到任意环境；围绕 TypeScript 类型系统组织，与现有 Node 依赖及构建链共享。许可标注 NOASSERTION。",
+    "highlight_zh": "把「AI 应用工程化」按 TS 团队习惯重做了一遍：类型、组件、评测、部署都在同一套栈里，对已重投 React/Node 的团队接入成本明显低于跨语言方案。框架抽象较厚、867 个 issue 面较广，适合中长期维护的产品而非一次性脚本。"
+  },
+  "perspective-dev/perspective": {
+    "summary_zh": "面向大规模与流式数据的交互式分析组件：C++ 写的列式流式查询引擎编译为 WebAssembly（含 64 位 memory64 构建，支持浏览器内 >4GB 数据集，列可分页到 OPFS 磁盘或原生内存映射文件），也可跑在 Python、Node.js、Rust 服务端或下推到已有数据库。UI 是可拖拽配置的 Custom Element，含虚拟滚动可编辑表格、WebGL 15+ 图表、瓦片地理图与 React 绑定；支持表增量更新、视图实时 tick、跨表响应式 join、ExprTK 列式表达式，以及 Apache Arrow / CSV / JSON 读写与流式接入。Apache-2.0 许可。",
+    "highlight_zh": "本期前端方向技术密度最高的一项。把列式查询引擎真正搬进浏览器，并给出跨越 4GB 内存的工程路径，是它区别于普通图表库的根本点；UI、引擎、服务端绑定共用一套查询语义。代价是 Wasm 体积与复杂度，只有「交互式实时分析」是核心需求时才值得引入。"
+  },
+  "strimzi/strimzi-kafka-operator": {
+    "summary_zh": "以 Kubernetes Operator 方式在 K8s / OpenShift 上部署并运维 Apache Kafka 集群：用户提交自定义资源描述期望状态，Operator 持续把 broker、配置、Topic 与用户等实际资源收敛过去，把有状态集群的扩缩容、滚动升级等操作顺序固化进协调循环。提供 Minikube、OKD、Kind 的 Quick Start，main 与各 release 文档分离，公开 Roadmap 与 CNCF Slack、邮件列表、双周社区会议。首页挂有 OpenSSF Best Practices、Scorecard、OSPS Baseline、FOSSA 与 Snyk 徽章，Apache-2.0 许可。",
+    "highlight_zh": "本期最老项目（3,850 天）。它卖的不是 Kafka 而是「Kafka 的可运维性」，近 11 年历史与完备的安全治理徽章是其作为基础设施的可信依据。采用前提是团队愿意承担 Operator + Kafka 双栈运维，并接受「一切变更走 CR」的纪律。"
+  },
+  "Tracer-Cloud/opensre": {
+    "summary_zh": "面向 CI/CD 可靠性的开源 CLI agent：读取失败的 CI run，追踪根因并生成一个供人工 review 的修复，而不是自动合并。自托管、可接入自有模型，日志与代码不需要送到第三方推理服务。提供 macOS / Linux / Windows 安装路径、Quickstart、Docs、FAQ 与 Security/Trust 页，徽章明确标注 public alpha、APIs 与集成可能演进，Apache-2.0 许可。",
+    "highlight_zh": "把「失败 → 归因 → 建议修复」串成一条自托管 agent 链路，且坚持最后一步留给人工 review，边界把握克制；自有模型支持是对企业场景最实际的让步。当前 public alpha，适合先在非关键流水线积累信任，不宜直接接管主干修复。"
+  },
+  "pgrundev/pgboxdb": {
+    "summary_zh": "为 agent 沙箱、CI、每 PR 数据库、测试与预览环境设计的短生命周期 Postgres 运行时：单个 Rust 进程承载成千上万个隔离数据库，共享 SQL 引擎（每连接一线程、共享 catalog 与缓存），每个库从密封模板毫秒级创建、空闲仅耗数十 KB 内存；在 ZFS 等写时复制后端上克隆初始仅数 MB，与模板大小无关。兼容 Postgres 线协议与 SQL 方言，Rails、Django、Prisma、SQLAlchemy、node-postgres 的 migrate → test → schema-change 全流程无需改动。以 Claude Code plugin、`npx skills add` 等技能形式安装，让 coding agent 自行建库与回收。AGPL-3.0，README 附 Postgres 18.6 与回归套件 219/231 字节级一致的指标。",
+    "highlight_zh": "把数据库的成本模型从「按服务器供给」改成「按对象分配」，是 agent 时代很对症的一步：共享引擎 + 密封模板 + 写时复制，配上协议兼容与技能包安装，落地路径清晰。边界必须看清——明确只做一次性库、不承载生产数据，且写时复制收益依赖底层文件系统支持块克隆。"
+  },
+  "datazip-inc/olake-go": {
+    "summary_zh": "Go 编写的开源数据摄取引擎，把 PostgreSQL、MySQL、MongoDB、Oracle、DB2、MSSQL、Kafka 与 S3 复制到 Apache Iceberg 或纯 Parquet。支持 Full + CDC、自动 schema 发现与演进、宣称 exactly-once 与 Arrow 写入，兼容 Glue / Hive / JDBC / REST 多种 Iceberg catalog，提供 Web UI 与 CLI、Docker Compose 数分钟起同步。README 明确「No Spark, no Flink, no Kafka, no Debezium」，并给出 580K RPS（Postgres）、139K RPS（MySQL）指标；仓库已由 datazip-inc/olake 更名，表维护拆到独立仓库 olake-fusion，Apache-2.0 许可。",
+    "highlight_zh": "把 CDC 到 Iceberg 的链路从多组件收敛成一个 Go 引擎，并用开放表格式避免厂商锁定，exactly-once、schema evolution 与多 catalog 都是实打实的工程内容。选型时要把 olake-fusion 的表维护一并纳入运维范围，并对官方吞吐指标做自己的基准验证。"
+  },
+  "pola-rs/polars": {
+    "summary_zh": "Rust 编写的分析型查询引擎，DataFrame API 与 SQL 可混写、经过同一优化器与同一执行引擎，惰性查询自动优化并并行化到全部核心。从零实现多线程与向量化（SIMD）执行，支持超出内存时 spill to disk、I/O 与 Expression 插件扩展、可选 NVIDIA GPU 加速，并以 Apache Arrow 列格式实现零拷贝数据交换。提供 Python / Rust 等语言绑定，MIT 许可。",
+    "highlight_zh": "把 DataFrame 与 SQL 收敛到同一优化器，是它区别于「又一个快一点的 DataFrame 库」的关键：写法自由、执行语义统一。加上 spill to disk、Arrow 零拷贝与插件扩展，工程完整度高。代价是惰性执行的思维切换与 2,843 个 issue 带来的版本验证成本。"
+  },
+  "CzzzzzzJ/mdldm-maitian": {
+    "summary_zh": "面向单人创作者的中文多平台发布中控与数据监控工作台，覆盖 B 站、抖音、小红书、视频号、YouTube、X、Instagram。三段式链路：发布 skill 让 Claude Code / Codex 看片写文案并生成 publish.json；Chrome 发布助手在各平台上传页填文案、传封面、设定时；hub 负责分发计划、调度、防重、取链接与每日数据采集，配手机大屏、飞书卡片与转化漏斗。README 明确跑在一台常开的 Mac、复用已登录的浏览器、不存任何平台密码、国内四家只填写不发布，最后一下由人点。MIT 许可，仓库创建仅 6 天。",
+    "highlight_zh": "把「发布」当成可编排的工程链路来做：skill 生成结构化素材、插件负责适配、hub 负责调度与数据，分工清楚。最值得肯定的是凭据与发布权边界——不存密码、国内平台留人工确认。风险集中在平台改版与自动化操作的条款合规，需使用者自行承担。"
+  },
+  "toeverything/AFFiNE": {
+    "summary_zh": "开源、local-first 的知识工作台，把文档、白板与表格「超融合」在同一块无边界画布上：富文本、便签、嵌入网页、多视图数据库、链接页面、形状与幻灯片都是同一份数据模型里的块，文档视图与画布视图只是不同渲染而非两份副本。以 CRDT 为数据底座，写入先落本地磁盘，协作与云同步作为可选层叠加；内置多模态 AI 助手可做大纲转幻灯片、文章转思维导图、任务规划与原型生成。定位为 Notion 与 Miro 的开源替代，提供桌面与 Web 形态，TypeScript 主体。",
+    "highlight_zh": "「同一份数据、多种呈现」是最扎实的设计：文档与画布不需要互相同步，本来就是一份东西。local-first 让所有权落在使用者一侧，配合开源与自托管形成闭环。代价是功能广而深不足、许可标注 NOASSERTION，且 AI 能力可能涉及外部服务，local-first 不等于全链路离线。"
+  },
+  "mjmirza/app-store-compliance": {
+    "summary_zh": "把 App Store 与 Google Play 拒审经验做成可扫描规则库的开源 playbook：收录 117 条已归档拒审模式与修复、申诉 playbook、提交前 checklist，覆盖隐私 manifest 与 Data safety 检查，并跟踪 95 个合规截止日期。执行层是只读 guard——克隆仓库后运行一个 bash 脚本扫描工程目录，不安装依赖、不改动项目；还能以 skill / hook 形式装进 Claude Code、Codex、Gemini CLI、Copilot、Cursor 等 AI 编码工具，让每次提交自动检查。提供公开网站版与 CI 工作流，Shell 主体。",
+    "highlight_zh": "本期移动方向增量第一（当日 +377）。把合规从「人记」变成可扫描、可挂 hook、可版本化的规则库，117 条模式与 95 个截止日期让内容可清点；只读不改源码的 guard 降低了接入阻力。但要清醒：指南与法规持续变化，它只是辅助检查，官方最新文档与人工审核判断仍由团队负责。"
+  },
+  "imxieyi/Kernarium": {
+    "summary_zh": "在 iOS 上原生运行真实 Linux 内核的运行时，走 User-mode Linux 路线：把 6.18 LTS 内核编译为原生 arm64 代码并链进 iOS runtime framework，内核原生执行不加模拟，只有用户态程序由 iSH 式线程解释器执行（支持 SMP、arm64/arm32/x86_64 客户指令与 JIT）。GPU 经 KosmicKrisp 提供 Vulkan 1.4、经 Zink 提供 OpenGL 4.6 / GLES 3.2，硬件编解码走 VideoToolbox；存储支持 UBD 虚拟盘、多种 Linux 文件系统、loop 与 FUSE，网络走完整 Linux 栈 + libslirp。基于该运行时的 Android 模拟器 Andarium 已上架 App Store，另有 IPA 侧载；附 AGENTS.md 便于让 coding agent 参与构建，GPL-2.0。",
+    "highlight_zh": "本期跨端方向最硬核的底层尝试，关键是「内核原生、用户态模拟」这条介于 UTM 整机模拟与 iSH 纯用户态模拟之间的中间路线，既拿真实内核语义又避开整机开销。创建仅 12 天，通用 Linux 应用自述仍早期、构建 Android 镜像需高配远端构建机，适合关注虚拟化底层的人跟进。"
+  },
+  "rukamori/ArchiveTune": {
+    "summary_zh": "面向 Android 的开源音乐播放器，把本地音乐文件与 YouTube Music 内容收进同一播放体验。基于 Kotlin、Jetpack Compose 与 Material Design 3 构建，强调高性能、注重隐私与面向重度使用者的丰富功能集，提供官网、下载、截图与支持渠道。GPL-3.0 许可；README 明确声明不为任何 fork 提供支持、维护、排障或协助，二次分发需自行承担全部维护责任。",
+    "highlight_zh": "技术上没有激进创新，价值集中在体验整合与可审阅源码：本地与在线曲目统一队列、收藏与播放状态。星标与 issue 量说明有真实用户群。特别要留意上游对 fork 的不支持声明，以及接入第三方在线服务可能涉及的服务条款，这两点决定它能否作为长期依赖。"
+  }
+}

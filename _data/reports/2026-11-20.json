@@ -1,0 +1,1995 @@
+{
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T09:37:01.699+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-19",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 900,
+    "unclassified": 71,
+    "selected": 22,
+    "suppressedByHistory": 286,
+    "sameDateExempt": 0,
+    "removed": 1,
+    "removedTotal": 1,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "firecrawl/firecrawl",
+          "owner": "firecrawl",
+          "name": "firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "homepage": "https://firecrawl.dev",
+          "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+          "language": "TypeScript",
+          "topics": [
+            "ai",
+            "ai-agents",
+            "ai-crawler",
+            "ai-scraping",
+            "ai-search",
+            "crawler",
+            "data-extraction",
+            "html-to-markdown"
+          ],
+          "stars": 204264,
+          "forks": 10702,
+          "open_issues": 843,
+          "starGain": 825,
+          "heat": 825,
+          "heatBasis": "trending",
+          "heatPercentile": 98,
+          "ageDays": 948,
+          "created_at": "2024-04-15T21:02:29Z",
+          "pushed_at": "2026-11-20T01:33:56Z",
+          "license": "AGPL-3.0",
+          "rating": 4.5,
+          "composite": 94.4,
+          "breakdown": {
+            "heat": 98,
+            "community": 98,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "src=\"https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl logo.png\" height=\"200\"\n\nKnowledge infrastructure to make your agents smarter. 🔥 You can use Firecrawl three ways. This repo holds the code for Firecrawl Local and the self-hosted server, along with SDKs that work with all three.\n\n- Firecrawl Local. Run Firecrawl on your own machine as one binary that turns websites into clean markdown, plugs into your AI agent as an MCP server and serves the Firecrawl API on localhost. - Firecrawl Cloud. Use the hosted service at firecrawl.dev for everything Local does at scale with nothing to run, plus search and the 550+ data providers in Firecrawl Alexandria for far more knowledge than scraping alone. - Self-hosting. Deploy the full Firecrawl server from apps/api with its own queues, workers and databases on your own infrastructure.",
+            "features": [
+              "Firecrawl Local. Run Firecrawl on your own machine as one binary that turns websites into clean markdown, plugs into your AI agent as an MCP",
+              "Firecrawl Cloud. Use the hosted service at firecrawl.dev for everything Local does at scale with nothing to run, plus search and the 550+ da",
+              "Self-hosting. Deploy the full Firecrawl server from apps/api with its own queues, workers and databases on your own infrastructure.",
+              "Works on the real web. Covers 96% of the web, including JS-heavy pages and dynamic apps (see benchmarks).",
+              "Fast. P95 latency of 3.4s across millions of pages, built for real-time AI agents and dynamic apps.",
+              "LLM-ready output. Clean markdown, structured JSON, screenshots and more, so your AI agents spend fewer tokens.",
+              "Search: Find information across the web",
+              "Scrape: Clean data from any page"
+            ],
+            "sections": [
+              "🔥 Firecrawl",
+              "Firecrawl Local",
+              "Add it to your AI agent",
+              "Run the Firecrawl API on localhost",
+              "What runs where",
+              "Firecrawl Cloud",
+              "Search",
+              "Scrape",
+              "Firecrawl",
+              "Features",
+              "Interact",
+              "1. Scrape the page",
+              "2. Interact with the page (use scrapeId from step 1)",
+              "Agent"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 20870
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "openvinotoolkit/openvino",
+          "owner": "openvinotoolkit",
+          "name": "openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "homepage": "https://docs.openvino.ai",
+          "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+          "language": "C++",
+          "topics": [
+            "ai",
+            "computer-vision",
+            "deep-learning",
+            "deploy-ai",
+            "diffusion-models",
+            "generative-ai",
+            "good-first-issue",
+            "inference"
+          ],
+          "stars": 11574,
+          "forks": 3621,
+          "open_issues": 1171,
+          "starGain": 246,
+          "heat": 246,
+          "heatBasis": "trending",
+          "heatPercentile": 90,
+          "ageDays": 2958,
+          "created_at": "2018-10-15T10:54:40Z",
+          "pushed_at": "2026-11-20T01:14:05Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 86.6,
+          "breakdown": {
+            "heat": 90,
+            "community": 80,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open-source software toolkit for optimizing and deploying deep learning models.\n\nDocumentation • Blog • Key Features • Tutorials • Integrations • Benchmarks • Generative AI\n\n- Inference Optimization : Boost deep learning performance in computer vision, automatic speech recognition, generative AI, natural language processing with large and small language models, and many other common tasks. - Flexible Model Support : Use models trained with popular frameworks such as PyTorch, TensorFlow, ONNX, Keras, PaddlePaddle, and JAX/Flax. Directly integrate models built with transformers and diffusers from the Hugging Face Hub using Optimum Intel. Convert and deploy models without original frameworks. - Broad Platform Compatibility : Reduce resource demands and efficiently deploy on a range of platforms from edge to cloud. OpenVINO™ supports inference on CPU (x86, ARM), GPU (Intel integrated & discrete GPU) and AI accelerators (Intel NPU). - Community and Ecosystem : Join an active community contributing to the enhancement of deep learning performance across various domains.",
+            "features": [
+              "Inference Optimization : Boost deep learning performance in computer vision, automatic speech recognition, generative AI, natural language p",
+              "Flexible Model Support : Use models trained with popular frameworks such as PyTorch, TensorFlow, ONNX, Keras, PaddlePaddle, and JAX/Flax. Di",
+              "Broad Platform Compatibility : Reduce resource demands and efficiently deploy on a range of platforms from edge to cloud. OpenVINO™ supports",
+              "Community and Ecosystem : Join an active community contributing to the enhancement of deep learning performance across various domains.",
+              "Create an LLM-powered Chatbot using OpenVINO",
+              "YOLOv11 Optimization",
+              "Text-to-Image Generation",
+              "Multimodal assistant with LLaVa and OpenVINO"
+            ],
+            "sections": [
+              "Installation",
+              "Verify Installation",
+              "Tutorials and Examples",
+              "load PyTorch model into memory",
+              "convert the model into OpenVINO model",
+              "compile the model for CPU device",
+              "infer the model on random data",
+              "load TensorFlow model into memory",
+              "convert the model into OpenVINO model",
+              "compile the model for CPU device",
+              "infer the model on random data",
+              "Generative AI with OpenVINO",
+              "Documentation",
+              "OpenVINO Ecosystem"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12254
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "simplexai-labs/linger",
+          "owner": "simplexai-labs",
+          "name": "linger",
+          "url": "https://github.com/simplexai-labs/linger",
+          "homepage": "heylinger.com",
+          "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-teams",
+            "local-llm",
+            "memory",
+            "personal-agent",
+            "proactive-agent",
+            "proactive-ai"
+          ],
+          "stars": 1609,
+          "forks": 124,
+          "open_issues": 41,
+          "starGain": null,
+          "heat": 455.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 10,
+          "created_at": "2026-11-10T03:50:38Z",
+          "pushed_at": "2026-11-19T18:38:12Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 83.6,
+          "breakdown": {
+            "heat": 95,
+            "community": 59,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open-Source &nbsp;&nbsp;·&nbsp;&nbsp; Local AI &nbsp;&nbsp;·&nbsp;&nbsp; Consumer Macs &amp; PCs\n\n- A Claude-class brain, running locally. A 125B model on a 12 GB GPU, on everyday Macs and PCs. - The Grok Bot experience on your PC. Zero token fees for local inference. - A loyal AI sidekick. It remembers what matters, proactively gets things done, and keeps your data on your device.\n\nEfficient AI model–harness co-design brings a full local agent to consumer Macs and PCs. Our MoE inference engine, PolyStrata, keeps a model's busiest experts on your GPU and the rest in RAM or on SSD, so larger models run with less GPU memory: the 125B Qwen3.8-Flash-Next runs on a 12 GB card with 64 GB of RAM. The model runs on your own machine instead of a remote server, so there is no cloud bill and no token fee.",
+            "features": [
+              "A Claude-class brain, running locally. A 125B model on a 12 GB GPU, on everyday Macs and PCs.",
+              "The Grok Bot experience on your PC. Zero token fees for local inference.",
+              "A loyal AI sidekick. It remembers what matters, proactively gets things done, and keeps your data on your device.",
+              "Desktop and browser: Your apps, your Chrome, already signed in. Agents open the apps on your Mac, Windows PC or Linux desktop and click and ",
+              "Agent teams: One plan for every agent. When a job needs more than one agent, Another Me brings in the agents you have, creates the ones it i",
+              "Task delegation: Long work runs in the background while the chat stays with you. An agent hands long work to background copies of itself and",
+              "Model scheduling: One model, many agents, your work first. Every agent, approval and background job shares the local model, so work you are ",
+              "Bring your own runtime: Claude Code, Codex or Pi, on your GPU or your subscription. Each runs as it always does, on local models or on the p"
+            ],
+            "sections": [
+              "Cool features",
+              "Local models: A Claude-class brain on a 12 GB GPU",
+              "Model Autopilot: The smartest model your machine can run",
+              "Wiki and memory: It remembers your business",
+              "Proactive Another Me: It speaks up when it matters",
+              "More features",
+              "Quick start",
+              "Option 1: the desktop app",
+              "Option 2: Docker Compose",
+              "macOS (Apple silicon) or Linux",
+              "Windows (x64, ordinary non-elevated PowerShell)",
+              "Learn more",
+              "Contributors",
+              "Community & Contact"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 25942
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "earendil-works/pi",
+          "owner": "earendil-works",
+          "name": "pi",
+          "url": "https://github.com/earendil-works/pi",
+          "homepage": "",
+          "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 122936,
+          "forks": 15859,
+          "open_issues": 262,
+          "starGain": 194,
+          "heat": 194,
+          "heatBasis": "trending",
+          "heatPercentile": 84,
+          "ageDays": 467,
+          "created_at": "2025-08-09T14:03:50Z",
+          "pushed_at": "2026-11-19T23:06:04Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.7,
+          "breakdown": {
+            "heat": 84,
+            "community": 96,
+            "activity": 73,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 43,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Pi is a minimal, extensible agent harness that you can make your own.\n\nAdapt Pi to your workflows, not the other way around. Customize Pi with extensions, skills, prompt templates, and themes. Bundle them as Pi packages and share via npm or git.\n\nPi ships with powerful defaults but skips features like sub-agents and plan mode. Ask Pi to build what you want, or install a package that does it your way.",
+            "features": [
+              "Gondolin extension : keep pi and provider auth on the host while routing built-in tools and ! commands into a local Linux micro-VM.",
+              "Plain Docker : run the whole pi process in a local container for simple isolation.",
+              "OpenShell : run the whole pi process in a policy-controlled sandbox.",
+              "Direct external dependencies are pinned to exact versions. Internal workspace packages remain version-ranged.",
+              ".npmrc sets save-exact=true and min-release-age=2 to avoid same-day dependency releases during npm resolution.",
+              "package-lock.json is the dependency ground truth. Pre-commit blocks accidental lockfile commits unless PI ALLOW LOCKFILE CHANGE=1 is set.",
+              "npm run check verifies pinned direct deps, native TypeScript import compatibility, and the generated coding-agent install lock.",
+              "The pi.dev installer installs from packages/coding-agent/install-lock/ , generated from the root lockfile, to pin transitive deps. The npm p"
+            ],
+            "sections": [
+              "Pi",
+              "Getting started",
+              "Run with Nix",
+              "Packages",
+              "Permissions & Containerization",
+              "Contributing",
+              "Development",
+              "Using local packages outside the monorepo",
+              "Building standalone binaries from release source",
+              "Supply-chain hardening",
+              "Share your OSS coding agent sessions",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10679
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "elementalsouls/Claude-BugHunter",
+          "owner": "elementalsouls",
+          "name": "Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+          "language": "Python",
+          "topics": [
+            "ai-security",
+            "anthropic",
+            "application-security",
+            "bug-bounty",
+            "bugbounty",
+            "bugcrowd",
+            "claude",
+            "claude-code"
+          ],
+          "stars": 12577,
+          "forks": 1595,
+          "open_issues": 10,
+          "starGain": 1349,
+          "heat": 1349,
+          "heatBasis": "trending",
+          "heatPercentile": 98,
+          "ageDays": 199,
+          "created_at": "2026-05-05T11:22:32Z",
+          "pushed_at": "2026-11-19T13:21:35Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 86.5,
+          "breakdown": {
+            "heat": 98,
+            "community": 79,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Built by Sachin Sharma — Bug Hunting & GenAI Security Research.\n\nclaude-bughunter is a drop-in skill bundle for the Claude Code skills system. Install once and Claude Code stops being a chatbot and starts behaving like a senior bug-hunting researcher or red-team operator: it knows the techniques, the chain templates, the VRT mappings, the platform CVE chains, and the hygiene — and it stays in scope.\n\n- Think — bb-methodology + redteam-mindset : the 5-phase non-linear workflow, critical-thinking framework, and red-team operator discipline. - Hunt webapps — 58 hunt- skills curated from 681 disclosed HackerOne reports: per-class detection patterns, payloads, bypass tables, and chain templates. - Hit the perimeter — enterprise platform chains (M365/Entra, Okta, vCenter, SSL-VPN appliances, SharePoint, cloud IAM): current 2024–2026 CVE chains + post-credential escalation. - Ship it — triage-validation + reporting + evidence-hygiene : the 7-Question Gate, VRT-aware severity, OOS rebuttals, PII redaction, and red-team deliverables.",
+            "features": [
+              "Think — bb-methodology + redteam-mindset : the 5-phase non-linear workflow, critical-thinking framework, and red-team operator discipline.",
+              "Hunt webapps — 58 hunt- skills curated from 681 disclosed HackerOne reports: per-class detection patterns, payloads, bypass tables, and chai",
+              "Hit the perimeter — enterprise platform chains (M365/Entra, Okta, vCenter, SSL-VPN appliances, SharePoint, cloud IAM): current 2024–2026 CVE",
+              "Ship it — triage-validation + reporting + evidence-hygiene : the 7-Question Gate, VRT-aware severity, OOS rebuttals, PII redaction, and red-",
+              "Bug bounty hunting — web apps, APIs, SaaS, GraphQL, OAuth, JWT, file upload, IDOR, SSRF, RCE chains",
+              "Web application pentesting — full hunt- coverage of OWASP-mapped bug classes + discipline rules",
+              "External red-team engagements — initial-access against internet-facing enterprise estate: M365 / Entra ID, Okta-as-IdP, SharePoint on-prem (",
+              "Cloud misconfig + post-credential escalation — public S3, IMDS chains, STS AssumeRole, cross-account confused-deputy"
+            ],
+            "sections": [
+              "claude-bughunter",
+              "What is this?",
+              "Quickstart",
+              "macOS / Linux",
+              "Windows (PowerShell)",
+              "Runs on multiple agent harnesses",
+              "macOS / Linux",
+              "Windows (PowerShell)",
+              "Star History",
+              "Scope — what this bundle is for, and what it isn't",
+              "In scope",
+              "Out of scope (deliberate — not gaps, design decisions)",
+              "What's inside",
+              "How it works"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 23047
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "xerj-org/xerj",
+          "owner": "xerj-org",
+          "name": "xerj",
+          "url": "https://github.com/xerj-org/xerj",
+          "homepage": "https://xerj.org",
+          "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
+          "language": "Rust",
+          "topics": [
+            "agent-memory",
+            "ai-agents",
+            "bm25",
+            "claude-code",
+            "cli",
+            "code-search",
+            "cursor",
+            "database"
+          ],
+          "stars": 18013,
+          "forks": 1189,
+          "open_issues": 126,
+          "starGain": null,
+          "heat": 1175.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 143,
+          "created_at": "2026-06-30T04:32:45Z",
+          "pushed_at": "2026-11-20T00:28:56Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 88.5,
+          "breakdown": {
+            "heat": 97,
+            "community": 80,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 63,
+            "devops": 56,
+            "ai": 100,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "XERJ Query-1 · Blog post · Release rc.101 · llms.txt · Docs · Donate\n\nMost AI search finds text in milliseconds and then asks a language model to write the answer. The model is what makes a RAG answer good, and it is also where the seconds and the per-question cost come from.\n\nXERJ Query-1 works the other way. It reads your question and writes a short program (look this up, compare these, count those), and the engine runs that program over facts you stored. Lookup and comparison steps point at a stored fact and its quoted span; counts return a program hash, not the records. If the data cannot support an answer you get UNKNOWN ; if two facts disagree you get CONFLICT . It runs on four CPU cores, offline, with no embeddings to build and no GPU.",
+            "features": [
+              "Reference coding: index the OSS projects nearest your problem and retrieve how they solved",
+              "Codebase Q&A and RAG: index a repo, ask for the mechanism, get the passage with file:line",
+              "Security audits: index a target tree and query for sink patterns, secrets and dangerous",
+              "Log and incident analysis: mixed formats become typed indices with the aggregations you",
+              "Agent long-term memory: / memory/{namespace} stores what an agent learns and recalls it",
+              "\"Read https://xerj.org/llms.txt, set XERJ up as your search backend, index ./docs , and",
+              "\"Run xerj autoindex map and tell me what is in this data (types, counts and the gotchas",
+              "\"Use XERJ's / memory/notes API as your long-term memory for this project: store what you"
+            ],
+            "sections": [
+              "XERJ Query-1, new in rc.101",
+              "Try it with the model",
+              "The engine underneath",
+              "Join the community",
+              "The measured reason: reference coding",
+              "Feed it any folder",
+              "What people point it at",
+              "How the prompt works",
+              "Install by hand",
+              "Index a folder",
+              "Search it",
+              "what did it find?",
+              "full-text",
+              "structured"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 54575
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "ApodexAI/FrontierAgent",
+          "owner": "ApodexAI",
+          "name": "FrontierAgent",
+          "url": "https://github.com/ApodexAI/FrontierAgent",
+          "homepage": "https://www.apodex.ai",
+          "description": "🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency.",
+          "language": "Python",
+          "topics": [
+            "agent-orchestration",
+            "agentic-ai",
+            "agentic-framework",
+            "ai-agents",
+            "harness",
+            "multi-agent",
+            "terminal-agent",
+            "tui"
+          ],
+          "stars": 5445,
+          "forks": 344,
+          "open_issues": 13,
+          "starGain": null,
+          "heat": 458.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 90,
+          "created_at": "2026-08-22T05:07:35Z",
+          "pushed_at": "2026-11-20T00:36:29Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 83.6,
+          "breakdown": {
+            "heat": 95,
+            "community": 69,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 37,
+            "backend": 45,
+            "devops": 56,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "FrontierAgent is an open-source agent runtime, terminal product, and evaluation suite for long-horizon research and file-based work. The frontier-agent TUI ships two native workflows:\n\n- ReAct — one stateful agent researches, reads files, writes deliverables, runs commands, and iterates in a task-scoped sandbox. - Agent Team — a coordinator maintains a task board, delegates independent work to parallel sub-agents, collects their reports, and synthesizes the result.\n\nThe same workflow engine powers the benchmark runner used to evaluate Apodex models. The framework, tools, workflows, and evaluation layer remain separate, so each can be reused independently.",
+            "features": [
+              "ReAct — one stateful agent researches, reads files, writes deliverables,",
+              "Agent Team — a coordinator maintains a task board, delegates independent",
+              "Native Agent Team workflow. The coordinator decomposes the request,",
+              "Task Board. Agent Team's add task and update task events appear live in",
+              "Sandboxed file work. Shell and file tools share one task-scoped filesystem:",
+              "Asynchronous intervention. Type while an agent is running to queue a new",
+              "Transparent deliverables. On macOS/Docker, /outputs maps to",
+              "Approval, trace, and recovery. Mutating operations show a diff and require"
+            ],
+            "sections": [
+              "FrontierAgent",
+              "Highlights",
+              "How it fits together",
+              "Quick start",
+              "Optional web research tools",
+              "Stateful single-agent workflow",
+              "Coordinator plus parallel sub-agents",
+              "Install once, launch from any project",
+              "Put OPENAI API KEY, OPENAI BASE URL and OPENAI MODEL into",
+              "${XDG CONFIG HOME:-$HOME/.config}/apodex/env and chmod 600 i",
+              "Deployment model",
+              "Containers and local models",
+              "Using the TUI",
+              "One-shot, line mode, or resume a saved session"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 19573
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "microsoft/markitdown",
+          "owner": "microsoft",
+          "name": "markitdown",
+          "url": "https://github.com/microsoft/markitdown",
+          "homepage": "",
+          "description": "Python tool for converting files and office documents to Markdown.",
+          "language": "Python",
+          "topics": [
+            "autogen",
+            "autogen-extension",
+            "langchain",
+            "markdown",
+            "microsoft-office",
+            "openai",
+            "pdf"
+          ],
+          "stars": 197039,
+          "forks": 14923,
+          "open_issues": 818,
+          "starGain": 434,
+          "heat": 434,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 736,
+          "created_at": "2024-11-13T19:56:40Z",
+          "pushed_at": "2026-11-07T00:14:01Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.4,
+          "breakdown": {
+            "heat": 94,
+            "community": 98,
+            "activity": 22,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "MarkItDown is a lightweight Python utility for converting various files to Markdown for use with LLMs and related text analysis pipelines. To this end, it is most comparable to textract, but with a focus on preserving important document structure and content as Markdown (including: headings, lists, tables, links, etc.) While the output is often reasonably presentable and human-friendly, it is meant to be consumed by text analysis tools -- and may not be the best option for high-fidelity document conversions for human consumption.\n\n- PDF - PowerPoint - Word - Excel - Images (EXIF metadata and captioning) - Audio (EXIF metadata and speech transcription) - HTML - Text-based formats (CSV, JSON, XML) - ZIP files (iterates over contents) - YouTube URLs - EPubs - ... and more!\n\nNOTE: Image captioning and speech transcription rely on web-hosted services.",
+            "features": [
+              "Images (EXIF metadata and captioning)",
+              "Audio (EXIF metadata and speech transcription)",
+              "Text-based formats (CSV, JSON, XML)",
+              "ZIP files (iterates over contents)",
+              "YouTube URLs",
+              "... and more!",
+              "[all] Installs all optional dependencies",
+              "[pptx] Installs dependencies for PowerPoint files"
+            ],
+            "sections": [
+              "MarkItDown",
+              "Why Markdown?",
+              "Prerequisites",
+              "NOTE: Be sure to use 'uv pip install' rather than just 'pip ",
+              "Installation",
+              "Usage",
+              "Command-Line",
+              "Optional Dependencies",
+              "Plugins",
+              "Azure Content Understanding",
+              "Zero-config — auto-selects analyzer per file type",
+              "Output includes YAML front matter with extracted fields:",
+              "---",
+              "contentType: document"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21397
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "lbjlaq/Antigravity-Manager",
+          "owner": "lbjlaq",
+          "name": "Antigravity-Manager",
+          "url": "https://github.com/lbjlaq/Antigravity-Manager",
+          "homepage": "https://lbjlaq.github.io/Antigravity-Manager/",
+          "description": "Professional Antigravity Account Manager & Switcher. One-click seamless account switching for Antigravity Tools. Built with Tauri v2 + React (Rust).专业的 Antigravity 账号管理与切换工具。为 Antigravity 提供一键无缝账号切换功能。",
+          "language": "Rust",
+          "topics": [
+            "account-manager",
+            "antigravity"
+          ],
+          "stars": 33404,
+          "forks": 3561,
+          "open_issues": 1696,
+          "starGain": 91,
+          "heat": 91,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 359,
+          "created_at": "2025-11-26T10:47:13Z",
+          "pushed_at": "2026-11-19T11:55:17Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 85.9,
+          "breakdown": {
+            "heat": 88,
+            "community": 86,
+            "activity": 75,
+            "maturity": 93
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Antigravity Tools Multi-platform automation & multi-account matrix dispatch console\n\nFeatures • GUI Overview • Architecture • Installation • Integration\n\nAntigravity Tools is an all-in-one desktop application designed for developers and AI enthusiasts. It perfectly combines multi-account management, protocol conversion, and smart request scheduling to provide you with a stable, high-speed, and low-cost Local AI Relay Station .",
+            "features": [
+              "Antigravity-Tools-LS : A Language Server Protocol (LSP) designed for AI protocols, providing you with smarter code completion, diagnostics, ",
+              "Global Real-time Monitoring : Instant insight into the health of all accounts, including average remaining quotas for Gemini Pro, Gemini Fla",
+              "Smart Recommendation : The system uses a real-time algorithm to filter and recommend the \"Best Account\" based on quota redundancy, supportin",
+              "Active Account Snapshot : Visually displays the specific quota percentage and the last synchronization time of the currently active account.",
+              "OAuth 2.0 Authorization (Auto/Manual) : Pre-generates a copyable authorization URL so you can finish auth in any browser; after the callback",
+              "Multi-dimensional Import : Supports single token entry, JSON batch import, and automatic hot migration from V1 legacy databases.",
+              "Gateway-level Views : Supports switching between \"List\" and \"Grid\" views. Provides 403 Forbidden detection, automatically marking and skippi",
+              "Multi-Protocol Adaptation (Multi-Sink) :"
+            ],
+            "sections": [
+              "Antigravity Tools 🚀",
+              "💖 Sponsors",
+              "☕ Support",
+              "🚀 Recommended Projects",
+              "🌟 Detailed Feature Matrix",
+              "1. 🎛️ Smart Account Dashboard",
+              "2. 🔐 Powerful Account Management",
+              "3. 🔌 Protocol Conversion & Relay (API Proxy)",
+              "4. 🔀 Model Router Center",
+              "5. 🎨 Multimodal & Imagen 3 Support",
+              "📸 GUI Overview",
+              "💡 Usage Examples",
+              "🏗️ Architecture",
+              "📥 Installation"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 36321
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "twentyhq/twenty",
+          "owner": "twentyhq",
+          "name": "twenty",
+          "url": "https://github.com/twentyhq/twenty",
+          "homepage": "https://twenty.com",
+          "description": "The open alternative to Salesforce, designed for AI.",
+          "language": "TypeScript",
+          "topics": [
+            "crm",
+            "crm-system",
+            "customer",
+            "good-first-issue",
+            "graphql",
+            "hacktoberfest",
+            "javascript",
+            "marketing"
+          ],
+          "stars": 61222,
+          "forks": 10149,
+          "open_issues": 152,
+          "starGain": 68,
+          "heat": 68,
+          "heatBasis": "trending",
+          "heatPercentile": 86,
+          "ageDays": 1450,
+          "created_at": "2022-12-01T13:04:40Z",
+          "pushed_at": "2026-11-19T22:47:34Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 86.3,
+          "breakdown": {
+            "heat": 86,
+            "community": 92,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.\n\nThe fastest way to get started. Sign up at twenty.com and spin up a workspace in under a minute, with no infrastructure to manage and always up to date.\n\nnpm install -g twenty twenty app init my-app cd my-app yarn install",
+            "features": [
+              "TypeScript",
+              "Nx",
+              "NestJS , with BullMQ , PostgreSQL , Redis",
+              "React , with Jotai , Linaria and Lingui"
+            ],
+            "sections": [
+              "Why Twenty",
+              "Installation",
+              "Cloud",
+              "Build an app",
+              "Self-hosting",
+              "Everything you need",
+              "Stack",
+              "Thanks",
+              "Join the Community"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12071
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "mastra-ai/mastra",
+          "owner": "mastra-ai",
+          "name": "mastra",
+          "url": "https://github.com/mastra-ai/mastra",
+          "homepage": "https://mastra.ai",
+          "description": "Mastra is the modern TypeScript framework for AI-powered applications and agents.",
+          "language": "TypeScript",
+          "topics": [
+            "agents",
+            "ai",
+            "chatbots",
+            "evals",
+            "javascript",
+            "llm",
+            "mcp",
+            "nextjs"
+          ],
+          "stars": 29671,
+          "forks": 3124,
+          "open_issues": 867,
+          "starGain": 49,
+          "heat": 49,
+          "heatBasis": "trending",
+          "heatPercentile": 80,
+          "ageDays": 835,
+          "created_at": "2024-08-06T20:44:31Z",
+          "pushed_at": "2026-11-20T01:13:18Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 83.2,
+          "breakdown": {
+            "heat": 80,
+            "community": 85,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 35,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.\n\nIt includes everything you need to go from early prototypes to production-ready applications. Mastra integrates with frontend and backend frameworks like React, Next.js, and Node, or you can deploy it anywhere as a standalone server. It's the easiest way to build, tune, and scale reliable AI products.\n\nPurpose-built for TypeScript and designed around established AI patterns, Mastra gives you everything you need to build great AI applications out-of-the-box.",
+            "features": [
+              "Model routing : Connect to 40+ providers through one standard interface. Use models from OpenAI, Anthropic, Gemini, and more.",
+              "Agents : Build autonomous agents that use LLMs and tools to solve open-ended tasks. Agents reason about goals, decide which tools to use, an",
+              "Workflows : When you need explicit control over execution, use Mastra's graph-based workflow engine to orchestrate complex multi-step proces",
+              "Human-in-the-loop : Suspend an agent or workflow and await user input or approval before resuming. Mastra uses storage to remember execution",
+              "Context management : Give your agents the right context at the right time. Provide conversation history, retrieve data from your sources (AP",
+              "Integrations : Bundle agents and workflows into existing React, Next.js, or Node.js apps, or ship them as standalone endpoints. When buildin",
+              "MCP servers : Author Model Context Protocol servers, exposing agents, tools, and other structured resources via the MCP interface. These can",
+              "Production essentials : Shipping reliable agents takes ongoing insight, evaluation, and iteration. With built-in evals and observability, Ma"
+            ],
+            "sections": [
+              "Mastra",
+              "Why Mastra?",
+              "Get started",
+              "Documentation",
+              "Build with AI",
+              "Contributing",
+              "Support",
+              "Licensing",
+              "Security"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7195
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "perspective-dev/perspective",
+          "owner": "perspective-dev",
+          "name": "perspective",
+          "url": "https://github.com/perspective-dev/perspective",
+          "homepage": "https://perspective-dev.github.io/",
+          "description": "A data visualization and analytics component, especially well-suited for large and/or streaming datasets.",
+          "language": "Rust",
+          "topics": [
+            "analytics",
+            "apache-arrow",
+            "bi",
+            "business-intelligence",
+            "charts",
+            "dashboard",
+            "data-visualization",
+            "datagrid"
+          ],
+          "stars": 11605,
+          "forks": 1370,
+          "open_issues": 29,
+          "starGain": 36,
+          "heat": 36,
+          "heatBasis": "trending",
+          "heatPercentile": 78,
+          "ageDays": 3304,
+          "created_at": "2017-11-02T16:27:54Z",
+          "pushed_at": "2026-11-19T17:39:52Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78.1,
+          "breakdown": {
+            "heat": 78,
+            "community": 78,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 21
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Perspective is an open-source data grid, pivot table and charting component for large, real-time and streaming datasets. Build user-configurable reports, dashboards, notebooks and embedded analytics applications, backed by a high-performance streaming query engine that runs in-browser via WebAssembly or server-side in Python, Node.js and Rust — or delegates to a database you already have.\n\n- A data-reactive UI packaged as a Custom Element, with drag-and-drop query and layout configuration. Includes a virtual-scrolling, editable data grid, WebGL charting engine with 15+ chart types, tile-based geographic maps, full theme support, and React bindings.\n\n- A fast, memory-efficient streaming query engine written in C++ and compiled for WebAssembly (including a 64-bit memory64 build for in-browser datasets larger than 4GB, and support for paging columns to disk via OPFS in the browser or memory-mapped files natively), Python and Rust. Tables update incrementally and views tick in real time, with reactive joins across tables, a columnar expression language based on ExprTK, and read/write/streaming support for Apache Arrow, CSV and JSON.",
+            "features": [
+              "A data-reactive UI packaged as a",
+              "A fast, memory-efficient streaming query engine written in C++ and compiled",
+              "A symmetric client/server architecture — the same Client API connects to an",
+              "Virtual servers that run Perspective's UI directly on external engines like",
+              "A Jupyter widget built on",
+              "Project Site",
+              "User Guide",
+              "JavaScript API"
+            ],
+            "sections": [
+              "Features",
+              "Documentation",
+              "Examples",
+              "Media"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11927
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "strimzi/strimzi-kafka-operator",
+          "owner": "strimzi",
+          "name": "strimzi-kafka-operator",
+          "url": "https://github.com/strimzi/strimzi-kafka-operator",
+          "homepage": "https://strimzi.io/",
+          "description": "Apache Kafka® running on Kubernetes",
+          "language": "Java",
+          "topics": [
+            "data-stream",
+            "data-streaming",
+            "data-streams",
+            "hacktoberfest",
+            "kafka",
+            "kafka-connect",
+            "kafka-streams",
+            "kubernetes"
+          ],
+          "stars": 5980,
+          "forks": 1574,
+          "open_issues": 170,
+          "starGain": null,
+          "heat": 63.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 89,
+          "ageDays": 3850,
+          "created_at": "2016-05-06T08:52:33Z",
+          "pushed_at": "2026-11-19T21:10:26Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82,
+          "breakdown": {
+            "heat": 89,
+            "community": 74,
+            "activity": 71,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 70
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Strimzi provides a way to run an [Apache Kafka®][kafka] cluster on [Kubernetes][k8s] or [OpenShift][os] in various deployment configurations. See our [website][strimzi] for more details about the project.\n\nTo get up and running quickly, check our Quick Start for Minikube, OKD (OpenShift Origin) and Kubernetes Kind.\n\nDocumentation for the current main branch as well as all releases can be found on our [website][strimzi].",
+            "features": [
+              "strimzi channel on CNCF Slack",
+              "Strimzi Users mailing list",
+              "GitHub Discussions",
+              "Thursday 9:00 AM UTC (every 4 weeks) - convert to your timezone",
+              "Thursday 4:00 PM UTC (every 4 weeks, offset by 2 weeks from above meeting) - convert to your timezone",
+              "Meeting minutes, agenda and Zoom link",
+              "Recordings",
+              "Calendar (Subscribe to the calendar)"
+            ],
+            "sections": [
+              "Run Apache Kafka on Kubernetes and OpenShift",
+              "Quick Starts",
+              "Documentation",
+              "Roadmap",
+              "Getting help",
+              "Strimzi Community Meetings",
+              "Contributing",
+              "Developer Certificate of Origin",
+              "Getting help with your contributions",
+              "License",
+              "Community Testing",
+              "Linux on IBM Z (s390x)",
+              "Container signatures",
+              "Software Bill of Materials (SBOM)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10603
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Tracer-Cloud/opensre",
+          "owner": "Tracer-Cloud",
+          "name": "opensre",
+          "url": "https://github.com/Tracer-Cloud/opensre",
+          "homepage": "https://opensre.com",
+          "description": "The open-source agent for CI/CD reliability.",
+          "language": "Python",
+          "topics": [
+            "alerting",
+            "ci-cd",
+            "cli",
+            "datadog",
+            "devops",
+            "gitlab-ci",
+            "grafana",
+            "incident-management"
+          ],
+          "stars": 13146,
+          "forks": 1904,
+          "open_issues": 12,
+          "starGain": 38,
+          "heat": 38,
+          "heatBasis": "trending",
+          "heatPercentile": 80,
+          "ageDays": 311,
+          "created_at": "2026-01-13T00:04:47Z",
+          "pushed_at": "2026-11-20T00:57:26Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 79.2,
+          "breakdown": {
+            "heat": 80,
+            "community": 79,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 42,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "OpenSRE: The open-source agent for CI/CD reliability\n\nYour CI tells you it broke, but not why or how to fix it. OpenSRE is a CLI agent that reads the failed run, traces the cause and pushes a fix for you to review. Self-hosted, with your own models.\n\nsrc=\"https://trendshift.io/api/badge/repositories/25889\" alt=\"Tracer-Cloud%2Fopensre Trendshift\" style=\"height: 30px; width: auto;\" height=\"30\" /",
+            "features": [
+              "A terminal open in a code project",
+              "A Git repository (recommended for the full workflow demonstration)",
+              "Before you begin",
+              "Install and start opensre",
+              "Why OpenSRE?",
+              "Quick Start",
+              "Deployment",
+              "How OpenSRE Works"
+            ],
+            "sections": [
+              "Before you begin",
+              "Step 1: Install and start opensre",
+              "Table of Contents",
+              "Why OpenSRE?",
+              "Quick Start",
+              "answered is true for any reply text, including a failed mode",
+              "That failure sets accounting status to \"not run\" and stop re",
+              "Deployment",
+              "How OpenSRE Works",
+              "Integrations",
+              "Security",
+              "Telemetry",
+              "License",
+              "Citations"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21974
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "pgrundev/pgboxdb",
+          "owner": "pgrundev",
+          "name": "pgboxdb",
+          "url": "https://github.com/pgrundev/pgboxdb",
+          "homepage": "https://pgboxdb.com/",
+          "description": "PGBoxDB — Lightweight Postgres for AI agents. Written in Rust. Thousands of isolated databases in one runtime 🐘",
+          "language": "Rust",
+          "topics": [
+            "agents",
+            "ai-infrastructure",
+            "ai-infrastructure-development",
+            "ai-infrastructure-software",
+            "database",
+            "open-source",
+            "pgboxdb",
+            "postgres"
+          ],
+          "stars": 728,
+          "forks": 37,
+          "open_issues": 11,
+          "starGain": null,
+          "heat": 92.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 42,
+          "created_at": "2026-10-08T20:24:20Z",
+          "pushed_at": "2026-11-19T22:14:51Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 80.6,
+          "breakdown": {
+            "heat": 99,
+            "community": 51,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Lightweight Postgres-compatible database runtime for AI agents pgboxdb.com · documentation: pgbox.dev/db\n\nEvery AI agent gets its own Postgres. One runtime. Thousands of Postgres databases.\n\nQuickstart · Agents · Why PGBoxDB · Benchmarks · Architecture · Status · Docs",
+            "features": [
+              "Not crash-safe. The PGBoxDB profile runs with fsync = off .",
+              "One process. A runtime is one crash domain.",
+              "No C extensions. Existing PostgreSQL C extensions cannot load; only"
+            ],
+            "sections": [
+              "Claude Code: install inside a session (native plugin, lightw",
+              "Any agent host (Claude Code, Cursor, Codex): the Agent Skill",
+              "Manual PGBoxDB installation",
+              "Why PGBoxDB",
+              "Disposable by design",
+              "Benchmarks",
+              "Architecture",
+              "1,000 databases, one PGBoxDB process",
+              "1,000 databases on a MacBook in 46.6 seconds",
+              "Mint-on-connect",
+              "Copy-on-write storage",
+              "Limits at every level",
+              "A branch per agent",
+              "Status"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 24159
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "datazip-inc/olake-go",
+          "owner": "datazip-inc",
+          "name": "olake-go",
+          "url": "https://github.com/datazip-inc/olake-go",
+          "homepage": "https://olake.io/olake-go/",
+          "description": "OLake Go: open-source replication from databases, Kafka and S3 to Apache Iceberg and Parquet. Sources: Postgres, MySQL, MongoDB, Oracle, MSSQL, DB2, Kafka, S3. Formerly datazip-inc/olake. Table maintenance lives in datazip-inc/olake-fusion.",
+          "language": "Go",
+          "topics": [
+            "apache-iceberg",
+            "cdc",
+            "change-data-capture",
+            "data-ingestion",
+            "data-pipeline",
+            "database",
+            "elt",
+            "etl"
+          ],
+          "stars": 2034,
+          "forks": 312,
+          "open_issues": 205,
+          "starGain": 84,
+          "heat": 84,
+          "heatBasis": "trending",
+          "heatPercentile": 98,
+          "ageDays": 766,
+          "created_at": "2024-10-15T07:39:34Z",
+          "pushed_at": "2026-11-20T00:20:46Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 84.8,
+          "breakdown": {
+            "heat": 98,
+            "community": 63,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "OLake Go is a high-performance, open-source data ingestion engine for replicating databases, S3, and Kafka into Apache Iceberg (or plain Parquet). Built for scalable, real-time pipelines, OLake Go provides a simple web UI and CLI - used to ingest into vendor-lock-in free Iceberg tables supporting all the query-engines/warehouses. Read the docs and benchmarks at olake.io/docs . Join our active community on Slack .\n\nOLake Go supports replication from transactional databases such as PostgreSQL, MySQL, MongoDB, Oracle, DB2, and MSSQL , event-streaming systems like Apache Kafka and Object-store like S3 , into open data lakehouse formats such as Apache Iceberg or Plain Parquet — delivering blazing-fast performance with minimal infrastructure cost.\n\n- 🧠 Smart sync : Full + CDC replication with automatic schema discovery & schema evolution - ⚡ High throughput : 580K RPS (Postgres) & 139K RPS (MySQL) - ➡️ Exactly once delivery & Arrow writes : Accuracy with speed. - 💾 Iceberg-native : Supports Glue, Hive, JDBC, REST catalogs - 🖥️ Self-serve UI : Deploy via Docker Compose and sync in minutes - 💸 Infra-light : No Spark, no Flink, no Kafka, no Debezium",
+            "features": [
+              "🧠 Smart sync : Full + CDC replication with automatic schema discovery & schema evolution",
+              "⚡ High throughput : 580K RPS (Postgres) & 139K RPS (MySQL)",
+              "➡️ Exactly once delivery & Arrow writes : Accuracy with speed.",
+              "💾 Iceberg-native : Supports Glue, Hive, JDBC, REST catalogs",
+              "🖥️ Self-serve UI : Deploy via Docker Compose and sync in minutes",
+              "💸 Infra-light : No Spark, no Flink, no Kafka, no Debezium",
+              "Apache Iceberg Docs",
+              "AWS Glue Catalog"
+            ],
+            "sections": [
+              "OLake Go — Super-fast Sync to Apache Iceberg",
+              "🚀 Why OLake Go?",
+              "📊 Benchmarks",
+              "🔧 Supported Sources and Destinations",
+              "🧪 Quickstart (UI + Docker)",
+              "🛠️ CLI Usage (Advanced)",
+              "Playground",
+              "🌍 Use Cases",
+              "🧭 Roadmap Highlights",
+              "🤝 Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14191
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "pola-rs/polars",
+          "owner": "pola-rs",
+          "name": "polars",
+          "url": "https://github.com/pola-rs/polars",
+          "homepage": "https://docs.pola.rs",
+          "description": "Extremely fast Query Engine for DataFrames, written in Rust",
+          "language": "Rust",
+          "topics": [
+            "arrow",
+            "dataframe",
+            "dataframe-library",
+            "dataframes",
+            "out-of-core",
+            "polars",
+            "python",
+            "rust"
+          ],
+          "stars": 40388,
+          "forks": 3249,
+          "open_issues": 2843,
+          "starGain": 10,
+          "heat": 10,
+          "heatBasis": "trending",
+          "heatPercentile": 78,
+          "ageDays": 2381,
+          "created_at": "2020-05-13T19:45:33Z",
+          "pushed_at": "2026-11-19T17:00:44Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.7,
+          "breakdown": {
+            "heat": 78,
+            "community": 87,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 71,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Polars is an analytical query engine written in Rust. Write your queries with the DataFrame API, in SQL, or mix both: they run through the same optimizer and the same engine. It is designed to be fast, easy to use and expressive. Key features are:\n\n- Fast : written from the ground up in Rust with multi-threaded, vectorized (SIMD) execution - Spill to disk : Operations that exceed available RAM can spill to disk - Expressive API : compose complex queries with powerful expressions - Extensible : extend Polars natively with custom code through I/O and Expression plugins - GPU support : optionally accelerate queries on NVIDIA GPUs - Interoperable : uses the Apache Arrow Columnar Format for zero-copy data sharing\n\nQueries are composed from expressions or SQL. This lazy query gets optimized out of the box and runs in parallel across all available cores:",
+            "features": [
+              "Fast : written from the ground up in Rust with multi-threaded, vectorized (SIMD) execution",
+              "Spill to disk : Operations that exceed available RAM can spill to disk",
+              "Expressive API : compose complex queries with powerful expressions",
+              "Extensible : extend Polars natively with custom code through",
+              "GPU support : optionally accelerate queries on NVIDIA GPUs",
+              "Interoperable : uses the",
+              "Install the latest Rust compiler",
+              "Install maturin: pip install maturin"
+            ],
+            "sections": [
+              "Polars: Extremely fast Query Engine for DataFrames and SQL",
+              "Polars in action",
+              "DataFrame API",
+              "SQL",
+              "Mix both",
+              "Performance",
+              "Installation",
+              "Python",
+              "Contributing",
+              "Distributed Polars",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7095
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "CzzzzzzJ/mdldm-maitian",
+          "owner": "CzzzzzzJ",
+          "name": "mdldm-maitian",
+          "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
+          "homepage": "",
+          "description": "麦田：自媒体多平台发布中控与数据监控（B站/抖音/小红书/视频号/YouTube/X），飞书卡片通知 + 数据大屏",
+          "language": "JavaScript",
+          "topics": [
+            "automation",
+            "chrome-extension",
+            "creator-tools",
+            "dashboard",
+            "feishu",
+            "social-media"
+          ],
+          "stars": 1605,
+          "forks": 474,
+          "open_issues": 10,
+          "starGain": null,
+          "heat": 550.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 6,
+          "created_at": "2026-11-14T03:59:22Z",
+          "pushed_at": "2026-11-18T02:49:13Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.1,
+          "breakdown": {
+            "heat": 100,
+            "community": 62,
+            "activity": 66,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "一个人做内容，要发六七个平台，每个平台的文案、封面、发布形式都不一样；发完还想知道哪期起来了、哪个平台涨粉、哪个平台真的带来了付费。麦田就是我自己每天在用的那套工作台：\n\n1. 发得出去 ：一期视频分批填好 B站、抖音、小红书、视频号、YouTube、X、Instagram，提前排进「分发计划」，到点发布、自动取链接。 2. 看得清楚 ：每期在每个平台的播放、互动，各平台粉丝，每天自动采、长期留存；手机上看大屏，飞书群推卡片。 3. 算得出钱 ：接上你自己的站点，看哪一期、哪个平台带来了注册和收入。\n\n链路：成片 → skill 写「发布素材.md」→ 生成 publish.json → hub plan 进分发计划 → hub run 分批填写 → 国内平台你点发布 → 到点取链接 → 每天采数据 → 大屏和飞书卡片。",
+            "features": [
+              "发得出去 ：一期视频分批填好 B站、抖音、小红书、视频号、YouTube、X、Instagram，提前排进「分发计划」，到点发布、自动取链接。",
+              "看得清楚 ：每期在每个平台的播放、互动，各平台粉丝，每天自动采、长期留存；手机上看大屏，飞书群推卡片。",
+              "算得出钱 ：接上你自己的站点，看哪一期、哪个平台带来了注册和收入。",
+              "播种（发布） ：读 NAS 上的一期发布工程（成片、封面、各平台文案、定时），按批次在专用 Chrome 里填好各平台上传页。",
+              "X、YouTube、Instagram、自有站点：回读文案和定时一致后自动提交，只点一次。",
+              "B站、抖音、小红书、视频号： 填好就停 ，等你自己点「发布 / 定时发布」，守护进程每 20 分钟提醒。",
+              "防重：库里已经到位的平台不再跑；X 定时列表、YouTube Studio、Instagram 主页、站点后台已有同名的不再传。",
+              "长势（流量和粉丝） ：每天上午采一次各期在各平台的播放和互动、各平台粉丝数；新一期头三天每 6 小时采一次。"
+            ],
+            "sections": [
+              "看它跑一遍",
+              "怎么配合",
+              "一行装好",
+              "三级上手",
+              "它做什么",
+              "各平台的坑（实战总结）",
+              "手机小组件（可选）",
+              "数据和隐私",
+              "作者",
+              "交流群",
+              "Star History",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 11491
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "toeverything/AFFiNE",
+          "owner": "toeverything",
+          "name": "AFFiNE",
+          "url": "https://github.com/toeverything/AFFiNE",
+          "homepage": "https://affine.pro",
+          "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+          "language": "TypeScript",
+          "topics": [
+            "app",
+            "crdt",
+            "editor",
+            "electron",
+            "knowledge-base",
+            "markdown",
+            "miro",
+            "notes"
+          ],
+          "stars": 75190,
+          "forks": 5564,
+          "open_issues": 842,
+          "starGain": 182,
+          "heat": 182,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 1572,
+          "created_at": "2022-07-31T18:45:21Z",
+          "pushed_at": "2026-11-19T21:28:03Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 91.2,
+          "breakdown": {
+            "heat": 95,
+            "community": 91,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "AFFiNE.Pro Write, Draw and Plan All at Once A privacy-focused, local-first, open-source, and ready-to-use alternative for Notion & Miro. One hyper-fused platform for wildly creative minds.\n\nDocs, canvas and tables are hyper-merged with AFFiNE - just like the word affine (əˈfʌɪn a-fine).\n\nStar us, and you will receive all release notifications from GitHub without any delay!",
+            "features": [
+              "Many editor apps claim to be a canvas for productivity, but AFFiNE is one of the very few which allows you to put any building block on an e",
+              "Write up professional work report? Turn an outline into expressive and presentable slides? Summary an article into a well-structured mindmap",
+              "We love the idea of local-first that you always own your data on your disk, in spite of the cloud. Furthermore, AFFiNE supports real-time sy",
+              "You have the freedom to manage, self-host, fork and build your own AFFiNE. Plugin community and third-party blocks are coming soon. More tra",
+              "Quip & Notion with their great concept of “everything is a block”",
+              "Trello with their Kanban",
+              "Airtable & Miro with their no-code programmable datasheets",
+              "Miro & Whimiscal with their edgeless visual whiteboard"
+            ],
+            "sections": [
+              "Getting started & staying tuned with us.",
+              "What is AFFiNE",
+              "Features",
+              "Acknowledgement",
+              "Contributing",
+              "Templates",
+              "Blog",
+              "Ecosystem",
+              "Upstreams",
+              "Contributors",
+              "Self-Host",
+              "Feature Request",
+              "Building",
+              "Codespaces"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16255
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "mjmirza/app-store-compliance",
+          "owner": "mjmirza",
+          "name": "app-store-compliance",
+          "url": "https://github.com/mjmirza/app-store-compliance",
+          "homepage": "https://mjmirza.github.io/app-store-compliance/",
+          "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+          "language": "Shell",
+          "topics": [
+            "accessibility",
+            "ai-agents",
+            "android",
+            "app-review-guidelines",
+            "app-store",
+            "app-store-connect",
+            "app-store-rejection",
+            "app-store-review"
+          ],
+          "stars": 1865,
+          "forks": 126,
+          "open_issues": 32,
+          "starGain": 377,
+          "heat": 377,
+          "heatBasis": "trending",
+          "heatPercentile": 98,
+          "ageDays": 167,
+          "created_at": "2026-06-06T11:29:45Z",
+          "pushed_at": "2026-11-19T19:49:49Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 82.9,
+          "breakdown": {
+            "heat": 98,
+            "community": 60,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 12,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Stop getting your iOS and Android apps rejected. The enterprise reference and automated guard that turns App Store and Google Play rejection into a designed out failure mode.\n\nRead it as a website at mjmirza.github.io/app-store-compliance.\n\nIf this saves you even one rejection, leave a star, fork it, and follow along. That is the whole ask.",
+            "features": [
+              "You catch the rejection before Apple or Google does. The guard runs against your project and names the risk while you can still fix it cheap",
+              "You stop guessing at the cause. Every rejection pattern maps to the exact guideline and the exact fix, so a one line rejection email becomes",
+              "The two checks that cause most rejections are covered first. A working demo account with a live backend, and a privacy declaration that matc",
+              "It works whether or not you write code. A developer wires the guard into the build. A non developer reads the plain English checklist and wa",
+              "Every claim is real. Guideline numbers and statistics trace to a live Apple or Google source, never invented, so you are acting on the actua",
+              "The guard, into that tool's own folder, for example ~/.codex/hooks/ or ~/.gemini/hooks/ .",
+              "The skill. Claude Code reads it from ~/.claude/skills/ . Every other tool reads one shared copy in ~/.agents/skills/ .",
+              "One hook entry in that tool's config ( ~/.claude/settings.json , ~/.codex/hooks.json , ~/.gemini/settings.json , ~/.cursor/hooks.json , ~/.c"
+            ],
+            "sections": [
+              "App Store Compliance Playbook",
+              "Start here",
+              "What you get",
+              "Install it into your AI coding tool",
+              "Or let your agent do it",
+              "Check, update, or remove it",
+              "It works. Approved on the first try",
+              "Found this useful? Three taps that help a lot",
+              "Why this is urgent right now (2026)",
+              "How you actually use this",
+              "If you are not a developer",
+              "If you use Claude Code or another AI coding tool",
+              "No AI tool. Run it by hand",
+              "Apple Developer Requirements Monitor"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 44973
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "imxieyi/Kernarium",
+          "owner": "imxieyi",
+          "name": "Kernarium",
+          "url": "https://github.com/imxieyi/Kernarium",
+          "homepage": "",
+          "description": "Run real Linux kernel natively on iOS",
+          "language": "C++",
+          "topics": [
+            "android",
+            "emulator",
+            "ios",
+            "linux",
+            "linux-kernel",
+            "user-mode-linux",
+            "virtualization"
+          ],
+          "stars": 1009,
+          "forks": 106,
+          "open_issues": 17,
+          "starGain": null,
+          "heat": 251.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 12,
+          "created_at": "2026-11-07T14:15:03Z",
+          "pushed_at": "2026-11-19T10:45:22Z",
+          "license": "GPL-2.0",
+          "rating": 4,
+          "composite": 79,
+          "breakdown": {
+            "heat": 97,
+            "community": 56,
+            "activity": 72,
+            "maturity": 70
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Run a real Linux kernel natively on iOS, through the magic of User-mode Linux.\n\nAn Android emulator app built on the Kernarium runtime is available for download in App Store. Source code is available under Andarium/ .\n\nIf you want, you can also sideload IPA from releases.",
+            "features": [
+              "Mainline 6.18 LTS kernel for both Linux and Android guests",
+              "Supports most kernel features, including namespaces, SELinux and more",
+              "CPU emulation",
+              "Supports arm64 , arm32 , x86 64 guest instructions",
+              "Both interpreter and JIT execution modes (interpreter-only for TestFlight release)",
+              "GPU acceleration",
+              "Vulkan 1.4 via KosmicKrisp",
+              "OpenGL 4.6 & GLES 3.2 via Zink"
+            ],
+            "sections": [
+              "Apps",
+              "Andarium",
+              "Kernarium",
+              "Overview",
+              "Features",
+              "Build or Embed",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3313
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "rukamori/ArchiveTune",
+          "owner": "rukamori",
+          "name": "ArchiveTune",
+          "url": "https://github.com/rukamori/ArchiveTune",
+          "homepage": "https://archivetune.miuka.moe",
+          "description": "🌸 The Cutest Music Player With Support Local File and Youtube Music for Android!",
+          "language": "Kotlin",
+          "topics": [
+            "android-application",
+            "android-studio",
+            "foss",
+            "jetpack-compose",
+            "kotlin",
+            "material-design",
+            "material-ui",
+            "material3"
+          ],
+          "stars": 8518,
+          "forks": 373,
+          "open_issues": 185,
+          "starGain": 123,
+          "heat": 123,
+          "heatBasis": "trending",
+          "heatPercentile": 90,
+          "ageDays": 444,
+          "created_at": "2025-09-01T18:42:42Z",
+          "pushed_at": "2026-11-19T16:12:44Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 83.2,
+          "breakdown": {
+            "heat": 90,
+            "community": 73,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Redefining the YouTube Music Experience on Android. It’s high-performance, privacy-focused, and packed with features for people who really care about their experience.\n\nOfficial Website • Features • Privacy • Download • Screenshots • Support\n\nForks are not supported in any way. We do not provide support, maintenance, troubleshooting, or assistance for any forked version of this project. If you choose to use a fork, you do so at your own risk.",
+            "features": [
+              "Metrolist by Mostafa Alagamy for the base framework.",
+              "SimpMusic by maxrave-dev for the lyrics API provider.",
+              "BetterLyrics for word-by-word lyrics, unison and artwork provider support.",
+              "Material Color Utilities",
+              "Read You and Seal for UI component inspiration.",
+              "Translators, beta testers, contributors, and community members who continue to support the project.",
+              "Not affiliated with Google LLC or YouTube.",
+              "Does not bypass YouTube's technical protections."
+            ],
+            "sections": [
+              "📸 Showcase",
+              "✨ Features",
+              "Module development",
+              "📥 Download Now",
+              "❓ Need Help or Have Questions?",
+              "🌍 Globalization",
+              "✨ Project Contributors",
+              "🛠️ Development & Engineering",
+              "Open-Source Acknowledgments",
+              "⚖️ Legal Disclaimer",
+              "⚖️ License, Copyright, and Trademark Notice"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 16532
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "mvanhorn/last30days-skill",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "kuafuai/andee",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "n8n-io/nod",
+      "category": "ai",
+      "lastPushed": "2026-11-16",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "opensandbox-group/OpenSandbox",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "microsoft/TokenEconomizer",
+      "category": "ai",
+      "lastPushed": "2026-11-09",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "lidge-jun/opencodex",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "ZiChuanLan/freebie-radar",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [],
+  "reviewedAt": "2026-11-20T01:59:08.788Z",
+  "regenerated": true
+}
