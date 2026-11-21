@@ -1,0 +1,86 @@
+{
+  "google-research/paper-orchestra": {
+    "summary_zh": "把论文写作拆成一条多智能体流水线：输入想法、实验记录等原始材料，依次经提纲生成、文献综述、章节写作、内容打磨与图表绘制，输出可投稿的 LaTeX 稿件。仓库给出 Conda 环境、.env 密钥配置与 CLI 参数（原始材料目录、LaTeX 模板目录），并以 CVPR 2025 模板作为示例。",
+    "highlight_zh": "当日 AI 方向增量居前（+454）。看点是把研究方法论显式拆成可编排的角色，而不是一次性生成全文；模板参数化使其可迁移到不同会议。边界同样明确：文献检索的覆盖度与事实准确性仍需人工核验，署名与学术规范须自行把握。"
+  },
+  "FlashML-org/FreeVideo": {
+    "summary_zh": "在消费级显卡上本地跑 MiniMax H3 视频生成：以 Video DeltaNet 为核心，8 GB 显存、16 GB 内存即可出片，并按硬件自动切换加速路径（RTX 30 系走 int8）。提供四档画质、半分辨率预览、时间线编辑，以及把视频拖回 ComfyUI 还原提示词与种子的能力，也可由 Claude Code、Codex 等 agent 代为生成。",
+    "highlight_zh": "本期 AI 方向综合分最高（82.1）。价值在于把视频模型的显存门槛压到可负担区间，并给出「先预览、再精修」的成本控制路径。766 个 open issue 说明迭代活跃，也意味着长视频与多卡场景下的稳定性仍需观察。"
+  },
+  "wuyoscar/AISafetyHot": {
+    "summary_zh": "把 AI 安全领域的公开信息收敛成一个可持续订阅的信源：越狱、提示注入、Agent 安全、防御与护栏、对齐、评测等内容按日汇总为网页、日报与 RSS，并提供免密钥的 MCP 接口，agent 接入后可直接查询热点排行、事件脉络与当日新论文。",
+    "highlight_zh": "少见地把「情报聚合」做成 agent 可调用的接口，MCP 入口使其能直接进入工作流，适合做安全评估或红队工作的人建立信息基线。作为二手聚合，条目准确性仍应回溯原始论文与官方公告，不宜直接当作结论引用。"
+  },
+  "janhq/jan": {
+    "summary_zh": "本地优先的 ChatGPT 替代品：从 HuggingFace 拉取 Llama、Gemma、Qwen 等模型离线运行，也可接入 OpenAI、Anthropic、Mistral、Groq 等云端模型；支持自定义助手、在 localhost:1337 暴露 OpenAI 兼容 API，并集成 MCP 以获得工具调用能力。基于 Tauri 打包，覆盖 Windows、macOS 与 Linux。",
+    "highlight_zh": "近 4.6 万星、三年持续迭代，属于本地推理客户端里成熟度较高的一档。定位不是推理引擎，而是「把本地与云端模型统一到一个桌面入口」；数据不出本机是主要卖点，代价是模型管理与硬件要求需自行权衡。"
+  },
+  "zhouxiaoka/autoclip": {
+    "summary_zh": "贴一个链接，把播客、访谈、课程等长视频自动剪成适配抖音、小红书、TikTok、Reels、Shorts、B 站与 YouTube 的短片，同时生成字幕、封面与发布文案。桌面端、CLI 与 MCP 三形态同步，安装包自带 Python 与 FFmpeg，渲染在本机完成，模型可在本地 Ollama / LM Studio 与云端服务间切换。",
+    "highlight_zh": "当日全榜增量第一（+979），综合分 87.1 亦为最高。它把「长转短」里最耗时的分镜、字幕分页、人物取景收敛成一条可复现的流水线，并保留编辑器兜底。需注意云端模型按量计费，成片质量与素材类型强相关。"
+  },
+  "bookwjitchieni1986/blender-ai-mcp-addon": {
+    "summary_zh": "把 Blender 变成 agent 可直接操作的工作区：内置 MCP server，agent 能读取场景、创建物体、编辑材质、查找资产并执行多步流程；以 Manager（拆解任务与验收标准）、Worker（执行场景操作）、Reviewer（复核结果）三段式组织协作，支持多家模型服务商。以 Blender 扩展形式安装，提供可视化对话面板。",
+    "highlight_zh": "思路是把 3D 软件的操作面抽象成 agent 可调用的工具集，并用评审角色约束执行结果，比单轮生成更可控。仓库仅两天、fork 偏少，早期数据尚不足以判断社区真实使用广度；可用性取决于模型对 bpy 语义的理解，建议先在副本场景验证。"
+  },
+  "voyager-so/vork": {
+    "summary_zh": "面向 agent 的无头 3D 与特效引擎：整个场景——着色器、材质、相机、物理——由 agent 以代码写出，核心 API 约 2,500 token 即可掌握，引擎在 GPU 上渲染。以 Rust 与 Slang 实现，走 Vulkan 与 Metal，覆盖 Linux、Windows、macOS；无本地 GPU 时可调用云端算力。",
+    "highlight_zh": "把「渲染器」做成 agent 的编程目标而不是 GUI 工具，是本期最明确的一条 agent 基础设施思路。基准显示默认静帧与动画比 EEVEE 快 1.1–2.3 倍、鸟群场景快 8–11 倍；项目标注为研究预览，接口与稳定性会变。"
+  },
+  "Seagey/couch-tv": {
+    "summary_zh": "给 Android TV / Google TV 换一套无广告的桌面：可自定义场景与玻璃时钟、按自己的顺序排列应用、跨应用「继续观看」，并用手机当遥控器检索节目直接开播。提供三种安装路径——交给 Claude Code 等 agent 按 AGENTS.md 自动配置、用桌面 Setup 应用、或照文档手动操作，且在确认前不改动电视。",
+    "highlight_zh": "把被厂商广告占据的电视桌面交还给用户，并把安装过程写成 agent 可执行的分步计划，是本期 agent 落地生活场景的代表。电视型号兼容性差异较大，动手前应先跑一遍兼容性检查。"
+  },
+  "driceroland/Search": {
+    "summary_zh": "一款约 10 MB 的 macOS 轻量浏览器，基于系统 WebKit：单地址栏同时承担跳转与搜索，地址补全只读本地历史、不上传输入；提供标签收纳、双页并排、阅读模式、元素永久隐藏、网络层广告与追踪拦截，以及置顶小窗播放视频。可通过 Homebrew 安装，源码公开可自行构建。",
+    "highlight_zh": "它把「安静」当作产品目标：拦截发生在渲染之前，隐藏的元素持久生效，输入不外发。对厌倦重型浏览器的人有吸引力；代价是扩展生态与跨平台缺失，仅覆盖 macOS 14 及以上。"
+  },
+  "visgl/deck.gl": {
+    "summary_zh": "面向大规模数据的 GPU 可视化框架：把 JSON 数组映射为一组可视图层（图标、多边形、文本等），再以不同视图（地图、第一人称、正交）观察，基于 WebGL2 / WebGPU 渲染。提供可组合的图层目录、拾取与筛选等交互能力、制图投影与主流底图集成，并有 JavaScript 与 Python 两种用法。",
+    "highlight_zh": "近 1.5 万星、逾十年维护，是地理与大规模数据可视化的基础设施级项目。价值在「图层 + 视图」这套可扩展抽象，而非现成图表；上手门槛高于常规图表库，适合有定制渲染需求的团队。"
+  },
+  "louis-e/arnis": {
+    "summary_zh": "把真实世界搬进 Minecraft：读取 OpenStreetMap 的地理数据与高程信息，生成对应地形与建筑的 Java 版（1.21.4+）、基岩版、Luanti 与 Hytale 世界，支持家乡、城市与自然景观等尺度。核心用 Rust 实现、以 Tauri 提供跨平台界面，另提供浏览器端的 MapSmith 以支持移动端与更大范围。",
+    "highlight_zh": "本期后端方向星标最高（1.87 万）。技术含量在「地理数据到体素世界」的转换管线：模块化拆分取数、处理与生成，兼顾性能与可维护性。生成规模受内存与算力约束，超大范围建议走浏览器版。"
+  },
+  "nats-io/nats-server": {
+    "summary_zh": "CNCF 旗下的高性能消息系统服务端：面向数字系统、服务与设备提供简单、安全、可预测的通信，拥有 40 多种语言的客户端实现，可部署在本地、云端、边缘乃至树莓派上。仓库以 Go 编写，配套文档、路线图、采用者清单与安全审计材料齐备。",
+    "highlight_zh": "逾十四年演进、两万余星，是云原生消息中间件里少见的「单二进制、低运维」路线。选型时要分清它与 Kafka 的定位差异：NATS 强在轻量请求响应与扇出，而非持久化日志式吞吐。"
+  },
+  "replit/datacat": {
+    "summary_zh": "一套可自托管的可观测性平台，把指标、日志、分布式追踪、仪表盘与告警收在一处：数据存于 PostgreSQL（追踪可选 ClickHouse），接收 OpenTelemetry 与 Datadog 兼容的 agent 流量，自带指标公式、日志分面检索、APM 服务目录与瀑布图、告警通知，以及组织与 API 密钥管理。以 Docker Compose 起步，无需托管账号。",
+    "highlight_zh": "仅四天的新仓库，切的是「不想把遥测数据交给 SaaS」的痛点，且直接兼容 OTel 与 Datadog 采集端，迁移成本可控。零 issue 说明尚未经受真实反馈，生产采用前应评估其规模上限与高可用方案。"
+  },
+  "ruffle-rs/ruffle": {
+    "summary_zh": "用 Rust 重写的 Adobe Flash Player 模拟器，同时面向桌面与浏览器（经 WebAssembly），支持 ActionScript 1 / 2 / 3 的主要特性。仓库提供桌面端、浏览器扩展、Android 与扫描、导出工具的构建说明，用于在 Flash 停止支持后继续打开历史 SWF 内容。",
+    "highlight_zh": "近 1.9 万星、七年多维护，是数字存档领域的实用基础设施。意义在「让旧内容还能被打开」，而非新技术；5,798 个 open issue 反映 AS3 兼容性仍是长期工程，复杂动画的还原度需逐个验证。"
+  },
+  "liustack/sqlite": {
+    "summary_zh": "面向 Go 的无 cgo SQLite 驱动：把 SQLite 的 C 源码用 LLVM 编译成 Go 汇编，因此可在 CGO_ENABLED=0 下构建，产出单静态二进制、可任意交叉编译，并省去容器里的 C 编译器。同时实现写操作不阻塞、S3 实时备份（布局与 Litestream 兼容）、多写并发排队而非报 database is locked。",
+    "highlight_zh": "它正面回应了 Go 生态里「无 cgo 就得牺牲速度」的老问题，并以 LLVM 直译 C 到汇编作为解法，工程思路值得一读。仅 17 天、114 星，基准与兼容性尚需独立复现，关键业务不宜直接替换成熟驱动。"
+  },
+  "yzsind/mydb": {
+    "summary_zh": "兼容 MySQL 协议的 HTAP 数据库，面向混合事务与分析负载，并把 AI 能力做进 SQL：AI GENERATE 接收提示或对话历史完成摘要、分类、抽取与问答，AI EMBED 返回带维度校验的 FLOAT32 向量，可对接 Ollama、OpenAI 及兼容服务。另提供在线加列、在线改类型、在线建索引等 DDL 能力。",
+    "highlight_zh": "「在 SQL 里直接调用模型」是一条有意思的路线，省去了应用层拼接检索逻辑的胶水代码。项目仅四天、82 星，属早期验证阶段；协议兼容度、事务隔离与性能数据都建议自行压测后再评估。"
+  },
+  "phone-harness/phone-harness": {
+    "summary_zh": "让 Claude Code、Codex 等 agent 直接操作真机：iPhone 侧抓取「iPhone 镜像」窗口、用系统 Vision OCR 读屏，再把点击、滑动、输入作为事件注入；Android 侧走 adb 截图与无障碍树取文本，支持 USB 或 Wi-Fi。无需越狱、无需 Xcode、手机端不装任何东西，并可在浏览器里实时观看操作过程。",
+    "highlight_zh": "把手机变成 agent 的又一个工具端，且绕开了越狱与打包两道门槛，工程思路相当取巧。它天然涉及账号、支付与隐私操作，权限边界与合规使用需自行界定；云端真机服务另需评估数据留存策略。"
+  },
+  "superdesigndev/treg": {
+    "summary_zh": "「工具版的 OpenRouter」：agent 指向一个 base URL、持有一个 token，就能调用目录里数千个第三方端点——SEO 与外链、社媒与趋势、人物与公司信息补全、广告、抓取、图像与视频生成——按次计费、无需逐家注册。也可注册团队自有工具：付费 API 账号、OAuth 连接、CLI 与 SKILL 打包，凭据留在服务端而不下发到 agent。",
+    "highlight_zh": "它把「工具发现 + 凭据托管 + 计费」从各家 agent 框架里抽出来做成独立层，团队场景下能显著减少密钥扩散。代价是引入一个中心化代理，供应商条款、数据出境与调用审计需在采用前厘清。"
+  },
+  "krisgfx9/Wireless-Device-Battery-Monitor": {
+    "summary_zh": "一个约 350 KB、占用约 2 MB 内存的 Windows 托盘小工具，把无线鼠标、耳机、键盘与手柄的电量直接显示在任务栏：以纯 C++ / Win32 实现，无运行时、无后台服务，支持免管理员权限的按用户安装。覆盖罗技、雷蛇、赛睿、海盗船、HyperX、PS / Xbox 手柄与系统能读到电量的蓝牙设备。",
+    "highlight_zh": "本期综合分最高（87.1），胜在「极小体积 + 直连驱动」的克制设计：多数设备无需装厂商软件即可读电量。四天出现 3,587 个 open issue，数量异常偏高，安装前建议先浏览与自身设备相关的反馈。"
+  },
+  "incoai/splash": {
+    "summary_zh": "面向 Apple silicon 的本地推理引擎，围绕「跑 coding agent」来设计：结合 DFlash 2 投机解码、定制 Metal kernel 与自动显存规划，在同一台 Mac 上服务 OpenAI 与 Anthropic 兼容的应用，支持视觉、工具调用与内置对话页，并复用前缀缓存、自动批处理并发请求。以桌面应用分发，需 M3 及更新机型。",
+    "highlight_zh": "本地推理的竞争点已从「能不能跑」转到「agent 负载下的吞吐与首字延迟」，它用投机解码与内存规划正面切这一层。硬件与系统门槛较高（M3+、macOS 26.4+），GGUF 生态兼容性需按实际模型验证。"
+  },
+  "nsgo-dev/nsgo": {
+    "summary_zh": "用 Go 写跨端原生界面：应用逻辑、响应式图与布局都在 Go 侧运行，各平台用自己的原生视图渲染——文本、输入法、滚动、菜单与无障碍均为系统实现。覆盖 iOS（含 App Clips）、tvOS、watchOS、macOS、Windows、Android、Linux 与 Web，以及微信、QQ、支付宝、抖音小程序；组件从按钮到百万行数据表，支持信号式细粒度更新与 Flexbox / Grid 布局。",
+    "highlight_zh": "在「一套代码、原生渲染」这条路上给出了 Go 侧的答案，并罕见地把国内小程序纳入同一抽象。设计沿袭 Native Shell，免去写 Rust 的门槛；项目仅一个月、184 个 issue，跨端一致性仍需逐平台验证。"
+  }
+}

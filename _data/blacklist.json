@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-20",
+    "updated": "2026-11-21",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 101,
+    "count": 102,
     "publicCount": 45,
     "campaigns": [
       {
@@ -7089,6 +7089,69 @@
           "system",
           "utility",
           "windows-app"
+        ]
+      }
+    },
+    {
+      "full_name": "Kianuni/Erosion-CN",
+      "owner": "Kianuni",
+      "name": "Erosion-CN",
+      "url": "https://github.com/Kianuni/Erosion-CN",
+      "description": "iOS / iPadOS 国行 Apple 智能、eSIM 与 MobileGestalt 系统配置工具箱（中英双语 · 防白苹果安全加固版） | Bootloop-Safe iOS / iPadOS MobileGestalt, Apple Intelligence & eSIM Toolbox (EN/ZH)",
+      "language": "Swift",
+      "category": "off-topic",
+      "categoryLabel": "选题边界",
+      "sourceCategory": "mobile",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "internal",
+      "campaign": "editorial-boundary",
+      "firstSeen": "2026-11-21",
+      "removedAt": "2026-11-21",
+      "issues": [
+        "2026-11-21"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主体为特定设备的系统配置工具",
+          "detail": "项目核心能力是读写 iOS / iPadOS 的 MobileGestalt 配置并调整机型与区域相关参数，依赖特定系统版本与私有接口，与本期聚焦的通用开源工程议题匹配度有限。"
+        },
+        {
+          "type": "content",
+          "label": "核心卖点涉及地区限制的绕过",
+          "detail": "README 将「国行底层限制解除」（FaceTime 音频、境外 eSIM 等）列为并列的主要功能之一，属受监管事项，超出本期技术选目范围，不适宜作为公开推荐内容。"
+        },
+        {
+          "type": "correlation",
+          "label": "同类条目处理口径一致",
+          "detail": "2026-11-19 期对同类 iOS MobileGestalt 工具已按收录边界不纳入展示，本期沿用同一证据口径。"
+        },
+        {
+          "type": "correlation",
+          "label": "人工复核结论",
+          "detail": "经人工复核，本期不纳入榜单展示，且不对外作任何风险提示；处置仅针对本期选目，不对项目技术质量或作者作推断。"
+        }
+      ],
+      "verdict": "按本期选目边界不纳入展示，不对外作风险提示。",
+      "advice": "",
+      "snapshot": {
+        "stars": 2651,
+        "forks": 459,
+        "open_issues": 32,
+        "license": "GPL-3.0",
+        "created_at": "2026-11-10T02:37:31Z",
+        "pushed_at": "2026-11-19T13:48:22Z",
+        "topics": [
+          "apple-intelligence",
+          "esim",
+          "facetime-audio",
+          "ios",
+          "ios-tweaks",
+          "ipados",
+          "mobilegestalt",
+          "sandbox-escape"
         ]
       }
     }

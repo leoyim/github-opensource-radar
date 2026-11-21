@@ -1,0 +1,1899 @@
+{
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T12:42:53.501+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-20",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 897,
+    "unclassified": 73,
+    "selected": 21,
+    "suppressedByHistory": 300,
+    "sameDateExempt": 0,
+    "removed": 0,
+    "removedTotal": 0,
+    "offTopic": 1,
+    "watchlisted": 1,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "google-research/paper-orchestra",
+          "owner": "google-research",
+          "name": "paper-orchestra",
+          "url": "https://github.com/google-research/paper-orchestra",
+          "homepage": "https://yiwen-song.github.io/paper_orchestra/",
+          "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+          "language": "Python",
+          "topics": [
+            "ai-research-assistant",
+            "multi-agent-systems"
+          ],
+          "stars": 5470,
+          "forks": 686,
+          "open_issues": 50,
+          "starGain": 454,
+          "heat": 454,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 203,
+          "created_at": "2026-05-01T18:07:52Z",
+          "pushed_at": "2026-11-15T18:08:08Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.5,
+          "breakdown": {
+            "heat": 95,
+            "community": 71,
+            "activity": 32,
+            "maturity": 93
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Yiwen Song 1 , Yale Song 1 , Tomas Pfister 1 , and Jinsung Yoon 1 1 Google Cloud AI Research\n\nPaperOrchestra is a multi-agent framework for automated AI research paper writing. It flexibly transforms unconstrained pre-writing materials (ideas and experimental logs) into submission-ready LaTeX manuscripts, including comprehensive literature synthesis and generated visuals, such as plots and conceptual diagrams.\n\nActing like an orchestrated team of specialized agents, it handles outline generation, literature review, section writing, content refinement, and plotting to close the gap between raw research materials and submission ready papers.",
+            "features": [
+              "Multi-Agent Pipeline : Orchestrates specialized agents (Outline, Literature Review, Section Writing, Content Refinement, Plotting) for end-t",
+              "Comprehensive Literature Synthesis : Automatically searches, prioritizes, and integrates relevant literature into the manuscript.",
+              "Visuals Generation : Generates plots and supports the inclusion of conceptual diagrams.",
+              "LaTeX Automation : Produces submission-ready LaTeX manuscripts adhering to target conference templates.",
+              "Environment Setup : The project relies on a Conda environment named paper orchestra . You can set up a similar environment with Python 3.11 ",
+              "Environment Variables : Create a .env file in the root of the project and add your API keys:",
+              "--raw materials dir : (Required) Directory containing the raw materials (e.g., idea and experimental log).",
+              "--latex template dir : (Required) Directory containing the LaTeX template (e.g., templates/cvpr2025 )."
+            ],
+            "sections": [
+              "🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI ",
+              "Key Features",
+              "Installation",
+              "Dataset",
+              "Usage",
+              "Using the Bash Script",
+              "Using the Python CLI directly",
+              "Key Arguments",
+              "Interactive Demo",
+              "Project Structure",
+              "Citation",
+              "Disclaimer"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4965
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "FlashML-org/FreeVideo",
+          "owner": "FlashML-org",
+          "name": "FreeVideo",
+          "url": "https://github.com/FlashML-org/FreeVideo",
+          "homepage": "",
+          "description": "Make videos on the computer you already own. FreeVideo runs MiniMax H3 in as little as 8 GB of VRAM and 16 GB of RAM, and adapts its acceleration path to your hardware.",
+          "language": "Python",
+          "topics": [
+            "diffusion-models",
+            "inference",
+            "minimax-h3",
+            "video-generation"
+          ],
+          "stars": 3881,
+          "forks": 535,
+          "open_issues": 766,
+          "starGain": 293,
+          "heat": 293,
+          "heatBasis": "trending",
+          "heatPercentile": 93,
+          "ageDays": 68,
+          "created_at": "2026-09-13T21:25:08Z",
+          "pushed_at": "2026-11-20T23:29:30Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.1,
+          "breakdown": {
+            "heat": 93,
+            "community": 68,
+            "activity": 76,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Make videos on the computer you already own. Powered by Video DeltaNet (VDN), FreeVideo runs MiniMax H3 in as little as 8 GB of VRAM and 16 GB of RAM, with acceleration adapted to your&nbsp;hardware.\n\nhttps://github.com/user-attachments/assets/ecda7d0d-7fbe-4e0c-8c29-8f3315bafc15\n\n- 2026-11-10 · v0.5.0: H3 Image. Pictures up to 16 MP locally, from 8 GB of VRAM. - 2026-10-13 · v0.4.0: AI agents, minute-long videos and an editing view. Let an AI agent such as Claude Code or Codex make videos on its own, generate videos over a minute long, and edit them on a timeline. - 2026-10-07 · v0.3.2: preview first. See a half-resolution preview first and finish only the videos you like. - 2026-10-07 · v0.3.0: a faster int8 model. GeForce and RTX 30-series cards switch to int8; an RTX 3090 makes a 5-second video about 2.3x faster. - 2026-10-06 · Gallery is live. Watch 20-second clips made with FreeVideo, and the four quality levels side by side. - 2026-10-06 · v0.2.3: videos carry their workflow. Drop a FreeVideo video onto the ComfyUI canvas to restore its prompt, seed and settings. Earlier videos can get theirs too. - 2026-10-05 · v0.2.0: four quality levels. Choose Light, Medium, High or Max for each video; higher levels give higher quality but take longer. Results can be exported as sharing images or videos with the generation time and GPU. - 2026-10-05 · v0.1.2: FreeVideo on Mac. Apple silicon Macs generate MiniMax H3 videos locally (preview). - 2026-10-03 · Community LoRAs. Use MiniM",
+            "features": [
+              "2026-11-10 · v0.5.0: H3 Image. Pictures up to 16 MP locally, from 8 GB of VRAM.",
+              "2026-10-13 · v0.4.0: AI agents, minute-long videos and an editing view. Let an AI agent such as Claude Code or Codex make videos on its own,",
+              "2026-10-07 · v0.3.2: preview first. See a half-resolution preview first and finish only the videos you like.",
+              "2026-10-07 · v0.3.0: a faster int8 model. GeForce and RTX 30-series cards switch to int8; an RTX 3090 makes a 5-second video about 2.3x fast",
+              "2026-10-06 · Gallery is live. Watch 20-second clips made with FreeVideo, and the four quality levels side by side.",
+              "2026-10-06 · v0.2.3: videos carry their workflow. Drop a FreeVideo video onto the ComfyUI canvas to restore its prompt, seed and settings. E",
+              "2026-10-05 · v0.2.0: four quality levels. Choose Light, Medium, High or Max for each video; higher levels give higher quality but take longe",
+              "2026-10-05 · v0.1.2: FreeVideo on Mac. Apple silicon Macs generate MiniMax H3 videos locally (preview)."
+            ],
+            "sections": [
+              "News",
+              "About",
+              "Getting Started",
+              "Windows",
+              "macOS (Apple silicon preview)",
+              "Existing ComfyUI",
+              "Linux",
+              "More details",
+              "Support",
+              "Citation",
+              "Team",
+              "Project Team",
+              "Special Thanks",
+              "Acknowledgment"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11089
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "wuyoscar/AISafetyHot",
+          "owner": "wuyoscar",
+          "name": "AISafetyHot",
+          "url": "https://github.com/wuyoscar/AISafetyHot",
+          "homepage": "https://aisafetyhot.com",
+          "description": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+          "language": "TeX",
+          "topics": [
+            "ai-alignment",
+            "ai-governance",
+            "ai-safety",
+            "arxiv-papers",
+            "daily-papers",
+            "jailbreak",
+            "llm-security",
+            "mcp-server"
+          ],
+          "stars": 2082,
+          "forks": 36,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 240.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 51,
+          "created_at": "2026-10-01T11:33:59Z",
+          "pushed_at": "2026-11-21T04:36:40Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 76.9,
+          "breakdown": {
+            "heat": 90,
+            "community": 58,
+            "activity": 55,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "AI Safety HOT 持续整理越狱、提示注入、Agent 安全、防御与护栏、对齐、评测、真实事件和治理政策。网站提供中英文阅读；这个 Hub 保存公开论文清单、日报归档和 Agent 技能。\n\n首页是一座可以探索的 科研观测台 ：材料卡片逐条扫描，汇入由信源、事件和论文研究方向组成的立体星图；往下是最近 72 小时的新闻流，以及汇集报道与社区讨论的热点观察。拖动星图旋转，点选节点，沿链接继续阅读。\n\nAI Safety HOT 有一个公开的 MCP 接口：热点排行、事件来龙去脉、每天的动态和新论文，Agent 接上就能直接问。免费，不用 API Key。",
+            "features": [
+              "OpenAI 加强前沿模型训练环境安全防护",
+              "USDA 承认 DOGE 裁员让联邦 AI 人工监督“难以为继”",
+              "Anthropic 称其未发布模型在能力和对齐上都优于 Mythos 5.1",
+              "Agentic Verified Optimization of Real-World Software",
+              "Reliable AI-Assisted Decisions via Selective Auditing",
+              "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
+              "Anthropic 称其未发布模型在能力和对齐上都优于 Mythos 5.1",
+              "AISI 就 2026 年 7 月自家事故开展对齐调查：Mythos 5 为何实施未经授权的供应链攻击"
+            ],
+            "sections": [
+              "从一条动态，看到它关联的研究与事件",
+              "实时新闻",
+              "热点新闻",
+              "实时论文",
+              "会议论文",
+              "安全日报",
+              "让你的 Agent 一起读",
+              "装好就能用",
+              "手动安装、更新和卸载",
+              "安装",
+              "更新",
+              "卸载",
+              "安装",
+              "更新"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16994
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "janhq/jan",
+          "owner": "janhq",
+          "name": "jan",
+          "url": "https://github.com/janhq/jan",
+          "homepage": "https://jan.ai/",
+          "description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+          "language": "Rust",
+          "topics": [
+            "chatgpt",
+            "gpt",
+            "llamacpp",
+            "llm",
+            "localai",
+            "open-source",
+            "self-hosted",
+            "tauri"
+          ],
+          "stars": 45972,
+          "forks": 3226,
+          "open_issues": 588,
+          "starGain": 101,
+          "heat": 101,
+          "heatBasis": "trending",
+          "heatPercentile": 77,
+          "ageDays": 1192,
+          "created_at": "2023-08-17T02:17:10Z",
+          "pushed_at": "2026-11-18T12:50:22Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 79,
+          "breakdown": {
+            "heat": 77,
+            "community": 87,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Getting Started - Community - Changelog - Bug reports\n\nJan is bringing the best of open-source AI in an easy-to-use product. Download and run LLMs with full control and privacy .\n\nwidth=\"200\" alt=\"Get it from Microsoft Store\" src=\"https://get.microsoft.com/images/en-us%20dark.svg\"/ width=\"200\" alt=\"Get it on Flathub\" src=\"https://flathub.org/assets/badges/flathub-badge-en.svg\"/",
+            "features": [
+              "Community",
+              "Changelog",
+              "Bug reports",
+              "Local AI Models : Download and run LLMs (Llama, Gemma, Qwen, GPT-oss etc.) from HuggingFace",
+              "Cloud Integration : Connect to GPT models via OpenAI, Claude models via Anthropic, Mistral, Groq, MiniMax, and others",
+              "Custom Assistants : Create specialized AI assistants for your tasks",
+              "OpenAI-Compatible API : Local server at localhost:1337 for other applications",
+              "Model Context Protocol : MCP integration for agentic capabilities"
+            ],
+            "sections": [
+              "Jan - Open-source ChatGPT replacement",
+              "Installation",
+              "Features",
+              "Build from Source",
+              "Prerequisites",
+              "Run with Make",
+              "Manual Commands",
+              "Building on Windows",
+              "System Requirements",
+              "Troubleshooting",
+              "Contributing",
+              "Links",
+              "Contact",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7164
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "zhouxiaoka/autoclip",
+          "owner": "zhouxiaoka",
+          "name": "autoclip",
+          "url": "https://github.com/zhouxiaoka/autoclip",
+          "homepage": "https://zhouxiaoka.github.io/autoclip_intro/",
+          "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+          "language": "Python",
+          "topics": [
+            "ai-agent",
+            "ai-video-editor",
+            "content-repurposing",
+            "desktop-app",
+            "douyin",
+            "instagram-reels",
+            "mcp",
+            "open-source"
+          ],
+          "stars": 12298,
+          "forks": 2024,
+          "open_issues": 41,
+          "starGain": 979,
+          "heat": 979,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 501,
+          "created_at": "2025-07-08T04:51:15Z",
+          "pushed_at": "2026-11-21T04:34:30Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 87.1,
+          "breakdown": {
+            "heat": 96,
+            "community": 79,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 56,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "开源，在你的电脑上剪辑与渲染。贴一个链接，选好平台，生成 视频、封面和发布文案 ， 适配抖音、小红书、TikTok、Reels、YouTube Shorts、B 站与 YouTube。 软件免费，云端模型按量计费；需要调整时可进入编辑器。\n\n简体中文 · English · 日本語 · 한국어 · Español · Português · Русский · Français\n\n最新正式版 ，桌面、CLI 与 MCP 同步更新。版本以 autoclip --version 和 MCP get version 为准。一键出片、字幕分页、人物取景与长视频队列修复见 更新日志。旧版用户请升级。",
+            "features": [
+              "下载安装 ：在 Releases 下载。macOS Apple Silicon 选 .dmg ，Windows 10 / 11 x64 选 -setup.exe 。安装包自带 Python 和 FFmpeg。macOS 15 及以上首次打开：双击一次，若被拦截则到「系统设置 → ",
+              "配置模型 ：在设置里选择服务商、填写 API Key，选择可用的分析模型，测试连接并保存；本地模型先在 Ollama / LM Studio 启动服务并加载模型。",
+              "先看示例，再贴自己的视频 ：首页还没有项目时，点「用示例项目看看效果」，不需要 API Key，示例在安装包内。之后用自己的访谈或播客，可选择竖版版式。没有字幕、本地 Whisper 装不上或太慢时，打开「设置 → 默认模型 → 语音转字幕」，改用百炼云端转写（ qwen-aud",
+              "检查并下载 ：预览自动成片，检查字幕、取景与内容完整性，再下载发布包或连接账号投稿；需要更多片段时生成备选。",
+              "作者推荐链接：注册或领优惠。",
+              "百炼控制台：创建 API Key。",
+              "提问与交流 ：GitHub Discussions · 第一次出片问答 · 分享想法",
+              "报告故障 ：使用 Issue 模板，附上系统、版本、所选模型、复现步骤与已脱敏日志"
+            ],
+            "sections": [
+              "AutoClip",
+              "一个链接，一键出片",
+              "真实成片",
+              "竖版 · 访谈式与满屏播客式",
+              "横版 · 保留原画幅",
+              "能做什么",
+              "贴链接就出片",
+              "成片自己会包装",
+              "还在你的电脑上",
+              "真实素材的耗时与费用",
+              "模型与数据由你选择",
+              "快速开始",
+              "桌面版",
+              "一行安装"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21316
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "bookwjitchieni1986/blender-ai-mcp-addon",
+          "owner": "bookwjitchieni1986",
+          "name": "blender-ai-mcp-addon",
+          "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+          "homepage": "",
+          "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+          "language": "",
+          "topics": [
+            "ai-agents",
+            "ai-assistant",
+            "blender",
+            "blender-addon",
+            "blender-ai",
+            "blender-automation",
+            "blender-mcp",
+            "blender-plugin"
+          ],
+          "stars": 1825,
+          "forks": 19,
+          "open_issues": 41,
+          "starGain": null,
+          "heat": 625.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 2,
+          "created_at": "2026-11-19T14:43:10Z",
+          "pushed_at": "2026-11-19T14:44:11Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.3,
+          "breakdown": {
+            "heat": 94,
+            "community": 56,
+            "activity": 75,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 55,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An AI assistant for Blender that can inspect your scene, build objects, edit materials, find assets and carry out multi-step workflows—with a visual chat workspace and a built-in Model Context Protocol (MCP) server.\n\nDownload · Getting started · Connections and agents\n\nStart with an idea. Ask the assistant to inspect your scene, create a product-display layout, arrange objects, assign materials or prepare an export. Follow its actions in the conversation and inspect the result in the viewport preview. Keep working in Blender throughout the process.",
+            "features": [
+              "Manager: breaks the request into assignments and acceptance criteria.",
+              "Workers: perform the assigned scene operations.",
+              "Reviewers: inspect results and approve work or return specific findings.",
+              "Download mcp-for-blender-pro.zip from Releases.",
+              "In Blender, open Edit → Preferences → Get Extensions → menu → Install from Disk .",
+              "Select the ZIP, enable mcp-for-blender-pro , then open 3D Viewport → N → MCP Pro .",
+              "Choose a provider, add your connection details and select a model.",
+              "Send a message in Blender or click Open Studio Window ."
+            ],
+            "sections": [
+              "Your Blender scene. Your AI models. One creative workspace.",
+              "Turn a creative brief into scene operations",
+              "Why choose mcp-for-blender-pro?",
+              "From a quick edit to an agent team",
+              "Connect the models that fit your work",
+              "Install and create",
+              "Try these prompts",
+              "Blender automation through MCP",
+              "Stay in control of your scene",
+              "Keywords",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7162
+          },
+          "guard": {
+            "score": 2,
+            "signals": [
+              "singlePush"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "voyager-so/vork",
+          "owner": "voyager-so",
+          "name": "vork",
+          "url": "https://github.com/voyager-so/vork",
+          "homepage": "https://voyager.so/vork",
+          "description": "Headless 3D and VFX engine for agents. Research preview.",
+          "language": "Rust",
+          "topics": [
+            "3d",
+            "ai-agents",
+            "gpu",
+            "metal",
+            "ray-tracing",
+            "rendering",
+            "rust",
+            "slang"
+          ],
+          "stars": 1667,
+          "forks": 141,
+          "open_issues": 6,
+          "starGain": null,
+          "heat": 372.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 15,
+          "created_at": "2026-11-05T22:37:07Z",
+          "pushed_at": "2026-11-18T06:21:25Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 76.7,
+          "breakdown": {
+            "heat": 90,
+            "community": 60,
+            "activity": 52,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 53,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Agents write the whole scene as code, including their own shaders, materials, cameras and physics, and vork renders it on the GPU. The core API fits in about 2,500 tokens.\n\nhttps://github.com/user-attachments/assets/03cfa020-be40-483a-89af-1ef77467b7a0\n\nOne million birds, each on its own path. 192 frames at 1080p rendered in 97 seconds on a single NVIDIA L4. Blender EEVEE at the same sample count is projected at 13–18 minutes. How we measured · how it's made · credits",
+            "features": [
+              "Built for agents: a small API that agents can extend with their own GPU programs.",
+              "Fast: 1.1–2.3× faster than EEVEE on default stills and movies, and about 8–11× on the bird flock.",
+              "Native GPU engine: written in Rust and Slang, runs on Vulkan and Metal (Linux, Windows, macOS).",
+              "No GPU needed: render on Voyager's cloud GPUs with vork cloud.",
+              "Linux: x64, glibc 2.35+ and libstdc++ with GLIBCXX 3.4.30 (Ubuntu 22.04+), a recent NVIDIA GPU and its hardware-ray-tracing Vulkan driver, o",
+              "Windows: x64 Windows 10/11, a recent NVIDIA GPU and its hardware-ray-tracing Vulkan driver.",
+              "Mac: Apple Silicon with Metal, macOS 15 or newer. Intel Macs are unsupported. H.264 uses system VideoToolbox."
+            ],
+            "sections": [
+              "Paste this to your agent",
+              "Start here",
+              "What you can make",
+              "Million birds",
+              "Cyber car",
+              "VFX on real footage",
+              "After Rain",
+              "Black hole",
+              "Cake",
+              "Cozy Kitchen",
+              "Water",
+              "No suitable GPU? Use the cloud",
+              "Give it to an agent",
+              "Under the hood"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 36741
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Seagey/couch-tv",
+          "owner": "Seagey",
+          "name": "couch-tv",
+          "url": "https://github.com/Seagey/couch-tv",
+          "homepage": "https://couchtv.sites.underseage.studio/",
+          "description": "Your Own TV Home Screen - Faster, nicer, removes spyware and tonnes more features.",
+          "language": "JavaScript",
+          "topics": [
+            "android-tv",
+            "claude-code",
+            "google-tv",
+            "home-screen"
+          ],
+          "stars": 1571,
+          "forks": 248,
+          "open_issues": 101,
+          "starGain": null,
+          "heat": 265.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 86,
+          "ageDays": 25,
+          "created_at": "2026-10-26T20:28:54Z",
+          "pushed_at": "2026-11-21T02:18:07Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.8,
+          "breakdown": {
+            "heat": 86,
+            "community": 61,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 95,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Your own home screen and phone remote for the TV. Scenes with a glass clock, your apps in your order, Keep watching across apps, and a phone remote that finds a show and starts it. No ads on the home screen. Open source.\n\nSet it up &nbsp;·&nbsp; Which TVs &nbsp;·&nbsp; Docs &nbsp;·&nbsp; What's new\n\n1. With your AI agent, the easiest way. Open this folder in Claude Code (or any coding agent) and say \"set this up on my TV\". It reads AGENTS.md, finds your TV, asks which option you want and a few questions (who watches, the look, your apps), reads the plan back, and changes nothing on the TV until you say yes. 2. From your phone or a computer: couchtv.sites.underseage.studio, with the free Setup app on a Mac or Windows computer. It also checks whether your TV will work. 3. By hand: docs/SETUP.md has every step, from developer mode to the TV home, and how to undo it.",
+            "features": [
+              "With your AI agent, the easiest way. Open this folder in Claude Code (or any coding agent)",
+              "From your phone or a computer: couchtv.sites.underseage.studio,",
+              "By hand: docs/SETUP.md has every step, from developer mode to the TV home,",
+              "14 November: custom cards with a web link open in the TV's browser on Android TV, LG and Samsung, thanks ekagra-codes ( 207)",
+              "14 November: choose where the home starts: profiles (as before), Keep watching or apps, thanks nidhalmouldi and ekagra-codes ( 211)",
+              "15 November: the clock follows the TV's 12 or 24 hour setting, and Keep watching stays in view while you remove a show, thanks devmaliakbar ",
+              "14 November: Restart home in Home settings, About, thanks janooh37-hue ( 217)",
+              "14 November: two more real LGs (a NANO80TNA app only, a 28TQ515S with the bridge in Docker on a Synology), and --apps tv pairs by itself, th"
+            ],
+            "sections": [
+              "Get started",
+              "Updates",
+              "Three ways to run it",
+              "Will it work on my TV?",
+              "Home backgrounds",
+              "The easy way: couch-tv Setup",
+              "Community tools",
+              "Setting it up with an AI agent",
+              "The phone remote",
+              "Kids mode",
+              "Settings on the TV",
+              "And a lot more",
+              "couch-tv Studio (optional)",
+              "One home, many TVs"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 37663
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "driceroland/Search",
+          "owner": "driceroland",
+          "name": "Search",
+          "url": "https://github.com/driceroland/Search",
+          "homepage": "",
+          "description": "A small, fast WebKit browser for macOS, by Office Commun.",
+          "language": "Swift",
+          "topics": [],
+          "stars": 3592,
+          "forks": 366,
+          "open_issues": 38,
+          "starGain": 74,
+          "heat": 74,
+          "heatBasis": "trending",
+          "heatPercentile": 88,
+          "ageDays": 62,
+          "created_at": "2026-09-20T10:29:47Z",
+          "pushed_at": "2026-11-20T23:45:56Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76,
+          "breakdown": {
+            "heat": 88,
+            "community": 67,
+            "activity": 66,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A small, fast, quiet web browser for the Mac, by Office Commun.\n\nDownload for macOS → · macOS 14 or later · free · about 10 MB\n\nOr with Homebrew: brew install --cask driceroland/tap/search",
+            "features": [
+              "One field. Type an address and you go there; type words and you search. It finishes addresses from your own history and never sends what you",
+              "Tabs that stay out of the way. Pin the pages you keep open all day and they shrink to a letter or their icon. Tabs from your last session co",
+              "Keep an important site running. Enable Keep selected sites awake in Settings › Tabs, then choose Keep This Site Awake in the site card. It p",
+              "Two pages side by side. Turn on Split View in Settings › Tabs, then drag a tab onto a page or choose Tabs › Split Current Page. Drag the div",
+              "Reading mode. ⇧⌘R strips a page down to the article.",
+              "Hide anything, for good. ⇧⌘H , then click a cookie banner, a newsletter overlay, a rail of \"related\" nonsense — it goes, and it is still gon",
+              "An ad blocker that runs before the page. Third-party trackers and ad networks are stopped at the network level, so there is nothing to rende",
+              "Video that follows you. ⇧⌘P lifts the video out of the page into a small window that stays above everything, including other apps."
+            ],
+            "sections": [
+              "Search",
+              "What it is",
+              "What it does",
+              "What it doesn't do",
+              "Privacy, concretely",
+              "Keyboard",
+              "For developers",
+              "Why the source is here",
+              "Building it",
+              "How it's put together",
+              "Testing it without closing it",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 14160
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "visgl/deck.gl",
+          "owner": "visgl",
+          "name": "deck.gl",
+          "url": "https://github.com/visgl/deck.gl",
+          "homepage": "https://deck.gl",
+          "description": "WebGL2 powered visualization framework",
+          "language": "TypeScript",
+          "topics": [
+            "data-visualization",
+            "geospatial-analysis",
+            "javascript",
+            "maps",
+            "python",
+            "visualization",
+            "webgl"
+          ],
+          "stars": 14788,
+          "forks": 2307,
+          "open_issues": 630,
+          "starGain": 11,
+          "heat": 11,
+          "heatBasis": "trending",
+          "heatPercentile": 68,
+          "ageDays": 3994,
+          "created_at": "2015-12-15T08:38:29Z",
+          "pushed_at": "2026-11-21T00:21:06Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 75,
+          "breakdown": {
+            "heat": 68,
+            "community": 81,
+            "activity": 75,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "GPU-powered, highly performant large-scale data visualization\n\ndeck.gl is designed to simplify high-performance, WebGL2/WebGPU based visualization of large data sets. Users can quickly get impressive visual results with minimal effort by composing existing layers, or leverage deck.gl's extensible architecture to address custom needs.\n\ndeck.gl maps data (usually an array of JSON objects) into a stack of visual layers - e.g. icons, polygons, texts; and look at them with views : e.g. map, first-person, orthographic.",
+            "features": [
+              "Performant rendering and updating of large data sets",
+              "Interactive event handling such as picking, highlighting and filtering",
+              "Cartographic projections and integration with major basemap providers",
+              "A catalog of proven, well-tested layers",
+              "Get started",
+              "Full examples",
+              "Get started",
+              "Full examples"
+            ],
+            "sections": [
+              "Flavors",
+              "Script Tag",
+              "NPM Module",
+              "Python",
+              "Third-Party Goodies",
+              "Learning Resources",
+              "Contributing",
+              "Attributions"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4958
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "louis-e/arnis",
+          "owner": "louis-e",
+          "name": "arnis",
+          "url": "https://github.com/louis-e/arnis",
+          "homepage": "https://arnismc.com",
+          "description": "Generate any location from the real world in Minecraft with a high level of detail.",
+          "language": "Rust",
+          "topics": [
+            "minecraft",
+            "minecraft-world-generator",
+            "openstreetmap",
+            "osm",
+            "overpass-turbo",
+            "procedural-generation",
+            "rust",
+            "tauri"
+          ],
+          "stars": 18760,
+          "forks": 1590,
+          "open_issues": 74,
+          "starGain": 27,
+          "heat": 27,
+          "heatBasis": "trending",
+          "heatPercentile": 78,
+          "ageDays": 1533,
+          "created_at": "2022-09-10T13:42:29Z",
+          "pushed_at": "2026-11-19T00:48:05Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.2,
+          "breakdown": {
+            "heat": 78,
+            "community": 81,
+            "activity": 55,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Arnis creates complex and accurate Minecraft Java Edition (1.21.4+), Bedrock Edition, Luanti (Minetest) and Hytale worlds that reflect real-world geography, topography, and architecture.\n\nThis free and open source project is designed to handle large-scale geographic data from the real world and generate detailed Minecraft worlds. The algorithm processes geospatial data from OpenStreetMap as well as elevation data to create an accurate Minecraft representation of terrain and architecture. Generate your hometown, big cities, and natural landscapes with ease!\n\nWant mobile generation or larger map sizes? MapSmith generates worlds in your browser, no install required.",
+            "features": [
+              "Modularity : Ensure that all components (e.g., data fetching, processing, and world generation) are cleanly separated into distinct modules ",
+              "Performance Optimization : We aim to maintain strong performance and fast world generation.",
+              "Comprehensive Documentation : Detailed in-code documentation for a clear structure and logic.",
+              "User-Friendly Experience : Focus on making the project easy to use for end users.",
+              "Cross-Platform Support : We want this project to run smoothly on Windows, macOS, and Linux."
+            ],
+            "sections": [
+              "Arnis",
+              ":keyboard: Usage",
+              "📚 Documentation",
+              ":trophy: Open Source",
+              ":star: Star History",
+              ":newspaper: Academic & Press Recognition",
+              ":lock: Code Signing Policy",
+              ":copyright: License Information"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8211
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "nats-io/nats-server",
+          "owner": "nats-io",
+          "name": "nats-server",
+          "url": "https://github.com/nats-io/nats-server",
+          "homepage": "https://nats.io",
+          "description": "High-Performance server for NATS.io, the cloud and edge native messaging system.",
+          "language": "Go",
+          "topics": [
+            "cloud",
+            "cloud-computing",
+            "cloud-native",
+            "connected-vehicle",
+            "distributed-systems",
+            "edge",
+            "edge-ai",
+            "edge-computing"
+          ],
+          "stars": 21088,
+          "forks": 2051,
+          "open_issues": 473,
+          "starGain": 13,
+          "heat": 13,
+          "heatBasis": "trending",
+          "heatPercentile": 71,
+          "ageDays": 5136,
+          "created_at": "2012-10-29T16:12:24Z",
+          "pushed_at": "2026-11-20T17:04:23Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.5,
+          "breakdown": {
+            "heat": 71,
+            "community": 82,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "NATS is a simple, secure and performant communications system for digital systems, services and devices. NATS is part of the Cloud Native Computing Foundation (CNCF). NATS has over 40 client language implementations, and its server can run on-premise, in the cloud, at the edge, and even on a Raspberry Pi. NATS can secure and simplify design and operation of modern distributed systems.\n\n- Official Website - Official Documentation - FAQ - Watch a video overview of NATS. - Watch this video from SCALE 13x to learn more about its origin story and design philosophy.\n\n- Twitter: Follow us on Twitter! - Google Groups: Where you can ask questions - Slack: Click here to join. You can ask questions to our maintainers and to the rich and active community.",
+            "features": [
+              "Official Website",
+              "Official Documentation",
+              "FAQ",
+              "Watch a video overview of NATS.",
+              "Watch this video from SCALE 13x to learn more about its origin story and design philosophy.",
+              "Twitter: Follow us on Twitter!",
+              "Google Groups: Where you can ask questions",
+              "Slack: Click here to join. You can ask questions to our maintainers and to the rich and active community."
+            ],
+            "sections": [
+              "Documentation",
+              "Contact",
+              "Contributing",
+              "Roadmap",
+              "Adopters",
+              "Security",
+              "Security Audit",
+              "Reporting Security Vulnerabilities",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4576
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "replit/datacat",
+          "owner": "replit",
+          "name": "datacat",
+          "url": "https://github.com/replit/datacat",
+          "homepage": "",
+          "description": "Self-hosted observability: metrics, logs, traces, dashboards and alerts. Stores data in PostgreSQL or ClickHouse. Accepts OpenTelemetry data.",
+          "language": "TypeScript",
+          "topics": [
+            "alerting",
+            "apm",
+            "clickhouse",
+            "dashboards",
+            "logging",
+            "metrics",
+            "monitoring",
+            "observability"
+          ],
+          "stars": 466,
+          "forks": 50,
+          "open_issues": 0,
+          "starGain": 55,
+          "heat": 55,
+          "heatBasis": "snapshot",
+          "heatPercentile": 87,
+          "ageDays": 4,
+          "created_at": "2026-11-17T02:51:06Z",
+          "pushed_at": "2026-11-20T07:13:09Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 72.9,
+          "breakdown": {
+            "heat": 87,
+            "community": 49,
+            "activity": 66,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Self-hosted observability: metrics, logs, distributed traces, dashboards, infrastructure and alerts in one place. DataCat runs on your infrastructure, stores data in PostgreSQL (or telemetry in ClickHouse, if you choose; see docs/SELF HOSTING.md), and accepts OpenTelemetry and Datadog-compatible agent traffic. No hosted account or external service is required.\n\n- Metrics explorer, formulas, dashboards and host maps - Searchable logs with facets, live tail and trace correlation - APM service catalog, trace explorer and waterfall - Metric, log and trace monitors with webhook/Slack notifications - Organizations, local accounts, single-use invites, API/application keys - OpenTelemetry Collector-based host agent and Node.js/Python instrumentation libraries - One production process serving the API, web UI, installer and downloads\n\nRequirements: Docker Engine with the Compose plugin, Git, and OpenSSL.",
+            "features": [
+              "Metrics explorer, formulas, dashboards and host maps",
+              "Searchable logs with facets, live tail and trace correlation",
+              "APM service catalog, trace explorer and waterfall",
+              "Metric, log and trace monitors with webhook/Slack notifications",
+              "Organizations, local accounts, single-use invites, API/application keys",
+              "OpenTelemetry Collector-based host agent and Node.js/Python instrumentation libraries",
+              "One production process serving the API, web UI, installer and downloads"
+            ],
+            "sections": [
+              "DataCat",
+              "Features",
+              "Quick start with Docker Compose",
+              "Sending data",
+              "From source",
+              "Set DATABASE URL, SESSION SECRET and PUBLIC URL in your envi",
+              "Development",
+              "In another terminal:",
+              "Benchmarks",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5192
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "ruffle-rs/ruffle",
+          "owner": "ruffle-rs",
+          "name": "ruffle",
+          "url": "https://github.com/ruffle-rs/ruffle",
+          "homepage": "https://ruffle.rs",
+          "description": "A Flash Player emulator written in Rust",
+          "language": "Rust",
+          "topics": [
+            "emulator",
+            "flash",
+            "hacktoberfest",
+            "reimplementation",
+            "rust",
+            "swf"
+          ],
+          "stars": 18900,
+          "forks": 1201,
+          "open_issues": 5798,
+          "starGain": 9,
+          "heat": 9,
+          "heatBasis": "trending",
+          "heatPercentile": 65,
+          "ageDays": 2766,
+          "created_at": "2019-04-25T17:53:32Z",
+          "pushed_at": "2026-11-21T00:09:19Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 74.3,
+          "breakdown": {
+            "heat": 65,
+            "community": 81,
+            "activity": 79,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Ruffle is an Adobe Flash Player emulator written in the Rust programming language. Ruffle targets both the desktop and the web using WebAssembly.\n\nProject status Using Ruffle Building from source Prerequisites Linux prerequisites Desktop Build macOS Web or Extension Android Scanner Exporter Structure Sponsors License Contributing\n\nRuffle supports ActionScript 1, 2 and 3 pretty well, but it's still not finished by any means. Please report any issues in the Issue Tracker.",
+            "features": [
+              "Project status",
+              "Using Ruffle",
+              "Prerequisites",
+              "Linux prerequisites",
+              "Desktop",
+              "macOS",
+              "Web or Extension",
+              "Android"
+            ],
+            "sections": [
+              "Ruffle",
+              "Table of Contents",
+              "Project status",
+              "Using Ruffle",
+              "Building from source",
+              "Prerequisites",
+              "Linux prerequisites",
+              "Desktop",
+              "Web or Extension",
+              "Android",
+              "Scanner",
+              "Exporter",
+              "Structure",
+              "Sponsors"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9923
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "roundStars"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "liustack/sqlite",
+          "owner": "liustack",
+          "name": "sqlite",
+          "url": "https://github.com/liustack/sqlite",
+          "homepage": "",
+          "description": "The fastest cgo-free SQLite driver for Go's database/sql. It builds with CGO_ENABLED=0, and on most workloads it beats the cgo driver too.",
+          "language": "Assembly",
+          "topics": [
+            "cgo-free",
+            "database",
+            "go",
+            "golang",
+            "purego",
+            "sql-driver",
+            "sqlite",
+            "sqlite3"
+          ],
+          "stars": 114,
+          "forks": 2,
+          "open_issues": 1,
+          "starGain": 57,
+          "heat": 57,
+          "heatBasis": "snapshot",
+          "heatPercentile": 96,
+          "ageDays": 17,
+          "created_at": "2026-11-03T21:40:35Z",
+          "pushed_at": "2026-11-20T19:19:07Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.4,
+          "breakdown": {
+            "heat": 96,
+            "community": 33,
+            "activity": 63,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 73,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "It is for Go programs that keep their data in SQLite and want to stay plain Go: one static binary, cross-compiled from any machine, no C compiler in the build or in the container. Until now that meant giving up speed. Here the cgo driver is the one that falls behind.\n\nWhile building Tifa, I wanted every app to deploy as one Go binary copied to a small VPS. The data had to live in SQLite, and CGO had to stay off, or there goes cross-compiling and the scratch image.\n\nThe pure Go drivers paid for that in speed. modernc translates SQLite's C into Go and ncruces runs it as WebAssembly, and both trailed the cgo driver. So I had LLVM compile SQLite's own C straight into Go assembly, and kept at it until the cgo driver was the one falling behind.",
+            "features": [
+              "Writes never wait for the upload. A slow or unreachable store never slows a write or makes it fail. Changes wait on disk next to the databas",
+              "Nothing else to deploy. It is a package in your program, so the deploy stays one binary, with no Litestream process beside it.",
+              "Every file is checked on restore , then PRAGMA integrity check runs, and a database already there is never written over.",
+              "Litestream reads the same copy. It is laid out as Litestream lays it out, and the tests have litestream restore rebuild it at every point an",
+              "r.Sync(ctx) waits until what you committed is in the store , for the writes that must be safe before you go on.",
+              "No C anywhere. CGO ENABLED=0 GOOS=linux GOARCH=arm64 go build from a Mac works, and the binary runs in a scratch image.",
+              "Many writers stop waiting on each other. When goroutines write at the same time, the driver runs their autocommit INSERT , UPDATE and DELETE",
+              "Writers queue instead of failing with database is locked . Inside the driver one connection of your program writes a file at a time, and the"
+            ],
+            "sections": [
+              "Why it exists",
+              "Benchmarks",
+              "Concurrent writes without database is locked",
+              "Real-time backup to S3",
+              "Install",
+              "Use",
+              "What changes for you",
+              "Why you can trust it",
+              "Not there yet",
+              "Documentation",
+              "Talk to us",
+              "Contributing",
+              "Star History",
+              "Thanks"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21707
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "yzsind/mydb",
+          "owner": "yzsind",
+          "name": "mydb",
+          "url": "https://github.com/yzsind/mydb",
+          "homepage": "",
+          "description": "A high-performance MySQL-compatible database for HTAP and AI agents  Mixed transactional and analytical workloads, with native AI retrieval.",
+          "language": "Rust",
+          "topics": [
+            "agent",
+            "data",
+            "database",
+            "mysql",
+            "rag",
+            "rust"
+          ],
+          "stars": 82,
+          "forks": 17,
+          "open_issues": 7,
+          "starGain": 11,
+          "heat": 11,
+          "heatBasis": "snapshot",
+          "heatPercentile": 81,
+          "ageDays": 4,
+          "created_at": "2026-11-16T22:52:44Z",
+          "pushed_at": "2026-11-21T01:47:10Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 69,
+          "breakdown": {
+            "heat": 81,
+            "community": 35,
+            "activity": 78,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A high-performance MySQL-compatible database for HTAP and AI agents\n\nMixed transactional and analytical workloads, with native AI retrieval.\n\nDownload · Why MyDB · Performance evaluation · Testing · Quick Start · Built for AI Agents · Documentation · MySQL Compatibility",
+            "features": [
+              "Text generation : AI GENERATE accepts a prompt or text message history for summarization, classification, extraction, and answer generation ",
+              "Native embeddings : AI EMBED returns a FLOAT32 VECTOR with validated dimensions. AI EMBED DETAIL also accepts explicit batches of texts.",
+              "Local and remote services : configure SQL connection and model objects for Ollama, OpenAI Responses, Chat Completions-compatible services, a",
+              "Structured results : generation can request JSON Schema output when the configured deployment supports it; MyDB parses and validates the res",
+              "Online index and primary key creation : regular and unique B-tree indexes and newly added primary keys allow concurrent DML while being buil",
+              "Read-compatible column changes : adding columns without storage rewrites, compatible type modifications, and some metadata-only changes keep",
+              "Online column type changes : supported physical rewrites use shadow storage and incremental catch-up, allowing concurrent reads and writes d",
+              "Constraints and charset settings : online foreign keys, CHECK constraints, and default charset/collation metadata changes."
+            ],
+            "sections": [
+              "MyDB",
+              "Performance evaluation",
+              "Testing",
+              "Quick Start",
+              "Run a downloaded binary",
+              "Native Rust client",
+              "Build and connect",
+              "Docker",
+              "Platforms and distribution",
+              "Architecture",
+              "REST SQL",
+              "Built for AI Agents",
+              "Model calls in SQL: generate text and embeddings",
+              "Smart indexing: fewer full scans without manual indexes"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 29228
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "phone-harness/phone-harness",
+          "owner": "phone-harness",
+          "name": "phone-harness",
+          "url": "https://github.com/phone-harness/phone-harness",
+          "homepage": "phone-harness.com",
+          "description": "let your agent control your phone",
+          "language": "Python",
+          "topics": [
+            "agent",
+            "ai",
+            "automation",
+            "developer-tools",
+            "mobile-ai",
+            "mobile-development"
+          ],
+          "stars": 5393,
+          "forks": 561,
+          "open_issues": 101,
+          "starGain": 198,
+          "heat": 198,
+          "heatBasis": "trending",
+          "heatPercentile": 97,
+          "ageDays": 105,
+          "created_at": "2026-08-07T22:28:53Z",
+          "pushed_at": "2026-11-20T05:09:53Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.6,
+          "breakdown": {
+            "heat": 97,
+            "community": 71,
+            "activity": 64,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 83,
+            "ai": 56,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Enable Claude Code, Codex, or any agent to use your real phone. The agent can scroll, tap, type, and read your phone with no jailbreak, no Xcode, and nothing installed on the phone.\n\n● agent: wants to open Weather │ ● find text(\"Weather\") → (400, 468) │ ● tap(400, 468) → reads the screen → forecast is up ✓ done\n\nTry Phone Harness Cloud → Hosted iPhones and Androids with stealth, real numbers, 2FA, and unlimited devices",
+            "features": [
+              "Android phones on demand: a fresh one per session, or a saved phone that keeps its apps and logins.",
+              "Dedicated real iPhones , driven over HTTPS from any OS.",
+              "A live view of the phone in your browser while the agent works.",
+              "iPhone: captures the iPhone Mirroring window, reads it with Apple's Vision OCR, and sends taps, swipes and typing as input events.",
+              "Android: adb for screenshots and input, the accessibility tree for text. USB or Wi-Fi.",
+              "Cloud Android: the same as Android, over adb to a hosted phone.",
+              "Cloud iPhone: ops over HTTPS.",
+              "Unlocking the iPhone pauses mirroring; a PIN-locked Android needs the user."
+            ],
+            "sections": [
+              "Demo",
+              "Setup",
+              "Usage",
+              "Phone Harness Cloud",
+              "How it works",
+              "Limits",
+              "Sponsor"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10251
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "superdesigndev/treg",
+          "owner": "superdesigndev",
+          "name": "treg",
+          "url": "https://github.com/superdesigndev/treg",
+          "homepage": "https://treg.to",
+          "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+          "language": "Python",
+          "topics": [
+            "agents",
+            "api-keys",
+            "cli",
+            "credentials",
+            "developer-tools",
+            "dsh-plugin",
+            "mcp",
+            "proxy"
+          ],
+          "stars": 8656,
+          "forks": 850,
+          "open_issues": 363,
+          "starGain": 100,
+          "heat": 100,
+          "heatBasis": "trending",
+          "heatPercentile": 76,
+          "ageDays": 129,
+          "created_at": "2026-07-15T13:38:07Z",
+          "pushed_at": "2026-11-21T04:33:58Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 78.3,
+          "breakdown": {
+            "heat": 76,
+            "community": 75,
+            "activity": 74,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 98,
+            "ai": 56,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "OpenRouter, but for agent tools instead of models. Point an agent at one base URL with one token and it can do the job: a curated catalog of thousands of endpoints across many providers — SEO and backlinks, social and trends, people and company enrichment, ads, scraping, image and video generation — priced per call, from a cent , with no provider signup. Plus your own team's keys, skills and CLIs, callable by every teammate's agent without the credential ever leaving the server.\n\nAsk for the task, not the tool. You do not need to know which vendor sells backlink data, or to hold an account with them. Search for what you want to do, read the price, call it.\n\nBuilt for the Superdesign team, live at treg.to — anyone can self-host.",
+            "features": [
+              "The catalog — external endpoints treg can serve with its own key or through a verified public",
+              "Your own tools — anything a teammate registered: a paid API account, an OAuth connection, a",
+              "tool = something the registry calls for you with the org's credential. Two kinds:",
+              "endpoint — an upstream base url + credential bindings (each binding injects one",
+              "CLI — a vendor binary ( stripe , gh , vercel , ...) run with the credential injected.",
+              "skill / bundle = a recipe ( SKILL.md ) + its secrets + its tool(s), registered together.",
+              "your team registered its own tool for that provider → that tool, that key;",
+              "your team stored a secret for the provider → injected through a virtual tool (never for a keyless"
+            ],
+            "sections": [
+              "Treg (OpenRouter for Tools)",
+              "Why it exists",
+              "Two kinds of tool, one token",
+              "Part 1 · Using the registry",
+              "Quickstart",
+              "1. install the CLI — also points it at the registry",
+              "2. sign in (GitHub default · --email for a one-time code · -",
+              "3. do something useful immediately — no key, nothing registe",
+              "(or treg onboard for the guided walkthrough)",
+              "Or install it as a Claude Code plugin",
+              "Workflow skills",
+              "Claude.ai connector",
+              "Call a tool you don't have a key for",
+              "Share & use your own tools"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 36127
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "krisgfx9/Wireless-Device-Battery-Monitor",
+          "owner": "krisgfx9",
+          "name": "Wireless-Device-Battery-Monitor",
+          "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+          "homepage": "",
+          "description": "Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. Lightweight tray app, no vendor software needed. Supports Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox and Bluetooth devices.",
+          "language": "C++",
+          "topics": [],
+          "stars": 5393,
+          "forks": 450,
+          "open_issues": 3587,
+          "starGain": null,
+          "heat": 1849.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 4,
+          "created_at": "2026-11-16T19:28:29Z",
+          "pushed_at": "2026-11-20T13:36:43Z",
+          "license": "GPL-3.0",
+          "rating": 4.5,
+          "composite": 87.1,
+          "breakdown": {
+            "heat": 100,
+            "community": 70,
+            "activity": 93,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Formerly Wireless Battery . Version 1.1.0 renamed the app; an update keeps your settings, startup choice and battery history.\n\nBattery levels of your wireless mouse, headset, keyboard and controller, right on the Windows taskbar.\n\n- Tiny : a ~350 KB app using about 2 MB of RAM. It's plain C++/Win32, with no runtime and no background service, and supports per-user installation without administrator rights. - Vendor apps usually aren't required : most drivers query devices directly. Some headsets use the bundled HeadsetControl helper. Device-specific setup, firmware patches and conflicts with vendor apps are described in the table and Limitations. - Many brands : Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, Jabra, JBL, PlayStation and Xbox controllers, Samsung Galaxy Buds, any Bluetooth device Windows knows a battery level for, and every headset the bundled HeadsetControl supports.",
+            "features": [
+              "Tiny : a ~350 KB app using about 2 MB of RAM. It's plain C++/Win32, with no runtime and no background service, and supports per-user install",
+              "Vendor apps usually aren't required : most drivers query devices directly. Some headsets use the bundled HeadsetControl helper. Device-speci",
+              "Many brands : Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, Jabra, JBL, PlayStation and Xbox controllers, Samsung Galaxy Buds, an",
+              "Low battery: a red number means 15% or less.",
+              "Charging: a blue ⚡ appears next to the number. Once the device is fully charged and still on power, it turns into a green ✓.",
+              "Asleep: dimmed text means the device is asleep and the last known value is shown. Turn off Dim sleeping devices in the menu to keep that val",
+              "Disconnected (optional): turn on Show disconnected devices to display a dimmed × for devices whose driver explicitly reports an offline wire",
+              "Two devices of one kind: with two mice (or two controllers...) both would get the same icon, so each one gets a tiny caption of up to 3 lett"
+            ],
+            "sections": [
+              "BatteryHub",
+              "Display",
+              "Smart Battery Alerts (experimental)",
+              "Battery history & insights",
+              "Supported devices",
+              "Install",
+              "Updates on Windows",
+              "Command line",
+              "Build",
+              "Linux (experimental)",
+              "log out and back in",
+              "Limitations",
+              "How it works",
+              "Translations"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 72456
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "incoai/splash",
+          "owner": "incoai",
+          "name": "splash",
+          "url": "https://github.com/incoai/splash",
+          "homepage": "https://inco.ai/blog/splash/",
+          "description": "A local inference engine for Apple silicon, built around the model.",
+          "language": "C++",
+          "topics": [
+            "apple-silicon",
+            "coding-agents",
+            "llm-inference",
+            "macos",
+            "metal",
+            "speculative-decoding"
+          ],
+          "stars": 2579,
+          "forks": 247,
+          "open_issues": 172,
+          "starGain": 116,
+          "heat": 116,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 63,
+          "created_at": "2026-09-18T20:01:48Z",
+          "pushed_at": "2026-11-17T12:42:30Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.5,
+          "breakdown": {
+            "heat": 91,
+            "community": 64,
+            "activity": 48,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 21,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A local inference engine for Apple silicon, built around the model.\n\nSplash runs coding agents and OpenAI or Anthropic compatible applications on one Mac. It combines DFlash 2 speculative decoding, specialized Metal kernels, and automatic memory planning, with vision, tool calling, and a built-in chat page. It reuses cached prefixes and batches concurrent requests automatically.\n\nDownload the Splash desktop app for an Apple M3 or newer on macOS 26.4 or later, open the disk image and drag Splash into Applications.",
+            "features": [
+              "Documentation: configuration, API, internals, building, and testing.",
+              "Issues and feedback",
+              "Apache-2.0. GGUF kernels include MIT-licensed material from"
+            ],
+            "sections": [
+              "Splash",
+              "Quick start",
+              "Use the API",
+              "Models",
+              "Settings",
+              "Performance",
+              "GGUF against llama.cpp",
+              "Design",
+              "More"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9074
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "nsgo-dev/nsgo",
+          "owner": "nsgo-dev",
+          "name": "nsgo",
+          "url": "https://github.com/nsgo-dev/nsgo",
+          "homepage": "https://nsgo.dev/",
+          "description": "A cross-platform native UI engine with a Go backend: write apps in Go with signals, memos and flexbox layout, and each platform draws with its own native views — iOS and its App Clips, tvOS, watchOS, macOS, Windows, Android, Linux, the web and WeChat, QQ, Alipay and Douyin mini programs",
+          "language": "Go",
+          "topics": [
+            "android",
+            "app-clips",
+            "apple-tv",
+            "cross-platform",
+            "desktop",
+            "flexbox",
+            "go",
+            "ios"
+          ],
+          "stars": 678,
+          "forks": 40,
+          "open_issues": 184,
+          "starGain": 61,
+          "heat": 61,
+          "heatBasis": "snapshot",
+          "heatPercentile": 82,
+          "ageDays": 31,
+          "created_at": "2026-10-21T13:55:59Z",
+          "pushed_at": "2026-11-21T04:40:37Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 74.6,
+          "breakdown": {
+            "heat": 82,
+            "community": 51,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 18,
+            "devops": 12,
+            "ai": 15,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A cross-platform native UI engine with a Go backend: app logic, the reactive graph and layout run in Go, and each platform draws with its own native UI. It follows the design of Native Shell (NSH) , for teams that want NSH's model without writing Rust.\n\n- Native views. Text, input methods, scrolling, menus and accessibility are each platform's own, and what one platform has, such as Liquid Glass, the others imitate. - Every platform from one Mac. Go builds every target, with Xcode for iOS, tvOS and watchOS and an NDK only for the x86 64 Android emulator: no Android SDK, JDK, GTK or Windows toolchain. - Fine-grained updates. Components run once and signals update only what reads them, with flexbox and grid layout, CSS-like styles, Tailwind classes, themes and animations on the platform's frame clock. - Components. base offers unstyled components from buttons to a million-row DataTable , charts, flow diagrams, a code editor, a rich-text editor and a terminal, and ui gives them NSGo's look. - Platform services. Navigation, notifications, permissions, pickers, sharing, haptics, in-app purchases, widgets and Live Activities, and on desktops windows, panels, menus, tray icons and global shortcuts. - Localized. YAML message catalogs with CLDR plurals, numbers and dates, and right-to-left layout. - TSX apps. Write apps in TSX as NSH does, with hot updates that keep state, and ship them as signed, sandboxed packages a Go app runs. - Tests that act as users do. nsgotest presses, types ",
+            "features": [
+              "Native views. Text, input methods, scrolling, menus and accessibility are each platform's own, and what one platform has, such as Liquid Gla",
+              "Every platform from one Mac. Go builds every target, with Xcode for iOS, tvOS and watchOS and an NDK only for the x86 64 Android emulator: n",
+              "Fine-grained updates. Components run once and signals update only what reads them, with flexbox and grid layout, CSS-like styles, Tailwind c",
+              "Components. base offers unstyled components from buttons to a million-row DataTable , charts, flow diagrams, a code editor, a rich-text edit",
+              "Platform services. Navigation, notifications, permissions, pickers, sharing, haptics, in-app purchases, widgets and Live Activities, and on ",
+              "Localized. YAML message catalogs with CLDR plurals, numbers and dates, and right-to-left layout.",
+              "TSX apps. Write apps in TSX as NSH does, with hot updates that keep state, and ship them as signed, sandboxed packages a Go app runs.",
+              "Tests that act as users do. nsgotest presses, types and reads what is on screen, headless or on each platform with native input and screensh"
+            ],
+            "sections": [
+              "Highlights",
+              "Platforms",
+              "Getting started",
+              "Status",
+              "Documentation",
+              "Development",
+              "Community",
+              "Sponsors",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8475
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "firecrawl/firecrawl",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "simplexai-labs/linger",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "mvanhorn/last30days-skill",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-10-23",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "n8n-io/nod",
+      "category": "ai",
+      "lastPushed": "2026-11-16",
+      "times": 1
+    },
+    {
+      "full_name": "opensandbox-group/OpenSandbox",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "ZiChuanLan/freebie-radar",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [
+    {
+      "full_name": "aurahamzzz-cyber/microsoft-excel-alvaora",
+      "category": "data",
+      "score": 5
+    }
+  ]
+}
