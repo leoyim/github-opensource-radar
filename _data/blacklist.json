@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 102,
-    "publicCount": 45,
+    "count": 108,
+    "publicCount": 48,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -39,6 +39,13 @@
         "label": "收录边界判定",
         "window": "2026-11-17",
         "note": "以政治、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。"
+      },
+      {
+        "id": "installer-wave-2026-11-e",
+        "label": "「离线安装包」批量投放（第五波）",
+        "window": "2026-11-18 — 2026-11-21",
+        "repos": 3,
+        "note": "三个仓库在 2026-11-18 至 11-21 先后上架，分别以不同商业软件名（Adobe Dreamweaver、Zed、AnyTrans）配合随机后缀作为标题；README 采用逐字相近的居中标题、预览图、安装按钮、徽章组与「Requirements / Features / How it works」章节结构，安装按钮均指向仓库自身的 Pages 页面。仓库标注 TypeScript 或 HTML，src/ 下仅有 69—91 B 的占位源文件，docs/ 或根目录为约 8—66 KB 的落地页，files/ 只存放按钮与预览图，未包含可审阅的源码与构建链。星标 146—151、零 fork、零 issue，附 MIT 许可文件（其中一个未附许可）而内容为第三方商业软件的 Windows 安装入口，申报的 18—20 个主题词含多个与正文无关的方向词。与 11 月上旬起已归集的同类条目在版式与文件结构上高度一致，账号、商品名与创建时间更换而模板未变。"
       }
     ]
   },
@@ -7152,6 +7159,459 @@
           "ipados",
           "mobilegestalt",
           "sandbox-escape"
+        ]
+      }
+    },
+    {
+      "full_name": "lebrowndnasty-hash/ai-app-builder",
+      "owner": "lebrowndnasty-hash",
+      "name": "ai-app-builder",
+      "url": "https://github.com/lebrowndnasty-hash/ai-app-builder",
+      "description": "AI App Builder: Prompt to Full-Stack Next.js Apps with Hosting, Database, Auth, and Multitenancy",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "frontend",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-22",
+      "removedAt": "2026-11-22",
+      "issues": [
+        "2026-11-22"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 database、nextjs、typescript 等 3 个技术主题词，正文中仅 1 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "142 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 database、nextjs、typescript 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 142,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-21T13:01:04Z",
+        "pushed_at": "2026-11-22T01:08:06Z",
+        "topics": [
+          "ai-app-builder",
+          "ai-code-generation",
+          "ai-web-app-builder",
+          "ai-web-builder",
+          "app-builder",
+          "auth",
+          "bolt-alternative",
+          "database"
+        ]
+      }
+    },
+    {
+      "full_name": "2411500034-indra/delta-force-trainer-velmora",
+      "owner": "2411500034-indra",
+      "name": "delta-force-trainer-velmora",
+      "url": "https://github.com/2411500034-indra/delta-force-trainer-velmora",
+      "description": "Play Delta Force with Velmora's trainer for live tactical readouts.",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-22",
+      "removedAt": "2026-11-22",
+      "issues": [
+        "2026-11-22"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 0 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "149 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 149,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-20T20:05:35Z",
+        "pushed_at": "2026-11-21T22:42:03Z",
+        "topics": [
+          "automation",
+          "delta-force",
+          "delta-force-aim-assist",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "scripts"
+        ]
+      }
+    },
+    {
+      "full_name": "parthivvinod95-blip/clion-desktop",
+      "owner": "parthivvinod95-blip",
+      "name": "clion-desktop",
+      "url": "https://github.com/parthivvinod95-blip/clion-desktop",
+      "description": "Clion Desktop: Plugin Suite and Desktop Integration",
+      "language": "HTML",
+      "category": "off-topic",
+      "categoryLabel": "收录边界",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "firstSeen": "2026-11-22",
+      "removedAt": "2026-11-22",
+      "issues": [
+        "2026-11-22"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "content",
+          "label": "主题标注与正文不符",
+          "detail": "仓库标注了 automation、desktop、developer-tools 等 3 个技术主题词，正文中仅 1 个词有对应内容，主体并非该方向的工程实现"
+        },
+        {
+          "type": "metadata",
+          "label": "无源码主体",
+          "detail": "仓库语言为 HTML，没有可作为技术内容审阅的源码结构，也未给出构建步骤"
+        },
+        {
+          "type": "metadata",
+          "label": "无使用痕迹",
+          "detail": "145 星标、零 fork、零 issue，未见二次使用或反馈记录，且未声明开源许可证"
+        }
+      ],
+      "verdict": "仓库以 automation、desktop、developer-tools 等主题词标注自身，但正文与该方向无关，缺少可复用的工程内容，属主题堆砌式的引流页面，不进入推荐位。",
+      "advice": "",
+      "snapshot": {
+        "stars": 145,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "",
+        "created_at": "2026-11-21T13:19:23Z",
+        "pushed_at": "2026-11-22T00:58:31Z",
+        "topics": [
+          "automation",
+          "clion-2026",
+          "clion-download-windows",
+          "cmake-ide",
+          "cpp-ide",
+          "desktop",
+          "developer-tools",
+          "jetbrains-clion"
+        ]
+      }
+    },
+    {
+      "full_name": "MinosoaRafalimanana/adobe-dreamweaver-varvera",
+      "owner": "MinosoaRafalimanana",
+      "name": "adobe-dreamweaver-varvera",
+      "url": "https://github.com/MinosoaRafalimanana/adobe-dreamweaver-varvera",
+      "description": "Varvera edition of Adobe Dreamweaver, a web development environment for coding and design.",
+      "language": "TypeScript",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "frontend",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-e",
+      "firstSeen": "2026-11-22",
+      "removedAt": "2026-11-22",
+      "issues": [
+        "2026-11-22"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-18T19:01:54Z，与 11 月中下旬先后上架的一组同类条目处于相近时间窗，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "150 星标但没有任何 fork，也缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 TypeScript，体积约 350 KB；src/ 下仅 index.ts（69 B）与一个 utils/ 目录，docs/ 为 index.html（8,417 B）、main.js（54 B）、style.css（48 B），files/ 只有 button.png（18,773 B）与 preview.png（298,944 B），未包含可审阅的源码或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 标题为「Adobe Dreamweaver Varvera Desktop Client for Windows 11」，首屏由预览图、安装按钮（指向仓库自身的 Pages 页面）、徽章组与打赏地址构成；Requirements 一节要求通过网络获取安装脚本并说明无需管理员权限，正文以功能描述代替源码与构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附 MIT 许可文件，README 徽章却标注 GPL-3.0，正文描述的是第三方商业软件的 Windows 桌面客户端，许可声明与所分发内容的权利基础均无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与 11 月起已归集的一组条目使用相同的居中标题、预览图、安装按钮、徽章组以及 Features / How it works 章节结构；申报的 20 个主题词含 css3、html5、xml 等与正文无关的方向词。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已归集批次同批上架",
+          "detail": "与本期另两个条目、以及 11 月上旬起已归集的一组条目使用同一 README 模板，账号、商品名与创建时间更换而版式未变；核对元数据、README 原文与目录结构后，本期不纳入推荐，并从当日推荐位撤下。处置仅针对本期选目，不对作者作推断。"
+        }
+      ],
+      "verdict": "README 以安装按钮代替源码与构建说明，内容为第三方商业软件的 Windows 安装入口，安装脚本与授权依据均无法预先审阅；与 11 月起已归集的一组同类条目在版式与文件结构上一致。",
+      "advice": "不建议在任何环境执行其安装脚本；如需相应软件，建议通过官方渠道获取并核对授权。",
+      "snapshot": {
+        "stars": 150,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-18T19:01:54Z",
+        "pushed_at": "2026-11-21T22:02:37Z",
+        "topics": [
+          "code",
+          "cross-platform",
+          "css",
+          "css3",
+          "desktop-app",
+          "developer-tools",
+          "development",
+          "editor",
+          "frontend",
+          "html",
+          "html5",
+          "ide",
+          "javascript",
+          "json",
+          "syntax-highlighting",
+          "text-editor",
+          "typescript",
+          "web-design",
+          "web-development",
+          "xml"
+        ]
+      }
+    },
+    {
+      "full_name": "dporras543/zed-velvaora",
+      "owner": "dporras543",
+      "name": "zed-velvaora",
+      "url": "https://github.com/dporras543/zed-velvaora",
+      "description": "Explore, edit, and extend Zed Velvaora's source codebase.",
+      "language": "TypeScript",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "frontend",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-e",
+      "firstSeen": "2026-11-22",
+      "removedAt": "2026-11-22",
+      "issues": [
+        "2026-11-22"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-20T00:19:00Z，与 11 月中下旬先后上架的一组同类条目处于相近时间窗，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "151 星标但没有任何 fork，也缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 TypeScript，体积约 359 KB；src/ 下仅 main.ts（91 B）与 style.css（48 B），vite.config.ts 为 107 B，files/ 只有 button.png（18,487 B）与 preview.png（320,101 B），未包含可审阅的源码或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 标题为「Zed Velvaora — Desktop Software for Windows 10 & 11」，首屏由预览图、安装按钮（指向仓库自身的 Pages 页面）、徽章组与打赏地址构成；Requirements 一节要求通过网络获取脚本，正文以功能描述代替源码与构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库未附许可文件，README 徽章自述为 UNLICENSE，正文描述的是与 Zed 同名的第三方桌面软件，权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与 11 月起已归集的一组条目使用相同的居中标题、预览图、安装按钮、徽章组以及 Features / How it works 章节结构；申报的 20 个主题词含 gpui、rust-lang 等与 TypeScript 工程无关的方向词。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已归集批次同批上架",
+          "detail": "与本期另两个条目、以及 11 月上旬起已归集的一组条目使用同一 README 模板，账号、商品名与创建时间更换而版式未变；核对元数据、README 原文与目录结构后，本期不纳入推荐，该条目此前亦未进入任何期次的推荐位。处置仅针对本期选目，不对作者作推断。"
+        }
+      ],
+      "verdict": "README 以安装按钮代替源码与构建说明，内容为第三方商业软件的 Windows 安装入口，安装脚本与授权依据均无法预先审阅；与 11 月起已归集的一组同类条目在版式与文件结构上一致。",
+      "advice": "不建议在任何环境执行其安装脚本；如需相应软件，建议通过官方渠道获取并核对授权。",
+      "snapshot": {
+        "stars": 151,
+        "forks": 0,
+        "open_issues": 0,
+        "license": null,
+        "created_at": "2026-11-20T00:19:00Z",
+        "pushed_at": "2026-11-22T00:04:18Z",
+        "topics": [
+          "code",
+          "cross-platform",
+          "css",
+          "desktop-app",
+          "developer-tools",
+          "editor",
+          "frontend",
+          "gpui",
+          "html",
+          "html5",
+          "ide",
+          "javascript",
+          "json",
+          "rust-lang",
+          "syntax-highlighting",
+          "text-editor",
+          "typescript",
+          "web-design",
+          "web-development",
+          "xml"
+        ]
+      }
+    },
+    {
+      "full_name": "BratzieTiffany/imobie-anytrans",
+      "owner": "BratzieTiffany",
+      "name": "imobie-anytrans",
+      "url": "https://github.com/BratzieTiffany/imobie-anytrans",
+      "description": "iMobie AnyTrans: Cross-Device Content Management and Data Transfer Suite",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-e",
+      "firstSeen": "2026-11-22",
+      "removedAt": "2026-11-22",
+      "issues": [
+        "2026-11-22"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T14:32:44Z，与 11 月中下旬先后上架的一组同类条目处于相近时间窗，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "146 星标但没有任何 fork，也缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，体积约 356 KB；根目录为 index.html（65,672 B）落地页与 README（13,208 B），另有 files/ 目录，没有 src/ 等源码目录，也未包含可审阅的构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 标题为「AnyTrans: Cross-Platform Device Data Manager Windows Desktop Client」，首屏由预览图、安装按钮（指向仓库自身的 Pages 页面）与徽章组构成；Requirements 一节要求通过网络下载脚本，正文以功能描述代替源码与构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附 MIT 许可文件，正文描述的却是第三方商业软件的 Windows 桌面客户端，并自述与其名称所指产品对应，许可声明与所分发内容的权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与 11 月起已归集的一组条目使用相同的居中标题、预览图、安装按钮、徽章组以及 Features / How It Works 章节结构；申报的 18 个主题词多为软件下载与营销类长尾词，正文并未涉及其中多数技术主题。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已归集批次同批上架",
+          "detail": "与本期另两个条目、以及 11 月上旬起已归集的一组条目使用同一 README 模板，账号、商品名与创建时间更换而版式未变；核对元数据、README 原文与目录结构后，本期不纳入推荐，该条目此前亦未进入任何期次的推荐位。处置仅针对本期选目，不对作者作推断。"
+        }
+      ],
+      "verdict": "README 以安装按钮代替源码与构建说明，内容为第三方商业软件的 Windows 安装入口，安装脚本与授权依据均无法预先审阅；与 11 月起已归集的一组同类条目在版式与文件结构上一致。",
+      "advice": "不建议在任何环境执行其安装脚本；如需相应软件，建议通过官方渠道获取并核对授权。",
+      "snapshot": {
+        "stars": 146,
+        "forks": 0,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-21T14:32:44Z",
+        "pushed_at": "2026-11-22T00:45:46Z",
+        "topics": [
+          "anytrans-download-iphone-manager",
+          "anytrans-transfer-photos-music-pc",
+          "automation",
+          "desktop",
+          "developer-tools",
+          "imobie-2026",
+          "imobie-anytrans-2026",
+          "imobie-anytrans-full-windows-2026",
+          "iphone-manager",
+          "open-source",
+          "phone-tool",
+          "python",
+          "scripts",
+          "software-engineering",
+          "system",
+          "utility",
+          "windows-app"
         ]
       }
     }

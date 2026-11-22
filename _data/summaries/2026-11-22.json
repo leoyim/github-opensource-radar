@@ -1,0 +1,86 @@
+{
+  "DietrichGebert/ponytail": {
+    "summary_zh": "给编码 agent 用的技能包，把「最好的代码是没写的代码」变成可执行的生成约束：优先删减、复用与收窄改动面，而不是让模型大段生成。Ponytail 5 从零重写，README 给出在 39 个任务（含真实 FastAPI + React 仓库、Opus 5.5、每项跑 5 次）上的对照数据：代码量 -53%、耗时 -41%、成本 -26%、token -45%，同时 98% 的风险逻辑带测试（未使用时 68%）。仓库含安装、命令清单、提示词原文与基准结果。",
+    "highlight_zh": "看点是把资深工程师的克制写成 agent 可遵循的技能，而不是再调一次模型；基准同时给出安全项与盲测对比（六类安全任务 30 次运行全部通过），比只报速度的对比更完整。边界也清楚：数字来自作者自建基准与特定模型版本，换仓库类型或模型后未必复现，技能约束的是生成策略，不能替代测试与 code review。当日新增 780 星，居全榜前列。"
+  },
+  "XinaTian/MROffice": {
+    "summary_zh": "开源发布 MR Office 的编辑器源码：文档、表格、演示、PDF、手写与代码六类编辑器，可自建、可嵌入自己的 Web 应用。开发路径给出 mroffice-embed 的初始化与服务端会话令牌签发（密钥不出服务端）、面向 AI 应用的 MCP server、OAuth 登录，以及桌面客户端。仓库用 TypeScript，AGPL-3.0 许可，上线仅 11 天。",
+    "highlight_zh": "值得注意的边界被 README 明说在前面：开源的是编辑器，不是一整套开源办公套件——Microsoft Office 文件的读写仍在 MR Office 服务侧。因此它更适合「已有文件格式能力、想自托管编辑界面」的团队，而非寻求完全离线替代的人。嵌入方案把令牌签发留在服务端，是这套设计里比较克制的一处。"
+  },
+  "ForeactLabs/OpenExecutive": {
+    "summary_zh": "用 FastAPI + Next.js 搭的「虚拟高管团队」：一个统一的高管人格背后挂 8 个专职 agent（战略、财务、人力、法务、运营、市场、产品、销售）。支持审批级别、支出额度区间、企业知识系统接入以及与人和其他 AI 系统协作的治理规则；集成 Slack、Discord、Telegram、Google Chat、邮箱、Google Workspace、Microsoft 365、Notion、Confluence 与任意 MCP 工具。",
+    "highlight_zh": "它把「让 agent 代管一部分管理动作」做成了带审批闸门的系统：As 模式可按本人语气起草邮件，但只有落在 Approvals 允许范围内的才自动发出，其余等人点发送。这个设计比全自主代发更可落地。需要评估的是另一方面：8 个角色的建议仍来自同一模型，合同、财务与用工结论不能当专业意见；把邮箱与日历授权给自部署服务也要先定数据边界。"
+  },
+  "sybil-solutions/inference-optimisation-skill": {
+    "summary_zh": "一个 agent skill，用爬山法优化本地 LLM 服务的推理速度，覆盖单用户与并发 decode、投机解码、prefill、KV cache 大小、启动时间与首字延迟，适用于任意硬件与量化。方法约束写得很硬：在内存上限内工作、每次只改一个变量、与交错对照一起测量、每个结果都要通过全上下文稳定性检查、失败结果也照实记录。",
+    "highlight_zh": "本期 AI 方向唯一做「测量方法」而非「模型或应用」的项目，5 天新仓已有 1,683 星、当日 +318。价值在于把调参从凭经验试错变成可复现的单变量实验；代价是结论强绑定具体硬件、量化与推理后端，换环境必须重跑。README 也提供脱离 agent 手动执行的路径，便于先审阅再做自动化。"
+  },
+  "Ebony-Vinyl/dsh-our-free-model": {
+    "summary_zh": "dsh 的插件，装上后无需账号、注册或 API Key 即可使用上游提供的前沿模型清单。免费车道来自 OpenCode 的 Zen 网关与 Kilo AI 公共网关，直连不经第三方中转；模型集合、上下文长度与能力每次刷新向上游重新拉取，选择器只广播当前可路由的模型。另含公告中心、应用内升级（下载→SHA-256 校验→备份→原子替换→回读→回滚）、热重载、留在本机的用量看板与 OpenAI 兼容转发端。",
+    "highlight_zh": "当日 +860 星，为本期增量最高。工程细节比「免费」更有看头：按响应体形状而非 content-type 判定流式响应、区分网关故障与模型不可用、思考档位分别走菜单与预算阶梯，都是长期对接公共网关才会踩到的坑。需要中肯看待的是：可用性与额度由上游网关决定，请求会发往上游；仓库许可标注为 NOASSERTION，商用前应先确认授权与数据边界。"
+  },
+  "Gathin23/cleanyourtv": {
+    "summary_zh": "通过 Wi-Fi 与 ADB 给 Android / Google TV 做预装精简，并换上类 Apple TV 的桌面。实现上有几处保护逻辑：若列表里含持有 HOME 的应用且没有其他应用响应 HOME 就跳过它，Google TV 上保留 setupwraith 期间的 Home 拥有者；主题支持自定义照片轮播与 config.json 旋转配置。README 还覆盖手工操作、恢复、固件升级后的处理与 mic 说明。",
+    "highlight_zh": "README 主动澄清了官方边界：只有 cleanyour.tv 与本仓库是官方，其他同名域名不是，项目也不在任何应用商店发布 App——这类说明对避免误装很实用。但操作本身仍属系统级改动：卸载预装、替换 Home 可能让设置或语音入口失效，动手前务必按文档做备份并确认能恢复。仓库许可标注 NOASSERTION，二次分发前需确认条款。"
+  },
+  "yetone/magpie": {
+    "summary_zh": "macOS 菜单栏工具，把各编码 agent 的模型选择收到一处：本地网关统一服务 Claude Code、Codex、Gemini CLI、OpenCode 等，改的是各 agent 自身配置里那一个关键键。支持 API Key、本地模型，以及已订阅的 Claude / ChatGPT / Copilot / Gemini / Grok 方案；配额用尽时按账号或路由组自动切换，另有隐私遮罩（默认关闭）、插件与用量成本视图。",
+    "highlight_zh": "它解决的是多 agent 并存后的配置碎片化，而不是模型能力本身：一个网关、一份订阅、一次切换。4,881 个 open issue 也说明兼容面铺得很开、迭代很快，选型时要按自己实际用的 agent 版本核对支持列表。两点边界：遮罩默认关闭，需要手动开启；本地网关会成为所有请求的单点，凭据与订阅授权集中在同一进程里。"
+  },
+  "LodyAI/Lody": {
+    "summary_zh": "把团队已在用的编码 agent 接进共享工作区：通过 ACP 接入 Claude Code、Codex、Kimi、OpenCode 等，机器保持私有直到所有者共享。桌面、移动、Web 与 CLI 都能分派任务，同一会话可共享完整 transcript、运行状态、文件与代码变更；另提供角色预设、附件收发、会话检索/归档/分叉、内置终端与命令面板、手机端权限审批与 diff 查看、iOS Live Activities。",
+    "highlight_zh": "设计上比较克制的两点：机器默认不共享、并行任务各自隔离，避免「共享」变成「共用一个工作目录」。真正需要评估的是审批链路——把权限请求推到手机小屏上点同意，等于把安全闸门移到了注意力更容易分散的场景，团队应先约定哪些操作允许移动端放行。Apache-2.0 许可，ACP 兼容 agent 的范围决定它能接多少现有工具。"
+  },
+  "HaD0Yun/CozyClay": {
+    "summary_zh": "浏览器里的开源 previs（预演）工具：先搭场景、摆角色、编排镜头运动与剪辑点，再把同一组镜头交给 AI 视频模型生成成片。提供 npx cozyclay 一键启动、浏览器试用、面向 AI agent 的操作指南与文档；npm 全局安装后顶栏会在有新版本时显示更新提示，Windows 上默认只给出复制命令而不做一键更新。",
+    "highlight_zh": "它把「先定镜头再生成视频」的工作流产品化，补上了文生视频里最缺的可控性——机位、走位与剪辑先以 3D 预演固定下来。AGPL-3.0 许可，本期前端方向唯一入选，当日新增 43 星。边界在于成片还原度仍取决于所接的外部视频模型，浏览器端 3D 性能与 npx 每次拉取最新包也需要在团队环境里先验证。"
+  },
+  "AlienTechSoftware/notecraft": {
+    "summary_zh": "用纯 Rust 净室重实现的 OneNote 式笔记应用：笔记本就是文件夹，页面就是 index.html 或 index.md，图片与附件也都是普通文件，同步交给 OneDrive、Dropbox、Syncthing 或 iCloud 自行选择，不需要 NoteCraft 服务器或账号。界面保留 Office 风格 ribbon、彩色笔记本与标签；单个 Rust 二进制通过 egui 在 GPU 上绘制，每个动作都是带 id 的命令，可供脚本与 agent 调用。",
+    "highlight_zh": "「笔记是文件」这条约束决定了它的全部优点与代价：可以直接看、直接 grep、直接备份，但也意味着富文本排版与协同编辑难做到商业产品水准。README 明确声明与 ArtCraft / getartcraft.com 无关联，并单列「Status and what is missing」，态度坦率。35 天新仓、43 个 open issue，适合愿意尝鲜且看重数据自主的人。"
+  },
+  "opengeos/RustGIS": {
+    "summary_zh": "纯 Rust 写的开源 GIS：原生跑在 Windows / macOS / Linux，编译成 WebAssembly 后也能在浏览器打开，另有 Android / iOS 版本。文件在本机读写、默认不上传；ribbon 上每个按钮都是一条带 id 的命令，可从 rustgis-cli、notebook、模型或 AI Assistant 调用；内置 1,000+ GeoLibre 与 Whitebox 工具，覆盖地形、水文、LiDAR 与遥感，插件以沙箱 WASM 形式加载。",
+    "highlight_zh": "最值得看的是「一切皆命令」：界面操作与脚本、AI 调用共用同一套 id，自动化不必再靠模拟点击。README 也把网络使用范围说得很清楚——只在你主动请求底图、插件、GeoLibre 工具或所选 AI 模型时才联网，且所选模型会收到问题与它读到的数据。42 天新仓、168 个 open issue，生产使用前建议按自己常用的数据格式做一轮验证。"
+  },
+  "apache/skywalking": {
+    "summary_zh": "Apache 基金会的 APM 系统，面向微服务、云原生与容器架构提供监控、追踪与诊断。能力包括端到端分布式追踪与服务拓扑、覆盖 Java/.NET/PHP/Node.js/Go/Lua/Rust/C++/Python 等语言的 agent、基于 eBPF 的 Rover 性能剖析、自研观测数据库 BanyanDB，以及对 OpenTelemetry、Prometheus、Zabbix、Zipkin、Fluentd 等生态的接入。README 给出单集群可采集分析 1,000 亿级以上遥测数据的规模说明。",
+    "highlight_zh": "本期年龄最大的项目（4,033 天），当日仅 +1 星，恰好是「稳态基础设施」的样本：热度不高但已被大量生产系统验证。选型时真正要算的是部署与升级成本——OAP、UI、存储与多语言 agent 是一整套组件，而不是装个探针就完事；eBPF 能力还涉及内核权限。适合已有可观测性团队的中大型系统。"
+  },
+  "t8y2/dbx": {
+    "summary_zh": "25 MB 的跨平台数据库客户端，覆盖 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、SQL Server、达梦等 100+ 数据库，提供桌面端、Docker、CLI 与内置 AI 助手及 MCP Server。功能含 schema/对象浏览器、表结构编辑器、ER 图、跨连接 schema diff、可视化执行计划、字段级血缘、跨库搜索，以及消息队列与中间件控制台、插件系统。",
+    "highlight_zh": "把 MCP Server 与 AI SQL 助手做进数据库客户端，是这类工具近期的共同方向；dbx 的差异在覆盖面与体积（100+ 库 / 25 MB）。1,753 个 open issue 说明广覆盖带来的是持续适配压力，评估时应按自己实际用的两三种库试，而不是看支持列表长度。README 前部以赞助商与合作伙伴为主，技术信息需往后翻；内置 AI 会把 schema 与查询发给所配模型，敏感库需先定边界。"
+  },
+  "kividbio/kividb": {
+    "summary_zh": "用 Rust 写的多线程 Redis® / Valkey 替代，兼容 RESP2 与 RESP3，现有 Redis 客户端与 redis-cli 可直接用；内置 FT. 全文/标签/数值检索与向量搜索、JSON. 与 TS. 命令。支持快照与可选 AOF 持久化、--replicaof 复制与 gossip 集群、ACL/TLS、Lua 脚本以及 K8s operator。README 给出 32 核裸金属上 2,120 万次 pipelined GET/s、0.36 ms p99 的基准。",
+    "highlight_zh": "协议兼容 + 内置检索是它的两个抓手：老客户端不改代码，原来要上 Redis Stack 的能力直接进引擎。但基准是 pipelined GET 这一类最有利的负载，9× Redis、2.3× Dragonfly 的数字不能直接外推到真实混合读写。37 天新仓、AGPL-3.0 许可，托管服务场景要先确认开源义务；Redis® 商标相关声明也在 README 里单列。"
+  },
+  "tartini-ai/agent-traffic-analytics": {
+    "summary_zh": "AgentCake：自托管的会话回放分析，用来判断网站访客到底是人、AI agent 还是脚本 bot。看板展示 agent 看过哪些页面、是否找到所需信息、在哪一步卡住、来访最多的 agent 名称与置信度，以及每个会话的分类时间线与判定原因；README 强调数据留在自己手里，并给出「How it decides」章节说明分类方法。",
+    "highlight_zh": "在 agent 开始替人浏览网站之后，「转化率没变但流量涨了」有了新的解释路径，这是本期数据方向里最贴近新现象的一项。8 天新仓、85 星、仅 2 fork，成熟度有限；安装说明是把一段指令粘给 Claude Code / Codex 去下载 INSTALL.md 并照做，建议先人工审阅脚本再执行，且该下载源在部分网络环境不可达。分类基于启发式，置信度低的会话要人工复核。"
+  },
+  "skudra-go/ant": {
+    "summary_zh": "用 Go 泛型做的强类型 ORM：列是字段指针而不是字符串，写 ant.Gt(&Users.Age, 18) 时列名与值都由编译器检查，重命名字段后所有查询跟着改；条件、连接、投影、聚合、子查询、CTE 与窗口函数都在编译期校验，模型就是普通结构体，不需要代码生成。README 附与 GORM、Bun、ent 的对照基准。",
+    "highlight_zh": "把「字符串拼 SQL」换成编译器可检查的表达式，是 Go ORM 里少见的取舍；基准也坦白写出代价——变更跟踪在 1,000 行读取时约 1.2 倍耗时、2 倍内存，因为要留一份行副本。20 天新仓、55 星却已有 62 个 open issue，说明处在高频迭代期；生态、迁移工具与多库适配还远不如成熟 ORM，适合新项目小范围试用。"
+  },
+  "alibaba/open-code-review": {
+    "summary_zh": "阿里内部使用了两年的 AI 代码评审助手开源版：以「确定性流水线 + LLM Agent」的混合架构，专门解决通用 agent 评审时的三个毛病——大改动漏看文件、报告位置漂移、换个提示词质量就波动。它读 Git diff，按规则精确挑选并智能分绑变更文件，交给可调用工具的 LLM 产出结构化、行级精确的评论；内置 NPE、线程安全、XSS、SQL 注入等多语言规则集，兼容 OpenAI 与 Anthropic 接口，另有 CLI、Agent Skills 与 ocr scan 全文件审计模式。",
+    "highlight_zh": "最值得看的是它对「哪里不能交给模型」的划分：文件选择与位置定位由确定性流程保证覆盖与精度，语义判断才交给 agent，并附 50 个开源仓库 / 200 个真实 PR / 10 种语言 / 80+ 资深工程师标注 1,505 个问题的基准。55,123 星、当日新增 289 星。边界：需要自配模型端点（成本与代码外发由自己承担），规则集覆盖语言有限，基准由项目方组织，342 个 open issue 也提示接入前应按自己仓库验证。"
+  },
+  "ybblab/Jiumi": {
+    "summary_zh": "开源安卓应用行为监测与管理 App：查看应用的权限访问与网络活动，免 Root 即可使用。支持无线调试配对（通知栏输入系统给的 6 位配对码）以及 Shizuku / Root 三种执行身份，并明确区分不同身份下能停用、启用、卸载或恢复哪些应用。监测记录留在本机、无账号、不上传；App 内可管理应用，每次改动都会读回系统状态确认是否生效，被拒绝时显示原因。",
+    "highlight_zh": "「不用 Root 怎么看到后台」与「隐私与使用边界」两节写得相当克制：明说看不到聊天内容、密码或网络正文，短连接可能因两次读取之间结束而漏记，按连接统计流量需要 Android 14+ 且系统支持，监测会增加耗电。8 天新仓、959 星，功能边界比同类工具交代得更清楚。要注意无线调试与卸载预装本身仍是高权限操作，动手前先确认能自行恢复。"
+  },
+  "ELY-Open-Source/ElyOffice": {
+    "summary_zh": "用 Rust 与 GPUI 写的离线优先桌面办公套件：文件留在自己的文件夹里，不需要账号，也不连云服务。0.1.16 版本为每个应用提供 Windows、macOS（Apple 芯片与 Intel）、Linux x86_64 的安装包（dmg / setup / AppImage / deb / rpm / Arch / Nix 等），各应用独立更新；ElyMail 支持 Microsoft OAuth、Gmail 与 iCloud 应用密码，以及 QQ、163、126 邮箱授权码。README 给出三大平台的完整构建依赖与实验性 R macros 说明。",
+    "highlight_zh": "在办公软件普遍往云上收的当下，「无账号、无云服务」本身就是明确的产品选择；Rust + GPUI 也让三端共用一套 UI 实现成为可能。但 33 天新仓、0.1.x 版本号说明还在早期，构建链也不轻：macOS 要 Xcode，Windows 要 VS2022 C++ 工作负载与 clang-cl，Linux 走容器加 pnpm。邮件凭据由本地保管，安全性取决于本机环境。"
+  },
+  "wici-ai/inferssd": {
+    "summary_zh": "基于 llama.cpp，把 MoE 模型的专家权重从 SSD 流式加载，从而在一台机器上跑下比 RAM / VRAM 更大的模型；使用标准 GGUF 文件，提供浏览器 chat 界面与 OpenAI 兼容 API。README 列出已测的模型与量化组合（DeepSeek-V4.1-Flash-1017、Muse-Spark-Open、Qwen3.6-35B-A3B、Gemma4 E4B 等），并给出测试硬件、基准方法与分版本引擎资源。",
+    "highlight_zh": "它换的是资源瓶颈：用 SSD 容量与随机读换显存不足，让「本地跑大模型」的门槛从显卡转向硬盘。代价也很直接——MoE 专家换入换出会带来延迟波动，盘速与 SSD 寿命成为新的约束，README 的基准只在所列硬件与量化上成立。31 天新仓、1,281 星、18 个 open issue，适合已有 NVMe 且愿意按给定组合复现的人。"
+  },
+  "crest-browser/Crest": {
+    "summary_zh": "面向 Mac、iPhone 与 iPad 的开源浏览器，SwiftUI 实现，Mac 上同时提供 Chromium 与 WebKit 两种引擎。核心概念是 Spaces：给工作、家庭、研究或私人会话各自独立的 cookie、网站数据、历史、归档、标签页、凭据、设置与同步身份。另有结构化侧栏（固定站点、带首页 URL 的收藏标签、项目嵌套文件夹）、2–4 页 Split View、Peek 链接预览、Mac 上的 Quick Window 与共享窗口，以及外观定制。",
+    "highlight_zh": "把「容器隔离」做成第一 citizen，而不是事后加个无痕模式，是它区别于主流浏览器的地方；多引擎选择则照顾了兼容性与隐私偏好的不同取舍。98 天、1,406 星、309 个 open issue，项目仍在快速迭代，README 也单列 Project status 与 Validate a change。仅支持 Apple 平台，MPL-2.0 为文件级开源义务；双引擎与 Spaces 并存会长期抬高维护成本。"
+  }
+}

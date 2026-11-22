@@ -1,0 +1,1903 @@
+{
+  "date": "2026-11-22",
+  "generatedAt": "2026-11-22T09:44:49.578+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-21",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 905,
+    "unclassified": 71,
+    "selected": 21,
+    "suppressedByHistory": 304,
+    "sameDateExempt": 0,
+    "removed": 3,
+    "removedTotal": 3,
+    "offTopic": 3,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "DietrichGebert/ponytail",
+          "owner": "DietrichGebert",
+          "name": "ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "homepage": "https://ponytail.dev",
+          "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "claude",
+            "claude-code",
+            "claude-code-plugin",
+            "cursor-rules",
+            "developer-tools",
+            "llm"
+          ],
+          "stars": 196393,
+          "forks": 11068,
+          "open_issues": 336,
+          "starGain": 780,
+          "heat": 780,
+          "heatBasis": "trending",
+          "heatPercentile": 99,
+          "ageDays": 163,
+          "created_at": "2026-06-12T00:52:37Z",
+          "pushed_at": "2026-11-21T22:54:03Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 94.1,
+          "breakdown": {
+            "heat": 99,
+            "community": 97,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Ponytail 5: rebuilt from the ground up. -53% code &middot; -41% time &middot; -26% cost &middot; -45% tokens And yet: 98% of risky logic ships with a test. Without Ponytail: 68%. Benchmarked in Claude Code, the same agent with and without the skill: 39 tasks including a real FastAPI + React repo, Opus 5.5, 5 runs each. Details .\n\nYou know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one.\n\nTwo things the chart does not show: in a blind comparison, Ponytail 5's replies beat the previous Ponytail's 110 to 67. And on the six security tasks (SQL injection, path traversal, forged tokens, rate limiting, malformed CSV rows, caching) it passed all 30 runs: less code, no less safe. Method, per-task tables and limits: benchmarks/results/2026-10-07-agentic.md.",
+            "features": [],
+            "sections": [
+              "Already built with Ponytail",
+              "Numbers",
+              "Before / after",
+              "The review, rebuilt",
+              "The audit, rebuilt",
+              "New in 5.3: the band",
+              "How it works",
+              "The prompt",
+              "Install",
+              "Commands",
+              "FAQ",
+              "Sponsors",
+              "License",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 15052
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "XinaTian/MROffice",
+          "owner": "XinaTian",
+          "name": "MROffice",
+          "url": "https://github.com/XinaTian/MROffice",
+          "homepage": "https://mroffice.ai",
+          "description": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+          "language": "TypeScript",
+          "topics": [
+            "ai",
+            "collaboration",
+            "document-editor",
+            "docx",
+            "embed",
+            "excel",
+            "mcp",
+            "office"
+          ],
+          "stars": 1539,
+          "forks": 172,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 405,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 11,
+          "created_at": "2026-11-10T17:54:07Z",
+          "pushed_at": "2026-11-22T00:36:45Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 81.8,
+          "breakdown": {
+            "heat": 95,
+            "community": 60,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 43,
+            "devops": 37,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Documents Spreadsheets Presentations PDF Handwriting Code\n\nMR Office is a workspace for notes, AI and real files. This repository publishes the source code of its editors: the same editors MR Office runs, which you can build, run and embed on your own. They are open-source editors, not a complete open-source office suite: the reading and writing of Microsoft Office files stays in MR Office (see below).\n\nEverything for developers is at MR Office Developers — self-serve, no application: sign in with any MR Office account and start.",
+            "features": [
+              "In your project's folder run npx mroffice-embed init (or create an app in the developer console): one \"Allow\" in the browser, and the app's ",
+              "Your server mints a session token with createSessionToken from mroffice-embed/server ; the secret key never leaves the server.",
+              "Your page opens the editor with open() from mroffice-embed (or the script https://mroffice.ai/embed/v1/embed.js ).",
+              "Documents — a paged word processor: styles, fonts, lists, tables, headers and footers, sections and columns, shapes and equations, cover pag",
+              "Spreadsheets — cells and formulas, number formats, conditional formatting, sorting and filtering, frozen panes and several sheets, with sums",
+              "Presentations — slides with eight themes of its own, layouts, slide master and layout views, text, shapes, text boxes, tables, WordArt and e",
+              "PDF — read, search, present and print PDF files, copy and read aloud their text, and mark up selected text (highlight, underline, strikethro",
+              "Handwriting — handwritten notes with pressure-sensitive pens, highlighters, erasers, lasso and ruler, and ink turned into shapes. Saves its "
+            ],
+            "sections": [
+              "MR Office",
+              "For developers",
+              "Embed the editors in your web app (recommended)",
+              "AI apps: the MCP server",
+              "Sign in with MR Office (OAuth)",
+              "Self-host the open-source editors",
+              "The editors",
+              "Run the editors",
+              "Desktop app",
+              "For the full experience, install the MR Office desktop app (",
+              "Word, Excel, PowerPoint and PDF files",
+              "How the pieces fit",
+              "License",
+              "More"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 12564
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "ForeactLabs/OpenExecutive",
+          "owner": "ForeactLabs",
+          "name": "OpenExecutive",
+          "url": "https://github.com/ForeactLabs/OpenExecutive",
+          "homepage": "https://openexecutive.ai",
+          "description": "AI-powered virtual executive team — a single coherent executive persona backed by 8 specialist agents (FastAPI + Next.js).",
+          "language": "Python",
+          "topics": [
+            "ai",
+            "anthropic",
+            "claude",
+            "fastapi",
+            "llm",
+            "multi-agent",
+            "nextjs",
+            "python"
+          ],
+          "stars": 5834,
+          "forks": 633,
+          "open_issues": 6,
+          "starGain": null,
+          "heat": 354,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 163,
+          "created_at": "2026-06-11T21:41:54Z",
+          "pushed_at": "2026-11-21T15:01:24Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 82.3,
+          "breakdown": {
+            "heat": 93,
+            "community": 71,
+            "activity": 59,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 43,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open Executive is designed to transform leadership and management. Highly configurable, it can be deployed at any management level. Out of the box it supports approval levels, spend approval ranges, integration with corporate knowledge systems, and defined governance for how it interacts with human colleagues and other AI systems. Open Executive can also act as a busy leader's digital twin: with As you switched on, it drafts email in their own voice, from their own Gmail or Outlook, and sends only what their Approvals let go on its own. The rest waits for them to tap Send.\n\nIt meets people where they already work, with integrations for Slack, Discord, Telegram, Google Chat, email, Google Workspace, Microsoft 365 (Outlook mail and calendar, OneDrive), Notion, Confluence and any MCP-compatible AI tool, with more on the roadmap. Open Executive will always be open source.\n\nA managed cloud offering is coming (https://openexecutive.ai), where you can get access without deploying anything yourself.",
+            "features": [
+              "Chief Strategy Officer — competitive analysis, M&A, market positioning, OKRs",
+              "Chief Financial Officer — financial modeling, fundraising, unit economics, cash flow",
+              "Chief HR/People Officer — hiring, compensation, performance, culture",
+              "General Counsel — contracts, IP, employment law basics, compliance",
+              "Chief Operating Officer — process design, vendor management, operational scaling",
+              "Chief Marketing Officer — GTM strategy, brand, communications, PR",
+              "Chief Product Officer — roadmap, prioritization, product strategy",
+              "Head of Sales — pipeline and qualification, founder-led sales, pricing conversations, proposals, forecasting"
+            ],
+            "sections": [
+              "Open Executive",
+              "Demo",
+              "What It Does",
+              "What you can let it do",
+              "Architecture",
+              "Tech Stack",
+              "Repo Layout",
+              "Quick Start",
+              "Clone the repo",
+              "Install the backend and web app dependencies",
+              "Set your Anthropic API key",
+              "Edit .env and add ANTHROPIC API KEY=sk-ant-...",
+              "Start everything",
+              "In a second terminal"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 39373
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "sybil-solutions/inference-optimisation-skill",
+          "owner": "sybil-solutions",
+          "name": "inference-optimisation-skill",
+          "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+          "homepage": "",
+          "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+          "language": "Python",
+          "topics": [
+            "agent-skill",
+            "benchmarking",
+            "claude-code",
+            "inference",
+            "llm",
+            "speculative-decoding"
+          ],
+          "stars": 1683,
+          "forks": 151,
+          "open_issues": 11,
+          "starGain": 318,
+          "heat": 318,
+          "heatBasis": "snapshot",
+          "heatPercentile": 93,
+          "ageDays": 5,
+          "created_at": "2026-11-16T18:40:04Z",
+          "pushed_at": "2026-11-16T18:40:08Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 74.5,
+          "breakdown": {
+            "heat": 93,
+            "community": 60,
+            "activity": 45,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An agent skill for hill-climbing the speed of a local LLM server on any hardware and any quantization. It covers:\n\n- single-user and concurrent decode - speculative decoding - prefill - KV cache size - startup time and time to first token\n\nIt works under a memory cap, and every result has to survive a full-context stability check.",
+            "features": [
+              "single-user and concurrent decode",
+              "speculative decoding",
+              "KV cache size",
+              "startup time and time to first token",
+              "Compute the theoretical ceiling.",
+              "Change one thing at a time.",
+              "Measure against interleaved controls.",
+              "Log every result, including the failures."
+            ],
+            "sections": [
+              "inference-optimisation",
+              "What we've been able to accomplish",
+              "Reading the B390 result",
+              "How it works",
+              "Install",
+              "Quick start without an agent",
+              "Principles that carried the most weight",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8856
+          },
+          "guard": {
+            "score": 2,
+            "signals": [
+              "singlePush"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "Ebony-Vinyl/dsh-our-free-model",
+          "owner": "Ebony-Vinyl",
+          "name": "dsh-our-free-model",
+          "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+          "homepage": "",
+          "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+          "language": "JavaScript",
+          "topics": [
+            "ai-agents",
+            "deepseek",
+            "deepseek-harness",
+            "developer-tools",
+            "dsh",
+            "dsh-plugin",
+            "free-model",
+            "llm"
+          ],
+          "stars": 83131,
+          "forks": 2340,
+          "open_issues": 225,
+          "starGain": 860,
+          "heat": 860,
+          "heatBasis": "snapshot",
+          "heatPercentile": 98,
+          "ageDays": 58,
+          "created_at": "2026-09-24T16:17:19Z",
+          "pushed_at": "2026-11-21T10:49:38Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 88.5,
+          "breakdown": {
+            "heat": 98,
+            "community": 89,
+            "activity": 69,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 55,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Trendshift JavaScript 周榜第 1 · 2026-10-05 至 2026-10-11 · 更新中，截至 2026-10-11\n\nQQ 群：386179533（OFM技术交流群[1群]） 扫码加入群聊，一起交流插件使用心得、反馈问题与分享玩法。\n\n- 开箱即用，无配置环节 ——不需要账号、不需要 Key、不需要在后台申请配额。 - 上游来源公开透明 ——免费车道来源为 OpenCode 的 Zen 网关，Kilo 渠道来源为 Kilo AI 的公共网关，均直连、不经任何第三方中转。请求由谁处理、数据发往何处，见「上游是哪些源」与「免责声明」。 - 清单跟随上游 ——模型集合、上下文长度与能力在每次刷新时向上游重新拉取，插件内不保存静态快照。 - 选择器只广播可用的模型 ——上游清单已声明但网关明确拒绝路由的模型（返回 Model is unavailable 、或 404 找不到该 id）从下拉框移除，仅在设置页保留记录并注明拒因；网关自身故障（5xx）、配额限制（429）、超时与断网不属于对模型的判定，一律保持可达；被地区策略拦截的模型归入 region-limited 分组。整轮探测全部被拒时同样保留，选择器不会为空。 - 公告中心 + 实时推送 ——仓库维护者在仓库中编辑 JSON 并推送后，所有已安装实例最迟在一个轮询周期内收到；正文为白名单约束下的 HTML，支持图文排版； urgent 级别触发全屏弹窗；可选系统级通知。 - 应用内升级 ——设置页一键升级：下载 → SHA-256 校验 → 备份 → 原子替换 → 校验回读 → 热重载，任一步失败自动回滚至上一版本。 - 热重载 ——升级与代码变更即时生效，无需重启应用；也可在设置页手动触发，或启用文件监视自动重载。 - 按响应体形状判定流式响应 ——网关在高负载下会以 application/json 的 content-type 返回完整的 SSE 帧序列。插件按响应体形状判定，并将已嗅探的字节重新注入流，既不会导致整轮失败，也不会因 header 与实际内容不符而将可用模型判为不可用。 - 思考强度实际生效 ——两类模型两种控制：声明了思考档位的模型（如 DeepSeek V4.1 Flash、GLM 5.3 Flash）给出它自己的档位菜单（Off / Low / High / Max 等），选中值按原值下发到上游 reasoning effort ，上游会校验该字段、集合外的取值直接 400；没有档位菜单的模型（MiMo V2.6 等）走预算阶梯——Light / Balanced / Deep 对应输出 token 预算 2 048 / 8 192 / 模型上限，思考不可关闭的模型三档整体翻倍为 4 096 / 16 384 / 模型上限，因为思考与正文共享同一输出额度。两者都逐次调用留痕，设置页每张模型卡均标注档位或该档实际下发的上限（详见「思考强度：档位菜单与预算阶梯」）。 - 不依赖浏览器界面 ——插件仅将 llm 作为硬依赖，在没有 web server 的 composition（如 dsh-tui）中同样完成启动并输出模型；看板模块挂载在独立的 fiber 上，待 webServer 就绪后再注册路由，因此既不会阻塞模型车道，也不会因插件先于 web 服务加载而永久丢失设置页。 - 用量看板，数据全部留在本机 ——Token 热力图、总量曲线（支持总计与单模型视图）、输出速度与首字延迟逐次采样。不上传任何数据。 - OpenAI 兼容转发端",
+            "features": [
+              "开箱即用，无配置环节 ——不需要账号、不需要 Key、不需要在后台申请配额。",
+              "上游来源公开透明 ——免费车道来源为 OpenCode 的 Zen 网关，Kilo 渠道来源为 Kilo AI 的公共网关，均直连、不经任何第三方中转。请求由谁处理、数据发往何处，见「上游是哪些源」与「免责声明」。",
+              "清单跟随上游 ——模型集合、上下文长度与能力在每次刷新时向上游重新拉取，插件内不保存静态快照。",
+              "选择器只广播可用的模型 ——上游清单已声明但网关明确拒绝路由的模型（返回 Model is unavailable 、或 404 找不到该 id）从下拉框移除，仅在设置页保留记录并注明拒因；网关自身故障（5xx）、配额限制（429）、超时与断网不属于对模型的判定，一律保持可达；被",
+              "公告中心 + 实时推送 ——仓库维护者在仓库中编辑 JSON 并推送后，所有已安装实例最迟在一个轮询周期内收到；正文为白名单约束下的 HTML，支持图文排版； urgent 级别触发全屏弹窗；可选系统级通知。",
+              "应用内升级 ——设置页一键升级：下载 → SHA-256 校验 → 备份 → 原子替换 → 校验回读 → 热重载，任一步失败自动回滚至上一版本。",
+              "热重载 ——升级与代码变更即时生效，无需重启应用；也可在设置页手动触发，或启用文件监视自动重载。",
+              "按响应体形状判定流式响应 ——网关在高负载下会以 application/json 的 content-type 返回完整的 SSE 帧序列。插件按响应体形状判定，并将已嗅探的字节重新注入流，既不会导致整轮失败，也不会因 header 与实际内容不符而将可用模型判为不可用。"
+            ],
+            "sections": [
+              "dsh-our-free-model",
+              "交流群",
+              "亮点",
+              "你会看到什么",
+              "独立本地服务（开发中）",
+              "安装",
+              "桌面安装包（macOS，社区构建）",
+              "使用说明",
+              "Gemini 与 Cline 的代理连接",
+              "聚合渠道、省 Token、路由与本地网关",
+              "聚合渠道：自带 Key 的 76 家提供商",
+              "省 Token：工具输出压缩、提示词瘦身与本地应答",
+              "路由：命名降级链（combo）",
+              "本地网关：原生 Anthropic 接口与接入配方"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 48541
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Gathin23/cleanyourtv",
+          "owner": "Gathin23",
+          "name": "cleanyourtv",
+          "url": "https://github.com/Gathin23/cleanyourtv",
+          "homepage": "https://cleanyour.tv",
+          "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+          "language": "Python",
+          "topics": [
+            "adb",
+            "adblock",
+            "android-tv",
+            "android-tv-launcher",
+            "apple-tv",
+            "bloatware-removal",
+            "claude-code",
+            "debloat"
+          ],
+          "stars": 60096,
+          "forks": 7879,
+          "open_issues": 182,
+          "starGain": 216,
+          "heat": 216,
+          "heatBasis": "snapshot",
+          "heatPercentile": 90,
+          "ageDays": 36,
+          "created_at": "2026-10-17T08:12:35Z",
+          "pushed_at": "2026-11-20T12:55:07Z",
+          "license": "NOASSERTION",
+          "rating": 4.5,
+          "composite": 86.4,
+          "breakdown": {
+            "heat": 90,
+            "community": 91,
+            "activity": 62,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Read in: עברית · 简体中文 · 正體中文 · Tiếng Việt · 日本語 · Italiano · Português · Nederlands · Deutsch · Українська · Türkçe · Oʻzbekcha · Français · Español · Ελληνικά\n\nOfficial links: cleanyour.tv and this repo. Other domains using the name, such as cleanyourtv.com, are not run by this project ( 1004). CleanYourTV publishes no app in any app store, and clean-your-tv.net is not ours either.\n\nHow it works · Quick start · What you get · Supported TVs · Doing it by hand · The launcher · Restoring · Firmware updates · Questions · Contributing",
+            "features": [
+              "If the list contains the app that owns Home and no other app on the TV answers HOME, it skips that",
+              "The setup wizard, the settings apps, a vendor FallbackHome and factory-test apps (Xiaomi's",
+              "On Google TV it also keeps the owner while setupwraith answers HOME and stays enabled (not listed, or",
+              "Start a theme folder. Copy a theme you like from the themes folder, for example",
+              "Prepare the photos. A bright 12 MP photo is heavy for a 1 to 2 GB TV and drowns the clock and tiles.",
+              "Set the rotation in mytheme/config.json :",
+              "Push it to the TV (this restarts Home once, and keeps the Home-key helper working):",
+              "Take it off with tools/theme.sh --reset ."
+            ],
+            "sections": [
+              "Start here",
+              "How it works",
+              "Quick start",
+              "What you get",
+              "Supported TVs",
+              "Doing it by hand",
+              "The microphone, and what can be said about it",
+              "The launcher",
+              "Restoring your TV",
+              "After a firmware update",
+              "When something goes wrong",
+              "Questions people ask",
+              "The story",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 42603
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "yetone/magpie",
+          "owner": "yetone",
+          "name": "magpie",
+          "url": "https://github.com/yetone/magpie",
+          "homepage": "https://usemagpie.ai",
+          "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+          "language": "Go",
+          "topics": [
+            "claude-code",
+            "codex",
+            "deepseek",
+            "gemini-cli",
+            "llm",
+            "macos"
+          ],
+          "stars": 39792,
+          "forks": 3639,
+          "open_issues": 4881,
+          "starGain": 214,
+          "heat": 214,
+          "heatBasis": "snapshot",
+          "heatPercentile": 89,
+          "ageDays": 59,
+          "created_at": "2026-09-23T16:22:35Z",
+          "pushed_at": "2026-11-22T01:44:18Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 88.2,
+          "breakdown": {
+            "heat": 89,
+            "community": 87,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 53,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Claude Code on Kimi. Codex on DeepSeek. Gemini CLI on GLM. OpenCode on your ChatGPT plan. Switch any of them from the menu bar. One local gateway serves them all, and when a quota runs out, it quietly moves on to your next account.\n\nThanks to Kimi for supporting magpie and the open source community.\n\nDownload &nbsp;·&nbsp; Docs &nbsp;·&nbsp; Reference &nbsp;·&nbsp; Plugins &nbsp;·&nbsp; Discord &nbsp;·&nbsp; English · 简体中文",
+            "features": [
+              "Pick any model for any agent from one list. magpie edits the one key that matters in the agent's own config.",
+              "Use one provider everywhere : an API key, a local model, or the Claude, ChatGPT, Copilot, Gemini or Grok plan you're signed in to.",
+              "Keep going when a quota runs out : a provider's next account takes over, and a routing group moves on to another model or provider, so the a",
+              "Keep your secrets off the vendor's servers : once you turn masking on in Settings → Privacy (it's off by default), keys, passwords and email",
+              "Claude : drives the real local claude binary and bridges your agent's tools over MCP",
+              "Codex / ChatGPT : your ChatGPT plan's models, in every other agent",
+              "GitHub Copilot , Gemini (Code Assist) , Antigravity (through your own agy CLI), Grok (SuperGrok) and more",
+              "Any OpenCode auth plugin or pi package from npm"
+            ],
+            "sections": [
+              "magpie",
+              "Every agent's model. One place.",
+              "Is magpie for you?",
+              "Quick start",
+              "Supported agents",
+              "How it fits together",
+              "What it does",
+              "Any model, any agent",
+              "Privacy masking",
+              "Providers",
+              "Subscriptions",
+              "Routing groups",
+              "Plugins",
+              "Usage and cost"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 24554
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "LodyAI/Lody",
+          "owner": "LodyAI",
+          "name": "Lody",
+          "url": "https://github.com/LodyAI/Lody",
+          "homepage": "https://lody.ai",
+          "description": "Share coding agents with your team on phone and desktop",
+          "language": "TypeScript",
+          "topics": [
+            "agent",
+            "agentic-workflow",
+            "coding-agent",
+            "collaboration",
+            "local-first",
+            "multi-agent",
+            "multiplayer",
+            "orchestration"
+          ],
+          "stars": 1804,
+          "forks": 193,
+          "open_issues": 337,
+          "starGain": null,
+          "heat": 138.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 84,
+          "ageDays": 107,
+          "created_at": "2026-08-07T02:09:16Z",
+          "pushed_at": "2026-11-22T01:44:50Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78.4,
+          "breakdown": {
+            "heat": 84,
+            "community": 61,
+            "activity": 74,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Lody English 简体中文 A shared workspace for the coding agents your team already uses. Connect any machine and bring any coding agent through ACP. Share conversations with your team and dispatch work from desktop, mobile, web, or CLI. Documentation\n\nOpen the same conversation with your teammates. See the full transcript, runtime status, files, and code changes around the work, then add instructions without passing around screenshots or pasted logs.\n\nConnect Claude Code, Codex, Kimi, OpenCode, or another ACP-compatible Agent. Keep using the subscriptions, logins, models, and permission modes configured on your laptops, workstations, servers, and cloud VMs. Machines remain private until their owner shares them with the workspace.",
+            "features": [
+              "Agent Roles — share reusable Agent, model, permission, and instruction presets with the team.",
+              "Attachments — send files and images from desktop, mobile, web, or CLI, and receive files produced by Agents.",
+              "Session tools — search, pin, archive, fork, and organize conversations without losing their history.",
+              "Desktop tools — use a built-in terminal, command palette, customizable shortcuts, and open files in your editor.",
+              "Mobile controls — receive notifications, approve permission requests, inspect diffs, and follow active work with iOS Live Activities.",
+              "Usage visibility — see context, token and quota usage, plus machine and Agent resource consumption.",
+              "apps/cli — Connect machines and run coding agents",
+              "apps/electron — Lody desktop app"
+            ],
+            "sections": [
+              "What you can do with Lody",
+              "Share Agent conversations with your team",
+              "Bring the Agents and machines you already use",
+              "Dispatch work from any surface",
+              "Connect a machine",
+              "Use Lody from the CLI",
+              "Let Agents coordinate work across conversations",
+              "Keep code and execution in the same workspace",
+              "Keep parallel work isolated",
+              "Inspect changes where the work happened",
+              "Give Agents visual feedback",
+              "More built in",
+              "Beyond conversations",
+              "Releases"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10553
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "HaD0Yun/CozyClay",
+          "owner": "HaD0Yun",
+          "name": "CozyClay",
+          "url": "https://github.com/HaD0Yun/CozyClay",
+          "homepage": "https://cozyclay.org",
+          "description": "Open source previs software in the browser: block a scene, pose characters, author camera moves and cuts, then take the same shots to an AI video model.",
+          "language": "JavaScript",
+          "topics": [
+            "3d",
+            "3d-animation",
+            "ai",
+            "ai-video",
+            "animation",
+            "blender",
+            "camera-control",
+            "llm-agent"
+          ],
+          "stars": 2066,
+          "forks": 209,
+          "open_issues": 16,
+          "starGain": 43,
+          "heat": 43,
+          "heatBasis": "trending",
+          "heatPercentile": 87,
+          "ageDays": 116,
+          "created_at": "2026-07-28T19:57:47Z",
+          "pushed_at": "2026-11-22T00:00:59Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 78.1,
+          "breakdown": {
+            "heat": 87,
+            "community": 62,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English · 한국어 · 日本語 · 简体中文 · 繁體中文 · Español · Français · Deutsch · Português (BR) · Русский\n\nMake the scene first. Then make it a video. Open source previs in a browser tab: block the set, move the cast, cut the camera, hand the shot to an AI video model.\n\nTry it in the browser · Quick start · Guide for AI agents · Docs · Changelog · Discord",
+            "features": [
+              "npx cozyclay fetches the newest release on every run.",
+              "After npm install -g cozyclay , the studio shows an Update chip in the top bar when a release is out. Update now installs it. Restart now st",
+              "On Windows the chip shows the command to copy instead. One-click update stays off there by design.",
+              "cclay update does the same from the terminal.",
+              "Turn the check off for one launch with --no-update-check or COZYCLAY NO UPDATE CHECK=1 . Turn it off for good with cclay update --off , and "
+            ],
+            "sections": [
+              "Why",
+              "Quick start",
+              "What you can do",
+              "Direct it with AI",
+              "From source",
+              "Docs",
+              "Guides",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7238
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "AlienTechSoftware/notecraft",
+          "owner": "AlienTechSoftware",
+          "name": "notecraft",
+          "url": "https://github.com/AlienTechSoftware/notecraft",
+          "homepage": "https://notecraft.cloud/",
+          "description": "Note taking and organization; an open-source, clean-room reimplementation of Microsoft OneNote, rebuilt in pure Rust",
+          "language": "Rust",
+          "topics": [
+            "art",
+            "artcraft",
+            "html",
+            "local-first",
+            "markdown",
+            "note",
+            "notecraft",
+            "notes"
+          ],
+          "stars": 213,
+          "forks": 26,
+          "open_issues": 43,
+          "starGain": null,
+          "heat": 30,
+          "heatBasis": "velocity",
+          "heatPercentile": 86,
+          "ageDays": 35,
+          "created_at": "2026-10-17T18:30:53Z",
+          "pushed_at": "2026-11-22T01:07:42Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 73.5,
+          "breakdown": {
+            "heat": 86,
+            "community": 42,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "NoteCraft is an independent, third-party open-source project. It is not affiliated with, endorsed by or sponsored by ArtCraft, getartcraft.com or its Discord .\n\nA clean-room OneNote recreation for local files and sync on your terms.\n\nNoteCraft is an open-source, clean-room recreation of the OneNote notebook experience. It keeps notebooks, sections, pages, pictures and attachments as ordinary folders and files on your device. You can choose how to sync and back them up, using tools you already trust, without a NoteCraft server or account.",
+            "features": [
+              "Your notes are files. A notebook is a folder. A page is index.html or index.md with its",
+              "You can look inside. A OneNote section is one binary file, and a text editor shows noise.",
+              "Sync is your sync. Put a notebook in the folder OneDrive, Dropbox, Syncthing or iCloud",
+              "No depth limit. Note taking apps usually cap sub-pages at a level or three, because their",
+              "Familiar. The Office-style ribbon, the File screen, coloured notebooks and sections, tags,",
+              "Fast and small. One Rust binary on the GPU through egui.",
+              "Scriptable. Every action is a command with an id, shared by the window, a command line, a",
+              "Honest. Everything unfinished is written down in docs/gaps.md and"
+            ],
+            "sections": [
+              "A tour",
+              "Why NoteCraft",
+              "What works today",
+              "Quick start",
+              "How your notes are stored",
+              "For agents and scripts",
+              "Architecture",
+              "How it is tested",
+              "Downloads",
+              "Logs",
+              "Status and what is missing",
+              "Sponsors",
+              "Mentions",
+              "Credits and licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 26107
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "opengeos/RustGIS",
+          "owner": "opengeos",
+          "name": "RustGIS",
+          "url": "https://github.com/opengeos/RustGIS",
+          "homepage": "https://rustgis.app",
+          "description": "A fast, free and open-source GIS in pure Rust.",
+          "language": "Rust",
+          "topics": [
+            "geospatial",
+            "gis",
+            "remote-sensing",
+            "rust",
+            "rust-lang"
+          ],
+          "stars": 3027,
+          "forks": 447,
+          "open_issues": 168,
+          "starGain": 7,
+          "heat": 7,
+          "heatBasis": "snapshot",
+          "heatPercentile": 71,
+          "ageDays": 42,
+          "created_at": "2026-10-10T18:45:41Z",
+          "pushed_at": "2026-11-22T01:39:48Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 73.5,
+          "breakdown": {
+            "heat": 71,
+            "community": 66,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A fast, free and open-source GIS in pure Rust for mapping, analyzing and sharing geospatial data. Native on Windows, macOS and Linux, and in your web browser. Your data stays on your machine unless you send it to an AI model you choose, and every action is a command you can script.\n\n- Fast and small. One native program, drawn on the GPU, with no runtime to install and no server to run. - Runs everywhere. The same app on Windows, macOS and Linux, compiled to WebAssembly at web.rustgis.app with nothing to install, and on Android and iOS phones and tablets for field work. - Local and private. Your files are read and written on your machine, and nothing is uploaded on its own. The network is used only when you ask for it: web basemaps, plugins, the GeoLibre tools and the AI model you pick, which receives your questions and the data it reads to answer them. - Everything is a command. Every button in the ribbon is a command with an id. Script it from rustgis-cli , chain it in notebooks and models, use completion in the Script pane, or ask the AI Assistant to run it for you. - Familiar. A ribbon laid out in the order of the work (Home, Data, Style, Edit, Analyze, View, Publish), Layers and Browser panes, an attribute table, and undo for every change. - Extensible. Over 1,000 GeoLibre and Whitebox tools for terrain, hydrology, LiDAR and remote sensing, and sandboxed WebAssembly plugins that add commands, tools and ribbon tabs.\n\nPrefer a video? RustGIS: A Fast, Free GIS That Runs on Y",
+            "features": [
+              "Fast and small. One native program, drawn on the GPU, with no runtime to install and no",
+              "Runs everywhere. The same app on Windows, macOS and Linux, compiled to WebAssembly at",
+              "Local and private. Your files are read and written on your machine, and nothing is uploaded",
+              "Everything is a command. Every button in the ribbon is a command with an id. Script it from",
+              "Familiar. A ribbon laid out in the order of the work (Home, Data, Style, Edit, Analyze,",
+              "Extensible. Over 1,000 GeoLibre and Whitebox tools for terrain, hydrology, LiDAR and remote sensing, and",
+              "Web app : open web.rustgis.app . The same ribbon and tools,",
+              "Desktop : download the app for Windows, macOS or Linux from"
+            ],
+            "sections": [
+              "Why RustGIS",
+              "A tour",
+              "Features",
+              "Get RustGIS",
+              "Quick start",
+              "Architecture",
+              "Sponsor",
+              "Citation",
+              "Star History",
+              "Acknowledgements",
+              "Disclaimer",
+              "License and credits"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 27794
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "apache/skywalking",
+          "owner": "apache",
+          "name": "skywalking",
+          "url": "https://github.com/apache/skywalking",
+          "homepage": "https://skywalking.apache.org/",
+          "description": "APM, Application Performance Monitoring System",
+          "language": "Java",
+          "topics": [
+            "apm",
+            "dapper",
+            "distributed-tracing",
+            "ebpf",
+            "logging",
+            "metrics",
+            "observability",
+            "open-telemetry"
+          ],
+          "stars": 25018,
+          "forks": 6630,
+          "open_issues": 38,
+          "starGain": 1,
+          "heat": 1,
+          "heatBasis": "snapshot",
+          "heatPercentile": 52,
+          "ageDays": 4033,
+          "created_at": "2015-11-07T03:30:36Z",
+          "pushed_at": "2026-11-22T01:40:29Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 69,
+          "breakdown": {
+            "heat": 52,
+            "community": 86,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "SkyWalking : an APM (Application Performance Monitoring) system, especially designed for microservices, cloud native and container-based architectures.\n\nSkyWalking is an open-source APM system that provides monitoring, tracing and diagnosing capabilities for distributed systems in Cloud Native architectures.\n\nDistributed Tracing End-to-end distributed tracing. Service topology analysis, service-centric observability and APIs dashboards. Agents for your stack Java, .Net Core, PHP, NodeJS, Golang, Lua, Rust, C++, Client JavaScript and Python agents with active development and maintenance. eBPF early adoption Rover agent works as a monitor and profiler powered by eBPF to monitor Kubernetes deployments and diagnose CPU and network performance. Scaling 100+ billion telemetry data could be collected and analyzed from one SkyWalking cluster. Mature Telemetry Ecosystems Supported Metrics, Traces, and Logs from mature ecosystems are supported, e.g. Zipkin, OpenTelemetry, Prometheus, Zabbix, Fluentd Native APM Database BanyanDB, an observability database, created in 2022, aims to ingest, analyze and store telemetry/observability data. Consistent Metrics Aggregation SkyWalking native meter format and widely known metrics format (OpenTelemetry, Telegraf, Zabbix, e.g.) are processed through the same script pipeline. Log Management Pipeline Support log formatting, extract metrics, various sampling policies through script pipeline in high performance. Alerting and Telemetry Pipelines Suppor",
+            "features": [
+              "Distributed Tracing",
+              "End-to-end distributed tracing. Service topology analysis, service-centric observability and APIs dashboards.",
+              "Agents for your stack",
+              "Java, .Net Core, PHP, NodeJS, Golang, Lua, Rust, C++, Client JavaScript and Python agents with active development and maintenance.",
+              "eBPF early adoption",
+              "Rover agent works as a monitor and profiler powered by eBPF to monitor Kubernetes deployments and diagnose CPU and network performance.",
+              "100+ billion telemetry data could be collected and analyzed from one SkyWalking cluster.",
+              "Mature Telemetry Ecosystems Supported"
+            ],
+            "sections": [
+              "Abstract",
+              "Live Demo",
+              "Documentation",
+              "Downloads",
+              "Compiling project",
+              "Code of conduct",
+              "Contact Us",
+              "Our Users",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 4702
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "t8y2/dbx",
+          "owner": "t8y2",
+          "name": "dbx",
+          "url": "https://github.com/t8y2/dbx",
+          "homepage": "https://dbxio.com",
+          "description": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
+          "language": "Rust",
+          "topics": [
+            "ai",
+            "cli",
+            "clickhouse",
+            "database",
+            "database-client",
+            "database-management",
+            "docker",
+            "gui"
+          ],
+          "stars": 31102,
+          "forks": 2832,
+          "open_issues": 1753,
+          "starGain": 48,
+          "heat": 48,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 207,
+          "created_at": "2026-04-29T03:00:36Z",
+          "pushed_at": "2026-11-22T01:29:20Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 89.9,
+          "breakdown": {
+            "heat": 94,
+            "community": 85,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 84,
+            "devops": 49,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "100+ databases in 25 MB. Desktop, Docker, CLI, built-in AI assistant, and MCP Server.\n\nJumpServer is an Open-source Privileged Access Management (PAM) platform with AI-powered capabilities, providing DevOps and IT teams a unified workspace to securely access SSH, RDP, Kubernetes, databases, websites, RemoteApp, VirtualApp, and more. Visit JumpServer RainYun is a cloud service provider offering cloud servers, physical servers, game hosting, and developer-friendly infrastructure services. Visit RainYun HuaLongAI is a model API relay built for heavy AI developers, offering 100% official-source Codex and Claude models with transparent token-level billing, enterprise contracts, and invoicing. Visit HuaLongAI HiAPI is a developer-focused API platform for image, video, audio, and text models — GPT Image 2.5 (Flare & Sunburst), OpenAI-compatible text endpoints, and Remote MCP/Agent Skills for Claude Code, Cursor, and more. Pay as you go with no minimum spend; new users get 200 Credits on signup, plus 10% bonus Credits on top-ups. Visit HiAPI UCloud is the first public cloud provider listed on China's STAR Market, with 28 global regions for cloud hosting, databases, and CDN; its AstraFlow platform offers one-click access to 200+ mainstream LLMs. Visit UCloud\n\nPackyCode is a stable, efficient API relay for mainstream AI models. Access them with one API endpoint and one API key — automatic failover keeps access fast and reliable, with dedicated high-speed routes for Codex and Claude Cod",
+            "features": [
+              "Schema browser — databases, schemas, tables, columns, indexes, foreign keys, triggers, with sidebar search & pin",
+              "Object browser — grouped procedures, functions, views, and source editing where supported",
+              "Table structure editor — reviewable column and index changes for supported engines",
+              "ER diagram — visualize table relationships",
+              "Schema diff — compare structures across connections",
+              "Explain plan — visual query execution plan",
+              "Field lineage — column-level lineage analysis",
+              "Database search — find objects across large schemas"
+            ],
+            "sections": [
+              "❤️ Sponsors",
+              "🤝 Partners",
+              "Why DBX?",
+              "Features",
+              "100+ Databases, One Tool",
+              "Query Editor",
+              "AI SQL Assistant",
+              "Data Grid",
+              "Schema Tools",
+              "Data Operations",
+              "Specialized Browsers",
+              "Message Queue & Middleware Consoles",
+              "Plugin System",
+              "Safety & Connectivity"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 44472
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "kividbio/kividb",
+          "owner": "kividbio",
+          "name": "kividb",
+          "url": "https://github.com/kividbio/kividb",
+          "homepage": "https://kividb.io",
+          "description": "A fast, multi-threaded Redis® and Valkey alternative written in Rust: drop-in compatible, with full-text and vector search built in",
+          "language": "Rust",
+          "topics": [
+            "cache",
+            "database",
+            "dragonfly-alternative",
+            "drop-in-replacement",
+            "full-text-search",
+            "high-performance",
+            "in-memory",
+            "io-uring"
+          ],
+          "stars": 1308,
+          "forks": 139,
+          "open_issues": 14,
+          "starGain": 64,
+          "heat": 64,
+          "heatBasis": "snapshot",
+          "heatPercentile": 97,
+          "ageDays": 37,
+          "created_at": "2026-10-16T01:07:52Z",
+          "pushed_at": "2026-11-21T21:02:39Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 81.4,
+          "breakdown": {
+            "heat": 97,
+            "community": 58,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "KiviDB is a fast, multi-threaded alternative to Redis® and Valkey, written in Rust. It speaks the Redis protocol (RESP2 and RESP3), so existing Redis clients, redis-cli and libraries work unchanged, and it has full-text and vector search built in. It runs every core on a sharded in-memory key-value design, and persists to snapshots and an optional append-only file.\n\nOn 32 cores of AWS bare metal, KiviDB 1.2.0 serves 21.2 million pipelined GETs per second: 9× Redis 8.10 and 2.3× Dragonfly , ahead of Garnet, at 0.36 ms p99 (benchmarks).\n\nsudo apt update && sudo apt install -y ca-certificates curl sudo install -d -m 0755 /etc/apt/keyrings curl -fsSL https://packages.kividb.io/kividb.gpg sudo tee /etc/apt/keyrings/kividb.gpg /dev/null echo \"deb [signed-by=/etc/apt/keyrings/kividb.gpg] https://packages.kividb.io/deb stable main\" \\",
+            "features": [
+              "Redis 8.10 compatible : strings, lists, hashes, sets, sorted sets, streams, bitmaps,",
+              "Search and vectors : Redis Stack–style FT. commands for full-text, tag, numeric and",
+              "JSON and time series : JSON. and TS. commands",
+              "Persistence : snapshots ( dump.kdb ) and an optional append-only file",
+              "Replication and cluster : --replicaof , and cluster mode with gossip, failure",
+              "Security : ACL users, requirepass , protected mode, and TLS with client certificates",
+              "Lua scripting : EVAL , FUNCTION and FCALL in the lua and full builds",
+              "Kubernetes : the KiviDB operator"
+            ],
+            "sections": [
+              "Install",
+              "Quick start",
+              "Performance",
+              "Features",
+              "Documentation",
+              "Contributing",
+              "Security",
+              "License",
+              "Trademarks"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9756
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "tartini-ai/agent-traffic-analytics",
+          "owner": "tartini-ai",
+          "name": "agent-traffic-analytics",
+          "url": "https://github.com/tartini-ai/agent-traffic-analytics",
+          "homepage": "https://tartini.ai",
+          "description": "AgentCake: self-hosted session replay that shows whether your website visits come from humans or AI agents.",
+          "language": "Python",
+          "topics": [
+            "agent-traffic-analytics",
+            "agentcake",
+            "agentic-analytics",
+            "agentic-browser",
+            "agentic-traffic",
+            "ai-agent-detection",
+            "ai-agent-traffic",
+            "ai-agents"
+          ],
+          "stars": 85,
+          "forks": 2,
+          "open_issues": 3,
+          "starGain": 12,
+          "heat": 12,
+          "heatBasis": "snapshot",
+          "heatPercentile": 85,
+          "ageDays": 8,
+          "created_at": "2026-11-13T15:38:27Z",
+          "pushed_at": "2026-11-21T14:03:13Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 70.8,
+          "breakdown": {
+            "heat": 85,
+            "community": 31,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Copy and paste these instructions into Claude Code or Codex to complete the installation.\n\nSet up AgentCake 0.6.0 for this website. Use curl or the GitHub CLI to download the guide at https://raw.githubusercontent.com/tartini-ai/agent-traffic-analytics/v0.6.0/INSTALL.md and follow its steps. If the download fails, ask for network access.\n\nIs your website getting plenty of traffic, but your conversion rate is staying the same or even decreasing? Could some of those visits be coming from AI agents?",
+            "features": [
+              "What AI agents found : See which pages AI agents viewed and whether they found the information they needed. Find",
+              "Where AI agents got stuck : See the steps where agents stopped. Then decide whether to adapt those steps to make",
+              "Which AI agents visit most : See which agents visit your website most often, such as Claude in Chrome, Grok Bot",
+              "Human, agent or script bot : AgentCake gives each session one classification. Agent sessions are split",
+              "Agent names and confidence levels : AgentCake identifies agents by name, such as Claude in Chrome, ChatGPT and",
+              "Timeline and reasons : A timeline shows when a human or an agent was in control during each session and marks",
+              "Human and agent traffic : See sessions, visitors, page views and active time for humans and agents. Break down",
+              "Self-hosted and open source : AgentCake runs on your computer or server as a single program. It uses one SQLite"
+            ],
+            "sections": [
+              "AgentCake — AI Agent Traffic Analytics",
+              "The problem",
+              "The solution",
+              "Dashboard preview",
+              "Install",
+              "How it decides",
+              "Your data stays yours",
+              "Help and contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 23614
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "skudra-go/ant",
+          "owner": "skudra-go",
+          "name": "ant",
+          "url": "https://github.com/skudra-go/ant",
+          "homepage": "https://skudra.net",
+          "description": "🐜 ant is a Golang ORM, that leverages modern generics to enable strict typing and incredible developer experience. Inspired by ASP.NET's Entity Framework and Laravel",
+          "language": "Go",
+          "topics": [
+            "database",
+            "generics",
+            "go",
+            "golang",
+            "mysql",
+            "orm",
+            "postgresql",
+            "sqlite"
+          ],
+          "stars": 55,
+          "forks": 7,
+          "open_issues": 62,
+          "starGain": null,
+          "heat": 10.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 84,
+          "ageDays": 20,
+          "created_at": "2026-11-01T21:07:00Z",
+          "pushed_at": "2026-11-21T20:15:24Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 70.7,
+          "breakdown": {
+            "heat": 84,
+            "community": 31,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A typed ORM for Go. Plain structs, compiler-checked queries, no code generation.\n\nColumns are field pointers, not strings. Write ant.Gt(&Users.Age, 18) and the compiler checks both the column and the value. Rename a field and every query follows.\n\ntype User struct { ant.Base // ID, CreatedAt, UpdatedAt Name string Age int Posts []Post // 1:N through Post.UserID }",
+            "features": [
+              "Small queries cost about the same in every library.",
+              "Change tracking costs on large reads: 1000 rows take 1.2 times as long and twice the memory, because ant keeps a copy of each row to find ch",
+              "ant uses the least memory of the four libraries in every row.",
+              "Bun's insert is slow by default (it prepares every insert as a new statement), and ent's update reads the row back. tools/compare has the de",
+              "Typed queries: conditions, joins, projections, aggregates, subqueries, CTEs and window functions, all checked by the compiler",
+              "Plain structs: your types are the models, with conventions you can override in Configure",
+              "Relations: 1:1, 1:N and many-to-many, loaded explicitly with Include , in batches. Nothing loads behind your back",
+              "Change tracking: load, edit, SaveChanges . Only the columns that changed are written"
+            ],
+            "sections": [
+              "See it",
+              "Install",
+              "Try it in a minute",
+              "Next to GORM, Bun and ent",
+              "What the compiler catches",
+              "Performance",
+              "Features",
+              "Databases",
+              "What's missing",
+              "Learn more",
+              "With an AI assistant",
+              "Contributing",
+              "About",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10322
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "alibaba/open-code-review",
+          "owner": "alibaba",
+          "name": "open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "homepage": "https://open-codereview.ai",
+          "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+          "language": "Go",
+          "topics": [
+            "agent",
+            "agent-skills",
+            "code-review",
+            "code-review-assistant",
+            "harness",
+            "repository-level-context"
+          ],
+          "stars": 55123,
+          "forks": 4566,
+          "open_issues": 342,
+          "starGain": 289,
+          "heat": 289,
+          "heatBasis": "snapshot",
+          "heatPercentile": 100,
+          "ageDays": 188,
+          "created_at": "2026-05-18T02:16:36Z",
+          "pushed_at": "2026-11-21T08:41:09Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 91.8,
+          "breakdown": {
+            "heat": 100,
+            "community": 89,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 49,
+            "data": 42
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code review assistant — over the past two years, it has served tens of thousands of developers and identified millions of code defects. After thorough validation at massive scale, we incubated it into an open source project for the community. Simply configure a model endpoint to get started.\n\nIt reads Git diffs, sends changed files to a configurable LLM via an agent with tool-use capabilities, and generates structured review comments with line-level precision. The agent can read full file contents, search the codebase, inspect other changed files for context, and produce deep reviews — not just surface-level diff feedback. Beyond diff review, ocr scan reviews entire files for auditing unfamiliar codebases or directories that have no meaningful diff.\n\nA real-world code review benchmark built from 50 popular open-source repositories, 200 real Pull Requests, and 10 programming languages — cross-validated by 80+ senior engineers ( 1,505 annotated ground-truth issues).",
+            "features": [
+              "Incomplete coverage — On larger changesets, agents tend to \"cut corners,\" selectively reviewing only some files and missing others.",
+              "Position drift — Reported issues frequently don't match the actual code location, with line numbers or file references drifting off target.",
+              "Unstable quality — Natural-language-driven Skills are hard to debug, and review quality fluctuates significantly with minor prompt variation",
+              "Precise file selection — Determines exactly which files need review and which should be filtered, ensuring no important change is missed.",
+              "Smart file bundling — Groups related files into a single review unit (e.g., message en.properties and message zh.properties are bundled toge",
+              "Fine-grained rule matching — Matches review rules to each file's characteristics, keeping the model's attention sharply focused and eliminat",
+              "External positioning and reflection modules — Independent comment-positioning and comment-reflection modules systematically improve both the",
+              "Scenario-tuned prompts — Prompt templates deeply optimized for code review, improving effectiveness while reducing token consumption."
+            ],
+            "sections": [
+              "What is Open Code Review?",
+              "Benchmark",
+              "Why Open Code Review?",
+              "The Problem with General-Purpose Agents",
+              "Core Design: Deterministic Engineering × Agent Hybrid",
+              "How to Use",
+              "Prerequisites",
+              "Agent Skills",
+              "CLI",
+              "Workspace mode — review all staged, unstaged, and untracked ",
+              "Current branch — review changes since it diverged from main ",
+              "Branch range — reviews feature-branch's changes since it div",
+              "Single commit",
+              "Resume an interrupted range or commit review"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16353
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ybblab/Jiumi",
+          "owner": "ybblab",
+          "name": "Jiumi",
+          "url": "https://github.com/ybblab/Jiumi",
+          "homepage": "https://jiumi.ybblab.com",
+          "description": "揪咪 Jiumi：开源安卓应用行为监测与管理 App，查看权限访问和网络活动。Android app activity & privacy monitor. No root required.",
+          "language": "Kotlin",
+          "topics": [
+            "android",
+            "android-app",
+            "app-management",
+            "app-monitoring",
+            "appops",
+            "kotlin",
+            "network-monitoring",
+            "privacy"
+          ],
+          "stars": 959,
+          "forks": 50,
+          "open_issues": 7,
+          "starGain": null,
+          "heat": 297.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 8,
+          "created_at": "2026-11-13T16:20:27Z",
+          "pushed_at": "2026-11-20T09:25:56Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 80.8,
+          "breakdown": {
+            "heat": 97,
+            "community": 54,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "简体中文 · English · 日本語 · 한국어 · Español · Deutsch · Français · हिन्दी · Bahasa Indonesia · Português (Brasil) · Русский\n\n「应用」页按来源整理应用。在应用详情里查看行为记录，再决定要不要改动。所有管理操作都由你发起，揪咪改动后会读回系统状态确认是否生效，系统拒绝时显示原因。\n\n「设置 › 应用管理」的「执行身份」显示这些操作以谁的身份执行。使用 Root，或以 Root 启动的 Shizuku 时，停用、启用应用，以及卸载、恢复预装应用以 Root 身份执行，能更改手机不允许 shell 更改的系统应用。使用无线调试时，应用管理以 shell 身份执行。部分系统应用会受手机限制，揪咪会说明原因。自行安装的应用由 shell 卸载和恢复。卸载仅影响当前用户，工作资料或分身里的同一应用会保留。",
+            "features": [
+              "在 Android 11 或更高版本的手机上，从 GitHub Releases 下载并安装 APK。",
+              "首次打开时选择启动方式。推荐使用无线调试，在连接 Wi-Fi 后按引导允许通知、开启开发者选项，并在揪咪的通知里输入系统显示的 6 位配对码。",
+              "到「监测」页点「开始监测」。监测期间通知栏会显示常驻通知，可以从通知或 App 停止监测。",
+              "记录留在本机。 揪咪没有账号，也不上传监测记录。App 可从 GitHub 检查更新，选择更新后会下载安装包并校验大小、SHA-256 和签名。更新检查可关闭。",
+              "记录行为和连接信息。 揪咪可以显示某项权限被使用或访问被拒绝，无法看到聊天内容、密码或网络传输正文。",
+              "能看到的范围取决于系统。 短连接可能在两次读取之间结束，直接读取文件等行为可能没有可用信号。按连接统计流量需要 Android 14 或更高版本及系统支持。为减少误报，揪咪会略去部分无法确认的行为。",
+              "监测时会增加耗电。 耗电量取决于应用活动，不需要时可从通知停止监测。"
+            ],
+            "sections": [
+              "揪咪 Jiumi",
+              "界面速览",
+              "功能",
+              "管理应用",
+              "不用 Root，怎么看到后台？",
+              "下载与开始监测",
+              "隐私与使用边界",
+              "从源码构建",
+              "贡献与许可",
+              "Star 历史"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5444
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "ELY-Open-Source/ElyOffice",
+          "owner": "ELY-Open-Source",
+          "name": "ElyOffice",
+          "url": "https://github.com/ELY-Open-Source/ElyOffice",
+          "homepage": "https://office.elygpui.com",
+          "description": "Ely Office: offline-first desktop apps in Rust and GPUI",
+          "language": "Rust",
+          "topics": [],
+          "stars": 1563,
+          "forks": 94,
+          "open_issues": 8,
+          "starGain": null,
+          "heat": 228,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 33,
+          "created_at": "2026-10-19T23:04:42Z",
+          "pushed_at": "2026-11-21T13:05:15Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.1,
+          "breakdown": {
+            "heat": 95,
+            "community": 58,
+            "activity": 59,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Offline-first desktop apps in Rust and GPUI. Files stay in your folders; no account, no cloud service.\n\nDownload from office.elygpui.com or the latest release: Windows x64, macOS (Apple silicon and Intel) and Linux x86 64 (AppImage, deb, rpm, Arch, Nix; Debian 11 and Ubuntu 20.04 or newer). The latest release, 0.1.16, has an installer for each app (macOS .dmg , Windows setup, Linux AppImage, deb, rpm and Arch package), an ElyOffice installer with all of them (macOS .dmg , Windows setup) and an ely-office deb, rpm and Arch package; each app updates on its own. The tree now builds one installer per platform with every app (macOS .pkg ), updated as a set; no release is built that way yet.\n\nElyMail signs in to Microsoft with OAuth, to Gmail and iCloud with an app password, and to QQ Mail, 163 and 126 with an authorization code.",
+            "features": [
+              "macOS: Xcode (gpui compiles its shaders when the app starts, so the separate Metal toolchain is not needed); then brew install cmake ninja p",
+              "Windows: Visual Studio 2022 with the C++ workload (MSVC, a Windows SDK and CMake with Ninja) and clang-cl, from its \"C++ Clang tools\" compon",
+              "Linux, one line per family, then pnpm. The engines build inside packaging/linux/container.sh , hence Docker. Ubuntu's own Node.js is too old"
+            ],
+            "sections": [
+              "Ely Office",
+              "Build",
+              "Experimental R macros",
+              "Release",
+              "Tests",
+              "Documents",
+              "Licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9645
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "wici-ai/inferssd",
+          "owner": "wici-ai",
+          "name": "inferssd",
+          "url": "https://github.com/wici-ai/inferssd",
+          "homepage": "https://wici.ai/wici-infer",
+          "description": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
+          "language": "C++",
+          "topics": [
+            "cuda",
+            "gguf",
+            "linux",
+            "llama-cpp",
+            "llm",
+            "llm-inference",
+            "local-llm",
+            "macos"
+          ],
+          "stars": 1281,
+          "forks": 115,
+          "open_issues": 18,
+          "starGain": null,
+          "heat": 195.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 31,
+          "created_at": "2026-10-22T10:40:45Z",
+          "pushed_at": "2026-11-21T22:01:34Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 80.1,
+          "breakdown": {
+            "heat": 94,
+            "community": 58,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 10,
+            "ai": 21,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Download app &nbsp;·&nbsp; Website &nbsp;·&nbsp; Blog &nbsp;·&nbsp; Discord &nbsp;·&nbsp; Slack &nbsp;·&nbsp; Apache-2.0 &nbsp;·&nbsp; 简体中文\n\nRun models larger than your RAM or VRAM. InferSSD builds on llama.cpp to run large mixture-of-experts (MoE) models from SSD, using standard GGUF files, with browser chat and an OpenAI-compatible API. It runs DeepSeek-V4.1-Flash-1017 and Qwen3.8 Flash Next in many quantizations, as well as Muse-Spark-Open , Qwen3.6-35B-A3B and Gemma4 E4B .\n\nThese are the tested GGUF files, used as their publishers released them. Expand a model for its files.",
+            "features": [
+              "How it works",
+              "Benchmark methodology",
+              "Quick start",
+              "Versions and engine resources"
+            ],
+            "sections": [
+              "Models",
+              "Performance benchmarks",
+              "Test hardware",
+              "DeepSeek-V4.1-Flash-1017 · mrfakename Q8 0",
+              "Muse-Spark-Open · Unsloth UD-Q4 K XL",
+              "Get started",
+              "Chat in your terminal",
+              "Or start the web UI and an OpenAI-compatible API at http://1",
+              "Further reading",
+              "Contributing",
+              "Acknowledgments and license"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14937
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "crest-browser/Crest",
+          "owner": "crest-browser",
+          "name": "Crest",
+          "url": "https://github.com/crest-browser/Crest",
+          "homepage": "https://crestbrowser.com",
+          "description": "An open source browser for Mac, iPhone, and iPad.",
+          "language": "Swift",
+          "topics": [
+            "browser",
+            "ios",
+            "ipados",
+            "macos",
+            "open-source",
+            "privacy",
+            "swift",
+            "swiftui"
+          ],
+          "stars": 1406,
+          "forks": 140,
+          "open_issues": 309,
+          "starGain": null,
+          "heat": 112.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 98,
+          "created_at": "2026-08-15T21:50:11Z",
+          "pushed_at": "2026-11-22T01:34:32Z",
+          "license": "MPL-2.0",
+          "rating": 4,
+          "composite": 80.4,
+          "breakdown": {
+            "heat": 90,
+            "community": 59,
+            "activity": 74,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An open source browser for Mac, iPhone, and iPad. Built with SwiftUI, running Chromium and WebKit on Mac, with separate Spaces for different parts of your life. Visit the product site · Read the guides · Download for Mac · Roadmap · Community\n\nBrowse Mac releases by channel: Stable, Nightly, or Development.\n\nMost browsers put every login, tab, and distraction into one long-lived container. Crest begins with Spaces instead. Give work, home, research, or a private session its own banner; Crest gives each one its own cookies, website data, history, archive, tabs, credentials, settings, and sync identity.",
+            "features": [
+              "A sidebar with structure. Pins for everyday sites, saved tabs with a home URL, nested folders for projects, and current tabs for what you ar",
+              "Split View. Keep two to four live pages in a group. Resize columns on Mac and iPad; move through focused cards on iPhone.",
+              "Peek. Preview a link above the current page, then close it or keep it as a tab. On Mac, drag a link into a live Peek. On iPhone and iPad, na",
+              "Quick Window on Mac. Open a link from another app using the right Space’s signed-in session. Promote it to a regular tab when it deserves to",
+              "Shared windows on Mac. Open another window onto the same Spaces and tabs, with its own selection. Use a disposable Blank Window for temporar",
+              "Search and commands. Open a URL, search the web, find tabs and history in your Space, or run a command from one field. Choose custom search ",
+              "Getting Started. Learn tabs, pins, and folders in an interactive browser tab, with Split View practice on Mac.",
+              "Apple silicon Mac"
+            ],
+            "sections": [
+              "A browser with boundaries",
+              "Two engines on Mac",
+              "Crest Studio and Appearance",
+              "Browsing features",
+              "Page tools",
+              "Privacy and sync",
+              "Get Crest",
+              "Built as an Apple-platform app",
+              "Build Crest",
+              "Releases and updates",
+              "Validate a change",
+              "Project status",
+              "Community and support",
+              "Sponsors"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 20415
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "firecrawl/firecrawl",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "mvanhorn/last30days-skill",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "simplexai-labs/linger",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "FlashML-org/FreeVideo",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "wuyoscar/AISafetyHot",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "google-research/paper-orchestra",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "n8n-io/nod",
+      "category": "ai",
+      "lastPushed": "2026-11-16",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [],
+  "reviewedAt": "2026-11-22T01:56:53.680Z"
+}
