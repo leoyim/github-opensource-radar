@@ -3,6 +3,7 @@ import RatingMeter from './RatingMeter.astro';
 import MetricBars from './MetricBars.astro';
 import Sparkline from './Sparkline.astro';
 import { num } from '../lib/format';
+import { avatarOf } from '../lib/load';
 import type { IssueItem, SeriesPoint } from '../lib/schema';
 import type { Interpretation } from '../lib/interpretations';
 
@@ -19,6 +20,7 @@ const hasScores = Object.keys(scores).length > 0;
 const starValues = series.map((p) => p.stars);
 
 const slug = item.full_name.replace('/', '__');
+const avatar = avatarOf(item.owner);
 const words = interpretation ? Math.max(100, Math.round(interpretation.chars / 100) * 100) : 0;
 ---
 
@@ -34,7 +36,30 @@ const words = interpretation ? Math.max(100, Math.round(interpretation.chars / 1
   data-scores={JSON.stringify(scores)}
   data-name={item.full_name}
 >
-  <span class="row-rank repo-rank mono">{String(index).padStart(2, '0')}</span>
+  <!--
+    序号 + owner 徽记：桌面端同列竖排（徽记在序号正下方），窄屏并成一行。
+    owner 首字打底，头像盖在上面；图挂掉被 onerror 移除，底下首字露出来，格子不塌。
+  -->
+  <div class="row-head">
+    <span class="row-rank repo-rank mono">{String(index).padStart(2, '0')}</span>
+    <span class="row-mark">
+      <span>{item.owner.slice(0, 1)}</span>
+      {
+        avatar && (
+          <img
+            src={avatar}
+            alt=""
+            width="40"
+            height="40"
+            loading="lazy"
+            decoding="async"
+            referrerpolicy="no-referrer"
+            onerror="this.remove()"
+          />
+        )
+      }
+    </span>
+  </div>
 
   <div class="row-main">
     <p class="row-owner mono">{item.owner}</p>
