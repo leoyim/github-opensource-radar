@@ -1,0 +1,1652 @@
+{
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T09:30:21.171+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-22",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 902,
+    "unclassified": 70,
+    "selected": 18,
+    "suppressedByHistory": 308,
+    "sameDateExempt": 17,
+    "removed": 4,
+    "removedTotal": 9,
+    "offTopic": 1,
+    "watchlisted": 0,
+    "regenerated": true,
+    "reviewedAt": "2026-11-23T01:36:08.049Z"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "deeplethe/utopia",
+          "owner": "deeplethe",
+          "name": "utopia",
+          "url": "https://github.com/deeplethe/utopia",
+          "homepage": "",
+          "description": "World's first open-source enterprise world model.",
+          "language": "Rust",
+          "topics": [
+            "agent-memory",
+            "bitemporal",
+            "graphrag",
+            "knowledge-base",
+            "knowledge-graph",
+            "llm",
+            "ontology",
+            "pgvector"
+          ],
+          "stars": 8693,
+          "forks": 1194,
+          "open_issues": 70,
+          "starGain": null,
+          "heat": 664.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 107,
+          "created_at": "2026-08-07T19:33:17Z",
+          "pushed_at": "2026-11-23T00:21:19Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 85.5,
+          "breakdown": {
+            "heat": 99,
+            "community": 76,
+            "activity": 69,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The enterprise world model built by DeepLethe. It is the first open substrate for knowledge engineering that learns passively and governs itself. Where a knowledge graph or a vector store works to hold present knowledge, Utopia puts time awareness and ontology in the base layer: the knowledge system evolves as material arrives, and conflict detection, reasoning and decision making all run against that ontology. It deploys offline, so a company can stand up a knowledge foundation, a decision core its agents can trust, and a compliance audit trail on hardware it controls.\n\nhttps://github.com/user-attachments/assets/aa226443-75de-437e-bd80-88e592ed8457\n\nWe gave it a somewhat romantic name, Utopia . Ptolemy's geocentric model was taken for truth for a very long time, then falsified step by step by Copernicus, Kepler, Galileo and Newton. Looking back, what we keep is not only that heliocentrism turned out to be right; it is how that history unfolded.",
+            "features": [
+              "[ ] Decision reasoning : constraint computation, and replaying a decision after the fact",
+              "[ ] Business rules : rules written by people over an entity's attribute facts, a threshold or a category set, that classify it as a derived ",
+              "[ ] Execution gate : checking an agent's calls against ontology rules and symbolic logic",
+              "[ ] MaxCompute : mapping exploration and Ontology2SQL over Alibaba Cloud MaxCompute (Iceberg / Delta Lake via Trino, Databricks and Snowflak",
+              "[ ] More sources : a Feishu connector",
+              "[ ] Agent memory over MCP : episode writes, the retrieve endpoint, and the MCP server",
+              "[ ] Enterprise : OIDC SSO, backup and restore commands, benchmarks at 100k documents",
+              "💬 Discussions: discuss the project, share your experience, and leave feedback"
+            ],
+            "sections": [
+              "Utopia",
+              "Philosophy",
+              "Use cases",
+              "Features",
+              "Quick start",
+              "Local development",
+              "1. Postgres with pgvector",
+              "2. Backend on :1516, runs migrations on startup",
+              "3. Frontend on :5173, proxying /api to the backend",
+              "Roadmap",
+              "Status",
+              "Star History",
+              "Community",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16188
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "mw00/project-maya",
+          "owner": "mw00",
+          "name": "project-maya",
+          "url": "https://github.com/mw00/project-maya",
+          "homepage": "https://huggingface.co/peasantsmith",
+          "description": "Run GLM-5.3 (744B), DeepSeek-V4.1-Flash (748B), MiniMax-M3.1-Flash (428B), GLM-5.3-Flash (321B) and Hy4-Flash (220B) on your own GPUs - from 8 GB of VRAM, NVIDIA and AMD, one dashboard, OpenAI- and Anthropic-compatible API.",
+          "language": "Cuda",
+          "topics": [
+            "anthropic-api",
+            "cuda",
+            "deepseek",
+            "gguf",
+            "glm",
+            "hunyuan",
+            "hy4-flash",
+            "llm"
+          ],
+          "stars": 3226,
+          "forks": 462,
+          "open_issues": 249,
+          "starGain": 66,
+          "heat": 66,
+          "heatBasis": "snapshot",
+          "heatPercentile": 78,
+          "ageDays": 47,
+          "created_at": "2026-10-06T22:55:13Z",
+          "pushed_at": "2026-11-22T16:29:23Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.5,
+          "breakdown": {
+            "heat": 78,
+            "community": 67,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "private and fast · one NVIDIA GPU or up to 16 · AMD and Windows · chat, pictures, OpenAI- and Anthropic-compatible API · several requests at once\n\nProject Maya is free. If it runs well on your PC, sponsoring it pays for the test hardware and the work on it.\n\nModels this size usually need a datacenter. Maya runs five of them on the hardware you already have: GLM-5.3 , GLM-5.3-Flash , DeepSeek-V4.1-Flash-1017 , MiniMax-M3.1-Flash and Hy4-Flash . Each model has an engine built for it. It keeps the experts your conversation uses most on the GPU, the next ones in RAM and the rest on your NVMe SSD, and moves them as you chat. It measures your GPUs, CPU, RAM and SSD and tunes itself to them. Nothing leaves your machine.",
+            "features": [
+              "Fast: up to 149 tokens/s on two RTX 5090s and an RTX 4090, 124 on two H100s, 118 on four RTX 4090s, 81 on one",
+              "Close to the original: Maya's own quants of GLM-5.3-Flash keep 97.7-99.2% of the FP8 model's zero-shot",
+              "Plugs into your tools: OpenAI- and Anthropic-compatible API with tool calls, ready for coding agents.",
+              "Several requests at once: up to 8 answered together with GLM-5.3-Flash, DeepSeek-V4.1-Flash and",
+              "Everything in the box: a chat and a live monitor in the browser, pictures on the models that read them, thinking",
+              "GLM-5.3-Flash · Maya quants keep 97.7-99.2% of the FP8 model's zero-shot accuracy and pick its next token 83-90% of",
+              "DeepSeek V4.1 · Maya-S picks the same next token as the original 92.6% of the time.",
+              "MiniMax M3.1 · Maya-S picks it 87.6% of the time (the average over its categories)."
+            ],
+            "sections": [
+              "Quick start",
+              "Pick your model",
+              "Quality",
+              "How fast is it?",
+              "Using it",
+              "What you need",
+              "Install",
+              "Something went wrong?",
+              "Your Support ❤️",
+              "Credits and license"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 47574
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "jiwoochris/artex-global",
+          "owner": "jiwoochris",
+          "name": "artex-global",
+          "url": "https://github.com/jiwoochris/artex-global",
+          "homepage": "",
+          "description": "Global edition of ARTEX — an LLM multi-agent autonomous penetration-testing framework. English default, switchable to Korean/Chinese/Spanish/Japanese. For authorized, defensive and detection use only. (upstream: Autumn-27/ARTEX, AGPL-3.0)",
+          "language": "Go",
+          "topics": [
+            "ai-agent",
+            "autonomous-agents",
+            "blue-team",
+            "cybersecurity",
+            "detection-engineering",
+            "i18n",
+            "korean",
+            "llm"
+          ],
+          "stars": 4504,
+          "forks": 3672,
+          "open_issues": 10,
+          "starGain": 133,
+          "heat": 133,
+          "heatBasis": "snapshot",
+          "heatPercentile": 84,
+          "ageDays": 50,
+          "created_at": "2026-10-03T14:49:48Z",
+          "pushed_at": "2026-11-19T15:55:08Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 73.2,
+          "breakdown": {
+            "heat": 84,
+            "community": 74,
+            "activity": 40,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An autonomous penetration-testing system driven by LLM multi-agents (Go backend + Next.js frontend)\n\nThe UI and generated output default to English, and can be switched to Korean, Chinese, Spanish or Japanese in Settings (System → Settings → Display language). Changing the language also changes the language of agent-generated reports, summaries and chat replies.\n\nARTEX is a system in which several LLM-driven agents autonomously run a penetration test: they break goals down on their own, execute real tools, and accumulate discovered assets and vulnerabilities into a graph as they go. A single Go binary ships with the Next.js frontend embedded, and all data is stored in PostgreSQL.",
+            "features": [
+              "In the Republic of Korea, intruding into or disrupting another party's information and communications network without authorization violates",
+              "Personal data collected or exposed during a penetration test is subject to the Korean Personal Information Protection Act (개인정보보호법). Even wi",
+              "Wherever you are, comply with your own jurisdiction's laws on network security, data protection, and computer crime.",
+              "Use this for learning, research, and verification in locally isolated environments. Before targeting any live external system, secure writte",
+              "Localize the output — the findings, fact summaries, final reports, and chat replies that agents surface to a human are forced into the selec",
+              "Preserve performance — the internal reasoning prompts (the behavioral instruction body) that drive the agents' judgment are not translated. ",
+              "State the legal boundaries — the \"authorized scope only\" warning is stated clearly, together with Korea-specific notices on network and priv",
+              "Support diverse LLM stacks — the LLM provider can be swapped from a frontier model to any OpenAI-compatible endpoint (domestic or open model"
+            ],
+            "sections": [
+              "ARTEX — Global Edition",
+              "⚠️ Read first — authorized use and legal notice",
+              "Why a global edition",
+              "Screenshots",
+              "Quick start (Docker Compose)",
+              "→ open http://localhost:8787 (on first visit, set the admin ",
+              "/setup asks for the setup token printed in the startup log: ",
+              "Other installation methods",
+              "Configuration",
+              "Model selection and output language",
+              "First-run protection (setup token and bind address)",
+              "Reverse-proxy deployment (HTTPS / expose only 443)",
+              "System architecture",
+              "Overall layers"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 33848
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "bendlang/bend",
+          "owner": "bendlang",
+          "name": "bend",
+          "url": "https://github.com/bendlang/bend",
+          "homepage": "https://bend-lang.com",
+          "description": "Bend 2: a fast language that blocks AI mistakes via proof. Install: curl -fsSL https://bend-lang.com/install.sh | sh",
+          "language": "TypeScript",
+          "topics": [
+            "bend",
+            "cuda",
+            "dependent-types",
+            "gpu",
+            "metal",
+            "parallel",
+            "programming-language",
+            "proof"
+          ],
+          "stars": 25781,
+          "forks": 826,
+          "open_issues": 171,
+          "starGain": 53,
+          "heat": 53,
+          "heatBasis": "trending",
+          "heatPercentile": 77,
+          "ageDays": 1181,
+          "created_at": "2023-08-29T20:44:32Z",
+          "pushed_at": "2026-11-18T18:05:38Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 74.8,
+          "breakdown": {
+            "heat": 77,
+            "community": 81,
+            "activity": 44,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "In the post-AGI economy, humans will eventually stop writing and reading code, but we still need an ambiguity-free language to communicate our intents to the AIs building the world around us. Bend is that language.\n\nWith laws , intents can be more precise than natural language. With proofs , we can mechanically verify the AI implemented our prompts correctly. And with a fast compiler , we can run that code at peak compute.\n\nTarget: be as fast as C on the CPU, as fast as CUDA on the GPU. Status:",
+            "features": [
+              "Ask your AI to formalize your app's rules in LAWS.bend . Example:",
+              "LAW: \"the sum of all balances must be zero\"",
+              "LAW: \"players can never pass through solid walls\"",
+              "LAW: \"list sort() must always return ascending numbers\"",
+              "LAW: \"array set() may never be called out-of-bounds\"",
+              "LAW: \"winning is impossible\" (the demo above!)",
+              "And so on. Anything you can spell can become a law.",
+              "Ask your AI to run bend PROOF.bend after editing any code."
+            ],
+            "sections": [
+              "Bend runs FAST",
+              "Bend checks FAST",
+              "Bend is PARALLEL",
+              "Bend BLOCKS mistakes - with proof",
+              "LAWS.bend",
+              "PROOF.bend",
+              "Get Started",
+              "1. Install:",
+              "2. Tell your agent to use Bend:",
+              "3. Enjoy bug-free, fast vibe-coded apps!",
+              "Examples",
+              "Syntax == Python + dependent types",
+              "Performs effects on the CPU.",
+              "Parallelism == divide-and-conquer"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11085
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "tigerless-labs/autoharness",
+          "owner": "tigerless-labs",
+          "name": "autoharness",
+          "url": "https://github.com/tigerless-labs/autoharness",
+          "homepage": "https://github.com/tigerless-labs/autoharness",
+          "description": "Building the self-learning layer next-gen agents will ship with, learning skills from real work.",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "claude-code",
+            "claude-code-plugin",
+            "llm-agents",
+            "python"
+          ],
+          "stars": 11167,
+          "forks": 671,
+          "open_issues": 15,
+          "starGain": null,
+          "heat": 670.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 166,
+          "created_at": "2026-06-09T21:05:42Z",
+          "pushed_at": "2026-11-12T08:19:16Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.2,
+          "breakdown": {
+            "heat": 97,
+            "community": 76,
+            "activity": 9,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "With autoharness, we're building the self-learning layer next-gen agents will ship with, learning skills from real work. Today it runs on Claude Code: it learns skills from your real sessions, merges same-scenario ones instead of stacking near-duplicates, updates them in use, and prunes any that stop getting used — so the layer stays clean on its own , touching only the skills it wrote itself .\n\nSame model, different harness — 42% → 78% on CORE-Bench (HAL). The harness does much of the work (swyx's Big Model vs Big Harness ), yet it's still rebuilt by hand every model generation. autoharness bets one slice of it — the skill layer — can maintain itself.\n\nRequires Python 3.11+ as the python3 on your PATH — autoharness runs entirely as Python (zero third-party dependencies); its hooks and MCP server won't fire without it. The hooks resolve bare python3 , so an older interpreter earlier on your PATH (Xcode ships 3.9.6 at /usr/bin/python3 ) turns every hook off for the session; autoharness says so on stderr.",
+            "features": [],
+            "sections": [
+              "Install",
+              "Update",
+              "Uninstall",
+              "Configuration",
+              "How it works",
+              "Walkthrough: watching it learn",
+              "How it compares",
+              "Contributing",
+              "Acknowledgements",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 26601
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "EL4CTEO/fast-anything",
+          "owner": "EL4CTEO",
+          "name": "fast-anything",
+          "url": "https://github.com/EL4CTEO/fast-anything",
+          "homepage": "https://www.npmjs.com/package/@el4cteo/fast-anything",
+          "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+          "language": "Rust",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "claude-code",
+            "claude-code-plugin",
+            "codex",
+            "developer-tools",
+            "ffi",
+            "mcp"
+          ],
+          "stars": 1937,
+          "forks": 118,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 664.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 1,
+          "created_at": "2026-11-21T14:40:27Z",
+          "pushed_at": "2026-11-23T01:28:18Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84,
+          "breakdown": {
+            "heat": 96,
+            "community": 60,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 63,
+            "devops": 56,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Rewriting a whole app in Rust costs months, minute-long compiles and gigabytes of target/ . Most of the runtime sits in a few functions anyway.\n\nfast-anything finds those functions, has your coding agent port only them to Rust, proves the port gives the same results on real recorded calls, and swaps it in. One command, fully reversible.\n\nnpm i -g @el4cteo/fast-anything or: cargo install fast-anything",
+            "features": [
+              "Compile time : each port is a one-function crate. Seconds, not minutes.",
+              "Cache : every port shares one .fast/target . Delete it whenever you like.",
+              "Risk : your code stays as it is. Rust is opt-in per function, checked against real behavior.",
+              "Claude Code plugin : /plugin marketplace add EL4CTEO/fast-anything , then /plugin install fast-anything@fast-anything and /fast-anything:fas",
+              "MCP server (Claude Code, Codex, Cursor…), built into the binary: claude mcp add fast-anything -- fast-anything mcp . 8 tools: fast scan , fa",
+              "Skill : skills/fast-anything teaches any agent the loop."
+            ],
+            "sections": [
+              "Install",
+              "Use",
+              "Proof, not vibes",
+              "Results",
+              "Why not rewrite it all?",
+              "Agents",
+              "Languages",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8022
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "oomol-lab/open-connector",
+          "owner": "oomol-lab",
+          "name": "open-connector",
+          "url": "https://github.com/oomol-lab/open-connector",
+          "homepage": "https://oomol.com",
+          "description": "Open-source auth gateway connecting 1700+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-tools",
+            "ai-agents",
+            "api-gateway",
+            "automation",
+            "cli",
+            "cloudflare-workers",
+            "connectors",
+            "integration-platform"
+          ],
+          "stars": 6279,
+          "forks": 620,
+          "open_issues": 8,
+          "starGain": null,
+          "heat": 404.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 147,
+          "created_at": "2026-06-29T10:49:36Z",
+          "pushed_at": "2026-11-23T01:30:46Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 81.7,
+          "breakdown": {
+            "heat": 90,
+            "community": 72,
+            "activity": 62,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 55,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "OpenConnector is an open-source connector gateway for AI agents and an alternative to Pipedream/Composio. Connect user app accounts once, then expose a shared catalog of 1,000+ providers and 10,000+ prebuilt Actions to agents and applications.\n\nManaged OAuth and hosted runtime, ready to use. No deployment or OAuth app setup. Run locally or on your own infrastructure with Docker or Node.js. You manage storage and OAuth apps. Cloudflare , Fly.io , RepoCloud , nibrun , NEXUS AI , Pethost , ZopDay , and more. 🚀 OOMOL Hosted Self-host More platforms\n\nUse the Connector SDK from app code, oo CLI as the local-agent relay, MCP from agent hosts, HTTP/OpenAPI from custom clients, and the Web Console for administration and debugging.",
+            "features": [
+              "Keep credentials, scopes, schemas, policies, and run logs inside an inspectable runtime.",
+              "Run locally, on your own infrastructure, or through OOMOL's hosted runtime.",
+              "Use the same provider ids, Action ids, schemas, and contracts across open-source and commercial",
+              "A working connector catalog across products such as GitHub, Gmail, Notion, BigQuery, Google",
+              "Credential handling for API keys, OAuth2, custom credentials, and no-auth providers.",
+              "Built-in OAuth 2.1 authorization server so remote MCP clients and other agents can authenticate",
+              "Inspectable Action contracts: request/response schemas, required scopes, and lazy-loaded executor",
+              "Runtime controls for connection identity, scopes, runtime tokens, action allow/block policies,"
+            ],
+            "sections": [
+              "What It Provides",
+              "Where It Fits",
+              "Developer Tools",
+              "Products Built on OpenConnector",
+              "Open Flow",
+              "Leina",
+              "Dashboard Preview",
+              "Connector Catalog",
+              "Usage Overview",
+              "How It Works",
+              "Usage Paths",
+              "Quick Start",
+              "Connect a Provider",
+              "Web Console"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 18668
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "colbymchenry/codegraph",
+          "owner": "colbymchenry",
+          "name": "codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "homepage": "https://colbymchenry.github.io/codegraph/",
+          "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 78419,
+          "forks": 5218,
+          "open_issues": 246,
+          "starGain": 101,
+          "heat": 101,
+          "heatBasis": "trending",
+          "heatPercentile": 74,
+          "ageDays": 308,
+          "created_at": "2026-01-18T21:45:37Z",
+          "pushed_at": "2026-11-20T23:39:45Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 77,
+          "breakdown": {
+            "heat": 74,
+            "community": 91,
+            "activity": 59,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The fastest complete code graph · surgical context · built for how agents actually work · 100% local\n\nThe CodeGraph platform is coming — for every PR, know exactly what to test, what could break, which flows are affected, and whether business logic is compromised.\n\nGet early beta access to the hosted product · getcodegraph.com",
+            "features": [
+              "Get Started",
+              "Language Support",
+              "Why CodeGraph?",
+              "Key Features",
+              "Framework-aware Routes",
+              "Mixed iOS / React Native / Expo bridging",
+              "Quick Start",
+              "How It Works"
+            ],
+            "sections": [
+              "CodeGraph",
+              "Supercharge Claude Code, Cursor, Codex, OpenCode, Hermes Age",
+              "Documentation & Website →",
+              "Contents",
+              "Get Started",
+              "1. Install the CLI",
+              "macOS / Linux",
+              "Windows (PowerShell)",
+              "2. Wire up your agent(s)",
+              "3. Initialize each project",
+              "4. No more syncing!",
+              "Uninstall",
+              "Language Support",
+              "Why CodeGraph?"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 78907
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ngocanhnckh/renderlint",
+          "owner": "ngocanhnckh",
+          "name": "renderlint",
+          "url": "https://github.com/ngocanhnckh/renderlint",
+          "homepage": "https://renderlint.yitec.net",
+          "description": "Lint the rendered UI: catches overflowing text, low contrast, overlaps, broken responsive layouts, emoji icons and more in any web framework. Built for AI coding agents.",
+          "language": "JavaScript",
+          "topics": [
+            "a11y",
+            "accessibility",
+            "ai-agents",
+            "ai-coding",
+            "claude-code",
+            "contrast",
+            "css",
+            "cursor"
+          ],
+          "stars": 687,
+          "forks": 56,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 109.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 28,
+          "created_at": "2026-10-25T15:54:22Z",
+          "pushed_at": "2026-11-22T14:55:39Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.3,
+          "breakdown": {
+            "heat": 93,
+            "community": 52,
+            "activity": 53,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Website · Get started · Rules · Examples · Blog · Changelog\n\nText spilling out of cards, gray-on-gray captions, chart labels on top of each other, a layout that only breaks at 1024px, a tab you can't scroll, $undefined in a KPI tile, emoji where icons should be. TypeScript and ESLint can't see any of this, because the code is fine. It's the pixels that are wrong.\n\nrenderlint renders every page at phone, tablet and desktop widths (and dark mode), sweeps the widths in between, and re-checks with longer text, bigger numbers and longer API data. Each defect is reported with the element, the source file, an annotated screenshot and a concrete fix, in plain text an agent can act on.",
+            "features": [
+              "What it catches",
+              "See it",
+              "Loading states and the UX pass",
+              "Content you didn't render",
+              "How it compares · Does it work?",
+              "Every page, every role, behind a login",
+              "Make it impossible to ship defects",
+              "Adopting it on an existing app · Intentional? Say so. · Configuration · How it works · Limitations"
+            ],
+            "sections": [
+              "Quick start",
+              "Usage",
+              "Contents",
+              "What it catches",
+              "See it",
+              "Loading states and the UX pass",
+              "Content you didn't render",
+              "How it compares",
+              "Does it work?",
+              "Every page, every role, behind a login",
+              "Make it impossible to ship defects",
+              "Adopting it on an existing app",
+              "Intentional? Say so.",
+              "Configuration"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 31062
+          },
+          "guard": {
+            "score": 2,
+            "signals": [
+              "noIssues",
+              "batchCluster"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "devswha/ovis",
+          "owner": "devswha",
+          "name": "ovis",
+          "url": "https://github.com/devswha/ovis",
+          "homepage": "https://ovis.sh",
+          "description": "Ovis (formerly herdr web UI): free, open-source browser and phone client for herdr. Chat and live terminal for Claude Code, Codex and every agent pane, remote PCs over SSH, web push alerts",
+          "language": "TypeScript",
+          "topics": [
+            "agentic-coding",
+            "ai-agents",
+            "bun",
+            "claude-code",
+            "codex",
+            "coding-agents",
+            "herdr",
+            "herdr-plugin"
+          ],
+          "stars": 2183,
+          "forks": 310,
+          "open_issues": 266,
+          "starGain": 13,
+          "heat": 13,
+          "heatBasis": "snapshot",
+          "heatPercentile": 73,
+          "ageDays": 66,
+          "created_at": "2026-09-17T18:52:07Z",
+          "pushed_at": "2026-11-23T01:07:20Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 73.9,
+          "breakdown": {
+            "heat": 73,
+            "community": 63,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 35,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Your coding agents, on desktop, phone and browser. Chat with Claude Code, Codex and other agents running on your computer, and answer them with a tap.\n\nEnglish · 简体中文 · 日本語 · 한국어 website · install · demo · docs · discord\n\nOvis runs on the computer where your agents work, and your phone or any browser connects to it. It is built on herdr and can show the same live terminals as herdr and the Herdr app, so they work side by side. How they fit together →",
+            "features": [
+              "Add a computer. On it, open Settings → Devices and PCs → Add a connection → Ovis relay , sign in and choose Add this PC to my account (it tu",
+              "Add a phone or another device. Sign in to the same account on it and open the computer. If the computer asks, approve the device on that com",
+              "Without an account. Tailscale, your Wi-Fi or SSH work too: Start without signing in on the phone, or Add a connection → Tailscale or Direct ",
+              "Agents as a chat. Claude Code, Codex and more, with a turn's commands and edits folded into one line.",
+              "Answers with a tap. Approvals and questions arrive as cards.",
+              "Push alerts. Even with the app closed.",
+              "The real terminal, one click away. With a key bar on phones.",
+              "New agents from anywhere. In a folder you pick, from the desktop or the phone."
+            ],
+            "sections": [
+              "Install",
+              "Your PCs, anywhere",
+              "Features",
+              "Documentation",
+              "Contributing",
+              "Thanks",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 8262
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "nginx/nginx",
+          "owner": "nginx",
+          "name": "nginx",
+          "url": "https://github.com/nginx/nginx",
+          "homepage": "https://nginx.org/",
+          "description": "The official NGINX Open Source repository.",
+          "language": "C",
+          "topics": [
+            "content-cache",
+            "http",
+            "http2",
+            "http3",
+            "https",
+            "load-balancer",
+            "mail-proxy-server",
+            "nginx"
+          ],
+          "stars": 32890,
+          "forks": 8382,
+          "open_issues": 493,
+          "starGain": 163,
+          "heat": 163,
+          "heatBasis": "trending",
+          "heatPercentile": 94,
+          "ageDays": 4171,
+          "created_at": "2015-06-23T10:26:27Z",
+          "pushed_at": "2026-11-18T16:40:14Z",
+          "license": "BSD-2-Clause",
+          "rating": 4,
+          "composite": 84.7,
+          "breakdown": {
+            "heat": 94,
+            "community": 88,
+            "activity": 46,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 85,
+            "ai": 30,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "NGINX (pronounced \"engine x\" or \"en-jin-eks\") is the world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.\n\nNGINX is free and open source software, distributed under the terms of a simplified 2-clause BSD-like license.\n\nEnterprise distributions, commercial support and training are available from F5, Inc.",
+            "features": [
+              "How it works",
+              "Modules",
+              "Configurations",
+              "Runtime",
+              "Downloading and installing",
+              "Stable and Mainline binaries",
+              "Linux binary installation process",
+              "FreeBSD installation process"
+            ],
+            "sections": [
+              "Table of contents",
+              "How it works",
+              "Modules",
+              "Configurations",
+              "Runtime",
+              "Downloading and installing",
+              "Stable and Mainline binaries",
+              "Linux binary installation process",
+              "Upgrades",
+              "FreeBSD installation process",
+              "Windows executables",
+              "Dynamic modules",
+              "Getting started with NGINX",
+              "Installing SSL certificates and enabling TLS encryption"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14567
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "rasonyang/ai-native-callcenter",
+          "owner": "rasonyang",
+          "name": "ai-native-callcenter",
+          "url": "https://github.com/rasonyang/ai-native-callcenter",
+          "homepage": "",
+          "description": "Self-hosted API-first AI call center: AI talks, code controls the call. AI agents answer every call; humans take over without dropping it. Runs on FreeSWITCH with your SIP trunk and realtime model (OpenAI, Grok, Qwen, Doubao, or any compatible gateway). ",
+          "language": "Go",
+          "topics": [
+            "call-center",
+            "callcenter",
+            "contact-center",
+            "freeswitch",
+            "golang",
+            "ivr",
+            "openai-realtime",
+            "openapi"
+          ],
+          "stars": 736,
+          "forks": 149,
+          "open_issues": 102,
+          "starGain": 23,
+          "heat": 23,
+          "heatBasis": "snapshot",
+          "heatPercentile": 80,
+          "ageDays": 103,
+          "created_at": "2026-08-11T23:48:21Z",
+          "pushed_at": "2026-11-22T02:48:43Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 70.8,
+          "breakdown": {
+            "heat": 80,
+            "community": 55,
+            "activity": 64,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An open-source call center where the AI is the default answer, not an add-on.\n\nCalls arrive at FreeSWITCH and are answered by a voice model over a speech-to-speech connection the application terminates itself. The model talks; a flow steers the conversation and decides when a person is needed. When one is, the caller is transferred into a real queue where real agents are waiting, their SIP leg held by a companion Chrome extension. Everything the two halves do lands in one call record.\n\nIt is one Go binary — REST API, event stream and the whole web interface inside it — plus PostgreSQL and FreeSWITCH.",
+            "features": [
+              "The domain model is Genesys-lineage. A call aggregates parties ; leg",
+              "Every live call is an actor — one goroutine as its sole mutator, snapshots by",
+              "A new voice provider is a profile, not a client:",
+              "A new flow is a JSON document validated at load — see",
+              "A new screen follows the design system in",
+              "An integration with another product is a service behind the flow's"
+            ],
+            "sections": [
+              "AI Native Call Center",
+              "Try it",
+              "What it does",
+              "How it fits together",
+              "Building",
+              "Extending it",
+              "Status",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7425
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ShayanAbbas1/dbdelve",
+          "owner": "ShayanAbbas1",
+          "name": "dbdelve",
+          "url": "https://github.com/ShayanAbbas1/dbdelve",
+          "homepage": "https://dbdelve.github.io/",
+          "description": "Fast and lightweight DB Client made in Rust and GPUI.",
+          "language": "Rust",
+          "topics": [
+            "database",
+            "dbclient",
+            "developer-tools",
+            "gpui",
+            "linux",
+            "local-first",
+            "macos-app",
+            "mariadb"
+          ],
+          "stars": 2036,
+          "forks": 101,
+          "open_issues": 35,
+          "starGain": 95,
+          "heat": 95,
+          "heatBasis": "snapshot",
+          "heatPercentile": 100,
+          "ageDays": 97,
+          "created_at": "2026-08-17T14:41:16Z",
+          "pushed_at": "2026-11-22T20:33:51Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 83.8,
+          "breakdown": {
+            "heat": 100,
+            "community": 60,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A fast, native, cross-platform, multi-engine database client. Written in Rust with GPUI, no Electron and no JVM: instant startup, friendly on your memory, and smooth scrolling through large tables where other clients crash or introduce limits.\n\nhttps://github.com/user-attachments/assets/6e15d566-a110-46c6-a236-52af7d877d4c\n\nhttps://github.com/user-attachments/assets/9e55da56-8577-43e0-812a-c77eb5d0e701",
+            "features": [
+              "Make it yours. The app's own themes alongside Catppuccin, Tokyo Night,",
+              "Bring your connections with you. Import every saved connection,",
+              "Organize your connections into projects, and jump to any of them from",
+              "Never mistake prod for staging. Every connection is isolated and can",
+              "Edits you can read first. Change a cell and DBDelve writes the UPDATE",
+              "Keep the columns you need. Hide or pin columns, and the layout survives",
+              "Read a row in full in the row panel, with JSON highlighted, and edit long",
+              "Import rows from CSV, TSV or JSON, with every row checked and every"
+            ],
+            "sections": [
+              "DBDelve",
+              "Community",
+              "Why",
+              "Install",
+              "Supported databases",
+              "What it does",
+              "Benchmarks",
+              "Logs and bug reports",
+              "License",
+              "Sponsors",
+              "Contributors"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9371
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "databasifylabs/databasify",
+          "owner": "databasifylabs",
+          "name": "databasify",
+          "url": "https://github.com/databasifylabs/databasify",
+          "homepage": "https://databasify.io",
+          "description": "An open-source, self-hostable DBaaS alternative to DigitalOcean Managed Databases, Amazon RDS & Aiven that lets you run PostgreSQL, MySQL, MariaDB, MongoDB, Valkey and Redis, from a single node to a highly available cluster with automatic failover, point-in-time backups and TLS, on your own servers.",
+          "language": "PHP",
+          "topics": [
+            "database",
+            "dbaas",
+            "high-availability",
+            "laravel",
+            "mariadb",
+            "mongodb",
+            "mysql",
+            "postgresql"
+          ],
+          "stars": 130,
+          "forks": 21,
+          "open_issues": 1,
+          "starGain": 8,
+          "heat": 8,
+          "heatBasis": "snapshot",
+          "heatPercentile": 81,
+          "ageDays": 17,
+          "created_at": "2026-11-06T05:53:39Z",
+          "pushed_at": "2026-11-22T17:54:41Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 69.6,
+          "breakdown": {
+            "heat": 81,
+            "community": 39,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open-source, self-hostable DBaaS alternative to DigitalOcean Managed Databases, Amazon RDS & Aiven.\n\nAn open-source, self-hostable DBaaS alternative to DigitalOcean Managed Databases, Amazon RDS & Aiven that lets you run PostgreSQL, MySQL, MariaDB, MongoDB, Valkey and Redis, from a single node to a highly available cluster with automatic failover, point-in-time backups and TLS, on your own servers.\n\n- MySQL 8.4 and 9.7, MariaDB 10.11, 11.4, 11.8 and 12.3, PostgreSQL 15 to 18, MongoDB 7.0, 8.0 and 9.0, Valkey 7, 8 and 9, Redis 7.2 and 8 - A single primary, or a cluster with standbys, automatic failover and read-only nodes - Hostnames on your own domain and TLS everywhere - Connection pools, users, metrics, logs and email alerts - Migrations from an existing database - Automatic updates in a weekly maintenance window - Servers over SSH, or created on DigitalOcean, Hetzner, Vultr or Linode - Plugins for more DNS providers, server providers and community database engines",
+            "features": [
+              "MySQL 8.4 and 9.7, MariaDB 10.11, 11.4, 11.8 and 12.3, PostgreSQL 15 to 18, MongoDB 7.0, 8.0 and 9.0, Valkey 7, 8 and 9, Redis 7.2 and 8",
+              "A single primary, or a cluster with standbys, automatic failover and read-only nodes",
+              "Hostnames on your own domain and TLS everywhere",
+              "Connection pools, users, metrics, logs and email alerts",
+              "Migrations from an existing database",
+              "Automatic updates in a weekly maintenance window",
+              "Servers over SSH, or created on DigitalOcean, Hetzner, Vultr or Linode",
+              "Plugins for more DNS providers, server providers and community database engines"
+            ],
+            "sections": [
+              "Features",
+              "Engines",
+              "Installation",
+              "Development"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3940
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "pierridotite/mobile-agent-testers",
+          "owner": "pierridotite",
+          "name": "mobile-agent-testers",
+          "url": "https://github.com/pierridotite/mobile-agent-testers",
+          "homepage": "",
+          "description": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
+          "language": "Python",
+          "topics": [
+            "accessibility-testing",
+            "ai-agents",
+            "ai-testing",
+            "android",
+            "android-emulator",
+            "claude",
+            "claude-code",
+            "e2e-testing"
+          ],
+          "stars": 562,
+          "forks": 60,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 192.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 6,
+          "created_at": "2026-11-16T19:11:44Z",
+          "pushed_at": "2026-11-23T00:06:16Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 77.2,
+          "breakdown": {
+            "heat": 94,
+            "community": 51,
+            "activity": 70,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 12,
+            "ai": 21,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners.\n\nNo test scripts to write. Each tester is a Claude Code agent with its own iOS Simulator or Android emulator on GitHub Actions. It plays a persona (iPhone SE in Swedish at the largest text size, Pixel 7 at 200%, iPad in German, Arabic right to left...), uses your app like a new user (or runs through the feature you point it at) and writes a bug report with screenshots. Flutter, React Native, Expo, native Kotlin and Swift, Kotlin Multiplatform, Capacitor and .NET MAUI.\n\nGitHub's runners are free for public repos. You only pay for the model, with your Claude subscription or API key: about $0.15 to $0.55 per phone in these runs.",
+            "features": [
+              "Explore like new users (the default). Each persona tries to reach its goal and reports what gets in the way, with numbered screenshots.",
+              "Run one feature end to end. Your own brief sends every agent through a whole mechanic: a booking in several steps, an editor with undo, a sy",
+              "Reproduce a bug report on every phone: give an issue or the steps, and each agent answers yes, no or unclear, with screenshots (briefs/repro",
+              "Get an improvement report. Each persona uses the app once, then says where it hesitated, what it expected and what to change first, by area ",
+              "Compare two versions. The same personas on two branches or builds, then one table: goals reached, actions, scores, issues seen on one versio",
+              "Use a cheaper model : Claude Haiku, or any Anthropic-compatible API (OpenRouter, DeepSeek, Kimi, GLM, MiniMax, Qwen). The findings are only ",
+              "Personas set the device: model, OS, font size, dark mode, language, location.",
+              "Three tools per agent : see the screen (with tap coordinates), gestures, typing."
+            ],
+            "sections": [
+              "mobile-agent-testers",
+              "What it does",
+              "Applied examples",
+              "Quick start",
+              "Why not Maestro, Appium or agent-device?",
+              "Test your own app",
+              "How it works",
+              "Limits",
+              "FAQ",
+              "Do 20 agents just find the same bug 20 times?",
+              "How much does it cost?",
+              "How long does a run take?",
+              "Do I need a Mac?",
+              "Will two runs give the same result?"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 15495
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Chuloo/mural",
+          "owner": "Chuloo",
+          "name": "mural",
+          "url": "https://github.com/Chuloo/mural",
+          "homepage": "https://mural.chat",
+          "description": "The language app you eventually delete. A native iPhone companion for learning through conversation.",
+          "language": "TypeScript",
+          "topics": [
+            "ios",
+            "language-learning",
+            "open-source",
+            "swiftui"
+          ],
+          "stars": 1823,
+          "forks": 357,
+          "open_issues": 42,
+          "starGain": null,
+          "heat": 174.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 72,
+          "created_at": "2026-09-12T11:51:08Z",
+          "pushed_at": "2026-11-21T16:22:49Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.9,
+          "breakdown": {
+            "heat": 93,
+            "community": 63,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Mural is a native iPhone and Android app for learning through conversation. Speak to a warm, animated orb, follow the meaning when you need it, and practise words again in later conversations. Mural adjusts the challenge from the evidence in your replies.\n\nBuilt with SwiftUI and Liquid Glass on iPhone, and Jetpack Compose on Android. Learning records stay on your device. This version connects directly to OpenAI using your own API key. It needs an internet connection, but no Mural account or running Mac.\n\nA native Android client is available in apps/android/ , with voice and written conversation, the same eleven language modules, local learning records and iPhone-compatible JSON backups. Its interface is English, and Spanish on a phone set to Spanish. It runs on Android 8.0 or later and supports Mural minutes or your own OpenAI API key stored with Android Keystore. The iPhone client remains available below.",
+            "features": [
+              "Clone Chuloo/mural, or download its ZIP. Open apps/ios/Mural.xcodeproj .",
+              "In Xcode, open Settings → Accounts and add your Apple Account.",
+              "Select the Mural target, open Signing & Capabilities , enable automatic signing, and choose your team. For your own fork, replace the bundle",
+              "Connect and unlock your iPhone. Trust the Mac if prompted. Turn on Settings → Privacy & Security → Developer Mode on the phone, restart, and",
+              "Select Mural as the scheme and your iPhone as the destination, then click Run . If iOS asks you to trust the developer, do so in Settings → ",
+              "Choose your learning and subtitle languages in the welcome screens. In Settings → Advanced → Use your own API key , save your own OpenAI pro",
+              "A warm welcome: choose a learning language and a subtitle language in two short screens, with a greeting that changes languages.",
+              "Conversation practice: live voice, gentle corrections, optional meaning subtitles, word lookup, mute, and a typed reply when speaking is inc"
+            ],
+            "sections": [
+              "Mural",
+              "Android",
+              "Get started",
+              "Install with a local AI agent",
+              "Install with Xcode",
+              "What works today",
+              "Privacy and API costs",
+              "Planned public service",
+              "Build and test",
+              "Code map",
+              "Dependencies and license"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13254
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "jaywcjlove/awesome-mac",
+          "owner": "jaywcjlove",
+          "name": "awesome-mac",
+          "url": "https://github.com/jaywcjlove/awesome-mac",
+          "homepage": "https://git.io/macx",
+          "description": " This project is dedicated to collecting high-quality macOS software and organizing them systematically by different categories for easy search and use.",
+          "language": "Swift",
+          "topics": [
+            "app",
+            "apple",
+            "application",
+            "apps",
+            "awesome",
+            "awesome-list",
+            "awesome-mac",
+            "desktop-app"
+          ],
+          "stars": 119153,
+          "forks": 10515,
+          "open_issues": 2320,
+          "starGain": 94,
+          "heat": 94,
+          "heatBasis": "trending",
+          "heatPercentile": 77,
+          "ageDays": 3780,
+          "created_at": "2016-07-17T15:33:47Z",
+          "pushed_at": "2026-11-22T12:54:04Z",
+          "license": "CC0-1.0",
+          "rating": 4,
+          "composite": 84.2,
+          "breakdown": {
+            "heat": 77,
+            "community": 95,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Amical - Type with your voice. Press a key and speak naturally. It comes out formatted for whatever app you're in. Local AI models, works offline, free and open source.\n\nEnconvo - An AI agent that works across your Mac It sees your screen, works in your apps, and gets things done.\n\ngetapps.cafe, 60+ native Mac apps across utilities, office, creative, and productivity categories, all running locally so your data never leaves your machine.",
+            "features": [
+              "Awesome Mac",
+              "Contents",
+              "Reading and Writing Tools",
+              "Text Editors",
+              "Office",
+              "Markdown Tools",
+              "Note-taking",
+              "Journaling"
+            ],
+            "sections": [
+              "Contents",
+              "Reading and Writing Tools",
+              "Text Editors",
+              "Office",
+              "Markdown Tools [![Awesome List][awesome-list Icon]](https://",
+              "Note-taking",
+              "Journaling",
+              "Writing",
+              "Ebooks",
+              "RSS",
+              "Others",
+              "Developer Tools",
+              "IDEs",
+              "Developer Utilities"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 372164
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "makecindy/cindy",
+          "owner": "makecindy",
+          "name": "cindy",
+          "url": "https://github.com/makecindy/cindy",
+          "homepage": "https://cindy.app",
+          "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+          "language": "TypeScript",
+          "topics": [
+            "agent",
+            "ai-agent",
+            "ai-assistant",
+            "android",
+            "claude-code",
+            "codex",
+            "electron",
+            "ios"
+          ],
+          "stars": 10413,
+          "forks": 1326,
+          "open_issues": 3658,
+          "starGain": 49,
+          "heat": 49,
+          "heatBasis": "snapshot",
+          "heatPercentile": 69,
+          "ageDays": 123,
+          "created_at": "2026-07-22T17:49:34Z",
+          "pushed_at": "2026-11-23T01:26:50Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 76.7,
+          "breakdown": {
+            "heat": 69,
+            "community": 77,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 10,
+            "ai": 21,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Download Cindy &nbsp;·&nbsp; Website &nbsp;·&nbsp; Build with us &nbsp;·&nbsp; Get help\n\nCindy is an open-source AI agent, ready out of the box and yours to shape . Connect your computers and phone, bring the models and subscriptions you already use, and build a companion that knows how you like to work.\n\nYour work computer, home desktop, laptop and phone belong together.",
+            "features": [
+              "Pick up the same work. Open a session from another device, continue the",
+              "Share more than a screen. Use model providers configured on another",
+              "Reach your whole desktop. Built-in remote desktop on your phone lets you",
+              "Create your own companions. Give them a role, instructions, skills and",
+              "Make experience reusable. Keep useful preferences and knowledge in memory;",
+              "Extend the product. Discover Skills and plugins in SkillHub, connect your",
+              "Help shape Cindy. Audit the code, fork it, improve an interaction, fix a bug,",
+              "Node.js = 22.13 (see engines.node in package.json )"
+            ],
+            "sections": [
+              "All your devices. One Cindy.",
+              "Keep your favorite agents. Get a better way to work.",
+              "Real work, in your actual tools",
+              "Ready from day one. Yours to shape over time.",
+              "Start with what you already have",
+              "For developers",
+              "What's in this repo",
+              "Prerequisites",
+              "Getting started",
+              "Development entry points",
+              "Mainland China Cindy account",
+              "Global Cindy account",
+              "Architecture",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 15472
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "firecrawl/firecrawl",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 2
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "simplexai-labs/linger",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "ForeactLabs/OpenExecutive",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "FlashML-org/FreeVideo",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "n8n-io/nod",
+      "category": "ai",
+      "lastPushed": "2026-11-16",
+      "times": 1
+    },
+    {
+      "full_name": "opensandbox-group/OpenSandbox",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-22",
+    "updated": "2026-11-23",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 108,
-    "publicCount": 48,
+    "count": 118,
+    "publicCount": 57,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -24,7 +24,7 @@
         "id": "topic-stuffing-2026-11",
         "label": "「主题堆砌」引流页面",
         "window": "2026-11-01 — 2026-11-14",
-        "repos": 6,
+        "repos": 8,
         "note": "以 485 B 的 initial.html 与 CONTRIBUTING.md 为主体，无 README 正文与源码目录，零 fork / 零 issue / 无许可证，集中申报与正文无关的技术主题词；同批仓库的创建时间、星标数与主题词组合呈现明显的一致性。11-18 期另发现两个同批换账号重发的仓库，按同一证据口径补录，共 6 个。"
       },
       {
@@ -38,7 +38,8 @@
         "id": "editorial-boundary",
         "label": "收录边界判定",
         "window": "2026-11-17",
-        "note": "以政治、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。"
+        "note": "以政治、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。",
+        "repos": 6
       },
       {
         "id": "installer-wave-2026-11-e",
@@ -46,6 +47,13 @@
         "window": "2026-11-18 — 2026-11-21",
         "repos": 3,
         "note": "三个仓库在 2026-11-18 至 11-21 先后上架，分别以不同商业软件名（Adobe Dreamweaver、Zed、AnyTrans）配合随机后缀作为标题；README 采用逐字相近的居中标题、预览图、安装按钮、徽章组与「Requirements / Features / How it works」章节结构，安装按钮均指向仓库自身的 Pages 页面。仓库标注 TypeScript 或 HTML，src/ 下仅有 69—91 B 的占位源文件，docs/ 或根目录为约 8—66 KB 的落地页，files/ 只存放按钮与预览图，未包含可审阅的源码与构建链。星标 146—151、零 fork、零 issue，附 MIT 许可文件（其中一个未附许可）而内容为第三方商业软件的 Windows 安装入口，申报的 18—20 个主题词含多个与正文无关的方向词。与 11 月上旬起已归集的同类条目在版式与文件结构上高度一致，账号、商品名与创建时间更换而模板未变。"
+      },
+      {
+        "id": "installer-wave-2026-11-f",
+        "label": "「预激活安装包」批量投放（第六波）",
+        "window": "2026-11-21",
+        "repos": 9,
+        "note": "本波次在 2026-11-21 12:30—17:40 的同一时间窗内集中上架，仓库数量达数百个，标题均为不同商业软件名的 Windows 桌面版本；README 版式一致，首屏为预览图、安装按钮与徽章组，安装按钮均指向仓库自身的 Pages 页面；仓库根目录只有 index.html 或 docs/index.html 落地页、按钮与预览图，没有任何源码目录与构建链；星标集中在 337—378、零 fork、零 issue，附许可文件而内容为第三方商业软件的安装入口，申报的十余个主题词含多个与正文无关的方向词。本期按同一证据口径归集其中进入推荐位的九个条目。"
       }
     ]
   },
@@ -7614,6 +7622,636 @@
           "windows-app"
         ]
       }
+    },
+    {
+      "full_name": "Link-script-new/notion-win",
+      "owner": "Link-script-new",
+      "name": "notion-win",
+      "url": "https://github.com/Link-script-new/notion-win",
+      "description": "Notion - productivity and note-taking application for wikis, task management and databases on Windows 10/11",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T16:47:36Z，与同期上架的一组同类条目处于同一数小时窗口内，时间分布较为集中。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "363 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈记录。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库未标注主语言，体积约 182 KB；根目录为 README（9,138 B）、LICENSE（724 B）、CHANGELOG（204 B）与 docs/ 目录，没有 src/ 等源码目录，也未包含可审阅的构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏由预览图、安装按钮（指向仓库自身的 Pages 页面）与徽章组构成，正文以产品功能介绍与系统要求为主，未提供源码结构与构建说明。"
+        },
+        {
+          "type": "metadata",
+          "label": "站点与仓库指向同一落地页",
+          "detail": "仓库主页字段与 README 安装按钮均指向同名 Pages 页面，落地页位于 docs/index.html（23,688 B），与仓库正文互为镜像。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附许可文件而正文描述的是第三方商业软件的 Windows 桌面客户端，许可声明与所分发内容的权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文无关",
+          "detail": "申报 20 个主题词，含 notion setup / notion pro 等下载与营销类长尾词，其中多数技术方向在正文中并未涉及。"
+        },
+        {
+          "type": "content",
+          "label": "版式与既往条目一致",
+          "detail": "居中标题、预览图、安装按钮、徽章组与系统要求章节的结构，与 10 月末以来已归集的一组条目高度相似，仅商品名与账号更换。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
+    },
+    {
+      "full_name": "dillithdillith4-cell/autodesk-cfd",
+      "owner": "dillithdillith4-cell",
+      "name": "autodesk-cfd",
+      "url": "https://github.com/dillithdillith4-cell/autodesk-cfd",
+      "description": "Autodesk CFD Desktop Setup: Full Computational Fluid Dynamics Toolkit",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T13:02:41Z，与同一批条目在数小时内先后创建，命名与版式呈现一致性。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "340 星标、1 个 fork，缺少与星标量级相称的二次开发痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，体积约 355 KB；根目录为 index.html（65,733 B）落地页、README（13,003 B）与 files/ 按钮与预览图，没有源码目录与构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏标题为「Autodesk CFD Desktop Setup」，紧接着是「PowerShell Quick Install」按钮，指向仓库自身的 Pages 页面；正文以产品能力描述为主。"
+        },
+        {
+          "type": "content",
+          "label": "许可徽章与许可文件不一致",
+          "detail": "README 徽章标注 GPL-2.0，而仓库 LICENSE 文件为 MIT 文本，两处声明互相矛盾，权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "同类文本模板",
+          "detail": "居中标题、预览图、安装按钮、徽章组与 Requirements 章节的结构与同批条目一致，仅商品名不同。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文无关",
+          "detail": "申报 13 个主题词，其中 automation / system / utility 等为泛化方向词，正文并未涉及对应技术内容。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
+    },
+    {
+      "full_name": "juniordroid/better-discord-client",
+      "owner": "juniordroid",
+      "name": "better-discord-client",
+      "url": "https://github.com/juniordroid/better-discord-client",
+      "description": "Better Discord Client: Remastered Desktop Experience for Modders",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T13:05:46Z，与同批条目在同一窗口内创建，时间间隔以分钟计。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "340 星标但没有任何 fork。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，体积约 248 KB；根目录为 README（10,781 B）、LICENSE、index.html（16,343 B）与 files/ 目录，没有源码目录与构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏为「PowerShell Setup Button」按钮，指向仓库自身的 Pages 页面；正文以体验描述代替源码与构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附 MIT 许可文件，正文描述的却是第三方聊天客户端的改造版本，许可声明与所分发内容的权利基础无法核对。"
+        },
+        {
+          "type": "metadata",
+          "label": "文件结构缺少可信内容",
+          "detail": ".github/ 下存在命名异常的文件与一个 3.3 KB 的工作流，仓库主体为落地页，未见任何可运行的实现代码。"
+        },
+        {
+          "type": "content",
+          "label": "版式与既往条目一致",
+          "detail": "与同批条目的标题、预览图、按钮与徽章组结构一致，仅商品名与账号更换。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
+    },
+    {
+      "full_name": "Dhruv2710-hub/cellebrite-ufed",
+      "owner": "Dhruv2710-hub",
+      "name": "cellebrite-ufed",
+      "url": "https://github.com/Dhruv2710-hub/cellebrite-ufed",
+      "description": "Cellebrite UFED: Complete Forensic Suite with Full Toolset, Ready to Run",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T13:14:54Z，与同批条目在同一窗口内创建。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "340 星标但没有任何 fork。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，体积约 231 KB；根目录为 README（13,543 B）、index.html（45,025 B）落地页、files/ 按钮与预览图，没有源码目录与构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏为「PowerShell Setup Button」按钮，指向仓库自身的 Pages 页面，正文自述为可离线部署的完整工具集。"
+        },
+        {
+          "type": "content",
+          "label": "许可徽章与许可文件不一致",
+          "detail": "README 徽章标注「license-ruby」，而仓库 LICENSE 文件为 MIT 文本，两处声明互相矛盾。"
+        },
+        {
+          "type": "content",
+          "label": "主题词指向软件分发",
+          "detail": "申报 19 个主题词，含 cellebrite-setup / cellebrite-free 等下载类长尾词，与技术内容无对应关系。"
+        },
+        {
+          "type": "content",
+          "label": "版式与既往条目一致",
+          "detail": "与同批条目使用相同的居中标题、预览图、按钮与徽章组结构。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
+    },
+    {
+      "full_name": "imadstudio/power-bi-pro-win",
+      "owner": "imadstudio",
+      "name": "power-bi-pro-win",
+      "url": "https://github.com/imadstudio/power-bi-pro-win",
+      "description": "Microsoft Power BI Pro - business analytics service for interactive dashboards, data modeling and report sharing on Windows 10/11",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "mobile",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T17:03:24Z，与同批条目处于同一数小时窗口。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "357 星标但没有任何 fork。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库未标注主语言，体积约 205 KB；根目录为 README（10,464 B）、LICENSE（724 B）、CHANGELOG（210 B）与 docs/ 目录，没有源码目录与构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏由预览图、安装按钮（指向仓库自身的 Pages 页面）与徽章组构成，正文以产品功能与系统要求为主。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文无关",
+          "detail": "申报 20 个主题词，含 powerpc / powerwall / powerflow 等与内容无关的词，属批量填充的营销类长尾词。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附许可文件而正文描述的是第三方商业分析软件的 Windows 桌面客户端，权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "版式与既往条目一致",
+          "detail": "与同批条目使用相同的居中标题、徽章组、预览图与 docs/ 落地页结构。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
+    },
+    {
+      "full_name": "aurahamzzz-cyber/microsoft-excel-alvaora",
+      "owner": "aurahamzzz-cyber",
+      "name": "microsoft-excel-alvaora",
+      "url": "https://github.com/aurahamzzz-cyber/microsoft-excel-alvaora",
+      "description": "Automates structured data workflows and spreadsheet task orchestration in Excel.",
+      "language": "Python",
+      "category": "off-topic",
+      "categoryLabel": "主体内容不属技术议题",
+      "sourceCategory": "data",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "internal",
+      "campaign": "topic-stuffing-2026-11",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "仓库主体为空白页面",
+          "detail": "仓库体积约 3 KB，仅有 build.py（508 B）、templates/base.html（202 B）与一条部署工作流，没有可运行的功能实现。"
+        },
+        {
+          "type": "metadata",
+          "label": "缺少项目说明",
+          "detail": "仓库未提供 README 文件，无法从仓库内获知项目用途、用法与结构。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "147 星标但没有任何 fork，也没有任何 issue。"
+        },
+        {
+          "type": "metadata",
+          "label": "缺少许可声明",
+          "detail": "仓库未附许可文件。"
+        },
+        {
+          "type": "metadata",
+          "label": "主题词与正文无关",
+          "detail": "申报 20 个主题词，覆盖数据可视化、数据库、SQL 等多个方向，与仓库内不足 1 KB 的脚本内容不对应。"
+        }
+      ],
+      "verdict": "主体内容不构成可审阅的技术项目，不予收录。"
+    },
+    {
+      "full_name": "Adabi0304/studioonepro7-release",
+      "owner": "Adabi0304",
+      "name": "studioonepro7-release",
+      "url": "https://github.com/Adabi0304/studioonepro7-release",
+      "description": "Studioonepro7 Release: Complete Desktop Suite with All Features Included",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T17:13:14Z，与同一批次在 2026-11-21 午后数小时内先后上架的多个条目处于同一时间窗。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "339 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈记录。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，根目录为 README 与落地页文件，没有 src/ 等源码目录，也未包含可审阅的构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏为预览图、安装按钮与徽章组，安装按钮指向仓库自身的 Pages 页面，正文以产品功能与系统要求为主，未提供源码结构与构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附许可文件而正文描述的是第三方商业软件的 Windows 桌面版本，许可声明与所分发内容的权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "版式与同批条目一致",
+          "detail": "居中标题、预览图、安装按钮、徽章组与系统要求章节的结构，与同批条目高度相似，仅软件名与账号更换。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文无关",
+          "detail": "申报十余个主题词，含多个与正文无关的方向词，属批量填充的营销类长尾词。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
+    },
+    {
+      "full_name": "Urvee003/bloxshade-for-roblox",
+      "owner": "Urvee003",
+      "name": "bloxshade-for-roblox",
+      "url": "https://github.com/Urvee003/bloxshade-for-roblox",
+      "description": "BloxShade for Roblox: Desktop Enhancement Suite with Shader Controls",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T13:07:03Z，与同一批次在 2026-11-21 午后数小时内先后上架的多个条目处于同一时间窗。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "339 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈记录。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，根目录为 README 与落地页文件，没有 src/ 等源码目录，也未包含可审阅的构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏为预览图、安装按钮与徽章组，安装按钮指向仓库自身的 Pages 页面，正文以产品功能与系统要求为主，未提供源码结构与构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附许可文件而正文描述的是第三方商业软件的 Windows 桌面版本，许可声明与所分发内容的权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "版式与同批条目一致",
+          "detail": "居中标题、预览图、安装按钮、徽章组与系统要求章节的结构，与同批条目高度相似，仅软件名与账号更换。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文无关",
+          "detail": "申报十余个主题词，含多个与正文无关的方向词，属批量填充的营销类长尾词。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
+    },
+    {
+      "full_name": "CertificateVerfication/chimera-utility",
+      "owner": "CertificateVerfication",
+      "name": "chimera-utility",
+      "url": "https://github.com/CertificateVerfication/chimera-utility",
+      "description": "Chimera Utility: Unified Desktop Toolchain for System Management and WMI",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T13:16:10Z，与同一批次在 2026-11-21 午后数小时内先后上架的多个条目处于同一时间窗。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "339 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈记录。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，根目录为 README 与落地页文件，没有 src/ 等源码目录，也未包含可审阅的构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏为预览图、安装按钮与徽章组，安装按钮指向仓库自身的 Pages 页面，正文以产品功能与系统要求为主，未提供源码结构与构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附许可文件而正文描述的是第三方商业软件的 Windows 桌面版本，许可声明与所分发内容的权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "版式与同批条目一致",
+          "detail": "居中标题、预览图、安装按钮、徽章组与系统要求章节的结构，与同批条目高度相似，仅软件名与账号更换。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文无关",
+          "detail": "申报十余个主题词，含多个与正文无关的方向词，属批量填充的营销类长尾词。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
+    },
+    {
+      "full_name": "fern84-svg/cinema-4d-desktop",
+      "owner": "fern84-svg",
+      "name": "cinema-4d-desktop",
+      "url": "https://github.com/fern84-svg/cinema-4d-desktop",
+      "description": "Cinema 4D Desktop Alternative Access Tool - Streamlined Setup and Terminal Workflow",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-23",
+      "removedAt": "2026-11-23",
+      "issues": [
+        "2026-11-23"
+      ],
+      "score": null,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间集中在相近窗口",
+          "detail": "仓库创建于 2026-11-21T13:17:19Z，与同一批次在 2026-11-21 午后数小时内先后上架的多个条目处于同一时间窗。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "339 星标但没有任何 fork，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈记录。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，根目录为 README 与落地页文件，没有 src/ 等源码目录，也未包含可审阅的构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码说明",
+          "detail": "README 首屏为预览图、安装按钮与徽章组，安装按钮指向仓库自身的 Pages 页面，正文以产品功能与系统要求为主，未提供源码结构与构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附许可文件而正文描述的是第三方商业软件的 Windows 桌面版本，许可声明与所分发内容的权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "版式与同批条目一致",
+          "detail": "居中标题、预览图、安装按钮、徽章组与系统要求章节的结构，与同批条目高度相似，仅软件名与账号更换。"
+        },
+        {
+          "type": "content",
+          "label": "主题词与正文无关",
+          "detail": "申报十余个主题词，含多个与正文无关的方向词，属批量填充的营销类长尾词。"
+        }
+      ],
+      "verdict": "无源码、仅落地页与安装入口的投放型仓库，已从本期推荐中撤下。"
     }
   ]
 }
