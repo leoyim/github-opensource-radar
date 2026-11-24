@@ -1,0 +1,1867 @@
+{
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T09:39:57.186+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-23",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 899,
+    "unclassified": 72,
+    "selected": 21,
+    "suppressedByHistory": 324,
+    "sameDateExempt": 0,
+    "removed": 1,
+    "removedTotal": 1,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "hyperionaidev/smolmaxxing",
+          "owner": "hyperionaidev",
+          "name": "smolmaxxing",
+          "url": "https://github.com/hyperionaidev/smolmaxxing",
+          "homepage": "https://hyperion-ai.com/products/smolmaxxing",
+          "description": "maxxing the ability to run different LLMs on the smallest devices possible",
+          "language": "C",
+          "topics": [
+            "edge-ai",
+            "llama-cpp",
+            "llama-cpp-alternative",
+            "llm",
+            "local-llm",
+            "local-llm-support",
+            "on-device",
+            "quantization"
+          ],
+          "stars": 1123,
+          "forks": 63,
+          "open_issues": 4,
+          "starGain": null,
+          "heat": 217.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 87,
+          "ageDays": 20,
+          "created_at": "2026-11-04T07:09:41Z",
+          "pushed_at": "2026-11-23T22:43:52Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.8,
+          "breakdown": {
+            "heat": 87,
+            "community": 55,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Run the biggest language model you can on the smallest hardware you own.\n\nTV boxes, old phones and tablets, single-board computers and routers all have a CPU, some RAM and flash storage that sit idle most of the day. smolmaxxing finds the biggest model each of them can really run, then pushes it further with custom kernels, careful memory use and weights streamed from flash. Every number in this repo was measured on the device itself.\n\n📺 Xiaomi TV Box S (3rd Gen) Amlogic S7D, 4× Cortex-A55 1.9 GB RAM (about 1 GB usable) · Android 14, no root Everyday: Qwen3.5-2B at 7.7 tok/s Biggest: Ling-mini-2.0, 16B, at 5.1 tok/s Full results → 📱 iPad Air (2013) Apple A7, 2 cores 1 GB RAM (about 700 MB usable) · iOS 12.5.7, jailbroken Everyday: Bonsai-1.7B (1-bit) at 24-26 tok/s Biggest: Ling-mini-2.0, 16B, at 2.6-4.5 tok/s Full results → 📲 OnePlus Nord CE 2 (2022) MediaTek Dimensity 900, 2× Cortex-A78 + 6× A55 7.4 GB RAM (about 3 GB free) · Android 13, no root Everyday: Qwen3.6-35B-A3B at 4.9-5.7 tok/s Biggest: Qwen3-Next-80B-A3B at 2.6-3.1 tok/s Full results → 📺 BuzzTV XR4500 Amlogic SM1 (S905X3 class), 4× Cortex-A55, 32-bit 2 GB RAM (about 1.3 GB free) · Android 9 (32-bit), no root Everyday: Qwen3-0.6B (Q8 0) at 1.7 tok/s Biggest: Qwen3.5-2B at 0.4 tok/s Full results → 📖 Kindle Paperwhite 3 (2015) NXP i.MX6 SoloLite, 1× Cortex-A9, 32-bit 512 MB RAM (about 440 MB free) · Jailbroken, own Alpine Linux userspace Everyday: SmolLM2-135M at 1.7 tok/s Biggest: Bonsai-4B (1-bit) at 0.03 tok",
+            "features": [
+              "Kernels built for the chip. A 1-bit lookup-table kernel, repacked 2-bit and ternary formats for the Cortex-A55, and versions of them for the",
+              "Less RAM per model. Most of a small model's vocabulary is rarely used, so we drop those output rows. On the TV, a \"headless\" mode also stops",
+              "Experts paged from flash. A mixture-of-experts model only uses a few experts per token. We keep the popular ones in RAM, read the others fro",
+              "Streaming for dense models bigger than RAM, at the flash's full speed.",
+              "TV box or another ARMv8.2 Android device: docs/tv-box-setup.md",
+              "Chat on the TV itself, offline: the SmolChat app starts the model server at every boot and opens the chat from the TV home screen, with no c",
+              "32-bit ARM (armv7) Android device: docs/buzztv-xr4500.md",
+              "Jailbroken iPad on iOS 12: ipad-air/README.md"
+            ],
+            "sections": [
+              "🤏 smolmaxxing",
+              "Eight devices so far",
+              "How it works",
+              "Try it",
+              "Read more",
+              "What's in the repo",
+              "Similar projects",
+              "Star History",
+              "License",
+              "Credits"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13619
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Folkbench/folkbench",
+          "owner": "Folkbench",
+          "name": "folkbench",
+          "url": "https://github.com/Folkbench/folkbench",
+          "homepage": "https://folkbench.com",
+          "description": "AI API 中转站推荐与评测：中转站排行榜、中转站检测、Claude / GPT / Gemini 中转站对比 · AI API relay rankings · Folkbench Switch for Claude Code, Codex & Gemini CLI",
+          "language": "TypeScript",
+          "topics": [
+            "ai-coding",
+            "aider",
+            "api-gateway",
+            "api-relay",
+            "benchmark",
+            "claude",
+            "claude-code",
+            "codex"
+          ],
+          "stars": 3542,
+          "forks": 21,
+          "open_issues": 0,
+          "starGain": 108,
+          "heat": 108,
+          "heatBasis": "snapshot",
+          "heatPercentile": 71,
+          "ageDays": 53,
+          "created_at": "2026-10-02T09:50:45Z",
+          "pushed_at": "2026-11-24T00:25:38Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 68.7,
+          "breakdown": {
+            "heat": 71,
+            "community": 60,
+            "activity": 54,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 43,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Modelflare Modelflare站点是由美国 Havenbyte LLC 运营，支持 GPT、Claude、Gemini、Grok 等主流模型和常用兼容协议，同时也支持 40 多种图片及视频模型。API Key 可以配置有序回退，一把 API Key 可以调用多个模型，Key 还可以设置备用分组，并且从请求日志里能看到状态、延迟、Token 和实际费用。 缓存补偿是这个站的另一个亮点：部分 OpenAI 价格优先、稳定和高级分组分别提供每日 65%、75%、85% 的缓存命中率保障，对于符合条件的api请求如果未达到缓存命中率，平台会给予对应补充。 站点目前也有首次充值解锁特惠分组的活动，单笔充值 US$20 后可解锁 0.015 倍率 GPT 特惠分组，解锁后 GPT-5.6-Sol 的价格大约是 ¥0.51（输入）/ ¥3.01（输出）/每百万 Token，并且没有使用上限限制。单笔充值 US$50 后可解锁 0.03 倍率 Claude 特惠分组。 IKunCode IKunCode对于各个编程工具接入的支持比较好，Claude Code、Codex 和 Gemini CLI 都有单独支持，售后以及咨询渠道渠道做得比较全，官网公开了客服邮箱、QQ 群和 Telegram，人工客服服务贴心，很适合新手上路。 智流 FluxLane 智流 FluxLane 是一个面向开发者与团队的 AI API 网关：提供满血且稳定的全球模型，支持 GPT、Claude、Gemini、Deepseek、GLM 等主流模型和全球主流模型厂商协议，平台提供策略路由与多线路容灾，方便国内团队长期接入与成本核算。面向国内企业/高校采购，可签订合同、对公转账，并提供发票、采购单等材料（具体以商务确认为准），公开模型能力检测报告，倍率低至0.1倍率，新人注册可领 2 美元体验额度。 Sidrune AI 省心用Claude：Claude Max低至1.5折，另有14+Claude API线路，按量计费，支持开票及对公转账。\n\n1. 模型是否降级 ：核对中转站的模型与分组，用相同任务比较回答、长文本处理和工具调用表现；能返回内容不代表模型符合预期。 2. 可用率 ：查看中转站的统计时段与请求数量，同时留意空回复、超时和流式中断，小样本的高可用率不能代表长期表现。 3. 价格倍率 ：比较中转站报价时对齐模型、币种与计价单位，分别看输入、输出和缓存费用，再核对实际扣费。 4. 退款政策 ：先看中转站是否写清退款条件、手续费、处理时间与联系渠道；条款不明确时，先问清再充值。 5. 先小额试用 ：用中转站的最低充值档或试用额度跑自己的常用任务，确认客户端兼容、响应与账单符合需求后再决定用量。\n\n- 不要大额充值 ：按近期用量控制中转站余额，避免为了折扣长期囤款。 - 留意跑路信号 ：中转站突然高额返利、客服长期失联、退款受阻或频繁换域名时，先暂停追加充值并保存交易记录。 - 不要外贴 Key ：向中转站反馈故障或在 GitHub 提交问题时，遮盖 API Key、令牌和含凭据的截图。 - 留意数据去向 ：提交内容会经过中转站；使用前确认数据保留和处理条款，避免发送不必要的敏感资料。",
+            "features": [
+              "模型是否降级 ：核对中转站的模型与分组，用相同任务比较回答、长文本处理和工具调用表现；能返回内容不代表模型符合预期。",
+              "可用率 ：查看中转站的统计时段与请求数量，同时留意空回复、超时和流式中断，小样本的高可用率不能代表长期表现。",
+              "价格倍率 ：比较中转站报价时对齐模型、币种与计价单位，分别看输入、输出和缓存费用，再核对实际扣费。",
+              "退款政策 ：先看中转站是否写清退款条件、手续费、处理时间与联系渠道；条款不明确时，先问清再充值。",
+              "先小额试用 ：用中转站的最低充值档或试用额度跑自己的常用任务，确认客户端兼容、响应与账单符合需求后再决定用量。",
+              "不要大额充值 ：按近期用量控制中转站余额，避免为了折扣长期囤款。",
+              "留意跑路信号 ：中转站突然高额返利、客服长期失联、退款受阻或频繁换域名时，先暂停追加充值并保存交易记录。",
+              "不要外贴 Key ：向中转站反馈故障或在 GitHub 提交问题时，遮盖 API Key、令牌和含凭据的截图。"
+            ],
+            "sections": [
+              "中转站推荐",
+              "AI API 中转站推荐与选站指南",
+              "中转站怎么选",
+              "中转站充值风险",
+              "怎么检测一个中转站有没有降智",
+              "Claude Code / Codex / Gemini CLI 中转站怎么选",
+              "中转站排行榜",
+              "今日公开快照",
+              "Folkbench",
+              "功能入口",
+              "降智监控",
+              "Folkbench Switch",
+              "下载安装",
+              "功能"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 27210
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "SWE-agent/mini-swe-agent",
+          "owner": "SWE-agent",
+          "name": "mini-swe-agent",
+          "url": "https://github.com/SWE-agent/mini-swe-agent",
+          "homepage": "https://mini-swe-agent.com",
+          "description": "The 100 line AI agent that solves GitHub issues or helps you in your command line. Radically simple, no huge configs, no giant monorepo—but scores >74% on SWE-bench verified!",
+          "language": "Python",
+          "topics": [
+            "agent",
+            "agentic-ai",
+            "agentic-ai-cli",
+            "ai",
+            "ai-agent",
+            "textual"
+          ],
+          "stars": 10014,
+          "forks": 1363,
+          "open_issues": 154,
+          "starGain": 45,
+          "heat": 45,
+          "heatBasis": "trending",
+          "heatPercentile": 63,
+          "ageDays": 513,
+          "created_at": "2025-06-28T20:18:15Z",
+          "pushed_at": "2026-11-23T23:02:13Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.3,
+          "breakdown": {
+            "heat": 63,
+            "community": 77,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "📣 mini-swe-agent now powers Ramp SWE-Bench 📣 mini-swe-agent beats Claude Code and Codex on DeepSWE 📣 Run mini-swe-agent on our new & extremely challenging benchmark, ProgramBench 📣 New tutorial on building minimal AI agents\n\nIn 2024, we built SWE-bench & SWE-agent and helped kickstart the coding agent revolution.\n\nWe now ask: What if our agent was 100x simpler, and still worked nearly as well?",
+            "features": [
+              "Widely adopted : Used by Meta, NVIDIA, Essential AI, IBM, Nebius, Anyscale, Princeton University, Stanford University, and many more.",
+              "Minimal : Just some 100 lines of python for the agent class (and a bit more for the environment,",
+              "Performant: Scores 74% on the SWE-bench verified benchmark; starts much faster than Claude Code",
+              "Deployable: Supports local environments , docker/podman , singularity/apptainer , bublewrap , contree , and more",
+              "Compatible: Supports all models via litellm , openrouter , portkey , and more. Support for /completion and /response endpoints, interleaved ",
+              "Built by the Princeton & Stanford team behind SWE-bench, SWE-agent, and more",
+              "Tested:",
+              "Does not have any tools other than bash — it doesn't even need to use the tool-calling interface of the LMs."
+            ],
+            "sections": [
+              "The minimal AI software engineering agent",
+              "Let's get started!",
+              "or",
+              "Attribution"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11082
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "carla-simulator/carla",
+          "owner": "carla-simulator",
+          "name": "carla",
+          "url": "https://github.com/carla-simulator/carla",
+          "homepage": "http://carla.org",
+          "description": "Open-source simulator for autonomous driving research.",
+          "language": "C++",
+          "topics": [
+            "ai",
+            "artificial-intelligence",
+            "autonomous-driving",
+            "autonomous-vehicles",
+            "carla",
+            "carla-simulator",
+            "computer-vision",
+            "cross-platform"
+          ],
+          "stars": 14692,
+          "forks": 4753,
+          "open_issues": 994,
+          "starGain": 16,
+          "heat": 16,
+          "heatBasis": "trending",
+          "heatPercentile": 50,
+          "ageDays": 3318,
+          "created_at": "2017-10-24T09:06:23Z",
+          "pushed_at": "2026-11-23T20:31:53Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 68.8,
+          "breakdown": {
+            "heat": 50,
+            "community": 82,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "CARLA is an open-source simulator for autonomous driving research. CARLA has been developed from the ground up to support development, training, and validation of autonomous driving systems. In addition to open-source code and protocols, CARLA provides open digital assets (urban layouts, buildings, vehicles) that were created for this purpose and can be used freely. The simulation platform supports flexible specification of sensor suites and environmental conditions.\n\nIntel i7 gen 9th - 11th / Intel i9 gen 9th - 11th / AMD Ryzen 7 / AMD Ryzen 9 +32 Gb RAM memory NVIDIA RTX 3070/3080/3090 / NVIDIA RTX 4090 / NVIDIA RTX 5090 or better 16 Gb or more VRAM Ubuntu 22.04 or 24.04, or Windows 11\n\nThe CARLA documentation is hosted on ReadTheDocs. Please see the following key links:",
+            "features": [
+              "Intel i7 gen 9th - 11th / Intel i9 gen 9th - 11th / AMD Ryzen 7 / AMD Ryzen 9",
+              "+32 Gb RAM memory",
+              "NVIDIA RTX 3070/3080/3090 / NVIDIA RTX 4090 / NVIDIA RTX 5090 or better",
+              "16 Gb or more VRAM",
+              "Ubuntu 22.04 or 24.04, or Windows 11",
+              "First steps",
+              "CARLA asset catalogue",
+              "Python API reference"
+            ],
+            "sections": [
+              "Recommended system",
+              "Documentation",
+              "CARLA Ecosystem",
+              "Building CARLA with Unreal Engine 5.8",
+              "Rebuilding CARLA",
+              "CARLA licenses",
+              "CARLA Dependency and Integration licenses"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10343
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "Fei-Craft/DS-Bot",
+          "owner": "Fei-Craft",
+          "name": "DS-Bot",
+          "url": "https://github.com/Fei-Craft/DS-Bot",
+          "homepage": "",
+          "description": "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
+          "language": "JavaScript",
+          "topics": [
+            "bot",
+            "deepseek-harness",
+            "dsh-plugin",
+            "multi-agent"
+          ],
+          "stars": 8792,
+          "forks": 891,
+          "open_issues": 353,
+          "starGain": null,
+          "heat": 1052.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 47,
+          "created_at": "2026-10-07T15:37:36Z",
+          "pushed_at": "2026-11-24T01:35:35Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 85.8,
+          "breakdown": {
+            "heat": 98,
+            "community": 75,
+            "activity": 74,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 95,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "DS Bot is an open-source project built on DeepSeek Harness (DSH), available as a standalone desktop app or as a DSH plugin. It turns DSH into bots that you create, talk to and work with.\n\nModelGo is a reliable, high-performance, enterprise-grade AI API aggregation platform. Access leading AI models—including Claude, OpenAI, Gemini, and DeepSeek—with a single API key. Sign up now and get 40% off DeepSeek V4.1 Flash. Exclusive perks for DS-Bot users: get $0.50 in credits when you sign up, earn another $2 after your first API call, and receive up to $10 in bonus credits when you top up! Try it now: ModelGo Official Website\n\nThe desktop app brings its own DSH, so you don't need to install DSH first. Download the installer for your system from Releases, open it, and set up a model in Settings (it can also copy your existing bot team from DSH).",
+            "features": [
+              "DSH Desktop : In the sidebar, select Plugins → Add plugin , enter ds-bot (in mainland China, set Registry to Mainland China mirror ), then s",
+              "DSH Web (needs Node.js 22.19 or later, and pnpm):",
+              "DeepSeek Harness: DS Bot is built on the DSH plugin system. Every bot works in DSH sessions and uses the DSH tools and models.",
+              "esbuild: bundles the plugin's interface code.",
+              "Thanks to these projects for the ideas they published. DS Bot learned from their designs and does not contain their code:",
+              "AgentMemoryRepo: the Markdown format of Bot memory.",
+              "OpenAI Codex: checkpoints that keep the user's messages next to the summary, and message anchors for chat search.",
+              "OpenMausBot: group chat rounds and @mention relays."
+            ],
+            "sections": [
+              "DS Bot",
+              "Sponsors",
+              "Install",
+              "Setup",
+              "Web search",
+              "Features",
+              "Browser remote (preview)",
+              "MCP access (preview)",
+              "Bot",
+              "Main bot",
+              "Group chats",
+              "Private bot",
+              "Local agents",
+              "Browser"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16952
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "citrolabs/ego-lite",
+          "owner": "citrolabs",
+          "name": "ego-lite",
+          "url": "https://github.com/citrolabs/ego-lite",
+          "homepage": "https://lite.ego.app",
+          "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-agent",
+            "automation",
+            "browser",
+            "browser-automation",
+            "claude-code",
+            "codex",
+            "hermes-agent"
+          ],
+          "stars": 24188,
+          "forks": 1377,
+          "open_issues": 313,
+          "starGain": 150,
+          "heat": 150,
+          "heatBasis": "snapshot",
+          "heatPercentile": 77,
+          "ageDays": 222,
+          "created_at": "2026-04-16T12:51:09Z",
+          "pushed_at": "2026-11-23T12:01:05Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 79.8,
+          "breakdown": {
+            "heat": 77,
+            "community": 82,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 42,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The fastest browser for AI agents to run web automation\n\nEnglish · 简体中文 · 日本語 · 한국어 · Português · Español · Français · Italiano · Русский\n\nego (lite) is a browser where you and your AI agents work in parallel. Your agents run their browser tasks in their own Spaces, isolated workspaces inside the same browser, while you keep browsing in yours, so no agent ever takes the browser away from you. And the automation itself finishes faster, on fewer tokens.",
+            "features": [
+              "Discord, questions, setup help, and skill sharing",
+              "GitHub Discussions, ideas and longer threads",
+              "X/Twitter, updates and releases"
+            ],
+            "sections": [
+              "Demo",
+              "Quick Start",
+              "1. Install",
+              "2. Try your first task",
+              "Highlights of ego lite",
+              "ego lite vs existing products",
+              "Benchmarks",
+              "Docs",
+              "Community",
+              "Star History",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11286
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "agentscope-ai/agentscope",
+          "owner": "agentscope-ai",
+          "name": "agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope",
+          "homepage": "https://docs.agentscope.io/",
+          "description": "Build and run agents you can see, understand and trust.",
+          "language": "Python",
+          "topics": [
+            "agent",
+            "chatbot",
+            "large-language-models",
+            "llm",
+            "llm-agent",
+            "mcp",
+            "multi-agent",
+            "multi-modal"
+          ],
+          "stars": 36560,
+          "forks": 3910,
+          "open_issues": 865,
+          "starGain": 76,
+          "heat": 76,
+          "heatBasis": "trending",
+          "heatPercentile": 66,
+          "ageDays": 1047,
+          "created_at": "2024-01-12T03:41:59Z",
+          "pushed_at": "2026-11-23T11:47:58Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 76.6,
+          "breakdown": {
+            "heat": 66,
+            "community": 87,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 56,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "src=\"https://img.alicdn.com/imgextra/i1/O1CN01nTg6w21NqT5qFKH1u !!6000000001621-55-tps-550-550.svg\" alt=\"AgentScope Logo\" width=\"200\" /\n\nAgentScope 2.0 is a production-ready, easy-to-use agent framework with essential abstractions that keep up with rising model capability.\n\nWe design for increasingly agentic LLMs. Our approach leverages the models' reasoning and tool use abilities rather than constraining them with strict prompts and opinionated orchestrations.",
+            "features": [
+              "[2026-10] FEAT : Voice profile management and voice cloning supported — select saved voices in chat, with DashScope and OpenAI voice cloning",
+              "[2026-10] FEAT Experimental : Agent service supports realtime voice conversations over WebRTC, with text and voice sharing the same session ",
+              "[2026-09] FEAT Experimental : SOP supported — run multi-step tasks as standard operating procedures, in both the framework and agent service",
+              "[2026-09] FEAT : TeamPipeline supported — a leader agent delegates tasks to member agents. Docs",
+              "[2026-09] INTE : MiniMax chat models supported via MiniMaxChatModel (MiniMax-M3 by default).",
+              "[2026-09] FEAT : Model routing supported — use ModelRouterMiddleware to select an appropriate chat model for each reply.",
+              "[2026-09] INTE : Jev classifier model supported through the TypeSafe SDK via JevClassifierModel .",
+              "[2026-09] FEAT : agentscope-skill now supports AgentScope v2."
+            ],
+            "sections": [
+              "What is AgentScope 2.0?",
+              "News",
+              "Community",
+              "Quickstart",
+              "Installation",
+              "Pull the source code from GitHub",
+              "Install the package in editable mode",
+              "Agent",
+              "Agent Service — All You Need to Build Your App",
+              "start the agent service backend",
+              "start the webui",
+              "Contributing",
+              "License",
+              "Publications"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14657
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "erkamyaman/safe-anything",
+          "owner": "erkamyaman",
+          "name": "safe-anything",
+          "url": "https://github.com/erkamyaman/safe-anything",
+          "homepage": "",
+          "description": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
+          "language": "Rust",
+          "topics": [
+            "ai-agents",
+            "claude-code",
+            "claude-code-plugin",
+            "cli",
+            "codex",
+            "cursor",
+            "devsecops",
+            "mcp"
+          ],
+          "stars": 496,
+          "forks": 36,
+          "open_issues": 49,
+          "starGain": null,
+          "heat": 170.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 78,
+          "ageDays": 1,
+          "created_at": "2026-11-22T16:44:10Z",
+          "pushed_at": "2026-11-23T20:22:42Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.3,
+          "breakdown": {
+            "heat": 78,
+            "community": 49,
+            "activity": 86,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 53,
+            "devops": 56,
+            "ai": 100,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "One command finds XSS, SQL injection and other vulnerabilities in your code, leaked secrets, risky mobile and cloud config, vulnerable dependencies, and the AI agent setup that writes it all. Every finding comes with the line, the reason and the fix.\n\nMade in Türkiye 🇹🇷 by erKam Yaman , who also made rust-anything · ❤️ Sponsor me · Sponsored by CodeRabbit\n\nA real run on OWASP Juice Shop and on an agent setup with the usual mistakes (Apple M4). What it finds on other repositories .",
+            "features": [
+              ".gitignore is respected, and node modules , vendor , target , dist , build , virtualenvs",
+              "safe-anything:ignore in a comment silences that line (or the next one).",
+              "In tests, specs and fixtures only real provider keys and private keys count, unless you pass",
+              "uses: erkamyaman/safe-anything@v1.0.2",
+              "uses: github/codeql-action/upload-sarif@v4",
+              "OWASP: the Top 10, the Top 10 for LLM Applications, MASVS, and the",
+              "CWE by MITRE for the weakness ids.",
+              "OSV.dev for the advisory data."
+            ],
+            "sections": [
+              "Quick start",
+              "What it finds",
+              "For AI agents",
+              "In CI",
+              "Measured",
+              "How it works",
+              "Credits",
+              "Sponsors",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14074
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "AhmadHassan-BTed/Jantt",
+          "owner": "AhmadHassan-BTed",
+          "name": "Jantt",
+          "url": "https://github.com/AhmadHassan-BTed/Jantt",
+          "homepage": "https://ahmadhassan-bted.github.io/Jantt/",
+          "description": "Create interactive Gantt charts with AI — no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, React/Vue/Svelte/Python/MCP.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-gantt-chart",
+            "ai-tools",
+            "critical-path",
+            "dag",
+            "data-visualization",
+            "gantt",
+            "gantt-chart",
+            "json"
+          ],
+          "stars": 6240,
+          "forks": 23,
+          "open_issues": 0,
+          "starGain": null,
+          "heat": 532.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 88,
+          "created_at": "2026-08-28T07:32:35Z",
+          "pushed_at": "2026-11-23T11:50:33Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.4,
+          "breakdown": {
+            "heat": 96,
+            "community": 64,
+            "activity": 51,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Simple enough to organize your semester, wedding, or team meeting in 60 seconds. Powerful enough for working-calendar Critical Path analysis, 100,000-task Canvas rendering, and Microsoft Project / Primavera P6 teams.\n\nCreate with AI • Who Uses Jantt • 6 Synced Views • Compare Tools • Free Cloud Sync • Developer Quickstarts • Docs\n\nMost timeline tools force an unfair trade-off: spreadsheets break the moment one date slips, commercial Gantt suites lock basic features behind \\$15–\\$49/user/month paywalls, and asking ChatGPT to code an HTML/Mermaid chart gives you a static, broken picture you cannot drag or update.",
+            "features": [
+              "Describe or Paste Anything in Plain English: Type a goal, paste messy meeting notes, or ask to push deadlines, flag urgent risks, rebalance ",
+              "Review the Visual Diff Preview: Jantt validates the AI's structured output against its strict schema and displays an exact added / updated /",
+              "Apply in One Click: Accept the change with full Undo / Redo support. Dependencies automatically cascade, working days recalculate, and all 6",
+              "Student Thesis & Exams: \"Build a 12-week Master's thesis timeline from literature review to final defense, Monday through Friday only, with ",
+              "Personal Life & Moving: \"Organize a 6-week apartment move with packing rooms, utility transfers, lease handoff, and a budget under \\$2,500.\"",
+              "Team Meeting to Action Plan: \"Turn these meeting notes into a 4-week product launch Gantt chart with owners, dependencies, and urgent blocke",
+              "Live Schedule Surgery: \"Push the QA phase back by 5 working days, mark the security audit urgent, and tell me what just became the bottlenec",
+              "University & Scholarship Pipelines: Track PhD/MS deadlines, GRE/IELTS prep, Statement of Purpose drafts, recommendation letter reminders, an"
+            ],
+            "sections": [
+              "Create Interactive Gantt Charts with AI: No Code Required.",
+              "Simple on the Surface. Rocket Engine Underneath.",
+              "Create and Edit Gantt Charts with AI (Built-In Copilot)",
+              "How It Works in 3 Steps",
+              "Bring Your Own Key (10 Providers) or Run 100% Free & Local",
+              "Try Prompts Like These Right Now",
+              "Built for Everyone: Real-World Use Cases",
+              "Organizing for Students, PhD/MS Applicants & Researchers",
+              "Personal Life Organizers, Freelancers & Everyday Planning",
+              "Meetings, Standups, Agencies & Small Teams",
+              "Engineering Teams & Program Managers",
+              "Developers & Autonomous AI Agents",
+              "One Plan, Six Synchronized Views",
+              "Visual Showcase & Curated Themes"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 41220
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "kubai087/kubai-icons",
+          "owner": "kubai087",
+          "name": "kubai-icons",
+          "url": "https://github.com/kubai087/kubai-icons",
+          "homepage": "https://icons.kubai.design",
+          "description": "An agent skill that draws animated icons in one consistent style, for Claude Code, Codex and other coding agents. Comes with 2,600+ open-source icons for React, Vue and SVG, and a website to browse them.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "animated-icons",
+            "animation",
+            "claude",
+            "claude-skill",
+            "codex",
+            "design-system"
+          ],
+          "stars": 1189,
+          "forks": 55,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 224.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 21,
+          "created_at": "2026-11-03T09:52:39Z",
+          "pushed_at": "2026-11-23T11:14:11Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 78.7,
+          "breakdown": {
+            "heat": 94,
+            "community": 55,
+            "activity": 59,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 31,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An agent skill that draws animated icons in one consistent style. Plus 2,800+ open-source icons drawn with it, for React, Vue and the web.\n\nInstall the skill · Browse the icons · Use them in code · Docs\n\nInstall the Kubai Icons skill for me: clone https://github.com/kubai087/kubai-icons into your skills folder as kubai-icons (~/.claude/skills in Claude Code, ~/.agents/skills in Codex; if it's already there, pull the latest version instead), make sure SKILL.md exists in that folder, and tell me when it's ready.",
+            "features": [
+              "\"Read this repository and draw dynamic icons for its main features.\"",
+              "\"Add a scissors icon and a map icon to this set.\"",
+              "\"We need an icon for Export that matches the others.\"",
+              "\"Give me static SVG files I can drop into Figma.\"",
+              "\"Draw two-tone solid icons for our app's tab bar.\"",
+              "Reads the rules and writes one line per feature: an everyday object and what it does on hover (\"a folder opens\", \"a lock springs open\").",
+              "Draws each icon after the closest existing one, reusing the engine.",
+              "Runs the self-check beside existing icons, compares sizes, outlines, layers and colors, and repeats until every item on the checklist passes"
+            ],
+            "sections": [
+              "What's included",
+              "Install the skill",
+              "Ask for icons",
+              "Two styles",
+              "Use the icons",
+              "How an icon is built",
+              "Reference",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 15449
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Zen-Labs-Corp/hatamoto",
+          "owner": "Zen-Labs-Corp",
+          "name": "hatamoto",
+          "url": "https://github.com/Zen-Labs-Corp/hatamoto",
+          "homepage": "https://hatamoto.dev",
+          "description": "Hatamoto: a fast, secure, self-hosted CMS in Go, with signed WebAssembly plugins and auto-updates",
+          "language": "Go",
+          "topics": [
+            "cms",
+            "go",
+            "golang",
+            "headless-cms",
+            "mcp",
+            "postgres",
+            "self-hosted",
+            "seo"
+          ],
+          "stars": 488,
+          "forks": 11,
+          "open_issues": 5,
+          "starGain": null,
+          "heat": 78.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 28,
+          "created_at": "2026-10-27T03:50:28Z",
+          "pushed_at": "2026-11-24T01:22:13Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 75,
+          "breakdown": {
+            "heat": 90,
+            "community": 46,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 14,
+            "ai": 31,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The batteries-included CMS for the agentic era: builder, SEO, caching, forms, redirects, AI analytics, auto linking, entities, schema, Media optimizer and MCP in one Go binary plus Postgres. Open source, no plugin stack, no PHP, no Node, install stats on by default, one switch to turn them off.\n\nWebsite · Docs · Docs in this repo · Get started · Plugins · Themes · Roadmap · Security\n\ngit clone https://github.com/Zen-Labs-Corp/hatamoto.git && cd hatamoto docker compose up",
+            "features": [
+              "A fast, server-rendered site with a good default theme, a blog and pages.",
+              "A proper blog editor and a visual page editor . Admin guide",
+              "WordPress import that keeps every old URL working, with a URL audit. Move your site",
+              "AI-crawler analytics (which AI read which page, and did it send visitors), llms.txt , JSON-LD and a knowledge graph. AI and SEO",
+              "Sandboxed one-click plugins and themes (WebAssembly), nothing to compile. Plugins, Themes",
+              "An MCP server , so AI agents can write and publish through the CMS. MCP",
+              "Signed releases with automatic updates you control. Updates, docs/UPGRADES.md"
+            ],
+            "sections": [
+              "Get started",
+              "A look around",
+              "Write and build pages",
+              "See who reads your site, people and AI",
+              "Let agents publish through MCP",
+              "Move from WordPress without losing a URL",
+              "Plugins and updates you can trust",
+              "Themes",
+              "Features",
+              "How it fits together",
+              "Run it in production",
+              "Contribute",
+              "Licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13279
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "yannicschuller/flowplan",
+          "owner": "yannicschuller",
+          "name": "flowplan",
+          "url": "https://github.com/yannicschuller/flowplan",
+          "homepage": "https://flowplan.org",
+          "description": "Open-source alternative to Notion and AppFlowy – documents, databases, whiteboards and a daily journal.",
+          "language": "TypeScript",
+          "topics": [
+            "collaboration",
+            "docker",
+            "kanban",
+            "knowledge-base",
+            "markdown",
+            "nextjs",
+            "notion-alternative",
+            "open-source"
+          ],
+          "stars": 198,
+          "forks": 14,
+          "open_issues": 19,
+          "starGain": 36,
+          "heat": 36,
+          "heatBasis": "snapshot",
+          "heatPercentile": 77,
+          "ageDays": 53,
+          "created_at": "2026-10-02T10:34:41Z",
+          "pushed_at": "2026-11-24T01:35:14Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 68.5,
+          "breakdown": {
+            "heat": 77,
+            "community": 41,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Open-source alternative to Notion and Confluence – documents, databases, whiteboards and a daily journal for teams, self-hosted in one container or hosted in Germany.\n\n- At a glance - Quick start · Deploy - Features · Screenshots · How Flowplan compares · Private by design - A closer look: Write · Databases · Flashcards · AI · Whiteboards and journal · Handwriting · Home page · Together - For admins and integrations: architecture, system requirements, security - FAQ - Development - Community: help translate, contributors, star history - Support Flowplan\n\n- Everything in one page tree – documents, databases with eleven views, whiteboards, notebooks for handwriting, a daily journal, projects with tickets and sprints, surveys, workflows and flashcards. - Completely open source under the AGPL-3.0 – no closed enterprise edition, no features behind a licence key. - One container with SQLite – nothing else to run, no external search service. For larger teams optionally PostgreSQL and a cluster of several instances. Or hosted in Germany at app.flowplan.org. - Optional AI – off by default; admins switch it on per feature and per person, completely local with Ollama or with a key for OpenAI, Anthropic, Gemini or any OpenAI-compatible service. You decide which pages it may read. - Private by design – no tracking, permissions down to a single record, two-factor sign-in, encryption of files and backups with your own key. - Your data stays portable – Markdown with frontmatter, CSV and ZIP,",
+            "features": [
+              "At a glance",
+              "Quick start · Deploy",
+              "Features · Screenshots · How Flowplan compares · Private by design",
+              "A closer look: Write · Databases · Flashcards · AI · Whiteboards and journal · Handwriting · Home page · Together",
+              "For admins and integrations: architecture, system requirements, security",
+              "Development",
+              "Community: help translate, contributors, star history",
+              "Support Flowplan"
+            ],
+            "sections": [
+              "Demo · Docs · Install",
+              "Contents",
+              "At a glance",
+              "Quick start",
+              "edit .env: at least APP URL (optionally OIDC and SMTP )",
+              "Deploy",
+              "Features",
+              "Screenshots",
+              "How Flowplan compares",
+              "Private by design",
+              "Write and think",
+              "Organise with databases",
+              "Learn with flashcards",
+              "AI, optional"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 49144
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "SXP-Simon/Panache",
+          "owner": "SXP-Simon",
+          "name": "Panache",
+          "url": "https://github.com/SXP-Simon/Panache",
+          "homepage": "https://heliannuits.me/Panache/",
+          "description": "Panache turns text, equations, tables, and circuit diagrams into handwritten pages.",
+          "language": "Dart",
+          "topics": [
+            "flutter",
+            "handwriting-converter",
+            "handwriting-generator",
+            "handwriting-simulator",
+            "rust"
+          ],
+          "stars": 376,
+          "forks": 60,
+          "open_issues": 1,
+          "starGain": 262,
+          "heat": 262,
+          "heatBasis": "snapshot",
+          "heatPercentile": 95,
+          "ageDays": 54,
+          "created_at": "2026-09-30T13:59:31Z",
+          "pushed_at": "2026-11-23T19:10:30Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 76.7,
+          "breakdown": {
+            "heat": 95,
+            "community": 48,
+            "activity": 55,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 85,
+            "ai": 30,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Panache turns text, equations, tables, and circuit diagrams into handwritten pages. Import a document, choose a handwriting font, and lay it out on a paper template or a photo of your own stationery. Export a single page as PNG or the whole document as a PDF or ZIP of images.\n\nImport TXT, DOCX, PDF, or RTF, or paste text directly. Preview the document, then select handwriting to move it, adjust the ink, or align it with the lines on the paper.\n\nDownload Panache · Write your first page · Self-host the web app",
+            "features": [
+              "Thanks to 14790897/handwriting-web for the original project that inspired Panache.",
+              "Thanks to AnxForever’s StyleKit for the Art Nouveau guide that inspired the workbench’s floral motifs and curves.",
+              "Thanks to HakimYu for the Flutter and Rust migration, and to everyone who has contributed to Panache."
+            ],
+            "sections": [
+              "Panache",
+              "Demo video",
+              "The workbench",
+              "Local MCP for AI clients",
+              "Contributing",
+              "License",
+              "Acknowledgments"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3870
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "morainedb/moraine",
+          "owner": "morainedb",
+          "name": "moraine",
+          "url": "https://github.com/morainedb/moraine",
+          "homepage": "https://morainedb.github.io/",
+          "description": "Run DuckLake entirely in object storage, no server required. A SlateDB-backed catalog, as a DuckDB extension and a Rust crate.",
+          "language": "Rust",
+          "topics": [
+            "duckdb",
+            "duckdb-extension",
+            "ducklake",
+            "lakehouse",
+            "object-storage",
+            "rust",
+            "slatedb"
+          ],
+          "stars": 42,
+          "forks": 0,
+          "open_issues": 2,
+          "starGain": null,
+          "heat": 2.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 77,
+          "ageDays": 138,
+          "created_at": "2026-07-09T06:31:00Z",
+          "pushed_at": "2026-11-23T23:06:53Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 63.1,
+          "breakdown": {
+            "heat": 77,
+            "community": 24,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Run DuckLake entirely in object storage, no server required. Documentation: .\n\nDuckLake stores table data as Parquet files in object storage and hosts its catalog in a SQL database: SQLite, Postgres, or DuckDB (served over Quack). The database layer provides transactional consistency and ACID guarantees, but requires hosting an additional server.\n\nMoraine removes the need for a separate catalog database. Instead, it serves the catalog from SlateDB, an embedded transactional key-value store that also lives in object storage. That means that the catalog resides in the same bucket as the data files. In addition, Moraine is the only DuckLake extension that offers DuckDB native indexes for faster querying.",
+            "features": [
+              "No catalog server: No catalog server to deploy or monitor. The only",
+              "Nothing to pay for while idle: An idle lake costs only storage, no",
+              "Bucket durability: The catalog is objects in the bucket, so it inherits",
+              "Indexed lookups: Ordered indexes over table columns, created with",
+              "Sub-5 ms commits. A commit is durable once one write-ahead-log PUT",
+              "Many independent writer processes. One process writes; the rest",
+              "INSTALL moraine FROM community . The listing is in progress. Until",
+              "Getting started: how to"
+            ],
+            "sections": [
+              "Moraine",
+              "What you get",
+              "When not to use Moraine",
+              "By the numbers",
+              "Status",
+              "More details",
+              "In this repository",
+              "Versioning",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7029
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "pithings/unkernel",
+          "owner": "pithings",
+          "name": "unkernel",
+          "url": "https://github.com/pithings/unkernel",
+          "homepage": "https://unkernel.dev",
+          "description": "A real Linux kernel, compiled to WebAssembly. It boots to a shell in less than a second.",
+          "language": "TypeScript",
+          "topics": [],
+          "stars": 1359,
+          "forks": 69,
+          "open_issues": 20,
+          "starGain": null,
+          "heat": 360.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 11,
+          "created_at": "2026-11-12T22:06:00Z",
+          "pushed_at": "2026-11-24T01:30:32Z",
+          "license": "GPL-2.0",
+          "rating": 4,
+          "composite": 82.4,
+          "breakdown": {
+            "heat": 98,
+            "community": 57,
+            "activity": 77,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 47,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A real Linux kernel, compiled to WebAssembly. It boots to a shell in less than a second.\n\nTry it · Performance · Features · CLI · How it works · Benchmarks · JavaScript SDK\n\nunkernel is Linux 7.x built as a single wasm module with a real MMU. The kernel (syscalls, scheduler, memory management, ext4, TCP/IP) is compiled code, not emulated, so programs get Linux's own behavior down to the edge cases. Only user programs are emulated: unmodified aarch64 (arm64) Linux binaries, so Alpine and Debian packages run as they are.",
+            "features": [
+              "Boot : the kernel reaches /init about 70 ms after it starts, and the Alpine",
+              "Syscalls at close to native cost : getppid takes about 170 ns (110",
+              "fork at native speed : fork + exit + wait takes about 60 µs, against",
+              "A JIT for user code : hot aarch64 code, including the AES, PMULL and",
+              "A real MMU ( arch/wasm with Sv48 page tables): fork , mmap ,",
+              "Linux's own file systems : ext4, overlayfs, tmpfs, loop devices, FUSE,",
+              "Linux's own TCP/IP stack , with DHCP and DNS, reaching the internet",
+              "cgroups, namespaces, userfaultfd, fanotify and TUN : enough for"
+            ],
+            "sections": [
+              "⚡ Performance",
+              "🐧 A real kernel",
+              "🧰 What you can do with it",
+              "🌐 Try it in the browser",
+              "💻 Run it from the terminal",
+              "🔍 How it works",
+              "📊 Benchmarks",
+              "🚧 Known limits",
+              "🧩 Use it from JavaScript",
+              "Add a network",
+              "Add disks",
+              "Console and lifecycle",
+              "Run programs",
+              "Mount host files"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 33559
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "ImageMagick/ImageMagick",
+          "owner": "ImageMagick",
+          "name": "ImageMagick",
+          "url": "https://github.com/ImageMagick/ImageMagick",
+          "homepage": "https://imagemagick.org",
+          "description": "ImageMagick is a free, open-source software suite for creating, editing, converting, and displaying images. It supports 200+ formats and offers powerful command-line tools and APIs for automation, scripting, and integration across platforms.",
+          "language": "C",
+          "topics": [
+            "command-line-image-tool",
+            "digital-image-editing",
+            "image-conversion",
+            "image-manipulation",
+            "image-processing",
+            "imagemagick",
+            "mastering-digital-image-alchemy",
+            "open-source-software"
+          ],
+          "stars": 17922,
+          "forks": 1712,
+          "open_issues": 206,
+          "starGain": 11,
+          "heat": 11,
+          "heatBasis": "trending",
+          "heatPercentile": 56,
+          "ageDays": 4208,
+          "created_at": "2015-05-17T20:07:50Z",
+          "pushed_at": "2026-11-24T00:40:45Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 70.5,
+          "breakdown": {
+            "heat": 56,
+            "community": 81,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "ImageMagick® is a free and open-source software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file formats, including JPEG, PNG, GIF, TIFF, and PDF.\n\nImageMagick is widely used in industries such as web development, graphic design, and video editing, as well as in scientific research, medical imaging, and astronomy. Its versatile and customizable nature, along with its robust image processing capabilities, make it a popular choice for a wide range of image-related tasks.\n\nImageMagick includes a command-line interface for executing complex image processing tasks, as well as APIs for integrating its features into software applications. It is written in C and can be used on a variety of operating systems, including Linux, Windows, and macOS.",
+            "features": [
+              "Animation: non-linear, edge-preserving, and noise-reducing smoothing filter.",
+              "Bilateral Blur: non-linear, edge-preserving, and noise-reducing smoothing filter.",
+              "Color management: accurate color management with color profiles or in lieu of-- built-in gamma compression or expansion as demanded by the c",
+              "Color thresholding force all pixels in the color range to white otherwise black.",
+              "Command-line processing utilize ImageMagick from the command-line.",
+              "Complex text layout bidirectional text support and shaping.",
+              "Composite: overlap one image over another.",
+              "Connected component labeling: uniquely label connected regions in an image."
+            ],
+            "sections": [
+              "ImageMagick",
+              "What is ImageMagick?",
+              "Features and Capabilities",
+              "News"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11514
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "zephyrproject-rtos/zephyr",
+          "owner": "zephyrproject-rtos",
+          "name": "zephyr",
+          "url": "https://github.com/zephyrproject-rtos/zephyr",
+          "homepage": "https://docs.zephyrproject.org",
+          "description": "Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.",
+          "language": "C",
+          "topics": [
+            "bluetooth",
+            "bluetooth-le",
+            "embedded",
+            "embedded-c",
+            "iot",
+            "mcu",
+            "microcontroller",
+            "real-time"
+          ],
+          "stars": 17175,
+          "forks": 10557,
+          "open_issues": 5050,
+          "starGain": 7,
+          "heat": 7,
+          "heatBasis": "trending",
+          "heatPercentile": 51,
+          "ageDays": 3833,
+          "created_at": "2016-05-26T17:54:19Z",
+          "pushed_at": "2026-11-23T23:51:12Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 70.5,
+          "breakdown": {
+            "heat": 51,
+            "community": 85,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.rst",
+            "excerpt": "The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind.\n\nThe Zephyr OS is based on a small-footprint kernel designed for use on resource-constrained systems: from simple embedded environmental sensors and LED wearables to sophisticated smart watches and IoT wireless gateways.\n\nThe Zephyr kernel supports multiple architectures, including ARM (Cortex-A, Cortex-R, Cortex-M), Intel x86, ARC, Tensilica Xtensa, and RISC-V, SPARC, MIPS, and a large number of supported boards .",
+            "features": [],
+            "sections": [],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4438
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "ivall/xcl",
+          "owner": "ivall",
+          "name": "xcl",
+          "url": "https://github.com/ivall/xcl",
+          "homepage": "https://discord.gg/yB5tstRHrn",
+          "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+          "language": "Rust",
+          "topics": [
+            "d3d12",
+            "gdk",
+            "rdna2",
+            "xbox"
+          ],
+          "stars": 3070,
+          "forks": 361,
+          "open_issues": 229,
+          "starGain": null,
+          "heat": 1052.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 3,
+          "created_at": "2026-11-20T20:03:21Z",
+          "pushed_at": "2026-11-24T01:15:00Z",
+          "license": "GPL-2.0",
+          "rating": 4.5,
+          "composite": 89.8,
+          "breakdown": {
+            "heat": 100,
+            "community": 66,
+            "activity": 91,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "XCL runs Xbox Series X S (GDK) game files on a Windows PC without CPU emulation : the game's x64 code runs natively and XCL stands in for the console libraries the PC does not have ( kernelx.dll , XGameRuntime, d3d12 xs.dll , …) – in the spirit of Wine/Proton. The console's GPU code (RDNA2 machine code) is recompiled into PC shaders (HLSL → DXIL).\n\nProject state: retail games run – Minecraft Preview and Unicorn Overlord are fully playable, Fortnite and XDefiant work as far as each game goes without its online services; see Games. The foundation is tested against real data from retail games (shader packs, texture archives, movies and the console DLLs they ship). Details, measurements and next steps: HANDOFF.md ; design: docs/specs/2026-11-20-xcl-design.md .\n\n- 100 % of a retail game's shaders translate – all 26 698 RDNA2 programs (26 503 records) of its shader pack become HLSL; random samples compile to DXIL with 0 errors. - The game's own console DLLs run on the PC – its Bink 2 video codec decodes the game's movies, its ray-tracing BVH builder builds acceleration structures on a PC GPU, the AMD FSR 4 console upscaler runs a whole frame on a PC GPU, the GDK HTTP library initialises. - Console textures decode exactly – the GFX10 tiling and mip layout reproduce 909 of 912 textures of the game's texture archive byte for byte, its volume textures included. - 370+ automated tests , including GPU tests that compare translated shaders against expected results instruction by instructi",
+            "features": [
+              "100 % of a retail game's shaders translate – all 26 698 RDNA2 programs (26 503 records) of its shader pack",
+              "The game's own console DLLs run on the PC – its Bink 2 video codec decodes the game's",
+              "Console textures decode exactly – the GFX10 tiling and mip layout reproduce 909 of 912",
+              "370+ automated tests , including GPU tests that compare translated shaders against expected",
+              "Gamepad: any controller Windows sees through XInput (Xbox controllers, wired or wireless) is the",
+              "Keyboard and mouse work too, as a gamepad: WASD the left stick, the mouse the right stick, mouse",
+              "dxil.dll , looked up in Windows Kits\\10\\bin\\ \\x64 , next to xcl.exe or in",
+              "DXC: 1.8 or newer is recommended, from the"
+            ],
+            "sections": [
+              "XCL – Xbox Series X S → Windows compatibility layer",
+              "Games",
+              "Highlights",
+              "What works",
+              "Running the game's code",
+              "System services",
+              "Graphics",
+              "Media and tools",
+              "Controls",
+              "Building and usage",
+              "Tests",
+              "Licenses"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13852
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "torrentplayer/torrentplayer",
+          "owner": "torrentplayer",
+          "name": "torrentplayer",
+          "url": "https://github.com/torrentplayer/torrentplayer",
+          "homepage": "https://torrentplayer.io",
+          "description": "Stream any torrent, video or audio, and skip to any moment in about a second. Free, open-source desktop app for Windows, macOS and Linux. No servers, no accounts, no telemetry.",
+          "language": "Rust",
+          "topics": [
+            "audio-player",
+            "bittorrent",
+            "cross-platform",
+            "desktop-app",
+            "media-player",
+            "p2p",
+            "rust",
+            "streaming"
+          ],
+          "stars": 979,
+          "forks": 37,
+          "open_issues": 11,
+          "starGain": null,
+          "heat": 140.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 90,
+          "ageDays": 34,
+          "created_at": "2026-10-20T19:44:10Z",
+          "pushed_at": "2026-11-24T00:45:40Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.1,
+          "breakdown": {
+            "heat": 90,
+            "community": 53,
+            "activity": 63,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 14
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Stream at the speed of the swarm. Movies, shows, music, podcasts, audiobooks: any torrent starts in seconds and skips to any moment in under a second, straight from the swarm. No servers, no accounts, no limits.\n\ntorrentplayer.io · Why TorrentPlayer · Compare · Features · Performance · Privacy · Get it · Discord\n\nSearch, play, skip. GIF shown at normal speed. Original real-time demo with sound (MP4, 35 s) . Sintel and Tears of Steel © Blender Foundation, CC BY 3.0.",
+            "features": [
+              "Stream it. Skip it. Instantly. Most torrent players download from the start and make you",
+              "Full speed, limited only by the swarm. Video comes directly from the people sharing it.",
+              "No servers, no dependencies. There is no TorrentPlayer streaming server, cloud cache, or",
+              "None of the usual limits. No subscription, ads, watch-time limits, quality caps, storage",
+              "Private by design. No telemetry, analytics, or crash reporting. Built-in WireGuard and SOCKS5,",
+              "Free and open source, every part of it, including the streaming engine. MIT or",
+              "TorrentPlayer's own engine ( torrentplayer-swarm ), written for playback rather than bulk",
+              "Finds peers fast. HTTP and UDP trackers, the DHT, and peer exchange, with quick first"
+            ],
+            "sections": [
+              "Why TorrentPlayer",
+              "How it compares",
+              "Features",
+              "Streaming built for skipping",
+              "A queue that downloads ahead, intelligently",
+              "A player for video and audio",
+              "Find and organize",
+              "Network and privacy controls",
+              "Performance",
+              "Privacy",
+              "Get TorrentPlayer",
+              "Installing on Linux",
+              "Building from source",
+              "Documentation"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 26771
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "gelenmedya/rustyfiles",
+          "owner": "gelenmedya",
+          "name": "rustyfiles",
+          "url": "https://github.com/gelenmedya/rustyfiles",
+          "homepage": "https://rustyfiles.com",
+          "description": "A fast file manager for Windows and macOS that never freezes: tabs, dual panes, archives as folders, Quick Look-style previews. A File Explorer and Finder alternative written in Rust.",
+          "language": "Rust",
+          "topics": [
+            "archive-manager",
+            "desktop-app",
+            "dual-pane",
+            "explorer-alternative",
+            "file-browser",
+            "file-explorer",
+            "file-manager",
+            "fluent-design"
+          ],
+          "stars": 569,
+          "forks": 41,
+          "open_issues": 148,
+          "starGain": null,
+          "heat": 122.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 88,
+          "ageDays": 16,
+          "created_at": "2026-11-07T19:58:59Z",
+          "pushed_at": "2026-11-23T23:55:13Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.4,
+          "breakdown": {
+            "heat": 88,
+            "community": 50,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English · 简体中文 · 繁體中文 · 日本語 · Deutsch · Español · Português (Brasil) · Русский · Türkçe\n\nA file manager that never waits on the disk. Tabs, dual panes, archives that open like folders and a preview on Space . Written from scratch in Rust, for Windows and now macOS.\n\nNever waits on the disk Listing, icons, thumbnails, the context menu and every copy run off the window's thread. A slow network share or a folder of 100,000 files can't freeze it. Explorer's work, done faster Tabs, dual panes, archives as folders, a name index for instant search, bulk rename, undo, and its own copy engine: 14 times faster on small files. Free and yours No account, no ads, nothing sent anywhere. MIT licensed, every line here to read. Updates install quietly in the background.",
+            "features": [
+              "Browsing. Tabs you can drag out into a window, saved sessions, dual pane, Details, grid, list",
+              "Files. Undo and redo, bulk rename, folder sizes on demand, disk usage with a treemap, the full",
+              "Archives. ZIP, 7z, RAR, tar and ISO open like folders; ZIP, 7z and tar can be edited inside.",
+              "Search. A name index of your drives, and quick search ( Alt + Space ) for",
+              "Windows. Optionally the default file manager, including Win + E and other",
+              "49 languages , following the system's.",
+              "Encrypted end to end (QUIC with TLS 1.3), straight from device to device: no server, no account,",
+              "Pair your devices the way you pair Bluetooth: both show the same six-digit code. A paired device's"
+            ],
+            "sections": [
+              "How fast",
+              "What it does",
+              "DirectLook",
+              "Ferry",
+              "HyperDownload",
+              "Experimental on Windows: HyperGlass, the Dock and the deskto",
+              "macOS (beta)",
+              "Install",
+              "Under the hood",
+              "Status",
+              "Listed on",
+              "Thanks",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 29857
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "k2-fsa/sherpa-onnx",
+          "owner": "k2-fsa",
+          "name": "sherpa-onnx",
+          "url": "https://github.com/k2-fsa/sherpa-onnx",
+          "homepage": "https://k2-fsa.github.io/sherpa/onnx/index.html",
+          "description": "Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD using next-gen Kaldi with onnxruntime without Internet connection. Support embedded systems, Android, iOS, HarmonyOS, Raspberry Pi, RISC-V, RK NPU, Axera NPU, Ascend NPU, x86_64 servers, websocket server/client, support 12 programming languages",
+          "language": "C++",
+          "topics": [
+            "aarch64",
+            "android",
+            "arm32",
+            "asr",
+            "cpp",
+            "csharp",
+            "dotnet",
+            "ios"
+          ],
+          "stars": 16176,
+          "forks": 1914,
+          "open_issues": 670,
+          "starGain": 70,
+          "heat": 70,
+          "heatBasis": "trending",
+          "heatPercentile": 81,
+          "ageDays": 1545,
+          "created_at": "2022-09-01T05:47:33Z",
+          "pushed_at": "2026-11-23T08:14:07Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.5,
+          "breakdown": {
+            "heat": 81,
+            "community": 81,
+            "activity": 72,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 21,
+            "devops": 10,
+            "ai": 18,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- Pre-built Flutter demo apps: [flutter releases][flutter-releases]\n\n- Pre-built Tauri demo apps: [tauri releases][tauri-releases]\n\nThis repository supports running the following functions locally",
+            "features": [
+              "Pre-built Flutter demo apps: [flutter releases][flutter-releases]",
+              "Pre-built Tauri demo apps: [tauri releases][tauri-releases]",
+              "Speech-to-text (i.e., ASR); both streaming and non-streaming are supported",
+              "Text-to-speech (i.e., TTS)",
+              "Speaker diarization",
+              "Speaker identification",
+              "Speaker verification",
+              "Spoken language identification"
+            ],
+            "sections": [
+              "Supported functions",
+              "Supported platforms",
+              "Supported programming languages",
+              "Supported frameworks",
+              "Supported NPUs",
+              "Introduction",
+              "Links for Huggingface Spaces",
+              "Links for pre-built Android APKs",
+              "Links for pre-built Flutter APPs",
+              "Links for pre-built Lazarus APPs",
+              "Links for pre-trained models",
+              "Useful links",
+              "How to reach us",
+              "Projects using sherpa-onnx"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 61591
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "firecrawl/firecrawl",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 2
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "simplexai-labs/linger",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "deeplethe/utopia",
+      "category": "ai",
+      "lastPushed": "2026-11-23",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "FlashML-org/FreeVideo",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "bendlang/bend",
+      "category": "ai",
+      "lastPushed": "2026-11-23",
+      "times": 1
+    },
+    {
+      "full_name": "janhq/jan",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "opensandbox-group/OpenSandbox",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "google-research/paper-orchestra",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

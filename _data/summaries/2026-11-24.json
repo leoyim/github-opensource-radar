@@ -1,0 +1,86 @@
+{
+  "hyperionaidev/smolmaxxing": {
+    "summary_zh": "把「这台设备到底能跑多大的模型」逐台测出来的边缘推理工程，C 实现、MIT、上线 20 天、1,123 星。仓库主体是五台设备的实测矩阵：小米 TV Box S（1.9 GB 内存）、iPad Air 2013（1 GB）、一加 Nord CE 2、BuzzTV XR4500、Kindle Paperwhite 3（512 MB）。做法是自研内核 + 精细内存管理，并把模型权重从 flash 流式读取，因此 1 GB 可用内存的电视盒子上也能跑起 16B 的 Ling-mini-2.0（5.1 tok/s）；日常档则是 Qwen3.5-2B 的 7.7 tok/s。每项数字都标注了设备规格与量化格式，可直接对照复现。",
+    "highlight_zh": "看点是把「小设备能跑多大」变成可复现的对照表：flash 读带宽、可用内存、散热这些参数之外的工程约束第一次被量化。要注意 16B 靠流式装载，首 token 延迟远高于稳态吞吐；数字强依赖具体闪存速度，同型号不同批次会有差异。"
+  },
+  "Folkbench/folkbench": {
+    "summary_zh": "把「AI API 中转站」当作可比对象做横向评测的站点型项目，TypeScript、3,542 星、上线 53 天、日增 108。README 给出五条可逐项核对的评估口径（模型是否降级、可用率统计时段、价格倍率是否对齐币种与输入/输出/缓存、退款条款、先小额试用），另附四条使用守则（不囤大额、识别跑路信号、不外贴 Key、留意数据去向），并配套面向 Claude Code / Codex / Gemini CLI 的切换工具 Folkbench Switch。",
+    "highlight_zh": "真正有用的是那五条口径——把「哪家中转站靠谱」这种口碑问题拆成清单。需注意 README 正文大段为各站的介绍性文案，评测方法与样本量未在仓库披露，排行榜应视为线索而非结论；提交内容会经过第三方中转，敏感数据不宜发送。"
+  },
+  "SWE-agent/mini-swe-agent": {
+    "summary_zh": "用约 100 行 Python 复现「能解 GitHub issue」的编码 agent，10,014 星、513 天、MIT，日增 45 上 Trending。v2 版本把 agent 类压到百行量级，环境、模型、运行脚本各自独立可替换；README 称在 SWE-bench verified 上超过 74%，启动速度明显快于 Claude Code，并已被 Ramp SWE-Bench 采用、在 DeepSWE 上超过 Claude Code 与 Codex。项目出自 SWE-bench 与 SWE-agent 的原班团队，定位是「框架越堆越厚时的那条下限基线」。",
+    "highlight_zh": "价值在于给出复杂度参照：100 行能到 74%，说明多数 agent 框架的厚度并非性能来源。要注意成绩强依赖 harness 与评分口径，换 benchmark 子集不可直接比；v2 与 v1 接口不兼容需按迁移指南切换；514 个 issue 里相当比例是上手问题。"
+  },
+  "carla-simulator/carla": {
+    "summary_zh": "自动驾驶研究的开源仿真器，C++、MIT、14,692 星、约 9 年，日增 16。它从零为自动驾驶的开发、训练与验证而建，除代码与协议外还提供为仿真专门制作的开放数字资产（城市布局、建筑、车辆），可自由使用；传感器套件与环境条件都支持灵活配置。README 给出的门槛是 RTX 3070 起、16 GB 显存、Ubuntu 22.04/24.04 或 Windows 11，服务端与客户端分离，文档托管在 ReadTheDocs。",
+    "highlight_zh": "它是这个领域少见的「长期维护 + 开放资产」组合，仍是公共底座。要注意渲染与物理开销大，核显基本不可用；版本间 API 有破坏性变更，旧教程容易错配；仿真到实车的域差异仍是核心未解问题。"
+  },
+  "Fei-Craft/DS-Bot": {
+    "summary_zh": "把 DeepSeek Harness 变成「一群可长期存活的 bot」的项目，JavaScript、Apache-2.0、8,792 星、上线 47 天，fork 891、issue 353。形态有两种：独立桌面应用，或作为 DSH 插件；桌面版自带 DSH 运行时，无需先装宿主，也能从既有 DSH 团队导入配置。核心能力是主 bot + bot 间消息 + 群聊，把多角色长期协作放进宿主层，而不是在应用层拼装。",
+    "highlight_zh": "它补的是宿主层缺的「多角色长期协作」这一块。评估时注意 README 中段是第三方 API 聚合平台的推广段落，与功能无关可跳过；353 个 issue 说明多 bot 编排的边界情况仍多；bot 数量增加时 token 消耗非线性上升。"
+  },
+  "citrolabs/ego-lite": {
+    "summary_zh": "给 agent 单独开「工作空间」的浏览器，JavaScript、MIT、24,188 星、222 天，日增 150。隔离单位不是进程而是「Space」——同一浏览器内的隔离工作区，agent 在自己的 Space 里跑自动化，人在自己的标签里照常浏览，互不打断；同时可以把已登录的浏览器状态共享给 Codex、Claude Code 这类 agent，零配置启动。项目称自动化本身也更快、消耗更少 token。",
+    "highlight_zh": "方向是对的：把 agent 的操作空间与人的操作空间在浏览器内部切开。但共享登录态是双刃剑——等于把账户权限交给 agent，一旦被提示注入即可越权。「更快更省 token」属项目自述，需在自有任务上复测；分发走自有 CDN，供应链要自行核验。"
+  },
+  "agentscope-ai/agentscope": {
+    "summary_zh": "面向「越来越像 agent 的模型」重写的生产级 agent 框架，2.0 版，Python、Apache-2.0、36,560 星、约 3 年，日增 76 上 Trending。它的取舍很明确：不加严格 prompt 与固定编排去约束模型，而是利用模型自身的推理与工具调用能力，框架只提供必要的抽象与边界；配套多 agent、多模态、MCP 支持，以及以「看得见、能理解、可信任」为目标的可观测能力，对应论文 arXiv 2402.14034。",
+    "highlight_zh": "值得借鉴的是把「约束」从 prompt 层撤到编排层。2.0 与 1.x 抽象变动较大，旧代码需重写编排；865 个 issue 集中在分布式与多模态路径；文档分散在多个站点，接入前要核对版本对应关系。"
+  },
+  "erkamyaman/safe-anything": {
+    "summary_zh": "一条命令扫代码缺陷、泄露密钥、依赖 CVE 与 agent 配置的 Rust 安全扫描器，MIT、496 星、上线 1 天即 36 fork / 49 issue，已上 crates.io 与 npm。覆盖 XSS、SQL 注入等注入类问题，移动与云配置风险，依赖漏洞（对接 OSV），以及 AI agent 的配置本身（例如 .mcp.json 里硬编码的 token）；共 74 条规则，每条命中都给出所在行、判定原因与修复建议，另有 Claude Code 插件与 GitHub Action 两种接入形态。",
+    "highlight_zh": "增量在最后一项——把 agent 的配置与凭据当资产来扫，这是随 agent 自动写代码新长出来的暴露面。1 天新仓 + 49 个 issue，误报漏报都未稳定；高速单文件扫描对跨文件数据流分析有限，不能替代深度 SAST。"
+  },
+  "AhmadHassan-BTed/Jantt": {
+    "summary_zh": "声明式 JSON 驱动的甘特图引擎，TypeScript、MIT、6,240 星、上线 88 天，核心运行时依赖只有 fflate 一个。它针对三个具体痛点：表格做排期一改日期就全乱、商业甘特套件把关键功能锁在 15–49 美元/人/月、让 LLM 生成 HTML/Mermaid 图得到不可拖拽的静态图。能力上提供 6 种联动视图、工作日历下的关键路径计算、10 万任务级 Canvas 渲染，以及 BYOK 的 AI Copilot（10 家服务商 + Ollama），并有 React/Vue/Svelte/Python/MCP 多入口。",
+    "highlight_zh": "关键设计是「AI 只产出声明式 JSON」——生成与渲染解耦，换模型不影响既有数据，比让模型直接画图务实。注意 88 天 6,240 星且零 issue 的比例偏热，热度可持续性待观察；复杂依赖关系仍需人工校正。"
+  },
+  "kubai087/kubai-icons": {
+    "summary_zh": "让编码 agent 按同一套规则「画」图标的技能包，JavaScript、1,189 星、上线 21 天。它把风格一致性写成 SKILL.md 里的规则、生成引擎与自检步骤，agent 交出一份产品描述，就能画出该产品需要的图标，并靠反复看自己的截图收敛；同时附带 2,800+ 个用同一手法绘制的开源图标（近 900 个基础物件，另有带标记与禁用的变体），输出 React、Vue、Web Components 与静态 SVG，检索站点支持 16 种语言、可按名称/形状/语义搜索。",
+    "highlight_zh": "有意思的不是图标数量，而是把「设计规范」写成 agent 可执行的规则加自检回路——这才是技能包该有的形态。注意效果强依赖模型的多模态能力（README 明示以 Claude Opus 5.5 开发与盲测）；生成需多轮截图自检，token 成本不低。"
+  },
+  "Zen-Labs-Corp/hatamoto": {
+    "summary_zh": "一个 Go 二进制 + Postgres 撑起的自托管 CMS，Apache-2.0、488 星、上线 28 天。它的做法是把通常拆成一堆插件的能力全部内建：可视化页面构建器（桌面/平板/手机三档预览）、SEO、缓存、表单、重定向、AI 分析、自动内链、实体与 schema 建模、媒体优化，以及供 agent 操作的 MCP 接口；插件体系改为签名的 WebAssembly，在沙箱里运行并支持自动更新。启动方式是 docker compose（连带 Postgres），或用二进制指向自有数据库。",
+    "highlight_zh": "取舍清晰：用「内建 + WASM 沙箱」换掉插件生态的复杂度，收益是运维面小、代价是生态薄。README 明示安装统计默认开启，自托管场景应第一时间关闭并核对外联；28 天新仓，插件与升级路径都还薄。"
+  },
+  "yannicschuller/flowplan": {
+    "summary_zh": "一个容器 + SQLite 起步的 Notion / Confluence 替代品，TypeScript、AGPL-3.0、198 星、上线 53 天，日增 36。功能面很宽：文档、11 种视图的数据库、白板、手写笔记本、日记、项目与工单迭代、问卷、工作流、flashcards，全部挂在同一棵页面树上；部署默认单容器 + SQLite，规模上去可切 PostgreSQL 与多实例集群。可选 AI 默认关闭，可按功能与按人开启，支持本地 Ollama 或自带 Key；权限细化到单条记录，2FA 与文件/备份加密，导出为 Markdown + frontmatter、CSV 与 ZIP。",
+    "highlight_zh": "定位准确：先用一个容器解决大部分知识库需求，把复杂度留到真正需要时；导出口径是对抗锁定最实在的一张牌。198 星 + 19 issue 属早期项目，数据模型仍可能变，升级前务必备份；AGPL-3.0 对服务化有约束。"
+  },
+  "SXP-Simon/Panache": {
+    "summary_zh": "把手写体排版做成工具：文本、公式、表格与电路图都能排到手写纸上，Dart/Flutter + Rust、AGPL-3.0、376 星、上线 54 天，日增 262 居本期首位。可导入 TXT、DOCX、PDF、RTF 或直接粘贴，选好手写字体后铺到纸张模板上，也可以拍一张自己的文具照片当底；选中笔迹能拖动、调墨迹浓淡、与纸张横线对齐，单页导出 PNG、整篇导出 PDF 或图片 ZIP。桌面端还内置本地 MCP 服务器，可让 AI 客户端直接生成版面。",
+    "highlight_zh": "把「自拍一张纸当模板」作为对齐基准是聪明设计——绕开纸张规格库，直接把真实拍摄条件纳入排版；MCP 入口让这条链路可被 agent 调用。注意 iOS 端需自行编译，跨端体验不一致；所谓手写本质仍是字体渲染，笔迹随机性有限。"
+  },
+  "morainedb/moraine": {
+    "summary_zh": "让 DuckLake 的目录也住进对象存储，从而彻底不需要单独目录数据库的项目，Rust、Apache-2.0、42 星、上线 138 天。DuckLake 本身把表数据存 Parquet、目录存 SQL 数据库（SQLite/Postgres/DuckDB），后者虽提供 ACID，却要额外托管一个服务；Moraine 改用 SlateDB——一个同样落在对象存储里的嵌入式事务 KV——承载目录，于是目录与数据文件同桶。它也是目前唯一为 DuckLake 提供 DuckDB 原生索引的扩展，以 DuckDB extension 与 Rust crate 双形态发布。",
+    "highlight_zh": "解决的是「最后一步还得起个库」这个具体摩擦。42 星的小项目生产验证极少；对象存储延迟会让目录操作慢一个量级，需实测；嵌入式 KV 的故障恢复路径与 Postgres 不同，运维经验不可直接套用。"
+  },
+  "pithings/unkernel": {
+    "summary_zh": "把真实 Linux 内核编译成单个 WebAssembly 模块的工程，TypeScript、GPL-2.0、1,359 星、上线 11 天。它不做全系统模拟：内核（syscall、调度、内存管理、ext4、TCP/IP）是编译出来的代码、带真实 MMU，只有用户态程序走解释——未修改的 aarch64 Linux 二进制，因此 Alpine 与 Debian 的包可以直接跑。性能数字很具体：约 70 ms 到达 /init、0.3 秒出 Alpine 提示符、getppid 约 170 ns、fork+exit+wait 约 60 µs，热 aarch64 代码还能 JIT 成 wasm。",
+    "highlight_zh": "思路反直觉但有效——内核编成 wasm、只把用户态交给解释器，收益直接体现在启动与 syscall 上。11 天 1,359 星属高热度早期项目，接口与镜像格式都可能变；JIT 只覆盖热点路径；GPL-2.0 对分发有传染性，嵌入商业产品需评估。"
+  },
+  "ImageMagick/ImageMagick": {
+    "summary_zh": "二十年不变的图像处理底座，C、17,922 星、约 11.5 年，日增 11。它覆盖 200 多种格式的创建、编辑、合成与转换，提供 convert / mogrify 等命令行工具与 C API，各语言生态几乎都有绑定，因此仍是 CI 与内容流水线里最通用的那一个。格式能力靠 delegate 外挂（如 Ghostscript 处理 PDF/PS），策略文件可限制危险格式与资源占用。",
+    "highlight_zh": "价值是「不用选型」——批处理图像时它通常是默认答案。但图像解析历来是内存破坏漏洞高发区，把不可信输入交给它时必须跟进版本并放进沙箱；delegate 会引入外部程序，攻击面超出自身代码；策略文件默认宽松，需按业务收紧。"
+  },
+  "zephyrproject-rtos/zephyr": {
+    "summary_zh": "面向资源受限设备的多架构实时操作系统，C、Apache-2.0、17,175 星、约 10.5 年，10,557 fork。它支持 ARM（Cortex-A/R/M）、x86、ARC、Xtensa、RISC-V、SPARC、MIPS 等架构与大量板卡，内核可裁剪到传感器级别，内置蓝牙/BLE、网络与安全子系统；配置走设备树 + Kconfig，构建走 CMake + west。作为基金会治理的项目，它把「跨芯片家族复用」做成了构建系统级能力。",
+    "highlight_zh": "它把嵌入式的可移植从口号变成工程能力，代价是概念密度高（Kconfig + devicetree + west 三套叠加）。5,050 个 open issue 说明上游评审队列长，定制补丁的维护成本需自担；高度可配置意味着没有「默认性能」，数字都要自己测。"
+  },
+  "ivall/xcl": {
+    "summary_zh": "在 Windows 上原生跑 Xbox Series 游戏的兼容层，Rust、GPL-2.0、3,070 星、上线仅 3 天，fork 361、issue 229。它走 Wine/Proton 路线而非整机模拟：游戏的 x64 代码直接执行，缺的主机系统库（kernelx.dll、XGameRuntime、d3d12_xs.dll 等）由自己实现，主机的 RDNA2 机器码重编译为 HLSL 再到 DXIL。实测口径包括某零售游戏 26,698 个着色器 100% 翻译、纹理平铺与 mip 布局 912 张中 909 张逐字节还原、370+ 自动化测试含 GPU 对照；Minecraft Preview 与 Unicorn Overlord 已可完整游玩。",
+    "highlight_zh": "技术选择值得注意——放弃 CPU 模拟，把工作量压到系统库与着色器两条线，这才让「原生速度」成立。但样本仍窄，在线服务相关功能普遍不可用；3 天 3,070 星、229 个 issue，热度远跑在覆盖面之前；GPL-2.0 + 主机逆向的法律边界需自行评估。"
+  },
+  "torrentplayer/torrentplayer": {
+    "summary_zh": "把种子当流媒体播的桌面应用，Rust、MIT 或 Apache-2.0 双许可、979 星、上线 34 天。任意种子秒级起播，跳到任意时间点不到一秒，电影、剧集、音乐、播客、有声书都适用；Windows、macOS、Linux 三端，无账号、无服务器、无遥测，队列在后台下载的同时前台可播放。工程重点是按播放位置调度分片优先级，让解码器永远拿到接下来要用的那一段。",
+    "highlight_zh": "决定体验的不是下载速度而是分片调度——播放位置驱动的优先级队列比堆带宽更有效。要接受的前提是：秒开依赖 swarm 热度，冷门资源承诺不成立；无服务器设计让隐私面小，但把可用性问题全留给了 swarm。"
+  },
+  "gelenmedya/rustyfiles": {
+    "summary_zh": "用 Rust 从零写的文件管理器，MIT、569 星、上线 16 天，fork 41、issue 148。核心主张是主线程永不阻塞：列目录、图标、缩略图、右键菜单、复制全部离开窗口线程，因此慢速网络盘或十万文件的目录也不会把界面冻住。功能上有标签页、双栏、把压缩包当文件夹打开、空格预览、名称索引即时搜索、批量重命名与撤销，以及自研复制引擎（小文件场景快约 14 倍），目前覆盖 Windows 与 macOS。",
+    "highlight_zh": "抓的是最容易被忽视的体验根源——把阻塞 I/O 搬离 UI 线程。这类「重写系统工具」的项目成败最终看边缘情况（权限、符号链接、中断恢复）而非主路径速度；16 天 148 个 issue，稳定性仍在爬坡，暂不宜直接替代日常文件管理。"
+  },
+  "k2-fsa/sherpa-onnx": {
+    "summary_zh": "离线语音全家桶，C++、Apache-2.0、16,176 星、约 4 年，日增 70。基于新一代 Kaldi + onnxruntime，把十余项语音任务收敛到一套跨平台二进制：语音识别、语音合成、声源分离、说话人识别/分离/验证、语种识别、音频打标、VAD、关键词唤醒、标点恢复、语音增强、强制对齐。平台覆盖 Android、iOS、Windows、macOS、Linux、HarmonyOS，并支持 RISC-V 与多类 NPU；提供 12 种语言绑定与 WebAssembly，另有 Flutter 与 Tauri 预编译示例。",
+    "highlight_zh": "竞争力不在单项精度，而在部署广度——一套 C++ 覆盖十余项任务且落到 NPU 与鸿蒙。代价是模型与二进制分开分发，版本错配是最常见故障；端侧性能强依赖 CPU 指令集与量化选择，需按目标设备实测。"
+  }
+}
