@@ -31,10 +31,6 @@
     "summary_zh": "一条命令扫代码缺陷、泄露密钥、依赖 CVE 与 agent 配置的 Rust 安全扫描器，MIT、496 星、上线 1 天即 36 fork / 49 issue，已上 crates.io 与 npm。覆盖 XSS、SQL 注入等注入类问题，移动与云配置风险，依赖漏洞（对接 OSV），以及 AI agent 的配置本身（例如 .mcp.json 里硬编码的 token）；共 74 条规则，每条命中都给出所在行、判定原因与修复建议，另有 Claude Code 插件与 GitHub Action 两种接入形态。",
     "highlight_zh": "增量在最后一项——把 agent 的配置与凭据当资产来扫，这是随 agent 自动写代码新长出来的暴露面。1 天新仓 + 49 个 issue，误报漏报都未稳定；高速单文件扫描对跨文件数据流分析有限，不能替代深度 SAST。"
   },
-  "AhmadHassan-BTed/Jantt": {
-    "summary_zh": "声明式 JSON 驱动的甘特图引擎，TypeScript、MIT、6,240 星、上线 88 天，核心运行时依赖只有 fflate 一个。它针对三个具体痛点：表格做排期一改日期就全乱、商业甘特套件把关键功能锁在 15–49 美元/人/月、让 LLM 生成 HTML/Mermaid 图得到不可拖拽的静态图。能力上提供 6 种联动视图、工作日历下的关键路径计算、10 万任务级 Canvas 渲染，以及 BYOK 的 AI Copilot（10 家服务商 + Ollama），并有 React/Vue/Svelte/Python/MCP 多入口。",
-    "highlight_zh": "关键设计是「AI 只产出声明式 JSON」——生成与渲染解耦，换模型不影响既有数据，比让模型直接画图务实。注意 88 天 6,240 星且零 issue 的比例偏热，热度可持续性待观察；复杂依赖关系仍需人工校正。"
-  },
   "kubai087/kubai-icons": {
     "summary_zh": "让编码 agent 按同一套规则「画」图标的技能包，JavaScript、1,189 星、上线 21 天。它把风格一致性写成 SKILL.md 里的规则、生成引擎与自检步骤，agent 交出一份产品描述，就能画出该产品需要的图标，并靠反复看自己的截图收敛；同时附带 2,800+ 个用同一手法绘制的开源图标（近 900 个基础物件，另有带标记与禁用的变体），输出 React、Vue、Web Components 与静态 SVG，检索站点支持 16 种语言、可按名称/形状/语义搜索。",
     "highlight_zh": "有意思的不是图标数量，而是把「设计规范」写成 agent 可执行的规则加自检回路——这才是技能包该有的形态。注意效果强依赖模型的多模态能力（README 明示以 Claude Opus 5.5 开发与盲测）；生成需多轮截图自检，token 成本不低。"

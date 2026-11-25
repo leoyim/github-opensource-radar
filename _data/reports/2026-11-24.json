@@ -8,7 +8,7 @@
   "stats": {
     "candidates": 899,
     "unclassified": 72,
-    "selected": 21,
+    "selected": 20,
     "suppressedByHistory": 324,
     "sameDateExempt": 0,
     "removed": 1,
@@ -681,92 +681,6 @@
       "accent": "#0ea5e9",
       "desc": "框架、构建工具、UI 组件与浏览器端运行时",
       "items": [
-        {
-          "rank": 1,
-          "full_name": "AhmadHassan-BTed/Jantt",
-          "owner": "AhmadHassan-BTed",
-          "name": "Jantt",
-          "url": "https://github.com/AhmadHassan-BTed/Jantt",
-          "homepage": "https://ahmadhassan-bted.github.io/Jantt/",
-          "description": "Create interactive Gantt charts with AI — no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, React/Vue/Svelte/Python/MCP.",
-          "language": "TypeScript",
-          "topics": [
-            "ai-gantt-chart",
-            "ai-tools",
-            "critical-path",
-            "dag",
-            "data-visualization",
-            "gantt",
-            "gantt-chart",
-            "json"
-          ],
-          "stars": 6240,
-          "forks": 23,
-          "open_issues": 0,
-          "starGain": null,
-          "heat": 532.6,
-          "heatBasis": "velocity",
-          "heatPercentile": 96,
-          "ageDays": 88,
-          "created_at": "2026-08-28T07:32:35Z",
-          "pushed_at": "2026-11-23T11:50:33Z",
-          "license": "MIT",
-          "rating": 4,
-          "composite": 80.4,
-          "breakdown": {
-            "heat": 96,
-            "community": 64,
-            "activity": 51,
-            "maturity": 100
-          },
-          "roleScores": {
-            "all": 100,
-            "frontend": 100,
-            "backend": 15,
-            "devops": 10,
-            "ai": 30,
-            "data": 15
-          },
-          "readme": {
-            "path": "README.md",
-            "excerpt": "Simple enough to organize your semester, wedding, or team meeting in 60 seconds. Powerful enough for working-calendar Critical Path analysis, 100,000-task Canvas rendering, and Microsoft Project / Primavera P6 teams.\n\nCreate with AI • Who Uses Jantt • 6 Synced Views • Compare Tools • Free Cloud Sync • Developer Quickstarts • Docs\n\nMost timeline tools force an unfair trade-off: spreadsheets break the moment one date slips, commercial Gantt suites lock basic features behind \\$15–\\$49/user/month paywalls, and asking ChatGPT to code an HTML/Mermaid chart gives you a static, broken picture you cannot drag or update.",
-            "features": [
-              "Describe or Paste Anything in Plain English: Type a goal, paste messy meeting notes, or ask to push deadlines, flag urgent risks, rebalance ",
-              "Review the Visual Diff Preview: Jantt validates the AI's structured output against its strict schema and displays an exact added / updated /",
-              "Apply in One Click: Accept the change with full Undo / Redo support. Dependencies automatically cascade, working days recalculate, and all 6",
-              "Student Thesis & Exams: \"Build a 12-week Master's thesis timeline from literature review to final defense, Monday through Friday only, with ",
-              "Personal Life & Moving: \"Organize a 6-week apartment move with packing rooms, utility transfers, lease handoff, and a budget under \\$2,500.\"",
-              "Team Meeting to Action Plan: \"Turn these meeting notes into a 4-week product launch Gantt chart with owners, dependencies, and urgent blocke",
-              "Live Schedule Surgery: \"Push the QA phase back by 5 working days, mark the security audit urgent, and tell me what just became the bottlenec",
-              "University & Scholarship Pipelines: Track PhD/MS deadlines, GRE/IELTS prep, Statement of Purpose drafts, recommendation letter reminders, an"
-            ],
-            "sections": [
-              "Create Interactive Gantt Charts with AI: No Code Required.",
-              "Simple on the Surface. Rocket Engine Underneath.",
-              "Create and Edit Gantt Charts with AI (Built-In Copilot)",
-              "How It Works in 3 Steps",
-              "Bring Your Own Key (10 Providers) or Run 100% Free & Local",
-              "Try Prompts Like These Right Now",
-              "Built for Everyone: Real-World Use Cases",
-              "Organizing for Students, PhD/MS Applicants & Researchers",
-              "Personal Life Organizers, Freelancers & Everyday Planning",
-              "Meetings, Standups, Agencies & Small Teams",
-              "Engineering Teams & Program Managers",
-              "Developers & Autonomous AI Agents",
-              "One Plan, Six Synchronized Views",
-              "Visual Showcase & Curated Themes"
-            ],
-            "hasInstall": false,
-            "hasDemo": true,
-            "length": 41220
-          },
-          "guard": {
-            "score": 0.5,
-            "signals": [
-              "noIssues"
-            ]
-          }
-        },
         {
           "rank": 2,
           "full_name": "kubai087/kubai-icons",

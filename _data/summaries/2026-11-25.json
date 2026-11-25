@@ -1,0 +1,86 @@
+{
+  "atuizz/posewear": {
+    "summary_zh": "把 AI 生图的前置环节做成结构化参考图库的项目，JavaScript、MIT、上线 25 天、2,057 星。仓库主体是姿势、服装、人像、表情等 12 类图库，配中英文提示词；姿势卡与深度图成对，同一动作同一机位一面线稿一面深度图，可两面一起喂给生图模型。站内提供悬浮工作台，浏览时点卡片上的 ＋ 收进工作台，攒够组合直接生图，或把整组提示词和图片直链复制走；上传自己的照片可做 AI 试穿对比。另附 MCP server（codex mcp add posewear），可把图库当作 agent 工具接入。",
+    "highlight_zh": "看点是把「生图素材的组织」从临时搜图变成结构化资产：姿势与深度图成对、提示词与素材绑定，组合可复用可分发。要注意图库内容质量与版权归属依赖社区维护，人像类素材商用前需自行确认授权；站内生图依赖外部模型服务，直链复制走的组合没有本地缓存。"
+  },
+  "chenxiachan/textfold": {
+    "summary_zh": "把网页、论文、文件与 AI 回复折叠成五级细节层级再阅读的项目，Python、Apache-2.0、上线 51 天、1,454 星、日增 126。输入侧覆盖网页链接（arXiv、PubMed Central、bioRxiv、medRxiv、Wikipedia、GitHub）与本地文件（PDF、Word、PowerPoint、Excel、EPUB、HTML、CSV、Markdown）；浏览器扩展一键把当前页传给 TextFold。亮点是对 agent 回复的折叠：在 Claude Code 与 Pi 里按层级按键缩放，不需要第二个模型；对外提供 python3 -m textfold get 一次取一个层级的开放格式。",
+    "highlight_zh": "看点是「五级缩放」不是摘要截断：缩放过程中保留下来的词句是逐词滑动的，语义连续性有保证，比「概览 + 原文」两档的方案更适合长文档。要注意折叠质量依赖文档结构解析，纯图片 PDF 与无标题层级的网页退化为线性文本；浏览器扩展与本地应用的长连接在重启后需手动重连。"
+  },
+  "vxcontrol/pentagi": {
+    "summary_zh": "开源自托管的自主渗透测试多智能体系统，Go、MIT、上线 687 天、34,965 星、5,595 fork、日增 84。用户用自然语言描述目标与目的，一组专业分工的 agent 规划任务、在隔离 Docker 沙箱内运行 nmap、Metasploit、sqlmap 等 20 余款专业工具，记录已获情报并输出报告。配套完整：agent 监督层、多实例运行、OAuth 集成、Langfuse 观测、Graphiti 知识图谱；LLM 供应商侧支持 Azure OpenAI、Anthropic、Gemini、Bedrock、DeepSeek、GLM、Kimi、Qwen、Mistral、xAI 等十余家。",
+    "highlight_zh": "看点是「agent 监督」做得比 agent 本身重：子任务派发、结果回收与沙箱边界都有独立模块，适合作为渗透自动化的骨架参考。要注意仅可用于授权范围内的测试；沙箱隔离强度取决于部署方式，公网部署需自行加固；78 个开放 issue 中有工具适配与凭证管理类问题，生产使用前先看对应条目。"
+  },
+  "affaan-m/ECC": {
+    "summary_zh": "面向 agent 编码工具的 harness 性能优化系统，JavaScript、MIT、上线 311 天、310,231 星、45,600 fork、日增 675。仓库把 skills（技能包）、instincts（默认反应）、memory（记忆）、security（边界）与 research-first 开发流程打包成一套可安装的插件体系，支持 Claude Code、Codex、Opencode、Cursor 等主流 CLI。安装走引导式 setup 或原生 plugin 命令，Windows 侧给出 PowerShell 逐步骤指引，装完用 /plugin list 验证 ecc@ecc 生效。",
+    "highlight_zh": "看点是它把「harness 调优」从经验帖变成了可版本管理的配置层：技能、钩子、安全边界各自独立，换底层模型时只动一层。要注意功能面很宽，全量开启会增加每轮 token 开销与钩子延迟；其 Pro 版本与 GitHub App 是商业服务，开源版与 Pro 版的能力边界需对照文档确认，不要混装手动配置与引导安装两套结果。"
+  },
+  "addyosmani/agent-skills": {
+    "summary_zh": "面向 AI 编码 agent 的生产级工程技能库，JavaScript、MIT、上线 282 天、120,216 星、12,498 fork、日增 212。技能按 DEFINE、PLAN、BUILD、VERIFY、REVIEW、SHIP 六阶段组织，对应 /spec、/plan、/build、/test、/review、/ship 六个入口命令；每条技能是 agent 逐步执行的工作流而非参考文档，带步骤、检查点与退出条件。设计上有三个明确约束：反合理化表（列出 agent 常用的跳步借口并逐条堵住）、验证不可协商（每条技能以测试通过、构建产物、运行数据等证据收尾）、渐进披露（SKILL.md 之外的引用按需加载以控制 token）。",
+    "highlight_zh": "看点是「反合理化表」这个设计：把 agent 跳过测试、跳过评审的常见借口逐条写死成禁止项，比单纯强调纪律有效。要注意技能约束的是流程而非代码质量，agent 仍可能产出通过验证但方向错误的实现；技能组合与现有 hooks/CLAUDE.md 叠加时需要去重，避免同一约束两处维护。"
+  },
+  "kaomei/stickman-video-director": {
+    "summary_zh": "把任意脚本交给 AI agent 生成火柴人动画视频的技能包，JavaScript、MIT、上线 114 天、8,084 星、1,416 fork。面向无真人出镜的 YouTube、Shorts 与 TikTok 频道：agent 收到一条消息后完成脚本、分镜、配音、字幕与音效，产出成品视频；内置 16 种实战验证的风格，从黑白线稿到极简科技风，适用科普、心理学、个人成长、商业拆解等讲解型内容。工作流是先审脚本与开头 20 秒带音频预览，批准后 agent 准备素材、逐段动画，不满意可只调该段而保留已批准部分。",
+    "highlight_zh": "看点是「一个 skill 覆盖从脚本到成片的全链路」，且分镜确认前置、局部修改不返工的设计贴近真实制作流程。要注意成片质量依赖外部视频生成服务（文档推荐 Google Flow），不同平台的生成额度与水印规则各不相同；无版权背景音乐与音效的分发范围需逐条核对，商用频道注意配乐授权。"
+  },
+  "INK-Q/agy-fast": {
+    "summary_zh": "Google Antigravity（CLI/Desktop/IDE）的非侵入式 MCP 加速插件，TypeScript、MIT、上线 6 天、1,201 星、32 个 issue。把高频搜索、多语言符号大纲、原子化多文件编辑与构建/测试检查合并成批量本地调用，并在每次会话注入一次 50 ms 以内的工作区快照；实测口径为 agent 轮次 -34%、计费 token 配额 -31%、上行流量 -40%，同会话对照 v0.2.1 有效吞吐 35.1 → 61.5 tok/s，60 秒卡死轮次占比 31.2% → 7.4%。零依赖，不改动 Antigravity 原生 UI、diff 视图、修改文件列表、检查点与安全检查。",
+    "highlight_zh": "看点是把「省 token」做在调用结构层而不是 prompt 层：批量搜索、内联 schema、单次快照，固定开销只有会话开始时约 1.7k token（第二次轮起走缓存）。要注意指标来自作者自己会话的对照样本，不同项目结构的收益差异大；单次内联输出严格限在 8.8 KB 内以避免落盘溢出，超出部分的策略需要读文档确认。"
+  },
+  "nforst/fagus": {
+    "summary_zh": "PHP/Laravel 场景下不带浏览器引擎依赖的 HTML/CSS 转 PDF 组件，Rust 实现、Apache-2.0、上线 11 天、200 星。composer require 即装即用：渲染发生在 Rust 编写的原生引擎里，Composer 按平台下载并做 SHA-256 校验，PHP 侧以常驻 worker 进程复用。渲染目标是对齐 Chrome 的打印效果，现代 CSS（flex、grid、:has()、@property、Tailwind v4）按 Chrome 行为解释；单页发票 worker 热身后约 2.5 ms，十页约 17 ms。内置 PDF/A-1b 至 PDF/A-4、ZUGFeRD/Factur-X 电子发票附件与可访问 PDF（PDF/UA），字体子集嵌入、矢量渐变、书签大纲齐全。",
+    "highlight_zh": "看点是把 Chrome 打印管线用 Rust 重写后以单二进制分发，替换掉 PHP 生态里「起 Docker 跑 Chromium」的重依赖方案，发票场景的 PDF/A-3 + Factur-X 是欧洲合规刚需。要注意它不是完整浏览器：不支持 JavaScript，复杂交互页需先做静态化；引擎覆盖面与 Chrome 差异需用自己的模板实测，冷启动首份文档慢于热身后数字。"
+  },
+  "shader-effects-inc/shaders": {
+    "summary_zh": "把 WebGPU 特效做成框架组件的库，TypeScript、MIT、上线 56 天、6,041 星、285 fork。提供 200+ 声明式特效组件（渐变、噪声、玻璃、金属、光效、扭曲、转场、模糊、光标反馈），可嵌套、混合、遮罩；一套 props 覆盖 React、Vue、Svelte、Solid 与原生 JavaScript 五个入口。配套 shaders.com 上的可视化编辑器：无限画布上设计后直接导出对应框架的组件树代码，另附 CLI 与面向 AI 的接入文档。TypeScript 类型完整、SSR 安全。",
+    "highlight_zh": "看点是「设计器导出代码」闭环：视觉调参不写 GLSL，导出的就是项目里真实运行的组件树，AI 也能按同一份文档改参数。要注意 WebGPU 在 Safari 与旧浏览器的覆盖仍是短板，库按能力降级的策略需确认；免费版与 Pro 版的特效清单边界要分清，避免上线后才发现依赖付费组件。"
+  },
+  "pacewisdomhq/TutorLoom": {
+    "summary_zh": "面向培训机构的多租户自托管学习管理系统，Django + React、Apache-2.0、上线 49 天、103 星。课程按级别、章节、步骤组织（视频、文档、任务、测验），支持前置条件与顺序解锁；学员按时间批次分组，可单个或从 CSV/Excel 批量导入；教练在同一队列审阅提交、按分与文字反馈通过或驳回，进度可导出 Excel。学生端有分步路线图、积分与等级，覆盖 Web 与 Android/iOS。API 侧提供 OpenAPI 3 文档（Swagger UI 与 ReDoc）加 JWT 鉴权。",
+    "highlight_zh": "看点是多租户隔离做在数据层：每条查询按组织过滤， trainer 与学员只见自家数据，一套部署服务多家机构，比常见单租户 LMS 少一层包装。要注意它面向培训与教学场景，没有电商与证书合规模块；部署需自管 Celery worker 与每日分析任务调度，S3 与 SES 配置是生产前置项，移动端是打包壳而非原生应用。"
+  },
+  "namannn04/veronica": {
+    "summary_zh": "Ubuntu 原生桌面控制中心，Rust、GPL-3.0、上线 97 天、1,046 星、176 fork。把 agent 用量、系统工具、媒体控制、剪贴板历史与 GNOME 集成收进一个本地应用，无账号、无遥测、无付费档。要求 Ubuntu 24.04 及以上、x86_64、GNOME Shell 46–50，一条 curl 安装脚本完成部署。",
+    "highlight_zh": "看点是把「agent 用量」作为桌面级常驻信息之一，与剪贴板、媒体同层展示，适合把多个 CLI agent 当日常工具的用户。要注意硬性绑定 GNOME Shell 版本区间，KDE 与 Wayland 之外的环境不可用；剪贴板历史与系统工具的权限面较宽，安装脚本先审一遍再执行。"
+  },
+  "made-in-common/forges": {
+    "summary_zh": "统一 14 个代码托管平台协作接口的 TypeScript 客户端库，MIT、上线 52 天、209 星、37 个 issue。覆盖 GitHub、GitLab、Bitbucket、Forgejo、Gitea、Gitee、Azure DevOps、Sourcehut、GitBucket 等平台，把 issues、pull requests、notifications、checks 与 webhooks 归一到一个数据模型；每个 provider 声明自己支持哪些操作，能力矩阵可查。除协作接口外，还能从 Cloudflare Artifacts 这类只有仓库没有协作层的 Git 主机读内容。",
+    "highlight_zh": "看点是「能力声明」机制：不假装所有平台行为一致，缺什么直接在矩阵里标注，调用方按能力分支而不是按平台分支。要注意 37 个开放 issue 说明平台差异仍在打磨，边角平台的错误语义可能与主流平台不一致；webhook 的载荷差异大，跨平台统一订阅前先核对各家支持范围。"
+  },
+  "maomada/KubeAtlas": {
+    "summary_zh": "自托管 Kubernetes 运维控制台，Go、Apache-2.0、上线 23 天、163 星。采用 Hub/Agent 架构：Hub 集中部署，各集群跑 Agent 建立连接，提供故障工作负载排查（健康、日志、事件、资源变更时间线）、应用与资源依赖图、Helm release 与 Argo CD 检视、容量与成本分析（接 Prometheus 后可做成本分摊）。AI 接入走 MCP，凭证按集群与用户权限授权，客户端只能看到被授权的集群。",
+    "highlight_zh": "看点是 MCP 凭证的集群级授权设计：AI 客户端拿到的不是全集群 token，而是按选中集群与自身权限签发的作用域凭证，给「让 AI 操作 K8s」补上权限边界。要注意项目 23 天、163 星，多集群场景的稳定性未经长期验证；Agent 与 Hub 的连接模型要先读通，升级路径与版本兼容矩阵还在建设中。"
+  },
+  "malisper/pgrust": {
+    "summary_zh": "用 Rust 重写的 Postgres 兼容数据库，AGPL-3.0、上线 219 天、6,052 星、248 fork、日增 20。定位是「为 Postgres 数据做快分析」的即换型替代：与 Postgres 18 保持 wire 协议与 SQL 方言兼容，现有驱动、ORM、psql 与工具无需改动。核心是 Gravity——向量化、push-based、JIT 编译的查询引擎，配线程级并发模型与按机器整体预算的自动内存管理，官方口径为分析负载快于 Postgres 与 ClickHouse。",
+    "highlight_zh": "看点是兼容层做在 wire 协议而不是 fork 补丁上，重写自由度更大：push-based 引擎、线程模型、统一内存预算都是围着分析场景重新设计而非渐进优化。要注意「快于 Postgres 与 ClickHouse」是项目自述，具体负载务必自带数据实测；AGPL-3.0 对服务化部署有开源义务，商用前先把许可算清；219 天的项目，事务与复制等 OLTP 关键路径的成熟度待验证。"
+  },
+  "feder-cr/git-ai": {
+    "summary_zh": "为 AI agent 设计的版本控制系统，Go 实现、上线 41 天、961 星、100 fork。设计对标 Anthropic 内部的 Scion（「为数百个 agent 同时读写与合入代码的服务端中心式系统」，官方博客 Redesigning source control 有完整设计说明）：服务端不调用任何语言模型，所有 AI 特性对供应商中立或完全不用模型。文档覆盖存储核心、landing 与 batching、冲突解决、派生数据、评审与搜索、验证、agent 安全、基准与模糊测试，另附 PLAN1 到 PLAN8 的阶段设计文档。",
+    "highlight_zh": "看点是「服务端中心式」这一分歧点：传统 Git 的对等模型在数百 agent 并发写时会撞车，它把合入、批量与冲突解决上收到服务端，跟 Anthropic 的结论互为印证。要注意项目自称「in the spirit of」，并非 Anthropic 官方或经其背书；许可证文件标注为 NOASSERTION，商用前先确认实际条款；生态尚无迁移工具，现有仓库导入成本要估进去。"
+  },
+  "openai/codex-plugin-cc": {
+    "summary_zh": "OpenAI 官方的 Claude Code 插件：在 Claude Code 里直接调用 Codex 做代码评审或委派任务，JavaScript、Apache-2.0、上线 239 天、35,438 星、2,468 fork、日增 43。命令面覆盖 /codex:review（只读评审）、/codex:adversarial-review（可调控的对抗式评审），以及 /codex:rescue、/codex:transfer、/codex:status、/codex:result、/codex:cancel 一组后台任务与交接命令；依赖 ChatGPT 订阅（含 Free）或 OpenAI API key，用量计入 Codex 限额。",
+    "highlight_zh": "看点是「评审委托」而非「代码生成委托」：把对抗式评审做成可调控命令，让两个模型的分歧点显式化，这是多 agent 协作里最容易落地的切入点。要注意用量走 Codex 限额，评审与委派混用时会挤占生成额度；后台任务的状态机与 Claude Code 自身任务系统并行，中断后的恢复路径要先熟悉。"
+  },
+  "qiz029/dscode": {
+    "summary_zh": "基于 DeepSeek 的终端编码 agent harness，JavaScript、MIT、上线 75 天、1,001 星。专用文件工具带版本检查地读写代码，持久 shell 承担搜索、构建与测试；TUI、CLI 与脚本共享同一个会话运行时，而不是各自起一份。特性包括 Ultra 子代理、自动审批、Chrome MCP 与会话遥测；安装为版本锁定的可复现 harness——DSH 依赖、TUI 与插件整体校验版本。",
+    "highlight_zh": "看点是「单会话运行时」：TUI、CLI、脚本看到的会话状态一致，脚本可以插入 live 会话执行动作，这对自动化流水线比多份独立会话实用。要注意自动审批默认放行范围要按环境收紧；项目绑定 DeepSeek 系列，换模型需评估 harness 对工具调用格式的假设；75 天项目，macOS/Linux 之外的平台未覆盖。"
+  },
+  "xcl-dev/xcl": {
+    "summary_zh": "Windows 平台的 Xbox Series 兼容层，Rust、GPL-2.0、上线仅 4 天、7,876 星、1,046 fork、1,309 个 issue。路线与 Wine/Proton 同构但不含 CPU 模拟：游戏的 x64 代码原生执行，XCL 自行实现控制台系统库（kernelx.dll、XGameRuntime、d3d12 xs.dll 等），主机端 RDNA2 GPU 机器码重编译为 PC 着色器（HLSL → DXIL）。只处理用户已拥有的解包游戏文件，不含解密与 DRM 规避组件。量化结果：某零售游戏全部 26,698 个 RDNA2 着色器程序完成转译、随机抽样编译 DXIL 零错误，纹理 GFX10 排布 912 张中 909 张逐字节还原，370+ 自动化测试。",
+    "highlight_zh": "看点是「不做模拟，直接下沉」：CPU 原生跑、GPU 走重编译、系统库自研重实现，把兼容层的工作量集中在两处硬骨头（着色器翻译与系统库覆盖）。要注意这是逆向工程边界项目，合法性与具体厂商态度存在不确定性；4 天 1,309 个 issue 说明兼容矩阵刚起步，任何一款游戏能否运行以 issue 区实测为准，勿以宣传数字外推。"
+  },
+  "fxceless/victory-fork": {
+    "summary_zh": "VIctory（一款 Xbox Series 游戏原生运行层）的修复向 fork，Rust、GPL-3.0、上线 1 天、2,038 星、493 fork、497 个 issue。目标单一：让该游戏的世界在某台 PC 上正确渲染并可玩。fork 跟随 upstream main，上游历史完整保留，修复集中在渲染链路：meshlet 裁剪的场景缓冲视图类型错误、每绘制描述符表耗尽挂卡、雾重建/阴影掩码/毛发/混合蒙皮/火焰等多个材质程序未转译、命名 mip 级 gather 读错层。改动由 Claude Code 协作开发，许可证与上游同为 GPL-3.0-or-later。",
+    "highlight_zh": "看点是它给出了一份完整的「着色器翻译 bug 修复实录」：每个修复对应一种典型的重编译错误模式（视图类型、描述符生命周期、mip 级别偏移），做 GPU 兼容层或着色器转译的团队可直接当案例库读。要注意这是单机单游戏的工作分叉，不是通用改进；497 个 issue 里大量是「我的机器不行」类反馈，适用面很窄；与上游的关系以文档声明为准，跟进策略可能变化。"
+  },
+  "rustdesk/rustdesk": {
+    "summary_zh": "开源自托管远程桌面，Rust、AGPL-3.0、上线 2,248 天、131,293 星、21,211 fork、日增 269。定位是 TeamViewer 的替代：开箱即用零配置，可用官方 rendezvous/relay 服务器、自建服务器，或按协议自己实现一套；数据全程可控。代码结构清晰：hbb_common（配置与 TCP/UDP 封装）、base（protobuf、文件传输与平台代码）、scrap（抓屏与视频编解码），桌面端覆盖 Windows、macOS、Linux 与移动端。",
+    "highlight_zh": "看点是「自托管链路完整」：信令与中继都开源，能完全脱离官方服务器跑，这是与多数开源远程桌面最大的差别。日增 269 说明近期热度回升。要注意 AGPL-3.0 对二次分发与服务化改造有开源义务；官方公共服务器有带宽与隐私边界，对数据敏感场景建议自建；跨平台编解码路径（vcpkg 依赖）编译门槛不低，优先用官方构建产物。"
+  },
+  "localsend/localsend": {
+    "summary_zh": "开源跨平台的 AirDrop 替代，Dart（Flutter）、Apache-2.0、上线 1,440 天、100,670 星、5,799 fork、日增 205。在局域网内安全传输文件与消息，不需要互联网连接；协议对等发现、传输加密，覆盖 Android、iOS、macOS、Windows、Linux 全平台，另有 CLI 可脚本化调用。",
+    "highlight_zh": "看点是「跨生态隔空投送」终于有了一个全平台覆盖且协议开放的实现，Windows 与安卓设备之间不用再绕网盘。日增 205 说明近期持续走热。要注意局域网发现依赖组播与防火墙放行，企业网络常需手动配置；跨平台编解码与大文件分块的稳定性以各平台最新版实测为准；无中继意味着两台设备必须在同一网络段。"
+  }
+}

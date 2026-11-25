@@ -1,0 +1,1877 @@
+{
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T09:56:49.053+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-24",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 891,
+    "unclassified": 71,
+    "selected": 21,
+    "suppressedByHistory": 332,
+    "sameDateExempt": 0,
+    "removed": 1,
+    "removedTotal": 1,
+    "offTopic": 0,
+    "watchlisted": 1,
+    "regenerated": true,
+    "reviewedAt": "2026-11-25T02:35:00+08:00"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "atuizz/posewear",
+          "owner": "atuizz",
+          "name": "posewear",
+          "url": "https://github.com/atuizz/posewear",
+          "homepage": "https://posewear.pages.dev",
+          "description": "姿势、服装、人像参考图库，附中英文提示词，可在浏览器里 AI 试穿 · Pose, outfit & portrait reference library with bilingual prompts and in-browser AI try-on",
+          "language": "JavaScript",
+          "topics": [
+            "ai-art",
+            "ai-try-on",
+            "chinese",
+            "cloudflare-pages",
+            "fashion",
+            "gemini",
+            "gpt-image",
+            "image-generation"
+          ],
+          "stars": 2057,
+          "forks": 459,
+          "open_issues": 2,
+          "starGain": null,
+          "heat": 348.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 25,
+          "created_at": "2026-10-30T19:08:14Z",
+          "pushed_at": "2026-11-24T12:56:35Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.7,
+          "breakdown": {
+            "heat": 94,
+            "community": 64,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "姿势、服装、人像、表情等 12 个图库，配中英文提示词；选好素材就能在站内拼图生图，也可以把组合交给你的 AI 智能体。\n\n- 姿势和深度图是成对的 ：同一动作、同一机位，一面线稿一面深度图，在卡片上点编号就能翻面，两面可以一起拿去生图。 - 悬浮工作台随手攒素材 ：浏览时点卡片上的 ＋ 就收进底部工作台，不用离开图库；攒够了直接生图，或者把整组提示词和图片直链复制走。 - 完整工作台自由拼 ：人物、服装、姿势，加上表情、发型、场景、光影、道具、家具，想用几样用几样，只写提示词也行。上传自己的照片可以试穿对比。 - 生成过的图都存在「生成记录」里，能回看、下载、打包。\n\ncodex mcp add posewear -- node \"$PWD/mcp/server.mjs\"",
+            "features": [
+              "姿势和深度图是成对的 ：同一动作、同一机位，一面线稿一面深度图，在卡片上点编号就能翻面，两面可以一起拿去生图。",
+              "悬浮工作台随手攒素材 ：浏览时点卡片上的 ＋ 就收进底部工作台，不用离开图库；攒够了直接生图，或者把整组提示词和图片直链复制走。",
+              "完整工作台自由拼 ：人物、服装、姿势，加上表情、发型、场景、光影、道具、家具，想用几样用几样，只写提示词也行。上传自己的照片可以试穿对比。",
+              "生成过的图都存在「生成记录」里，能回看、下载、打包。"
+            ],
+            "sections": [
+              "衣姿 PoseWear",
+              "挑图",
+              "生图走哪条路，随你",
+              "本地跑起来",
+              "开发",
+              "素材来源与许可"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3520
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "chenxiachan/textfold",
+          "owner": "chenxiachan",
+          "name": "textfold",
+          "url": "https://github.com/chenxiachan/textfold",
+          "homepage": "https://chenxiachan.github.io/textfold/",
+          "description": "Fold papers, web pages, files, and AI replies into five levels of detail. Zoom from an overview to the original text.",
+          "language": "Python",
+          "topics": [
+            "arxiv",
+            "llm",
+            "local-first",
+            "open-source",
+            "paper-reader",
+            "research-papers",
+            "semantic-zoom",
+            "translation"
+          ],
+          "stars": 1454,
+          "forks": 123,
+          "open_issues": 13,
+          "starGain": 126,
+          "heat": 126,
+          "heatBasis": "snapshot",
+          "heatPercentile": 75,
+          "ageDays": 51,
+          "created_at": "2026-10-04T22:19:52Z",
+          "pushed_at": "2026-11-20T21:35:16Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 66.9,
+          "breakdown": {
+            "heat": 75,
+            "community": 59,
+            "activity": 36,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "🚀 New: TextFold in your browser! One click on the browser extension transfers the page you are reading to TextFold. Add it from the Chrome Web Store → For Chrome · Edge · Brave\n\nPaste a link: any web page · arXiv · PubMed Central · bioRxiv · medRxiv · Wikipedia · GitHub Drop files, one or several: PDF · Word · PowerPoint · Excel · EPUB · HTML · CSV · pictures · Markdown · text Works with: Claude Code · Pi · Zotero · Obsidian · your browser\n\nTry the demo → or download the app ↓ · What's new ↓",
+            "features": [
+              "Install TextFold 0.10.40 or later (download) and open it. It connects itself to Chrome, Edge, Brave and Chromium each time it starts. With t",
+              "Add the button. Open TextFold in the Chrome Web Store and click Add to Chrome . Brave adds it the same way; Edge first asks you to allow ext",
+              "Click it on a page. Pin the TextFold button from the extensions menu (the puzzle piece) and click it on any page. A ✓ says the page is in yo",
+              "Read. Paste a link, drop a file, or click TextFold's button on the page you are reading in your browser. It opens as a map of its sections t",
+              "Fold your agent's replies. One key per level in Claude Code and in Pi, with no second model. In Claude Code and Pi ↓",
+              "Plug it into your workflow. python3 -m textfold get hands your agent or script a document one level at a time, and an open format lets any p",
+              "Words that travel. As you zoom, every word that stays slides to its new place and the rest fade around it.",
+              "Zoom under your fingers. Stop halfway, turn back, or open one paragraph alone."
+            ],
+            "sections": [
+              "TextFold",
+              "Read with less in your head",
+              "Also for agent output",
+              "🚀 New feature: Works in your browser",
+              "One fold, three places",
+              "What you get",
+              "Get started",
+              "Connect a model",
+              "In the reader",
+              "Works with your tools",
+              "Works on your Zotero",
+              "Works with your Obsidian",
+              "In Claude Code and Pi",
+              "For agents and scripts"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 49036
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "vxcontrol/pentagi",
+          "owner": "vxcontrol",
+          "name": "pentagi",
+          "url": "https://github.com/vxcontrol/pentagi",
+          "homepage": "https://pentagi.com",
+          "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+          "language": "Go",
+          "topics": [
+            "ai-agents",
+            "ai-security-tool",
+            "anthropic",
+            "autonomous-agents",
+            "golang",
+            "gpt",
+            "graphql",
+            "multi-agent-system"
+          ],
+          "stars": 34965,
+          "forks": 5595,
+          "open_issues": 78,
+          "starGain": 84,
+          "heat": 84,
+          "heatBasis": "trending",
+          "heatPercentile": 71,
+          "ageDays": 687,
+          "created_at": "2025-01-06T22:22:48Z",
+          "pushed_at": "2026-11-13T23:40:49Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 68.4,
+          "breakdown": {
+            "heat": 71,
+            "community": 87,
+            "activity": 14,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 43,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "P enetration testing A rtificial G eneral I ntelligence\n\n- Overview - Features - Architecture - Agent Supervision - Quick Start - Agent Docker Access - Running Several Instances - How to Use PentAGI After Login - API Access - LLM Provider Configuration - Azure OpenAI - Ollama - OpenAI - Anthropic - Google AI (Gemini) - AWS Bedrock - DeepSeek - GLM - Kimi - Qwen - MiniMax - Mistral - xAI (Grok) - Advanced Setup - Langfuse Integration - Monitoring and Observability - Knowledge Graph (Graphiti) - OAuth Integration - Docker Image Configuration - Development - Testing LLM Agents - Embedding Configuration and Testing - Function Testing with ftester - Building - Credits - License\n\nPentAGI is an open-source, self-hosted multi-agent system for autonomous penetration testing. You describe a target and a goal in plain language; a team of specialized AI agents plans the work, runs 20+ professional tools such as nmap, Metasploit and sqlmap inside an isolated Docker sandbox, remembers what it learned and hands you a report.",
+            "features": [
+              "Overview",
+              "Features",
+              "Architecture",
+              "Agent Supervision",
+              "Quick Start",
+              "Agent Docker Access",
+              "Running Several Instances",
+              "How to Use PentAGI After Login"
+            ],
+            "sections": [
+              "PentAGI",
+              "Table of Contents",
+              "Overview",
+              "Features",
+              "Current Capability Boundaries",
+              "Architecture",
+              "System Context",
+              "Global Summarizer Configuration Options",
+              "Assistant Summarizer Configuration Options",
+              "Summarizer Environment Configuration",
+              "Default values for global summarizer logic",
+              "Default values for assistant summarizer logic",
+              "Execution Monitoring (Beta)",
+              "Intelligent Task Planning (Beta)"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 253623
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ],
+      "removedInReview": 1
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "affaan-m/ECC",
+          "owner": "affaan-m",
+          "name": "ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "homepage": "https://ecc.tools",
+          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "language": "JavaScript",
+          "topics": [
+            "ai-agents",
+            "anthropic",
+            "claude",
+            "claude-code",
+            "developer-tools",
+            "llm",
+            "mcp",
+            "productivity"
+          ],
+          "stars": 310231,
+          "forks": 45600,
+          "open_issues": 213,
+          "starGain": 675,
+          "heat": 675,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 311,
+          "created_at": "2026-01-18T00:51:51Z",
+          "pushed_at": "2026-11-23T04:55:48Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 91,
+          "breakdown": {
+            "heat": 96,
+            "community": 100,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 55,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Language: English العربية Português (Brasil) 简体中文 繁體中文 日本語 한국어 Türkçe Русский Tiếng Việt ไทย Deutsch Español Українська Polski বাংলা Italiano\n\nUse the guided setup or native plugin commands. Both install the same ecc@ecc plugin. Choose one and do not stack a full manual Claude install on top.\n\nECC Pro + GitHub App Install free · Private repos from $19/seat/mo Sponsor ECC Fund the open-source project Community Discord · Q&amp;A · Show and Tell",
+            "features": [
+              "Install Node.js 18 or newer, Git, and Claude Code.",
+              "Open PowerShell from the Windows Start menu.",
+              "Confirm that each prerequisite is available:",
+              "Run the guided installer:",
+              "For a typical personal setup, choose Global user , choose Standard hooks, and confirm.",
+              "Start a new Claude Code session and run /plugin list to verify that ecc@ecc is enabled.",
+              "Recommended default: run the guided Claude plugin setup above",
+              "Also supported for Claude Code: use the native plugin commands"
+            ],
+            "sections": [
+              "Install with Claude Code",
+              "ECC",
+              "Install ECC",
+              "Recommended: universal guided setup",
+              "Pick one path only (per harness)",
+              "Claude Code details",
+              "Codex App and CLI",
+              "Qoder CLI and IDE",
+              "Other agents and editors",
+              "Advanced Install Options",
+              "Low-context / no-hooks path",
+              "Find the right components first",
+              "Just agents",
+              "Rules directories (common + language-specific)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 118348
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "addyosmani/agent-skills",
+          "owner": "addyosmani",
+          "name": "agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "homepage": "https://skills.addy.ie",
+          "description": "Production-grade engineering skills for AI coding agents.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "antigravity",
+            "claude-code",
+            "codex",
+            "cursor",
+            "skills"
+          ],
+          "stars": 120216,
+          "forks": 12498,
+          "open_issues": 115,
+          "starGain": 212,
+          "heat": 212,
+          "heatBasis": "snapshot",
+          "heatPercentile": 85,
+          "ageDays": 282,
+          "created_at": "2026-02-15T20:20:26Z",
+          "pushed_at": "2026-11-24T07:11:17Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 85.9,
+          "breakdown": {
+            "heat": 85,
+            "community": 95,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Production-grade engineering skills for AI coding agents.\n\nSkills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.\n\nDEFINE PLAN BUILD VERIFY REVIEW SHIP ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │ QA │ ───▶ │ Go │ │Refine│ │ PRD │ │ Impl │ │Debug │ │ Gate │ │ Live │ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ /spec /plan /build /test /review /ship",
+            "features": [
+              "Process, not prose. Skills are workflows agents follow, not reference docs they read. Each has steps, checkpoints, and exit criteria.",
+              "Anti-rationalization. Every skill includes a table of common excuses agents use to skip steps (e.g., \"I'll add tests later\") with documented",
+              "Verification is non-negotiable. Every skill ends with evidence requirements - tests passing, build output, runtime data. \"Seems right\" is ne",
+              "Progressive disclosure. The SKILL.md is the entry point. Supporting references load only when needed, keeping token usage minimal."
+            ],
+            "sections": [
+              "Agent Skills",
+              "Commands",
+              "Quick Start",
+              "Adoption",
+              "All 26 Skills",
+              "Meta - Discover which skill applies",
+              "Define - Clarify what to build",
+              "Plan - Break it down",
+              "Build - Write the code",
+              "Verify - Prove it works",
+              "Review - Quality gates before merge",
+              "Ship - Deploy with confidence",
+              "Agent Personas",
+              "Reference Checklists"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 25791
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "kaomei/stickman-video-director",
+          "owner": "kaomei",
+          "name": "stickman-video-director",
+          "url": "https://github.com/kaomei/stickman-video-director",
+          "homepage": "https://telegram.me/stickmanskill",
+          "description": "AI Agent Skill (Claude Code, Codex & more): Turn any script into animated stickman videos for faceless YouTube, Shorts & TikTok. 20+ styles with voiceover, captions & SFX. Free & open-source (MIT).",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-animation-generator",
+            "ai-video-production",
+            "animation",
+            "claude-code",
+            "claude-skills",
+            "codex-skill",
+            "content-creation"
+          ],
+          "stars": 8084,
+          "forks": 1416,
+          "open_issues": 5,
+          "starGain": null,
+          "heat": 598.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 114,
+          "created_at": "2026-08-03T07:44:33Z",
+          "pushed_at": "2026-11-24T05:48:03Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.6,
+          "breakdown": {
+            "heat": 95,
+            "community": 75,
+            "activity": 56,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "🇺🇸 EN · 🇨🇳 简中 · 🇯🇵 日本語 · 🇰🇷 한국어 · 🇫🇷 FR · 🇧🇷 PT-BR · 🇹🇷 TR · 🇮🇩 ID\n\nScale your faceless channel with automated stickman animations.\n\nSend your AI agent one message — get back a finished stickman video. Script, voiceover, captions & sound · 16 battle-tested styles · For Claude Code, Codex & more",
+            "features": [
+              "Production workflow: After approving the storyboard, you can generate the clips manually or ask your agent to generate them using its browse",
+              "Recommended platform: Use Google Flow to get closer to the sample results. For your first video, see the detailed tutorial on X.",
+              "Production workflow: After you approve the script and the preview of the opening 20 seconds with audio, the agent prepares the assets, anima",
+              "Targeted edits: If you’re unhappy with part of the visuals or audio, ask your agent to adjust just that section while keeping the approved p",
+              "The look : Crisp black ink on white, or a more dramatic white-on-black version. A few bright accents put the important detail in focus.",
+              "Made for : Science, psychology, personal growth, business breakdowns, and concepts that become clearer with the right visual analogy.",
+              "The look : Minimal Tech pairs white space with glass-like interfaces and cyan light. Colorful Story adds richer settings, depth, and mood-dr",
+              "Made for : AI tools, tech products, tutorials, personal growth, everyday experiences, and adventures."
+            ],
+            "sections": [
+              "🎬 Stickman Video Director",
+              "🎬 Two video creation modes: Model Engine vs Code Engine",
+              "🧭 Get started",
+              "Step 1: Install the skill",
+              "Step 2: Choose a style and mode, then start with a prompt",
+              "A · Model Engine",
+              "B · Code Engine",
+              "Step 3: Create a thumbnail, title, and description",
+              "🎨 A · Model Engine Overview",
+              "A1: Classic Black & White",
+              "A2: Modern Pop",
+              "A3: Prehistoric Cave",
+              "A4: Cozy Storytelling",
+              "A5: Historical Cartoon"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 57538
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "INK-Q/agy-fast",
+          "owner": "INK-Q",
+          "name": "agy-fast",
+          "url": "https://github.com/INK-Q/agy-fast",
+          "homepage": "",
+          "description": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.",
+          "language": "TypeScript",
+          "topics": [
+            "ai-agent",
+            "ai-coding",
+            "antigravity",
+            "antigravity-cli",
+            "antigravity-ide",
+            "antigravity-plugins",
+            "coding-agent",
+            "context-optimization"
+          ],
+          "stars": 1201,
+          "forks": 72,
+          "open_issues": 32,
+          "starGain": null,
+          "heat": 411.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 91,
+          "ageDays": 6,
+          "created_at": "2026-11-19T04:58:46Z",
+          "pushed_at": "2026-11-24T14:28:12Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.8,
+          "breakdown": {
+            "heat": 91,
+            "community": 56,
+            "activity": 79,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 42,
+            "backend": 55,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Latency, Token-Quota & Tool-Call Accelerator Plugin for Google Antigravity\n\nEnglish · 简体中文 · Quick Start · Benchmarks · MCP Tools · Analysis Report · Changelog\n\nagy-fast is a zero-dependency, policy-compliant local MCP plugin for Google Antigravity (CLI agy , Desktop 2.0, and IDE). It cuts agent wall-clock latency, billable token quota, and upload traffic by consolidating high-frequency searches, multi-language symbol outlines, atomic multi-file edits, and build/test checks into batched local calls—and injecting a sub-50 ms workspace snapshot once per session—without altering Antigravity's native UI, diff viewer, modified-files list, checkpoints, or safety checks.",
+            "features": [
+              "0 disk spills across 134 consecutive v0.2.x MCP calls — strict ≤8.8 KB UTF-8 inline cap prevents Antigravity's output.txt spill-to-disk extr",
+              "+75% effective throughput ( 35.1 → 61.5 tok/s ) and 60s stall turns reduced from 31.2% → 7.4% in a same-session before/after v0.2.1 comparis",
+              "0 lazy-load schema-read turns — compact schemas are inlined directly in rules/AGENTS.md .",
+              "Logical action normalization: One batch search with 5 queries counts as 5 actions, one apply edits touching 6 hunks + verify counts as 7 act",
+              "Quota weighting sensitivity: Standard weighting ( 1.0× uncached input, 0.1× cache read, 5.0× output) yields -31.5% on main sessions ( -36.5%",
+              "Fixed prompt overhead: rules/AGENTS.md + SessionStart snapshot add ~1.7k tokens once per session (cached from turn 2 onward, ~170 eq tokens/",
+              "Up to 20 mixed queries per call: text , regex , glob , fuzzy , and read-only git ( status , diff , log , show , branch , rev-parse , ls-file",
+              "Precision controls: Filter by fileType (e.g., typescript , python , gdscript ) or glob , switch outputMode ( content files with matches coun"
+            ],
+            "sections": [
+              "agy-fast",
+              "Quick Start",
+              "One-Command Install (Recommended)",
+              "macOS / Linux",
+              "Windows (PowerShell)",
+              "How It Works",
+              "Hybrid Execution Architecture",
+              "Plugin Components",
+              "Real-World Benchmarks",
+              "Verify on Your Own Transcripts (100% Offline)",
+              "Summarize all local Antigravity transcripts",
+              "Analyze only the 10 most recently modified local transcripts",
+              "Slice sessions since install time and compare With vs. Witho",
+              "Compare two task runs (before vs. after)"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 25941
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "nforst/fagus",
+          "owner": "nforst",
+          "name": "fagus",
+          "url": "https://github.com/nforst/fagus",
+          "homepage": "https://fagus.niklasforst.de",
+          "description": "HTML and CSS to PDF for PHP and Laravel, without a browser. Renders like Chrome prints, with PDF/A, PDF/UA and ZUGFeRD/Factur-X.",
+          "language": "Rust",
+          "topics": [
+            "css",
+            "factur-x",
+            "html-to-pdf",
+            "laravel",
+            "pdf",
+            "pdf-generation",
+            "pdfa",
+            "php"
+          ],
+          "stars": 200,
+          "forks": 2,
+          "open_issues": 5,
+          "starGain": 23,
+          "heat": 23,
+          "heatBasis": "snapshot",
+          "heatPercentile": 78,
+          "ageDays": 11,
+          "created_at": "2026-11-13T18:04:09Z",
+          "pushed_at": "2026-11-25T00:32:23Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 69.3,
+          "breakdown": {
+            "heat": 78,
+            "community": 37,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "HTML and CSS to PDF for PHP and Laravel, without a browser.\n\nFagus::html($html)- save('invoice.pdf'); Fagus::html($html)- inline('invoice.pdf'); // or show it in the browser\n\nFagus is a Composer package that turns HTML and CSS into PDF the way Chrome prints them. There is no Chrome, Puppeteer or Node to install, no Docker image and no system library: the rendering happens in a native engine written in Rust, which Composer downloads for your platform (checked against its SHA-256) and which PHP keeps running as a worker process between documents.",
+            "features": [
+              "Simple: composer require is all it takes, on Linux (x64 and arm64, glibc or musl, so Alpine",
+              "Fast: a one-page invoice in about 2.5 ms once the worker runs, ten pages in about 17 ms,",
+              "Faithful: modern CSS (flex, grid, Tailwind v4 included) renders the way it does in Chrome;",
+              "Standards: PDF/A-3 with ZUGFeRD/Factur-X attachments and accessible PDF (PDF/UA) built in.",
+              "Safe: no network access, no files outside the directory you allow, no scripts; the engine has",
+              "CSS: the cascade with layers, nesting, :has() , custom properties, @property and calc() , and the presentational attributes of HTML ( width ",
+              "Pages: @page sizes and margins, :first , :left , :right and named pages, margin boxes with running elements, named strings and page counters",
+              "PDF: fonts embedded as subsets, vector gradients, links and the document outline, PDF/A-1b, PDF/A-2, PDF/A-3 and PDF/A-4, attachments, ZUGFe"
+            ],
+            "sections": [
+              "Fagus",
+              "Installation",
+              "Usage",
+              "Compared with other renderers",
+              "Speed",
+              "Features",
+              "What it renders",
+              "Fonts and languages",
+              "How it works",
+              "Without PHP",
+              "Layout of the repository",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 19245
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "roundStars"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "shader-effects-inc/shaders",
+          "owner": "shader-effects-inc",
+          "name": "shaders",
+          "url": "https://github.com/shader-effects-inc/shaders",
+          "homepage": "https://shaders.com",
+          "description": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
+          "language": "TypeScript",
+          "topics": [
+            "cli",
+            "javascript",
+            "mcp",
+            "react",
+            "shaders",
+            "solid",
+            "svelte",
+            "vue"
+          ],
+          "stars": 6041,
+          "forks": 285,
+          "open_issues": 3,
+          "starGain": 7,
+          "heat": 7,
+          "heatBasis": "snapshot",
+          "heatPercentile": 67,
+          "ageDays": 56,
+          "created_at": "2026-09-29T16:36:26Z",
+          "pushed_at": "2026-11-24T19:15:53Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 69.9,
+          "breakdown": {
+            "heat": 67,
+            "community": 70,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 35,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Shaders WebGPU effects as components for React, Vue, Svelte, Solid and JavaScript\n\n1. Why Shaders? 2. 🧩 Components 3. 🎨 Design visually, export code 4. ⌨️ CLI 5. 🤖 Using Shaders with AI 6. ⚡️ Shaders Pro 7. 🧪 Build your own component 8. 👩🏻‍⚖️ License 9. 💎 Contribute\n\n- Real WebGPU, declarative API: 200+ effects you drop in as components. Gradients, noise, glass, metal, light, distortions, transitions, blurs, cursor effects. Nest them, blend them, mask them. - A design editor that writes your code: design on an infinite canvas at shaders.com, then export the exact component tree for your framework. Free. - Every framework, one package: first-class React, Vue, Svelte, Solid and JavaScript entries, with the same props everywhere. - Production-ready: TypeScript, extensively optimized, typed props with reactive updates, SSR safe. Used on thousands of websites by 16,000+ design engineers.",
+            "features": [
+              "Why Shaders?",
+              "🧩 Components",
+              "🎨 Design visually, export code",
+              "⌨️ CLI",
+              "🤖 Using Shaders with AI",
+              "⚡️ Shaders Pro",
+              "🧪 Build your own component",
+              "👩🏻‍⚖️ License"
+            ],
+            "sections": [
+              "Table of Contents",
+              "Why Shaders?",
+              "🧩 Components",
+              "React",
+              "Vue",
+              "Svelte",
+              "Solid",
+              "JavaScript",
+              "🎨 Design visually, export code",
+              "⌨️ CLI",
+              "🤖 Using Shaders with AI",
+              "⚡️ Shaders Pro",
+              "🧪 Build your own component",
+              "👩🏻‍⚖️ License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8686
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "pacewisdomhq/TutorLoom",
+          "owner": "pacewisdomhq",
+          "name": "TutorLoom",
+          "url": "https://github.com/pacewisdomhq/TutorLoom",
+          "homepage": "https://www.tutorloom.io/",
+          "description": "Self-hosted, multi-tenant learning management system (LMS) for training institutes and teams: course builder, trainer and student portals, progress tracking. Django + React. Apache-2.0.",
+          "language": "TypeScript",
+          "topics": [
+            "corporate-training",
+            "django",
+            "edtech",
+            "elearning",
+            "flutter",
+            "learning-management-system",
+            "lms",
+            "moodle-alternative"
+          ],
+          "stars": 103,
+          "forks": 22,
+          "open_issues": 3,
+          "starGain": null,
+          "heat": 12.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 73,
+          "ageDays": 49,
+          "created_at": "2026-10-07T11:21:56Z",
+          "pushed_at": "2026-11-25T01:56:28Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 64.9,
+          "breakdown": {
+            "heat": 73,
+            "community": 37,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Screenshots · Quickstart · Editions · Architecture · API · Contributing\n\nTutorLoom is a free, self-hosted learning platform for institutes and training teams. Build structured courses, enrol learners in batches, grade their work and follow their progress, on the web and on Android and iOS.\n\n🏢 Multi-tenant by design One installation serves many organisations. Every query is scoped to the organisation, so trainers and learners only ever see their own data. 🧱 Structured course builder Courses are organised into levels, chapters and steps: videos, documents, tasks and quizzes, with prerequisites and sequential unlocking. 👥 Batches &amp; bulk onboarding Group learners into time-boxed batches. Invite trainers and students one by one or in bulk from CSV / Excel. ✅ Grading &amp; feedback Trainers review submissions in one queue, approve or reject with a score and written feedback, and export progress to Excel. 🗺️ Guided learner roadmap Students follow a step-by-step roadmap on the web or the mobile app, track completion and earn points and levels. 🔌 API-first A documented REST API (OpenAPI 3, Swagger UI and ReDoc) with JWT auth powers the web app, the mobile app and your own integrations.",
+            "features": [
+              "Set DEBUG=False , a strong SECRET KEY , and explicit ALLOWED HOSTS , FRONTEND URL and CSRF TRUSTED ORIGINS .",
+              "Use USE S3=True for uploads and SES credentials for email.",
+              "Run a Celery worker next to the web process. Schedule analytics.tasks.calculate daily analytics yourself; no beat schedule ships with the pr",
+              "The web frontend is a static Vite build ( npm run build in frontend/ ) that you deploy separately.",
+              "Master data management: assessment types, skills, course categories, notification templates",
+              "Training cycle templates: term dates, working days, holidays",
+              "System settings: password policy, upload limits, email/SMS gateway, feature flags",
+              "Cross-organisation reports & activity feed , with CSV/PDF export"
+            ],
+            "sections": [
+              "✨ Highlights",
+              "📸 Screenshots",
+              "🖥️ Web app",
+              "📱 Mobile app (Android &amp; iOS)",
+              "🔄 How it works",
+              "📦 Editions",
+              "📐 Architecture",
+              "👤 Roles & portals",
+              "🚀 Quickstart",
+              "💻 Manual setup",
+              "🔧 Configuration",
+              "🔌 API",
+              "🧰 Tech stack",
+              "🧪 Testing"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 23249
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "namannn04/veronica",
+          "owner": "namannn04",
+          "name": "veronica",
+          "url": "https://github.com/namannn04/veronica",
+          "homepage": "http://veronica.namandadhich.in",
+          "description": "Native Ubuntu control center for agent usage, system utilities, media, clipboard, emoji and GNOME integration.",
+          "language": "Rust",
+          "topics": [
+            "gnome",
+            "linux",
+            "productivity",
+            "rust",
+            "tauri",
+            "ubuntu"
+          ],
+          "stars": 1046,
+          "forks": 176,
+          "open_issues": 2,
+          "starGain": null,
+          "heat": 84.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 89,
+          "ageDays": 97,
+          "created_at": "2026-08-20T08:51:05Z",
+          "pushed_at": "2026-11-25T02:02:12Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 76.9,
+          "breakdown": {
+            "heat": 89,
+            "community": 57,
+            "activity": 59,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 42,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A native desktop control center for Ubuntu. Agent usage, system tools, media, clipboard and GNOME integration in one app, with no account, no telemetry and no paid tier.\n\nRequires Ubuntu 24.04 or later on x86 64 with GNOME Shell 46 to 50. Screenshots and shortcuts are on the website.\n\ncurl -fsSL https://veronica.namandadhich.in/install bash",
+            "features": [],
+            "sections": [
+              "Install",
+              "Features",
+              "Command line",
+              "Privacy",
+              "Building from source",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 5945
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "made-in-common/forges",
+          "owner": "made-in-common",
+          "name": "forges",
+          "url": "https://github.com/made-in-common/forges",
+          "homepage": "https://forges.link",
+          "description": "One client, every forge.",
+          "language": "TypeScript",
+          "topics": [
+            "api",
+            "forge",
+            "git"
+          ],
+          "stars": 209,
+          "forks": 12,
+          "open_issues": 37,
+          "starGain": null,
+          "heat": 23.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 75,
+          "ageDays": 52,
+          "created_at": "2026-10-03T20:58:35Z",
+          "pushed_at": "2026-11-24T21:59:36Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 66.5,
+          "breakdown": {
+            "heat": 75,
+            "community": 41,
+            "activity": 66,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 100,
+            "devops": 85,
+            "ai": 35,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "forges is a TypeScript library for working with issues, pull requests, notifications, checks and webhooks on fourteen forges: GitHub, GitLab, Bitbucket, Forgejo, Gitea, Gitee, Azure DevOps, Cursor Origin, Tangled, Pushin.eu, Sourcehut, GitBucket, GitCafe and Upstream. A forge is a service that hosts Git repositories and the collaboration around them. It also reads repositories and their contents from Git hosts without the collaboration, such as Cloudflare Artifacts. Each provider normalises the forge's responses into one data model and declares which operations it supports.\n\nimport { createForges, forgejo, github } from 'forges'\n\nconst forges = createForges([ github({ auth: { type: 'token', token: process.env.GITHUB TOKEN! } }), forgejo({ baseUrl: 'https://codeberg.org', auth: { type: 'token', token: process.env.CODEBERG TOKEN! } }), ])",
+            "features": [
+              "Getting started covers installation, import paths and a first call.",
+              "The guides explain authentication, working with several forges, environment variables, webhooks, capabilities, errors, pagination, browser b",
+              "The concepts describe the data model, capabilities, providers and events.",
+              "Each provider page explains how to authenticate and how that forge behaves.",
+              "The reference lists the API, the capability matrix, errors and JSON schemas.",
+              "The examples are small, tested projects that use forges .",
+              "@agntn/forges : a TypeScript API for GitHub, GitLab, Gitea, Forgejo and GitBucket, with an MCP server and Pi and OMP extensions for agents.",
+              "git-pkgs/forge : a Go library and CLI for GitHub, GitLab, Gitea, Forgejo, Bitbucket Cloud, Gerrit and Tangled."
+            ],
+            "sections": [
+              "forges",
+              "install",
+              "usage",
+              "documentation",
+              "related projects",
+              "contributing",
+              "licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3647
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "maomada/KubeAtlas",
+          "owner": "maomada",
+          "name": "KubeAtlas",
+          "url": "https://github.com/maomada/KubeAtlas",
+          "homepage": "",
+          "description": "Self-hosted Kubernetes operations console with Hub/Agent, multi-cluster visibility, Helm and scoped MCP access.",
+          "language": "Go",
+          "topics": [
+            "gitops",
+            "helm",
+            "kubernetes",
+            "kubernetes-dashboard",
+            "mcp",
+            "multi-cluster",
+            "self-hosted"
+          ],
+          "stars": 163,
+          "forks": 5,
+          "open_issues": 0,
+          "starGain": 36,
+          "heat": 36,
+          "heatBasis": "snapshot",
+          "heatPercentile": 81,
+          "ageDays": 23,
+          "created_at": "2026-11-02T11:28:09Z",
+          "pushed_at": "2026-11-23T13:05:23Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 64.2,
+          "breakdown": {
+            "heat": 81,
+            "community": 37,
+            "activity": 49,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 37,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A self-hosted operations console for Kubernetes. Deploy KubeAtlas Hub and connect your clusters with KubeAtlas Agent to find failing workloads, trace dependencies, and see what changed.\n\nReleases · Deploy Hub · Connect a cluster · Deploy with AI\n\nflowchart TB Browser[\"Team browser\"] -- Hub[\"KubeAtlas Hub\"] MCP[\"MCP client\"] -- Hub",
+            "features": [
+              "Investigate issues with workload health, logs, events, and a timeline of resource changes. Cluster checks · Upgrade impact checks",
+              "Explore applications and their resource dependencies, inspect live traffic when a source is available, and review Helm releases and Argo CD ",
+              "Review capacity and cost with scheduling requests, node capacity, and cost allocation. If the cluster has a compatible Prometheus and the Hu",
+              "Connect an AI client over MCP using a credential scoped to selected clusters and your permissions. Hub MCP",
+              "Sign in to Hub and select Clusters → Connect cluster .",
+              "Run the generated command in a shell with access to the intended Kubernetes context. Hub supplies the Agent installer, Helm chart, and image",
+              "Approve the matching code in Hub and check that the cluster is Connected . Agent onboarding"
+            ],
+            "sections": [
+              "KubeAtlas",
+              "What you can do",
+              "Deploy Hub",
+              "Connect a cluster",
+              "Contribute"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3752
+          },
+          "guard": {
+            "score": 0.5,
+            "signals": [
+              "noIssues"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "malisper/pgrust",
+          "owner": "malisper",
+          "name": "pgrust",
+          "url": "https://github.com/malisper/pgrust",
+          "homepage": "https://pgrust.com",
+          "description": "Postgres rewritten in Rust, now faster than Postgres and Clickhouse",
+          "language": "Rust",
+          "topics": [
+            "ai-assisted-development",
+            "database",
+            "postgres",
+            "postgresql",
+            "rust"
+          ],
+          "stars": 6052,
+          "forks": 248,
+          "open_issues": 69,
+          "starGain": 20,
+          "heat": 20,
+          "heatBasis": "trending",
+          "heatPercentile": 91,
+          "ageDays": 219,
+          "created_at": "2026-04-20T03:35:59Z",
+          "pushed_at": "2026-11-18T06:05:18Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 74.6,
+          "breakdown": {
+            "heat": 91,
+            "community": 69,
+            "activity": 24,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A Postgres-compatible database, rewritten in Rust, built for fast analytics on your Postgres data.\n\nTry pgrust in your browser → &nbsp;&nbsp; &nbsp;&nbsp; Discord &nbsp;&nbsp; &nbsp;&nbsp; Updates &nbsp;&nbsp; &nbsp;&nbsp; Issues\n\npgrust is a drop-in replacement for Postgres built for fast analytics. It is wire compatible and SQL dialect compatible with Postgres 18, so your existing drivers, ORMs, psql and tools work unchanged. It is Postgres rebuilt the way it would be built in 2026.",
+            "features": [
+              "Gravity, a new vectorized push-based, JIT compiled query engine",
+              "A thread based concurrency model",
+              "A query scheduler designed to keep any individual query from taking down",
+              "An automatic memory manager: one memory budget, sized from the machine,",
+              "Stop the server with Ctrl-C in its terminal, or kill -INT . That",
+              "Start it again by rerunning the same server command with the same data",
+              "Start over by deleting the data directory: rm -rf /tmp/pgrust-data .",
+              "If startup fails with FATAL: lock file \"/tmp/.s.PGSQL.5432.lock\""
+            ],
+            "sections": [
+              "Quickstart",
+              "Linux",
+              "Pick your build: linux-x86 64, linux-aarch64, linux-x86 64-z",
+              "linux-aarch64-neoverse-v2 (see the table above).",
+              "Download pgrust, verify the checksum and unpack it.",
+              "Create a data directory with pgrust's initdb.",
+              "Start the server. It runs in the foreground and logs to this",
+              "Docker",
+              "macOS",
+              "Pick your build: macos-arm64 (Apple Silicon), macos-x86 64 (",
+              "macos-universal (both).",
+              "Download pgrust, verify the checksum and unpack it. Download",
+              "does not set the quarantine flag a browser download gets, so",
+              "out of the way (see the note below)."
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21325
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "feder-cr/git-ai",
+          "owner": "feder-cr",
+          "name": "git-ai",
+          "url": "https://github.com/feder-cr/git-ai",
+          "homepage": "https://www.anthropic.com/engineering/redesigning-source-control",
+          "description": "Git designed for AI agents. Open-source, in the spirit of Anthropic's Scion and OpenAI's Pando. Not affiliated with either.",
+          "language": "Go",
+          "topics": [
+            "ai-agents",
+            "coding-agents",
+            "git",
+            "golang",
+            "pando",
+            "scion",
+            "version-control"
+          ],
+          "stars": 961,
+          "forks": 100,
+          "open_issues": 5,
+          "starGain": null,
+          "heat": 125.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 89,
+          "ageDays": 41,
+          "created_at": "2026-10-15T13:12:02Z",
+          "pushed_at": "2026-11-22T03:25:46Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 73.4,
+          "breakdown": {
+            "heat": 89,
+            "community": 55,
+            "activity": 42,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 55,
+            "backend": 47,
+            "devops": 83,
+            "ai": 40,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Anthropic built Scion , a faster version control system for coding agents, and described it in Redesigning source control: a server-centric system built for hundreds of agents that read, write and land code at the same time. Scion is internal to Anthropic and is not available to the public.\n\nSo I built gitai : an open-source version of that design that anyone can run, and that the community can improve and maintain together.\n\nMIT licensed. Vendor neutral: the server never calls a language model, and every AI feature works with any provider, or none.",
+            "features": [
+              "Quickstart and configuration reference",
+              "Architecture and the storage core",
+              "Landing and batching, conflict resolution, derived data",
+              "Review, search, verification, superfans and Slack chat",
+              "Agent security, benchmarks, fuzzing",
+              "Limitations and roadmap",
+              "Design documents of each phase: PLAN.md to PLAN6.md, and PLAN8.md (faster landing)"
+            ],
+            "sections": [
+              "Why",
+              "The Scion ideas, implemented",
+              "Architecture",
+              "Quick start",
+              "Documentation",
+              "Benchmark",
+              "Status",
+              "Community",
+              "Credits and license"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10758
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "openai/codex-plugin-cc",
+          "owner": "openai",
+          "name": "codex-plugin-cc",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "homepage": "",
+          "description": "Use Codex from Claude Code to review code or delegate tasks.",
+          "language": "JavaScript",
+          "topics": [],
+          "stars": 35438,
+          "forks": 2468,
+          "open_issues": 546,
+          "starGain": 43,
+          "heat": 43,
+          "heatBasis": "trending",
+          "heatPercentile": 72,
+          "ageDays": 239,
+          "created_at": "2026-03-30T15:29:52Z",
+          "pushed_at": "2026-07-08T00:17:31Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 65.3,
+          "breakdown": {
+            "heat": 72,
+            "community": 85,
+            "activity": 21,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Use Codex from inside Claude Code for code reviews or to delegate tasks to Codex.\n\nThis plugin is for Claude Code users who want an easy way to start using Codex from the workflow they already have.\n\n- /codex:review for a normal read-only Codex review - /codex:adversarial-review for a steerable challenge review - /codex:rescue , /codex:transfer , /codex:status , /codex:result , and /codex:cancel to delegate work, hand off sessions, and manage background jobs",
+            "features": [
+              "/codex:review for a normal read-only Codex review",
+              "/codex:adversarial-review for a steerable challenge review",
+              "/codex:rescue , /codex:transfer , /codex:status , /codex:result , and /codex:cancel to delegate work, hand off sessions, and manage backgrou",
+              "ChatGPT subscription (incl. Free) or OpenAI API key.",
+              "Usage will contribute to your Codex usage limits. Learn more.",
+              "Node.js 18.18 or later",
+              "the slash commands listed below",
+              "the codex:codex-rescue subagent in /agents"
+            ],
+            "sections": [
+              "Codex plugin for Claude Code",
+              "What You Get",
+              "Requirements",
+              "Install",
+              "Usage",
+              "/codex:review",
+              "/codex:adversarial-review",
+              "/codex:rescue",
+              "/codex:transfer",
+              "/codex:status",
+              "/codex:result",
+              "/codex:cancel",
+              "/codex:setup",
+              "Typical Flows"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10907
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "qiz029/dscode",
+          "owner": "qiz029",
+          "name": "dscode",
+          "url": "https://github.com/qiz029/dscode",
+          "homepage": "https://www.npmjs.com/package/@toddzheng024/dscode",
+          "description": "A DeepSeek coding agent harness: persistent shell, Ultra subagents, auto approval, Chrome MCP and session telemetry",
+          "language": "JavaScript",
+          "topics": [
+            "agentic",
+            "ai-agent",
+            "cli",
+            "code-review",
+            "coding-agent",
+            "deepseek",
+            "deepseek-harness",
+            "developer-tools"
+          ],
+          "stars": 1001,
+          "forks": 6,
+          "open_issues": 3,
+          "starGain": null,
+          "heat": 93.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 87,
+          "ageDays": 75,
+          "created_at": "2026-09-11T09:40:02Z",
+          "pushed_at": "2026-11-13T05:37:05Z",
+          "license": "MIT",
+          "rating": 3,
+          "composite": 64.3,
+          "breakdown": {
+            "heat": 87,
+            "community": 49,
+            "activity": 5,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 40,
+            "devops": 85,
+            "ai": 49,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Write code in your terminal. Plug scripts into a live session. Hand tasks between agents.\n\nCore features · What's new · Quick start · Commands · Changelog · Docs\n\nDSCODE is a terminal coding agent for macOS and Linux, built on DeepSeek Harness. Dedicated file tools read and edit code with file-version checks; a persistent shell handles searches, builds and tests. The TUI, the CLI and your scripts all share one session runtime instead of each starting their own. It installs as a pinned, reproducible harness—DSH dependencies, TUI and plugins are versioned and verified together.",
+            "features": [],
+            "sections": [
+              "❄ DSCODE",
+              "🧭 Core features",
+              "🆕 What's new",
+              "🚀 Quick start",
+              "⌨️ Commands",
+              "🔧 Permissions & configuration",
+              "🧩 Development",
+              "📚 Documentation",
+              "🤝 Contributing",
+              "📄 License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 42971
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "xcl-dev/xcl",
+          "owner": "xcl-dev",
+          "name": "xcl",
+          "url": "https://github.com/xcl-dev/xcl",
+          "homepage": "https://discord.gg/xcl",
+          "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+          "language": "Rust",
+          "topics": [
+            "d3d12",
+            "gdk",
+            "rdna2",
+            "xbox"
+          ],
+          "stars": 7876,
+          "forks": 1046,
+          "open_issues": 1309,
+          "starGain": null,
+          "heat": 2700.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 4,
+          "created_at": "2026-11-20T20:03:21Z",
+          "pushed_at": "2026-11-25T02:02:00Z",
+          "license": "GPL-2.0",
+          "rating": 4.5,
+          "composite": 92.9,
+          "breakdown": {
+            "heat": 100,
+            "community": 75,
+            "activity": 96,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "XCL is a compatibility layer that runs Xbox Series X S (GDK) games you own on a Windows PC - in the spirit of Wine/Proton. There is no CPU emulation: the game's x64 code runs natively, and XCL provides its own, independently written implementations of the console system libraries the PC does not have ( kernelx.dll , XGameRuntime, d3d12 xs.dll , …). The console's GPU code (RDNA2 machine code) is recompiled into PC shaders (HLSL → DXIL).\n\nXCL works only on unpacked game files you already own. It does not download, decrypt or unpack game packages (XVC / MSIXVC) and contains nothing for circumventing DRM. The repository holds no code, headers or binaries from the console SDK, no keys and no game data; the Windows components XCL relies on (XGameRuntime, XAudio2, D3D12, DXC) come from your own system or the public Windows SDK and are not distributed with XCL.\n\n- 100 % of a retail game's shaders translate – all 26 698 RDNA2 programs (26 503 records) of its shader pack become HLSL; random samples compile to DXIL with 0 errors. - The game's own console DLLs run on the PC – its Bink 2 video codec decodes the game's movies, its ray-tracing BVH builder builds acceleration structures on a PC GPU, the AMD FSR 4 console upscaler runs a whole frame on a PC GPU, the GDK HTTP library initialises. - Console textures decode exactly – the GFX10 tiling and mip layout reproduce 909 of 912 textures of the game's texture archive byte for byte, its volume textures included. - 370+ automated tests , in",
+            "features": [
+              "100 % of a retail game's shaders translate – all 26 698 RDNA2 programs (26 503 records) of its shader pack",
+              "The game's own console DLLs run on the PC – its Bink 2 video codec decodes the game's",
+              "Console textures decode exactly – the GFX10 tiling and mip layout reproduce 909 of 912",
+              "370+ automated tests , including GPU tests that compare translated shaders against expected",
+              "Gamepad: any controller Windows sees through XInput (Xbox controllers, wired or wireless) is the",
+              "PlayStation controllers (DualShock 4 wired or over Bluetooth, DualSense wired) are the gamepad",
+              "Keyboard and mouse work too, as a gamepad: WASD the left stick, the mouse the right stick, mouse",
+              "dxil.dll , looked up in Windows Kits\\10\\bin\\ \\x64 , next to xcl.exe or in"
+            ],
+            "sections": [
+              "XCL – Xbox Series X S → Windows compatibility layer",
+              "Games",
+              "Highlights",
+              "What works",
+              "Running the game's code",
+              "System services",
+              "Graphics",
+              "Media and tools",
+              "Controls",
+              "Building and usage",
+              "Tests",
+              "Licenses"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 17434
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "fxceless/victory-fork",
+          "owner": "fxceless",
+          "name": "victory-fork",
+          "url": "https://github.com/fxceless/victory-fork",
+          "homepage": "",
+          "description": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files.",
+          "language": "Rust",
+          "topics": [],
+          "stars": 2038,
+          "forks": 493,
+          "open_issues": 497,
+          "starGain": null,
+          "heat": 698.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 1,
+          "created_at": "2026-11-24T18:02:37Z",
+          "pushed_at": "2026-11-25T01:22:09Z",
+          "license": "GPL-3.0",
+          "rating": 4.5,
+          "composite": 85.4,
+          "breakdown": {
+            "heat": 99,
+            "community": 64,
+            "activity": 95,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A work-in-progress fork of VIctory, a compatibility layer that runs an Xbox Series title natively on Windows from files the user supplies. This fork follows upstream main and adds fixes aimed at one goal: getting the game's world to render correctly and playably on one particular PC.\n\nThis repository contains no game files, code or assets. You need your own copy of the game. It is not affiliated with or endorsed by the game's developer or publisher.\n\n- VIctory by Marvisak and its contributors is the base of everything here: the loader, the runtime services, the Direct3D 12 back end and the shader recompiler. Licensed GPL-3.0-or-later; so is this fork. Upstream's history is kept intact below the single commit that carries this fork's changes. - XCL by ivall and its contributors (GPL-2.0-only) was used as a reference for how the same title behaves under another layer. Fixes inspired by it were written anew in VIctory's code. - This fork's changes were developed with Claude Code.",
+            "features": [
+              "VIctory by Marvisak and its",
+              "XCL by ivall and its contributors",
+              "This fork's changes were developed with Claude Code.",
+              "Meshlet culling read its scene buffers as the wrong kind of view, so the world drew almost nothing; fixed.",
+              "Per-draw descriptor tables could run out, after which draws used slots never made for them and the card hung; fixed.",
+              "Light packed by the game's compute shaders was read back through empty copies (sky, probes, fog); fixed for every mip level and layer.",
+              "The fog reconstruction, shadow-mask, hair, blend-shape skinning, fire and several material programs did not translate; fixed.",
+              "Gathers at a named mip level (with and without an offset) read level 0; fixed."
+            ],
+            "sections": [
+              "VIctory fork (work in progress)",
+              "Credits",
+              "Status of this fork (2026-11-25)",
+              "What this fork changed (summary)",
+              "Known problems",
+              "VIctory",
+              "Status (2026-11-23)",
+              "Getting started",
+              "Commands",
+              "Debugging",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13034
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "rustdesk/rustdesk",
+          "owner": "rustdesk",
+          "name": "rustdesk",
+          "url": "https://github.com/rustdesk/rustdesk",
+          "homepage": "https://rustdesk.com",
+          "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+          "language": "Rust",
+          "topics": [
+            "android",
+            "anydesk",
+            "dart",
+            "flatpak",
+            "flutter",
+            "flutter-apps",
+            "ios",
+            "linux"
+          ],
+          "stars": 131293,
+          "forks": 21211,
+          "open_issues": 224,
+          "starGain": 269,
+          "heat": 269,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 2248,
+          "created_at": "2020-09-28T15:36:08Z",
+          "pushed_at": "2026-11-24T15:46:34Z",
+          "license": "AGPL-3.0",
+          "rating": 4.5,
+          "composite": 91.7,
+          "breakdown": {
+            "heat": 95,
+            "community": 97,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Build • Docker • Structure • Screenshots [ Українська ] [ česky ] [ 中文 ] [ Magyar ] [ Español ] [ فارسی ] [ Français ] [ Deutsch ] [ Polski ] [ Indonesian ] [ Suomi ] [ മലയാളം ] [ 日本語 ] [ Nederlands ] [ Italiano ] [ Русский ] [ Português (Portugal) ] [ Português (Brasil) ] [ Esperanto ] [ 한국어 ] [ العربي ] [ Tiếng Việt ] [ Dansk ] [ Ελληνικά ] [ Türkçe ] [ Norsk ] [ Română ] [ ქართული ] We need your help to translate this README, RustDesk UI and RustDesk Doc to your native language\n\nYet another remote desktop solution, written in Rust. Works out of the box with no configuration required. You have full control of your data, with no concerns about security. You can use our rendezvous/relay server, set up your own, or write your own rendezvous/relay server.\n\nRustDesk welcomes contribution from everyone. See CONTRIBUTING.md for help getting started.",
+            "features": [
+              "Prepare your Rust development env and C++ build env",
+              "Install vcpkg, and set VCPKG ROOT env variable correctly",
+              "Windows: vcpkg install libvpx:x64-windows-static libyuv:x64-windows-static opus:x64-windows-static aom:x64-windows-static",
+              "Linux/macOS: vcpkg install libvpx libyuv opus aom",
+              "run cargo run",
+              "libs/hbb common : config, tcp/udp wrapper, and some other utility functions shared with the server",
+              "libs/base : protobuf, fs functions for file transfer, keyboard and platform code used only by this app",
+              "libs/scrap : screen capture and video codecs"
+            ],
+            "sections": [
+              "Dependencies",
+              "Raw Steps to build",
+              "Build",
+              "How to Build on Linux",
+              "Ubuntu 18 (Debian 10)",
+              "openSUSE Tumbleweed",
+              "Fedora 28 (CentOS 8)",
+              "Arch (Manjaro)",
+              "Install vcpkg",
+              "Fix libvpx (For Fedora)",
+              "Build",
+              "How to build with Docker",
+              "File Structure",
+              "Screenshots"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9915
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "localsend/localsend",
+          "owner": "localsend",
+          "name": "localsend",
+          "url": "https://github.com/localsend/localsend",
+          "homepage": "https://localsend.org",
+          "description": "An open-source cross-platform alternative to AirDrop",
+          "language": "Dart",
+          "topics": [
+            "dart",
+            "file-sharing",
+            "flutter",
+            "flutter-apps"
+          ],
+          "stars": 100670,
+          "forks": 5799,
+          "open_issues": 1044,
+          "starGain": 205,
+          "heat": 205,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 1440,
+          "created_at": "2022-12-16T00:46:07Z",
+          "pushed_at": "2026-11-24T15:18:45Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 88.8,
+          "breakdown": {
+            "heat": 89,
+            "community": 93,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "[Homepage][homepage] • [Discord][discord] • [GitHub][github] • [Codeberg][codeberg]\n\nLocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.\n\n- About - Sponsors - Screenshots - Download - How It Works - Dependency Hierarchy - Getting Started - Command Line Interface - Contributing - Translation - Bug Fixes and Improvements - Troubleshooting - Building - Android - iOS - macOS - Windows - Linux",
+            "features": [
+              "About",
+              "Sponsors",
+              "Screenshots",
+              "Download",
+              "How It Works",
+              "Dependency Hierarchy",
+              "Getting Started",
+              "Command Line Interface"
+            ],
+            "sections": [
+              "LocalSend",
+              "About",
+              "Sponsors",
+              "Screenshots",
+              "Download",
+              "Setup",
+              "How It Works",
+              "Dependency Hierarchy",
+              "Getting Started",
+              "Command Line Interface",
+              "Contributing",
+              "Translation",
+              "Bug Fixes and Improvements",
+              "Troubleshooting"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 15220
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "firecrawl/firecrawl",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 2
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "simplexai-labs/linger",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "FlashML-org/FreeVideo",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "wuyoscar/AISafetyHot",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "haydenschmitty/floorplan",
+      "category": "ai",
+      "lastPushed": "2026-11-02",
+      "times": 1
+    },
+    {
+      "full_name": "opensandbox-group/OpenSandbox",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "sybil-solutions/inference-optimisation-skill",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [
+    {
+      "full_name": "yile2020/fastapi-react-admin",
+      "category": "frontend",
+      "score": 3
+    }
+  ]
+}

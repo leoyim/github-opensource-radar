@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-24",
+    "updated": "2026-11-25",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 119,
-    "publicCount": 58,
+    "count": 121,
+    "publicCount": 60,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -54,6 +54,13 @@
         "window": "2026-11-21",
         "repos": 10,
         "note": "本波次在 2026-11-21 12:30—17:40 的同一时间窗内集中上架，仓库数量达数百个，标题均为不同商业软件名的 Windows 桌面版本；README 版式一致，首屏为预览图、安装按钮与徽章组，安装按钮均指向仓库自身的 Pages 页面；仓库根目录只有 index.html 或 docs/index.html 落地页、按钮与预览图，没有任何源码目录与构建链；星标集中在 337—378、零 fork、零 issue，附许可文件而内容为第三方商业软件的安装入口，申报的十余个主题词含多个与正文无关的方向词。本期归集其中进入推荐位的九个条目；11-24 期另归集同窗口内进入推荐位的第 10 个条目（创建于 13:04）。"
+      },
+      {
+        "id": "star-farm-2026-11",
+        "label": "「刷星」流量造假",
+        "window": "2026-11-24 — 2026-11-25",
+        "repos": 2,
+        "note": "同一账号（AhmadHassan-BTed）名下两个仓库的星标量与社区指标严重背离：6,241★ 与 5,171★ 对应的 fork 分别只有 23 与 3（同量级活跃仓库的 fork 率普遍在 15%–20%）、watcher 仅 3 与 0、issue 均为 0。仓库事件流几乎只有星标，抽样近期星标账号多为建号数天内的空壳号（0 仓库、0–2 粉丝），部分当天建号当天星标，且个别账号在两个仓库的星标记录中先后出现。账号其余 80 余个仓库星标全部在 5–29 区间，多个仓库同日批量创建。两仓库分别随 11-24、11-25 两期进入推荐位，已撤下并不再收录。"
       }
     ]
   },
@@ -8317,6 +8324,106 @@
       ],
       "verdict": "仓库以安装按钮与落地页代替源码与构建说明，所述内容为第三方商业软件的预配置分发，安装过程与授权依据均无法预先审阅。",
       "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联，并通过官方渠道获取相应软件。"
+    },
+    {
+      "full_name": "AhmadHassan-BTed/AutoSwarm-Shadow-Adapter",
+      "owner": "AhmadHassan-BTed",
+      "name": "AutoSwarm-Shadow-Adapter",
+      "url": "https://github.com/AhmadHassan-BTed/AutoSwarm-Shadow-Adapter",
+      "description": "Zero-modification Human-in-the-Loop adapter for OpenOPC's agentic DAG runtime.",
+      "language": "Python",
+      "category": "inflated-popularity",
+      "categoryLabel": "热度异常",
+      "sourceCategory": "ai",
+      "status": "excluded",
+      "state": "blocked",
+      "disclosure": "public",
+      "campaign": "star-farm-2026-11",
+      "firstSeen": "2026-11-25",
+      "removedAt": "2026-11-25",
+      "issues": [
+        "2026-11-25"
+      ],
+      "score": 3.5,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "5,171 星标对应的 fork 只有 3、watcher 为 0；同量级活跃仓库的 fork 率普遍在 15%–20%，watcher 通常在数十以上，该仓库两项指标均低两个数量级。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少真实使用者反馈。"
+        },
+        {
+          "type": "metadata",
+          "label": "同账号仓库形态异常",
+          "detail": "账号名下其余 80 余个仓库星标全部在 5–29 区间，其中 6 个创建于 2026-11-13 同日、2 个创建于 2026-11-09，呈批量运营特征；本仓库与该账号其余仓库量级相差两个数量级。"
+        },
+        {
+          "type": "metadata",
+          "label": "近期改名调整关键词",
+          "detail": "2026-10-20 由 OpenOPC-Shadow-Adapter 改名为 AutoSwarm-Shadow-Adapter，与话题热词（swarm/agent）对齐。"
+        },
+        {
+          "type": "correlation",
+          "label": "星标账号画像异常",
+          "detail": "仓库公开事件流 100 条中 93 条为星标，几乎没有社区互动；抽样 10 个近期星标账号，6 个为建号数天至数周的空壳号（0 仓库、0–2 粉丝），其中 rakhibhardwaj25-dot（建号 2026-11-21）与 shazwani14（建号 2026-11-16）均为当天建号当天星标。"
+        },
+        {
+          "type": "content",
+          "label": "README 以术语堆叠为主",
+          "detail": "README 开头为大型 ASCII 字符画与「IMPLEMENTATION SPECIFICATION」规格术语堆叠，正文以指令式功能清单为主，缺少可复核的架构说明与真实使用记录。"
+        }
+      ],
+      "verdict": "仓库星标量与 fork、watcher、issue 等社区指标严重背离，星标账号画像与同账号仓库批量运营特征指向流量造假，收录判断无法成立。",
+      "advice": "不建议将其热度作为技术选型参考；如需评估其中适配器思路，建议核对源码与真实社区反馈后再做判断。"
+    },
+    {
+      "full_name": "AhmadHassan-BTed/Jantt",
+      "owner": "AhmadHassan-BTed",
+      "name": "Jantt",
+      "url": "https://github.com/AhmadHassan-BTed/Jantt",
+      "description": "Create interactive Gantt charts with AI : no code required, free forever.",
+      "language": "TypeScript",
+      "category": "inflated-popularity",
+      "categoryLabel": "热度异常",
+      "sourceCategory": "frontend",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "star-farm-2026-11",
+      "firstSeen": "2026-11-24",
+      "removedAt": "2026-11-25",
+      "issues": [
+        "2026-11-24"
+      ],
+      "score": 4,
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "6,241 星标对应的 fork 只有 23（fork 率约 0.4%，同量级活跃仓库普遍在 15%–20%）、watcher 仅 3、issue 为 0，三项社区指标均低于同量级仓库一至两个数量级。"
+        },
+        {
+          "type": "metadata",
+          "label": "议题记录空白",
+          "detail": "在现有星标量级下没有任何 issue，缺少真实使用者反馈。"
+        },
+        {
+          "type": "metadata",
+          "label": "同账号仓库形态异常",
+          "detail": "与 2026-11-25 期撤下的 AutoSwarm-Shadow-Adapter 同属一个账号；该账号其余 80 余个仓库星标全部在 5–29 区间，多个仓库同日批量创建。"
+        },
+        {
+          "type": "correlation",
+          "label": "星标账号跨仓库重合",
+          "detail": "derex-cmd、karandashov 两个账号在 2026-11-23 前后先后为本仓库与同账号的 AutoSwarm-Shadow-Adapter 星标，与刷星批次共享账号的特征一致。"
+        }
+      ],
+      "verdict": "仓库星标量与 fork、watcher、issue 等社区指标严重背离，且与同账号已判定刷星的仓库关联，收录判断无法成立。",
+      "advice": "不建议将其热度作为技术选型参考；甘特图场景可对比 frappe/gantt、bryntum 等有真实社区反馈的方案。"
     }
   ]
 }
