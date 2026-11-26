@@ -1,0 +1,1655 @@
+{
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T09:39:38.068+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-25",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 904,
+    "unclassified": 72,
+    "selected": 18,
+    "suppressedByHistory": 343,
+    "sameDateExempt": 0,
+    "removed": 3,
+    "removedTotal": 3,
+    "offTopic": 2,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "spinabot/brigade",
+          "owner": "spinabot",
+          "name": "brigade",
+          "url": "https://github.com/spinabot/brigade",
+          "homepage": "https://www.brigade.spinabot.com",
+          "description": "Brigade — Your personal intelligence, built enterprise-grade",
+          "language": "TypeScript",
+          "topics": [
+            "agent-runtime",
+            "ai",
+            "ai-crew",
+            "autonomous-agents",
+            "brigade",
+            "brigade-agent",
+            "chatgpt",
+            "clawdbot"
+          ],
+          "stars": 11392,
+          "forks": 82,
+          "open_issues": 46,
+          "starGain": null,
+          "heat": 700.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 159,
+          "created_at": "2026-06-19T15:18:17Z",
+          "pushed_at": "2026-11-13T04:10:20Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 76.5,
+          "breakdown": {
+            "heat": 99,
+            "community": 71,
+            "activity": 13,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 41,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Built for enterprise scale. Open for everyone. &middot; An ecosystem, not an app.\n\n🔐 No tokens to juggle. No drama. No copy-pasting secrets, no telemetry — we handle them, not you . Your API keys stay on your own machine, never sent to a middleman.\n\n🔑 No API key? No problem. Sign in with your Claude , ChatGPT , or Copilot subscription — or, if you're already signed into the Claude Code or Codex CLI, reuse that login (no browser, no re-auth).",
+            "features": [
+              "Why Brigade",
+              "Install",
+              "Quick start",
+              "How it works",
+              "Features",
+              "CLI reference",
+              "In-chat commands",
+              "Built-in tools"
+            ],
+            "sections": [
+              "🦁 Brigade — Your personal intelligence, built enterprise-gr",
+              "macOS / Linux — installs Node if needed, then Brigade (no su",
+              "Table of contents",
+              "Why Brigade",
+              "Install",
+              "macOS / Linux",
+              "…or straight from GitHub:",
+              "Windows (PowerShell)",
+              "…or straight from GitHub:",
+              "Quick start",
+              "1. Set up — pick a provider, paste an API key (or scan local",
+              "2. Start the always-on gateway — your crew, channels, and cr",
+              "3. Chat with your crew",
+              "How it works"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 54780
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "RunanywhereAI/trnrt",
+          "owner": "RunanywhereAI",
+          "name": "trnrt",
+          "url": "https://github.com/RunanywhereAI/trnrt",
+          "homepage": "https://runanywhere.ai/blog/glm-5-3-flash-trainium2-nki-megakernels",
+          "description": "The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere.",
+          "language": "Python",
+          "topics": [
+            "aws",
+            "glm",
+            "inference",
+            "llm",
+            "llm-serving",
+            "megakernels",
+            "neuron",
+            "nki"
+          ],
+          "stars": 1661,
+          "forks": 29,
+          "open_issues": 12,
+          "starGain": null,
+          "heat": 275,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 26,
+          "created_at": "2026-10-30T18:30:04Z",
+          "pushed_at": "2026-11-25T09:45:45Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 78.7,
+          "breakdown": {
+            "heat": 93,
+            "community": 56,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Quickstart · Benchmarks · Docs · Kernels · Blog post · runanywhere.ai\n\nTrnRT is an open inference engine for large language models on AWS Trainium. It serves an OpenAI-compatible API from one trn2.48xlarge , runs decode as NKI megakernels (about one kernel per layer half), and keeps a prefix cache across device and host memory. GLM-5.3-Flash is the first supported model; more open models are on the way.\n\nHow we built it, with the AgentX results: Serving GLM-5.3-Flash on one Trainium2 box with NKI layer megakernels.",
+            "features": [
+              "Graph equivalence: EQUAL on all 32 ranks, for all 157 graphs that build compiles in the default batch-12",
+              "Outputs: byte-identical to that build's on 384 of 384 requests.",
+              "Serving: the two-engine serve in the Quickstart passed end to end on the device at release 0.1.0. On"
+            ],
+            "sections": [
+              "Where TrnRT stands",
+              "Highlights",
+              "Quickstart",
+              "Supported hardware and models",
+              "Benchmarks",
+              "How it works",
+              "Repository layout",
+              "Development",
+              "AWS resources",
+              "Acknowledgments",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16004
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "simplexai-labs/PolyStrata",
+          "owner": "simplexai-labs",
+          "name": "PolyStrata",
+          "url": "https://github.com/simplexai-labs/PolyStrata",
+          "homepage": "",
+          "description": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, Tiel Coder and MiniCPM-V on a second engine written for PolyStrata. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost.",
+          "language": "C++",
+          "topics": [
+            "anthropic-api",
+            "cuda",
+            "gemma",
+            "gguf",
+            "glm",
+            "inference-engine",
+            "llm",
+            "local-llm"
+          ],
+          "stars": 1539,
+          "forks": 207,
+          "open_issues": 62,
+          "starGain": 44,
+          "heat": 44,
+          "heatBasis": "snapshot",
+          "heatPercentile": 75,
+          "ageDays": 50,
+          "created_at": "2026-10-06T21:09:40Z",
+          "pushed_at": "2026-11-25T15:19:48Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 70.3,
+          "breakdown": {
+            "heat": 75,
+            "community": 60,
+            "activity": 66,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 49,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "English · 简体中文 · 日本語 · Deutsch · Français · Español · Português · Türkçe\n\nQwen3.8-Flash-Next, Hy4-Flash, GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Flint, Qwen3.6, Clover, Ornith 1.5, Gemma 4, Tiel Coder, MiniCPM-V and Kolibri 1 · free and open source\n\nClaude Code on Qwen3.6-35B-A3B UD-Q3 K M, on the laptop with the 8 GB card, in real time: it adds a --json option to a small program, writes a test for it and runs the tests. The server had read Claude Code's system prompt when it started ( \"warm start\": true ).",
+            "features": [
+              "Qwen3.8-Flash-Next on an NVIDIA or AMD graphics card with",
+              "GLM 5.3 Flash , the largest: a file of 79 to 114 GB, most of which stays in RAM.",
+              "DeepSeek V4 Flash , a file of 91 GB, most of which stays in RAM too. Its memory of a",
+              "LFM2.5-24B-A2B by Liquid AI, a file of 11 to 25 GB. Most of its layers have no attention, so a",
+              "Flint 40B-A2.5B by Recursive, made for coding agents: a file of 18 to 42 GB. Most of its layers",
+              "Qwen3.6-35B-A3B , a file of 13 to 23 GB. It also reads pictures.",
+              "Groot 19B-A3B 261023 , experimental setup integration for three of Bartowski's quantizations,",
+              "Inkling 2 Mini by Thinking Machines, experimental: a file of 9 to 18 GB. It has run"
+            ],
+            "sections": [
+              "How fast is it?",
+              "How much RAM it keeps",
+              "What you need",
+              "Install",
+              "Let your AI set it up",
+              "Or do it yourself",
+              "Which model should I pick?",
+              "Using it",
+              "Optional: more speed on one card when the whole model fits i",
+              "Something went wrong?",
+              "How does it work?",
+              "Built on PolyStrata",
+              "Credits and license"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 33611
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "0xPlaygrounds/rig",
+          "owner": "0xPlaygrounds",
+          "name": "rig",
+          "url": "https://github.com/0xPlaygrounds/rig",
+          "homepage": "https://rig.rs",
+          "description": "⚙️🦀 Build modular and scalable LLM Applications in Rust",
+          "language": "Rust",
+          "topics": [
+            "agent",
+            "ai",
+            "artificial-intelligence",
+            "automation",
+            "generative-ai",
+            "large-language-model",
+            "llm",
+            "llmops"
+          ],
+          "stars": 9267,
+          "forks": 1031,
+          "open_issues": 70,
+          "starGain": 14,
+          "heat": 14,
+          "heatBasis": "trending",
+          "heatPercentile": 65,
+          "ageDays": 903,
+          "created_at": "2024-06-05T13:42:28Z",
+          "pushed_at": "2026-11-25T16:50:00Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.1,
+          "breakdown": {
+            "heat": 65,
+            "community": 76,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Rig is a Rust library for building applications on large language models. It also ships rig , a terminal coding agent built on the library that you extend with Bevy plugins.\n\nThis installs the launcher of the latest release. Each release's guide is on its tag, such as 0.47.0's guide. The agent guide on main can be ahead of the release, and shows how to install main from a checkout. The agent needs Rust 1.97.1 or newer and runs on Linux and macOS.\n\nThe first rig builds the agent, which takes several minutes, and opens it. Run /login to sign in or save an API key, or export one such as OPENAI API KEY before starting. /model picks a model and /help lists the commands. rig -p \"fix the failing test\" answers one prompt and exits.",
+            "features": [
+              "The agent guide covers updating, models, sessions, tools,",
+              "The plugin guide explains the basics of a",
+              "Agents and state: rig-agent ,",
+              "Models: rig-bedrock ,"
+            ],
+            "sections": [
+              "The coding agent",
+              "The library",
+              "Crates",
+              "Community"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5455
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "gamedev-skills/awesome-gamedev-agent-skills",
+          "owner": "gamedev-skills",
+          "name": "awesome-gamedev-agent-skills",
+          "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+          "homepage": "https://gamedev-skills.github.io/awesome-gamedev-agent-skills/",
+          "description": "Make games with your AI coding agent: 79 game-dev skills and a router for Godot, Unity, Unreal, Roblox, three.js, Phaser and 6 more engines. Checked on the real engines.",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "awesome-list",
+            "bevy",
+            "claude-code",
+            "codex",
+            "cursor",
+            "game-dev"
+          ],
+          "stars": 11232,
+          "forks": 1158,
+          "open_issues": 8,
+          "starGain": 491,
+          "heat": 491,
+          "heatBasis": "snapshot",
+          "heatPercentile": 95,
+          "ageDays": 155,
+          "created_at": "2026-06-24T07:18:39Z",
+          "pushed_at": "2026-11-12T07:38:53Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 75.3,
+          "breakdown": {
+            "heat": 95,
+            "community": 77,
+            "activity": 7,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "alt=\"awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 79 skills and a router across 12 engines, including an art-direction and asset-production workflow.\"\n\nMake games with your AI coding agent, in the engine you already use. 79 skills for 12 engines: say what you're building, and a router loads the right 2 or 3 skills before your agent writes code.\n\nnpx skills add gamedev-skills/awesome-gamedev-agent-skills",
+            "features": [
+              "Cross-engine. Godot, Unity, Unreal, Ebitengine, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Defold, Roblox.",
+              "You don't pick skills. The router detects your engine and task and loads only what fits.",
+              "Art direction, not one-off generations. The asset workflow locks a visual target, builds",
+              "Checked on the real engines. Every skill is written from official engine docs and pinned to",
+              "Quick start",
+              "What you can ask",
+              "How the router picks skills",
+              "Catalog"
+            ],
+            "sections": [
+              "awesome-gamedev-agent-skills",
+              "Sponsors",
+              "Contents",
+              "Quick start",
+              "What you can ask",
+              "How the router picks skills",
+              "Catalog",
+              "Engines",
+              "Disciplines — 15 ( skills/disciplines/ )",
+              "Genres — 9 ( skills/genres/ )",
+              "Workflows — 5 ( skills/workflows/ )",
+              "Agent compatibility",
+              "Demo",
+              "Repository layout"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 25994
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Dodaios/ste80-humanizer",
+          "owner": "Dodaios",
+          "name": "ste80-humanizer",
+          "url": "https://github.com/Dodaios/ste80-humanizer",
+          "homepage": "https://skills.sh/Dodaios/ste80-humanizer",
+          "description": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "ai-writing",
+            "asd-ste100",
+            "claude-code",
+            "claude-skills",
+            "codex",
+            "cursor",
+            "humanize-ai-text"
+          ],
+          "stars": 1135,
+          "forks": 81,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 244.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 87,
+          "ageDays": 16,
+          "created_at": "2026-11-09T17:18:59Z",
+          "pushed_at": "2026-11-24T17:04:48Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 75.4,
+          "breakdown": {
+            "heat": 87,
+            "community": 56,
+            "activity": 57,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Built by the team behind Dodaios, the open-source assistant that runs your coding agents for you.\n\nSTE80 Humanizer makes AI-written text read like a careful person wrote it, without changing what it says. It combines two methods:\n\n1. The humanizer method. Remove the 26 tells from Wikipedia's Signs of AI writing, in the catalog of blader/humanizer. 2. Karpathy's STE80 method. Rebuild the sentences to be \"80% of the way to ASD-STE100\", the controlled English of aircraft maintenance manuals.",
+            "features": [
+              "The humanizer method. Remove the 26 tells from Wikipedia's Signs of AI writing, in the catalog of blader/humanizer.",
+              "Karpathy's STE80 method. Rebuild the sentences to be \"80% of the way to ASD-STE100\", the controlled English of aircraft maintenance manuals.",
+              "20 words per instruction and 25 per description",
+              "one instruction per sentence",
+              "active voice and simple tenses",
+              "one meaning per word, with about 900 approved words",
+              "one topic per paragraph, and six sentences at most",
+              "§1 to §26: the AI tells (Pass 1)."
+            ],
+            "sections": [
+              "STE80 Humanizer",
+              "Why two passes",
+              "The method: what Karpathy said",
+              "How to read the skill",
+              "Installation",
+              "Any agent (skills.sh)",
+              "Claude Code plugin",
+              "Claude.ai and Claude Desktop",
+              "Usage",
+              "Pass 1: the 26 AI tells",
+              "Pass 2: the 15 STE80 rules",
+              "Checker",
+              "Tests",
+              "Limits"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 17356
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "emilkowalski/skills",
+          "owner": "emilkowalski",
+          "name": "skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "homepage": "https://aiforui.dev/skills",
+          "description": "Skills for Designers and Engineers.",
+          "language": "Markdown",
+          "topics": [
+            "agent-skills",
+            "animation",
+            "claude-code",
+            "codex",
+            "cursor",
+            "design-engineering"
+          ],
+          "stars": 59611,
+          "forks": 3528,
+          "open_issues": 3,
+          "starGain": 298,
+          "heat": 298,
+          "heatBasis": "snapshot",
+          "heatPercentile": 88,
+          "ageDays": 254,
+          "created_at": "2026-03-16T13:52:31Z",
+          "pushed_at": "2026-11-15T12:42:50Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 73.4,
+          "breakdown": {
+            "heat": 88,
+            "community": 89,
+            "activity": 5,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "For designers and engineers to help them build better user interfaces.\n\nKnowing whether you made a right choice when it comes to animations, or design in general, is hard. These skills aim to help you get to those right decisions faster.\n\nThey are based on my years of experience working at companies like Vercel and Linear.",
+            "features": [
+              "emil-design-eng — The main skill that consists of mostly animation, but also some design advice.",
+              "animate — Builds an animation from scratch while choosing the correct curve, duration, properties, and so on.",
+              "animate-expo — The same bar, for React Native and Expo: gestures, sheets, haptics, screen transitions, and keeping motion off the JS thread.",
+              "review-animations — Review your animations in a strict way, based on my rules.",
+              "improve-animations — Audit all the animations in your codebase and get prioritized, self-contained plans that any agent can execute.",
+              "find-animation-opportunities — Search your UI for places that would genuinely benefit from motion, while also telling you what not to animat",
+              "remove-animations — The opposite of finding opportunities: remove the animations your app doesn't need, think of motion on keyboard shortcut",
+              "choreograph — Coordinate several elements that animate together: what leads, what follows, what runs in parallel, and what shouldn't move at"
+            ],
+            "sections": [
+              "Skills For Designers and Engineers",
+              "Install",
+              "Why use it?",
+              "Reference"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5805
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "HarnessMD/munder-difflin",
+          "owner": "HarnessMD",
+          "name": "munder-difflin",
+          "url": "https://github.com/HarnessMD/munder-difflin",
+          "homepage": "https://munderdiffl.in",
+          "description": "Coolest app to use agents, local, multi provider and open source grok bot alternative. Build custom worlds for your claude code and codex like agents",
+          "language": "TypeScript",
+          "topics": [
+            "agent-harness",
+            "agent-orchestration",
+            "agent-team",
+            "agentic-ai",
+            "ai-agent",
+            "ai-agents",
+            "ai-assistant",
+            "ai-tools"
+          ],
+          "stars": 9792,
+          "forks": 1392,
+          "open_issues": 223,
+          "starGain": 72,
+          "heat": 72,
+          "heatBasis": "snapshot",
+          "heatPercentile": 68,
+          "ageDays": 178,
+          "created_at": "2026-05-31T15:25:05Z",
+          "pushed_at": "2026-11-25T21:23:05Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 74.6,
+          "breakdown": {
+            "heat": 68,
+            "community": 77,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Use the subscriptions you already pay for to run an office of AI agents on your own computer. Works with Claude, ChatGPT, Grok, Gemini and more. Free and open source.\n\nMunder Difflin is a desktop app that runs a team of AI agents as an office you can watch. You hire agents, give each one a role, a face and a model, and hand them work in plain words: research, writing, analysis, planning, support, operations, and code too. They plan it, do it and report back.\n\n- Your subscriptions. Each agent runs the real CLI you already use, signed in with your own plan. We do not sell model access. - Your computer. Agents, memory and tasks are plain files in a folder you choose. Open them, back them up or delete them. - One person to talk to. Michael, the orchestrator, takes your request and hands each piece to the right agent.",
+            "features": [
+              "Your subscriptions. Each agent runs the real CLI you already use, signed in with your own plan.",
+              "Your computer. Agents, memory and tasks are plain files in a folder you choose. Open them,",
+              "One person to talk to. Michael, the orchestrator, takes your request and hands each piece to",
+              "Every agent is a real terminal process ( node-pty , shown with xterm.js) with its own",
+              "Agents talk through the hive , a local git repository of plain files. An agent writes to its",
+              "Michael runs the floor. He handles routine requests himself and puts anything that needs you",
+              "Guard rails. A circuit breaker watches every agent for loops, error storms and runaway spend,",
+              "Memory. Every agent keeps what it learns, and the whole office shares one memory you can search."
+            ],
+            "sections": [
+              "Munder Difflin",
+              "Coolest app to use agents",
+              "What it is",
+              "Engines",
+              "How the office works",
+              "What's in the box",
+              "Build from source",
+              "Contributing",
+              "Telemetry",
+              "Munder Difflin Pro",
+              "License",
+              "Acknowledgements"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9445
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "xmwengxing/CFPilot",
+          "owner": "xmwengxing",
+          "name": "CFPilot",
+          "url": "https://github.com/xmwengxing/CFPilot",
+          "homepage": "",
+          "description": "Cloudflare Workers 代理微内核 · 真连接优选面板 · 一键部署（VLESS/Trojan/XHTTP + 优选订阅 + 本地真连接优选器 + 中文部署向导）",
+          "language": "TypeScript",
+          "topics": [
+            "cloudflare",
+            "cloudflare-workers",
+            "ip-optimization",
+            "proxy",
+            "subscription",
+            "trojan",
+            "typescript",
+            "vless"
+          ],
+          "stars": 1434,
+          "forks": 586,
+          "open_issues": 37,
+          "starGain": null,
+          "heat": 200.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 36,
+          "created_at": "2026-10-21T07:31:49Z",
+          "pushed_at": "2026-11-25T12:02:00Z",
+          "license": "AGPL-3.0",
+          "rating": 4,
+          "composite": 78.8,
+          "breakdown": {
+            "heat": 94,
+            "community": 62,
+            "activity": 63,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "· 把「代理内核 + 优选订阅 + 本地真连接优选 + 盲中继 / 云监测台 + 异地组网（+mesh）」整合成一套方案；\n\n· 采用双项目拆分部署：控制面（Web 管理面板）跑 Pages，数据面（流量转发）可选 Pages（默认） 或 Workers ；\n\n· 静态脱敏 + 内核独立热更新通道（ kernel-latest ），转发内核始终保持正式版升级形态；",
+            "features": [
+              "盲中继 / 云监测台与异地组网（+mesh）",
+              "优选 IP",
+              "导入订阅",
+              "使用须知",
+              "常见问题",
+              "技术实现",
+              "配置项与环境变量",
+              "免责声明"
+            ],
+            "sections": [
+              "CFPilot",
+              "目录",
+              "部署",
+              "Linux 版",
+              "1. 放到固定位置（示例：家目录下的 Applications）",
+              "2. 浏览器下载的文件默认没有执行位",
+              "3. 从终端启动（首次运行别双击，见下方说明）",
+              "Docker 版",
+              "1. 拉镜像",
+              "2. 运行",
+              "3. 打开面板：地址在启动日志里（令牌每次启动随机，重启后要从日志里重新拿）",
+              "1. 先编出 Linux 产物（镜像不在里面编译，Dockerfile 只做一次 COPY）",
+              "2. 构建镜像（构建上下文是 docker/ 目录，很小）",
+              "3. 运行"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 32587
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "libretro/RetroArch",
+          "owner": "libretro",
+          "name": "RetroArch",
+          "url": "https://github.com/libretro/RetroArch",
+          "homepage": "http://www.libretro.com",
+          "description": "Cross-platform, sophisticated frontend for the libretro API. Licensed GPLv3.",
+          "language": "C",
+          "topics": [
+            "c",
+            "libretro",
+            "retroarch"
+          ],
+          "stars": 14707,
+          "forks": 2396,
+          "open_issues": 2972,
+          "starGain": 9,
+          "heat": 9,
+          "heatBasis": "trending",
+          "heatPercentile": 68,
+          "ageDays": 6026,
+          "created_at": "2010-05-27T14:47:40Z",
+          "pushed_at": "2026-11-26T00:15:56Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 77,
+          "breakdown": {
+            "heat": 68,
+            "community": 81,
+            "activity": 79,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "RetroArch is the reference frontend for the libretro API. Popular examples of implementations for this API includes video game system emulators and game engines as well as more generalized 3D programs. These programs are instantiated as dynamic libraries. We refer to these as \"libretro cores\".\n\nlibretro is an API that exposes generic audio/video/input callbacks. A frontend for libretro (such as RetroArch) handles video output, audio output, input and application lifecycle. A libretro core written in portable C or C++ can run seamlessly on many platforms with very little to no porting effort.\n\nWhile RetroArch is the reference frontend for libretro, several other projects have used the libretro interface to include support for emulators and/or game engines. libretro is completely open and free for anyone to use.",
+            "features": [
+              "Cg/HLSL shaders: common-shaders",
+              "slang shaders: slang-shaders",
+              "GLSL shaders: glsl-shaders",
+              "Helper scripts to build libretro implementations: libretro-super",
+              "GitHub mirrors of projects, useful for generating diff files: libretro-mirrors",
+              "Android (2.x to most recent version)",
+              "Apple macOS (PPC, x86-32 and x86-64)",
+              "ArmSoM CM5 (Rockchip RK3576, Linux/AArch64)"
+            ],
+            "sections": [
+              "RetroArch",
+              "libretro",
+              "Binaries",
+              "Support",
+              "Documentation",
+              "Related projects",
+              "Philosophy",
+              "Platforms",
+              "Dependencies (PC)",
+              "Dependencies (Console ports, mobile)",
+              "Requirements",
+              "OpenGL1",
+              "OpenGL2",
+              "OpenGL3"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 12476
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "designfuchen/word-atlas",
+          "owner": "designfuchen",
+          "name": "word-atlas",
+          "url": "https://github.com/designfuchen/word-atlas",
+          "homepage": "https://0xlei.tech/words/",
+          "description": "词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio and FSRS review. Open-source app + CC BY 4.0 dataset.",
+          "language": "TypeScript",
+          "topics": [
+            "chinese",
+            "dataset",
+            "english-learning",
+            "flashcards",
+            "fsrs",
+            "ielts",
+            "language-learning",
+            "pwa"
+          ],
+          "stars": 5326,
+          "forks": 1144,
+          "open_issues": 71,
+          "starGain": 47,
+          "heat": 47,
+          "heatBasis": "snapshot",
+          "heatPercentile": 85,
+          "ageDays": 32,
+          "created_at": "2026-10-25T08:27:22Z",
+          "pushed_at": "2026-11-13T10:36:13Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 70.8,
+          "breakdown": {
+            "heat": 85,
+            "community": 72,
+            "activity": 14,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 30,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "词光是一款以插画和语境为核心的雅思背词应用。看画面理解词义，听发音建立联系，再用主动回忆和间隔复习巩固记忆。无需账号，学习进度保存在自己的设备上。\n\n19 个话题组成词汇星图。拖动旋转、滚动缩放，点击星星打开词卡；学习状态用不同亮度呈现。采用 WebGL2 渲染，不支持的设备提供降级显示。\n\n全部素材都在仓库里：插画在 public/atlas/img/ ，录音在 public/atlas/audio/ ，这两类按 CC BY 4.0 开放；界面声音和配乐在 public/sfx/ ，随应用一起提供。",
+            "features": [
+              "报告问题：词条纠错、界面问题或使用建议。",
+              "贡献指南：数据同步、代码规范和提交前检查。",
+              "安全政策：安全问题的反馈方式。"
+            ],
+            "sections": [
+              "词光 · Word Atlas",
+              "产品预览",
+              "一本可以听、可以练的单词图鉴",
+              "学过的词，汇成自己的星图",
+              "学习方式",
+              "环境声与交互声音",
+              "本地运行",
+              "开放数据",
+              "内容来源与局限",
+              "参与贡献",
+              "授权"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5988
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "zephium-browser/Zephium",
+          "owner": "zephium-browser",
+          "name": "Zephium",
+          "url": "https://github.com/zephium-browser/Zephium",
+          "homepage": "https://zephium.app",
+          "description": "A fast, fully-featured browser and work environment reimagined for you and your agents",
+          "language": "Rust",
+          "topics": [
+            "adblock",
+            "agents",
+            "ai",
+            "browser",
+            "canvas",
+            "rust",
+            "svelte",
+            "tauri"
+          ],
+          "stars": 1328,
+          "forks": 133,
+          "open_issues": 129,
+          "starGain": 5,
+          "heat": 5,
+          "heatBasis": "snapshot",
+          "heatPercentile": 58,
+          "ageDays": 163,
+          "created_at": "2026-06-15T19:55:15Z",
+          "pushed_at": "2026-11-26T01:34:34Z",
+          "license": "MPL-2.0",
+          "rating": 3.5,
+          "composite": 65.4,
+          "breakdown": {
+            "heat": 58,
+            "community": 58,
+            "activity": 71,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A fast, fully featured browser and work environment, reimagined for you and your agents.\n\nRead in another language 简体中文 · 日本語 · 한국어 · हिन्दी · Español · Português · Français · Deutsch · Polski · Русский · Bahasa Indonesia\n\nSafari's efficiency. Brave's protection. Arc's design. And Work , a canvas where your agents do real work in plain sight.",
+            "features": [
+              "It starts from what you already have. Work recalls what it knows about",
+              "Helpers work in parallel, in the open. For a trip, one helper looks for",
+              "Results stay on the canvas. Comparisons, tables, charts, diagrams, plans,",
+              "A plan becomes your day. One click turns each step of a plan into a task",
+              "It reaches past the browser. Work reads and edits the folders you grant,",
+              "You stay in charge. Anything that posts, merges or changes something",
+              "Bring any model. Use your own keys for Anthropic, OpenAI, Google Gemini,",
+              "Native WebKit on macOS and WebView2 on Windows, so pages run on the engine"
+            ],
+            "sections": [
+              "Work",
+              "Ask Zephium",
+              "Browse",
+              "Fast and light",
+              "Designed to live in",
+              "Extensions",
+              "Bring everything with you",
+              "Built in",
+              "Private by default",
+              "Download",
+              "What's next",
+              "Build from source",
+              "Architecture",
+              "Contributing"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14080
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "talgent-work/workbench",
+          "owner": "talgent-work",
+          "name": "workbench",
+          "url": "https://github.com/talgent-work/workbench",
+          "homepage": "https://talgent.work",
+          "description": "Open-source managed agents you host yourself: your own AI Agent for real work, every Work in its own sandbox on your infrastructure.",
+          "language": "Go",
+          "topics": [
+            "agent-orchestration",
+            "agent-platform",
+            "ai-agent-platform",
+            "ai-agents",
+            "golang",
+            "hosted-agents",
+            "kubernetes",
+            "llm"
+          ],
+          "stars": 136,
+          "forks": 5,
+          "open_issues": 0,
+          "starGain": 16,
+          "heat": 16,
+          "heatBasis": "snapshot",
+          "heatPercentile": 71,
+          "ageDays": 20,
+          "created_at": "2026-11-06T05:14:15Z",
+          "pushed_at": "2026-11-26T01:10:55Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 63.9,
+          "breakdown": {
+            "heat": 71,
+            "community": 36,
+            "activity": 61,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 31,
+            "backend": 100,
+            "devops": 100,
+            "ai": 37,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A managed agent platform you run yourself. Every Work in its own sandbox or on your own machine, with the model you choose.\n\nLive demo · Website · Get started · Documentation · Releases · Report a bug\n\nTalgent Workbench gives every person, and every program you register, an AI Agent of their own. Start a Work, hand it files, follow what it does as it happens and collect the results.",
+            "features": [
+              "The whole platform is yours. The control plane, the Agents' conversations, their files and",
+              "Any model, per Work. Offer Claude, DeepSeek, Qwen, Kimi, GLM, MiniMax or any vendor with an",
+              "In the cloud or on your own machine. Run a Work in a VM-isolated sandbox on your cluster, or",
+              "For people and for programs. A web app where everyone has their own Agent, and the same",
+              "The Claude Code ecosystem as it is. Plugins come from standard Claude Code plugin catalogs,",
+              "Costs and access you can trace. Token usage by person, Work, model and Application. Every",
+              "Goals with an owner. Every goal of a project on one board, with its owner, its priority and",
+              "A coordinator that keeps every Agent in step. It knows how the goals depend on each other."
+            ],
+            "sections": [
+              "Your own Agent, ready for real work.",
+              "Why Workbench",
+              "Two ways to run a Work",
+              "What you can do",
+              "Build on Workbench with Applications",
+              "From every person to the whole company: Talgent Orchestra",
+              "Get started",
+              "Documentation",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9916
+          },
+          "guard": {
+            "score": 1.5,
+            "signals": [
+              "batchCluster"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "embeddable-hq/mason-data",
+          "owner": "embeddable-hq",
+          "name": "mason-data",
+          "url": "https://github.com/embeddable-hq/mason-data",
+          "homepage": "https://masondata.ai/?src=readme",
+          "description": "Open source postgres read-replica, powered by columnar storage",
+          "language": "TypeScript",
+          "topics": [
+            "analytics",
+            "business-intelligence",
+            "embedded-analytics",
+            "postgres",
+            "postgresql",
+            "postgresql-database"
+          ],
+          "stars": 72,
+          "forks": 3,
+          "open_issues": 60,
+          "starGain": 17,
+          "heat": 17,
+          "heatBasis": "snapshot",
+          "heatPercentile": 87,
+          "ageDays": 29,
+          "created_at": "2026-10-27T16:28:01Z",
+          "pushed_at": "2026-11-20T17:46:00Z",
+          "license": "Apache-2.0",
+          "rating": 3,
+          "composite": 64.9,
+          "breakdown": {
+            "heat": 87,
+            "community": 31,
+            "activity": 34,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 18,
+            "backend": 60,
+            "devops": 35,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A drop-in replacement for your Postgres read replica. Same SQL. Same answers. Seconds, not minutes.\n\n- Lightweight: Mason is a single Node.js process you can run anywhere. - Works like a read replica: Choose which tables and columns to sync from your Postgres database, and how each stays in sync: on demand, polling or logical replication. Mason makes them available to query from any Postgres client. - Exceptionally fast: Mason rewrites your Postgres queries to run on DuckDB's columnar engine, in the form DuckDB runs fastest. Analytical queries ( COUNT , SUM , GROUP BY , etc.) over large tables run significantly faster than on Postgres. - Same SQL, same answers: Mason is built from the ground up to match Postgres syntax and behaviour, so you can confidently point your existing SQL queries at Mason, without needing to port them to another SQL dialect (where subtle differences change your results). - Built for AI agents: Give AI agents fast, secure access to your data: a user per agent, role-based access control (RBAC) that limits the tables, columns and rows each one can read, every query logged, and native MCP support.\n\n- Try it in 2 minutes - Use it with your database - Set up a project · Choose tables and columns · Keep them up to date - Connect a tool · Access control · Check on it · Run it on a server - Hosted: Mason Cloud · Change a deployed project - Speed and compatibility - Speed · Compatibility - Agents · Where to read more · Community · License",
+            "features": [
+              "Lightweight: Mason is a single Node.js process you can run anywhere.",
+              "Works like a read replica: Choose which tables and columns to sync from your Postgres database, and how each stays in sync: on demand, polli",
+              "Exceptionally fast: Mason rewrites your Postgres queries to run on DuckDB's columnar engine, in the form DuckDB runs fastest. Analytical que",
+              "Same SQL, same answers: Mason is built from the ground up to match Postgres syntax and behaviour, so you can confidently point your existing",
+              "Built for AI agents: Give AI agents fast, secure access to your data: a user per agent, role-based access control (RBAC) that limits the tab",
+              "Try it in 2 minutes",
+              "Use it with your database",
+              "Set up a project · Choose tables and columns · Keep them up to date"
+            ],
+            "sections": [
+              "Mason",
+              "Try it in 2 minutes",
+              "needs Node 22.13+ (mason doctor checks this machine)",
+              "start a demo shop database: nothing else to install",
+              "add the fourth table and watch its sync start",
+              "open the tables syncing, the users and the queries in your b",
+              "delete the synced data and the demo database",
+              "Use it with your database",
+              "Set up a project",
+              "write mason/sources/ .yml (commit it) and .mason/ (local, gi",
+              "Mason reads MASON DATABASE URL, then DATABASE URL, from .env",
+              "choose the tables to sync: list them with their rows and key",
+              "start Mason in the background and wait until every added tab",
+              "Choose tables and columns"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 28876
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "RMvdesi/obsidian-prism",
+          "owner": "RMvdesi",
+          "name": "obsidian-prism",
+          "url": "https://github.com/RMvdesi/obsidian-prism",
+          "homepage": "https://github.com/RMvdesi/obsidian-prism#readme",
+          "description": "Optical UI, damped-spring choreography, 512K shallow-water vial, pixel mascots & dual-mode thought suite for Antigravity (GPL-3.0)",
+          "language": "JavaScript",
+          "topics": [
+            "antigravity",
+            "desktop-customization",
+            "developer-tools",
+            "gplv3",
+            "optical-ui",
+            "spring-animation",
+            "theme",
+            "ui-theme"
+          ],
+          "stars": 1006,
+          "forks": 45,
+          "open_issues": 36,
+          "starGain": null,
+          "heat": 301.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 96,
+          "ageDays": 9,
+          "created_at": "2026-11-17T02:50:21Z",
+          "pushed_at": "2026-11-25T11:24:51Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 82.4,
+          "breakdown": {
+            "heat": 96,
+            "community": 54,
+            "activity": 77,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 77,
+            "backend": 40,
+            "devops": 70,
+            "ai": 40,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "四套深浅配色 · 会呼吸的 512K 上下文试管 · 推理等级滑块 · 像素伙伴 · 自定义动静态壁纸（Beta）· Chat 对话模式（Beta）\n\n简体中文 · English · 更新日志 (CHANGELOG) · 下载安装包 (Releases) · 问题反馈 (Issues)\n\n- 四套配色，一键换装 ：深空黑曜、暖炭玄岩两套深色，白昼冷晶、暖白画册两套浅色，可跟随系统亮暗自动切换。 - 看得见的上下文 ：输入框旁的小试管实时显示 512K 上下文用量，点开就能看到用量拆分和配额剩余预测。 - 推理等级，一拨就换 ：模型菜单里内置星空滑块；选中 Orchestrator 时，滑块会变成一条会折射光线的切工水晶。 - 读得懂的思考过程与标题 ：模型的思考内容支持实时转译成中文（沉浸 / 双语对照）与一键诊断，支持手动 HTTP/SOCKS5 代理、可选工具摘要与会话标题自动翻译。 - 自定义动静态背景壁纸（Beta） ：位于设置「Beta 内容」分类，默认关闭零占用，支持纯本机只读加载自定义图片与 MP4/WebM 动态视频背景（实验性功能，交互与表现可能随版本持续调整）。 - 桌面上的像素伙伴 ：Clawd、小紫猫和三只迷你蟹会在输入框上方玩叠叠乐，还藏着一个彩虹彩蛋。 - 更顺手的工作台 ：内置浏览器和大文件检视台、右键快捷菜单、长代码块折叠、会话大纲快速跳转。 - Chat 对话模式（Beta） ：在写代码之外，多了一个专门聊天、整理资料的空间，和工程设置互不干扰。 - 轻、快、守规矩 ：动画空闲时自动降到 0fps；本地服务只监听本机；设置改动 10 毫秒内生效，随时一键卸载还原。",
+            "features": [
+              "四套配色，一键换装 ：深空黑曜、暖炭玄岩两套深色，白昼冷晶、暖白画册两套浅色，可跟随系统亮暗自动切换。",
+              "看得见的上下文 ：输入框旁的小试管实时显示 512K 上下文用量，点开就能看到用量拆分和配额剩余预测。",
+              "推理等级，一拨就换 ：模型菜单里内置星空滑块；选中 Orchestrator 时，滑块会变成一条会折射光线的切工水晶。",
+              "读得懂的思考过程与标题 ：模型的思考内容支持实时转译成中文（沉浸 / 双语对照）与一键诊断，支持手动 HTTP/SOCKS5 代理、可选工具摘要与会话标题自动翻译。",
+              "自定义动静态背景壁纸（Beta） ：位于设置「Beta 内容」分类，默认关闭零占用，支持纯本机只读加载自定义图片与 MP4/WebM 动态视频背景（实验性功能，交互与表现可能随版本持续调整）。",
+              "桌面上的像素伙伴 ：Clawd、小紫猫和三只迷你蟹会在输入框上方玩叠叠乐，还藏着一个彩虹彩蛋。",
+              "更顺手的工作台 ：内置浏览器和大文件检视台、右键快捷菜单、长代码块折叠、会话大纲快速跳转。",
+              "Chat 对话模式（Beta） ：在写代码之外，多了一个专门聊天、整理资料的空间，和工程设置互不干扰。"
+            ],
+            "sections": [
+              "Obsidian Prism · 黑曜棱镜",
+              "亮点",
+              "界面预览",
+              "1. 四套配色",
+              "2. 光学细节：上下文试管 · 推理滑块 · 切工水晶",
+              "3. 像素伙伴",
+              "4. Chat 对话模式（Beta）",
+              "5. 更多能力",
+              "快速安装指南 (Quick Start)",
+              "方式一：图形化独立安装包（推荐普通用户 · 零外部依赖，免预装 Node.js）",
+              "方式二：源码部署为 Antigravity 原生插件（推荐开发者，支持面板内一键拉取 Git 更新）",
+              "部署至 ~/.gemini/config/plugins/obsidian-prism 并立即连接当前窗口",
+              "AI 助手代装标准流程 & 思考翻译排查清单",
+              "1. 必须执行完整本地插件部署（同步全部模块并启动后台常驻守护进程）"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 17572
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "alejandrobujan/tendedero",
+          "owner": "alejandrobujan",
+          "name": "tendedero",
+          "url": "https://github.com/alejandrobujan/tendedero",
+          "homepage": "https://tendedero.app",
+          "description": "Capture it. Copy it. Hang it all out to dry. A tiny native macOS app that hangs every screenshot, and anything you copy, on a line at the top of your screen, and finds any word on it.",
+          "language": "Swift",
+          "topics": [
+            "appkit",
+            "clipboard-manager",
+            "macos",
+            "macos-app",
+            "menu-bar-app",
+            "native-app",
+            "offline",
+            "productivity"
+          ],
+          "stars": 3437,
+          "forks": 302,
+          "open_issues": 44,
+          "starGain": null,
+          "heat": 399.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 50,
+          "created_at": "2026-10-07T01:29:54Z",
+          "pushed_at": "2026-11-24T08:11:20Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 81,
+          "breakdown": {
+            "heat": 94,
+            "community": 66,
+            "activity": 56,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Try it in your browser at tendedero.app&nbsp;&rsaquo;\n\nFree and open source. For macOS 14 and later. Download&nbsp;&rsaquo; &nbsp;&nbsp; Build from source&nbsp;&rsaquo; English&nbsp;·&nbsp; Español &nbsp;·&nbsp; Galego &nbsp;·&nbsp; Français &nbsp;·&nbsp; Português (Brasil) &nbsp;·&nbsp; Italiano &nbsp;·&nbsp; 日本語 &nbsp;·&nbsp; 한국어 &nbsp;·&nbsp; 简体中文 &nbsp;·&nbsp; Türkçe &nbsp;·&nbsp; Azərbaycanca &nbsp;·&nbsp; हिन्दी &nbsp;·&nbsp; Tiếng Việt &nbsp;·&nbsp; Ελληνικά &nbsp;·&nbsp; Русский\n\nEvery screenshot you take, and anything you copy, hangs on a line just above your screen. Rest the pointer in the middle of the menu bar and it glides down. Move away and it's gone.",
+            "features": [
+              "On first launch, Tendedero offers to handle your screenshots. If you accept, it turns off the floating thumbnail and saves new screenshots t"
+            ],
+            "sections": [
+              "Out of sight. Within reach.",
+              "A gesture for everything.",
+              "Your Desktop. Finally clear.",
+              "Copied text, links and images too.",
+              "Find anything on the line.",
+              "Private by design.",
+              "Tech Specs",
+              "Install",
+              "Build from source"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10124
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "qianyiai/kurocat",
+          "owner": "qianyiai",
+          "name": "kurocat",
+          "url": "https://github.com/qianyiai/kurocat",
+          "homepage": "https://qianyi.one/kurocat/",
+          "description": "KuroCat — Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/Linux/Android)｜开源3D桌面打字小黑猫与AI伴侣",
+          "language": "TypeScript",
+          "topics": [
+            "3d",
+            "ai-companion",
+            "android",
+            "bongo-cat",
+            "bongocat",
+            "claude-code",
+            "codex",
+            "cross-platform"
+          ],
+          "stars": 988,
+          "forks": 152,
+          "open_issues": 38,
+          "starGain": null,
+          "heat": 338.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 93,
+          "ageDays": 4,
+          "created_at": "2026-11-21T15:49:31Z",
+          "pushed_at": "2026-11-26T01:35:00Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 83.2,
+          "breakdown": {
+            "heat": 93,
+            "community": 57,
+            "activity": 84,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 12,
+            "ai": 21,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "🇨🇳 简体中文 &nbsp; &nbsp; 🇺🇸 English &nbsp; &nbsp; 🇯🇵 日本語 &nbsp; &nbsp; 🇰🇷 한국어\n\n轻量级 Windows（Win11/10 & Win7 SP1）/ macOS（10.15+ Apple Silicon & Intel）/ Linux（银河麒麟 KylinOS / Ubuntu / UOS） 透明置顶桌面打字猫咪伴侣（开箱自带 6 款手绘猫咪皮肤 + 🐳 大肥鱼（鲸鱼娘） ：经典小黑猫、暖奶茶布偶猫、大橘猫、三花猫、奶牛猫、暹罗猫、大肥鱼，支持 输密码自动闭眼/捂眼防偷窥 ，并原生内置 MCP 协议服务端 ，支持用 AI 一句话定制或新增更多你自己的猫咪！），基于 Tauri v2（Rust 全局原生钩子 + 内置 MCP 引擎 + HTML5 Canvas 2D） 打造。单文件轻量低耗，零外部运行时依赖。\n\n🐈‍⬛ 点此进入官网实时在线试玩（直接敲键盘 &amp; 摸猫头）→ 午睡打盹 → 打字吵醒起床气 → 摸头顺毛呼噜消气 · 6 款猫咪 + 3D/2D 切换 📥 观看/下载 9s 含呼噜音效原版 MP4 🐳 观看 1080×1920 60fps 含音效原版视频 → 鼠标 + 手打字 + 鲸尾甩拍三同动 → 加速笑开花 → 密码捂眼防偷窥 📥 下载原版 MP4（国内高速） · GitHub 原片",
+            "features": [
+              "🪟 Windows 10 / 11（65% 经典安装版 · v5.1.2 ） ： KuroCat-5.1.2-x64-setup.exe （2.15 MB）｜ 官网国内高速下载",
+              "默认 65% 紧凑机械键盘，自动创建桌面 KuroCat 图标、开始菜单与系统卸载入口；右键或托盘随时一键切换 108 键全尺寸小键盘 、 🐳 大肥鱼（鲸鱼娘） 、 OBS 透明直播源 与 App 内一键更新。",
+              "Edge / Chrome 浏览器提示「通常不会下载 .exe 」怎么办？ （开源免费软件未购商业代码签名证书，全量源码公开可放心信任）：",
+              "Edge 浏览器 ：鼠标移到该下载条上 → 点右侧 三个点 ··· → 点 「保留」 → 弹窗出现「删除」按钮时，点开旁边的 下箭头 ▾ （显示更多） → 选择 「仍然保留」 即可完成下载。",
+              "Chrome 浏览器 ：按 Ctrl + J 打开下载记录 → 点 「保留危险文件」 → 「仍然保留」 。",
+              "双击安装若弹出蓝框「Windows 已保护你的电脑」 ：点 「更多信息」 → 点 「仍要运行」 即可。",
+              "极少数老版 Win10 / LTSC 精简版若提示缺少 WebView2 Runtime ，安装微软官方 1.8 MB 引导程序（右键「以管理员身份运行」）即可： MicrosoftEdgeWebview2Setup.exe 。",
+              "游戏全屏 / 管理员权限 / OBS 直播提示 ：单机与常规游戏在 Win10/11 全屏优化（FSO）或「无边框窗口化」下内置持续 Z 序置顶守卫且绝不抢焦点（建议开启「锁定鼠标穿透」，按 Alt 随时解锁）；若游戏本身以管理员权限运行导致无法捕获键鼠，右键系统托盘点击 「以管"
+            ],
+            "sections": [
+              "🐈‍⬛ KuroCat — Open-Source Desktop Typing Cat Pet · 桌面打字小黑猫伴",
+              "🎬 3D 小黑猫互动演示 & 鲸鱼娘 14s 演示视频",
+              "📥 直接下载使用（Windows / Win7 / macOS / Linux）",
+              "✨ 核心特性",
+              "🤖 MCP 接入指南（用 AI 改猫 / 加自己的猫）",
+              "最快接入方式",
+              "试试这样跟 AI 说",
+              "内置 MCP 工具清单",
+              "🛠️ 本地源码构建",
+              "macOS 发布签名（升级后保留系统权限）",
+              "📈 实时增长曲线",
+              "☕ 赞助支持",
+              "📄 开源协议与致谢"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 13731
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "FortoGraphy/prism-download-manager",
+          "owner": "FortoGraphy",
+          "name": "prism-download-manager",
+          "url": "https://github.com/FortoGraphy/prism-download-manager",
+          "homepage": "https://prismdl.site",
+          "description": "Free, open-source IDM alternative for Windows, macOS and Linux — up to 32 connections, browser integration, video & MP3 downloads, torrents, crash-safe resume.",
+          "language": "Rust",
+          "topics": [
+            "bittorrent",
+            "browser-extension",
+            "cross-platform",
+            "download-accelerator",
+            "download-manager",
+            "downloader",
+            "huggingface",
+            "idm-alternative"
+          ],
+          "stars": 1603,
+          "forks": 94,
+          "open_issues": 66,
+          "starGain": 197,
+          "heat": 197,
+          "heatBasis": "snapshot",
+          "heatPercentile": 90,
+          "ageDays": 42,
+          "created_at": "2026-10-15T10:11:39Z",
+          "pushed_at": "2026-11-24T16:13:36Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 77.9,
+          "breakdown": {
+            "heat": 90,
+            "community": 58,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 61,
+            "backend": 18,
+            "devops": 12,
+            "ai": 18,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "One beam. Many rays. The fast, beautiful, open-source download manager for Windows, macOS and Linux.\n\n⬇ Download · Website · ▶ Watch the film · Install guide · Browser extension · ☕ Buy me a beam\n\nPrism splits every download into up to 32 parallel connections , keeps them all busy until the last byte, and survives crashes, sleep and pulled cables. Click a link in your browser and Prism takes over; hover a video and grab it as MP4 in the quality you want — or just the MP3 . All of it in a calm, liquid-glass interface with dark and light themes.",
+            "features": [
+              "Dynamic segmentation. When a connection finishes its part, it takes over half of the",
+              "Server-aware. Prism notices when a server refuses extra connections, settles on what it",
+              "Straight to disk. Data is written directly into the final file (sparse on NTFS,",
+              "Crash-safe. Progress is checkpointed only after data is flushed to disk; on resume Prism",
+              "Rust + Tauri. A Rust engine (tokio, rustls), a React UI in a native Tauri 2 shell — small,"
+            ],
+            "sections": [
+              "✨ Why Prism",
+              "⬇ Download",
+              "🌐 Browser extension (1 minute)",
+              "📸 Screenshots",
+              "📊 Benchmarks",
+              "🧠 How it works",
+              "🛠 Build from source",
+              "❓ FAQ",
+              "🤝 Contributing",
+              "📄 License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 11679
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "firecrawl/firecrawl",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 2
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "simplexai-labs/linger",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "janhq/jan",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "opensandbox-group/OpenSandbox",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "FlashML-org/FreeVideo",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "KKKKhazix/AIHOT",
+      "category": "ai",
+      "lastPushed": "2026-11-10",
+      "times": 1
+    },
+    {
+      "full_name": "bendlang/bend",
+      "category": "ai",
+      "lastPushed": "2026-11-23",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [],
+  "reviewedAt": "2026-11-26T10:05:00+08:00"
+}
