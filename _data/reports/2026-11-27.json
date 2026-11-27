@@ -1,0 +1,1893 @@
+{
+  "date": "2026-11-27",
+  "generatedAt": "2026-11-27T09:42:15.714+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-26",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 904,
+    "unclassified": 70,
+    "selected": 21,
+    "suppressedByHistory": 345,
+    "sameDateExempt": 0,
+    "removed": 1,
+    "removedTotal": 1,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "modelflare-ai/AnyModelBot",
+          "owner": "modelflare-ai",
+          "name": "AnyModelBot",
+          "url": "https://github.com/modelflare-ai/AnyModelBot",
+          "homepage": "https://anymodel.bot/",
+          "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+          "language": "Python",
+          "topics": [
+            "ai-agent",
+            "ai-assistant",
+            "chatbot",
+            "claude",
+            "computer-use",
+            "deepseek",
+            "desktop-app",
+            "dsh"
+          ],
+          "stars": 5002,
+          "forks": 121,
+          "open_issues": 2,
+          "starGain": null,
+          "heat": 760.7,
+          "heatBasis": "velocity",
+          "heatPercentile": 99,
+          "ageDays": 31,
+          "created_at": "2026-10-27T08:51:18Z",
+          "pushed_at": "2026-11-26T03:57:32Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.6,
+          "breakdown": {
+            "heat": 99,
+            "community": 66,
+            "activity": 53,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "官网 下载 简体中文 繁體中文（台灣） English 日本語 한국어 Русский Español Português (Brasil) Türkçe Modelflare 价格 开发文档 问题反馈\n\nAnyModelBot 是跑在 Windows / macOS / Linux 上的 AI 机器人团队。每个机器人有自己的人设、默认模型、工作区和记忆；可在应用内聊天，也可接入微信、飞书、Telegram、Slack、Discord。它能读写文件、执行命令、在授权后操作桌面；要写到工作区以外，会先问你。\n\n对话、记忆、文件和 API Key 留在你的设备上。模型可走 Modelflare（登录后按用量付费），或使用自己的官方 API Key 直连厂商。AnyModelBot 本身没有订阅费。",
+            "features": [
+              "登录一次就行。 首次启动会打开浏览器，登录（或注册）Modelflare。之后应用自己把这台设备连上，不用复制 Key，授权完成后会自动回到应用；还没有默认模型时，会先选好一个支持工具、花费低的模型。在 Docker 或服务器上运行？在任意设备的浏览器里登录，再把登录后的链接贴回",
+              "所有模型，一个选择器。 你的 Modelflare 模型会自动列出，每个模型旁边都有上下文长度、能力标记和参考价。",
+              "用多少付多少。 余额和充值入口集中在「设置 → 模型」（有 Bot 额度时还显示剩余额度和百分比），低余额提醒和每日用量也都在应用里看。选模型之前，先看公开价格表，和官方价格对比一下。",
+              "一条诚实的边界。 模型请求会经过 Modelflare 转发给你选定的供应商，Modelflare 会保留请求日志；保留什么、保留多久，见信任中心。除此之外的内容都留在你的设备上（详情）。",
+              "需要几个就有几个 ，每个都有自己的人设、模型、工作区和头像。",
+              "每个机器人由你来定义。 人设就是一段话，模板只是起点，每个字都能改；六个头像只管长相，不决定它能做什么。",
+              "真正的文件操作。 机器人能读写文件、在沙箱里执行命令，并把结果作为文件发回聊天。",
+              "每个机器人三档权限。 只读 、 工作区 （默认：只能写自己的文件夹；要写到工作区以外，得先经过你点头）、 完全权限 （不进沙箱；删除整个文件夹前仍会先问）。"
+            ],
+            "sections": [
+              "🤖 AnyModelBot",
+              "📥 下载与运行",
+              "🌠 截图",
+              "🌟 核心功能",
+              "🤖 真能干活的机器人",
+              "🧩 现成的 Bot",
+              "⏳ 在后台干活，需要你时才来找你",
+              "🖥️ 操作你的电脑，生成图片和视频",
+              "🌐 任意模型，通过 Modelflare 或官方 API",
+              "🧠 有记忆，随处可达",
+              "🔒 本地优先，也好看",
+              "🆚 对比 Grok Bot / OpenAI dots / Claude Duet",
+              "🔐 工作原理与隐私",
+              "📝 路线图"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 24228
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "alesha-pro/llm.asm",
+          "owner": "alesha-pro",
+          "name": "llm.asm",
+          "url": "https://github.com/alesha-pro/llm.asm",
+          "homepage": "",
+          "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+          "language": "Assembly",
+          "topics": [
+            "assembly",
+            "avx2",
+            "bare-metal",
+            "llm",
+            "machine-learning",
+            "nasm",
+            "osdev",
+            "qwen"
+          ],
+          "stars": 1558,
+          "forks": 228,
+          "open_issues": 17,
+          "starGain": null,
+          "heat": 534.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 2,
+          "created_at": "2026-11-25T07:28:51Z",
+          "pushed_at": "2026-11-25T15:42:44Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.8,
+          "breakdown": {
+            "heat": 95,
+            "community": 60,
+            "activity": 74,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Three complete LLM projects written in 100% pure x86-64 NASM assembly. Zero C, zero C++, zero Rust, zero libc, zero libm, zero runtime dependencies.\n\nAssembled directly with nasm and linked with ld . Every math kernel ( expf , sincosf , RMSNorm , RoPE , SiLU , Softmax ), AVX2+FMA+F16C GEMM/GEMV engine, BPE tokenizer, clone() / futex() thread pool, bare-metal SMP kernel, analytical backward pass, AdamW optimizer, and live Unicode Braille TUI is hand-written x86-64 assembly ( 17,252 lines total across all three projects).\n\nMeasured on the same machine ( AMD EPYC 7642 , 47C online, 256 MiB L3, DDR4, CPU-only -ngl 0 ), same model ( Qwen3-0.6B Q8 0 : 613.66 MiB .asmbin v2 FP16-scale vs 604.15 MiB GGUF Q8 0 ), 34 prompt tokens / 64 generated tokens, 3 -run average:",
+            "features": [
+              "CPU: x86-64 with AVX2 + FMA + F16C (Intel Haswell / AMD Excavator or newer).",
+              "Phase 1 & 3 runtime: Any Linux x86-64 kernel. Zero shared libraries ( readelf -d reports no dynamic section).",
+              "Phase 2 runtime (optional): qemu-system-x86 64 with KVM, or any x86-64 hypervisor/bare-metal machine (Proxmox VE, VirtualBox, real hardware)",
+              "Offline tooling (optional): python3 + numpy only for one-time Qwen3-0.6B .asmbin export and reference verification ( torch + transformers on",
+              "Shared assembly core ( shared/ ): Phase 2 compiles the exact same math.asm , matmul.asm , tokenizer.asm , and transformer.asm with -DBARE ME",
+              "Phase 1 verification: All math/SIMD kernels pass unit tests within 1e-7..1e-6 ( init rope freqs FP64 < 5e-14 ) for both FAST Q8=1 and FAST Q",
+              "Phase 2 verification: 100% token-exact and byte-for-byte identical to Phase 1 across 5 test prompts (English, Russian UTF-8, arithmetic, --t",
+              "Phase 3 verification: Verified against PyTorch FP32 CPU on all 21 parameter tensors ( worst max abs diff = 3.35e-8 , min cosine sim = 1.0000"
+            ],
+            "sections": [
+              "llm.asm",
+              "The Trilogy",
+              "Head-to-Head CPU Decode Benchmark: llm.asm vs llama.cpp ( Qw",
+              "Live Output & Visual Proof",
+              "Phase 2: Booting Qwen3-0.6B Directly on Bare Metal (QEMU KVM",
+              "Phase 2: Running Live on a Proxmox VE VM (0 GB Disk, Intel X",
+              "Phase 3: Pure-Assembly Live 80x24 UTF-8 Braille TUI ( build/",
+              "Quick Start",
+              "1. Run Qwen3-0.6B Inference in 14 KB ( 01-qwen3-inference/ )",
+              "Export compact .asmbin v2 (FP16 block scales, 613.66 MiB; or",
+              "Build with FAST Q8=1 (default: INT8xINT8 AVX2 + parallel GQA",
+              "Or start an interactive multi-turn chat preserving the KV-ca",
+              "2. Boot Bare-Metal Qwen3-0.6B OS in 24 KB ( 02-baremetal-os/",
+              "Or build a bootable BIOS+UEFI ISO for QEMU / Proxmox VE:"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 14505
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "opensetlabs/openset-llm",
+          "owner": "opensetlabs",
+          "name": "openset-llm",
+          "url": "https://github.com/opensetlabs/openset-llm",
+          "homepage": "",
+          "description": "Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server.",
+          "language": "C++",
+          "topics": [
+            "ai",
+            "avx512",
+            "cpu-inference",
+            "edge-ai",
+            "gguf",
+            "inference-engine",
+            "llama-cpp",
+            "llm"
+          ],
+          "stars": 1738,
+          "forks": 165,
+          "open_issues": 26,
+          "starGain": null,
+          "heat": 414.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 94,
+          "ageDays": 14,
+          "created_at": "2026-11-13T12:45:59Z",
+          "pushed_at": "2026-11-26T19:56:26Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.4,
+          "breakdown": {
+            "heat": 94,
+            "community": 60,
+            "activity": 75,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "git clone https://github.com/opensetlabs/openset-llm && cd openset-llm && ./start\n\nAn LLM is not a sealed box. It is a stack of parts you can rewrite: matmul kernels, decoding, attention, caches. People already rewire single neurons to change what a model does; we rewired the machinery underneath to change where it runs. Do that, and a 27B model runs on the hardware the world already owns, ordinary CPUs, not just GPUs. Search, extraction, agents and speech then run locally with no per-token fee, and products that never paid off at API prices do.\n\nIt fits where a 27B model usually does not. Everything here runs in 8 GB of system memory with no GPU at all: no video memory, no unified memory, nothing offloaded. A standard 4-bit build of the same Qwen3.8-27B is a 16–19 GB file, which is why models of this size are normally run on a GPU or a 24–32 GB machine. (Another 26B model can be squeezed into 8 GB at 1 bit per weight; we measured it on the same box: Numbers.) Mainline llama.cpp's own packing of this ternary model is 7.63 GB and pages from disk on the same 8 GB machine (measured); the file this engine runs is 5.95 GB.",
+            "features": [
+              "ik's greedy outputs differ from ours (different arithmetic after its repack), but its WikiText-2 perplexity is 7.5681 vs",
+              "--multi 4 : each stream's greedy output is byte-identical to the same request alone.",
+              "We are making this path faster.",
+              "Measurements on real AVX2-only desktop and laptop chips come next, and we will publish the numbers here.",
+              "Phones are the next target we are working on.",
+              "Context: 4,096 tokens by default on purpose: a full 4k context with speculation leaves ~0.2 GB free on an 8 GB",
+              "Longer context on 8 GB (experimental, opt-in): a smaller attention cache leaves room for more context and",
+              "./serve turns off llama-server's host prompt cache ( --cache-ram 0 , default 8 GiB) and keeps one context"
+            ],
+            "sections": [
+              "Quick start",
+              "Numbers",
+              "Which CPUs get the fast path",
+              "CPUs without AVX-512",
+              "Memory budget (8 GB machine)",
+              "What is inside",
+              "LoRA adapters (experimental)",
+              "Several requests at once ( --multi )",
+              "Run it locally",
+              "In the cloud",
+              "Limits",
+              "Reproduce",
+              "Contributing",
+              "Licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 34197
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "Pinvou/pinvou-agent",
+          "owner": "Pinvou",
+          "name": "pinvou-agent",
+          "url": "https://github.com/Pinvou/pinvou-agent",
+          "homepage": "https://pinvou.com/",
+          "description": "Open-source desktop AI agent for tools, files, knowledge, workflows, and real deliverables.",
+          "language": "Rust",
+          "topics": [
+            "agent-client-protocol",
+            "agent-skills",
+            "agentic-ai",
+            "ai",
+            "ai-agent",
+            "ai-agents",
+            "ai-assistant",
+            "coding-agent"
+          ],
+          "stars": 3045,
+          "forks": 433,
+          "open_issues": 43,
+          "starGain": null,
+          "heat": 213.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 89,
+          "ageDays": 126,
+          "created_at": "2026-07-24T07:28:41Z",
+          "pushed_at": "2026-11-27T01:27:00Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 80.8,
+          "breakdown": {
+            "heat": 89,
+            "community": 66,
+            "activity": 67,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 42,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An open-source desktop AI agent workspace for work, design, and coding.\n\nDownload · Website · QQ Group · Issues · Discussions · Security\n\nPinvou Agent is more than a chat window. It brings everyday work, visual design, and software development into one desktop workspace — designed for tasks that should end with a result , not just another chat response. Use tools, work with files, and build personal knowledge; bring a dedicated coding agent into a real project over ACP; or turn a prompt into a visual artifact you can continue editing.",
+            "features": [
+              "Multi-session workspace with title search — messages, tool calls, and artifacts persist with each session",
+              "Attachments for PDF, Office documents, images, and text — drag, drop, or paste them in",
+              "Artifact panel automatically collects every file the agent creates or edits; preview, locate, and open them in one place",
+              "Editable Markdown artifacts — edit directly, or select a passage and ask the agent to revise it",
+              "Plan / YOLO modes — review the plan first for complex work, or execute directly when the task is clear",
+              "Auxiliary chat — ask side questions while a task runs, in a per-task side session whose only tool is a server-enforced read-only view of tha",
+              "Local knowledge base with file management, full-text and vector retrieval; attach multiple collections to one chat, enable or disable each i",
+              "Memory center captures long-term preferences and context, with explicit candidate review and confirmation"
+            ],
+            "sections": [
+              "Pinvou Agent",
+              "🧭 One workspace, three ways to work",
+              "💼 Work: give the agent a real task",
+              "🎨 Design: from a prompt to an editable visual",
+              "💻 Code: bring a coding agent into a real project",
+              "✨ Features",
+              "🎯 From conversation to deliverables",
+              "🧠 Knowledge and memory",
+              "🔌 Real tools and connectors",
+              "🖥️ Built for daily operation",
+              "📸 Screenshots",
+              "🤖 Model Access",
+              "🚀 Quick Start",
+              "Prerequisites"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 14196
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "heygen-com/hyperframes",
+          "owner": "heygen-com",
+          "name": "hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "homepage": "https://hyperframes.heygen.com",
+          "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-skills",
+            "ai",
+            "ai-agents",
+            "ai-video",
+            "ai-video-editor",
+            "animation",
+            "claude-code",
+            "ffmpeg"
+          ],
+          "stars": 90896,
+          "forks": 8480,
+          "open_issues": 324,
+          "starGain": 707,
+          "heat": 707,
+          "heatBasis": "snapshot",
+          "heatPercentile": 96,
+          "ageDays": 262,
+          "created_at": "2026-03-10T01:51:06Z",
+          "pushed_at": "2026-11-27T01:44:42Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 91.8,
+          "breakdown": {
+            "heat": 96,
+            "community": 93,
+            "activity": 74,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Download the app · Quickstart · Showcase · Catalog · Docs · Discord · X · YouTube\n\nHyperFrames is HeyGen's AI video editor for people and agents. Describe a video, bring your own footage, or remake a video you love, and get a real project you can change down to the frame: ask for a bigger title, a faster cut or new captions, and it changes just that.\n\nUnderneath, HyperFrames is a free, open-source framework (Apache 2.0) for turning HTML, CSS, JavaScript, media and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents like Claude Code, Codex and Cursor with skills, or as the rendering core behind hosted authoring workflows. No React required.",
+            "features": [
+              "HTML-native: make videos programmatically with HTML, CSS and JavaScript; compositions are HTML files with data attributes. No React requirem",
+              "Agent-friendly: agents already write HTML, and the CLI is non-interactive by default.",
+              "Deterministic: same input, same frames, same output. Built for CI, regression tests, and automated rendering.",
+              "No build step: an index.html composition plays as-is and can be previewed directly in the browser.",
+              "Adapter-based animation: bring GSAP, CSS animations, Lottie, Three.js, Anime.js, WAAPI, or a custom runtime.",
+              "Open source: Apache 2.0 license, with no per-render fees or commercial-use thresholds.",
+              "Quickstart",
+              "Showcase"
+            ],
+            "sections": [
+              "Three ways to use it",
+              "Made with HyperFrames",
+              "What you can make",
+              "Quick start for developers",
+              "Give your coding agent the skills (recommended)",
+              "or, with no picker (scripts, CI):",
+              "Claude Code plugin",
+              "Codex, Cursor, Gemini CLI, Copilot",
+              "By hand, with the CLI",
+              "Claude Code plugin updates",
+              "Standalone skills (including OpenCode)",
+              "Share a video for review",
+              "Skills",
+              "Core set"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 36191
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "tt-a1i/archify",
+          "owner": "tt-a1i",
+          "name": "archify",
+          "url": "https://github.com/tt-a1i/archify",
+          "homepage": "https://archify.si",
+          "description": "Turn any idea, plan, or codebase into an interactive diagram or one-page answer: 10 diagram types, Architecture Diagnosis, Story video and PR walkthroughs. An Agent Skill for Claude Code, Codex, Cursor and more.",
+          "language": "JavaScript",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "architecture-diagram",
+            "claude-code",
+            "claude-skills",
+            "code-analysis",
+            "codex",
+            "coding-agents"
+          ],
+          "stars": 100593,
+          "forks": 6885,
+          "open_issues": 362,
+          "starGain": 663,
+          "heat": 663,
+          "heatBasis": "snapshot",
+          "heatPercentile": 95,
+          "ageDays": 226,
+          "created_at": "2026-04-15T05:27:37Z",
+          "pushed_at": "2026-11-26T01:45:04Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 90.2,
+          "breakdown": {
+            "heat": 95,
+            "community": 93,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 40,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Turn anything you want to understand, plan, or share into an interactive visual.\n\nLive demos &nbsp;·&nbsp; Get started &nbsp;·&nbsp; Scenario guide &nbsp;·&nbsp; Community &nbsp;·&nbsp; 简体中文 &nbsp;·&nbsp; 日本語 &nbsp;·&nbsp; 한국어\n\nhttps://github.com/user-attachments/assets/6a0d6637-e3af-43af-a733-4b4b53da0542",
+            "features": [
+              "Conclusion first. The answer and its reasons lead; every panel takes one question.",
+              "Diagrams that explain. Steps sit beside the diagram they walk through and light its parts as you read. Click any node to open the full inter",
+              "Easy to check. Claims cite numbered sources; repository excerpts are pinned to a commit and open in a source card.",
+              "Easy to share. One HTML file with four styles and light or dark themes. Export a PNG, WebP or JPG long image, or print to PDF. Ask about any",
+              "Story video. Ask your agent to add a guided story to any diagram. The page gains a Story mode with a timeline and captions, and Export → Sto",
+              "PR walkthrough. Ask your agent to explain a pull request or branch: Archify marks what changed directly on the diagram and can attach light ",
+              "1 on GitHub Trending's weekly, all-language repository list. Ranking screenshot published by the creator on September 1, 2026, with all lang",
+              "Featured and interviewed by QbitAI. Project feature · The developer's story."
+            ],
+            "sections": [
+              "See Archify in action",
+              "Install, then describe your idea",
+              "Ask a question, get a one-page answer",
+              "❤️ Sponsors",
+              "Show what matters",
+              "Understand a real repository",
+              "Diagnose a repository",
+              "Walk through it as a story, or a pull request",
+              "Easy to extend. More ways to make it yours.",
+              "Download it. Open it. Explore it.",
+              "Community and recognition",
+              "Preview",
+              "Quick start",
+              "1. Install"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 44274
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "tutti-os/tutti",
+          "owner": "tutti-os",
+          "name": "tutti",
+          "url": "https://github.com/tutti-os/tutti",
+          "homepage": "https://tutti.sh/",
+          "description": "Where people and agents build in tune.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-collaboration",
+            "agent-orchestration",
+            "agent-workspace",
+            "agentic-ai",
+            "agentic-workflow",
+            "ai-agents",
+            "ai-tools",
+            "ai-workspace"
+          ],
+          "stars": 3972,
+          "forks": 380,
+          "open_issues": 194,
+          "starGain": null,
+          "heat": 237.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 88,
+          "ageDays": 168,
+          "created_at": "2026-06-12T12:29:05Z",
+          "pushed_at": "2026-11-24T09:44:00Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 77.1,
+          "breakdown": {
+            "heat": 88,
+            "community": 68,
+            "activity": 55,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The first multi-user, multi-agent, real-time collaboration space.\n\nIf you like Tutti, give our GitHub repo a star, fork it, open an issue, or send a PR.\n\nAnyone interested is welcome to join our Discord to share feedback, ask questions, and help shape the future of human-agent collaboration.",
+            "features": [
+              "You work with several AI agents at once (Codex, Claude Code, Canvas, and so on).",
+              "You've copied context between agents more than once, maybe even built your own Markdown-based handoff workflow.",
+              "You try to let AI handle everything, but it never quite flows, and every new session starts from scratch.",
+              "You've subscribed to a few different AI products, but it never feels worth the money.",
+              "For anything complex, your tools sit in separate silos, and the back-and-forth only grows.",
+              "In Codex, you can @ past conversations, files, app invocations, and tasks. No repeated copy-pasting or uploading.",
+              "You can also @ Claude Code's past conversations, files, app invocations, and tasks from inside Codex, then build on top of them without manu",
+              "You can also ask Codex to direct @ Claude Code (app) to do the work."
+            ],
+            "sections": [
+              "Two Versions of Tutti",
+              "Quick Start",
+              "What is Tutti?",
+              "Tutti provides a real-time shared workspace where context, f",
+              "Sounds like you?",
+              "Three core features",
+              "1) A real-time shared workspace",
+              "2) Apps that both you and your agents can use",
+              "3) Less work about work",
+              "Reuse your existing subscriptions",
+              "Tutti vs Tutti · VM",
+              "What can you do with Tutti?",
+              "What can you do with Tutti · VM?",
+              "Who is Tutti for?"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 18933
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "gastownhall/beads",
+          "owner": "gastownhall",
+          "name": "beads",
+          "url": "https://github.com/gastownhall/beads",
+          "homepage": "https://beads.gascity.com",
+          "description": "Beads - A memory upgrade for your coding agent",
+          "language": "Go",
+          "topics": [
+            "agents",
+            "claude-code",
+            "coding"
+          ],
+          "stars": 29131,
+          "forks": 1962,
+          "open_issues": 1835,
+          "starGain": 59,
+          "heat": 59,
+          "heatBasis": "trending",
+          "heatPercentile": 63,
+          "ageDays": 411,
+          "created_at": "2025-10-12T03:09:46Z",
+          "pushed_at": "2026-11-27T01:22:37Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 75.7,
+          "breakdown": {
+            "heat": 63,
+            "community": 84,
+            "activity": 80,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 53,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Distributed graph issue tracker for AI agents, powered by Dolt.\n\nBeads provides a persistent, structured memory for coding agents. It replaces messy markdown plans with a dependency-aware graph, allowing agents to handle long-horizon tasks without losing context.\n\nflowchart LR create[\"bd create new bead\"] -- depgraph[\"dependency graph\"] depgraph -- ready[\"bd ready claimable work\"] ready -- claim[\"bd update --claim agent takes it\"] claim -- close[\"bd close work done\"] close -- blockers released ready depgraph \"bd dolt push / pull\" remote[(\"other machines and agents\")]",
+            "features": [
+              "Run bd prime for workflow context and command guidance.",
+              "Use bd ready , bd show , bd update --claim , and bd close .",
+              "Use bd remember \"a project insight\" for durable project facts; keep per-operator preferences in your harness's own memory.",
+              "Do not use markdown TODO lists for task tracking.",
+              "Dolt-Powered: Version-controlled SQL database with cell-level merge, native branching, and built-in sync via Dolt remotes.",
+              "Agent-Optimized: JSON output, dependency tracking, and auto-ready task detection.",
+              "Zero Conflict: Hash-based IDs ( bd-a1b2 ) prevent merge collisions in multi-agent/multi-branch workflows.",
+              "Compaction: Semantic \"memory decay\" summarizes old closed tasks to save context window."
+            ],
+            "sections": [
+              "bd - Beads",
+              "⚡ Quick Start",
+              "Install beads CLI (system-wide - don't clone this repo into ",
+              "Initialize in YOUR project",
+              "Optional: refresh or install richer instructions for your ag",
+              "🛠 Features",
+              "📖 Essential Commands",
+              "🔗 Hierarchy & Workflow",
+              "📦 Installation",
+              "Security And Verification",
+              "💾 Storage Modes",
+              "Schema Version Guard",
+              "🔌 HTTP Backend (experimental)",
+              "Point this workspace at a server (verifies the server first;"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 25718
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "egoist/mygo",
+          "owner": "egoist",
+          "name": "mygo",
+          "url": "https://github.com/egoist/mygo",
+          "homepage": "https://mygo.run",
+          "description": "Develop desktop apps with native UI or web frontend in Go",
+          "language": "Go",
+          "topics": [],
+          "stars": 6940,
+          "forks": 458,
+          "open_issues": 181,
+          "starGain": 54,
+          "heat": 54,
+          "heatBasis": "trending",
+          "heatPercentile": 89,
+          "ageDays": 61,
+          "created_at": "2026-09-26T15:21:37Z",
+          "pushed_at": "2026-11-27T01:11:44Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81.2,
+          "breakdown": {
+            "heat": 89,
+            "community": 72,
+            "activity": 72,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 25,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Desktop apps in Go, with native UI or a web frontend.\n\nEach MyGo window shows one of two kinds of interface, and one app, or one window, can mix them:\n\n- A web page , in the webview the OS already has: WKWebView on macOS, WebKitGTK on Linux, WebView2 on Windows. Build the frontend with any web tools; it calls your Go code through a TypeScript client generated from it. - Native UI , written in Go alone with package ui and drawn by MyGo itself on the GPU: no HTML, no JavaScript and no webview, so the window opens at once and takes little memory.",
+            "features": [
+              "A web page , in the webview the OS already has: WKWebView on macOS,",
+              "Native UI , written in Go alone with package ui and",
+              "Pure Go, no cgo : build for every desktop from any machine.",
+              "Phones too : the same app on iOS and Android, pages in their web",
+              "Typed IPC for pages: bind Go services, stream values through channels",
+              "A Go UI toolkit for native UI: flexbox and grid layout, widgets, text",
+              "Desktop APIs for both: windows, menus, tray, dialogs, notifications,",
+              "Ready to ship : app bundles and disk images, Windows installers, Debian"
+            ],
+            "sections": [
+              "Getting started",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 4123
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "deeplethe/solid-glass",
+          "owner": "deeplethe",
+          "name": "solid-glass",
+          "url": "https://github.com/deeplethe/solid-glass",
+          "homepage": "https://deeplethe.github.io/solid-glass",
+          "description": "A design system for AI applications. Material, physical, tactile, technical.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-ui",
+            "ai",
+            "ai-agents",
+            "chat-ui",
+            "design-system",
+            "llm",
+            "react",
+            "shadcn"
+          ],
+          "stars": 2188,
+          "forks": 61,
+          "open_issues": 7,
+          "starGain": null,
+          "heat": 267.4,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 46,
+          "created_at": "2026-10-12T09:19:02Z",
+          "pushed_at": "2026-10-31T22:37:07Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 72.2,
+          "breakdown": {
+            "heat": 98,
+            "community": 59,
+            "activity": 7,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 35,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A refined glass-inspired aesthetic that feels solid from afar and reveals its subtle materiality up close. Delicate highlights, fine borders, and soft shadows create depth, while a restrained finish emphasizes clarity, stability, and a sense of solidity over transparency, refraction, and fluidity.\n\nThat is one of the blocks: whole screens made of the components, to look at, read and copy in. Below, the components themselves.\n\nIt stands between flat design and liquid glass. Flat is an opaque block with no finish to speak of; liquid glass is nearly clear, and on a page with a lot of text the reader is always fighting the background for the words. Solid Glass lets only an outline through: enough to know it is glass, not enough to get in the way of reading.",
+            "features": [
+              "src/components/ui/ .tsx , written like a shadcn/ui component: function components, a",
+              "src/examples/ -demo.tsx , and one file per further example.",
+              "content/solid/ .mdx : front matter ( title , description ), then"
+            ],
+            "sections": [
+              "Solid Glass",
+              "The style",
+              "Why it is built this way",
+              "Install",
+              "What is here",
+              "Run",
+              "Add a component of Solid Glass's own",
+              "Contributing",
+              "Licence"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 10175
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "AienTech/dossier",
+          "owner": "AienTech",
+          "name": "dossier",
+          "url": "https://github.com/AienTech/dossier",
+          "homepage": "https://dossier.aien.me",
+          "description": "A self-hosted job search and resume builder app that writes tailored resumes and cover letters from your profile.",
+          "language": "TypeScript",
+          "topics": [
+            "caprover",
+            "cover-letter",
+            "docker",
+            "job-application-tracker",
+            "job-search",
+            "llm",
+            "local-llm",
+            "nextjs"
+          ],
+          "stars": 5517,
+          "forks": 1148,
+          "open_issues": 28,
+          "starGain": 12,
+          "heat": 12,
+          "heatBasis": "snapshot",
+          "heatPercentile": 71,
+          "ageDays": 54,
+          "created_at": "2026-10-03T21:26:15Z",
+          "pushed_at": "2026-11-23T09:08:26Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 69.6,
+          "breakdown": {
+            "heat": 71,
+            "community": 72,
+            "activity": 42,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 12,
+            "ai": 35,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Your job search, on your own server: one profile, a tailored resume and cover letter for every job, and every application tracked from draft to offer.\n\nDossier keeps your career history in one profile and turns it into a clean resume. For every job you apply to, it reads the posting, shows how you match, and drafts a tailored resume and cover letter that only use facts from your profile. You refine them in a chat, download them as PDFs and track each application from draft to offer.\n\nIt's for one person on a small server: one password, your data in your own PostgreSQL database (or a single SQLite file), and an AI model of your choice. That can be a local model through Ollama or LM Studio, so your profile and documents stay on your own hardware, or a hosted one (any OpenAI-compatible API, Anthropic or Mistral), which then receives what it writes from. Privacy says what goes where.",
+            "features": [
+              "Profile: basics, skills and languages, experience and volunteering, projects, education, certifications, publications and references, in the",
+              "Base resume: twelve themes and a theme builder, previewed live and printed to PDF on the server. Duplicate themes, or share them as files.",
+              "Positions: search postings near your city, or anywhere you choose, on every portal you switch on at once: JSearch (LinkedIn, Indeed and more",
+              "Startups: startups that are hiring, from YC startups' job posts and Hacker News' monthly “Who is hiring?” thread, kept to the ones that hire",
+              "Job agent (optional): save up to three named searches and run the enabled ones once a day, in order. It skips what you've seen, scores the n",
+              "New application: paste a posting; Dossier pulls out the details and requirements, matches them against your profile, and writes a tailored r",
+              "Never invents experience: drafts only use facts from your profile. What the posting asks for and your profile doesn't have is shown as a gap",
+              "Refine: ask for changes in a chat, edit or regenerate any part (every part of the cover letter too: sender, date, recipient, greeting and si"
+            ],
+            "sections": [
+              "Demo",
+              "Features",
+              "Screenshots",
+              "Run it on your computer",
+              "Self-hosting",
+              "Documentation",
+              "Community",
+              "Known limitations",
+              "Performance and sizing",
+              "Security",
+              "Development",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 16127
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "BLEZZ0102/Deskland",
+          "owner": "BLEZZ0102",
+          "name": "Deskland",
+          "url": "https://github.com/BLEZZ0102/Deskland",
+          "homepage": "https://deskland.app",
+          "description": "Adaptive wallpaper — free open-source Beach and Meadow preview.",
+          "language": "HTML",
+          "topics": [
+            "adaptive-wallpaper",
+            "csharp",
+            "desktop",
+            "gplv3",
+            "javascript",
+            "wallpaper",
+            "webview2"
+          ],
+          "stars": 657,
+          "forks": 82,
+          "open_issues": 12,
+          "starGain": 5,
+          "heat": 5,
+          "heatBasis": "snapshot",
+          "heatPercentile": 64,
+          "ageDays": 33,
+          "created_at": "2026-10-25T08:37:05Z",
+          "pushed_at": "2026-11-26T06:26:08Z",
+          "license": "GPL-3.0",
+          "rating": 3,
+          "composite": 64.4,
+          "breakdown": {
+            "heat": 64,
+            "community": 52,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 15,
+            "devops": 10,
+            "ai": 25,
+            "data": 15
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Adaptive Windows wallpaper that makes your desktop icons part of the scenery.\n\nDeskland turns the space around your icons into a living landscape. Move, add or remove an icon and the beach, meadow, clouds and shadows quietly reshape around it — in real time, without AI, an account or an API key.\n\nThis is the free, open-source Preview , not a time-limited trial. It includes the complete Beach and Meadow themes, the Windows host, settings and sharing tools.",
+            "features": [
+              "Adaptive scenery: uses the real positions of desktop icons and transitions smoothly when they move.",
+              "Two complete themes: every setting for Beach and Meadow is included and saved between sessions.",
+              "Made for the desktop: tray controls, startup on sign-in and automatic pause when a window is maximized or full-screen.",
+              "Private sharing: image and animation exports use sample icons and color blocks, never a screenshot of your desktop or real file names.",
+              "Independent installation: Preview uses its own install directory, settings, startup entry and instance identity, so it can coexist with othe",
+              "English and Simplified Chinese: no sign-in, purchase restoration, update service or store API is included.",
+              "Windows 10 or Windows 11, 64-bit.",
+              "Microsoft Edge WebView2 Runtime."
+            ],
+            "sections": [
+              "Deskland Preview",
+              "Included themes",
+              "Features",
+              "Requirements",
+              "Build from source",
+              "Browser preview",
+              "Windows installer",
+              "Project layout",
+              "Known limitations",
+              "Credits and license",
+              "中文说明",
+              "包含的主题",
+              "功能",
+              "系统要求"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7903
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "chen08209/FlClash",
+          "owner": "chen08209",
+          "name": "FlClash",
+          "url": "https://github.com/chen08209/FlClash",
+          "homepage": "https://chen08209.github.io/FlClash",
+          "description": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
+          "language": "Dart",
+          "topics": [
+            "clash",
+            "clash-meta",
+            "flutter",
+            "hysteria",
+            "multi-platform",
+            "proxy",
+            "v2ray",
+            "vless"
+          ],
+          "stars": 65690,
+          "forks": 4367,
+          "open_issues": 211,
+          "starGain": 242,
+          "heat": 242,
+          "heatBasis": "trending",
+          "heatPercentile": 95,
+          "ageDays": 1200,
+          "created_at": "2023-08-15T07:47:22Z",
+          "pushed_at": "2026-11-26T07:58:26Z",
+          "license": "GPL-3.0",
+          "rating": 4.5,
+          "composite": 89.5,
+          "breakdown": {
+            "heat": 95,
+            "community": 90,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 85,
+            "ai": 30,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A multi-platform proxy client based on ClashMeta. Simple to use, open source and ad-free.\n\n- One app for Android, Windows, macOS and Linux , with x64 and ARM64 builds on the desktop. - mihomo (Clash.Meta) core with rule routing, proxy groups, latency tests, system proxy and TUN mode. - Profiles from a subscription link or a file, with a built-in editor, override scripts, and custom rules, proxies and proxy groups. - Live views of connections, requests, DNS queries and logs. - Material You design with Apple-style interaction : dynamic color, light and dark themes, continuous corners, sheets that snap between heights, and layouts that adapt from phones to desktops. - Backup and restore through WebDAV or a local file. - Platform touches : a Quick Settings tile, per-app proxy and Android TV support on Android; a tray menu and global hotkeys on the desktop. - Open source and ad-free , licensed under GPL-3.0.\n\nGet the latest build from GitHub Releases, or open the website, which picks the right file for your device.",
+            "features": [
+              "One app for Android, Windows, macOS and Linux , with x64 and ARM64 builds on the desktop.",
+              "mihomo (Clash.Meta) core with rule routing, proxy groups, latency tests, system proxy and TUN mode.",
+              "Profiles from a subscription link or a file, with a built-in editor, override scripts, and custom rules,",
+              "Live views of connections, requests, DNS queries and logs.",
+              "Material You design with Apple-style interaction : dynamic color, light and dark themes, continuous corners,",
+              "Backup and restore through WebDAV or a local file.",
+              "Platform touches : a Quick Settings tile, per-app proxy and Android TV support on Android; a tray menu and",
+              "Open source and ad-free , licensed under GPL-3.0."
+            ],
+            "sections": [
+              "FlClash",
+              "Features",
+              "Download",
+              "Usage",
+              "Build from source",
+              "Support",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 6359
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "indexable-inc/blaze",
+          "owner": "indexable-inc",
+          "name": "blaze",
+          "url": "https://github.com/indexable-inc/blaze",
+          "homepage": "https://ix.dev/blaze",
+          "description": "Incremental rust builds up to 92x faster than cargo/rustc. Backed by Y Combinator (F26).",
+          "language": "Rust",
+          "topics": [
+            "cargo",
+            "compiler",
+            "cranelift",
+            "developer-tools",
+            "hot-reload",
+            "incremental-compilation",
+            "jit",
+            "live-coding"
+          ],
+          "stars": 2954,
+          "forks": 103,
+          "open_issues": 478,
+          "starGain": 161,
+          "heat": 161,
+          "heatBasis": "snapshot",
+          "heatPercentile": 94,
+          "ageDays": 38,
+          "created_at": "2026-10-19T23:31:09Z",
+          "pushed_at": "2026-11-27T01:44:51Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 83.5,
+          "breakdown": {
+            "heat": 94,
+            "community": 63,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "For macOS on Apple silicon and Linux, with or without Rust installed: blaze builds with its own Rust, whatever rustup or the project pins, and the installer downloads it once (about 125 to 160 MB; none when rustup already has that same nightly; v2's blaze cannot fetch it yet: toolchain.md). Rather use crates.io or Nix? Other ways to install.\n\nThat installs stable : a release that passed the heavy tests (real projects on macOS and Linux: cargo, zed, servo, bun, NVIDIA Dynamo, fff, fframes, flox and OpenAI's Codex CLI each build, build again after an edit faster than with cargo, and pass their tests). Canary is the newest release, out as soon as it is built and promoted to stable unchanged once it passes them (release.md):\n\ncurl -fsSL https://ix.dev/blaze sh -s -- --channel canary",
+            "features": [
+              "Edits rebuild 10× faster on macOS arm64, 24× faster on Linux aarch64 and 11× faster on Linux x86-64 than with cargo build , on average over ",
+              "About 20 ms from saving a file to a running program using the new code, with",
+              "macOS on Apple silicon and Linux. Windows has no installer, and v2 has not been run there",
+              "blaze is its own toolchain. It builds every project with its own Rust, blaze-2026-10-27",
+              "It trades memory for speed: a few GB for a small project.",
+              "It's young. Keep cargo check or your CI as the final word, and",
+              "Install: requirements, crates.io, Nix",
+              "Using blaze: day to day, rebuild on save, making plain cargo build use blaze"
+            ],
+            "sections": [
+              "Install",
+              "Try it",
+              "How fast",
+              "Over time",
+              "How it works",
+              "Good to know",
+              "Learn more",
+              "Demo: a Game of Life you can edit",
+              "Updates",
+              "Using blaze at work?",
+              "Contributing",
+              "Credits"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 7891
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "intrinsic-ai/intrinsic-core",
+          "owner": "intrinsic-ai",
+          "name": "intrinsic-core",
+          "url": "https://github.com/intrinsic-ai/intrinsic-core",
+          "homepage": "https://developer.intrinsic.ai/",
+          "description": "Intrinsic Core™ provides an open, local runtime, SDK, and hardware agnostic, real-time control framework for industrial robotics.",
+          "language": "C++",
+          "topics": [],
+          "stars": 804,
+          "forks": 101,
+          "open_issues": 12,
+          "starGain": 8,
+          "heat": 8,
+          "heatBasis": "trending",
+          "heatPercentile": 68,
+          "ageDays": 80,
+          "created_at": "2026-09-08T04:15:06Z",
+          "pushed_at": "2026-11-26T21:52:32Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 65.5,
+          "breakdown": {
+            "heat": 68,
+            "community": 54,
+            "activity": 62,
+            "maturity": 85
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 85,
+            "ai": 35,
+            "data": 50
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Intrinsic Core™ provides an open, local runtime, SDK, and hardware agnostic, real-time control framework for industrial robotics. The goal is to make it easier and faster to build AI-enabled robotics applications by providing open, foundational building blocks—from simulation and 6-DoF perception to hardware execution.\n\n- A pre-configured, local runtime that standardizes setup, with core robotics capabilities and services integrated to work together. - Pre-built robotics capabilities, including grasp planning, AI perception, a native digital twin and more - ready to use out of the box. - Seamless ROS 2 interoperability that bridges modern C++/Bazel development with the broader ROS ecosystem. - A hardware-agnostic, real-time control framework with a unified hardware abstraction layer to swap robot arms and grippers without driver rewrites. - An open reference solution built on Intrinsic Core, providing a functional machine tending template with a zero-refactor path from prototype to deployment. Open Machine Tending Solution\n\nSee the Getting Started guide for full installation and setup instructions.",
+            "features": [
+              "A pre-configured, local runtime that standardizes setup, with core robotics capabilities and services integrated to work together.",
+              "Pre-built robotics capabilities, including grasp planning, AI perception, a native digital twin and more - ready to use out of the box.",
+              "Seamless ROS 2 interoperability that bridges modern C++/Bazel development with the broader ROS ecosystem.",
+              "A hardware-agnostic, real-time control framework with a unified hardware abstraction layer to swap robot arms and grippers without driver re",
+              "An open reference solution built on Intrinsic Core, providing a functional machine tending template with a zero-refactor path from prototype",
+              "intrinsic runtime : A pre-configured local execution engine for Intrinsic Core. Packaged as a native k3s containerized environment, it manag",
+              "intrinsic control (ICON) : The real-time motion and hardware coordination engine. It combines kinematics solvers and trajectory interpolatio",
+              "intrinsic motion planning : The collision-free path generation engine for Intrinsic Core. It provides high-throughput constraint solving acr"
+            ],
+            "sections": [
+              "Intrinsic Core",
+              "Installation and setup",
+              "Intrinsic Core Architecture",
+              "Intrinsic Core modules",
+              "Intrinsic Open Machine Tending Solution (OMTS)",
+              "Prerequisites",
+              "Resources and related repositories",
+              "Contributing and community",
+              "License",
+              "Trademark notice"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 7618
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "dbeaver/dbeaver",
+          "owner": "dbeaver",
+          "name": "dbeaver",
+          "url": "https://github.com/dbeaver/dbeaver",
+          "homepage": "https://dbeaver.io",
+          "description": "Free universal database tool and SQL client",
+          "language": "Java",
+          "topics": [
+            "ai",
+            "database",
+            "databricks",
+            "db2",
+            "dbeaver",
+            "erd",
+            "gui",
+            "java"
+          ],
+          "stars": 52544,
+          "forks": 4473,
+          "open_issues": 3332,
+          "starGain": 9,
+          "heat": 9,
+          "heatBasis": "trending",
+          "heatPercentile": 85,
+          "ageDays": 4055,
+          "created_at": "2015-10-21T08:26:28Z",
+          "pushed_at": "2026-11-26T19:38:46Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 86.5,
+          "breakdown": {
+            "heat": 85,
+            "community": 89,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Free multi-platform database tool for developers, SQL programmers, database administrators and analysts.\n\nHas a lot of features including schema editor, SQL editor, data editor, AI chat, ER diagrams, data export/import/migration, SQL execution plans, database administration tools, database dashboards, Spatial data viewer, proxy and SSH tunnelling, custom database drivers editor, etc. Out of the box supports 350+ database drivers . Supports any database which has JDBC or ODBC driver (basically - almost all existing databases). Integrates AI tools for work with data, SQL and database structure\n\nYou can download prebuilt binaries from official website or directly from GitHub releases . You can also download Early Access version. We publish daily.",
+            "features": [
+              "Has a lot of features including schema editor, SQL editor, data editor, AI chat, ER diagrams, data export/import/migration, SQL execution pl",
+              "Out of the box supports 350+ database drivers .",
+              "Supports any database which has JDBC or ODBC driver (basically - almost all existing databases).",
+              "Integrates AI tools for work with data, SQL and database structure",
+              "Full product documentation",
+              "WIKI",
+              "Issue tracker",
+              "DBeaver is written mostly on Java. However, it also uses a set of native OS-specific components for desktop UI, high performance database dr"
+            ],
+            "sections": [
+              "DBeaver",
+              "Download",
+              "Running",
+              "Documentation",
+              "Architecture",
+              "Supported databases",
+              "Community version",
+              "CData commercial drivers",
+              "PRO versions",
+              "AI integration",
+              "Feedback",
+              "Contribution: help the Beaver!",
+              "Our other open-source products:"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9862
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "AntelopeJS/dms",
+          "owner": "AntelopeJS",
+          "name": "dms",
+          "url": "https://github.com/AntelopeJS/dms",
+          "homepage": "https://dms.antelopejs.com",
+          "description": "Open-source back office for your product. Connect Postgres, MySQL/MariaDB or MongoDB, mock up the dashboard with your coding agent, then it builds the pages as TypeScript in your repo. Self-hosted.",
+          "language": "TypeScript",
+          "topics": [
+            "admin-dashboard",
+            "admin-panel",
+            "ai-agents",
+            "analytics",
+            "antelopejs",
+            "back-office",
+            "claude-code",
+            "dashboard"
+          ],
+          "stars": 55,
+          "forks": 8,
+          "open_issues": 16,
+          "starGain": null,
+          "heat": 5.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 82,
+          "ageDays": 71,
+          "created_at": "2026-09-16T21:58:38Z",
+          "pushed_at": "2026-11-27T01:28:01Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 68.3,
+          "breakdown": {
+            "heat": 82,
+            "community": 31,
+            "activity": 64,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 21,
+            "backend": 60,
+            "devops": 35,
+            "ai": 56,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The open-source back office for your product. Paste your PostgreSQL, MySQL, MariaDB, MongoDB or RethinkDB connection string. Your coding agent drafts a live mockup you comment on, then builds the admin pages and dashboards as TypeScript in your repo.\n\nnpx @antelopejs/core project init demo --template dms-connect-demo\n\nThen cd demo && docker compose up starts AntelopeJS DMS and a sample coffee shop in PostgreSQL.",
+            "features": [
+              "A change redraws at once, with no typecheck and no reload.",
+              "Blocks read sample data, so you settle the dashboard before wiring a table or a query.",
+              "Pin a comment on any block and press Resolve with AI . Once you approve the mockup, Build it writes the real code once.",
+              "In the assistant's popup, choose Start from an existing database , paste the connection string and press Connect and analyse .",
+              "Choose Generate a first mockup . The assistant runs Claude Code or Codex on your own account, and the mockup fills up while it writes it.",
+              "Press Build it . We approved the mockup as written, and took the assistant's suggested answer to each of its three questions about the plan.",
+              "Existing product? Connect its database. You get a page for every table you keep, plus dashboards.",
+              "New product? Start from the template and build the tables and pages from nothing."
+            ],
+            "sections": [
+              "AntelopeJS DMS",
+              "Mock it up, then build it",
+              "One connection string, one agent run",
+              "A finished back office",
+              "Why",
+              "Why not ask a coding agent for the whole thing?",
+              "What you get",
+              "Quick start",
+              "Ways to build",
+              "Mock it up first",
+              "Ask the assistant",
+              "Use your own coding agent",
+              "Claude Code",
+              "Codex"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 26697
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "qianyiai/KuroCat",
+          "owner": "qianyiai",
+          "name": "KuroCat",
+          "url": "https://github.com/qianyiai/KuroCat",
+          "homepage": "https://kurocat.org",
+          "description": "KuroCat — Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/Linux/Android)｜开源3D桌面打字小黑猫与AI伴侣",
+          "language": "TypeScript",
+          "topics": [
+            "3d",
+            "ai-companion",
+            "android",
+            "bongo-cat",
+            "bongocat",
+            "claude-code",
+            "codex",
+            "cross-platform"
+          ],
+          "stars": 1384,
+          "forks": 193,
+          "open_issues": 58,
+          "starGain": null,
+          "heat": 474.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 5,
+          "created_at": "2026-11-21T15:49:31Z",
+          "pushed_at": "2026-11-27T00:50:52Z",
+          "license": "MIT",
+          "rating": 4.5,
+          "composite": 85.8,
+          "breakdown": {
+            "heat": 97,
+            "community": 59,
+            "activity": 85,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 59,
+            "backend": 15,
+            "devops": 12,
+            "ai": 21,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "KuroCat 免费开源的 3D / 2D 透明置顶桌面打字小黑猫 &amp; AI 编程伴侣 轻量 Rust + Tauri v2 打造 · 6 款猫咪 + 大肥鱼鲸鱼娘 · 输密码自动闭眼 · OBS 免抠像 · 内置 MCP AI 捏猫\n\n🇨🇳 简体中文 &nbsp;·&nbsp; 🇺🇸 English &nbsp;·&nbsp; 🇯🇵 日本語 &nbsp;·&nbsp; 🇰🇷 한국어\n\n🌐 官网在线试玩 &nbsp;·&nbsp; 📥 官方下载与校验 &nbsp;·&nbsp; ⚡ vs Bongo Cat &nbsp;·&nbsp; 🎥 OBS 透明源 &nbsp;·&nbsp; 🤖 AI / MCP &nbsp;·&nbsp; 🍺 Homebrew",
+            "features": [
+              "浏览器拦截 .exe （开源项目未购商业 EV 签名证书，源码全公开）：",
+              "Edge ：鼠标悬停下载条 → 点右侧 ··· → 保留 → 点「删除」旁下箭头 ▾ → 仍然保留 。",
+              "Chrome ：按 Ctrl + J → 保留危险文件 → 仍然保留 。",
+              "蓝框「Windows 已保护你的电脑」 ：点 更多信息 → 仍要运行 。",
+              "老版 Win10 / LTSC 提示缺少 WebView2 ：下载微软官方引导程序 MicrosoftEdgeWebview2Setup.exe （1.8 MB），右键「以管理员身份运行」即可。",
+              "Win7 SP1 绿包版 ：全部解压后保持 KuroCat.exe 与 WebView2Runtime 同目录直接双击运行（支持原生 256 级逐像素透明，开不开 Aero 均无白框）。",
+              "手动安装 .dmg 提示「无法验证开发者 / 已损坏」 ：打开终端执行一次即可彻底解除隔离（使用上方 Homebrew 安装则会自动完成）：",
+              "开启全局键鼠响应 ：在「系统设置 → 隐私与安全性」中同时勾选 辅助功能 与 输入监控 里的 KuroCat （兼容 Karabiner-Elements；若覆盖升级后失效，选中 KuroCat 点 - 移除再重新 + 添加）。"
+            ],
+            "sections": [
+              "🎬 实机演示",
+              "📥 快速下载（ v5.1.3 ）",
+              "✨ 核心特性",
+              "🤖 AI 伴侣与 MCP 捏猫",
+              "📈 实时增长曲线",
+              "📄 开源协议与致谢"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 12300
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "jhaizhou-ops/d2r-mobile",
+          "owner": "jhaizhou-ops",
+          "name": "d2r-mobile",
+          "url": "https://github.com/jhaizhou-ops/d2r-mobile",
+          "homepage": "",
+          "description": "Open-source compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs your own Switch copy natively on iPhone, iPad, Mac, Android and HarmonyOS — full touch controls, 60 fps, new endgame modes. Bring your own game files. 开源的《暗黑破坏神 II：狱火重生》术士君临 iOS / macOS / 安卓 / 鸿蒙兼容层",
+          "language": "C",
+          "topics": [
+            "android",
+            "compatibility-layer",
+            "diablo-2-resurrected",
+            "diablo2",
+            "game-port",
+            "harmonyos",
+            "ios",
+            "ipad"
+          ],
+          "stars": 5385,
+          "forks": 1355,
+          "open_issues": 123,
+          "starGain": null,
+          "heat": 657.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 46,
+          "created_at": "2026-10-12T08:41:19Z",
+          "pushed_at": "2026-11-26T13:13:20Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84,
+          "breakdown": {
+            "heat": 98,
+            "community": 73,
+            "activity": 68,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An open-source compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion, for iOS, macOS, Android and HarmonyOS. It brings the Nintendo Switch release you bought, expansion included, to iPhone, iPad and Mac in full: the original game code runs natively, every control is rebuilt for touch, the frame rate holds at 60 fps, and you are in a game one second after the main menu. There is now a native macOS version as well (first version): on an Apple silicon Mac it starts on double-click and works with keyboard, mouse and gamepad. Since v2.0 there is an Android version (community port): the same game program executes natively on ARM64 Android phones, with the graphics reimplemented on Vulkan; on a Snapdragon 8+ Gen 1 phone the camp and the Den of Evil and Cow Level fights all run at a median 60 fps (see \"Android\" below); a HarmonyOS version runs on the same engine (community port: an unsigned shell from the Releases page that you re-sign yourself, nothing to build; see \"HarmonyOS\"). Apple TV 4K (3rd generation, A15) has a community port (developer preview) that has reached the character-selection screen only on its author's device; see the device table below.\n\nThis is not a tech demo that \"sort of runs\". It is a mobile version polished for daily play, from your first character all the way through the endgame.\n\nPlatforms: iPhone / iPad (iOS 26 and later; iOS 18 – 25 with the older-API build) · Mac (Apple silicon, macOS 26 or later; macOS 15 – 25 with the",
+            "features": [
+              "The game's own aarch64 program, executing directly on the device , with no emulated CPU. iPhone and Switch use the same class of processor; ",
+              "The platform services the game expects — system calls, the file system, the graphics API, audio, input — provided by a small host written fo",
+              "A port built for phones, and taken all the way: a complete touch control scheme, edge-to-edge iPhone and true full-screen iPad display, cont",
+              "An emulator, cloud gaming, or streaming.",
+              "A source of game content. It contains none and distributes none. There is no game program, art, text, data table or shader in this repositor",
+              "Online. There is no multiplayer; the game runs fully offline and needs no online account.",
+              "Move : a virtual stick with precise diagonals; tap an NPC or the ground to path there automatically; doors, portals and cave entrances are t",
+              "Fight : press a skill button to cast, hold to keep casting, drag to aim at any angle ; nearby monsters are targeted automatically. Two skill"
+            ],
+            "sections": [
+              "D2R Mobile",
+              "What it is, and what it is not",
+              "Battle-tested",
+              "Fast, smooth, and easy on the battery",
+              "Redesigned for fingers",
+              "Controller",
+              "New ways to play, on top of the original",
+              "Greater Rift",
+              "Endgame Boss Rush, Elysium mode, and the Kill Board",
+              "Storage: a collector's paradise",
+              "Effortless farming",
+              "English, Chinese, Spanish, Russian, Korean and Portuguese",
+              "How it works",
+              "Android (new in v2.0)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 51946
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "FrizzleM/SideInstaller",
+          "owner": "FrizzleM",
+          "name": "SideInstaller",
+          "url": "https://github.com/FrizzleM/SideInstaller",
+          "homepage": "https://SideInstaller.net",
+          "description": "An an app that installs Sidestore on iOS 27, fully on-device ",
+          "language": "Swift",
+          "topics": [
+            "exploit",
+            "ios",
+            "ipa",
+            "sideloading",
+            "sidestore"
+          ],
+          "stars": 2116,
+          "forks": 175,
+          "open_issues": 76,
+          "starGain": 292,
+          "heat": 292,
+          "heatBasis": "trending",
+          "heatPercentile": 96,
+          "ageDays": 158,
+          "created_at": "2026-06-21T19:54:59Z",
+          "pushed_at": "2026-11-26T21:47:34Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 82.9,
+          "breakdown": {
+            "heat": 96,
+            "community": 62,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Install SideStore and LiveContainer directly on your iPhone. No PC required.\n\nSideStore and LiveContainer are currently the best way to sideload on iOS. However, there's one big problem: installing them requires a PC, which many people don't have. That's why I made SideInstaller, a free and open-source iOS app that installs them directly on your iPhone, no PC required.\n\nSideInstaller handles the entire setup process on-device. It takes care of the pairing, provisioning, and installation steps that normally force you to plug into a computer and run desktop tools, all from a single app running on the phone itself. Once it's done, you get a fully working SideStore and LiveContainer setup ready to sideload your own apps.",
+            "features": [
+              "An iPhone or iPad on iOS 27+ (iOS 17.4+ with a pairing file",
+              "Wi-Fi (first time only)",
+              "Your Apple account credentials (not collected)",
+              "Get the apps. Install rootshell,",
+              "Pair in rootshell. Turn on Settings › Location Diary Mode › Session Only in rootshell,",
+              "Install from Open Minis. Connect LocalDevVPN. In Open Minis, tap the console icon at the",
+              "Open SideInstaller. With LocalDevVPN connected, log in with your Apple account and tap",
+              "sideinstaller://install?url= downloads the IPA as the"
+            ],
+            "sections": [
+              "SideInstaller",
+              "What it is",
+              "Requirements",
+              "How to use it",
+              "Legacy: enterprise certificates",
+              "Links",
+              "Shortcuts",
+              "Compatibility",
+              "iOS 26.4 to 26.x: a remote pairing file",
+              "Is SideInstaller safe?",
+              "Project layout",
+              "Contributing",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 13054
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "LNPANDY/NX2Apple",
+          "owner": "LNPANDY",
+          "name": "NX2Apple",
+          "url": "https://github.com/LNPANDY/NX2Apple",
+          "homepage": "https://github.com/LNPANDY/NX2Apple#readme",
+          "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+          "language": "Swift",
+          "topics": [
+            "apple-silicon",
+            "custom-format",
+            "homebrew",
+            "ios",
+            "ipa",
+            "ipad",
+            "ipados",
+            "iphone"
+          ],
+          "stars": 8606,
+          "forks": 1062,
+          "open_issues": 82,
+          "starGain": 85,
+          "heat": 85,
+          "heatBasis": "snapshot",
+          "heatPercentile": 84,
+          "ageDays": 37,
+          "created_at": "2026-10-20T18:16:07Z",
+          "pushed_at": "2026-11-27T00:24:31Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 81,
+          "breakdown": {
+            "heat": 84,
+            "community": 75,
+            "activity": 69,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Not an emulator. No terminal. A macOS or Windows app does the whole build in a few clicks.\n\n- Multi-engine workbench and Dark Glass UI : Switch in one click at the top of the Builds page or in Settings between nxnative , nxkit (Beta) (with Ed25519-verified self-updates and console overlay support via NXKIT OVERLAY ), and MacNativeGames (guarded for 5 maintained first-party Mac titles), all wrapped in the unified Dark Glass UI and redesigned two-column controller console mode. - Hot-loaded iOS game frameworks, .p12 on-device signing, and slim shared IPA : All your games share a compact shell app of a few tens of megabytes ( DMMSLTR1 shader trailers move into external .img archives with foreground .nxpart auto-joining). Add or update games by hot-pushing or exporting DmGame.framework into Documents/Frameworks without reinstalling the shell IPA (sideload users can import a .p12 certificate in the iOS app for automatic on-device signing), in 10 UI languages . - Persistent build seeds and fast batch refresh : Builds made with 1.5 persist build-seeds , so most subsequent engine upgrades finish in minutes via batch refresh without keeping the original game package or build folders, paired with per-game update version badges (such as 1.5 ) and three-way missing .img recovery. The Windows launcher ( NX2Apple-windows-x64.zip ) also adds a general multi-game BuildQueue , an emulated heap growing up to 2 GiB on demand, and in-app self-update ( NX2Apple.exe ). - Shortcuts with PiP guide, ",
+            "features": [
+              "Multi-engine workbench and Dark Glass UI : Switch in one click at the top of the Builds page or in Settings between nxnative , nxkit (Beta) ",
+              "Hot-loaded iOS game frameworks, .p12 on-device signing, and slim shared IPA : All your games share a compact shell app of a few tens of mega",
+              "Persistent build seeds and fast batch refresh : Builds made with 1.5 persist build-seeds , so most subsequent engine upgrades finish in minu",
+              "Shortcuts with PiP guide, audio mixing, and controllers : iPhone and iPad add a built-in 6-step Add to Home Screen wizard with an optional P",
+              "208 game profiles, including 19 Switch 2 games : Pick a Switch 2 game folder or .nup file in the Mac or Windows launcher with no prod.keys n",
+              "An Apple silicon Mac. The launcher opens on macOS 13 or later . Building needs Xcode with",
+              "Your own game dumps (NSP or XCI) and your own prod.keys from your own console. Nothing is",
+              "For an iPhone or iPad: iOS or iPadOS 26 or later and a recent device. Older devices are untested."
+            ],
+            "sections": [
+              "What NX2Apple is",
+              "Requirements",
+              "Install",
+              "The iPhone and iPad app",
+              "How to play",
+              "Games",
+              "Limitations",
+              "For developers",
+              "Credits",
+              "Legal"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 24373
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "firecrawl/firecrawl",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 2
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "BaaRai/ARTEX",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 2
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "simplexai-labs/linger",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "kuafuai/andee",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "janhq/jan",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    },
+    {
+      "full_name": "wuyoscar/AISafetyHot",
+      "category": "ai",
+      "lastPushed": "2026-11-21",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": [],
+  "reviewedAt": "2026-11-27T09:49:03.314+08:00"
+}

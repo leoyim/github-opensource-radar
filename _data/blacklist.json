@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 126,
-    "publicCount": 63,
+    "count": 127,
+    "publicCount": 64,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -52,8 +52,8 @@
         "id": "installer-wave-2026-11-f",
         "label": "「预激活安装包」批量投放（第六波）",
         "window": "2026-11-21",
-        "repos": 12,
-        "note": "本波次在 2026-11-21 12:30—17:40 的同一时间窗内集中上架，仓库数量达数百个，标题均为不同商业软件名的 Windows 桌面版本；README 版式一致，首屏为预览图、安装按钮与徽章组，安装按钮均指向仓库自身的 Pages 页面；仓库根目录只有 index.html 或 docs/index.html 落地页、按钮与预览图，没有任何源码目录与构建链；星标集中在 337—378、零 fork、零 issue，附许可文件而内容为第三方商业软件的安装入口，申报的十余个主题词含多个与正文无关的方向词。本期归集其中进入推荐位的九个条目；11-24 期另归集同窗口内进入推荐位的第 10 个条目（创建于 13:04）。11-26 期按同一证据口径归集同窗口内另外两个条目（创建于 16:00 与 17:13），共 12 个。"
+        "repos": 13,
+        "note": "本波次在 2026-11-21 12:30—17:40 的同一时间窗内集中上架，仓库数量达数百个，标题均为不同商业软件名的 Windows 桌面版本；README 版式一致，首屏为预览图、安装按钮与徽章组，安装按钮均指向仓库自身的 Pages 页面；仓库根目录只有 index.html 或 docs/index.html 落地页、按钮与预览图，没有任何源码目录与构建链；星标集中在 337—378、零 fork、零 issue，附许可文件而内容为第三方商业软件的安装入口，申报的十余个主题词含多个与正文无关的方向词。本期归集其中进入推荐位的九个条目；11-24 期另归集同窗口内进入推荐位的第 10 个条目（创建于 13:04）。11-26 期按同一证据口径归集同窗口内另外两个条目（创建于 16:00 与 17:13），共 12 个。 11-27 期按同一证据口径归集同窗口内另 1 个条目（创建于 17:10），共 13 个。"
       },
       {
         "id": "star-farm-2026-11",
@@ -8811,6 +8811,99 @@
           "mapkit",
           "swiftui",
           "testing"
+        ]
+      }
+    },
+    {
+      "full_name": "jomicat1989-dotcom/rust-external-trainer-tool",
+      "owner": "jomicat1989-dotcom",
+      "name": "rust-external-trainer-tool",
+      "url": "https://github.com/jomicat1989-dotcom/rust-external-trainer-tool",
+      "description": "Rust External Trainer Tool: Confident Game Enhancement",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-f",
+      "firstSeen": "2026-11-27",
+      "removedAt": "2026-11-27",
+      "issues": [
+        "2026-11-27"
+      ],
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "创建时间落在同一时间窗",
+          "detail": "仓库创建于 2026-11-21T17:10:50Z，与 11-21 下午集中上架的多个「一键安装」版式仓库处于同一时间窗（12:30—17:40）内。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与派生失衡",
+          "detail": "337 星标而只有 1 个 fork、0 个 watcher，缺少通常意义上的二次使用痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "零议题记录",
+          "detail": "在现有星标量级下没有任何 issue，缺少使用者的反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，总体积约 294 KB，根目录为 index.html（约 65 KB 落地页）、README.md（约 10 KB）、files/ 下两张图片与一个 1 KB 许可文件，未见任何源码目录或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 以安装入口代替源码",
+          "detail": "README 首屏为「PowerShell Setup Button」，按钮指向仓库自身的 Pages 页面，正文要求联网取回脚本后在本机执行，安装过程无法预先审阅。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明与实际内容不对应",
+          "detail": "仓库附 MIT 许可文件，而 README 描述的是面向第三方游戏的修改工具分发包，权利基础无法核对。"
+        },
+        {
+          "type": "content",
+          "label": "文本版式高度一致",
+          "detail": "与同批仓库使用相同的徽章组、章节结构、下载按钮与系统需求表格；申报的 19 个主题词多为同一商品名的排列组合，正文并未涉及其中多数方向。"
+        },
+        {
+          "type": "correlation",
+          "label": "与已撤回条目同名换账号重发",
+          "detail": "与 11-18 期已按同一口径撤回的 SK-Dev666/rust-external-trainer-tool 仓库名完全相同、主题词组合几乎一致，账号更换而版式未变。"
+        }
+      ],
+      "verdict": "仓库以 HTML 落地页与一键安装按钮代替源码与构建说明，内容为面向第三方游戏的修改工具分发包；与其同名的条目已于 11-18 期按相同口径撤下，本次为更换账号后的重新上架，故一并撤下并长期不再收录。",
+      "advice": "不建议在任何环境执行其安装命令；如已执行，建议核查启动项与网络外联，并通过游戏官方渠道获取相关服务。",
+      "snapshot": {
+        "stars": 337,
+        "forks": 1,
+        "open_issues": 0,
+        "license": "MIT",
+        "created_at": "2026-11-21T17:10:50Z",
+        "pushed_at": "2026-11-26T20:50:54Z",
+        "topics": [
+          "automation",
+          "desktop",
+          "developer-tools",
+          "open-source",
+          "python",
+          "rust-aim-2026",
+          "rust-exploit",
+          "rust-external-2026",
+          "rust-helper-2026",
+          "rust-menu",
+          "rust-mod",
+          "rust-treasures",
+          "rust-wh-2026",
+          "rusthack",
+          "scripts",
+          "software-engineering",
+          "system",
+          "utility",
+          "windows-app"
         ]
       }
     }

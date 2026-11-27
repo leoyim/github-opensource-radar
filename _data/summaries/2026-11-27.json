@@ -1,0 +1,86 @@
+{
+  "modelflare-ai/AnyModelBot": {
+    "summary_zh": "把「agent 团队」做成桌面应用的形态：每个机器人有独立人设、默认模型、工作区与记忆，可在应用内聊天，也可接入微信、飞书、Telegram、Slack、Discord；能读写文件、在沙箱里执行命令、经授权操作桌面。对话、记忆、文件与 API Key 留在本机，模型走 Modelflare 按用量付费，或用自己的官方 Key 直连厂商，应用本身不收订阅费。Python、MIT，31 天、5,002 星、121 fork。",
+    "highlight_zh": "看点是权限分档与本地优先的具体化：只读 / 工作区 / 完全权限三档，越界写入先询问，凭据不出设备。需要留意模型请求仍经 Modelflare 转发并留下请求日志，所谓本地优先覆盖的是对话、文件与密钥；121 fork（2.4%）低于同量级，桌面端多平台打包的长期维护是变量。"
+  },
+  "alesha-pro/llm.asm": {
+    "summary_zh": "三个用纯 x86-64 NASM 汇编写的完整 LLM 工程：12 KB 的 Qwen3-0.6B 推理、22 KB 的可引导裸机系统、32 KB 的 Mini-GPT 训练器加 Braille 终端界面，合计 17,252 行。expf、sincosf、RMSNorm、RoPE、SiLU、Softmax、AVX2+FMA+F16C 的 GEMM/GEMV、BPE 分词器、clone/futex 线程池全部手写，零 C、零 libc、零动态依赖。MIT，2 天、1,558 星。",
+    "highlight_zh": "看点是把依赖压到零：readelf 看不到 dynamic section，一个 12 KB 二进制跑通 0.6B 模型，裸机版本连操作系统都不要。代价是通用性——只覆盖单一模型族与 AVX2 以上指令集。2 天 1,558 星配 228 fork（14.6%），说明读者倾向下手改；数值有 1e-7 量级单元测试，速度结论只在单机 EPYC 上给过。"
+  },
+  "opensetlabs/openset-llm": {
+    "summary_zh": "在 8 GB 内存、无 GPU 的普通 CPU 上跑 27B 模型：同规格 4-bit 权重通常是 16–19 GB，这条路把它压进 8 GB 以内，并对外提供 OpenAI 兼容接口。默认上下文 4,096 token，`--multi 4` 时每路输出与单请求逐字节一致，WikiText-2 困惑度 7.5681。C++、MIT，14 天、1,738 星、165 fork。",
+    "highlight_zh": "看点是它把「换掉哪一层」说清楚了：矩阵乘、解码、注意力、缓存都可重写，门槛于是从显存转到系统内存。三点需在意：4k 上下文是有意为之（8 GB 机器上留给推测解码的余量只剩约 0.2 GB）、仅 AVX2 的老机器实测数字尚未公布、14 天新仓仍待外部复现。"
+  },
+  "Pinvou/pinvou-agent": {
+    "summary_zh": "面向「产出物」而非对话的桌面 agent 工作台：多会话带标题检索，附件支持 PDF、Office 文档、图片与文本，工件面板自动收集 agent 生成或修改的每个文件，Markdown 工件可直接编辑或选中段落让 agent 改写；Plan 与 YOLO 两种执行模式，另有任务进行中的只读旁路会话。Rust、MIT，126 天、3,045 星、433 fork。",
+    "highlight_zh": "看点是把「交付」做成界面结构：工件面板加可编辑 Markdown，让结果能继续加工，而不是复制一段回答。旁路会话的工具被服务端强制为只读，这是隔离设计而非权限提升。433 fork（14.2%）属健康区间，但 126 天的新项目在多平台打包与 ACP 协议演进上仍有跟进成本。"
+  },
+  "heygen-com/hyperframes": {
+    "summary_zh": "HeyGen 开源的视频编辑器与渲染框架：用 HTML、CSS、JavaScript 与可 seek 的动画写成 composition，直接渲染成确定性 MP4，不需要 React；CLI 默认非交互，适合 CI 与回归测试。同一套东西既能作为 skill 供 Claude Code、Codex、Cursor 调用，也能当作托管产品的渲染内核。TypeScript、Apache-2.0，262 天、90,896 星、+707。",
+    "highlight_zh": "看点是「确定性」三个字：同输入、同帧、同输出，视频才可能进 CI。它把编辑与渲染拆开——编辑由人与 agent 完成，渲染是可复现的编译过程，动画运行时接 GSAP、Lottie、Three.js、WAAPI。8,480 fork（9.3%）属正常，但 262 天到这个量级含厂商分发成分，评估应以自建 composition 的实际渲染耗时为准。"
+  },
+  "tt-a1i/archify": {
+    "summary_zh": "把想法、方案或代码库变成可交互的图或一页答案：10 种图型、架构诊断、Story 视频与 PR 走查，产出为单个 HTML 文件，含四种风格与明暗主题，可导出 PNG / WebP / JPG 或打印成 PDF；以 Agent Skill 形式接入 Claude Code、Codex、Cursor。JavaScript、Apache-2.0，226 天、100,593 星、+663。",
+    "highlight_zh": "看点是「结论先行」的排版约束与可核查性：每块只回答一个问题，论断标注编号来源，代码片段钉到具体 commit 并可打开源码卡。把引用写进版式，比单纯生成一张漂亮架构图更有工程价值。6,885 fork（6.8%）说明已是平台级体量；自建时要留意它默认消耗宿主 agent 的上下文预算。"
+  },
+  "tutti-os/tutti": {
+    "summary_zh": "多人、多 agent 的实时协作空间：Codex、Claude Code、Canvas 等可在同一处并行工作，用 @ 引用过往对话、文件、应用调用与任务，减少在多个 agent 之间反复搬运上下文。定位是人与 agent 共享同一工作面的协作层。TypeScript、Apache-2.0，168 天、3,972 星、380 fork。",
+    "highlight_zh": "看点是它把问题定在协作层而非模型层：真正的摩擦是上下文在人与 agent、agent 与 agent 之间反复丢失，@ 引用是把上下文变成可寻址对象。168 天 3,972 星说明方向被认可；但多用户实时协作意味着权限、并发与冲突合并都要自己兜住，README 目前偏愿景，落地深度需看实际会话模型。"
+  },
+  "gastownhall/beads": {
+    "summary_zh": "给编码 agent 的「记忆升级」：用 Dolt 支撑的分布式图 issue 追踪器，把散乱的 markdown 计划换成带依赖关系的图。命令面为 bd create / bd ready / bd update --claim / bd close，配合 bd remember 存项目级事实；Dolt 提供单元级合并、原生分支与远程同步，多机多 agent 可共享同一份任务图。Go、MIT，411 天、29,131 星、+59。",
+    "highlight_zh": "看点是明确反对用 markdown TODO 管任务：文本清单没有依赖语义，长任务必然丢上下文，只有图结构才能算出「现在可认领什么」。选 Dolt 让任务图本身可版本化、可合并，这是它区别于普通 issue 工具的地方。1,962 fork（6.7%）稳健；引入成本是要接受一套新命令习惯与一个额外的数据库。"
+  },
+  "egoist/mygo": {
+    "summary_zh": "用 Go 写桌面应用，一个窗口可以是网页也可以是原生界面，同一个应用内可混用：网页走系统自带 webview（WKWebView / WebKitGTK / WebView2），原生界面用 package ui 由框架自己在 GPU 上绘制，支持 flexbox 与 grid；纯 Go、无 cgo，可从任意机器交叉编译，网页侧通过生成的 TypeScript 客户端调用 Go 服务。MIT，61 天、6,940 星、+54。",
+    "highlight_zh": "看点是「两种界面一套代码」的粒度被压到窗口：要快交付用 webview，要启动快、内存小用原生绘制，不必在项目级二选一。无 cgo 让交叉编译真正可用，这是 Go 桌面方案长期的老问题。61 天 6,940 星属早期高热，原生控件在表格、富文本与无障碍上的覆盖仍需时间检验。"
+  },
+  "deeplethe/solid-glass": {
+    "summary_zh": "面向 AI 应用的设计系统，取「实体玻璃」而非「液态玻璃」：只透出轮廓、不透过背景，让文字始终可读；组件按 shadcn/ui 的写法组织在 src/components/ui，示例在 src/examples，文档在 content/solid/*.mdx。TypeScript、MIT，46 天、2,188 星、61 fork。",
+    "highlight_zh": "看点是它给出了一个明确中间态：扁平是没有质感的实心块，液态玻璃在长文页面上会和背景抢字，Solid Glass 只保留边框与高光。对做 agent 聊天界面的团队，这套「可读性优先」的约束比视觉风格更有参考价值。61 fork（2.8%）偏低，说明多数人在取用而非参与，组件完备度取决于作者节奏。"
+  },
+  "AienTech/dossier": {
+    "summary_zh": "自托管的求职与简历工具：一份档案沉淀经历，针对每个岗位读取招聘描述、给出匹配度，只用档案里的事实生成定制简历与求职信，可在对话里修改后导出 PDF，并把每次投递从草稿追到 offer。数据落自己的 PostgreSQL 或单个 SQLite 文件，模型可走本地 Ollama / LM Studio 或任意 OpenAI 兼容接口。TypeScript、AGPL-3.0，54 天、5,517 星、+12。",
+    "highlight_zh": "看点是「只用档案事实」这条硬约束：生成式简历最大的风险是编造经历，它把可写内容限制在已录入的事实内。自托管加本地模型让履历不出机器，适合对隐私敏感的人。AGPL-3.0 对商用二次分发有约束；它还需要抓取招聘站点，接口变更与反爬是长期维护负担。"
+  },
+  "BLEZZ0102/Deskland": {
+    "summary_zh": "让 Windows 桌面图标成为风景的一部分：壁纸按图标的真实位置实时重绘沙滩、草地、云影，移动或增删图标时场景随之变化，全程不用 AI、不需要账号与 API Key。免费开源的 Preview 版含 Beach 与 Meadow 两套完整主题、托盘控制、开机启动、全屏自动暂停，中英双语。GPL-3.0，33 天、657 星、+5。",
+    "highlight_zh": "看点是「实时响应而非定时刷新」：读的是图标布局，改的是场景几何。分享导出统一使用示例图标与色块，不会泄露真实文件名，这个细节比功能本身更值得借鉴。82 fork（12.5%）说明有真实使用；局限是仅覆盖 Windows，Preview 与后续版本的边界还需观察。"
+  },
+  "chen08209/FlClash": {
+    "summary_zh": "基于 mihomo（Clash.Meta）内核的多平台客户端：Android、Windows、macOS、Linux 一套代码，桌面端含 x64 与 ARM64；支持规则路由、策略组、延迟测试、系统代理与 TUN，订阅链接或本地文件导入，内置配置编辑器与覆写脚本，可实时查看连接、请求、DNS 与日志，支持 WebDAV 备份。Dart、GPL-3.0，已维护 1,200 天、65,690 星、+242。",
+    "highlight_zh": "看点是工程完成度而非内核创新：内核来自社区，价值在于把多平台 UI、订阅管理、覆写脚本与诊断视图做齐，这恰是同类客户端最缺的一层。1,200 天仍在更新、4,367 fork（6.6%）说明维护稳定。此类工具在不同网络环境下的合规要求不同，使用前应自行确认所在地规定。"
+  },
+  "indexable-inc/blaze": {
+    "summary_zh": "把 Rust 增量构建做出量级差：编辑后重建在 macOS arm64 上约快 10 倍、Linux aarch64 约 24 倍、Linux x86-64 约 11 倍，保存到程序跑起新代码约 20 ms，官方口径最高 92 倍。它自带工具链（blaze-2026-10-27）与 Cranelift JIT，安装时拉一份约 125–160 MB 的 Rust。Rust、Apache-2.0，38 天、2,954 星、+161。",
+    "highlight_zh": "看点是它不改造 cargo，而是换掉编译后端：用 JIT 换增量速度，用自带 toolchain 隔离用户环境，再用 cargo、zed、servo、bun、NVIDIA Dynamo、OpenAI Codex CLI 等真实项目做回归。代价写在明处——吃内存、只覆盖 macOS 与 Linux、仍是年轻工具，作者自己建议保留 cargo check 与 CI 作最终判据。"
+  },
+  "intrinsic-ai/intrinsic-core": {
+    "summary_zh": "面向工业机器人的开放本地运行时、SDK 与实时控制框架：预配置运行时把抓取规划、AI 感知、原生数字孪生预集成；与 ROS 2 互操作，把现代 C++/Bazel 工程接进既有生态；统一硬件抽象层让换机械臂与夹爪不必重写驱动；另附一套机床上下料的参考实现。C++、Apache-2.0，80 天、804 星、+8。",
+    "highlight_zh": "看点是「把集成工作产品化」：工业机器人项目的成本大头在把视觉、规划、控制、仿真拼起来，它把这层做成预配置运行时，并用 HAL 切掉驱动重写。Apache-2.0 对企业采用友好。需要清醒的是 804 星、101 fork（12.6%）属小众但专业，落地仍绑定具体硬件与 ROS 2 版本。"
+  },
+  "dbeaver/dbeaver": {
+    "summary_zh": "通用数据库客户端，已维护超过 11 年：开箱支持 350 多个数据库驱动，任何有 JDBC 或 ODBC 驱动的库基本都能接；涵盖 schema 编辑、SQL 编辑、数据编辑、AI 对话、ER 图、导入导出与迁移、执行计划、空间数据查看、SSH 隧道与自定义驱动。Java、Apache-2.0，52,544 星、+9。",
+    "highlight_zh": "看点是「驱动数量」本身就是护城河：350+ 驱动加 JDBC/ODBC 兜底，让它在异构库混用的环境里几乎无可替代。AI 对话被放进同一个工作台而非另起产品，对 SQL 场景是合理落点。4,473 fork（8.5%）、每日构建，成熟度不需要论证；代价是 JVM 桌面端的启动与内存开销。"
+  },
+  "AntelopeJS/dms": {
+    "summary_zh": "给自家产品做后台的开源方案：贴上 PostgreSQL、MySQL、MariaDB、MongoDB 或 RethinkDB 的连接串，coding agent 先出一版可点的 mockup，你在块上留评论，确认后按 Build it 一次性把管理页面与看板写成仓库里的 TypeScript；自托管，npx @antelopejs/core project init 起步。TypeScript、Apache-2.0，71 天、55 星、8 fork。",
+    "highlight_zh": "看点是流程被固定在「先对样稿、后写代码」：块级评论加一次成型，避免 agent 在需求未定时反复重写页面；agent 跑在用户自己的 Claude Code / Codex 账号上，成本与数据都在自己手里。55 星是本期最低，属极早期项目，模板覆盖与生成代码的可维护性尚无社区样本，适合先在小后台试用。"
+  },
+  "qianyiai/KuroCat": {
+    "summary_zh": "开源桌面打字小黑猫与 AI 编程伴侣，Bongo Cat 的替代实现：Tauri v2 + Rust，3D / 2D 透明置顶，6 款猫咪形象，输密码时自动闭眼，OBS 免抠像直接作透明源，内置 MCP 可「捏猫」；覆盖 Windows、macOS、Linux、Android，含中英日韩四语。TypeScript、MIT，5 天、1,384 星、193 fork。",
+    "highlight_zh": "看点是体积与跨端：Rust 加 Tauri 让一个桌宠同时跑在四类系统上，还能当 OBS 透明源与 MCP 客户端。5 天 1,384 星、193 fork（13.9%）属话题型增长。摩擦 README 自己写清楚了——未购商业签名证书，Windows SmartScreen 与浏览器都会拦 exe，需手动放行；这类桌面小工具应以源码与产物校验为准。"
+  },
+  "jhaizhou-ops/d2r-mobile": {
+    "summary_zh": "《暗黑破坏神 II：狱火重生》的兼容层，覆盖 iOS、macOS、Android 与鸿蒙：直接运行玩家自购的 Switch 版游戏本体程序（aarch64 原生执行，不模拟 CPU），由一个小型宿主提供系统调用、文件系统、图形、音频与输入；触控操作整套重做，iPhone 与 iPad 全屏，Android 侧用 Vulkan 重写图形，骁龙 8+ Gen 1 上营地和牛关中位 60 fps。C、MIT，46 天、5,385 星。",
+    "highlight_zh": "看点是「不做 CPU 模拟」这条路线：iPhone 与 Switch 同属 ARM，于是只需重写平台服务层，帧率与启动时间才可能接近原生；仓库明确不含任何游戏内容，需自备游戏文件。需要留意发行方的用户协议，以及它声明无联机功能；1,355 fork（25.2%）说明动手改的人不少，但稳定性高度依赖具体设备与驱动。"
+  },
+  "FrizzleM/SideInstaller": {
+    "summary_zh": "在 iPhone 上直接装好 SideStore 与 LiveContainer，不需要电脑：配对、描述文件与安装流程全部在设备内完成，完成后即得到可自签应用的整套环境。要求 iOS 27+（iOS 17.4+ 需配对文件），首次需 Wi-Fi，Apple 账号凭据本地使用。Swift、许可未标准化，158 天、2,116 星、+292。",
+    "highlight_zh": "看点是「去掉电脑」这个真实门槛：sideload 的复杂度大半来自必须插一台机器跑桌面工具，它把配对与 provisioning 搬进手机，+292 的日增说明需求明确。风险同样明确：许可未标准化、依赖 rootshell / Open Minis / LocalDevVPN 多步链路、涉及 Apple 账号凭据与系统策略边界，且这类方式随时可能被系统更新阻断。"
+  },
+  "LNPANDY/NX2Apple": {
+    "summary_zh": "把玩家自购的 Switch 游戏装进 iPhone / iPad：Mac 或 Windows 上一键完成构建，不用命令行；多引擎工作台可在 nxnative、nxkit（Beta）与 MacNativeGames 之间切换，支持热加载 iOS 游戏框架、设备内 .p12 签名与精简共享 IPA，已内置 208 个游戏配置（含 19 个 Switch 2 游戏）。Swift、MIT，37 天、8,606 星、+85。",
+    "highlight_zh": "看点是明确划线「不是模拟器」：不做指令翻译，而是把游戏打包进共享壳应用，用热加载与设备内签名减少重装成本，208 个配置说明它把兼容性做成了数据。风险在版权与平台条款——它只提供构建工具、要求自备游戏，但分发打包产物仍可能越界；37 天 8,606 星的增速也提示要观察长期维护。"
+  }
+}
