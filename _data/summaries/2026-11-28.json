@@ -1,0 +1,78 @@
+{
+  "shanselman/gputaskman": {
+    "summary_zh": "把「GPU 里到底装了什么」做成终端界面：按进程列出显存占用、GPU 引擎活动，并把已加载的运行时、模型文件与 LLM 的权重/KV 缓存分项拆开。支持 Windows 的 NVIDIA/AMD 遥测与 Intel WDDM 活动，Linux 与 WSL 原生支持，Apple Silicon 走 macOS 分支。Python、MIT、3,889 星、196 fork。",
+    "highlight_zh": "价值在于把「任务管理器说占了 15 GB」这个黑箱拆成可归因的几块——权重、KV 缓存、浏览器、合成器各占多少，以及为什么有大量显存在系统内存里。AMD 侧依赖 fdinfo，共享缓冲区、fd 传递、主节点等边界情况都已列明限制；WSL 的按进程匹配与 NixOS、PyPI、便携包三种安装路径也已覆盖。"
+  },
+  "modelsphere/modelsphere": {
+    "summary_zh": "面向生产的 LLM 推理平台：按实时负载自动扩缩副本并给高优先级模型留资源，用 TTFT 与输出速度做质量感知限流（而非只看 RPM/TPM），支持 Prefill/Decode 分离与统一 L3 KV 缓存池，服务 Pod 中途失败时可把在途请求迁到健康副本。统一栈覆盖 NVIDIA、昇腾、天数等加速卡。Shell/Helmfile 部署，282 星，Apache-2.0。",
+    "highlight_zh": "限流从「请求数」改成「服务质量指标」是它与常见网关的实质差别：TTFT 恶化时先降流量而不是等超时。Prefill/Decode 分离加 L3 KV 池、在途请求迁移这两项，都是把长尾延迟当作一等问题处理。61 天、12 fork 的体量意味着部署文档（helmfile + ansible）比社区反馈成熟，评估时值得先在单集群跑通再谈多卡异构。"
+  },
+  "kvcache-ai/Mooncake": {
+    "summary_zh": "Kimi 背后的 KVCache 中心化分离式服务架构，论文与工程实现同仓：传输引擎（TE）、Mooncake Store、EP 与进程组三层组件，另附 SGLang 与 vLLM 的接入指引。官方口径是同一 SLO 下让 Kimi 多承接 75% 请求。C++、Apache-2.0、7,151 星、1,541 fork。",
+    "highlight_zh": "它已经不只是自家平台：2026 年 8 月以来，LMDeploy、vLLM（0.31.0 的跨编码器嵌入复用）、TokenSpeed（作为 L3 KV 后端）、TensorRT-LLM（KVCMv2 原生连接器）以及 AMD ATOM 相继接入，AMD 侧报告前缀复用率超过 95%、吞吐最高 2 倍。要看懂它，重点是 Store 的按内容寻址与 TE 的 RDMA 路径，而不是榜单数字。"
+  },
+  "langchain4j/langchain4j": {
+    "summary_zh": "JVM 生态里最完整的一层 LLM 抽象：20+ 模型提供商与 30+ 向量库统一到一套 API，工具调用（含 MCP）、Agent 与 RAG 都有接口加多种现成实现，并与 Quarkus、Spring Boot 直接对接。Java、Apache-2.0、13,453 星、2,715 fork。",
+    "highlight_zh": "本期它是「老而稳」的一类：1,256 天、日增仅 6，靠的是接口稳定性而不是新鲜度。真正的取舍在于抽象层数——统一 API 换来的是切换模型与向量库不改代码，代价是各家的独有能力需要单独通道透出；如果项目已经深度绑定 Spring，配 quarkus-langchain4j 之外的路径反而更绕。"
+  },
+  "nexu-io/opengame": {
+    "summary_zh": "把本地编码 agent 变成游戏工作室：一条提示词驱动 3D 场景、美术、音乐与配音，内置 25 个可 remix 的模板（含 9:16 竖版），产出可发布的网页链接或单文件试玩广告，并对接微信小游戏、抖音、TikTok、Telegram、itch.io 的发布路径。TypeScript、Apache-2.0、3 天 2,310 星。",
+    "highlight_zh": "产物是可读的源码而非黑盒：每个游戏是 index.html 加确定性的 logic.js，3D 标题内联 Three.js，设计文档结构化落盘，因此「改」比「生成」更容易验证。BYOA（自带 agent）加 BYOK（自带密钥）意味着它不做模型转售；三天 374 fork、76 issue 的反馈密度，说明模板化交付这条路确实有人接着往下改。"
+  },
+  "kajisho5/ffmpeg-skill": {
+    "summary_zh": "给编码 agent 用的本地视频剪辑能力包：42 个 FFmpeg 工具配一份机器可读的契约与一个 MCP 服务，覆盖剪切、字幕、改画幅、响度归一与各平台导出，全程在本机跑，不上云、不要 API Key，仅依赖 Python 标准库。11,922 星、985 fork，MIT。",
+    "highlight_zh": "设计上最值得看的是「不给 agent 拼 shell 字符串」：每个操作都是带类型参数的脚本，先 probe 源文件再决定参数，写完再回读校验时长、帧尺寸与音频，目标路径与已声明的输入重合时直接拒绝。这把「模型幻觉出一条坏命令」的风险前移到工具层，也让结果可复核。"
+  },
+  "gary23w/f-ck_data_brokers": {
+    "summary_zh": "一个 Python 脚本，替你把删除与退出请求发给 600 多家数据经纪商：按所在地法条生成法律文书、用你自己的邮箱发出（或导出待发）、解析回信判断对方在拖什么、对沉默者追催并对拒办者给出投诉路径。Python、MIT、1 天 722 星、57 fork。",
+    "highlight_zh": "它把一件高度重复的法务动作做成了可排期的批处理：brokers.json 与 platforms.json 是数据面，脚本只做生成与追踪，因此名单可以自行增删。作者本身以此为副业，文档里对「对方要求走自家表单」这类常见挡箭牌给了应对模板。实际效果取决于名单时效与各州法条差异，建议先小批量试跑再全量发送。"
+  },
+  "google/elephant-goldfish-model": {
+    "summary_zh": "给 AI 助手的一套「分工」插件：Elephant 负责持有项目上下文并起草规格，Goldfish 评审员在不带此前对话的前提下只读草稿与被引用的原始材料，用来暴露未言明的假设与盲区；架构取舍与规格批准仍由人决定，通过后才进入实现。Python、Apache-2.0、23,403 星、1,725 fork。",
+    "highlight_zh": "核心机制是「评审者不继承起草者的上下文」——上下文污染被当成流程问题而不是提示词问题来解决，这比让同一个会话自查更接近真实的设计评审。它已经能挂在 Claude Code、Codex CLI、ChatGPT 桌面端与 Antigravity CLI 上，接入成本主要在于把项目文档整理成可被独立评审的形状。"
+  },
+  "Axolotl-Launcher/Axolotl": {
+    "summary_zh": "国产第三方 Minecraft Java 版启动器，基于 Modrinth App 改造：去掉商业化模块，保留实例管理、Modrinth 与 CurseForge 双源内容一键安装与更新、多种账户认证、主题与皮肤自定义，另附「实验室」工具集（种子地图、投影工坊等）。Windows/macOS（含 Apple Silicon）/Linux 原生支持，Rust 与 Tauri 桌面运行时。909 星、106 fork。",
+    "highlight_zh": "它的取位很明确：不重写生态，而是把上游的收费与推广模块剥掉，换成一个干净壳层，代价是许可与商标边界需要自行厘清（本仓未声明标准 SPDX 许可）。140 个开放 issue 说明实际使用量不小，也说明维护压力集中在内容源适配与打包发布上。"
+  },
+  "trustno1-coder/VIctory-NVIDIA": {
+    "summary_zh": "把 Xbox Series 兼容层针对 NVIDIA RTX 卡重调的分支：宣称 2560×1440 下在 RTX 5070 可达 26–30 fps，支持 DLSS 帧生成 2–6 倍，带 F1 设置菜单与 F3 状态面板，并修掉了水面暗块。自带卡型自检、启动即说明该卡走哪条路径与原因；FSR 3 所需 DLL 走 AMD 官方仓库并按签名校验。需要用户自备游戏转储。Rust、GPL-3.0、2 天 3,569 星。",
+    "highlight_zh": "两天 1,264 fork、397 issue，说明这是真实社区在用的分支，而不是空壳。工程上值得注意的是「先判定硬件能力再选路径」和「外部 DLL 必须签名校验」这两处——把不可控依赖关在门外。许可为 GPL-3.0，且明确不含游戏与 NVIDIA 文件，分发边界写得比较清楚。"
+  },
+  "2hjaito/davish": {
+    "summary_zh": "把服务器当成桌面来用：一个 SSH 客户端，进去直接是终端、文件、服务、Docker、日志、cron、nginx、端口、磁盘、登录安全、SSH 密钥、软件包与 git，界面像操作系统。服务端只需要 sshd 与 SFTP，不装 agent、不开新端口、不落文件。Go、GPL-3.0、478 星、32 天。",
+    "highlight_zh": "设计上三处克制：破坏性操作执行前把确切命令展示出来、命令日志可导出成可重放的 shell 脚本、密码只进系统钥匙串且 sudo 密码不保存。这让它更像「可审计的操作台」而不是「又一个面板」。代价是全部能力压在 SSH 通道上，重活（大文件、长任务）体验取决于链路质量。"
+  },
+  "cubeplexai/cubepod": {
+    "summary_zh": "给长时运行、高自主度的 AI agent 用的执行底座：MicroVM 隔离、可写且持久的 rootfs（只有 /workspace 持久是常见沙箱的痛点，它把 /usr、/etc、/var 的改动也留住）、秒级休眠与跨节点恢复、预热池、零信任出口与密钥保管，兼容 E2B 接口、走 K8s 原生调度。Go、Apache-2.0、83 星。",
+    "highlight_zh": "它把容器沙箱的四个具体问题逐条对着解决：临时 rootfs 让 apt/pip 装完即失效、内存快照动辄 GB 级且绑 CPU 架构、网络文件系统在装包时延迟爆炸、明文密钥注入环境变量。思路是用双卷（rootfs 走 OverlayFS 增量）加 podd-init 零侵入，把「持久」和「隔离」同时留住。17 天、8 fork，早期但方向清晰。"
+  },
+  "pgvector/pgvector": {
+    "summary_zh": "Postgres 的向量相似检索扩展：精确与近似最近邻、单精度/半精度/二值/稀疏向量、L2/内积/余弦/L1/汉明/杰卡德六种距离，任何有 Postgres 客户端的语言都能用，同时保留 ACID、时间点恢复与 JOIN。C、2,047 天、23,845 星、1,415 fork。",
+    "highlight_zh": "它的长期价值不在算法新，而在「不用新增一套数据库」：向量与业务数据同库，事务与备份策略不变。索引方面 HNSW 与 IVFFlat 各有取舍——HNSW 查询快、建索引慢且占内存，IVFFlat 建得快但召回依赖聚类质量。选它之前值得先算清数据量与召回要求，再决定是否需要专门的向量库。"
+  },
+  "sao-coding/locus": {
+    "summary_zh": "Windows 上的数据库客户端，Rust 加 GPUI 自绘，单个小体积 exe：支持 MySQL/MariaDB、PostgreSQL、SQLite、Redis、Oracle、SQL Server，结果边查边流进虚拟化网格，取消会真的在服务端终止查询。生产连接默认只读，写入需限时解锁、逐条确认并进审计日志。AGPL-3.0、115 星、11 天。",
+    "highlight_zh": "真正稀缺的是「对生产库的克制」：把连接标为生产就默认只读，写入要限时解锁、每条语句单独确认并留痕，还明确自己只做语句文本分类、SELECT 调用的函数不查副作用（除了 nextval 这类已知项）。这种把能力边界写在文档里的做法，比多加几个功能更可信。"
+  },
+  "l0ng-ai/openidea": {
+    "summary_zh": "用 Rust 重做 IntelliJ IDEA 那套工作方式：同款快捷键、工具窗口与「随处搜索」，编辑、代码洞察、调试、Git、终端、数据库与 HTTP 客户端覆盖 60 多种语言，macOS/Windows/Linux 三平台构建，插件以沙箱化 WebAssembly 组件运行。Apache-2.0、38 天、10,471 星、1,018 fork。",
+    "highlight_zh": "它把 benchmark 做成了可复现的对比：在 freqtrade（约 770 个文件的 Python 项目、热缓存、5 次取中位）上，开窗 0.9 s 对 3.1 s、就绪 1.1 s 对 13.2 s、内存 169 MB 对 2,011 MB，并附上自行复跑的脚本与「IDEA 对 Python 分析更深、就绪口径并不等价」的说明。愿意把测量方法一起交付，比单给一组数字更值得信。"
+  },
+  "Microck/openvector": {
+    "summary_zh": "位图转矢量：同一个 Rust 引擎同时供网页编辑器、原生桌面端、CLI 与 Node 库使用，支持 png/jpeg/bmp/gif/tiff 输入，导出 SVG、PDF、EPS、AI、DXF、EMF，也可回栅格为 png/jpeg/bmp/tiff。追踪全程在本机完成，网页端不上传图片。MIT、534 星、29 天。",
+    "highlight_zh": "「一份引擎四端复用」是它最省事的地方：网页端与桌面端行为一致，脚本侧还能批量跑。功能面覆盖自动描摹、手工调色板、分段编辑与去背景，适合图标、线稿、Logo 这类干净图形；照片类素材的合理性仍取决于调参与源图质量。"
+  },
+  "AFK-surf/xnulinux": {
+    "summary_zh": "把 macOS 的内核 XNU 当作 Linux 内核模块加载：由 Apple 公开源码构建 xnu.ko，在未改动的 arm64 Linux 内核里运行，XNU 直接驱动 CPU 与 MMU，于是 macOS 进程与 Linux 进程在同一批 CPU 上原生并行，中间没有 hypervisor。Linux 通过 fki.ko 借出内存、定时器、文件、网络与 GPU；用原版 Ubuntu 内核 insmod 即可把 Apple 安装器做好的 macOS 27 系统盘启动到桌面（loginwindow、WindowServer、Dock、Finder、Safari、Chrome）。C、4,375 星、8 天。",
+    "highlight_zh": "这是本期最激进的一项：不走虚拟化，直接把另一个内核塞进当前内核。实现上要解决 CPU 托管（每个托管 CPU 是绑定到 Linux CPU 的内核线程）、物理连续内存（CMA）、设备半虚拟化（kexts 提供磁盘、显示、输入）与 Metal（metal2vulkan 走 Vulkan 到 Linux 驱动）。8 天 231 fork、56 issue，说明已经有人在复现；但它对内核版本与硬件的假设很窄，属于研究性工程。"
+  },
+  "net-merge/net-merge": {
+    "summary_zh": "把多条网络同时用起来：Wi-Fi、有线、手机热点与 USB 共享叠加，按连接做负载均衡，下载、游戏与浏览器拿到的带宽是各链路之和。对应用透明（TCP/UDP、IPv4/IPv6 全覆盖，不用配代理），快链路分配更多连接，断网链路自动退出；进程崩溃不影响上网。Go、MIT、4,231 星、46 天、日增 434。",
+    "highlight_zh": "边界写得诚实：单个连接永远只走一条链路，所以「一个大文件」不会变快，收益来自多连接并发（Steam 下载、系统更新、云盘上传）。这类工具的历史难点是透明性与稳定性，它的取舍是内核态之外做分流并保证崩溃时回退到系统默认路由——这一点比峰值带宽更值得关注。"
+  },
+  "Ciao1019/ArcMD": {
+    "summary_zh": "用 Go 与自研 MyGo Native UI 写的 Markdown 编辑器：窗口绘制、字形排版与系统输入全由 Go 直接驱动，零 HTML、零 JavaScript、零 WebView、零 Electron、零 cgo。编辑区与预览区合并成一张富文本画布，宣称 120Hz 响应；未改动段落原样保留，扩展排版（高亮块、折叠块、跨格合并、自定义比例双栏）走标准 Markdown 加语义化 HTML 无损往返。MIT、715 星、19 天。",
+    "highlight_zh": "技术路线的看点在于「不用 WebView 也能做富文本」：原生画布上同时解决排版、选区与输入法，是这类编辑器最难的一段。性能口径也写得克制——只测无窗口宿主的帧构建耗时，明确不含事件分发、GPU 光栅化与显示延迟，不等同于端到端延迟。"
+  }
+}

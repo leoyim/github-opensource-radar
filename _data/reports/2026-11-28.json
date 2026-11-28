@@ -1,0 +1,1725 @@
+{
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T10:18:21.512+08:00",
+  "baseline": {
+    "prevSnapshotDate": "2026-11-27",
+    "heatBasis": "snapshot"
+  },
+  "stats": {
+    "candidates": 892,
+    "unclassified": 68,
+    "selected": 19,
+    "suppressedByHistory": 347,
+    "sameDateExempt": 14,
+    "removed": 3,
+    "removedTotal": 3,
+    "offTopic": 0,
+    "watchlisted": 0,
+    "regenerated": true
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI / 大模型",
+      "short": "AI",
+      "emoji": "🤖",
+      "accent": "#7c5cff",
+      "desc": "大模型、RAG、推理与训练框架（模型层）",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "shanselman/gputaskman",
+          "owner": "shanselman",
+          "name": "gputaskman",
+          "url": "https://github.com/shanselman/gputaskman",
+          "homepage": "",
+          "description": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights for NVIDIA, AMD, and Intel GPUs (plus Huawei Ascend on Linux).",
+          "language": "Python",
+          "topics": [],
+          "stars": 3889,
+          "forks": 196,
+          "open_issues": 12,
+          "starGain": null,
+          "heat": 661.3,
+          "heatBasis": "velocity",
+          "heatPercentile": 97,
+          "ageDays": 25,
+          "created_at": "2026-11-03T00:49:34Z",
+          "pushed_at": "2026-11-27T01:42:34Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.6,
+          "breakdown": {
+            "heat": 97,
+            "community": 66,
+            "activity": 59,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 35,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "An htop for what's inside your GPU, not just how full it is.\n\nWindows with NVIDIA/AMD telemetry and Intel WDDM activity, plus Linux and WSL support (NVIDIA everywhere, AMD and Intel on native Linux; see Linux and WSL) and macOS on Apple Silicon (see macOS). A terminal UI that connects per-process GPU memory and engine activity with loaded runtimes, model files, and LLM buffer breakdowns.\n\nTask Manager says \"15 GB used.\" This tries to answer: by what? Model weights? KV cache? Your browser? The desktop compositor? And why is so much GPU memory in system RAM?",
+            "features": [
+              "Missing client identity : fdinfo has no usable drm-client-id . Duplicate descriptors or",
+              "Shared client (fd passing, fork; 1Password and its crash handler on the test desktop): one set of",
+              "Shared buffers (a window a compositor imports, video frames): drm-shared- counts a buffer by",
+              "Primary node ( /dev/dri/card , typically a compositor): root-owned logind keeps a copy of that",
+              "Legacy : older kernels whose amdgpu fdinfo lacks drm-shared-vram / drm-shared-gtt , or any DRM",
+              "Incomplete : some of the process's fds or fdinfo could not be read (GPU% is n/a too).",
+              "Partial scan : the TUI's 50 ms listing budget ran out this refresh, so a process it skipped might",
+              "WSL VM ( vmwp.exe ) reports the exact total of Linux GPU memory, across every distro, WSLg,"
+            ],
+            "sections": [
+              "gputaskman",
+              "Install from PyPI",
+              "Portable Windows download",
+              "Clone and run",
+              "Linux and WSL",
+              "How WSL per-process VRAM is matched",
+              "NixOS",
+              "macOS (Apple Silicon)",
+              "What you get",
+              "Screenshots",
+              "Usage",
+              "System RAM and CPU",
+              "Comparing snapshots",
+              "load the model, or restart the server with a different -c, t"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 115614
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "modelsphere/modelsphere",
+          "owner": "modelsphere",
+          "name": "modelsphere",
+          "url": "https://github.com/modelsphere/modelsphere",
+          "homepage": "https://modelsphere.tech",
+          "description": "ModelSphere is an open-source LLM inference infrastructure designed to make production-grade model serving simple, efficient, and continuously optimized.",
+          "language": "Shell",
+          "topics": [
+            "ansible",
+            "ascend",
+            "gpu",
+            "helmfile",
+            "inference",
+            "kubernetes",
+            "llm",
+            "modelsphere"
+          ],
+          "stars": 282,
+          "forks": 12,
+          "open_issues": 29,
+          "starGain": 83,
+          "heat": 83,
+          "heatBasis": "snapshot",
+          "heatPercentile": 81,
+          "ageDays": 61,
+          "created_at": "2026-09-27T14:44:06Z",
+          "pushed_at": "2026-11-27T02:33:30Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 69.8,
+          "breakdown": {
+            "heat": 81,
+            "community": 43,
+            "activity": 60,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 35,
+            "devops": 42,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "ModelSphere is an open-source LLM inference platform designed to make production-grade model serving simple, efficient, and continuously optimized. It provides instant deployment across heterogeneous accelerators, stays ready for the latest models through a flexible inference architecture, and continuously improves serving performance based on real-world workloads.\n\n- Intelligent Auto Scaling. Dynamically adjusts inference replicas and compute resources based on real-time service demand, while prioritizing resources for high-priority models to improve overall GPU utilization. - Quality-Aware Dynamic Throttling. Goes beyond traditional RPM/TPM limits by dynamically controlling traffic based on real-time service metrics such as TTFT and output speed, maintaining service quality under changing workloads. - Advanced Serving Architecture. Supports advanced inference architectures such as Prefill/Decode disaggregation and a unified L3 KV cache pool, enabling efficient cache sharing and higher resource utilization across serving instances. - Performance-Tuned Day-0 Deployment. Rapidly supports newly released models with production-ready, performance-tuned deployment configurations optimized for real-world serving workloads. Please refer to our model catalog for more information. - Broad Heterogeneous Accelerator Support. Provides a unified serving stack across NVIDIA GPUs, Huawei Ascend, Iluvatar CoreX, and dozens of other AI accelerators, together with mainstream inference framewor",
+            "features": [
+              "Intelligent Auto Scaling. Dynamically adjusts inference replicas and compute resources based on real-time service demand, while prioritizing",
+              "Quality-Aware Dynamic Throttling. Goes beyond traditional RPM/TPM limits by dynamically controlling traffic based on real-time service metri",
+              "Advanced Serving Architecture. Supports advanced inference architectures such as Prefill/Decode disaggregation and a unified L3 KV cache poo",
+              "Performance-Tuned Day-0 Deployment. Rapidly supports newly released models with production-ready, performance-tuned deployment configuration",
+              "Broad Heterogeneous Accelerator Support. Provides a unified serving stack across NVIDIA GPUs, Huawei Ascend, Iluvatar CoreX, and dozens of o",
+              "Seamless In-Flight Generation Recovery. When a serving pod fails mid-generation, ModelSphere transfers the in-flight request to a healthy po",
+              "Workload-Driven AutoTune (preview version). Uses real production workloads to automatically explore better serving configurations during idl",
+              "a Kubernetes cluster, and kubectl pointing at it;"
+            ],
+            "sections": [
+              "Overview",
+              "Highlights",
+              "Quick start",
+              "Prerequisites",
+              "Step 1: install the stack",
+              "1. the stack itself, one pass",
+              "then add it under environments: in helmfile.yaml.gotmpl -- a",
+              "nothing registers is a file helmfile never reads:",
+              "mycluster:",
+              "values:",
+              "- environments/default.yaml",
+              "- environments/mycluster.yaml",
+              "Step 2: deploy a model",
+              "Step 3: test the service"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9105
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "kvcache-ai/Mooncake",
+          "owner": "kvcache-ai",
+          "name": "Mooncake",
+          "url": "https://github.com/kvcache-ai/Mooncake",
+          "homepage": "https://kvcache-ai.github.io/Mooncake/",
+          "description": "Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI.",
+          "language": "C++",
+          "topics": [
+            "disaggregation",
+            "inference",
+            "kvcache",
+            "llm",
+            "rdma",
+            "reinforcement-learning",
+            "sglang",
+            "tokenspeed"
+          ],
+          "stars": 7151,
+          "forks": 1541,
+          "open_issues": 1182,
+          "starGain": 11,
+          "heat": 11,
+          "heatBasis": "trending",
+          "heatPercentile": 60,
+          "ageDays": 886,
+          "created_at": "2024-06-25T05:21:05Z",
+          "pushed_at": "2026-11-28T02:25:50Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 71.8,
+          "breakdown": {
+            "heat": 60,
+            "community": 75,
+            "activity": 78,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 41,
+            "devops": 30,
+            "ai": 100,
+            "data": 40
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A KVCache-centric Disaggregated Architecture for LLM Serving Paper\n\nMooncake is the serving platform for Kimi , a leading LLM service provided by Moonshot AI . Under real workloads, Mooncake’s innovative architecture enables Kimi to handle 75% more requests while adhering to SLOs.\n\n- Nov 8, 2026 : AMD ATOM integrated Mooncake for shared KV cache pooling and efficient KV transfer. In collaboration with NeuroSpark AI, the integration achieved over 95% prefix reuse and up to 2× higher throughput. - Oct 10, 2026 : TensorRT-LLM merged a native Mooncake Store connector into KVCMv2, enabling content-addressed KV cache pooling and prefix reuse across serving instances. - Oct 6, 2026 : TokenSpeed v0.1.1 includes Mooncake Store as an L3 KV cache backend beneath its host cache, alongside Mooncake Transfer Engine support for PD and EPD disaggregation. - Sept 17, 2026 : vLLM added cross-encoder embedding reuse through Mooncake Store, complementing its encoder-cache transfer connector for multimodal disaggregated serving. Both capabilities are included in vLLM v0.31.0. - Aug 28, 2026 : LMDeploy merged Mooncake Store support, enabling shared KV cache pooling and prefix reuse across PyTorch inference instances. Included in LMDeploy v0.18.0.",
+            "features": [
+              "Nov 8, 2026 : AMD ATOM integrated Mooncake for shared KV cache pooling and efficient KV transfer. In collaboration with NeuroSpark AI, the i",
+              "Oct 10, 2026 : TensorRT-LLM merged a native Mooncake Store connector into KVCMv2, enabling content-addressed KV cache pooling and prefix reu",
+              "Oct 6, 2026 : TokenSpeed v0.1.1 includes Mooncake Store as an L3 KV cache backend beneath its host cache, alongside Mooncake Transfer Engine",
+              "Sept 17, 2026 : vLLM added cross-encoder embedding reuse through Mooncake Store, complementing its encoder-cache transfer connector for mult",
+              "Aug 28, 2026 : LMDeploy merged Mooncake Store support, enabling shared KV cache pooling and prefix reuse across PyTorch inference instances.",
+              "Aug 24, 2026 : AgentX / InferenceX v3 highlights Mooncake's contributions to agentic inference workloads, including ROCm wheels, CI, and pac",
+              "Aug 20, 2026 : Mooncake is integrated into Miles as a rollout data-transfer backend for the fragmented, heterogeneous data moving between ro",
+              "Aug 17, 2026 : Mooncake is integrated into Speculators as a distributed backend for multi-node online training, efficiently moves hidden-sta"
+            ],
+            "sections": [
+              "Transfer Engine (TE)",
+              "Mooncake Store",
+              "Mooncake EP and Process Group (PG)",
+              "Tensor-Centric Ecosystem",
+              "SGLang Integration (Guide)",
+              "vLLM Integration (Guide)",
+              "Skills for AI Assistants"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 51892
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "langchain4j/langchain4j",
+          "owner": "langchain4j",
+          "name": "langchain4j",
+          "url": "https://github.com/langchain4j/langchain4j",
+          "homepage": "https://docs.langchain4j.dev",
+          "description": "LangChain4j is an idiomatic, open-source Java library for building LLM-powered applications on the JVM. It offers a unified API over popular LLM providers and vector stores, and makes implementing tool calling (including MCP support), agents and RAG easy. It integrates seamlessly with enterprise Java frameworks like Quarkus and Spring Boot.",
+          "language": "Java",
+          "topics": [
+            "anthropic",
+            "chatgpt",
+            "chroma",
+            "embeddings",
+            "gemini",
+            "gpt",
+            "huggingface",
+            "java"
+          ],
+          "stars": 13453,
+          "forks": 2715,
+          "open_issues": 1215,
+          "starGain": 6,
+          "heat": 6,
+          "heatBasis": "trending",
+          "heatPercentile": 54,
+          "ageDays": 1256,
+          "created_at": "2023-06-20T15:30:29Z",
+          "pushed_at": "2026-11-27T17:51:16Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 70,
+          "breakdown": {
+            "heat": 54,
+            "community": 80,
+            "activity": 76,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 49,
+            "devops": 37,
+            "ai": 100,
+            "data": 47
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "The goal of LangChain4j is to simplify integrating LLMs into Java applications.\n\nHere's how: 1. Unified APIs: LLM providers (like OpenAI or Google Vertex AI) and embedding (vector) stores (such as Pinecone or Milvus) use proprietary APIs. LangChain4j offers a unified API to avoid the need for learning and implementing specific APIs for each of them. To experiment with different LLMs or embedding stores, you can easily switch between them without the need to rewrite your code. LangChain4j currently supports 20+ popular LLM providers and 30+ embedding stores. 2. Comprehensive Toolbox: Since early 2023, the community has been building numerous LLM-powered applications, identifying common abstractions, patterns, and techniques. LangChain4j has refined these into practical code. Our toolbox includes tools ranging from low-level prompt templating, chat memory management, and function calling to high-level patterns like Agents and RAG. For each abstraction, we provide an interface along with multiple ready-to-use implementations based on common techniques. Whether you're building a chatbot or developing a RAG with a complete pipeline from data ingestion to retrieval, LangChain4j offers a wide variety of options. 3. Numerous Examples: These examples showcase how to begin creating various LLM-powered applications, providing inspiration and enabling you to start building quickly.\n\nLangChain4j began development in early 2023 amid the ChatGPT hype. We noticed a lack of Java counterparts ",
+            "features": [
+              "Unified APIs:",
+              "Comprehensive Toolbox:",
+              "Numerous Examples:",
+              "Examples in plain Java",
+              "Examples with Quarkus (uses quarkus-langchain4j dependency)",
+              "Example with Spring Boot",
+              "Examples with Helidon (uses io.helidon.integrations.langchain4j dependency)",
+              "Examples with Micronaut (uses micronaut-langchain4j dependency)"
+            ],
+            "sections": [
+              "LangChain4j: idiomatic, open-source Java library for buildin",
+              "Introduction",
+              "Documentation",
+              "Getting Started",
+              "Code Examples",
+              "Useful Materials",
+              "Get Help",
+              "Request Features",
+              "Contribute"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 5922
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "SKILL / MCP / Agent",
+      "short": "智能体",
+      "emoji": "🧩",
+      "accent": "#84cc16",
+      "desc": "Agent Skills 技能包、MCP 服务器与协议、Agent 框架与编排——让大模型接入工具、数据与工作流的执行层",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "nexu-io/opengame",
+          "owner": "nexu-io",
+          "name": "opengame",
+          "url": "https://github.com/nexu-io/opengame",
+          "homepage": "",
+          "description": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.",
+          "language": "TypeScript",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "ai-game-generator",
+            "claude-code",
+            "codex",
+            "deepseek",
+            "deepseek-harness",
+            "dsh"
+          ],
+          "stars": 2310,
+          "forks": 374,
+          "open_issues": 76,
+          "starGain": null,
+          "heat": 792.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 98,
+          "ageDays": 3,
+          "created_at": "2026-11-25T10:35:45Z",
+          "pushed_at": "2026-11-27T21:15:04Z",
+          "license": "Apache-2.0",
+          "rating": 4.5,
+          "composite": 85.2,
+          "breakdown": {
+            "heat": 98,
+            "community": 64,
+            "activity": 86,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 35,
+            "backend": 45,
+            "devops": 49,
+            "ai": 100,
+            "data": 25
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "OpenGame is the first open-source Super Game Agent — turning DeepSeek (DSH) , Claude Code , Codex , or any of your local coding agents into an AI Unreal Engine / Unity and full-stack game studio. Go from a single idea to AAA-grade 3D worlds or monetization-ready viral mini-games in one end-to-end pipeline.\n\n- 🚀 Build AAA-Grade 3D Games with Your Agent. Drive full-stack 3D gameplay, art, music, and voice straight from DeepSeek (DSH) , Claude , Codex , or Gemini — from one prompt to playable 3D action, racing, and open-world games. - 🎮 One-Click Remix & Re-style Any Game. Start from 25 built-in playable templates (3D, voxel, anime, pixel & 9:16 hits) with full editable source — keep proven mechanics while swapping characters, worlds, and art styles in minutes. - 💰 Build Games That Earn: Create → Verify → Monetize. Automated logic checks, balance simulation, headless playtesting, covers, and gameplay trailers — ship live web links, export single-file 9:16 Playable Ads , and connect publishing paths for WeChat Mini Games , TikTok , and Douyin . - 🔓 Full-Stack Open Source (BYOA + BYOK). Code, art, video, music, voice, SFX, and Three.js 3D are all open source — plug in your favorite local agent and own API keys, or connect OpenDesign Go (Black Friday lowest-ever discount, with free access to DeepSeek V4.1 Flash , Seedream , and more).\n\nPaste this instruction into DeepSeek TUI / Harness , Claude Code , Codex , WorkBuddy , Cursor , Gemini CLI , or any of the 22 supported local ag",
+            "features": [
+              "🚀 Build AAA-Grade 3D Games with Your Agent. Drive full-stack 3D gameplay, art, music, and voice straight from DeepSeek (DSH) , Claude , Cod",
+              "🎮 One-Click Remix & Re-style Any Game. Start from 25 built-in playable templates (3D, voxel, anime, pixel & 9:16 hits) with full editable s",
+              "💰 Build Games That Earn: Create → Verify → Monetize. Automated logic checks, balance simulation, headless playtesting, covers, and gameplay",
+              "🔓 Full-Stack Open Source (BYOA + BYOK). Code, art, video, music, voice, SFX, and Three.js 3D are all open source — plug in your favorite lo",
+              "Every game is clean, inspectable source : index.html , deterministic logic.js , vendored Three.js for 3D titles, plus structured design docs",
+              "Remix in one click : Click Remix on any of the 25 templates in Game Studio (or ask your agent to remix it) to fork an owned, editable draft ",
+              "Re-style into any universe : Swap genre dressing, characters, palette, sprites, textures, and music without breaking physics or win/loss rul",
+              "Static & 50-Tick Logic Validation ( openmotion game validate ) — Verifies index.html , allowed asset/CDN policies, required deterministic ex"
+            ],
+            "sections": [
+              "Introducing OpenGame",
+              "⚡ Quick Start",
+              "1. Give one prompt to your local Agent",
+              "2. Install the Main OpenGame Skill with Skills CLI",
+              "3. Run OpenGame Studio locally from source",
+              "🕹️ Playable Game Templates & Showcase",
+              "3D, Voxel & Action Games (16:9)",
+              "Stylized, Narrative & Atmospheric Games (16:9)",
+              "Viral Portrait Mini-Games & Playable Ads (9:16)",
+              "✨ Why OpenGame",
+              "1. One-Click Remix & Re-style — Powered by Game-as-Code",
+              "1. One-click Remix & Re-style (great for DeepSeek / fast mod",
+              "2. Build a 9:16 Playable Ad ready for mobile campaigns",
+              "3. Original 3D Game from Scratch (great for Claude Fable 5.2"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 45992
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "kajisho5/ffmpeg-skill",
+          "owner": "kajisho5",
+          "name": "ffmpeg-skill",
+          "url": "https://github.com/kajisho5/ffmpeg-skill",
+          "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
+          "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "audio-processing",
+            "captions",
+            "claude-code",
+            "codex",
+            "coding-agent",
+            "cursor"
+          ],
+          "stars": 11922,
+          "forks": 985,
+          "open_issues": 47,
+          "starGain": 377,
+          "heat": 377,
+          "heatBasis": "snapshot",
+          "heatPercentile": 91,
+          "ageDays": 85,
+          "created_at": "2026-09-03T14:33:38Z",
+          "pushed_at": "2026-11-28T01:37:35Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 84.4,
+          "breakdown": {
+            "heat": 91,
+            "community": 77,
+            "activity": 68,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 55,
+            "devops": 56,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Claude Code, Cursor, Codex or any MCP client edits your footage with local FFmpeg, then checks its own output. No cloud · No API keys · Python standard library What you install and what it touches\n\ncaption.py --animate pop --karaoke fit.py --aspect 9:16 --fit crop silence.py --threshold -35 loudness.py -I -14 --tp -1\n\nTwelve clips edited by asking: colour, slow motion and reframing, a talk laid out with its slides and cut into a captioned short, a pause removed, a green-screen composite, a levelled horizon, and three phone clips (stabilised, a night shot lifted and denoised, 60 fps slowed down). Watch them (English and Japanese) · the request and the exact commands . Nine clips are AI-generated with Google Veo; three are shot on a phone.",
+            "features": [
+              "Protect your source files. A destination that matches a declared input is refused. Direct edits require --overwrite to replace an existing o",
+              "Call typed tools. The agent supplies named options such as --aspect 9:16 and --fit pad . The tool builds the FFmpeg command and filter graph",
+              "Verify the edit. The tools probe the source and the written file, so the agent can check the actual duration, frame size and audio before re",
+              "Real files first. Every job starts with probe.py ; the agent decides from the measured duration, fps, resolution, colour and audio layout, n",
+              "Structured tools, not shell strings. Each operation is a script with typed arguments. Nothing runs through a shell; no filter graph is accep",
+              "A contract the agent can read. contract --json states, for every tool, what it takes, what it writes, which FFmpeg components it needs and h",
+              "Verification after execution. The result is probed, checked against the destination's spec and, when the picture changed, looked at as a con",
+              "Local first. No cloud, no API keys, no Python dependencies. Optional local transcription is used when a speech engine (Parakeet or a whisper"
+            ],
+            "sections": [
+              "Review page",
+              "Standalone, and in an ecosystem",
+              "Why",
+              "Paper",
+              "Quick start",
+              "0. FFmpeg itself, once (Ubuntu/Debian shown; macOS and Windo",
+              "1. install the skill for Claude Code (Cursor: --cursor, Code",
+              "2. check the machine: ffmpeg, ffprobe and every FFmpeg compo",
+              "3. (for agent frameworks) read the machine-readable contract",
+              "Deliver to a platform",
+              "How it works",
+              "Design principles",
+              "Tools",
+              "Audio is a first-class input"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 139246
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "gary23w/f-ck_data_brokers",
+          "owner": "gary23w",
+          "name": "f-ck_data_brokers",
+          "url": "https://github.com/gary23w/f-ck_data_brokers",
+          "homepage": "https://agent.garrettstimpson.ca/remove",
+          "description": "fck_data_brokers.py is a free, open-source Python script that sends opt-out and deletion requests to data brokers on your behalf.",
+          "language": "Python",
+          "topics": [
+            "ccpa",
+            "cli",
+            "data-brokers",
+            "data-deletion",
+            "gdpr",
+            "lgpd",
+            "mcp",
+            "mcp-server"
+          ],
+          "stars": 722,
+          "forks": 57,
+          "open_issues": 1,
+          "starGain": null,
+          "heat": 247.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 88,
+          "ageDays": 1,
+          "created_at": "2026-11-26T17:53:07Z",
+          "pushed_at": "2026-11-27T22:09:21Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 78.2,
+          "breakdown": {
+            "heat": 88,
+            "community": 52,
+            "activity": 75,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 56,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "\"Today was funny: I was dealing with some scumbag data broker this morning, trying to get a good friend of mine's information deleted, and they WOULDN'T do it. No matter what I tried. I felt so ugh! I just wanted to reach through the screen and punch them in the face. Well, Mr. Data Broker, here's me reaching through the screen and punching you in the face. Enjoy f ck data brokers.py\"\n\nI remove people's data from data brokers. It is one of my main part-time jobs, and it has been a wild ride.\n\nAll I want to do is help people. In the world of AI that has become next to impossible. From where I sit, data brokers have ramped up production almost 1000x since GPT-4 came out. Every scraper got smarter, every profile got fatter, and every \"people search\" site got a hundred cousins.",
+            "features": [
+              "Gets the list of registered data brokers. All 600 and more.",
+              "Writes each one a real legal deletion and opt-out letter in your name, quoting the law where you live.",
+              "Sends the letters from your own free mailbox, or hands them to you ready to send.",
+              "Reads what they write back and tells you which excuse it is and what to answer.",
+              "Chases the ones that go quiet and tells you where to file a complaint about the ones that refuse.",
+              "Python 3.8 or newer. Check with python --version . If you do not have it, get it free from python.org.",
+              "An email address. A free one is fine.",
+              "Tell it who you are. Name, email, city, and where you live. No street address, no birthday, no ID. Brokers get the minimum."
+            ],
+            "sections": [
+              "f ck data brokers.py",
+              "Star this repository",
+              "The platinum option: let Agent Garrett do it",
+              "Who these people are",
+              "What this does to them",
+              "What you need",
+              "Use it without AI",
+              "Sending the letters, for free",
+              "Put it on a schedule",
+              "When a broker says \"use our form\"",
+              "Use it with your AI",
+              "What the excuses mean",
+              "What it will never do",
+              "Where it works"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 16364
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 4,
+          "full_name": "google/elephant-goldfish-model",
+          "owner": "google",
+          "name": "elephant-goldfish-model",
+          "url": "https://github.com/google/elephant-goldfish-model",
+          "homepage": "https://egm.dev",
+          "description": "Open-source plugin for designing and reviewing software with agents",
+          "language": "Python",
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "antigravity",
+            "claude-code",
+            "claude-code-plugin",
+            "claude-skills",
+            "codex",
+            "codex-plugin"
+          ],
+          "stars": 23403,
+          "forks": 1725,
+          "open_issues": 162,
+          "starGain": 179,
+          "heat": 179,
+          "heatBasis": "snapshot",
+          "heatPercentile": 82,
+          "ageDays": 75,
+          "created_at": "2026-09-13T16:31:06Z",
+          "pushed_at": "2026-11-25T16:52:54Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 79.6,
+          "breakdown": {
+            "heat": 82,
+            "community": 83,
+            "activity": 56,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 30,
+            "backend": 45,
+            "devops": 47,
+            "ai": 100,
+            "data": 30
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Install &ensp;·&ensp; Quickstart &ensp;·&ensp; Documentation &ensp;·&ensp; Website\n\nDevelop ideas with context and review documents with fresh eyes. EGM is an open-source plugin for AI assistants.\n\nElephant holds your project context and drafts the specification. Goldfish reviewers examine the draft and referenced source material without the earlier conversation, helping expose unstated assumptions and blind spots. You make the architectural trade-offs and approve the specification before implementing.",
+            "features": [
+              "Getting started: the workflow and project layout.",
+              "Setup: installation, agent capabilities, and known limits.",
+              "Architecture: how skills and reviewers fit together.",
+              "Testing: checks, execution records, and verification limits.",
+              "Dave Rensin’s original essay: the ideas behind EGM."
+            ],
+            "sections": [
+              "Install",
+              "ChatGPT and Codex desktop",
+              "Antigravity CLI",
+              "Claude Code",
+              "Codex CLI",
+              "Try a 60-second review on existing code",
+              "Try your first design",
+              "How it works",
+              "Choose a skill",
+              "Learn more",
+              "Contribute",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 9926
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端 / Web",
+      "short": "前端",
+      "emoji": "🎨",
+      "accent": "#0ea5e9",
+      "desc": "框架、构建工具、UI 组件与浏览器端运行时",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "Axolotl-Launcher/Axolotl",
+          "owner": "Axolotl-Launcher",
+          "name": "Axolotl",
+          "url": "https://github.com/Axolotl-Launcher/Axolotl",
+          "homepage": "https://axlmc.org",
+          "description": "开源，跨平台的下一代启动器",
+          "language": "Rust",
+          "topics": [
+            "minecraft",
+            "minecraft-launcher",
+            "rust",
+            "tauri",
+            "vue"
+          ],
+          "stars": 909,
+          "forks": 106,
+          "open_issues": 140,
+          "starGain": 12,
+          "heat": 12,
+          "heatBasis": "snapshot",
+          "heatPercentile": 67,
+          "ageDays": 138,
+          "created_at": "2026-07-13T13:39:11Z",
+          "pushed_at": "2026-11-27T12:21:46Z",
+          "license": "NOASSERTION",
+          "rating": 3.5,
+          "composite": 66.9,
+          "breakdown": {
+            "heat": 67,
+            "community": 55,
+            "activity": 67,
+            "maturity": 90
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 100,
+            "backend": 18,
+            "devops": 12,
+            "ai": 30,
+            "data": 18
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "雨云 雨云是新一代国产云计算服务提供商，为广大服主提供简单易用、高性能、高性价比的游戏专用服务器。独家动态计费服务，自研高可用面板服，热门整合包一键快速安装。 访问雨云 CodeFlow 更稳、更省地调用顶级 AI 模型。原生协议转发，体验与官方一致，Claude Code、Codex 等工具开箱即用；多线路互为备份，请求失败自动切换；¥1 可充 $5 额度，余额永不过期；无需海外网络，支付宝即充即用。 访问 CodeFlow FastAI 面向开发者的 AI API 聚合平台，支持 OpenAI、Claude、Gemini 、Grok等主流大模型，兼容 OpenAI API 协议，可无缝接入 Claude Code、Codex等各类 AI 开发工具。平台采用 充值 1:1（1 元 = 1 美元 API 额度），对公后台自助开票，企业SLA保证，微信支付宝直充。 访问 FastAI\n\nAxolotl Launcher（美西螈启动器） 是一款免费、开源、跨平台的 Minecraft Java 版第三方启动器，支持在一个客户端中搜索、安装和更新来自 Modrinth 与 CurseForge 的模组、整合包、资源包和光影，并提供实例管理、多种账户认证、个性化外观与 Axolotl 实验室工具。\n\n本项目基于 Modrinth App 构建，移除了不适用于本项目的商业化模块，专注于提供纯净、无广告的桌面启动体验。",
+            "features": [
+              "在爱发电支持 Axolotl Launcher — 你的支持将帮助项目持续维护与改进",
+              "真跨平台体验 ：告别繁琐的环境配置，原生支持 Windows、macOS（完美兼容 Intel 与 Apple Silicon）及各类主流 Linux 发行版。",
+              "现代化内容生态 ：集成 Modrinth 和 CurseForge，可在启动器中一键浏览。游戏实例、整合包、模组、资源包及光影均可一键安装与升级，彻底告别手动管理依赖的痛苦。",
+              "高度定制化 ：无论是主题色调、背景图片，还是离线皮肤，核心功能与视觉展现均由你自由支配。",
+              "All in one 全新体验 ：启动器内置 “实验室” 功能，囊括种子地图、投影工坊等海量使用工具，带来全新原生轮椅体验。",
+              "桌面运行时核心 (Rust / Tauri) ：",
+              "高效后端 ( packages/app-lib ) ：基于 Rust 构建，提供强类型实例管理、SQLite 状态持久化、迁移控制与多线程并发下载引擎。",
+              "安全容器 ( apps/app ) ：基于 Tauri 2 构建的轻量原生壳，实现高效的 IPC 调用与原生系统级集成。"
+            ],
+            "sections": [
+              "核心优势",
+              "核心架构与技术栈",
+              "下载与安装",
+              "源码构建版",
+              "预编译二进制版",
+              "flake.nix",
+              "home.nix",
+              "贡献者",
+              "参与项目开发",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 8876
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "后端 / 云原生",
+      "short": "后端",
+      "emoji": "⚙️",
+      "accent": "#10b981",
+      "desc": "服务端框架、网关、容器编排与 DevOps 工具链",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "trustno1-coder/VIctory-NVIDIA",
+          "owner": "trustno1-coder",
+          "name": "VIctory-NVIDIA",
+          "url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
+          "homepage": "",
+          "description": "VIctory (Xbox Series compatibility layer) tuned for NVIDIA RTX cards: Series X at 2560x1440 with DLSS, about 26-30 fps on an RTX 5070, DLSS frame generation 2x-6x, an F1 settings menu and F3 stats panel, open water without dark blocks. Built on many repos combined into one. No game files or NVIDIA files included.",
+          "language": "Rust",
+          "topics": [
+            "compatibility-layer",
+            "directx-12",
+            "dlss",
+            "frame-generation",
+            "nvidia",
+            "rust"
+          ],
+          "stars": 3569,
+          "forks": 1260,
+          "open_issues": 395,
+          "starGain": null,
+          "heat": 1223.9,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 2,
+          "created_at": "2026-11-25T23:35:29Z",
+          "pushed_at": "2026-11-28T00:58:18Z",
+          "license": "GPL-3.0",
+          "rating": 4.5,
+          "composite": 88.7,
+          "breakdown": {
+            "heat": 100,
+            "community": 70,
+            "activity": 93,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 35,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "- At every start the game tells you which one your card runs, and why not if it can't, at the top of the picture for the first 30 seconds (and in the console window). - F1 menu, FRAME GEN TYPE : AUTO (DLSS where the card has it, else FSR 3), DLSS, or FSR 3 (also on an RTX 40/50, if you prefer it). FRAME GENERATION switches it off or on. - FSR 3 needs AMD's FidelityFX DLLs ( amd fidelityfx loader dx12.dll and amd fidelityfx framegeneration dx12.dll , about 30 MB). They are AMD's and not part of this program. On a card without DLSS frame generation (or with FSR 3 chosen in F1) the first start of victory.exe asks once whether to download them from AMD's own GitHub (the FidelityFX SDK); victory.exe get-fsr does it later, and Get-AMD-FSR.cmd does it for the script launcher. Each file is checked against the copy this fork was tested with, and only loaded with AMD's valid signature. A fidelityfx folder next to victory.exe , or VICTORY FIDELITYFX DIR , works too.\n\n1. Download victory.exe from the latest release. 2. Put it into the folder of your own dump of the title's Xbox Series build v1.0.2.1, next to game scarlett master.exe . 3. Double-click it. Windows may say the publisher is unknown (the file is not signed): \"More info\", then \"Run anyway\".\n\n- The first start asks once whether to download NVIDIA's DLSS and frame generation files (about 70 MB) from NVIDIA's own GitHub. They are NVIDIA's and are not part of this program; say no and the game still runs, with its own upscaling and",
+            "features": [
+              "At every start the game tells you which one your card runs, and why",
+              "F1 menu, FRAME GEN TYPE : AUTO (DLSS where the card has it, else FSR 3),",
+              "FSR 3 needs AMD's FidelityFX DLLs ( amd fidelityfx loader dx12.dll and",
+              "Download victory.exe from the",
+              "Put it into the folder of your own dump of the title's Xbox Series",
+              "Double-click it. Windows may say the publisher is unknown (the file is not",
+              "The first start asks once whether to download NVIDIA's DLSS and frame",
+              "Settings, saves, caches, logs and NVIDIA's and AMD's files are kept under"
+            ],
+            "sections": [
+              "VIctory on NVIDIA",
+              "Frame generation: what your card supports",
+              "Quick start: how to run it",
+              "Built from many projects, and from running every one of them",
+              "What this fork brings",
+              "The base since 2026-11-26: foxhound",
+              "Where it stands",
+              "How to run it",
+              "How it works, and the findings",
+              "Credits",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 21242
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "2hjaito/davish",
+          "owner": "2hjaito",
+          "name": "davish",
+          "url": "https://github.com/2hjaito/davish",
+          "homepage": "https://davish.app",
+          "description": "Your server, as a desktop. A lightweight SSH client with an OS-like UI. Nothing to install on the server.",
+          "language": "Go",
+          "topics": [
+            "devops",
+            "linux",
+            "server-management",
+            "server-monitor",
+            "ssh",
+            "ssh-client",
+            "terminal"
+          ],
+          "stars": 478,
+          "forks": 46,
+          "open_issues": 32,
+          "starGain": null,
+          "heat": 70.6,
+          "heatBasis": "velocity",
+          "heatPercentile": 89,
+          "ageDays": 32,
+          "created_at": "2026-10-26T16:57:09Z",
+          "pushed_at": "2026-11-28T02:17:12Z",
+          "license": "GPL-3.0",
+          "rating": 4,
+          "composite": 76.3,
+          "breakdown": {
+            "heat": 89,
+            "community": 49,
+            "activity": 66,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A desktop for your Linux servers. Terminal, files, services, Docker, logs, cron, nginx, ports, a browser, disk, login security, SSH keys, packages and git over plain SSH, in one place that feels like an operating system. Nothing to install on the server.\n\n- Open it and you're in. No login screen, no web panel: Davish connects to the server you used last with your SSH key and puts you on its desktop. Nothing extra listens on the server, so there is no new port to open or protect. - Agentless. Davish only needs sshd and SFTP. Everything runs from your machine over SSH; nothing is copied to, installed on or left behind on the server. - You see every command. Anything destructive (stop a service, remove a file, restart a container, replace a crontab) shows the exact command before it runs. The command log records everything Davish ran on your behalf, and exports the changes as a shell script you can read and run again. - Secrets stay in your keychain. Passwords and passphrases live only in the OS keychain. A sudo password is never saved: when root is needed, Davish asks for it once per session, keeps it in memory only, forgets it after 15 minutes unused and hands it to sudo on stdin, or you run the command in a terminal yourself. - Locks when you step away. A lock password of its own, Touch ID on macOS; it locks when the machine wakes, after idle time or with ⌘L . Sessions keep running behind the lock, but nothing reaches a server until you unlock. - Many servers, one desktop. Ea",
+            "features": [
+              "Open it and you're in. No login screen, no web panel: Davish connects to the server you used last with your SSH key and puts you on its desk",
+              "Agentless. Davish only needs sshd and SFTP. Everything runs from your machine over SSH; nothing is copied to, installed on or left behind on",
+              "You see every command. Anything destructive (stop a service, remove a file, restart a container, replace a crontab) shows the exact command ",
+              "Secrets stay in your keychain. Passwords and passphrases live only in the OS keychain. A sudo password is never saved: when root is needed, ",
+              "Locks when you step away. A lock password of its own, Touch ID on macOS; it locks when the machine wakes, after idle time or with ⌘L . Sessi",
+              "Many servers, one desktop. Each server is a workspace ( ⌘1 … ⌘9 ) that remembers its own windows. Copy files between servers by dragging the",
+              "Updates itself. A new version shows its changes with Update, Later and Skip this version; Davish downloads it, checks its signature and rest",
+              "English, Vietnamese, Simplified Chinese, Spanish, German, Korean or French. Pick the language in Settings; the first time, Davish follows yo"
+            ],
+            "sections": [
+              "Davish",
+              "Why Davish",
+              "Features",
+              "Install",
+              "What the server needs",
+              "Keyboard shortcuts",
+              "Build from source",
+              "Tests",
+              "Stack",
+              "Changelog",
+              "License",
+              "Code signing policy",
+              "Star History"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 12702
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "cubeplexai/cubepod",
+          "owner": "cubeplexai",
+          "name": "cubepod",
+          "url": "https://github.com/cubeplexai/cubepod",
+          "homepage": "https://cubepod.dev",
+          "description": "CubePod — Persistent Writable RootFS MicroVM execution platform for AI Agents",
+          "language": "Go",
+          "topics": [
+            "agent-sandbox",
+            "cloud-hypervisor",
+            "cloud-native",
+            "daytona-alternative",
+            "e2b",
+            "e2b-alternative",
+            "firecracker-sandbox",
+            "k8s"
+          ],
+          "stars": 83,
+          "forks": 8,
+          "open_issues": 10,
+          "starGain": null,
+          "heat": 17.5,
+          "heatBasis": "velocity",
+          "heatPercentile": 78,
+          "ageDays": 17,
+          "created_at": "2026-11-11T02:38:51Z",
+          "pushed_at": "2026-11-27T05:54:00Z",
+          "license": "Apache-2.0",
+          "rating": 3.5,
+          "composite": 67.3,
+          "breakdown": {
+            "heat": 78,
+            "community": 34,
+            "activity": 65,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 25,
+            "backend": 100,
+            "devops": 100,
+            "ai": 30,
+            "data": 59
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Documentation · Interactive API Reference · 中文 README · 中文文档 · llms.txt\n\nCubePod is an open-source, cloud-native execution platform designed for long-lived, high-autonomy AI Agents, featuring native E2B compatibility and native Kubernetes Runtime scheduling . Part of the Open-Source CubePlex Agent Stack , CubePod provides the persistent hardware-isolated execution layer powering CubePlex (Team Agent Workspace) and CubeLoop (Async Agent Runtime), delivering MicroVM execution with instant hibernation/resume and full system-level persistence.\n\nModern AI agents (DevOps agents, software engineering assistants, interactive data analysts) operate with broad shell privileges: they dynamically install system packages ( apt , pip , npm , Rust/C++ compilers), launch headless or interactive GUI browsers, and interact with external APIs using privileged credentials.",
+            "features": [
+              "Ephemeral RootFS (Only /workspace Persists) : Standard container sandboxes discard modifications to /usr , /etc , and /var whenever a sandbo",
+              "Heavyweight Snapshot Overhead : VM memory snapshotting (CRIU / VM dumps) produces gigabyte-scale state files sensitive to host CPU architect",
+              "Network Filesystem I/O Bottleneck : Mounting NFS or CephFS across sandboxes causes catastrophic latency during npm install , pip install , o",
+              "Plaintext Secret Exposure : Injecting real API keys into container environment variables exposes credentials to untrusted LLM-generated code",
+              "rootfs-pvc : Carries the OverlayFS upperdir and workdir . Stores all delta modifications to /usr , /etc , and /var created by apt-get , pip ",
+              "workspace-pvc : Mounted directly at /workspace (with 1000:1000 ownership). Preserves source code, artifacts, and skills.",
+              "Suspend : When an agent sandbox is paused or hits its idle timeout, podd executes sync + fsfreeze to flush kernel page caches and quiesce fi",
+              "Resume : Any incoming request (HTTP, command execution, or panel access) triggers cubepod-gateway to schedule a fresh MicroVM Pod on any clu"
+            ],
+            "sections": [
+              "Why CubePod?",
+              "CubePod vs. Upstream E2B & Standard Sandboxes",
+              "System Architecture",
+              "Key Architectural Highlights",
+              "1. Dual-Volume Persistent Writable RootFS",
+              "2. Zero-Export Suspend & ~1s Cross-Node Resumption",
+              "3. Zero Host Intrusion ( podd-init )",
+              "4. Pre-Attached WarmPool ( PodWarmPool )",
+              "5. Built-in Zero-Trust Egress & Secret Vault",
+              "E2B Drop-in Compatibility",
+              "1. Official Python SDK ( e2b ) — Sync & Async",
+              "Point upstream E2B SDK to your CubePod Gateway",
+              "Synchronous execution",
+              "Asynchronous execution (AsyncSandbox)"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 19402
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据 / 数据库",
+      "short": "数据",
+      "emoji": "🗄️",
+      "accent": "#f59e0b",
+      "desc": "数据库、数据处理引擎、分析与 BI",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "pgvector/pgvector",
+          "owner": "pgvector",
+          "name": "pgvector",
+          "url": "https://github.com/pgvector/pgvector",
+          "homepage": "",
+          "description": "Open-source vector similarity search for Postgres",
+          "language": "C",
+          "topics": [
+            "approximate-nearest-neighbor-search",
+            "nearest-neighbor-search"
+          ],
+          "stars": 23845,
+          "forks": 1415,
+          "open_issues": 25,
+          "starGain": 14,
+          "heat": 14,
+          "heatBasis": "trending",
+          "heatPercentile": 84,
+          "ageDays": 2047,
+          "created_at": "2021-04-20T21:13:52Z",
+          "pushed_at": "2026-11-27T08:36:43Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 78.1,
+          "breakdown": {
+            "heat": 84,
+            "community": 82,
+            "activity": 61,
+            "maturity": 73
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 60,
+            "devops": 35,
+            "ai": 40,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Store your vectors with the rest of your data. Supports:\n\n- exact and approximate nearest neighbor search - single-precision, half-precision, binary, and sparse vectors - L2 distance, inner product, cosine distance, L1 distance, Hamming distance, and Jaccard distance - any language with a Postgres client\n\nPlus ACID compliance, point-in-time recovery, JOINs, and all of the other great features of Postgres",
+            "features": [
+              "exact and approximate nearest neighbor search",
+              "single-precision, half-precision, binary, and sparse vectors",
+              "L2 distance, inner product, cosine distance, L1 distance, Hamming distance, and Jaccard distance",
+              "any language with a Postgres client",
+              "- L2 distance",
+              "- (negative) inner product",
+              "- cosine distance",
+              "- L1 distance"
+            ],
+            "sections": [
+              "pgvector",
+              "Installation",
+              "Linux and Mac",
+              "Windows",
+              "Getting Started",
+              "Storing",
+              "Querying",
+              "Indexing",
+              "HNSW",
+              "Index Options",
+              "Query Options",
+              "Index Build Time",
+              "Indexing Progress",
+              "IVFFlat"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 42221
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "sao-coding/locus",
+          "owner": "sao-coding",
+          "name": "locus",
+          "url": "https://github.com/sao-coding/locus",
+          "homepage": "",
+          "description": "A fast, smooth database client for Windows. Built with Rust and GPUI.",
+          "language": "Rust",
+          "topics": [
+            "ai",
+            "database",
+            "database-client",
+            "database-management",
+            "gpui",
+            "mariadb",
+            "mysql",
+            "oracle"
+          ],
+          "stars": 115,
+          "forks": 2,
+          "open_issues": 10,
+          "starGain": null,
+          "heat": 30.8,
+          "heatBasis": "velocity",
+          "heatPercentile": 95,
+          "ageDays": 11,
+          "created_at": "2026-11-17T03:22:55Z",
+          "pushed_at": "2026-11-28T01:51:42Z",
+          "license": "AGPL-3.0",
+          "rating": 3.5,
+          "composite": 74.2,
+          "breakdown": {
+            "heat": 95,
+            "community": 33,
+            "activity": 75,
+            "maturity": 80
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 15,
+            "backend": 84,
+            "devops": 41,
+            "ai": 47,
+            "data": 100
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "A database client for Windows that stays smooth. GPU-rendered, written in Rust, one small exe.\n\nLocus talks to MySQL / MariaDB, PostgreSQL, SQLite, Redis, Oracle and SQL Server. Results stream into the grid while the query is still running, and cancelling really stops the query on the server.\n\n- It does not freeze. Big results stream into a virtualized grid. A slow query or a huge table does not block typing, scrolling or switching tabs. - It is careful with production. A connection marked Production is read-only by default. Writes need a timed unlock, every writing statement asks for its own confirmation, and each one lands in an audit log. The gate classifies the statement text; functions called by a SELECT are not checked for side effects, except known built-ins ( nextval , pg terminate backend , GET LOCK ...). - It stays out of your way. One window, vertical tabs, split panes, and a command palette for everything else.",
+            "features": [
+              "It does not freeze. Big results stream into a virtualized grid. A slow query or a huge",
+              "It is careful with production. A connection marked Production is read-only by default.",
+              "It stays out of your way. One window, vertical tabs, split panes, and a command palette",
+              "Spaces: group connections and tabs, each with its own color",
+              "Vertical tabs; split the work area into up to 4 panes ( Ctrl+Shift+M zooms one temporarily)",
+              "Command palette ( Ctrl+K ), query history, light / dark / system theme, English, 简体中文 and 繁體中文",
+              "MySQL / MariaDB, PostgreSQL, SQLite and Redis connect directly from Rust; Oracle and SQL Server go through",
+              "SSH tunnels; passwords are stored in the Windows Credential Manager"
+            ],
+            "sections": [
+              "Locus",
+              "Why Locus",
+              "Features",
+              "Performance",
+              "Install",
+              "compare with the .sha256 file on the release page",
+              "build provenance, with the GitHub CLI",
+              "minisign signature (the key is also in minisign.pub)",
+              "Keyboard",
+              "FAQ",
+              "Reporting a problem",
+              "Building from source",
+              "Privacy",
+              "Acknowledgements"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 9896
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "开发工具 / 效率",
+      "short": "工具",
+      "emoji": "🛠️",
+      "accent": "#ef4444",
+      "desc": "编辑器、CLI、终端、协作与工程效率",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "l0ng-ai/openidea",
+          "owner": "l0ng-ai",
+          "name": "openidea",
+          "url": "https://github.com/l0ng-ai/openidea",
+          "homepage": "https://openidea.sh",
+          "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+          "language": "TypeScript",
+          "topics": [
+            "code-editor",
+            "cross-platform",
+            "dap",
+            "database-client",
+            "debugger",
+            "desktop-app",
+            "developer-tools",
+            "git"
+          ],
+          "stars": 10471,
+          "forks": 1018,
+          "open_issues": 242,
+          "starGain": 129,
+          "heat": 129,
+          "heatBasis": "snapshot",
+          "heatPercentile": 82,
+          "ageDays": 38,
+          "created_at": "2026-10-21T12:23:14Z",
+          "pushed_at": "2026-11-28T01:51:16Z",
+          "license": "Apache-2.0",
+          "rating": 4,
+          "composite": 81.1,
+          "breakdown": {
+            "heat": 82,
+            "community": 76,
+            "activity": 73,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 65,
+            "backend": 49,
+            "devops": 70,
+            "ai": 47,
+            "data": 37
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Download &nbsp;·&nbsp; Docs &nbsp;·&nbsp; Benchmark &nbsp;·&nbsp; Plugins &nbsp;·&nbsp; Community\n\nhttps://github.com/user-attachments/assets/234dd54c-1255-4b3a-b35c-533d78d737c0\n\nOpenIDEA brings the IntelliJ IDEA way of working — its keymap, its tool windows, its search-everything habits — to a native app with a Rust core.",
+            "features": [
+              "Discord — questions, feedback and release news.",
+              "WeChat group — scan to join:",
+              "Contributing: see CONTRIBUTING.md and the contributor docs."
+            ],
+            "sections": [
+              "Benchmark",
+              "Plugins",
+              "Community",
+              "License"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 3302
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "Microck/openvector",
+          "owner": "Microck",
+          "name": "openvector",
+          "url": "https://github.com/Microck/openvector",
+          "homepage": "https://openvector.app",
+          "description": "raster-to-vector conversion in the browser, on the desktop, in the terminal, and in node.js",
+          "language": "Rust",
+          "topics": [
+            "cli",
+            "desktop-app",
+            "gpui",
+            "image-tracing",
+            "nodejs",
+            "raster-to-vector",
+            "rust",
+            "svg"
+          ],
+          "stars": 534,
+          "forks": 19,
+          "open_issues": 2,
+          "starGain": null,
+          "heat": 83.2,
+          "heatBasis": "velocity",
+          "heatPercentile": 78,
+          "ageDays": 29,
+          "created_at": "2026-10-29T16:59:00Z",
+          "pushed_at": "2026-11-28T00:30:16Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 69.4,
+          "breakdown": {
+            "heat": 78,
+            "community": 48,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 67,
+            "backend": 47,
+            "devops": 83,
+            "ai": 47,
+            "data": 35
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "openvector raster-to-vector conversion in the browser, on the desktop, in the terminal, and in node.js.\n\nopenvector turns png, jpeg, bmp, gif, and tiff images into editable vectors. one rust engine powers the web editor, native desktop app, cli, and node-api library. tracing always runs on your device: the web editor works in the browser tab and never uploads your images.\n\nweb editor build cli and node api changelog verification release runbook",
+            "features": [
+              "automatic tracing, manual palettes, segmentation editing, and background removal.",
+              "svg, pdf, eps, ai, dxf, and emf export, plus rasterized png, jpeg, bmp, and tiff output.",
+              "batch conversion, saved advanced profiles, and recent basic settings.",
+              "a native gpui desktop interface, also available in the browser, with the same engine available to scripts."
+            ],
+            "sections": [
+              "what it does",
+              "use it in the browser",
+              "download",
+              "v0.1.7",
+              "install the cli and node library",
+              "build from source",
+              "convert an image",
+              "use it from node.js",
+              "development",
+              "license"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10194
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "移动 / 桌面 / 跨端",
+      "short": "跨端",
+      "emoji": "📱",
+      "accent": "#ec4899",
+      "desc": "iOS/Android、桌面端、跨平台框架与客户端工程",
+      "items": [
+        {
+          "rank": 1,
+          "full_name": "AFK-surf/xnulinux",
+          "owner": "AFK-surf",
+          "name": "xnulinux",
+          "url": "https://github.com/AFK-surf/xnulinux",
+          "homepage": "",
+          "description": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+          "language": "C",
+          "topics": [],
+          "stars": 4375,
+          "forks": 231,
+          "open_issues": 56,
+          "starGain": null,
+          "heat": 1427.1,
+          "heatBasis": "velocity",
+          "heatPercentile": 100,
+          "ageDays": 8,
+          "created_at": "2026-11-20T10:18:31Z",
+          "pushed_at": "2026-11-27T16:37:40Z",
+          "license": "NOASSERTION",
+          "rating": 4,
+          "composite": 84,
+          "breakdown": {
+            "heat": 100,
+            "community": 67,
+            "activity": 80,
+            "maturity": 65
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 15,
+            "devops": 10,
+            "ai": 15,
+            "data": 10
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Run macOS userspace on Linux by loading the macOS kernel into it.\n\nxnulinux builds XNU, the open-source kernel of macOS, from Apple's published sources and runs it as a loadable kernel module ( xnu.ko ) inside an unmodified arm64 Linux kernel. The hosted XNU drives the CPU and MMU directly, so macOS processes run natively next to Linux processes on the same CPUs, with no hypervisor between them. Linux lends XNU its memory, timers, files, network and GPU through a small interface module ( fki.ko ).\n\nWith a stock Ubuntu kernel, insmod xnu.ko boots a macOS 27 system disk made by Apple's own installer to the desktop: loginwindow, WindowServer, Dock, Finder, Safari and Chrome.",
+            "features": [
+              "CPUs : each hosted CPU is a Linux kernel thread pinned to a Linux CPU. XNU runs on it until it calls the host",
+              "Memory : XNU gets one physically contiguous block from Linux (CMA) and manages it with its own pmap; XNU and Linux",
+              "Devices : kexts in kexts/ give macOS a disk (a file on the Linux side), a display (a framebuffer Linux reads), a",
+              "GPU : Metal in the hosted macOS runs on gpu/xnu-cpu-metal (metal2vulkan over Vulkan). Vulkan reaches the Linux",
+              "Apple Silicon Mac in an arm64 Linux VM ( krunkit , 1 to 6 hosted CPUs) :",
+              "macOS 27.2.1 boots to the desktop with auto-login in 31–48 s (an Apple Virtualization macOS VM on the same Mac:",
+              "Apps open and quit, Spotlight and the file system work; a 30-minute stress run (40 rounds of Safari, Notes,",
+              "Runs as a systemd service: started at boot, stopped cleanly with the VM, restarted after a hosted-kernel panic, each"
+            ],
+            "sections": [
+              "xnulinux",
+              "How it works",
+              "Status",
+              "Requirements",
+              "Building and running",
+              "Repository layout and licenses",
+              "Acknowledgements"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 10911
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 2,
+          "full_name": "net-merge/net-merge",
+          "owner": "net-merge",
+          "name": "net-merge",
+          "url": "https://github.com/net-merge/net-merge",
+          "homepage": "https://net-merge.org",
+          "description": "Use all your internet connections at once on Windows, macOS, Linux and Android: per-connection load balancing over Wi-Fi, Ethernet, mobile data and phone tethers",
+          "language": "Go",
+          "topics": [
+            "android",
+            "bandwidth-aggregation",
+            "downloader",
+            "golang",
+            "linux",
+            "load-balancing",
+            "macos",
+            "net-merge"
+          ],
+          "stars": 4231,
+          "forks": 230,
+          "open_issues": 7,
+          "starGain": 434,
+          "heat": 434,
+          "heatBasis": "snapshot",
+          "heatPercentile": 96,
+          "ageDays": 46,
+          "created_at": "2026-10-12T19:28:45Z",
+          "pushed_at": "2026-11-27T11:37:38Z",
+          "license": "MIT",
+          "rating": 4,
+          "composite": 82.3,
+          "breakdown": {
+            "heat": 96,
+            "community": 67,
+            "activity": 58,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 18,
+            "devops": 12,
+            "ai": 15,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "Use all your internet connections at the same time. Combine Wi-Fi, Ethernet and phone hotspots, so downloads, games and browsers get the speed of every connection added up.\n\nWebsite · Download · Android · Install · Add a second connection · Troubleshooting · How it works\n\nA Mac with Wi-Fi + an Android phone. The menu shows both connections working at once. Watch the full 45-second video.",
+            "features": [
+              "Good for: Steam and game downloads, browsers, system updates, cloud uploads (Google Drive),",
+              "Not for: one single connection. One connection always uses one link, so one big file from one",
+              "Works for every app , TCP and UDP, IPv4 and IPv6. You do not set up a proxy.",
+              "Smart: faster links get more connections. A link with no internet gets none until it works again.",
+              "Safe: if net-merge crashes, your internet keeps working.",
+              "Light: about 0.18 CPU cores per 100 Mbit/s.",
+              "Easy on your phone: an iPhone hotspot's radio gets to rest more, at no cost in speed. See",
+              "Which CPUs: x86-64, ARM64 and Apple Silicon, ARMv7, ARMv6 (Raspberry Pi), x86 32-bit, RISC-V,"
+            ],
+            "sections": [
+              "Adapter icons and names",
+              "How it helps",
+              "Install",
+              "Android",
+              "Uninstall",
+              "NixOS",
+              "flake.nix",
+              "configuration.nix (with inputs passed via specialArgs)",
+              "Add a second connection",
+              "Use it",
+              "Troubleshooting",
+              "Commands",
+              "Want to choose the connection for each app?",
+              "Good to know"
+            ],
+            "hasInstall": false,
+            "hasDemo": true,
+            "length": 31588
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        },
+        {
+          "rank": 3,
+          "full_name": "Ciao1019/ArcMD",
+          "owner": "Ciao1019",
+          "name": "ArcMD",
+          "url": "https://github.com/Ciao1019/ArcMD",
+          "homepage": "https://arcmd.wl.do",
+          "description": "Proof that native MyGo apps can be works of art. ArcMD is an open-source Markdown editor delivering 120Hz fluid responsiveness—bringing Arc-inspired elegance and seamless performance to local writing.",
+          "language": "Go",
+          "topics": [
+            "arc-inspired",
+            "cross-platform",
+            "desktop-app",
+            "golang",
+            "local-first",
+            "markdown",
+            "markdown-editor",
+            "mygo"
+          ],
+          "stars": 715,
+          "forks": 44,
+          "open_issues": 10,
+          "starGain": 112,
+          "heat": 112,
+          "heatBasis": "snapshot",
+          "heatPercentile": 81,
+          "ageDays": 19,
+          "created_at": "2026-11-09T10:09:07Z",
+          "pushed_at": "2026-11-28T02:05:17Z",
+          "license": "MIT",
+          "rating": 3.5,
+          "composite": 73.9,
+          "breakdown": {
+            "heat": 81,
+            "community": 52,
+            "activity": 70,
+            "maturity": 100
+          },
+          "roleScores": {
+            "all": 100,
+            "frontend": 50,
+            "backend": 21,
+            "devops": 12,
+            "ai": 15,
+            "data": 12
+          },
+          "readme": {
+            "path": "README.md",
+            "excerpt": "书写交互 · 空间与阅读 · 原生 Markdown · 功能全景 · 常用快捷键 · 性能 · 从源码运行 · 参与贡献 · 路线图\n\nArcMD 将熟悉的 Markdown 写作流带入细腻跟手的原生富文本画布。 完全使用 Go 与 MyGo Native UI 自研开发——由 Go 直接驱动窗口绘制、字形排版与系统输入， 零 HTML、JavaScript、WebView、Electron 或 cgo 。\n\n不用在「源码」与「预览」两栏之间分心切换——你在首屏动图中看到的每一次落笔、展开与拖拽，都运行在同一张安静连贯的纸面上：",
+            "features": [
+              "未改动段落原样保留 ：通过分块比对原始 Markdown（ ImportSource ），未编辑的段落不会改写你原有的缩进、列表符号或链接写法。",
+              "扩展排版 100% 无损往返 ：文字颜色、背景高亮、手绘标注、五色高亮块（GitHub Alert [!NOTE] 等）、折叠块（ ）、跨格合并与着色表格、自定义比例双栏（ data-widths ）以及页面图标、封面与字数目标，通过标准 Markdown + 语义化 HTML ",
+              "平滑向下兼容 ：已有的旧版 .arcmd 文档与历史快照仍可直接打开、编辑与迁移。",
+              "硬件与环境 ：Apple M5 / 24 GiB，macOS 26.5.1，Go 1.27.3，MyGo v0.10.0， CGO ENABLED=0 。",
+              "统计口径 ：通过无窗口宿主运行完整帧构建管线，测量 CPU 场景构建耗时；不包含系统事件分发、GPU 光栅化呈现与显示器延迟，因此不直接等同于端到端屏幕延迟。",
+              "复现方法 ：详见性能报告（英文）与基准测试工具（英文）。"
+            ],
+            "sections": [
+              "行云流水的书写交互",
+              "空间与阅读亮点",
+              "专属空间与实时配色：颜色、渐变、通透与深浅纸面",
+              "资料库：所有空间，一眼尽览",
+              "专注时让开，需要时浮现",
+              "手绘标注：让重点，有一点温度",
+              "页边书签：读到哪儿，回到哪儿",
+              "原生 Markdown，不绑架你的文件",
+              "功能全景",
+              "常用快捷键",
+              "性能",
+              "获取与从源码运行",
+              "从源码运行",
+              "参与贡献"
+            ],
+            "hasInstall": false,
+            "hasDemo": false,
+            "length": 11491
+          },
+          "guard": {
+            "score": 0,
+            "signals": []
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed": [
+    {
+      "full_name": "firecrawl/firecrawl",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "github/spec-kit",
+      "category": "ai",
+      "lastPushed": "2026-10-30",
+      "times": 1
+    },
+    {
+      "full_name": "yetone/magpie",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 2
+    },
+    {
+      "full_name": "BaaRai/ARTEX",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "category": "ai",
+      "lastPushed": "2026-11-19",
+      "times": 1
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "category": "ai",
+      "lastPushed": "2026-11-22",
+      "times": 2
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "category": "ai",
+      "lastPushed": "2026-11-11",
+      "times": 1
+    },
+    {
+      "full_name": "Human-Agent-Society/reef",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "earendil-works/pi",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "category": "ai",
+      "lastPushed": "2026-11-07",
+      "times": 1
+    },
+    {
+      "full_name": "p-e-w/heretic",
+      "category": "ai",
+      "lastPushed": "2026-11-03",
+      "times": 1
+    },
+    {
+      "full_name": "Fission-AI/OpenSpec",
+      "category": "ai",
+      "lastPushed": "2026-11-06",
+      "times": 1
+    },
+    {
+      "full_name": "simplexai-labs/linger",
+      "category": "ai",
+      "lastPushed": "2026-11-20",
+      "times": 1
+    },
+    {
+      "full_name": "alesha-pro/llm.asm",
+      "category": "ai",
+      "lastPushed": "2026-11-27",
+      "times": 1
+    },
+    {
+      "full_name": "Lee-xeo/Claude-Cage",
+      "category": "ai",
+      "lastPushed": "2026-11-12",
+      "times": 1
+    },
+    {
+      "full_name": "kuafuai/andee",
+      "category": "ai",
+      "lastPushed": "2026-11-17",
+      "times": 1
+    },
+    {
+      "full_name": "opensetlabs/openset-llm",
+      "category": "ai",
+      "lastPushed": "2026-11-27",
+      "times": 1
+    },
+    {
+      "full_name": "anhao/ai-pose-gallery-zh",
+      "category": "ai",
+      "lastPushed": "2026-11-01",
+      "times": 1
+    },
+    {
+      "full_name": "blader/humanizer",
+      "category": "ai",
+      "lastPushed": "2026-11-18",
+      "times": 1
+    }
+  ],
+  "removed": [],
+  "watchlist": []
+}

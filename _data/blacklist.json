@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": 1,
-    "updated": "2026-11-27",
+    "updated": "2026-11-28",
     "policyZh": "本站以技术价值为入选标准。不进入推荐位的有三类：① 以「预激活安装包」等形式引导执行未知命令、缺少可审阅源码的项目；② 以模板化投放、账号轮换等方式制造热度的项目；③ 以政治动员、族群或性别对立、仇恨与歧视为主要卖点，主体不在技术议题范围内的项目。第三类只判「主要卖点」，涉及公共议题但主体是技术内容的项目正常收录。所有判定只依据可复核的公开事实——仓库元数据、README 原文、同批投放的时间与文本相关性——不对作者动机作推断；证据不足时进观察名单，不下架。",
-    "count": 127,
-    "publicCount": 64,
+    "count": 130,
+    "publicCount": 67,
     "campaigns": [
       {
         "id": "installer-wave-2026-11",
@@ -31,8 +31,8 @@
         "id": "installer-wave-2026-11-d",
         "label": "「离线安装包」批量投放（第四波）",
         "window": "2026-11-14 — 2026-11-15",
-        "repos": 6,
-        "note": "四个仓库在 2026-11-14 21:36 的 45 秒窗口内及次日 11:13 先后创建，以不同商业软件名（Office、Office Pro、Outlook、Tableau Prep）的「Standalone Offline Build for Windows 11」为标题；README 使用逐字相同的徽章组、章节结构、下载按钮与 PowerShell 部署表格，篇幅均在 13–14 KB。仓库标注 C++，files/ 目录只有三个 220–282 B 的占位源文件，docs/ 下为约 20 KB 的落地页，没有可审阅的源码或构建链；星标 111–358、零 fork、零 issue，附 MIT 许可文件而分发第三方商业软件的离线安装包，申报的 20 个主题词含多个与正文无关的方向词。 11-18 期按同一证据口径补齐 11-15 晚间使用相同徽章、章节与部署表格的一个仓库（whalefeed），共 5 个；另核对到一个创建于 2026-11-13T23:49:45Z、使用相同徽章与章节结构的 DxO PhotoLab 条目，事实特征一致，一并归集，共 6 个。"
+        "repos": 7,
+        "note": "四个仓库在 2026-11-14 21:36 的 45 秒窗口内及次日 11:13 先后创建，以不同商业软件名（Office、Office Pro、Outlook、Tableau Prep）的「Standalone Offline Build for Windows 11」为标题；README 使用逐字相同的徽章组、章节结构、下载按钮与 PowerShell 部署表格，篇幅均在 13–14 KB。仓库标注 C++，files/ 目录只有三个 220–282 B 的占位源文件，docs/ 下为约 20 KB 的落地页，没有可审阅的源码或构建链；星标 111–358、零 fork、零 issue，附 MIT 许可文件而分发第三方商业软件的离线安装包，申报的 20 个主题词含多个与正文无关的方向词。 11-18 期按同一证据口径补齐 11-15 晚间使用相同徽章、章节与部署表格的一个仓库（whalefeed），共 5 个；另核对到一个创建于 2026-11-13T23:49:45Z、使用相同徽章与章节结构的 DxO PhotoLab 条目，事实特征一致，一并归集，共 6 个。 11-28 期在同一商品名下另归集一个换账号重发的条目（i40396379-dotcom/whalefeed-utility，创建于 2026-11-27），其 README 版式与安装按钮指向自身 Pages 的做法与此前同族一致，并在仓库内附带了用于制造提交活跃度的随机命名工作流，共 7 个。"
       },
       {
         "id": "editorial-boundary",
@@ -68,6 +68,13 @@
         "window": "2026-11-24",
         "repos": 1,
         "note": "以「无需编译器、下载即用」为主线，README 首屏与全部徽章指向 Release 中的 win64 压缩包，并要求用访问码解压后运行 Setup 程序；仓库内 src/ 仅数十字节的占位实现，按其所附 CMake 步骤无法构建出可运行程序，文档篇幅亦在一二百字节量级，实际交付物与仓库内容不相对应。"
+      },
+      {
+        "id": "star-farm-2026-11-b",
+        "label": "伪装为开源项目的刷星投放",
+        "window": "2026-11-26 — 2026-11-27",
+        "repos": 2,
+        "note": "两个仓库分别在 2026-11-26 21:26 与 11-27 15:14 创建，创建后数十秒内完成唯一一次推送，此后不再有提交；星标分别达到 1,505 与 615，事件流折算的增速同为每小时约 58 个，而 fork、issue、PR 全部为零。两者 CONTRIBUTING.md（94 B）、.prettierrc（64 B）、.gitattributes（58 B）逐字节相同，提交历史均为「Add prettier config」「Normalize line endings」一类脚手架动作，贡献者列表仅由 CI 机器人构成，发布页各有三个互相衔接的版本号但各只附一个资产。仓库内容本身有一定体量（C# / C++ 源码与多语言文件），据此判断其做法是在较完整的项目外壳上叠加人为热度，而非纯粹的模板页面。"
       }
     ]
   },
@@ -8905,6 +8912,198 @@
           "utility",
           "windows-app"
         ]
+      }
+    },
+    {
+      "full_name": "i40396379-dotcom/whalefeed-utility",
+      "owner": "i40396379-dotcom",
+      "name": "whalefeed-utility",
+      "url": "https://github.com/i40396379-dotcom/whalefeed-utility",
+      "description": "Whalefeed Utility: Cross-Platform Desktop Toolkit for Streamlined Workflow Automation",
+      "language": "HTML",
+      "category": "supply-chain",
+      "categoryLabel": "供应链风险",
+      "sourceCategory": "data",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "installer-wave-2026-11-d",
+      "firstSeen": "2026-11-28",
+      "removedAt": "2026-11-28",
+      "issues": [
+        "2026-11-28"
+      ],
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "账号形态与投放节奏一致",
+          "detail": "仓库创建于 2026-11-27T01:01:08Z，账号名采用「随机数字 + -dotcom」后缀形态、名下仅 3 个仓库且均无社区反馈，与 11 月下旬多批同版式仓库的账号特征一致。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与协作信号失衡",
+          "detail": "68 星标而 fork、watcher、issue 均为 0，在现有星标量级下缺少任何二次使用或反馈痕迹。"
+        },
+        {
+          "type": "metadata",
+          "label": "语言标注与内容不符",
+          "detail": "仓库标注 HTML，总体积约 229 KB，根目录仅 8 个文件：index.html（约 16 KB 落地页）、README.md（约 14 KB）、files/ 下两张图片、robots.txt 与随机命名的 .github 目录，未见任何源码目录或构建链。"
+        },
+        {
+          "type": "content",
+          "label": "README 首屏为安装入口",
+          "detail": "README 首屏依次为预览大图、「⚡ PowerShell Setup Button」字样与按钮图片，按钮链接指向 i40396379-dotcom.github.io/whalefeed-utility/，即仓库自身的 Pages 页面，而非 Release 或构建说明。"
+        },
+        {
+          "type": "content",
+          "label": "主题词组合与正文无关",
+          "detail": "申报 19 个主题词，同时包含 bayc、nft-collection、meme-coin、floor-price、collectibles 与 duckdb、sql、winapi 两组互不相干的词，其中「challengue」为拼写残缺，正文并未涉及其中多数方向。"
+        },
+        {
+          "type": "manual",
+          "label": "工作流用于制造提交活跃度",
+          "detail": ".github/workflows/mzmWpRAmTcqD.yml（文件名为随机字符串）在 workflow_dispatch 触发后，向 .github/YWtojSKRFcTU 追加时间戳与随机串，并以「随机英文动词 + 随机编号」生成提交信息，最多重试 3 次、每次退避 1.8 秒。该行为与项目功能无关，作用是让仓库呈现持续提交的活跃度外观。"
+        },
+        {
+          "type": "correlation",
+          "label": "同一商品名换账号重发",
+          "detail": "本条目与 11 月已归集的 alibasimm1993/whalefeed 使用同一商品名与同一「预览图 + 安装按钮 + 徽章组」版式，账号与主题词组合更换而模板未变。"
+        }
+      ],
+      "verdict": "仓库以「桌面监控工具」为标题，实际交付物是一个指向自身 Pages 的 PowerShell 安装入口，且仓库内工作流的行为是在制造持续提交的活跃度外观。基于可复核的公开事实，本期不再将其列入推荐。",
+      "advice": "不建议执行其页面提供的安装脚本；如需桌面数据监控类工具，建议选择源码可审阅、安装步骤可从仓库构建链复现的项目。",
+      "snapshot": {
+        "stars": 68,
+        "forks": 0,
+        "license": "无"
+      }
+    },
+    {
+      "full_name": "flint63-code/gitdesk-windows",
+      "owner": "flint63-code",
+      "name": "gitdesk-windows",
+      "url": "https://github.com/flint63-code/gitdesk-windows",
+      "description": "Free open-source Git GUI client for Windows with visual commit history, branch management, SSH, Git LFS and more.",
+      "language": "C#",
+      "category": "inflated-popularity",
+      "categoryLabel": "热度异常",
+      "sourceCategory": "tools",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "star-farm-2026-11-b",
+      "firstSeen": "2026-11-28",
+      "removedAt": "2026-11-28",
+      "issues": [
+        "2026-11-28"
+      ],
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "单次推送后无后续提交",
+          "detail": "仓库创建于 2026-11-27T15:14:35Z，唯一一次推送发生在 39 秒后的 15:15:14Z，此后无任何提交；账号创建于 2026-11-23，名下仅此 1 个仓库。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与协作信号失衡",
+          "detail": "615 星标而 fork、issue、PR 均为 0；watcher 为 87，约占星标的 14%，而同类活跃仓库该比例通常在 0.3%–0.6% 区间。"
+        },
+        {
+          "type": "correlation",
+          "label": "与同批仓库模板逐字节相同",
+          "detail": "CONTRIBUTING.md（94 B）、.prettierrc（64 B）、.gitattributes（58 B）与本期另一仓库 Pixel679-cmyk/windows-titlebar-blur-customizer 逐字节相同，脚手架文件组合亦一致。"
+        },
+        {
+          "type": "correlation",
+          "label": "事件流只有星标",
+          "detail": "最近 100 条公开事件全部为 WatchEvent，没有 PushEvent、IssuesEvent 或 PullRequestEvent；按事件时间窗折算约每小时 58 个星标，与该仓库实际仅有的一次推送不成比例。"
+        },
+        {
+          "type": "content",
+          "label": "提交历史为模板化仪式提交",
+          "detail": "可见提交依次为 Add prettier config、Create dependabot.yml、Normalize line endings、Create SECURITY.md、Add contributing guide，均为与功能无关的脚手架动作；贡献者列表仅由 CI 机器人构成（azure-pipelines[bot]、bors[bot]、deepsource-autofix[bot]、dependabot-preview[bot]、depfu[bot]），缺少真实作者署名。"
+        },
+        {
+          "type": "metadata",
+          "label": "版本序列与历史不符",
+          "detail": "三次发布分别为 v4.4.1、v3.3.5、v2.4.3，各附 1 个资产，呈现连续迭代的外观，但与仓库仅有一次推送的实际历史不对应。"
+        },
+        {
+          "type": "content",
+          "label": "仓库内直接分发预编译产物",
+          "detail": "根目录存放 GitDesk--Windows-Git-GUI-Client.zip（约 1.8 MB）以及预编译的 exe、dll，README 引导读者从 Releases 下载压缩包，交付物与可审阅源码之间缺少可验证的对应关系。"
+        }
+      ],
+      "verdict": "仓库的星标增速与协作信号严重背离：单次推送后数小时内获得每小时约 58 个星标，而 fork、issue、PR 均为零；提交历史与贡献者构成为模板化产物。基于可复核的公开事实，本期不再将其列入推荐。",
+      "advice": "不建议将其热度作为技术选型参考；Git 图形客户端可对比 SourceGit、Git Extensions 等有长期提交记录与 issue 讨论的方案。",
+      "snapshot": {
+        "stars": 615,
+        "forks": 0,
+        "license": "MIT"
+      }
+    },
+    {
+      "full_name": "Pixel679-cmyk/windows-titlebar-blur-customizer",
+      "owner": "Pixel679-cmyk",
+      "name": "windows-titlebar-blur-customizer",
+      "url": "https://github.com/Pixel679-cmyk/windows-titlebar-blur-customizer",
+      "description": "Customize Windows 10 and 11 title bar effects with Aero, Acrylic, Mica and advanced DWM blur effects.",
+      "language": "C++",
+      "category": "inflated-popularity",
+      "categoryLabel": "热度异常",
+      "sourceCategory": "mobile",
+      "status": "excluded",
+      "state": "retracted",
+      "disclosure": "public",
+      "campaign": "star-farm-2026-11-b",
+      "firstSeen": "2026-11-28",
+      "removedAt": "2026-11-28",
+      "issues": [
+        "2026-11-28"
+      ],
+      "evidence": [
+        {
+          "type": "metadata",
+          "label": "单次推送后无后续提交",
+          "detail": "仓库创建于 2026-11-26T21:26:56Z，唯一一次推送发生在 32 秒后的 21:27:28Z，此后无任何提交；账号创建于 2026-11-18，名下仅此 1 个仓库。"
+        },
+        {
+          "type": "metadata",
+          "label": "星标与协作信号失衡",
+          "detail": "1,505 星标而 fork、issue、PR 均为 0；watcher 为 94，约占星标的 6%，明显高于同类活跃仓库的常见比例。"
+        },
+        {
+          "type": "correlation",
+          "label": "与同批仓库模板逐字节相同",
+          "detail": "CONTRIBUTING.md（94 B）、.prettierrc（64 B）、.gitattributes（58 B）与本期另一仓库 flint63-code/gitdesk-windows 逐字节相同，assets/ 预览图与徽章版式亦一致。"
+        },
+        {
+          "type": "correlation",
+          "label": "事件流只有星标",
+          "detail": "最近 100 条公开事件全部为 WatchEvent，约每小时 58.5 个星标，与同批另一仓库的斜率几乎相同，缺少任何议题或合并请求事件。"
+        },
+        {
+          "type": "content",
+          "label": "提交历史为模板化仪式提交",
+          "detail": "可见提交依次为 Normalize line endings、Add contributing guide、Add .editorconfig、Create dependabot.yml、Add pull request template，均为脚手架动作；贡献者列表中除账号本人外均为自动化机器人（changeset-bot[bot]、dependabot-preview[bot]、dependabot[bot]、mergify[bot]）。"
+        },
+        {
+          "type": "metadata",
+          "label": "版本序列与历史不符",
+          "detail": "三次发布分别为 v4.4.2、v3.0.0、v2.4.5，各附 1 个资产，与仓库仅有一次推送的实际历史不对应。"
+        },
+        {
+          "type": "content",
+          "label": "许可声明自相矛盾",
+          "detail": "README 徽章标注 LGPL-3.0 且根目录附带 COPYING.LESSER，而仓库 LICENSE 文件与平台识别结果均为 MIT，同一仓库的两处许可声明互相冲突。"
+        }
+      ],
+      "verdict": "仓库在单次推送后一夜之间获得约 1,500 个星标，而 fork、issue、PR 均为零，提交历史与贡献者构成与同批仓库同源。基于可复核的公开事实，本期不再将其列入推荐。",
+      "advice": "不建议将其热度作为技术选型参考；Windows 外观定制可对比 MicaForEveryone、ExplorerPatcher、Windhawk 等有真实社区维护与 issue 讨论的方案。",
+      "snapshot": {
+        "stars": 1505,
+        "forks": 0,
+        "license": "MIT"
       }
     }
   ]
